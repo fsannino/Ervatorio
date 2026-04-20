@@ -121,5 +121,40 @@ CREATE TRIGGER trg_products_updated BEFORE UPDATE ON public.admin_products FOR E
 DROP TRIGGER IF EXISTS trg_herbs_updated ON public.admin_herbs;
 CREATE TRIGGER trg_herbs_updated BEFORE UPDATE ON public.admin_herbs FOR EACH ROW EXECUTE FUNCTION update_updated_at();
 
+-- ============================================================
+-- RECEITAS SALVAS (blends do usuário)
+-- ============================================================
+CREATE TABLE IF NOT EXISTS public.saved_recipes (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+  name TEXT NOT NULL,
+  tagline TEXT,
+  ingredients JSONB NOT NULL DEFAULT '[]'::jsonb,
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW(),
+  UNIQUE(user_id, name)
+);
+
+ALTER TABLE public.saved_recipes ENABLE ROW LEVEL SECURITY;
+
+DROP POLICY IF EXISTS "recipes_owner_read" ON public.saved_recipes;
+CREATE POLICY "recipes_owner_read" ON public.saved_recipes FOR SELECT
+  USING (auth.uid() = user_id);
+DROP POLICY IF EXISTS "recipes_owner_insert" ON public.saved_recipes;
+CREATE POLICY "recipes_owner_insert" ON public.saved_recipes FOR INSERT
+  WITH CHECK (auth.uid() = user_id);
+DROP POLICY IF EXISTS "recipes_owner_update" ON public.saved_recipes;
+CREATE POLICY "recipes_owner_update" ON public.saved_recipes FOR UPDATE
+  USING (auth.uid() = user_id);
+DROP POLICY IF EXISTS "recipes_owner_delete" ON public.saved_recipes;
+CREATE POLICY "recipes_owner_delete" ON public.saved_recipes FOR DELETE
+  USING (auth.uid() = user_id);
+
+DROP TRIGGER IF EXISTS trg_recipes_updated ON public.saved_recipes;
+CREATE TRIGGER trg_recipes_updated BEFORE UPDATE ON public.saved_recipes
+  FOR EACH ROW EXECUTE FUNCTION update_updated_at();
+
+CREATE INDEX IF NOT EXISTS idx_saved_recipes_user ON public.saved_recipes(user_id);
+
 -- IMPORTANTE: Defina seu usuário como admin executando:
 -- UPDATE public.user_profiles SET is_admin = TRUE WHERE email = 'SEU_EMAIL_AQUI';

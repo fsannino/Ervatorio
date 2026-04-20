@@ -511,6 +511,7 @@ function filterHerbs(herbs, query, filters){
 }
 
 let _herbCardsBuilt = false;
+function resetHerbCards(){ _herbCardsBuilt = false; }
 
 function buildHerbCards(){
   if(_herbCardsBuilt) return;
@@ -648,7 +649,13 @@ function renderFavs(){
   } else { sr.innerHTML=''; }
 }
 
-function deleteSavedRecipe(i){ savedRecipes.splice(i,1); localStorage.setItem('erb_recipes',JSON.stringify(savedRecipes)); renderFavs(); }
+function deleteSavedRecipe(i){
+  const removed=savedRecipes[i];
+  savedRecipes.splice(i,1);
+  localStorage.setItem('erb_recipes',JSON.stringify(savedRecipes));
+  if(removed && typeof ervaria!=='undefined') ervaria.deleteRecipeRemote(removed.name);
+  renderFavs();
+}
 
 // ── BLEND TRAY ──
 function addToTray(id){
@@ -846,8 +853,10 @@ function saveRecipe(name){
   const sintoma=wizState.sintomas[0]||'default';
   const rec=BLEND_DB[sintoma]||BLEND_DB['default'];
   if(savedRecipes.find(r=>r.name===rec.name)){ toast('Blend já foi salvo!'); return; }
-  savedRecipes.unshift({name:rec.name,tagline:rec.tagline,ingredients:rec.ings});
+  const entry={name:rec.name,tagline:rec.tagline,ingredients:rec.ings};
+  savedRecipes.unshift(entry);
   localStorage.setItem('erb_recipes',JSON.stringify(savedRecipes));
+  if(typeof ervaria!=='undefined') ervaria.pushRecipe(entry);
   toast('Blend salvo nos favoritos!');
   document.querySelector('.save-recipe-btn').innerHTML='✓ Salvo <span class="saved-tag">✓</span>';
 }
