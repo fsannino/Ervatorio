@@ -230,6 +230,23 @@ body.light .pc-role.on{background:var(--chip-bg);color:var(--gold2);border-color
 .htag-safe{background:rgba(60,140,80,.12);color:#80c890;border:0.5px solid rgba(60,140,80,.2)}
 .htag-warn{background:rgba(200,100,60,.12);color:#e09060;border:0.5px solid rgba(200,100,60,.2)}
 .htag-avoid{background:rgba(180,50,50,.15);color:#e08080;border:0.5px solid rgba(180,50,50,.25)}
+
+/* ── Linha (classificação comercial) ── */
+.htag-linha{font-weight:500;letter-spacing:.02em}
+.htag-linha.linha-essencial{background:rgba(111,168,106,.15);color:#8fc888;border:0.5px solid rgba(111,168,106,.35)}
+.htag-linha.linha-global{background:rgba(106,160,216,.15);color:#8fbee8;border:0.5px solid rgba(106,160,216,.35)}
+.htag-linha.linha-funcional{background:rgba(216,154,90,.15);color:#e8b07a;border:0.5px solid rgba(216,154,90,.35)}
+
+.fchip-linha.linha-essencial.on{background:rgba(111,168,106,.18);color:#8fc888;border-color:rgba(111,168,106,.45)}
+.fchip-linha.linha-global.on{background:rgba(106,160,216,.18);color:#8fbee8;border-color:rgba(106,160,216,.45)}
+.fchip-linha.linha-funcional.on{background:rgba(216,154,90,.18);color:#e8b07a;border-color:rgba(216,154,90,.45)}
+
+.modal-linha{margin:.4rem 0 .25rem;display:flex;justify-content:center}
+.modal-linha .htag-linha{font-size:.72rem;padding:3px 12px}
+
+body.light .htag-linha.linha-essencial{background:rgba(60,130,70,.1);color:#2d6a3a;border-color:rgba(60,130,70,.25)}
+body.light .htag-linha.linha-global{background:rgba(50,100,170,.1);color:#1f5399;border-color:rgba(50,100,170,.25)}
+body.light .htag-linha.linha-funcional{background:rgba(170,110,50,.1);color:#96561c;border-color:rgba(170,110,50,.25)}
 .no-results{text-align:center;padding:3rem;color:var(--muted);font-size:.88rem}
 
 /* HERB DETAIL MODAL */

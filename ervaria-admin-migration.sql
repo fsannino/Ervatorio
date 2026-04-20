@@ -47,6 +47,9 @@ CREATE TABLE IF NOT EXISTS public.admin_herbs (
   latin_name TEXT,
   icon TEXT DEFAULT '🍃',
   category TEXT NOT NULL,
+  linha TEXT CHECK (linha IN ('Essencial','Global','Funcional')),
+  tagline TEXT,
+  img TEXT,
   effects TEXT,
   detail TEXT,
   safe_for TEXT[] DEFAULT '{}',
@@ -62,6 +65,25 @@ CREATE TABLE IF NOT EXISTS public.admin_herbs (
   created_at TIMESTAMPTZ DEFAULT NOW(),
   updated_at TIMESTAMPTZ DEFAULT NOW()
 );
+
+-- Migração idempotente para instâncias já existentes
+ALTER TABLE public.admin_herbs
+  ADD COLUMN IF NOT EXISTS linha TEXT,
+  ADD COLUMN IF NOT EXISTS tagline TEXT,
+  ADD COLUMN IF NOT EXISTS img TEXT;
+
+DO $$
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1 FROM pg_constraint WHERE conname = 'admin_herbs_linha_check'
+  ) THEN
+    ALTER TABLE public.admin_herbs
+      ADD CONSTRAINT admin_herbs_linha_check
+      CHECK (linha IS NULL OR linha IN ('Essencial','Global','Funcional'));
+  END IF;
+END$$;
+
+CREATE INDEX IF NOT EXISTS idx_admin_herbs_linha ON public.admin_herbs(linha);
 
 -- 5. RLS — somente admins podem gerenciar
 ALTER TABLE public.admin_news ENABLE ROW LEVEL SECURITY;

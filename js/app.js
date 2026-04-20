@@ -39,6 +39,28 @@ const HERBS = [
   {id:28,n:"Tomilho",lat:"Thymus vulgaris",icon:"🌿",tagline:"Antisséptico pulmonar e expectorante",cat:"Respiratório",ef:"Expectorante, antisséptico, tosse, bronquite",detail:"Timol: antisséptico pulmonar potente. Usado como xarope na Europa há séculos. Dissolve muco e desinfeta vias aéreas.",safe:["hipertensos"],avoid:["gestantes (doses altas)"],temp:"90°C",tempo:"8 min",dose:"1 col. sopa / 250ml",freq:"3x ao dia",tags:["tosse","expectorante","bronquite","antisséptico"],momento:["qualquer"]},
 ];
 
+// ── LINHAS ──
+// Classificação comercial da erva (linha de produto).
+// Essencial: tradicionais brasileiras de uso diário.
+// Global: importadas / reconhecidas mundialmente.
+// Funcional: nootrópicas, adaptogênicas e especiarias funcionais.
+const LINHAS = [
+  {id:'Essencial', label:'Essencial', color:'#6fa86a', desc:'Ervas tradicionais brasileiras de uso diário.'},
+  {id:'Global',    label:'Global',    color:'#6aa0d8', desc:'Ervas internacionais e chás finos reconhecidos mundialmente.'},
+  {id:'Funcional', label:'Funcional', color:'#d89a5a', desc:'Ervas funcionais, adaptógenos e especiarias bioativas.'},
+];
+
+const HERB_LINE_MAP = {
+  Essencial: [1,3,4,5,9,10,14,15,16,17,18,19,20,21,24,28],
+  Global:    [6,7,22,23,25,26,27],
+  Funcional: [2,8,11,12,13],
+};
+(function applyLinhas(){
+  for(const [linha, ids] of Object.entries(HERB_LINE_MAP)){
+    ids.forEach(id=>{ const h=HERBS.find(x=>x.id===id); if(h) h.linha=linha; });
+  }
+})();
+
 const SUPPLIERS = [
   {id:1,name:"Ervas & Raízes",type:"Produtor Orgânico",city:"São Paulo, SP",since:"2008",cert:"IBD Orgânico",ship:"Todo Brasil",minOrder:"R$ 80",herbs:["Camomila","Melissa","Erva Cidreira","Calêndula","Alfazema"],color:"#2d5a3a"},
   {id:2,name:"Casa das Plantas",type:"Ervateiro Tradicional",city:"Belo Horizonte, MG",since:"1992",cert:"Artesanal",ship:"Sul/Sudeste",minOrder:"R$ 50",herbs:["Boldo","Guaco","Carqueja","Arruda","Erva-doce"],color:"#4a3a1a"},
@@ -76,7 +98,7 @@ let favorites = safeLoad('erb_favs', []);
 let blendTray = safeLoad('erb_tray', []);
 let savedRecipes = safeLoad('erb_recipes', []);
 let cart = safeLoad('erb_cart', []);
-let activeFilters = {search:'',cat:'Todos',safe:'',avoid:'',momento:''};
+let activeFilters = {search:'',cat:'Todos',safe:'',avoid:'',momento:'',linha:''};
 let wizState = {sintomas:[],hora:'',sabor:''};
 let activeSup = 'Todos';
 let activeShopCat = 'Todos';
@@ -308,6 +330,7 @@ function updateWheelCenter(){
     activeFilters.cat&&activeFilters.cat!=='Todos',
     activeFilters.safe!=='',
     activeFilters.momento!=='',
+    activeFilters.linha!=='',
   ].filter(Boolean).length;
   const el=document.getElementById('wcCat');
   if(activeCount===0){ el.textContent='Toque\num anel'; el.style.fontSize='.55rem'; }
@@ -315,6 +338,7 @@ function updateWheelCenter(){
   // lines
   const parts=[];
   if(activeFilters.cat&&activeFilters.cat!=='Todos') parts.push(activeFilters.cat);
+  if(activeFilters.linha) parts.push(LINHAS.find(l=>l.id===activeFilters.linha)?.label||'');
   if(activeFilters.safe) parts.push(RING2.find(r=>r.id===activeFilters.safe)?.label||'');
   if(activeFilters.momento) parts.push(RING3.find(r=>r.id===activeFilters.momento)?.label||'');
   document.getElementById('wcSafe').textContent=parts.join(' + ');
@@ -331,6 +355,10 @@ function updateFilterContext(){
   if(activeFilters.cat&&activeFilters.cat!=='Todos'){
     const text=CAT_CONTEXT[activeFilters.cat]||'';
     if(text) lines.push({label:`Categoria: ${activeFilters.cat}`, text, color:'#c8a84b'});
+  }
+  if(activeFilters.linha){
+    const l=LINHAS.find(x=>x.id===activeFilters.linha);
+    if(l) lines.push({label:`Linha: ${l.label}`, text:l.desc, color:l.color});
   }
   if(activeFilters.safe){
     const text=SAFE_CONTEXT[activeFilters.safe]||'';
@@ -353,6 +381,7 @@ function buildLegend(){
   leg.innerHTML='';
   const rings=[
     {label:'Categoria',    color:'#c8a84b', active: activeFilters.cat&&activeFilters.cat!=='Todos' ? activeFilters.cat : null},
+    {label:'Linha',        color:'#b8854a', active: activeFilters.linha ? (LINHAS.find(l=>l.id===activeFilters.linha)?.label||null) : null},
     {label:'Segurança',    color:'#4a8a5a', active: activeFilters.safe ? (RING2.find(r=>r.id===activeFilters.safe)?.label||null) : null},
     {label:'Momento',      color:'#4a6a9a', active: activeFilters.momento ? (RING3.find(r=>r.id===activeFilters.momento)?.label||null) : null},
   ];
@@ -366,6 +395,7 @@ function buildLegend(){
       d.style.cursor='pointer';
       d.onclick=()=>{
         if(label==='Categoria') activeFilters.cat='Todos';
+        else if(label==='Linha') activeFilters.linha='';
         else if(label==='Segurança') activeFilters.safe='';
         else activeFilters.momento='';
         drawWheel(); buildFilters(); renderHerbs();
@@ -384,7 +414,7 @@ function toggleFilters(){
 }
 
 function clearAllFilters(){
-  activeFilters={search:'',cat:'Todos',safe:'',avoid:'',momento:''};
+  activeFilters={search:'',cat:'Todos',safe:'',avoid:'',momento:'',linha:''};
   document.getElementById('searchInput').value='';
   drawWheel(); buildFilters(); renderHerbs();
   toast('Filtros limpos');
@@ -406,6 +436,7 @@ function aplicarIntencao(intencao){
   activeFilters.cat = filtros.cat;
   activeFilters.safe = filtros.safe;
   activeFilters.momento = filtros.momento;
+  activeFilters.linha = '';
   if(filtros.search) document.getElementById('searchInput').value = filtros.search;
   drawWheel(); buildFilters(); renderHerbs();
   document.getElementById('herbGrid').scrollIntoView({behavior:'smooth',block:'start'});
@@ -427,6 +458,15 @@ function buildFilters(){
     b.className='fchip'+(activeFilters.cat===c?' on':'');
     b.textContent=c;
     b.onclick=()=>{ activeFilters.cat=c; drawWheel(); buildFilters(); renderHerbs(); };
+    row.appendChild(b);
+  });
+  addLabel('Linha','#b8854a');
+  LINHAS.forEach(l=>{
+    const b=document.createElement('button');
+    const isOn = activeFilters.linha===l.id;
+    b.className=`fchip fchip-linha linha-${l.id.toLowerCase()}`+(isOn?' on':'');
+    b.textContent=l.label;
+    b.onclick=()=>{ activeFilters.linha = activeFilters.linha===l.id?'':l.id; drawWheel(); buildFilters(); renderHerbs(); };
     row.appendChild(b);
   });
   addLabel('Momento do dia','#4a6a9a');
@@ -458,6 +498,7 @@ function filterHerbs(herbs, query, filters){
     const txt = (h.n+h.lat+h.ef+h.tags.join(' ')).toLowerCase();
     if(query && !txt.includes(query)) return false;
     if(filters.cat!=='Todos' && h.cat!==filters.cat) return false;
+    if(filters.linha && h.linha!==filters.linha) return false;
     if(filters.momento && !(h.momento||[]).includes(filters.momento)) return false;
     if(filters.safe==='gestantes' && !h.safe.includes('gestantes')) return false;
     if(filters.safe==='hipertensos' && !h.safe.includes('hipertensos')) return false;
@@ -489,6 +530,7 @@ function buildHerbCards(){
       <div class="hc-effect">${esc(h.ef)}</div>
       <div class="hc-tags">
         <span class="htag htag-cat">${esc(h.cat)}</span>
+        ${h.linha?`<span class="htag htag-linha linha-${h.linha.toLowerCase()}">${esc(h.linha)}</span>`:''}
         ${(h.momento||[]).map(m=>{const mo=RING3.find(r=>r.id===m); return mo?`<span class="htag" style="background:${mo.color}22;border:0.5px solid ${mo.color}44;color:${mo.color}">${esc(mo.label)}</span>`:''}).join('')}
         ${h.safe.slice(0,1).map(s=>`<span class="htag htag-safe">✓ ${esc(s)}</span>`).join('')}
         ${h.avoid.length?`<span class="htag htag-warn">⚠ ${esc(h.avoid[0])}</span>`:''}
@@ -513,7 +555,7 @@ function renderHerbs(){
   });
   // Update count summary
   let countEl = grid.querySelector('.herb-count');
-  const hasFilter = activeFilters.cat!=='Todos'||activeFilters.safe||activeFilters.momento||q;
+  const hasFilter = activeFilters.cat!=='Todos'||activeFilters.safe||activeFilters.momento||activeFilters.linha||q;
   if(!countEl){ countEl=document.createElement('div'); countEl.className='herb-count'; countEl.style.cssText='font-size:.75rem;color:var(--muted);margin-bottom:.75rem;grid-column:1/-1'; grid.prepend(countEl); }
   countEl.textContent = hasFilter ? `${visibleIds.size} de ${HERBS.length} ervas` : '';
   countEl.style.display = hasFilter ? '' : 'none';
@@ -538,6 +580,7 @@ function openHerbModal(id){
     <div class="modal-herb-name">${esc(h.n)}</div>
     ${h.tagline ? `<div class="modal-tagline">${esc(h.tagline)}</div>` : ''}
     <div class="modal-latin">${esc(h.lat)}</div>
+    ${h.linha?`<div class="modal-linha"><span class="htag htag-linha linha-${h.linha.toLowerCase()}">Linha ${esc(h.linha)}</span></div>`:''}
     <div class="modal-section">
       <div class="modal-label">Sobre</div>
       <div class="modal-text">${esc(h.detail)}</div>
