@@ -36,6 +36,7 @@
     <div class="adm-nav-item" data-sec="products" onclick="showSection('products')"><span class="icon">📦</span> Produtos</div>
     <div class="adm-nav-item" data-sec="suppliers" onclick="showSection('suppliers')"><span class="icon">🏪</span> Fornecedores</div>
     <div class="adm-nav-item" data-sec="news" onclick="showSection('news')"><span class="icon">📰</span> Notícias</div>
+    <div class="adm-nav-item" data-sec="fichas" onclick="showSection('fichas')"><span class="icon">📖</span> Fichas editoriais</div>
     <div class="adm-nav-sep"></div>
     <div class="adm-nav-item" onclick="window.location='/'"><span class="icon">🍵</span> Ir ao App</div>
     <div class="adm-nav-item" onclick="admLogout()" style="color:var(--adm-red)"><span class="icon">⏻</span> Sair</div>
@@ -139,7 +140,64 @@
       </div>
     </div>
 
+    <!-- ════════ FICHAS EDITORIAIS ════════ -->
+    <div class="adm-section" id="sec-fichas" style="display:none">
+      <div class="adm-header">
+        <div>
+          <div class="adm-title">Fichas editoriais</div>
+          <div class="adm-subtitle">Conteúdo rico das ervas (Schema v1.1)</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+          <input type="file" id="fichasImportFile" accept="application/json" style="display:none" onchange="importFichasFile(this)">
+          <button class="adm-btn" onclick="document.getElementById('fichasImportFile').click()">⇪ Importar JSON</button>
+          <button class="adm-btn primary" onclick="openFichaForm()">+ Nova ficha</button>
+        </div>
+      </div>
+      <div class="adm-table-wrap">
+        <table class="adm-table">
+          <thead><tr><th>Slug</th><th>Nome popular</th><th>Nome científico</th><th>Schema</th><th>Status</th><th>Atualizada</th><th>Ações</th></tr></thead>
+          <tbody id="fichasBody"><tr><td colspan="7" style="text-align:center;padding:2rem;color:var(--adm-muted)">Carregando...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
   </main>
+</div>
+
+<!-- FICHA FORM -->
+<div class="adm-modal-overlay" id="fichaModal" onclick="if(event.target===this)closeFichaForm()">
+  <div class="adm-modal" style="max-width:900px">
+    <div class="adm-modal-title" id="fichaFormTitle">Nova ficha</div>
+    <input type="hidden" id="ffId">
+    <div class="adm-form-row">
+      <div class="adm-form-group"><label class="adm-form-label">Slug *</label><input type="text" id="ffSlug" class="adm-form-input" placeholder="ex: camomila, erva-mate"></div>
+      <div class="adm-form-group"><label class="adm-form-label">Versão schema</label><input type="text" id="ffVersion" class="adm-form-input" value="1.1"></div>
+    </div>
+    <div class="adm-form-group"><label class="adm-form-label">Nome científico (match com admin_herbs)</label><input type="text" id="ffLatin" class="adm-form-input" placeholder="ex: Matricaria chamomilla"></div>
+    <div class="adm-form-row">
+      <div class="adm-form-group"><label class="adm-form-label">Status</label>
+        <select id="ffStatus" class="adm-form-input">
+          <option value="draft">Rascunho</option>
+          <option value="in_review">Em revisão</option>
+          <option value="published" selected>Publicado</option>
+          <option value="archived">Arquivado</option>
+        </select>
+      </div>
+      <div class="adm-form-group"><label class="adm-form-label">Ativa</label>
+        <label class="adm-form-check"><input type="checkbox" id="ffActive" checked> Visível no catálogo</label>
+      </div>
+    </div>
+    <div class="adm-form-group">
+      <label class="adm-form-label">Payload da ficha (JSON)</label>
+      <textarea id="ffJson" class="adm-form-input" rows="18" style="font-family:monospace;font-size:.78rem;line-height:1.4" placeholder='{"schema_version":"1.1","slug":"...","nome_popular":"...","nome_cientifico":"...","identificacao":{...},...}'></textarea>
+      <div id="ffJsonMsg" style="font-size:.72rem;color:var(--adm-muted);margin-top:4px"></div>
+    </div>
+    <div class="adm-form-actions">
+      <button class="adm-btn" onclick="closeFichaForm()">Cancelar</button>
+      <button class="adm-btn" onclick="validateFichaJson()">Validar JSON</button>
+      <button class="adm-btn primary" onclick="saveFicha()">Salvar</button>
+    </div>
+  </div>
 </div>
 
 <!-- ════════ MODALS ════════ -->

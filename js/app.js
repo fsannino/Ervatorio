@@ -597,12 +597,236 @@ function openHerbModal(id){
     </div>
     ${h.avoid.length?`<div class="warn-box">⚠ Contraindicações: ${h.avoid.map(a=>esc(a)).join(', ')}</div>`:''}
     ${h.safe.length?`<div class="safe-box">✓ Seguro para: ${h.safe.map(s=>esc(s)).join(', ')}</div>`:''}
+    <div id="modalFichaSlot"></div>
     <div style="display:flex;gap:8px;margin-top:1rem">
       <button class="add-blend-btn" style="flex:1" onclick="addToTray(${h.id})">${inTray?'✓ No Blend':'+ Adicionar ao Blend'}</button>
       <button class="add-blend-btn" style="flex:1;background:rgba(200,168,75,.15)" onclick="openTimer(${h.id})">⏱ Preparar agora</button>
     </div>
   `;
   document.getElementById('herbModal').classList.add('on');
+  loadFichaForHerb(h);
+}
+
+// Busca a ficha editorial do Supabase (via ervaria) e injeta um
+// botão "Ver ficha completa" quando disponível.
+async function loadFichaForHerb(h){
+  const slot = document.getElementById('modalFichaSlot');
+  if(!slot || typeof ervaria==='undefined') return;
+  try {
+    const ficha = await ervaria.loadFichaByLatin(h.lat);
+    if(!ficha || slot.dataset.herbId===String(h.id)) return;
+    slot.dataset.herbId = String(h.id);
+    slot.innerHTML = `
+      <button class="ficha-cta" onclick="openFicha('${esc(ficha.slug||'')}')">
+        Ver ficha completa
+        <span class="ficha-cta-arrow">→</span>
+      </button>`;
+  } catch(_) {}
+}
+
+let _currentFicha = null;
+async function openFicha(slug){
+  if(typeof ervaria==='undefined') return;
+  let ficha = null;
+  try { ficha = await ervaria.loadFichaBySlug(slug); } catch(_) {}
+  if(!ficha){ toast('Ficha indisponível'); return; }
+  _currentFicha = ficha;
+  renderFichaModal(ficha);
+}
+
+function closeFicha(){
+  const ov = document.getElementById('fichaOverlay');
+  if(ov) ov.classList.remove('on');
+  _currentFicha = null;
+}
+
+function renderFichaModal(f){
+  let ov = document.getElementById('fichaOverlay');
+  if(!ov){
+    ov = document.createElement('div');
+    ov.id = 'fichaOverlay';
+    ov.className = 'ficha-overlay';
+    ov.onclick = (e)=>{ if(e.target===ov) closeFicha(); };
+    document.body.appendChild(ov);
+  }
+  const id = f.identificacao || {};
+  const car = f.caracterizacao || {};
+  const pr = f.preparo || {};
+  const ps = f.perfil_sensorial || {};
+  const ac = f.acoes_e_seguranca || {};
+  const cu = f.cultura || {};
+  const rg = f.regulacao || {};
+  const mk = f.marketplace || {};
+  const listMaybe = (v) => Array.isArray(v) ? v.map(x=>`<li>${esc(x)}</li>`).join('') : (v?`<li>${esc(v)}</li>`:'');
+  const paragraphs = (v) => Array.isArray(v) ? v.map(x=>`<p>${esc(x)}</p>`).join('') : (v?`<p>${esc(v)}</p>`:'');
+  const dlList = (arr, keyA='label', keyB='texto') => Array.isArray(arr)
+    ? arr.map(x=>`<div class="ficha-kv"><dt>${esc(x[keyA])}</dt><dd>${esc(x[keyB])}</dd></div>`).join('')
+    : '';
+  const gustativo = Array.isArray(ps.gustativo) ? ps.gustativo : [];
+  const trig = Array.isArray(ps.trigeminal) ? ps.trigeminal : [];
+  const evid = Array.isArray(ac.evidencia) ? ac.evidencia : [];
+
+  ov.innerHTML = `
+    <article class="ficha-card" role="dialog" aria-label="Ficha ${esc(f.nome_popular||'')}">
+      <button class="ficha-close" onclick="closeFicha()" aria-label="Fechar">✕</button>
+
+      <header class="ficha-hero">
+        <h1 class="ficha-title">${esc(f.nome_popular||'')}</h1>
+        <div class="ficha-latin">${esc(f.nome_cientifico||'')}</div>
+        ${f.tagline?`<blockquote class="ficha-tagline">${esc(f.tagline)}</blockquote>`:''}
+        ${Array.isArray(f.destaques)&&f.destaques.length?`
+          <ul class="ficha-destaques">
+            ${f.destaques.map(d=>`<li><strong>${esc(d.label)}</strong> ${esc(d.texto)}</li>`).join('')}
+          </ul>`:''}
+      </header>
+
+      ${ac.alerta_critico?`
+        <section class="ficha-alert" role="alert">
+          <div class="ficha-alert-title">⚠ ${esc(ac.alerta_critico.titulo||'Alerta crítico')}</div>
+          ${ac.alerta_critico.titulo2?`<div class="ficha-alert-sub">${esc(ac.alerta_critico.titulo2)}</div>`:''}
+          <div class="ficha-alert-body">${esc(ac.alerta_critico.corpo||'')}</div>
+        </section>`:''}
+
+      <section class="ficha-section">
+        <h2>Identificação</h2>
+        <dl class="ficha-dl">
+          ${id.nome_cientifico?`<div class="ficha-kv"><dt>Nome científico</dt><dd><em>${esc(id.nome_cientifico)}</em></dd></div>`:''}
+          ${id.familia_botanica?`<div class="ficha-kv"><dt>Família</dt><dd>${esc(id.familia_botanica)}</dd></div>`:''}
+          ${id.tipo_botanico?`<div class="ficha-kv"><dt>Tipo</dt><dd>${esc(id.tipo_botanico)}</dd></div>`:''}
+          ${id.parte_usada?`<div class="ficha-kv"><dt>Parte usada</dt><dd>${esc(id.parte_usada)}</dd></div>`:''}
+        </dl>
+        ${Array.isArray(id.sinonimos)&&id.sinonimos.length?`
+          <div class="ficha-sub">Sinônimos</div>
+          <ul class="ficha-bullets">${listMaybe(id.sinonimos)}</ul>`:''}
+      </section>
+
+      <section class="ficha-section">
+        <h2>Caracterização</h2>
+        <dl class="ficha-dl">
+          ${car.sabor_dominante?`<div class="ficha-kv"><dt>Sabor</dt><dd>${esc(car.sabor_dominante)}</dd></div>`:''}
+          ${car.aroma?`<div class="ficha-kv"><dt>Aroma</dt><dd>${esc(car.aroma)}</dd></div>`:''}
+          ${car.cor_da_infusao?`<div class="ficha-kv"><dt>Cor da infusão</dt><dd>${esc(car.cor_da_infusao)}</dd></div>`:''}
+          ${car.intensidade?`<div class="ficha-kv"><dt>Intensidade</dt><dd>${esc(car.intensidade)}</dd></div>`:''}
+          ${car.notas?`<div class="ficha-kv"><dt>Notas</dt><dd>${esc(car.notas)}</dd></div>`:''}
+          ${car.bioma_de_origem?`<div class="ficha-kv"><dt>Bioma</dt><dd>${esc(car.bioma_de_origem)}</dd></div>`:''}
+        </dl>
+        ${Array.isArray(car.distribuicao_geografica)&&car.distribuicao_geografica.length?`
+          <div class="ficha-sub">Distribuição geográfica</div>
+          <ul class="ficha-bullets">${listMaybe(car.distribuicao_geografica)}</ul>`:''}
+      </section>
+
+      <section class="ficha-section">
+        <h2>Preparo</h2>
+        <dl class="ficha-dl">
+          ${pr.temperatura_ideal?`<div class="ficha-kv"><dt>Temperatura</dt><dd>${esc(pr.temperatura_ideal)}</dd></div>`:''}
+          ${pr.tempo_de_infusao?`<div class="ficha-kv"><dt>Tempo de infusão</dt><dd>${esc(pr.tempo_de_infusao)}</dd></div>`:''}
+          ${pr.quantidade?`<div class="ficha-kv"><dt>Quantidade</dt><dd>${esc(pr.quantidade)}</dd></div>`:''}
+          ${pr.metodo?`<div class="ficha-kv"><dt>Método</dt><dd>${esc(pr.metodo)}</dd></div>`:''}
+          ${pr.reinfusoes?`<div class="ficha-kv"><dt>Reinfusões</dt><dd>${esc(pr.reinfusoes)}</dd></div>`:''}
+          ${pr.melhor_momento?`<div class="ficha-kv"><dt>Melhor momento</dt><dd>${esc(pr.melhor_momento)}</dd></div>`:''}
+          ${pr.combina_com?`<div class="ficha-kv"><dt>Combina com</dt><dd>${esc(pr.combina_com)}</dd></div>`:''}
+        </dl>
+        ${f.preparo_ritual?`
+          <div class="ficha-sub">${esc(f.preparo_ritual.titulo||'Preparo cerimonial')}</div>
+          <p>${esc(f.preparo_ritual.texto||'')}</p>`:''}
+      </section>
+
+      ${f.usos_topicos?`
+      <section class="ficha-section">
+        <h2>Usos tópicos</h2>
+        ${f.usos_topicos.evidencia?`<p><strong>Evidência:</strong> ${esc(f.usos_topicos.evidencia)}</p>`:''}
+        ${Array.isArray(f.usos_topicos.aplicacoes)?f.usos_topicos.aplicacoes.map(a=>`
+          <div class="ficha-sub">${esc(a.titulo||'')}</div>
+          <p>${esc(a.texto||'')}</p>`).join(''):''}
+        ${f.usos_topicos.contraindicacoes?`<p class="ficha-warn-inline">${esc(f.usos_topicos.contraindicacoes)}</p>`:''}
+      </section>`:''}
+
+      <section class="ficha-section">
+        <h2>Ações e segurança</h2>
+        ${Array.isArray(ac.acoes_principais)&&ac.acoes_principais.length?`
+          <div class="ficha-sub">Ações principais</div>
+          <ul class="ficha-bullets">${listMaybe(ac.acoes_principais)}</ul>`:''}
+        ${Array.isArray(ac.componentes_ativos)&&ac.componentes_ativos.length?`
+          <div class="ficha-sub">Componentes ativos</div>
+          <dl class="ficha-dl">${dlList(ac.componentes_ativos)}</dl>`:''}
+        ${evid.length?`
+          <div class="ficha-sub">Indicações com evidência</div>
+          <table class="ficha-table">
+            <caption>Evidência clínica e populacional</caption>
+            <thead><tr><th>Indicação</th><th>Evidência</th><th>População</th></tr></thead>
+            <tbody>${evid.map(e=>`<tr><td>${esc(e.indicacao)}</td><td>${esc(e.evidencia)}</td><td>${esc(e.populacao)}</td></tr>`).join('')}</tbody>
+          </table>`:''}
+        ${Array.isArray(ac.contraindicacoes)&&ac.contraindicacoes.length?`
+          <div class="ficha-sub">Contraindicações</div>
+          <ul class="ficha-bullets">${listMaybe(ac.contraindicacoes)}</ul>`:''}
+        ${Array.isArray(ac.interacoes)&&ac.interacoes.length?`
+          <div class="ficha-sub">Interações</div>
+          <dl class="ficha-dl">${dlList(ac.interacoes)}</dl>`:''}
+        ${ac.efeitos_adversos?`<div class="ficha-sub">Efeitos adversos</div><p>${esc(ac.efeitos_adversos)}</p>`:''}
+        ${ac.dose_maxima?`<div class="ficha-sub">Dose máxima</div><p>${esc(ac.dose_maxima)}</p>`:''}
+        ${Array.isArray(ac.fontes)&&ac.fontes.length?`
+          <div class="ficha-sub">Fontes</div>
+          <ul class="ficha-bullets ficha-sources">${listMaybe(ac.fontes)}</ul>`:''}
+      </section>
+
+      <section class="ficha-section">
+        <h2>Perfil sensorial</h2>
+        ${gustativo.length?`
+          <table class="ficha-table">
+            <caption>Perfil gustativo</caption>
+            <thead><tr><th>Dimensão</th><th>Intensidade</th><th>Observação</th></tr></thead>
+            <tbody>${gustativo.map(g=>`<tr><td>${esc(g.dimensao)}</td><td>${esc(g.intensidade)}</td><td>${esc(g.observacao)}</td></tr>`).join('')}</tbody>
+          </table>`:''}
+        ${ps.olfativo_familia?`<div class="ficha-sub">Olfativo — ${esc(ps.olfativo_familia)}</div>`:''}
+        ${Array.isArray(ps.olfativo_descritores)&&ps.olfativo_descritores.length?`
+          <ul class="ficha-bullets">${listMaybe(ps.olfativo_descritores)}</ul>`:''}
+        ${trig.length?`
+          <table class="ficha-table">
+            <caption>Perfil trigeminal</caption>
+            <thead><tr><th>Receptor</th><th>Ativação</th><th>Molécula</th></tr></thead>
+            <tbody>${trig.map(t=>`<tr><td>${esc(t.receptor)}</td><td>${esc(t.ativacao)}</td><td>${esc(t.molecula)}</td></tr>`).join('')}</tbody>
+          </table>`:''}
+        ${ps.tatil?`<div class="ficha-sub">Tátil</div><p>${esc(ps.tatil)}</p>`:''}
+        ${ps.descricao_integrada?`<blockquote class="ficha-pullquote">${esc(ps.descricao_integrada)}</blockquote>`:''}
+      </section>
+
+      <section class="ficha-section">
+        <h2>Cultura</h2>
+        ${cu.historia?`<div class="ficha-sub">História</div>${paragraphs(cu.historia)}`:''}
+        ${cu.cerimonial?`<div class="ficha-sub">Cerimonial</div><p>${esc(cu.cerimonial)}</p>`:''}
+        ${cu.brasil?`<div class="ficha-sub">No Brasil</div>${paragraphs(cu.brasil)}`:''}
+        ${cu.curiosidade?`<blockquote class="ficha-pullquote">${esc(cu.curiosidade)}</blockquote>`:''}
+      </section>
+
+      <section class="ficha-section">
+        <h2>Regulação e origem</h2>
+        <dl class="ficha-dl">
+          ${rg.eixo_botanico_tpc?`<div class="ficha-kv"><dt>Eixo botânico</dt><dd>${esc(rg.eixo_botanico_tpc)}</dd></div>`:''}
+          ${rg.status_anvisa?`<div class="ficha-kv"><dt>ANVISA</dt><dd>${Array.isArray(rg.status_anvisa)?rg.status_anvisa.map(esc).join(' '):esc(rg.status_anvisa)}</dd></div>`:''}
+          ${rg.status_ema?`<div class="ficha-kv"><dt>EMA</dt><dd>${esc(rg.status_ema)}</dd></div>`:''}
+          ${rg.status_fda?`<div class="ficha-kv"><dt>FDA</dt><dd>${esc(rg.status_fda)}</dd></div>`:''}
+          ${rg.certificacao_organica?`<div class="ficha-kv"><dt>Certificação orgânica</dt><dd>${Array.isArray(rg.certificacao_organica)?rg.certificacao_organica.map(esc).join(' '):esc(rg.certificacao_organica)}</dd></div>`:''}
+          ${rg.sazonalidade?`<div class="ficha-kv"><dt>Sazonalidade</dt><dd>${Array.isArray(rg.sazonalidade)?rg.sazonalidade.map(esc).join(' '):esc(rg.sazonalidade)}</dd></div>`:''}
+        </dl>
+      </section>
+
+      ${mk && (mk.fornecedores||mk.faixa_de_preco||mk.formatos)?`
+      <section class="ficha-section ficha-section-mute">
+        <h2>Marketplace</h2>
+        <p class="ficha-mute">Reservado — preencher quando o marketplace do Ervatório for ativado.</p>
+        <dl class="ficha-dl">
+          ${mk.disponivel_a_venda?`<div class="ficha-kv"><dt>Disponível</dt><dd>${esc(mk.disponivel_a_venda)}</dd></div>`:''}
+          ${mk.fornecedores?`<div class="ficha-kv"><dt>Fornecedores</dt><dd>${esc(mk.fornecedores)}</dd></div>`:''}
+          ${mk.faixa_de_preco?`<div class="ficha-kv"><dt>Faixa de preço</dt><dd>${Array.isArray(mk.faixa_de_preco)?mk.faixa_de_preco.map(esc).join(' '):esc(mk.faixa_de_preco)}</dd></div>`:''}
+          ${mk.formatos?`<div class="ficha-kv"><dt>Formatos</dt><dd>${esc(mk.formatos)}</dd></div>`:''}
+        </dl>
+      </section>`:''}
+
+      <footer class="ficha-foot">
+        <span>Ervatório · Ficha ${esc(f.nome_popular||'')} · v${esc(f.schema_version||'1.1')}</span>
+      </footer>
+    </article>`;
+  ov.classList.add('on');
 }
 
 function closeModal(e){

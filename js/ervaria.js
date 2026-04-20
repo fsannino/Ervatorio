@@ -423,6 +423,120 @@ const ervaria = {
     try { if (typeof renderShop === 'function' && document.getElementById('prodGrid')) renderShop(); } catch(_) {}
   },
 
+  // ── FICHAS EDITORIAIS ─────────────────────────────────────
+  // Cache em memória + localStorage para modo offline. A fonte
+  // da verdade é a tabela admin_herb_fichas no Supabase. Admin
+  // importa o conteúdo inicial via painel.
+  _fichaCache: {},
+
+  _normalizeLatin(lat) {
+    if (!lat) return '';
+    // "Mentha × piperita L." → "Mentha piperita"
+    return String(lat)
+      .replace(/×/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .split(' ')
+      .slice(0, 2)
+      .join(' ');
+  },
+
+  async loadFichaByLatin(latinName) {
+    const key = this._normalizeLatin(latinName);
+    if (!key) return null;
+    if (this._fichaCache[key]) return this._fichaCache[key];
+    // Cache local (offline)
+    try {
+      const raw = localStorage.getItem('erb_ficha_' + key);
+      if (raw) {
+        const cached = JSON.parse(raw);
+        this._fichaCache[key] = cached;
+      }
+    } catch(_) {}
+    if (!this.client) return this._fichaCache[key] || null;
+    try {
+      const { data, error } = await this.client
+        .from('admin_herb_fichas')
+        .select('slug,schema_version,ficha,updated_at')
+        .ilike('herb_latin_name', key + '%')
+        .eq('active', true)
+        .eq('status', 'published')
+        .order('schema_version', { ascending: false })
+        .limit(1);
+      if (error) throw error;
+      const row = Array.isArray(data) ? data[0] : data;
+      if (row?.ficha) {
+        this._fichaCache[key] = row.ficha;
+        try { localStorage.setItem('erb_ficha_' + key, JSON.stringify(row.ficha)); } catch(_) {}
+        return row.ficha;
+      }
+    } catch (e) {
+      console.warn('Ficha offline para', key, '—', e?.message || e);
+    }
+    return this._fichaCache[key] || null;
+  },
+
+  async loadFichaBySlug(slug) {
+    if (!slug) return null;
+    const memKey = '__slug:' + slug;
+    if (this._fichaCache[memKey]) return this._fichaCache[memKey];
+    if (!this.client) return null;
+    try {
+      const { data, error } = await this.client
+        .from('admin_herb_fichas')
+        .select('slug,schema_version,ficha,updated_at,herb_latin_name')
+        .eq('slug', slug)
+        .eq('active', true)
+        .eq('status', 'published')
+        .order('schema_version', { ascending: false })
+        .limit(1);
+      if (error) throw error;
+      const row = Array.isArray(data) ? data[0] : data;
+      if (row?.ficha) {
+        this._fichaCache[memKey] = row.ficha;
+        const latinKey = this._normalizeLatin(row.herb_latin_name);
+        if (latinKey) this._fichaCache[latinKey] = row.ficha;
+        return row.ficha;
+      }
+    } catch (e) {
+      console.warn('Ficha offline para slug', slug, '—', e?.message || e);
+    }
+    return null;
+  },
+
+  // Importa um payload {schema_version, fichas:[...]} no Supabase.
+  // Uso: admin seleciona um JSON e clica "Importar". Idempotente
+  // via UPSERT em (slug, schema_version).
+  async importFichas(payload) {
+    if (!this.client) throw new Error('Supabase indisponível');
+    if (!payload || !Array.isArray(payload.fichas)) {
+      throw new Error('Payload inválido: esperado { fichas: [...] }');
+    }
+    const schema = payload.schema_version || '1.1';
+    const rows = payload.fichas.map(f => ({
+      slug: f.slug,
+      herb_latin_name: (f.nome_cientifico || f.identificacao?.nome_cientifico || '')
+        .split('(')[0].trim().split(' ').slice(0, 2).join(' '),
+      schema_version: f.schema_version || schema,
+      ficha: f,
+      status: 'published',
+      active: true,
+    }));
+    const { data, error } = await this.client
+      .from('admin_herb_fichas')
+      .upsert(rows, { onConflict: 'slug,schema_version' })
+      .select('slug');
+    if (error) throw error;
+    // Limpa cache local para forçar refetch
+    this._fichaCache = {};
+    try {
+      Object.keys(localStorage)
+        .filter(k => k.startsWith('erb_ficha_'))
+        .forEach(k => localStorage.removeItem(k));
+    } catch(_) {}
+    return data || [];
+  },
+
   // ── UI METHODS ──────────────────────────────────────────
   updateAuthUI(loggedIn) {
     const btn = document.getElementById('ervaria-auth-btn');
