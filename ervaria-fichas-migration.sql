@@ -69,7 +69,26 @@ CREATE TRIGGER trg_herb_fichas_link BEFORE INSERT OR UPDATE ON public.admin_herb
 -- ============================================================
 -- Erva-Mate (ausente em admin_herbs) — inserida aqui para
 -- poder casar com a ficha "erva-mate" assim que ela for importada.
+-- Garante colunas opcionais antes do INSERT, para o caso desta
+-- migration rodar em instâncias que ainda não aplicaram
+-- ervaria-admin-migration.sql atualizado.
 -- ============================================================
+ALTER TABLE public.admin_herbs
+  ADD COLUMN IF NOT EXISTS linha TEXT,
+  ADD COLUMN IF NOT EXISTS tagline TEXT,
+  ADD COLUMN IF NOT EXISTS img TEXT;
+
+DO $$
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1 FROM pg_constraint WHERE conname = 'admin_herbs_linha_check'
+  ) THEN
+    ALTER TABLE public.admin_herbs
+      ADD CONSTRAINT admin_herbs_linha_check
+      CHECK (linha IS NULL OR linha IN ('Essencial','Global','Funcional'));
+  END IF;
+END$$;
+
 INSERT INTO public.admin_herbs (
   name, latin_name, icon, category, linha, tagline,
   effects, detail, safe_for, avoid_for,
