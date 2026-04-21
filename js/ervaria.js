@@ -24,6 +24,9 @@ const ervaria = {
           this.onLogout();
         }
       });
+      // Catálogo público: tentar hidratar mesmo sem login (RLS permite SELECT
+      // com active=TRUE). Falha silenciosa cai no fallback local/cache.
+      this.loadCatalog();
       const { data: { session } } = await this.client.auth.getSession();
       if (session?.user) {
         this.user = session.user;
@@ -34,6 +37,7 @@ const ervaria = {
       }
     } catch (e) {
       console.warn('Supabase offline:', e);
+      this._applyCatalogCache();
       this.updateAuthUI(false);
     }
   },
@@ -184,6 +188,8 @@ const ervaria = {
         perfilState.momentos = p.moment_pref ? [p.moment_pref] : perfilState.momentos;
         localStorage.setItem('erb_perfil', JSON.stringify(perfilState));
       }
+      // Receitas salvas
+      await this.syncRecipes();
       // Re-render
       renderHerbs();
       renderFavs();
@@ -223,9 +229,312 @@ const ervaria = {
     } catch (e) { console.error('Push perfil error:', e); }
   },
 
+  // ── SAVED RECIPES (blends) ────────────────────────────────
   async pushRecipe(recipe) {
-    // Recipes stay local for now (complex structure)
-    // Future: sync to tasting_journal
+    if (!this.isOnline || !recipe?.name) return;
+    try {
+      await this.client.from('saved_recipes').upsert({
+        user_id: this.user.id,
+        name: recipe.name,
+        tagline: recipe.tagline || null,
+        ingredients: recipe.ingredients || [],
+      }, { onConflict: 'user_id,name' });
+    } catch (e) { console.error('Push recipe error:', e); }
+  },
+  async deleteRecipeRemote(name) {
+    if (!this.isOnline || !name) return;
+    try {
+      await this.client.from('saved_recipes')
+        .delete()
+        .eq('user_id', this.user.id)
+        .eq('name', name);
+    } catch (e) { console.error('Delete recipe error:', e); }
+  },
+  async syncRecipes() {
+    if (!this.isOnline) return;
+    try {
+      const { data } = await this.client.from('saved_recipes')
+        .select('name,tagline,ingredients,updated_at')
+        .eq('user_id', this.user.id)
+        .order('updated_at', { ascending: false });
+      if (!data) return;
+      const cloud = data.map(r => ({
+        name: r.name, tagline: r.tagline || '', ingredients: r.ingredients || []
+      }));
+      const local = JSON.parse(localStorage.getItem('erb_recipes') || '[]');
+      const localByName = Object.fromEntries(local.map(r => [r.name, r]));
+      const cloudNames = new Set(cloud.map(r => r.name));
+      // Push local-only to cloud
+      const localOnly = local.filter(r => !cloudNames.has(r.name));
+      if (localOnly.length) {
+        await this.client.from('saved_recipes').upsert(
+          localOnly.map(r => ({
+            user_id: this.user.id,
+            name: r.name,
+            tagline: r.tagline || null,
+            ingredients: r.ingredients || [],
+          })),
+          { onConflict: 'user_id,name' }
+        );
+      }
+      // Merge cloud + local (cloud wins for duplicates)
+      const merged = [...cloud];
+      localOnly.forEach(r => merged.push(r));
+      if (typeof savedRecipes !== 'undefined') {
+        savedRecipes.length = 0;
+        Array.prototype.push.apply(savedRecipes, merged);
+      }
+      localStorage.setItem('erb_recipes', JSON.stringify(merged));
+      if (typeof renderFavs === 'function') renderFavs();
+    } catch (e) { console.error('Sync recipes error:', e); }
+  },
+
+  // ── CATALOG: hidrata HERBS / SUPPLIERS / PRODUCTS do Supabase ──
+  // Preserva ids locais por nome para não quebrar favoritos/carrinho
+  // salvos em localStorage. Em caso de falha (offline), usa os arrays
+  // embutidos no app.js ou o cache local.
+  async loadCatalog() {
+    if (!this.client) return this._applyCatalogCache();
+    try {
+      const [herbsRes, supRes, prodRes] = await Promise.all([
+        this.client.from('admin_herbs').select('*').eq('active', true),
+        this.client.from('admin_suppliers').select('*').eq('active', true),
+        this.client.from('admin_products').select('*').eq('active', true),
+      ]);
+      const hasAny = herbsRes.data?.length || supRes.data?.length || prodRes.data?.length;
+      if (!hasAny) return;
+      if (herbsRes.data?.length && typeof HERBS !== 'undefined') {
+        this._hydrateHerbs(herbsRes.data);
+      }
+      if (supRes.data?.length && typeof SUPPLIERS !== 'undefined') {
+        this._hydrateSuppliers(supRes.data);
+      }
+      if (prodRes.data?.length && typeof PRODUCTS !== 'undefined') {
+        this._hydrateProducts(prodRes.data);
+      }
+      // cache para modo offline (PWA)
+      try {
+        localStorage.setItem('erb_catalog_cache', JSON.stringify({
+          ts: Date.now(),
+          herbs: herbsRes.data || [],
+          suppliers: supRes.data || [],
+          products: prodRes.data || [],
+        }));
+      } catch(_) {}
+      this._rerenderAfterCatalog();
+      console.log('Ervaria: catalog hydrated from Supabase',
+        { herbs: herbsRes.data?.length, suppliers: supRes.data?.length, products: prodRes.data?.length });
+    } catch (e) {
+      console.warn('Catálogo offline — usando fallback local:', e?.message || e);
+      this._applyCatalogCache();
+    }
+  },
+
+  _applyCatalogCache() {
+    try {
+      const raw = localStorage.getItem('erb_catalog_cache');
+      if (!raw) return;
+      const cache = JSON.parse(raw);
+      if (cache.herbs?.length && typeof HERBS !== 'undefined') this._hydrateHerbs(cache.herbs);
+      if (cache.suppliers?.length && typeof SUPPLIERS !== 'undefined') this._hydrateSuppliers(cache.suppliers);
+      if (cache.products?.length && typeof PRODUCTS !== 'undefined') this._hydrateProducts(cache.products);
+      this._rerenderAfterCatalog();
+      console.log('Ervaria: catalog restored from local cache');
+    } catch (_) {}
+  },
+
+  _hydrateHerbs(rows) {
+    const byName = new Map(HERBS.map(h => [h.n, h.id]));
+    let next = Math.max(0, ...HERBS.map(h => h.id)) + 1;
+    const mapped = rows.map(r => {
+      const id = byName.has(r.name) ? byName.get(r.name) : next++;
+      return {
+        id,
+        dbId: r.id,
+        n: r.name,
+        lat: r.latin_name || '',
+        icon: r.icon || '🍃',
+        img: r.img || undefined,
+        tagline: r.tagline || '',
+        cat: r.category || '',
+        linha: r.linha || undefined,
+        ef: r.effects || '',
+        detail: r.detail || '',
+        safe: Array.isArray(r.safe_for) ? r.safe_for : [],
+        avoid: Array.isArray(r.avoid_for) ? r.avoid_for : [],
+        temp: r.temp || '',
+        tempo: r.brew_time || '',
+        dose: r.dose || '',
+        freq: r.frequency || '',
+        tags: Array.isArray(r.tags) ? r.tags : [],
+        momento: Array.isArray(r.momento) ? r.momento : [],
+      };
+    });
+    HERBS.length = 0;
+    Array.prototype.push.apply(HERBS, mapped);
+    // resetHerbCards() é declarada em app.js e invalida o cache do grid
+    if (typeof resetHerbCards === 'function') resetHerbCards();
+  },
+
+  _hydrateSuppliers(rows) {
+    const byName = new Map(SUPPLIERS.map(s => [s.name, s.id]));
+    let next = Math.max(0, ...SUPPLIERS.map(s => s.id)) + 1;
+    const mapped = rows.map(r => ({
+      id: byName.has(r.name) ? byName.get(r.name) : next++,
+      dbId: r.id,
+      name: r.name,
+      type: r.type || '',
+      city: r.city || '',
+      since: r.since || '',
+      cert: r.certification || '',
+      ship: r.shipping || '',
+      minOrder: r.min_order || '',
+      herbs: Array.isArray(r.herbs) ? r.herbs : [],
+      color: r.color || '#2d5a3a',
+    }));
+    SUPPLIERS.length = 0;
+    Array.prototype.push.apply(SUPPLIERS, mapped);
+  },
+
+  _hydrateProducts(rows) {
+    const byName = new Map(PRODUCTS.map(p => [p.name, p.id]));
+    let next = Math.max(0, ...PRODUCTS.map(p => p.id)) + 1;
+    const supByName = new Map(SUPPLIERS.map(s => [s.name, s.id]));
+    const mapped = rows.map(r => ({
+      id: byName.has(r.name) ? byName.get(r.name) : next++,
+      dbId: r.id,
+      name: r.name,
+      sup: r.supplier || '',
+      supId: supByName.get(r.supplier) || null,
+      icon: r.icon || '🍃',
+      cat: r.category || '',
+      price: typeof r.price === 'number' ? r.price : parseFloat(r.price) || 0,
+      unit: r.unit || '',
+      stock: r.stock || 'in',
+      img: r.image_url || undefined,
+    }));
+    PRODUCTS.length = 0;
+    Array.prototype.push.apply(PRODUCTS, mapped);
+  },
+
+  _rerenderAfterCatalog() {
+    try { if (typeof renderHerbs === 'function') renderHerbs(); } catch(_) {}
+    try { if (typeof renderSuppliers === 'function' && document.getElementById('supGrid')) renderSuppliers(); } catch(_) {}
+    try { if (typeof renderShop === 'function' && document.getElementById('prodGrid')) renderShop(); } catch(_) {}
+  },
+
+  // ── FICHAS EDITORIAIS ─────────────────────────────────────
+  // Cache em memória + localStorage para modo offline. A fonte
+  // da verdade é a tabela admin_herb_fichas no Supabase. Admin
+  // importa o conteúdo inicial via painel.
+  _fichaCache: {},
+
+  _normalizeLatin(lat) {
+    if (!lat) return '';
+    // "Mentha × piperita L." → "Mentha piperita"
+    return String(lat)
+      .replace(/×/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .split(' ')
+      .slice(0, 2)
+      .join(' ');
+  },
+
+  async loadFichaByLatin(latinName) {
+    const key = this._normalizeLatin(latinName);
+    if (!key) return null;
+    if (this._fichaCache[key]) return this._fichaCache[key];
+    // Cache local (offline)
+    try {
+      const raw = localStorage.getItem('erb_ficha_' + key);
+      if (raw) {
+        const cached = JSON.parse(raw);
+        this._fichaCache[key] = cached;
+      }
+    } catch(_) {}
+    if (!this.client) return this._fichaCache[key] || null;
+    try {
+      const { data, error } = await this.client
+        .from('admin_herb_fichas')
+        .select('slug,schema_version,ficha,updated_at')
+        .ilike('herb_latin_name', key + '%')
+        .eq('active', true)
+        .eq('status', 'published')
+        .order('schema_version', { ascending: false })
+        .limit(1);
+      if (error) throw error;
+      const row = Array.isArray(data) ? data[0] : data;
+      if (row?.ficha) {
+        this._fichaCache[key] = row.ficha;
+        try { localStorage.setItem('erb_ficha_' + key, JSON.stringify(row.ficha)); } catch(_) {}
+        return row.ficha;
+      }
+    } catch (e) {
+      console.warn('Ficha offline para', key, '—', e?.message || e);
+    }
+    return this._fichaCache[key] || null;
+  },
+
+  async loadFichaBySlug(slug) {
+    if (!slug) return null;
+    const memKey = '__slug:' + slug;
+    if (this._fichaCache[memKey]) return this._fichaCache[memKey];
+    if (!this.client) return null;
+    try {
+      const { data, error } = await this.client
+        .from('admin_herb_fichas')
+        .select('slug,schema_version,ficha,updated_at,herb_latin_name')
+        .eq('slug', slug)
+        .eq('active', true)
+        .eq('status', 'published')
+        .order('schema_version', { ascending: false })
+        .limit(1);
+      if (error) throw error;
+      const row = Array.isArray(data) ? data[0] : data;
+      if (row?.ficha) {
+        this._fichaCache[memKey] = row.ficha;
+        const latinKey = this._normalizeLatin(row.herb_latin_name);
+        if (latinKey) this._fichaCache[latinKey] = row.ficha;
+        return row.ficha;
+      }
+    } catch (e) {
+      console.warn('Ficha offline para slug', slug, '—', e?.message || e);
+    }
+    return null;
+  },
+
+  // Importa um payload {schema_version, fichas:[...]} no Supabase.
+  // Uso: admin seleciona um JSON e clica "Importar". Idempotente
+  // via UPSERT em (slug, schema_version).
+  async importFichas(payload) {
+    if (!this.client) throw new Error('Supabase indisponível');
+    if (!payload || !Array.isArray(payload.fichas)) {
+      throw new Error('Payload inválido: esperado { fichas: [...] }');
+    }
+    const schema = payload.schema_version || '1.1';
+    const rows = payload.fichas.map(f => ({
+      slug: f.slug,
+      herb_latin_name: (f.nome_cientifico || f.identificacao?.nome_cientifico || '')
+        .split('(')[0].trim().split(' ').slice(0, 2).join(' '),
+      schema_version: f.schema_version || schema,
+      ficha: f,
+      status: 'published',
+      active: true,
+    }));
+    const { data, error } = await this.client
+      .from('admin_herb_fichas')
+      .upsert(rows, { onConflict: 'slug,schema_version' })
+      .select('slug');
+    if (error) throw error;
+    // Limpa cache local para forçar refetch
+    this._fichaCache = {};
+    try {
+      Object.keys(localStorage)
+        .filter(k => k.startsWith('erb_ficha_'))
+        .forEach(k => localStorage.removeItem(k));
+    } catch(_) {}
+    return data || [];
   },
 
   // ── UI METHODS ──────────────────────────────────────────

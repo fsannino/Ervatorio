@@ -39,6 +39,28 @@ const HERBS = [
   {id:28,n:"Tomilho",lat:"Thymus vulgaris",icon:"🌿",tagline:"Antisséptico pulmonar e expectorante",cat:"Respiratório",ef:"Expectorante, antisséptico, tosse, bronquite",detail:"Timol: antisséptico pulmonar potente. Usado como xarope na Europa há séculos. Dissolve muco e desinfeta vias aéreas.",safe:["hipertensos"],avoid:["gestantes (doses altas)"],temp:"90°C",tempo:"8 min",dose:"1 col. sopa / 250ml",freq:"3x ao dia",tags:["tosse","expectorante","bronquite","antisséptico"],momento:["qualquer"]},
 ];
 
+// ── LINHAS ──
+// Classificação comercial da erva (linha de produto).
+// Essencial: tradicionais brasileiras de uso diário.
+// Global: importadas / reconhecidas mundialmente.
+// Funcional: nootrópicas, adaptogênicas e especiarias funcionais.
+const LINHAS = [
+  {id:'Essencial', label:'Essencial', color:'#6fa86a', desc:'Ervas tradicionais brasileiras de uso diário.'},
+  {id:'Global',    label:'Global',    color:'#6aa0d8', desc:'Ervas internacionais e chás finos reconhecidos mundialmente.'},
+  {id:'Funcional', label:'Funcional', color:'#d89a5a', desc:'Ervas funcionais, adaptógenos e especiarias bioativas.'},
+];
+
+const HERB_LINE_MAP = {
+  Essencial: [1,3,4,5,9,10,14,15,16,17,18,19,20,21,24,28],
+  Global:    [6,7,22,23,25,26,27],
+  Funcional: [2,8,11,12,13],
+};
+(function applyLinhas(){
+  for(const [linha, ids] of Object.entries(HERB_LINE_MAP)){
+    ids.forEach(id=>{ const h=HERBS.find(x=>x.id===id); if(h) h.linha=linha; });
+  }
+})();
+
 const SUPPLIERS = [
   {id:1,name:"Ervas & Raízes",type:"Produtor Orgânico",city:"São Paulo, SP",since:"2008",cert:"IBD Orgânico",ship:"Todo Brasil",minOrder:"R$ 80",herbs:["Camomila","Melissa","Erva Cidreira","Calêndula","Alfazema"],color:"#2d5a3a"},
   {id:2,name:"Casa das Plantas",type:"Ervateiro Tradicional",city:"Belo Horizonte, MG",since:"1992",cert:"Artesanal",ship:"Sul/Sudeste",minOrder:"R$ 50",herbs:["Boldo","Guaco","Carqueja","Arruda","Erva-doce"],color:"#4a3a1a"},
@@ -76,7 +98,7 @@ let favorites = safeLoad('erb_favs', []);
 let blendTray = safeLoad('erb_tray', []);
 let savedRecipes = safeLoad('erb_recipes', []);
 let cart = safeLoad('erb_cart', []);
-let activeFilters = {search:'',cat:'Todos',safe:'',avoid:'',momento:''};
+let activeFilters = {search:'',cat:'Todos',safe:'',avoid:'',momento:'',linha:''};
 let wizState = {sintomas:[],hora:'',sabor:''};
 let activeSup = 'Todos';
 let activeShopCat = 'Todos';
@@ -308,6 +330,7 @@ function updateWheelCenter(){
     activeFilters.cat&&activeFilters.cat!=='Todos',
     activeFilters.safe!=='',
     activeFilters.momento!=='',
+    activeFilters.linha!=='',
   ].filter(Boolean).length;
   const el=document.getElementById('wcCat');
   if(activeCount===0){ el.textContent='Toque\num anel'; el.style.fontSize='.55rem'; }
@@ -315,6 +338,7 @@ function updateWheelCenter(){
   // lines
   const parts=[];
   if(activeFilters.cat&&activeFilters.cat!=='Todos') parts.push(activeFilters.cat);
+  if(activeFilters.linha) parts.push(LINHAS.find(l=>l.id===activeFilters.linha)?.label||'');
   if(activeFilters.safe) parts.push(RING2.find(r=>r.id===activeFilters.safe)?.label||'');
   if(activeFilters.momento) parts.push(RING3.find(r=>r.id===activeFilters.momento)?.label||'');
   document.getElementById('wcSafe').textContent=parts.join(' + ');
@@ -331,6 +355,10 @@ function updateFilterContext(){
   if(activeFilters.cat&&activeFilters.cat!=='Todos'){
     const text=CAT_CONTEXT[activeFilters.cat]||'';
     if(text) lines.push({label:`Categoria: ${activeFilters.cat}`, text, color:'#c8a84b'});
+  }
+  if(activeFilters.linha){
+    const l=LINHAS.find(x=>x.id===activeFilters.linha);
+    if(l) lines.push({label:`Linha: ${l.label}`, text:l.desc, color:l.color});
   }
   if(activeFilters.safe){
     const text=SAFE_CONTEXT[activeFilters.safe]||'';
@@ -353,6 +381,7 @@ function buildLegend(){
   leg.innerHTML='';
   const rings=[
     {label:'Categoria',    color:'#c8a84b', active: activeFilters.cat&&activeFilters.cat!=='Todos' ? activeFilters.cat : null},
+    {label:'Linha',        color:'#b8854a', active: activeFilters.linha ? (LINHAS.find(l=>l.id===activeFilters.linha)?.label||null) : null},
     {label:'Segurança',    color:'#4a8a5a', active: activeFilters.safe ? (RING2.find(r=>r.id===activeFilters.safe)?.label||null) : null},
     {label:'Momento',      color:'#4a6a9a', active: activeFilters.momento ? (RING3.find(r=>r.id===activeFilters.momento)?.label||null) : null},
   ];
@@ -366,6 +395,7 @@ function buildLegend(){
       d.style.cursor='pointer';
       d.onclick=()=>{
         if(label==='Categoria') activeFilters.cat='Todos';
+        else if(label==='Linha') activeFilters.linha='';
         else if(label==='Segurança') activeFilters.safe='';
         else activeFilters.momento='';
         drawWheel(); buildFilters(); renderHerbs();
@@ -384,7 +414,7 @@ function toggleFilters(){
 }
 
 function clearAllFilters(){
-  activeFilters={search:'',cat:'Todos',safe:'',avoid:'',momento:''};
+  activeFilters={search:'',cat:'Todos',safe:'',avoid:'',momento:'',linha:''};
   document.getElementById('searchInput').value='';
   drawWheel(); buildFilters(); renderHerbs();
   toast('Filtros limpos');
@@ -406,6 +436,7 @@ function aplicarIntencao(intencao){
   activeFilters.cat = filtros.cat;
   activeFilters.safe = filtros.safe;
   activeFilters.momento = filtros.momento;
+  activeFilters.linha = '';
   if(filtros.search) document.getElementById('searchInput').value = filtros.search;
   drawWheel(); buildFilters(); renderHerbs();
   document.getElementById('herbGrid').scrollIntoView({behavior:'smooth',block:'start'});
@@ -427,6 +458,15 @@ function buildFilters(){
     b.className='fchip'+(activeFilters.cat===c?' on':'');
     b.textContent=c;
     b.onclick=()=>{ activeFilters.cat=c; drawWheel(); buildFilters(); renderHerbs(); };
+    row.appendChild(b);
+  });
+  addLabel('Linha','#b8854a');
+  LINHAS.forEach(l=>{
+    const b=document.createElement('button');
+    const isOn = activeFilters.linha===l.id;
+    b.className=`fchip fchip-linha linha-${l.id.toLowerCase()}`+(isOn?' on':'');
+    b.textContent=l.label;
+    b.onclick=()=>{ activeFilters.linha = activeFilters.linha===l.id?'':l.id; drawWheel(); buildFilters(); renderHerbs(); };
     row.appendChild(b);
   });
   addLabel('Momento do dia','#4a6a9a');
@@ -458,6 +498,7 @@ function filterHerbs(herbs, query, filters){
     const txt = (h.n+h.lat+h.ef+h.tags.join(' ')).toLowerCase();
     if(query && !txt.includes(query)) return false;
     if(filters.cat!=='Todos' && h.cat!==filters.cat) return false;
+    if(filters.linha && h.linha!==filters.linha) return false;
     if(filters.momento && !(h.momento||[]).includes(filters.momento)) return false;
     if(filters.safe==='gestantes' && !h.safe.includes('gestantes')) return false;
     if(filters.safe==='hipertensos' && !h.safe.includes('hipertensos')) return false;
@@ -470,6 +511,7 @@ function filterHerbs(herbs, query, filters){
 }
 
 let _herbCardsBuilt = false;
+function resetHerbCards(){ _herbCardsBuilt = false; }
 
 function buildHerbCards(){
   if(_herbCardsBuilt) return;
@@ -489,6 +531,7 @@ function buildHerbCards(){
       <div class="hc-effect">${esc(h.ef)}</div>
       <div class="hc-tags">
         <span class="htag htag-cat">${esc(h.cat)}</span>
+        ${h.linha?`<span class="htag htag-linha linha-${h.linha.toLowerCase()}">${esc(h.linha)}</span>`:''}
         ${(h.momento||[]).map(m=>{const mo=RING3.find(r=>r.id===m); return mo?`<span class="htag" style="background:${mo.color}22;border:0.5px solid ${mo.color}44;color:${mo.color}">${esc(mo.label)}</span>`:''}).join('')}
         ${h.safe.slice(0,1).map(s=>`<span class="htag htag-safe">✓ ${esc(s)}</span>`).join('')}
         ${h.avoid.length?`<span class="htag htag-warn">⚠ ${esc(h.avoid[0])}</span>`:''}
@@ -513,7 +556,7 @@ function renderHerbs(){
   });
   // Update count summary
   let countEl = grid.querySelector('.herb-count');
-  const hasFilter = activeFilters.cat!=='Todos'||activeFilters.safe||activeFilters.momento||q;
+  const hasFilter = activeFilters.cat!=='Todos'||activeFilters.safe||activeFilters.momento||activeFilters.linha||q;
   if(!countEl){ countEl=document.createElement('div'); countEl.className='herb-count'; countEl.style.cssText='font-size:.75rem;color:var(--muted);margin-bottom:.75rem;grid-column:1/-1'; grid.prepend(countEl); }
   countEl.textContent = hasFilter ? `${visibleIds.size} de ${HERBS.length} ervas` : '';
   countEl.style.display = hasFilter ? '' : 'none';
@@ -538,6 +581,7 @@ function openHerbModal(id){
     <div class="modal-herb-name">${esc(h.n)}</div>
     ${h.tagline ? `<div class="modal-tagline">${esc(h.tagline)}</div>` : ''}
     <div class="modal-latin">${esc(h.lat)}</div>
+    ${h.linha?`<div class="modal-linha"><span class="htag htag-linha linha-${h.linha.toLowerCase()}">Linha ${esc(h.linha)}</span></div>`:''}
     <div class="modal-section">
       <div class="modal-label">Sobre</div>
       <div class="modal-text">${esc(h.detail)}</div>
@@ -553,12 +597,236 @@ function openHerbModal(id){
     </div>
     ${h.avoid.length?`<div class="warn-box">⚠ Contraindicações: ${h.avoid.map(a=>esc(a)).join(', ')}</div>`:''}
     ${h.safe.length?`<div class="safe-box">✓ Seguro para: ${h.safe.map(s=>esc(s)).join(', ')}</div>`:''}
+    <div id="modalFichaSlot"></div>
     <div style="display:flex;gap:8px;margin-top:1rem">
       <button class="add-blend-btn" style="flex:1" onclick="addToTray(${h.id})">${inTray?'✓ No Blend':'+ Adicionar ao Blend'}</button>
       <button class="add-blend-btn" style="flex:1;background:rgba(200,168,75,.15)" onclick="openTimer(${h.id})">⏱ Preparar agora</button>
     </div>
   `;
   document.getElementById('herbModal').classList.add('on');
+  loadFichaForHerb(h);
+}
+
+// Busca a ficha editorial do Supabase (via ervaria) e injeta um
+// botão "Ver ficha completa" quando disponível.
+async function loadFichaForHerb(h){
+  const slot = document.getElementById('modalFichaSlot');
+  if(!slot || typeof ervaria==='undefined') return;
+  try {
+    const ficha = await ervaria.loadFichaByLatin(h.lat);
+    if(!ficha || slot.dataset.herbId===String(h.id)) return;
+    slot.dataset.herbId = String(h.id);
+    slot.innerHTML = `
+      <button class="ficha-cta" onclick="openFicha('${esc(ficha.slug||'')}')">
+        Ver ficha completa
+        <span class="ficha-cta-arrow">→</span>
+      </button>`;
+  } catch(_) {}
+}
+
+let _currentFicha = null;
+async function openFicha(slug){
+  if(typeof ervaria==='undefined') return;
+  let ficha = null;
+  try { ficha = await ervaria.loadFichaBySlug(slug); } catch(_) {}
+  if(!ficha){ toast('Ficha indisponível'); return; }
+  _currentFicha = ficha;
+  renderFichaModal(ficha);
+}
+
+function closeFicha(){
+  const ov = document.getElementById('fichaOverlay');
+  if(ov) ov.classList.remove('on');
+  _currentFicha = null;
+}
+
+function renderFichaModal(f){
+  let ov = document.getElementById('fichaOverlay');
+  if(!ov){
+    ov = document.createElement('div');
+    ov.id = 'fichaOverlay';
+    ov.className = 'ficha-overlay';
+    ov.onclick = (e)=>{ if(e.target===ov) closeFicha(); };
+    document.body.appendChild(ov);
+  }
+  const id = f.identificacao || {};
+  const car = f.caracterizacao || {};
+  const pr = f.preparo || {};
+  const ps = f.perfil_sensorial || {};
+  const ac = f.acoes_e_seguranca || {};
+  const cu = f.cultura || {};
+  const rg = f.regulacao || {};
+  const mk = f.marketplace || {};
+  const listMaybe = (v) => Array.isArray(v) ? v.map(x=>`<li>${esc(x)}</li>`).join('') : (v?`<li>${esc(v)}</li>`:'');
+  const paragraphs = (v) => Array.isArray(v) ? v.map(x=>`<p>${esc(x)}</p>`).join('') : (v?`<p>${esc(v)}</p>`:'');
+  const dlList = (arr, keyA='label', keyB='texto') => Array.isArray(arr)
+    ? arr.map(x=>`<div class="ficha-kv"><dt>${esc(x[keyA])}</dt><dd>${esc(x[keyB])}</dd></div>`).join('')
+    : '';
+  const gustativo = Array.isArray(ps.gustativo) ? ps.gustativo : [];
+  const trig = Array.isArray(ps.trigeminal) ? ps.trigeminal : [];
+  const evid = Array.isArray(ac.evidencia) ? ac.evidencia : [];
+
+  ov.innerHTML = `
+    <article class="ficha-card" role="dialog" aria-label="Ficha ${esc(f.nome_popular||'')}">
+      <button class="ficha-close" onclick="closeFicha()" aria-label="Fechar">✕</button>
+
+      <header class="ficha-hero">
+        <h1 class="ficha-title">${esc(f.nome_popular||'')}</h1>
+        <div class="ficha-latin">${esc(f.nome_cientifico||'')}</div>
+        ${f.tagline?`<blockquote class="ficha-tagline">${esc(f.tagline)}</blockquote>`:''}
+        ${Array.isArray(f.destaques)&&f.destaques.length?`
+          <ul class="ficha-destaques">
+            ${f.destaques.map(d=>`<li><strong>${esc(d.label)}</strong> ${esc(d.texto)}</li>`).join('')}
+          </ul>`:''}
+      </header>
+
+      ${ac.alerta_critico?`
+        <section class="ficha-alert" role="alert">
+          <div class="ficha-alert-title">⚠ ${esc(ac.alerta_critico.titulo||'Alerta crítico')}</div>
+          ${ac.alerta_critico.titulo2?`<div class="ficha-alert-sub">${esc(ac.alerta_critico.titulo2)}</div>`:''}
+          <div class="ficha-alert-body">${esc(ac.alerta_critico.corpo||'')}</div>
+        </section>`:''}
+
+      <section class="ficha-section">
+        <h2>Identificação</h2>
+        <dl class="ficha-dl">
+          ${id.nome_cientifico?`<div class="ficha-kv"><dt>Nome científico</dt><dd><em>${esc(id.nome_cientifico)}</em></dd></div>`:''}
+          ${id.familia_botanica?`<div class="ficha-kv"><dt>Família</dt><dd>${esc(id.familia_botanica)}</dd></div>`:''}
+          ${id.tipo_botanico?`<div class="ficha-kv"><dt>Tipo</dt><dd>${esc(id.tipo_botanico)}</dd></div>`:''}
+          ${id.parte_usada?`<div class="ficha-kv"><dt>Parte usada</dt><dd>${esc(id.parte_usada)}</dd></div>`:''}
+        </dl>
+        ${Array.isArray(id.sinonimos)&&id.sinonimos.length?`
+          <div class="ficha-sub">Sinônimos</div>
+          <ul class="ficha-bullets">${listMaybe(id.sinonimos)}</ul>`:''}
+      </section>
+
+      <section class="ficha-section">
+        <h2>Caracterização</h2>
+        <dl class="ficha-dl">
+          ${car.sabor_dominante?`<div class="ficha-kv"><dt>Sabor</dt><dd>${esc(car.sabor_dominante)}</dd></div>`:''}
+          ${car.aroma?`<div class="ficha-kv"><dt>Aroma</dt><dd>${esc(car.aroma)}</dd></div>`:''}
+          ${car.cor_da_infusao?`<div class="ficha-kv"><dt>Cor da infusão</dt><dd>${esc(car.cor_da_infusao)}</dd></div>`:''}
+          ${car.intensidade?`<div class="ficha-kv"><dt>Intensidade</dt><dd>${esc(car.intensidade)}</dd></div>`:''}
+          ${car.notas?`<div class="ficha-kv"><dt>Notas</dt><dd>${esc(car.notas)}</dd></div>`:''}
+          ${car.bioma_de_origem?`<div class="ficha-kv"><dt>Bioma</dt><dd>${esc(car.bioma_de_origem)}</dd></div>`:''}
+        </dl>
+        ${Array.isArray(car.distribuicao_geografica)&&car.distribuicao_geografica.length?`
+          <div class="ficha-sub">Distribuição geográfica</div>
+          <ul class="ficha-bullets">${listMaybe(car.distribuicao_geografica)}</ul>`:''}
+      </section>
+
+      <section class="ficha-section">
+        <h2>Preparo</h2>
+        <dl class="ficha-dl">
+          ${pr.temperatura_ideal?`<div class="ficha-kv"><dt>Temperatura</dt><dd>${esc(pr.temperatura_ideal)}</dd></div>`:''}
+          ${pr.tempo_de_infusao?`<div class="ficha-kv"><dt>Tempo de infusão</dt><dd>${esc(pr.tempo_de_infusao)}</dd></div>`:''}
+          ${pr.quantidade?`<div class="ficha-kv"><dt>Quantidade</dt><dd>${esc(pr.quantidade)}</dd></div>`:''}
+          ${pr.metodo?`<div class="ficha-kv"><dt>Método</dt><dd>${esc(pr.metodo)}</dd></div>`:''}
+          ${pr.reinfusoes?`<div class="ficha-kv"><dt>Reinfusões</dt><dd>${esc(pr.reinfusoes)}</dd></div>`:''}
+          ${pr.melhor_momento?`<div class="ficha-kv"><dt>Melhor momento</dt><dd>${esc(pr.melhor_momento)}</dd></div>`:''}
+          ${pr.combina_com?`<div class="ficha-kv"><dt>Combina com</dt><dd>${esc(pr.combina_com)}</dd></div>`:''}
+        </dl>
+        ${f.preparo_ritual?`
+          <div class="ficha-sub">${esc(f.preparo_ritual.titulo||'Preparo cerimonial')}</div>
+          <p>${esc(f.preparo_ritual.texto||'')}</p>`:''}
+      </section>
+
+      ${f.usos_topicos?`
+      <section class="ficha-section">
+        <h2>Usos tópicos</h2>
+        ${f.usos_topicos.evidencia?`<p><strong>Evidência:</strong> ${esc(f.usos_topicos.evidencia)}</p>`:''}
+        ${Array.isArray(f.usos_topicos.aplicacoes)?f.usos_topicos.aplicacoes.map(a=>`
+          <div class="ficha-sub">${esc(a.titulo||'')}</div>
+          <p>${esc(a.texto||'')}</p>`).join(''):''}
+        ${f.usos_topicos.contraindicacoes?`<p class="ficha-warn-inline">${esc(f.usos_topicos.contraindicacoes)}</p>`:''}
+      </section>`:''}
+
+      <section class="ficha-section">
+        <h2>Ações e segurança</h2>
+        ${Array.isArray(ac.acoes_principais)&&ac.acoes_principais.length?`
+          <div class="ficha-sub">Ações principais</div>
+          <ul class="ficha-bullets">${listMaybe(ac.acoes_principais)}</ul>`:''}
+        ${Array.isArray(ac.componentes_ativos)&&ac.componentes_ativos.length?`
+          <div class="ficha-sub">Componentes ativos</div>
+          <dl class="ficha-dl">${dlList(ac.componentes_ativos)}</dl>`:''}
+        ${evid.length?`
+          <div class="ficha-sub">Indicações com evidência</div>
+          <table class="ficha-table">
+            <caption>Evidência clínica e populacional</caption>
+            <thead><tr><th>Indicação</th><th>Evidência</th><th>População</th></tr></thead>
+            <tbody>${evid.map(e=>`<tr><td>${esc(e.indicacao)}</td><td>${esc(e.evidencia)}</td><td>${esc(e.populacao)}</td></tr>`).join('')}</tbody>
+          </table>`:''}
+        ${Array.isArray(ac.contraindicacoes)&&ac.contraindicacoes.length?`
+          <div class="ficha-sub">Contraindicações</div>
+          <ul class="ficha-bullets">${listMaybe(ac.contraindicacoes)}</ul>`:''}
+        ${Array.isArray(ac.interacoes)&&ac.interacoes.length?`
+          <div class="ficha-sub">Interações</div>
+          <dl class="ficha-dl">${dlList(ac.interacoes)}</dl>`:''}
+        ${ac.efeitos_adversos?`<div class="ficha-sub">Efeitos adversos</div><p>${esc(ac.efeitos_adversos)}</p>`:''}
+        ${ac.dose_maxima?`<div class="ficha-sub">Dose máxima</div><p>${esc(ac.dose_maxima)}</p>`:''}
+        ${Array.isArray(ac.fontes)&&ac.fontes.length?`
+          <div class="ficha-sub">Fontes</div>
+          <ul class="ficha-bullets ficha-sources">${listMaybe(ac.fontes)}</ul>`:''}
+      </section>
+
+      <section class="ficha-section">
+        <h2>Perfil sensorial</h2>
+        ${gustativo.length?`
+          <table class="ficha-table">
+            <caption>Perfil gustativo</caption>
+            <thead><tr><th>Dimensão</th><th>Intensidade</th><th>Observação</th></tr></thead>
+            <tbody>${gustativo.map(g=>`<tr><td>${esc(g.dimensao)}</td><td>${esc(g.intensidade)}</td><td>${esc(g.observacao)}</td></tr>`).join('')}</tbody>
+          </table>`:''}
+        ${ps.olfativo_familia?`<div class="ficha-sub">Olfativo — ${esc(ps.olfativo_familia)}</div>`:''}
+        ${Array.isArray(ps.olfativo_descritores)&&ps.olfativo_descritores.length?`
+          <ul class="ficha-bullets">${listMaybe(ps.olfativo_descritores)}</ul>`:''}
+        ${trig.length?`
+          <table class="ficha-table">
+            <caption>Perfil trigeminal</caption>
+            <thead><tr><th>Receptor</th><th>Ativação</th><th>Molécula</th></tr></thead>
+            <tbody>${trig.map(t=>`<tr><td>${esc(t.receptor)}</td><td>${esc(t.ativacao)}</td><td>${esc(t.molecula)}</td></tr>`).join('')}</tbody>
+          </table>`:''}
+        ${ps.tatil?`<div class="ficha-sub">Tátil</div><p>${esc(ps.tatil)}</p>`:''}
+        ${ps.descricao_integrada?`<blockquote class="ficha-pullquote">${esc(ps.descricao_integrada)}</blockquote>`:''}
+      </section>
+
+      <section class="ficha-section">
+        <h2>Cultura</h2>
+        ${cu.historia?`<div class="ficha-sub">História</div>${paragraphs(cu.historia)}`:''}
+        ${cu.cerimonial?`<div class="ficha-sub">Cerimonial</div><p>${esc(cu.cerimonial)}</p>`:''}
+        ${cu.brasil?`<div class="ficha-sub">No Brasil</div>${paragraphs(cu.brasil)}`:''}
+        ${cu.curiosidade?`<blockquote class="ficha-pullquote">${esc(cu.curiosidade)}</blockquote>`:''}
+      </section>
+
+      <section class="ficha-section">
+        <h2>Regulação e origem</h2>
+        <dl class="ficha-dl">
+          ${rg.eixo_botanico_tpc?`<div class="ficha-kv"><dt>Eixo botânico</dt><dd>${esc(rg.eixo_botanico_tpc)}</dd></div>`:''}
+          ${rg.status_anvisa?`<div class="ficha-kv"><dt>ANVISA</dt><dd>${Array.isArray(rg.status_anvisa)?rg.status_anvisa.map(esc).join(' '):esc(rg.status_anvisa)}</dd></div>`:''}
+          ${rg.status_ema?`<div class="ficha-kv"><dt>EMA</dt><dd>${esc(rg.status_ema)}</dd></div>`:''}
+          ${rg.status_fda?`<div class="ficha-kv"><dt>FDA</dt><dd>${esc(rg.status_fda)}</dd></div>`:''}
+          ${rg.certificacao_organica?`<div class="ficha-kv"><dt>Certificação orgânica</dt><dd>${Array.isArray(rg.certificacao_organica)?rg.certificacao_organica.map(esc).join(' '):esc(rg.certificacao_organica)}</dd></div>`:''}
+          ${rg.sazonalidade?`<div class="ficha-kv"><dt>Sazonalidade</dt><dd>${Array.isArray(rg.sazonalidade)?rg.sazonalidade.map(esc).join(' '):esc(rg.sazonalidade)}</dd></div>`:''}
+        </dl>
+      </section>
+
+      ${mk && (mk.fornecedores||mk.faixa_de_preco||mk.formatos)?`
+      <section class="ficha-section ficha-section-mute">
+        <h2>Marketplace</h2>
+        <p class="ficha-mute">Reservado — preencher quando o marketplace do Ervatório for ativado.</p>
+        <dl class="ficha-dl">
+          ${mk.disponivel_a_venda?`<div class="ficha-kv"><dt>Disponível</dt><dd>${esc(mk.disponivel_a_venda)}</dd></div>`:''}
+          ${mk.fornecedores?`<div class="ficha-kv"><dt>Fornecedores</dt><dd>${esc(mk.fornecedores)}</dd></div>`:''}
+          ${mk.faixa_de_preco?`<div class="ficha-kv"><dt>Faixa de preço</dt><dd>${Array.isArray(mk.faixa_de_preco)?mk.faixa_de_preco.map(esc).join(' '):esc(mk.faixa_de_preco)}</dd></div>`:''}
+          ${mk.formatos?`<div class="ficha-kv"><dt>Formatos</dt><dd>${esc(mk.formatos)}</dd></div>`:''}
+        </dl>
+      </section>`:''}
+
+      <footer class="ficha-foot">
+        <span>Ervatório · Ficha ${esc(f.nome_popular||'')} · v${esc(f.schema_version||'1.1')}</span>
+      </footer>
+    </article>`;
+  ov.classList.add('on');
 }
 
 function closeModal(e){
@@ -605,7 +873,13 @@ function renderFavs(){
   } else { sr.innerHTML=''; }
 }
 
-function deleteSavedRecipe(i){ savedRecipes.splice(i,1); localStorage.setItem('erb_recipes',JSON.stringify(savedRecipes)); renderFavs(); }
+function deleteSavedRecipe(i){
+  const removed=savedRecipes[i];
+  savedRecipes.splice(i,1);
+  localStorage.setItem('erb_recipes',JSON.stringify(savedRecipes));
+  if(removed && typeof ervaria!=='undefined') ervaria.deleteRecipeRemote(removed.name);
+  renderFavs();
+}
 
 // ── BLEND TRAY ──
 function addToTray(id){
@@ -803,8 +1077,10 @@ function saveRecipe(name){
   const sintoma=wizState.sintomas[0]||'default';
   const rec=BLEND_DB[sintoma]||BLEND_DB['default'];
   if(savedRecipes.find(r=>r.name===rec.name)){ toast('Blend já foi salvo!'); return; }
-  savedRecipes.unshift({name:rec.name,tagline:rec.tagline,ingredients:rec.ings});
+  const entry={name:rec.name,tagline:rec.tagline,ingredients:rec.ings};
+  savedRecipes.unshift(entry);
   localStorage.setItem('erb_recipes',JSON.stringify(savedRecipes));
+  if(typeof ervaria!=='undefined') ervaria.pushRecipe(entry);
   toast('Blend salvo nos favoritos!');
   document.querySelector('.save-recipe-btn').innerHTML='✓ Salvo <span class="saved-tag">✓</span>';
 }

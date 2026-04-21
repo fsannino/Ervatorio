@@ -47,6 +47,9 @@ CREATE TABLE IF NOT EXISTS public.admin_herbs (
   latin_name TEXT,
   icon TEXT DEFAULT '🍃',
   category TEXT NOT NULL,
+  linha TEXT CHECK (linha IN ('Essencial','Global','Funcional')),
+  tagline TEXT,
+  img TEXT,
   effects TEXT,
   detail TEXT,
   safe_for TEXT[] DEFAULT '{}',
@@ -62,6 +65,25 @@ CREATE TABLE IF NOT EXISTS public.admin_herbs (
   created_at TIMESTAMPTZ DEFAULT NOW(),
   updated_at TIMESTAMPTZ DEFAULT NOW()
 );
+
+-- Migração idempotente para instâncias já existentes
+ALTER TABLE public.admin_herbs
+  ADD COLUMN IF NOT EXISTS linha TEXT,
+  ADD COLUMN IF NOT EXISTS tagline TEXT,
+  ADD COLUMN IF NOT EXISTS img TEXT;
+
+DO $$
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1 FROM pg_constraint WHERE conname = 'admin_herbs_linha_check'
+  ) THEN
+    ALTER TABLE public.admin_herbs
+      ADD CONSTRAINT admin_herbs_linha_check
+      CHECK (linha IS NULL OR linha IN ('Essencial','Global','Funcional'));
+  END IF;
+END$$;
+
+CREATE INDEX IF NOT EXISTS idx_admin_herbs_linha ON public.admin_herbs(linha);
 
 -- 5. RLS — somente admins podem gerenciar
 ALTER TABLE public.admin_news ENABLE ROW LEVEL SECURITY;
@@ -98,6 +120,41 @@ DROP TRIGGER IF EXISTS trg_products_updated ON public.admin_products;
 CREATE TRIGGER trg_products_updated BEFORE UPDATE ON public.admin_products FOR EACH ROW EXECUTE FUNCTION update_updated_at();
 DROP TRIGGER IF EXISTS trg_herbs_updated ON public.admin_herbs;
 CREATE TRIGGER trg_herbs_updated BEFORE UPDATE ON public.admin_herbs FOR EACH ROW EXECUTE FUNCTION update_updated_at();
+
+-- ============================================================
+-- RECEITAS SALVAS (blends do usuário)
+-- ============================================================
+CREATE TABLE IF NOT EXISTS public.saved_recipes (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+  name TEXT NOT NULL,
+  tagline TEXT,
+  ingredients JSONB NOT NULL DEFAULT '[]'::jsonb,
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW(),
+  UNIQUE(user_id, name)
+);
+
+ALTER TABLE public.saved_recipes ENABLE ROW LEVEL SECURITY;
+
+DROP POLICY IF EXISTS "recipes_owner_read" ON public.saved_recipes;
+CREATE POLICY "recipes_owner_read" ON public.saved_recipes FOR SELECT
+  USING (auth.uid() = user_id);
+DROP POLICY IF EXISTS "recipes_owner_insert" ON public.saved_recipes;
+CREATE POLICY "recipes_owner_insert" ON public.saved_recipes FOR INSERT
+  WITH CHECK (auth.uid() = user_id);
+DROP POLICY IF EXISTS "recipes_owner_update" ON public.saved_recipes;
+CREATE POLICY "recipes_owner_update" ON public.saved_recipes FOR UPDATE
+  USING (auth.uid() = user_id);
+DROP POLICY IF EXISTS "recipes_owner_delete" ON public.saved_recipes;
+CREATE POLICY "recipes_owner_delete" ON public.saved_recipes FOR DELETE
+  USING (auth.uid() = user_id);
+
+DROP TRIGGER IF EXISTS trg_recipes_updated ON public.saved_recipes;
+CREATE TRIGGER trg_recipes_updated BEFORE UPDATE ON public.saved_recipes
+  FOR EACH ROW EXECUTE FUNCTION update_updated_at();
+
+CREATE INDEX IF NOT EXISTS idx_saved_recipes_user ON public.saved_recipes(user_id);
 
 -- IMPORTANTE: Defina seu usuário como admin executando:
 -- UPDATE public.user_profiles SET is_admin = TRUE WHERE email = 'SEU_EMAIL_AQUI';

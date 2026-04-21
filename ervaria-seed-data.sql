@@ -94,6 +94,22 @@ CREATE POLICY "suppliers_admin_all" ON public.admin_suppliers FOR ALL
 DROP TRIGGER IF EXISTS trg_suppliers_updated ON public.admin_suppliers;
 CREATE TRIGGER trg_suppliers_updated BEFORE UPDATE ON public.admin_suppliers FOR EACH ROW EXECUTE FUNCTION update_updated_at();
 
+-- ═══ LINHA (classificação comercial) ═══
+-- Popula a coluna `linha` para as 28 ervas (Essencial / Global / Funcional).
+-- Seguro para rodar múltiplas vezes.
+
+UPDATE public.admin_herbs SET linha='Essencial' WHERE name IN (
+  'Camomila','Maracujá','Melissa','Gengibre','Hortelã','Erva-doce','Boldo',
+  'Alcachofra','Guaco','Capim-Limão','Folha de Amora','Erva Cidreira',
+  'Espinheira Santa','Carqueja','Calêndula','Tomilho'
+);
+UPDATE public.admin_herbs SET linha='Global' WHERE name IN (
+  'Chá Verde','Hibisco','Rooibos','Ashwagandha','Ginkgo Biloba','Hibisco Azul','Guaraná'
+);
+UPDATE public.admin_herbs SET linha='Funcional' WHERE name IN (
+  'Valeriana','Canela','Cúrcuma','Alecrim','Alfazema'
+);
+
 -- ═══ SEED FORNECEDORES (6) ═══
 INSERT INTO public.admin_suppliers (name, type, city, since, certification, shipping, min_order, herbs, color) VALUES
 ('Ervas & Raízes','Produtor Orgânico','São Paulo, SP','2008','IBD Orgânico','Todo Brasil','R$ 80','{"Camomila","Melissa","Erva Cidreira","Calêndula","Alfazema"}','#2d5a3a'),

@@ -63,6 +63,7 @@ function showSection(id){
   if(id==='products')loadProducts();
   if(id==='news')loadNews();
   if(id==='suppliers')loadSuppliers();
+  if(id==='fichas')loadFichasAdmin();
 }
 
 // ── TOAST ──
@@ -137,9 +138,10 @@ function filterHerbsAdmin(){
 function renderHerbsAdmin(list){
   const tbody=document.getElementById('herbsBody');
   if(!list.length){tbody.innerHTML='<tr><td colspan="6" style="text-align:center;color:var(--adm-muted);padding:2rem">Nenhum chá cadastrado. Clique em "+ Novo chá" para começar.</td></tr>';return;}
+  const linhaColor={Essencial:'green',Global:'gold',Funcional:'red'};
   tbody.innerHTML=list.map(h=>`<tr>
     <td>${h.icon||'🍃'} <strong>${esc(h.name)}</strong><br><span style="color:var(--adm-muted);font-size:.72rem;font-style:italic">${esc(h.latin_name||'')}</span></td>
-    <td><span class="adm-badge gold">${esc(h.category)}</span></td>
+    <td><span class="adm-badge gold">${esc(h.category)}</span>${h.linha?` <span class="adm-badge ${linhaColor[h.linha]||'gold'}" style="margin-left:4px">${esc(h.linha)}</span>`:''}</td>
     <td style="font-size:.78rem;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(h.effects||'')}</td>
     <td>${h.active?'<span class="adm-badge green">Ativo</span>':'<span class="adm-badge red">Inativo</span>'}</td>
     <td style="font-size:.72rem;color:var(--adm-muted)">${h.created_at?new Date(h.created_at).toLocaleDateString('pt-BR'):''}</td>
@@ -157,6 +159,8 @@ function openHerbForm(herb){
   document.getElementById('hfLatin').value=herb?.latin_name||'';
   document.getElementById('hfIcon').value=herb?.icon||'🍃';
   document.getElementById('hfCategory').value=herb?.category||'Calmante';
+  document.getElementById('hfLinha').value=herb?.linha||'';
+  document.getElementById('hfTagline').value=herb?.tagline||'';
   document.getElementById('hfEffects').value=herb?.effects||'';
   document.getElementById('hfDetail').value=herb?.detail||'';
   document.getElementById('hfTemp').value=herb?.temp||'';
@@ -178,6 +182,8 @@ async function saveHerb(){
     latin_name:document.getElementById('hfLatin').value.trim()||null,
     icon:document.getElementById('hfIcon').value.trim()||'🍃',
     category:document.getElementById('hfCategory').value,
+    linha:document.getElementById('hfLinha').value||null,
+    tagline:document.getElementById('hfTagline').value.trim()||null,
     effects:document.getElementById('hfEffects').value.trim()||null,
     detail:document.getElementById('hfDetail').value.trim()||null,
     temp:document.getElementById('hfTemp').value.trim()||null,
@@ -396,6 +402,125 @@ async function deleteSupplier(id,name){
   if(!confirm(`Excluir "${name}"?`))return;
   await sb.from('admin_suppliers').delete().eq('id',id);
   admToast('Fornecedor excluído');loadSuppliers();loadDashboard();
+}
+
+// ══════════════════════════════════════
+// FICHAS EDITORIAIS
+// ══════════════════════════════════════
+let allFichas=[];
+async function loadFichasAdmin(){
+  const {data,error}=await sb.from('admin_herb_fichas')
+    .select('id,slug,schema_version,herb_latin_name,status,active,updated_at,ficha')
+    .order('updated_at',{ascending:false});
+  if(error){admToast('Erro ao carregar fichas: '+error.message);return;}
+  allFichas=data||[];
+  renderFichasAdmin(allFichas);
+}
+function renderFichasAdmin(list){
+  const tbody=document.getElementById('fichasBody');
+  if(!list.length){
+    tbody.innerHTML='<tr><td colspan="7" style="text-align:center;color:var(--adm-muted);padding:2rem">Nenhuma ficha cadastrada. Use "⇪ Importar JSON" para carregar o catálogo inicial ou "+ Nova ficha" para criar uma.</td></tr>';
+    return;
+  }
+  const statusLabels={draft:'Rascunho',in_review:'Em revisão',published:'Publicado',archived:'Arquivada'};
+  const statusColor={draft:'gold',in_review:'gold',published:'green',archived:'red'};
+  tbody.innerHTML=list.map(f=>`<tr>
+    <td><code style="font-size:.8rem">${esc(f.slug)}</code></td>
+    <td>${esc(f.ficha?.nome_popular||'')}</td>
+    <td style="font-style:italic;font-size:.8rem">${esc(f.herb_latin_name||f.ficha?.nome_cientifico||'')}</td>
+    <td><span class="adm-badge gold">v${esc(f.schema_version||'1.1')}</span></td>
+    <td>${f.active?`<span class="adm-badge ${statusColor[f.status]||'gold'}">${esc(statusLabels[f.status]||f.status)}</span>`:'<span class="adm-badge red">Inativa</span>'}</td>
+    <td style="font-size:.72rem;color:var(--adm-muted)">${f.updated_at?new Date(f.updated_at).toLocaleDateString('pt-BR'):''}</td>
+    <td style="white-space:nowrap">
+      <button class="adm-btn" onclick="editFicha('${esc(f.id)}')">Editar</button>
+      <button class="adm-btn danger" onclick="deleteFicha('${esc(f.id)}','${esc(f.slug)}')">Excluir</button>
+    </td>
+  </tr>`).join('');
+}
+function openFichaForm(ficha){
+  const m=document.getElementById('fichaModal');
+  document.getElementById('fichaFormTitle').textContent=ficha?'Editar ficha':'Nova ficha';
+  document.getElementById('ffId').value=ficha?.id||'';
+  document.getElementById('ffSlug').value=ficha?.slug||'';
+  document.getElementById('ffVersion').value=ficha?.schema_version||'1.1';
+  document.getElementById('ffLatin').value=ficha?.herb_latin_name||'';
+  document.getElementById('ffStatus').value=ficha?.status||'published';
+  document.getElementById('ffActive').checked=ficha?.active!==false;
+  document.getElementById('ffJson').value=ficha?.ficha?JSON.stringify(ficha.ficha,null,2):'';
+  document.getElementById('ffJsonMsg').textContent='';
+  m.classList.add('on');
+}
+function editFicha(id){openFichaForm(allFichas.find(f=>f.id===id));}
+function closeFichaForm(){document.getElementById('fichaModal').classList.remove('on');}
+function validateFichaJson(){
+  const msg=document.getElementById('ffJsonMsg');
+  const raw=document.getElementById('ffJson').value.trim();
+  if(!raw){msg.style.color='var(--adm-muted)';msg.textContent='Vazio';return null;}
+  try{
+    const obj=JSON.parse(raw);
+    msg.style.color='#3a8a5a';msg.textContent=`JSON válido (${Object.keys(obj).length} chaves).`;
+    return obj;
+  }catch(e){
+    msg.style.color='#c86060';msg.textContent='JSON inválido: '+e.message;
+    return null;
+  }
+}
+async function saveFicha(){
+  const id=document.getElementById('ffId').value;
+  const slug=document.getElementById('ffSlug').value.trim();
+  if(!slug){admToast('Slug obrigatório');return;}
+  const ficha=validateFichaJson();
+  if(!ficha){admToast('Corrija o JSON antes de salvar');return;}
+  const row={
+    slug,
+    schema_version:document.getElementById('ffVersion').value.trim()||'1.1',
+    herb_latin_name:document.getElementById('ffLatin').value.trim()||null,
+    status:document.getElementById('ffStatus').value,
+    active:document.getElementById('ffActive').checked,
+    ficha,
+  };
+  let error;
+  if(id){({error}=await sb.from('admin_herb_fichas').update(row).eq('id',id));}
+  else{row.created_by=admUser.id;({error}=await sb.from('admin_herb_fichas').upsert(row,{onConflict:'slug,schema_version'}));}
+  if(error){admToast('Erro: '+error.message);return;}
+  closeFichaForm();admToast(id?'Ficha atualizada':'Ficha salva');loadFichasAdmin();
+}
+async function deleteFicha(id,slug){
+  if(!confirm(`Excluir ficha "${slug}"? Essa ação é irreversível.`))return;
+  const {error}=await sb.from('admin_herb_fichas').delete().eq('id',id);
+  if(error){admToast('Erro: '+error.message);return;}
+  admToast('Ficha excluída');loadFichasAdmin();
+}
+
+// Importa um arquivo JSON contendo { schema_version, fichas: [...] }
+// e UPSERTa cada ficha em admin_herb_fichas (idempotente).
+async function importFichasFile(input){
+  const file=input.files?.[0];
+  if(!file)return;
+  input.value='';
+  let payload;
+  try{
+    const text=await file.text();
+    payload=JSON.parse(text);
+  }catch(e){admToast('Arquivo inválido: '+e.message);return;}
+  if(!Array.isArray(payload.fichas)){admToast('JSON deve ter array "fichas"');return;}
+  if(!confirm(`Importar ${payload.fichas.length} ficha(s)? Existentes (mesmo slug+versão) serão atualizadas.`))return;
+  const schema=payload.schema_version||'1.1';
+  const rows=payload.fichas.map(f=>({
+    slug:f.slug,
+    herb_latin_name:(f.nome_cientifico||f.identificacao?.nome_cientifico||'').split('(')[0].trim().split(' ').slice(0,2).join(' '),
+    schema_version:f.schema_version||schema,
+    ficha:f,
+    status:'published',
+    active:true,
+    created_by:admUser.id,
+  }));
+  const {data,error}=await sb.from('admin_herb_fichas')
+    .upsert(rows,{onConflict:'slug,schema_version'})
+    .select('slug');
+  if(error){admToast('Erro ao importar: '+error.message);return;}
+  admToast(`${data?.length||rows.length} ficha(s) importada(s)`);
+  loadFichasAdmin();
 }
 
 // ── UTILS ──
