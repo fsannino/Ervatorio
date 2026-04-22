@@ -1293,7 +1293,17 @@ function drawRoda(){
   if(!cv)return;
   const ctx=cv.getContext('2d');
   const W=340,CX=W/2,CY=W/2,R=162,IR=38;
+  // Ajuste retina: canvas em alta resolução com CSS mantendo tamanho lógico
+  const dpr=Math.min(window.devicePixelRatio||1,3);
+  if(cv.width!==W*dpr){
+    cv.width=W*dpr; cv.height=W*dpr;
+    cv.style.width=W+'px'; cv.style.height=W+'px';
+  }
+  ctx.setTransform(dpr,0,0,dpr,0,0);
   ctx.clearRect(0,0,W,W);
+  // Suavização de texto
+  ctx.imageSmoothingEnabled=true;
+  if('imageSmoothingQuality' in ctx) ctx.imageSmoothingQuality='high';
   const slices=RODA_DATA[rodaActiveLayer];
   const cols=RODA_COLORS_MAP[rodaActiveLayer];
   const n=slices.length, arc=2*Math.PI/n, start=-Math.PI/2;
@@ -1308,11 +1318,16 @@ function drawRoda(){
     const mA=a0+arc/2, lr=(R+IR)/2;
     const lx=CX+lr*Math.cos(mA), ly=CY+lr*Math.sin(mA);
     ctx.save(); ctx.translate(lx,ly); ctx.rotate(mA+Math.PI/2);
-    ctx.fillStyle=sel?'#f0d98a':hov?'#e6c96e':'rgba(235,225,205,.8)';
-    ctx.font=`${sel?'500':'400'} ${n>7?'9':'10'}px Jost,sans-serif`; ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillStyle=sel?'#f5dd95':hov?'#ead083':'rgba(245,235,215,.92)';
+    const fs = n>8 ? 11 : n>6 ? 12 : 13;
+    ctx.font=`${sel?'600':'500'} ${fs}px 'Jost',system-ui,sans-serif`;
+    ctx.textAlign='center'; ctx.textBaseline='middle';
+    // Sombra sutil para contraste sobre as fatias
+    ctx.shadowColor='rgba(0,0,0,.45)'; ctx.shadowBlur=2; ctx.shadowOffsetY=.5;
     const parts=s.name.split(' ');
-    if(parts.length>1){ctx.fillText(parts[0],0,-5.5);ctx.fillText(parts.slice(1).join(' '),0,5.5);}
+    if(parts.length>1){ctx.fillText(parts[0],0,-fs*0.6);ctx.fillText(parts.slice(1).join(' '),0,fs*0.6);}
     else ctx.fillText(s.name,0,0);
+    ctx.shadowColor='transparent'; ctx.shadowBlur=0; ctx.shadowOffsetY=0;
     ctx.restore();
   });
   // outer glow ring
@@ -1373,11 +1388,18 @@ function renderRodaPanel(slice){
       </div>
     </div>
     <div style="font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem">Ervas recomendadas</div>
-    ${slice.herbs.map(h=>`
-      <div class="roda-herb-item" onclick="findHerbAndOpen('${h.n}')">
-        <div class="roda-herb-icon">${h.icon}</div>
-        <div><div class="roda-herb-name">${h.n}</div><div class="roda-herb-ef">${h.ef}</div></div>
-      </div>`).join('')}
+    ${slice.herbs.map(h=>{
+      const match=HERBS.find(x=>x.n===h.n);
+      const img=match&&match.img;
+      const visual=img
+        ? `<img class="roda-herb-img" src="${img}" alt="${esc(h.n)}" loading="lazy" onerror="this.outerHTML='<div class=\\'roda-herb-icon\\'>${h.icon}</div>'">`
+        : `<div class="roda-herb-icon">${h.icon}</div>`;
+      return `
+      <div class="roda-herb-item" onclick="findHerbAndOpen('${esc(h.n)}')">
+        ${visual}
+        <div><div class="roda-herb-name">${esc(h.n)}</div><div class="roda-herb-ef">${esc(h.ef)}</div></div>
+      </div>`;
+    }).join('')}
     <div class="roda-combo">
       <div class="roda-combo-title">Combinações</div>
       ${slice.combo.map(c=>`<span class="roda-combo-chip">☕ ${c}</span>`).join('')}
@@ -1696,8 +1718,11 @@ function renderCtrHerbs(){
   const el=document.getElementById('ctrHerbList'); if(!el)return;
   el.innerHTML=list.map(h=>{
     const inB=ctrBlend.some(b=>b.id===h.id);
+    const visual = h.img
+      ? `<img class="ctr-herb-row-img" src="${h.img}" alt="${esc(h.n)}" loading="lazy" onerror="this.outerHTML='<div class=\\'ctr-herb-row-icon\\'>${h.icon}</div>'">`
+      : `<div class="ctr-herb-row-icon">${h.icon}</div>`;
     return `<div class="ctr-herb-row ${inB?'in-blend':''}" onclick="toggleCtrHerb(${h.id})">
-      <div class="ctr-herb-row-icon">${h.icon}</div>
+      ${visual}
       <div style="flex:1;min-width:0"><div class="ctr-herb-row-name">${esc(h.n)}</div><div class="ctr-herb-row-cat">${esc(h.cat)}</div></div>
       <button class="ctr-herb-add">${inB?'✓':'+'}</button>
     </div>`;
