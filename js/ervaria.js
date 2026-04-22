@@ -345,6 +345,10 @@ const ervaria = {
 
   _hydrateHerbs(rows) {
     const byName = new Map(HERBS.map(h => [h.n, h.id]));
+    // Fallback: imagens mapeadas localmente em app.js por nome. Usado quando
+    // o Supabase não tem a coluna img preenchida (seed antigo / registros
+    // novos do admin sem upload de imagem), para não perder as fotos locais.
+    const localImgByName = new Map(HERBS.filter(h => h.img).map(h => [h.n, h.img]));
     let next = Math.max(0, ...HERBS.map(h => h.id)) + 1;
     const mapped = rows.map(r => {
       const id = byName.has(r.name) ? byName.get(r.name) : next++;
@@ -354,7 +358,7 @@ const ervaria = {
         n: r.name,
         lat: r.latin_name || '',
         icon: r.icon || '🍃',
-        img: r.img || undefined,
+        img: r.img || localImgByName.get(r.name) || undefined,
         tagline: r.tagline || '',
         cat: r.category || '',
         linha: r.linha || undefined,
