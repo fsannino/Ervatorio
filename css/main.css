@@ -152,6 +152,9 @@ nav{position:sticky;top:0;z-index:100;background:var(--nav-bg);backdrop-filter:b
 .auth-msg{text-align:center;font-size:.75rem;min-height:18px;margin-top:10px}
 .auth-msg.ok{color:#80c890}
 .auth-msg.err{color:#e08080}
+.auth-guest{margin-top:14px;padding-top:12px;border-top:0.5px solid var(--faint);text-align:center}
+.auth-guest .auth-link{margin-top:0;color:var(--cream2);font-size:.72rem}
+.auth-guest .auth-link:hover{color:var(--gold)}
 
 /* PROFILE MENU */
 .profile-menu{position:fixed;top:54px;right:12px;background:var(--bg2);border:0.5px solid rgba(200,168,75,.2);border-radius:var(--r-lg);box-shadow:var(--shadow);z-index:501;min-width:210px;overflow:hidden;animation:fadeUp .2s ease}
