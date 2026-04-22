@@ -1148,7 +1148,6 @@ function renderShop(){
 function renderProds(){
   const list=PRODUCTS.filter(p=>activeShopCat==='Todos'||p.cat===activeShopCat);
   document.getElementById('prodGrid').innerHTML=list.map(p=>{
-    const inCart=cart.some(c=>c.id===p.id);
     return `<div class="prod-card">
       <div class="prod-img">${p.icon}</div>
       <div class="prod-body">
@@ -1157,7 +1156,7 @@ function renderProds(){
         <div class="prod-price">R$ ${p.price.toFixed(2)} <span class="prod-unit">${esc(p.unit)}</span></div>
         <div class="prod-footer">
           <span class="stock-badge ${p.stock==='in'?'in-stock':'low-stock'}">${p.stock==='in'?'Em estoque':'Últimas unidades'}</span>
-          <button class="add-cart ${inCart?'added':''}" onclick="addCart(${p.id})">${inCart?'✓ No carrinho':'+ Carrinho'}</button>
+          <button class="add-cart" disabled style="opacity:.55;cursor:not-allowed" title="Seção em desenvolvimento">Em breve</button>
         </div>
       </div>
     </div>`;
@@ -1176,7 +1175,8 @@ function addCart(id){
 
 function updateCartCount(){
   const total=cart.reduce((s,c)=>s+c.qty,0);
-  document.getElementById('cartCount').textContent=total?`(${total})`:'';
+  const el=document.getElementById('cartCount');
+  if(el) el.textContent=total?`(${total})`:'';
 }
 
 function openCart(){
