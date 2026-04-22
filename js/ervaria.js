@@ -562,6 +562,11 @@ const ervaria = {
     document.getElementById('authOverlay').classList.remove('on');
     document.body.style.overflow = '';
   },
+  continueWithoutLogin() {
+    this.hideAuthModal();
+    if (typeof hideLanding === 'function') hideLanding();
+    try { localStorage.setItem('erb_entered', '1'); } catch(e){}
+  },
   switchTab(tab) {
     document.getElementById('formLogin').style.display = tab === 'login' ? 'block' : 'none';
     document.getElementById('formSignup').style.display = tab === 'signup' ? 'block' : 'none';
