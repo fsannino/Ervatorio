@@ -4,6 +4,9 @@
 -- ============================================================
 -- Execute no Supabase Dashboard > SQL Editor
 -- Popula as tabelas com os 28 chás e 16 produtos existentes
+--
+-- Para também popular a coluna admin_herbs.img (adicionada depois
+-- deste seed), execute em seguida ervaria-herbs-img-migration.sql.
 -- ============================================================
 
 -- ═══ CHÁS E INFUSÕES (28) ═══
