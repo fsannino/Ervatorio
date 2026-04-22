@@ -378,6 +378,12 @@
     }
   };
 
+  // Aliases esperados pelo diagnóstico de produção e pelo hash handler.
+  // Os nomes canônicos (renderIndiceCatalogo / renderBibliotecaBlends) permanecem
+  // para compatibilidade com goPage() em app.js.
+  window.renderErvatorio = window.renderIndiceCatalogo;
+  window.renderBlends = window.renderBibliotecaBlends;
+
   window.executarRecomendacao = async function() {
     var results = document.getElementById('rodaFuncResults');
     if (!results) return;
