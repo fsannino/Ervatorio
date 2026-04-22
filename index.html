@@ -172,11 +172,10 @@
   </div>
   <div class="nav-tabs">
     <button class="nav-tab on" onclick="goPage('search',this)">Busca</button>
-    <button class="nav-tab" onclick="goPage('roda',this)">Roda</button>
+    <button class="nav-tab" onclick="goPage('sabores',this)">Sabores</button>
     <button class="nav-tab" onclick="goPage('criarblend',this)">Criar Blend</button>
     <button class="nav-tab" onclick="goPage('chas',this)">Chás Tradicionais</button>
     <button class="nav-tab" onclick="goPage('mundo',this)">Chás do Mundo</button>
-    <button class="nav-tab" onclick="goPage('cerimonia',this)">Cerimônia</button>
     <button class="nav-tab" onclick="goPage('favs',this)">Favoritos</button>
     <button class="nav-tab" onclick="goPage('suppliers',this)">Fornecedores</button>
     <button class="nav-tab" onclick="goPage('marketplace',this)">Marketplace</button>
@@ -409,19 +408,36 @@
   <div class="cha-tabs" id="chaTabs"></div>
   <div class="cha-detail" id="chaDetail"></div>
 
-  <!-- Roda de Sabores -->
-  <div style="margin-top:2rem;padding-top:1.5rem;border-top:0.5px solid var(--faint)">
-    <div id="flavorWheelContainer"></div>
+  <!-- Cerimônia do Chá integrada -->
+  <div style="margin-top:2.5rem;padding-top:1.5rem;border-top:0.5px solid var(--faint)">
+    <div class="sec-title" style="margin-bottom:.2rem">Cerimônia do Chá</div>
+    <div class="sec-sub">Arte, ritual e meditação em cada xícara</div>
+    <div class="cer-tabs" id="cerTabs"></div>
+    <div class="cer-content" id="cerContent"></div>
   </div>
 </div>
 
-<!-- CERIMÔNIA DO CHÁ PAGE -->
-<div class="page" id="page-cerimonia">
-  <div class="sec-title">Cerimônia do Chá</div>
-  <div class="sec-sub">Arte, ritual e meditação em cada xícara</div>
+<!-- SABORES — Hub com Roda dos Chás + Guia Sensorial -->
+<div class="page" id="page-sabores">
+  <div class="sec-title">Sabores</div>
+  <div class="sec-sub">Explore os chás por vetor terapêutico e por perfil sensorial</div>
+  <div class="sabores-hub">
+    <div class="sabores-card" onclick="goPage('roda',this)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')goPage('roda',this)">
+      <div class="sabores-card-icon">☯</div>
+      <div class="sabores-card-title">Roda dos Chás</div>
+      <div class="sabores-card-desc">Navegue por sintoma, sistema, momento ou sabor e receba ervas recomendadas.</div>
+    </div>
+    <div class="sabores-card" onclick="goPage('guia-sensorial',this)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')goPage('guia-sensorial',this)">
+      <div class="sabores-card-icon">🍵</div>
+      <div class="sabores-card-title">Guia Sensorial</div>
+      <div class="sabores-card-desc">Roda de Sabores do Provador — descritores aromáticos e perfis por tipo de chá.</div>
+    </div>
+  </div>
+</div>
 
-  <div class="cer-tabs" id="cerTabs"></div>
-  <div class="cer-content" id="cerContent"></div>
+<!-- GUIA SENSORIAL — Roda de Sabores do Provador -->
+<div class="page" id="page-guia-sensorial">
+  <div id="flavorWheelContainer"></div>
 </div>
 
 <!-- MARKETPLACE PAGE -->

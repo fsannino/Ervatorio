@@ -991,4 +991,15 @@ select.pc-input option{background:var(--bg2);color:var(--cream)}
 #page-ficha,
 #page-blends,
 #page-blend,
-#page-roda-funcional{min-height:80vh}
+#page-roda-funcional,
+#page-sabores,
+#page-guia-sensorial{min-height:80vh}
+
+/* SABORES HUB */
+.sabores-hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:1.25rem}
+.sabores-card{background:var(--bg2);border:0.5px solid var(--faint);border-radius:var(--r-lg);padding:1.5rem 1.25rem;cursor:pointer;transition:all .2s;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px}
+.sabores-card:hover{border-color:rgba(200,168,75,.4);background:rgba(200,168,75,.04);transform:translateY(-2px)}
+.sabores-card:focus{outline:none;border-color:var(--gold)}
+.sabores-card-icon{font-size:2.2rem;color:var(--gold2);line-height:1}
+.sabores-card-title{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--gold2);font-weight:400}
+.sabores-card-desc{color:var(--cream2);font-size:.82rem;line-height:1.5;max-width:28ch}
