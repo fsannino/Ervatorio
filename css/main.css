@@ -981,3 +981,11 @@ select.pc-input option{background:var(--bg2);color:var(--cream)}
 .ev-rec-tagline{font-size:.75rem;color:var(--cream2);margin-top:1px}
 .ev-rec-score{font-size:.7rem;color:var(--muted);margin-top:2px}
 .ev-rec-alert-badge{display:inline-block;font-size:.65rem;color:#c05040;background:rgba(180,90,60,.12);padding:1px 6px;border-radius:var(--r-sm);margin-top:3px}
+
+/* Evita colapso visual das páginas v1.1 quando render assíncrono ainda
+   não retornou ou quando o conteúdo cabe em menos que um viewport. */
+#page-ervatorio,
+#page-ficha,
+#page-blends,
+#page-blend,
+#page-roda-funcional{min-height:80vh}
