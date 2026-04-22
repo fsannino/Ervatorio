@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ervatorio-v9';
+const CACHE_NAME = 'ervatorio-v10';
 const OFFLINE_URL = '/';
 
 const PRECACHE_ASSETS = [
@@ -10,6 +10,8 @@ const PRECACHE_ASSETS = [
   '/js/geo-data.js',
   '/js/flavor-wheel.js',
   '/js/ervaria.js',
+  '/js/ervatorio-data.js',
+  '/js/ervatorio-pages.js',
   '/icon-192.png',
   '/icon-512.png',
   '/icon-maskable-512.png',

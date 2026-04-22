@@ -1934,12 +1934,13 @@ function saveBlendFromCtr(){
 
 // ── override goPage to handle all pages ──
 // Pages accessible without login
-const PUBLIC_PAGES = ['search'];
+const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend'];
 
-function goPage(id,btn){
+function goPage(id,btn,slug){
   // Gate: require login for non-public pages
+  const baseId = id.split('/')[0];
   const isLoggedIn = (window.ervaria && ervaria.user) || localStorage.getItem('erb_auth');
-  if(!PUBLIC_PAGES.includes(id) && !isLoggedIn){
+  if(!PUBLIC_PAGES.includes(baseId) && !isLoggedIn){
     ervaria.showAuthModal();
     return;
   }
@@ -1957,7 +1958,38 @@ function goPage(id,btn){
   if(id==='cerimonia')initCerimonia();
   if(id==='marketplace')initMkt();
   if(id==='mundo')initMundo();
+  // Ervatorio v1.1 pages
+  if(id==='ervatorio' && typeof renderIndiceCatalogo==='function') renderIndiceCatalogo();
+  if(id==='ficha' && slug && typeof renderFichaPage==='function') renderFichaPage(slug);
+  if(id==='blends' && typeof renderBibliotecaBlends==='function') renderBibliotecaBlends();
+  if(id==='blend' && slug && typeof renderBlendPage==='function') renderBlendPage(slug);
+  if(id==='roda-funcional' && typeof renderRodaFuncional==='function') renderRodaFuncional();
 }
+
+// Hash route handler for parameterized Ervatorio v1.1 routes
+(function(){
+  function handleHash(){
+    var hash = window.location.hash || '';
+    var m;
+    if((m = hash.match(/^#ficha\/([a-z0-9-]+)$/))) {
+      goPage('ficha', null, m[1]);
+    } else if((m = hash.match(/^#blend\/([a-z0-9-]+)$/))) {
+      goPage('blend', null, m[1]);
+    } else if(hash === '#ervatorio') {
+      goPage('ervatorio');
+    } else if(hash === '#blends') {
+      goPage('blends');
+    } else if(hash === '#roda-funcional') {
+      goPage('roda-funcional');
+    }
+  }
+  window.addEventListener('hashchange', handleHash);
+  // Handle initial load with hash
+  if(window.location.hash && /^#(ficha|blend|ervatorio|blends|roda-funcional)/.test(window.location.hash)){
+    // Delay to ensure DOM and scripts are ready
+    setTimeout(handleHash, 300);
+  }
+})();
 
 function switchBlendTab(tab){
   const assist=document.getElementById('blendPanelAssist');

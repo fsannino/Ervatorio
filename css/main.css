@@ -920,3 +920,64 @@ select.pc-input option{background:var(--bg2);color:var(--cream)}
   .ficha-kv dt{padding-top:0;margin-bottom:2px}
   .ficha-overlay{padding:.75rem .5rem}
 }
+
+/* ═══ ERVATORIO v1.1 PAGES ═══ */
+.ev-loading{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem}
+.ev-empty{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem}
+.ev-error{text-align:center;padding:2rem;color:#c05040;font-size:.85rem}
+.ev-muted{color:var(--muted);font-size:.85rem;font-style:italic}
+
+/* Ficha/Blend cards in grid */
+.ev-ficha-card,.ev-blend-card{display:flex;flex-direction:column;gap:4px}
+.ev-card-nome{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold2);font-weight:400}
+.ev-card-latin{font-size:.75rem;color:var(--muted);font-style:italic}
+.ev-card-tagline{font-size:.78rem;color:var(--cream2);line-height:1.4;margin-top:2px}
+.ev-card-eixo{font-size:.68rem;color:var(--gold);background:rgba(200,168,75,.1);padding:2px 8px;border-radius:var(--r-sm);display:inline-block;margin-top:4px}
+.ev-card-ervas{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.ev-erva-tag{font-size:.68rem;color:var(--cream2);background:var(--bg3);padding:2px 6px;border-radius:var(--r-sm);border:0.5px solid var(--faint)}
+
+/* Ficha page (full page, not modal) */
+.ficha-page-article{max-width:720px;margin:0 auto}
+
+/* Produtos grid */
+.ev-produtos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.ev-produto-card{background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);padding:12px;display:flex;flex-direction:column;gap:3px}
+.ev-produto-nome{font-size:.88rem;color:var(--cream);font-weight:500}
+.ev-produto-marca{font-size:.75rem;color:var(--muted)}
+.ev-produto-cert{font-size:.7rem;color:var(--gold);margin-top:2px}
+.ev-produto-origem{font-size:.7rem;color:var(--muted);font-style:italic}
+.ev-produto-preco{font-size:.85rem;color:var(--gold2);font-weight:500;margin-top:4px}
+
+/* Blend links */
+.ev-blends-list{display:flex;flex-direction:column;gap:6px}
+.ev-blend-link{cursor:pointer;padding:8px 12px;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-md);transition:border-color .2s}
+.ev-blend-link:hover{border-color:rgba(200,168,75,.25)}
+.ev-blend-nome{color:var(--gold2);font-size:.88rem}
+.ev-blend-prop{color:var(--muted);font-size:.78rem}
+
+/* Blend content */
+.ev-blend-content{font-size:.85rem;color:var(--cream2);line-height:1.6}
+.ev-blend-content h2,.ev-blend-content h3,.ev-blend-content h4{font-family:'Cormorant Garamond',serif;color:var(--gold2);margin:1rem 0 .5rem;font-weight:400}
+.ev-blend-content ul{margin:.5rem 0;padding-left:1.2rem}
+.ev-blend-content li{margin-bottom:.25rem}
+
+/* Roda Funcional */
+.ev-checkbox-grid{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:1rem}
+.ev-checkbox{display:flex;align-items:center;gap:5px;font-size:.82rem;color:var(--cream2);cursor:pointer;padding:4px 10px;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-sm);transition:border-color .2s}
+.ev-checkbox:hover{border-color:rgba(200,168,75,.25)}
+.ev-checkbox input[type="checkbox"]{accent-color:var(--gold)}
+.ev-roda-restricoes{margin-top:1rem}
+.ev-roda-btn{background:var(--gold);color:var(--bg);border:none;padding:10px 24px;border-radius:var(--r-md);font-size:.88rem;font-family:'Jost',sans-serif;cursor:pointer;margin-top:1rem;transition:opacity .2s}
+.ev-roda-btn:hover{opacity:.85}
+
+/* Recommendation results */
+.ev-roda-results{display:flex;flex-direction:column;gap:8px}
+.ev-rec-card{display:flex;align-items:center;gap:12px;padding:12px;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);cursor:pointer;transition:border-color .2s}
+.ev-rec-card:hover{border-color:rgba(200,168,75,.25)}
+.ev-rec-card.ev-rec-alerta{border-color:rgba(180,90,60,.4);background:rgba(180,90,60,.06)}
+.ev-rec-rank{width:28px;height:28px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(200,168,75,.15);color:var(--gold2);font-size:.82rem;font-weight:600;flex-shrink:0}
+.ev-rec-info{flex:1;min-width:0}
+.ev-rec-nome{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold2)}
+.ev-rec-tagline{font-size:.75rem;color:var(--cream2);margin-top:1px}
+.ev-rec-score{font-size:.7rem;color:var(--muted);margin-top:2px}
+.ev-rec-alert-badge{display:inline-block;font-size:.65rem;color:#c05040;background:rgba(180,90,60,.12);padding:1px 6px;border-radius:var(--r-sm);margin-top:3px}
