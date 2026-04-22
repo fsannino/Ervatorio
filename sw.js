@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ervatorio-v12';
+const CACHE_NAME = 'ervatorio-v13';
 const OFFLINE_URL = '/';
 
 const PRECACHE_ASSETS = [
@@ -38,7 +38,13 @@ const PRECACHE_ASSETS = [
   '/images/produtos/calendula.png',
   '/images/produtos/rooibos.png',
   '/images/produtos/guarana.png',
-  '/images/produtos/tomilho.jpg'
+  '/images/produtos/tomilho.jpg',
+  '/images/produtos/alcachofra.png',
+  '/images/produtos/guaco.png',
+  '/images/produtos/erva-cidreira.png',
+  '/images/produtos/carqueja.png',
+  '/images/produtos/ginkgo-biloba.png',
+  '/images/produtos/ashwagandha.png'
 ];
 
 // Google Fonts to cache with stale-while-revalidate
