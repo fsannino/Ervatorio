@@ -1934,7 +1934,7 @@ function saveBlendFromCtr(){
 
 // ── override goPage to handle all pages ──
 // Pages accessible without login
-const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend'];
+const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend','sabores','guia-sensorial','roda'];
 
 // Esconde a landing e expõe o container do app. Idempotente.
 // Usado por goPage() e pelo hash handler para que deep links
@@ -1947,6 +1947,8 @@ function hideLanding(){
 }
 
 function goPage(id,btn,slug){
+  // Cerimônia foi integrada em #page-chas — redireciona deep links antigos.
+  if(id==='cerimonia') id='chas';
   // Gate: require login for non-public pages
   const baseId = id.split('/')[0];
   const isLoggedIn = (window.ervaria && ervaria.user) || localStorage.getItem('erb_auth');
@@ -1965,8 +1967,8 @@ function goPage(id,btn,slug){
   if(id==='roda')window.initRoda();
   if(id==='perfil')renderPerfil();
   if(id==='criarblend'){buildWizard();buildCtrFilters();renderCtrHerbs();renderCtrBlend();renderTray();}
-  if(id==='chas'){initChas();if(typeof initFlavorWheel==='function')initFlavorWheel();}
-  if(id==='cerimonia')initCerimonia();
+  if(id==='chas'){initChas();initCerimonia();}
+  if(id==='guia-sensorial'&&typeof initFlavorWheel==='function')initFlavorWheel();
   if(id==='marketplace')initMkt();
   if(id==='mundo')initMundo();
   // Ervatorio v1.1 pages

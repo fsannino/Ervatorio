@@ -89,6 +89,8 @@ const FLAVOR_CATS = [
   },
 ];
 
+// Perfis sensoriais por tipo — Camellia sinensis + Rooibos (infusão próxima).
+// Camomila, hibisco e hortelã foram removidos: são infusões herbais, não chás.
 const FLAVOR_TEA_TYPES = [
   {name:"Chá Verde",color:"#5DBB63",notes:"Vegetal, Herbáceo, Marinho, Doce suave"},
   {name:"Chá Branco",color:"#DDA0DD",notes:"Floral, Mel, Frutado leve, Delicado"},
@@ -96,9 +98,6 @@ const FLAVOR_TEA_TYPES = [
   {name:"Oolong",color:"#CC7722",notes:"Floral, Frutado, Torrado, Mel"},
   {name:"Pu-erh",color:"#6B4C3B",notes:"Terroso, Amadeirado, Cogumelo, Defumado"},
   {name:"Rooibos",color:"#E8803A",notes:"Doce, Baunilha, Especiarias, Terroso"},
-  {name:"Camomila",color:"#F0C040",notes:"Floral, Mel, Doce, Suave"},
-  {name:"Hibisco",color:"#E84060",notes:"Cítrico/Ácido, Frutado, Floral"},
-  {name:"Hortelã",color:"#40C870",notes:"Herbáceo, Fresco, Mentolado"},
 ];
 
 // ── SVG geometry helpers ──
