@@ -1936,6 +1936,16 @@ function saveBlendFromCtr(){
 // Pages accessible without login
 const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend'];
 
+// Esconde a landing e expõe o container do app. Idempotente.
+// Usado por goPage() e pelo hash handler para que deep links
+// (#ervatorio, #ficha/:slug etc.) não fiquem cobertos pela landing.
+function hideLanding(){
+  var lp = document.getElementById('landingPage');
+  var ac = document.getElementById('appContainer');
+  if (lp) lp.style.display = 'none';
+  if (ac) ac.style.display = 'block';
+}
+
 function goPage(id,btn,slug){
   // Gate: require login for non-public pages
   const baseId = id.split('/')[0];
@@ -1944,6 +1954,7 @@ function goPage(id,btn,slug){
     ervaria.showAuthModal();
     return;
   }
+  hideLanding();
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('on'));
   document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('on'));
   document.getElementById('page-'+id).classList.add('on');
@@ -1970,6 +1981,7 @@ function goPage(id,btn,slug){
 (function(){
   function handleHash(){
     var hash = window.location.hash || '';
+    if(/^#(ficha|blend|ervatorio|blends|roda-funcional)/.test(hash)) hideLanding();
     var m;
     if((m = hash.match(/^#ficha\/([a-z0-9-]+)$/))) {
       goPage('ficha', null, m[1]);
@@ -1986,6 +1998,8 @@ function goPage(id,btn,slug){
   window.addEventListener('hashchange', handleHash);
   // Handle initial load with hash
   if(window.location.hash && /^#(ficha|blend|ervatorio|blends|roda-funcional)/.test(window.location.hash)){
+    // Esconde a landing imediatamente (sem esperar 300ms) para evitar flash
+    hideLanding();
     // Delay to ensure DOM and scripts are ready
     setTimeout(handleHash, 300);
   }
