@@ -143,19 +143,58 @@ const ErvatorioData = (function() {
       });
     },
 
-    // === RODA DOS CHAS (via funcao SQL) ===
+    // === RODA DOS CHAS (client-side, baseado em acoes_principais das fichas) ===
+    // Observacao: a proposta original usava RPC recomendar_chas e tabela
+    // admin_recommendation_vectors, nao existentes no schema atual. Este
+    // fallback deriva vetores e recomendacoes das fichas ja publicadas.
     async recomendar(vetoresDesejados, restricoes) {
       restricoes = restricoes || {};
-      const { data, error } = await getClient().rpc('recomendar_chas', {
-        vetores_desejados: vetoresDesejados,
-        is_gestante: restricoes.gestante || false,
-        is_lactante: restricoes.lactante || false,
-        has_crianca: restricoes.crianca || false,
-        evitar_alertas: restricoes.evitar_alertas || false,
-        limite: restricoes.limite || 5
-      });
+      var { data, error } = await getClient()
+        .from('admin_herb_fichas')
+        .select('slug, ficha')
+        .eq('schema_version', '1.1')
+        .eq('active', true)
+        .eq('status', 'published');
       if (error) throw error;
-      return data;
+
+      var desired = (vetoresDesejados || []).map(function(s) { return String(s).toLowerCase(); });
+      var limite = restricoes.limite || 5;
+      var scored = [];
+
+      (data || []).forEach(function(row) {
+        var f = row.ficha || {};
+        var ac = f.acoes_e_seguranca || {};
+        var acoes = Array.isArray(ac.acoes_principais) ? ac.acoes_principais : [];
+        var acoesStr = acoes.join(' | ').toLowerCase();
+
+        var score = 0;
+        desired.forEach(function(v) { if (v && acoesStr.indexOf(v) >= 0) score++; });
+        if (!score) return;
+
+        var contrasArr = Array.isArray(ac.contraindicacoes) ? ac.contraindicacoes : [];
+        var contrasStr = contrasArr.join(' ').toLowerCase();
+        var alertaObj = ac.alerta_critico || {};
+        var alertaStr = ((alertaObj.titulo || '') + ' ' + (alertaObj.corpo || '')).toLowerCase();
+        var full = contrasStr + ' ' + alertaStr;
+
+        if (restricoes.gestante && /gestan|gr[aá]vid/.test(full)) return;
+        if (restricoes.lactante && /lactan|amamen/.test(full)) return;
+        if (restricoes.crianca && /crian|pedi[aá]tr|beb[eê]/.test(full)) return;
+
+        var hasAlerta = !!(alertaObj.titulo || alertaObj.corpo);
+        if (restricoes.evitar_alertas && hasAlerta) return;
+
+        scored.push({
+          slug: row.slug,
+          nome_popular: (f.identificacao && f.identificacao.nome_popular) || row.slug,
+          tagline: f.tagline || '',
+          score: score,
+          tem_alerta_critico: hasAlerta
+        });
+      });
+
+      scored.sort(function(a, b) { return b.score - a.score; });
+      return scored.slice(0, limite);
     },
 
     // === VIEWS ===
@@ -181,22 +220,32 @@ const ErvatorioData = (function() {
     },
 
     // === VETORES (para Roda Funcional) ===
+    // Deriva vetores unicos de admin_herb_fichas.ficha.acoes_e_seguranca.acoes_principais
+    // porque a tabela admin_recommendation_vectors nao foi criada no schema.
     async getVetoresDisponiveis() {
       return cached('vetores:all', async () => {
         var { data, error } = await getClient()
-          .from('admin_recommendation_vectors')
-          .select('vetor')
-          .limit(200);
+          .from('admin_herb_fichas')
+          .select('ficha')
+          .eq('schema_version', '1.1')
+          .eq('active', true)
+          .eq('status', 'published');
         if (error) throw error;
-        var unique = [];
         var seen = {};
-        (data || []).forEach(function(r) {
-          if (r.vetor && !seen[r.vetor]) {
-            seen[r.vetor] = true;
-            unique.push(r.vetor);
-          }
+        var result = [];
+        (data || []).forEach(function(row) {
+          var ac = row.ficha && row.ficha.acoes_e_seguranca;
+          var acoes = ac && Array.isArray(ac.acoes_principais) ? ac.acoes_principais : [];
+          acoes.forEach(function(a) {
+            // Normaliza: remove qualificadores "— acao monografada", "(estudos...)", etc.
+            var clean = String(a || '').split(/\s+—\s+|\s+\(/)[0].trim();
+            if (clean && !seen[clean]) {
+              seen[clean] = true;
+              result.push(clean);
+            }
+          });
         });
-        return unique.sort();
+        return result.sort(function(a, b) { return a.localeCompare(b, 'pt-BR'); });
       });
     },
 
