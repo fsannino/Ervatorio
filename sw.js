@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ervatorio-v9';
+const CACHE_NAME = 'ervatorio-v10';
 const OFFLINE_URL = '/';
 
 const PRECACHE_ASSETS = [
@@ -16,16 +16,27 @@ const PRECACHE_ASSETS = [
   '/images/hero/hero-bule.png',
   '/images/hero/hero-maos.png',
   '/images/hero/ervas-colecao.png',
-  '/images/produtos/camomila.png',
-  '/images/produtos/hibisco.png',
-  '/images/produtos/alecrim.png',
-  '/images/produtos/hortela-seca.png',
-  '/images/produtos/hortela-fresca.png',
-  '/images/produtos/erva-doce.png',
-  '/images/produtos/lavanda.png',
-  '/images/produtos/capim-limao.png',
+  // Imagens primárias das ervas (mapeadas em HERBS)
+  '/images/produtos/camomila.jpg',
+  '/images/produtos/valeriana.png',
+  '/images/produtos/maracuja.png',
+  '/images/produtos/melissa.png',
+  '/images/produtos/gengibre.jpg',
   '/images/produtos/matcha.png',
-  '/images/produtos/funcho.png'
+  '/images/produtos/hibisco.jpg',
+  '/images/produtos/alecrim.png',
+  '/images/produtos/hortela.jpg',
+  '/images/produtos/erva-doce.jpg',
+  '/images/produtos/canela.png',
+  '/images/produtos/curcuma.png',
+  '/images/produtos/lavanda.jpg',
+  '/images/produtos/boldo-espinheira-santa.png',
+  '/images/produtos/capim-limao.png',
+  '/images/produtos/hibisco-azul-e-amora.png',
+  '/images/produtos/calendula.png',
+  '/images/produtos/rooibos.png',
+  '/images/produtos/guarana.png',
+  '/images/produtos/tomilho.jpg'
 ];
 
 // Google Fonts to cache with stale-while-revalidate
