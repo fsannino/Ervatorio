@@ -14,6 +14,8 @@ const ervaria = {
         'sb_publishable_bZGiaIhD7KqZ5QffyrHwRA_g7fmRT25'
       );
       this.client.auth.onAuthStateChange((event, session) => {
+        // Ignore INITIAL_SESSION — handled by getSession() below
+        if (event === 'INITIAL_SESSION') return;
         if (event === 'SIGNED_IN' && session?.user) {
           this.user = session.user;
           this.isOnline = true;
@@ -795,6 +797,8 @@ function enterApp(){
   ervaria.showAuthModal();
 }
 function enterAppAfterAuth(){
+  // Only enter app if user is actually authenticated
+  if (!window.ervaria || !ervaria.user) return;
   document.getElementById('landingPage').style.display = 'none';
   document.getElementById('appContainer').style.display = 'block';
   localStorage.setItem('erb_entered', '1');
