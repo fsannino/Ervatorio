@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ervatorio-v18';
+const CACHE_NAME = 'ervatorio-v20';
 const OFFLINE_URL = '/';
 
 const PRECACHE_ASSETS = [
@@ -44,7 +44,22 @@ const PRECACHE_ASSETS = [
   '/images/produtos/erva-cidreira.png',
   '/images/produtos/carqueja.png',
   '/images/produtos/ginkgo-biloba.png',
-  '/images/produtos/ashwagandha.png'
+  '/images/produtos/ashwagandha.png',
+  // 14 ervas brasileiras novas (Fase 42)
+  '/images/produtos/aroeira-da-praia.jpg',
+  '/images/produtos/assa-peixe.jpg',
+  '/images/produtos/barbatimao.jpg',
+  '/images/produtos/boldo-baiano.jpg',
+  '/images/produtos/boldo-brasileiro.jpg',
+  '/images/produtos/chamba.jpg',
+  '/images/produtos/chapeu-de-couro.jpg',
+  '/images/produtos/copaiba.jpg',
+  '/images/produtos/erva-baleeira.jpg',
+  '/images/produtos/erva-de-bicho.jpg',
+  '/images/produtos/erva-mate.jpg',
+  '/images/produtos/guacatonga.jpg',
+  '/images/produtos/macela.jpg',
+  '/images/produtos/quebra-pedra.jpg'
 ];
 
 // Google Fonts to cache with stale-while-revalidate
