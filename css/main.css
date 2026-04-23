@@ -452,6 +452,7 @@ body.light .blend-tab.on{background:var(--chip-bg);color:var(--gold2)}
 .roda-prep{margin-top:.75rem;padding:.75rem 1rem;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-md)}
 .roda-start-btn{width:100%;margin-top:.75rem;padding:11px;background:linear-gradient(135deg,rgba(200,168,75,.18),rgba(200,168,75,.06));border:0.5px solid rgba(200,168,75,.4);border-radius:var(--r-lg);color:var(--gold2);font-family:'Cormorant Garamond',serif;font-size:1rem;font-style:italic;cursor:pointer;transition:all .2s;letter-spacing:.06em}
 .roda-start-btn:hover{background:linear-gradient(135deg,rgba(200,168,75,.28),rgba(200,168,75,.1))}
+.roda-disclaimer{margin-top:.85rem;padding:.7rem .9rem;background:rgba(255,255,255,.02);border-left:2px solid rgba(200,168,75,.35);border-radius:0 var(--r-md) var(--r-md) 0;color:var(--muted);font-size:.72rem;line-height:1.55;font-style:italic}
 
 /* PERFIL */
 .perfil-section{margin-bottom:1.25rem}

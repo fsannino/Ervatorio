@@ -1428,6 +1428,10 @@ function renderRodaPanel(slice){
       </div>
     </div>
     <button class="roda-start-btn" onclick="openTimerFromRoda(${JSON.stringify(slice).replace(/'/g,'&#39;')})">⏱ Preparar este chá agora</button>
+    ${(rodaActiveLayer==='sintoma'||rodaActiveLayer==='sistema')?`
+    <div class="roda-disclaimer" role="note">
+      As ervas do Ervatório são curadoria botânica para o bem-estar e o prazer sensorial. Elas não substituem medicamentos nem orientação médica. Em caso de dúvidas, sintomas ou condições de saúde, consulte um profissional de saúde.
+    </div>`:''}
   </div>`;
 }
 
