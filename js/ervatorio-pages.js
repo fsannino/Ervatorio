@@ -15,6 +15,40 @@
   // ================================================================
   // #ervatorio — Indice do catalogo v1.1
   // ================================================================
+  // Resolve imagem local da erva a partir do nome popular / científico.
+  // Consulta o array global HERBS (populado por app.js e re-hidratado
+  // pela ervaria.js). Retorna null se não encontrar match.
+  function normNome(s) {
+    return String(s || '')
+      .toLowerCase()
+      .normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+  function resolveErvaImg(nomePopular, nomeCientifico) {
+    if (typeof HERBS === 'undefined' || !Array.isArray(HERBS)) return null;
+    var np = normNome(nomePopular);
+    var nc = normNome(nomeCientifico).split(/\s|\(/)[0]; // gênero botânico
+    if (!np && !nc) return null;
+    // 1) Match exato por nome popular
+    var found = HERBS.find(function(h) { return normNome(h.n) === np; });
+    // 2) Match por gênero científico (ex.: ficha "Passiflora spp." casa com HERBS lat "Passiflora edulis")
+    if (!found && nc) {
+      found = HERBS.find(function(h) {
+        var hg = normNome(h.lat || '').split(/\s|\(/)[0];
+        return hg && (hg === nc || nc.indexOf(hg) === 0 || hg.indexOf(nc) === 0);
+      });
+    }
+    // 3) Match por substring do nome popular (ex.: "Chá Verde (Matcha)" → "Chá Verde")
+    if (!found && np) {
+      found = HERBS.find(function(h) {
+        var hn = normNome(h.n);
+        return hn && (np.indexOf(hn) === 0 || hn.indexOf(np) === 0);
+      });
+    }
+    return found && found.img ? found.img : null;
+  }
+
   window.renderIndiceCatalogo = async function() {
     var el = document.getElementById('ervatorioGrid');
     if (!el) return;
@@ -32,7 +66,12 @@
         var cientifico = f.nome_cientifico || row.herb_latin_name || '';
         var tagline = f.tagline || '';
         var eixo = (f.regulacao && f.regulacao.eixo_botanico_tpc) || '';
+        var img = resolveErvaImg(nome, cientifico);
+        var visual = img
+          ? '<div class="ev-card-img-wrap"><img class="ev-card-img" src="' + safeEsc(img) + '" alt="' + safeEsc(nome) + '" loading="lazy" onerror="this.parentElement.style.display=\'none\'"></div>'
+          : '';
         return '<div class="herb-card ev-ficha-card" onclick="goPage(\'ficha\',null,\'' + safeEsc(slug) + '\')">' +
+          visual +
           '<div class="ev-card-nome">' + safeEsc(nome) + '</div>' +
           '<div class="ev-card-latin"><em>' + safeEsc(cientifico) + '</em></div>' +
           (tagline ? '<div class="ev-card-tagline">' + safeEsc(tagline) + '</div>' : '') +
@@ -90,7 +129,14 @@
     var html = '<article class="ficha-page-article">';
 
     // Header
+    var heroImg = resolveErvaImg(f.nome_popular, f.nome_cientifico);
     html += '<header class="ficha-hero">' +
+      (heroImg
+        ? '<figure class="ficha-hero-img">' +
+            '<img src="' + safeEsc(heroImg) + '" alt="' + safeEsc(f.nome_popular || '') + '" loading="lazy" onerror="this.parentElement.style.display=\'none\'">' +
+            '<figcaption class="ficha-hero-caption">Imagem meramente ilustrativa</figcaption>' +
+          '</figure>'
+        : '') +
       '<h1 class="ficha-title">' + safeEsc(f.nome_popular || '') + '</h1>' +
       '<div class="ficha-latin">' + safeEsc(f.nome_cientifico || '') + '</div>' +
       (f.tagline ? '<blockquote class="ficha-tagline">' + safeEsc(f.tagline) + '</blockquote>' : '') +
@@ -350,28 +396,50 @@
 
   // Mapeamento de vetor -> categoria terapêutica. Ordem importa: o
   // primeiro match vence. Vetores sem match caem em 'Outros'.
+  // 'short' é o rótulo usado na roda (espaço limitado no setor).
   var VETOR_CATEGORIAS = [
-    { id: 'digestivo',  label: 'Digestivo',          icon: '🫕',
+    { id: 'digestivo',  label: 'Digestivo',          short: 'Digestivo',    icon: '🫕',
       rx: /^(antidisp|carminat|colagogo|coler[ée]t|hepatoprot|hepatoativ|antiulcer|antiespasm|eup[eé]pt|aperiente|protetor da mucosa)/i },
-    { id: 'respiratorio', label: 'Respiratório',     icon: '🌬',
+    { id: 'respiratorio', label: 'Respiratório',     short: 'Respir.',      icon: '🌬',
       rx: /^(expector|broncodil|antituss|antiastm|descong|antial[eé]rg)/i },
-    { id: 'nervoso',    label: 'Sistema Nervoso',    icon: '🧠',
+    { id: 'nervoso',    label: 'Sistema Nervoso',    short: 'Nervoso',      icon: '🧠',
       rx: /^(ansiol|sedat|hipno|calmant|antidepr|nootr|adaptog|indutor de sono|estimulante do SNC)/i },
-    { id: 'cardiovascular', label: 'Cardiovascular', icon: '❤️',
+    { id: 'cardiovascular', label: 'Cardiovascular', short: 'Cardio',       icon: '❤️',
       rx: /^(anti-?hipert|hipolipem|cardiop|vasodil|vasocon|venoton|antiagreg|hipotens)/i },
-    { id: 'urinario',   label: 'Urinário & Renal',   icon: '💧',
+    { id: 'urinario',   label: 'Urinário & Renal',   short: 'Urinário',     icon: '💧',
       rx: /^(diur[eé]t|litol[ií]t|antiss[eé]ptico urin|nefroprot)/i },
-    { id: 'topico',     label: 'Pele & Tópico',      icon: '🌿',
+    { id: 'topico',     label: 'Pele & Tópico',      short: 'Tópico',       icon: '🌿',
       rx: /(t[oó]pico|cicatriz|anti-?hemorr|dermatol[oó]gic|antiss[eé]ptico)/i },
-    { id: 'metabolico', label: 'Metabólico',         icon: '🔥',
+    { id: 'metabolico', label: 'Metabólico',         short: 'Metab.',       icon: '🔥',
       rx: /^(termog|hipogli|hipoglicem|lipol[ií]t|redu[cç][aã]o de peso|coadjuvante.*peso|modulador.*glic)/i },
-    { id: 'antiinflam', label: 'Anti-inflamatório',  icon: '🩹',
+    { id: 'antiinflam', label: 'Anti-inflamatório',  short: 'Anti-inflam', icon: '🩹',
       rx: /^(anti-?inflamat)/i },
-    { id: 'imuno',      label: 'Imune & Antimicrobiano', icon: '🛡',
+    { id: 'imuno',      label: 'Imune & Antimicrob.', short: 'Imune',       icon: '🛡',
       rx: /^(antimicrob|antif[uú]ng|antiviral|antibacter|imunomodul)/i },
-    { id: 'geral',      label: 'Tônico & Antioxidante', icon: '✨',
+    { id: 'geral',      label: 'Tônico & Antioxid.',  short: 'Tônico',      icon: '✨',
       rx: /^(antioxidante|t[oô]nico|analg[eé]sico|afrodis|sudor[ií]fero|febr[ií]fugo|hemost)/i },
   ];
+  var RF_OUTROS_META = { id: 'outros', label: 'Outros', short: 'Outros', icon: '🌱' };
+
+  // Paleta de cores por categoria (coerente com o restante do app).
+  var RF_COLORS = {
+    digestivo:    '#5a3a1a',
+    respiratorio: '#1e4a3a',
+    nervoso:      '#3a2d6b',
+    cardiovascular:'#6b2d3a',
+    urinario:     '#2d4a6b',
+    topico:       '#4a1e4a',
+    metabolico:   '#6b5a2d',
+    antiinflam:   '#6b3a2d',
+    imuno:        '#2d4a3a',
+    geral:        '#3d5a2a',
+    outros:       '#4a4a4a'
+  };
+
+  // Estado do canvas-wheel
+  var rfCats = [];        // categorias com pelo menos 1 vetor, na ordem de render
+  var rfSelIdx = -1;
+  var rfHovIdx = -1;
 
   function classificarVetor(v) {
     var s = String(v || '').trim();
@@ -379,6 +447,147 @@
       if (VETOR_CATEGORIAS[i].rx.test(s)) return VETOR_CATEGORIAS[i].id;
     }
     return 'outros';
+  }
+
+  function rfLighten(hex, amt) {
+    var h = hex.replace('#', '');
+    if (h.length === 3) h = h.split('').map(function(c){return c+c;}).join('');
+    var r = parseInt(h.slice(0,2), 16);
+    var g = parseInt(h.slice(2,4), 16);
+    var b = parseInt(h.slice(4,6), 16);
+    r = Math.min(255, r + ((255-r)*amt|0));
+    g = Math.min(255, g + ((255-g)*amt|0));
+    b = Math.min(255, b + ((255-b)*amt|0));
+    return 'rgb('+r+','+g+','+b+')';
+  }
+
+  function drawRodaFuncWheel() {
+    var cv = document.getElementById('rfCanvas');
+    if (!cv || !rfCats.length) return;
+    var ctx = cv.getContext('2d');
+    var W = 340, CX = W/2, CY = W/2, R = 152, IR = 40;
+    var dpr = Math.min(window.devicePixelRatio || 1, 3);
+    if (cv.width !== W*dpr) {
+      cv.width = W*dpr; cv.height = W*dpr;
+      cv.style.width = W+'px'; cv.style.height = W+'px';
+    }
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W, W);
+    ctx.imageSmoothingEnabled = true;
+    if ('imageSmoothingQuality' in ctx) ctx.imageSmoothingQuality = 'high';
+    var n = rfCats.length, arc = 2*Math.PI/n, start = -Math.PI/2;
+    rfCats.forEach(function(cat, i) {
+      var a0 = start + i*arc, a1 = a0 + arc;
+      var sel = rfSelIdx === i, hov = rfHovIdx === i;
+      ctx.beginPath(); ctx.moveTo(CX, CY);
+      ctx.arc(CX, CY, sel ? R+5 : R, a0, a1);
+      ctx.closePath();
+      var c = RF_COLORS[cat.id] || '#3a3a3a';
+      ctx.fillStyle = sel ? rfLighten(c, .4) : hov ? rfLighten(c, .2) : c;
+      ctx.fill();
+      ctx.strokeStyle = sel ? 'rgba(200,168,75,.7)' : 'rgba(11,10,8,.65)';
+      ctx.lineWidth = sel ? 1.5 : 1;
+      ctx.stroke();
+      if (sel) {
+        ctx.beginPath(); ctx.moveTo(CX, CY);
+        ctx.arc(CX, CY, R+4, a0+.02, a1-.02);
+        ctx.closePath();
+        ctx.strokeStyle = 'rgba(240,217,138,.3)';
+        ctx.lineWidth = 2; ctx.stroke();
+      }
+      // Label (ícone acima do nome resumido)
+      var mA = a0 + arc/2, lr = (R+IR)/2;
+      var lx = CX + lr*Math.cos(mA), ly = CY + lr*Math.sin(mA);
+      ctx.save();
+      ctx.translate(lx, ly);
+      ctx.rotate(mA + Math.PI/2);
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.shadowColor = 'rgba(0,0,0,.45)'; ctx.shadowBlur = 2; ctx.shadowOffsetY = .5;
+      ctx.fillStyle = sel ? '#f5dd95' : hov ? '#ead083' : 'rgba(245,235,215,.92)';
+      ctx.font = '14px system-ui';
+      ctx.fillText(cat.icon, 0, -10);
+      var fs = n > 8 ? 10 : 11;
+      ctx.font = (sel ? '600 ' : '500 ') + fs + 'px "Jost",system-ui,sans-serif';
+      ctx.fillText(cat.short, 0, 8);
+      ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
+      ctx.restore();
+    });
+    // Ring + centro
+    ctx.beginPath(); ctx.arc(CX, CY, R+7, 0, Math.PI*2);
+    ctx.strokeStyle = 'rgba(200,168,75,.1)'; ctx.lineWidth = 1; ctx.stroke();
+    ctx.beginPath(); ctx.arc(CX, CY, IR, 0, Math.PI*2);
+    ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--bg').trim() || '#1a3a2a';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(200,168,75,.45)';
+    ctx.lineWidth = 1.5; ctx.stroke();
+    // Label central
+    var lbl = document.getElementById('rfWheelCenter');
+    if (lbl) {
+      var inner = lbl.querySelector('.rf-wheel-label');
+      var selCat = rfSelIdx >= 0 ? rfCats[rfSelIdx] : null;
+      if (inner) inner.innerHTML = selCat
+        ? '<span style="font-size:1.2rem;display:block;line-height:1">' + selCat.icon + '</span><span style="font-size:.62rem;letter-spacing:.04em">' + selCat.short + '</span>'
+        : 'Toque<br>uma categoria';
+    }
+  }
+
+  function getRodaFuncIdx(mx, my) {
+    if (!rfCats.length) return -1;
+    var CX = 170, CY = 170, R = 152, IR = 40;
+    var dx = mx - CX, dy = my - CY;
+    var d = Math.sqrt(dx*dx + dy*dy);
+    if (d < IR || d > R + 8) return -1;
+    var a = Math.atan2(dy, dx) + Math.PI/2;
+    if (a < 0) a += 2*Math.PI;
+    if (a >= 2*Math.PI) a -= 2*Math.PI;
+    return Math.floor(a / (2*Math.PI / rfCats.length)) % rfCats.length;
+  }
+
+  function focusCategoria(id) {
+    var el = document.getElementById('rfcat-' + id);
+    if (!el) return;
+    document.querySelectorAll('.rf-cat').forEach(function(c) {
+      if (c.id === 'rfcat-' + id) c.classList.remove('collapsed');
+      else c.classList.add('collapsed');
+    });
+    // Destaque visual breve
+    el.classList.add('rf-cat-flash');
+    setTimeout(function(){ el.classList.remove('rf-cat-flash'); }, 1200);
+    // Scroll leve até a subdivisão
+    setTimeout(function(){
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 50);
+  }
+
+  function initRodaFuncWheelEvents() {
+    var cv = document.getElementById('rfCanvas');
+    if (!cv || cv._hasEvents) return;
+    cv._hasEvents = true;
+    cv.addEventListener('mousemove', function(e) {
+      var r = cv.getBoundingClientRect();
+      rfHovIdx = getRodaFuncIdx(e.clientX - r.left, e.clientY - r.top);
+      cv.style.cursor = rfHovIdx >= 0 ? 'pointer' : 'default';
+      drawRodaFuncWheel();
+    });
+    cv.addEventListener('mouseleave', function() {
+      rfHovIdx = -1;
+      drawRodaFuncWheel();
+    });
+    function handleSelect(i) {
+      if (i < 0) return;
+      rfSelIdx = (i === rfSelIdx) ? -1 : i;
+      drawRodaFuncWheel();
+      if (rfSelIdx >= 0) focusCategoria(rfCats[rfSelIdx].id);
+    }
+    cv.addEventListener('click', function(e) {
+      var r = cv.getBoundingClientRect();
+      handleSelect(getRodaFuncIdx(e.clientX - r.left, e.clientY - r.top));
+    });
+    cv.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      var t = e.touches[0], r = cv.getBoundingClientRect();
+      handleSelect(getRodaFuncIdx(t.clientX - r.left, t.clientY - r.top));
+    }, { passive: false });
   }
 
   function agruparVetores(vetores) {
@@ -405,6 +614,17 @@
     try {
       var vetores = await ErvatorioData.getVetoresDisponiveis();
       var grupos = agruparVetores(vetores);
+
+      // Populate rfCats with non-empty categories for the visual wheel.
+      rfCats = [];
+      rfSelIdx = -1; rfHovIdx = -1;
+      VETOR_CATEGORIAS.concat([RF_OUTROS_META]).forEach(function(c) {
+        var arr = grupos[c.id];
+        if (arr && arr.length) {
+          rfCats.push({ id: c.id, label: c.label, short: c.short, icon: c.icon, count: arr.length });
+        }
+      });
+
       var html = '<div class="ev-roda-vetores">' +
         '<div class="ficha-sub" style="display:flex;align-items:center;justify-content:space-between;gap:12px">' +
           '<span>Selecione os vetores desejados</span>' +
@@ -412,7 +632,7 @@
         '</div>';
 
       // Renderiza cada categoria que tem pelo menos 1 vetor.
-      VETOR_CATEGORIAS.concat([{ id: 'outros', label: 'Outros', icon: '🌱' }]).forEach(function(c) {
+      VETOR_CATEGORIAS.concat([RF_OUTROS_META]).forEach(function(c) {
         var arr = grupos[c.id];
         if (!arr || !arr.length) return;
         html += '<div class="rf-cat" id="rfcat-' + c.id + '">' +
@@ -443,6 +663,10 @@
       html += '<button class="ev-roda-btn" onclick="executarRecomendacao()">Recomendar</button>';
       form.innerHTML = html;
       results.innerHTML = '<p class="ev-muted">Selecione vetores e clique em Recomendar.</p>';
+
+      // Render visual wheel após o form estar no DOM.
+      drawRodaFuncWheel();
+      initRodaFuncWheelEvents();
     } catch (e) {
       form.innerHTML = '<p class="ev-error">Erro ao carregar vetores.</p>';
       console.error('[Ervatorio] Roda funcional:', e);
