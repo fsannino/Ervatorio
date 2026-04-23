@@ -900,7 +900,9 @@ function addToTray(id){
   if(!blendTray.includes(id)) blendTray.push(id);
   localStorage.setItem('erb_tray',JSON.stringify(blendTray));
   renderTray(); closeModal();
-  goPage('criarblend');
+  goPage('blends');
+  // Ervas adicionadas pela busca aparecem na aba Assistente (tray compartilhado).
+  if(typeof switchBlendTab==='function') switchBlendTab('assistente');
   toast('Erva adicionada ao blend!');
 }
 
@@ -1967,6 +1969,10 @@ function hideLanding(){
 function goPage(id,btn,slug){
   // Cerimônia foi integrada em #page-chas — redireciona deep links antigos.
   if(id==='cerimonia') id='chas';
+  // Criar Blend foi unificado em Blends com sub-abas (Prontos/Assistente/Manual).
+  // Deep links antigos para 'criarblend' caem na aba Assistente.
+  var _blendOpenTab = null;
+  if(id==='criarblend'){ id='blends'; _blendOpenTab='assistente'; }
   // Gate: quem já entrou no app (login real OU "continuar sem login") pode
   // navegar livremente entre as páginas. Features que exigem conta real
   // (sync de favoritos, salvar blend no cloud, etc.) checam ervaria.user
@@ -1989,7 +1995,12 @@ function goPage(id,btn,slug){
   if(id==='shop')renderShop();
   if(id==='roda')window.initRoda();
   if(id==='perfil')renderPerfil();
-  if(id==='criarblend'){buildWizard();buildCtrFilters();renderCtrHerbs();renderCtrBlend();renderTray();}
+  if(id==='blends'){
+    // Inicializa todas as sub-abas (barato o bastante para rodar sempre)
+    buildWizard();renderTray();
+    // Default: abre na aba Prontos. Se viemos de 'criarblend' legado, abre em Assistente.
+    if(typeof switchBlendTab==='function') switchBlendTab(_blendOpenTab || 'prontos');
+  }
   if(id==='chas'){initChas();initCerimonia();}
   if(id==='guia-sensorial'&&typeof initFlavorWheel==='function')initFlavorWheel();
   if(id==='marketplace')initMkt();
@@ -1997,7 +2008,7 @@ function goPage(id,btn,slug){
   // Ervatorio v1.1 pages
   if(id==='ervatorio' && typeof renderIndiceCatalogo==='function') renderIndiceCatalogo();
   if(id==='ficha' && slug && typeof renderFichaPage==='function') renderFichaPage(slug);
-  if(id==='blends' && typeof renderBibliotecaBlends==='function') renderBibliotecaBlends();
+  // NB: o render da biblioteca é disparado pela switchBlendTab('prontos') acima.
   if(id==='blend' && slug && typeof renderBlendPage==='function') renderBlendPage(slug);
   if(id==='roda-funcional' && typeof renderRodaFuncional==='function') renderRodaFuncional();
 }
@@ -2031,17 +2042,27 @@ function goPage(id,btn,slug){
 })();
 
 function switchBlendTab(tab){
+  const pronto=document.getElementById('blendPanelPronto');
   const assist=document.getElementById('blendPanelAssist');
   const manual=document.getElementById('blendPanelManual');
+  const tabP=document.getElementById('blendTabPronto');
   const tabA=document.getElementById('blendTabAssist');
   const tabM=document.getElementById('blendTabManual');
-  if(tab==='assistente'){
-    assist.style.display='';manual.style.display='none';
-    tabA.classList.add('on');tabM.classList.remove('on');
-  } else {
-    assist.style.display='none';manual.style.display='';
-    tabA.classList.remove('on');tabM.classList.add('on');
+  // Default safe defaults when algum elemento não existe (ex.: renderização parcial).
+  [pronto,assist,manual].forEach(el=>{ if(el) el.style.display='none'; });
+  [tabP,tabA,tabM].forEach(el=>{ if(el) el.classList.remove('on'); });
+  if(tab==='prontos'){
+    if(pronto) pronto.style.display='';
+    if(tabP) tabP.classList.add('on');
+    if(typeof renderBibliotecaBlends==='function') renderBibliotecaBlends();
+  } else if(tab==='manual'){
+    if(manual) manual.style.display='';
+    if(tabM) tabM.classList.add('on');
     buildCtrFilters();renderCtrHerbs();renderCtrBlend();
+  } else {
+    // assistente (default)
+    if(assist) assist.style.display='';
+    if(tabA) tabA.classList.add('on');
   }
 }
 
