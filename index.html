@@ -1821,7 +1821,7 @@
           <li><a href="#" onclick="enterApp();goPage('mundo');return false">Cerrado & Mata Atlântica</a></li>
           <li><a href="#" onclick="enterApp();goPage('search');return false">Linha Phyto — Botânica Funcional</a></li>
           <li><a href="#" onclick="enterApp();goPage('mundo');return false">Globais & Clássicos</a></li>
-          <li><a href="#" onclick="enterApp();goPage('criarblend');return false">Blends Exclusivos</a></li>
+          <li><a href="#" onclick="enterApp();goPage('blends');return false">Blends Exclusivos</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -1862,17 +1862,16 @@
   <div class="nav-tabs">
     <button class="nav-tab on" onclick="goPage('search',this)">Busca</button>
     <button class="nav-tab" onclick="goPage('sabores',this)">Sabores</button>
-    <button class="nav-tab" onclick="goPage('criarblend',this)">Criar Blend</button>
+    <button class="nav-tab" onclick="goPage('roda-funcional',this)">Roda Funcional</button>
+    <button class="nav-tab" onclick="goPage('blends',this)">Blends</button>
     <button class="nav-tab" onclick="goPage('chas',this)">Chás Tradicionais</button>
     <button class="nav-tab" onclick="goPage('mundo',this)">Chás do Mundo</button>
     <button class="nav-tab" onclick="goPage('favs',this)">Favoritos</button>
     <button class="nav-tab" onclick="goPage('suppliers',this)">Fornecedores</button>
     <button class="nav-tab" onclick="goPage('marketplace',this)">Marketplace</button>
     <button class="nav-tab" onclick="goPage('perfil',this)">Perfil</button>
+    <button class="nav-tab" onclick="goPage('ervatorio',this)">Ervopedia</button>
     <button class="nav-tab" onclick="goPage('sobre',this)">Sobre</button>
-    <button class="nav-tab" onclick="goPage('ervatorio',this)">Catalogo v1.1</button>
-    <button class="nav-tab" onclick="goPage('blends',this)">Blends</button>
-    <button class="nav-tab" onclick="goPage('roda-funcional',this)">Roda Funcional</button>
   </div>
 </nav>
 
@@ -2003,18 +2002,25 @@
 
 <!-- BLEND PAGE -->
 <!-- CRIAR BLEND — Unified page with 2 tabs -->
-<div class="page" id="page-criarblend">
-  <div class="sec-title">Criar seu Blend</div>
-  <div class="sec-sub">Personalize sua infusão ideal</div>
+<div class="page" id="page-blends">
+  <div class="sec-title">Blends</div>
+  <div class="sec-sub">Escolha um blend pronto ou crie o seu</div>
 
   <!-- Sub-tabs -->
   <div class="blend-tabs">
-    <button class="blend-tab on" id="blendTabAssist" onclick="switchBlendTab('assistente')">✦ Assistente</button>
+    <button class="blend-tab on" id="blendTabPronto" onclick="switchBlendTab('prontos')">📖 Prontos</button>
+    <button class="blend-tab" id="blendTabAssist" onclick="switchBlendTab('assistente')">✦ Assistente</button>
     <button class="blend-tab" id="blendTabManual" onclick="switchBlendTab('manual')">🌿 Manual</button>
   </div>
 
+  <!-- TAB 0: Prontos (biblioteca v1.1) -->
+  <div id="blendPanelPronto">
+    <p class="ev-muted" style="margin:.5rem 0 1rem">Receitas curatoriais com ervas do Brasil e do mundo — clique em uma para abrir a ficha completa.</p>
+    <div class="herb-grid" id="blendsGrid"></div>
+  </div>
+
   <!-- TAB 1: Assistente (ex Blend IA) -->
-  <div id="blendPanelAssist">
+  <div id="blendPanelAssist" style="display:none">
     <div class="blend-wizard">
       <div class="wizard-title">O que você está sentindo?</div>
       <div class="wizard-row" id="wizSintomas"></div>
@@ -2257,19 +2263,13 @@
 
 <!-- ERVATORIO v1.1 PAGES -->
 <div class="page" id="page-ervatorio">
-  <div class="sec-title">Catalogo Ervatorio</div>
-  <div class="sec-sub">30 fichas botanicas completas — Schema v1.1</div>
+  <div class="sec-title">Ervopedia</div>
+  <div class="sec-sub">Enciclopédia viva do Ervatório — fichas botânicas completas</div>
   <div class="herb-grid" id="ervatorioGrid"></div>
 </div>
 
 <div class="page" id="page-ficha">
   <div id="fichaPageContent"></div>
-</div>
-
-<div class="page" id="page-blends">
-  <div class="sec-title">Biblioteca de Blends</div>
-  <div class="sec-sub">22 receitas curatoriais com ervas do Brasil e do mundo</div>
-  <div class="herb-grid" id="blendsGrid"></div>
 </div>
 
 <div class="page" id="page-blend">
