@@ -281,7 +281,7 @@ function drawWheel(){
 
   // Center
   wheelCtx.beginPath(); wheelCtx.arc(WHEEL_CX,WHEEL_CY,R_CENTER,0,Math.PI*2);
-  wheelCtx.fillStyle='#0b0a08'; wheelCtx.fill();
+  wheelCtx.fillStyle=getComputedStyle(document.body).getPropertyValue('--bg').trim()||'#1a3a2a'; wheelCtx.fill();
   wheelCtx.strokeStyle='rgba(200,168,75,.45)'; wheelCtx.lineWidth=1.5; wheelCtx.stroke();
 
   updateWheelCenter();
@@ -1333,7 +1333,7 @@ function drawRoda(){
   // outer glow ring
   ctx.beginPath();ctx.arc(CX,CY,R+7,0,Math.PI*2);ctx.strokeStyle='rgba(200,168,75,.1)';ctx.lineWidth=1;ctx.stroke();
   // center
-  ctx.beginPath();ctx.arc(CX,CY,IR,0,Math.PI*2);ctx.fillStyle='#0b0a08';ctx.fill();
+  ctx.beginPath();ctx.arc(CX,CY,IR,0,Math.PI*2);ctx.fillStyle=getComputedStyle(document.body).getPropertyValue('--bg').trim()||'#1a3a2a';ctx.fill();
   ctx.strokeStyle='rgba(200,168,75,.45)';ctx.lineWidth=1.5;ctx.stroke();
   // center text
   const sel=rodaSelIdx>=0?slices[rodaSelIdx]:null;

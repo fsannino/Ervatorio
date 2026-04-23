@@ -5,20 +5,20 @@
 .skip-link:focus{top:0}
 
 :root{
-  --bg:#0b0a08; --bg2:#131210; --bg3:#1a1814;
+  --bg:#1a3a2a; --bg2:#1f4a32; --bg3:#152f22;
   --gold:#c8a84b; --gold2:#e6c96e; --goldf:#f0d98a;
-  --cream:#f0e8d5; --cream2:#c8bfa8; --muted:#7a7060; --faint:#3a3830;
-  --green:#2d5a3a; --green2:#4a8a5a; --red:#5a2a2a; --red2:#8a4a4a;
+  --cream:#f5ede0; --cream2:#d4cbb8; --muted:#8a9a8e; --faint:#2d5440;
+  --green:#3d6b4f; --green2:#4a8a5a; --red:#5a2a2a; --red2:#8a4a4a;
   --blue:#2a3a5a; --blue2:#4a6a9a;
   --r-lg:16px; --r-md:10px; --r-sm:6px;
-  --shadow:0 2px 24px rgba(0,0,0,.5);
-  --nav-bg:rgba(11,10,8,.92);
-  --nav-border:rgba(200,168,75,.12);
-  --chip-bg:rgba(200,168,75,.1);
+  --shadow:0 2px 24px rgba(0,0,0,.4);
+  --nav-bg:rgba(26,58,42,.95);
+  --nav-border:rgba(200,168,75,.15);
+  --chip-bg:rgba(200,168,75,.12);
   --chip-border:rgba(200,168,75,.35);
   --card-hover:rgba(200,168,75,.25);
   --overlay:rgba(0,0,0,.7);
-  --safe-bg:rgba(60,140,80,.12);--safe-c:#80c890;--safe-b:rgba(60,140,80,.2);
+  --safe-bg:rgba(60,140,80,.15);--safe-c:#80c890;--safe-b:rgba(60,140,80,.25);
   --warn-bg:rgba(200,100,60,.12);--warn-c:#e09060;--warn-b:rgba(200,100,60,.2);
   --avoid-bg:rgba(180,50,50,.15);--avoid-c:#e08080;--avoid-b:rgba(180,50,50,.25);
 }
