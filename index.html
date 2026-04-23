@@ -3,160 +3,1835 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Ervatório — App de Chás</title>
+<title>Ervatório — Ervas do Brasil e do Mundo</title>
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#9a7a2e">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Ervatório">
-<meta name="description" content="Catálogo inteligente de chás, infusões e ervas medicinais. Roda dos Chás, blends com IA e marketplace.">
+<meta name="description" content="Curadoria botânica global de chás e infusões — ervas do Brasil e do mundo. Roda dos Chás, blends com IA e marketplace.">
 <!-- OpenGraph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ervatório — App de Chás">
-<meta property="og:description" content="Catálogo inteligente de chás, infusões e ervas medicinais brasileiras. Roda dos Chás, blends personalizados e marketplace.">
+<meta property="og:title" content="Ervatório — Ervas do Brasil e do Mundo">
+<meta property="og:description" content="Curadoria botânica global de chás e infusões — ervas do Brasil e do mundo. Roda dos Chás, blends personalizados e marketplace.">
 <meta property="og:image" content="/icon-512.png">
 <meta property="og:locale" content="pt_BR">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ervatório — App de Chás">
-<meta name="twitter:description" content="Catálogo inteligente de chás, infusões e ervas medicinais brasileiras.">
+<meta name="twitter:title" content="Ervatório — Ervas do Brasil e do Mundo">
+<meta name="twitter:description" content="Curadoria botânica global de chás e infusões — ervas do Brasil e do mundo.">
 <meta name="twitter:image" content="/icon-512.png">
 <!-- Apple Touch Icon -->
 <link rel="apple-touch-icon" href="/icon-192.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍵</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap">
 <link rel="stylesheet" href="/css/main.css?v=10">
+<style>
+  :root {
+    --verde-profundo: #1a3a2a;
+    --verde-musgo:    #2d5440;
+    --verde-folha:    #3d6b4f;
+    --creme:          #f5ede0;
+    --creme-escuro:   #ede0cc;
+    --ouro:           #b8965a;
+    --ouro-claro:     #d4af7a;
+    --terra:          #5c3d2e;
+    --off-white:      #faf6f0;
+    --cinza-suave:    #e8e0d5;
+    --texto-escuro:   #1a1a16;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'EB Garamond', Georgia, serif;
+    background: var(--off-white);
+    color: var(--texto-escuro);
+    overflow-x: hidden;
+  }
+
+  /* ── ANÚNCIO TOPO ─────────────────────────────────── */
+  .top-banner {
+    background: var(--verde-profundo);
+    color: var(--creme);
+    text-align: center;
+    padding: 10px 20px;
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .top-banner a { color: var(--ouro-claro); text-decoration: none; }
+
+  /* ── HEADER ───────────────────────────────────────── */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250, 246, 240, 0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--cinza-suave);
+  }
+  .header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    height: 72px;
+  }
+  nav.main-nav {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+  nav.main-nav a {
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--verde-profundo);
+    text-decoration: none;
+    position: relative;
+    transition: color .25s;
+  }
+  nav.main-nav a::after {
+    content:'';
+    position: absolute;
+    bottom: -3px;
+    left: 0; right: 100%;
+    height: 1px;
+    background: var(--ouro);
+    transition: right .3s ease;
+  }
+  nav.main-nav a:hover { color: var(--ouro); }
+  nav.main-nav a:hover::after { right: 0; }
+
+  .logo {
+    text-align: center;
+    text-decoration: none;
+  }
+  .logo-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--verde-profundo);
+    display: block;
+    line-height: 1;
+  }
+  .logo-sub {
+    font-family: 'Jost', sans-serif;
+    font-size: 9px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--ouro);
+    display: block;
+    margin-top: 3px;
+  }
+  .header-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+  }
+  .header-actions a {
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--verde-profundo);
+    text-decoration: none;
+    transition: color .25s;
+  }
+  .header-actions a:hover { color: var(--ouro); }
+  .btn-clube {
+    background: var(--verde-profundo) !important;
+    color: var(--creme) !important;
+    padding: 8px 18px !important;
+    font-size: 10px !important;
+    letter-spacing: 2px;
+    transition: background .3s !important;
+  }
+  .btn-clube:hover { background: var(--verde-musgo) !important; }
+
+  /* ── HERO ─────────────────────────────────────────── */
+  .hero {
+    position: relative;
+    height: 92vh;
+    min-height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse at 30% 20%, rgba(61,107,79,.15) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 80%, rgba(26,58,42,.12) 0%, transparent 50%),
+      linear-gradient(160deg, #1a3a2a 0%, #2d5440 35%, #1f4a32 60%, #152f22 100%);
+  }
+  /* SVG botanical overlay */
+  .hero-botanical {
+    position: absolute;
+    inset: 0;
+    opacity: .08;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Ccircle cx='300' cy='300' r='280' fill='none' stroke='%23f5ede0' stroke-width='0.5'/%3E%3Ccircle cx='300' cy='300' r='220' fill='none' stroke='%23f5ede0' stroke-width='0.5'/%3E%3Ccircle cx='300' cy='300' r='160' fill='none' stroke='%23f5ede0' stroke-width='0.5'/%3E%3Cline x1='20' y1='300' x2='580' y2='300' stroke='%23f5ede0' stroke-width='0.5'/%3E%3Cline x1='300' y1='20' x2='300' y2='580' stroke='%23f5ede0' stroke-width='0.5'/%3E%3Cline x1='103' y1='103' x2='497' y2='497' stroke='%23f5ede0' stroke-width='0.5'/%3E%3Cline x1='497' y1='103' x2='103' y2='497' stroke='%23f5ede0' stroke-width='0.5'/%3E%3C/svg%3E");
+    background-size: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /* Scattered botanical elements */
+  .hero-illustration {
+    position: absolute;
+    right: 8%;
+    top: 8%;
+    width: 420px;
+    height: 420px;
+    opacity: .18;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 80px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 40px;
+  }
+  .hero-text {}
+  .hero-eyebrow {
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--ouro-claro);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: var(--ouro);
+  }
+  .hero-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(48px, 6vw, 82px);
+    font-weight: 300;
+    line-height: 1.05;
+    color: var(--creme);
+    margin-bottom: 28px;
+  }
+  .hero-headline em {
+    font-style: italic;
+    color: var(--ouro-claro);
+  }
+  .hero-body {
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(245,237,224,.72);
+    margin-bottom: 40px;
+    max-width: 460px;
+  }
+  .hero-ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    display: inline-block;
+    background: var(--ouro);
+    color: var(--verde-profundo);
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 36px;
+    transition: background .3s, transform .2s;
+  }
+  .btn-primary:hover { background: var(--ouro-claro); transform: translateY(-1px); }
+  .btn-outline {
+    display: inline-block;
+    background: transparent;
+    color: var(--creme);
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 36px;
+    border: 1px solid rgba(245,237,224,.35);
+    transition: border-color .3s, color .3s;
+  }
+  .btn-outline:hover { border-color: var(--ouro); color: var(--ouro-claro); }
+
+  .hero-stat-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-end;
+    padding-bottom: 8px;
+  }
+  .stat-card {
+    background: rgba(245,237,224,.06);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(245,237,224,.1);
+    padding: 24px 32px;
+    text-align: right;
+    width: 260px;
+    animation: fadeUp .8s ease both;
+  }
+  .stat-card:nth-child(1) { animation-delay: .3s; }
+  .stat-card:nth-child(2) { animation-delay: .5s; }
+  .stat-card:nth-child(3) { animation-delay: .7s; }
+  .stat-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-weight: 300;
+    color: var(--ouro-claro);
+    display: block;
+    line-height: 1;
+  }
+  .stat-label {
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(245,237,224,.6);
+    margin-top: 6px;
+    display: block;
+  }
+
+  /* ── STRIP PROPOSTA ───────────────────────────────── */
+  .strip {
+    background: var(--ouro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding: 18px 40px;
+    flex-wrap: wrap;
+  }
+  .strip-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--verde-profundo);
+  }
+  .strip-icon { font-size: 16px; }
+  .strip-divider { color: rgba(26,58,42,.3); font-size: 18px; }
+
+  /* ── RODA DOS CHÁS — ENTRY POINT ───────────────────── */
+  .roda-hero {
+    background: var(--creme);
+    padding: 100px 40px;
+  }
+  .roda-hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .section-eyebrow {
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--ouro);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-eyebrow::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: var(--ouro);
+  }
+  .section-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 4vw, 58px);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--verde-profundo);
+    margin-bottom: 20px;
+  }
+  .section-headline em { font-style: italic; color: var(--terra); }
+  .section-body {
+    font-size: 17px;
+    line-height: 1.75;
+    color: #4a4036;
+    margin-bottom: 32px;
+  }
+
+  /* Roda visual */
+  .roda-visual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .roda-svg-wrap {
+    width: 380px;
+    height: 380px;
+    position: relative;
+    animation: rotate-slow 60s linear infinite;
+  }
+  @keyframes rotate-slow { to { transform: rotate(360deg); } }
+  .roda-center {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+    background: var(--verde-profundo);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 2;
+    animation: rotate-slow 60s linear infinite reverse;
+    box-shadow: 0 0 0 8px rgba(26,58,42,.12);
+    cursor: pointer;
+    transition: background .3s;
+  }
+  .roda-center:hover { background: var(--verde-musgo); }
+  .roda-center span:first-child {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    color: var(--creme);
+    display: block;
+    line-height: 1.2;
+  }
+  .roda-center span:last-child {
+    font-family: 'Jost', sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--ouro-claro);
+    text-transform: uppercase;
+    display: block;
+    margin-top: 4px;
+  }
+
+  /* Roda dos Chás SVG */
+  .roda-svg-wrap svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Input de intenção */
+  .roda-input-block {
+    background: white;
+    border: 1px solid var(--cinza-suave);
+    padding: 28px 32px;
+    position: relative;
+    margin-top: 8px;
+  }
+  .roda-input-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-style: italic;
+    color: var(--terra);
+    margin-bottom: 14px;
+    display: block;
+  }
+  .roda-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--cinza-suave);
+    background: transparent;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    color: var(--texto-escuro);
+    padding: 10px 0;
+    outline: none;
+    transition: border-color .3s;
+  }
+  .roda-input:focus { border-color: var(--verde-folha); }
+  .roda-input::placeholder { color: #b0a898; }
+  .roda-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .suggestion-pill {
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--verde-musgo);
+    border: 1px solid var(--verde-musgo);
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: all .25s;
+    background: transparent;
+  }
+  .suggestion-pill:hover {
+    background: var(--verde-musgo);
+    color: var(--creme);
+  }
+  .roda-submit {
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+    background: var(--verde-profundo);
+    padding: 14px 28px;
+    border: none;
+    cursor: pointer;
+    transition: background .3s;
+  }
+  .roda-submit:hover { background: var(--verde-musgo); }
+  .roda-submit svg { width: 14px; height: 14px; fill: white; }
+
+  /* ── CINCO PILARES ────────────────────────────────── */
+  .pilares {
+    background: var(--verde-profundo);
+    padding: 100px 40px;
+  }
+  .pilares-header {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+  .pilares-header .section-eyebrow {
+    justify-content: center;
+    color: var(--ouro-claro);
+  }
+  .pilares-header .section-eyebrow::before { background: var(--ouro); }
+  .pilares-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 4vw, 52px);
+    font-weight: 300;
+    color: var(--creme);
+    line-height: 1.15;
+  }
+
+  .pilares-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+  }
+  .pilar-card {
+    background: rgba(245,237,224,.04);
+    border: 1px solid rgba(245,237,224,.08);
+    padding: 48px 28px 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: background .35s, transform .25s;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  .pilar-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--ouro);
+    transform: scaleX(0);
+    transition: transform .35s ease;
+  }
+  .pilar-card:hover { background: rgba(245,237,224,.08); transform: translateY(-4px); }
+  .pilar-card:hover::before { transform: scaleX(1); }
+  .pilar-card.em-breve { opacity: .6; cursor: default; }
+  .pilar-card.em-breve:hover { transform: none; background: rgba(245,237,224,.04); }
+
+  .pilar-icon {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pilar-icon svg { width: 100%; height: 100%; }
+  .pilar-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    color: var(--ouro);
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 12px;
+  }
+  .pilar-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--creme);
+    line-height: 1.2;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .pilar-desc {
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    line-height: 1.7;
+    color: rgba(245,237,224,.55);
+    letter-spacing: .5px;
+  }
+  .badge-breve {
+    display: inline-block;
+    margin-top: 16px;
+    font-family: 'Jost', sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ouro);
+    border: 1px solid rgba(184,150,90,.4);
+    padding: 4px 10px;
+  }
+
+  /* ── MAPA MUNDI ───────────────────────────────────── */
+  .mapa-section {
+    background: var(--off-white);
+    padding: 100px 40px;
+  }
+  .mapa-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .mapa-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: end;
+    margin-bottom: 60px;
+  }
+  /* ── PAISES GRID ──────────────────────────────────── */
+  .paises-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .pais-card {
+    border: 1px solid var(--cinza-suave);
+    background: white;
+    padding: 20px 18px 18px;
+    cursor: pointer;
+    transition: box-shadow .3s, transform .25s, border-color .3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .pais-card:hover {
+    box-shadow: 0 8px 32px rgba(26,58,42,.1);
+    transform: translateY(-3px);
+    border-color: var(--ouro);
+  }
+  .pais-card.pais-destaque {
+    border-color: var(--verde-folha);
+    background: linear-gradient(135deg, rgba(61,107,79,.04) 0%, white 60%);
+    grid-column: span 2;
+  }
+  .pais-card.pais-destaque:hover { border-color: var(--verde-profundo); }
+  .pais-badge {
+    position: absolute;
+    top: 12px; right: 12px;
+    font-family: 'Jost', sans-serif;
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    background: var(--verde-profundo);
+    padding: 3px 8px;
+  }
+  /* ── BANDEIRAS ESTILIZADAS ───────────────────────── */
+  .bandeira-estilizada {
+    width: 52px; height: 34px;
+    margin-bottom: 14px;
+    position: relative; overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.14);
+    flex-shrink: 0;
+  }
+  /* Brasil */
+  .br .br-verde  { position:absolute; inset:0; background:#009c3b; }
+  .br .br-losango { position:absolute; top:50%; left:50%; width:40px; height:26px; background:#ffdf00; transform:translate(-50%,-50%); clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%); }
+  .br .br-circulo { position:absolute; top:50%; left:50%; width:16px; height:16px; background:#002776; border-radius:50%; transform:translate(-50%,-50%); }
+  .br .br-franja  { position:absolute; top:50%; left:27%; width:46%; height:5px; background:rgba(255,255,255,.2); transform:translateY(-50%); border-radius:2px; }
+  /* Japão */
+  .jp .jp-bg     { position:absolute; inset:0; background:#fff; }
+  .jp .jp-circulo{ position:absolute; top:50%; left:50%; width:20px; height:20px; background:#bc002d; border-radius:50%; transform:translate(-50%,-50%); }
+  /* China */
+  .cn .cn-bg     { position:absolute; inset:0; background:#de2910; }
+  .cn .cn-estrela{ position:absolute; background:#ffde00; clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%); }
+  .cn .cn-estrela.grande{ width:13px; height:13px; top:6px; left:4px; }
+  .cn .cn-estrela.p1{ width:6px; height:6px; top:3px; left:19px; }
+  .cn .cn-estrela.p2{ width:6px; height:6px; top:10px; left:23px; }
+  .cn .cn-estrela.p3{ width:6px; height:6px; top:18px; left:21px; }
+  .cn .cn-estrela.p4{ width:6px; height:6px; top:22px; left:13px; }
+  /* Índia */
+  .in .in-laranja{ position:absolute; top:0; left:0; right:0; height:33%; background:#ff9933; }
+  .in .in-branco { position:absolute; top:33%; left:0; right:0; height:34%; background:#fff; display:flex; align-items:center; justify-content:center; }
+  .in .in-verde  { position:absolute; bottom:0; left:0; right:0; height:33%; background:#138808; }
+  .in .in-ashoka { width:9px; height:9px; border:1.5px solid #000080; border-radius:50%; }
+  /* Sri Lanka */
+  .lk .lk-bg          { position:absolute; inset:0; background:#8d153a; }
+  .lk .lk-stripe-green { position:absolute; left:0; top:0; bottom:0; width:13%; background:#00843d; }
+  .lk .lk-stripe-orange{ position:absolute; left:13%; top:0; bottom:0; width:13%; background:#ff7600; }
+  .lk .lk-lion         { position:absolute; right:8px; top:50%; transform:translateY(-50%); width:18px; height:18px; border:1.5px solid #ffb215; border-radius:50%; background:rgba(255,178,21,.15); }
+  /* Etiópia */
+  .et .et-verde   { position:absolute; top:0; left:0; right:0; height:33%; background:#078930; }
+  .et .et-amarelo { position:absolute; top:33%; left:0; right:0; height:34%; background:#fcdd09; }
+  .et .et-vermelho{ position:absolute; bottom:0; left:0; right:0; height:33%; background:#da121a; }
+  .et .et-estrela { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:14px; height:14px; background:#0f47af; border-radius:50%; }
+  /* Marrocos */
+  .ma .ma-bg { position:absolute; inset:0; background:#c1272d; }
+  .ma .ma-estrela { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:15px; height:15px; background:#006233; clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%); }
+  /* Peru */
+  .pe .pe-vermelho-e{ position:absolute; left:0; top:0; bottom:0; width:33%; background:#d91023; }
+  .pe .pe-branco    { position:absolute; left:33%; top:0; bottom:0; width:34%; background:#fff; }
+  .pe .pe-vermelho-d{ position:absolute; right:0; top:0; bottom:0; width:33%; background:#d91023; }
+  /* ── INFO PAÍSES ────────────────────────────────────── */
+  .pais-info { display:flex; flex-direction:column; gap:4px; }
+  .pais-nome {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px; font-weight: 500;
+    color: var(--verde-profundo); display: block;
+  }
+  .pais-destaque .pais-nome { font-size: 22px; }
+  .pais-erva {
+    font-family: 'EB Garamond', serif;
+    font-style: italic; font-size: 13px;
+    color: var(--terra); display: block; line-height: 1.4;
+  }
+  .pais-bioma {
+    font-family: 'Jost', sans-serif;
+    font-size: 9px; letter-spacing: 1.5px;
+    text-transform: uppercase; color: #9a8f82;
+    display: block; margin-top: 4px;
+  }
+  @media (max-width: 1024px) {
+    .paises-grid { grid-template-columns: repeat(2, 1fr); }
+    .pais-card.pais-destaque { grid-column: span 2; }
+  }
+  @media (max-width: 600px) {
+    .paises-grid { grid-template-columns: 1fr; }
+    .pais-card.pais-destaque { grid-column: span 1; }
+  }
+
+  .mapa-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 32px;
+  }
+  .mapa-stat {
+    padding: 24px;
+    border: 1px solid var(--cinza-suave);
+    background: white;
+  }
+  .mapa-stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--verde-profundo);
+    display: block;
+    line-height: 1;
+  }
+  .mapa-stat-label {
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ouro);
+    display: block;
+    margin-top: 6px;
+  }
+
+  /* ── RODA DOS SABORES ─────────────────────────────── */
+  .sabores-section {
+    background: var(--creme-escuro);
+    padding: 100px 40px;
+  }
+  .sabores-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .flavor-wheel {
+    position: relative;
+    width: 440px;
+    height: 440px;
+    margin: 0 auto;
+  }
+  .flavor-wheel svg {
+    width: 100%;
+    height: 100%;
+    transition: transform .3s;
+  }
+  .flavor-wheel:hover svg { transform: scale(1.02); }
+
+  /* ── DIÁRIO PESSOAL ───────────────────────────────── */
+  .diario-section {
+    background: white;
+    padding: 100px 40px;
+  }
+  .diario-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .diario-visual {
+    position: relative;
+  }
+  .diario-card {
+    background: var(--off-white);
+    border: 1px solid var(--cinza-suave);
+    padding: 32px;
+    position: relative;
+  }
+  .diario-card + .diario-card {
+    margin-top: 16px;
+    margin-left: 24px;
+    background: var(--creme);
+  }
+  .card-date {
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ouro);
+    margin-bottom: 10px;
+  }
+  .card-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: var(--verde-profundo);
+    margin-bottom: 8px;
+  }
+  .card-ingredients {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    color: #6b5d52;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .card-rating {
+    margin-top: 14px;
+    display: flex;
+    gap: 4px;
+    font-size: 12px;
+    color: var(--ouro);
+  }
+
+  /* ── CLUBE DAS CHAZERIAS ──────────────────────────── */
+  .clube-section {
+    background: var(--verde-profundo);
+    padding: 100px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .clube-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='38' fill='none' stroke='rgba(184,150,90,0.06)' stroke-width='1'/%3E%3C/svg%3E");
+    background-size: 80px;
+  }
+  .clube-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+  .clube-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 4.5vw, 58px);
+    font-weight: 300;
+    color: var(--creme);
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+  .clube-headline em { font-style: italic; color: var(--ouro-claro); }
+  .clube-body {
+    font-size: 17px;
+    line-height: 1.75;
+    color: rgba(245,237,224,.7);
+    margin-bottom: 48px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clube-tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+  .tier-card {
+    border: 1px solid rgba(184,150,90,.2);
+    padding: 32px 20px;
+    text-align: center;
+    transition: border-color .3s, background .3s;
+    cursor: pointer;
+  }
+  .tier-card:hover { border-color: var(--ouro); background: rgba(184,150,90,.05); }
+  .tier-card.featured { border-color: var(--ouro); background: rgba(184,150,90,.08); }
+  .tier-label {
+    font-family: 'Jost', sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ouro);
+    display: block;
+    margin-bottom: 12px;
+  }
+  .tier-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: var(--creme);
+    display: block;
+    margin-bottom: 10px;
+  }
+  .tier-desc {
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    color: rgba(245,237,224,.5);
+    line-height: 1.6;
+    letter-spacing: .5px;
+  }
+
+  /* ── EDITORIAL STRIP ──────────────────────────────── */
+  .editorial-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .editorial-item {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .editorial-bg {
+    position: absolute;
+    inset: 0;
+    transition: transform .6s ease;
+  }
+  .editorial-item:hover .editorial-bg { transform: scale(1.05); }
+  .editorial-item:nth-child(1) .editorial-bg {
+    background: linear-gradient(135deg, #1a3a2a 0%, #2d6640 100%);
+  }
+  .editorial-item:nth-child(2) .editorial-bg {
+    background: linear-gradient(135deg, #3d2a1a 0%, #6b4a2a 100%);
+  }
+  .editorial-item:nth-child(3) .editorial-bg {
+    background: linear-gradient(135deg, #1a2a3d 0%, #2a4060 100%);
+  }
+  .editorial-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px 36px;
+  }
+  .editorial-tag {
+    font-family: 'Jost', sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ouro-claro);
+    margin-bottom: 12px;
+  }
+  .editorial-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 300;
+    color: var(--creme);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .editorial-link {
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ouro);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap .25s;
+  }
+  .editorial-link:hover { gap: 14px; }
+
+  /* ── FOOTER ───────────────────────────────────────── */
+  footer {
+    background: #111510;
+    padding: 80px 40px 40px;
+    color: rgba(245,237,224,.5);
+  }
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+  .footer-brand .logo-mark { color: var(--creme); font-size: 22px; margin-bottom: 8px; display: block; text-decoration: none; font-family: 'Cormorant Garamond', serif; letter-spacing: 6px; text-transform: uppercase; }
+  .footer-brand .logo-sub { color: var(--ouro); font-size: 9px; letter-spacing: 4px; display: block; margin-bottom: 20px; font-family: 'Jost', sans-serif; text-transform: uppercase; }
+  .footer-about {
+    font-size: 14px;
+    line-height: 1.75;
+    max-width: 280px;
+  }
+  .footer-col h4 {
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ouro);
+    margin-bottom: 20px;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li {
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a {
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    color: rgba(245,237,224,.5);
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color .25s;
+  }
+  .footer-col ul li a:hover { color: var(--ouro-claro); }
+  .footer-bottom {
+    border-top: 1px solid rgba(245,237,224,.08);
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .footer-bottom p {
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  .footer-bottom a {
+    color: var(--ouro);
+    text-decoration: none;
+  }
+
+  /* ── ANIMATIONS ───────────────────────────────────── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fade-up {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity .7s ease, transform .7s ease;
+  }
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── RESPONSIVE ───────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .pilares-grid { grid-template-columns: repeat(3, 1fr); }
+    .pilares-grid .pilar-card:nth-child(4),
+    .pilares-grid .pilar-card:nth-child(5) {
+      grid-column: span 1;
+    }
+    .hero-content { grid-template-columns: 1fr; padding: 0 40px 60px; }
+    .hero-stat-panel { display: none; }
+    .roda-hero-inner, .sabores-inner, .diario-inner, .mapa-header { grid-template-columns: 1fr; }
+    .roda-visual { order: -1; }
+    .editorial-strip { grid-template-columns: 1fr; }
+    .editorial-item { height: 280px; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .clube-tiers { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    .header-inner { grid-template-columns: 1fr auto; }
+    nav.main-nav { display: none; }
+    .hero-headline { font-size: 40px; }
+    .pilares-grid { grid-template-columns: 1fr 1fr; }
+    .footer-top { grid-template-columns: 1fr; }
+    .strip { gap: 20px; }
+    .strip-divider { display: none; }
+  }
+</style>
 </head>
 <body>
-<a href="#page-search" class="skip-link" onclick="enterApp();goPage('search')">Pular para o conteúdo</a>
+<a class="skip" href="#appContainer">Pular para o aplicativo</a>
 
-<!-- LANDING PAGE -->
 <div class="landing" id="landingPage">
-  <div class="landing-hero">
-    <!-- Hero image -->
-    <div class="landing-hero-img">
-      <img src="images/hero/hero-bule.png" alt="Ritual do chá — bule cerâmico servindo infusão" loading="eager"
-           onerror="this.parentElement.style.display='none'">
-      <div class="hero-overlay">
-        <div class="hero-title" style="font-style:italic">Transformamos ervas em rituais.</div>
-        <div class="hero-sub">Curadoria de chás e ervas com base científica e experiência sensorial.</div>
-      </div>
+<!-- ANÚNCIO TOPO -->
+<div class="top-banner">
+  <a href="#">Clube das Chazerias — Inscreva-se</a> &nbsp;·&nbsp;
+  Ervas do Brasil e do Mundo &nbsp;·&nbsp;
+  Marketplace em breve
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <nav class="main-nav">
+      <a href="#">Coleções</a>
+      <a href="#">Origens</a>
+      <a href="#">Roda dos Chás</a>
+      <a href="#">Diário</a>
+    </nav>
+    <a href="#" class="logo">
+      <span class="logo-mark">Ervatório</span>
+      <span class="logo-sub">Ervas do Brasil e do Mundo</span>
+    </a>
+    <div class="header-actions">
+      <a href="#">Mapa</a>
+      <a href="#" onclick="enterApp();return false">Entrar</a>
+      <a href="#" onclick="enterApp();goPage('sobre');return false" class="btn-clube">Clube</a>
     </div>
-    <div class="landing-brand">Ervatório</div>
-    <div class="landing-tagline">A plataforma completa para quem vive o universo dos chás, infusões e ervas medicinais.</div>
-    <div class="landing-sub">Catálogo inteligente, Roda dos Chás, blends personalizados com IA, e-commerce e ferramentas profissionais — tudo em um só lugar.</div>
-    <button class="landing-cta" onclick="enterApp()">Explorar o Ervatório</button>
   </div>
+</header>
 
-  <div class="landing-features">
-    <span class="landing-feat">28 ervas catalogadas</span>
-    <span class="landing-feat">Roda dos Chás interativa</span>
-    <span class="landing-feat">Blend IA personalizado</span>
-    <span class="landing-feat">Chás de 12 países</span>
-    <span class="landing-feat">Marketplace integrado</span>
-    <span class="landing-feat">Cerimônias do chá</span>
-    <span class="landing-feat">Perfil de saúde</span>
-    <span class="landing-feat">Sincronização na nuvem</span>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-botanical"></div>
+
+  <!-- SVG botanical illustration (engraving style) -->
+  <svg class="hero-illustration" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Hibisco engraving simplified -->
+    <circle cx="200" cy="200" r="180" stroke="#f5ede0" stroke-width="0.5" fill="none"/>
+    <circle cx="200" cy="200" r="140" stroke="#f5ede0" stroke-width="0.3" fill="none"/>
+    <!-- Petals -->
+    <ellipse cx="200" cy="90" rx="28" ry="70" fill="none" stroke="#f5ede0" stroke-width="1"/>
+    <ellipse cx="200" cy="90" rx="28" ry="70" fill="none" stroke="#f5ede0" stroke-width="0.3" transform="rotate(72 200 200)"/>
+    <ellipse cx="200" cy="90" rx="28" ry="70" fill="none" stroke="#f5ede0" stroke-width="0.3" transform="rotate(144 200 200)"/>
+    <ellipse cx="200" cy="90" rx="28" ry="70" fill="none" stroke="#f5ede0" stroke-width="0.3" transform="rotate(216 200 200)"/>
+    <ellipse cx="200" cy="90" rx="28" ry="70" fill="none" stroke="#f5ede0" stroke-width="0.3" transform="rotate(288 200 200)"/>
+    <circle cx="200" cy="200" r="22" fill="none" stroke="#f5ede0" stroke-width="0.8"/>
+    <!-- Leaves -->
+    <path d="M200 200 Q230 140 180 100" stroke="#f5ede0" stroke-width="0.6" fill="none"/>
+    <path d="M200 200 Q140 160 120 110" stroke="#f5ede0" stroke-width="0.6" fill="none"/>
+    <path d="M200 200 Q260 230 300 200" stroke="#f5ede0" stroke-width="0.6" fill="none"/>
+    <!-- Fine detail lines -->
+    <line x1="50" y1="200" x2="350" y2="200" stroke="#f5ede0" stroke-width="0.2" opacity="0.5"/>
+    <line x1="200" y1="50" x2="200" y2="350" stroke="#f5ede0" stroke-width="0.2" opacity="0.5"/>
+    <text x="110" y="360" font-family="Georgia, serif" font-size="8" fill="#f5ede0" opacity="0.4" font-style="italic">Hibiscus sabdariffa L.</text>
+  </svg>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-eyebrow">ervatorio.com.br</p>
+      <h1 class="hero-headline">
+        As ervas do mundo<br>
+        reunidas em<br>
+        <em>uma só porta</em>
+      </h1>
+      <p class="hero-body">
+        Do Japonês Matcha ao Yerba Mate sul-americano, do Darjeeling 
+        indiano à Camomila egípcia — e com orgulho especial pelas 
+        ervas únicas dos biomas brasileiros. Origem rastreável, 
+        curadoria botânica, para cada momento da sua vida.
+      </p>
+      <div class="hero-ctas">
+        <a href="#" onclick="enterApp();goPage('search');return false" class="btn-primary">Descobrir meu chá</a>
+        <a href="#colecoes" class="btn-outline">Ver coleções</a>
+      </div>
+    </div>
+
+    <div class="hero-stat-panel">
+      <div class="stat-card">
+        <span class="stat-number">5</span>
+        <span class="stat-label">Eixos Botânicos</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">28+</span>
+        <span class="stat-label">Ervas catalogadas</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Biomas de origem</span>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="landing-sections">
-    <div class="landing-section-title">Para quem é o Ervatório?</div>
-    <div class="landing-cards">
+<!-- STRIP PROPOSTA -->
+<div class="strip">
+  <div class="strip-item">
+    <span class="strip-icon">🌍</span>
+    Ervas do mundo todo
+  </div>
+  <span class="strip-divider">·</span>
+  <div class="strip-item">
+    <span class="strip-icon">🌿</span>
+    Linha Brasileira exclusiva
+  </div>
+  <span class="strip-divider">·</span>
+  <div class="strip-item">
+    <span class="strip-icon">🗺</span>
+    Mapa Mundi dos Chás
+  </div>
+  <span class="strip-divider">·</span>
+  <div class="strip-item">
+    <span class="strip-icon">⊕</span>
+    IA botânica personalizada
+  </div>
+  <span class="strip-divider">·</span>
+  <div class="strip-item">
+    <span class="strip-icon">✦</span>
+    Clube das Chazerias
+  </div>
+</div>
 
-      <div class="landing-card">
-        <div class="landing-card-icon" style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--gold2);font-style:italic">Ch</div>
-        <div class="landing-card-title">Para você — amante de chá</div>
-        <div class="landing-card-text">Descubra chás por efeito, humor ou origem. A Roda dos Chás sugere a infusão perfeita para o seu momento. Salve favoritos, monte blends com IA e acompanhe seu diário de degustação.</div>
-        <ul class="landing-card-list">
-          <li>Filtros por efeito: calmante, digestivo, energizante</li>
-          <li>Contraindicações e segurança em cada ficha</li>
-          <li>Timer de preparo com temperatura ideal</li>
-          <li>Perfil de saúde personalizado</li>
-        </ul>
+<!-- RODA DOS CHÁS — ENTRY POINT -->
+<section class="roda-hero" id="roda">
+  <div class="roda-hero-inner">
+    <div class="roda-text fade-up">
+      <p class="section-eyebrow">Roda dos Chás</p>
+      <h2 class="section-headline">
+        Diga o que<br>
+        <em>você sente</em><br>
+        hoje
+      </h2>
+      <p class="section-body">
+        Nossa inteligência botânica mapeia seu estado — físico, emocional 
+        e sensorial — e apresenta a infusão exata para o seu momento. 
+        Ervas do Brasil e do mundo, aromaterapia e fitoterapia em uma recomendação só.
+      </p>
+
+      <div class="roda-input-block">
+        <span class="roda-input-label">"Quero algo para..."</span>
+        <input type="text" class="roda-input" placeholder="ex: relaxar depois do trabalho, clareza mental, aquecer...">
+        <div class="roda-suggestions">
+          <button class="suggestion-pill" onclick="this.parentElement.previousElementSibling.value=this.textContent">Acalmar a mente</button>
+          <button class="suggestion-pill" onclick="this.parentElement.previousElementSibling.value=this.textContent">Energia suave</button>
+          <button class="suggestion-pill" onclick="this.parentElement.previousElementSibling.value=this.textContent">Digestão</button>
+          <button class="suggestion-pill" onclick="this.parentElement.previousElementSibling.value=this.textContent">Sono profundo</button>
+          <button class="suggestion-pill" onclick="this.parentElement.previousElementSibling.value=this.textContent">Imunidade</button>
+          <button class="suggestion-pill" onclick="this.parentElement.previousElementSibling.value=this.textContent">Foco criativo</button>
+        </div>
+        <button class="roda-submit">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          Consultar a Roda
+        </button>
       </div>
-
-      <div class="landing-card">
-        <div class="landing-card-icon" style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--gold2);font-style:italic">Ca</div>
-        <div class="landing-card-title">Para chazerias e casas de chá</div>
-        <div class="landing-card-text">Seu cardápio inteligente. Ofereça aos seus clientes uma experiência digital que complementa o atendimento presencial — com informações profissionais sobre cada erva e sugestões personalizadas.</div>
-        <ul class="landing-card-list">
-          <li>Catálogo branco pronto para incorporar no seu site</li>
-          <li>Marketplace para vender seus blends</li>
-          <li>Construtor de chás com perfil de sabor</li>
-          <li>Ficha técnica profissional de cada erva</li>
-        </ul>
-      </div>
-
-      <div class="landing-card">
-        <div class="landing-card-icon" style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--gold2);font-style:italic">Ts</div>
-        <div class="landing-card-title">Para tea tasters e sommeliers</div>
-        <div class="landing-card-text">Ferramentas profissionais para curadoria, blending e análise sensorial. Construa receitas com proporções exatas, consulte interações fitoquímicas e explore origens globais com dados técnicos.</div>
-        <ul class="landing-card-list">
-          <li>Construtor de blends com proporções e fitoterapia</li>
-          <li>Mapa mundial com perfil regional detalhado</li>
-          <li>Cerimônias tradicionais documentadas</li>
-          <li>IA generativa para criação de receitas</li>
-        </ul>
-      </div>
-
     </div>
 
-    <!-- Hero mãos -->
-    <div class="landing-hero-img" style="margin-bottom:2rem">
-      <img src="images/hero/hero-maos.png" alt="Mãos segurando xícara de chá de ervas" loading="lazy"
-           onerror="this.parentElement.style.display='none'">
-      <div class="hero-overlay">
-        <div class="hero-title" style="font-style:italic">Cada erva carrega uma história.</div>
-        <div class="hero-sub">Cada infusão, um ritual. Cada momento, uma oportunidade de reconexão.</div>
-      </div>
-    </div>
+    <div class="roda-visual">
+      <!-- Roda dos Chás SVG -->
+      <div class="roda-svg-wrap">
+        <svg viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <style>
+              .seg { transition: opacity .3s; cursor: pointer; }
+              .seg:hover { opacity: .85; }
+            </style>
+          </defs>
 
-    <!-- Collection image -->
-    <div class="landing-hero-img" style="margin-bottom:2rem">
-      <img src="images/hero/ervas-colecao.png" alt="Nossa coleção de ervas — camomila, hibisco, chá verde, blend e chai" loading="lazy"
-           onerror="this.parentElement.style.display='none'">
-      <div class="hero-overlay">
-        <div class="hero-title">Nossa Coleção</div>
-        <div class="hero-sub">Ervas selecionadas para cada momento do seu dia</div>
-      </div>
-    </div>
+          <!-- Outer ring segments — 8 families -->
+          <!-- Calming -->
+          <path class="seg" d="M190 190 L190 20 A170 170 0 0 1 330 105 Z" fill="#2d5440" opacity=".9"/>
+          <text transform="translate(270,80) rotate(22)" font-family="'Jost',sans-serif" font-size="8" fill="#f5ede0" letter-spacing="1" text-anchor="middle" opacity=".8">CALMANTE</text>
 
-    <div style="text-align:center;margin-bottom:3rem">
-      <button class="landing-cta" onclick="enterApp()">Entrar no Ervatório</button>
-    </div>
+          <!-- Energizing -->
+          <path class="seg" d="M190 190 L330 105 A170 170 0 0 1 360 190 Z" fill="#3d6b4f" opacity=".9"/>
+          <text transform="translate(340,160) rotate(60)" font-family="'Jost',sans-serif" font-size="8" fill="#f5ede0" letter-spacing="1" text-anchor="middle" opacity=".8">ENERGIA</text>
 
-    <div class="landing-section-title">Instale o Ervatório no seu celular</div>
-    <div style="text-align:center;max-width:500px;margin:0 auto 1.5rem">
-      <p style="font-size:.85rem;color:var(--cream2);line-height:1.7;margin-bottom:1.25rem">O Ervatório funciona como um app nativo — sem precisar baixar na loja. Instale direto do navegador e tenha acesso offline.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:1.5rem">
-        <button class="landing-cta" id="installBtn" onclick="installPWA()" style="display:none;font-size:.9rem;padding:12px 28px">Instalar App</button>
-        <div style="display:flex;flex-direction:column;gap:12px;width:100%;max-width:380px">
-          <div style="background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);padding:1rem 1.25rem;text-align:left;display:flex;align-items:center;gap:12px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--gold2);font-style:italic">iOS</span>
-            <div><div style="font-size:.82rem;color:var(--cream);font-weight:400">iPhone / iPad</div><div style="font-size:.72rem;color:var(--muted);margin-top:2px">No Safari, toque em Compartilhar (⬆) → "Adicionar à Tela de Início"</div></div>
-          </div>
-          <div style="background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);padding:1rem 1.25rem;text-align:left;display:flex;align-items:center;gap:12px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--gold2);font-style:italic">And</span>
-            <div><div style="font-size:.82rem;color:var(--cream);font-weight:400">Android</div><div style="font-size:.72rem;color:var(--muted);margin-top:2px">No Chrome, toque no menu (⋮) → "Instalar app" ou "Adicionar à tela inicial"</div></div>
-          </div>
-          <div style="background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);padding:1rem 1.25rem;text-align:left;display:flex;align-items:center;gap:12px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--gold2);font-style:italic">Dt</span>
-            <div><div style="font-size:.82rem;color:var(--cream);font-weight:400">Desktop</div><div style="font-size:.72rem;color:var(--muted);margin-top:2px">No Chrome, clique no ícone de instalação (⊕) na barra de endereço</div></div>
-          </div>
+          <!-- Digestive -->
+          <path class="seg" d="M190 190 L360 190 A170 170 0 0 1 330 275 Z" fill="#4a7a60" opacity=".9"/>
+          <text transform="translate(335,245) rotate(100)" font-family="'Jost',sans-serif" font-size="8" fill="#f5ede0" letter-spacing="1" text-anchor="middle" opacity=".8">DIGESTIVO</text>
+
+          <!-- Immuno -->
+          <path class="seg" d="M190 190 L330 275 A170 170 0 0 1 190 360 Z" fill="#1a3a2a" opacity=".9"/>
+          <text transform="translate(280,330) rotate(145)" font-family="'Jost',sans-serif" font-size="8" fill="#f5ede0" letter-spacing="1" text-anchor="middle" opacity=".8">IMUNIDADE</text>
+
+          <!-- Detox -->
+          <path class="seg" d="M190 190 L190 360 A170 170 0 0 1 50 275 Z" fill="#22473a" opacity=".9"/>
+          <text transform="translate(100,330) rotate(215)" font-family="'Jost',sans-serif" font-size="8" fill="#f5ede0" letter-spacing="1" text-anchor="middle" opacity=".8">DETOX</text>
+
+          <!-- Focus -->
+          <path class="seg" d="M190 190 L50 275 A170 170 0 0 1 20 190 Z" fill="#2d5440" opacity=".9"/>
+          <text transform="translate(45,240) rotate(255)" font-family="'Jost',sans-serif" font-size="8" fill="#f5ede0" letter-spacing="1" text-anchor="middle" opacity=".8">FOCO</text>
+
+          <!-- Sleep -->
+          <path class="seg" d="M190 190 L20 190 A170 170 0 0 1 50 105 Z" fill="#1a3a2a" opacity=".9"/>
+          <text transform="translate(45,140) rotate(300)" font-family="'Jost',sans-serif" font-size="8" fill="#f5ede0" letter-spacing="1" text-anchor="middle" opacity=".8">SONO</text>
+
+          <!-- Aromatic -->
+          <path class="seg" d="M190 190 L50 105 A170 170 0 0 1 190 20 Z" fill="#3d6b4f" opacity=".9"/>
+          <text transform="translate(105,70) rotate(340)" font-family="'Jost',sans-serif" font-size="8" fill="#f5ede0" letter-spacing="1" text-anchor="middle" opacity=".8">AROMÁTICO</text>
+
+          <!-- Middle ring — colors -->
+          <circle cx="190" cy="190" r="120" fill="none" stroke="rgba(245,237,224,.12)" stroke-width="40"/>
+
+          <!-- Flavor dots on middle ring -->
+          <circle cx="190" cy="90" r="5" fill="#b8965a"/>
+          <circle cx="268" cy="118" r="5" fill="#d4af7a"/>
+          <circle cx="300" cy="190" r="5" fill="#8b6a3a"/>
+          <circle cx="268" cy="262" r="5" fill="#b8965a"/>
+          <circle cx="190" cy="290" r="5" fill="#d4af7a"/>
+          <circle cx="112" cy="262" r="5" fill="#b8965a"/>
+          <circle cx="80" cy="190" r="5" fill="#8b6a3a"/>
+          <circle cx="112" cy="118" r="5" fill="#d4af7a"/>
+
+          <!-- Inner ring — intensity -->
+          <circle cx="190" cy="190" r="70" fill="rgba(26,58,42,.6)" stroke="rgba(184,150,90,.25)" stroke-width="1"/>
+
+          <!-- Cross lines -->
+          <line x1="190" y1="120" x2="190" y2="260" stroke="rgba(245,237,224,.08)" stroke-width="1"/>
+          <line x1="120" y1="190" x2="260" y2="190" stroke="rgba(245,237,224,.08)" stroke-width="1"/>
+          <line x1="140" y1="140" x2="240" y2="240" stroke="rgba(245,237,224,.08)" stroke-width="1"/>
+          <line x1="240" y1="140" x2="140" y2="240" stroke="rgba(245,237,224,.08)" stroke-width="1"/>
+        </svg>
+
+        <!-- Center button -->
+        <div class="roda-center" onclick="document.getElementById('roda').scrollIntoView({behavior:'smooth'})">
+          <span>Roda dos<br>Chás</span>
+          <span>Consultar</span>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <div style="text-align:center;margin-bottom:2rem">
-    <button class="landing-cta" onclick="enterApp();setTimeout(()=>goPage('sobre'),100)" style="background:none;border:0.5px solid rgba(200,168,75,.3);font-size:.85rem;padding:10px 24px">Conheça o manifesto Ervatório</button>
+<!-- CINCO PILARES -->
+<section class="pilares" id="colecoes">
+  <div class="pilares-header fade-up">
+    <p class="section-eyebrow">Universo Ervatório</p>
+    <h2 class="pilares-headline">Cinco formas de<br>explorar o universo botânico</h2>
   </div>
 
-  <div class="landing-footer">
-    <div class="landing-footer-text">Ervatório &copy; 2026 — Rituais naturais para corpo e mente</div>
+  <div class="pilares-grid">
+
+    <!-- Pilar A: Mapa Mundi -->
+    <a href="#mapa" class="pilar-card">
+      <div class="pilar-icon">
+        <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="22" stroke="#b8965a" stroke-width="1"/>
+          <ellipse cx="26" cy="26" rx="10" ry="22" stroke="#b8965a" stroke-width="0.7"/>
+          <line x1="4" y1="26" x2="48" y2="26" stroke="#b8965a" stroke-width="0.7"/>
+          <line x1="4" y1="18" x2="48" y2="18" stroke="#b8965a" stroke-width="0.4"/>
+          <line x1="4" y1="34" x2="48" y2="34" stroke="#b8965a" stroke-width="0.4"/>
+          <circle cx="26" cy="20" r="2" fill="#d4af7a"/>
+          <path d="M26 10 L26 22" stroke="#d4af7a" stroke-width="0.8"/>
+        </svg>
+      </div>
+      <span class="pilar-number">I</span>
+      <span class="pilar-name">Mapa Mundi<br>dos Chás</span>
+      <p class="pilar-desc">Explore as origens de cada infusão. Do Amazonas a Kyoto, da Etiópia ao Ceilão — rastreabilidade visual e geográfica.</p>
+    </a>
+
+    <!-- Pilar B: Roda dos Chás -->
+    <a href="#roda" class="pilar-card">
+      <div class="pilar-icon">
+        <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="22" stroke="#b8965a" stroke-width="1"/>
+          <circle cx="26" cy="26" r="14" stroke="#b8965a" stroke-width="0.7"/>
+          <circle cx="26" cy="26" r="5" fill="#b8965a"/>
+          <line x1="26" y1="4" x2="26" y2="12" stroke="#b8965a" stroke-width="1.2"/>
+          <line x1="26" y1="40" x2="26" y2="48" stroke="#b8965a" stroke-width="1.2"/>
+          <line x1="4" y1="26" x2="12" y2="26" stroke="#b8965a" stroke-width="1.2"/>
+          <line x1="40" y1="26" x2="48" y2="26" stroke="#b8965a" stroke-width="1.2"/>
+          <line x1="10.2" y1="10.2" x2="15.9" y2="15.9" stroke="#b8965a" stroke-width="0.8"/>
+          <line x1="36.1" y1="36.1" x2="41.8" y2="41.8" stroke="#b8965a" stroke-width="0.8"/>
+        </svg>
+      </div>
+      <span class="pilar-number">II</span>
+      <span class="pilar-name">Roda dos<br>Chás</span>
+      <p class="pilar-desc">Você diz como se sente. Nossa IA botânica encontra o chá certo para o seu momento — aromaterapia e fitoterapia integradas.</p>
+    </a>
+
+    <!-- Pilar C: Diário Pessoal -->
+    <a href="#diario" class="pilar-card">
+      <div class="pilar-icon">
+        <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="6" width="32" height="40" rx="2" stroke="#b8965a" stroke-width="1"/>
+          <rect x="8" y="8" width="32" height="40" rx="2" stroke="#b8965a" stroke-width="0.4"/>
+          <line x1="18" y1="18" x2="36" y2="18" stroke="#b8965a" stroke-width="0.8"/>
+          <line x1="18" y1="24" x2="36" y2="24" stroke="#b8965a" stroke-width="0.8"/>
+          <line x1="18" y1="30" x2="28" y2="30" stroke="#b8965a" stroke-width="0.8"/>
+          <circle cx="34" cy="38" r="6" fill="#b8965a"/>
+          <path d="M31 38 L33 40 L37 36" stroke="white" stroke-width="1.2" fill="none"/>
+        </svg>
+      </div>
+      <span class="pilar-number">III</span>
+      <span class="pilar-name">Diário de<br>Infusões</span>
+      <p class="pilar-desc">Crie, registre e armazene suas composições botânicas pessoais. Seu repertório de chás, sempre à mão.</p>
+    </a>
+
+    <!-- Pilar D: Marketplace -->
+    <a href="#" class="pilar-card em-breve">
+      <div class="pilar-icon">
+        <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="20" width="36" height="26" rx="1" stroke="#b8965a" stroke-width="1"/>
+          <path d="M14 20 L14 14 Q14 6 26 6 Q38 6 38 14 L38 20" stroke="#b8965a" stroke-width="1"/>
+          <circle cx="19" cy="28" r="3" stroke="#b8965a" stroke-width="0.8"/>
+          <circle cx="33" cy="28" r="3" stroke="#b8965a" stroke-width="0.8"/>
+          <line x1="22" y1="28" x2="30" y2="28" stroke="#b8965a" stroke-width="0.5"/>
+        </svg>
+      </div>
+      <span class="pilar-number">IV</span>
+      <span class="pilar-name">Marketplace<br>Botânico</span>
+      <p class="pilar-desc">Ervas, blends e acessórios de chazeiros parceiros do Brasil. Origem verificada, qualidade rastreada.</p>
+      <span class="badge-breve">Em breve</span>
+    </a>
+
+    <!-- Pilar E: Roda dos Sabores -->
+    <a href="#sabores" class="pilar-card">
+      <div class="pilar-icon">
+        <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="20" stroke="#b8965a" stroke-width="1"/>
+          <path d="M26 6 L28 20 L26 26 L24 20 Z" fill="#b8965a" opacity=".7"/>
+          <path d="M26 6 L28 20 L26 26 L24 20 Z" fill="#b8965a" opacity=".7" transform="rotate(72 26 26)"/>
+          <path d="M26 6 L28 20 L26 26 L24 20 Z" fill="#b8965a" opacity=".5" transform="rotate(144 26 26)"/>
+          <path d="M26 6 L28 20 L26 26 L24 20 Z" fill="#b8965a" opacity=".7" transform="rotate(216 26 26)"/>
+          <path d="M26 6 L28 20 L26 26 L24 20 Z" fill="#b8965a" opacity=".5" transform="rotate(288 26 26)"/>
+          <circle cx="26" cy="26" r="5" fill="#1a3a2a" stroke="#b8965a" stroke-width="0.8"/>
+        </svg>
+      </div>
+      <span class="pilar-number">V</span>
+      <span class="pilar-name">Roda dos<br>Sabores</span>
+      <p class="pilar-desc">Mapa sensorial interativo de perfis de sabor — doce, amargo, herbal, floral, amadeirado, cítrico e mais.</p>
+    </a>
   </div>
+</section>
+
+<!-- MAPA MUNDI DOS CHÁS -->
+<section class="mapa-section" id="mapa">
+  <div class="mapa-inner">
+    <div class="mapa-header fade-up">
+      <div>
+        <p class="section-eyebrow">Mapa Mundi dos Chás</p>
+        <h2 class="section-headline">
+          Cada país tem<br>
+          seu <em>ritual</em>
+        </h2>
+        <p class="section-body">
+          Cada chá carrega a geografia, o clima e a alma de sua origem. 
+          Explore as regiões produtoras globais e descubra o que torna 
+          cada terroir único — com destaque especial para os biomas brasileiros.
+        </p>
+        <a href="#" onclick="enterApp();goPage('mundo');return false" class="btn-primary" style="background:var(--verde-profundo); color:var(--creme);">Explorar o Mapa</a>
+      </div>
+
+      <div class="mapa-stats">
+        <div class="mapa-stat">
+          <span class="mapa-stat-num">40+</span>
+          <span class="mapa-stat-label">Países produtores</span>
+        </div>
+        <div class="mapa-stat">
+          <span class="mapa-stat-num">3</span>
+          <span class="mapa-stat-label">Biomas brasileiros</span>
+        </div>
+        <div class="mapa-stat">
+          <span class="mapa-stat-num">8</span>
+          <span class="mapa-stat-label">Famílias botânicas</span>
+        </div>
+        <div class="mapa-stat">
+          <span class="mapa-stat-num">⛓</span>
+          <span class="mapa-stat-label">Origem rastreável</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Países com bandeiras estilizadas -->
+    <div class="paises-grid fade-up">
+
+      <!-- Brasil -->
+      <div class="pais-card pais-destaque">
+        <div class="bandeira-estilizada br">
+          <div class="br-verde"></div>
+          <div class="br-losango"></div>
+          <div class="br-circulo"></div>
+          <div class="br-franja"></div>
+        </div>
+        <div class="pais-info">
+          <span class="pais-nome">Brasil</span>
+          <span class="pais-erva">Erva-Mate · Capim-Santo · Hibisco</span>
+          <span class="pais-bioma">Amazônia · Cerrado · Mata Atlântica</span>
+        </div>
+        <span class="pais-badge">Linha Exclusiva</span>
+      </div>
+
+      <!-- Japão -->
+      <div class="pais-card">
+        <div class="bandeira-estilizada jp">
+          <div class="jp-bg"></div>
+          <div class="jp-circulo"></div>
+        </div>
+        <div class="pais-info">
+          <span class="pais-nome">Japão</span>
+          <span class="pais-erva">Matcha · Gyokuro · Hojicha</span>
+          <span class="pais-bioma">Uji · Nishio · Kagoshima</span>
+        </div>
+      </div>
+
+      <!-- China -->
+      <div class="pais-card">
+        <div class="bandeira-estilizada cn">
+          <div class="cn-bg"></div>
+          <div class="cn-estrela grande"></div>
+          <div class="cn-estrela p1"></div>
+          <div class="cn-estrela p2"></div>
+          <div class="cn-estrela p3"></div>
+          <div class="cn-estrela p4"></div>
+        </div>
+        <div class="pais-info">
+          <span class="pais-nome">China</span>
+          <span class="pais-erva">Pu-erh · Longjing · Oolong</span>
+          <span class="pais-bioma">Yunnan · Fujian · Zhejiang</span>
+        </div>
+      </div>
+
+      <!-- Índia -->
+      <div class="pais-card">
+        <div class="bandeira-estilizada in">
+          <div class="in-laranja"></div>
+          <div class="in-branco">
+            <div class="in-ashoka"></div>
+          </div>
+          <div class="in-verde"></div>
+        </div>
+        <div class="pais-info">
+          <span class="pais-nome">Índia</span>
+          <span class="pais-erva">Darjeeling · Assam · Chai</span>
+          <span class="pais-bioma">Darjeeling · Assam · Nilgiris</span>
+        </div>
+      </div>
+
+      <!-- Sri Lanka -->
+      <div class="pais-card">
+        <div class="bandeira-estilizada lk">
+          <div class="lk-bg"></div>
+          <div class="lk-lion"></div>
+          <div class="lk-stripe-green"></div>
+          <div class="lk-stripe-orange"></div>
+        </div>
+        <div class="pais-info">
+          <span class="pais-nome">Sri Lanka</span>
+          <span class="pais-erva">Ceylon · Orange Pekoe</span>
+          <span class="pais-bioma">Nuwara Eliya · Kandy</span>
+        </div>
+      </div>
+
+      <!-- Etiópia -->
+      <div class="pais-card">
+        <div class="bandeira-estilizada et">
+          <div class="et-verde"></div>
+          <div class="et-amarelo"></div>
+          <div class="et-vermelho"></div>
+          <div class="et-estrela"></div>
+        </div>
+        <div class="pais-info">
+          <span class="pais-nome">Etiópia</span>
+          <span class="pais-erva">Café Verde · Khat · Gesho</span>
+          <span class="pais-bioma">Kaffa · Sidama · Yirgacheffe</span>
+        </div>
+      </div>
+
+      <!-- Marrocos -->
+      <div class="pais-card">
+        <div class="bandeira-estilizada ma">
+          <div class="ma-bg"></div>
+          <div class="ma-estrela"></div>
+        </div>
+        <div class="pais-info">
+          <span class="pais-nome">Marrocos</span>
+          <span class="pais-erva">Chá Verde · Menta Fresca</span>
+          <span class="pais-bioma">Atlas · Maghreb</span>
+        </div>
+      </div>
+
+      <!-- Peru -->
+      <div class="pais-card">
+        <div class="bandeira-estilizada pe">
+          <div class="pe-vermelho-e"></div>
+          <div class="pe-branco"></div>
+          <div class="pe-vermelho-d"></div>
+        </div>
+        <div class="pais-info">
+          <span class="pais-nome">Peru</span>
+          <span class="pais-erva">Muña · Coca · Uña de Gato</span>
+          <span class="pais-bioma">Andes · Amazônia Peruana</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDITORIAL STRIP -->
+<div class="editorial-strip">
+  <div class="editorial-item">
+    <div class="editorial-bg"></div>
+    <div class="editorial-content">
+      <span class="editorial-tag">Amazônia</span>
+      <h3 class="editorial-title">Chás do Alto Rio Negro — ancestralidade em infusão</h3>
+      <a href="#" class="editorial-link">Ler história →</a>
+    </div>
+  </div>
+  <div class="editorial-item">
+    <div class="editorial-bg"></div>
+    <div class="editorial-content">
+      <span class="editorial-tag">Phytoterapia</span>
+      <h3 class="editorial-title">Linha Phyto — eficácia botânica com rigor científico</h3>
+      <a href="#" class="editorial-link">Conhecer linha →</a>
+    </div>
+  </div>
+  <div class="editorial-item">
+    <div class="editorial-bg"></div>
+    <div class="editorial-content">
+      <span class="editorial-tag">Cerrado</span>
+      <h3 class="editorial-title">Erva-Mate do Cerrado — identidade brasileira na xícara</h3>
+      <a href="#" class="editorial-link">Explorar →</a>
+    </div>
+  </div>
+</div>
+
+<!-- RODA DOS SABORES -->
+<section class="sabores-section" id="sabores">
+  <div class="sabores-inner">
+    <!-- Flavor Wheel visual -->
+    <div class="flavor-wheel fade-up">
+      <svg viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <style>.fseg { cursor:pointer; transition: opacity .25s; } .fseg:hover { opacity:.8; }</style>
+        </defs>
+        <!-- Outer ring — major flavor categories -->
+        <path class="fseg" d="M220 220 L220 20 A200 200 0 0 1 362 79 Z" fill="#5c3d2e"/>
+        <path class="fseg" d="M220 220 L362 79 A200 200 0 0 1 420 220 Z" fill="#7a5235"/>
+        <path class="fseg" d="M220 220 L420 220 A200 200 0 0 1 362 361 Z" fill="#8a6840"/>
+        <path class="fseg" d="M220 220 L362 361 A200 200 0 0 1 220 420 Z" fill="#b8965a"/>
+        <path class="fseg" d="M220 220 L220 420 A200 200 0 0 1 78 361 Z" fill="#1a3a2a"/>
+        <path class="fseg" d="M220 220 L78 361 A200 200 0 0 1 20 220 Z" fill="#2d5440"/>
+        <path class="fseg" d="M220 220 L20 220 A200 200 0 0 1 78 79 Z" fill="#3d6b4f"/>
+        <path class="fseg" d="M220 220 L78 79 A200 200 0 0 1 220 20 Z" fill="#4a7a60"/>
+
+        <!-- Middle ring -->
+        <circle cx="220" cy="220" r="140" fill="none" stroke="rgba(245,237,224,.15)" stroke-width="50"/>
+
+        <!-- Inner ring -->
+        <circle cx="220" cy="220" r="90" fill="var(--creme-escuro, #ede0cc)" stroke="rgba(92,61,46,.2)" stroke-width="1"/>
+
+        <!-- Labels outer -->
+        <text text-anchor="middle" transform="translate(220,50) rotate(0)" font-family="'Jost',sans-serif" font-size="9" fill="var(--creme,#f5ede0)" letter-spacing="1.5">AMARGO</text>
+        <text text-anchor="middle" transform="translate(360,90) rotate(45)" font-family="'Jost',sans-serif" font-size="9" fill="var(--creme,#f5ede0)" letter-spacing="1.5">PICANTE</text>
+        <text text-anchor="middle" transform="translate(400,220) rotate(90)" font-family="'Jost',sans-serif" font-size="9" fill="var(--creme,#f5ede0)" letter-spacing="1.5">CÍTRICO</text>
+        <text text-anchor="middle" transform="translate(355,355) rotate(135)" font-family="'Jost',sans-serif" font-size="9" fill="var(--creme,#f5ede0)" letter-spacing="1.5">DOCE</text>
+        <text text-anchor="middle" transform="translate(220,400) rotate(180)" font-family="'Jost',sans-serif" font-size="9" fill="var(--creme,#f5ede0)" letter-spacing="1.5">HERBAL</text>
+        <text text-anchor="middle" transform="translate(80,355) rotate(225)" font-family="'Jost',sans-serif" font-size="9" fill="var(--creme,#f5ede0)" letter-spacing="1.5">FLORAL</text>
+        <text text-anchor="middle" transform="translate(38,220) rotate(270)" font-family="'Jost',sans-serif" font-size="9" fill="var(--creme,#f5ede0)" letter-spacing="1.5">AMADEIRADO</text>
+        <text text-anchor="middle" transform="translate(80,85) rotate(315)" font-family="'Jost',sans-serif" font-size="9" fill="var(--creme,#f5ede0)" letter-spacing="1.5">TERROSO</text>
+
+        <!-- Center -->
+        <circle cx="220" cy="220" r="60" fill="#1a3a2a"/>
+        <text text-anchor="middle" x="220" y="215" font-family="'Cormorant Garamond',serif" font-size="14" fill="#f5ede0" font-style="italic">Roda dos</text>
+        <text text-anchor="middle" x="220" y="232" font-family="'Cormorant Garamond',serif" font-size="14" fill="#f5ede0" font-style="italic">Sabores</text>
+        <text text-anchor="middle" x="220" y="248" font-family="'Jost',sans-serif" font-size="8" fill="#b8965a" letter-spacing="2">INTERATIVO</text>
+      </svg>
+    </div>
+
+    <div class="sabores-text fade-up">
+      <p class="section-eyebrow">Roda dos Sabores</p>
+      <h2 class="section-headline">
+        Seu perfil<br>sensorial de<br>
+        <em>chá</em>
+      </h2>
+      <p class="section-body">
+        Cada paladar é único. A Roda dos Sabores mapeia suas preferências 
+        — amargo, floral, terroso, cítrico — e guia você pelas famílias 
+        botânicas que mais combinam com você.
+      </p>
+      <p class="section-body">
+        Conectada à Roda dos Chás, ela refina as recomendações com 
+        base no seu perfil sensorial construído ao longo do tempo.
+      </p>
+      <a href="#" onclick="enterApp();goPage('sabores');return false" class="btn-primary" style="background:var(--terra); color:var(--creme);">Descobrir meu perfil</a>
+    </div>
+  </div>
+</section>
+
+<!-- DIÁRIO PESSOAL -->
+<section class="diario-section" id="diario">
+  <div class="diario-inner">
+    <div class="diario-text fade-up">
+      <p class="section-eyebrow">Diário de Infusões</p>
+      <h2 class="section-headline">
+        Crie e guarde<br>suas<br>
+        <em>composições</em>
+      </h2>
+      <p class="section-body">
+        O Diário Pessoal do Ervatório é o seu caderno botânico digital. 
+        Registre blends que você descobriu, crie composições próprias, 
+        anote aromas, efeitos e memórias afetivas de cada infusão.
+      </p>
+      <p class="section-body">
+        Suas composições ficam salvas na sua conta e podem ser 
+        compartilhadas com o Clube das Chazerias.
+      </p>
+      <a href="#" onclick="enterApp();goPage('favs');return false" class="btn-primary" style="background:var(--verde-profundo); color:var(--creme);">Abrir meu Diário</a>
+    </div>
+
+    <div class="diario-visual fade-up">
+      <!-- Mock journal cards -->
+      <div class="diario-card">
+        <p class="card-date">18 Abril, 2025 · Composição #47</p>
+        <h3 class="card-name">Tarde de Chuva Cerrado</h3>
+        <p class="card-ingredients">Erva-Mate · Capim-Santo · Gengibre · Casca de Laranja Seca · Cravo</p>
+        <div class="card-rating">★★★★★</div>
+      </div>
+      <div class="diario-card" style="margin-left:24px; margin-top:16px;">
+        <p class="card-date">12 Abril, 2025 · Composição #46</p>
+        <h3 class="card-name">Manhã Amazônica</h3>
+        <p class="card-ingredients">Guaraná Natural · Açaí · Camomila Branca · Mel de Abelha Nativa</p>
+        <div class="card-rating">★★★★☆</div>
+      </div>
+
+      <div style="margin-top:24px; padding:20px 24px; border:1px dashed var(--cinza-suave); display:flex; align-items:center; gap:14px; cursor:pointer; transition: border-color .3s;" onmouseover="this.style.borderColor='var(--verde-folha)'" onmouseout="this.style.borderColor='var(--cinza-suave)'">
+        <span style="font-size:24px; color:var(--verde-folha);">+</span>
+        <span style="font-family:'EB Garamond',serif; font-style:italic; color:#6b5d52; font-size:16px;">Nova composição...</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLUBE DAS CHAZERIAS -->
+<section class="clube-section" id="clube">
+  <div class="clube-bg-pattern"></div>
+  <div class="clube-inner fade-up">
+    <p class="section-eyebrow" style="justify-content:center; color:var(--ouro-claro);">
+      <span style="display:block; width:24px; height:1px; background:var(--ouro); margin-right:12px;"></span>
+      Clube das Chazerias
+    </p>
+    <h2 class="clube-headline">
+      Chá é pretexto.<br>
+      <em>Encontro</em> é o destino.
+    </h2>
+    <p class="clube-body">
+      O Clube das Chazerias conecta estranhos ao redor de uma xícara. 
+      Eventos presenciais, coleções exclusivas, conteúdo aprofundado 
+      e acesso antecipado ao Marketplace Botânico.
+    </p>
+
+    <div class="clube-tiers">
+      <div class="tier-card">
+        <span class="tier-label">Grão</span>
+        <span class="tier-name">Semente</span>
+        <p class="tier-desc">Acesso ao Diário, Roda dos Chás e conteúdo educacional básico</p>
+      </div>
+      <div class="tier-card featured">
+        <span class="tier-label">Mais Popular</span>
+        <span class="tier-name">Raiz</span>
+        <p class="tier-desc">Eventos mensais, curadoria de blends, acesso antecipado às coleções</p>
+      </div>
+      <div class="tier-card">
+        <span class="tier-label">Premium</span>
+        <span class="tier-name">Floresta</span>
+        <p class="tier-desc">Tudo do Raiz + blends exclusivos, visitas a produtores e blockchain tracking</p>
+      </div>
+    </div>
+
+    <a href="#" onclick="enterApp();goPage('sobre');return false" class="btn-primary">Entrar para o Clube</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-mark">Ervatório</span>
+        <span class="logo-sub">Ervas do Brasil e do Mundo</span>
+        <p class="footer-about">
+          Do Amazonas ao Cerrado, do Japão à Índia, da Etiópia ao 
+          Ceilão. Curadoria botânica global com orgulho especial 
+          pelas ervas únicas do Brasil.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Portal</h4>
+        <ul>
+          <li><a href="#">Mapa Mundi dos Chás</a></li>
+          <li><a href="#">Roda dos Chás</a></li>
+          <li><a href="#">Roda dos Sabores</a></li>
+          <li><a href="#">Diário de Infusões</a></li>
+          <li><a href="#">Marketplace (em breve)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Coleções</h4>
+        <ul>
+          <li><a href="#">Linha Amazônia</a></li>
+          <li><a href="#">Cerrado & Mata Atlântica</a></li>
+          <li><a href="#">Linha Phyto — Botânica Funcional</a></li>
+          <li><a href="#">Globais & Clássicos</a></li>
+          <li><a href="#">Blends Exclusivos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Clube</h4>
+        <ul>
+          <li><a href="#">Clube das Chazerias</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Nossa história</a></li>
+          <li><a href="#">Chazerias parceiras</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Ervatório · <a href="https://ervatorio.com.br">ervatorio.com.br</a></p>
+      <p>Curadoria botânica global — Com orgulho das ervas do Brasil</p>
+    </div>
+  </div>
+</footer>
 </div>
 
 <!-- APP (hidden until user clicks "Entrar") -->
@@ -444,7 +2119,7 @@
 <div class="page" id="page-marketplace">
   <div style="background:rgba(200,168,75,.08);border:0.5px solid rgba(200,168,75,.25);border-radius:var(--r-lg);padding:1rem 1.25rem;margin-bottom:1.25rem;display:flex;align-items:center;gap:10px">
     <span style="font-size:1.2rem">🚧</span>
-    <div><div style="font-size:.85rem;color:var(--gold2);font-weight:400">Seção em desenvolvimento</div><div style="font-size:.75rem;color:var(--muted);margin-top:2px">O Marketplace do Ervatório está sendo construído. Em breve você poderá comprar infusões, equipamentos e vivências diretamente de produtores e chazerias parceiras.</div></div>
+    <div><div style="font-size:.85rem;color:var(--gold2);font-weight:400">Seção em desenvolvimento</div><div style="font-size:.75rem;color:var(--muted);margin-top:2px">O Marketplace do Ervatório está sendo construído. Em breve você poderá comprar infusões, equipamentos e vivências diretamente de produtores e chazerias parceiras do Brasil e do mundo.</div></div>
   </div>
   <div class="mkt-hero">
     <div class="mkt-hero-text">
@@ -579,7 +2254,7 @@
 
 <div class="page" id="page-blends">
   <div class="sec-title">Biblioteca de Blends</div>
-  <div class="sec-sub">22 receitas curatoriais com ervas brasileiras e classicas</div>
+  <div class="sec-sub">22 receitas curatoriais com ervas do Brasil e do mundo</div>
   <div class="herb-grid" id="blendsGrid"></div>
 </div>
 
@@ -822,6 +2497,39 @@
     console.error('[Ervatorio v1.1] Offline ou erro:', e);
   }
 })();
+</script>
+
+<script>
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Suggestion pills
+  document.querySelectorAll('.suggestion-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      const input = pill.closest('.roda-input-block').querySelector('.roda-input');
+      input.value = pill.textContent;
+      input.focus();
+    });
+  });
+
+  // Roda segments hover
+  document.querySelectorAll('.seg, .fseg').forEach(seg => {
+    seg.addEventListener('mouseenter', () => {
+      seg.style.opacity = '.75';
+    });
+    seg.addEventListener('mouseleave', () => {
+      seg.style.opacity = '';
+    });
+  });
 </script>
 </body>
 </html>
