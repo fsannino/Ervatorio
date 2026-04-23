@@ -43,15 +43,13 @@
     --texto-escuro:   #1a1a16;
   }
 
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
 
-  body {
+  /* Landing page styles — scoped to .landing to avoid overriding app theme */
+  .landing {
     font-family: 'EB Garamond', Georgia, serif;
     background: var(--off-white);
     color: var(--texto-escuro);
-    overflow-x: hidden;
   }
 
   /* ── ANÚNCIO TOPO ─────────────────────────────────── */
