@@ -420,7 +420,6 @@
     flex-direction: column;
     text-align: center;
     z-index: 2;
-    animation: rotate-slow 60s linear infinite reverse;
     box-shadow: 0 0 0 8px rgba(26,58,42,.12);
     cursor: pointer;
     transition: background .3s;
@@ -1330,11 +1329,11 @@
           <line x1="240" y1="140" x2="140" y2="240" stroke="rgba(245,237,224,.08)" stroke-width="1"/>
         </svg>
 
-        <!-- Center button -->
-        <div class="roda-center" onclick="document.getElementById('roda').scrollIntoView({behavior:'smooth'})">
-          <span>Roda dos<br>Chás</span>
-          <span>Consultar</span>
-        </div>
+      </div>
+      <!-- Center button — outside roda-svg-wrap so it stays fixed -->
+      <div class="roda-center" onclick="document.getElementById('roda').scrollIntoView({behavior:'smooth'})">
+        <span>Roda dos<br>Chás</span>
+        <span>Consultar</span>
       </div>
     </div>
   </div>
