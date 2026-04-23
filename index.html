@@ -1110,7 +1110,7 @@
 <div class="landing" id="landingPage">
 <!-- ANÚNCIO TOPO -->
 <div class="top-banner">
-  <a href="#">Clube das Chazerias — Inscreva-se</a> &nbsp;·&nbsp;
+  <a href="#clube">Clube das Chazerias — Inscreva-se</a> &nbsp;·&nbsp;
   Ervas do Brasil e do Mundo &nbsp;·&nbsp;
   Marketplace em breve
 </div>
@@ -1119,17 +1119,17 @@
 <header>
   <div class="header-inner">
     <nav class="main-nav">
-      <a href="#">Coleções</a>
-      <a href="#">Origens</a>
-      <a href="#">Roda dos Chás</a>
-      <a href="#">Diário</a>
+      <a href="#colecoes">Coleções</a>
+      <a href="#mapa">Origens</a>
+      <a href="#roda">Roda dos Chás</a>
+      <a href="#diario">Diário</a>
     </nav>
-    <a href="#" class="logo">
+    <a href="#" class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">
       <span class="logo-mark">Ervatório</span>
       <span class="logo-sub">Ervas do Brasil e do Mundo</span>
     </a>
     <div class="header-actions">
-      <a href="#">Mapa</a>
+      <a href="#mapa">Mapa</a>
       <a href="#" onclick="enterApp();return false">Entrar</a>
       <a href="#" onclick="enterApp();goPage('sobre');return false" class="btn-clube">Clube</a>
     </div>
@@ -1796,31 +1796,31 @@
       <div class="footer-col">
         <h4>Portal</h4>
         <ul>
-          <li><a href="#">Mapa Mundi dos Chás</a></li>
-          <li><a href="#">Roda dos Chás</a></li>
-          <li><a href="#">Roda dos Sabores</a></li>
-          <li><a href="#">Diário de Infusões</a></li>
-          <li><a href="#">Marketplace (em breve)</a></li>
+          <li><a href="#mapa">Mapa Mundi dos Chás</a></li>
+          <li><a href="#roda">Roda dos Chás</a></li>
+          <li><a href="#sabores">Roda dos Sabores</a></li>
+          <li><a href="#diario">Diário de Infusões</a></li>
+          <li><a href="#colecoes">Marketplace (em breve)</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Coleções</h4>
         <ul>
-          <li><a href="#">Linha Amazônia</a></li>
-          <li><a href="#">Cerrado & Mata Atlântica</a></li>
-          <li><a href="#">Linha Phyto — Botânica Funcional</a></li>
-          <li><a href="#">Globais & Clássicos</a></li>
-          <li><a href="#">Blends Exclusivos</a></li>
+          <li><a href="#" onclick="enterApp();goPage('mundo');return false">Linha Amazônia</a></li>
+          <li><a href="#" onclick="enterApp();goPage('mundo');return false">Cerrado & Mata Atlântica</a></li>
+          <li><a href="#" onclick="enterApp();goPage('search');return false">Linha Phyto — Botânica Funcional</a></li>
+          <li><a href="#" onclick="enterApp();goPage('mundo');return false">Globais & Clássicos</a></li>
+          <li><a href="#" onclick="enterApp();goPage('criarblend');return false">Blends Exclusivos</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Clube</h4>
         <ul>
-          <li><a href="#">Clube das Chazerias</a></li>
-          <li><a href="#">Eventos</a></li>
-          <li><a href="#">Nossa história</a></li>
-          <li><a href="#">Chazerias parceiras</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#clube">Clube das Chazerias</a></li>
+          <li><a href="#clube">Eventos</a></li>
+          <li><a href="#" onclick="enterApp();goPage('sobre');return false">Nossa história</a></li>
+          <li><a href="#clube">Chazerias parceiras</a></li>
+          <li><a href="#" onclick="enterApp();goPage('sobre');return false">Contato</a></li>
         </ul>
       </div>
     </div>
