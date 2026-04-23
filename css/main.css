@@ -974,6 +974,19 @@ select.pc-input option{background:var(--bg2);color:var(--cream)}
 .ev-roda-btn{background:var(--gold);color:var(--bg);border:none;padding:10px 24px;border-radius:var(--r-md);font-size:.88rem;font-family:'Jost',sans-serif;cursor:pointer;margin-top:1rem;transition:opacity .2s}
 .ev-roda-btn:hover{opacity:.85}
 
+/* Roda Funcional — subdivisões por categoria terapêutica */
+.rf-count{font-size:.72rem;color:var(--gold);background:rgba(200,168,75,.1);border:0.5px solid rgba(200,168,75,.25);border-radius:999px;padding:2px 10px;letter-spacing:.04em;font-weight:400}
+.rf-cat{margin-bottom:.75rem;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-md);overflow:hidden}
+.rf-cat-head{width:100%;display:flex;align-items:center;gap:10px;padding:10px 14px;background:transparent;border:0;cursor:pointer;color:var(--cream2);font-family:'Jost',sans-serif;font-size:.85rem;text-align:left;transition:background .15s}
+.rf-cat-head:hover{background:rgba(200,168,75,.05)}
+.rf-cat-icon{font-size:1rem;line-height:1;width:22px;text-align:center}
+.rf-cat-label{flex:1;letter-spacing:.03em;color:var(--gold2);font-weight:500}
+.rf-cat-count{font-size:.7rem;color:var(--muted);padding:1px 8px;background:rgba(255,255,255,.04);border-radius:999px;min-width:22px;text-align:center}
+.rf-cat-chevron{font-size:.8rem;color:var(--muted);transition:transform .2s}
+.rf-cat.collapsed .rf-cat-chevron{transform:rotate(-90deg)}
+.rf-cat-body{padding:6px 14px 14px;max-height:600px;opacity:1;transition:max-height .25s ease,opacity .2s,padding .25s}
+.rf-cat.collapsed .rf-cat-body{max-height:0;opacity:0;padding-top:0;padding-bottom:0;overflow:hidden;margin-bottom:0}
+
 /* Recommendation results */
 .ev-roda-results{display:flex;flex-direction:column;gap:8px}
 .ev-rec-card{display:flex;align-items:center;gap:12px;padding:12px;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);cursor:pointer;transition:border-color .2s}

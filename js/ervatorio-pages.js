@@ -345,28 +345,99 @@
   }
 
   // ================================================================
-  // #roda-funcional — Roda dos Chas v1.1 (18 vetores)
+  // #roda-funcional — Roda dos Chas v1.1 (vetores agrupados por sistema)
   // ================================================================
+
+  // Mapeamento de vetor -> categoria terapêutica. Ordem importa: o
+  // primeiro match vence. Vetores sem match caem em 'Outros'.
+  var VETOR_CATEGORIAS = [
+    { id: 'digestivo',  label: 'Digestivo',          icon: '🫕',
+      rx: /^(antidisp|carminat|colagogo|coler[ée]t|hepatoprot|hepatoativ|antiulcer|antiespasm|eup[eé]pt|aperiente|protetor da mucosa)/i },
+    { id: 'respiratorio', label: 'Respiratório',     icon: '🌬',
+      rx: /^(expector|broncodil|antituss|antiastm|descong|antial[eé]rg)/i },
+    { id: 'nervoso',    label: 'Sistema Nervoso',    icon: '🧠',
+      rx: /^(ansiol|sedat|hipno|calmant|antidepr|nootr|adaptog|indutor de sono|estimulante do SNC)/i },
+    { id: 'cardiovascular', label: 'Cardiovascular', icon: '❤️',
+      rx: /^(anti-?hipert|hipolipem|cardiop|vasodil|vasocon|venoton|antiagreg|hipotens)/i },
+    { id: 'urinario',   label: 'Urinário & Renal',   icon: '💧',
+      rx: /^(diur[eé]t|litol[ií]t|antiss[eé]ptico urin|nefroprot)/i },
+    { id: 'topico',     label: 'Pele & Tópico',      icon: '🌿',
+      rx: /(t[oó]pico|cicatriz|anti-?hemorr|dermatol[oó]gic|antiss[eé]ptico)/i },
+    { id: 'metabolico', label: 'Metabólico',         icon: '🔥',
+      rx: /^(termog|hipogli|hipoglicem|lipol[ií]t|redu[cç][aã]o de peso|coadjuvante.*peso|modulador.*glic)/i },
+    { id: 'antiinflam', label: 'Anti-inflamatório',  icon: '🩹',
+      rx: /^(anti-?inflamat)/i },
+    { id: 'imuno',      label: 'Imune & Antimicrobiano', icon: '🛡',
+      rx: /^(antimicrob|antif[uú]ng|antiviral|antibacter|imunomodul)/i },
+    { id: 'geral',      label: 'Tônico & Antioxidante', icon: '✨',
+      rx: /^(antioxidante|t[oô]nico|analg[eé]sico|afrodis|sudor[ií]fero|febr[ií]fugo|hemost)/i },
+  ];
+
+  function classificarVetor(v) {
+    var s = String(v || '').trim();
+    for (var i = 0; i < VETOR_CATEGORIAS.length; i++) {
+      if (VETOR_CATEGORIAS[i].rx.test(s)) return VETOR_CATEGORIAS[i].id;
+    }
+    return 'outros';
+  }
+
+  function agruparVetores(vetores) {
+    var grupos = {};
+    VETOR_CATEGORIAS.forEach(function(c) { grupos[c.id] = []; });
+    grupos.outros = [];
+    vetores.forEach(function(v) { grupos[classificarVetor(v)].push(v); });
+    return grupos;
+  }
+
+  // Toggle collapse/expand de uma subdivisão.
+  window.toggleRodaFuncCat = function(id) {
+    var el = document.getElementById('rfcat-' + id);
+    if (!el) return;
+    el.classList.toggle('collapsed');
+  };
+
   window.renderRodaFuncional = async function() {
     var form = document.getElementById('rodaFuncForm');
     var results = document.getElementById('rodaFuncResults');
     if (!form || !results) return;
 
-    // Load available vectors
     form.innerHTML = '<div class="ev-loading">Carregando vetores...</div>';
     try {
       var vetores = await ErvatorioData.getVetoresDisponiveis();
-      var html = '<div class="ev-roda-vetores"><div class="ficha-sub">Selecione os vetores desejados</div><div class="ev-checkbox-grid">';
-      vetores.forEach(function(v) {
-        html += '<label class="ev-checkbox"><input type="checkbox" name="vetor" value="' + safeEsc(v) + '"> ' + safeEsc(v) + '</label>';
-      });
-      html += '</div></div>';
+      var grupos = agruparVetores(vetores);
+      var html = '<div class="ev-roda-vetores">' +
+        '<div class="ficha-sub" style="display:flex;align-items:center;justify-content:space-between;gap:12px">' +
+          '<span>Selecione os vetores desejados</span>' +
+          '<span id="rfCount" class="rf-count">0 selecionados</span>' +
+        '</div>';
 
-      html += '<div class="ev-roda-restricoes"><div class="ficha-sub">Restricoes</div><div class="ev-checkbox-grid">' +
+      // Renderiza cada categoria que tem pelo menos 1 vetor.
+      VETOR_CATEGORIAS.concat([{ id: 'outros', label: 'Outros', icon: '🌱' }]).forEach(function(c) {
+        var arr = grupos[c.id];
+        if (!arr || !arr.length) return;
+        html += '<div class="rf-cat" id="rfcat-' + c.id + '">' +
+          '<button type="button" class="rf-cat-head" onclick="toggleRodaFuncCat(\'' + c.id + '\')">' +
+            '<span class="rf-cat-icon">' + c.icon + '</span>' +
+            '<span class="rf-cat-label">' + safeEsc(c.label) + '</span>' +
+            '<span class="rf-cat-count">' + arr.length + '</span>' +
+            '<span class="rf-cat-chevron">▾</span>' +
+          '</button>' +
+          '<div class="rf-cat-body ev-checkbox-grid">';
+        arr.forEach(function(v) {
+          html += '<label class="ev-checkbox">' +
+            '<input type="checkbox" name="vetor" value="' + safeEsc(v) + '" onchange="atualizarContagemVetores()"> ' +
+            safeEsc(v) +
+          '</label>';
+        });
+        html += '</div></div>';
+      });
+      html += '</div>';
+
+      html += '<div class="ev-roda-restricoes"><div class="ficha-sub">Restrições</div><div class="ev-checkbox-grid">' +
         '<label class="ev-checkbox"><input type="checkbox" id="rfGestante"> Gestante</label>' +
         '<label class="ev-checkbox"><input type="checkbox" id="rfLactante"> Lactante</label>' +
-        '<label class="ev-checkbox"><input type="checkbox" id="rfCrianca"> Crianca (< 12 anos)</label>' +
-        '<label class="ev-checkbox"><input type="checkbox" id="rfAlerta"> Evitar alertas criticos</label>' +
+        '<label class="ev-checkbox"><input type="checkbox" id="rfCrianca"> Criança (&lt; 12 anos)</label>' +
+        '<label class="ev-checkbox"><input type="checkbox" id="rfAlerta"> Evitar alertas críticos</label>' +
         '</div></div>';
 
       html += '<button class="ev-roda-btn" onclick="executarRecomendacao()">Recomendar</button>';
@@ -376,6 +447,14 @@
       form.innerHTML = '<p class="ev-error">Erro ao carregar vetores.</p>';
       console.error('[Ervatorio] Roda funcional:', e);
     }
+  };
+
+  // Atualiza o contador global de vetores selecionados no cabeçalho.
+  window.atualizarContagemVetores = function() {
+    var el = document.getElementById('rfCount');
+    if (!el) return;
+    var n = document.querySelectorAll('#rodaFuncForm input[name="vetor"]:checked').length;
+    el.textContent = n + (n === 1 ? ' selecionado' : ' selecionados');
   };
 
   // Aliases esperados pelo diagnóstico de produção e pelo hash handler.
