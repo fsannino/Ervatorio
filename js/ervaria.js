@@ -793,8 +793,19 @@ function toggleTheme(){
 })();
 
 // ── LANDING PAGE ──
+function hasEnteredApp(){
+  // Already authenticated OR entrou como guest (flag persistente no localStorage)
+  try { if (localStorage.getItem('erb_entered')) return true; } catch(_) {}
+  return !!(window.ervaria && ervaria.user);
+}
 function enterApp(){
-  // Always show auth modal first — user must login/register
+  // Se já entrou antes, apenas revela o app — não pede login de novo.
+  if (hasEnteredApp()) {
+    document.getElementById('landingPage').style.display = 'none';
+    document.getElementById('appContainer').style.display = 'block';
+    return;
+  }
+  // Caso contrário, abre modal de login/cadastro/guest.
   ervaria.showAuthModal();
 }
 function enterAppAfterAuth(){
@@ -808,6 +819,19 @@ function enterAppAfterAuth(){
 function backToLanding(){
   document.getElementById('appContainer').style.display = 'none';
   document.getElementById('landingPage').style.display = 'block';
+}
+// Atalho para o CTA "Consultar a Roda" na landing — guarda o texto do
+// input (se preenchido) em sessionStorage para eventual uso futuro pela
+// página Roda, e navega.
+function goToRodaFromLanding(btn){
+  try {
+    const input = btn && btn.parentElement && btn.parentElement.querySelector('.roda-input');
+    const value = input && input.value ? input.value.trim() : '';
+    if (value) sessionStorage.setItem('erb_roda_hint', value);
+  } catch(_) {}
+  enterApp();
+  if (typeof goPage === 'function') goPage('roda');
+  return false;
 }
 // Skip landing if already logged in
 (function(){
