@@ -1967,10 +1967,15 @@ function hideLanding(){
 function goPage(id,btn,slug){
   // Cerimônia foi integrada em #page-chas — redireciona deep links antigos.
   if(id==='cerimonia') id='chas';
-  // Gate: require login for non-public pages
+  // Gate: quem já entrou no app (login real OU "continuar sem login") pode
+  // navegar livremente entre as páginas. Features que exigem conta real
+  // (sync de favoritos, salvar blend no cloud, etc.) checam ervaria.user
+  // individualmente dentro de cada renderizador.
   const baseId = id.split('/')[0];
-  const isLoggedIn = (window.ervaria && ervaria.user) || localStorage.getItem('erb_auth');
-  if(!PUBLIC_PAGES.includes(baseId) && !isLoggedIn){
+  const hasEntered = (window.ervaria && ervaria.user)
+                  || localStorage.getItem('erb_auth')
+                  || localStorage.getItem('erb_entered');
+  if(!PUBLIC_PAGES.includes(baseId) && !hasEntered){
     ervaria.showAuthModal();
     return;
   }
