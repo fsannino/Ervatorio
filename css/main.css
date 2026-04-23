@@ -933,6 +933,9 @@ select.pc-input option{background:var(--bg2);color:var(--cream)}
 
 /* Ficha/Blend cards in grid */
 .ev-ficha-card,.ev-blend-card{display:flex;flex-direction:column;gap:4px}
+.ev-card-img-wrap{width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:var(--r-md);margin:-6px -6px 8px;background:var(--bg3)}
+.ev-card-img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}
+.ev-ficha-card:hover .ev-card-img{transform:scale(1.03)}
 .ev-card-nome{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold2);font-weight:400}
 .ev-card-latin{font-size:.75rem;color:var(--muted);font-style:italic}
 .ev-card-tagline{font-size:.78rem;color:var(--cream2);line-height:1.4;margin-top:2px}
@@ -942,6 +945,9 @@ select.pc-input option{background:var(--bg2);color:var(--cream)}
 
 /* Ficha page (full page, not modal) */
 .ficha-page-article{max-width:720px;margin:0 auto}
+.ficha-hero-img{margin:0 0 1rem;border-radius:var(--r-lg);overflow:hidden;position:relative;background:var(--bg3)}
+.ficha-hero-img img{width:100%;display:block;max-height:360px;object-fit:cover}
+.ficha-hero-caption{position:absolute;bottom:6px;right:10px;font-size:.62rem;color:rgba(245,237,224,.72);background:rgba(0,0,0,.45);padding:3px 8px;border-radius:999px;letter-spacing:.04em;font-style:italic;backdrop-filter:blur(3px)}
 
 /* Produtos grid */
 .ev-produtos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
@@ -986,6 +992,14 @@ select.pc-input option{background:var(--bg2);color:var(--cream)}
 .rf-cat.collapsed .rf-cat-chevron{transform:rotate(-90deg)}
 .rf-cat-body{padding:6px 14px 14px;max-height:600px;opacity:1;transition:max-height .25s ease,opacity .2s,padding .25s}
 .rf-cat.collapsed .rf-cat-body{max-height:0;opacity:0;padding-top:0;padding-bottom:0;overflow:hidden;margin-bottom:0}
+.rf-cat-flash{box-shadow:0 0 0 2px rgba(200,168,75,.55),0 0 18px rgba(200,168,75,.25);animation:rfCatFlash 1.2s ease-out}
+@keyframes rfCatFlash{0%{box-shadow:0 0 0 3px rgba(200,168,75,.8),0 0 24px rgba(200,168,75,.45)}100%{box-shadow:0 0 0 0 rgba(200,168,75,0),0 0 0 rgba(200,168,75,0)}}
+
+/* Roda Funcional — canvas visual de categorias */
+.rf-wheel-wrap{position:relative;width:340px;max-width:100%;margin:1rem auto 1.5rem;aspect-ratio:1/1}
+.rf-wheel-wrap canvas{display:block;cursor:pointer;border-radius:50%;margin:0 auto}
+.rf-wheel-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:78px;height:78px;border-radius:50%;background:var(--bg);border:1.5px solid rgba(200,168,75,.4);display:flex;align-items:center;justify-content:center;pointer-events:none;text-align:center}
+.rf-wheel-label{font-size:.68rem;color:var(--gold2);line-height:1.25;letter-spacing:.04em;padding:4px;font-weight:500}
 
 /* Recommendation results */
 .ev-roda-results{display:flex;flex-direction:column;gap:8px}
