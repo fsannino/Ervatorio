@@ -346,14 +346,15 @@ const ervaria = {
   },
 
   _hydrateHerbs(rows) {
-    const byName = new Map(HERBS.map(h => [h.n, h.id]));
-    // Fallback: imagens mapeadas localmente em app.js por nome. Usado quando
-    // o Supabase não tem a coluna img preenchida (seed antigo / registros
-    // novos do admin sem upload de imagem), para não perder as fotos locais.
+    // Chave composta evita colisão quando duas linhas compartilham o mesmo
+    // nome popular (ex.: dois "Maracujá" com Passiflora edulis e spp.).
+    const keyOf = (name, lat) => `${name}|${lat || ''}`;
+    const byKey = new Map(HERBS.map(h => [keyOf(h.n, h.lat), h.id]));
     const localImgByName = new Map(HERBS.filter(h => h.img).map(h => [h.n, h.img]));
     let next = Math.max(0, ...HERBS.map(h => h.id)) + 1;
     const mapped = rows.map(r => {
-      const id = byName.has(r.name) ? byName.get(r.name) : next++;
+      const k = keyOf(r.name, r.latin_name);
+      const id = byKey.has(k) ? byKey.get(k) : next++;
       return {
         id,
         dbId: r.id,
