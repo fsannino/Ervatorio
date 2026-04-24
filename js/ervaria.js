@@ -290,7 +290,7 @@ const ervaria = {
     } catch (e) { console.error('Sync recipes error:', e); }
   },
 
-  // ── CATALOG: hidrata HERBS / SUPPLIERS / PRODUCTS do Supabase ──
+  // ── CATALOG: hidrata HERBS / SUPPLIERS e anota MKT_PRODUCTS do Supabase ──
   // Preserva ids locais por nome para não quebrar favoritos/carrinho
   // salvos em localStorage. Em caso de falha (offline), usa os arrays
   // embutidos no app.js ou o cache local.
@@ -310,8 +310,8 @@ const ervaria = {
       if (supRes.data?.length && typeof SUPPLIERS !== 'undefined') {
         this._hydrateSuppliers(supRes.data);
       }
-      if (prodRes.data?.length && typeof PRODUCTS !== 'undefined') {
-        this._hydrateProducts(prodRes.data);
+      if (prodRes.data?.length) {
+        this._annotateMktProducts(prodRes.data);
       }
       // cache para modo offline (PWA)
       try {
@@ -338,7 +338,7 @@ const ervaria = {
       const cache = JSON.parse(raw);
       if (cache.herbs?.length && typeof HERBS !== 'undefined') this._hydrateHerbs(cache.herbs);
       if (cache.suppliers?.length && typeof SUPPLIERS !== 'undefined') this._hydrateSuppliers(cache.suppliers);
-      if (cache.products?.length && typeof PRODUCTS !== 'undefined') this._hydrateProducts(cache.products);
+      if (cache.products?.length) this._annotateMktProducts(cache.products);
       this._rerenderAfterCatalog();
       console.log('Ervaria: catalog restored from local cache');
     } catch (_) {}
@@ -402,31 +402,6 @@ const ervaria = {
     Array.prototype.push.apply(SUPPLIERS, mapped);
   },
 
-  _hydrateProducts(rows) {
-    const byName = new Map(PRODUCTS.map(p => [p.name, p.id]));
-    let next = Math.max(0, ...PRODUCTS.map(p => p.id)) + 1;
-    const supByName = new Map(SUPPLIERS.map(s => [s.name, s.id]));
-    const mapped = rows.map(r => ({
-      id: byName.has(r.name) ? byName.get(r.name) : next++,
-      dbId: r.id,
-      name: r.name,
-      sup: r.supplier || '',
-      supId: supByName.get(r.supplier) || null,
-      icon: r.icon || '🍃',
-      cat: r.category || '',
-      price: typeof r.price === 'number' ? r.price : parseFloat(r.price) || 0,
-      unit: r.unit || '',
-      stock: r.stock || 'in',
-      img: r.image_url || undefined,
-    }));
-    PRODUCTS.length = 0;
-    Array.prototype.push.apply(PRODUCTS, mapped);
-    // Também anota MKT_PRODUCTS (catálogo premium da Chazeria) com dbId
-    // casando por nome. Mantém os campos ricos (type, seller, desc, badge)
-    // intactos — apenas adiciona dbId/price/stock atualizados do Supabase.
-    this._annotateMktProducts(rows);
-  },
-
   // Casa MKT_PRODUCTS (definido em app.js) com admin_products por nome e
   // injeta dbId. Preserva a estrutura original do item — o checkout.js só
   // precisa que dbId esteja presente para passar pelo validador UUID.
@@ -452,8 +427,7 @@ const ervaria = {
   _rerenderAfterCatalog() {
     try { if (typeof renderHerbs === 'function') renderHerbs(); } catch(_) {}
     try { if (typeof renderSuppliers === 'function' && document.getElementById('supGrid')) renderSuppliers(); } catch(_) {}
-    try { if (typeof renderShop === 'function' && document.getElementById('prodGrid')) renderShop(); } catch(_) {}
-    // Re-render do Marketplace Premium (Chazeria) após anotar MKT_PRODUCTS com dbId
+    // Re-render do Marketplace após anotar MKT_PRODUCTS com dbId
     try { if (typeof renderMkt === 'function' && document.getElementById('mktGrid')) renderMkt(); } catch(_) {}
   },
 
