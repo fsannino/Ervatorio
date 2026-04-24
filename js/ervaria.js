@@ -424,25 +424,60 @@ const ervaria = {
   },
 
   // Casa MKT_PRODUCTS (definido em app.js) com admin_products por nome e
-  // injeta dbId. Preserva a estrutura original do item — o checkout.js só
-  // precisa que dbId esteja presente para passar pelo validador UUID.
+  // injeta dbId. Produtos criados no Admin que não existem no array embutido
+  // são anexados ao final para aparecerem no Marketplace. O lookup é feito
+  // sobre MKT_PRODUCTS (não sobre rows) para que chamadas repetidas de
+  // loadCatalog() não gerem duplicatas.
   _annotateMktProducts(rows) {
     if (typeof MKT_PRODUCTS === 'undefined' || !Array.isArray(MKT_PRODUCTS)) return;
     const normalize = (s) => String(s || '').toLowerCase().trim();
-    const byName = new Map((rows || []).map(r => [normalize(r.name), r]));
-    let matched = 0;
-    MKT_PRODUCTS.forEach(p => {
-      const row = byName.get(normalize(p.name));
-      if (row) {
-        p.dbId = row.id;
-        // Sincroniza preço e estoque com o Supabase (fonte da verdade).
-        if (typeof row.price === 'number') p.price = row.price;
-        else if (row.price) p.price = parseFloat(row.price) || p.price;
-        if (row.stock) p.stock = row.stock;
+    const byName = new Map(MKT_PRODUCTS.map(p => [normalize(p.name), p]));
+    const knownCats = new Set(
+      (typeof MKT_CATS !== 'undefined' && Array.isArray(MKT_CATS))
+        ? MKT_CATS.map(c => c.id)
+        : []
+    );
+    let nextId = Math.max(0, ...MKT_PRODUCTS
+      .map(p => typeof p.id === 'number' ? p.id : 0)) + 1;
+    let matched = 0, added = 0;
+    (rows || []).forEach(row => {
+      const existing = byName.get(normalize(row.name));
+      if (existing) {
+        existing.dbId = row.id;
+        if (typeof row.price === 'number') existing.price = row.price;
+        else if (row.price) existing.price = parseFloat(row.price) || existing.price;
+        if (row.stock) existing.stock = row.stock;
         matched++;
+        return;
       }
+      const priceNum = typeof row.price === 'number'
+        ? row.price
+        : (parseFloat(row.price) || 0);
+      const cat = (knownCats.size && knownCats.has(row.category))
+        ? row.category
+        : 'Ervas & Acessórios';
+      const item = {
+        id: nextId++,
+        dbId: row.id,
+        cat,
+        type: row.category || 'Produto',
+        name: row.name,
+        seller: row.supplier || '',
+        icon: row.icon || '📦',
+        price: priceNum,
+        unit: row.unit || '',
+        desc: row.description || '',
+        badge: '',
+        stock: row.stock || 'in',
+      };
+      MKT_PRODUCTS.push(item);
+      byName.set(normalize(row.name), item);
+      added++;
     });
-    if (matched > 0) console.log('Ervaria: MKT_PRODUCTS anotados com dbId:', matched);
+    if (matched > 0 || added > 0) {
+      console.log('Ervaria: MKT_PRODUCTS sync —',
+        { matched, added, total: MKT_PRODUCTS.length });
+    }
   },
 
   _rerenderAfterCatalog() {
