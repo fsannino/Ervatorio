@@ -52,12 +52,15 @@ Deno.serve(async (req) => {
   if (iErr) return jsonResponse({ error: iErr.message }, 500);
   if (!items || items.length === 0) return jsonResponse({ error: 'Pedido sem itens' }, 400);
 
-  const addr = order.shipping_address as Record<string, string> | null;
   const returnBase = Deno.env.get('MP_RETURN_URL_BASE') || 'https://ervatorio.com.br';
   const notifyUrl = Deno.env.get('MP_NOTIFICATION_URL')
     || `${Deno.env.get('SUPABASE_URL')}/functions/v1/mp-webhook`;
 
   try {
+    // NÃO enviamos `payer` para o MP. Quando `payer.email` difere do email
+    // do usuário logado no checkout (ex.: TESTUSER em sandbox), o MP
+    // desabilita o botão Pagar exigindo "Alterar conta" — deadlock.
+    // O endereço de entrega já fica persistido em orders.shipping_address.
     const pref = await createPreference({
       external_reference: order.id,
       items: items.map((it) => ({
@@ -68,16 +71,6 @@ Deno.serve(async (req) => {
         unit_price: it.unit_price_cents / 100,   // MP usa reais, não centavos
         currency_id: order.currency || 'BRL',
       })),
-      payer: addr ? {
-        name: addr.name,
-        email: caller.email || undefined,
-        phone: addr.phone ? { number: addr.phone } : undefined,
-        address: {
-          zip_code: addr.zip,
-          street_name: addr.street,
-          street_number: addr.number,
-        },
-      } : { email: caller.email || undefined },
       back_urls: {
         success: `${returnBase}/?checkout=success&order=${order.order_number}`,
         failure: `${returnBase}/?checkout=failure&order=${order.order_number}`,
