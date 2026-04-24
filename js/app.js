@@ -1232,7 +1232,7 @@ function renderCart(){
     <div class="total-row"><span>Frete</span><span>${frete===0?'Grátis':'R$ '+frete.toFixed(2)}</span></div>
     ${frete>0?`<div style="font-size:.68rem;color:var(--muted);text-align:right">Frete grátis acima de R$ 150</div>`:''}
     <div class="total-final"><span>Total</span><span>R$ ${(sub+frete).toFixed(2)}</span></div>
-    <button class="checkout-btn" onclick="toast('Redirecionando para checkout...')">Finalizar pedido →</button>
+    <button class="checkout-btn" onclick="openCart();openCheckout()">Finalizar pedido →</button>
     <button onclick="clearCart()" style="width:100%;margin-top:.5rem;background:none;border:none;color:var(--muted);font-size:.72rem;cursor:pointer">Esvaziar carrinho</button>
   </div>`;
 }

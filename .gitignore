@@ -24,3 +24,6 @@ supabase/.branches/
 # Comente a linha abaixo se quiser comitar as variantes WebP e
 # evitar build step em produção.
 # images/optimized/
+
+# Pasta local de inputs/seeds (nao versionar)
+_ervatorio-inputs/
