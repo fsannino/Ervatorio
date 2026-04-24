@@ -119,6 +119,11 @@ const Checkout = {
   },
 
   async open() {
+    const cfg = window.ERVATORIO_CONFIG;
+    if (cfg && cfg.PAYMENTS_ENABLED === false) {
+      if (typeof toast === 'function') toast(cfg.PAYMENTS_DISABLED_MSG || 'Pagamentos em manutenção');
+      return;
+    }
     const cart = readCart();
     if (!Array.isArray(cart) || cart.length === 0) {
       if (typeof toast === 'function') toast('Carrinho vazio');

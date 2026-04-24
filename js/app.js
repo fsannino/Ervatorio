@@ -1164,12 +1164,17 @@ function renderCart(){
     </div>`).join('');
   const sub=cart.reduce((s,c)=>s+c.price*c.qty,0);
   const frete=sub>150?0:15.9;
+  const paymentsOn=window.ERVATORIO_CONFIG?.PAYMENTS_ENABLED!==false;
+  const maintMsg=window.ERVATORIO_CONFIG?.PAYMENTS_DISABLED_MSG||'Pagamentos em manutenção';
+  const checkoutBlock=paymentsOn
+    ? `<button class="checkout-btn" onclick="openCart();openCheckout()">Finalizar pedido →</button>`
+    : `<div style="margin-top:.75rem;padding:.75rem;background:rgba(200,168,75,.08);border:1px solid rgba(200,168,75,.25);border-radius:8px;text-align:center;font-size:.78rem;color:var(--gold2);line-height:1.4">⏳ ${esc(maintMsg)}</div>`;
   cf.innerHTML=`<div class="cart-total">
     <div class="total-row"><span>Subtotal</span><span>R$ ${sub.toFixed(2)}</span></div>
     <div class="total-row"><span>Frete</span><span>${frete===0?'Grátis':'R$ '+frete.toFixed(2)}</span></div>
     ${frete>0?`<div style="font-size:.68rem;color:var(--muted);text-align:right">Frete grátis acima de R$ 150</div>`:''}
     <div class="total-final"><span>Total</span><span>R$ ${(sub+frete).toFixed(2)}</span></div>
-    <button class="checkout-btn" onclick="openCart();openCheckout()">Finalizar pedido →</button>
+    ${checkoutBlock}
     <button onclick="clearCart()" style="width:100%;margin-top:.5rem;background:none;border:none;color:var(--muted);font-size:.72rem;cursor:pointer">Esvaziar carrinho</button>
   </div>`;
 }
