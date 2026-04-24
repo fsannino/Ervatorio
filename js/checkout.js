@@ -118,17 +118,28 @@ const Checkout = {
     this.injected = true;
   },
 
-  open() {
+  async open() {
     const cart = readCart();
     if (!Array.isArray(cart) || cart.length === 0) {
       if (typeof toast === 'function') toast('Carrinho vazio');
       return;
     }
-    if (!window.ervaria?.user) {
+    // Fonte autoritativa: session do Supabase, não `ervaria.user` (que pode
+    // estar dessincronizado se init ainda não rodou ou usuário está em guest).
+    let session = null;
+    try {
+      const res = await window.ervaria?.client?.auth?.getSession();
+      session = res?.data?.session;
+    } catch (_) { /* offline/falha → trata como sem sessão */ }
+
+    if (!session?.user) {
       if (typeof toast === 'function') toast('Faça login para finalizar a compra');
       window.ervaria?.showAuthModal?.();
       return;
     }
+    // Cacheia na instância ervaria para evitar outras rotas falharem por dessincronia.
+    if (window.ervaria && !window.ervaria.user) window.ervaria.user = session.user;
+
     this.ensureInjected();
     this.prefill();
     this.renderSummary();
