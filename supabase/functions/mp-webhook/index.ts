@@ -70,8 +70,15 @@ Deno.serve(async (req) => {
   try {
     payment = await fetchPayment(String(dataId));
   } catch (e) {
-    console.error('mp-webhook: falha ao buscar pagamento', e);
-    return jsonResponse({ error: (e as Error).message }, 500);
+    const msg = (e as Error).message || '';
+    // 404 = payment não existe (simulator com ID fake, ou payment deletado).
+    // Retornamos 200 pro MP não ficar retentando indefinidamente.
+    if (msg.includes('(404)') || msg.toLowerCase().includes('not found')) {
+      console.log('[mp-webhook] payment nao encontrado, ignorando', { dataId, msg });
+      return jsonResponse({ ok: true, ignored: true, reason: 'payment_not_found', dataId });
+    }
+    console.error('[mp-webhook] falha ao buscar pagamento', e);
+    return jsonResponse({ error: msg }, 500);
   }
 
   const orderId = payment.external_reference;
