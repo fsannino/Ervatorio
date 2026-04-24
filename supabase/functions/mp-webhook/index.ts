@@ -54,16 +54,18 @@ Deno.serve(async (req) => {
     return jsonResponse({ error: 'data.id ausente' }, 400);
   }
 
-  // Validação de assinatura (anti-spoofing). Em sandbox sem secret, passa.
+  // Ignora tipos que não processamos (merchant_order usa IPN legado sem
+  // assinatura; topics antigos idem). Retorna 200 para o MP não retentar.
+  // Assinatura só é exigida em notificações 'payment' do webhook moderno.
+  if (type !== 'payment') {
+    console.log('[mp-webhook] type ignorado (sem validacao de assinatura)', { type, dataId });
+    return jsonResponse({ ok: true, ignored: true, type });
+  }
+
+  // Validação de assinatura (anti-spoofing) — somente para payment.
   const valid = await verifyWebhookSignature(req, String(dataIdForSignature));
   if (!valid) {
     return jsonResponse({ error: 'Assinatura inválida' }, 401);
-  }
-
-  // Só processamos notificações de pagamento. merchant_order só logamos.
-  if (type !== 'payment') {
-    console.log('mp-webhook: notificação ignorada, type=', type);
-    return jsonResponse({ ok: true, ignored: true, type });
   }
 
   let payment;
