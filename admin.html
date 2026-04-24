@@ -37,6 +37,7 @@
     <div class="adm-nav-item" data-sec="suppliers" onclick="showSection('suppliers')"><span class="icon">🏪</span> Fornecedores</div>
     <div class="adm-nav-item" data-sec="news" onclick="showSection('news')"><span class="icon">📰</span> Notícias</div>
     <div class="adm-nav-item" data-sec="fichas" onclick="showSection('fichas')"><span class="icon">📖</span> Fichas editoriais</div>
+    <div class="adm-nav-item" data-sec="orders" onclick="showSection('orders')"><span class="icon">🧾</span> Pedidos</div>
     <div class="adm-nav-sep"></div>
     <div class="adm-nav-item" onclick="window.location='/'"><span class="icon">🍵</span> Ir ao App</div>
     <div class="adm-nav-item" onclick="admLogout()" style="color:var(--adm-red)"><span class="icon">⏻</span> Sair</div>
@@ -136,6 +137,42 @@
         <table class="adm-table">
           <thead><tr><th>Título</th><th>Categoria</th><th>Status</th><th>Data</th><th>Ações</th></tr></thead>
           <tbody id="newsBody"><tr><td colspan="5" style="text-align:center;padding:2rem;color:var(--adm-muted)">Carregando...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ════════ PEDIDOS ════════ -->
+    <div class="adm-section" id="sec-orders" style="display:none">
+      <div class="adm-header">
+        <div>
+          <div class="adm-title">Pedidos</div>
+          <div class="adm-subtitle">Histórico de vendas e rastreio</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+          <select id="ordStatusFilter" class="adm-form-input" style="width:auto" onchange="loadOrders()">
+            <option value="">Todos os status</option>
+            <option value="paid">Pagos</option>
+            <option value="pending">Aguardando</option>
+            <option value="processing">Preparando</option>
+            <option value="shipped">Enviados</option>
+            <option value="delivered">Entregues</option>
+            <option value="cancelled">Cancelados</option>
+            <option value="refunded">Reembolsados</option>
+            <option value="failed">Falhados</option>
+          </select>
+          <input type="text" id="ordSearch" class="adm-form-input" placeholder="Buscar nº ou cliente" style="width:200px" oninput="filterOrders()">
+          <button class="adm-btn" onclick="exportOrdersCsv()">⇩ Exportar CSV</button>
+        </div>
+      </div>
+
+      <div id="ordSummary" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:1rem"></div>
+
+      <div class="adm-table-wrap">
+        <table class="adm-table">
+          <thead><tr>
+            <th>Pedido</th><th>Cliente</th><th>Data</th><th>Status</th><th>Total</th><th>Pagamento</th><th>Rastreio</th><th>Ações</th>
+          </tr></thead>
+          <tbody id="ordersBody"><tr><td colspan="8" style="text-align:center;padding:2rem;color:var(--adm-muted)">Carregando...</td></tr></tbody>
         </table>
       </div>
     </div>
@@ -339,11 +376,23 @@
   </div>
 </div>
 
+<!-- ORDER DETAIL MODAL -->
+<div class="adm-modal-overlay" id="orderModal" onclick="if(event.target===this)closeOrderDetail()">
+  <div class="adm-modal" style="max-width:720px">
+    <div class="adm-modal-title" id="orderModalTitle">Pedido</div>
+    <div id="orderModalBody"></div>
+    <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:1rem;flex-wrap:wrap">
+      <button class="adm-btn" onclick="closeOrderDetail()">Fechar</button>
+    </div>
+  </div>
+</div>
+
 <div class="adm-toast" id="admToast"></div>
 
 <!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="/js/config.js"></script>
 <script src="/js/admin.js"></script>
+<script src="/js/admin-orders.js"></script>
 </body>
 </html>
