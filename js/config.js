@@ -16,4 +16,9 @@ window.ERVATORIO_CONFIG = Object.freeze({
   SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_bZGiaIhD7KqZ5QffyrHwRA_g7fmRT25',
   // Base das Edge Functions. Em produção aponta para o mesmo projeto.
   FUNCTIONS_URL: 'https://lwzrzztzpklzbmxbqcrx.supabase.co/functions/v1',
+  // Feature flag: false esconde o botao de checkout e mostra aviso de
+  // manutencao no carrinho. Virar para true quando o Mercado Pago liberar
+  // a conta de producao (chamado aberto em XX/XX/2026).
+  PAYMENTS_ENABLED: false,
+  PAYMENTS_DISABLED_MSG: 'Pagamentos em manutenção — voltaremos em breve',
 });
