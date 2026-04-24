@@ -12,6 +12,24 @@ const ervaria = {
       const cfg = window.ERVATORIO_CONFIG;
       if (!cfg) throw new Error('ERVATORIO_CONFIG ausente — /js/config.js deve carregar antes de /js/ervaria.js');
       this.client = window.supabase.createClient(cfg.SUPABASE_URL, cfg.SUPABASE_PUBLISHABLE_KEY);
+
+      // FAST PATH: lê a sessão cacheada do localStorage ANTES de qualquer
+      // await. Resolve race onde outros módulos (checkout, pedidos, etc.)
+      // consultam ervaria.user no mesmo tick de init() — antes do
+      // getSession async resolver. A sessão do localStorage pode estar
+      // expirada; getSession() abaixo confirma/renova.
+      try {
+        const projectRef = new URL(cfg.SUPABASE_URL).hostname.split('.')[0];
+        const raw = localStorage.getItem(`sb-${projectRef}-auth-token`);
+        if (raw) {
+          const cached = JSON.parse(raw);
+          if (cached?.user?.id) {
+            this.user = cached.user;
+            this.isOnline = true;
+          }
+        }
+      } catch (_) { /* cache corrompido — ignora */ }
+
       this.client.auth.onAuthStateChange((event, session) => {
         // Ignore INITIAL_SESSION — handled by getSession() below
         if (event === 'INITIAL_SESSION') return;
@@ -34,6 +52,9 @@ const ervaria = {
         this.isOnline = true;
         this.onLogin();
       } else {
+        // Sessão não existe de verdade — se populamos no fast path, limpa.
+        this.user = null;
+        this.isOnline = false;
         this.updateAuthUI(false);
       }
     } catch (e) {
