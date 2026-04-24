@@ -45,6 +45,20 @@ Deno.serve(async (req) => {
     return jsonResponse({ error: 'Endereço de entrega incompleto' }, 400);
   }
 
+  // Valida que todo product_id é UUID. Produtos do catálogo hardcoded
+  // em app.js têm id numérico — eles precisam estar em admin_products
+  // para serem vendáveis (rode ervaria-seed-data.sql).
+  const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  const invalidIds = body.items
+    .map((i) => String(i.product_id ?? ''))
+    .filter((id) => !UUID_RE.test(id));
+  if (invalidIds.length > 0) {
+    return jsonResponse({
+      error: 'Alguns produtos do carrinho não estão no catálogo oficial. Esvazie o carrinho e adicione os itens novamente após o admin rodar o seed de produtos.',
+      invalid_ids: invalidIds,
+    }, 400);
+  }
+
   const db = adminClient();
 
   const productIds = [...new Set(body.items.map((i) => i.product_id))];
