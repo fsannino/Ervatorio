@@ -17,7 +17,7 @@
 // ============================================================
 import { handleCors, jsonResponse } from '../_shared/cors.ts';
 import { adminClient } from '../_shared/auth.ts';
-import { fetchPayment, mapPaymentStatus, verifyWebhookSignature } from '../_shared/mercadopago.ts';
+import { fetchPayment, getMode, mapPaymentStatus, verifyWebhookSignature } from '../_shared/mercadopago.ts';
 
 Deno.serve(async (req) => {
   const cors = handleCors(req);
@@ -63,9 +63,15 @@ Deno.serve(async (req) => {
   }
 
   // Validação de assinatura (anti-spoofing) — somente para payment.
+  // Em MP_MODE=test aceita mesmo sem assinatura válida (sandbox = dinheiro
+  // falso; facilita debug). Em MP_MODE=production exigência é estrita.
   const valid = await verifyWebhookSignature(req, String(dataIdForSignature));
   if (!valid) {
-    return jsonResponse({ error: 'Assinatura inválida' }, 401);
+    if (getMode() === 'test') {
+      console.warn('[mp-webhook] assinatura invalida em test mode — prosseguindo');
+    } else {
+      return jsonResponse({ error: 'Assinatura inválida' }, 401);
+    }
   }
 
   let payment;
