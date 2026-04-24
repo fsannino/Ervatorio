@@ -146,6 +146,8 @@
       '</div>' +
       '</header>';
 
+    html += '<div class="ficha-page-body">';
+
     // Alerta critico
     if (ac.alerta_critico) {
       html += '<section class="ficha-alert" role="alert">' +
@@ -278,6 +280,7 @@
 
     // Footer
     html += '<footer class="ficha-foot"><span>Ervatorio v1.1 · ' + safeEsc(f.nome_popular || '') + '</span></footer>';
+    html += '</div>';
     html += '</article>';
     return html;
   }
