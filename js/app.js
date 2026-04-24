@@ -588,14 +588,18 @@ function openHerbModal(id){
   document.getElementById('modalContent').innerHTML=`
     <div class="modal-handle"></div>
     <button class="modal-close" onclick="closeModal()">✕</button>
-    ${h.img
-      ? `<img class="modal-herb-img" src="${h.img}" alt="${esc(h.n)}" loading="lazy" onerror="this.outerHTML='<div style=\\'font-size:2rem;margin-bottom:.5rem\\'>${h.icon}</div>'">`
-      : `<div style="font-size:2rem;margin-bottom:.5rem">${h.icon}</div>`
-    }
-    <div class="modal-herb-name">${esc(h.n)}</div>
-    ${h.tagline ? `<div class="modal-tagline">${esc(h.tagline)}</div>` : ''}
-    <div class="modal-latin">${esc(h.lat)}</div>
-    ${h.linha?`<div class="modal-linha"><span class="htag htag-linha linha-${h.linha.toLowerCase()}">Linha ${esc(h.linha)}</span></div>`:''}
+    <div class="modal-herb-header">
+      ${h.img
+        ? `<img class="modal-herb-img" src="${h.img}" alt="${esc(h.n)}" loading="lazy" onerror="this.outerHTML='<div class=\\'modal-herb-img modal-herb-icon\\'>${h.icon}</div>'">`
+        : `<div class="modal-herb-img modal-herb-icon">${h.icon}</div>`
+      }
+      <div class="modal-herb-header-info">
+        <div class="modal-herb-name">${esc(h.n)}</div>
+        ${h.tagline ? `<div class="modal-tagline">${esc(h.tagline)}</div>` : ''}
+        <div class="modal-latin">${esc(h.lat)}</div>
+        ${h.linha?`<div class="modal-linha"><span class="htag htag-linha linha-${h.linha.toLowerCase()}">Linha ${esc(h.linha)}</span></div>`:''}
+      </div>
+    </div>
     <div class="modal-section">
       <div class="modal-label">Sobre</div>
       <div class="modal-text">${esc(h.detail)}</div>

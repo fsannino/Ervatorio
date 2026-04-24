@@ -244,8 +244,12 @@ body.light .pc-role.on{background:var(--chip-bg);color:var(--gold2);border-color
 .fchip-linha.linha-global.on{background:rgba(106,160,216,.18);color:#8fbee8;border-color:rgba(106,160,216,.45)}
 .fchip-linha.linha-funcional.on{background:rgba(216,154,90,.18);color:#e8b07a;border-color:rgba(216,154,90,.45)}
 
-.modal-linha{margin:.4rem 0 .25rem;display:flex;justify-content:center}
+.modal-linha{margin:.3rem 0 0;display:flex;justify-content:flex-start}
 .modal-linha .htag-linha{font-size:.72rem;padding:3px 12px}
+.modal-herb-header{display:flex;gap:14px;align-items:center;margin-bottom:1rem}
+.modal-herb-header-info{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.modal-herb-header-info .modal-latin{margin-bottom:0}
+.modal-herb-icon{display:flex;align-items:center;justify-content:center;font-size:2.2rem;background:rgba(255,255,255,.03)}
 
 body.light .htag-linha.linha-essencial{background:rgba(60,130,70,.1);color:#2d6a3a;border-color:rgba(60,130,70,.25)}
 body.light .htag-linha.linha-global{background:rgba(50,100,170,.1);color:#1f5399;border-color:rgba(50,100,170,.25)}
@@ -748,7 +752,7 @@ select.pc-input option{background:var(--bg2);color:var(--cream)}
 /* HERB PRODUCT IMAGES */
 .herb-img{width:48px;height:48px;border-radius:10px;object-fit:cover;flex-shrink:0;border:1px solid var(--borda, var(--faint))}
 .hc-top .herb-img{border-radius:8px}
-.modal-herb-img{width:120px;height:120px;border-radius:14px;object-fit:cover;border:1px solid var(--faint);margin-bottom:.5rem}
+.modal-herb-img{width:88px;height:88px;border-radius:14px;object-fit:cover;border:1px solid var(--faint);flex-shrink:0}
 .fav-img{width:38px;height:38px;border-radius:var(--r-md);object-fit:cover;flex-shrink:0;border:1px solid var(--faint)}
 /* HERO IMAGE */
 .landing-hero-img{width:100%;height:280px;border-radius:16px;overflow:hidden;margin-bottom:24px;position:relative}
@@ -770,7 +774,10 @@ select.pc-input option{background:var(--bg2);color:var(--cream)}
 .sobre-linhas{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:.75rem}
 .sobre-linha{border-radius:var(--r-md);padding:.75rem 1rem}
 @media(max-width:600px){
-  .modal-herb-img{width:100%;height:180px;border-radius:12px}
+  .modal-herb-img{width:84px;height:84px;border-radius:12px}
+  .modal-herb-header{gap:12px}
+  .modal-herb-name{font-size:1.35rem;line-height:1.15}
+  .modal-tagline{font-size:.78rem}
   .landing-hero-img{height:200px;border-radius:12px}
   .sobre-hero-wrap{height:160px}
   .sobre-pilares,.sobre-linhas{grid-template-columns:1fr 1fr}
