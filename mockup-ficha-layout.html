@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mockup — Ficha Editorial Camomila</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --erv-ink:#2A2419;
+    --erv-ink-soft:#5C5141;
+    --erv-ink-mute:#8B7E68;
+    --erv-gold:#B08948;
+    --erv-gold-deep:#8C6A2F;
+    --erv-rule:#E2D8C4;
+    --erv-shade-warm:#FBF6EB;
+    --erv-shade-cool:#F0EDE3;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:#2a1f3a;color:#eee;
+    font-family:'Jost',sans-serif;padding:24px;
+  }
+  h1.page-title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.6rem;color:#f5edc4;font-weight:400;margin:0 0 8px;
+  }
+  .page-sub{color:#bbb;font-size:.85rem;margin-bottom:24px}
+  .compare{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+  }
+  @media(max-width:1100px){.compare{grid-template-columns:1fr}}
+  .panel{
+    background:#1a1424;border:1px solid #3a2d4c;border-radius:12px;
+    padding:12px;display:flex;flex-direction:column;
+  }
+  .panel-title{
+    font-family:'Cormorant Garamond',serif;font-size:1.1rem;
+    color:#c9a85c;margin:0 0 4px;
+  }
+  .panel-sub{color:#888;font-size:.75rem;margin-bottom:12px}
+  .viewport{
+    background:var(--erv-shade-warm);color:var(--erv-ink);
+    border-radius:10px;padding:1.5rem 1.25rem 1rem;
+    height:560px;overflow-y:auto;position:relative;
+    box-shadow:inset 0 -20px 30px -18px rgba(0,0,0,.2);
+  }
+  .viewport::-webkit-scrollbar{width:8px}
+  .viewport::-webkit-scrollbar-thumb{background:rgba(176,137,72,.4);border-radius:4px}
+  .fold-line{
+    position:absolute;left:0;right:0;height:0;border-top:1px dashed #d9331a;
+    pointer-events:none;display:flex;align-items:center;
+  }
+  .fold-line::after{
+    content:"↑ dobra do viewport (fim da tela)";
+    position:absolute;right:6px;top:-18px;background:#d9331a;color:#fff;
+    font-family:'Jost',sans-serif;font-size:.6rem;padding:2px 6px;border-radius:3px;
+  }
+
+  /* ==== FICHA COMUM ==== */
+  .ficha-title{
+    font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--erv-ink);
+    font-weight:500;line-height:1.1;margin:0 0 4px;
+  }
+  .ficha-latin{font-style:italic;color:var(--erv-ink-soft);font-size:.95rem;margin-bottom:.75rem}
+  .ficha-tagline{
+    font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.95rem;
+    color:var(--erv-ink);border-left:2px solid var(--erv-gold);
+    padding:.4rem 0 .4rem .9rem;margin:0 0 1rem;background:rgba(176,137,72,.06);
+    border-radius:0 6px 6px 0;line-height:1.5;
+  }
+  .ficha-destaques{
+    list-style:none;padding:0;margin:0 0 1rem;display:flex;flex-wrap:wrap;gap:6px;
+  }
+  .ficha-destaques li{
+    background:rgba(176,137,72,.08);border:1px solid rgba(176,137,72,.3);
+    border-radius:999px;padding:5px 12px;font-size:.72rem;color:var(--erv-ink-soft);
+  }
+  .ficha-destaques strong{color:var(--erv-gold-deep);font-weight:500;margin-right:4px}
+  .ficha-section{margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--erv-rule)}
+  .ficha-section h2{
+    font-family:'Cormorant Garamond',serif;font-size:1.25rem;
+    color:var(--erv-gold-deep);font-weight:500;margin:0 0 .5rem;
+  }
+  .ficha-dl{margin:0;display:grid;gap:4px}
+  .ficha-kv{display:flex;gap:8px;font-size:.78rem;line-height:1.5}
+  .ficha-kv dt{color:var(--erv-ink-mute);min-width:110px;flex-shrink:0}
+  .ficha-kv dd{margin:0;color:var(--erv-ink)}
+
+  /* ==== ATUAL ==== */
+  .atual .ficha-hero-img{
+    margin:0 0 1rem;border-radius:8px;overflow:hidden;position:relative;
+  }
+  .atual .ficha-hero-img img{width:100%;display:block;max-height:360px;object-fit:cover}
+  .atual .ficha-hero-caption{
+    position:absolute;bottom:6px;right:10px;font-size:.55rem;
+    color:rgba(245,237,224,.8);background:rgba(0,0,0,.5);
+    padding:2px 8px;border-radius:999px;font-style:italic;
+  }
+
+  /* ==== OPÇÃO A — banner fino ==== */
+  .opa .ficha-hero-img{
+    margin:0 0 1rem;border-radius:8px;overflow:hidden;position:relative;height:140px;
+  }
+  .opa .ficha-hero-img img{width:100%;height:100%;display:block;object-fit:cover}
+  .opa .ficha-hero-caption{
+    position:absolute;bottom:6px;right:10px;font-size:.55rem;
+    color:rgba(245,237,224,.85);background:rgba(0,0,0,.5);
+    padding:2px 8px;border-radius:999px;font-style:italic;
+  }
+
+  /* ==== OPÇÃO B — foto lateral ==== */
+  .opb .ficha-hero-side{
+    display:grid;grid-template-columns:170px 1fr;gap:16px;
+    align-items:start;margin-bottom:1rem;
+  }
+  .opb .ficha-hero-img{
+    width:170px;height:170px;border-radius:10px;overflow:hidden;position:relative;
+  }
+  .opb .ficha-hero-img img{width:100%;height:100%;display:block;object-fit:cover}
+  .opb .ficha-hero-caption{
+    position:absolute;bottom:4px;right:6px;font-size:.52rem;
+    color:rgba(245,237,224,.85);background:rgba(0,0,0,.5);
+    padding:1px 6px;border-radius:999px;font-style:italic;
+  }
+  .opb .ficha-hero-text{min-width:0}
+  .opb .ficha-title{font-size:1.75rem;margin-bottom:2px}
+  .opb .ficha-latin{margin-bottom:.5rem;font-size:.85rem}
+  .opb .ficha-tagline{font-size:.82rem;padding:.35rem 0 .35rem .7rem;margin-bottom:.6rem}
+  .opb .ficha-destaques{margin-bottom:0}
+  .opb .ficha-destaques li{font-size:.65rem;padding:3px 9px}
+
+  .legend{
+    margin-top:16px;padding:14px 18px;background:#1a1424;border-radius:10px;
+    border:1px solid #3a2d4c;font-size:.82rem;color:#ccc;line-height:1.6;
+  }
+  .legend strong{color:#c9a85c}
+  .legend ul{margin:8px 0 0;padding-left:18px}
+
+  /* Fake image (gradient) for mockup - no network needed */
+  .fake-img{
+    width:100%;height:100%;
+    background:
+      radial-gradient(circle at 30% 40%, #f0c96a 0%, transparent 35%),
+      radial-gradient(circle at 70% 55%, #d89449 0%, transparent 40%),
+      linear-gradient(135deg, #8b5a2b 0%, #6b3f1a 50%, #4a2a10 100%);
+    position:relative;display:flex;align-items:center;justify-content:center;
+  }
+  .fake-img::before{
+    content:"🍵";font-size:min(20vw,80px);
+    filter:drop-shadow(0 4px 8px rgba(0,0,0,.3));
+  }
+</style>
+</head>
+<body>
+
+<h1 class="page-title">Mockup — Ficha Editorial da Camomila</h1>
+<div class="page-sub">A linha vermelha tracejada marca o fim do viewport (dobra da tela). Tudo acima é visível; tudo abaixo exige rolagem.</div>
+
+<div class="compare">
+
+  <!-- ===== ATUAL ===== -->
+  <div class="panel">
+    <div class="panel-title">Atual (problema)</div>
+    <div class="panel-sub">Hero fotográfico grande empurra a ficha para baixo da dobra.</div>
+    <div class="viewport atual">
+      <div class="ficha-hero-img">
+        <div class="fake-img"></div>
+        <div class="ficha-hero-caption">Imagem meramente ilustrativa</div>
+      </div>
+      <h1 class="ficha-title">Camomila</h1>
+      <div class="ficha-latin">Matricaria chamomilla L.</div>
+      <blockquote class="ficha-tagline">A margarida ansiolítica mais estudada do mundo — Matricária na ANVISA, Chamomilla no EMA, a mesma flor em todas as farmacopeias.</blockquote>
+      <ul class="ficha-destaques">
+        <li><strong>Eixo botânico</strong> Phyto-ANVISA + Funcional global</li>
+        <li><strong>Tipo</strong> Infusão herbal monografada</li>
+        <li><strong>Status ANVISA</strong> Farmacopeia Brasileira</li>
+        <li><strong>Status EMA</strong> Monografia HMPC publicada</li>
+      </ul>
+      <div class="fold-line" style="top:540px"></div>
+      <section class="ficha-section">
+        <h2>Identificação</h2>
+        <dl class="ficha-dl">
+          <div class="ficha-kv"><dt>Nome científico</dt><dd><em>Matricaria chamomilla L.</em></dd></div>
+          <div class="ficha-kv"><dt>Família</dt><dd>Asteraceae</dd></div>
+          <div class="ficha-kv"><dt>Parte usada</dt><dd>Capítulos florais secos</dd></div>
+        </dl>
+      </section>
+    </div>
+  </div>
+
+  <!-- ===== OPÇÃO A ===== -->
+  <div class="panel">
+    <div class="panel-title">Opção A — banner fino</div>
+    <div class="panel-sub">Mesma hierarquia vertical, mas foto vira banner de 140px. Muda pouco; basta 1 regra CSS.</div>
+    <div class="viewport opa">
+      <div class="ficha-hero-img">
+        <div class="fake-img"></div>
+        <div class="ficha-hero-caption">Imagem meramente ilustrativa</div>
+      </div>
+      <h1 class="ficha-title">Camomila</h1>
+      <div class="ficha-latin">Matricaria chamomilla L.</div>
+      <blockquote class="ficha-tagline">A margarida ansiolítica mais estudada do mundo — Matricária na ANVISA, Chamomilla no EMA, a mesma flor em todas as farmacopeias.</blockquote>
+      <ul class="ficha-destaques">
+        <li><strong>Eixo botânico</strong> Phyto-ANVISA + Funcional global</li>
+        <li><strong>Tipo</strong> Infusão herbal monografada</li>
+        <li><strong>Status ANVISA</strong> Farmacopeia Brasileira</li>
+        <li><strong>Status EMA</strong> Monografia HMPC publicada</li>
+      </ul>
+      <section class="ficha-section">
+        <h2>Identificação</h2>
+        <dl class="ficha-dl">
+          <div class="ficha-kv"><dt>Nome científico</dt><dd><em>Matricaria chamomilla L.</em></dd></div>
+          <div class="ficha-kv"><dt>Família</dt><dd>Asteraceae</dd></div>
+          <div class="ficha-kv"><dt>Parte usada</dt><dd>Capítulos florais secos</dd></div>
+          <div class="ficha-kv"><dt>Tipo botânico</dt><dd>Erva anual herbácea</dd></div>
+        </dl>
+      </section>
+      <section class="ficha-section">
+        <h2>Caracterização</h2>
+        <dl class="ficha-dl">
+          <div class="ficha-kv"><dt>Sabor</dt><dd>Suave, floral, adocicado</dd></div>
+          <div class="ficha-kv"><dt>Cor da infusão</dt><dd>Amarelo-dourado claro</dd></div>
+        </dl>
+      </section>
+    </div>
+  </div>
+
+  <!-- ===== OPÇÃO B ===== -->
+  <div class="panel">
+    <div class="panel-title">Opção B — foto ao lado ★</div>
+    <div class="panel-sub">Foto 170×170 à esquerda, título+latim+tagline+chips à direita. No mobile empilha.</div>
+    <div class="viewport opb">
+      <div class="ficha-hero-side">
+        <div class="ficha-hero-img">
+          <div class="fake-img"></div>
+          <div class="ficha-hero-caption">Ilustrativa</div>
+        </div>
+        <div class="ficha-hero-text">
+          <h1 class="ficha-title">Camomila</h1>
+          <div class="ficha-latin">Matricaria chamomilla L.</div>
+          <blockquote class="ficha-tagline">A margarida ansiolítica mais estudada do mundo — Matricária na ANVISA, Chamomilla no EMA.</blockquote>
+          <ul class="ficha-destaques">
+            <li><strong>ANVISA</strong> Farmacopeia BR</li>
+            <li><strong>EMA</strong> HMPC</li>
+            <li><strong>Tipo</strong> Infusão monografada</li>
+          </ul>
+        </div>
+      </div>
+      <section class="ficha-section">
+        <h2>Identificação</h2>
+        <dl class="ficha-dl">
+          <div class="ficha-kv"><dt>Nome científico</dt><dd><em>Matricaria chamomilla L.</em></dd></div>
+          <div class="ficha-kv"><dt>Família</dt><dd>Asteraceae</dd></div>
+          <div class="ficha-kv"><dt>Parte usada</dt><dd>Capítulos florais secos</dd></div>
+          <div class="ficha-kv"><dt>Tipo botânico</dt><dd>Erva anual herbácea</dd></div>
+          <div class="ficha-kv"><dt>Sinônimos</dt><dd>Chamomilla recutita</dd></div>
+        </dl>
+      </section>
+      <section class="ficha-section">
+        <h2>Caracterização</h2>
+        <dl class="ficha-dl">
+          <div class="ficha-kv"><dt>Sabor</dt><dd>Suave, floral, adocicado</dd></div>
+          <div class="ficha-kv"><dt>Cor da infusão</dt><dd>Amarelo-dourado claro</dd></div>
+          <div class="ficha-kv"><dt>Aroma</dt><dd>Maçã verde, mel</dd></div>
+        </dl>
+      </section>
+    </div>
+  </div>
+
+</div>
+
+<div class="legend">
+  <strong>Como ler este mockup:</strong>
+  <ul>
+    <li><strong>Atual:</strong> a foto ocupa ~360px — junto com título, latim, tagline e 4 chips, "Identificação" cai abaixo da dobra (como na sua screenshot).</li>
+    <li><strong>Opção A:</strong> a foto vira banner fino de 140px. Continua servindo como "abertura visual" mas deixa Identificação e Caracterização já visíveis. <em>Mudança mínima: só ajusta o CSS de <code>.ficha-hero-img img</code>.</em></li>
+    <li><strong>Opção B (recomendada):</strong> foto quadrada 170×170 à esquerda, bloco textual completo à direita. Aproveita a largura (a ficha tem 760px), a foto ganha protagonismo equilibrado, e duas seções da ficha ficam visíveis de cara. No mobile (&lt;600px) empilha automaticamente como está hoje.</li>
+  </ul>
+</div>
+
+</body>
+</html>
