@@ -1,0 +1,15 @@
+{
+  "name": "ervatorio",
+  "version": "0.2.0",
+  "description": "Ervatório — plataforma de chás e infusões (PWA + Supabase)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "images:optimize": "node scripts/optimize-images.mjs",
+    "images:dry-run": "node scripts/optimize-images.mjs --dry-run",
+    "images:manifest": "node scripts/optimize-images.mjs --manifest-only"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  }
+}

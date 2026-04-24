@@ -1,8 +1,10 @@
 // ============================================================
 // ADMIN PANEL — Ervatório
 // ============================================================
-const ADM_SUPABASE_URL = 'https://lwzrzztzpklzbmxbqcrx.supabase.co';
-const ADM_SUPABASE_KEY = 'sb_publishable_bZGiaIhD7KqZ5QffyrHwRA_g7fmRT25';
+// Requer /js/config.js carregado antes deste script.
+const ADM_SUPABASE_URL = window.ERVATORIO_CONFIG.SUPABASE_URL;
+const ADM_SUPABASE_KEY = window.ERVATORIO_CONFIG.SUPABASE_PUBLISHABLE_KEY;
+const ADM_FUNCTIONS_URL = window.ERVATORIO_CONFIG.FUNCTIONS_URL;
 
 let sb = null;
 let admUser = null;
@@ -116,9 +118,23 @@ function renderUsers(list){
 }
 async function deleteUser(id,name){
   if(!confirm(`Excluir o usuário "${name}"? Esta ação não pode ser desfeita.`))return;
+  // Usa Edge Function com service_role — apaga auth.users + cascatas.
+  // Fallback: se a função não estiver deployada, cai no delete só do profile.
+  try{
+    const {data:{session}}=await sb.auth.getSession();
+    const res=await fetch(`${ADM_FUNCTIONS_URL}/admin-delete-user`,{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Authorization':`Bearer ${session.access_token}`},
+      body:JSON.stringify({userId:id}),
+    });
+    if(res.ok){admToast('Usuário excluído');loadUsers();loadDashboard();return;}
+    const err=await res.json().catch(()=>({error:res.statusText}));
+    // 404 = função não deployada ainda; cai no fallback
+    if(res.status!==404){admToast('Erro: '+(err.error||res.statusText));return;}
+  }catch(e){/* network falhou, tenta fallback */}
   const {error}=await sb.from('user_profiles').delete().eq('id',id);
   if(error){admToast('Erro: '+error.message);return;}
-  admToast('Usuário excluído');
+  admToast('Perfil excluído (auth user pode ter ficado órfão — faça deploy da Edge Function admin-delete-user)');
   loadUsers();loadDashboard();
 }
 

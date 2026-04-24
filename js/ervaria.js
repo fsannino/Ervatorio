@@ -9,10 +9,9 @@ const ervaria = {
 
   async init() {
     try {
-      this.client = window.supabase.createClient(
-        'https://lwzrzztzpklzbmxbqcrx.supabase.co',
-        'sb_publishable_bZGiaIhD7KqZ5QffyrHwRA_g7fmRT25'
-      );
+      const cfg = window.ERVATORIO_CONFIG;
+      if (!cfg) throw new Error('ERVATORIO_CONFIG ausente — /js/config.js deve carregar antes de /js/ervaria.js');
+      this.client = window.supabase.createClient(cfg.SUPABASE_URL, cfg.SUPABASE_PUBLISHABLE_KEY);
       this.client.auth.onAuthStateChange((event, session) => {
         // Ignore INITIAL_SESSION — handled by getSession() below
         if (event === 'INITIAL_SESSION') return;
