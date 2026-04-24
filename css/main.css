@@ -952,9 +952,18 @@ select.pc-input option{background:var(--bg2);color:var(--cream)}
 
 /* Ficha page (full page, not modal) */
 .ficha-page-article{max-width:720px;margin:0 auto}
-.ficha-hero-img{margin:0 0 1rem;border-radius:var(--r-lg);overflow:hidden;position:relative;background:var(--bg3)}
-.ficha-hero-img img{width:100%;display:block;max-height:360px;object-fit:cover}
+.ficha-hero--with-img{display:grid;grid-template-columns:180px 1fr;gap:1.25rem;align-items:start}
+.ficha-hero-img{margin:0;border-radius:var(--r-lg);overflow:hidden;position:relative;background:var(--bg3);width:180px;height:180px}
+.ficha-hero-img img{width:100%;height:100%;display:block;object-fit:cover}
+.ficha-hero--with-img .ficha-hero-text{min-width:0}
+.ficha-hero--with-img .ficha-title{margin-top:0}
+.ficha-hero--with-img .ficha-tagline{margin-top:.75rem}
+.ficha-hero--with-img .ficha-destaques{margin-top:.75rem}
 .ficha-hero-caption{position:absolute;bottom:6px;right:10px;font-size:.62rem;color:rgba(245,237,224,.72);background:rgba(0,0,0,.45);padding:3px 8px;border-radius:999px;letter-spacing:.04em;font-style:italic;backdrop-filter:blur(3px)}
+@media(max-width:600px){
+  .ficha-hero--with-img{grid-template-columns:1fr;gap:.9rem}
+  .ficha-hero-img{width:100%;height:180px}
+}
 
 /* Produtos grid */
 .ev-produtos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
