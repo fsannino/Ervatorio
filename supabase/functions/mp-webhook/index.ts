@@ -28,49 +28,82 @@ Deno.serve(async (req) => {
   if (req.method === 'GET') return jsonResponse({ ok: true });
   if (req.method !== 'POST') return jsonResponse({ error: 'Method not allowed' }, 405);
 
-  // Lê o corpo (mesmo que vazio) e os parâmetros de query.
-  // MP envia tanto via body quanto via query: ?type=payment&data.id=12345
   const url = new URL(req.url);
   const queryType = url.searchParams.get('type') || url.searchParams.get('topic');
   const queryDataId = url.searchParams.get('data.id') || url.searchParams.get('id');
+
+  // Lê headers em um objeto plain para logging.
+  const headersObj: Record<string, string> = {};
+  req.headers.forEach((v, k) => { headersObj[k] = v; });
 
   let bodyJson: Record<string, unknown> = {};
   try { bodyJson = await req.json(); } catch { /* body opcional */ }
 
   const type = (bodyJson.type as string) || queryType;
   const bodyDataId = ((bodyJson.data as { id?: string } | undefined)?.id);
-  // Para assinatura, MP usa o data.id da URL. Para buscar o payment, qualquer
-  // um serve (devem ser iguais).
   const dataId = bodyDataId || queryDataId;
   const dataIdForSignature = queryDataId || bodyDataId;
 
-  console.log('[mp-webhook] recebido', {
+  // ── Registro no log de debug (tabela mp_webhook_log) ─────
+  // Usado para diagnosticar diferenças de assinatura HMAC.
+  // Acessível apenas para admin via RLS.
+  const dbgDb = adminClient();
+  const logId = crypto.randomUUID();
+  const logBase = {
+    id: logId,
     method: req.method,
-    url_path: url.pathname + url.search,
-    queryType, queryDataId,
-    bodyType: bodyJson.type, bodyDataId,
+    url: url.pathname + url.search,
+    query_type: queryType,
+    data_id: dataId,
+    headers: headersObj,
+    body: bodyJson,
+  };
+
+  console.log('[mp-webhook] recebido', {
+    method: req.method, url: url.pathname + url.search,
+    queryType, queryDataId, bodyType: bodyJson.type, bodyDataId,
   });
 
   if (!dataId) {
+    await logWebhook(dbgDb, { ...logBase, response_status: 400, response_body: { error: 'data.id ausente' } });
     return jsonResponse({ error: 'data.id ausente' }, 400);
   }
 
   // Ignora tipos que não processamos (merchant_order usa IPN legado sem
-  // assinatura; topics antigos idem). Retorna 200 para o MP não retentar.
-  // Assinatura só é exigida em notificações 'payment' do webhook moderno.
+  // assinatura). Retorna 200 para o MP não retentar.
   if (type !== 'payment') {
-    console.log('[mp-webhook] type ignorado (sem validacao de assinatura)', { type, dataId });
+    console.log('[mp-webhook] type ignorado', { type, dataId });
+    await logWebhook(dbgDb, {
+      ...logBase,
+      response_status: 200,
+      response_body: { ok: true, ignored: true, type },
+    });
     return jsonResponse({ ok: true, ignored: true, type });
   }
 
-  // Validação de assinatura (anti-spoofing) — somente para payment.
-  // Em MP_MODE=test aceita mesmo sem assinatura válida (sandbox = dinheiro
-  // falso; facilita debug). Em MP_MODE=production exigência é estrita.
-  const valid = await verifyWebhookSignature(req, String(dataIdForSignature));
-  if (!valid) {
+  // Validação de assinatura — coleta diagnóstico completo.
+  const sigResult = await verifyWebhookSignature(req, String(dataIdForSignature));
+  const sigLog = {
+    signature_received: sigResult.signature_header,
+    request_id: sigResult.request_id,
+    ts_received: sigResult.ts,
+    v1_received: sigResult.v1,
+    secret_configured: sigResult.secret_configured,
+    secret_length: sigResult.secret_length,
+    secret_is_hex: sigResult.secret_is_hex,
+    manifests_tested: sigResult.manifests_tested,
+    hashes_computed: sigResult.hashes_computed,
+    signature_valid: sigResult.valid,
+  };
+
+  if (!sigResult.valid) {
     if (getMode() === 'test') {
       console.warn('[mp-webhook] assinatura invalida em test mode — prosseguindo');
     } else {
+      await logWebhook(dbgDb, {
+        ...logBase, ...sigLog,
+        response_status: 401, response_body: { error: 'Assinatura inválida' },
+      });
       return jsonResponse({ error: 'Assinatura inválida' }, 401);
     }
   }
@@ -80,52 +113,58 @@ Deno.serve(async (req) => {
     payment = await fetchPayment(String(dataId));
   } catch (e) {
     const msg = (e as Error).message || '';
-    // 404 = payment não existe (simulator com ID fake, ou payment deletado).
-    // Retornamos 200 pro MP não ficar retentando indefinidamente.
     if (msg.includes('(404)') || msg.toLowerCase().includes('not found')) {
       console.log('[mp-webhook] payment nao encontrado, ignorando', { dataId, msg });
+      await logWebhook(dbgDb, { ...logBase, ...sigLog, response_status: 200, response_body: { ok: true, reason: 'payment_not_found' } });
       return jsonResponse({ ok: true, ignored: true, reason: 'payment_not_found', dataId });
     }
     console.error('[mp-webhook] falha ao buscar pagamento', e);
+    await logWebhook(dbgDb, { ...logBase, ...sigLog, response_status: 500, response_body: { error: msg } });
     return jsonResponse({ error: msg }, 500);
   }
 
   const orderId = payment.external_reference;
   if (!orderId) {
-    console.warn('mp-webhook: payment sem external_reference, payment_id=', dataId);
+    console.warn('[mp-webhook] payment sem external_reference', { payment_id: dataId });
+    await logWebhook(dbgDb, { ...logBase, ...sigLog, response_status: 200, response_body: { warning: 'sem external_reference' } });
     return jsonResponse({ ok: true, warning: 'sem external_reference' });
   }
 
   const db = adminClient();
+  const logBaseWithOrder = { ...logBase, ...sigLog, order_id: orderId };
 
   const { data: order, error: oErr } = await db
     .from('orders')
     .select('id, status, total_cents')
     .eq('id', orderId)
     .maybeSingle();
-  if (oErr) return jsonResponse({ error: oErr.message }, 500);
-  if (!order) return jsonResponse({ error: 'order não encontrado' }, 404);
+  if (oErr) {
+    await logWebhook(dbgDb, { ...logBaseWithOrder, response_status: 500, response_body: { error: oErr.message } });
+    return jsonResponse({ error: oErr.message }, 500);
+  }
+  if (!order) {
+    await logWebhook(dbgDb, { ...logBaseWithOrder, response_status: 404, response_body: { error: 'order não encontrado' } });
+    return jsonResponse({ error: 'order não encontrado' }, 404);
+  }
 
   const newStatus = mapPaymentStatus(payment.status);
 
-  // Idempotência: se já está no status alvo e o payment_external_id bate, não faz nada.
   if (order.status === newStatus) {
+    await logWebhook(dbgDb, { ...logBaseWithOrder, response_status: 200, response_body: { ok: true, noop: true, status: newStatus } });
     return jsonResponse({ ok: true, noop: true, status: newStatus });
   }
 
-  // Sanity check: valor do MP precisa bater com o total esperado.
-  // Tolerância de 1 centavo para diferenças de arredondamento.
   const expectedReais = order.total_cents / 100;
   if (Math.abs(payment.transaction_amount - expectedReais) > 0.01 && newStatus === 'paid') {
-    console.error(`mp-webhook: VALOR DIVERGENTE — esperado ${expectedReais} recebido ${payment.transaction_amount} (order ${orderId})`);
-    // Marca como pending + admin_notes para investigação manual em vez de aceitar.
+    console.error(`[mp-webhook] VALOR DIVERGENTE — esperado ${expectedReais} recebido ${payment.transaction_amount}`);
     await db
       .from('orders')
       .update({
-        admin_notes: `[ALERTA] valor divergente do MP: esperado R$${expectedReais.toFixed(2)}, recebido R$${payment.transaction_amount.toFixed(2)}, payment_id=${payment.id}`,
+        admin_notes: `[ALERTA] valor divergente: esperado R$${expectedReais.toFixed(2)}, recebido R$${payment.transaction_amount.toFixed(2)}, payment_id=${payment.id}`,
         payment_payload: payment,
       })
       .eq('id', orderId);
+    await logWebhook(dbgDb, { ...logBaseWithOrder, response_status: 400, response_body: { error: 'valor divergente' } });
     return jsonResponse({ ok: false, error: 'valor divergente' }, 400);
   }
 
@@ -138,24 +177,37 @@ Deno.serve(async (req) => {
   };
 
   const { error: uErr } = await db.from('orders').update(update).eq('id', orderId);
-  if (uErr) return jsonResponse({ error: uErr.message }, 500);
+  if (uErr) {
+    await logWebhook(dbgDb, { ...logBaseWithOrder, response_status: 500, response_body: { error: uErr.message } });
+    return jsonResponse({ error: uErr.message }, 500);
+  }
 
-  // Dispara email de confirmação quando passa de algo-nao-pago → paid.
-  // Fire-and-forget: não bloqueia a resposta ao MP nem falha o webhook
-  // se o email não puder ser enviado (Resend fora do ar, etc.).
   if (newStatus === 'paid' && order.status !== 'paid') {
     sendPaidEmailFor(db, orderId).catch((e) => {
       console.error('[mp-webhook] email falhou (nao-fatal)', e);
     });
   }
 
-  return jsonResponse({
-    ok: true,
-    order_id: orderId,
-    new_status: newStatus,
-    payment_id: payment.id,
-  });
+  const responseBody = { ok: true, order_id: orderId, new_status: newStatus, payment_id: payment.id };
+  await logWebhook(dbgDb, { ...logBaseWithOrder, response_status: 200, response_body: responseBody });
+  return jsonResponse(responseBody);
 });
+
+// ------------------------------------------------------------
+// Log de cada invocação para diagnosticar assinatura HMAC.
+// Falhas de insert são não-fatais — só logam warning.
+// ------------------------------------------------------------
+async function logWebhook(
+  db: ReturnType<typeof adminClient>,
+  row: Record<string, unknown>,
+): Promise<void> {
+  try {
+    const { error } = await db.from('mp_webhook_log').insert(row);
+    if (error) console.warn('[mp-webhook] falha ao gravar log', error.message);
+  } catch (e) {
+    console.warn('[mp-webhook] exception ao gravar log', e);
+  }
+}
 
 // ------------------------------------------------------------
 // Email de confirmação após status=paid.
