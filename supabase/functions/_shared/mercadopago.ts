@@ -147,21 +147,53 @@ export function mapPaymentStatus(mpStatus: MPPayment['status']): string {
 // Manifest assinado: id:<data.id>;request-id:<x-request-id>;ts:<ts>;
 // HMAC SHA256 com MP_WEBHOOK_SECRET, comparado com o valor "v1=..."
 // ============================================================
+export interface SignatureVerifyResult {
+  valid: boolean;
+  secret_configured: boolean;
+  secret_length: number;
+  secret_is_hex: boolean;
+  signature_header: string | null;
+  request_id: string | null;
+  ts: string | null;
+  v1: string | null;
+  data_id_used: string;
+  manifests_tested: string[];
+  hashes_computed: Array<{ manifest: string; variant: string; hash: string }>;
+  matched_variant?: string;
+  matched_manifest?: string;
+}
+
 export async function verifyWebhookSignature(
   req: Request,
   dataId: string,
-): Promise<boolean> {
+): Promise<SignatureVerifyResult> {
   const secret = Deno.env.get('MP_WEBHOOK_SECRET');
-  if (!secret) {
-    console.warn('MP_WEBHOOK_SECRET não configurado — assinatura NÃO validada');
-    return true;
-  }
-
   const signatureHeader = req.headers.get('x-signature');
   const requestId = req.headers.get('x-request-id');
+
+  const base: SignatureVerifyResult = {
+    valid: false,
+    secret_configured: !!secret,
+    secret_length: secret?.length || 0,
+    secret_is_hex: !!secret && /^[0-9a-f]+$/i.test(secret) && secret.length % 2 === 0,
+    signature_header: signatureHeader,
+    request_id: requestId,
+    ts: null,
+    v1: null,
+    data_id_used: String(dataId),
+    manifests_tested: [],
+    hashes_computed: [],
+  };
+
+  if (!secret) {
+    console.warn('MP_WEBHOOK_SECRET não configurado — assinatura NÃO validada');
+    base.valid = true; // retorna valid=true mas marca secret_configured=false pro log
+    return base;
+  }
+
   if (!signatureHeader || !requestId) {
     console.warn('[mp-signature] headers ausentes', { signatureHeader, requestId });
-    return false;
+    return base;
   }
 
   // x-signature: "ts=1234567890,v1=hexhash"
@@ -171,31 +203,30 @@ export async function verifyWebhookSignature(
       return [k, v];
     }),
   );
-  const ts = parts.ts;
-  const v1 = parts.v1;
-  if (!ts || !v1) {
+  base.ts = parts.ts || null;
+  base.v1 = parts.v1 || null;
+
+  if (!base.ts || !base.v1) {
     console.warn('[mp-signature] ts/v1 ausente', { parts });
-    return false;
+    return base;
   }
 
-  // MP assina usando o data.id EM MINÚSCULAS.
-  // Também testamos múltiplas variações do manifest para cobrir diferenças
-  // sutis entre versões da doc do MP e implementações antigas.
+  // Testa várias combinações de manifest (formato) × secret (encoding).
   const dataIdLower = String(dataId).toLowerCase();
-  const candidates = [
-    `id:${dataIdLower};request-id:${requestId};ts:${ts};`,
-    `id:${dataId};request-id:${requestId};ts:${ts};`,
+  const dataIdOriginal = String(dataId);
+  const manifests = [
+    `id:${dataIdLower};request-id:${requestId};ts:${base.ts};`,
+    `id:${dataIdOriginal};request-id:${requestId};ts:${base.ts};`,
+    `id:${dataIdLower};request-id:${requestId};ts:${base.ts}`,      // sem ; final
+    `id:${dataIdOriginal};request-id:${requestId};ts:${base.ts}`,
   ];
+  base.manifests_tested = manifests;
 
   const enc = new TextEncoder();
-
-  // MP docs não são explícitas, mas a chave secreta é distribuída como hex
-  // string. Alguns SDKs decodificam o hex para bytes brutos; outros usam
-  // como UTF-8. Testamos os dois para ser tolerante.
   const secretVariants: Array<{ name: string; bytes: Uint8Array }> = [
     { name: 'utf8', bytes: enc.encode(secret) },
   ];
-  if (/^[0-9a-f]+$/i.test(secret) && secret.length % 2 === 0) {
+  if (base.secret_is_hex) {
     const hexBytes = new Uint8Array(secret.length / 2);
     for (let i = 0; i < hexBytes.length; i++) {
       hexBytes[i] = parseInt(secret.substr(i * 2, 2), 16);
@@ -203,39 +234,34 @@ export async function verifyWebhookSignature(
     secretVariants.push({ name: 'hex-decoded', bytes: hexBytes });
   }
 
-  let matched: { manifest: string; secretKind: string; hex: string } | null = null;
-
   for (const sv of secretVariants) {
     const key = await crypto.subtle.importKey(
       'raw', sv.bytes, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign'],
     );
-    for (const manifest of candidates) {
+    for (const manifest of manifests) {
       const sig = await crypto.subtle.sign('HMAC', key, enc.encode(manifest));
-      const hex = Array.from(new Uint8Array(sig))
+      const hash = Array.from(new Uint8Array(sig))
         .map((b) => b.toString(16).padStart(2, '0'))
         .join('');
-      if (hex === v1) {
-        matched = { manifest, secretKind: sv.name, hex };
-        break;
+      base.hashes_computed.push({ manifest, variant: sv.name, hash });
+      if (hash === base.v1) {
+        base.valid = true;
+        base.matched_variant = sv.name;
+        base.matched_manifest = manifest;
+        console.log('[mp-signature] ok', { variant: sv.name });
+        return base;
       }
     }
-    if (matched) break;
   }
 
-  if (matched) {
-    console.log('[mp-signature] ok', { secretKind: matched.secretKind });
-    return true;
-  }
-
-  // Logging de diagnóstico — nunca expor o secret, só comprimentos.
   console.warn('[mp-signature] NAO BATEU', {
-    secret_len: secret.length,
-    secret_is_hex: /^[0-9a-f]+$/i.test(secret),
-    dataId_recebido: dataId,
-    requestId,
-    ts,
-    v1_recebido_prefix: v1.slice(0, 12) + '...',
-    candidates_testados: candidates,
+    secret_len: base.secret_length,
+    is_hex: base.secret_is_hex,
+    data_id: base.data_id_used,
+    request_id: base.request_id,
+    ts: base.ts,
+    v1_prefix: base.v1?.slice(0, 12) + '...',
+    testedN: base.hashes_computed.length,
   });
-  return false;
+  return base;
 }

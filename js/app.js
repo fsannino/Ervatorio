@@ -513,7 +513,7 @@ function buildHerbCards(){
     <div class="herb-card" data-herb-id="${h.id}" onclick="openHerbModal(${h.id})">
       <div class="hc-top">
         ${h.img
-          ? `<img class="herb-img" src="${h.img}" alt="${esc(h.n)}" loading="lazy" onerror="this.outerHTML='<span style=\\'font-size:1.3rem\\'>${h.icon}</span>'">`
+          ? `<img class="herb-img" src="${h.img}" data-responsive="${h.img}" alt="${esc(h.n)}" loading="lazy" decoding="async" onerror="this.outerHTML='<span style=\\'font-size:1.3rem\\'>${h.icon}</span>'">`
           : `<span style="font-size:1.3rem">${h.icon}</span>`
         }
         <button class="hc-fav ${favorites.includes(h.id)?'on':''}" onclick="toggleFav(event,${h.id})" title="Favoritar" aria-label="Favoritar ${esc(h.n)}">♥</button>
@@ -569,7 +569,7 @@ function openHerbModal(id){
     <button class="modal-close" onclick="closeModal()">✕</button>
     <div class="modal-herb-header">
       ${h.img
-        ? `<img class="modal-herb-img" src="${h.img}" alt="${esc(h.n)}" loading="lazy" onerror="this.outerHTML='<div class=\\'modal-herb-img modal-herb-icon\\'>${h.icon}</div>'">`
+        ? `<img class="modal-herb-img" src="${h.img}" data-responsive="${h.img}" alt="${esc(h.n)}" loading="lazy" decoding="async" onerror="this.outerHTML='<div class=\\'modal-herb-img modal-herb-icon\\'>${h.icon}</div>'">`
         : `<div class="modal-herb-img modal-herb-icon">${h.icon}</div>`
       }
       <div class="modal-herb-header-info">
@@ -848,7 +848,7 @@ function renderFavs(){
   else { grid.innerHTML=favHerbs.map(h=>`
     <div class="fav-card" onclick="openHerbModal(${h.id})">
       ${h.img
-        ? `<img class="fav-img" src="${h.img}" alt="${esc(h.n)}" loading="lazy" onerror="this.outerHTML='<div class=\\'fav-icon\\'>${h.icon}</div>'">`
+        ? `<img class="fav-img" src="${h.img}" data-responsive="${h.img}" alt="${esc(h.n)}" loading="lazy" decoding="async" onerror="this.outerHTML='<div class=\\'fav-icon\\'>${h.icon}</div>'">`
         : `<div class="fav-icon">${h.icon}</div>`
       }
       <div><div class="fav-name">${esc(h.n)}</div><div class="fav-lat">${esc(h.lat)}</div><div class="fav-ef">${esc(h.ef.substring(0,50))}...</div></div>
@@ -1354,7 +1354,7 @@ function renderRodaPanel(slice){
       const match=HERBS.find(x=>x.n===h.n);
       const img=match&&match.img;
       const visual=img
-        ? `<img class="roda-herb-img" src="${img}" alt="${esc(h.n)}" loading="lazy" onerror="this.outerHTML='<div class=\\'roda-herb-icon\\'>${h.icon}</div>'">`
+        ? `<img class="roda-herb-img" src="${img}" data-responsive="${img}" alt="${esc(h.n)}" loading="lazy" decoding="async" onerror="this.outerHTML='<div class=\\'roda-herb-icon\\'>${h.icon}</div>'">`
         : `<div class="roda-herb-icon">${h.icon}</div>`;
       return `
       <div class="roda-herb-item" onclick="findHerbAndOpen('${esc(h.n)}')">
@@ -1685,7 +1685,7 @@ function renderCtrHerbs(){
   el.innerHTML=list.map(h=>{
     const inB=ctrBlend.some(b=>b.id===h.id);
     const visual = h.img
-      ? `<img class="ctr-herb-row-img" src="${h.img}" alt="${esc(h.n)}" loading="lazy" onerror="this.outerHTML='<div class=\\'ctr-herb-row-icon\\'>${h.icon}</div>'">`
+      ? `<img class="ctr-herb-row-img" src="${h.img}" data-responsive="${h.img}" alt="${esc(h.n)}" loading="lazy" decoding="async" onerror="this.outerHTML='<div class=\\'ctr-herb-row-icon\\'>${h.icon}</div>'">`
       : `<div class="ctr-herb-row-icon">${h.icon}</div>`;
     return `<div class="ctr-herb-row ${inB?'in-blend':''}" onclick="toggleCtrHerb(${h.id})">
       ${visual}
