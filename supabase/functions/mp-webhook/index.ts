@@ -37,14 +37,25 @@ Deno.serve(async (req) => {
   try { bodyJson = await req.json(); } catch { /* body opcional */ }
 
   const type = (bodyJson.type as string) || queryType;
-  const dataId = ((bodyJson.data as { id?: string } | undefined)?.id) || queryDataId;
+  const bodyDataId = ((bodyJson.data as { id?: string } | undefined)?.id);
+  // Para assinatura, MP usa o data.id da URL. Para buscar o payment, qualquer
+  // um serve (devem ser iguais).
+  const dataId = bodyDataId || queryDataId;
+  const dataIdForSignature = queryDataId || bodyDataId;
+
+  console.log('[mp-webhook] recebido', {
+    method: req.method,
+    url_path: url.pathname + url.search,
+    queryType, queryDataId,
+    bodyType: bodyJson.type, bodyDataId,
+  });
 
   if (!dataId) {
     return jsonResponse({ error: 'data.id ausente' }, 400);
   }
 
   // Validação de assinatura (anti-spoofing). Em sandbox sem secret, passa.
-  const valid = await verifyWebhookSignature(req, String(dataId));
+  const valid = await verifyWebhookSignature(req, String(dataIdForSignature));
   if (!valid) {
     return jsonResponse({ error: 'Assinatura inválida' }, 401);
   }

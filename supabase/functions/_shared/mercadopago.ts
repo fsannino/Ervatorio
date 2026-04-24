@@ -153,14 +153,16 @@ export async function verifyWebhookSignature(
 ): Promise<boolean> {
   const secret = Deno.env.get('MP_WEBHOOK_SECRET');
   if (!secret) {
-    // Em ambiente de teste sem secret configurado, deixa passar mas avisa.
     console.warn('MP_WEBHOOK_SECRET não configurado — assinatura NÃO validada');
     return true;
   }
 
   const signatureHeader = req.headers.get('x-signature');
   const requestId = req.headers.get('x-request-id');
-  if (!signatureHeader || !requestId) return false;
+  if (!signatureHeader || !requestId) {
+    console.warn('[mp-signature] headers ausentes', { signatureHeader, requestId });
+    return false;
+  }
 
   // x-signature: "ts=1234567890,v1=hexhash"
   const parts = Object.fromEntries(
@@ -171,26 +173,69 @@ export async function verifyWebhookSignature(
   );
   const ts = parts.ts;
   const v1 = parts.v1;
-  if (!ts || !v1) return false;
+  if (!ts || !v1) {
+    console.warn('[mp-signature] ts/v1 ausente', { parts });
+    return false;
+  }
 
-  const manifest = `id:${dataId};request-id:${requestId};ts:${ts};`;
+  // MP assina usando o data.id EM MINÚSCULAS.
+  // Também testamos múltiplas variações do manifest para cobrir diferenças
+  // sutis entre versões da doc do MP e implementações antigas.
+  const dataIdLower = String(dataId).toLowerCase();
+  const candidates = [
+    `id:${dataIdLower};request-id:${requestId};ts:${ts};`,
+    `id:${dataId};request-id:${requestId};ts:${ts};`,
+  ];
 
   const enc = new TextEncoder();
-  const key = await crypto.subtle.importKey(
-    'raw',
-    enc.encode(secret),
-    { name: 'HMAC', hash: 'SHA-256' },
-    false,
-    ['sign'],
-  );
-  const sig = await crypto.subtle.sign('HMAC', key, enc.encode(manifest));
-  const hex = Array.from(new Uint8Array(sig))
-    .map((b) => b.toString(16).padStart(2, '0'))
-    .join('');
 
-  // Comparação constante para evitar timing attack
-  if (hex.length !== v1.length) return false;
-  let diff = 0;
-  for (let i = 0; i < hex.length; i++) diff |= hex.charCodeAt(i) ^ v1.charCodeAt(i);
-  return diff === 0;
+  // MP docs não são explícitas, mas a chave secreta é distribuída como hex
+  // string. Alguns SDKs decodificam o hex para bytes brutos; outros usam
+  // como UTF-8. Testamos os dois para ser tolerante.
+  const secretVariants: Array<{ name: string; bytes: Uint8Array }> = [
+    { name: 'utf8', bytes: enc.encode(secret) },
+  ];
+  if (/^[0-9a-f]+$/i.test(secret) && secret.length % 2 === 0) {
+    const hexBytes = new Uint8Array(secret.length / 2);
+    for (let i = 0; i < hexBytes.length; i++) {
+      hexBytes[i] = parseInt(secret.substr(i * 2, 2), 16);
+    }
+    secretVariants.push({ name: 'hex-decoded', bytes: hexBytes });
+  }
+
+  let matched: { manifest: string; secretKind: string; hex: string } | null = null;
+
+  for (const sv of secretVariants) {
+    const key = await crypto.subtle.importKey(
+      'raw', sv.bytes, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign'],
+    );
+    for (const manifest of candidates) {
+      const sig = await crypto.subtle.sign('HMAC', key, enc.encode(manifest));
+      const hex = Array.from(new Uint8Array(sig))
+        .map((b) => b.toString(16).padStart(2, '0'))
+        .join('');
+      if (hex === v1) {
+        matched = { manifest, secretKind: sv.name, hex };
+        break;
+      }
+    }
+    if (matched) break;
+  }
+
+  if (matched) {
+    console.log('[mp-signature] ok', { secretKind: matched.secretKind });
+    return true;
+  }
+
+  // Logging de diagnóstico — nunca expor o secret, só comprimentos.
+  console.warn('[mp-signature] NAO BATEU', {
+    secret_len: secret.length,
+    secret_is_hex: /^[0-9a-f]+$/i.test(secret),
+    dataId_recebido: dataId,
+    requestId,
+    ts,
+    v1_recebido_prefix: v1.slice(0, 12) + '...',
+    candidates_testados: candidates,
+  });
+  return false;
 }
