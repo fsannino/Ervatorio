@@ -1168,6 +1168,8 @@ function renderShop(){
 function renderProds(){
   const list=PRODUCTS.filter(p=>activeShopCat==='Todos'||p.cat===activeShopCat);
   document.getElementById('prodGrid').innerHTML=list.map(p=>{
+    const inCart=cart.some(c=>c.id===p.id);
+    const outOfStock=p.stock==='out';
     return `<div class="prod-card">
       <div class="prod-img">${p.icon}</div>
       <div class="prod-body">
@@ -1175,8 +1177,12 @@ function renderProds(){
         <div class="prod-supplier">${esc(p.sup)}</div>
         <div class="prod-price">R$ ${p.price.toFixed(2)} <span class="prod-unit">${esc(p.unit)}</span></div>
         <div class="prod-footer">
-          <span class="stock-badge ${p.stock==='in'?'in-stock':'low-stock'}">${p.stock==='in'?'Em estoque':'Últimas unidades'}</span>
-          <button class="add-cart" disabled style="opacity:.55;cursor:not-allowed" title="Seção em desenvolvimento">Em breve</button>
+          <span class="stock-badge ${p.stock==='in'?'in-stock':'low-stock'}">${p.stock==='in'?'Em estoque':p.stock==='low'?'Últimas unidades':'Esgotado'}</span>
+          ${outOfStock
+            ? `<button class="add-cart" disabled style="opacity:.55;cursor:not-allowed">Esgotado</button>`
+            : inCart
+              ? `<button class="add-cart added" onclick="addCart(${p.id})">+ Adicionar</button>`
+              : `<button class="add-cart" onclick="addCart(${p.id})">Adicionar</button>`}
         </div>
       </div>
     </div>`;
