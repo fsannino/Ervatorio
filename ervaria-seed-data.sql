@@ -117,7 +117,9 @@ CREATE TABLE IF NOT EXISTS public.admin_suppliers (
 );
 
 ALTER TABLE public.admin_suppliers ENABLE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS "suppliers_public_read" ON public.admin_suppliers;
 CREATE POLICY "suppliers_public_read" ON public.admin_suppliers FOR SELECT USING (active = TRUE);
+DROP POLICY IF EXISTS "suppliers_admin_all" ON public.admin_suppliers;
 CREATE POLICY "suppliers_admin_all" ON public.admin_suppliers FOR ALL
   USING (EXISTS (SELECT 1 FROM public.user_profiles WHERE id = auth.uid() AND is_admin = TRUE));
 
