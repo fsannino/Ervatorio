@@ -18,6 +18,7 @@
 import { handleCors, jsonResponse } from '../_shared/cors.ts';
 import { adminClient } from '../_shared/auth.ts';
 import { fetchPayment, getMode, mapPaymentStatus, verifyWebhookSignature } from '../_shared/mercadopago.ts';
+import { sendOrderPaidEmail } from '../_shared/email.ts';
 
 Deno.serve(async (req) => {
   const cors = handleCors(req);
@@ -139,6 +140,15 @@ Deno.serve(async (req) => {
   const { error: uErr } = await db.from('orders').update(update).eq('id', orderId);
   if (uErr) return jsonResponse({ error: uErr.message }, 500);
 
+  // Dispara email de confirmação quando passa de algo-nao-pago → paid.
+  // Fire-and-forget: não bloqueia a resposta ao MP nem falha o webhook
+  // se o email não puder ser enviado (Resend fora do ar, etc.).
+  if (newStatus === 'paid' && order.status !== 'paid') {
+    sendPaidEmailFor(db, orderId).catch((e) => {
+      console.error('[mp-webhook] email falhou (nao-fatal)', e);
+    });
+  }
+
   return jsonResponse({
     ok: true,
     order_id: orderId,
@@ -146,3 +156,56 @@ Deno.serve(async (req) => {
     payment_id: payment.id,
   });
 });
+
+// ------------------------------------------------------------
+// Email de confirmação após status=paid.
+// Busca pedido completo + user email e dispara via Resend.
+// ------------------------------------------------------------
+async function sendPaidEmailFor(
+  db: ReturnType<typeof adminClient>,
+  orderId: string,
+): Promise<void> {
+  const { data: full, error } = await db
+    .from('orders')
+    .select('id, order_number, user_id, total_cents, currency, payment_method, paid_at, shipping_address')
+    .eq('id', orderId)
+    .maybeSingle();
+  if (error || !full) {
+    console.warn('[mp-webhook email] pedido nao encontrado', { orderId, error });
+    return;
+  }
+
+  const { data: items } = await db
+    .from('order_items')
+    .select('product_name, product_unit, qty, unit_price_cents, line_total_cents')
+    .eq('order_id', orderId);
+
+  // Email do cliente: pega de auth.users via admin API (RLS não permite
+  // SELECT em auth.users direto, usamos o admin SDK).
+  const { data: userRes, error: userErr } = await db.auth.admin.getUserById(full.user_id);
+  if (userErr || !userRes?.user?.email) {
+    console.warn('[mp-webhook email] user sem email', { userId: full.user_id, userErr });
+    return;
+  }
+
+  // Nome do cliente do user_profiles (fallback: shipping_address.name)
+  const { data: profile } = await db
+    .from('user_profiles')
+    .select('display_name')
+    .eq('id', full.user_id)
+    .maybeSingle();
+  const addr = full.shipping_address as Record<string, string> | null;
+  const customerName = profile?.display_name || addr?.name || null;
+
+  await sendOrderPaidEmail({
+    to: userRes.user.email,
+    order_number: full.order_number || full.id,
+    customer_name: customerName,
+    total_cents: full.total_cents,
+    currency: full.currency || 'BRL',
+    payment_method: full.payment_method,
+    paid_at: full.paid_at,
+    items: items || [],
+    shipping_address: addr,
+  });
+}

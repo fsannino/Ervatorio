@@ -634,6 +634,7 @@ const ervaria = {
         <div class="profile-menu-email">${esc(email)}</div>
         <div class="profile-menu-sync">✓ Sincronizado</div>
       </div>
+      <button onclick="goPage('pedidos');ervaria.removeProfileMenu()">📦 Meus pedidos</button>
       <button onclick="ervaria.syncFromCloud();ervaria.removeProfileMenu()">↻ Sincronizar agora</button>
       ${this.isAdmin?'<button onclick="window.location=\'/admin.html\'" style="color:var(--gold2)">⚙ Painel Admin</button>':''}
       <button onclick="ervaria.logout()" class="logout">Sair da conta</button>

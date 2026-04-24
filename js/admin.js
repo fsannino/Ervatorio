@@ -66,6 +66,7 @@ function showSection(id){
   if(id==='news')loadNews();
   if(id==='suppliers')loadSuppliers();
   if(id==='fichas')loadFichasAdmin();
+  if(id==='orders'&&typeof loadOrders==='function')loadOrders();
 }
 
 // ── TOAST ──
