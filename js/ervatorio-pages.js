@@ -130,18 +130,20 @@
 
     // Header
     var heroImg = resolveErvaImg(f.nome_popular, f.nome_cientifico);
-    html += '<header class="ficha-hero">' +
+    html += '<header class="ficha-hero' + (heroImg ? ' ficha-hero--with-img' : '') + '">' +
       (heroImg
         ? '<figure class="ficha-hero-img">' +
             '<img src="' + safeEsc(heroImg) + '" alt="' + safeEsc(f.nome_popular || '') + '" loading="lazy" onerror="this.parentElement.style.display=\'none\'">' +
             '<figcaption class="ficha-hero-caption">Imagem meramente ilustrativa</figcaption>' +
           '</figure>'
         : '') +
-      '<h1 class="ficha-title">' + safeEsc(f.nome_popular || '') + '</h1>' +
-      '<div class="ficha-latin">' + safeEsc(f.nome_cientifico || '') + '</div>' +
-      (f.tagline ? '<blockquote class="ficha-tagline">' + safeEsc(f.tagline) + '</blockquote>' : '') +
-      (Array.isArray(f.destaques) && f.destaques.length ?
-        '<ul class="ficha-destaques">' + f.destaques.map(function(d) { return '<li><strong>' + safeEsc(d.label) + '</strong> ' + safeEsc(d.texto) + '</li>'; }).join('') + '</ul>' : '') +
+      '<div class="ficha-hero-text">' +
+        '<h1 class="ficha-title">' + safeEsc(f.nome_popular || '') + '</h1>' +
+        '<div class="ficha-latin">' + safeEsc(f.nome_cientifico || '') + '</div>' +
+        (f.tagline ? '<blockquote class="ficha-tagline">' + safeEsc(f.tagline) + '</blockquote>' : '') +
+        (Array.isArray(f.destaques) && f.destaques.length ?
+          '<ul class="ficha-destaques">' + f.destaques.map(function(d) { return '<li><strong>' + safeEsc(d.label) + '</strong> ' + safeEsc(d.texto) + '</li>'; }).join('') + '</ul>' : '') +
+      '</div>' +
       '</header>';
 
     // Alerta critico
