@@ -1,0 +1,33 @@
+# ============================================================
+# Configuração local do projeto Supabase (CLI).
+# Quando rodamos `supabase functions deploy`, a CLI lê estes
+# overrides antes de subir cada função.
+# ============================================================
+
+project_id = "lwzrzztzpklzbmxbqcrx"
+
+# ------------------------------------------------------------
+# Funções que NÃO devem ter JWT verificado pelo gateway.
+# São endpoints públicos chamados por serviços externos que não
+# enviam Authorization: Bearer (webhooks). A autenticação é feita
+# internamente pela função (validação de assinatura HMAC, etc.).
+# ------------------------------------------------------------
+[functions.mp-webhook]
+verify_jwt = false
+
+# ------------------------------------------------------------
+# Funções que EXIGEM JWT (comportamento padrão, mas deixo explícito).
+# O cliente envia Authorization: Bearer <access_token> e a função
+# usa getUserFromRequest() para derivar o user_id e o papel admin.
+# ------------------------------------------------------------
+[functions.admin-delete-user]
+verify_jwt = true
+
+[functions.admin-metrics]
+verify_jwt = true
+
+[functions.create-order]
+verify_jwt = true
+
+[functions.create-payment-preference]
+verify_jwt = true
