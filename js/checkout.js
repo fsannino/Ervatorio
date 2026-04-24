@@ -243,6 +243,17 @@ const Checkout = {
 
       // Passo 1: criar pedido (servidor recalcula preços)
       const cart = readCart();
+      // Só itens com dbId (UUID Supabase) são vendáveis pelo servidor.
+      // Produtos do catálogo hardcoded sem match em admin_products ficam
+      // de fora — alertamos o usuário se nada sobrar.
+      const sellable = cart.filter((c) => typeof c.dbId === 'string' && c.dbId.length === 36);
+      if (sellable.length === 0) {
+        throw new Error('Nenhum produto do carrinho está no catálogo oficial. Peça ao admin para rodar o seed de produtos.');
+      }
+      if (sellable.length < cart.length) {
+        const dropped = cart.length - sellable.length;
+        console.warn(`[checkout] ${dropped} item(ns) do carrinho sem dbId — ignorados.`);
+      }
       const orderRes = await fetch(`${cfg.FUNCTIONS_URL}/create-order`, {
         method: 'POST',
         headers: {
@@ -250,8 +261,8 @@ const Checkout = {
           'Authorization': `Bearer ${session.access_token}`,
         },
         body: JSON.stringify({
-          items: cart.map((c) => ({
-            product_id: c.dbId || c.id,    // dbId quando vem do Supabase
+          items: sellable.map((c) => ({
+            product_id: c.dbId,
             qty: c.qty,
           })),
           shipping_address: addr,
