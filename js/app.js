@@ -84,25 +84,6 @@ const SUPPLIERS = [
   {id:6,name:"TeaImport",type:"Importador Especializado",city:"São Paulo, SP",since:"2012",cert:"SIF + Vigilância",ship:"Todo Brasil",minOrder:"R$ 150",herbs:["Chá Verde","Chá Branco","Rooibos","Hibisco Azul","Tulsi"],color:"#1a3a5a"},
 ];
 
-const PRODUCTS = [
-  {id:1,name:"Camomila Orgânica",sup:"Ervas & Raízes",icon:"🌼",cat:"Folhas Secas",price:12.90,unit:"50g",stock:"in",supId:1},
-  {id:2,name:"Melissa Premium",sup:"Ervas & Raízes",icon:"🍃",cat:"Folhas Secas",price:14.50,unit:"30g",stock:"in",supId:1},
-  {id:3,name:"Blend Serenidade",sup:"Ervas & Raízes",icon:"💜",cat:"Blends",price:28.90,unit:"60g",stock:"in",supId:1},
-  {id:4,name:"Boldo do Chile",sup:"Casa das Plantas",icon:"🍃",cat:"Folhas Secas",price:8.90,unit:"50g",stock:"in",supId:2},
-  {id:5,name:"Guaco 100% Natural",sup:"Casa das Plantas",icon:"🌿",cat:"Folhas Secas",price:11.90,unit:"40g",stock:"low",supId:2},
-  {id:6,name:"Ginkgo Biloba Extrato",sup:"Phytofarm Brasil",icon:"🍃",cat:"Extratos",price:34.90,unit:"30g",stock:"in",supId:3},
-  {id:7,name:"Ashwagandha Raiz Pó",sup:"Phytofarm Brasil",icon:"🌿",cat:"Pós",price:42.90,unit:"100g",stock:"in",supId:3},
-  {id:8,name:"Valeriana Orgânica",sup:"Phytofarm Brasil",icon:"🌸",cat:"Folhas Secas",price:18.90,unit:"30g",stock:"in",supId:3},
-  {id:9,name:"Cúrcuma + Pimenta",sup:"Verde Vivo",icon:"🫚",cat:"Blends",price:22.90,unit:"80g",stock:"in",supId:4},
-  {id:10,name:"Gengibre Desidratado",sup:"Verde Vivo",icon:"🫚",cat:"Especiarias",price:16.90,unit:"100g",stock:"in",supId:4},
-  {id:11,name:"Hibisco Flores Secas",sup:"Verde Vivo",icon:"🌺",cat:"Flores",price:13.90,unit:"40g",stock:"in",supId:4},
-  {id:12,name:"Chá Verde Sencha",sup:"TeaImport",icon:"🍵",cat:"Chás Finos",price:38.90,unit:"50g",stock:"in",supId:6},
-  {id:13,name:"Rooibos Orgânico",sup:"TeaImport",icon:"🍃",cat:"Chás Finos",price:29.90,unit:"80g",stock:"in",supId:6},
-  {id:14,name:"Hibisco Azul",sup:"TeaImport",icon:"💙",cat:"Chás Finos",price:45.90,unit:"30g",stock:"low",supId:6},
-  {id:15,name:"Kit Blend Digestivo",sup:"Verde Vivo",icon:"🌿",cat:"Kits",price:54.90,unit:"kit 3 ervas",stock:"in",supId:4},
-  {id:16,name:"Infusor Aço Inox",sup:"Ervas & Raízes",icon:"🫖",cat:"Acessórios",price:24.90,unit:"1 unid",stock:"in",supId:1},
-];
-
 // STATE — safe localStorage parser with fallback
 function safeLoad(key, fallback){
   try { const v = JSON.parse(localStorage.getItem(key)); return Array.isArray(fallback) ? (Array.isArray(v) ? v : fallback) : (v && typeof v === 'object' ? v : fallback); }
@@ -115,7 +96,6 @@ let cart = safeLoad('erb_cart', []);
 let activeFilters = {search:'',cat:'Todos',safe:'',avoid:'',momento:'',linha:''};
 let wizState = {sintomas:[],hora:'',sabor:''};
 let activeSup = 'Todos';
-let activeShopCat = 'Todos';
 let currentHerb = null;
 
 // ── NAVIGATION ──
@@ -126,7 +106,6 @@ function goPage(id,btn){
   if(btn) btn.classList.add('on');
   if(id==='favs') renderFavs();
   if(id==='suppliers') renderSuppliers();
-  if(id==='shop') renderShop();
   if(id==='roda') initRoda();
   if(id==='perfil') renderPerfil();
   if(id==='sobre') renderSobre();
@@ -1142,66 +1121,18 @@ function renderSuppliers(){
 }
 
 function filterShopBySup(supId){
-  goPage('shop');
-  document.querySelectorAll('.nav-tab')[4].classList.add('on');
-  document.querySelectorAll('.nav-tab').forEach((t,i)=>{ if(i!==4)t.classList.remove('on'); });
-  // highlight supplier filter
-}
-
-// ── SHOP ──
-const SHOP_CATS=['Todos','Folhas Secas','Blends','Chás Finos','Extratos','Pós','Especiarias','Flores','Kits','Acessórios'];
-
-function renderShop(){
-  const sc=document.getElementById('shopCats');
-  sc.innerHTML='';
-  SHOP_CATS.forEach(c=>{
-    const b=document.createElement('button');
-    b.className='fchip'+(activeShopCat===c?' on':'');
-    b.textContent=c;
-    b.onclick=()=>{ activeShopCat=c; renderProds(); document.querySelectorAll('#shopCats .fchip').forEach(x=>x.classList.remove('on')); b.classList.add('on'); };
-    sc.appendChild(b);
-  });
-  renderProds();
-  updateCartCount();
-}
-
-function renderProds(){
-  const list=PRODUCTS.filter(p=>activeShopCat==='Todos'||p.cat===activeShopCat);
-  document.getElementById('prodGrid').innerHTML=list.map(p=>{
-    const inCart=cart.some(c=>c.id===p.id);
-    const outOfStock=p.stock==='out';
-    return `<div class="prod-card">
-      <div class="prod-img">${p.icon}</div>
-      <div class="prod-body">
-        <div class="prod-name">${esc(p.name)}</div>
-        <div class="prod-supplier">${esc(p.sup)}</div>
-        <div class="prod-price">R$ ${p.price.toFixed(2)} <span class="prod-unit">${esc(p.unit)}</span></div>
-        <div class="prod-footer">
-          <span class="stock-badge ${p.stock==='in'?'in-stock':'low-stock'}">${p.stock==='in'?'Em estoque':p.stock==='low'?'Últimas unidades':'Esgotado'}</span>
-          ${outOfStock
-            ? `<button class="add-cart" disabled style="opacity:.55;cursor:not-allowed">Esgotado</button>`
-            : inCart
-              ? `<button class="add-cart added" onclick="addCart(${p.id})">+ Adicionar</button>`
-              : `<button class="add-cart" onclick="addCart(${p.id})">Adicionar</button>`}
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-}
-
-function addCart(id){
-  const prod=PRODUCTS.find(p=>p.id===id);
-  const existing=cart.find(c=>c.id===id);
-  if(existing) existing.qty++;
-  else cart.push({...prod,qty:1});
-  localStorage.setItem('erb_cart',JSON.stringify(cart));
-  updateCartCount(); renderProds();
-  toast(`${prod.name} adicionado ao carrinho`);
+  const sup=(typeof SUPPLIERS!=='undefined')?SUPPLIERS.find(s=>s.id===supId):null;
+  if(typeof mktCatActive!=='undefined') mktCatActive='Todos';
+  if(typeof mktSearchVal!=='undefined') mktSearchVal=sup?sup.name.toLowerCase():'';
+  const searchInput=document.getElementById('mktSearch');
+  if(searchInput) searchInput.value=sup?sup.name:'';
+  goPage('marketplace');
+  document.querySelectorAll('.nav-tab').forEach(t=>{ t.classList.toggle('on', t.textContent.trim()==='Marketplace'); });
 }
 
 function updateCartCount(){
   const total=cart.reduce((s,c)=>s+c.qty,0);
-  const el=document.getElementById('cartCount');
+  const el=document.getElementById('mktCartCount');
   if(el) el.textContent=total?`(${total})`:'';
 }
 
@@ -1222,7 +1153,7 @@ function renderCart(){
       <div class="cart-item-icon">${c.icon}</div>
       <div class="cart-item-info">
         <div class="cart-item-name">${esc(c.name)}</div>
-        <div class="cart-item-sup">${esc(c.sup)} · ${esc(c.unit)}</div>
+        <div class="cart-item-sup">${esc(c.seller||c.sup||'')} · ${esc(c.unit)}</div>
         <div class="cart-qty">
           <button class="qty-btn" onclick="changeQty(${c.id},-1)">−</button>
           <span class="qty-val">${c.qty}</span>
@@ -1247,9 +1178,14 @@ function changeQty(id,delta){
   const item=cart.find(c=>c.id===id);
   if(item){ item.qty+=delta; if(item.qty<=0) cart=cart.filter(c=>c.id!==id); }
   localStorage.setItem('erb_cart',JSON.stringify(cart));
-  updateCartCount(); renderCart(); renderProds();
+  updateCartCount(); renderCart();
+  if(typeof renderMkt==='function' && document.getElementById('mktGrid')) renderMkt();
 }
-function clearCart(){ cart=[]; localStorage.setItem('erb_cart','[]'); updateCartCount(); renderCart(); renderProds(); }
+function clearCart(){
+  cart=[]; localStorage.setItem('erb_cart','[]');
+  updateCartCount(); renderCart();
+  if(typeof renderMkt==='function' && document.getElementById('mktGrid')) renderMkt();
+}
 
 // ════════════════════════════════════════
 // ── RODA DOS CHÁS ──
@@ -2002,7 +1938,6 @@ function goPage(id,btn,slug){
   if(btn)btn.classList.add('on');
   if(id==='favs')renderFavs();
   if(id==='suppliers')renderSuppliers();
-  if(id==='shop')renderShop();
   if(id==='roda')window.initRoda();
   if(id==='perfil')renderPerfil();
   if(id==='blends'){
@@ -2439,10 +2374,28 @@ const MKT_PRODUCTS = [
   {id:403,cat:'Viagens',type:'Tour Tea',name:'Darjeeling — Colheita First Flush',seller:'Tea Travels',icon:'🌱',price:9800.00,unit:'6 dias/pessoa',desc:'Participação na colheita em fazenda histórica. Processamento artesanal. Degustação de 15 lotes diferentes.',badge:'new',stock:'in'},
   {id:404,cat:'Viagens',type:'Tour Tea',name:'Yunnan — Rota do Pu-erh',seller:'Tea Travels',icon:'🐉',price:11200.00,unit:'8 dias/pessoa',desc:'Xishuangbanna, árvores centenárias, produtores tradicionais, aldeias Dai. A rota mais completa para o Pu-erh.',badge:'exp',stock:'in'},
   {id:405,cat:'Viagens',type:'Tour Tea',name:'Fujian — Oolongs e Wuyishan',seller:'Tea Travels',icon:'⛰',price:9200.00,unit:'6 dias/pessoa',desc:'Anxi (Tie Guan Yin), Wuyi (Da Hong Pao), Fujian coastline. Inclui visita a fábrica artesanal centenária.',badge:'',stock:'in'},
+
+  // Ervas & Acessórios (loja Ervatório — fornecedores cadastrados)
+  {id:501,cat:'Ervas & Acessórios',type:'Folhas Secas',name:'Camomila Orgânica',seller:'Ervas & Raízes',icon:'🌼',price:12.90,unit:'50g',desc:'Flores de camomila orgânicas, colhidas e secas artesanalmente. Calmante suave para o dia a dia.',badge:'eco',stock:'in',supId:1},
+  {id:502,cat:'Ervas & Acessórios',type:'Folhas Secas',name:'Melissa Premium',seller:'Ervas & Raízes',icon:'🍃',price:14.50,unit:'30g',desc:'Melissa (erva-cidreira) selecionada. Notas cítricas e suaves, ideal para relaxamento.',badge:'',stock:'in',supId:1},
+  {id:503,cat:'Ervas & Acessórios',type:'Blend Artesanal',name:'Blend Serenidade',seller:'Ervas & Raízes',icon:'💜',price:28.90,unit:'60g',desc:'Mix artesanal de camomila, lavanda e melissa. Companhia perfeita para o fim do dia.',badge:'',stock:'in',supId:1},
+  {id:504,cat:'Ervas & Acessórios',type:'Folhas Secas',name:'Boldo do Chile',seller:'Casa das Plantas',icon:'🍃',price:8.90,unit:'50g',desc:'Boldo chileno tradicional. Digestivo clássico, amargo característico.',badge:'',stock:'in',supId:2},
+  {id:505,cat:'Ervas & Acessórios',type:'Folhas Secas',name:'Guaco 100% Natural',seller:'Casa das Plantas',icon:'🌿',price:11.90,unit:'40g',desc:'Guaco natural, tradicionalmente usado em infusões para o sistema respiratório.',badge:'',stock:'low',supId:2},
+  {id:506,cat:'Ervas & Acessórios',type:'Extrato',name:'Ginkgo Biloba Extrato',seller:'Phytofarm Brasil',icon:'🍃',price:34.90,unit:'30g',desc:'Extrato padronizado de Ginkgo Biloba. Memória, circulação e foco.',badge:'',stock:'in',supId:3},
+  {id:507,cat:'Ervas & Acessórios',type:'Pó',name:'Ashwagandha Raiz Pó',seller:'Phytofarm Brasil',icon:'🌿',price:42.90,unit:'100g',desc:'Raiz de Ashwagandha em pó. Adaptógeno ayurvédico tradicional para estresse e energia.',badge:'',stock:'in',supId:3},
+  {id:508,cat:'Ervas & Acessórios',type:'Folhas Secas',name:'Valeriana Orgânica',seller:'Phytofarm Brasil',icon:'🌸',price:18.90,unit:'30g',desc:'Raiz de valeriana orgânica. Auxilia no relaxamento e sono profundo.',badge:'eco',stock:'in',supId:3},
+  {id:509,cat:'Ervas & Acessórios',type:'Blend Artesanal',name:'Cúrcuma + Pimenta',seller:'Verde Vivo',icon:'🫚',price:22.90,unit:'80g',desc:'Blend de cúrcuma com pimenta-preta para potencializar a absorção de curcumina. Anti-inflamatório.',badge:'',stock:'in',supId:4},
+  {id:510,cat:'Ervas & Acessórios',type:'Especiaria',name:'Gengibre Desidratado',seller:'Verde Vivo',icon:'🫚',price:16.90,unit:'100g',desc:'Gengibre desidratado em pedaços. Aquecedor, digestivo, ideal para chás de inverno.',badge:'',stock:'in',supId:4},
+  {id:511,cat:'Ervas & Acessórios',type:'Flores',name:'Hibisco Flores Secas',seller:'Verde Vivo',icon:'🌺',price:13.90,unit:'40g',desc:'Flores de hibisco secas. Infusão rubi, notas cítricas, termogênico natural.',badge:'',stock:'in',supId:4},
+  {id:512,cat:'Ervas & Acessórios',type:'Chá Tradicional',name:'Chá Verde Sencha',seller:'TeaImport',icon:'🍵',price:38.90,unit:'50g',desc:'Sencha japonês de qualidade diária. Verde vivo, notas herbáceas e levemente vegetais.',badge:'',stock:'in',supId:6},
+  {id:513,cat:'Ervas & Acessórios',type:'Herbal',name:'Rooibos Orgânico',seller:'TeaImport',icon:'🍃',price:29.90,unit:'80g',desc:'Rooibos orgânico da África do Sul. Sem cafeína, doce natural, bom a qualquer hora.',badge:'eco',stock:'in',supId:6},
+  {id:514,cat:'Ervas & Acessórios',type:'Chá Tradicional',name:'Hibisco Azul',seller:'TeaImport',icon:'💙',price:45.90,unit:'30g',desc:'Butterfly Pea. Muda de cor com limão, rico em antioxidantes. Efeito visual incrível.',badge:'new',stock:'low',supId:6},
+  {id:515,cat:'Ervas & Acessórios',type:'Kit',name:'Kit Blend Digestivo',seller:'Verde Vivo',icon:'🌿',price:54.90,unit:'kit 3 ervas',desc:'Trio de ervas digestivas selecionadas: hortelã-pimenta, erva-doce e gengibre.',badge:'',stock:'in',supId:4},
+  {id:516,cat:'Ervas & Acessórios',type:'Acessório',name:'Infusor Aço Inox',seller:'Ervas & Raízes',icon:'🫖',price:24.90,unit:'1 unid',desc:'Infusor de aço inox com tampa. Ideal para ervas soltas em xícara ou bule.',badge:'',stock:'in',supId:1},
 ];
 
 let mktCatActive='Todos', mktSearchVal='';
-const MKT_CATS=[{id:'Todos',icon:'✦'},{id:'Infusões',icon:'🍵'},{id:'Equipamentos',icon:'🫖'},{id:'Vivências',icon:'🎋'},{id:'Viagens',icon:'✈️'}];
+const MKT_CATS=[{id:'Todos',icon:'✦'},{id:'Ervas & Acessórios',icon:'🌿'},{id:'Infusões',icon:'🍵'},{id:'Equipamentos',icon:'🫖'},{id:'Vivências',icon:'🎋'},{id:'Viagens',icon:'✈️'}];
 
 function initMkt(){
   const catsEl=document.getElementById('mktCats'); if(!catsEl)return;
@@ -2482,7 +2435,7 @@ function renderMkt(){
 
 function mktCard(p){
   const inCart=cart.some(c=>c.id===p.id);
-  const typeColor=p.cat==='Infusões'?'#4a8a5a':p.cat==='Equipamentos'?'#4a6a9a':p.cat==='Vivências'?'#9a6a3a':'#6a4a9a';
+  const typeColor=p.cat==='Infusões'?'#4a8a5a':p.cat==='Equipamentos'?'#4a6a9a':p.cat==='Vivências'?'#9a6a3a':p.cat==='Ervas & Acessórios'?'#5a8a3a':'#6a4a9a';
   const badgeHtml=p.badge==='new'?'<span class="mkt-badge mkt-badge-new">Novo</span>':p.badge==='exp'?'<span class="mkt-badge mkt-badge-exp">Experiência</span>':p.badge==='eco'?'<span class="mkt-badge mkt-badge-eco">Orgânico</span>':'';
   return `<div class="mkt-card">
     <div class="mkt-card-media" style="background:${typeColor}18">${p.icon}</div>
