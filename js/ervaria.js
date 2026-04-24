@@ -421,12 +421,40 @@ const ervaria = {
     }));
     PRODUCTS.length = 0;
     Array.prototype.push.apply(PRODUCTS, mapped);
+    // Também anota MKT_PRODUCTS (catálogo premium da Chazeria) com dbId
+    // casando por nome. Mantém os campos ricos (type, seller, desc, badge)
+    // intactos — apenas adiciona dbId/price/stock atualizados do Supabase.
+    this._annotateMktProducts(rows);
+  },
+
+  // Casa MKT_PRODUCTS (definido em app.js) com admin_products por nome e
+  // injeta dbId. Preserva a estrutura original do item — o checkout.js só
+  // precisa que dbId esteja presente para passar pelo validador UUID.
+  _annotateMktProducts(rows) {
+    if (typeof MKT_PRODUCTS === 'undefined' || !Array.isArray(MKT_PRODUCTS)) return;
+    const normalize = (s) => String(s || '').toLowerCase().trim();
+    const byName = new Map((rows || []).map(r => [normalize(r.name), r]));
+    let matched = 0;
+    MKT_PRODUCTS.forEach(p => {
+      const row = byName.get(normalize(p.name));
+      if (row) {
+        p.dbId = row.id;
+        // Sincroniza preço e estoque com o Supabase (fonte da verdade).
+        if (typeof row.price === 'number') p.price = row.price;
+        else if (row.price) p.price = parseFloat(row.price) || p.price;
+        if (row.stock) p.stock = row.stock;
+        matched++;
+      }
+    });
+    if (matched > 0) console.log('Ervaria: MKT_PRODUCTS anotados com dbId:', matched);
   },
 
   _rerenderAfterCatalog() {
     try { if (typeof renderHerbs === 'function') renderHerbs(); } catch(_) {}
     try { if (typeof renderSuppliers === 'function' && document.getElementById('supGrid')) renderSuppliers(); } catch(_) {}
     try { if (typeof renderShop === 'function' && document.getElementById('prodGrid')) renderShop(); } catch(_) {}
+    // Re-render do Marketplace Premium (Chazeria) após anotar MKT_PRODUCTS com dbId
+    try { if (typeof renderMkt === 'function' && document.getElementById('mktGrid')) renderMkt(); } catch(_) {}
   },
 
   // ── FICHAS EDITORIAIS ─────────────────────────────────────
