@@ -53,18 +53,22 @@
   }
 
   /* ── ANÚNCIO TOPO ─────────────────────────────────── */
+  /* Evita colisão cromática com o hero verde: fundo bege suave cria
+     transição top-banner → header → hero em camadas distintas. */
   .top-banner {
-    background: var(--verde-profundo);
-    color: var(--creme);
+    background: var(--creme-escuro);
+    color: var(--verde-profundo);
     text-align: center;
     padding: 10px 20px;
     font-family: 'Jost', sans-serif;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
+    border-bottom: 1px solid rgba(26,58,42,.08);
   }
-  .top-banner a { color: var(--ouro-claro); text-decoration: none; }
+  .top-banner a { color: var(--ouro); text-decoration: none; font-weight: 500; }
+  .top-banner a:hover { color: var(--verde-profundo); }
 
   /* ── HEADER ───────────────────────────────────────── */
   header {
