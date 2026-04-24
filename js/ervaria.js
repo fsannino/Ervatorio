@@ -863,4 +863,9 @@ if('serviceWorker' in navigator){
 }
 
 // ── INIT SUPABASE ──
+// Expõe `ervaria` como global no window para que outros classic scripts
+// (checkout.js, admin.js, e qualquer código inline em index.html) acessem
+// via `window.ervaria`. `const` no topo de classic script fica no script
+// scope, NÃO vira propriedade do window automaticamente.
+window.ervaria = ervaria;
 ervaria.init();
