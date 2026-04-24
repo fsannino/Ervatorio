@@ -17,7 +17,7 @@
 // ============================================================
 import { handleCors, jsonResponse } from '../_shared/cors.ts';
 import { adminClient } from '../_shared/auth.ts';
-import { fetchPayment, mapPaymentStatus, verifyWebhookSignature } from '../_shared/mercadopago.ts';
+import { fetchPayment, getMode, mapPaymentStatus, verifyWebhookSignature } from '../_shared/mercadopago.ts';
 
 Deno.serve(async (req) => {
   const cors = handleCors(req);
@@ -54,16 +54,24 @@ Deno.serve(async (req) => {
     return jsonResponse({ error: 'data.id ausente' }, 400);
   }
 
-  // Validação de assinatura (anti-spoofing). Em sandbox sem secret, passa.
-  const valid = await verifyWebhookSignature(req, String(dataIdForSignature));
-  if (!valid) {
-    return jsonResponse({ error: 'Assinatura inválida' }, 401);
+  // Ignora tipos que não processamos (merchant_order usa IPN legado sem
+  // assinatura; topics antigos idem). Retorna 200 para o MP não retentar.
+  // Assinatura só é exigida em notificações 'payment' do webhook moderno.
+  if (type !== 'payment') {
+    console.log('[mp-webhook] type ignorado (sem validacao de assinatura)', { type, dataId });
+    return jsonResponse({ ok: true, ignored: true, type });
   }
 
-  // Só processamos notificações de pagamento. merchant_order só logamos.
-  if (type !== 'payment') {
-    console.log('mp-webhook: notificação ignorada, type=', type);
-    return jsonResponse({ ok: true, ignored: true, type });
+  // Validação de assinatura (anti-spoofing) — somente para payment.
+  // Em MP_MODE=test aceita mesmo sem assinatura válida (sandbox = dinheiro
+  // falso; facilita debug). Em MP_MODE=production exigência é estrita.
+  const valid = await verifyWebhookSignature(req, String(dataIdForSignature));
+  if (!valid) {
+    if (getMode() === 'test') {
+      console.warn('[mp-webhook] assinatura invalida em test mode — prosseguindo');
+    } else {
+      return jsonResponse({ error: 'Assinatura inválida' }, 401);
+    }
   }
 
   let payment;
