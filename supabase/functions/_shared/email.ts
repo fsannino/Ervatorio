@@ -98,7 +98,7 @@ function renderText(i: OrderEmailInput): string {
     ``,
     `Assim que seu pedido for despachado, você receberá o código de rastreamento.`,
     ``,
-    `Dúvidas? Responda este email ou acesse seu histórico em ervatorio.com.br.`,
+    `Dúvidas? Fale com a gente em contato@ervatorio.com.br ou acesse seu histórico em ervatorio.com.br.`,
     ``,
     `— Equipe Ervatório`,
   ];
@@ -174,7 +174,7 @@ function renderHtml(i: OrderEmailInput): string {
               ${addressHtml}
 
               <p style="margin:32px 0 0;color:#8a8270;font-size:12px;line-height:1.5;text-align:center">
-                Dúvidas? Responda este email.<br>
+                Dúvidas? Fale com a gente em <a href="mailto:contato@ervatorio.com.br" style="color:#d4a85a;text-decoration:none">contato@ervatorio.com.br</a>.<br>
                 Acesse seu histórico em <a href="https://ervatorio.com.br" style="color:#d4a85a;text-decoration:none">ervatorio.com.br</a>
               </p>
             </td>

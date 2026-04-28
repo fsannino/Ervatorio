@@ -2771,6 +2771,12 @@ function renderSobre(){
           <button class="add-blend-btn" onclick="goPage('search')" style="flex:1;min-width:140px">Explorar o catálogo</button>
           <button class="add-blend-btn" onclick="goPage('roda')" style="flex:1;min-width:140px;background:rgba(200,168,75,.15)">🎡 Roda dos Chás</button>
         </div>
+
+        <div class="sobre-tag" style="margin-top:2rem">Contato</div>
+        <div class="sobre-texto">
+          Dúvidas, parcerias ou suporte? Fale com a gente:
+          <a href="mailto:contato@ervatorio.com.br" style="color:var(--gold2);text-decoration:none">contato@ervatorio.com.br</a>
+        </div>
       </div>
     </div>`;
 }
