@@ -2053,7 +2053,7 @@ function saveBlendFromCtr(){
 
 // ── override goPage to handle all pages ──
 // Pages accessible without login
-const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend','sabores','guia-sensorial','roda','chazerias','ferramentas','ferramenta','familias','familia'];
+const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend','sabores','guia-sensorial','roda','chazerias','ferramentas','ferramenta','familias','familia','quiz'];
 
 // Esconde a landing e expõe o container do app. Idempotente.
 // Usado por goPage() e pelo hash handler para que deep links
@@ -2114,6 +2114,7 @@ function goPage(id,btn,slug){
   if(id==='ferramenta' && typeof initFerramentas==='function') initFerramentas(slug);
   if(id==='familias' && typeof initFamilias==='function') initFamilias();
   if(id==='familia' && slug && typeof initFamilia==='function') initFamilia(slug);
+  if(id==='quiz' && typeof initQuiz==='function') initQuiz(slug);
 
   // Registra a navegação no histórico do browser para que o botão Voltar funcione.
   if(!window._goPageFromHistory){
@@ -2127,28 +2128,43 @@ function goPage(id,btn,slug){
 
 // Hash route handler for parameterized Ervatorio v1.1 routes
 (function(){
+  // Inclui as rotas SPA novas: ferramentas, ferramenta/<slug>, familias, familia/<slug>,
+  // chazerias, quiz, quiz/resultado/<slug>
+  var SPA_ROUTE_RE = /^#(ficha|blend|ervatorio|blends|roda-funcional|ferramentas|ferramenta|familias|familia|chazerias|quiz)(\/.+)?$/;
   function handleHash(){
     var hash = window.location.hash || '';
-    if(/^#(ficha|blend|ervatorio|blends|roda-funcional)/.test(hash)) hideLanding();
+    if(SPA_ROUTE_RE.test(hash)) hideLanding();
     var m;
     if((m = hash.match(/^#ficha\/([a-z0-9-]+)$/))) {
       goPage('ficha', null, m[1]);
     } else if((m = hash.match(/^#blend\/([a-z0-9-]+)$/))) {
       goPage('blend', null, m[1]);
+    } else if((m = hash.match(/^#ferramenta\/([a-z0-9-]+)$/))) {
+      goPage('ferramenta', null, m[1]);
+    } else if((m = hash.match(/^#familia\/([a-z0-9-]+)$/))) {
+      goPage('familia', null, m[1]);
+    } else if((m = hash.match(/^#quiz\/(.+)$/))) {
+      goPage('quiz', null, m[1]);
     } else if(hash === '#ervatorio') {
       goPage('ervatorio');
     } else if(hash === '#blends') {
       goPage('blends');
     } else if(hash === '#roda-funcional') {
       goPage('roda-funcional');
+    } else if(hash === '#ferramentas') {
+      goPage('ferramentas');
+    } else if(hash === '#familias') {
+      goPage('familias');
+    } else if(hash === '#chazerias') {
+      goPage('chazerias');
+    } else if(hash === '#quiz') {
+      goPage('quiz');
     }
   }
   window.addEventListener('hashchange', handleHash);
   // Handle initial load with hash
-  if(window.location.hash && /^#(ficha|blend|ervatorio|blends|roda-funcional)/.test(window.location.hash)){
-    // Esconde a landing imediatamente (sem esperar 300ms) para evitar flash
+  if(window.location.hash && SPA_ROUTE_RE.test(window.location.hash)){
     hideLanding();
-    // Delay to ensure DOM and scripts are ready
     setTimeout(handleHash, 300);
   }
 })();
