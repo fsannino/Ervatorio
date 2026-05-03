@@ -70,9 +70,21 @@ const ervaria = {
       const { data } = await this.client.from('site_settings').select('payments_enabled').eq('id', 1).maybeSingle();
       if (data) {
         window.SITE_SETTINGS = data;
+        this.applyPaymentsState();
         try { typeof renderCart === 'function' && renderCart(); } catch (_) {}
       }
     } catch (_) {}
+  },
+
+  applyPaymentsState() {
+    const enabled = window.SITE_SETTINGS?.payments_enabled === true;
+    const banner = document.getElementById('mkt-dev-banner');
+    if (!banner) return;
+    if (enabled) {
+      banner.style.display = 'none';
+    } else {
+      banner.style.display = 'flex';
+    }
   },
 
   // ── AUTH METHODS ─────────────────────────────────────────
