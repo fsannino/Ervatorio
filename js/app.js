@@ -2053,7 +2053,7 @@ function saveBlendFromCtr(){
 
 // ── override goPage to handle all pages ──
 // Pages accessible without login
-const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend','sabores','guia-sensorial','roda','chazerias'];
+const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend','sabores','guia-sensorial','roda','chazerias','ferramentas','ferramenta','familias','familia'];
 
 // Esconde a landing e expõe o container do app. Idempotente.
 // Usado por goPage() e pelo hash handler para que deep links
@@ -2110,6 +2110,10 @@ function goPage(id,btn,slug){
   if(id==='blend' && slug && typeof renderBlendPage==='function') renderBlendPage(slug);
   if(id==='roda-funcional' && typeof renderRodaFuncional==='function') renderRodaFuncional();
   if(id==='chazerias' && typeof initChazerias==='function') initChazerias();
+  if(id==='ferramentas' && typeof initFerramentas==='function') initFerramentas();
+  if(id==='ferramenta' && typeof initFerramentas==='function') initFerramentas(slug);
+  if(id==='familias' && typeof initFamilias==='function') initFamilias();
+  if(id==='familia' && slug && typeof initFamilia==='function') initFamilia(slug);
 
   // Registra a navegação no histórico do browser para que o botão Voltar funcione.
   if(!window._goPageFromHistory){
