@@ -1237,6 +1237,17 @@ body.light .leaflet-popup-content-wrapper{background:#f5f0e8;color:#2a1e0a}
 .fam-erva-ef{font-size:.72rem;color:var(--cream2);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 /* ══════════════════════════════════════════════
+   LANG SWITCHER
+══════════════════════════════════════════════ */
+.lang-switcher{display:flex;align-items:center;gap:2px}
+.lang-btn{background:none;border:0.5px solid transparent;border-radius:6px;padding:3px 5px;font-size:.88rem;cursor:pointer;line-height:1;transition:all .18s;opacity:.55}
+.lang-btn:hover{opacity:1;border-color:rgba(200,168,75,.3);background:rgba(200,168,75,.08)}
+.lang-btn.on{opacity:1;border-color:rgba(200,168,75,.45);background:rgba(200,168,75,.1)}
+@media(max-width:600px){
+  .lang-switcher{gap:1px}
+  .lang-btn{font-size:.75rem;padding:2px 3px}
+}
+/* ══════════════════════════════════════════════
    JOGO BOTÂNICO
 ══════════════════════════════════════════════ */
 .jogo-intro{text-align:center;padding:1rem 0 2rem;max-width:520px;margin:0 auto}

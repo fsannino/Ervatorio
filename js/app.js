@@ -2118,6 +2118,11 @@ function goPage(id,btn,slug){
   if(id==='receitas' && typeof initReceitas==='function') initReceitas();
   if(id==='jogo' && typeof initJogo==='function') initJogo();
 
+  // i18n + SEO — update on every navigation
+  window._currentPage = id;
+  if(typeof applyI18n==='function') applyI18n();
+  if(typeof updateSEO==='function') updateSEO(id);
+
   // Registra a navegação no histórico do browser para que o botão Voltar funcione.
   if(!window._goPageFromHistory){
     var newHash='#'+id+(slug?'/'+slug:'');
@@ -3142,6 +3147,8 @@ function renderSobre(){
 }
 
 // ── INIT ──
+if(typeof initI18n==='function') initI18n();
+if(typeof updateSEO==='function') updateSEO('search');
 buildFilters();
 renderHerbs();
 drawWheel();
