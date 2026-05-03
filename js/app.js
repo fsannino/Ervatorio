@@ -579,6 +579,9 @@ function openHerbModal(id){
         ${h.linha?`<div class="modal-linha"><span class="htag htag-linha linha-${h.linha.toLowerCase()}">Linha ${esc(h.linha)}</span></div>`:''}
       </div>
     </div>
+    <button id="modalBlendBtn" class="modal-blend-toggle ${inTray?'in-tray':''}" onclick="toggleTrayModal(${h.id})">
+      ${inTray?'✓ Selecionado para blend':'＋ Selecionar para blend'}
+    </button>
     <div class="modal-section">
       <div class="modal-label">Sobre</div>
       <div class="modal-text">${esc(h.detail)}</div>
@@ -596,8 +599,8 @@ function openHerbModal(id){
     ${h.safe.length?`<div class="safe-box">✓ Seguro para: ${h.safe.map(s=>esc(s)).join(', ')}</div>`:''}
     <div id="modalFichaSlot"></div>
     <div style="display:flex;gap:8px;margin-top:1rem">
-      <button class="add-blend-btn" style="flex:1" onclick="addToTray(${h.id})">${inTray?'✓ No Blend':'+ Adicionar ao Blend'}</button>
       <button class="add-blend-btn" style="flex:1;background:rgba(200,168,75,.15)" onclick="openTimer(${h.id})">⏱ Preparar agora</button>
+      <button class="add-blend-btn" style="flex:1" onclick="addToTray(${h.id})">🌿 Ver no Blend</button>
     </div>
   `;
   document.getElementById('herbModal').classList.add('on');
@@ -879,12 +882,26 @@ function deleteSavedRecipe(i){
 }
 
 // ── BLEND TRAY ──
+function toggleTrayModal(id){
+  const inTray=blendTray.includes(id);
+  if(inTray){ blendTray=blendTray.filter(i=>i!==id); }
+  else { blendTray.push(id); }
+  localStorage.setItem('erb_tray',JSON.stringify(blendTray));
+  renderTray();
+  const btn=document.getElementById('modalBlendBtn');
+  if(btn){
+    const now=blendTray.includes(id);
+    btn.textContent=now?'✓ Selecionado para blend':'＋ Selecionar para blend';
+    btn.classList.toggle('in-tray',now);
+  }
+  toast(blendTray.includes(id)?'Adicionado ao blend':'Removido do blend');
+}
+
 function addToTray(id){
   if(!blendTray.includes(id)) blendTray.push(id);
   localStorage.setItem('erb_tray',JSON.stringify(blendTray));
   renderTray(); closeModal();
   goPage('blends');
-  // Ervas adicionadas pela busca aparecem na aba Assistente (tray compartilhado).
   if(typeof switchBlendTab==='function') switchBlendTab('assistente');
   toast('Erva adicionada ao blend!');
 }

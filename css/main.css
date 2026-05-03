@@ -276,6 +276,9 @@ body.light .htag-linha.linha-funcional{background:rgba(170,110,50,.1);color:#965
 .prep-key{font-size:.65rem;color:var(--muted);margin-top:1px}
 .add-blend-btn{width:100%;margin-top:1rem;padding:12px;background:rgba(200,168,75,.1);border:0.5px solid rgba(200,168,75,.3);border-radius:var(--r-lg);color:var(--gold2);font-family:'Jost',sans-serif;font-size:.85rem;cursor:pointer;transition:all .2s;letter-spacing:.04em}
 .add-blend-btn:hover{background:rgba(200,168,75,.18)}
+.modal-blend-toggle{display:block;width:100%;margin-bottom:1rem;padding:10px 16px;background:rgba(255,255,255,.03);border:0.5px solid var(--faint);border-radius:var(--r-lg);color:var(--muted);font-family:'Jost',sans-serif;font-size:.82rem;cursor:pointer;transition:all .2s;letter-spacing:.04em;text-align:center}
+.modal-blend-toggle:hover{border-color:rgba(200,168,75,.35);color:var(--gold2)}
+.modal-blend-toggle.in-tray{background:rgba(200,168,75,.1);border-color:rgba(200,168,75,.4);color:var(--gold2)}
 
 /* BLEND TABS */
 .blend-tabs{display:flex;gap:0;margin-bottom:1.25rem;border-radius:var(--r-md);overflow:hidden;border:0.5px solid var(--faint)}
