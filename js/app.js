@@ -2443,10 +2443,12 @@ function mktCard(p){
   const typeColor=p.cat==='Infusões'?'#4a8a5a':p.cat==='Equipamentos'?'#4a6a9a':p.cat==='Vivências'?'#9a6a3a':p.cat==='Ervas & Acessórios'?'#5a8a3a':'#6a4a9a';
   const badgeHtml=p.badge==='new'?'<span class="mkt-badge mkt-badge-new">Novo</span>':p.badge==='exp'?'<span class="mkt-badge mkt-badge-exp">Experiência</span>':p.badge==='eco'?'<span class="mkt-badge mkt-badge-eco">Orgânico</span>':'';
   const testBadge=p.is_test?'<span class="mkt-badge" style="background:rgba(100,100,200,.15);color:#a0a8e0;border:1px solid rgba(100,100,200,.3)">TESTE</span>':'';
-  const mediaHtml=p.images&&p.images[0]?`<img src="${p.images[0]}" style="width:100%;height:100%;object-fit:cover" onerror="this.parentElement.innerHTML='${p.icon}'">`:`${p.icon}`;
+  const imgs=p.images&&p.images.length?p.images:[];
+  const mediaHtml=imgs[0]?`<img src="${imgs[0]}" data-img-idx="0" data-pid="${p.id}" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<span style=\\"font-size:2.8rem\\">${p.icon}</span>')">`:`<span style="font-size:2.8rem">${p.icon}</span>`;
+  const dots=imgs.length>1?`<div class="mkt-img-dots">${imgs.map((_,i)=>`<span class="mkt-img-dot${i===0?' on':''}" data-i="${i}"></span>`).join('')}</div>`:'';
   return `<div class="mkt-card">
-    <div class="mkt-card-media" style="background:${typeColor}18">${mediaHtml}</div>
-    <div class="mkt-card-body">
+    <div class="mkt-card-media" style="background:${typeColor}18;position:relative;cursor:${imgs.length>1?'pointer':'default'}" onclick="cycleCardImg(this,${p.id})">${mediaHtml}${dots}</div>
+    <div class="mkt-card-body" style="cursor:pointer" onclick="openMktDetail(${p.id})">
       <div class="mkt-card-type" style="color:${typeColor}">${p.type} ${badgeHtml} ${testBadge}</div>
       <div class="mkt-card-name">${p.name}</div>
       <div class="mkt-card-seller">${p.seller}</div>
@@ -2456,10 +2458,84 @@ function mktCard(p){
           <div class="mkt-card-price">R$ ${p.price.toLocaleString('pt-BR',{minimumFractionDigits:2})}</div>
           <span class="mkt-card-price-sub">${p.unit}</span>
         </div>
-        <button class="mkt-add-btn ${inCart?'added':''}" onclick="addMktCart(${p.id})">${inCart?'✓ Adicionado':'+ Carrinho'}</button>
+        <button class="mkt-add-btn ${inCart?'added':''}" onclick="event.stopPropagation();addMktCart(${p.id})">${inCart?'✓ Adicionado':'+ Carrinho'}</button>
       </div>
     </div>
   </div>`;
+}
+
+function cycleCardImg(mediaEl, pid){
+  const p=MKT_PRODUCTS.find(x=>x.id===pid);
+  if(!p||!p.images||p.images.length<2)return;
+  const img=mediaEl.querySelector('img');
+  if(!img)return;
+  const cur=parseInt(img.getAttribute('data-img-idx')||'0');
+  const next=(cur+1)%p.images.length;
+  img.src=p.images[next];
+  img.setAttribute('data-img-idx',next);
+  mediaEl.querySelectorAll('.mkt-img-dot').forEach((d,i)=>d.classList.toggle('on',i===next));
+}
+
+function openMktDetail(pid){
+  const p=MKT_PRODUCTS.find(x=>x.id===pid);
+  if(!p)return;
+  const typeColor=p.cat==='Infusões'?'#4a8a5a':p.cat==='Equipamentos'?'#4a6a9a':p.cat==='Vivências'?'#9a6a3a':p.cat==='Ervas & Acessórios'?'#5a8a3a':'#6a4a9a';
+  const imgs=p.images&&p.images.length?p.images:[];
+  const inCart=cart.some(c=>c.id===p.id);
+  const testBadge=p.is_test?'<span class="mkt-badge" style="background:rgba(100,100,200,.15);color:#a0a8e0;border:1px solid rgba(100,100,200,.3);margin-left:6px">TESTE</span>':'';
+  const photoHtml=imgs[0]
+    ?`<div id="mktDetailPhoto" style="width:100%;aspect-ratio:4/3;background:#111;border-radius:var(--r-lg);overflow:hidden;margin-bottom:.75rem">
+        <img id="mktDetailImg" src="${imgs[0]}" data-idx="0" style="width:100%;height:100%;object-fit:cover">
+       </div>
+       ${imgs.length>1?`<div class="mkt-img-dots" style="justify-content:center;margin-bottom:1rem">${imgs.map((_,i)=>`<span class="mkt-img-dot${i===0?' on':''}" onclick="switchDetailImg(${i})" style="cursor:pointer"></span>`).join('')}</div>`:''}
+      `
+    :`<div style="width:100%;aspect-ratio:4/3;background:${typeColor}18;border-radius:var(--r-lg);display:flex;align-items:center;justify-content:center;font-size:5rem;margin-bottom:.75rem">${p.icon}</div>`;
+  const existing=document.getElementById('mktDetailOverlay');
+  if(existing)existing.remove();
+  const overlay=document.createElement('div');
+  overlay.id='mktDetailOverlay';
+  overlay.style.cssText='position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.75);display:flex;align-items:flex-end;justify-content:center;padding:0';
+  overlay.innerHTML=`
+    <div style="background:var(--bg2);border-radius:var(--r-lg) var(--r-lg) 0 0;width:100%;max-width:540px;max-height:90vh;overflow-y:auto;padding:1.5rem 1.25rem 2rem">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+        <span style="font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:${typeColor}">${p.cat}</span>
+        <button onclick="document.getElementById('mktDetailOverlay').remove()" style="background:none;border:none;color:var(--muted);font-size:1.2rem;cursor:pointer;padding:0 4px">✕</button>
+      </div>
+      ${photoHtml}
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;color:var(--cream);margin:0 0 .3rem">${p.name}${testBadge}</h2>
+      <div style="font-size:.72rem;color:var(--muted);margin-bottom:.75rem">${p.seller} · ${p.unit}</div>
+      <p style="font-size:.82rem;color:var(--cream2);line-height:1.65;margin-bottom:1.25rem">${p.desc}</p>
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:1rem;border-top:0.5px solid var(--faint)">
+        <div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--gold2)">R$ ${p.price.toLocaleString('pt-BR',{minimumFractionDigits:2})}</div>
+          <span style="font-size:.65rem;color:var(--muted)">${p.unit}</span>
+        </div>
+        <div style="display:flex;gap:8px">
+          <button class="mkt-add-btn ${inCart?'added':''}" id="mktDetailCartBtn" onclick="addMktCartFromDetail(${p.id})" style="padding:10px 20px;font-size:.8rem">${inCart?'✓ Adicionado':'+ Carrinho'}</button>
+          <button onclick="addMktCartFromDetail(${p.id},true)" style="padding:10px 20px;background:rgba(200,168,75,.2);border:0.5px solid rgba(200,168,75,.4);border-radius:var(--r-sm);color:var(--gold2);font-size:.8rem;font-family:'Jost',sans-serif;cursor:pointer">Comprar agora</button>
+        </div>
+      </div>
+    </div>`;
+  overlay.addEventListener('click',e=>{if(e.target===overlay)overlay.remove();});
+  document.body.appendChild(overlay);
+  window._mktDetailPid=pid;
+}
+
+function switchDetailImg(idx){
+  const p=MKT_PRODUCTS.find(x=>x.id===window._mktDetailPid);
+  if(!p||!p.images[idx])return;
+  const img=document.getElementById('mktDetailImg');
+  if(img){img.src=p.images[idx];img.setAttribute('data-idx',idx);}
+  document.querySelectorAll('#mktDetailOverlay .mkt-img-dot').forEach((d,i)=>d.classList.toggle('on',i===idx));
+}
+
+function addMktCartFromDetail(pid, checkout=false){
+  addMktCart(pid);
+  if(checkout){document.getElementById('mktDetailOverlay')?.remove();showSection('checkout');}
+  else{
+    const btn=document.getElementById('mktDetailCartBtn');
+    if(btn){btn.textContent='✓ Adicionado';btn.classList.add('added');}
+  }
 }
 
 function addMktCart(id){
