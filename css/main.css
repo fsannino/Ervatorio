@@ -1235,3 +1235,52 @@ body.light .leaflet-popup-content-wrapper{background:#f5f0e8;color:#2a1e0a}
 .fam-erva-name{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--cream)}
 .fam-erva-lat{font-size:.7rem;color:var(--muted);font-style:italic}
 .fam-erva-ef{font-size:.72rem;color:var(--cream2);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ══════════════════════════════════════════════
+   QUIZ — Qual chá brasileiro é você?
+══════════════════════════════════════════════ */
+.quiz-eyebrow{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
+.quiz-intro{text-align:center;padding:1.5rem 0 2rem}
+.quiz-title{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--gold2);font-weight:300;margin:0 0 1rem;line-height:1.15}
+.quiz-lead{font-size:1rem;color:var(--cream2);line-height:1.6;max-width:520px;margin:0 auto 1.5rem}
+.quiz-meta{font-size:.78rem;color:var(--muted);margin-bottom:2rem;letter-spacing:.04em}
+.quiz-start-btn{display:inline-block;padding:14px 36px;background:var(--gold);color:var(--bg);border:none;border-radius:var(--r-md);font-family:'Jost',sans-serif;font-size:.92rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .25s}
+.quiz-start-btn:hover{background:var(--goldf);transform:translateY(-1px)}
+.quiz-resume-btn{display:block;margin:1.25rem auto 0;background:none;border:none;color:var(--gold2);font-family:'Jost',sans-serif;font-size:.82rem;cursor:pointer;text-decoration:underline;text-decoration-color:rgba(200,168,75,.3)}
+.quiz-resume-btn:hover{text-decoration-color:var(--gold)}
+/* Progress */
+.quiz-progress-bar{width:100%;height:3px;background:rgba(255,255,255,.05);border-radius:2px;overflow:hidden;margin-bottom:1.5rem}
+.quiz-progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));transition:width .4s ease}
+/* Pergunta */
+.quiz-pergunta{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--cream);font-weight:400;margin:0 0 1.5rem;line-height:1.3}
+.quiz-opcoes{display:flex;flex-direction:column;gap:10px}
+.quiz-opcao{padding:16px 20px;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-md);color:var(--cream);font-family:'EB Garamond','Cormorant Garamond',serif;font-size:1rem;line-height:1.5;cursor:pointer;text-align:left;transition:all .2s}
+.quiz-opcao:hover{border-color:rgba(200,168,75,.5);background:rgba(200,168,75,.06);transform:translateX(2px)}
+.quiz-back-btn{margin-top:1.25rem;background:none;border:none;color:var(--muted);font-family:'Jost',sans-serif;font-size:.82rem;cursor:pointer}
+.quiz-back-btn:hover{color:var(--gold2)}
+/* Resultado */
+.quiz-resultado{text-align:center;padding:.5rem 0 2rem}
+.quiz-result-visual{width:240px;height:240px;border-radius:50%;margin:1rem auto 1.5rem;display:flex;align-items:center;justify-content:center;border:0.5px solid rgba(200,168,75,.25);overflow:hidden}
+.quiz-result-img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.quiz-result-icon{font-size:5rem}
+.quiz-result-name{font-family:'Cormorant Garamond',serif;font-size:2.6rem;color:var(--gold2);font-weight:300;margin:0 0 .25rem;line-height:1.1}
+.quiz-result-lat{font-size:.82rem;color:var(--muted);font-style:italic;margin-bottom:1rem}
+.quiz-result-arquetipo{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--cream);margin-bottom:.4rem}
+.quiz-result-subtitulo{font-size:.92rem;color:var(--cream2);font-style:italic;margin-bottom:1.5rem;line-height:1.4}
+.quiz-result-frase{margin:1.25rem auto 1.5rem;padding:1rem 1.25rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:var(--r-md);font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--cream);line-height:1.5;max-width:540px;text-align:left}
+.quiz-result-section{margin:1.5rem auto;max-width:480px;text-align:left}
+.quiz-result-section-title{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem;text-align:center}
+.quiz-result-lista{list-style:none;padding:0;margin:0;text-align:center}
+.quiz-result-lista li{padding:6px 0;font-family:'EB Garamond',serif;font-size:.95rem;color:var(--cream2);position:relative}
+.quiz-result-lista li:before{content:'·';color:var(--gold);margin-right:.5em;font-weight:700}
+.quiz-result-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:1.5rem}
+.quiz-action-btn{padding:11px 18px;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-md);color:var(--cream);font-family:'Jost',sans-serif;font-size:.82rem;cursor:pointer;transition:all .2s;letter-spacing:.04em}
+.quiz-action-btn:hover{border-color:rgba(200,168,75,.4);color:var(--gold2)}
+.quiz-action-btn.primary{background:var(--gold);color:var(--bg);border-color:var(--gold)}
+.quiz-action-btn.primary:hover{background:var(--goldf)}
+@media (max-width:480px){
+  .quiz-title{font-size:2rem}
+  .quiz-pergunta{font-size:1.5rem}
+  .quiz-result-name{font-size:2.1rem}
+  .quiz-result-visual{width:200px;height:200px}
+}
