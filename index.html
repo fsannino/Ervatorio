@@ -1871,6 +1871,7 @@
     <button class="nav-tab" onclick="goPage('chas',this)">Chás Tradicionais</button>
     <button class="nav-tab" onclick="goPage('mundo',this)">Chás do Mundo</button>
     <button class="nav-tab" onclick="goPage('chazerias',this)">Chazerias</button>
+    <button class="nav-tab" onclick="goPage('ferramentas',this)">Ferramentas</button>
     <button class="nav-tab" onclick="goPage('favs',this)">Favoritos</button>
     <button class="nav-tab" onclick="goPage('suppliers',this)">Fornecedores</button>
     <button class="nav-tab" onclick="goPage('marketplace',this)">Marketplace</button>
@@ -1928,6 +1929,20 @@
   <div id="chaz-map" style="width:100%;height:340px;border-radius:var(--r-lg);overflow:hidden;margin-bottom:1.5rem;border:0.5px solid var(--faint)"></div>
   <div id="chaz-cards"></div>
 </div>
+
+<!-- FERRAMENTAS HUB -->
+<div class="page" id="page-ferramentas"></div>
+
+<!-- FERRAMENTA SUB-PAGES (todas dentro de #page-ferramenta) -->
+<div class="page" id="page-ferramenta">
+  <div class="ferr-sub-page" id="page-ferramenta-infusao" style="display:none"></div>
+  <div class="ferr-sub-page" id="page-ferramenta-timer" style="display:none"></div>
+  <div class="ferr-sub-page" id="page-ferramenta-cafeina" style="display:none"></div>
+</div>
+
+<!-- FAMÍLIAS HUB -->
+<div class="page" id="page-familias"></div>
+<div class="page" id="page-familia"></div>
 <div class="page on" id="page-search">
 
   <!-- HERO BANNER dentro do app -->
@@ -2507,6 +2522,7 @@
 <script src="/js/ervatorio-data.js"></script>
 <script src="/js/ervatorio-pages.js"></script>
 <script src="/js/chazerias.js"></script>
+<script src="/js/ferramentas.js"></script>
 <script>
 /* TEMP — REMOVER apos validacao da Fase 1 */
 (async function() {
