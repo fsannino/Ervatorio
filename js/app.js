@@ -579,7 +579,7 @@ function openHerbModal(id){
         ${h.linha?`<div class="modal-linha"><span class="htag htag-linha linha-${h.linha.toLowerCase()}">Linha ${esc(h.linha)}</span></div>`:''}
       </div>
     </div>
-    <button id="modalBlendBtn" class="modal-blend-toggle ${inTray?'in-tray':''}" onclick="toggleTrayModal(${h.id})">
+    <button id="modalBlendBtn" data-blend-herb="${h.id}" class="modal-blend-toggle ${inTray?'in-tray':''}" onclick="toggleTrayModal(${h.id})">
       ${inTray?'✓ Selecionado para blend':'＋ Selecionar para blend'}
     </button>
     <div class="modal-section">
@@ -657,6 +657,8 @@ function renderFichaModal(f){
   const cu = f.cultura || {};
   const rg = f.regulacao || {};
   const mk = f.marketplace || {};
+  const fichaHerb = HERBS.find(h=>h.n===f.nome_popular||(f.nome_cientifico&&f.nome_cientifico.startsWith(h.lat.split(' ')[0]+' '+(h.lat.split(' ')[1]||''))));
+  const fichaHerbId = fichaHerb ? fichaHerb.id : null;
   const listMaybe = (v) => Array.isArray(v) ? v.map(x=>`<li>${esc(x)}</li>`).join('') : (v?`<li>${esc(v)}</li>`:'');
   const paragraphs = (v) => Array.isArray(v) ? v.map(x=>`<p>${esc(x)}</p>`).join('') : (v?`<p>${esc(v)}</p>`:'');
   const dlList = (arr, keyA='label', keyB='texto') => Array.isArray(arr)
@@ -678,6 +680,10 @@ function renderFichaModal(f){
           <ul class="ficha-destaques">
             ${f.destaques.map(d=>`<li><strong>${esc(d.label)}</strong> ${esc(d.texto)}</li>`).join('')}
           </ul>`:''}
+        ${fichaHerbId!==null?`
+          <button data-blend-herb="${fichaHerbId}" class="modal-blend-toggle${blendTray.includes(fichaHerbId)?' in-tray':''}" onclick="toggleTrayModal(${fichaHerbId})">
+            ${blendTray.includes(fichaHerbId)?'✓ Selecionado para blend':'＋ Selecionar para blend'}
+          </button>`:''}
       </header>
 
       ${ac.alerta_critico?`
@@ -888,13 +894,12 @@ function toggleTrayModal(id){
   else { blendTray.push(id); }
   localStorage.setItem('erb_tray',JSON.stringify(blendTray));
   renderTray();
-  const btn=document.getElementById('modalBlendBtn');
-  if(btn){
-    const now=blendTray.includes(id);
+  const now=blendTray.includes(id);
+  document.querySelectorAll(`[data-blend-herb="${id}"]`).forEach(btn=>{
     btn.textContent=now?'✓ Selecionado para blend':'＋ Selecionar para blend';
     btn.classList.toggle('in-tray',now);
-  }
-  toast(blendTray.includes(id)?'Adicionado ao blend':'Removido do blend');
+  });
+  toast(now?'Adicionado ao blend':'Removido do blend');
 }
 
 function addToTray(id){
