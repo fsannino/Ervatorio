@@ -517,6 +517,7 @@ function buildHerbCards(){
           : `<span style="font-size:1.3rem">${h.icon}</span>`
         }
         <button class="hc-fav ${favorites.includes(h.id)?'on':''}" onclick="toggleFav(event,${h.id})" title="Favoritar" aria-label="Favoritar ${esc(h.n)}">♥</button>
+        <button class="hc-blend ${blendTray.includes(h.id)?'on':''}" data-blend-herb="${h.id}" onclick="event.stopPropagation();toggleTrayModal(${h.id})" title="Selecionar para blend">＋</button>
       </div>
       <div class="hc-name">${esc(h.n)}</div>
       ${h.tagline ? `<div class="hc-tagline">${esc(h.tagline)}</div>` : ''}
@@ -931,8 +932,13 @@ function toggleTrayModal(id){
   renderTray();
   const now=blendTray.includes(id);
   document.querySelectorAll(`[data-blend-herb="${id}"]`).forEach(btn=>{
-    btn.textContent=now?'✓ Selecionado para blend':'＋ Selecionar para blend';
-    btn.classList.toggle('in-tray',now);
+    if(btn.classList.contains('hc-blend')){
+      btn.textContent=now?'✓':'＋';
+      btn.classList.toggle('on',now);
+    } else {
+      btn.textContent=now?'✓ Selecionado para blend':'＋ Selecionar para blend';
+      btn.classList.toggle('in-tray',now);
+    }
   });
   if(now) toastLink('Adicionado ao blend','Ver blend →',()=>{ goPage('blends'); if(typeof switchBlendTab==='function') switchBlendTab('assistente'); });
   else toast('Removido do blend');
@@ -949,12 +955,21 @@ function addToTray(id){
 
 function renderTray(){
   const items=document.getElementById('trayItems');
-  if(!blendTray.length){ items.innerHTML='<span class="tray-empty">Adicione ervas da busca ao blend</span>'; return; }
+  if(!blendTray.length){ items.innerHTML='<span class="tray-empty">Selecione ervas nas fichas do Ervatório para montar seu blend</span>'; return; }
   const herbs=HERBS.filter(h=>blendTray.includes(h.id));
   items.innerHTML=herbs.map(h=>`
     <span class="tray-item">${h.icon} ${esc(h.n)}
       <button class="tray-remove" onclick="removeTray(${h.id})">✕</button>
-    </span>`).join('');
+    </span>`).join('')+
+    `<button class="tray-open-manual" onclick="importTrayToManual()">🌿 Abrir no construtor →</button>`;
+}
+
+function importTrayToManual(){
+  ctrBlend=blendTray.filter(id=>HERBS.find(h=>h.id===id)).map(id=>({id,qty:1}));
+  goPage('blends');
+  if(typeof switchBlendTab==='function') switchBlendTab('manual');
+  renderCtrBlend(); renderCtrHerbs();
+  toast('Ervas carregadas no construtor!');
 }
 
 function removeTray(id){ blendTray=blendTray.filter(i=>i!==id); localStorage.setItem('erb_tray',JSON.stringify(blendTray)); renderTray(); }
@@ -1125,9 +1140,19 @@ function generateBlend(){
           ${rec.effects.map(e=>`<span class="eff-badge">${esc(e)}</span>`).join('')}
         </div>
         ${rec.obs?`<div style="margin-top:.75rem;font-size:.78rem;color:var(--muted);font-style:italic;line-height:1.5">💡 ${esc(rec.obs)}</div>`:''}
-        <button class="save-recipe-btn" onclick="saveRecipe('${esc(rec.name)}')">♥ Salvar este blend</button>
+        <div style="display:flex;gap:8px;margin-top:1rem">
+          <button class="save-recipe-btn" style="flex:1" onclick="saveRecipe('${esc(rec.name)}')">♥ Salvar</button>
+          <button class="save-recipe-btn" style="flex:1;background:rgba(255,255,255,.04)" onclick="sendWizardToManual(${JSON.stringify(rec.ings.map(i=>i.id))})">🌿 Editar no construtor</button>
+        </div>
       </div>
     </div>`;
+}
+
+function sendWizardToManual(ids){
+  ctrBlend=ids.filter(id=>HERBS.find(h=>h.id===id)).map(id=>({id,qty:1}));
+  switchBlendTab('manual');
+  renderCtrBlend(); renderCtrHerbs();
+  toast('Blend carregado no construtor!');
 }
 
 function saveRecipe(name){
@@ -1471,7 +1496,10 @@ function renderRodaPanel(slice){
       <div id="rodaPrepLabel" class="roda-combo-title" style="margin-bottom:.4rem">Preparo</div>
       <div id="rodaPrepSection" style="display:flex;flex-wrap:wrap;gap:6px">${_rodaPrepSpans(slice.prep)}</div>
     </div>
-    <button class="roda-start-btn" onclick="openTimerFromRoda(window._rodaCurrentSlice)">⏱ Preparar este chá agora</button>
+    <div style="display:flex;gap:8px;margin-top:.75rem">
+      <button class="roda-start-btn" style="flex:1" onclick="openTimerFromRoda(window._rodaCurrentSlice)">⏱ Preparar agora</button>
+      <button class="roda-start-btn" style="flex:1;background:rgba(255,255,255,.04);border-color:var(--faint)" onclick="sendRodaToBlend()">＋ Blend</button>
+    </div>
     ${(rodaActiveLayer==='sintoma'||rodaActiveLayer==='sistema')?`
     <div class="roda-disclaimer" role="note">
       As ervas do Ervatório são curadoria botânica para o bem-estar e o prazer sensorial. Elas não substituem medicamentos nem orientação médica. Em caso de dúvidas, sintomas ou condições de saúde, consulte um profissional de saúde.
@@ -1482,6 +1510,21 @@ function renderRodaPanel(slice){
 function findHerbAndOpen(name){
   const h=HERBS.find(x=>x.n===name||name.includes(x.n));
   if(h) openHerbModal(h.id);
+}
+
+function sendRodaToBlend(){
+  const slice=window._rodaCurrentSlice;
+  if(!slice) return;
+  const sel=window._rodaHerbSelection&&_rodaHerbSelection.size>0;
+  const names=sel?[..._rodaHerbSelection]:slice.herbs.map(h=>h.n||h);
+  const ids=names.map(n=>{
+    const h=HERBS.find(x=>x.n===n||(n&&n.includes&&n.includes(x.n)));
+    return h?h.id:null;
+  }).filter(Boolean);
+  ids.forEach(id=>{ if(!blendTray.includes(id)) blendTray.push(id); });
+  localStorage.setItem('erb_tray',JSON.stringify(blendTray));
+  renderTray();
+  toastLink(`${ids.length} erva${ids.length!==1?'s':''} adicionada${ids.length!==1?'s':''} ao blend`,'Ver blend →',()=>{ goPage('blends'); if(typeof switchBlendTab==='function') switchBlendTab('assistente'); });
 }
 
 function openTimerFromRoda(slice){
