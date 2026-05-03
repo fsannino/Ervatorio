@@ -1343,10 +1343,46 @@ window.initRoda=function(){
   rodaHovIdx=-1; drawRoda(); initRodaEvents();
 };
 
+function _rodaPrepSpans(prep){
+  const s='font-size:.72rem;padding:3px 10px;background:rgba(255,255,255,.04);border:0.5px solid var(--faint);border-radius:6px;color:var(--muted)';
+  return `<span style="${s}">🌡 ${prep.temp}</span><span style="${s}">⏱ ${prep.tempo}</span><span style="${s}">🥄 ${prep.dose}</span><span style="${s}">📅 ${prep.freq}</span>`;
+}
+
+function calcRodaComboPrep(names){
+  const herbs=names.map(n=>HERBS.find(h=>h.n===n)).filter(Boolean);
+  const temps=herbs.map(h=>parseInt(String(h.temp).replace(/[^\d]/g,''))).filter(n=>n>0);
+  const times=herbs.map(h=>parseInt(h.tempo)).filter(n=>n>0);
+  const minTemp=temps.length?Math.min(...temps):90;
+  const maxTime=times.length?Math.max(...times):8;
+  const dose=names.length>1?`1 col de cada / 250ml`:(herbs[0]?.dose||'1-2 col / 250ml');
+  const freq=herbs[0]?.freq||'2-3x ao dia';
+  return {temp:`${minTemp}°C`,tempo:`${maxTime} min`,dose,freq};
+}
+
+function toggleRodaHerb(name){
+  if(!window._rodaHerbSelection)window._rodaHerbSelection=new Set();
+  if(_rodaHerbSelection.has(name))_rodaHerbSelection.delete(name);
+  else _rodaHerbSelection.add(name);
+  document.querySelectorAll('#rodaPanel .roda-herb-item').forEach(el=>{
+    const sel=_rodaHerbSelection.has(el.dataset.herb);
+    el.classList.toggle('selected',sel);
+    const icon=el.querySelector('.roda-herb-sel-icon');
+    if(icon)icon.textContent=sel?'✓':'+';
+  });
+  const prep=_rodaHerbSelection.size>0?calcRodaComboPrep([..._rodaHerbSelection]):window._rodaCurrentSlice?.prep;
+  if(prep){
+    const ps=document.getElementById('rodaPrepSection');
+    if(ps)ps.innerHTML=_rodaPrepSpans(prep);
+    const lbl=document.getElementById('rodaPrepLabel');
+    if(lbl)lbl.textContent=_rodaHerbSelection.size>0?'Preparo da combinação selecionada':'Preparo';
+  }
+}
+
 function renderRodaPanel(slice){
   const p=document.getElementById('rodaPanel');
   if(!slice){p.innerHTML='<div class="roda-empty"><div style="font-size:2rem;opacity:.3;margin-bottom:.75rem">☕</div><div>Selecione um setor da roda para ver as ervas recomendadas</div></div>';return;}
   window._rodaCurrentSlice=slice;
+  window._rodaHerbSelection=new Set();
   const colDot=RODA_COLORS_MAP[rodaActiveLayer][RODA_DATA[rodaActiveLayer].indexOf(slice)]||'#c8a84b';
   p.innerHTML=`<div class="roda-result">
     <div class="roda-result-header">
@@ -1355,7 +1391,7 @@ function renderRodaPanel(slice){
         <div class="roda-result-name">${slice.name}</div>
       </div>
     </div>
-    <div style="font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem">Ervas recomendadas</div>
+    <div style="font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem">Ervas recomendadas <span style="opacity:.5;font-style:italic;text-transform:none;letter-spacing:0">— toque para selecionar</span></div>
     ${slice.herbs.map(h=>{
       const match=HERBS.find(x=>x.n===h.n);
       const img=match&&match.img;
@@ -1363,23 +1399,19 @@ function renderRodaPanel(slice){
         ? `<img class="roda-herb-img" src="${img}" data-responsive="${img}" alt="${esc(h.n)}" loading="lazy" decoding="async" onerror="this.outerHTML='<div class=\\'roda-herb-icon\\'>${h.icon}</div>'">`
         : `<div class="roda-herb-icon">${h.icon}</div>`;
       return `
-      <div class="roda-herb-item" onclick="findHerbAndOpen('${esc(h.n)}')">
+      <div class="roda-herb-item" data-herb="${esc(h.n)}" onclick="toggleRodaHerb('${esc(h.n)}')">
         ${visual}
-        <div><div class="roda-herb-name">${esc(h.n)}</div><div class="roda-herb-ef">${esc(h.ef)}</div></div>
+        <div style="flex:1"><div class="roda-herb-name">${esc(h.n)}</div><div class="roda-herb-ef">${esc(h.ef)}</div></div>
+        <span class="roda-herb-sel-icon">+</span>
       </div>`;
     }).join('')}
     <div class="roda-combo">
-      <div class="roda-combo-title">Combinações</div>
+      <div class="roda-combo-title">Combinações sugeridas</div>
       ${slice.combo.map(c=>`<span class="roda-combo-chip">☕ ${c}</span>`).join('')}
     </div>
     <div class="roda-prep">
-      <div class="roda-combo-title" style="margin-bottom:.4rem">Preparo</div>
-      <div style="display:flex;flex-wrap:wrap;gap:6px">
-        <span style="font-size:.72rem;padding:3px 10px;background:rgba(255,255,255,.04);border:0.5px solid var(--faint);border-radius:6px;color:var(--muted)">🌡 ${slice.prep.temp}</span>
-        <span style="font-size:.72rem;padding:3px 10px;background:rgba(255,255,255,.04);border:0.5px solid var(--faint);border-radius:6px;color:var(--muted)">⏱ ${slice.prep.tempo}</span>
-        <span style="font-size:.72rem;padding:3px 10px;background:rgba(255,255,255,.04);border:0.5px solid var(--faint);border-radius:6px;color:var(--muted)">🥄 ${slice.prep.dose}</span>
-        <span style="font-size:.72rem;padding:3px 10px;background:rgba(255,255,255,.04);border:0.5px solid var(--faint);border-radius:6px;color:var(--muted)">📅 ${slice.prep.freq}</span>
-      </div>
+      <div id="rodaPrepLabel" class="roda-combo-title" style="margin-bottom:.4rem">Preparo</div>
+      <div id="rodaPrepSection" style="display:flex;flex-wrap:wrap;gap:6px">${_rodaPrepSpans(slice.prep)}</div>
     </div>
     <button class="roda-start-btn" onclick="openTimerFromRoda(window._rodaCurrentSlice)">⏱ Preparar este chá agora</button>
     ${(rodaActiveLayer==='sintoma'||rodaActiveLayer==='sistema')?`
@@ -1395,14 +1427,19 @@ function findHerbAndOpen(name){
 }
 
 function openTimerFromRoda(slice){
-  const mins=parseInt(slice.prep.tempo)||8;
+  const sel=window._rodaHerbSelection&&_rodaHerbSelection.size>0;
+  const names=sel?[..._rodaHerbSelection]:null;
+  const prep=sel?calcRodaComboPrep(names):slice.prep;
+  const title=sel?names.join(' + '):slice.name;
+  const mins=parseInt(prep.tempo)||8;
+  const herbDesc=sel?`${names.join(', ')} — ${prep.dose}`:`${prep.dose}`;
   const steps=[
-    {title:`Aqueça a água`,desc:`Ferva e deixe esfriar até ${slice.prep.temp}. Nunca use água fervendo em ervas delicadas.`,duration:0},
-    {title:`Adicione as ervas`,desc:`Use ${slice.prep.dose}. Coloque na infusora ou diretamente na xícara.`,duration:0},
-    {title:`Infusão`,desc:`Tampa a xícara para não perder os óleos essenciais. Aguarde ${slice.prep.tempo}.`,duration:mins*60},
-    {title:`Coe e aproveite`,desc:`Coe, adicione mel ou limão se desejar. Beba morno. Frequência: ${slice.prep.freq}.`,duration:0},
+    {title:`Aqueça a água`,desc:`Ferva e deixe esfriar até ${prep.temp}. Nunca use água fervendo em ervas delicadas.`,duration:0},
+    {title:`Adicione as ervas`,desc:`${herbDesc}. Coloque na infusora ou diretamente na xícara.`,duration:0},
+    {title:`Infusão`,desc:`Tampa a xícara para não perder os óleos essenciais. Aguarde ${prep.tempo}.`,duration:mins*60},
+    {title:`Coe e aproveite`,desc:`Coe, adicione mel ou limão se desejar. Beba morno. Frequência: ${prep.freq}.`,duration:0},
   ];
-  launchTimer(slice.name, steps);
+  launchTimer(title, steps);
 }
 
 // ════════════════════════════════════════

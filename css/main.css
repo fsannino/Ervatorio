@@ -444,8 +444,11 @@ body.light .blend-tab.on{background:var(--chip-bg);color:var(--gold2)}
 .roda-result-header{padding:1rem 1.25rem;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);margin-bottom:.75rem}
 .roda-result-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--gold2);font-weight:300}
 .roda-result-desc{font-size:.78rem;color:var(--muted);margin-top:3px;line-height:1.5}
-.roda-herb-item{display:flex;align-items:flex-start;gap:10px;padding:9px 12px;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-md);margin-bottom:6px;cursor:pointer;transition:border-color .2s}
+.roda-herb-item{display:flex;align-items:center;gap:10px;padding:9px 12px;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-md);margin-bottom:6px;cursor:pointer;transition:border-color .2s,background .2s}
 .roda-herb-item:hover{border-color:rgba(200,168,75,.3)}
+.roda-herb-item.selected{background:rgba(200,168,75,.08);border-color:rgba(200,168,75,.4)}
+.roda-herb-sel-icon{width:20px;height:20px;border-radius:50%;border:1px solid var(--faint);display:flex;align-items:center;justify-content:center;font-size:.65rem;flex-shrink:0;color:var(--muted);transition:background .2s,color .2s,border-color .2s}
+.roda-herb-item.selected .roda-herb-sel-icon{background:#c8a84b;color:#1a1410;border-color:#c8a84b;font-weight:700}
 .roda-herb-icon{font-size:1.2rem;flex-shrink:0;margin-top:1px}
 .roda-herb-img{width:36px;height:36px;object-fit:cover;border-radius:8px;flex-shrink:0;border:0.5px solid rgba(200,168,75,.22);background:rgba(255,255,255,.03)}
 .roda-herb-name{font-size:.85rem;font-weight:400;color:var(--cream)}

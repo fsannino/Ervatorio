@@ -395,7 +395,7 @@ const ervaria = {
     const byKey = new Map(HERBS.map(h => [keyOf(h.n, h.lat), h.id]));
     const localImgByName = new Map(HERBS.filter(h => h.img).map(h => [h.n, h.img]));
     let next = Math.max(0, ...HERBS.map(h => h.id)) + 1;
-    const mapped = rows.filter(r => !r.is_test).map(r => {
+    const mapped = rows.filter(r => !/^TESTE\b/i.test(String(r.name || ''))).map(r => {
       const k = keyOf(r.name, r.latin_name);
       const id = byKey.has(k) ? byKey.get(k) : next++;
       return {
