@@ -1873,6 +1873,8 @@
     <button class="nav-tab" onclick="goPage('chazerias',this)">Chazerias</button>
     <button class="nav-tab" onclick="goPage('ferramentas',this)">Ferramentas</button>
     <button class="nav-tab" onclick="goPage('quiz',this)">Quiz</button>
+    <button class="nav-tab" onclick="goPage('receitas',this)">Receitas</button>
+    <button class="nav-tab" onclick="goPage('jogo',this)">Jogo</button>
     <button class="nav-tab" onclick="goPage('favs',this)">Favoritos</button>
     <button class="nav-tab" onclick="goPage('suppliers',this)">Fornecedores</button>
     <button class="nav-tab" onclick="goPage('marketplace',this)">Marketplace</button>
@@ -1947,6 +1949,21 @@
 
 <!-- QUIZ -->
 <div class="page" id="page-quiz"></div>
+
+<!-- RECEITAS PAGE -->
+<div class="page" id="page-receitas">
+  <div class="sec-title">Receitas</div>
+  <div class="sec-sub">Infusões, drinks, culinária e rituais com ervas brasileiras</div>
+  <div id="receitasContainer"></div>
+</div>
+
+<!-- JOGO BOTÂNICO PAGE -->
+<div class="page" id="page-jogo">
+  <div class="sec-title">Jogo Botânico</div>
+  <div class="sec-sub">Identifique ervas a partir de pistas — um jogo de conhecimento botânico</div>
+  <div id="jogoContainer"></div>
+</div>
+
 <div class="page on" id="page-search">
 
   <!-- HERO BANNER dentro do app -->
@@ -2528,6 +2545,8 @@
 <script src="/js/chazerias.js"></script>
 <script src="/js/ferramentas.js"></script>
 <script src="/js/quiz.js"></script>
+<script src="/js/receitas.js"></script>
+<script src="/js/jogo.js"></script>
 <script>
 /* TEMP — REMOVER apos validacao da Fase 1 */
 (async function() {
