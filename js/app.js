@@ -2030,6 +2030,15 @@ function goPage(id,btn,slug){
   // NB: o render da biblioteca é disparado pela switchBlendTab('prontos') acima.
   if(id==='blend' && slug && typeof renderBlendPage==='function') renderBlendPage(slug);
   if(id==='roda-funcional' && typeof renderRodaFuncional==='function') renderRodaFuncional();
+
+  // Registra a navegação no histórico do browser para que o botão Voltar funcione.
+  if(!window._goPageFromHistory){
+    var newHash='#'+id+(slug?'/'+slug:'');
+    if(window.location.hash!==newHash)
+      history.pushState({page:id,slug:slug||null},''  ,newHash);
+    else
+      history.replaceState({page:id,slug:slug||null},'',newHash);
+  }
 }
 
 // Hash route handler for parameterized Ervatorio v1.1 routes
@@ -2059,6 +2068,23 @@ function goPage(id,btn,slug){
     setTimeout(handleHash, 300);
   }
 })();
+
+// Botão Voltar/Avançar do browser
+window.addEventListener('popstate', function(e){
+  var state=e.state;
+  if(state&&state.page){
+    window._goPageFromHistory=true;
+    try{ goPage(state.page, null, state.slug||undefined); }
+    finally{ window._goPageFromHistory=false; }
+  } else {
+    // Sem estado — voltou para antes da primeira navegação no app:
+    // mostra a landing page novamente.
+    var lp=document.getElementById('landingPage');
+    var ac=document.getElementById('appContainer');
+    if(lp) lp.style.display='';
+    if(ac) ac.style.display='none';
+  }
+});
 
 function switchBlendTab(tab){
   const pronto=document.getElementById('blendPanelPronto');
