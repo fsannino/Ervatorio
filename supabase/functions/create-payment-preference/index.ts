@@ -71,6 +71,7 @@ Deno.serve(async (req) => {
         unit_price: it.unit_price_cents / 100,   // MP usa reais, não centavos
         currency_id: order.currency || 'BRL',
       })),
+      auto_return: 'approved',
       back_urls: {
         success: `${returnBase}/?checkout=success&order=${order.order_number}`,
         failure: `${returnBase}/?checkout=failure&order=${order.order_number}`,
