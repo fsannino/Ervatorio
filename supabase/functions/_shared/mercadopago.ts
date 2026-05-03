@@ -46,6 +46,7 @@ export interface MPPreferenceItem {
 export interface MPCreatePreferenceInput {
   external_reference: string;     // nosso order_id
   items: MPPreferenceItem[];
+  auto_return?: 'approved' | 'all';
   payer?: {
     name?: string;
     email?: string;
