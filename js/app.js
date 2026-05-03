@@ -563,6 +563,7 @@ function renderHerbs(){
 // ── HERB MODAL ──
 function openHerbModal(id){
   currentHerb = HERBS.find(h=>h.id===id);
+  if(typeof trackAction==='function') trackAction('view-herb', id);
   const h = currentHerb;
   const inTray = blendTray.includes(h.id);
   document.getElementById('modalContent').innerHTML=`
@@ -859,7 +860,7 @@ function closeModal(e){
 function toggleFav(e,id){
   e.stopPropagation();
   if(favorites.includes(id)) favorites=favorites.filter(f=>f!==id);
-  else favorites.push(id);
+  else { favorites.push(id); if(typeof trackAction==='function') trackAction('fav-herb', id); }
   localStorage.setItem('erb_favs',JSON.stringify(favorites));
   renderHerbs();
   const now=favorites.includes(id);
@@ -1107,6 +1108,7 @@ function getHoraAdj(hora){
 }
 
 function generateBlend(){
+  if(typeof trackAction==='function') trackAction('create-blend');
   const sintoma = wizState.sintomas[0]||'default';
   const obs = document.getElementById('wizObs').value;
   const rec = BLEND_DB[sintoma]||BLEND_DB['default'];
@@ -2048,12 +2050,13 @@ function saveBlendFromCtr(){
   if(savedRecipes.find(r=>r.name===name)){toast('Já existe um blend com esse nome');return;}
   savedRecipes.unshift({name,tagline:`${ctrBlend.length} ervas · blend personalizado`,ingredients:ings,fromCtr:true});
   localStorage.setItem('erb_recipes',JSON.stringify(savedRecipes));
+  if(typeof trackAction==='function') trackAction('save-blend');
   toast(`"${name}" salvo nos favoritos!`);
 }
 
 // ── override goPage to handle all pages ──
 // Pages accessible without login
-const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend','sabores','guia-sensorial','roda','chazerias','ferramentas','ferramenta','familias','familia','quiz','chas','mundo','receitas','jogo'];
+const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend','sabores','guia-sensorial','roda','chazerias','ferramentas','ferramenta','familias','familia','quiz','chas','mundo','receitas','jogo','caminho'];
 
 // Esconde a landing e expõe o container do app. Idempotente.
 // Usado por goPage() e pelo hash handler para que deep links
@@ -2115,7 +2118,8 @@ function goPage(id,btn,slug){
   if(id==='familias' && typeof initFamilias==='function') initFamilias();
   if(id==='familia' && slug && typeof initFamilia==='function') initFamilia(slug);
   if(id==='quiz' && typeof initQuiz==='function') initQuiz(slug);
-  if(id==='receitas' && typeof initReceitas==='function') initReceitas();
+  if(id==='receitas' && typeof initReceitas==='function'){ initReceitas(); if(typeof trackAction==='function') trackAction('visit-receitas'); }
+  if(id==='caminho' && typeof initCaminho==='function') initCaminho();
   if(id==='jogo' && typeof initJogo==='function') initJogo();
 
   // i18n + SEO — update on every navigation
@@ -2408,6 +2412,7 @@ function buildChaTabs(){
 
 function renderChaDetail(id){
   const c=CHAS_DATA.find(x=>x.id===id); if(!c)return;
+  if(typeof trackAction==='function') trackAction('view-cha', id);
   const el=document.getElementById('chaDetail'); if(!el)return;
   const isLight=document.body.classList.contains('light');
   const txtColor=isLight?(c.textColorLight||c.color):c.textColor;
@@ -2864,7 +2869,7 @@ function setMundoView(v,btn){
   document.getElementById('mundoBrasilView').style.display=v==='brasil'?'block':'none';
   if(v==='mapa') drawMundoMap();
   if(v==='lista'){buildMundoListFilter();renderMundoList();}
-  if(v==='brasil') renderBrasilContent();
+  if(v==='brasil'){ renderBrasilContent(); if(typeof trackAction==='function') trackAction('visit-brasil'); }
 }
 
 function drawMundoMap(){
@@ -2966,6 +2971,7 @@ function mapDotLeave(){
 
 function selectMapRegion(id){
   mundoRegionActive=mundoRegionActive===id?null:id;
+  if(id && typeof trackAction==='function') trackAction('visit-region', id);
   drawMundoMap();
   const reg=mundoRegionActive?MUNDO_REGIONS.find(r=>r.id===mundoRegionActive):null;
   const el=document.getElementById('regionDetail'); if(!el)return;

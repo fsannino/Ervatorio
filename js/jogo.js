@@ -179,6 +179,7 @@ function jogoShowFinal() {
   const { score } = jogoState;
   const max = JOGO_TOTAL_ROUNDS * JOGO_MAX_CLUES;
   const pct = Math.round((score / max) * 100);
+  if (typeof trackAction === 'function') trackAction('jogo-complete', { pct });
 
   const best = parseInt(localStorage.getItem('erb_jogo_best') || '0', 10);
   const newBest = score > best;

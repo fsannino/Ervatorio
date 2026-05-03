@@ -164,6 +164,7 @@
   }
 
   function renderResultado(slug) {
+    if (typeof trackAction === 'function') trackAction('quiz-complete');
     var p = document.getElementById('page-quiz');
     if (!p) return;
     var pers = PERSONAGENS.find(function (x) { return x.slug === slug; });
