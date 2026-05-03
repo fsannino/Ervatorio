@@ -120,8 +120,9 @@ const Checkout = {
 
   async open() {
     const cfg = window.ERVATORIO_CONFIG;
-    if (cfg && cfg.PAYMENTS_ENABLED === false) {
-      if (typeof toast === 'function') toast(cfg.PAYMENTS_DISABLED_MSG || 'Pagamentos em manutenção');
+    const paymentsBlocked = window.SITE_SETTINGS != null ? !window.SITE_SETTINGS.payments_enabled : (cfg && cfg.PAYMENTS_ENABLED === false);
+    if (paymentsBlocked) {
+      if (typeof toast === 'function') toast((cfg && cfg.PAYMENTS_DISABLED_MSG) || 'Pagamentos em manutenção');
       return;
     }
     const cart = readCart();

@@ -77,7 +77,19 @@ function admToast(msg){
 }
 
 // ── DASHBOARD ──
+async function loadPaymentsSetting(){
+  const {data}=await sb.from('site_settings').select('payments_enabled').eq('id',1).maybeSingle();
+  const el=document.getElementById('togglePayments');
+  if(el&&data!=null) el.checked=data.payments_enabled;
+}
+async function savePaymentsSetting(enabled){
+  const {error}=await sb.from('site_settings').update({payments_enabled:enabled,updated_at:new Date().toISOString()}).eq('id',1);
+  if(error){admToast('Erro ao salvar: '+error.message);return;}
+  admToast(enabled?'Pagamentos habilitados':'Pagamentos desabilitados');
+}
+
 async function loadDashboard(){
+  loadPaymentsSetting();
   const [users,herbs,products,suppliers,news]=await Promise.all([
     sb.from('user_profiles').select('id',{count:'exact',head:true}),
     sb.from('admin_herbs').select('id',{count:'exact',head:true}),

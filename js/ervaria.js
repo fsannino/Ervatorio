@@ -57,11 +57,22 @@ const ervaria = {
         this.isOnline = false;
         this.updateAuthUI(false);
       }
+      this.loadSiteSettings();
     } catch (e) {
       console.warn('Supabase offline:', e);
       this._applyCatalogCache();
       this.updateAuthUI(false);
     }
+  },
+
+  async loadSiteSettings() {
+    try {
+      const { data } = await this.client.from('site_settings').select('payments_enabled').eq('id', 1).maybeSingle();
+      if (data) {
+        window.SITE_SETTINGS = data;
+        try { typeof renderCart === 'function' && renderCart(); } catch (_) {}
+      }
+    } catch (_) {}
   },
 
   // ── AUTH METHODS ─────────────────────────────────────────

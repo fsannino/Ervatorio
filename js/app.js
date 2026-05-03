@@ -1164,7 +1164,7 @@ function renderCart(){
     </div>`).join('');
   const sub=cart.reduce((s,c)=>s+c.price*c.qty,0);
   const frete=sub>150?0:15.9;
-  const paymentsOn=window.ERVATORIO_CONFIG?.PAYMENTS_ENABLED!==false;
+  const paymentsOn=window.SITE_SETTINGS!=null?window.SITE_SETTINGS.payments_enabled===true:window.ERVATORIO_CONFIG?.PAYMENTS_ENABLED!==false;
   const maintMsg=window.ERVATORIO_CONFIG?.PAYMENTS_DISABLED_MSG||'Pagamentos em manutenção';
   const checkoutBlock=paymentsOn
     ? `<button class="checkout-btn" onclick="openCart();openCheckout()">Finalizar pedido →</button>`
