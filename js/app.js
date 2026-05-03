@@ -2053,7 +2053,7 @@ function saveBlendFromCtr(){
 
 // ── override goPage to handle all pages ──
 // Pages accessible without login
-const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend','sabores','guia-sensorial','roda'];
+const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend','sabores','guia-sensorial','roda','chazerias'];
 
 // Esconde a landing e expõe o container do app. Idempotente.
 // Usado por goPage() e pelo hash handler para que deep links
@@ -2109,6 +2109,7 @@ function goPage(id,btn,slug){
   // NB: o render da biblioteca é disparado pela switchBlendTab('prontos') acima.
   if(id==='blend' && slug && typeof renderBlendPage==='function') renderBlendPage(slug);
   if(id==='roda-funcional' && typeof renderRodaFuncional==='function') renderRodaFuncional();
+  if(id==='chazerias' && typeof initChazerias==='function') initChazerias();
 
   // Registra a navegação no histórico do browser para que o botão Voltar funcione.
   if(!window._goPageFromHistory){

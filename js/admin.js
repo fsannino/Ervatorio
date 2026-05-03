@@ -66,6 +66,7 @@ function showSection(id){
   if(id==='news')loadNews();
   if(id==='suppliers')loadSuppliers();
   if(id==='fichas')loadFichasAdmin();
+  if(id==='chazerias')loadChazerias();
   if(id==='orders'&&typeof loadOrders==='function')loadOrders();
 }
 
@@ -617,3 +618,97 @@ document.addEventListener('DOMContentLoaded',()=>{
   sb=window.supabase.createClient(ADM_SUPABASE_URL,ADM_SUPABASE_KEY);
   admInit();
 });
+
+// ── CHAZERIAS ──
+let chazeriasData = [];
+
+async function loadChazerias(){
+  const tbody=document.getElementById('chazBody');
+  tbody.innerHTML='<tr><td colspan="7" style="text-align:center;padding:2rem;color:var(--adm-muted)">Carregando...</td></tr>';
+  const {data,error}=await sb.from('chazerias').select('*').order('continent').order('country').order('city');
+  if(error){admToast('Erro: '+error.message);return;}
+  chazeriasData=data||[];
+  const TYPE={'chazeria':'Chazeria','ervateiro':'Ervateiro','mercado':'Mercado','spa':'Spa','restaurante':'Restaurante','hotel':'Hotel','outro':'Outro'};
+  tbody.innerHTML=chazeriasData.length?chazeriasData.map(c=>`
+    <tr>
+      <td><strong>${c.name}</strong></td>
+      <td>${c.city}, ${c.country}</td>
+      <td>${c.continent||'—'}</td>
+      <td>${TYPE[c.type]||c.type||'—'}</td>
+      <td style="font-size:.72rem;color:var(--adm-muted)">${c.lat&&c.lng?`${c.lat}, ${c.lng}`:'—'}</td>
+      <td><span class="adm-badge ${c.active?'green':'red'}">${c.active?'Ativo':'Inativo'}</span></td>
+      <td style="display:flex;gap:6px">
+        <button class="adm-btn small" onclick="openChazForm(${c.id})">✎</button>
+        <button class="adm-btn small danger" onclick="deleteChaz(${c.id},'${(c.name||'').replace(/'/g,"\\'")}')">✕</button>
+      </td>
+    </tr>`).join('')
+  :'<tr><td colspan="7" style="text-align:center;padding:2rem;color:var(--adm-muted)">Nenhuma chazeria cadastrada ainda</td></tr>';
+}
+
+function openChazForm(id){
+  const c=id?chazeriasData.find(x=>x.id===id):{};
+  document.getElementById('chazFormTitle').textContent=id?'Editar Chazeria':'Nova Chazeria';
+  document.getElementById('chazId').value=id||'';
+  ['Name','Address','City','Country','Lat','Lng','Desc','Quote','QuoteAuthor','Hours','Payment','Style','Website','Phone']
+    .forEach(f=>{const el=document.getElementById('chaz'+f);if(el)el.value=c?.[f.toLowerCase()]||c?.['quote_author']||c?.['opening_hours']||'';});
+  // manual mapping for fields with different keys
+  document.getElementById('chazName').value=c?.name||'';
+  document.getElementById('chazAddress').value=c?.address||'';
+  document.getElementById('chazCity').value=c?.city||'';
+  document.getElementById('chazCountry').value=c?.country||'';
+  document.getElementById('chazContinent').value=c?.continent||'América do Sul';
+  document.getElementById('chazLat').value=c?.lat||'';
+  document.getElementById('chazLng').value=c?.lng||'';
+  document.getElementById('chazType').value=c?.type||'chazeria';
+  document.getElementById('chazDesc').value=c?.description||'';
+  document.getElementById('chazQuote').value=c?.quote||'';
+  document.getElementById('chazQuoteAuthor').value=c?.quote_author||'';
+  document.getElementById('chazHours').value=c?.opening_hours||'';
+  document.getElementById('chazPayment').value=c?.payment||'';
+  document.getElementById('chazStyle').value=c?.style||'';
+  document.getElementById('chazWebsite').value=c?.website||'';
+  document.getElementById('chazPhone').value=c?.phone||'';
+  document.getElementById('chazActive').checked=c?.active!==false;
+  document.getElementById('chazModal').style.display='flex';
+}
+
+function closeChazForm(){document.getElementById('chazModal').style.display='none';}
+
+async function saveChaz(){
+  const id=document.getElementById('chazId').value;
+  const payload={
+    name:document.getElementById('chazName').value.trim(),
+    address:document.getElementById('chazAddress').value.trim(),
+    city:document.getElementById('chazCity').value.trim(),
+    country:document.getElementById('chazCountry').value.trim(),
+    continent:document.getElementById('chazContinent').value,
+    lat:parseFloat(document.getElementById('chazLat').value)||null,
+    lng:parseFloat(document.getElementById('chazLng').value)||null,
+    type:document.getElementById('chazType').value,
+    description:document.getElementById('chazDesc').value.trim(),
+    quote:document.getElementById('chazQuote').value.trim(),
+    quote_author:document.getElementById('chazQuoteAuthor').value.trim(),
+    opening_hours:document.getElementById('chazHours').value.trim(),
+    payment:document.getElementById('chazPayment').value.trim(),
+    style:document.getElementById('chazStyle').value.trim(),
+    website:document.getElementById('chazWebsite').value.trim(),
+    phone:document.getElementById('chazPhone').value.trim(),
+    active:document.getElementById('chazActive').checked,
+  };
+  if(!payload.name||!payload.city||!payload.country){admToast('Nome, cidade e país são obrigatórios');return;}
+  const {error}=id
+    ?await sb.from('chazerias').update(payload).eq('id',id)
+    :await sb.from('chazerias').insert(payload);
+  if(error){admToast('Erro: '+error.message);return;}
+  admToast(id?'Chazeria atualizada!':'Chazeria criada!');
+  closeChazForm();
+  loadChazerias();
+}
+
+async function deleteChaz(id,name){
+  if(!confirm(`Remover "${name}"?`))return;
+  const {error}=await sb.from('chazerias').delete().eq('id',id);
+  if(error){admToast('Erro: '+error.message);return;}
+  admToast('Removida!');
+  loadChazerias();
+}
