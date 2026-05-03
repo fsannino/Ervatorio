@@ -329,10 +329,7 @@ const Checkout = {
     // Limpa carrinho se sucesso (MP confirmou pelo back_url, mas a verdade
     // definitiva vem do webhook). Atualiza UI se as funções existirem.
     if (status === 'success') {
-      writeCart([]);
-      try { typeof updateCartCount === 'function' && updateCartCount(); } catch (_) {}
-      try { typeof renderCart === 'function' && renderCart(); } catch (_) {}
-      try { typeof renderProds === 'function' && renderProds(); } catch (_) {}
+      try { typeof clearCart === 'function' ? clearCart() : writeCart([]); } catch (_) { writeCart([]); }
     }
 
     setTimeout(() => {
