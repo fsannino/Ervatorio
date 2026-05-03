@@ -1237,6 +1237,65 @@ body.light .leaflet-popup-content-wrapper{background:#f5f0e8;color:#2a1e0a}
 .fam-erva-ef{font-size:.72rem;color:var(--cream2);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 /* ══════════════════════════════════════════════
+   JOGO BOTÂNICO
+══════════════════════════════════════════════ */
+.jogo-intro{text-align:center;padding:1rem 0 2rem;max-width:520px;margin:0 auto}
+.jogo-leaf{font-size:3rem;margin-bottom:.75rem}
+.jogo-title{font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--gold2);font-weight:300;margin-bottom:.6rem}
+.jogo-lead{font-size:.9rem;color:var(--cream2);line-height:1.65;margin-bottom:1.25rem}
+.jogo-rules{display:flex;flex-direction:column;gap:6px;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);padding:.9rem 1.2rem;margin-bottom:1rem;text-align:left}
+.jogo-rule{font-size:.8rem;color:var(--cream2);display:flex;align-items:center;gap:.5rem}
+.jogo-rule-pts{background:rgba(200,168,75,.15);color:var(--gold);border:0.5px solid rgba(200,168,75,.3);border-radius:8px;padding:2px 8px;font-size:.72rem;font-weight:600;min-width:28px;text-align:center}
+.jogo-meta{font-size:.72rem;color:var(--muted);margin-bottom:.5rem}
+.jogo-best{font-size:.8rem;color:var(--gold2);margin-bottom:.75rem}
+.jogo-start-btn{padding:13px 36px;background:var(--gold);color:var(--bg);border:none;border-radius:var(--r-md);font-family:'Jost',sans-serif;font-size:.92rem;font-weight:500;letter-spacing:.08em;cursor:pointer;transition:all .25s;text-transform:uppercase}
+.jogo-start-btn:hover{background:var(--goldf);transform:translateY(-1px)}
+/* HUD */
+.jogo-hud{display:flex;align-items:center;justify-content:space-between;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-md);padding:.55rem 1rem;margin-bottom:1rem;font-size:.8rem;color:var(--cream2)}
+.jogo-hud-pts{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--gold2);font-weight:300}
+/* Clue box */
+.jogo-clue-box{background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);padding:1rem 1.2rem;margin-bottom:1rem}
+.jogo-clue-label{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
+.jogo-clue{display:flex;align-items:flex-start;gap:.6rem;font-size:.82rem;color:var(--cream2);line-height:1.5;padding:.4rem 0;border-bottom:0.5px solid var(--faint)}
+.jogo-clue:last-child{border-bottom:none;padding-bottom:0}
+.jogo-clue-new{animation:jogoFadeIn .35s ease}
+.jogo-clue-icon{font-size:.9rem;flex-shrink:0;margin-top:1px}
+@keyframes jogoFadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+/* Options */
+.jogo-options{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin-bottom:.75rem}
+.jogo-opt{display:flex;flex-direction:column;align-items:center;gap:3px;padding:.75rem .5rem;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-md);cursor:pointer;transition:all .2s;text-align:center}
+.jogo-opt:hover{border-color:rgba(200,168,75,.45);background:rgba(200,168,75,.06);transform:translateY(-1px)}
+.jogo-opt-icon{font-size:1.5rem}
+.jogo-opt-name{font-size:.83rem;font-weight:500;color:var(--cream);line-height:1.2}
+.jogo-opt-lat{font-size:.62rem;color:var(--muted);font-style:italic}
+.jogo-reveal-btn{width:100%;padding:.6rem 1rem;background:none;border:0.5px dashed rgba(200,168,75,.3);border-radius:var(--r-md);color:var(--gold2);font-family:'Jost',sans-serif;font-size:.78rem;cursor:pointer;transition:all .2s;letter-spacing:.03em}
+.jogo-reveal-btn:hover{background:rgba(200,168,75,.05);border-color:rgba(200,168,75,.5)}
+/* Feedback */
+.jogo-feedback{display:flex;flex-direction:column;align-items:center;padding:1.2rem;border-radius:var(--r-lg);margin-bottom:.75rem;text-align:center}
+.jogo-feedback-ok{background:rgba(42,138,42,.1);border:0.5px solid rgba(42,138,42,.35)}
+.jogo-feedback-err{background:rgba(180,60,40,.1);border:0.5px solid rgba(180,60,40,.35)}
+.jogo-feedback-emoji{font-size:2rem;margin-bottom:.4rem}
+.jogo-feedback-ok .jogo-feedback-emoji::before{content:'✓';color:#4a8a4a}
+.jogo-feedback-err .jogo-feedback-emoji::before{content:'✗';color:#c84040}
+.jogo-feedback-msg{font-size:.92rem;color:var(--cream);margin-bottom:.25rem}
+.jogo-feedback-detail{font-size:.72rem;color:var(--muted);font-style:italic}
+.jogo-next-btn{width:100%;padding:.8rem;background:rgba(200,168,75,.12);border:0.5px solid rgba(200,168,75,.3);border-radius:var(--r-md);color:var(--gold2);font-family:'Jost',sans-serif;font-size:.85rem;cursor:pointer;transition:all .2s;letter-spacing:.05em}
+.jogo-next-btn:hover{background:rgba(200,168,75,.2)}
+/* Final */
+.jogo-final{text-align:center;padding:1.5rem 0 2rem;max-width:440px;margin:0 auto}
+.jogo-final-emoji{font-size:3.5rem;margin-bottom:.5rem}
+.jogo-final-rating{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--gold2);font-weight:300;margin-bottom:.4rem}
+.jogo-final-score{font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--cream);font-weight:300}
+.jogo-final-pct{font-size:.8rem;color:var(--muted);margin-bottom:.3rem}
+.jogo-final-best{font-size:.8rem;color:var(--gold);font-weight:500;margin:.25rem 0}
+.jogo-final-desc{font-size:.85rem;color:var(--cream2);margin:.75rem 0 0;line-height:1.6;font-style:italic}
+.jogo-action-btn{padding:11px 18px;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-md);color:var(--cream2);font-family:'Jost',sans-serif;font-size:.8rem;cursor:pointer;transition:all .2s}
+.jogo-action-btn:hover{border-color:rgba(200,168,75,.35);color:var(--gold2)}
+@media(max-width:480px){
+  .jogo-options{grid-template-columns:1fr}
+  .jogo-title{font-size:1.8rem}
+}
+/* ══════════════════════════════════════════════
    CHÁ TRADICIONAIS — Variedades, Harmonização, Momento
 ══════════════════════════════════════════════ */
 .cha-section-label{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:.75rem 0 .5rem}

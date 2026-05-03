@@ -2053,7 +2053,7 @@ function saveBlendFromCtr(){
 
 // ── override goPage to handle all pages ──
 // Pages accessible without login
-const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend','sabores','guia-sensorial','roda','chazerias','ferramentas','ferramenta','familias','familia','quiz','chas','mundo','receitas'];
+const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend','sabores','guia-sensorial','roda','chazerias','ferramentas','ferramenta','familias','familia','quiz','chas','mundo','receitas','jogo'];
 
 // Esconde a landing e expõe o container do app. Idempotente.
 // Usado por goPage() e pelo hash handler para que deep links
@@ -2116,6 +2116,7 @@ function goPage(id,btn,slug){
   if(id==='familia' && slug && typeof initFamilia==='function') initFamilia(slug);
   if(id==='quiz' && typeof initQuiz==='function') initQuiz(slug);
   if(id==='receitas' && typeof initReceitas==='function') initReceitas();
+  if(id==='jogo' && typeof initJogo==='function') initJogo();
 
   // Registra a navegação no histórico do browser para que o botão Voltar funcione.
   if(!window._goPageFromHistory){
@@ -2131,7 +2132,7 @@ function goPage(id,btn,slug){
 (function(){
   // Inclui as rotas SPA novas: ferramentas, ferramenta/<slug>, familias, familia/<slug>,
   // chazerias, quiz, quiz/resultado/<slug>
-  var SPA_ROUTE_RE = /^#(ficha|blend|ervatorio|blends|roda-funcional|ferramentas|ferramenta|familias|familia|chazerias|quiz|chas|mundo|receitas)(\/.+)?$/;
+  var SPA_ROUTE_RE = /^#(ficha|blend|ervatorio|blends|roda-funcional|ferramentas|ferramenta|familias|familia|chazerias|quiz|chas|mundo|receitas|jogo)(\/.+)?$/;
   function handleHash(){
     var hash = window.location.hash || '';
     if(SPA_ROUTE_RE.test(hash)) hideLanding();
