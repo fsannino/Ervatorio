@@ -1237,6 +1237,75 @@ body.light .leaflet-popup-content-wrapper{background:#f5f0e8;color:#2a1e0a}
 .fam-erva-ef{font-size:.72rem;color:var(--cream2);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 /* ══════════════════════════════════════════════
+   CHÁ TRADICIONAIS — Variedades, Harmonização, Momento
+══════════════════════════════════════════════ */
+.cha-section-label{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:.75rem 0 .5rem}
+.cha-variedades-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.6rem;margin-bottom:1.25rem}
+.cha-var-card{background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-md);padding:.75rem .9rem;transition:border-color .2s}
+.cha-var-card:hover{border-color:rgba(200,168,75,.3)}
+.cha-var-emoji{font-size:1.3rem;margin-bottom:.25rem}
+.cha-var-name{font-size:.82rem;font-weight:500;color:var(--cream);margin-bottom:.15rem;line-height:1.3}
+.cha-var-orig{font-size:.65rem;color:var(--muted);margin-bottom:.3rem}
+.cha-var-desc{font-size:.72rem;color:var(--cream2);line-height:1.55}
+.cha-harmonizacao-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1rem}
+.cha-harm-tag{background:var(--bg3);border:0.5px solid var(--faint);border-radius:20px;padding:4px 12px;font-size:.72rem;color:var(--cream2)}
+.cha-momento-block{display:flex;align-items:center;gap:10px;background:var(--bg3);border-radius:var(--r-md);padding:.65rem 1rem;margin-bottom:1rem}
+.cha-momento-label{font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+.cha-momento-val{font-size:.82rem;color:var(--cream);font-style:italic}
+/* ══════════════════════════════════════════════
+   MUNDO — Ervas Locais
+══════════════════════════════════════════════ */
+.mrd-ervas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.5rem;margin-bottom:.5rem}
+.mrd-erva-item{background:rgba(45,90,42,.07);border:0.5px solid rgba(45,90,42,.2);border-radius:var(--r-md);padding:.55rem .8rem}
+.mrd-erva-name{font-size:.78rem;font-weight:500;color:var(--cream);margin-bottom:.2rem}
+.mrd-erva-desc{font-size:.7rem;color:var(--cream2);line-height:1.55}
+/* ══════════════════════════════════════════════
+   RECEITAS
+══════════════════════════════════════════════ */
+.rec-intro{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--cream2);line-height:1.7;margin-bottom:1.25rem;padding:.75rem 1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:0 var(--r-md) var(--r-md) 0}
+.rec-filter-bar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1.25rem}
+.rec-filter-btn{padding:7px 16px;background:var(--bg3);border:0.5px solid var(--faint);border-radius:20px;color:var(--cream2);font-family:'Jost',sans-serif;font-size:.78rem;cursor:pointer;transition:all .2s}
+.rec-filter-btn:hover,.rec-filter-btn.on{background:rgba(200,168,75,.12);border-color:rgba(200,168,75,.4);color:var(--gold2)}
+.rec-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin-bottom:2rem}
+.rec-card{background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);overflow:hidden;cursor:pointer;transition:all .2s}
+.rec-card:hover{border-color:rgba(200,168,75,.3);transform:translateY(-2px)}
+.rec-card-img{width:100%;height:160px;object-fit:cover;display:block}
+.rec-card-img-placeholder{width:100%;height:160px;background:var(--bg2);display:flex;align-items:center;justify-content:center;font-size:2.5rem}
+.rec-card-body{padding:.85rem 1rem}
+.rec-cat-badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.4rem;background:rgba(200,168,75,.12);color:var(--gold2);border:0.5px solid rgba(200,168,75,.25)}
+.rec-card-nome{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--cream);font-weight:400;margin-bottom:.15rem;line-height:1.2}
+.rec-card-sub{font-size:.72rem;color:var(--muted);margin-bottom:.5rem;font-style:italic}
+.rec-card-meta{display:flex;gap:10px;font-size:.68rem;color:var(--muted)}
+/* Detail */
+.rec-detail-header{background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);padding:1.25rem;margin-bottom:1.25rem}
+.rec-detail-nome{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--gold2);font-weight:300;line-height:1.15;margin-bottom:.3rem}
+.rec-detail-sub{font-size:.88rem;color:var(--cream2);font-style:italic;margin-bottom:.75rem}
+.rec-detail-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:.75rem}
+.rec-meta-pill{background:var(--bg2);border:0.5px solid var(--faint);border-radius:10px;padding:4px 12px;font-size:.72rem;color:var(--cream2)}
+.rec-detail-tags{display:flex;flex-wrap:wrap;gap:5px}
+.rec-tag{padding:3px 10px;background:rgba(200,168,75,.07);border:0.5px solid rgba(200,168,75,.2);border-radius:12px;font-size:.67rem;color:var(--gold);letter-spacing:.04em}
+.rec-section{margin-bottom:1.25rem}
+.rec-section-title{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
+.rec-ingredientes{list-style:none;padding:0;margin:0}
+.rec-ingredientes li{padding:.4rem 0;border-bottom:0.5px solid var(--faint);font-size:.83rem;color:var(--cream2);display:flex;align-items:baseline;gap:.5rem}
+.rec-ingredientes li:before{content:'·';color:var(--gold);font-weight:700;flex-shrink:0}
+.rec-steps{counter-reset:step;padding:0;margin:0;list-style:none}
+.rec-step{display:flex;gap:.75rem;padding:.6rem 0;border-bottom:0.5px solid var(--faint)}
+.rec-step-num{width:24px;height:24px;border-radius:50%;background:rgba(200,168,75,.12);border:0.5px solid rgba(200,168,75,.3);color:var(--gold);font-size:.72rem;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.rec-step-text{font-size:.83rem;color:var(--cream2);line-height:1.6}
+.rec-dica{background:rgba(200,168,75,.06);border:0.5px solid rgba(200,168,75,.2);border-radius:var(--r-md);padding:.75rem 1rem;font-size:.8rem;color:var(--cream2);line-height:1.6;font-style:italic}
+.rec-herbs-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:.5rem}
+.rec-herb-link{padding:5px 14px;background:var(--bg3);border:0.5px solid var(--faint);border-radius:20px;font-size:.75rem;color:var(--cream2);cursor:pointer;transition:all .2s}
+.rec-herb-link:hover{border-color:rgba(200,168,75,.4);color:var(--gold2)}
+.rec-back-btn{background:none;border:none;color:var(--gold);font-family:'Jost',sans-serif;font-size:.8rem;cursor:pointer;padding:0 0 1rem;letter-spacing:.04em;text-decoration:underline;text-decoration-color:rgba(200,168,75,.3)}
+.rec-back-btn:hover{text-decoration-color:var(--gold)}
+.rec-send-blend-btn{padding:11px 20px;background:var(--gold);color:var(--bg);border:none;border-radius:var(--r-md);font-family:'Jost',sans-serif;font-size:.82rem;font-weight:500;cursor:pointer;letter-spacing:.06em;transition:all .2s}
+.rec-send-blend-btn:hover{background:var(--goldf)}
+@media(max-width:480px){
+  .cha-variedades-grid{grid-template-columns:1fr 1fr}
+  .rec-grid{grid-template-columns:1fr}
+}
+/* ══════════════════════════════════════════════
    QUIZ — Qual chá brasileiro é você?
 ══════════════════════════════════════════════ */
 .quiz-eyebrow{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}

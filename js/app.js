@@ -2053,7 +2053,7 @@ function saveBlendFromCtr(){
 
 // ── override goPage to handle all pages ──
 // Pages accessible without login
-const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend','sabores','guia-sensorial','roda','chazerias','ferramentas','ferramenta','familias','familia','quiz'];
+const PUBLIC_PAGES = ['search','ervatorio','ficha','blends','blend','sabores','guia-sensorial','roda','chazerias','ferramentas','ferramenta','familias','familia','quiz','chas','mundo','receitas'];
 
 // Esconde a landing e expõe o container do app. Idempotente.
 // Usado por goPage() e pelo hash handler para que deep links
@@ -2115,6 +2115,7 @@ function goPage(id,btn,slug){
   if(id==='familias' && typeof initFamilias==='function') initFamilias();
   if(id==='familia' && slug && typeof initFamilia==='function') initFamilia(slug);
   if(id==='quiz' && typeof initQuiz==='function') initQuiz(slug);
+  if(id==='receitas' && typeof initReceitas==='function') initReceitas();
 
   // Registra a navegação no histórico do browser para que o botão Voltar funcione.
   if(!window._goPageFromHistory){
@@ -2130,7 +2131,7 @@ function goPage(id,btn,slug){
 (function(){
   // Inclui as rotas SPA novas: ferramentas, ferramenta/<slug>, familias, familia/<slug>,
   // chazerias, quiz, quiz/resultado/<slug>
-  var SPA_ROUTE_RE = /^#(ficha|blend|ervatorio|blends|roda-funcional|ferramentas|ferramenta|familias|familia|chazerias|quiz)(\/.+)?$/;
+  var SPA_ROUTE_RE = /^#(ficha|blend|ervatorio|blends|roda-funcional|ferramentas|ferramenta|familias|familia|chazerias|quiz|chas|mundo|receitas)(\/.+)?$/;
   function handleHash(){
     var hash = window.location.hash || '';
     if(SPA_ROUTE_RE.test(hash)) hideLanding();
@@ -2232,6 +2233,14 @@ const CHAS_DATA = [
     preparo:['Aqueça a água até 65-70°C. Nunca água fervendo — destrói os compostos delicados.','Use 2-3 colheres de sopa cheias para 200ml.','Infuse por 2-3 minutos. Pode reutilizar as folhas até 3 vezes.','Sirva sem leite ou açúcar — a sutileza é sua essência.','A segunda infusão é frequentemente a melhor.'],
     curiosidades:'As folhas do chá branco são cobertas por finos pelos brancos (Bai Hao). Esses pelos são proteção natural contra insetos — e concentram polifenóis. É o único chá que pode ser infusionado com água fria (cold brew 8h).',
     regioes:['Fujian, China (Bai Hao Yinzhen, Bai Mudan)','Darjeeling, Índia','Sri Lanka','Nepal'],
+    variedades:[
+      {n:'Bai Hao Yinzhen',emoji:'🥇',orig:'Fujian, China',d:'Agulha de Prata — o mais nobre. Apenas brotos cobertos de finos pelos brancos.'},
+      {n:'Bai Mudan',emoji:'🌸',orig:'Fujian, China',d:'Peônia Branca — broto + duas folhas jovens. Mais corpo que o Yinzhen.'},
+      {n:'Shou Mei',emoji:'🍂',orig:'Fujian, China',d:'Sobrancelha Longeva — folhas maduras. Sabor mais encorpado e adocicado.'},
+      {n:'Ceylon White',emoji:'🇱🇰',orig:'Sri Lanka',d:'Silver Tips do Sri Lanka. Mais acessível, notas de mel e baunilha.'},
+    ],
+    harmonizacao:['Frutos do mar delicados','Sushi e sashimi','Queijo ricota ou brie','Frutas tropicais frescas','Mousse de baunilha','Macaron de flores'],
+    momento:'Tarde — silêncio e contemplação depois do almoço',
   },
   {
     id:'verde', name:'Chá Verde', emoji:'🍃', tagline:'Energia limpa e foco natural', oxidation:10,
@@ -2250,6 +2259,16 @@ const CHAS_DATA = [
     preparo:['Água a 75-80°C. Para Gyokuro premium, use 60°C.','1 colher de sopa por 200ml. Para matcha: 1 col. chá em pó.','Infuse por 2-3 minutos. Evite mais — fica amargo.','Para matcha: bata em Z com o chasen até espumar.','Pode infusionar 2-3 vezes. A segunda é mais suave.'],
     curiosidades:'O Japão produz mais de 80 estilos diferentes de chá verde. Matcha é pó de folhas inteiras — você ingere toda a folha. Gyokuro é cultivado à sombra nas últimas semanas, concentrando L-teanina e tornando o sabor mais doce.',
     regioes:['Uji, Japão (Matcha, Gyokuro)','Shizuoka, Japão (Sencha)','Fujian, China (Dragonwell/Longjing)','Zhejiang, China','Darjeeling, Índia'],
+    variedades:[
+      {n:'Matcha',emoji:'🍵',orig:'Uji, Kyoto',d:'Tencha moída em pedra. Você ingere a folha inteira. 137× mais EGCG que Sencha.'},
+      {n:'Gyokuro',emoji:'👑',orig:'Uji, Kyoto',d:'20 dias à sombra antes da colheita. Umami intenso. O mais premium japonês.'},
+      {n:'Sencha',emoji:'🌿',orig:'Shizuoka',d:'O cotidiano japonês. 80% da produção. Vegetal, limpo, gramíneo.'},
+      {n:'Hojicha',emoji:'🍂',orig:'Kyoto',d:'Sencha torrado. Caramelo, nozes. Quase sem cafeína — perfeito à noite.'},
+      {n:'Longjing',emoji:'🐉',orig:'Zhejiang, China',d:'Dragon Well — folhas planas salteadas em wok. Castanha tostada, suave.'},
+      {n:'Genmaicha',emoji:'🌾',orig:'Japão',d:'Sencha com arroz tostado. Notas de pipoca. Acessível e extremamente saboroso.'},
+    ],
+    harmonizacao:['Sushi e temaki','Edamame e gyoza','Queijo de cabra fresco','Torrada com azeite','Sorvete de matcha','Wagashi japonês'],
+    momento:'Manhã — foco sem ansiedade; ou antes de meditação',
   },
   {
     id:'amarelo', name:'Chá Amarelo', emoji:'💛', tagline:'O raro tesouro imperial da China', oxidation:15,
@@ -2268,6 +2287,13 @@ const CHAS_DATA = [
     preparo:['Água a 75°C — mais delicado que o verde.','2 colheres de sopa para 200ml.','Infuse por 2-3 minutos. As folhas podem ser reinfusionadas.','O processo de men huan (abafamento) lhe dá cor amarelada única.','Aprecie a diferença sutil em relação ao chá verde.'],
     curiosidades:'O processo smothering (Men Huan) envolve embrulhar as folhas ainda quentes para iniciar leve oxidação controlada. Isso remove o sabor gramíneo e cria o perfil único. Junshan Yinzhen é cultivado apenas na Ilha Junshan, no Lago Dongting.',
     regioes:['Ilha Junshan, Hunan (Junshan Yinzhen)','Sichuan (Meng Ding Huangya)','Anhui (Huo Shan Huangya)'],
+    variedades:[
+      {n:'Junshan Yinzhen',emoji:'🥇',orig:'Ilha Junshan, Hunan',d:'O mais nobre. < 500kg/ano. Só na Ilha Junshan no Lago Dongting. Imperial.'},
+      {n:'Meng Ding Huangya',emoji:'⛰',orig:'Monte Meng, Sichuan',d:'Segunda variedade. Amendoado, mel suave. Cultivado acima de 1000m.'},
+      {n:'Huo Shan Huangya',emoji:'🌿',orig:'Anhui',d:'A mais acessível. Sabor entre verde e branco, toques adocicados.'},
+    ],
+    harmonizacao:['Peixe branco grelhado','Frango suave no vapor','Legumes salteados','Tofu sedoso','Sobremesas de limão ou mel'],
+    momento:'Meio-dia — apreciação lenta, contemplativa',
   },
   {
     id:'oolong', name:'Chá Oolong', emoji:'🔵', tagline:'Complexidade entre o verde e o preto', oxidation:50,
@@ -2286,6 +2312,15 @@ const CHAS_DATA = [
     preparo:['Água a 90-95°C para oolongs oxidados; 85°C para os florais.','1 colher de sopa rasa por 200ml.','Primeira infusão: 3-4 min. Oolongs de qualidade suportam 5-7 infusões.','No estilo Gongfu: copos pequenos, infusões rápidas (30s-2min) revelam perfis diferentes.','Observe a evolução do sabor a cada infusão.'],
     curiosidades:'Um oolong de alta qualidade (como Da Yu Ling, a 2600m de altitude) pode custar R$800-2000 por 100g. Cada infusão revela notas diferentes — a 3ª e 4ª são frequentemente as mais complexas. O grau de oxidação define tudo: 15% = quase verde; 85% = quase preto.',
     regioes:['Alishan e Li Shan, Taiwan (High Mountain)','Wuyi, Fujian, China (Da Hong Pao, Shui Xian)','Anxi, Fujian (Tie Guan Yin)','Darjeeling, Índia'],
+    variedades:[
+      {n:'Tie Guan Yin',emoji:'🙏',orig:'Anxi, Fujian',d:'Deusa da Misericórdia. Floral, orquídea, cremoso. O oolong mais icônico do mundo.'},
+      {n:'Da Hong Pao',emoji:'🏔',orig:'Wuyi, Fujian',d:'Manto Vermelho. Das arbustos mais famosos do mundo. Rochoso, mineral, torrado.'},
+      {n:'Ali Shan',emoji:'⛰',orig:'Ali Shan (1400m), Taiwan',d:'High Mountain. Cremoso, manteigoso, floral. Revela-se em 5-7 infusões.'},
+      {n:'Oriental Beauty',emoji:'🦋',orig:'Hsinchu, Taiwan',d:'Picadas de cigarrinhas criam terpenos únicos. Mel, pêssego, moscatel.'},
+      {n:'Dan Cong',emoji:'🎵',orig:'Fenghuang, Guangdong',d:'Oolong Fênix. Dezenas de cultivares nomeados por aromas (lichia, gengibre).'},
+    ],
+    harmonizacao:['Carnes grelhadas e dim sum','Queijo meia-cura','Frutas frescas e secas','Chocolate amargo 70%','Castanhas e nozes','Macarons florais'],
+    momento:'Tarde — ritual contemplativo, múltiplas infusões',
   },
   {
     id:'preto', name:'Chá Preto', emoji:'🖤', tagline:'Corpo, presença e energia duradoura', oxidation:100,
@@ -2304,6 +2339,15 @@ const CHAS_DATA = [
     preparo:['Água a 95-100°C — o único chá que suporta água fervendo.','1-2 colheres de sopa por 250ml.','Infuse por 3-5 minutos. Além disso fica amargo.','Com leite: adicione o leite antes da água (tradição britânica).','Com especiarias (Masala Chai): gengibre, canela, cardamomo, cravo.'],
     curiosidades:'Darjeeling First Flush (colheita de março-abril) é o "Champagne dos chás" — tem certificação geográfica. Assam é base do famoso English Breakfast. Pu-erh não é exatamente preto — tem sua própria categoria. O chá com leite foi introduzido para proteger porcelanas finas do choque térmico.',
     regioes:['Assam, Índia (forte, maltado)','Darjeeling, Índia (floral, Champagne dos chás)','Sri Lanka / Ceylon','Keemun, China (fumado, notas de vinho)','Nilgiri, Índia'],
+    variedades:[
+      {n:'Darjeeling First Flush',emoji:'🏔',orig:'Darjeeling (800-2200m)',d:'Champagne dos chás. Colheita março-abril. Floral, muscatel, leve.'},
+      {n:'Assam CTC',emoji:'💪',orig:'Vale do Assam',d:'Forte, maltado, encorpado. Base do English Breakfast. Rei dos saquinhos globais.'},
+      {n:'Lapsang Souchong',emoji:'🔥',orig:'Wuyi, Fujian',d:'Defumado com pinheiro. O chá mais polarizador — ama-se ou odeia-se.'},
+      {n:'Ceylon UVA',emoji:'🇱🇰',orig:'Uva Province, Sri Lanka',d:'Aromático, mentolado, adstringente limpo. Ideal com leite ou puro.'},
+      {n:'Keemun',emoji:'🍷',orig:'Anhui, China',d:'Notas de vinho tinto e chocolate. Base do English Breakfast original.'},
+    ],
+    harmonizacao:['Scones com creme e geleia','Bolo de chocolate','Queijo cheddar e gouda','Ovos mexidos no café da manhã','Carnes assadas','Biscoito de gengibre'],
+    momento:'Manhã — despertar e energia; com leite é o breakfast perfeito',
   },
   {
     id:'puerh', name:'Chá Escuro (Pu-erh)', emoji:'🟤', tagline:'O vinho dos chás — fermentado único', oxidation:100,
@@ -2322,6 +2366,14 @@ const CHAS_DATA = [
     preparo:['Despeje água quente sobre as folhas e jogue fora (lavagem). Pu-erh precisa de rinse.','Água a 95-100°C. 5-8g por 150ml (mais denso que outros chás).','Primeira infusão: 30s. Infusões seguintes: aumente 10s cada vez.','Pode render 10-20 infusões de qualidade.','Armazenado corretamente, melhora por décadas.'],
     curiosidades:'Pu-erh Sheng (cru) envelhece como vinho — ganha complexidade com o tempo. Pu-erh Shu (maduro) tem fermentação acelerada de 45-60 dias em pilhas úmidas. Os microrganismos responsáveis incluem Aspergillus niger. Um bolo vintage de boa procedência é investimento comparável a vinhos de Bordeaux.',
     regioes:['Xishuangbanna, Yunnan (antigos bosques)','Menghai, Yunnan (fábricas tradicionais)','Yiwu, Yunnan (Pu-erh premium)','Jingmai, Yunnan (árvores centenárias)'],
+    variedades:[
+      {n:'Sheng Pu-erh',emoji:'🌱',orig:'Yunnan',d:'Pu-erh cru. Envelhece décadas. Sabor evolui de vegetal/amargo para doce complexo.'},
+      {n:'Shu Pu-erh',emoji:'🍂',orig:'Yunnan',d:'Pu-erh maduro. Fermentação acelerada 45-60 dias. Pronto para beber imediatamente.'},
+      {n:'Bingcha (Bolo)',emoji:'💿',orig:'Yunnan',d:'Pu-erh prensado em disco (357g). Clássico. Quanto mais antigo, mais valioso.'},
+      {n:'Gushu (Árvore Antiga)',emoji:'🌳',orig:'Yunnan',d:'De árvores centenárias ou milenares. Sabor mais complexo e duradouro.'},
+    ],
+    harmonizacao:['Carnes gordurosas — churrasco, pato confitado','Queijo azul ou curado','Chocolate amargo 85%+','Dim sum e dumplings','Cogumelos salteados','Sobremesas de caramelo escuro'],
+    momento:'Após refeições — digestivo poderoso; ou ritual matinal profundo',
   },
 ];
 
@@ -2390,7 +2442,30 @@ function renderChaDetail(id){
       </div>
     </div>
 
-    <div style="font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem">Como preparar</div>
+    ${c.variedades?`
+    <div class="cha-section-label">Variedades Notáveis</div>
+    <div class="cha-variedades-grid">
+      ${c.variedades.map(v=>`<div class="cha-var-card" style="border-top:2px solid ${c.color||'var(--gold)'}">
+        <div class="cha-var-emoji">${v.emoji}</div>
+        <div class="cha-var-name">${v.n}</div>
+        <div class="cha-var-orig">📍 ${v.orig}</div>
+        <div class="cha-var-desc">${v.d}</div>
+      </div>`).join('')}
+    </div>`:''}
+
+    ${c.harmonizacao?`
+    <div class="cha-section-label">Harmonização</div>
+    <div class="cha-harmonizacao-row">
+      ${c.harmonizacao.map(h=>`<span class="cha-harm-tag">${h}</span>`).join('')}
+    </div>`:''}
+
+    ${c.momento?`
+    <div class="cha-momento-block" style="border-left:3px solid ${c.color||'var(--gold)'}">
+      <span class="cha-momento-label">Melhor momento</span>
+      <span class="cha-momento-val">${c.momento}</span>
+    </div>`:''}
+
+    <div class="cha-section-label">Como preparar</div>
     <div class="cha-prep-steps" style="margin-bottom:1.5rem">
       ${c.preparo.map((s,i)=>`<div class="cha-prep-step">
         <div class="cha-prep-num" style="background:${c.color||'var(--gold)'}22;border:0.5px solid ${c.color||'var(--gold)'}44;color:${c.color||'var(--gold)'}">${i+1}</div>
@@ -2398,10 +2473,10 @@ function renderChaDetail(id){
       </div>`).join('')}
     </div>
 
-    <div style="font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem">História & Origem</div>
+    <div class="cha-section-label">História & Origem</div>
     ${c.historia.map(h=>`<div class="cha-history-block" style="border-left-color:${c.color||'var(--gold)'}"><div class="cha-history-year">${h.year}</div>${h.text}</div>`).join('')}
 
-    <div style="font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:.75rem 0 .5rem">Curiosidades</div>
+    <div class="cha-section-label" style="margin-top:.75rem">Curiosidades</div>
     <div style="background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);padding:1rem 1.25rem;font-size:.82rem;color:var(--cream2);line-height:1.7;font-style:italic">"${c.curiosidades}"</div>
 
     <div style="display:flex;gap:8px;margin-top:1.25rem">
@@ -2751,18 +2826,21 @@ function addMktCart(id){
 // Coordinates calibrated to the real map image (1330x840)
 // cx/cy are fractions 0..1 of image width/height
 const MUNDO_REGIONS=[
-  {id:'china',   name:'China',        flag:'🇨🇳',cx:.755,cy:.315,color:'#c8382a',subtitle:'Berço do chá — 5000 anos de história',producao:'3.200.000 ton/ano',exportacao:'500.000 ton/ano',area:'3.200.000 ha',tipos:['Verde','Branco','Amarelo','Oolong','Preto','Pu-erh'],desc:'A China produz todos os seis tipos de chá verdadeiro. Única com essa distinção. Cada província tem identidade própria: Fujian para brancos e oolongs, Yunnan para Pu-erh, Zhejiang para Longjing.',chas:[{n:'Longjing (Dragon Well)',reg:'Zhejiang',tipo:'Verde',badge:'#4a7a3a',d:'O chá verde mais famoso. Folhas planas, sabor de castanha tostada.'},{n:'Tie Guan Yin',reg:'Anxi, Fujian',tipo:'Oolong',badge:'#2d5a7a',d:'Deusa da Misericórdia. Floral, cremoso. Ícone dos oolongs.'},{n:'Da Hong Pao',reg:'Wuyi, Fujian',tipo:'Oolong',badge:'#2d5a7a',d:'Manto Vermelho. Entre os mais caros do mundo.'},{n:'Keemun',reg:'Anhui',tipo:'Preto',badge:'#3a1a0a',d:'Notas de vinho e chocolate. Base do English Breakfast original.'},{n:'Pu-erh Sheng',reg:'Yunnan',tipo:'Escuro',badge:'#2a1a0a',d:'Envelhece como vinho. Mercado de investimento.'},{n:'Junshan Yinzhen',reg:'Hunan',tipo:'Amarelo',badge:'#a87a2a',d:'O chá amarelo mais raro. Produção < 500kg/ano.'}],culinaria:'Chá é parte da vida cotidiana. Dim Sum sempre acompanhado de chá. Gongfu Cha é arte e filosofia.',brasil:'Comunidade chinesa em SP traz chás premium. Liberdade concentra lojas especializadas.'},
-  {id:'japao',   name:'Japão',        flag:'🇯🇵',cx:.840,cy:.295,color:'#c8304a',subtitle:'A perfeição do chá verde — a Via do Chá',producao:'86.000 ton/ano',exportacao:'6.200 ton/ano',area:'44.000 ha',tipos:['Verde (80+ estilos)','Matcha'],desc:'O Japão transformou o chá verde em arte e filosofia. Mais de 80 estilos. Matcha virou fenômeno global. A cerimônia Chanoyu é patrimônio cultural imaterial.',chas:[{n:'Matcha',reg:'Uji, Kyoto',tipo:'Verde em pó',badge:'#2d5a2a',d:'Pó de tencha cultivada à sombra. 2.5mg de L-teanina por xícara.'},{n:'Gyokuro',reg:'Uji, Kyoto',tipo:'Verde premium',badge:'#2d5a2a',d:'Cultivado à sombra 20 dias. Sabor umami profundo.'},{n:'Sencha',reg:'Shizuoka',tipo:'Verde',badge:'#4a7a3a',d:'80% da produção japonesa. O chá cotidiano.'},{n:'Hojicha',reg:'Kyoto',tipo:'Verde torrado',badge:'#5a3a1a',d:'Sencha torrado. Baixa cafeína. Ideal à noite.'}],culinaria:'Matcha em sorvetes, confeitaria, cosméticos. Matcha latte virou fenômeno global.',brasil:'Maior comunidade japonesa fora do Japão em SP.'},
-  {id:'india',   name:'Índia',        flag:'🇮🇳',cx:.640,cy:.385,color:'#e07820',subtitle:'Do Assam ao Darjeeling — a outra grande potência',producao:'1.390.000 ton/ano',exportacao:'250.000 ton/ano',area:'637.000 ha',tipos:['Preto','Verde','Oolong','Branco'],desc:'Segunda maior produtora mundial. Assam e Darjeeling definem o chá preto global. Darjeeling tem GI protegida — o Champagne dos chás.',chas:[{n:'Darjeeling First Flush',reg:'Darjeeling',tipo:'Preto/Oolong',badge:'#3a1a0a',d:'Floral, muscatel, leve. O mais imitado do mundo.'},{n:'Assam CTC',reg:'Vale do Assam',tipo:'Preto CTC',badge:'#5a2a0a',d:'Base do chá de saquinho global. Forte, maltado.'},{n:'Masala Chai',reg:'Todo país',tipo:'Blend cultural',badge:'#6a3a1a',d:'Ritual de 1.4 bilhões de pessoas diariamente.'}],culinaria:'Chai é identidade nacional. Dhabas em cada esquina.',brasil:'Assam e Darjeeling chegam via importadoras. Masala Chai muito popular.'},
+  {id:'china',   name:'China',        flag:'🇨🇳',cx:.755,cy:.315,color:'#c8382a',subtitle:'Berço do chá — 5000 anos de história',producao:'3.200.000 ton/ano',exportacao:'500.000 ton/ano',area:'3.200.000 ha',tipos:['Verde','Branco','Amarelo','Oolong','Preto','Pu-erh'],desc:'A China produz todos os seis tipos de chá verdadeiro. Única com essa distinção. Cada província tem identidade própria: Fujian para brancos e oolongs, Yunnan para Pu-erh, Zhejiang para Longjing.',chas:[{n:'Longjing (Dragon Well)',reg:'Zhejiang',tipo:'Verde',badge:'#4a7a3a',d:'O chá verde mais famoso. Folhas planas, sabor de castanha tostada.'},{n:'Tie Guan Yin',reg:'Anxi, Fujian',tipo:'Oolong',badge:'#2d5a7a',d:'Deusa da Misericórdia. Floral, cremoso. Ícone dos oolongs.'},{n:'Da Hong Pao',reg:'Wuyi, Fujian',tipo:'Oolong',badge:'#2d5a7a',d:'Manto Vermelho. Entre os mais caros do mundo.'},{n:'Keemun',reg:'Anhui',tipo:'Preto',badge:'#3a1a0a',d:'Notas de vinho e chocolate. Base do English Breakfast original.'},{n:'Pu-erh Sheng',reg:'Yunnan',tipo:'Escuro',badge:'#2a1a0a',d:'Envelhece como vinho. Mercado de investimento.'},{n:'Junshan Yinzhen',reg:'Hunan',tipo:'Amarelo',badge:'#a87a2a',d:'O chá amarelo mais raro. Produção < 500kg/ano.'}],ervas:[{n:'Chrysanthemum (Ju Hua)',d:'Flor seca usada em infusões. Refrescante, anti-inflamatória. Parte da MTC há séculos.'},{n:'Goji Berry (Gou Qi Zi)',d:'Baya adaptogênica. Longevidade, visão, imunidade. Usada em tônicos e blends.'},{n:'Ginseng (Ren Shen)',d:'O adaptógeno por excelência. Energia, foco, vitalidade. Símbolo da medicina tradicional.'},{n:'Osmanthus (Gui Hua)',d:'Flor perfumada para aromatizar tés. Notas de pêssego e damasco.'}],culinaria:'Chá é parte da vida cotidiana. Dim Sum sempre acompanhado de chá. Gongfu Cha é arte e filosofia.',brasil:'Comunidade chinesa em SP traz chás premium. Liberdade concentra lojas especializadas.'},
+  {id:'japao',   name:'Japão',        flag:'🇯🇵',cx:.840,cy:.295,color:'#c8304a',subtitle:'A perfeição do chá verde — a Via do Chá',producao:'86.000 ton/ano',exportacao:'6.200 ton/ano',area:'44.000 ha',tipos:['Verde (80+ estilos)','Matcha'],desc:'O Japão transformou o chá verde em arte e filosofia. Mais de 80 estilos. Matcha virou fenômeno global. A cerimônia Chanoyu é patrimônio cultural imaterial.',chas:[{n:'Matcha',reg:'Uji, Kyoto',tipo:'Verde em pó',badge:'#2d5a2a',d:'Pó de tencha cultivada à sombra. 2.5mg de L-teanina por xícara.'},{n:'Gyokuro',reg:'Uji, Kyoto',tipo:'Verde premium',badge:'#2d5a2a',d:'Cultivado à sombra 20 dias. Sabor umami profundo.'},{n:'Sencha',reg:'Shizuoka',tipo:'Verde',badge:'#4a7a3a',d:'80% da produção japonesa. O chá cotidiano.'},{n:'Hojicha',reg:'Kyoto',tipo:'Verde torrado',badge:'#5a3a1a',d:'Sencha torrado. Baixa cafeína. Ideal à noite.'}],ervas:[{n:'Kuzu (Kudzu)',d:'Raiz medicinal. Usada em pós e infusões para digestão e ressaca.'},{n:'Beni Shoga',d:'Gengibre em conserva. Digestivo, anti-inflamatório.'},{n:'Sakura (Flor de Cerejeira)',d:'Petalas salgadas usadas em chás e sakura-yu. Ritual sazonal.'}],culinaria:'Matcha em sorvetes, confeitaria, cosméticos. Matcha latte virou fenômeno global.',brasil:'Maior comunidade japonesa fora do Japão em SP.'},
+  {id:'india',   name:'Índia',        flag:'🇮🇳',cx:.640,cy:.385,color:'#e07820',subtitle:'Do Assam ao Darjeeling — a outra grande potência',producao:'1.390.000 ton/ano',exportacao:'250.000 ton/ano',area:'637.000 ha',tipos:['Preto','Verde','Oolong','Branco'],desc:'Segunda maior produtora mundial. Assam e Darjeeling definem o chá preto global. Darjeeling tem GI protegida — o Champagne dos chás.',chas:[{n:'Darjeeling First Flush',reg:'Darjeeling',tipo:'Preto/Oolong',badge:'#3a1a0a',d:'Floral, muscatel, leve. O mais imitado do mundo.'},{n:'Assam CTC',reg:'Vale do Assam',tipo:'Preto CTC',badge:'#5a2a0a',d:'Base do chá de saquinho global. Forte, maltado.'},{n:'Masala Chai',reg:'Todo país',tipo:'Blend cultural',badge:'#6a3a1a',d:'Ritual de 1.4 bilhões de pessoas diariamente.'}],ervas:[{n:'Tulsi (Manjericão Sagrado)',d:'Adaptógeno revered no Ayurveda. Anti-estresse, imunidade, clareza mental.'},{n:'Ashwagandha',d:'O ginseng indiano. Adaptógeno poderoso para estresse e vitalidade.'},{n:'Neem',d:'Antibacteriano tradicional. Amargo e potente — detox profundo.'},{n:'Cardamomo',d:'Elaichi — especiaria-erva ubíqua em chai. Digestiva, refrescante, aromática.'}],culinaria:'Chai é identidade nacional. Dhabas em cada esquina.',brasil:'Assam e Darjeeling chegam via importadoras. Masala Chai muito popular.'},
   {id:'srilanka',name:'Sri Lanka',    flag:'🇱🇰',cx:.660,cy:.430,color:'#c8a030',subtitle:'Ceylon Tea — o mais puro do mundo',producao:'300.000 ton/ano',exportacao:'290.000 ton/ano',area:'222.000 ha',tipos:['Preto','Verde','Branco'],desc:'Exporta 97% do que produz. Ceylon é sinônimo de qualidade global.',chas:[{n:'Ceylon UVA',reg:'Uva Province',tipo:'Preto',badge:'#3a1a0a',d:'Aromático, mentolado, adstringente.'},{n:'Nuwara Eliya',reg:'1800m',tipo:'Preto delicado',badge:'#4a1a1a',d:'Floral, quase cor-de-rosa. Champagne of Ceylon.'}],culinaria:'Chá gelado consumo nacional. Exporta para 80+ países.',brasil:'Base histórica do saquinho brasileiro.'},
   {id:'taiwan',  name:'Taiwan',       flag:'🇹🇼',cx:.800,cy:.360,color:'#3a8a5a',subtitle:'A ilha dos High Mountain Oolongs',producao:'14.000 ton/ano',exportacao:'3.000 ton/ano',area:'13.000 ha',tipos:['Oolong','Verde','Preto'],desc:'Taiwan redefiniu o oolong. Ali Shan e Da Yu Ling a mais de 2000m produzem oolongs cremosos inimitáveis.',chas:[{n:'Ali Shan Oolong',reg:'Alishan (1400-1800m)',tipo:'Oolong High Mountain',badge:'#2d5a7a',d:'Floral, leite, creme.'},{n:'Oriental Beauty',reg:'Hsinchu',tipo:'Oolong especial',badge:'#7a5a2a',d:'Picadas de inseto criam terpenos únicos. Mel, pêssego, moscatel.'}],culinaria:'Bubble Tea inventado em Taiwan em 1986.',brasil:'Bubble tea proliferou nas cidades brasileiras.'},
   {id:'kenya',   name:'Quênia',       flag:'🇰🇪',cx:.565,cy:.495,color:'#2a7a2a',subtitle:'Terceiro maior exportador — CTC africano',producao:'570.000 ton/ano',exportacao:'525.000 ton/ano',area:'230.000 ha',tipos:['Preto CTC','Verde','Branco'],desc:'O Quênia tornou-se em 60 anos o terceiro maior produtor. Solo vulcânico, altitude 1500-2700m.',chas:[{n:'Kenya CTC',reg:'Highlands centrais',tipo:'Preto CTC',badge:'#3a1a0a',d:'Forte, cor vinho intenso. Base do English Breakfast moderno.'}],culinaria:'Chai com leite fervido é bebida nacional.',brasil:'Presente nos blends de saquinhos importados.'},
   {id:'turquia', name:'Turquia',      flag:'🇹🇷',cx:.570,cy:.275,color:'#c83030',subtitle:'Çay — maior consumidor per capita do mundo',producao:'280.000 ton/ano',exportacao:'5.000 ton/ano',area:'76.000 ha',tipos:['Preto'],desc:'Turcos consomem 3.5 kg/pessoa/ano. O Çay é servido em copo de tulipa de vidro.',chas:[{n:'Rize Çay',reg:'Rize, Mar Negro',tipo:'Preto',badge:'#3a1a0a',d:'Forte e vermelho-escuro. Chaleira dupla çaydanlık.'}],culinaria:'Oferecido em toda reunião. Recusar é descortesia.',brasil:'Influência crescente com restaurantes turcos.'},
-  {id:'marrocos',name:'Marrocos',     flag:'🇲🇦',cx:.490,cy:.305,color:'#c87820',subtitle:'Atay — o ritual berber de hospitalidade',producao:'0 (não produz)',exportacao:'—',area:'—',tipos:['Verde (importado) + Hortelã'],desc:'Não produz mas transformou o ritual em arte. Gunpowder com hortelã e açúcar, derramado de altura.',chas:[{n:'Atay',reg:'Todo Marrocos',tipo:'Verde + hortelã',badge:'#4a7a3a',d:'Três copos: o 1° amargo como vida, o 2° doce como amor, o 3° suave como morte.'}],culinaria:'Ritual de hospitalidade. Recusar 3 copos é insulto.',brasil:'Tendência em restaurantes árabes.'},
+  {id:'marrocos',name:'Marrocos',     flag:'🇲🇦',cx:.490,cy:.305,color:'#c87820',subtitle:'Atay — o ritual berber de hospitalidade',producao:'0 (não produz)',exportacao:'—',area:'—',tipos:['Verde (importado) + Hortelã'],desc:'Não produz mas transformou o ritual em arte. Gunpowder com hortelã e açúcar, derramado de altura.',chas:[{n:'Atay',reg:'Todo Marrocos',tipo:'Verde + hortelã',badge:'#4a7a3a',d:'Três copos: o 1° amargo como vida, o 2° doce como amor, o 3° suave como morte.'}],ervas:[{n:'Hortelã Nana (Mentha spicata)',d:'A rainha marroquina. Fresca, vibrante, define o Atay. Cultivada em todo o país.'},{n:'Verbena',d:'Lemon verbena — calmante, digestiva. Blendada com hortelã nas regiões do norte.'},{n:'Flor de Laranjeira',d:'Perfumada e sedante. Comum em infusões do sul marroquino.'}],culinaria:'Ritual de hospitalidade. Recusar 3 copos é insulto.',brasil:'Tendência em restaurantes árabes.'},
   {id:'uk',      name:'Reino Unido',  flag:'🇬🇧',cx:.483,cy:.195,color:'#3a3a8a',subtitle:'A nação do chá — blends e o Afternoon Tea',producao:'0 (não produz)',exportacao:'—',area:'—',tipos:['Blends de importação'],desc:'100 milhões de xícaras por dia. Criou os grandes blends globais.',chas:[{n:'English Breakfast',reg:'Blend britânico',tipo:'Blend preto',badge:'#3a1a0a',d:'Assam + Ceylon + Kenya. O mais consumido do mundo.'},{n:'Earl Grey',reg:'Blend c/ bergamota',tipo:'Aromatizado',badge:'#3a3a7a',d:'Chá preto com óleo de bergamota. Criado em 1830.'}],culinaria:'Afternoon Tea com scones. Leite primeiro ou depois — debate nacional sério.',brasil:'Marcas inglesas em supermercados. Afternoon Tea em hotéis.'},
   {id:'russia',  name:'Rússia',       flag:'🇷🇺',cx:.660,cy:.185,color:'#8a2a2a',subtitle:'Samovar — a alma do inverno russo',producao:'700 ton/ano',exportacao:'—',area:'1.500 ha',tipos:['Preto (importado)','Krasnodar'],desc:'Popularizou o chá na Europa via Rota do Chá. O samovar é ícone cultural.',chas:[{n:'Russian Caravan',reg:'Blend histórico',tipo:'Blend defumado',badge:'#4a2a1a',d:'Levemente defumado — recria sabor das fogueiras das caravanas.'}],culinaria:'Chá com geleia (varenje). Samovar com concentrado diluído a gosto.',brasil:'Russian Caravan em lojas especializadas.'},
-  {id:'brasil',  name:'Brasil',       flag:'🇧🇷',cx:.300,cy:.555,color:'#2a8a2a',subtitle:'Produtor emergente — do mate ao Camellia',producao:'4.200 ton/ano',exportacao:'200 ton/ano',area:'3.500 ha',tipos:['Preto','Verde','Erva-mate'],desc:'Produção iniciada por imigrantes japoneses em 1935. Maior polo em Registro (SP).',chas:[{n:'Chá Preto de Registro',reg:'Vale do Ribeira, SP',tipo:'Preto',badge:'#3a1a0a',d:'Desde 1935. Solo ácido, clima subtropical.'},{n:'Erva-Mate',reg:'Sul do Brasil',tipo:'Mate',badge:'#2d5a2a',d:'O chá mais consumido no Brasil. Chimarrão, tereré e mate gelado.'}],culinaria:'Chimarrão ritual gaúcho. Tereré cultura mato-grossense.',brasil:'O Brasil é produtor, consumidor e importador simultaneamente.'},
-  {id:'georgia', name:'Geórgia',      flag:'🇬🇪',cx:.605,cy:.260,color:'#c84040',subtitle:'O chá esquecido do Cáucaso',producao:'3.000 ton/ano',exportacao:'800 ton/ano',area:'11.000 ha',tipos:['Preto','Verde'],desc:'Principal produtora soviética. Com a dissolução da URSS a produção colapsou. Hoje em revival artesanal.',chas:[{n:'Guria Black',reg:'Guria',tipo:'Preto',badge:'#3a1a0a',d:'Floral, levemente amadeirado. Produção artesanal em revival.'}],culinaria:'Chá forte com açúcar. Hospitalidade caucasiana.',brasil:'Praticamente desconhecido no Brasil.'},
+  {id:'brasil',  name:'Brasil',       flag:'🇧🇷',cx:.300,cy:.555,color:'#2a8a2a',subtitle:'Produtor emergente — do mate ao Camellia',producao:'4.200 ton/ano',exportacao:'200 ton/ano',area:'3.500 ha',tipos:['Preto','Verde','Erva-mate'],desc:'Produção iniciada por imigrantes japoneses em 1935. Maior polo em Registro (SP). O Brasil é também o país com maior biodiversidade de ervas medicinais do mundo.',chas:[{n:'Chá Preto de Registro',reg:'Vale do Ribeira, SP',tipo:'Preto',badge:'#3a1a0a',d:'Desde 1935. Solo ácido, clima subtropical.'},{n:'Erva-Mate',reg:'Sul do Brasil',tipo:'Mate',badge:'#2d5a2a',d:'O chá mais consumido no Brasil. Chimarrão, tereré e mate gelado.'}],ervas:[{n:'Erva-Mate (Ilex paraguariensis)',d:'O chá nacional. Mais cafeína que o verde. Chimarrão, tereré, mate gelado.'},{n:'Hibisco (Hibiscus sabdariffa)',d:'Flor vermelha ácida. Rico em antocianinas, anti-hipertensivo, refrescante.'},{n:'Capim-Limão (Cymbopogon citratus)',d:'Aromático, calmante, digestivo. Toque cítrico único. Cultivado em todo o país.'},{n:'Erva-Cidreira (Lippia alba)',d:'Ansiolítico natural. Calmante suave, digestivo, cicatrizante.'},{n:'Camomila (Matricaria chamomilla)',d:'Sedativa leve, anti-inflamatória. Uma das mais consumidas.'},{n:'Boldo-do-Chile (Peumus boldus)',d:'O protetor hepático. Amargo, potente. Símbolo dos chás medicinais.'}],culinaria:'Chimarrão ritual gaúcho. Tereré cultura mato-grossense.',brasil:'O Brasil é produtor, consumidor e importador simultaneamente.'},
+  {id:'georgia', name:'Geórgia',      flag:'🇬🇪',cx:.605,cy:.260,color:'#c84040',subtitle:'O chá esquecido do Cáucaso',producao:'3.000 ton/ano',exportacao:'800 ton/ano',area:'11.000 ha',tipos:['Preto','Verde'],desc:'Principal produtora soviética. Com a dissolução da URSS a produção colapsou. Hoje em revival artesanal.',chas:[{n:'Guria Black',reg:'Guria',tipo:'Preto',badge:'#3a1a0a',d:'Floral, levemente amadeirado. Produção artesanal em revival.'}],ervas:[{n:'Tarragon (Estragon)',d:'Erva aromática icônica da culinária georgiana. Usada também em limonadas.'},{n:'Savory (Satureja)',d:'Tomilho-selvagem local. Infusões digestivas e carnes grelhadas.'}],culinaria:'Chá forte com açúcar. Hospitalidade caucasiana.',brasil:'Praticamente desconhecido no Brasil.'},
+  {id:'argentina',name:'Argentina',   flag:'🇦🇷',cx:.270,cy:.650,color:'#5a9a3a',subtitle:'Terra do chimarrão — yerba mate como identidade',producao:'300.000 ton/ano (mate)',exportacao:'120.000 ton/ano',area:'200.000 ha',tipos:['Erva-Mate','Blends aromáticos'],desc:'A Argentina é o maior produtor e exportador mundial de erva-mate. Missiones, no nordeste, concentra quase toda a produção. O chimarrão é mais que bebida — é identidade cultural e símbolo de partilha.',chas:[{n:'Yerba Mate Clásica',reg:'Missiones',tipo:'Mate puro',badge:'#2d5a2a',d:'Verde, amargo, encorpado. A base do chimarrão argentino.'},{n:'Mate Compuesto',reg:'Todo país',tipo:'Blend c/ ervas',badge:'#3a7a2a',d:'Yerba com ervas adicionadas: menta, boldo, poejo. Suaviza o amargor.'},{n:'Tereré',reg:'Corrientes, Chaco',tipo:'Mate gelado',badge:'#1a5a3a',d:'Compartilhado em grupos. Com agua fría e ervas frescas.'}],ervas:[{n:'Poejo (Mentha pulegium)',d:'Digestiva potente. Adicionada ao mate para suavizar e aromatizar.'},{n:'Cedrón (Lemon Verbena)',d:'Aloysia citrodora. Calmante, digestiva, sabor suave de limão.'},{n:'Burrito (Aloysia polystachya)',d:'Única no cone sul. Perfumada, digestiva, anti-inflamatória.'},{n:'Menta (Mentha x piperita)',d:'Amplamente cultivada. Refresca o mate e infusões quentes.'}],culinaria:'Chimarrão em cuia de cabaça com bomba de metal. Compartilhado em rodas.',brasil:'Chimarrão gaúcho tem raiz cultural compartilhada. Tereré idêntico ao mato-grossense.'},
+  {id:'sudafrica',name:'África do Sul',flag:'🇿🇦',cx:.540,cy:.600,color:'#c87020',subtitle:'Rooibos e Honeybush — tesouros únicos da Fynbos',producao:'15.000 ton/ano (rooibos)',exportacao:'12.000 ton/ano',area:'32.000 ha',tipos:['Rooibos','Honeybush','Buchu'],desc:'A África do Sul tem dois chás que não existem em mais nenhum lugar do mundo: o Rooibos (Aspalathus linearis) e o Honeybush (Cyclopia spp.). Ambos são sem cafeína e ricos em antioxidantes únicos.',chas:[{n:'Rooibos (Chá Vermelho)',reg:'Cederberg, W. Cape',tipo:'Tisana sem cafeína',badge:'#c84820',d:'O "chá vermelho" africano. Sem cafeína, rico em aspalathina. Vermelho rubí.'},{n:'Rooibos Verde',reg:'Cederberg',tipo:'Rooibos não oxidado',badge:'#7a8a3a',d:'Menos processado. Mais suave, mais antioxidantes. Raro e premium.'},{n:'Honeybush',reg:'Langkloof, E. Cape',tipo:'Tisana mel',badge:'#a87820',d:'Cyclopia — notas naturais de mel e baunilha. Sem açúcar adicionado.'}],ervas:[{n:'Rooibos (Aspalathus linearis)',d:'Único no mundo. Sem cafeína, anti-alérgico, rico em aspalathina. Cultivado só no Cederberg.'},{n:'Honeybush (Cyclopia spp.)',d:'Parente do rooibos. Mel natural sem adição. Oito espécies, cada com perfil único.'},{n:'Buchu (Agathosma betulina)',d:'Erva sagrada khoi. Cicatrizante, antibacteriana, antiséptica. Exportada ao mundo.'},{n:'Devil\'s Claw (Harpagophytum)',d:'Raíz anti-inflamatória poderosa. Artrite, dores musculares. Savana sul-africana.'}],culinaria:'Rooibos com leite, gelado, em culinária. Honeybush em sobremesas.',brasil:'Rooibos popular em lojas de produtos naturais. Sem cafeína — favorito noturno.'},
+  {id:'egito',   name:'Egito/Oriente Médio',flag:'🌍',cx:.545,cy:.340,color:'#c84a20',subtitle:'Karkade — o hibisco sagrado do Nilo',producao:'Hibisco, ervas medicinais',exportacao:'Hibisco seco, olíbano',area:'—',tipos:['Hibisco (Karkade)','Ervas medicinais'],desc:'O Egito e o Oriente Médio têm tradição milenar de infusões. O Karkade (hibisco) é consumido quente e gelado em todo o Oriente Médio e Norte da África — rico em antocianinas e anti-hipertensivo.',chas:[{n:'Karkade (Hibisco)',reg:'Egito e Sudão',tipo:'Floral/ácida',badge:'#c83040',d:'Vermelho-vivo, ácido, anti-hipertensivo. Servido quente e gelado.'},{n:'Chai de Especiarias',reg:'Todo Oriente Médio',tipo:'Blend',badge:'#8a4a10',d:'Cardamomo, canela, cravo, gengibre. Cada país com sua versão.'},{n:'Sage (Sálvia)',reg:'Líbano, Síria',tipo:'Herbal',badge:'#4a7a3a',d:'Maramiya — sálvia medicinal. Muito consumida nas regiões montanhosas.'}],ervas:[{n:'Hibisco (Hibiscus sabdariffa)',d:'Karkade egípcio. Anti-hipertensivo, rico em vitamina C e antocianinas.'},{n:'Sálvia (Salvia officinalis)',d:'Maramiya árabe. Antibacteriana, digestiva, hormonal. Sagrada na medicina árabe.'},{n:'Olíbano (Boswellia sacra)',d:'Incenso/resina anti-inflamatória. Infusões no Omã e Yemen.'},{n:'Rosas de Damasco',d:'Rosa damascena. Água de rosas em bebidas e sobremesas árabes.'}],culinaria:'Karkade quente no inverno, gelado no verão com açúcar. Onipresente.',brasil:'Hibisco nacional. O chá mais consumido no Brasil depois do mate.'},
 ];
 
 let mundoView='mapa', mundoRegionActive=null, mundoListFilter='Todos';
@@ -2909,6 +2987,8 @@ function selectMapRegion(id){
         </div>
       </div>`).join('')}
     </div>
+    ${reg.ervas?`<div style="font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem">Ervas & Plantas Locais</div>
+    <div class="mrd-ervas-grid" style="margin-bottom:1rem">${reg.ervas.map(e=>`<div class="mrd-erva-item"><div class="mrd-erva-name">🌿 ${esc(e.n)}</div><div class="mrd-erva-desc">${esc(e.d)}</div></div>`).join('')}</div>`:''}
     <div class="mrd-grid">
       <div class="mrd-card"><div class="mrd-card-label">Cultura & culinária</div><div class="mrd-card-val">${esc(reg.culinaria)}</div></div>
       <div class="mrd-card" style="border-left:2px solid #2a8a2a"><div class="mrd-card-label" style="color:#4a8a4a">🇧🇷 Conexão com o Brasil</div><div class="mrd-card-val">${esc(reg.brasil)}</div></div>
@@ -2919,7 +2999,7 @@ function selectMapRegion(id){
 function buildMundoListFilter(){
   const el=document.getElementById('listFilter'); if(!el)return;
   el.innerHTML='';
-  const regionMap={china:'Ásia',japao:'Ásia',india:'Ásia',srilanka:'Ásia',taiwan:'Ásia',georgia:'Ásia',kenya:'África',turquia:'Ásia',marrocos:'África',russia:'Europa',uk:'Europa',brasil:'Américas'};
+  const regionMap={china:'Ásia',japao:'Ásia',india:'Ásia',srilanka:'Ásia',taiwan:'Ásia',georgia:'Ásia',kenya:'África',turquia:'Ásia',marrocos:'África',russia:'Europa',uk:'Europa',brasil:'Américas',argentina:'Américas',sudafrica:'África',egito:'África'};
   ['Todos','Ásia','Europa','África','Américas'].forEach(r=>{
     const b=document.createElement('button');
     b.className='mfl-btn'+(mundoListFilter===r?' on':'');
@@ -2930,7 +3010,7 @@ function buildMundoListFilter(){
 }
 
 function renderMundoList(){
-  const regionMap={china:'Ásia',japao:'Ásia',india:'Ásia',srilanka:'Ásia',taiwan:'Ásia',georgia:'Ásia',kenya:'África',turquia:'Ásia',marrocos:'África',russia:'Europa',uk:'Europa',brasil:'Américas'};
+  const regionMap={china:'Ásia',japao:'Ásia',india:'Ásia',srilanka:'Ásia',taiwan:'Ásia',georgia:'Ásia',kenya:'África',turquia:'Ásia',marrocos:'África',russia:'Europa',uk:'Europa',brasil:'Américas',argentina:'Américas',sudafrica:'África',egito:'África'};
   const list=MUNDO_REGIONS.filter(r=>mundoListFilter==='Todos'||regionMap[r.id]===mundoListFilter);
   const el=document.getElementById('mundoListContent'); if(!el)return;
   el.innerHTML=list.map(r=>`
@@ -2942,11 +3022,14 @@ function renderMundoList(){
       </div>
       <div class="mcb-body" id="mcb_${r.id}">
         <p style="font-size:.82rem;color:var(--cream2);line-height:1.7;margin-bottom:.75rem">${esc(r.desc)}</p>
+        <div style="font-size:.6rem;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem">Chás & Infusões</div>
         ${r.chas.map(c=>`<div class="mrd-cha-row"><div style="flex:1">
           <div class="mrd-cha-name">${esc(c.n)} <span class="mrd-cha-badge" style="background:${c.badge}22;border:0.5px solid ${c.badge}44;color:${c.badge}">${esc(c.tipo)}</span></div>
           <div class="mrd-cha-desc">${esc(c.d)}</div>
           ${c.reg?`<div style="font-size:.65rem;color:var(--muted);margin-top:2px">📍 ${esc(c.reg)}</div>`:''}
         </div></div>`).join('')}
+        ${r.ervas?`<div style="font-size:.6rem;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);margin:.75rem 0 .4rem">Ervas & Plantas Locais</div>
+        <div class="mrd-ervas-grid">${r.ervas.map(e=>`<div class="mrd-erva-item"><div class="mrd-erva-name">🌿 ${esc(e.n)}</div><div class="mrd-erva-desc">${esc(e.d)}</div></div>`).join('')}</div>`:''}
         <div style="margin-top:.75rem;padding:.75rem;background:rgba(42,138,42,.06);border:0.5px solid rgba(42,138,42,.2);border-radius:var(--r-md);font-size:.75rem;color:var(--cream2)">
           <span style="color:#4a8a4a;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase">🇧🇷 Conexão com o Brasil</span><br>${esc(r.brasil)}
         </div>
