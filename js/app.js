@@ -862,7 +862,12 @@ function toggleFav(e,id){
   else favorites.push(id);
   localStorage.setItem('erb_favs',JSON.stringify(favorites));
   renderHerbs();
-  toast(favorites.includes(id)?'Adicionado aos favoritos':'Removido dos favoritos');
+  const now=favorites.includes(id);
+  document.querySelectorAll(`[data-fav-herb="${id}"]`).forEach(btn=>{
+    btn.textContent=now?'♥ Favorito':'♡ Favoritar';
+    btn.classList.toggle('on',now);
+  });
+  toast(now?'Adicionado aos favoritos':'Removido dos favoritos');
 }
 
 function renderFavs(){
@@ -935,6 +940,9 @@ function toggleTrayModal(id){
     if(btn.classList.contains('hc-blend')){
       btn.textContent=now?'✓':'＋';
       btn.classList.toggle('on',now);
+    } else if(btn.classList.contains('fav-blend-btn')){
+      btn.textContent=now?'✓':'＋';
+      btn.classList.toggle('in-tray',now);
     } else {
       btn.textContent=now?'✓ Selecionado para blend':'＋ Selecionar para blend';
       btn.classList.toggle('in-tray',now);
