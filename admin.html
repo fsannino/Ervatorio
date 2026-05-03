@@ -37,6 +37,7 @@
     <div class="adm-nav-item" data-sec="suppliers" onclick="showSection('suppliers')"><span class="icon">🏪</span> Fornecedores</div>
     <div class="adm-nav-item" data-sec="news" onclick="showSection('news')"><span class="icon">📰</span> Notícias</div>
     <div class="adm-nav-item" data-sec="fichas" onclick="showSection('fichas')"><span class="icon">📖</span> Fichas editoriais</div>
+    <div class="adm-nav-item" data-sec="chazerias" onclick="showSection('chazerias')"><span class="icon">🗺</span> Chazerias</div>
     <div class="adm-nav-item" data-sec="orders" onclick="showSection('orders')"><span class="icon">🧾</span> Pedidos</div>
     <div class="adm-nav-sep"></div>
     <div class="adm-nav-item" onclick="window.location='/'"><span class="icon">🍵</span> Ir ao App</div>
@@ -211,7 +212,75 @@
       </div>
     </div>
 
+    <!-- ════════ CHAZERIAS ════════ -->
+    <div class="adm-section" id="sec-chazerias" style="display:none">
+      <div class="adm-header">
+        <div><div class="adm-title">Chazerias</div><div class="adm-subtitle">Guia global de locais de chá e ervas</div></div>
+        <button class="adm-btn primary" onclick="openChazForm(null)">+ Nova chazeria</button>
+      </div>
+      <div class="adm-table-wrap">
+        <table class="adm-table">
+          <thead><tr><th>Nome</th><th>Cidade / País</th><th>Continente</th><th>Tipo</th><th>Lat/Lng</th><th>Status</th><th>Ações</th></tr></thead>
+          <tbody id="chazBody"><tr><td colspan="7" style="text-align:center;padding:2rem;color:var(--adm-muted)">Carregando...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
   </main>
+</div>
+
+<!-- CHAZERIA FORM MODAL -->
+<div id="chazModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:9000;align-items:center;justify-content:center;padding:1rem">
+  <div style="background:#1e1810;border:0.5px solid rgba(200,168,75,.3);border-radius:12px;padding:1.5rem;width:100%;max-width:680px;max-height:90vh;overflow-y:auto">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem">
+      <div class="adm-title" id="chazFormTitle">Nova Chazeria</div>
+      <button onclick="closeChazForm()" style="background:none;border:none;color:#888;font-size:1.2rem;cursor:pointer">✕</button>
+    </div>
+    <input type="hidden" id="chazId">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div style="grid-column:1/-1"><label class="adm-form-label">Nome *</label><input class="adm-form-input" id="chazName" placeholder="Ex: Ateliê do Chá"></div>
+      <div><label class="adm-form-label">Cidade *</label><input class="adm-form-input" id="chazCity" placeholder="São Paulo"></div>
+      <div><label class="adm-form-label">País *</label><input class="adm-form-input" id="chazCountry" placeholder="Brasil"></div>
+      <div><label class="adm-form-label">Continente</label>
+        <select class="adm-form-input" id="chazContinent">
+          <option value="América do Sul">América do Sul</option>
+          <option value="América do Norte">América do Norte</option>
+          <option value="Europa">Europa</option>
+          <option value="Ásia">Ásia</option>
+          <option value="Oceania">Oceania</option>
+          <option value="África">África</option>
+          <option value="Oriente Médio">Oriente Médio</option>
+        </select>
+      </div>
+      <div><label class="adm-form-label">Tipo</label>
+        <select class="adm-form-input" id="chazType">
+          <option value="chazeria">Chazeria</option>
+          <option value="ervateiro">Ervateiro</option>
+          <option value="mercado">Mercado de Ervas</option>
+          <option value="spa">Spa & Bem-estar</option>
+          <option value="restaurante">Restaurante</option>
+          <option value="hotel">Hotel</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+      <div style="grid-column:1/-1"><label class="adm-form-label">Endereço</label><input class="adm-form-input" id="chazAddress" placeholder="Rua, número, bairro"></div>
+      <div><label class="adm-form-label">Latitude</label><input class="adm-form-input" id="chazLat" type="number" step="any" placeholder="-23.5616"></div>
+      <div><label class="adm-form-label">Longitude</label><input class="adm-form-input" id="chazLng" type="number" step="any" placeholder="-46.6674"></div>
+      <div style="grid-column:1/-1"><label class="adm-form-label">Descrição</label><textarea class="adm-form-input" id="chazDesc" rows="2" placeholder="Breve descrição do local..." style="resize:vertical"></textarea></div>
+      <div style="grid-column:1/-1"><label class="adm-form-label">Citação</label><textarea class="adm-form-input" id="chazQuote" rows="2" placeholder="Frase de especialista ou guia..." style="resize:vertical"></textarea></div>
+      <div style="grid-column:1/-1"><label class="adm-form-label">Autor da citação</label><input class="adm-form-input" id="chazQuoteAuthor" placeholder="Ex: Revista VEJA SP"></div>
+      <div><label class="adm-form-label">Horário</label><input class="adm-form-input" id="chazHours" placeholder="Seg–Sex 10h–19h"></div>
+      <div><label class="adm-form-label">Pagamento</label><input class="adm-form-input" id="chazPayment" placeholder="Cartão, PIX, dinheiro"></div>
+      <div><label class="adm-form-label">Estilo</label><input class="adm-form-input" id="chazStyle" placeholder="Chá + pequenos-almoços"></div>
+      <div><label class="adm-form-label">Telefone</label><input class="adm-form-input" id="chazPhone" placeholder="+55 11 9999-9999"></div>
+      <div style="grid-column:1/-1"><label class="adm-form-label">Website</label><input class="adm-form-input" id="chazWebsite" placeholder="https://..."></div>
+      <div><label class="adm-form-label" style="display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" id="chazActive" checked> Ativo (visível no app)</label></div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:1.25rem;justify-content:flex-end">
+      <button class="adm-btn" onclick="closeChazForm()">Cancelar</button>
+      <button class="adm-btn primary" onclick="saveChaz()">Salvar</button>
+    </div>
+  </div>
 </div>
 
 <!-- FICHA FORM -->

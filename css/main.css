@@ -1083,3 +1083,47 @@ select.pc-input option{background:var(--bg2);color:var(--cream)}
 .sabores-card-icon{font-size:2.2rem;color:var(--gold2);line-height:1}
 .sabores-card-title{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--gold2);font-weight:400}
 .sabores-card-desc{color:var(--cream2);font-size:.82rem;line-height:1.5;max-width:28ch}
+
+/* ══════════════════════════════════════════════
+   GUIA DE CHAZERIAS
+══════════════════════════════════════════════ */
+/* Leaflet marker override */
+.chaz-marker{width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;background:rgba(26,20,16,.85);border:1.5px solid #c8a84b;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.5)}
+/* Leaflet popup dark theme */
+.leaflet-popup-content-wrapper{background:var(--bg3,#1a1410);border:0.5px solid rgba(200,168,75,.3);color:var(--cream,#e8dcc8);border-radius:8px;font-family:'Jost',sans-serif;font-size:.82rem}
+.leaflet-popup-tip{background:var(--bg3,#1a1410)}
+.leaflet-popup-close-button{color:var(--muted,#8a7a6a)!important}
+/* Continent / country headings */
+.chaz-continent{margin-bottom:2rem}
+.chaz-continent-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--gold2);font-weight:300;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:0.5px solid rgba(200,168,75,.2)}
+.chaz-country{margin-bottom:1.5rem}
+.chaz-country-title{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
+.chaz-country-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+/* Cards */
+.chaz-card{background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);padding:1.25rem;transition:border-color .2s}
+.chaz-card:hover{border-color:rgba(200,168,75,.25)}
+.chaz-card-header{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:.35rem}
+.chaz-card-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--cream);font-weight:400;line-height:1.2}
+.chaz-card-city{font-size:.72rem;color:var(--muted);margin-bottom:.75rem}
+.chaz-card-desc{font-size:.82rem;color:var(--cream2);line-height:1.55;margin-bottom:.75rem}
+.chaz-card-quote{margin:.75rem 0;padding-left:.75rem;border-left:2px solid rgba(200,168,75,.35);font-style:italic;font-size:.82rem;color:var(--cream2);line-height:1.5}
+.chaz-card-quote cite{display:block;font-size:.72rem;color:var(--muted);font-style:normal;margin-top:.25rem}
+.chaz-card-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:.75rem;font-size:.72rem;color:var(--muted)}
+.chaz-card-meta span,.chaz-website{padding:3px 8px;background:rgba(255,255,255,.04);border:0.5px solid var(--faint);border-radius:var(--r-sm)}
+.chaz-website{color:var(--gold2);text-decoration:none}
+.chaz-website:hover{border-color:rgba(200,168,75,.4)}
+/* Type badge */
+.chaz-type-badge{flex-shrink:0;font-size:.62rem;padding:3px 8px;border-radius:999px;border:0.5px solid;white-space:nowrap}
+.chaz-type-chazeria{background:rgba(200,168,75,.1);border-color:rgba(200,168,75,.3);color:#c8a84b}
+.chaz-type-ervateiro{background:rgba(80,160,80,.1);border-color:rgba(80,160,80,.3);color:#80c890}
+.chaz-type-mercado{background:rgba(80,130,200,.1);border-color:rgba(80,130,200,.3);color:#90b8e8}
+.chaz-type-spa{background:rgba(180,80,160,.1);border-color:rgba(180,80,160,.3);color:#d090c8}
+.chaz-type-restaurante,.chaz-type-hotel,.chaz-type-outro{background:rgba(255,255,255,.04);border-color:var(--faint);color:var(--muted)}
+/* Map button */
+.chaz-map-btn{margin-top:.75rem;padding:6px 12px;background:none;border:0.5px solid var(--faint);border-radius:var(--r-sm);color:var(--muted);font-size:.72rem;cursor:pointer;transition:all .2s}
+.chaz-map-btn:hover{border-color:rgba(200,168,75,.35);color:var(--gold2)}
+/* Empty state */
+.chaz-empty{text-align:center;padding:3rem 1rem;color:var(--muted);font-size:.88rem;line-height:1.6}
+/* Light mode */
+body.light .chaz-card{background:var(--bg2);border-color:var(--faint)}
+body.light .leaflet-popup-content-wrapper{background:#f5f0e8;color:#2a1e0a}
