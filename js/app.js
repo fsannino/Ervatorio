@@ -2444,7 +2444,9 @@ function mktCard(p){
   const badgeHtml=p.badge==='new'?'<span class="mkt-badge mkt-badge-new">Novo</span>':p.badge==='exp'?'<span class="mkt-badge mkt-badge-exp">Experiência</span>':p.badge==='eco'?'<span class="mkt-badge mkt-badge-eco">Orgânico</span>':'';
   const testBadge=p.is_test?'<span class="mkt-badge" style="background:rgba(100,100,200,.15);color:#a0a8e0;border:1px solid rgba(100,100,200,.3)">TESTE</span>':'';
   const imgs=p.images&&p.images.length?p.images:[];
-  const mediaHtml=imgs[0]?`<img src="${imgs[0]}" data-img-idx="0" data-pid="${p.id}" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<span style=\\"font-size:2.8rem\\">${p.icon}</span>')">`:`<span style="font-size:2.8rem">${p.icon}</span>`;
+  const mediaHtml=imgs[0]
+    ?`<img src="${imgs[0]}" data-img-idx="0" data-pid="${p.id}" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="font-size:2.8rem;display:none;align-items:center;justify-content:center;width:100%;height:100%">${p.icon}</span>`
+    :`<span style="font-size:2.8rem">${p.icon}</span>`;
   const dots=imgs.length>1?`<div class="mkt-img-dots">${imgs.map((_,i)=>`<span class="mkt-img-dot${i===0?' on':''}" data-i="${i}"></span>`).join('')}</div>`:'';
   return `<div class="mkt-card">
     <div class="mkt-card-media" style="background:${typeColor}18;position:relative;cursor:${imgs.length>1?'pointer':'default'}" onclick="cycleCardImg(this,${p.id})">${mediaHtml}${dots}</div>
@@ -2484,11 +2486,12 @@ function openMktDetail(pid){
   const inCart=cart.some(c=>c.id===p.id);
   const testBadge=p.is_test?'<span class="mkt-badge" style="background:rgba(100,100,200,.15);color:#a0a8e0;border:1px solid rgba(100,100,200,.3);margin-left:6px">TESTE</span>':'';
   const photoHtml=imgs[0]
-    ?`<div id="mktDetailPhoto" style="width:100%;aspect-ratio:4/3;background:#111;border-radius:var(--r-lg);overflow:hidden;margin-bottom:.75rem">
-        <img id="mktDetailImg" src="${imgs[0]}" data-idx="0" style="width:100%;height:100%;object-fit:cover">
-       </div>
-       ${imgs.length>1?`<div class="mkt-img-dots" style="justify-content:center;margin-bottom:1rem">${imgs.map((_,i)=>`<span class="mkt-img-dot${i===0?' on':''}" onclick="switchDetailImg(${i})" style="cursor:pointer"></span>`).join('')}</div>`:''}
-      `
+    ?`<div style="position:relative;width:100%;border-radius:var(--r-lg);overflow:hidden;margin-bottom:.75rem">
+        <div id="mktDetailPhoto" style="width:100%;aspect-ratio:4/3;background:#111">
+          <img id="mktDetailImg" src="${imgs[0]}" data-idx="0" style="width:100%;height:100%;object-fit:cover">
+        </div>
+        ${imgs.length>1?`<div class="mkt-img-dots">${imgs.map((_,i)=>`<span class="mkt-img-dot${i===0?' on':''}" onclick="switchDetailImg(${i})" style="cursor:pointer"></span>`).join('')}</div>`:''}
+      </div>`
     :`<div style="width:100%;aspect-ratio:4/3;background:${typeColor}18;border-radius:var(--r-lg);display:flex;align-items:center;justify-content:center;font-size:5rem;margin-bottom:.75rem">${p.icon}</div>`;
   const existing=document.getElementById('mktDetailOverlay');
   if(existing)existing.remove();
