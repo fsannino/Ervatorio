@@ -67,6 +67,7 @@ Deno.serve(async (req) => {
         id: it.product_id || undefined,
         title: it.product_name,
         description: it.product_unit || undefined,
+        category_id: 'food',
         quantity: it.qty,
         unit_price: it.unit_price_cents / 100,   // MP usa reais, não centavos
         currency_id: order.currency || 'BRL',
