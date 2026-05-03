@@ -934,7 +934,7 @@ function toggleTrayModal(id){
     btn.textContent=now?'✓ Selecionado para blend':'＋ Selecionar para blend';
     btn.classList.toggle('in-tray',now);
   });
-  if(now) toastLink('Adicionado ao blend','Ver blend →',()=>goPage('blends'));
+  if(now) toastLink('Adicionado ao blend','Ver blend →',()=>{ goPage('blends'); if(typeof switchBlendTab==='function') switchBlendTab('assistente'); });
   else toast('Removido do blend');
 }
 

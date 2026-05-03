@@ -2025,6 +2025,11 @@
 
   <!-- TAB 1: Assistente (ex Blend IA) -->
   <div id="blendPanelAssist" style="display:none">
+    <div class="blend-tray" id="blendTray">
+      <div class="tray-title">Ervas selecionadas para o blend</div>
+      <div class="tray-items" id="trayItems"><span class="tray-empty">Selecione ervas nas fichas do Ervatório para montar seu blend</span></div>
+    </div>
+
     <div class="blend-wizard">
       <div class="wizard-title">O que você está sentindo?</div>
       <div class="wizard-row" id="wizSintomas"></div>
@@ -2035,11 +2040,6 @@
       <div class="wizard-title" style="margin-top:.75rem">Observações</div>
       <input class="wizard-input" id="wizObs" placeholder="Ex: estou grávida, tenho pressão alta, prefiro sem cafeína...">
       <button class="gen-btn" onclick="generateBlend()">✦ Criar minha infusão personalizada</button>
-    </div>
-
-    <div class="blend-tray" id="blendTray">
-      <div class="tray-title">Ervas no blend</div>
-      <div class="tray-items" id="trayItems"><span class="tray-empty">Adicione ervas da busca ao blend</span></div>
     </div>
 
     <div id="blendResult"></div>
