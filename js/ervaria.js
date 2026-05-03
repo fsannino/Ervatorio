@@ -470,6 +470,8 @@ const ervaria = {
         if (typeof row.price === 'number') existing.price = row.price;
         else if (row.price) existing.price = parseFloat(row.price) || existing.price;
         if (row.stock) existing.stock = row.stock;
+        if (row.images && row.images.length) existing.images = row.images;
+        if (row.is_test != null) existing.is_test = row.is_test;
         matched++;
         return;
       }
@@ -492,6 +494,8 @@ const ervaria = {
         desc: row.description || '',
         badge: '',
         stock: row.stock || 'in',
+        images: row.images || [],
+        is_test: row.is_test || false,
       };
       MKT_PRODUCTS.push(item);
       byName.set(normalize(row.name), item);
