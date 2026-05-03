@@ -144,6 +144,26 @@
         (Array.isArray(f.destaques) && f.destaques.length ?
           '<ul class="ficha-destaques">' + f.destaques.map(function(d) { return '<li><strong>' + safeEsc(d.label) + '</strong> ' + safeEsc(d.texto) + '</li>'; }).join('') + '</ul>' : '') +
       '</div>' +
+      (function() {
+        var _nrm = function(s) { return String(s || '').normalize('NFC').toLowerCase().trim(); };
+        var fichaHerb = (typeof HERBS !== 'undefined' && Array.isArray(HERBS)) ? HERBS.find(function(h) {
+          return _nrm(h.n) === _nrm(f.nome_popular) ||
+            (h.lat && f.nome_cientifico && _nrm(f.nome_cientifico).startsWith(_nrm(h.lat.split(' ').slice(0, 2).join(' '))));
+        }) : null;
+        if (!fichaHerb && f.nome_popular) {
+          var _stableId = function(n) { var h = 5381; for (var i = 0; i < n.length; i++) h = ((h << 5) + h) ^ n.charCodeAt(i); return (h >>> 0) % 90000 + 10000; };
+          var newId = _stableId(f.nome_popular);
+          fichaHerb = { id: newId, n: f.nome_popular, lat: f.nome_cientifico || '', icon: '🌿', cat: '', ef: '', tags: [], safe: [], avoid: [], temp: pr.temperatura_ideal || '', tempo: pr.tempo_de_infusao || '', dose: pr.quantidade || '', freq: pr.melhor_momento || '', tagline: f.tagline || '' };
+          if (typeof HERBS !== 'undefined' && !HERBS.find(function(h) { return h.id === newId; })) HERBS.push(fichaHerb);
+        }
+        if (!fichaHerb) return '';
+        var herbId = fichaHerb.id;
+        var tray = (typeof blendTray !== 'undefined' && Array.isArray(blendTray)) ? blendTray : [];
+        var inTray = tray.includes(herbId);
+        return '<button data-blend-herb="' + herbId + '" class="modal-blend-toggle' + (inTray ? ' in-tray' : '') + '" onclick="toggleTrayModal(' + herbId + ')">' +
+          (inTray ? '✓ Selecionado para blend' : '＋ Selecionar para blend') +
+          '</button>';
+      })() +
       '</header>';
 
     html += '<div class="ficha-page-body">';
