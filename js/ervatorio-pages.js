@@ -159,10 +159,17 @@
         if (!fichaHerb) return '';
         var herbId = fichaHerb.id;
         var tray = (typeof blendTray !== 'undefined' && Array.isArray(blendTray)) ? blendTray : [];
+        var favs = (typeof favorites !== 'undefined' && Array.isArray(favorites)) ? favorites : [];
         var inTray = tray.includes(herbId);
-        return '<button data-blend-herb="' + herbId + '" class="modal-blend-toggle' + (inTray ? ' in-tray' : '') + '" onclick="toggleTrayModal(' + herbId + ')">' +
+        var inFav = favs.includes(herbId);
+        return '<div class="ficha-action-row">' +
+          '<button data-fav-herb="' + herbId + '" class="ficha-fav-btn' + (inFav ? ' on' : '') + '" onclick="toggleFichaFav(' + herbId + ')">' +
+          (inFav ? '♥ Favorito' : '♡ Favoritar') +
+          '</button>' +
+          '<button data-blend-herb="' + herbId + '" class="modal-blend-toggle' + (inTray ? ' in-tray' : '') + '" style="flex:1" onclick="toggleTrayModal(' + herbId + ')">' +
           (inTray ? '✓ Selecionado para blend' : '＋ Selecionar para blend') +
-          '</button>';
+          '</button>' +
+          '</div>';
       })() +
       '</header>';
 

@@ -690,9 +690,14 @@ function renderFichaModal(f){
             ${f.destaques.map(d=>`<li><strong>${esc(d.label)}</strong> ${esc(d.texto)}</li>`).join('')}
           </ul>`:''}
         ${fichaHerbId!==null?`
-          <button data-blend-herb="${fichaHerbId}" class="modal-blend-toggle${blendTray.includes(fichaHerbId)?' in-tray':''}" onclick="toggleTrayModal(${fichaHerbId})">
-            ${blendTray.includes(fichaHerbId)?'✓ Selecionado para blend':'＋ Selecionar para blend'}
-          </button>`:''}
+          <div class="ficha-action-row">
+            <button data-fav-herb="${fichaHerbId}" class="ficha-fav-btn${favorites.includes(fichaHerbId)?' on':''}" onclick="toggleFichaFav(${fichaHerbId})">
+              ${favorites.includes(fichaHerbId)?'♥ Favorito':'♡ Favoritar'}
+            </button>
+            <button data-blend-herb="${fichaHerbId}" class="modal-blend-toggle${blendTray.includes(fichaHerbId)?' in-tray':''}" onclick="toggleTrayModal(${fichaHerbId})" style="flex:1">
+              ${blendTray.includes(fichaHerbId)?'✓ Selecionado para blend':'＋ Selecionar para blend'}
+            </button>
+          </div>`:''}
       </header>
 
       ${ac.alerta_critico?`
@@ -869,7 +874,14 @@ function renderFavs(){
         ? `<img class="fav-img" src="${h.img}" data-responsive="${h.img}" alt="${esc(h.n)}" loading="lazy" decoding="async" onerror="this.outerHTML='<div class=\\'fav-icon\\'>${h.icon}</div>'">`
         : `<div class="fav-icon">${h.icon}</div>`
       }
-      <div><div class="fav-name">${esc(h.n)}</div><div class="fav-lat">${esc(h.lat)}</div><div class="fav-ef">${esc(h.ef.substring(0,50))}...</div></div>
+      <div style="flex:1;min-width:0">
+        <div class="fav-name">${esc(h.n)}</div>
+        <div class="fav-lat">${esc(h.lat)}</div>
+        <div class="fav-ef">${esc(h.ef.substring(0,50))}...</div>
+      </div>
+      <button class="fav-blend-btn${blendTray.includes(h.id)?' in-tray':''}" data-blend-herb="${h.id}" onclick="event.stopPropagation();toggleTrayModal(${h.id})" title="Adicionar ao blend">
+        ${blendTray.includes(h.id)?'✓':'＋'}
+      </button>
     </div>`).join(''); }
   const sr=document.getElementById('savedRecipes');
   if(savedRecipes.length){
@@ -896,6 +908,20 @@ function deleteSavedRecipe(i){
   renderFavs();
 }
 
+// Favoritar a partir de uma ficha (overlay ou página completa)
+function toggleFichaFav(id){
+  if(favorites.includes(id)) favorites=favorites.filter(f=>f!==id);
+  else favorites.push(id);
+  localStorage.setItem('erb_favs',JSON.stringify(favorites));
+  renderHerbs();
+  const now=favorites.includes(id);
+  document.querySelectorAll(`[data-fav-herb="${id}"]`).forEach(btn=>{
+    btn.textContent=now?'♥ Favorito':'♡ Favoritar';
+    btn.classList.toggle('on',now);
+  });
+  toast(now?'Adicionado aos favoritos':'Removido dos favoritos');
+}
+
 // ── BLEND TRAY ──
 function toggleTrayModal(id){
   const inTray=blendTray.includes(id);
@@ -908,7 +934,8 @@ function toggleTrayModal(id){
     btn.textContent=now?'✓ Selecionado para blend':'＋ Selecionar para blend';
     btn.classList.toggle('in-tray',now);
   });
-  toast(now?'Adicionado ao blend':'Removido do blend');
+  if(now) toastLink('Adicionado ao blend','Ver blend →',()=>goPage('blends'));
+  else toast('Removido do blend');
 }
 
 function addToTray(id){
@@ -1692,7 +1719,8 @@ function timerNext(){
   renderTimerStep();
 }
 let toastTimer;
-function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove('show'),2500); }
+function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.onclick=null; t.classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove('show'),2500); }
+function toastLink(msg,linkLabel,cb){ const t=document.getElementById('toast'); t.innerHTML=`${esc(msg)} <span style="color:var(--gold2);text-decoration:underline;cursor:pointer">${esc(linkLabel)}</span>`; t.onclick=()=>{ t.classList.remove('show'); cb(); }; t.classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>{t.classList.remove('show');t.onclick=null;},3500); }
 
 // ════════════════════════════════════════
 // ── CONSTRUTOR DE BLEND ──
