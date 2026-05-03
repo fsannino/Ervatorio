@@ -84,6 +84,14 @@ const SEO_META = {
     de: { title:'Ervopedia — Botanischer Katalog | Ervatório', desc:'Vollständige Enzyklopädie brasilianischer Heilkräuter: Herkunft, Wirkung, Zubereitung, Kontraindikationen.' },
     fr: { title:'Ervopédia — Catalogue Botanique | Ervatório', desc:'Encyclopédie complète des herbes médicinales brésiliennes : origine, effets, préparation, contre-indications.' },
   },
+  caminho: {
+    pt: { title:'Caminho do Chazeiro — Selos e Conquistas | Ervatório', desc:'Acompanhe sua jornada no Ervatório: badges conquistados, nível de conhecimento e progresso botânico.' },
+    en: { title:'Chazeiro\'s Path — Badges & Achievements | Ervatório', desc:'Track your Ervatório journey: earned badges, knowledge level and botanical progress.' },
+    es: { title:'Camino del Chazeiro — Sellos y Logros | Ervatório', desc:'Sigue tu camino en el Ervatório: badges conquistados, nivel y progreso botánico.' },
+    ja: { title:'チャゼイロの道 — バッジと実績 | Ervatório', desc:'エルバトリオの旅を追跡：獲得したバッジ、知識レベル、植物の進歩。' },
+    de: { title:'Pfad des Chazeiro — Abzeichen & Errungenschaften | Ervatório', desc:'Verfolge deine Ervatório-Reise: verdiente Abzeichen, Wissensstufe und botanischen Fortschritt.' },
+    fr: { title:'Parcours du Chazeiro — Badges & Accomplissements | Ervatório', desc:'Suivez votre parcours Ervatório : badges gagnés, niveau de connaissance et progrès botanique.' },
+  },
 };
 
 const SEO_DEFAULT = {

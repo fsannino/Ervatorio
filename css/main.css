@@ -1423,3 +1423,56 @@ body.light .leaflet-popup-content-wrapper{background:#f5f0e8;color:#2a1e0a}
   .quiz-result-name{font-size:2.1rem}
   .quiz-result-visual{width:200px;height:200px}
 }
+
+/* ════════════════════════════════════════════════════════════════
+   CAMINHO DO CHAZEIRO — Badges & Progress
+   ══════════════════════════════════════════════════���═════════════ */
+
+/* ── Hero section ───────────────────���────────────────────────── */
+.caminho-hero{text-align:center;padding:1.5rem 1rem 2rem;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);margin-bottom:2rem}
+.caminho-level-icon{font-size:3.2rem;margin-bottom:.4rem;line-height:1}
+.caminho-level-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--gold2);font-weight:400;margin-bottom:.2rem}
+.caminho-level-desc{font-size:.82rem;color:var(--muted);margin-bottom:1.2rem}
+
+/* ── Progress bar ─────────────────────���──────────────────────���─ */
+.caminho-progress-wrap{margin:0 auto 1.25rem;max-width:400px}
+.caminho-progress-bar{height:6px;background:var(--faint);border-radius:3px;overflow:hidden;margin-bottom:.4rem}
+.caminho-progress-fill{height:100%;border-radius:3px;transition:width .6s ease}
+.caminho-progress-labels{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted)}
+
+/* ── Stats row ───────────────────────────────────────────────── */
+.caminho-stats-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}
+.caminho-stat{text-align:center;min-width:70px}
+.caminho-stat-val{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--gold2);font-weight:400;line-height:1}
+.caminho-stat-lbl{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+
+/* ── Category section ─────────────────────────────���──────────── */
+.caminho-cat-section{margin-bottom:2rem}
+.caminho-cat-header{display:flex;align-items:center;gap:.5rem;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:0.5px solid var(--faint)}
+.caminho-cat-icon{font-size:1.1rem}
+.caminho-cat-label{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--cream);font-weight:400;flex:1}
+.caminho-cat-count{font-size:.75rem;color:var(--muted);background:var(--bg3);padding:2px 8px;border-radius:10px;border:0.5px solid var(--faint)}
+
+/* ── Badges grid ─────────────────────────────────────────────── */
+.badges-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.75rem}
+.badge-card{padding:.9rem .75rem;border-radius:var(--r-md);border:0.5px solid var(--faint);text-align:center;transition:all .2s;position:relative;overflow:hidden}
+.badge-card.earned{background:var(--bg3);border-color:rgba(200,168,75,.3)}
+.badge-card.earned:hover{border-color:rgba(200,168,75,.6);transform:translateY(-2px)}
+.badge-card.locked{background:rgba(0,0,0,.15);opacity:.5}
+.badge-icon{font-size:1.8rem;margin-bottom:.4rem;line-height:1}
+.badge-name{font-size:.8rem;font-weight:500;color:var(--cream);margin-bottom:.3rem;line-height:1.2}
+.badge-desc{font-size:.7rem;color:var(--muted);line-height:1.3}
+.badge-earned-tag{position:absolute;top:6px;right:6px;font-size:.58rem;color:var(--gold);background:rgba(200,168,75,.15);padding:1px 5px;border-radius:4px;letter-spacing:.06em;text-transform:uppercase}
+
+/* ── Badge toast notification ───────────────────────���────────── */
+.badge-toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--bg3);border:0.5px solid rgba(200,168,75,.5);border-radius:var(--r-lg);padding:.75rem 1.25rem;display:flex;align-items:center;gap:.75rem;z-index:9999;opacity:0;transition:all .35s ease;box-shadow:0 8px 32px rgba(0,0,0,.4);max-width:320px;width:90%}
+.badge-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.badge-toast-icon{font-size:1.8rem;flex-shrink:0}
+.badge-toast-title{font-size:.65rem;color:var(--gold);text-transform:uppercase;letter-spacing:.1em;margin-bottom:2px}
+.badge-toast-name{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--cream);font-weight:400}
+
+@media (max-width:480px){
+  .badges-grid{grid-template-columns:repeat(2,1fr)}
+  .caminho-stats-row{gap:.6rem}
+  .caminho-stat-val{font-size:1.5rem}
+}
