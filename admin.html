@@ -134,7 +134,7 @@
       </div>
       <div class="adm-table-wrap">
         <table class="adm-table">
-          <thead><tr><th>Fornecedor</th><th>Tipo</th><th>Cidade</th><th>Certificação</th><th>Ervas</th><th>Ações</th></tr></thead>
+          <thead><tr><th>Fornecedor</th><th>Tipo</th><th>CNPJ</th><th>Cidade</th><th>Categorias</th><th>Ações</th></tr></thead>
           <tbody id="suppliersBody"><tr><td colspan="6" style="text-align:center;padding:2rem;color:var(--adm-muted)">Carregando...</td></tr></tbody>
         </table>
       </div>
@@ -306,7 +306,7 @@
 
 <!-- PRODUCT FORM -->
 <div class="adm-modal-overlay" id="productModal" onclick="if(event.target===this)closeProductForm()">
-  <div class="adm-modal">
+  <div class="adm-modal" style="max-width:640px">
     <div class="adm-modal-title" id="productFormTitle">Novo Produto</div>
     <input type="hidden" id="pfId">
     <div class="adm-form-row">
@@ -317,22 +317,39 @@
     <div class="adm-form-row">
       <div class="adm-form-group"><label class="adm-form-label">Categoria</label>
         <select id="pfCategory" class="adm-form-input">
+          <option>Infusões</option><option>Equipamentos</option><option>Vivências</option><option>Viagens</option>
           <option>Folhas Secas</option><option>Blends</option><option>Chás Finos</option><option>Extratos</option>
           <option>Pós</option><option>Especiarias</option><option>Flores</option><option>Kits</option><option>Acessórios</option>
         </select>
       </div>
-      <div class="adm-form-group"><label class="adm-form-label">Preço (R$) *</label><input type="number" id="pfPrice" class="adm-form-input" placeholder="29.90" step="0.01"></div>
+      <div class="adm-form-group"><label class="adm-form-label">Fornecedor</label>
+        <select id="pfSupplierId" class="adm-form-input">
+          <option value="">— Sem fornecedor —</option>
+        </select>
+      </div>
     </div>
     <div class="adm-form-row">
+      <div class="adm-form-group"><label class="adm-form-label">Preço (R$) *</label><input type="number" id="pfPrice" class="adm-form-input" placeholder="29.90" step="0.01"></div>
       <div class="adm-form-group"><label class="adm-form-label">Unidade</label><input type="text" id="pfUnit" class="adm-form-input" placeholder="50g" value="50g"></div>
-      <div class="adm-form-group"><label class="adm-form-label">Fornecedor</label><input type="text" id="pfSupplier" class="adm-form-input" placeholder="Nome do fornecedor"></div>
     </div>
     <div class="adm-form-group"><label class="adm-form-label">Estoque</label>
       <select id="pfStock" class="adm-form-input">
         <option value="in">Em estoque</option><option value="low">Últimas unidades</option><option value="out">Esgotado</option>
       </select>
     </div>
-    <label class="adm-form-check"><input type="checkbox" id="pfActive" checked> Ativo (visível no marketplace)</label>
+    <div class="adm-form-group">
+      <label class="adm-form-label">Fotos do produto</label>
+      <div id="pfImagesWrap" style="display:flex;flex-direction:column;gap:6px">
+        <div style="display:flex;gap:6px;align-items:center"><input type="text" class="adm-form-input pf-img-url" placeholder="URL da foto 1 (cole o link ou faça upload)"><button type="button" class="adm-btn" onclick="triggerImageUpload(0)">⇧ Upload</button><input type="file" class="pf-img-file" accept="image/*" style="display:none" onchange="handleImageUpload(this,0)"></div>
+        <div style="display:flex;gap:6px;align-items:center"><input type="text" class="adm-form-input pf-img-url" placeholder="URL da foto 2 (opcional)"><button type="button" class="adm-btn" onclick="triggerImageUpload(1)">⇧ Upload</button><input type="file" class="pf-img-file" accept="image/*" style="display:none" onchange="handleImageUpload(this,1)"></div>
+        <div style="display:flex;gap:6px;align-items:center"><input type="text" class="adm-form-input pf-img-url" placeholder="URL da foto 3 (opcional)"><button type="button" class="adm-btn" onclick="triggerImageUpload(2)">⇧ Upload</button><input type="file" class="pf-img-file" accept="image/*" style="display:none" onchange="handleImageUpload(this,2)"></div>
+      </div>
+      <div id="pfImagesPreview" style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"></div>
+    </div>
+    <div style="display:flex;gap:1.5rem;margin-top:.25rem">
+      <label class="adm-form-check"><input type="checkbox" id="pfActive" checked> Ativo (visível no marketplace)</label>
+      <label class="adm-form-check"><input type="checkbox" id="pfIsTest"> Produto de teste</label>
+    </div>
     <div class="adm-form-actions">
       <button class="adm-btn" onclick="closeProductForm()">Cancelar</button>
       <button class="adm-btn primary" onclick="saveProduct()">Salvar</button>
@@ -367,7 +384,10 @@
   <div class="adm-modal">
     <div class="adm-modal-title" id="supplierFormTitle">Novo Fornecedor</div>
     <input type="hidden" id="sfId">
-    <div class="adm-form-group"><label class="adm-form-label">Nome *</label><input type="text" id="sfName" class="adm-form-input" placeholder="Ex: Ervas & Raízes"></div>
+    <div class="adm-form-row">
+      <div class="adm-form-group"><label class="adm-form-label">Nome *</label><input type="text" id="sfName" class="adm-form-input" placeholder="Ex: Ervas & Raízes"></div>
+      <div class="adm-form-group"><label class="adm-form-label">CNPJ</label><input type="text" id="sfCnpj" class="adm-form-input" placeholder="00.000.000/0001-00"></div>
+    </div>
     <div class="adm-form-row">
       <div class="adm-form-group"><label class="adm-form-label">Tipo</label><input type="text" id="sfType" class="adm-form-input" placeholder="Produtor Orgânico"></div>
       <div class="adm-form-group"><label class="adm-form-label">Cidade</label><input type="text" id="sfCity" class="adm-form-input" placeholder="São Paulo, SP"></div>
@@ -380,7 +400,19 @@
       <div class="adm-form-group"><label class="adm-form-label">Envio</label><input type="text" id="sfShip" class="adm-form-input" placeholder="Todo Brasil"></div>
       <div class="adm-form-group"><label class="adm-form-label">Pedido mínimo</label><input type="text" id="sfMinOrder" class="adm-form-input" placeholder="R$ 80"></div>
     </div>
-    <div class="adm-form-group"><label class="adm-form-label">Ervas (separar por vírgula)</label><input type="text" id="sfHerbs" class="adm-form-input" placeholder="Camomila, Melissa, Erva Cidreira"></div>
+    <div class="adm-form-group">
+      <label class="adm-form-label">Categorias de produtos</label>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:4px">
+        <label class="adm-form-check"><input type="checkbox" class="sf-cat" value="Ervas & Infusões"> Ervas & Infusões</label>
+        <label class="adm-form-check"><input type="checkbox" class="sf-cat" value="Infusões Premium"> Infusões Premium</label>
+        <label class="adm-form-check"><input type="checkbox" class="sf-cat" value="Equipamentos"> Equipamentos</label>
+        <label class="adm-form-check"><input type="checkbox" class="sf-cat" value="Blends Artesanais"> Blends Artesanais</label>
+        <label class="adm-form-check"><input type="checkbox" class="sf-cat" value="Vivências"> Vivências</label>
+        <label class="adm-form-check"><input type="checkbox" class="sf-cat" value="Viagens"> Viagens</label>
+        <label class="adm-form-check"><input type="checkbox" class="sf-cat" value="Chazeria"> Chazeria</label>
+        <label class="adm-form-check"><input type="checkbox" class="sf-cat" value="Outros"> Outros</label>
+      </div>
+    </div>
     <label class="adm-form-check"><input type="checkbox" id="sfActive" checked> Ativo</label>
     <div class="adm-form-actions">
       <button class="adm-btn" onclick="closeSupplierForm()">Cancelar</button>
