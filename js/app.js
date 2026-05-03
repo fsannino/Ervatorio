@@ -657,7 +657,16 @@ function renderFichaModal(f){
   const cu = f.cultura || {};
   const rg = f.regulacao || {};
   const mk = f.marketplace || {};
-  const fichaHerb = HERBS.find(h=>h.n===f.nome_popular||(f.nome_cientifico&&f.nome_cientifico.startsWith(h.lat.split(' ')[0]+' '+(h.lat.split(' ')[1]||''))));
+  const _nrm = s=>String(s||'').normalize('NFC').toLowerCase().trim();
+  let fichaHerb = HERBS.find(h=>
+    _nrm(h.n)===_nrm(f.nome_popular)||
+    (h.lat&&f.nome_cientifico&&_nrm(f.nome_cientifico).startsWith(_nrm(h.lat.split(' ').slice(0,2).join(' '))))
+  );
+  if(!fichaHerb&&f.nome_popular){
+    const _stableId=n=>{let h=5381;for(let i=0;i<n.length;i++)h=((h<<5)+h)^n.charCodeAt(i);return(h>>>0)%90000+10000;};
+    fichaHerb={id:_stableId(f.nome_popular),n:f.nome_popular,lat:f.nome_cientifico||'',icon:'🌿',cat:'',ef:'',tags:[],safe:[],avoid:[],temp:pr.temperatura_ideal||'',tempo:pr.tempo_de_infusao||'',dose:pr.quantidade||'',freq:pr.melhor_momento||'',tagline:f.tagline||''};
+    if(!HERBS.find(h=>h.id===fichaHerb.id))HERBS.push(fichaHerb);
+  }
   const fichaHerbId = fichaHerb ? fichaHerb.id : null;
   const listMaybe = (v) => Array.isArray(v) ? v.map(x=>`<li>${esc(x)}</li>`).join('') : (v?`<li>${esc(v)}</li>`:'');
   const paragraphs = (v) => Array.isArray(v) ? v.map(x=>`<p>${esc(x)}</p>`).join('') : (v?`<p>${esc(v)}</p>`:'');
