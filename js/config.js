@@ -19,6 +19,6 @@ window.ERVATORIO_CONFIG = Object.freeze({
   // Feature flag: false esconde o botao de checkout e mostra aviso de
   // manutencao no carrinho. Virar para true quando o Mercado Pago liberar
   // a conta de producao (chamado aberto em XX/XX/2026).
-  PAYMENTS_ENABLED: false,
+  PAYMENTS_ENABLED: true,
   PAYMENTS_DISABLED_MSG: 'Pagamentos em manutenção — voltaremos em breve',
 });
