@@ -21,6 +21,20 @@
 <meta name="twitter:title" content="Ervatório — Ervas do Brasil e do Mundo">
 <meta name="twitter:description" content="Curadoria botânica global de chás e infusões — ervas do Brasil e do mundo.">
 <meta name="twitter:image" content="/icon-512.png">
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Ervatório",
+  "description": "Curadoria botânica global de chás e ervas medicinais — Brasil e mundo.",
+  "url": "https://ervatorio.com.br",
+  "applicationCategory": "HealthApplication",
+  "inLanguage": ["pt-BR","en","es","ja","de","fr"],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
+  "author": { "@type": "Organization", "name": "Ervatório" }
+}
+</script>
 <!-- Apple Touch Icon -->
 <link rel="apple-touch-icon" href="/icon-192.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍵</text></svg>">
@@ -1859,35 +1873,36 @@
   <div class="nav-top">
     <a class="logo" href="#" onclick="backToLanding();return false" style="cursor:pointer;text-decoration:none" title="Voltar à página inicial">Ervatório</a>
     <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
+      <div id="langSwitcher" class="lang-switcher"></div>
       <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Alternar tema claro/escuro" aria-label="Alternar tema claro/escuro">☀</button>
-      <button id="ervaria-auth-btn" class="auth-btn" onclick="ervaria.showAuthModal()">⚷ Entrar</button>
+      <button id="ervaria-auth-btn" class="auth-btn" onclick="ervaria.showAuthModal()" data-i18n="ui.login">⚷ Entrar</button>
     </div>
   </div>
   <div class="nav-tabs">
-    <button class="nav-tab on" onclick="goPage('search',this)">Busca</button>
-    <button class="nav-tab" onclick="goPage('sabores',this)">Sabores</button>
-    <button class="nav-tab" onclick="goPage('roda-funcional',this)">Roda Funcional</button>
-    <button class="nav-tab" onclick="goPage('blends',this)">Blends</button>
-    <button class="nav-tab" onclick="goPage('chas',this)">Chás Tradicionais</button>
-    <button class="nav-tab" onclick="goPage('mundo',this)">Chás do Mundo</button>
-    <button class="nav-tab" onclick="goPage('chazerias',this)">Chazerias</button>
-    <button class="nav-tab" onclick="goPage('ferramentas',this)">Ferramentas</button>
-    <button class="nav-tab" onclick="goPage('quiz',this)">Quiz</button>
-    <button class="nav-tab" onclick="goPage('receitas',this)">Receitas</button>
-    <button class="nav-tab" onclick="goPage('jogo',this)">Jogo</button>
-    <button class="nav-tab" onclick="goPage('favs',this)">Favoritos</button>
-    <button class="nav-tab" onclick="goPage('suppliers',this)">Fornecedores</button>
-    <button class="nav-tab" onclick="goPage('marketplace',this)">Marketplace</button>
-    <button class="nav-tab" onclick="goPage('perfil',this)">Perfil</button>
-    <button class="nav-tab" onclick="goPage('ervatorio',this)">Ervopedia</button>
-    <button class="nav-tab" onclick="goPage('sobre',this)">Sobre</button>
+    <button class="nav-tab on" onclick="goPage('search',this)" data-i18n="nav.search">Busca</button>
+    <button class="nav-tab" onclick="goPage('sabores',this)" data-i18n="nav.flavors">Sabores</button>
+    <button class="nav-tab" onclick="goPage('roda-funcional',this)" data-i18n="nav.functional_wheel">Roda Funcional</button>
+    <button class="nav-tab" onclick="goPage('blends',this)" data-i18n="nav.blends">Blends</button>
+    <button class="nav-tab" onclick="goPage('chas',this)" data-i18n="nav.traditional_teas">Chás Tradicionais</button>
+    <button class="nav-tab" onclick="goPage('mundo',this)" data-i18n="nav.world_teas">Chás do Mundo</button>
+    <button class="nav-tab" onclick="goPage('chazerias',this)" data-i18n="nav.teahouses">Chazerias</button>
+    <button class="nav-tab" onclick="goPage('ferramentas',this)" data-i18n="nav.tools">Ferramentas</button>
+    <button class="nav-tab" onclick="goPage('quiz',this)" data-i18n="nav.quiz">Quiz</button>
+    <button class="nav-tab" onclick="goPage('receitas',this)" data-i18n="nav.recipes">Receitas</button>
+    <button class="nav-tab" onclick="goPage('jogo',this)" data-i18n="nav.game">Jogo</button>
+    <button class="nav-tab" onclick="goPage('favs',this)" data-i18n="nav.favorites">Favoritos</button>
+    <button class="nav-tab" onclick="goPage('suppliers',this)" data-i18n="nav.suppliers">Fornecedores</button>
+    <button class="nav-tab" onclick="goPage('marketplace',this)" data-i18n="nav.marketplace">Marketplace</button>
+    <button class="nav-tab" onclick="goPage('perfil',this)" data-i18n="nav.profile">Perfil</button>
+    <button class="nav-tab" onclick="goPage('ervatorio',this)" data-i18n="nav.encyclopedia">Ervopedia</button>
+    <button class="nav-tab" onclick="goPage('sobre',this)" data-i18n="nav.about">Sobre</button>
   </div>
 </nav>
 
 <!-- CHÁS DO MUNDO PAGE -->
 <div class="page" id="page-mundo">
-  <div class="sec-title">Chás do Mundo</div>
-  <div class="sec-sub">Da China ao Brasil — cada região, um universo</div>
+  <div class="sec-title" data-i18n="page.mundo.title">Chás do Mundo</div>
+  <div class="sec-sub" data-i18n="page.mundo.subtitle">Da China ao Brasil — cada região, um universo</div>
 
   <!-- View toggle -->
   <div class="mundo-view-row">
@@ -1952,15 +1967,15 @@
 
 <!-- RECEITAS PAGE -->
 <div class="page" id="page-receitas">
-  <div class="sec-title">Receitas</div>
-  <div class="sec-sub">Infusões, drinks, culinária e rituais com ervas brasileiras</div>
+  <div class="sec-title" data-i18n="page.receitas.title">Receitas</div>
+  <div class="sec-sub" data-i18n="page.receitas.subtitle">Infusões, drinks, culinária e rituais com ervas brasileiras</div>
   <div id="receitasContainer"></div>
 </div>
 
 <!-- JOGO BOTÂNICO PAGE -->
 <div class="page" id="page-jogo">
-  <div class="sec-title">Jogo Botânico</div>
-  <div class="sec-sub">Identifique ervas a partir de pistas — um jogo de conhecimento botânico</div>
+  <div class="sec-title" data-i18n="page.jogo.title">Jogo Botânico</div>
+  <div class="sec-sub" data-i18n="page.jogo.subtitle">Identifique ervas a partir de pistas — um jogo de conhecimento botânico</div>
   <div id="jogoContainer"></div>
 </div>
 
@@ -2142,8 +2157,8 @@
 
 <!-- CHÁS TRADICIONAIS PAGE -->
 <div class="page" id="page-chas">
-  <div class="sec-title">Chás Tradicionais</div>
-  <div class="sec-sub">Os seis filhos da Camellia sinensis e suas histórias</div>
+  <div class="sec-title" data-i18n="page.chas.title">Chás Tradicionais</div>
+  <div class="sec-sub" data-i18n="page.chas.subtitle">Os seis filhos da Camellia sinensis e suas histórias</div>
 
   <div class="cha-family-intro" id="chaFamilyIntro"></div>
 
@@ -2355,6 +2370,8 @@
 
 <div class="toast" id="toast"></div>
 
+<script src="/js/i18n.js"></script>
+<script src="/js/seo.js"></script>
 <script src="/js/app.js"></script>
 <script src="/js/flavor-wheel.js"></script>
 
