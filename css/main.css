@@ -654,6 +654,9 @@ body.light .blend-tab.on{background:var(--chip-bg);color:var(--gold2)}
 .mkt-badge-exp{background:rgba(45,90,170,.15);color:#6a9ada;border:0.5px solid rgba(45,90,170,.3)}
 .mkt-badge-eco{background:rgba(45,120,60,.15);color:#6ac880;border:0.5px solid rgba(45,120,60,.3)}
 .mkt-section-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold2);margin:1.5rem 0 .75rem;font-weight:300}
+.mkt-img-dots{display:flex;gap:5px;position:absolute;bottom:6px;left:50%;transform:translateX(-50%)}
+.mkt-img-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.35);transition:background .2s}
+.mkt-img-dot.on{background:rgba(255,255,255,.9)}
 
 /* CHÁS DO MUNDO */
 .mundo-view-row{display:flex;gap:6px;margin-bottom:1.25rem;flex-wrap:wrap}
