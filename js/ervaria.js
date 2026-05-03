@@ -395,7 +395,7 @@ const ervaria = {
     const byKey = new Map(HERBS.map(h => [keyOf(h.n, h.lat), h.id]));
     const localImgByName = new Map(HERBS.filter(h => h.img).map(h => [h.n, h.img]));
     let next = Math.max(0, ...HERBS.map(h => h.id)) + 1;
-    const mapped = rows.map(r => {
+    const mapped = rows.filter(r => !r.is_test).map(r => {
       const k = keyOf(r.name, r.latin_name);
       const id = byKey.has(k) ? byKey.get(k) : next++;
       return {
@@ -420,6 +420,7 @@ const ervaria = {
         momento: Array.isArray(r.momento) ? r.momento : [],
       };
     });
+    if (!mapped.length) return;
     HERBS.length = 0;
     Array.prototype.push.apply(HERBS, mapped);
     // resetHerbCards() é declarada em app.js e invalida o cache do grid

@@ -1346,6 +1346,7 @@ window.initRoda=function(){
 function renderRodaPanel(slice){
   const p=document.getElementById('rodaPanel');
   if(!slice){p.innerHTML='<div class="roda-empty"><div style="font-size:2rem;opacity:.3;margin-bottom:.75rem">☕</div><div>Selecione um setor da roda para ver as ervas recomendadas</div></div>';return;}
+  window._rodaCurrentSlice=slice;
   const colDot=RODA_COLORS_MAP[rodaActiveLayer][RODA_DATA[rodaActiveLayer].indexOf(slice)]||'#c8a84b';
   p.innerHTML=`<div class="roda-result">
     <div class="roda-result-header">
@@ -1380,7 +1381,7 @@ function renderRodaPanel(slice){
         <span style="font-size:.72rem;padding:3px 10px;background:rgba(255,255,255,.04);border:0.5px solid var(--faint);border-radius:6px;color:var(--muted)">📅 ${slice.prep.freq}</span>
       </div>
     </div>
-    <button class="roda-start-btn" onclick="openTimerFromRoda(${JSON.stringify(slice).replace(/'/g,'&#39;')})">⏱ Preparar este chá agora</button>
+    <button class="roda-start-btn" onclick="openTimerFromRoda(window._rodaCurrentSlice)">⏱ Preparar este chá agora</button>
     ${(rodaActiveLayer==='sintoma'||rodaActiveLayer==='sistema')?`
     <div class="roda-disclaimer" role="note">
       As ervas do Ervatório são curadoria botânica para o bem-estar e o prazer sensorial. Elas não substituem medicamentos nem orientação médica. Em caso de dúvidas, sintomas ou condições de saúde, consulte um profissional de saúde.
