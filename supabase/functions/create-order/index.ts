@@ -54,7 +54,7 @@ Deno.serve(async (req) => {
     .filter((id) => !UUID_RE.test(id));
   if (invalidIds.length > 0) {
     return jsonResponse({
-      error: 'Alguns produtos do carrinho não estão no catálogo oficial. Esvazie o carrinho e adicione os itens novamente após o admin rodar o seed de produtos.',
+      error: 'Alguns produtos do carrinho não estão disponíveis para compra. Esvazie o carrinho e tente adicionar os itens novamente.',
       invalid_ids: invalidIds,
     }, 400);
   }

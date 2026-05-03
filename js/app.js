@@ -2442,10 +2442,12 @@ function mktCard(p){
   const inCart=cart.some(c=>c.id===p.id);
   const typeColor=p.cat==='Infusões'?'#4a8a5a':p.cat==='Equipamentos'?'#4a6a9a':p.cat==='Vivências'?'#9a6a3a':p.cat==='Ervas & Acessórios'?'#5a8a3a':'#6a4a9a';
   const badgeHtml=p.badge==='new'?'<span class="mkt-badge mkt-badge-new">Novo</span>':p.badge==='exp'?'<span class="mkt-badge mkt-badge-exp">Experiência</span>':p.badge==='eco'?'<span class="mkt-badge mkt-badge-eco">Orgânico</span>':'';
+  const testBadge=p.is_test?'<span class="mkt-badge" style="background:rgba(100,100,200,.15);color:#a0a8e0;border:1px solid rgba(100,100,200,.3)">TESTE</span>':'';
+  const mediaHtml=p.images&&p.images[0]?`<img src="${p.images[0]}" style="width:100%;height:100%;object-fit:cover" onerror="this.parentElement.innerHTML='${p.icon}'">`:`${p.icon}`;
   return `<div class="mkt-card">
-    <div class="mkt-card-media" style="background:${typeColor}18">${p.icon}</div>
+    <div class="mkt-card-media" style="background:${typeColor}18">${mediaHtml}</div>
     <div class="mkt-card-body">
-      <div class="mkt-card-type" style="color:${typeColor}">${p.type} ${badgeHtml}</div>
+      <div class="mkt-card-type" style="color:${typeColor}">${p.type} ${badgeHtml} ${testBadge}</div>
       <div class="mkt-card-name">${p.name}</div>
       <div class="mkt-card-seller">${p.seller}</div>
       <div class="mkt-card-desc">${p.desc.substring(0,90)}${p.desc.length>90?'...':''}</div>

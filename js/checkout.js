@@ -254,7 +254,7 @@ const Checkout = {
       // de fora — alertamos o usuário se nada sobrar.
       const sellable = cart.filter((c) => typeof c.dbId === 'string' && c.dbId.length === 36);
       if (sellable.length === 0) {
-        throw new Error('Nenhum produto do carrinho está no catálogo oficial. Peça ao admin para rodar o seed de produtos.');
+        throw new Error('Alguns produtos do seu carrinho não estão disponíveis para compra. Esvazie o carrinho e tente adicionar os itens novamente.');
       }
       if (sellable.length < cart.length) {
         const dropped = cart.length - sellable.length;

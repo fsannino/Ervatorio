@@ -254,7 +254,11 @@ function renderProductsAdmin(list){
   const tbody=document.getElementById('productsBody');
   if(!list.length){tbody.innerHTML='<tr><td colspan="6" style="text-align:center;color:var(--adm-muted);padding:2rem">Nenhum produto cadastrado.</td></tr>';return;}
   tbody.innerHTML=list.map(p=>`<tr>
-    <td>${p.icon||'📦'} <strong>${esc(p.name)}</strong></td>
+    <td>
+      ${p.images&&p.images[0]?`<img src="${esc(p.images[0])}" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:6px">`:p.icon||'📦'}
+      <strong>${esc(p.name)}</strong>
+      ${p.is_test?'<span class="adm-badge" style="background:rgba(100,100,200,.15);color:#a0a8e0;border:1px solid rgba(100,100,200,.3);margin-left:4px">TESTE</span>':''}
+    </td>
     <td><span class="adm-badge gold">${esc(p.category)}</span></td>
     <td style="color:var(--adm-gold2)">R$ ${Number(p.price).toFixed(2)}</td>
     <td>${p.stock==='in'?'<span class="adm-badge green">Em estoque</span>':p.stock==='low'?'<span class="adm-badge gold">Últimas</span>':'<span class="adm-badge red">Esgotado</span>'}</td>
@@ -265,6 +269,18 @@ function renderProductsAdmin(list){
     </td>
   </tr>`).join('');
 }
+function populateSupplierDropdown(selectedId){
+  const sel=document.getElementById('pfSupplierId');
+  if(!sel)return;
+  sel.innerHTML='<option value="">— Sem fornecedor —</option>';
+  allSuppliers.forEach(s=>{
+    const o=document.createElement('option');
+    o.value=s.id;
+    o.textContent=s.name;
+    if(s.id===selectedId)o.selected=true;
+    sel.appendChild(o);
+  });
+}
 function openProductForm(p){
   const m=document.getElementById('productModal');
   document.getElementById('productFormTitle').textContent=p?'Editar Produto':'Novo Produto';
@@ -272,18 +288,49 @@ function openProductForm(p){
   document.getElementById('pfName').value=p?.name||'';
   document.getElementById('pfDesc').value=p?.description||'';
   document.getElementById('pfIcon').value=p?.icon||'📦';
-  document.getElementById('pfCategory').value=p?.category||'Folhas Secas';
+  document.getElementById('pfCategory').value=p?.category||'Infusões';
   document.getElementById('pfPrice').value=p?.price||'';
   document.getElementById('pfUnit').value=p?.unit||'50g';
-  document.getElementById('pfSupplier').value=p?.supplier||'';
   document.getElementById('pfStock').value=p?.stock||'in';
   document.getElementById('pfActive').checked=p?.active!==false;
+  document.getElementById('pfIsTest').checked=p?.is_test||false;
+  // Populate supplier dropdown
+  if(allSuppliers.length){populateSupplierDropdown(p?.supplier_id||'');}
+  else{sb.from('admin_suppliers').select('id,name').eq('active',true).order('name').then(({data})=>{if(data){allSuppliers=data;populateSupplierDropdown(p?.supplier_id||'');}});}
+  // Populate image inputs
+  const imgs=p?.images||[];
+  document.querySelectorAll('.pf-img-url').forEach((inp,i)=>{inp.value=imgs[i]||'';});
+  updateImagePreview();
   m.classList.add('on');
+}
+function updateImagePreview(){
+  const preview=document.getElementById('pfImagesPreview');
+  if(!preview)return;
+  const urls=Array.from(document.querySelectorAll('.pf-img-url')).map(i=>i.value.trim()).filter(Boolean);
+  preview.innerHTML=urls.map(u=>`<img src="${esc(u)}" style="width:60px;height:60px;object-fit:cover;border-radius:6px;border:1px solid rgba(255,255,255,.1)" onerror="this.style.display='none'">`).join('');
+}
+function triggerImageUpload(idx){document.querySelectorAll('.pf-img-file')[idx].click();}
+async function handleImageUpload(input,idx){
+  const file=input.files[0];if(!file)return;
+  admToast('Enviando imagem...');
+  try{
+    const ext=file.name.split('.').pop();
+    const path=`${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
+    const {data,error}=await sb.storage.from('product-images').upload(path,file,{upsert:false});
+    if(error){admToast('Erro no upload: '+error.message);return;}
+    const {data:{publicUrl}}=sb.storage.from('product-images').getPublicUrl(data.path);
+    document.querySelectorAll('.pf-img-url')[idx].value=publicUrl;
+    updateImagePreview();
+    admToast('Imagem enviada');
+  }catch(e){admToast('Erro: '+e.message);}
 }
 function editProduct(id){openProductForm(allProducts.find(p=>p.id===id));}
 function closeProductForm(){document.getElementById('productModal').classList.remove('on');}
 async function saveProduct(){
   const id=document.getElementById('pfId').value;
+  const images=Array.from(document.querySelectorAll('.pf-img-url')).map(i=>i.value.trim()).filter(Boolean);
+  const suppId=document.getElementById('pfSupplierId').value||null;
+  const supplierName=suppId?(allSuppliers.find(s=>s.id===suppId)?.name||null):null;
   const row={
     name:document.getElementById('pfName').value.trim(),
     description:document.getElementById('pfDesc').value.trim()||null,
@@ -291,9 +338,12 @@ async function saveProduct(){
     category:document.getElementById('pfCategory').value,
     price:parseFloat(document.getElementById('pfPrice').value)||0,
     unit:document.getElementById('pfUnit').value.trim()||'50g',
-    supplier:document.getElementById('pfSupplier').value.trim()||null,
+    supplier:supplierName,
+    supplier_id:suppId,
     stock:document.getElementById('pfStock').value,
     active:document.getElementById('pfActive').checked,
+    is_test:document.getElementById('pfIsTest').checked,
+    images:images.length?images:null,
   };
   if(!row.name){admToast('Nome é obrigatório');return;}
   if(!row.price){admToast('Preço é obrigatório');return;}
@@ -381,9 +431,9 @@ function renderSuppliersAdmin(list){
   tbody.innerHTML=list.map(s=>`<tr>
     <td><strong>${esc(s.name)}</strong></td>
     <td><span class="adm-badge gold">${esc(s.type||'')}</span></td>
+    <td style="font-size:.72rem;color:var(--adm-muted)">${esc(s.cnpj||'—')}</td>
     <td style="font-size:.78rem">${esc(s.city||'')}</td>
-    <td style="font-size:.78rem">${esc(s.certification||'')}</td>
-    <td style="font-size:.72rem;color:var(--adm-muted);max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${(s.herbs||[]).map(h=>esc(h)).join(', ')}</td>
+    <td style="font-size:.72rem;color:var(--adm-muted);max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${(s.categories&&s.categories.length?s.categories:s.herbs||[]).map(h=>esc(h)).join(', ')||'—'}</td>
     <td style="white-space:nowrap">
       <button class="adm-btn" onclick="editSupplier('${s.id}')">Editar</button>
       <button class="adm-btn danger" onclick="deleteSupplier('${s.id}','${esc(s.name)}')">Excluir</button>
@@ -395,29 +445,33 @@ function openSupplierForm(s){
   document.getElementById('supplierFormTitle').textContent=s?'Editar Fornecedor':'Novo Fornecedor';
   document.getElementById('sfId').value=s?.id||'';
   document.getElementById('sfName').value=s?.name||'';
+  document.getElementById('sfCnpj').value=s?.cnpj||'';
   document.getElementById('sfType').value=s?.type||'';
   document.getElementById('sfCity').value=s?.city||'';
   document.getElementById('sfSince').value=s?.since||'';
   document.getElementById('sfCert').value=s?.certification||'';
   document.getElementById('sfShip').value=s?.shipping||'';
   document.getElementById('sfMinOrder').value=s?.min_order||'';
-  document.getElementById('sfHerbs').value=(s?.herbs||[]).join(', ');
   document.getElementById('sfActive').checked=s?.active!==false;
+  const activeCats=s?.categories||[];
+  document.querySelectorAll('.sf-cat').forEach(cb=>{cb.checked=activeCats.includes(cb.value);});
   m.classList.add('on');
 }
 function editSupplier(id){openSupplierForm(allSuppliers.find(s=>s.id===id));}
 function closeSupplierForm(){document.getElementById('supplierModal').classList.remove('on');}
 async function saveSupplier(){
   const id=document.getElementById('sfId').value;
+  const categories=Array.from(document.querySelectorAll('.sf-cat:checked')).map(cb=>cb.value);
   const row={
     name:document.getElementById('sfName').value.trim(),
+    cnpj:document.getElementById('sfCnpj').value.trim()||null,
     type:document.getElementById('sfType').value.trim()||null,
     city:document.getElementById('sfCity').value.trim()||null,
     since:document.getElementById('sfSince').value.trim()||null,
     certification:document.getElementById('sfCert').value.trim()||null,
     shipping:document.getElementById('sfShip').value.trim()||null,
     min_order:document.getElementById('sfMinOrder').value.trim()||null,
-    herbs:document.getElementById('sfHerbs').value.split(',').map(s=>s.trim()).filter(Boolean),
+    categories:categories,
     active:document.getElementById('sfActive').checked,
   };
   if(!row.name){admToast('Nome é obrigatório');return;}

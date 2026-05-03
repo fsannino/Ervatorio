@@ -52,14 +52,14 @@ SELECT * FROM (VALUES
 WHERE NOT EXISTS (SELECT 1 FROM public.admin_products WHERE admin_products.name = v.name);
 
 -- VIAGENS (401-405)
-INSERT INTO public.admin_products (name, icon, category, price, unit, supplier, stock, description)
+INSERT INTO public.admin_products (name, icon, category, price, unit, supplier, stock, description, is_test)
 SELECT * FROM (VALUES
-  ('Japão — Rota do Chá Kyoto-Uji','🗾','Viagens',12500.00,'7 dias/pessoa','Tea Travels','in','Visita às plantações de Uji, cerimônia Urasenke, mercado Nishiki, chashitsu histórico. Guia especializado.'),
-  ('Taiwan — High Mountain Oolongs','🏔','Viagens',8900.00,'5 dias/pessoa','Tea Travels','in','Ali Shan, Li Shan, Pinglin. Visitas a produtores independentes. Degustação de altitude. 8 pessoas máx.'),
-  ('Darjeeling — Colheita First Flush','🌱','Viagens',9800.00,'6 dias/pessoa','Tea Travels','in','Participação na colheita em fazenda histórica. Processamento artesanal. Degustação de 15 lotes diferentes.'),
-  ('Yunnan — Rota do Pu-erh','🐉','Viagens',11200.00,'8 dias/pessoa','Tea Travels','in','Xishuangbanna, árvores centenárias, produtores tradicionais, aldeias Dai. A rota mais completa para o Pu-erh.'),
-  ('Fujian — Oolongs e Wuyishan','⛰','Viagens',9200.00,'6 dias/pessoa','Tea Travels','in','Anxi (Tie Guan Yin), Wuyi (Da Hong Pao), Fujian coastline. Inclui visita a fábrica artesanal centenária.')
-) AS v(name, icon, category, price, unit, supplier, stock, description)
+  ('Japão — Rota do Chá Kyoto-Uji','🗾','Viagens',12500.00,'7 dias/pessoa','Tea Travels','in','Visita às plantações de Uji, cerimônia Urasenke, mercado Nishiki, chashitsu histórico. Guia especializado.',true),
+  ('Taiwan — High Mountain Oolongs','🏔','Viagens',8900.00,'5 dias/pessoa','Tea Travels','in','Ali Shan, Li Shan, Pinglin. Visitas a produtores independentes. Degustação de altitude. 8 pessoas máx.',true),
+  ('Darjeeling — Colheita First Flush','🌱','Viagens',9800.00,'6 dias/pessoa','Tea Travels','in','Participação na colheita em fazenda histórica. Processamento artesanal. Degustação de 15 lotes diferentes.',true),
+  ('Yunnan — Rota do Pu-erh','🐉','Viagens',11200.00,'8 dias/pessoa','Tea Travels','in','Xishuangbanna, árvores centenárias, produtores tradicionais, aldeias Dai. A rota mais completa para o Pu-erh.',true),
+  ('Fujian — Oolongs e Wuyishan','⛰','Viagens',9200.00,'6 dias/pessoa','Tea Travels','in','Anxi (Tie Guan Yin), Wuyi (Da Hong Pao), Fujian coastline. Inclui visita a fábrica artesanal centenária.',true)
+) AS v(name, icon, category, price, unit, supplier, stock, description, is_test)
 WHERE NOT EXISTS (SELECT 1 FROM public.admin_products WHERE admin_products.name = v.name);
 
 -- Verificacao: conte quantos produtos MKT estao presentes
