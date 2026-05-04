@@ -864,20 +864,26 @@ async function submitProfile() {
 }
 
 // ── THEME TOGGLE ──
+function _setThemeIcon(icon){
+  ['themeToggle', 'landingThemeToggle'].forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) el.textContent = icon;
+  });
+}
 function toggleTheme(){
   document.body.classList.toggle('light');
   const isLight = document.body.classList.contains('light');
   localStorage.setItem('erb_theme', isLight ? 'light' : 'dark');
-  document.getElementById('themeToggle').textContent = isLight ? '☽' : '☀';
+  _setThemeIcon(isLight ? '☽' : '☀');
 }
 // Restore saved theme (default: light)
 (function(){
   const saved = localStorage.getItem('erb_theme');
   if(saved === 'dark'){
-    // User explicitly chose dark
+    _setThemeIcon('☀');
   } else {
     document.body.classList.add('light');
-    document.getElementById('themeToggle').textContent = '☽';
+    _setThemeIcon('☽');
   }
 })();
 
@@ -922,13 +928,9 @@ function goToRodaFromLanding(btn){
   if (typeof goPage === 'function') goPage('roda');
   return false;
 }
-// Skip landing if already logged in
-(function(){
-  if(localStorage.getItem('erb_entered')){
-    document.getElementById('landingPage').style.display = 'none';
-    document.getElementById('appContainer').style.display = 'block';
-  }
-})();
+// Landing page é sempre exibida ao carregar — usuário entra no app
+// clicando num CTA ("Entrar", "Descobrir meu chá", etc.). enterApp() já
+// detecta sessão prévia (erb_entered) e pula o modal de login se possível.
 
 // ── PWA INSTALL ──
 let deferredPrompt = null;
