@@ -612,26 +612,59 @@ function openHerbModal(id){
   loadFichaForHerb(h);
 }
 
-// Busca a ficha editorial do Supabase (via ervaria) e injeta um
-// botão "Ver ficha completa" quando disponível.
+// Resolve ficha local (FICHAS_ANCORA) pelo nome ou nome científico da erva
+function _fichaAncoraForHerb(h){
+  if(typeof FICHAS_ANCORA==='undefined') return null;
+  const _n = s=>String(s||'').normalize('NFC').toLowerCase().replace(/[àáâãä]/g,'a').replace(/[èéêë]/g,'e').replace(/[ìíîï]/g,'i').replace(/[òóôõö]/g,'o').replace(/[ùúûü]/g,'u').replace(/ç/g,'c').trim();
+  const hn = _n(h.n);
+  const hl = h.lat ? _n(h.lat.split(' ').slice(0,2).join(' ')) : '';
+  for(const [slug, f] of Object.entries(FICHAS_ANCORA)){
+    if(_n(f.nome_popular)===hn) return f;
+    if(hl && f.nome_cientifico && _n(f.nome_cientifico).startsWith(hl)) return f;
+  }
+  return null;
+}
+
+// Busca a ficha editorial — primeiro no cache local, depois no Supabase.
 async function loadFichaForHerb(h){
   const slot = document.getElementById('modalFichaSlot');
-  if(!slot || typeof ervaria==='undefined') return;
+  if(!slot) return;
+  if(slot.dataset.herbId===String(h.id)) return;
+  slot.dataset.herbId = String(h.id);
+
+  // 1. Tentar cache local imediatamente (sem latência)
+  const ancora = _fichaAncoraForHerb(h);
+  if(ancora){
+    slot.innerHTML = `<button class="ficha-cta" onclick="openFichaAncora(${JSON.stringify(ancora.slug)})">Ver ficha completa<span class="ficha-cta-arrow">→</span></button>`;
+    return;
+  }
+
+  // 2. Fallback: Supabase
+  if(typeof ervaria==='undefined') return;
   try {
     const ficha = await ervaria.loadFichaByLatin(h.lat);
-    if(!ficha || slot.dataset.herbId===String(h.id)) return;
-    slot.dataset.herbId = String(h.id);
-    slot.innerHTML = `
-      <button class="ficha-cta" onclick="openFicha('${esc(ficha.slug||'')}')">
-        Ver ficha completa
-        <span class="ficha-cta-arrow">→</span>
-      </button>`;
+    if(!ficha) return;
+    slot.innerHTML = `<button class="ficha-cta" onclick="openFicha(${JSON.stringify(ficha.slug||'')})">Ver ficha completa<span class="ficha-cta-arrow">→</span></button>`;
   } catch(_) {}
+}
+
+// Abre ficha a partir do cache local FICHAS_ANCORA
+function openFichaAncora(slug){
+  if(typeof FICHAS_ANCORA==='undefined' || !FICHAS_ANCORA[slug]){ toast('Ficha indisponível'); return; }
+  _currentFicha = FICHAS_ANCORA[slug];
+  renderFichaModal(_currentFicha);
 }
 
 let _currentFicha = null;
 async function openFicha(slug){
-  if(typeof ervaria==='undefined') return;
+  // 1. Tentar cache local
+  if(typeof FICHAS_ANCORA!=='undefined' && FICHAS_ANCORA[slug]){
+    _currentFicha = FICHAS_ANCORA[slug];
+    renderFichaModal(_currentFicha);
+    return;
+  }
+  // 2. Supabase
+  if(typeof ervaria==='undefined'){ toast('Ficha indisponível'); return; }
   let ficha = null;
   try { ficha = await ervaria.loadFichaBySlug(slug); } catch(_) {}
   if(!ficha){ toast('Ficha indisponível'); return; }
