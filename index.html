@@ -2323,7 +2323,27 @@
 <div class="page" id="page-ervatorio">
   <div class="sec-title" data-i18n="page.ervatorio.title">Ervopedia</div>
   <div class="sec-sub" data-i18n="page.ervatorio.subtitle">Enciclopédia viva do Ervatório — fichas botânicas completas</div>
-  <div class="herb-grid" id="ervatorioGrid"></div>
+  <button type="button" class="erv-filters-toggle" id="ervFiltersToggle" aria-expanded="false" aria-controls="ervFiltersSidebar">
+    <span class="erv-filters-toggle-icon" aria-hidden="true">⚙</span>
+    <span data-i18n="page.ervatorio.filters">Filtros</span>
+    <span class="erv-filters-toggle-count" id="ervFiltersToggleCount" hidden>0</span>
+  </button>
+  <div class="erv-catalog-layout">
+    <aside class="erv-filters-sidebar" id="ervFiltersSidebar" aria-label="Filtros do catálogo">
+      <div class="erv-filters-head">
+        <span class="erv-filters-title" data-i18n="page.ervatorio.filters">Filtros</span>
+        <button type="button" class="erv-filters-clear" id="ervFiltersClear" data-i18n="page.ervatorio.filters_clear">Limpar</button>
+      </div>
+      <div class="erv-filters-search">
+        <input type="search" id="ervFiltersSearch" placeholder="Buscar erva, ciência, tagline..." data-i18n-placeholder="page.ervatorio.search_placeholder" autocomplete="off">
+      </div>
+      <div class="erv-filters-body" id="ervFiltersBody"></div>
+    </aside>
+    <div class="erv-catalog-main">
+      <div class="erv-catalog-meta" id="ervatorioMeta" aria-live="polite"></div>
+      <div class="herb-grid" id="ervatorioGrid"></div>
+    </div>
+  </div>
 </div>
 
 <div class="page" id="page-ficha">
