@@ -49,37 +49,374 @@
     return found && found.img ? found.img : null;
   }
 
+  // ── Facetas / filtros do catálogo ──────────────────────────────────
+  // Ordem das facetas determina a ordem de render no sidebar.
+  var FACETS = [
+    { id: 'tipo',       label: 'Tipo',         icon: '🍵', extract: extractTipo },
+    { id: 'localizacao',label: 'Localização',  icon: '🌍', extract: extractLocalizacao },
+    { id: 'bioma',      label: 'Bioma',        icon: '🌿', extract: extractBioma },
+    { id: 'sensorial',  label: 'Sensorial',    icon: '✨', extract: extractSensorial, hint: 'O que busco no chá' },
+    { id: 'coloracao',  label: 'Coloração',    icon: '🎨', extract: extractColoracao, swatch: true },
+    { id: 'sabor',      label: 'Sabor',        icon: '👅', extract: extractSabor },
+    { id: 'parte',      label: 'Parte usada',  icon: '🌱', extract: extractParte }
+  ];
+
+  // Estado dos filtros — Map<facetId, Set<value>>
+  var ervFilters = {};
+  var ervSearchTerm = '';
+  var ervFichasCache = null;
+
+  function ensureFilterState() {
+    FACETS.forEach(function(f) {
+      if (!ervFilters[f.id]) ervFilters[f.id] = new Set();
+    });
+  }
+
+  // Eixo botânico TPC (Chá Tradicional, Infusão, Medicinal, etc.) +
+  // tipo botânico (arbusto, erva...) compõem a faceta "Tipo".
+  function extractTipo(row) {
+    var f = row.ficha || {};
+    var rg = f.regulacao || {};
+    var id = f.identificacao || {};
+    var out = [];
+    if (rg.eixo_botanico_tpc) out.push(String(rg.eixo_botanico_tpc).trim());
+    if (id.tipo_botanico) {
+      String(id.tipo_botanico).split(/[,;\/]+/).forEach(function(t) {
+        t = t.trim(); if (t) out.push(t);
+      });
+    }
+    return out;
+  }
+
+  function extractLocalizacao(row) {
+    var f = row.ficha || {};
+    var car = f.caracterizacao || {};
+    var arr = Array.isArray(car.distribuicao_geografica) ? car.distribuicao_geografica : [];
+    var out = [];
+    arr.forEach(function(item) {
+      String(item || '').split(/[,;\/]+/).forEach(function(p) {
+        p = p.trim();
+        // Limpa parenteses ("Sudeste asiático (Vietnã, Tailândia)")
+        p = p.replace(/\s*\(.*\)\s*$/, '').trim();
+        if (p && p.length < 60) out.push(p);
+      });
+    });
+    return out;
+  }
+
+  function extractBioma(row) {
+    var f = row.ficha || {};
+    var car = f.caracterizacao || {};
+    if (!car.bioma_de_origem) return [];
+    return String(car.bioma_de_origem).split(/[,;\/]+/).map(function(s) { return s.trim(); }).filter(Boolean);
+  }
+
+  // Vetor terapêutico — usa o mesmo classificador da Roda Funcional para
+  // agrupar ações principais em rótulos sensoriais ("calmante", "digestivo"...).
+  function extractSensorial(row) {
+    var f = row.ficha || {};
+    var ac = f.acoes_e_seguranca || {};
+    var acoes = Array.isArray(ac.acoes_principais) ? ac.acoes_principais : [];
+    var seen = {};
+    var out = [];
+    acoes.forEach(function(a) {
+      var clean = String(a || '').split(/\s+—\s+|\s+\(/)[0].trim();
+      if (!clean) return;
+      // Capitaliza primeira letra para apresentação
+      var label = clean.charAt(0).toUpperCase() + clean.slice(1);
+      if (!seen[label.toLowerCase()]) {
+        seen[label.toLowerCase()] = true;
+        out.push(label);
+      }
+    });
+    return out;
+  }
+
+  // Mapeamento aproximado nome → cor (apenas para a bolinha de pré-visualização).
+  var COLOR_MAP = {
+    'amarelo': '#e8c547', 'amarelado': '#e8c547', 'dourado': '#d4a017', 'dourada': '#d4a017',
+    'verde': '#5b8a3a', 'verde claro': '#8fb371', 'verde escuro': '#3d5a2a',
+    'âmbar': '#c08038', 'ambar': '#c08038', 'cobre': '#a85a2a',
+    'vermelho': '#9a3024', 'vermelha': '#9a3024', 'rubro': '#7a1a14', 'avermelhado': '#a8443a',
+    'rosa': '#d97a8a', 'rosado': '#d97a8a',
+    'castanho': '#6b4423', 'marrom': '#5a3a1a', 'marrom claro': '#8a6a4a',
+    'preto': '#2a1a14', 'escuro': '#2a1a14',
+    'roxo': '#5a2d6b', 'violeta': '#5a2d6b', 'púrpura': '#5a2d6b', 'purpura': '#5a2d6b',
+    'azul': '#3a4a8a',
+    'branco': '#e8dcc8', 'transparente': '#e8dcc8', 'cristalino': '#e8dcc8',
+    'laranja': '#d97a3a'
+  };
+  function extractColoracao(row) {
+    var f = row.ficha || {};
+    var car = f.caracterizacao || {};
+    if (!car.cor_da_infusao) return [];
+    var raw = String(car.cor_da_infusao).toLowerCase();
+    var hits = [];
+    Object.keys(COLOR_MAP).forEach(function(k) {
+      if (raw.indexOf(k) >= 0) hits.push(k.charAt(0).toUpperCase() + k.slice(1));
+    });
+    if (!hits.length) {
+      // Fallback: primeira palavra significativa
+      var first = raw.split(/[,;\/\s]+/)[0];
+      if (first) hits.push(first.charAt(0).toUpperCase() + first.slice(1));
+    }
+    return hits;
+  }
+
+  function extractSabor(row) {
+    var f = row.ficha || {};
+    var car = f.caracterizacao || {};
+    if (!car.sabor_dominante) return [];
+    return String(car.sabor_dominante).split(/[,;\/]+/).map(function(s) {
+      s = s.trim();
+      return s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
+    }).filter(Boolean);
+  }
+
+  function extractParte(row) {
+    var f = row.ficha || {};
+    var id = f.identificacao || {};
+    if (!id.parte_usada) return [];
+    return String(id.parte_usada).split(/[,;\/]+/).map(function(s) {
+      s = s.trim();
+      return s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
+    }).filter(Boolean);
+  }
+
+  // Computa contagem por valor para cada faceta a partir de uma lista de fichas.
+  function buildFacetCounts(fichas) {
+    var counts = {};
+    FACETS.forEach(function(facet) {
+      counts[facet.id] = {};
+      fichas.forEach(function(row) {
+        var values = facet.extract(row) || [];
+        var seen = {};
+        values.forEach(function(v) {
+          if (!v || seen[v]) return;
+          seen[v] = true;
+          counts[facet.id][v] = (counts[facet.id][v] || 0) + 1;
+        });
+      });
+    });
+    return counts;
+  }
+
+  function fichaMatchesFacet(row, facetId, selected) {
+    if (!selected || !selected.size) return true;
+    var facet = FACETS.find(function(f) { return f.id === facetId; });
+    if (!facet) return true;
+    var values = facet.extract(row) || [];
+    for (var i = 0; i < values.length; i++) {
+      if (selected.has(values[i])) return true;
+    }
+    return false;
+  }
+
+  function fichaMatchesSearch(row, term) {
+    if (!term) return true;
+    var f = row.ficha || {};
+    var sin = (f.identificacao && Array.isArray(f.identificacao.sinonimos)) ? f.identificacao.sinonimos.join(' ') : '';
+    var hay = [f.nome_popular, f.nome_cientifico, row.herb_latin_name, f.tagline, sin].join(' ');
+    return normNome(hay).indexOf(term) >= 0;
+  }
+
+  function applyFilters(fichas) {
+    var term = ervSearchTerm ? normNome(ervSearchTerm) : '';
+    return fichas.filter(function(row) {
+      if (!fichaMatchesSearch(row, term)) return false;
+      for (var i = 0; i < FACETS.length; i++) {
+        if (!fichaMatchesFacet(row, FACETS[i].id, ervFilters[FACETS[i].id])) return false;
+      }
+      return true;
+    });
+  }
+
+  function totalActiveFilters() {
+    var n = 0;
+    FACETS.forEach(function(f) { n += (ervFilters[f.id] ? ervFilters[f.id].size : 0); });
+    return n;
+  }
+
+  function renderFiltersSidebar(fichas) {
+    var body = document.getElementById('ervFiltersBody');
+    if (!body) return;
+    var counts = buildFacetCounts(fichas);
+    var html = '';
+    FACETS.forEach(function(facet) {
+      var values = Object.keys(counts[facet.id] || {}).sort(function(a, b) {
+        var diff = counts[facet.id][b] - counts[facet.id][a];
+        return diff !== 0 ? diff : a.localeCompare(b, 'pt-BR');
+      });
+      var active = ervFilters[facet.id] ? ervFilters[facet.id].size : 0;
+      var collapsed = !active && facet.id !== 'tipo'; // primeira faceta aberta por padrão
+      html += '<div class="erv-filter-group' + (collapsed ? ' collapsed' : '') + '" data-facet="' + facet.id + '">' +
+        '<button type="button" class="erv-filter-head" data-action="toggle-facet">' +
+          '<span class="erv-filter-icon" aria-hidden="true">' + facet.icon + '</span>' +
+          '<span>' + safeEsc(facet.label) + '</span>' +
+          '<span class="erv-filter-count' + (active ? ' on' : '') + '">' + (active ? active + '/' : '') + values.length + '</span>' +
+          '<span class="erv-filter-chevron" aria-hidden="true">▾</span>' +
+        '</button>' +
+        '<div class="erv-filter-options">';
+      if (!values.length) {
+        html += '<div class="erv-filter-empty">Sem dados disponíveis</div>';
+      } else {
+        values.forEach(function(val) {
+          var checked = ervFilters[facet.id] && ervFilters[facet.id].has(val);
+          var swatch = '';
+          if (facet.swatch) {
+            var color = COLOR_MAP[val.toLowerCase()] || '#888';
+            swatch = '<span class="erv-filter-color-swatch" style="background:' + color + '"></span>';
+          }
+          html += '<label class="erv-filter-option">' +
+            '<input type="checkbox" data-facet="' + safeEsc(facet.id) + '" value="' + safeEsc(val) + '"' + (checked ? ' checked' : '') + '>' +
+            swatch +
+            '<span class="erv-filter-option-label" title="' + safeEsc(val) + '">' + safeEsc(val) + '</span>' +
+            '<span class="erv-filter-option-tally">' + counts[facet.id][val] + '</span>' +
+            '</label>';
+        });
+      }
+      html += '</div></div>';
+    });
+    body.innerHTML = html;
+
+    // Toggle expand/collapse
+    body.querySelectorAll('[data-action="toggle-facet"]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        btn.parentElement.classList.toggle('collapsed');
+      });
+    });
+    // Checkbox change
+    body.querySelectorAll('input[type="checkbox"][data-facet]').forEach(function(cb) {
+      cb.addEventListener('change', function() {
+        var facetId = cb.getAttribute('data-facet');
+        var val = cb.value;
+        ensureFilterState();
+        if (cb.checked) ervFilters[facetId].add(val);
+        else ervFilters[facetId].delete(val);
+        updateGridAndMeta();
+        updateClearAndCounts();
+      });
+    });
+  }
+
+  function updateClearAndCounts() {
+    var n = totalActiveFilters();
+    var clearBtn = document.getElementById('ervFiltersClear');
+    if (clearBtn) clearBtn.disabled = n === 0;
+    var toggleCount = document.getElementById('ervFiltersToggleCount');
+    if (toggleCount) {
+      if (n > 0) { toggleCount.hidden = false; toggleCount.textContent = String(n); }
+      else { toggleCount.hidden = true; }
+    }
+    // Atualiza headers de faceta (contagem ativa)
+    document.querySelectorAll('.erv-filter-group').forEach(function(g) {
+      var facetId = g.getAttribute('data-facet');
+      var active = ervFilters[facetId] ? ervFilters[facetId].size : 0;
+      var head = g.querySelector('.erv-filter-count');
+      if (!head) return;
+      var total = g.querySelectorAll('.erv-filter-option').length;
+      head.classList.toggle('on', active > 0);
+      head.textContent = (active ? active + '/' : '') + total;
+    });
+  }
+
+  function updateGridAndMeta() {
+    if (!ervFichasCache) return;
+    var grid = document.getElementById('ervatorioGrid');
+    var meta = document.getElementById('ervatorioMeta');
+    if (!grid) return;
+    var filtered = applyFilters(ervFichasCache);
+    if (meta) {
+      var n = filtered.length;
+      var total = ervFichasCache.length;
+      meta.innerHTML = n === total
+        ? '<strong>' + total + '</strong> ervas no catálogo'
+        : '<strong>' + n + '</strong> de ' + total + ' ervas';
+    }
+    if (!filtered.length) {
+      grid.innerHTML = '<p class="ev-empty">Nenhuma erva encontrada com os filtros selecionados.</p>';
+      return;
+    }
+    grid.innerHTML = filtered.map(buildCardHTML).join('');
+  }
+
+  function buildCardHTML(row) {
+    var f = row.ficha || {};
+    var slug = row.slug || '';
+    var nome = f.nome_popular || slug;
+    var cientifico = f.nome_cientifico || row.herb_latin_name || '';
+    var tagline = f.tagline || '';
+    var eixo = (f.regulacao && f.regulacao.eixo_botanico_tpc) || '';
+    var img = resolveErvaImg(nome, cientifico);
+    var visual = img
+      ? '<div class="ev-card-img-wrap"><img class="ev-card-img" src="' + safeEsc(img) + '" alt="' + safeEsc(nome) + '" loading="lazy" onerror="this.parentElement.style.display=\'none\'"></div>'
+      : '';
+    return '<div class="herb-card ev-ficha-card" onclick="goPage(\'ficha\',null,\'' + safeEsc(slug) + '\')">' +
+      visual +
+      '<div class="ev-card-nome">' + safeEsc(nome) + '</div>' +
+      '<div class="ev-card-latin"><em>' + safeEsc(cientifico) + '</em></div>' +
+      (tagline ? '<div class="ev-card-tagline">' + safeEsc(tagline) + '</div>' : '') +
+      (eixo ? '<div class="ev-card-eixo">' + safeEsc(eixo) + '</div>' : '') +
+      '</div>';
+  }
+
+  function bindFilterControls() {
+    var clearBtn = document.getElementById('ervFiltersClear');
+    if (clearBtn && !clearBtn._bound) {
+      clearBtn._bound = true;
+      clearBtn.addEventListener('click', function() {
+        FACETS.forEach(function(f) { if (ervFilters[f.id]) ervFilters[f.id].clear(); });
+        ervSearchTerm = '';
+        var search = document.getElementById('ervFiltersSearch');
+        if (search) search.value = '';
+        if (ervFichasCache) renderFiltersSidebar(ervFichasCache);
+        updateGridAndMeta();
+        updateClearAndCounts();
+      });
+    }
+    var search = document.getElementById('ervFiltersSearch');
+    if (search && !search._bound) {
+      search._bound = true;
+      var t = null;
+      search.addEventListener('input', function() {
+        clearTimeout(t);
+        t = setTimeout(function() {
+          ervSearchTerm = search.value || '';
+          updateGridAndMeta();
+        }, 120);
+      });
+    }
+    var toggle = document.getElementById('ervFiltersToggle');
+    var sidebar = document.getElementById('ervFiltersSidebar');
+    if (toggle && sidebar && !toggle._bound) {
+      toggle._bound = true;
+      toggle.addEventListener('click', function() {
+        var open = sidebar.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+  }
+
   window.renderIndiceCatalogo = async function() {
-    var el = document.getElementById('ervatorioGrid');
-    if (!el) return;
-    el.innerHTML = '<div class="ev-loading">Carregando catalogo...</div>';
+    var grid = document.getElementById('ervatorioGrid');
+    if (!grid) return;
+    grid.innerHTML = '<div class="ev-loading">Carregando catalogo...</div>';
+    ensureFilterState();
+    bindFilterControls();
     try {
       var fichas = await ErvatorioData.getAllFichas();
-      if (!fichas || !fichas.length) {
-        el.innerHTML = '<p class="ev-empty">Nenhuma ficha disponivel.</p>';
+      ervFichasCache = fichas || [];
+      if (!ervFichasCache.length) {
+        grid.innerHTML = '<p class="ev-empty">Nenhuma ficha disponivel.</p>';
+        var meta = document.getElementById('ervatorioMeta');
+        if (meta) meta.innerHTML = '';
         return;
       }
-      el.innerHTML = fichas.map(function(row) {
-        var f = row.ficha || {};
-        var slug = row.slug || '';
-        var nome = f.nome_popular || slug;
-        var cientifico = f.nome_cientifico || row.herb_latin_name || '';
-        var tagline = f.tagline || '';
-        var eixo = (f.regulacao && f.regulacao.eixo_botanico_tpc) || '';
-        var img = resolveErvaImg(nome, cientifico);
-        var visual = img
-          ? '<div class="ev-card-img-wrap"><img class="ev-card-img" src="' + safeEsc(img) + '" alt="' + safeEsc(nome) + '" loading="lazy" onerror="this.parentElement.style.display=\'none\'"></div>'
-          : '';
-        return '<div class="herb-card ev-ficha-card" onclick="goPage(\'ficha\',null,\'' + safeEsc(slug) + '\')">' +
-          visual +
-          '<div class="ev-card-nome">' + safeEsc(nome) + '</div>' +
-          '<div class="ev-card-latin"><em>' + safeEsc(cientifico) + '</em></div>' +
-          (tagline ? '<div class="ev-card-tagline">' + safeEsc(tagline) + '</div>' : '') +
-          (eixo ? '<div class="ev-card-eixo">' + safeEsc(eixo) + '</div>' : '') +
-          '</div>';
-      }).join('');
+      renderFiltersSidebar(ervFichasCache);
+      updateGridAndMeta();
+      updateClearAndCounts();
     } catch (e) {
-      el.innerHTML = '<p class="ev-error">Erro ao carregar catalogo.</p>';
+      grid.innerHTML = '<p class="ev-error">Erro ao carregar catalogo.</p>';
       console.error('[Ervatorio] Indice:', e);
     }
   };
