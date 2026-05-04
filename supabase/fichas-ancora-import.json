@@ -11573,1064 +11573,2008 @@
       "slug": "melissa",
       "nome_popular": "Melissa",
       "nome_cientifico": "Melissa officinalis L.",
-      "tagline": "A erva do coração tranquilo — ansiolítica europeia que chegou ao Brasil como \"erva-cidreira\" e conquistou definitivamente o catálogo mundial de calmantes.",
+      "tagline": "A erva-cidreira europeia — ansiolítica monografada pela EMA com mais de 2.000 anos de tradição mediterrânea, citral característico que confunde com a Lippia brasileira, e o nome científico que vem do grego para 'abelha' (μέλισσα).",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Melissa officinalis L.",
-        "familia_botanica": "Lamiaceae",
-        "tipo_botanico": "Fitoterápico ansiolítico / sedativo / antiviral",
-        "parte_usada": "Folhas frescas ou secas (antes da floração — maior concentração de óleos essenciais).",
+        "familia_botanica": "Lamiaceae (família da hortelã, da lavanda, do alecrim)",
+        "tipo_botanico": "Fitoterápico ansiolítico / sedativo leve / antiespasmódico digestivo",
+        "parte_usada": "Folhas frescas ou secas — colhidas antes da floração (concentração máxima de citral).",
         "sinonimos": [
-          "Melissa · erva-cidreira-europeia · cidreira-verdadeira · balsamita",
-          "Lemon balm (inglês) · Mélisse (francês) · Zitronenmelisse (alemão)",
-          "ATENÇÃO: no Brasil \"erva-cidreira\" geralmente refere-se à Lippia alba — melissa (Melissa officinalis) é a erva-cidreira europeia, planta diferente."
+          "Melissa · erva-cidreira-europeia · cidrila · cidreira-verdadeira",
+          "Lemon balm (inglês) · Mélisse (francês) · Zitronenmelisse (alemão) · Toronjil (espanhol)",
+          "ATENÇÃO: Melissa officinalis ≠ Lippia alba (erva-cidreira brasileira). Espécies, famílias e perfis distintos."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Cítrico-limão suave e fresco, levemente herbáceo, discretamente floral, leve amargo gentil.",
-        "aroma": "Limão-bálsamo fresco e elegante, floral-menta leve, mel cru, erval fresco. Um dos aromas mais agradáveis do catálogo.",
-        "cor_da_infusao": "Verde-pálido a amarelo-verdoso. #DCE870",
-        "intensidade": "1–2/5 — infusão suave e agradável. Alta aceitação universal.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Cítrico-limão suave e doce, levemente herbáceo, fresco. Mais delicado e gentil que a Lippia brasileira — sem amargor pronunciado.",
+        "aroma": "Limão fresco, melado-floral, herbáceo limpo. Aroma característico que evoca jardins mediterrâneos.",
+        "cor_da_infusao": "Verde-amarelado pálido. #D4E098",
+        "intensidade": "2/5 — gentil e palatável, alta aceitação universal.",
+        "notas": "Cabeça: limão-floral imediato | Corpo: herbáceo-mel | Fundo: leve frescor",
+        "bioma_de_origem": "Originária da bacia mediterrânea (Itália, Grécia, Bálcãs). Naturalizada na maior parte da Europa temperada e cultivada mundialmente. No Brasil: cultivo doméstico e comercial em RS, SC, SP, MG.",
+        "distribuicao_geografica": [
+          "Originária: Mediterrâneo Oriental, Bálcãs.",
+          "Cultivo global: Europa, Norte da África, Américas.",
+          "Brasil: cultivo no Sul e Sudeste — produção agroecológica crescente.",
+          "Centros de pesquisa: Universidades europeias (Itália, Alemanha) — base de monografia EMA."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C (citral e linalol muito voláteis — nunca ferver).",
-        "tempo_de_infusao": "",
-        "quantidade": "2–4 g de folhas secas para 250 ml (folhas frescas: 5–8 g).",
-        "metodo": "Infusão coberta, imprescindível.",
-        "reinfusoes": "1 possível.",
-        "melhor_momento": "Final de tarde ou noite (ansiolítico/sedativo). Também excelente para uso diurno suave.",
-        "combina_com": "Camomila (clássico absoluto) · Maracujá · Lavanda · Hortelã · Valeriana · Flor de laranjeira · Mel"
+        "temperatura_ideal": "85 °C — não ferver para preservar citral.",
+        "tempo_de_infusao": "5–8 min coberto.",
+        "quantidade": "2–4 g de folhas secas (5–10 frescas) para 250 ml.",
+        "metodo": "Infusão coberta. Maceração a frio também eficaz.",
+        "reinfusoes": "1 reinfusão.",
+        "melhor_momento": "Noite (sedativo). Pós-refeições (digestivo). Em situações de ansiedade aguda.",
+        "combina_com": "Camomila (sinergia clássica europeia) · Lavanda · Maracujá · Mel · Hortelã"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Forte para uso tópico antiviral em herpes labial.",
+        "aplicacoes": [
+          {
+            "titulo": "Pomada para herpes labial (HSV-1)",
+            "texto": "Extrato de melissa em pomada — antiviral comprovado em ECRs alemães. Reduz duração e intensidade da lesão. Lomaherpan® (creme de melissa) é fitoterápico registrado na Alemanha para herpes."
+          },
+          {
+            "titulo": "Compressa relaxante",
+            "texto": "Infusão forte morna em compressa — relaxante muscular e calmante."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Ansiolítico suave (inibição de GABA-transaminase — mantém GABA mais tempo disponível)",
-          "Sedativo leve (indutor de sono)",
-          "Antiviral (especialmente herpes labial)",
+          "Ansiolítico (modulação GABAérgica)",
+          "Sedativo leve / hipnótico suave",
           "Antiespasmódico digestivo",
-          "Antidepressivo leve",
-          "Cognitivo — melhora de memória em estudos piloto",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Hipotireoidismo — melissa pode reduzir função tireoidiana levemente em doses altas. Uso concomitante com sedativos — potencialização leve."
+          "Antiviral tópico (HSV-1, HSV-2)",
+          "Antimicrobiano",
+          "Hipotireoidiana suave (em uso prolongado de doses altas)"
         ],
         "componentes_ativos": [
           {
-            "label": "CITRAL (geranial + neral)",
-            "texto": "Ansiolítico, antiviral, aromático"
+            "label": "Citral (geranial + neral)",
+            "texto": "Componente aromático principal — Ansiolítico, antimicrobiano. Mesma molécula da Lippia alba e do capim-limão"
           },
           {
-            "label": "ÁCIDO ROSMARÍNICO",
-            "texto": "Inibição de enzima de degradação do GABA, antioxidante, antiviral"
+            "label": "Citronelal",
+            "texto": "Aromático, antimicrobiano"
           },
           {
-            "label": "LINALOL",
-            "texto": "Sedativo, ansiolítico"
+            "label": "Ácido rosmarínico",
+            "texto": "Antioxidante potente, anti-inflamatório, ansiolítico — marcador da identidade Lamiaceae medicinal"
           },
           {
-            "label": "CITRONELAL",
-            "texto": "Ansiolítico, aromático"
+            "label": "Ácido cafeico",
+            "texto": "Antioxidante, hepatoprotetor"
           },
           {
-            "label": "ÁCIDOS HIDROXICINÂMICOS",
-            "texto": "Antiviral (herpes), antioxidante"
+            "label": "Eugenol (traços)",
+            "texto": "Antimicrobiano"
           },
           {
-            "label": "FLAVONÓIDES (luteolina, apigenina)",
-            "texto": "Ansiolítico, anti-inflamatório"
+            "label": "Flavonóides (luteolina, apigenina)",
+            "texto": "Anti-inflamatório, ansiolítico"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Ansiedade e estresse",
-            "evidencia": "Moderada",
-            "populacao": "Kennedy et al., 2004"
-          },
-          {
-            "indicacao": "Insônia leve",
-            "evidencia": "Moderada",
-            "populacao": "Cerny & Schmid, 1999"
+            "indicacao": "Ansiedade leve / insônia",
+            "evidencia": "Forte (EMA well-established use)",
+            "populacao": "Adultos — Kennedy et al. (2003, 2004); Cases et al. (2011)"
           },
           {
             "indicacao": "Herpes labial (uso tópico)",
-            "evidencia": "Forte",
-            "populacao": "Wölbling & Leonhardt, 1994"
+            "evidencia": "Forte (RCT alemão)",
+            "populacao": "Adultos — Wölbling & Leonhardt (1994); Koytchev et al. (1999)"
           },
           {
-            "indicacao": "Déficit cognitivo leve (Alzheimer early)",
+            "indicacao": "Dispepsia funcional (componente Iberogast)",
+            "evidencia": "Forte",
+            "populacao": "Adultos — Iberogast (Bayer) tem melissa como componente"
+          },
+          {
+            "indicacao": "Demência leve (cognição)",
             "evidencia": "Preliminar",
-            "populacao": "Akhondzadeh et al., 2003"
+            "populacao": "Idosos — Akhondzadeh et al. (2003)"
           }
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "alerta_critico": {
+          "titulo": "Uso prolongado de doses altas — atenção tireoide",
+          "titulo2": "Pode reduzir função tireoidiana em uso intenso",
+          "corpo": "Em uso prolongado de doses altas (>4 semanas, >10 g/dia), há relatos de ação anti-tireoidiana leve (inibição de TSH e captação de iodo). Em uso normal (2–4 g/dia em infusão por períodos curtos), a melissa é uma das ervas mais seguras do catálogo. Hipotireoideos: monitorar TSH em uso prolongado. Gestação e lactação: tradicionalmente seguro em doses moderadas."
+        },
+        "contraindicacoes": [
+          "Hipotireoidismo: uso com cautela em doses altas prolongadas",
+          "Glaucoma: dados sugerem possível elevação de pressão intraocular — cautela",
+          "Sedativos farmacêuticos: potencialização leve"
+        ],
+        "interacoes": [
+          {
+            "label": "Sedativos / ansiolíticos farmacêuticos",
+            "texto": "Potencialização leve. Conduta: monitorar"
+          },
+          {
+            "label": "Hormônio tireoidiano (levotiroxina)",
+            "texto": "Possível antagonismo em doses altas. Conduta: monitorar TSH"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais: muito raros. Doses altas prolongadas: alterações leves de TSH.",
+        "dose_maxima": "Folhas secas em infusão: até 8 g/dia. Cápsulas: 300–600 mg de extrato seco até 3x/dia.",
+        "fontes": [
+          "EMA/HMPC — Monografia Melissa officinalis (well-established use)",
+          "Kennedy DO et al. — Modulation of mood and cognitive performance following acute administration of Melissa officinalis (Pharmacol Biochem Behav, 2003, 2004)",
+          "Cases J et al. — Pilot trial of Melissa officinalis on subjects with stress and sleep dysfunctions (Mediterr J Nutr Metab, 2011)",
+          "Wölbling RH, Leonhardt K — Local therapy of herpes simplex with dried extract from Melissa officinalis (Phytomedicine, 1994)",
+          "Koytchev R et al. — Balm mint extract (Lo-701) for topical treatment of recurring herpes labialis (Phytomedicine, 1999)",
+          "Akhondzadeh S et al. — Melissa officinalis extract in the treatment of patients with mild to moderate Alzheimer's disease (J Neurol Neurosurg Psychiatry, 2003)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "1/3",
+            "observacao": "Leve nota mel-floral natural"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Discreto"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "1/3",
+            "observacao": "Citral percebido como leve acidez (ilusão sinestésica)"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Cítrico-limão floral (Lamiaceae)",
+        "olfativo_descritores": [
+          "Limão-mel suave",
+          "Floral discreto",
+          "Herbáceo fresco",
+          "Levemente camforado-fundo"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Leve",
+            "molecula": "Citral"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa",
+            "molecula": "Mínima"
+          }
+        ],
+        "tatil": "Corpo leve, textura aveludada-fresca. Persistência aromática moderada (10–15 min).",
+        "descricao_integrada": "A melissa é uma das ervas mais gentilmente palatáveis do catálogo — ideal para iniciantes em fitoterapia ansiolítica. Para o Ervatório, é a ponte entre tradição mediterrânea milenar e ciência moderna (EMA well-established use)."
       },
       "cultura": {
-        "historia": "A melissa é a erva dos apicultores — o nome latino \"melissa\" vem do grego para \"abelha\". Apicultores medievais europeus esfregavam melissa nas colmeias para atrair enxames e acalmar as abelhas antes de manejar. Paracelso chamou a melissa de \"elixir da vida\". O licor Carmelite Water (Eau de Mélisse des Carmes), produzido por monges carmelitas desde 1611, foi o primeiro produto farmacêutico comercial a base de melissa — e ainda é vendido na Europa como digestivo.",
-        "cerimonial": "",
-        "brasil": "A confusão entre melissa e Lippia alba (erva-cidreira brasileira) é provavelmente o equívoco botânico mais comum na fitoterapia popular brasileira. São plantas distintas, com química diferente, de famílias diferentes — mas ambas têm aroma cítrico-limão e uso ansiolítico. O Ervatório tem responsabilidade específica de esclarecer essa distinção e apresentar a melissa europeia em seus próprios termos.",
-        "curiosidade": ""
+        "historia": "A melissa foi cultivada por monges medievais europeus em jardins monásticos — registros do Capitulare de Villis (Carlos Magno, séc. IX) listam a melissa como erva obrigatória. Paracelso (séc. XVI) atribuía à melissa propriedade de 'tornar a mente alegre e prolongar a vida'. O 'água de carmelitas' (Eau des Carmes) — licor aromático francês criado por monges carmelitas em 1611 — tem melissa como ingrediente principal e ainda é vendido como tônico digestivo.",
+        "cerimonial": "Sem cerimônia codificada — mas o cultivo de melissa em jardins monásticos europeus tem dimensão simbólica: planta da serenidade contemplativa. Apicultores europeus tradicionalmente plantam melissa próximo aos apiários — abelhas adoram as flores.",
+        "brasil": "Melissa importada (extrato seco europeu) é vendida em farmácias de manipulação. Cultivo doméstico crescente no Sul e Sudeste. Confusão recorrente com a 'erva-cidreira' brasileira (Lippia alba) — esclarecimento editorial é missão do Ervatório.",
+        "curiosidade": "O nome 'Melissa' vem do grego μέλισσα (mélissa = abelha) — porque as flores atraem abelhas em massa. Na mitologia grega, Melissa era uma ninfa que ensinou os humanos a coletar mel das abelhas. A planta carrega esse mito em seu nome científico — uma das poucas ervas do catálogo cujo nome é literalmente 'planta-das-abelhas'."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Indicações: ansiolítico, sedativo, antiespasmódico.",
-        "status_ema": "Monografia HMPC — well-established use para insônia e ansiedade.",
-        "status_fda": "GRAS para uso alimentar",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas colhidas antes da floração — primavera/início de verão"
+        "status_anvisa": [
+          "Uso reconhecido"
+        ],
+        "status_ema": "Monografia HMPC well-established use — ansiedade leve e insônia",
+        "status_fda": "GRAS (Generally Recognized as Safe) para uso alimentar",
+        "certificacao_organica": "Cultivo orgânico: Europa, BR (cooperativas no RS, SC, SP).",
+        "sazonalidade": "Folhas: pré-floração (primavera-verão europeu / outono-inverno BR)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Importação europeia (extrato padronizado) ou cultivo nacional. Cooperativas RS, SC.",
+        "faixa_de_preco": [
+          "Folhas secas (importadas): R$ 50–120/100 g",
+          "Folhas secas (BR): R$ 30–80/100 g",
+          "Extrato seco padronizado em ácido rosmarínico (cápsulas): R$ 50–120/30 cápsulas",
+          "Pomada para herpes (Lomaherpan ou similar): R$ 80–200/10g"
+        ],
+        "formatos": "Folhas secas (infusão); Sachês; Tintura; Extrato seco padronizado; Pomada tópica para herpes; Hidrolato (perfumaria)."
+      },
+      "destaques": [
+        {
+          "label": "EMA well-established use",
+          "texto": "Indicação aprovada para ansiedade e insônia — nível 1 de evidência europeia"
+        },
+        {
+          "label": "Antiviral tópico",
+          "texto": "Pomada de melissa = tratamento fitoterápico mais validado para herpes labial"
+        },
+        {
+          "label": "Planta-das-abelhas",
+          "texto": "Nome científico literal: Melissa = abelha em grego — apicultores adoram"
+        }
+      ]
     },
     {
       "slug": "hortela-pimenta",
       "nome_popular": "Hortelã-Pimenta",
-      "nome_cientifico": "Mentha × piperita L. (híbrido natural de M. aquatica × M. spicata)",
-      "tagline": "A menta que dominou o mundo — a mais importante das mentas por hibridação acidental, com ação farmacológica em praticamente todos os sistemas do organismo.",
+      "nome_cientifico": "Mentha × piperita L.",
+      "tagline": "A menta universal — híbrida natural com mais de 250 anos de cultivo, mentol que ativa TRPM8 (receptor do frio), e a planta com a maior cadeia industrial entre todas as Lamiaceae do mundo.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Mentha × piperita L. (híbrido natural de M. aquatica × M. spicata)",
         "familia_botanica": "Lamiaceae",
-        "tipo_botanico": "Fitoterápico digestivo / antiespasmódico / analgésico",
-        "parte_usada": "Folhas e sumidades floridas secas.",
+        "tipo_botanico": "Fitoterápico antiespasmódico digestivo / descongestionante / antimicrobiano",
+        "parte_usada": "Folhas frescas ou secas. Óleo essencial de hortelã-pimenta (peppermint oil) é matéria-prima farmacêutica regulamentada (USP, EMA).",
         "sinonimos": [
-          "Hortelã-pimenta · hortelã-japonesa · menta",
-          "Peppermint (inglês) · Menthe poivrée (francês) · Pfefferminze (alemão)"
+          "Hortelã-pimenta · menta-pimenta",
+          "Peppermint (inglês) · Pfefferminze (alemão) · Menthe poivrée (francês)",
+          "ATENÇÃO: gênero Mentha tem >25 espécies e híbridos. M. × piperita é o híbrido mais cultivado e melhor padronizado."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Mentolado intenso, fresco-gélido, levemente adocicado, pimentado leve no fundo. Frescor que persiste por minutos — TRPM8 ativado intensamente.",
-        "aroma": "Menta fresca intensa, eucalipto suave, cânfora leve. Inconfundível e universal.",
-        "cor_da_infusao": "Verde-pálido a amarelo-verdoso. #C8DC78",
-        "intensidade": "4/5 — presença dominante no blend.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Mentolado fresco intenso, levemente picante, refrescante. Sabor universal — uma das ervas mais reconhecíveis do mundo.",
+        "aroma": "Mentol dominante, fresco-cooling, levemente camforado, herbáceo verde.",
+        "cor_da_infusao": "Verde-pálido a amarelado. #C8DC78",
+        "intensidade": "4/5 — mentol intenso e marcante.",
+        "notas": "Cabeça: mentol imediato (TRPM8) | Corpo: herbáceo-fresco | Fundo: leve picância suave",
+        "bioma_de_origem": "Originária da Europa (híbrido natural entre M. aquatica e M. spicata, identificado na Inglaterra séc. XVII). Cultivada mundialmente.",
+        "distribuicao_geografica": [
+          "Cultivo industrial: EUA (maior produtor de OE), Índia (maior produtor de menta-japonesa similar), Marrocos, Argentina, Bulgária.",
+          "Brasil: cultivo doméstico amplamente difundido; produção comercial em SP, MG, RS.",
+          "Centros de pesquisa: USP, UNICAMP, universidades europeias e norte-americanas."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "80–85 °C (mentol é extremamente volátil — água mais quente destrói o aroma).",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 g de folhas secas para 250 ml (poderoso em aroma).",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "Pós-refeições (digestivo), início de tarde (energizante cognitivo).",
-        "combina_com": "Camomila (contraste frescor-calma) · Melissa · Limão · Gengibre · Canela · Erva-mate"
+        "temperatura_ideal": "85–90 °C — não ferver para preservar mentol volátil.",
+        "tempo_de_infusao": "5–8 min coberto.",
+        "quantidade": "1–3 g de folhas secas para 250 ml.",
+        "metodo": "Infusão coberta SEMPRE (mentol é altamente volátil).",
+        "reinfusoes": "1 reinfusão.",
+        "melhor_momento": "Pós-refeições (digestivo, carminativo). Em congestão respiratória.",
+        "combina_com": "Camomila · Erva-cidreira · Limão · Mel · Capim-limão"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Forte para uso tópico (cefaleia, descongestionante).",
+        "aplicacoes": [
+          {
+            "titulo": "Óleo essencial diluído para cefaleia tensional",
+            "texto": "OE 10% em óleo carreador, aplicado nas têmporas — RCT alemão (Göbel et al.) mostrou eficácia comparável ao paracetamol."
+          },
+          {
+            "titulo": "Inalação de vapor para congestão nasal",
+            "texto": "Folhas em água fervente, vapor — descongestionante via mentol."
+          },
+          {
+            "titulo": "Compressa fria para irritação cutânea",
+            "texto": "Infusão fria — sensação de frescor via TRPM8."
+          }
+        ],
+        "contraindicacoes": "OE puro: NÃO usar diretamente na pele de crianças <6 anos (broncoespasmo)."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antiespasmódico intestinal (síndrome do intestino irritável)",
-          "Carminativo (elimina gases)",
-          "Analgésico (cefaleia — uso tópico)",
-          "Descongestionante nasal (inalação)",
-          "Colerético suave",
-          "Antimicrobiano",
-          "Cognitivo — alerta e concentração (aromaterapia)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Crianças < 2 anos — mentol pode causar apneia reflexa",
-          "Menores de 6 anos — evitar inalação de óleo essencial no rosto",
-          "Refluxo gastroesofágico — mentol relaxa esfíncter inferior do esôfago",
-          "Cálculo biliar — colagogo, cautela"
+          "Antiespasmódico digestivo (síndrome do intestino irritável)",
+          "Carminativo (gases intestinais)",
+          "Descongestionante respiratório (mentol)",
+          "Analgésico (cefaleia tensional — uso tópico)",
+          "Antimicrobiano (mentol é antimicrobiano amplo)",
+          "Refrescante TRPM8 (sensação de frio sem mudança real de temperatura)"
         ],
         "componentes_ativos": [
           {
-            "label": "MENTOL",
-            "texto": "35–55% do óleo — TRPM8, analgésico, descongestionante, antiespasmódico"
+            "label": "Mentol",
+            "texto": "30–55% do OE — Ativador TRPM8 (sensação de frescor); antimicrobiano; antiespasmódico; analgésico tópico"
           },
           {
-            "label": "MENTONA",
-            "texto": "10–30% — Aromático, antiespasmódico"
+            "label": "Mentona",
+            "texto": "10–35% — Aromático, antiespasmódico"
           },
           {
-            "label": "MENTOFURANO",
-            "texto": "Presente — Potencialmente hepatotóxico em doses altas"
+            "label": "Acetato de mentila",
+            "texto": "Aromático, refrescante"
           },
           {
-            "label": "ISOMENTONA",
-            "texto": "Presente — Aromático"
+            "label": "Mentofurano",
+            "texto": "5–20% — Aromático (em concentrações altas é hepatotóxico — qualidade do OE inclui controle)"
+          },
+          {
+            "label": "Eucaliptol (1,8-cineol)",
+            "texto": "Expectorante, antimicrobiano"
+          },
+          {
+            "label": "Ácido rosmarínico",
+            "texto": "Antioxidante, anti-inflamatório"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Síndrome do intestino irritável",
-            "evidencia": "Forte",
-            "populacao": "Cochrane Review 2014"
+            "indicacao": "Síndrome do intestino irritável (cápsulas de OE entérico)",
+            "evidencia": "Forte (meta-análises)",
+            "populacao": "Adultos — Khanna et al. (2014); ACG Guidelines"
           },
           {
-            "indicacao": "Cefaleia tensional (tópico)",
+            "indicacao": "Cefaleia tensional (OE tópico)",
             "evidencia": "Forte",
-            "populacao": "Göbel et al., 1994"
+            "populacao": "Adultos — Göbel et al. (1996); Borhani Haghighi et al. (2010)"
           },
           {
             "indicacao": "Dispepsia funcional",
             "evidencia": "Moderada",
-            "populacao": "Rich et al., 2017"
+            "populacao": "Adultos — Madisch et al. (2004) Iberogast"
           },
           {
-            "indicacao": "Náusea (aromaterapia)",
+            "indicacao": "Náusea pós-cirúrgica (aromaterapia)",
             "evidencia": "Moderada",
-            "populacao": "Lua & Zakaria, 2012"
+            "populacao": "Adultos — múltiplos RCTs"
           }
         ],
+        "alerta_critico": {
+          "titulo": "OE puro — cuidados importantes",
+          "titulo2": "Crianças e pacientes específicos",
+          "corpo": "Óleo essencial puro de hortelã-pimenta NÃO deve ser aplicado diretamente em rosto/peito de crianças <6 anos (risco de broncoespasmo por mentol). Refluxo gastroesofágico (DRGE): mentol relaxa esfíncter esofágico inferior — pode piorar refluxo. Cápsulas entéricas (que liberam OE no intestino) contornam esse problema. Cálculos biliares: cautela (mentol é colagogo)."
+        },
         "contraindicacoes": [
-          "Crianças < 2 anos — mentol pode causar apneia reflexa",
-          "Menores de 6 anos — evitar inalação de óleo essencial no rosto",
-          "Refluxo gastroesofágico — mentol relaxa esfíncter inferior do esôfago",
-          "Cálculo biliar — colagogo, cautela"
+          "Crianças <6 anos: OE tópico no rosto/peito",
+          "DRGE/refluxo: OE oral (preferir cápsula entérica)",
+          "Cálculos biliares (sintomáticos)",
+          "Hérnia de hiato: cautela"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          {
+            "label": "Antiácidos",
+            "texto": "OE entérico depende de pH para liberar — antiácidos podem prejudicar revestimento entérico. Conduta: espaçar"
+          },
+          {
+            "label": "Ciclosporina",
+            "texto": "Mentol pode aumentar nível sérico. Conduta: monitorar"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais: muito raros. OE em doses altas: queimação retal (no caso de cápsula entérica), boca seca.",
+        "dose_maxima": "Folhas secas: até 8 g/dia. OE entérico (Colpermin, Mintec): 0,2–0,4 ml até 3x/dia.",
+        "fontes": [
+          "EMA/HMPC — Monografia Mentha × piperita (well-established use)",
+          "Khanna R et al. — Peppermint oil for irritable bowel syndrome: meta-analysis (J Clin Gastroenterol, 2014)",
+          "Göbel H et al. — Effectiveness of peppermint oil and paracetamol in headache treatment (Nervenarzt, 1996)",
+          "Madisch A et al. — STW 5 (Iberogast) for functional dyspepsia (Aliment Pharmacol Ther, 2004)",
+          "ACG Guidelines — Management of Irritable Bowel Syndrome (Am J Gastroenterol, 2021)",
+          "Farmacopeia Brasileira — monografia oficial Mentha × piperita"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Mentol-fresco (Lamiaceae)",
+        "olfativo_descritores": [
+          "Mentol intenso",
+          "Cooling/fresco característico",
+          "Herbáceo verde",
+          "Leve camforado-fundo"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "5/5 — MÁXIMA",
+            "molecula": "Mentol — ativador canônico de TRPM8 (receptor sensorial do frio). Ativação forte sem mudança real de temperatura"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Leve",
+            "molecula": "Em concentrações altas"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          }
+        ],
+        "tatil": "Corpo leve, textura fresca-cooling. Sensação de frescor que persiste 10–20 min após o consumo. Hortelã-pimenta é a referência absoluta de TRPM8 no catálogo — se mentol é o composto-exemplo de frescor, esta espécie é sua fonte mais concentrada e padronizada.",
+        "descricao_integrada": "A hortelã-pimenta é o protótipo do TRPM8 (canal iônico sensorial de frio) no catálogo — assim como a pimenta-malagueta é protótipo de TRPV1 (calor). Para o Ervatório, é a referência de 'frescor' ao qual outras ervas mentoladas são comparadas."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "M. × piperita foi identificada como híbrido natural na Inglaterra em 1696 pelo botânico John Ray. Tornou-se espécie cultivada economicamente importante a partir do séc. XVIII. Hoje, EUA é maior produtor mundial de óleo essencial de peppermint (estado de Oregon e Indiana — economia de centenas de milhões de dólares).",
+        "cerimonial": "Sem cerimônia codificada — mas a infusão de hortelã pós-refeições é prática universal nas culturas do Mediterrâneo (chá marroquino com hortelã = símbolo de hospitalidade árabe).",
+        "brasil": "Hortelã-pimenta é uma das ervas medicinais mais cultivadas em quintais brasileiros. RENISUS (SUS) — Programa Farmácia Viva. Indústria de OE no Brasil é menor que europeia/americana — oportunidade de cultivo.",
+        "curiosidade": "O mentol foi um dos primeiros 'frescos químicos' a ser sintetizado em escala industrial (séc. XIX) — usado em pasta de dente, gomas, cigarros mentolados. A hortelã-pimenta é mãe de uma indústria multibilionária baseada em UMA molécula (mentol) que engana o cérebro fazendo perceber frio sem que a temperatura mude. É um dos casos mais elegantes de neurociência comercializada."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial.",
-        "status_ema": "Monografia HMPC — well-established use.",
-        "status_fda": "GRAS",
-        "certificacao_organica": "",
-        "sazonalidade": ""
+        "status_anvisa": [
+          "Monografia oficial — Farmacopeia Brasileira",
+          "RENISUS (SUS)"
+        ],
+        "status_ema": "Monografia HMPC well-established use",
+        "status_fda": "GRAS para uso alimentar",
+        "certificacao_organica": "Cultivo orgânico amplamente disponível.",
+        "sazonalidade": "Folhas: pré-floração (primavera-verão)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cultivo doméstico amplo. Cooperativas BR e importação europeia/americana.",
+        "faixa_de_preco": [
+          "Folhas secas (ervanário): R$ 15–40/100 g",
+          "Sachês: R$ 15–35/cx 25un",
+          "Tintura: R$ 20–45/100 ml",
+          "OE puro 10ml: R$ 30–80",
+          "Cápsulas entéricas (Colpermin, Mintec): R$ 80–180/30 cápsulas"
+        ],
+        "formatos": "Folhas secas; Sachês; Tintura; Hidrolato; OE puro; Cápsulas entéricas (uso clínico para SII); Mudas para cultivo doméstico."
+      },
+      "destaques": [
+        {
+          "label": "TRPM8 referência",
+          "texto": "Mentol = ativador canônico do canal iônico do frio — protótipo sensorial"
+        },
+        {
+          "label": "SII com evidência forte",
+          "texto": "Cápsulas de OE entérico têm meta-análises positivas — recomendação ACG"
+        },
+        {
+          "label": "Híbrido de 1696",
+          "texto": "Identificada por John Ray na Inglaterra — uma das primeiras espécies de origem híbrida documentada"
+        }
+      ]
     },
     {
       "slug": "hibisco",
       "nome_popular": "Hibisco",
       "nome_cientifico": "Hibiscus sabdariffa L.",
-      "tagline": "O rubí vegetal — cálice ácido-vermelho do nordeste e do mundo, com ação hipotensora entre as mais documentadas de qualquer fitoterápico e um dos maiores fenômenos de mercado de chás dos últimos 20 anos.",
+      "tagline": "A flor vermelha que vira bebida — cálices ácidos com antocianinas e ácido hibíscico, tradição egípcia (karkadeh) e brasileira (vinagreira), e uma das fontes vegetais com maior cor natural do mundo — usado de Faraós a refrigerantes contemporâneos.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Hibiscus sabdariffa L.",
-        "familia_botanica": "Malvaceae (família do algodão, do quiabo)",
-        "tipo_botanico": "Fitoterápico antihipertensivo / antioxidante / diurético",
-        "parte_usada": "Cálices (sépalas carnosas) secos — não são flores; são os envoltórios carnosos do fruto.",
+        "familia_botanica": "Malvaceae (família do algodão, do quiabo, do cacau)",
+        "tipo_botanico": "Alimento funcional / fitoterápico anti-hipertensivo / antioxidante",
+        "parte_usada": "Cálices secos (sépalas vermelhas após queda das pétalas — não as flores em si).",
         "sinonimos": [
-          "Hibisco · vinagreira · caruru-azedo · quiabo-de-angola · rosela",
-          "Hibiscus tea (inglês) · Bissap (África Ocidental) · Agua de Jamaica (México) · Karkade (Egito/Sudão)"
+          "Hibisco · vinagreira (BR) · rosa-de-Jamaica · azeda-da-Guiné · quiabo-azedo (NE)",
+          "Karkadeh / Carcadè (árabe/Egito) · Roselle (inglês) · Bissap (Senegal/África Ocidental)",
+          "ATENÇÃO: gênero Hibiscus tem >200 espécies. H. sabdariffa é a única usada para infusão funcional. H. rosa-sinensis (hibisco ornamental) é diferente — fichas distintas no catálogo."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Ácido-cítrico intenso e limpo, levemente floral-frutal, tanino suave no fundo. Um dos perfis mais refrescantes do catálogo — o azedo perfeito.",
-        "aroma": "Floral-frutado-ácido, hibisco fresco, framboesa e cranberry selvagem.",
-        "cor_da_infusao": "Vermelho-rubi intenso a carmim — a cor mais espetacular do catálogo. #C01830",
-        "intensidade": "3/5 — perfil definido e elegante.",
-        "notas": "Cabeça: ácido-floral vívido | Corpo: frutal-cranberry | Fundo: tanino suave, leve adstringência | DISTRIBUIÇÃO NO BRASIL: Nordeste (maior produtor — PE, CE, BA, PB); introduzido da África, naturalizado.",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Ácido pronunciado (ácido hibíscico, ácido cítrico, ácido málico), levemente adstringente, frutado-floral. Perfil que lembra cranberry mais ácido.",
+        "aroma": "Frutado-floral discreto, ácido fresco, levemente vinho.",
+        "cor_da_infusao": "Vermelho-rubi intenso a magenta. #B82850 — uma das cores naturais mais espetaculares do catálogo.",
+        "intensidade": "4/5 — acidez dominante e cor marcante.",
+        "notas": "Cabeça: ácido cítrico imediato | Corpo: frutado-floral | Fundo: leve adstringência",
+        "bioma_de_origem": "Originária da África Ocidental (provavelmente Sudão e África Subsaariana). Cultivada em todas as regiões tropicais. No Brasil: cultivo abundante no NE e Sudeste.",
+        "distribuicao_geografica": [
+          "África: Sudão, Egito (maior consumidor mundial — karkadeh é bebida nacional), Nigéria, Senegal.",
+          "Ásia: Tailândia, Índia, Malásia.",
+          "Américas: México (agua de Jamaica), Brasil (vinagreira no NE), Caribe.",
+          "Brasil: cultivo no NE (BA, PE, CE), MG, SP."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "95–100 °C (ácidos orgânicos e antocianinas resistem à ebulição).",
-        "tempo_de_infusao": "",
-        "quantidade": "2–3 g de cálices secos para 250 ml.",
-        "metodo": "Infusão quente ou cold brew.",
-        "reinfusoes": "1–2 possíveis.",
-        "melhor_momento": "Qualquer hora. Cold brew: excelente bebida de verão e hidratação.",
-        "combina_com": "Gengibre · Canela · Maracujá · Capim-limão · Hortelã · Açaí · Pitanga — hibisco combina com quase tudo como base colorida."
+        "temperatura_ideal": "95 °C (cálices duros — extração precisa de calor).",
+        "tempo_de_infusao": "5–10 min (a cor vermelha aparece em 1–2 min — rápida extração).",
+        "quantidade": "2–4 g de cálices secos para 250 ml.",
+        "metodo": "Infusão simples ou cold brew (12h frio — extração suave de antocianinas, menos ácido).",
+        "reinfusoes": "1 reinfusão (cor mais clara).",
+        "melhor_momento": "Tarde ou após exercício (hidratante, antioxidante). Cuidado em hipotensos — pode reduzir PA.",
+        "combina_com": "Gengibre · Limão · Mel · Hortelã · Frutas vermelhas (excelente em blends)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para uso cosmético capilar.",
+        "aplicacoes": [
+          {
+            "titulo": "Tônico capilar (uso popular africano e brasileiro)",
+            "texto": "Infusão forte resfriada como enxágue — antioxidante capilar, brilho. Tradição cosmética africana."
+          },
+          {
+            "titulo": "Corante natural cosmético",
+            "texto": "Antocianinas como pigmento vermelho-rubi — cosméticos artesanais."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antihipertensivo (inibição ECA — similar ao mecanismo de captopril)",
-          "Antioxidante (antocianinas de alto ORAC)",
-          "Diurético",
-          "Hipolipemiante (redução de LDL e colesterol total)",
+          "Anti-hipertensivo (redução de PA sistólica e diastólica documentada em RCTs)",
+          "Antioxidante potente (antocianinas + ácidos fenólicos)",
+          "Hipolipemiante (redução de colesterol total e LDL)",
+          "Diurético leve",
           "Hepatoprotetor",
-          "Anti-inflamatório",
-          "Antiobésico leve (inibição de lipase pancreática)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Anti-hipertensivos — potencialização (monitorar PA)",
-          "Gestação — emenagogo em doses altas; uso moderado tolerado",
-          "Lítio — interfere na excreção renal",
-          "Cloroquina — reduz biodisponibilidade"
+          "Termogênico leve (favorece controle de peso)",
+          "Antimicrobiano leve"
         ],
         "componentes_ativos": [
           {
-            "label": "ANTOCIANINAS (delfinidina-3-glucosídeo, cianidina-3-glucosídeo)",
-            "texto": "Alta — Antioxidante, antihipertensivo, anti-inflamatório"
+            "label": "Antocianinas (delfinidina-3-sambubiosídeo, cianidina-3-sambubiosídeo)",
+            "texto": "Pigmentos vermelhos — Antioxidante potente, anti-hipertensivo (vasodilatação)"
           },
           {
-            "label": "ÁCIDOS ORGÂNICOS (cítrico, tartárico, málico, hibísico)",
-            "texto": "Alta — Acidez característica, diurético"
+            "label": "Ácido hibíscico",
+            "texto": "Específico do gênero — Acidez característica, possível ação anti-hipertensiva"
           },
           {
-            "label": "ÁCIDO HIBÍSICO (lactona de ácido)",
-            "texto": "Específico do hibisco — Antihipertensivo — inibição ECA"
+            "label": "Ácido cítrico, ácido málico, ácido tartárico",
+            "texto": "Acidez pronunciada"
           },
           {
-            "label": "PROTOCATECUICO (polifenol)",
-            "texto": "Presente — Hepatoprotetor, antioxidante"
+            "label": "Mucilagens",
+            "texto": "Demulcente, prebiótico"
           },
           {
-            "label": "QUERCETINA, MIRICETINA",
-            "texto": "Presentes — Anti-inflamatório, antioxidante"
+            "label": "Quercetina",
+            "texto": "Anti-inflamatório, antioxidante"
           },
           {
-            "label": "PECTINAS (mucilagens)",
-            "texto": "Presentes — Hipolipemiante, antiobésico"
+            "label": "Polissacarídeos (pectinas)",
+            "texto": "Hipolipemiante"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Hipertensão arterial leve-moderada",
-            "evidencia": "Moderada-forte",
-            "populacao": "McKay et al., 2010"
+            "indicacao": "Hipertensão leve a moderada",
+            "evidencia": "Forte (meta-análises)",
+            "populacao": "Adultos hipertensos pré-tratamento — Serban et al. (2015) meta-análise; McKay et al. (2010) RCT"
           },
           {
-            "indicacao": "Dislipidemia (LDL)",
+            "indicacao": "Dislipidemia (LDL, colesterol total)",
             "evidencia": "Moderada",
-            "populacao": "Gurrola-Díaz et al., 2010"
+            "populacao": "Adultos — Hopkins et al. (2013) revisão sistemática"
           },
           {
-            "indicacao": "Proteção hepática",
+            "indicacao": "Síndrome metabólica (adjuvante)",
             "evidencia": "Moderada",
-            "populacao": "Chang et al., 2014"
+            "populacao": "Adultos — múltiplos RCTs"
           },
           {
-            "indicacao": "Emagrecimento (adjuvante)",
-            "evidencia": "Preliminar",
-            "populacao": "Estudos piloto"
+            "indicacao": "Cólicas menstruais (uso popular)",
+            "evidencia": "Tradicional",
+            "populacao": "Mulheres — uso popular brasileiro"
           }
         ],
+        "alerta_critico": {
+          "titulo": "Hipotensores em uso conjunto — monitorar PA",
+          "titulo2": "Pode potencializar anti-hipertensivos farmacêuticos",
+          "corpo": "O hibisco tem efeito hipotensor documentado em RCTs. Pacientes em uso de anti-hipertensivos farmacêuticos (IECA, BRA, BCC, diuréticos) devem monitorar PA com regularidade — pode haver potencialização. Hipotensos primários: usar com cautela. Gestação: dados sugerem possível efeito uterotônico em doses muito altas — moderar consumo (uso normal como infusão é seguro). Crianças: seguro em uso alimentar."
+        },
         "contraindicacoes": [
-          "Anti-hipertensivos — potencialização (monitorar PA)",
-          "Gestação — emenagogo em doses altas; uso moderado tolerado",
-          "Lítio — interfere na excreção renal",
-          "Cloroquina — reduz biodisponibilidade"
+          "Hipotensão: cautela",
+          "Gestação: doses altas — moderar",
+          "Anticoagulação: cautela teórica (antocianinas)",
+          "Esmalte dental: ácido pode erodir em consumo crônico (enxaguar boca após)"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          {
+            "label": "Anti-hipertensivos (IECA, BRA, diuréticos)",
+            "texto": "Potencialização. Conduta: monitorar PA"
+          },
+          {
+            "label": "Hidroclorotiazida",
+            "texto": "Possível redução de absorção. Conduta: espaçar 2h"
+          },
+          {
+            "label": "Cloroquina",
+            "texto": "Interação documentada — redução de absorção. Conduta: evitar uso conjunto"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais: muito raros. Doses altas: hipotensão postural, desconforto gástrico (acidez).",
+        "dose_maxima": "Cálices secos: até 10 g/dia. Equivalente a 2–3 xícaras de chá ao dia.",
+        "fontes": [
+          "Serban C et al. — Effect of sour tea (Hibiscus sabdariffa) on arterial hypertension: meta-analysis (J Hypertens, 2015)",
+          "McKay DL et al. — Hibiscus sabdariffa lowers blood pressure in pre-hypertensive and mildly hypertensive adults (J Nutr, 2010)",
+          "Hopkins AL et al. — Hibiscus sabdariffa for the treatment of hypertension and hyperlipidemia: a comprehensive review (Fitoterapia, 2013)",
+          "Da-Costa-Rocha I et al. — Hibiscus sabdariffa L. — A phytochemical and pharmacological review (Food Chem, 2014)",
+          "Mahadevan N et al. — Hibiscus sabdariffa — an overview (Nat Prod Radiance, 2009)",
+          "Memento Fitoterápico ANVISA — Hibiscus sabdariffa"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "3/3",
+            "observacao": "DOMINANTE — múltiplos ácidos orgânicos (cítrico, málico, hibíscico)"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Frutado-floral ácido",
+        "olfativo_descritores": [
+          "Frutado-floral",
+          "Ácido fresco",
+          "Levemente vinho",
+          "Cranberry/groselha"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Leve-moderada",
+            "molecula": "Antocianinas + taninos leves"
+          }
+        ],
+        "tatil": "Corpo leve, textura aquosa-fresca. Acidez é sensação tátil dominante. Persistência média (5–10 min).",
+        "descricao_integrada": "O hibisco é a infusão-cor do catálogo — visualmente mais espetacular que qualquer outra erva. A combinação cor vermelha-rubi + acidez intensa + perfil antioxidante a torna um dos blends mais versáteis do Ervatório (excelente base para misturas). Para hipertensos pré-medicação, é uma das poucas ervas com evidência clínica robusta de meta-análise."
       },
       "cultura": {
-        "historia": "O hibisco é simultaneamente planta do nordeste brasileiro, da África Ocidental, do Egito, do México e do Sudeste Asiático — toda cultura tropical tem sua própria história com o hibisco. O Bissap senegalês, o Agua de Jamaica mexicano, o Karkade egípcio e a vinagreira nordestina são o mesmo ingrediente com narrativas de origem completamente diferentes.  No Brasil, o hibisco chegou no contexto da diáspora africana — as populações negras trazidas como escravizadas trouxeram o hábito do hibisco como bebida e alimento. A vinagreira nordestina (hibisco cozido com arroz e carne-de-sol) é um dos pratos mais antigos do Nordeste — de origem afro-indígena.",
-        "cerimonial": "",
-        "brasil": "O hibisco passou de produto rural nordestino quase desconhecido no Sudeste a fenômeno nacional de vendas em farmácias, supermercados e aplicativos de delivery em menos de 10 anos (2012–2022). O \"chá de hibisco para emagrecer\" — marketing que extrapola a evidência — impulsionou adoção que expôs milhões de brasileiros a uma planta com ação hipotensora real, sem que soubessem.",
-        "curiosidade": ""
+        "historia": "Hibisco é bebida ritual e cotidiana no Egito desde os Faraós (registros 3.500+ anos). Karkadeh (caracadê) é bebida nacional egípcia — servida em casamentos. Bissap senegalês é bebida diária da África Ocidental. No México (agua de Jamaica) é bebida-símbolo. No Brasil, a 'vinagreira' (folhas usadas como verdura azeda no Maranhão e Pará) é prato regional tradicional — cozida com arroz, peixe ou caranguejo. O cálice em si é menos usado culinariamente no NE brasileiro, mas é a bebida que se popularizou globalmente como 'chá de hibisco'.",
+        "cerimonial": "Karkadeh egípcio é servido em casamentos e celebrações religiosas. Bissap senegalês é bebida de hospitalidade — recusar é descortês.",
+        "brasil": "Hibisco virou um dos chás mais vendidos no Brasil dos anos 2010 em diante — popularizado pelo discurso de 'queima gordura'. A evidência científica é mais sobre anti-hipertensivo que termogênico — mas o marketing pegou. Cultivo crescente no NE.",
+        "curiosidade": "A cor vermelho-rubi do hibisco vem das antocianinas (delfinidina-3-sambubiosídeo principalmente), que são pH-dependentes — em pH ácido (a infusão é naturalmente ácida) ficam vermelhas; em pH alcalino virariam azuis. Esse comportamento camaleônico de pigmento natural é base de indicadores químicos caseiros (chá de hibisco + bicarbonato muda de cor)."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido. Indicação: diurético, antioxidante.",
-        "status_ema": "",
+        "status_anvisa": [
+          "Memento Fitoterápico — uso reconhecido"
+        ],
+        "status_ema": "Não monografado independentemente (mas amplamente usado na UE como suplemento)",
         "status_fda": "GRAS para uso alimentar",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita: 5–6 meses após plantio; NE: junho–setembro"
+        "certificacao_organica": "Cultivo orgânico amplo (Egito, Sudão, México, BR).",
+        "sazonalidade": "Cálices: pós-floração (out–nov no NE BR; nov–jan na maior parte do BR)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas no NE (PE, BA, CE) e SP. Importação egípcia disponível. Sudão é maior produtor mundial.",
+        "faixa_de_preco": [
+          "Cálices secos (ervanário/atacado): R$ 15–40/100 g (commodity de preço acessível)",
+          "Cálices orgânicos certificados: R$ 30–80/100 g",
+          "Sachês: R$ 15–40/cx 25un",
+          "Cápsulas/extrato: R$ 30–60/30 cápsulas"
+        ],
+        "formatos": "Cálices secos a granel; Sachês; Cápsulas/extrato; Cold brew engarrafado; Refrigerantes industriais (Karkadeh comercial); Hidrolato (cosmética)."
+      },
+      "destaques": [
+        {
+          "label": "Anti-hipertensivo validado",
+          "texto": "Meta-análises confirmam redução de PA — uma das ervas com evidência clínica mais robusta"
+        },
+        {
+          "label": "Cor mais espetacular",
+          "texto": "Vermelho-rubi pH-dependente (antocianinas) — visualmente icônico"
+        },
+        {
+          "label": "3.500+ anos no Egito",
+          "texto": "Karkadeh é bebida ritual desde os Faraós — uma das infusões mais antigas em uso contínuo"
+        }
+      ]
     },
     {
       "slug": "canela-do-ceilao",
       "nome_popular": "Canela-do-Ceilão",
-      "nome_cientifico": "Cinnamomum verum J.Presl (sin.: C. zeylanicum Blume)",
-      "tagline": "A especiaria que moveu a história — antidiabética, antisséptica e cardioprotetora com mais de 4.000 anos de uso documentado em todas as civilizações que a conheceram.",
+      "nome_cientifico": "Cinnamomum verum J.Presl",
+      "tagline": "A canela verdadeira — espécie do Sri Lanka que move comércio global há 3.000 anos, com cumarina baixa (segura para uso regular) e potencial hipoglicemiante documentado, distinta da canela-cássia mais barata.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Cinnamomum verum J.Presl (sin.: C. zeylanicum Blume)",
-        "familia_botanica": "Lauraceae (família do louro, do abacate)",
-        "tipo_botanico": "Fitoterápico antidiabético / antisséptico / antioxidante",
-        "parte_usada": "Casca interna seca (canela-do-ceilão); óleos essenciais.",
+        "nome_cientifico": "Cinnamomum verum J.Presl (sin.: C. zeylanicum)",
+        "familia_botanica": "Lauraceae (família do louro, do abacate, da canforeira)",
+        "tipo_botanico": "Especiaria medicinal / fitoterápico hipoglicemiante / antimicrobiano",
+        "parte_usada": "Casca interna seca (paus de canela enrolados — formato característico).",
         "sinonimos": [
-          "Canela-do-ceilão · canela-verdadeira · canela-de-veiga",
-          "Ceylon cinnamon (inglês) · Cannelle de Ceylan (francês)",
-          "ATENÇÃO: C. verum (Ceilão) ≠ C. cassia (China — canela-da-china) — a canela-da-china tem cumarina em concentrações 70x maiores. A maioria da canela vendida no Brasil é C. cassia — mais barata, mais picante, mais risco de hepatotoxicidade em uso regular intenso."
+          "Canela-do-ceilão · canela-verdadeira · canela-do-ceilão",
+          "Ceylon cinnamon (inglês) · True cinnamon",
+          "ATENÇÃO: distinguir de C. cassia (canela-da-china/canela-cássia) — espécie diferente, mais barata, com cumarina ALTA (risco hepatotóxico em uso regular). Maioria da 'canela em pó' supermercado é C. cassia. Canela verdadeira (verum) é mais clara, casca fina e quebradiça — preço maior."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Doce-picante quente, complexo, levemente floral, amadeirado-especiado. C. verum: mais suave, floral, complexa. C. cassia: mais intensa, picante, menos nuances.",
-        "aroma": "Doce-especiado-quente, aldeído cinâmico característico, baunilha suave, madeira aquecida.",
-        "cor_da_infusao": "Âmbar-marrom quente. #C88840",
-        "intensidade": "3–4/5 — presença marcante mas harmonizável.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Doce-quente, levemente picante-aromática, complexa. Mais sutil e refinada que a cassia (que é mais agressivamente picante).",
+        "aroma": "Aldeído cinâmico característico, doce-quente, levemente floral, refinado. Aroma de Natal universal.",
+        "cor_da_infusao": "Marrom-amarelado a âmbar dourado. #C8884A",
+        "intensidade": "3/5 — aromático presente mas não invasivo.",
+        "notas": "Cabeça: aldeído cinâmico imediato | Corpo: doce-quente | Fundo: leve floral",
+        "bioma_de_origem": "Originária do Sri Lanka (antigo Ceilão) e Sul da Índia (Costa Malabar). Cultivada em Madagascar, Seychelles, Brasil (em pequena escala — ES, BA).",
+        "distribuicao_geografica": [
+          "Sri Lanka: maior produtor mundial de C. verum (>90% da produção global).",
+          "Madagascar, Seychelles: produção secundária.",
+          "Brasil: cultivo experimental no ES (Domingos Martins) e BA. Quase toda canela consumida no BR é importada (cassia ou verum — verificar rótulo).",
+          "Centros de pesquisa: Universidades do Sri Lanka, Índia, USP."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "95 °C (canela resiste ao calor — aldeído cinâmico estável).",
-        "tempo_de_infusao": "",
-        "quantidade": "1 pau pequeno (1–2 g) ou 1 colher de chá de pó por 250 ml.",
-        "metodo": "Decocção suave (pau) ou infusão (pó).",
-        "reinfusoes": "",
-        "melhor_momento": "Pós-refeições (antidiabético prandial) — 3x ao dia.",
-        "combina_com": "Gengibre · Cúrcuma · Cardamomo · Cravo · Mel · Maçã · Laranja · Cacau — canela é o especiado universal."
+        "temperatura_ideal": "95 °C (decocção curta para extrair óleos voláteis).",
+        "tempo_de_infusao": "5–10 min coberto.",
+        "quantidade": "1–2 g (1 pau pequeno OU 1 colher chá de pó) para 250 ml.",
+        "metodo": "Decocção suave de pau ou infusão de pó.",
+        "reinfusoes": "1 reinfusão (pau de canela aguenta 2–3 ciclos).",
+        "melhor_momento": "Pós-refeições (digestivo, hipoglicemiante prandial). Manhã (estimulante leve).",
+        "combina_com": "Maçã · Mel · Gengibre · Cardamomo · Cravo · Anis-estrelado · Café · Cacau"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para uso tópico antimicrobiano (OE).",
+        "aplicacoes": [
+          {
+            "titulo": "OE diluído como antifúngico",
+            "texto": "Aldeído cinâmico tem ação antifúngica documentada — uso em formulações dermatológicas para Candida."
+          }
+        ],
+        "contraindicacoes": "OE puro irrita a pele — sempre diluir."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antidiabético (mimetiza insulina, melhora sensibilidade)",
-          "Antimicrobiano potente (aldeído cinâmico)",
-          "Antifúngico",
-          "Antioxidante",
+          "Hipoglicemiante leve (sensibilizador de insulina)",
+          "Antimicrobiano (aldeído cinâmico)",
           "Anti-inflamatório",
-          "Cardioprotetor (redução de LDL)",
-          "Antiespasmódico digestivo",
-          "Estimulante da circulação",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "C. cassia em uso diário intenso — risco de hepatotoxicidade por cumarina; preferir C. verum",
-          "Anticoagulados — potencialização (cumarina)",
-          "Gestação em doses altas — emenagogo",
-          "Hepatopatias — C. cassia contraindicada"
+          "Antioxidante",
+          "Estimulante digestivo / carminativo",
+          "Termogênico leve"
         ],
         "componentes_ativos": [
           {
-            "label": "ALDEÍDO CINÂMICO (cinnamaldeído)",
-            "texto": "Antimicrobiano, antifúngico, antidiabético (principal)"
+            "label": "Aldeído cinâmico (cinamaldeído)",
+            "texto": "65–80% do OE — Antimicrobiano, anti-inflamatório, hipoglicemiante. Marcador de identidade da canela"
           },
           {
-            "label": "EUGENOL",
-            "texto": "Anti-inflamatório, antimicrobiano, analgésico"
+            "label": "Eugenol",
+            "texto": "5–10% (menor que cassia) — Antimicrobiano, anestésico local"
           },
           {
-            "label": "CUMARINA (C. verum — baixa; C. cassia — alta)",
-            "texto": "Anticoagulante, broncodilatador"
+            "label": "Cumarina",
+            "texto": "BAIXA em C. verum (0,01–0,4 mg/g) vs ALTA em C. cassia (5–13 mg/g). Diferencial de segurança"
           },
           {
-            "label": "PROCIANIDINAS (tipo A)",
-            "texto": "Antidiabético — mimetismo de insulina"
+            "label": "Procianidinas (tipo A)",
+            "texto": "Sensibilizadores de insulina"
           },
           {
-            "label": "POLÍMEROS TIPO A DE PROCIANIDINAS",
-            "texto": "Sensibilizador de insulina"
+            "label": "Linalol, beta-cariofileno",
+            "texto": "Aromáticos secundários"
+          },
+          {
+            "label": "Mucilagens",
+            "texto": "Demulcente"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Diabetes tipo 2 (adjuvante)",
-            "evidencia": "Moderada",
-            "populacao": "Khan et al., 2003"
+            "indicacao": "Diabetes tipo 2 (adjuvante hipoglicemiante)",
+            "evidencia": "Moderada (meta-análises mistas)",
+            "populacao": "Adultos DM2 — Allen et al. (2013); Akilen et al. (2012)"
           },
           {
             "indicacao": "Síndrome metabólica",
             "evidencia": "Moderada",
-            "populacao": "Qin et al., 2010"
+            "populacao": "Adultos — múltiplos RCTs"
           },
           {
-            "indicacao": "Infecções respiratórias (via aromática)",
+            "indicacao": "Antimicrobiano (Candida, H. pylori)",
             "evidencia": "Moderada",
-            "populacao": "Pesquisas em aromaterapia"
+            "populacao": "Estudos in vitro e piloto"
+          },
+          {
+            "indicacao": "Dispepsia funcional",
+            "evidencia": "Tradicional forte",
+            "populacao": "Adultos — uso milenar"
           }
         ],
+        "alerta_critico": {
+          "titulo": "Verum vs Cassia — diferença CRÍTICA de cumarina",
+          "titulo2": "EFSA: TDI cumarina = 0,1 mg/kg/dia",
+          "corpo": "Canela-cássia (C. cassia, vendida como 'canela em pó comum' na maioria dos supermercados) tem cumarina ALTA — 1 colher de chá pode exceder o TDI da EFSA. Uso regular pode causar hepatotoxicidade. Canela-do-ceilão (C. verum) tem cumarina baixa e é segura para uso regular. Para fins medicinais (diabetes), preferir SEMPRE C. verum certificada. Verificar rótulo: 'Cinnamomum verum' ou 'Ceylon cinnamon'. Gestação: doses culinárias seguras; doses altas terapêuticas — cautela."
+        },
         "contraindicacoes": [
-          "C. cassia em uso diário intenso — risco de hepatotoxicidade por cumarina; preferir C. verum",
-          "Anticoagulados — potencialização (cumarina)",
-          "Gestação em doses altas — emenagogo",
-          "Hepatopatias — C. cassia contraindicada"
+          "Gestação: doses altas — cautela (uterotônica em modelos animais)",
+          "Hepatopatias: especialmente se for cassia — preferir verum",
+          "Anticoagulação: cumarina (mesmo baixa) potencializa — monitorar INR",
+          "Alergia ao bálsamo do Peru: reação cruzada possível"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          {
+            "label": "Hipoglicemiantes orais",
+            "texto": "Potencialização leve. Conduta: monitorar glicemia"
+          },
+          {
+            "label": "Anticoagulantes (varfarina)",
+            "texto": "Cumarina + varfarina = potencialização. Conduta: monitorar INR"
+          },
+          {
+            "label": "Hepatotóxicos (paracetamol)",
+            "texto": "Especialmente cassia — hepatotoxicidade aditiva"
+          }
+        ],
+        "efeitos_adversos": "Em doses culinárias: muito raros. Doses terapêuticas (1+ g/dia regular): possível hepatotoxicidade (especialmente cassia).",
+        "dose_maxima": "Uso terapêutico: 1–6 g/dia de C. verum. C. cassia: limitar a <1 g/dia se uso regular (TDI cumarina).",
+        "fontes": [
+          "Allen RW et al. — Cinnamon use in type 2 diabetes: an updated systematic review and meta-analysis (Ann Fam Med, 2013)",
+          "Akilen R et al. — Cinnamon in glycaemic control: systematic review (Diabet Med, 2012)",
+          "EFSA — Coumarin in flavourings (Sci Op, 2008)",
+          "Khan A et al. — Cinnamon improves glucose and lipids of people with type 2 diabetes (Diabetes Care, 2003)",
+          "Memento Fitoterápico ANVISA",
+          "Ranasinghe P et al. — Medicinal properties of true cinnamon (BMC Complement Altern Med, 2013)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "1/3",
+            "observacao": "Doce sinestésica via aldeído cinâmico (não há açúcar real)"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Especiaria doce-quente",
+        "olfativo_descritores": [
+          "Aldeído cinâmico (canela clássica)",
+          "Doce-quente",
+          "Levemente floral (verum) — ausente em cassia",
+          "Madeira-casca"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Leve",
+            "molecula": "Aldeído cinâmico (irritante leve)"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Moderada",
+            "molecula": "Aldeído cinâmico — ativador documentado de TRPA1"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Leve",
+            "molecula": "Procianidinas (taninos)"
+          }
+        ],
+        "tatil": "Corpo leve-médio. Sensação levemente quente-picante (TRPA1). Persistência aromática alta — aldeído cinâmico permanece 15–20 min.",
+        "descricao_integrada": "A canela-do-ceilão é o protótipo do aldeído cinâmico — molécula que ativa TRPA1 (canal de irritação química) sem ser propriamente picante. Esse mecanismo neuroquímico explica por que canela 'esquenta' a boca sem ser pimenta. Para o Ervatório, é referência sensorial de 'aroma especiado quente'."
       },
       "cultura": {
-        "historia": "A canela custou mais que ouro em peso por séculos. As rotas da canela do Ceilão (hoje Sri Lanka) foram segredo de estado guardado por comerciantes árabes por centenas de anos. A Portugal dos séculos XV e XVI construiu seu império colonial em parte para controlar o comércio de canela — Vasco da Gama chegou à Índia em 1498 exatamente buscando essa rota.  O paradoxo: o Brasil, que foi colonizado em parte pela mesma lógica das especiarias, tornou-se um dos maiores consumidores mundiais de canela — mas importa praticamente toda a canela que consome, sem cultivar em escala comercial.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "A canela é uma das especiarias mais antigas em comércio global — registros do Egito (1.500 a.C.) mencionam canela importada do Ceilão. Foi mercadoria-chave da Rota das Especiarias que motivou as Grandes Navegações (Vasco da Gama 1498 buscava canela). Holandeses e portugueses disputaram o controle do Ceilão (séc. XVI–XVIII) por causa da canela. A distinção entre verum (cara, sutil) e cassia (mais barata, agressiva) é histórica.",
+        "cerimonial": "Canela é especiaria ritual em múltiplas tradições: incenso egípcio, especiaria de Natal cristão, ingrediente de bolos kosher, base do garam masala indiano. Universalmente associada a calor e celebração.",
+        "brasil": "Quase toda canela vendida no Brasil é cassia (mais barata, importada do Vietnã/Indonésia). A canela-do-ceilão é encontrada em casas de produtos naturais e gourmet. Cultivo nacional incipiente no ES (Domingos Martins) e BA — oportunidade de canela brasileira premium.",
+        "curiosidade": "O aldeído cinâmico ativa o canal iônico TRPA1 — mesmo canal que mostarda, alho cru e wasabi ativam (sensação de irritação química, 'queima' sem ser picante). Pesquisas recentes mostram que aldeído cinâmico em doses baixas pode ter efeito termogênico via TRPA1 em tecido adiposo marrom — base da noção popular de 'canela acelera metabolismo'."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Indicação: digestivo, antisséptico.",
-        "status_ema": "Monografia HMPC — traditional use para dispepsia.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": ""
+        "status_anvisa": [
+          "Memento Fitoterápico ANVISA"
+        ],
+        "status_ema": "Monografia HMPC traditional use (Cinnamomum spp.)",
+        "status_fda": "GRAS para uso alimentar",
+        "certificacao_organica": "Sri Lanka tem certificação de origem para Ceylon cinnamon. EFSA regula cumarina em alimentos.",
+        "sazonalidade": "Casca colhida 2x ao ano (durante chuvas — facilita descascamento)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Importação Sri Lanka (verum certificada). Importação Vietnã/Indonésia (cassia). Cultivo BR incipiente (ES, BA).",
+        "faixa_de_preco": [
+          "Pó de cassia (supermercado): R$ 15–40/100 g (a maioria do mercado)",
+          "Pau de C. verum certificada: R$ 60–150/100 g (premium)",
+          "Pó de C. verum: R$ 50–120/100 g",
+          "OE: R$ 60–150/10 ml"
+        ],
+        "formatos": "Pau (canela em rama); Pó moído; Cápsulas/extrato; OE; Sachês."
+      },
+      "destaques": [
+        {
+          "label": "Verum ≠ Cassia",
+          "texto": "Diferença crítica: verum tem cumarina BAIXA (segura), cassia tem ALTA (risco hepatotóxico)"
+        },
+        {
+          "label": "TRPA1 referência",
+          "texto": "Aldeído cinâmico é ativador canônico do canal TRPA1 — junto com mostarda e wasabi"
+        },
+        {
+          "label": "3.000+ anos comércio",
+          "texto": "Uma das especiarias mais antigas em comércio global — moveu Rotas das Especiarias"
+        }
+      ]
     },
     {
       "slug": "alcacuz",
       "nome_popular": "Alcaçuz",
       "nome_cientifico": "Glycyrrhiza glabra L.",
-      "tagline": "O adoçante medicinal do mundo antigo — 50x mais doce que o açúcar, com ação gastroprotetora excepcional, reputação milenar e farmacologia que ainda surpreende.",
+      "tagline": "A raiz doce milenar — gastroprotetor mediterrâneo com glicirrizina (50x mais doce que açúcar), alerta crítico de hipertensão por uso prolongado, e a planta-base de doces, licores e Pastis franceses.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Glycyrrhiza glabra L.",
         "familia_botanica": "Fabaceae / Papilionoideae",
-        "tipo_botanico": "Fitoterápico gastroprotetor / expectorante / adoçante",
-        "parte_usada": "Raiz e rizoma, secos.",
+        "tipo_botanico": "Fitoterápico gastroprotetor / expectorante / adoçante natural",
+        "parte_usada": "Raízes e rizomas — secos. Pó ou pedaços para infusão.",
         "sinonimos": [
-          "Alcaçuz · alcaçuz-da-europa · regaliz · palito-doce",
-          "Liquorice (inglês) · Réglisse (francês) · Lakritz (alemão) · Regaliz (espanhol)",
-          "Gan cao (chinês — \"erva doce\") — um dos mais usados na MTC"
+          "Alcaçuz · regaliz · raiz-doce",
+          "Liquorice (inglês britânico) · Licorice (americano) · Réglisse (francês) · Süßholz (alemão)",
+          "ATENÇÃO: G. glabra (alcaçuz mediterrâneo) ≠ G. uralensis (alcaçuz chinês — gancao da MTC, similar mas não idêntico)."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Doce intenso e peculiar (glicirrizina — 50x açúcar), levemente anis, fundo de madeira doce. Doçura longa, persistente, diferente de qualquer outra.",
-        "aroma": "Doce-anisado-balsâmico, feno adocicado, madeira curada.",
-        "cor_da_infusao": "Marrom-amarelado a âmbar-mel. #C89A38",
-        "intensidade": "3/5 — doçura marcante; volume de sabor distinto.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Doce intenso e peculiar (glicirrizina é 50x mais doce que sacarose), levemente terroso, leve nota anisada. Sabor único e inconfundível.",
+        "aroma": "Doce-anisado, terroso, levemente amadeirado.",
+        "cor_da_infusao": "Marrom-amarelado a âmbar dourado. #C8A848",
+        "intensidade": "3/5 — doçura dominante e marcante.",
+        "notas": "Cabeça: doce intenso imediato | Corpo: anisado-terroso | Fundo: leve adocicado persistente",
+        "bioma_de_origem": "Originária da Europa Mediterrânea, Oriente Médio (Turquia, Irã), Ásia Central. Cultivada na China, Índia, Espanha. No Brasil: cultivo incipiente.",
+        "distribuicao_geografica": [
+          "Maiores produtores: China (G. uralensis), Turquia, Irã, Síria.",
+          "Europa: Espanha, Itália — produção tradicional.",
+          "Brasil: importação predominante. Cultivo experimental no Sul.",
+          "Centros de pesquisa: Universidades europeias e japonesas (gastroenterologia)."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "95 °C | Tempo: 10–15 min | Quantidade: 1–3 g de raiz seca para 250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "1–3 g de raiz seca para 250 ml",
-        "metodo": "Decocção suave (raiz dura). Pó: infusão 5–8 min.",
-        "reinfusoes": "",
-        "melhor_momento": "30 min antes das refeições (gastroprotetor) ou como adoçante de blends amargos.",
-        "combina_com": "Funcho · Camomila · Espinheira-santa · Alcachofra · Gengibre — alcaçuz é o adoçante natural e harmonizador de blends amargos."
+        "temperatura_ideal": "95 °C (decocção — raiz dura, requer calor sustentado).",
+        "tempo_de_infusao": "10–15 min decocção.",
+        "quantidade": "1–3 g de raízes/pedaços para 250 ml.",
+        "metodo": "Decocção. Tintura: 1:5 em álcool 60°.",
+        "reinfusoes": "1 reinfusão.",
+        "melhor_momento": "30 min antes ou após refeições (gastroprotetor). Em tosse seca: até 3x/dia (curto prazo).",
+        "combina_com": "Espinheira-santa · Camomila · Funcho · Mel · Anis-estrelado"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Gastroprotetor (proteção e cicatrização da mucosa gástrica)",
-          "Antiulceroso (H. pylori — ação documentada)",
-          "Expectorante e demulcente (vias respiratórias)",
-          "Anti-inflamatório (glicirretínico — similar à cortisona)",
-          "Adoçante natural (uso em formulações)",
-          "Antiviral (hepatite C, HIV — pesquisa)",
-          "Hepatoprotetor",
-          "Componentes ativos:",
-          "⚠️ ATENÇÃO — PSEUDOHIPERALDOSTERONISMO:",
-          "Contraindicações:",
-          "Hipertensão arterial — contraindicado em uso regular",
-          "Hipocalemia — potencializa perda de potássio",
-          "Corticoides — sinergismo",
-          "Gestação — estrogênico fraco em doses altas",
-          "Insuficiência cardíaca e renal — retenção de sódio"
-        ],
-        "componentes_ativos": [
+        "evidencia": "Forte para uso cosmético clareador (ácido glicirrético).",
+        "aplicacoes": [
           {
-            "label": "GLICIRRIZINA (glicirrizato de amônio)",
-            "texto": "2–9% da raiz seca — Adoçante, anti-inflamatório, antiviral, gastroprotetor"
+            "titulo": "Cosmético clareador (manchas, melasma)",
+            "texto": "Ácido glicirrético em formulações cosméticas — inibe tirosinase, reduz melanina. Cosmecêutico estabelecido."
           },
           {
-            "label": "ÁCIDO GLICIRRETÍNICO (produto de hidrólise)",
-            "texto": "— — Anti-inflamatório tipo corticoide, antiulceroso"
-          },
-          {
-            "label": "FLAVONÓIDES (liquiritigenina, isoliquiritigenina)",
-            "texto": "Presentes — Antiulceroso, estrogênico fraco"
-          },
-          {
-            "label": "GLABRIDINA",
-            "texto": "Presente — Antimicrobiano, antioxidante, clareador de pele"
-          },
-          {
-            "label": "CHALCONAS",
-            "texto": "Presentes — Antimicrobiano"
+            "titulo": "Anti-inflamatório tópico (dermatite, eczema)",
+            "texto": "Glicirrizina em pomada — ação semelhante a corticoide leve."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [
-          "Hipertensão arterial — contraindicado em uso regular",
-          "Hipocalemia — potencializa perda de potássio",
-          "Corticoides — sinergismo",
-          "Gestação — estrogênico fraco em doses altas",
-          "Insuficiência cardíaca e renal — retenção de sódio"
-        ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
-      },
-      "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
-      },
-      "cultura": {
-        "historia": "O alcaçuz é a erva mais doce da história da medicina — adoçante natural antes do açúcar, preservativo de alimentos antes da refrigeração, remédio antes da farmacologia. Alexandre Magno distribuía palitos de raiz de alcaçuz para suas tropas para suportar longas marchas — hidratação e energia. Os faraós do Egito foram enterrados com alcaçuz (encontrado na tumba de Tutancâmon). Confúcio recomendava alcaçuz como tônico diário.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
-      },
-      "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Indicações: gastroprotetor, expectorante.",
-        "status_ema": "Monografia HMPC — well-established use para gastrite e tosse.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": ""
-      },
-      "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
-    },
-    {
-      "slug": "lavanda",
-      "nome_popular": "Lavanda",
-      "nome_cientifico": "Lavandula angustifolia Mill. (sin.: L. officinalis Chaix)",
-      "tagline": "A flor da serenidade — ansiolítica aromática europeia com a relação mais documentada entre aroma e sistema nervoso de qualquer planta do catálogo.",
-      "schema_version": "1.1",
-      "identificacao": {
-        "nome_cientifico": "Lavandula angustifolia Mill. (sin.: L. officinalis Chaix)",
-        "familia_botanica": "Lamiaceae",
-        "tipo_botanico": "Fitoterápico ansiolítico / sedativo / aromaterápico",
-        "parte_usada": "Flores secas; óleo essencial (uso aromaterápico e tópico).",
-        "sinonimos": [
-          "Lavanda · lavanda-inglesa · espigo (Portugal)",
-          "Lavender (inglês) · Lavande (francês) · Lavendel (alemão)",
-          "True lavender / English lavender (diferente da L. stoechas — menos estudada)"
-        ]
-      },
-      "caracterizacao": {
-        "sabor_dominante": "Floral intenso, levemente herbáceo, discretamente amargo. Palatabilidade dividida — aroma é muito superior ao sabor.",
-        "aroma": "Floral-frutado-herbal — o aroma mais reconhecível de bem-estar do mundo. Linalol + acetato de linalila = fórmula da calma.",
-        "cor_da_infusao": "Roxo-acinzentado pálido a âmbar rosado. #C8A8C0",
-        "intensidade": "2/5 (sabor) — 5/5 (aroma). A erva de maior gap entre experiência gustativa e olfativa do catálogo.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
-      },
-      "preparo": {
-        "temperatura_ideal": "80–85 °C (linalol e acetato de linalila muito voláteis).",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 g de flores secas para 250 ml. Dose baixa — aroma intenso.",
-        "metodo": "Infusão coberta, preferível em bule de cerâmica (retém aroma).",
-        "reinfusoes": "",
-        "melhor_momento": "Noite — 30 min antes de dormir. Ritual do sono.",
-        "combina_com": "Camomila (clássico absoluto) · Melissa · Maracujá · Rosa · Mel · Flor de laranjeira — lavanda é sempre coadjuvante aromático nobre."
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "contraindicacoes": "Uso tópico amplamente seguro."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Ansiolítico (modulação GABA e glutamato)",
-          "Sedativo / indutor de sono",
-          "Analgésico (cefaleia, dor menstrual)",
-          "Antiespasmódico",
-          "Antibacteriano (óleo essencial)",
-          "Neuroprotetor (linalol — antiglutamatérgico)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Silexan: extrato oral padronizado de lavanda — medicamento registrado na Alemanha para ansiedade generalizada.",
-          "Contraindicações: Prepúberes masculinos — uso de óleo essencial em doses altas associado a ginecomastia (efeito estrogênico leve — caso reportado). Uso tópico irrestrito."
+          "Gastroprotetor / antiulceroso (estimula muco gástrico)",
+          "Expectorante (saponinas)",
+          "Anti-inflamatório (mecanismo similar a corticoide via inibição da 11β-HSD2)",
+          "Antiviral (especialmente vs HSV, hepatite)",
+          "Hepatoprotetor",
+          "Adoçante natural (não-cariogênico)"
         ],
         "componentes_ativos": [
           {
-            "label": "LINALOL",
-            "texto": "25–45% do OE — Ansiolítico, sedativo, analgésico, antiglutamatérgico"
+            "label": "Glicirrizina (saponina triterpênica)",
+            "texto": "Princípio principal — Adoçante 50x sacarose, anti-inflamatório, antiviral. Hidrolisada em ácido glicirrético no intestino"
           },
           {
-            "label": "ACETATO DE LINALILA",
-            "texto": "25–47% do OE — Ansiolítico, sedativo (efeito sinérgico com linalol)"
+            "label": "Ácido glicirrético (18β-glicirretínico)",
+            "texto": "Forma ativa — Anti-inflamatório (inibe 11β-HSD2 — bloqueia inativação de cortisol = efeito mineralocorticoide-like)"
           },
           {
-            "label": "OCIMENO",
-            "texto": "Presente — Aromático, anti-inflamatório"
+            "label": "Flavonóides (liquiritigenina, glabridina)",
+            "texto": "Antioxidantes, anti-inflamatórios, fitoestrogênicos suaves"
           },
           {
-            "label": "CÂNFORA",
-            "texto": "Traços — Estimulante leve (antagoniza sedação em excesso)"
+            "label": "Glabridina",
+            "texto": "Marcador de identidade de G. glabra — clareador cosmético"
           },
           {
-            "label": "ÁCIDO ROSMARÍNICO",
-            "texto": "Presente — Antioxidante, anti-inflamatório"
+            "label": "Polissacarídeos",
+            "texto": "Imunomoduladores, prebióticos"
+          },
+          {
+            "label": "Cumarinas (herniarina, umbeliferona)",
+            "texto": "Anti-inflamatório, antimicrobiano"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Ansiedade (oral — Silexan)",
+            "indicacao": "Úlcera gástrica e dispepsia",
+            "evidencia": "Forte (uso milenar + estudos)",
+            "populacao": "Adultos — DGL (deglycyrrhizinated licorice) é fitoterápico estabelecido"
+          },
+          {
+            "indicacao": "Hepatite C (glicirrizina injetável — Stronger Neo-Minophagen C)",
+            "evidencia": "Forte (Japão)",
+            "populacao": "Adultos com hepatite C — Iino et al. (1994); uso clínico hospitalar no Japão"
+          },
+          {
+            "indicacao": "Tosse seca / faringite",
+            "evidencia": "Tradicional forte (EMA)",
+            "populacao": "Adultos — uso milenar"
+          },
+          {
+            "indicacao": "Eczema e dermatites (tópico)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — Saeedi et al. (2003)"
+          }
+        ],
+        "alerta_critico": {
+          "titulo": "PSEUDO-HIPERALDOSTERONISMO — alerta CRÍTICO",
+          "titulo2": "Hipertensão + retenção de sódio + perda de potássio em uso prolongado",
+          "corpo": "O alcaçuz é UMA DAS POUCAS ervas do catálogo com risco cardiovascular DOCUMENTADO em uso regular. Glicirrizina inibe a enzima 11β-HSD2 nos rins, prolongando ação do cortisol como mineralocorticoide. Resultado: retenção de sódio + água (hipertensão), perda de potássio (hipocalemia), supressão do eixo renina-angiotensina-aldosterona. Casos graves: arritmias, parada cardíaca. EFSA: TDI de glicirrizina = 100 mg/dia. UM PALITO DE ALCAÇUZ INDUSTRIAL pode ter 200+ mg. Uso REGULAR (>2 semanas) com cautela. Hipertensos: CONTRAINDICADO. DGL (deglycyrrhizinated licorice) é forma sem glicirrizina — segura para uso regular."
+        },
+        "contraindicacoes": [
+          "Hipertensão arterial — CONTRAINDICADO (em forma com glicirrizina)",
+          "Insuficiência cardíaca — CONTRAINDICADO",
+          "Hipocalemia (uso de diuréticos) — CONTRAINDICADO",
+          "Doença renal crônica — cautela",
+          "Gestação — evitar (efeitos hormonais)",
+          "Uso conjunto com corticoides — potencialização"
+        ],
+        "interacoes": [
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Antagonismo (alcaçuz aumenta PA). Conduta: contraindicado uso conjunto"
+          },
+          {
+            "label": "Diuréticos (furosemida, hidroclorotiazida)",
+            "texto": "Hipocalemia somada. Conduta: contraindicado uso regular"
+          },
+          {
+            "label": "Digoxina",
+            "texto": "Hipocalemia aumenta toxicidade da digoxina. Conduta: monitorar"
+          },
+          {
+            "label": "Corticoides",
+            "texto": "Potencialização. Conduta: evitar"
+          },
+          {
+            "label": "Anticoncepcionais orais",
+            "texto": "Possível redução de eficácia. Conduta: cautela"
+          }
+        ],
+        "efeitos_adversos": "Em uso curto (até 7 dias) e doses moderadas: raros. Uso prolongado: hipertensão, edema, hipocalemia, fraqueza muscular, arritmias.",
+        "dose_maxima": "EFSA TDI: 100 mg glicirrizina/dia (curto prazo). Uso terapêutico supervisionado pode chegar a 600 mg/dia. DGL: até 3 g/dia sem riscos.",
+        "fontes": [
+          "EFSA — Glycyrrhizinic acid in food (Sci Op, 2008)",
+          "Iino S et al. — Glycyrrhizin therapy for chronic hepatitis C (J Gastroenterol Hepatol, 1994)",
+          "Saeedi M et al. — Glycyrrhiza glabra extract in eczema (J Dermatolog Treat, 2003)",
+          "Ploeger B et al. — The pharmacokinetics of glycyrrhizic acid evaluated by physiologically based pharmacokinetic modeling (Drug Metab Rev, 2001)",
+          "EMA/HMPC — Monografia Glycyrrhiza glabra",
+          "Asl MN, Hosseinzadeh H — Review of pharmacological effects of Glycyrrhiza spp. and its bioactive compounds (Phytother Res, 2008)"
+        ]
+      },
+      "perfil_sensorial": {
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "3/3",
+            "observacao": "DOMINANTE — glicirrizina é 50x mais doce que sacarose"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Doce-anisado terroso",
+        "olfativo_descritores": [
+          "Doce-anis característico",
+          "Terroso de raiz",
+          "Levemente amadeirado",
+          "Inconfundível 'cheiro de alcaçuz'"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          }
+        ],
+        "tatil": "Corpo leve, textura aveludada-doce. Doçura persistente que dura 15+ min após o consumo. Sem qualquer agressão sensorial.",
+        "descricao_integrada": "O alcaçuz é o adoçante natural milenar — único no catálogo onde a doçura é a sensação dominante absoluta. Para o Ervatório, é ingrediente para harmonizar blends amargos (carqueja, espinheira-santa) — usar com cautela quanto à dose terapêutica."
+      },
+      "cultura": {
+        "historia": "Alcaçuz é uma das ervas mais antigas em uso medicinal contínuo — registros 4.000+ anos (Mesopotâmia, Egito Antigo, Ayurveda). Tutancâmon foi enterrado com alcaçuz em sua tumba. Hipócrates prescrevia alcaçuz para tosse e úlceras. Imperadores chineses usavam Gancao (alcaçuz chinês) em todas as fórmulas de MTC como 'harmonizador'. Os doces de alcaçuz (regaliz preto) são tradicionais em países nórdicos e holandeses.",
+        "cerimonial": "Sem cerimônia codificada — mas o doce de alcaçuz preto (saltlakritz, drop) é cultura nórdica/holandesa identitária. A Rolaids e outras pastilhas para tosse usam alcaçuz há gerações.",
+        "brasil": "Alcaçuz é vendido em farmácias de manipulação (importado da China ou Mediterrâneo). DGL (deglycyrrhizinated licorice) está disponível como fitoterápico para gastrite. Doce de alcaçuz é nicho gourmet importado.",
+        "curiosidade": "A glicirrizina é 50x MAIS DOCE que a sacarose (peso por peso) — uma das moléculas mais doces conhecidas na natureza. Mas tem post-taste regaliz característico que limita uso como adoçante puro. A indústria de tabaco usou (e ainda usa) alcaçuz como aromatizante de cigarros — ironicamente, expondo fumantes ao risco cardiovascular do alcaçuz ALÉM do tabaco."
+      },
+      "regulacao": {
+        "eixo_botanico_tpc": "Funcional global",
+        "status_anvisa": [
+          "Uso reconhecido (com ressalvas de uso prolongado)"
+        ],
+        "status_ema": "Monografia HMPC traditional use",
+        "status_fda": "GRAS com limites de glicirrizina",
+        "certificacao_organica": "EFSA: TDI 100 mg glicirrizina/dia. Doces e refrigerantes têm limites obrigatórios.",
+        "sazonalidade": "Raiz: 3–4 anos de cultivo antes de colheita."
+      },
+      "marketplace": {
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Importação China, Turquia, Irã. Farmácias de manipulação.",
+        "faixa_de_preco": [
+          "Raiz seca em pedaços: R$ 30–80/100 g",
+          "Pó: R$ 30–70/100 g",
+          "Tintura: R$ 30–60/100 ml",
+          "DGL cápsulas: R$ 60–150/30 cápsulas",
+          "Doces de alcaçuz importados: R$ 30–80/cx"
+        ],
+        "formatos": "Raiz em pedaços; Pó; Tintura; DGL (deglycyrrhizinated — sem glicirrizina, segura para uso regular); Doces; Pastilhas para tosse."
+      },
+      "destaques": [
+        {
+          "label": "50x mais doce que açúcar",
+          "texto": "Glicirrizina é uma das moléculas mais doces conhecidas — adoçante natural sem calorias"
+        },
+        {
+          "label": "Pseudo-hiperaldosteronismo",
+          "texto": "Único risco cardiovascular DOCUMENTADO de uma erva no catálogo — atenção crítica"
+        },
+        {
+          "label": "DGL — alternativa segura",
+          "texto": "Versão sem glicirrizina mantém ação gastroprotetora sem riscos cardiovasculares"
+        }
+      ]
+    },
+    {
+      "slug": "lavanda",
+      "nome_popular": "Lavanda",
+      "nome_cientifico": "Lavandula angustifolia Mill.",
+      "tagline": "A flor da Provença — ansiolítica monografada pela EMA com linalol e acetato de linalila documentados, perfumaria francesa fundamental, e uma das poucas ervas com fitoterápico padronizado oral aprovado para ansiedade (Silexan).",
+      "schema_version": "1.1",
+      "identificacao": {
+        "nome_cientifico": "Lavandula angustifolia Mill. (sin.: L. officinalis, L. vera)",
+        "familia_botanica": "Lamiaceae",
+        "tipo_botanico": "Fitoterápico ansiolítico / sedativo / aromaterápico",
+        "parte_usada": "Flores secas (botões florais — colhidos no início da floração para máxima concentração de OE).",
+        "sinonimos": [
+          "Lavanda · alfazema (PT) · espigol",
+          "Lavender (inglês) · Lavande (francês) · Lavendel (alemão)",
+          "ATENÇÃO: gênero Lavandula tem várias espécies. L. angustifolia é a 'lavanda verdadeira' — perfil farmacológico mais limpo. L. × intermedia (lavandin — híbrido) é mais cultivada para OE industrial mas tem cânfora alta, menos adequada para uso ansiolítico oral."
+        ]
+      },
+      "caracterizacao": {
+        "sabor_dominante": "Floral-aromático, levemente amargo-camforado, herbáceo. Sabor mais 'difícil' que o aroma — exige aceite.",
+        "aroma": "Floral-doce característico, herbáceo limpo, levemente camforado. Aroma universalmente associado a relaxamento.",
+        "cor_da_infusao": "Rosado-pálido a azul-acinzentado claro. #C8B0C0",
+        "intensidade": "3–4/5 — aroma marcante.",
+        "notas": "Cabeça: floral imediato (linalol) | Corpo: herbáceo-camforado | Fundo: leve amargor",
+        "bioma_de_origem": "Originária da bacia mediterrânea (Provença francesa, Pirineus, Alpes). Cultivo: França (Provença), Bulgária (maior produtor mundial de OE), Inglaterra, Itália. No Brasil: cultivo em altitude no SP (Cunha), MG (Sul de Minas), RS (Serra Gaúcha).",
+        "distribuicao_geografica": [
+          "Provença francesa: terroir clássico — denominação 'Lavande Fine de Haute-Provence' (AOC).",
+          "Bulgária: maior produtor mundial de OE (>50%).",
+          "Inglaterra: Norfolk Lavender (cultivo histórico).",
+          "Brasil: Cunha (SP), Cambuquira (MG), Gramado (RS) — turismo de campos de lavanda."
+        ]
+      },
+      "preparo": {
+        "temperatura_ideal": "85–90 °C (preservar OE volátil).",
+        "tempo_de_infusao": "5–8 min coberto.",
+        "quantidade": "1–2 g de flores secas para 250 ml — DOSE BAIXA (aroma intenso).",
+        "metodo": "Infusão coberta. Sachês para banho de imersão (uso aromaterápico).",
+        "reinfusoes": "1 reinfusão.",
+        "melhor_momento": "Noite (sedativo). Em situações agudas de ansiedade.",
+        "combina_com": "Camomila · Melissa · Maracujá · Hortelã · Mel"
+      },
+      "usos_topicos": {
+        "evidencia": "Forte para uso aromaterápico e tópico.",
+        "aplicacoes": [
+          {
+            "titulo": "Aromaterapia (difusor)",
+            "texto": "Difusão de OE — ansiolítico inalatório documentado em RCTs (UTIs, ambientes hospitalares)."
+          },
+          {
+            "titulo": "Banho relaxante (uso popular europeu)",
+            "texto": "Saquinho de flores na banheira morna — ansiolítico tópico/inalatório."
+          },
+          {
+            "titulo": "OE diluído em massagem",
+            "texto": "OE 5–10% em óleo carreador — relaxante muscular, ansiolítico."
+          },
+          {
+            "titulo": "Sachês em fronha (para sono)",
+            "texto": "Tradição europeia — flores secas em sachê na fronha. Reduz tempo de adormecer (estudos)."
+          }
+        ],
+        "contraindicacoes": "OE puro pode irritar pele sensível — sempre diluir."
+      },
+      "acoes_e_seguranca": {
+        "acoes_principais": [
+          "Ansiolítico (Silexan — OE oral padronizado, fitoterápico aprovado em vários países UE)",
+          "Sedativo leve / hipnótico suave",
+          "Antiespasmódico",
+          "Antimicrobiano (linalol, acetato de linalila)",
+          "Anti-inflamatório tópico",
+          "Aromaterápico (efeito ansiolítico via inalação documentado)"
+        ],
+        "componentes_ativos": [
+          {
+            "label": "Linalol",
+            "texto": "30–45% do OE — Ansiolítico (modulação GABAérgica), antimicrobiano. Marcador de identidade"
+          },
+          {
+            "label": "Acetato de linalila",
+            "texto": "30–45% — Sedativo, ansiolítico (potencializa linalol)"
+          },
+          {
+            "label": "Cânfora",
+            "texto": "<1% em L. angustifolia (vs >10% em lavandin)"
+          },
+          {
+            "label": "Beta-cariofileno",
+            "texto": "Anti-inflamatório (CB2)"
+          },
+          {
+            "label": "Borneol",
+            "texto": "Antimicrobiano"
+          },
+          {
+            "label": "Ácido rosmarínico",
+            "texto": "Antioxidante (Lamiaceae)"
+          }
+        ],
+        "evidencia": [
+          {
+            "indicacao": "Transtorno de ansiedade generalizada (Silexan oral)",
+            "evidencia": "Forte (múltiplos RCTs)",
+            "populacao": "Adultos — Kasper et al. (2014); aprovado na UE como medicamento"
+          },
+          {
+            "indicacao": "Ansiedade situacional (aromaterapia)",
             "evidencia": "Forte",
-            "populacao": "Kasper et al., 2014"
+            "populacao": "Adultos — múltiplos RCTs em UTIs, dentistas, pré-cirurgia"
           },
           {
             "indicacao": "Insônia (aromaterapia)",
             "evidencia": "Moderada",
-            "populacao": "Lewith et al., 2005"
+            "populacao": "Adultos e idosos — múltiplos estudos"
           },
           {
-            "indicacao": "Cefaleia (tópico)",
+            "indicacao": "Cefaleia (uso tópico)",
             "evidencia": "Moderada",
-            "populacao": "Sasannejad et al., 2012"
-          },
-          {
-            "indicacao": "Agitação em Alzheimer (aromaterapia)",
-            "evidencia": "Moderada",
-            "populacao": "Holmes et al., 2002"
+            "populacao": "Adultos — Sasannejad et al. (2012)"
           }
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "alerta_critico": {
+          "titulo": "OE puro — uso interno restrito",
+          "titulo2": "Apenas Silexan (cápsulas padronizadas) é OE oral validado",
+          "corpo": "OE puro de lavanda NÃO deve ser ingerido em formato 'gota direta' — apenas o Silexan® (fitoterápico padronizado em cápsulas, 80 mg/dia, aprovado UE para ansiedade) é OE oral seguro. Infusão de flores e aromaterapia são as formas seguras de uso doméstico. Crianças <2 anos: evitar OE em difusor (broncoespasmo). Pré-puberdade masculina: alguns estudos sugerem efeito estrogênico fraco do OE em uso tópico crônico (relatos isolados de ginecomastia) — controverso, mas evitar exposição crônica."
+        },
+        "contraindicacoes": [
+          "OE puro oral fora de Silexan: NÃO usar",
+          "Crianças <2 anos: aromaterapia direta",
+          "Sedativos farmacêuticos: potencialização leve",
+          "Pré-cirurgia: suspender (sedativo cumulativo)"
+        ],
+        "interacoes": [
+          {
+            "label": "Sedativos farmacêuticos (BZD, antidepressivos)",
+            "texto": "Potencialização. Conduta: monitorar"
+          },
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Potencialização leve. Conduta: monitorar PA"
+          }
+        ],
+        "efeitos_adversos": "Em uso aromaterápico/infusão: muito raros. Silexan oral: arrotos com gosto floral (efeito esperado e benigno).",
+        "dose_maxima": "Flores secas em infusão: até 4 g/dia. Silexan: 80 mg/dia (cápsulas — 1 vez/dia). OE em difusor: 4–8 gotas em 100 ml de água.",
+        "fontes": [
+          "EMA/HMPC — Monografia Lavandula angustifolia (well-established use)",
+          "Kasper S et al. — Lavender oil preparation Silexan in generalized anxiety disorder (Phytomedicine, 2014, 2018)",
+          "Woelk H, Schläfke S — Multi-center, double-blind, randomised study of the lavender oil preparation Silexan in comparison to lorazepam (Phytomedicine, 2010)",
+          "Sasannejad P et al. — Lavender essential oil in the treatment of migraine headache (Eur Neurol, 2012)",
+          "Cavanagh HM, Wilkinson JM — Biological activities of lavender essential oil (Phytother Res, 2002)",
+          "Koulivand PH et al. — Lavender and the nervous system (Evid Based Complement Alternat Med, 2013)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "1/3",
+            "observacao": "Leve doce sinestésica via aroma floral"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Discreto"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Floral-camforado (Lamiaceae)",
+        "olfativo_descritores": [
+          "Floral-doce característico (linalol)",
+          "Levemente camforado",
+          "Herbáceo limpo",
+          "Universalmente reconhecível como 'lavanda'"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Muito leve",
+            "molecula": "Cânfora traços"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa",
+            "molecula": "Mínima"
+          }
+        ],
+        "tatil": "Corpo leve, textura aveludada-fresca. Aroma é a sensação dominante (mais que sabor). Persistência aromática alta (15–20 min — linalol é bem fixado).",
+        "descricao_integrada": "A lavanda é o ingrediente-aroma do catálogo — onde a experiência olfativa é mais valiosa que a gustativa. Para o Ervatório, é referência absoluta de 'aromaterapia' e oportunidade de blend (com camomila, melissa) para o nicho 'rituais de sono'."
       },
       "cultura": {
-        "historia": "A lavanda é a planta do Provence francês como a camomila é da Europa central — identidade de paisagem e cultura. Os campos violeta de lavanda da Provença são uma das imagens mais reproduzidas da Europa. A perfumaria europeia moderna nasceu em Grasse (França) em torno do cultivo de lavanda.  Na Idade Média, a lavanda era erva profilática da peste — sachês de lavanda usados no pescoço para \"proteger o ar\". Médicos que tratavam pestilentos usavam máscaras em bico de pássaro recheadas de lavanda e outras ervas aromáticas. Profilaxia infundada, mas o linalol tem atividade antimicrobiana documentada.",
-        "cerimonial": "",
-        "brasil": "A lavanda no Brasil é produto cultural e turístico antes de fitoterápico — os campos de lavanda de Cunha (SP) e Gramado (RS) são destinos de turismo rural consolidados. O consumo de chá de lavanda é crescente no mercado premium, associado a rituais de bem-estar e meditação.",
-        "curiosidade": ""
+        "historia": "Lavanda foi cultivada por monges medievais europeus em jardins monásticos. Os romanos usavam em banhos públicos (a palavra 'lavanda' vem do latim 'lavare' = lavar). O 'lavandário' era trabalhador medieval que lavava roupas com flores de lavanda para afastar traças. No século XIX, René-Maurice Gattefossé (químico francês) criou o termo 'aromaterapia' depois de queimar a mão em laboratório e mergulhá-la em OE de lavanda — observou cicatrização rápida e fundou um campo da fitoterapia.",
+        "cerimonial": "Os campos de lavanda da Provença (Plateau de Valensole, Sault) tornaram-se ícone turístico da França — floração em julho atrai milhões de visitantes. Festivais de lavanda celebram o ritual de colheita.",
+        "brasil": "Cunha (SP), Cambuquira (MG) e Gramado (RS) têm campos de lavanda como atração turística. Cultivo nacional de OE é incipiente — a maior parte do OE consumido no Brasil é importado da Bulgária e França.",
+        "curiosidade": "Silexan (cápsulas de OE de lavanda padronizado) é o único fitoterápico ansiolítico oral aprovado pela EMA com nível de evidência equivalente a fármacos sintéticos (lorazepam) — em vários países da UE é prescrito como medicamento, não como suplemento. É um dos poucos exemplos no mundo de fitoterápico que 'graduou' para o status farmacêutico via RCTs rigorosos."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido. Silexan: não registrado no Brasil.",
-        "status_ema": "Monografia HMPC — well-established use (Silexan, OE oral)",
+        "status_anvisa": [
+          "Uso reconhecido"
+        ],
+        "status_ema": "Monografia HMPC well-established use. Silexan aprovado em vários países UE como medicamento ansiolítico.",
         "status_fda": "GRAS para uso alimentar",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: novembro–janeiro (RS/SC em altitude)"
+        "certificacao_organica": "Cultivo orgânico amplo. Denominação AOC francesa para 'Lavande Fine de Haute-Provence'.",
+        "sazonalidade": "Floração: junho-julho (hemisfério norte) / dezembro-janeiro (hemisfério sul)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Importação França/Bulgária. Cultivo BR em campos de Cunha/Cambuquira/Gramado.",
+        "faixa_de_preco": [
+          "Flores secas: R$ 50–150/100 g",
+          "OE puro 10ml (importado): R$ 50–200",
+          "Silexan® (importado, em vários países UE): equivalente R$ 200–400/30 cápsulas",
+          "Sachês para infusão: R$ 25–60/cx",
+          "Sabonetes/produtos cosméticos com lavanda: R$ 15–80/un"
+        ],
+        "formatos": "Flores secas; Sachês; Tintura; OE puro; Hidrolato; Silexan (cápsulas farmacêuticas); Cosméticos (sabonete, óleos de massagem)."
+      },
+      "destaques": [
+        {
+          "label": "EMA well-established use",
+          "texto": "Silexan é um dos únicos fitoterápicos ansiolíticos orais com nível 1 de evidência europeia"
+        },
+        {
+          "label": "Aromaterapia validada",
+          "texto": "Múltiplos RCTs em UTIs, dentistas e ansiedade pré-cirúrgica — efeito real, não placebo"
+        },
+        {
+          "label": "Provença ícone",
+          "texto": "Campos de lavanda da Provença = imagem turística mais reproduzida da França rural"
+        }
+      ]
     },
     {
       "slug": "capim-limao",
       "nome_popular": "Capim-Limão",
       "nome_cientifico": "Cymbopogon citratus (DC.) Stapf",
-      "tagline": "A capineira aromática — gramínea tropical de aromas cítricos com ação ansiolítica documentada, antimicrobiana e anti-inflamatória, cultivada em todo o Brasil e profundamente enraizada na culinária asiática global.",
+      "tagline": "A gramínea cítrica universal — ansiolítica e antiespasmódica de quintal brasileiro com 70% de citral no OE, fonte industrial de citral para perfumaria e Vitamina A sintética, e o aroma de limão sem ser limão.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Cymbopogon citratus (DC.) Stapf",
-        "familia_botanica": "Poaceae (gramíneas — família do arroz, do milho)",
-        "tipo_botanico": "Fitoterápico aromático / ansiolítico / anti-inflamatório",
-        "parte_usada": "Folhas frescas ou secas (partes aéreas).",
+        "familia_botanica": "Poaceae (família das gramíneas — única gramínea medicinal do catálogo)",
+        "tipo_botanico": "Fitoterápico ansiolítico / antiespasmódico digestivo / antimicrobiano",
+        "parte_usada": "Folhas frescas ou secas (talos cortados em pedaços para infusão).",
         "sinonimos": [
-          "Capim-limão · capim-santo · erva-cidreira-do-campo · cidró",
-          "Lemongrass (inglês) · Citronnelle (francês) · Zitronengras (alemão)",
-          "Sereh (indonésio/malaio) · Takrai (tailandês)"
+          "Capim-limão · capim-cidrão · capim-santo · erva-cidreira (confusão BR)",
+          "Lemongrass (inglês) · Citronnelle (francês — confunde com C. nardus)",
+          "ATENÇÃO: distinguir de Cymbopogon nardus (citronela — repelente de insetos, palmarosa — perfumaria) — espécies próximas com perfis distintos. C. citratus é a 'capim-limão' culinária e medicinal."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Cítrico-limão limpo e vívido, levemente herbáceo-grama, muito fresco. Mais nítido que melissa ou erva-cidreira.",
-        "aroma": "Limão fresco concentrado, cítrico-terpênico, leve floral-verde. Citral puro — um dos aromas mais alegres do catálogo.",
-        "cor_da_infusao": "Amarelo-pálido a dourado claro. #E8DC78",
-        "intensidade": "2/5 — suave a moderado, perfil agradabilíssimo.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Cítrico-limão fresco intenso, levemente herbáceo. Mais 'capim' e menos 'limão' que a Lippia alba — perfil distintamente gramíneo.",
+        "aroma": "Citral dominante (geranial + neral) — limão fresco intenso, herbáceo verde.",
+        "cor_da_infusao": "Amarelo-pálido a esverdeado. #C8DC78",
+        "intensidade": "3/5 — cítrico marcante.",
+        "notas": "Cabeça: citral imediato | Corpo: herbáceo-gramíneo | Fundo: leve amargor de capim",
+        "bioma_de_origem": "Originária da Ásia tropical (Sri Lanka, Indonésia, Filipinas). Cultivada mundialmente em climas tropicais e subtropicais. No Brasil: cultivo doméstico onipresente.",
+        "distribuicao_geografica": [
+          "Maiores produtores OE: Índia, Guatemala, China, Madagascar.",
+          "Brasil: cultivo doméstico amplo. Produção comercial em SP, MG, BA.",
+          "Centros de pesquisa: USP, UFC, UNESP."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C (citral volátil — não ferver).",
-        "tempo_de_infusao": "",
-        "quantidade": "2–5 g de folhas secas ou 3–6 folhas frescas para 250 ml.",
-        "metodo": "Infusão coberta.",
-        "reinfusoes": "1–2 possíveis.",
-        "melhor_momento": "Qualquer hora — especialmente tarde e noite.",
-        "combina_com": "Melissa · Gengibre · Hibisco · Hortelã · Lavanda · Limão · Mel — universalmente compatível."
+        "temperatura_ideal": "85 °C (não ferver — citral volátil).",
+        "tempo_de_infusao": "5–8 min coberto.",
+        "quantidade": "2 talos picados (frescos) ou 2 g (secos) para 250 ml.",
+        "metodo": "Infusão coberta. Cold brew possível.",
+        "reinfusoes": "1 reinfusão.",
+        "melhor_momento": "Noite (sedativo). Pós-refeições (digestivo). Em situações de estresse.",
+        "combina_com": "Hortelã · Erva-cidreira · Limão · Mel · Gengibre"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Ansiolítico leve (citral — modulação GABA)",
-          "Antiespasmódico",
-          "Anti-inflamatório",
-          "Antimicrobiano",
-          "Antifúngico",
-          "Diurético suave",
-          "Repelente de insetos (citronelal)",
-          "Analgésico leve",
-          "Componentes ativos:",
-          "Contraindicações: Gestação em doses altas de óleo essencial — citral emenagogo. Infusão: moderada é segura."
-        ],
-        "componentes_ativos": [
+        "evidencia": "Moderada para uso tópico antimicrobiano.",
+        "aplicacoes": [
           {
-            "label": "CITRAL (geranial + neral)",
-            "texto": "60–80% do OE — Ansiolítico, antimicrobiano, antifúngico"
+            "titulo": "OE como repelente leve de insetos",
+            "texto": "Citral tem efeito repelente moderado (mais fraco que C. nardus citronela)."
           },
           {
-            "label": "MIRCENO",
-            "texto": "5–15% — Anti-inflamatório, analgésico"
-          },
-          {
-            "label": "LIMONENO",
-            "texto": "Presente — Antimicrobiano, antidepressivo leve"
-          },
-          {
-            "label": "GERANIOL",
-            "texto": "Presente — Antimicrobiano, aromático"
-          },
-          {
-            "label": "CITRONELAL",
-            "texto": "Traços — Repelente, ansiolítico"
+            "titulo": "OE diluído antifúngico",
+            "texto": "Citral antifúngico contra Candida e dermatófitos — uso em formulações dermatológicas."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
-      },
-      "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
-      },
-      "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
-      },
-      "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido. Indicação: sedativo, ansiolítico.",
-        "status_ema": "",
-        "status_fda": "GRAS para uso alimentar",
-        "certificacao_organica": "",
-        "sazonalidade": "Disponível o ano todo (cultivo perene)"
-      },
-      "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
-    },
-    {
-      "slug": "alecrim",
-      "nome_popular": "Alecrim",
-      "nome_cientifico": "Salvia rosmarinus Spenn. (renomeado em 2017; sin.: Rosmarinus officinalis L.)",
-      "tagline": "A memória aromática do Mediterrâneo — estimulante cognitivo, antioxidante e antimicrobiano com ação sobre memória e concentração entre as mais bem documentadas de qualquer erva do catálogo.",
-      "schema_version": "1.1",
-      "identificacao": {
-        "nome_cientifico": "Salvia rosmarinus Spenn. (renomeado em 2017; sin.: Rosmarinus officinalis L.)",
-        "familia_botanica": "Lamiaceae",
-        "tipo_botanico": "Fitoterápico estimulante cognitivo / antioxidante / antimicrobiano",
-        "parte_usada": "Partes aéreas (folhas e ramos finos), frescas ou secas.",
-        "sinonimos": [
-          "Alecrim · rosmaninho (Portugal)",
-          "Rosemary (inglês) · Romarin (francês) · Rosmarin (alemão)",
-          "\"Ros maris\" (latim medieval — \"orvalho do mar\") — cresce em penhascos costeiros do Mediterrâneo"
-        ]
-      },
-      "caracterizacao": {
-        "sabor_dominante": "Resinoso-aromático intenso, levemente amargo-herbáceo, cânfora suave, pimentado discreto.",
-        "aroma": "Resinoso-herbáceo-cânfora, mediterrâneo puro — pinho, eucalipto, erval quente. Um dos aromas mais imediatamente reconhecíveis do mundo.",
-        "cor_da_infusao": "Verde-amarelado a âmbar. #B8B040",
-        "intensidade": "4/5 — presença aromática dominante.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
-      },
-      "preparo": {
-        "temperatura_ideal": "85–90 °C (cânfora e borneol voláteis — não ferver).",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 g de ramos secos para 250 ml.",
-        "metodo": "Infusão coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã e início de tarde (estimulante cognitivo). Evitar à noite.",
-        "combina_com": "Sálvia · Tomilho · Lavanda · Limão · Mel · Gengibre — mediterrâneo puro."
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [
-          "Tônico capilar (queda de cabelo): Infusão forte resfriada aplicada no couro cabeludo — estudos compararam favorável ao minoxidil em queda androgenética (estudo 2015, ISRN Dermatology).",
-          "Repelente de insetos (uso externo): Óleos do alecrim em formulações — comprovado repelente de Aedes aegypti em estudos nacionais."
-        ],
-        "contraindicacoes": ""
+        "contraindicacoes": "OE puro irrita pele — diluir."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Estimulante cognitivo (melhora memória e concentração — inalação e oral)",
-          "Inibidor de acetilcolinesterase (mecanismo similar ao Alzheimer farmacológico)",
-          "Antioxidante de alta capacidade (ácido rosmarínico — um dos maiores ORAC do catálogo)",
-          "Antimicrobiano potente",
-          "Hepatoprotetor",
-          "Anti-inflamatório",
-          "Estimulante circulatório",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Epilepsia — cânfora pró-convulsivante em doses altas de óleo essencial",
-          "Gestação em doses de OE — emenagogo; infusão: segura moderadamente",
-          "Hipertensão — estimulante circulatório; cautela em dose alta"
+          "Ansiolítico leve / sedativo",
+          "Antiespasmódico digestivo",
+          "Carminativo",
+          "Antimicrobiano (citral)",
+          "Hipotensor leve",
+          "Anti-inflamatório"
         ],
         "componentes_ativos": [
           {
-            "label": "ÁCIDO ROSMARÍNICO",
-            "texto": "Antioxidante máximo, anti-inflamatório, inibidor de AChE"
+            "label": "Citral (geranial + neral)",
+            "texto": "65–80% do OE — Aromático cítrico, ansiolítico, antimicrobiano. Mesma molécula da melissa e Lippia alba — citral é compartilhado por múltiplas 'cidreiras' do catálogo"
           },
           {
-            "label": "ÁCIDO CARNÓSICO",
-            "texto": "Antioxidante, nootrópico, neuroprotetor"
+            "label": "Mirceno",
+            "texto": "Anti-inflamatório, sedativo leve"
           },
           {
-            "label": "CARNOSOL",
-            "texto": "Antitumoral, anti-inflamatório, antioxidante"
+            "label": "Geraniol",
+            "texto": "Aromático, antimicrobiano"
           },
           {
-            "label": "CÂNFORA (OE)",
-            "texto": "Estimulante SNC, descongestionante"
+            "label": "Limoneno",
+            "texto": "Antimicrobiano, antioxidante"
           },
           {
-            "label": "1,8-CINEOL (eucaliptol)",
-            "texto": "Cognitivo — melhora memória (estudos de aromaterapia)"
+            "label": "Linalol",
+            "texto": "Sedativo, ansiolítico"
           },
           {
-            "label": "BORNEOL",
-            "texto": "Antimicrobiano, estimulante circulatório"
+            "label": "Flavonóides (luteolina)",
+            "texto": "Anti-inflamatório, antioxidante"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Melhora de memória e cognição",
+            "indicacao": "Ansiedade leve / insônia",
+            "evidencia": "Moderada (uso tradicional + estudos)",
+            "populacao": "Adultos — Costa et al. (2011); Goes et al. (2015)"
+          },
+          {
+            "indicacao": "Dispepsia / cólicas (antiespasmódico)",
             "evidencia": "Moderada",
-            "populacao": "Moss et al., 2012 (aromaterapia)"
+            "populacao": "Adultos — Carlini et al."
           },
           {
-            "indicacao": "Queda de cabelo androgenética",
+            "indicacao": "Antimicrobiano (Candida, dermatófitos)",
             "evidencia": "Moderada",
-            "populacao": "Panahi et al., 2015"
+            "populacao": "Estudos in vitro"
           },
           {
-            "indicacao": "Antioxidante sistêmico",
-            "evidencia": "Forte",
-            "populacao": "Múltiplos estudos"
-          },
-          {
-            "indicacao": "Alzheimer (adjuvante, inalação)",
+            "indicacao": "Hipertensão leve",
             "evidencia": "Preliminar",
-            "populacao": "Estudos piloto"
+            "populacao": "Modelos animais"
           }
         ],
+        "alerta_critico": {
+          "titulo": "OE — citral em doses altas",
+          "titulo2": "Possível efeito hiperestrogênico em uso crônico",
+          "corpo": "Citral em doses muito altas (não atingíveis em infusão) é hiperestrogênico em modelos animais — uso de OE oral em doses elevadas crônicas é desaconselhado. Infusão (folhas) é segura. Gestação: tradicionalmente segura em doses moderadas — evitar OE oral. Hipotensos: monitorar PA."
+        },
         "contraindicacoes": [
-          "Epilepsia — cânfora pró-convulsivante em doses altas de óleo essencial",
-          "Gestação em doses de OE — emenagogo; infusão: segura moderadamente",
-          "Hipertensão — estimulante circulatório; cautela em dose alta"
+          "OE oral em doses altas — evitar",
+          "Hipotensão: cautela",
+          "Gestação: doses muito altas — moderar"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          {
+            "label": "Sedativos farmacêuticos",
+            "texto": "Potencialização leve. Conduta: monitorar"
+          },
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Potencialização leve. Conduta: monitorar PA"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais: muito raros.",
+        "dose_maxima": "Folhas em infusão: até 6 g/dia. OE: uso aromaterápico/tópico apenas.",
+        "fontes": [
+          "Costa CA et al. — Anxiolytic-like effects of Cymbopogon citratus essential oil (J Ethnopharmacol, 2011)",
+          "Goes TC et al. — Effect of lemongrass aroma on experimental anxiety in humans (J Altern Complement Med, 2015)",
+          "Carlini EA et al. — Pharmacology of lemongrass (Cymbopogon citratus) (J Ethnopharmacol, 1986)",
+          "Shah G et al. — Scientific basis for the therapeutic use of Cymbopogon citratus (J Adv Pharm Technol Res, 2011)",
+          "Memento Fitoterápico ANVISA",
+          "RENISUS — Cymbopogon citratus"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Leve nota gramínea"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "1/3",
+            "observacao": "Citral percebido como leve acidez"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Cítrico-limão gramíneo",
+        "olfativo_descritores": [
+          "Citral intenso (limão fresco)",
+          "Herbáceo-gramíneo",
+          "Levemente verde",
+          "Inconfundível como 'capim-limão'"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Leve",
+            "molecula": "Citral"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          }
+        ],
+        "tatil": "Corpo leve, textura aquosa-fresca. Persistência aromática moderada (10–15 min).",
+        "descricao_integrada": "O capim-limão compartilha o citral com a melissa e a Lippia alba — três 'cidreiras' de famílias completamente diferentes (Poaceae, Lamiaceae, Verbenaceae) que convergem na mesma molécula. Para o Ervatório, é o cítrico mais acessível e familiar do catálogo brasileiro."
       },
       "cultura": {
-        "historia": "\"Onde o alecrim cresce, a mulher governa a casa\" — provérbio mediterrâneo que expressa a relação entre alecrim e poder doméstico feminino na cultura europeia. Shakespeare pôs alecrim para Ofélia (\"alecrim, para lembrança\") — associação entre a planta e a memória que a ciência moderna confirmou bioquimicamente.  Os gregos usavam coroas de alecrim no cabelo durante exames — acreditando que melhorava a memória. Pesquisa moderna com o componente 1,8-cineol mostra que inalação de alecrim aumenta velocidade e acurácia em testes de memória. Shakespeare e os gregos estavam certos.",
-        "cerimonial": "",
-        "brasil": "O alecrim é a erva aromática mais cultivada em quintais urbanos brasileiros — depois do manjericão. Presente na culinária, na cosmética, nos chás e nos jardins. É a erva que o brasileiro mais conhece e menos usa farmacologicamente.",
-        "curiosidade": ""
+        "historia": "Capim-limão é uma das ervas medicinais mais cultivadas em quintais brasileiros — provavelmente top 3 (junto com erva-cidreira e hortelã). A culinária do Sudeste Asiático (tailandesa, vietnamita, indonésia) usa capim-limão como tempero fundamental — sopa tom yum, currys, ceviches. Originalmente asiática, foi distribuída pela colonização europeia para todas as regiões tropicais.",
+        "cerimonial": "Sem cerimônia codificada — mas o gesto de 'colher capim-limão fresco no quintal antes de fazer chá' é prática universal brasileira.",
+        "brasil": "RENISUS — Programa Farmácia Viva. Cultivo doméstico amplíssimo. Produção comercial de OE incipiente (Brasil importa do Guatemala e Índia).",
+        "curiosidade": "O OE de capim-limão (essência de limongrass) foi, no início do século XX, a fonte INDUSTRIAL principal de citral para a indústria farmacêutica e cosmética — citral é precursor sintético da Vitamina A e de fragrâncias (jasmim, lima, limão sintético). Antes da síntese química, milhares de hectares de capim-limão eram cultivados na Guatemala e Índia exclusivamente para extração de citral. Hoje a maior parte é sintética, mas o capim-limão natural mantém mercado de 'naturais'."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Indicações: digestivo, estimulante.",
-        "status_ema": "Monografia HMPC — traditional use.",
-        "status_fda": "GRAS",
-        "certificacao_organica": "",
-        "sazonalidade": "Disponível o ano todo (cultivo perene)"
+        "status_anvisa": [
+          "Memento Fitoterápico",
+          "RENISUS (SUS)"
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "GRAS para uso alimentar",
+        "certificacao_organica": "Cultivo orgânico amplamente disponível.",
+        "sazonalidade": "Folhas: ano todo (planta perene tropical)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cultivo doméstico predominante. Cooperativas medicinais SP, MG, BA.",
+        "faixa_de_preco": [
+          "Folhas secas (ervanário): R$ 15–35/100 g",
+          "Sachês: R$ 15–40/cx 25un",
+          "OE: R$ 30–80/10ml",
+          "Tintura: R$ 20–45/100ml",
+          "Mudas: R$ 5–15/un"
+        ],
+        "formatos": "Folhas frescas; Folhas secas; Sachês; Tintura; OE; Hidrolato; Mudas para cultivo."
+      },
+      "destaques": [
+        {
+          "label": "RENISUS / SUS",
+          "texto": "Prioridade fitoterápica nacional — Programa Farmácia Viva"
+        },
+        {
+          "label": "Citral fonte industrial",
+          "texto": "Foi fonte principal de citral para Vitamina A sintética e perfumaria no séc. XX"
+        },
+        {
+          "label": "Eixo das cidreiras",
+          "texto": "Compartilha citral com melissa (Lamiaceae) e Lippia alba (Verbenaceae) — convergência evolutiva"
+        }
+      ]
+    },
+    {
+      "slug": "alecrim",
+      "nome_popular": "Alecrim",
+      "nome_cientifico": "Salvia rosmarinus Spenn.",
+      "tagline": "A erva da memória — culinária mediterrânea milenar com ácido carnósico antioxidante, evidências preliminares de melhora cognitiva, e a planta que Shakespeare imortalizou em Hamlet ('rosemary, that's for remembrance').",
+      "schema_version": "1.1",
+      "identificacao": {
+        "nome_cientifico": "Salvia rosmarinus Spenn. (sin.: Rosmarinus officinalis L. — reclassificado em 2017 para Salvia)",
+        "familia_botanica": "Lamiaceae (família da hortelã, da sálvia, da lavanda)",
+        "tipo_botanico": "Especiaria culinária / fitoterápico digestivo / antioxidante / cognitivo",
+        "parte_usada": "Folhas frescas ou secas (acículas — formato de agulha característico). OE.",
+        "sinonimos": [
+          "Alecrim · alecrim-de-jardim · rosmaninho (PT — confunde com lavandula)",
+          "Rosemary (inglês) · Romarin (francês) · Rosmarin (alemão)",
+          "ATENÇÃO: a reclassificação de 2017 movou a espécie de gênero Rosmarinus para Salvia. Literatura antiga usa Rosmarinus officinalis — atualizada usa Salvia rosmarinus."
+        ]
+      },
+      "caracterizacao": {
+        "sabor_dominante": "Aromático-resinoso, levemente picante-camforado, herbáceo intenso. Sabor universal do Mediterrâneo.",
+        "aroma": "Camforado-resinoso característico, levemente pinheiro, herbáceo quente.",
+        "cor_da_infusao": "Verde-amarelado a âmbar. #C8A858",
+        "intensidade": "3–4/5 — aromático intenso.",
+        "notas": "Cabeça: camforado-resinoso imediato | Corpo: herbáceo-pinheiro | Fundo: leve picância",
+        "bioma_de_origem": "Originária da bacia mediterrânea (Espanha, Itália, Grécia, Marrocos). Cultivada mundialmente em climas temperados e subtropicais. No Brasil: cultivo em todo o território.",
+        "distribuicao_geografica": [
+          "Mediterrâneo (Marrocos, Tunísia, Espanha, Itália): produção de OE.",
+          "Brasil: cultivo doméstico amplíssimo. Produção comercial em SP, MG, RS.",
+          "Centros de pesquisa: Universidades europeias (Espanha, Itália), USP."
+        ]
+      },
+      "preparo": {
+        "temperatura_ideal": "85–90 °C (não ferver — preservar OE).",
+        "tempo_de_infusao": "5–10 min coberto.",
+        "quantidade": "1–2 g de folhas secas para 250 ml.",
+        "metodo": "Infusão coberta. Decocção curta (3 min) também aceita.",
+        "reinfusoes": "1 reinfusão.",
+        "melhor_momento": "Manhã (estimulante cognitivo). Pós-refeições gordurosas (digestivo). Não usar à noite (estimulante).",
+        "combina_com": "Tomilho · Sálvia · Limão · Mel · Hortelã"
+      },
+      "usos_topicos": {
+        "evidencia": "Forte para uso cosmético capilar.",
+        "aplicacoes": [
+          {
+            "titulo": "Tônico capilar (queda de cabelo, alopecia androgenética)",
+            "texto": "OE diluído em massagem no couro cabeludo — RCT iraniano (Panahi 2015) mostrou eficácia equivalente a minoxidil 2% em alopecia androgenética masculina."
+          },
+          {
+            "titulo": "Aromaterapia para memória/cognição",
+            "texto": "Inalação de OE — Moss et al. (2003) demonstraram melhora em testes de memória de trabalho em laboratório."
+          },
+          {
+            "titulo": "Antimicrobiano tópico",
+            "texto": "OE em formulações antifúngicas e antibacterianas dermatológicas."
+          }
+        ],
+        "contraindicacoes": "OE puro pode irritar pele sensível — diluir."
+      },
+      "acoes_e_seguranca": {
+        "acoes_principais": [
+          "Antioxidante potente (ácido carnósico, ácido rosmarínico)",
+          "Estimulante digestivo (carminativo, hepatoprotetor)",
+          "Estimulante cognitivo (memória — uso aromaterápico)",
+          "Antimicrobiano",
+          "Anti-inflamatório",
+          "Estimulante capilar (uso tópico)"
+        ],
+        "componentes_ativos": [
+          {
+            "label": "Ácido carnósico",
+            "texto": "Antioxidante POTENTE — usado pela indústria alimentar como conservante natural (E-392). Marcador de identidade do alecrim"
+          },
+          {
+            "label": "Ácido rosmarínico",
+            "texto": "Antioxidante, anti-inflamatório, ansiolítico — Lamiaceae típica"
+          },
+          {
+            "label": "Carnosol",
+            "texto": "Antioxidante, anti-câncer (estudos preliminares)"
+          },
+          {
+            "label": "1,8-cineol (eucaliptol)",
+            "texto": "Aromático, expectorante, cognitivo"
+          },
+          {
+            "label": "Cânfora",
+            "texto": "Estimulante leve do SNC, aromático"
+          },
+          {
+            "label": "Borneol, alfa-pineno",
+            "texto": "Aromáticos, antimicrobianos"
+          }
+        ],
+        "evidencia": [
+          {
+            "indicacao": "Alopecia androgenética (uso tópico)",
+            "evidencia": "Forte (RCT)",
+            "populacao": "Adultos — Panahi et al. (2015) — comparado a minoxidil 2%"
+          },
+          {
+            "indicacao": "Cognição/memória (aromaterapia)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — Moss & Oliver (2012)"
+          },
+          {
+            "indicacao": "Dispepsia funcional",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — uso tradicional + Iberogast (componente)"
+          },
+          {
+            "indicacao": "Antioxidante alimentar (E-392)",
+            "evidencia": "Forte",
+            "populacao": "Aprovado UE e USA como conservante natural"
+          },
+          {
+            "indicacao": "Estimulante cognitivo (uso oral)",
+            "evidencia": "Preliminar",
+            "populacao": "Idosos — Pengelly et al. (2012)"
+          }
+        ],
+        "alerta_critico": {
+          "titulo": "OE puro — cânfora em doses altas",
+          "titulo2": "Alerta para epilepsia e gestação",
+          "corpo": "OE puro de alecrim contém cânfora — em doses altas pode reduzir limiar convulsivo. Epilépticos: evitar OE oral em altas doses. Gestação: OE em doses altas — uterotônico documentado em modelos animais; uso culinário e em infusão é tradicionalmente seguro. Hipertensos: cânfora pode elevar PA em uso prolongado de doses altas."
+        },
+        "contraindicacoes": [
+          "Epilepsia (OE em doses altas)",
+          "Gestação: OE em doses altas — evitar",
+          "Hipertensão grave: doses altas crônicas",
+          "Crianças <2 anos: OE tópico no rosto"
+        ],
+        "interacoes": [
+          {
+            "label": "Anticoagulantes",
+            "texto": "Possível potencialização leve. Conduta: monitorar"
+          },
+          {
+            "label": "Anticonvulsivantes",
+            "texto": "Cânfora pode reduzir eficácia em doses altas. Conduta: cautela"
+          },
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Possível antagonismo (cânfora) em doses altas. Conduta: cautela"
+          }
+        ],
+        "efeitos_adversos": "Em uso culinário/infusão: muito raros. OE em doses altas: cefaleia, irritação gástrica.",
+        "dose_maxima": "Folhas secas em infusão: até 6 g/dia. OE: uso tópico/aromaterápico apenas (não oral).",
+        "fontes": [
+          "Panahi Y et al. — Rosemary oil vs minoxidil 2% for the treatment of androgenetic alopecia: a randomized comparative trial (Skinmed, 2015)",
+          "Moss M, Oliver L — Plasma 1,8-cineole correlates with cognitive performance following exposure to rosemary essential oil aroma (Ther Adv Psychopharmacol, 2012)",
+          "Moss M et al. — Aromas of rosemary and lavender essential oils differentially affect cognition and mood in healthy adults (Int J Neurosci, 2003)",
+          "Pengelly A et al. — Short-term study on the effects of rosemary on cognitive function in elderly (J Med Food, 2012)",
+          "EMA/HMPC — Monografia Rosmarinus officinalis",
+          "Memento Fitoterápico ANVISA"
+        ]
+      },
+      "perfil_sensorial": {
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Leve — diterpenos"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Camforado-resinoso (Lamiaceae)",
+        "olfativo_descritores": [
+          "Camforado-resinoso",
+          "Pinheiro/coníferas",
+          "Herbáceo quente",
+          "Levemente picante-aromático"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Leve",
+            "molecula": "Cânfora"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Leve",
+            "molecula": "Cânfora + alfa-pineno"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Leve",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Leve",
+            "molecula": "Diterpenos"
+          }
+        ],
+        "tatil": "Corpo médio. Sensação aromática-quente característica (cânfora ativa TRPV1+TRPM8 simultaneamente — sensação de 'pinheiro fresco-quente'). Persistência aromática alta (15+ min).",
+        "descricao_integrada": "O alecrim é um dos aromáticos mais reconhecíveis do mundo — universalmente associado à culinária mediterrânea e ao 'cheiro de Natal' brasileiro (que é alecrim + cânfora). Para o Ervatório, é a porta de entrada do universo aromático Lamiaceae junto com lavanda, melissa e hortelã."
+      },
+      "cultura": {
+        "historia": "Alecrim foi cultivado desde a antiguidade — gregos usavam coroas de alecrim em festividades de Vênus; romanos em rituais funerários; medievais em casamentos como símbolo de fidelidade. Shakespeare imortalizou em Hamlet: 'There's rosemary, that's for remembrance' (Ofélia, IV.5). A planta é símbolo cultural de memória há milênios — e a ciência moderna (Moss 2003, 2012) confirma efeito cognitivo discreto via inalação de OE.",
+        "cerimonial": "Coroas de alecrim em casamentos europeus (símbolo de fidelidade). Ramos de alecrim em funerais e cemitérios (símbolo de lembrança). Uso litúrgico em incenso ortodoxo grego.",
+        "brasil": "Cultivo doméstico amplíssimo no Brasil — provavelmente top 5 das ervas mais comuns em hortas residenciais. Uso culinário (carnes, peixes, molhos) é predominante. RENISUS (SUS).",
+        "curiosidade": "Em 2017, o gênero Rosmarinus (que continha apenas a espécie R. officinalis) foi reclassificado como parte de Salvia, baseado em análise filogenética molecular. A nova nomenclatura é Salvia rosmarinus. Essa reclassificação é exemplo de como a taxonomia moderna (baseada em DNA) revisa fronteiras tradicionais entre gêneros — alecrim e sálvia, antes considerados parentes próximos mas distintos, são agora 'irmãos' do mesmo gênero."
+      },
+      "regulacao": {
+        "eixo_botanico_tpc": "Funcional global",
+        "status_anvisa": [
+          "Memento Fitoterápico",
+          "RENISUS"
+        ],
+        "status_ema": "Monografia HMPC traditional use",
+        "status_fda": "GRAS — extrato de alecrim (E-392) é conservante alimentar aprovado",
+        "certificacao_organica": "Cultivo orgânico amplo.",
+        "sazonalidade": "Folhas: ano todo (planta perene)."
+      },
+      "marketplace": {
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cultivo doméstico predominante. Cooperativas medicinais e supermercados.",
+        "faixa_de_preco": [
+          "Folhas secas (ervanário): R$ 20–50/100 g",
+          "OE puro 10ml: R$ 30–80",
+          "Hidrolato: R$ 25–60/100ml",
+          "Sachês: R$ 15–40/cx",
+          "Mudas: R$ 5–15/un"
+        ],
+        "formatos": "Folhas frescas; Folhas secas; Sachês; OE; Hidrolato; Cápsulas (extrato seco); Mudas; Cosméticos capilares."
+      },
+      "destaques": [
+        {
+          "label": "Memória shakespeariana",
+          "texto": "Símbolo cultural de lembrança há milênios — moderna ciência confirma efeito cognitivo via inalação"
+        },
+        {
+          "label": "RCT alopecia",
+          "texto": "Eficácia equivalente a minoxidil 2% em alopecia androgenética — Panahi 2015"
+        },
+        {
+          "label": "Conservante natural E-392",
+          "texto": "Extrato de alecrim aprovado UE e USA como antioxidante alimentar"
+        }
+      ]
     },
     {
       "slug": "cardamomo",
