@@ -2496,45 +2496,56 @@
     {
       "slug": "erva-mate",
       "nome_popular": "Erva-Mate",
-      "nome_cientifico": "Ilex paraguariensis [A.St](http://A.St).-Hil.",
-      "tagline": "A infusão do Sul do mundo — o único estimulante com civilização própria, da cerimônia gaúcha à produção global de US$ 1 bilhão.",
+      "nome_cientifico": "Ilex paraguariensis A.St.-Hil.",
+      "tagline": "A infusão do Sul do mundo — o único estimulante com civilização própria, da cerimônia gaúcha à produção global de US$ 1 bilhão, com o ORAC mais alto entre as bebidas habituais e uma tradição de comunhão que nenhum café replica.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Ilex paraguariensis [A.St](http://A.St).-Hil.",
-        "familia_botanica": "Aquifoliaceae (família do azevinho)",
+        "nome_cientifico": "Ilex paraguariensis A.St.-Hil.",
+        "familia_botanica": "Aquifoliaceae (família do azevinho — holly em inglês)",
         "tipo_botanico": "Estimulante herbal monografado / alimento funcional",
-        "parte_usada": "Folhas e ramos finos, secos (canchada = erva-mate verde; tostada = chimarrão mais suave; elaborada = tererê).",
+        "parte_usada": "Folhas e ramos finos, secos. Processamento determina o produto: canchada (erva-mate verde — chimarrão); tostada (sabor mais suave); sapecada (choque térmico para preservar cor verde); envelhecida (estacionamento 6–24 meses — sabor mais complexo, menos amargo). A 'sapeca' (passar a folha por chama rápida) é etapa crítica que define qualidade — mata enzimas oxidativas que degradam clorofila e cafeína.",
         "sinonimos": [
           "Erva-mate · mate · chimarrão · congonha · ilex",
           "Yerba mate (espanhol) · Maté (francês/inglês)",
-          "Caá (guarani: \"folha divina\")"
+          "Caá (guarani: 'folha divina')"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Vegetal-amargo intenso (chimarrão verde) a suave-tostado-herbáceo (mate tostado). Amplo espectro por processamento. Umami discreto em mate envelhecido.",
-        "aroma": "Clorofila fresca, feno, erva cortada (verde) / caramelo-tostado-amadeirado (tostado). Um dos aromas mais complexos do catálogo.",
-        "cor_da_infusao": "Verde-intenso (chimarrão) a marrom-ouro (tererê, chá-mate). #4A7C3F (chimarrão) / #A67B4B (tostado)",
+        "sabor_dominante": "Espectro amplo por processamento: Chimarrão verde — vegetal-amargo intenso, clorofílico, herbáceo profundo, umami discreto. Mate tostado — suave-tostado, caramelo, amadeirado, amargo reduzido. Mate envelhecido — complexidade máxima: tabaco, feno curado, umami pronunciado.",
+        "aroma": "Verde: clorofila fresca, feno, erva cortada. Tostado: caramelo, café suave, amadeirado.",
+        "cor_da_infusao": "Chimarrão: verde-intenso #4A7C3F. Tostado: marrom-ouro #A67B4B.",
         "intensidade": "3–4/5 (variável por processamento).",
-        "notas": "Cabeça: verde-clorofílico ou tostado | Corpo: vegetal encorpado, umami | Fundo: amargo limpo, adstringência leve | BIOMA: Mata Atlântica — floresta de araucária (RS, SC, PR) e mata atlântica interior (MS, SP). Argentina (Misiones) e Paraguai: maiores produtores mundiais.",
-        "bioma_de_origem": "Mata Atlântica — floresta de araucária (RS, SC, PR) e mata atlântica interior (MS, SP). Argentina (Misiones) e Paraguai: maiores produtores mundiais.",
-        "distribuicao_geografica": []
+        "notas": "Cabeça: verde-clorofílico ou tostado-caramelo | Corpo: vegetal encorpado, umami | Fundo: amargo limpo, adstringência leve",
+        "bioma_de_origem": "Mata Atlântica — floresta de araucária (RS, SC, PR) e mata atlântica interior (MS, SP). Argentina (Misiones) e Paraguai: maiores produtores mundiais. A erva-mate é espécie característica do sub-bosque da mata de araucária — sistema biocultural que liga a planta à Araucaria angustifolia e ao bioma específico do Sul do Brasil.",
+        "distribuicao_geografica": [
+          "Brasil (RS, SC, PR — segundo maior produtor mundial), Argentina (Misiones — maior produtor), Paraguai.",
+          "Mais de 700 municípios brasileiros têm erva-mate como parte de sua história.",
+          "Mercado global: US$ 1+ bilhão — EUA/Europa: 'yerba mate' como bebida premium de energia sustentável (Guayakí: US$ 300+ milhões de receita).",
+          "Centros de pesquisa: UFPR (Curitiba), UFSM (Santa Maria), Universidade Nacional de Misiones (Argentina)."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Limão · Hortelã · Hibisco · Gengibre · Canela (blends de chá-mate) · Frutas cítricas (tererê)"
+        "temperatura_ideal": "Chimarrão: 70–75 °C — NUNCA ferver (mata enzimas e amarga excessivamente). Chá-mate: 85–90 °C. Tererê: água fria/gelada.",
+        "tempo_de_infusao": "Chimarrão: contínuo (cebamento em ciclos). Chá-mate: 5–8 min. Tererê: imediato (água fria já com erva).",
+        "quantidade": "Chimarrão: cuia + 50–60 g de erva-mate verde canchada. Chá-mate: 2–3 g/150 ml. Tererê: 50–80 g de erva em cuia/copo grande com água gelada.",
+        "metodo": "CHIMARRÃO (ritual gaúcho): cuia + bomba filtrante. Cebamento — secar um lado com água fria, introduzir água quente progressivamente. Ritual contínuo — cuia passada de mão em mão. CHÁ-MATE: infusão simples ou cold brew. TERERÊ (Paraguay/MS): erva + água fria/suco — bebida gelada ritual.",
+        "reinfusoes": "Chimarrão: 20–50 cebamentos por carga de erva. Chá-mate: 1–2 reinfusões.",
+        "melhor_momento": "Manhã e início de tarde (estimulante). Evitar pós-15h para não comprometer sono.",
+        "combina_com": "Limão · Hortelã · Hibisco · Gengibre · Canela (chá-mate) · Frutas cítricas (tererê)"
       },
       "usos_topicos": {
-        "evidencia": "",
+        "evidencia": "Moderada para uso cosmético (antioxidante tópico, anti-aging).",
         "aplicacoes": [
-          "Tônico capilar: Infusão forte resfriada, aplicada no couro cabeludo — uso popular para queda de cabelo. Evidência preliminar (xantinas estimulam circulação capilar).",
-          "Creme anti-aging: Extrato de mate em formulações cosméticas — antioxidante de ORAC elevado. Amplamente usado pela indústria cosmética global."
+          {
+            "titulo": "Tônico capilar",
+            "texto": "Infusão forte resfriada, aplicada no couro cabeludo — uso popular para queda de cabelo. Evidência preliminar (xantinas estimulam circulação capilar)."
+          },
+          {
+            "titulo": "Creme anti-aging",
+            "texto": "Extrato de mate em formulações cosméticas — antioxidante de ORAC elevado. Amplamente usado pela indústria cosmética global."
+          }
         ],
-        "contraindicacoes": ""
+        "contraindicacoes": "Uso tópico amplamente seguro."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
@@ -2544,42 +2555,35 @@
           "Cardioprotetor (redução de LDL oxidado)",
           "Diurético suave",
           "Hepatoprotetor (estudos preliminares)",
-          "Imunomodulador (saponinas — mateína)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Hipertensão não controlada. Gestação (limitar cafeína total a <200 mg/dia). Gastrite ativa — irritante. Ansiedade — potencialização.",
-          "Interações:",
-          "Anticoagulantes — rutina potencializa levemente",
-          "Outros estimulantes — síndrome de hiperestimulação",
-          "Ferro — taninos reduzem absorção (evitar junto com refeições ricas em ferro)"
+          "Imunomodulador (saponinas — mateína)"
         ],
         "componentes_ativos": [
           {
-            "label": "CAFEÍNA",
-            "texto": "0,5–1,7% (folha seca) — Estimulante SNC"
+            "label": "Cafeína (mateína)",
+            "texto": "0,5–1,7% (folha seca) — Estimulante SNC. Liberação mais lenta que café devido à matriz de saponinas e taninos"
           },
           {
-            "label": "TEOBROMINA",
+            "label": "Teobromina",
             "texto": "0,3–0,5% — Vasodilatação, broncodilatação leve"
           },
           {
-            "label": "TEOFILINA",
+            "label": "Teofilina",
             "texto": "Traços — Broncodilatação"
           },
           {
-            "label": "ÁCIDO CLOROGÊNICO",
-            "texto": "Alto — Antioxidante, hipoglicemiante"
+            "label": "Ácido clorogênico",
+            "texto": "Alto — Antioxidante, hipoglicemiante. Mesmo composto do café-verde"
           },
           {
-            "label": "SAPONINAS (mateína)",
-            "texto": "Presente — Imunomodulador, adaptogênico discutido"
+            "label": "Saponinas (mateína triterpênicas)",
+            "texto": "Presente — Imunomodulador, adaptogênico discutido. Marcador de identidade da espécie"
           },
           {
-            "label": "RUTINA",
+            "label": "Rutina",
             "texto": "Presente — Cardioprotetor, antioxidante vascular"
           },
           {
-            "label": "VITAMINAS (C, B1, B2, B6)",
+            "label": "Vitaminas (C, B1, B2, B6)",
             "texto": "Presentes — Nutritivo"
           }
         ],
@@ -2587,17 +2591,17 @@
           {
             "indicacao": "Fadiga mental e física",
             "evidencia": "Forte",
-            "populacao": "Múltiplos estudos"
+            "populacao": "Adultos — múltiplos estudos"
           },
           {
             "indicacao": "Coadjuvante de emagrecimento",
             "evidencia": "Moderada",
-            "populacao": "Andersen et al."
+            "populacao": "Adultos com sobrepeso — Andersen et al."
           },
           {
             "indicacao": "Redução de LDL e colesterol",
             "evidencia": "Moderada",
-            "populacao": "Studinicka et al."
+            "populacao": "Adultos dislipidêmicos — Studinicka et al."
           },
           {
             "indicacao": "Proteção cardiovascular",
@@ -2605,337 +2609,301 @@
             "populacao": "Epidemiologia do Sul do Brasil"
           }
         ],
-        "contraindicacoes": [],
+        "alerta_critico": {
+          "titulo": "Cafeína + temperatura — duas precauções",
+          "titulo2": "Cafeína total ≤ 400 mg/dia (OMS)",
+          "corpo": "Limite cafeína: OMS recomenda ≤ 400 mg/dia para adultos saudáveis. Chimarrão pode atingir 100–300 mg/sessão. Gestantes: < 200 mg/dia. Temperatura do chimarrão: estudos do Sul do Brasil e Uruguai associam consumo de mate em temperaturas muito altas (>80 °C) a maior incidência de câncer de esôfago. Recomendação: água a 70–75 °C — temperatura tradicional gaúcha que coincide com o limite seguro."
+        },
+        "contraindicacoes": [
+          "Hipertensão não controlada",
+          "Gestação (limitar cafeína total a <200 mg/dia)",
+          "Gastrite ativa — irritante",
+          "Ansiedade — potencialização",
+          "Insônia"
+        ],
         "interacoes": [
           {
-            "label": "Anticoagulantes — rutina potencializa levemente",
-            "texto": ""
+            "label": "Anticoagulantes",
+            "texto": "Rutina potencializa levemente. Conduta: monitorar INR"
           },
           {
-            "label": "Outros estimulantes — síndrome de hiperestimulação",
-            "texto": ""
+            "label": "Outros estimulantes (efedrina, sinefrina)",
+            "texto": "Síndrome de hiperestimulação. Conduta: evitar uso conjunto"
           },
           {
-            "label": "Ferro — taninos reduzem absorção (evitar junto com refeições ricas em ferro)",
-            "texto": ""
+            "label": "Ferro oral",
+            "texto": "Taninos reduzem absorção. Conduta: espaçar 2h"
           }
         ],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "efeitos_adversos": "Em doses usuais: insônia (uso noturno), taquicardia leve, irritação gástrica em jejum. Em doses altas crônicas: efeitos da cafeína acumulada.",
+        "dose_maxima": "Cafeína total ≤ 400 mg/dia (OMS). Chimarrão: 1–2 cuias/dia (em torno de 200–400 mg cafeína).",
+        "fontes": [
+          "Farmacopeia Brasileira — monografia oficial Ilex paraguariensis",
+          "EMA/HMPC — Monografia de Ilex paraguariensis (traditional use)",
+          "Heck CI, de Mejia EG — Yerba mate tea (Ilex paraguariensis): a comprehensive review (J Food Sci, 2007)",
+          "Bracesco N et al. — Recent advances on Ilex paraguariensis research (J Ethnopharmacol, 2011)",
+          "de Morais EC et al. — Consumption of yerba mate reduces LDL-cholesterol (Atherosclerosis, 2009)",
+          "Andersen T, Fogh J — Weight loss and delayed gastric emptying following a South American herbal preparation (J Hum Nutr Diet, 2001)",
+          "IARC — Drinking very hot beverages and esophageal cancer risk (Monographs, 2016)"
+        ]
       },
       "perfil_sensorial": {
         "gustativo": [
           {
             "dimensao": "Doce",
             "intensidade": "0/3",
-            "observacao": "1/3"
+            "observacao": "Chimarrão: 0/3. Mate tostado: 1/3 (caramelização)"
           },
           {
             "dimensao": "Amargo",
             "intensidade": "3/3",
-            "observacao": "2/3"
+            "observacao": "Chimarrão: 3/3. Mate tostado: 2/3"
           },
           {
             "dimensao": "Umami",
             "intensidade": "1/3",
-            "observacao": "1/3"
+            "observacao": "Notas vegetais profundas; mais pronunciado em mate envelhecido"
           },
           {
             "dimensao": "Azedo",
             "intensidade": "0/3",
-            "observacao": "0/3"
+            "observacao": "Ausente"
           },
           {
-            "dimensao": "Adstringência",
-            "intensidade": "Moderada",
-            "observacao": "Baixa"
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
           }
         ],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "O chimarrão é a infusão mais encorpada do catálogo sul-americano — corpo denso, quase espesso, que justifica o ritual da cuia e da bomba. A bomba não é apenas filtragem — é a ferramenta que viabiliza uma textura impossível em xícara comum.",
-        "descricao_integrada": ""
+        "olfativo_familia": "Herbal-vegetal-amadeirado (verde) / Tostado-caramelado (mate tostado)",
+        "olfativo_descritores": [
+          "Clorofila fresca · Feno verde · Erva cortada (chimarrão)",
+          "Caramelo · Tostado · Amadeirado (mate tostado)",
+          "Tabaco fino · Feno curado (mate envelhecido)",
+          "Ervas amargas (Asteraceae-like)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Moderada",
+            "molecula": "Taninos + saponinas — adstringência mais 'macia' que chá-preto, mais 'untuosa' que chá-verde"
+          }
+        ],
+        "tatil": "Chimarrão: corpo médio-encorpado, textura levemente untuosa pelas saponinas (mateína cria espuma característica na cuia — marcador de qualidade). Persistência alta — amargor permanece 10–15 min. Mate tostado: corpo mais leve, textura mais limpa.",
+        "descricao_integrada": "A erva-mate é uma das poucas plantas do catálogo com civilização própria — a 'cultura do mate' transcende a bebida e se torna identidade regional do Sul do Brasil, Argentina, Paraguai e Uruguai. A roda de chimarrão (cuia compartilhada entre amigos/família) é cerimônia social que define um modo de estar no mundo. Para o Ervatório, a erva-mate é a porta de entrada do bioma Mata Atlântica para consumidores globais — é simultaneamente brasileira, sulista, indígena guarani, jesuítica e contemporânea."
       },
       "cultura": {
-        "historia": "A erva-mate é a única bebida com civilização própria que o Brasil produziu. Os Guaranis a chamavam de \"caá\" — folha divina — e desenvolveram todo um sistema ritual, agrícola e comercial em torno da planta antes da chegada europeia. Os jesuítas, inicialmente avessos (\"bebida do diabo\"), tornaram-se os maiores produtores e comerciantes de erva-mate das Américas no século XVII — as reduções jesuíticas do Rio Grande do Sul e Misiones eram impérios ervateiros.  O chimarrão gaúcho transcendeu a bebida — é símbolo de identidade regional, rito de hospitalidade, marcador social. Recusar um chimarrão oferecido é deselegância grave no interior gaúcho. Aceitar é comunhão.",
-        "cerimonial": "A roda de chimarrão — círculo de pessoas passando a cuia de mão em mão, cada um bebendo até secar, devolvendo, aguardando a volta — é uma das cerimônias de comunhão mais democráticas do Brasil. Não tem hierarquia de servir: a cuia circula.",
-        "brasil": "O Brasil é o segundo maior produtor mundial de erva-mate (atrás da Argentina), com produção concentrada no Paraná, Santa Catarina e Rio Grande do Sul. Mais de 700 municípios brasileiros têm erva-mate como parte de sua história econômica.  A erva-mate está em acelerada internacionalização — nos EUA e Europa, o \"yerba mate\" virou bebida de nicho premium (marcas como Guayakí arrecadam centenas de milhões de dólares com posicionamento de \"energia sustentável\" para millennials). O Brasil, principal produtor histórico, captura fração mínima desse mercado premium global.",
-        "curiosidade": ""
+        "historia": "Os Guarani descobriram e cultivaram a erva-mate muito antes da chegada europeia — chamada 'caá' (folha divina). Os jesuítas espanhóis incorporaram a erva-mate à economia das missões nos séculos XVII–XVIII (Reduções Jesuíticas), criando o primeiro sistema agrícola organizado de mate. Após a expulsão dos jesuítas (1767), o cultivo foi disperso e a tradição passou para os gaúchos do Cone Sul. Hoje, a erva-mate é elemento identitário tão forte que governos sul-americanos disputam denominações de origem.",
+        "cerimonial": "A roda de chimarrão é cerimônia codificada com regras precisas: o cevador (quem prepara) é fixo na roda; a cuia circula no sentido do dedo polegar (do cevador para o próximo, sempre na mesma direção); cada pessoa toma toda a cuia até secar a bomba e devolve; gracioso é o silêncio da bomba ao secar; o cevador recebe, recarrega água, passa para o próximo. 'Obrigado' é palavra que termina a participação — quem diz 'obrigado' não recebe mais cuias na rodada.",
+        "brasil": "Brasil é o segundo maior produtor mundial (após Argentina) — > 700 municípios produtores, indústria de R$ 1 bilhão, 700 mil empregos diretos no Sul. Cooperativas familiares no PR/SC/RS combinam tradição e tecnologia. O 'mate gelado' (chá-mate Leão e similares) é uma das bebidas industriais mais consumidas no Sudeste brasileiro — versão urbana do tererê paraguaio.",
+        "curiosidade": "A 'mateína' não é uma molécula diferente da cafeína — é a mesma cafeína, mas com farmacocinética modificada pela matriz de saponinas e taninos da erva-mate. A liberação é mais lenta e prolongada que café puro, gerando alerta sustentado sem o pico-vale típico do café. Esse perfil farmacocinético explica por que gaúchos podem tomar chimarrão por 4–6 horas sem o 'crash' do café da manhã."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA + Funcional global",
-        "status_anvisa": "Monografia oficial. Indicações: estimulante, coadjuvante de emagrecimento.",
-        "status_ema": "Monografia HMPC — traditional use. Indicação: fadiga.",
-        "status_fda": "GRAS para uso alimentar",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita ano-todo; melhor qualidade: inverno (maio–agosto)"
+        "status_anvisa": [
+          "Monografia oficial — Farmacopeia Brasileira",
+          "Indicação: estimulante leve, coadjuvante de fadiga"
+        ],
+        "status_ema": "Monografia HMPC — traditional use",
+        "status_fda": "GRAS (Generally Recognized as Safe)",
+        "certificacao_organica": "Certificações orgânicas: IBD (BR), USDA Organic, EU Organic. Indicação Geográfica: Erva-Mate de Lages (SC) — IG INPI 2018; Erva-Mate da Cangüera (RS) — em processo.",
+        "sazonalidade": "Colheita principal: maio–agosto (inverno sulino). Colheita secundária: dezembro–fevereiro. Erva colhida no inverno tem maior concentração de cafeína."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas familiares do PR, SC, RS — produção orgânica e tradicional. Marcas referência: Barão (RS), Madrugada (PR), Canarias (Uruguai), Guayakí (orgânica para mercado premium internacional).",
+        "faixa_de_preco": [
+          "Erva-mate verde canchada (chimarrão): R$ 25–60/kg",
+          "Mate tostado/chá-mate: R$ 30–80/kg",
+          "Erva orgânica certificada: R$ 60–150/kg",
+          "Cuia + bomba (kit completo): R$ 80–250"
+        ],
+        "formatos": "Erva canchada (chimarrão); Mate tostado (chá-mate); Sachês (chá quente); Cold brew bottles; Pó liofilizado (suplemento); Tererê (erva grossa para água fria)."
+      },
+      "destaques": [
+        {
+          "label": "Civilização própria",
+          "texto": "Roda de chimarrão é cerimônia codificada com regras precisas — única no catálogo"
+        },
+        {
+          "label": "Cafeína sustentada",
+          "texto": "Mateína = cafeína + matriz de saponinas — alerta longo sem pico-vale do café"
+        },
+        {
+          "label": "Indicação Geográfica",
+          "texto": "Erva-Mate de Lages (SC) — IG INPI 2018; outras regiões em processo"
+        }
+      ]
     },
     {
       "slug": "guaco",
       "nome_popular": "Guaco",
-      "nome_cientifico": "Mikania glomerata Spreng. (Mikania laevigata também aceita — quimiotipo diferente)",
-      "tagline": "O broncodilatador da floresta — expectorante e antiasmático com monografia oficial e um dos maiores volumes de consumo em fitoterápicos brasileiros.",
+      "nome_cientifico": "Mikania glomerata Spreng.",
+      "tagline": "O xarope da floresta — broncodilatador da Mata Atlântica com tradição centenária no SUS, cumarina natural validada como expectorante, e o aroma de baunilha que toda criança brasileira reconhece como 'remédio de tosse'.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Mikania glomerata Spreng. (Mikania laevigata também aceita — quimiotipo diferente)",
-        "familia_botanica": "Asteraceae (família da camomila, do girassol)",
-        "tipo_botanico": "Fitoterápico broncodilatador / expectorante",
-        "parte_usada": "Folhas secas.",
+        "nome_cientifico": "Mikania glomerata Spreng. (sin. parcial: M. laevigata — espécies frequentemente intercambiáveis na literatura)",
+        "familia_botanica": "Asteraceae (família da camomila, do girassol, do dente-de-leão)",
+        "tipo_botanico": "Fitoterápico expectorante / broncodilatador / antiespasmódico respiratório",
+        "parte_usada": "Folhas secas — coletadas preferencialmente antes da floração (maior concentração de cumarina). M. glomerata e M. laevigata são as duas espécies mais usadas comercialmente no Brasil, com perfil de ação similar mas concentrações de cumarina ligeiramente distintas.",
         "sinonimos": [
-          "Guaco · guaco-liso · mikânia · coração-de-jesus · cipó-caatinga",
-          "Guaco (uso mantido em espanhol) · climbing hemp weed (inglês)"
+          "Guaco · guaco-cheiroso · cipó-caatinga · erva-de-cobra",
+          "Coraçãozinho (regional MG) · guaco-liso (M. laevigata)",
+          "ATENÇÃO: gênero Mikania tem >400 espécies tropicais. Apenas M. glomerata e M. laevigata têm uso medicinal regulamentado. Outras Mikania podem ser tóxicas (M. cordifolia, M. micrantha)."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-herbáceo intenso, levemente resinoso, fundo de cumarina (baunilha amarga). Mais palatável com mel — uso medicinal respiratório.",
-        "aroma": "Cumarina característica (baunilha-coumarin), folha verde, levemente balsâmico.",
-        "cor_da_infusao": "Verde-amarelado a âmbar. #9CB558",
-        "intensidade": "3/5 — medicinal mas tolerável.",
-        "notas": "",
-        "bioma_de_origem": "Mata Atlântica — espécie trepadeira de bordas de mata, SE, SP, RJ, PR, RS, SC.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Doce-baunilha pronunciado (cumarina), levemente amargo no fundo, herbáceo-verde, fresco. Perfil agradável que admite uso em xarope para crianças sem grande resistência sensorial.",
+        "aroma": "Cumarina característica — baunilha quente, feno cortado ao sol (mesmo aroma da imburana e do cumaru, mas em concentração menor), levemente herbáceo. O aroma de cumarina é o marcador olfativo do guaco.",
+        "cor_da_infusao": "Verde-amarelado a âmbar claro. #C8B850",
+        "intensidade": "2–3/5 — palatável, aroma agradável, amargor discreto.",
+        "notas": "Cabeça: cumarina-baunilha imediata | Corpo: herbáceo-verde | Fundo: leve amargor",
+        "bioma_de_origem": "Mata Atlântica — espécie de bordas de mata e clareiras. SE, MG, RJ, SP, PR, SC. Cresce também em Mata Atlântica interior e em transição com Cerrado.",
+        "distribuicao_geografica": [
+          "MG, SP, RJ, ES, PR, SC (Mata Atlântica e transição com Cerrado).",
+          "Cultivo comercial: SP (Vale do Paraíba), MG, PR — cooperativas e fazendas medicinais.",
+          "Centros de pesquisa: USP (Ribeirão Preto), UFRJ, UFV (Viçosa)."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "2–3 g de folhas secas para 250 ml.",
-        "metodo": "Infusão coberta. Decocção suave também usada.",
-        "reinfusoes": "",
-        "melhor_momento": "3x ao dia em episódios agudos; 2x/dia em uso preventivo.",
-        "combina_com": "Mel · Limão · Eucalipto · Tomilho · Gengibre (blends respiratórios)"
+        "temperatura_ideal": "85–90 °C (cumarina volátil — não ferver para preservar aroma e atividade).",
+        "tempo_de_infusao": "5–10 min coberto.",
+        "quantidade": "2–4 g de folhas secas para 250 ml.",
+        "metodo": "Infusão coberta (cobrir é essencial para reter cumarina). XAROPE TRADICIONAL: decocção de folhas em mel — preparo doméstico mais comum no Brasil. Tintura: 1:5 em álcool 70°, 10–15 dias.",
+        "reinfusoes": "1 reinfusão.",
+        "melhor_momento": "Em episódios de tosse: 3–4x ao dia. Crianças (>2 anos): xarope diluído em mel.",
+        "combina_com": "Mel (clássico — formato xarope) · Limão · Gengibre · Eucalipto · Hortelã · Tomilho (blend respiratório)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Fraca para uso tópico. Inalação: moderada (vapores de cumarina).",
+        "aplicacoes": [
+          {
+            "titulo": "Inalação de vapor para congestão respiratória",
+            "texto": "Folhas em água fervente, toalha sobre cabeça, 5 min. Cumarina volátil + sesquiterpenos broncodilatadores via inalação direta."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Broncodilatador (relaxamento musculatura brônquica)",
-          "Expectorante (fluidifica secreções)",
-          "Antiespasmódico brônquico",
-          "Anti-inflamatório das vias aéreas",
-          "Antialérgico leve (inibição de mediadores)",
-          "Antipirético",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Gestação — cumarina uterotônica, evitar",
-          "Hepatopatias — cautela com cumarina",
-          "Anticoagulados — potencialização (cumarina)",
-          "Alergia à família Asteraceae (reação cruzada possível)"
+          "Expectorante (fluidifica muco brônquico)",
+          "Broncodilatador (relaxamento da musculatura brônquica via cumarina)",
+          "Antiespasmódico respiratório",
+          "Anti-inflamatório de vias aéreas",
+          "Antitussígeno",
+          "Antimicrobiano respiratório leve"
         ],
         "componentes_ativos": [
           {
-            "label": "CUMARINA",
-            "texto": "Broncodilatador — mecanismo b2-agonista parcial"
+            "label": "Cumarina (1,2-benzopirona)",
+            "texto": "0,3–1,0% das folhas secas — Broncodilatador (mecanismo β2-agonista parcial), expectorante, antiespasmódico. Mesma molécula da imburana e do cumaru, mas em concentração intermediária"
           },
           {
-            "label": "ÁCIDO CAURENÓICO (diterpeno)",
-            "texto": "Anti-inflamatório, antibacteriano"
+            "label": "Ácido caurenóico (diterpeno)",
+            "texto": "Anti-inflamatório, antimicrobiano, antiespasmódico"
           },
           {
-            "label": "LACTONAS SESQUITERPÊNICAS",
-            "texto": "Anti-inflamatório, antialérgico"
+            "label": "Lupeol",
+            "texto": "Anti-inflamatório, hepatoprotetor"
           },
           {
-            "label": "SAPONINAS",
-            "texto": "Expectorante"
+            "label": "Beta-cariofileno (sesquiterpeno)",
+            "texto": "Anti-inflamatório (CB2), antiespasmódico"
           },
           {
-            "label": "FLAVONÓIDES (quercetina, rutina)",
+            "label": "Estigmasterol",
+            "texto": "Anti-inflamatório"
+          },
+          {
+            "label": "Flavonóides (quercetina, kaempferol)",
             "texto": "Antioxidante, anti-inflamatório"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Tosse produtiva",
-            "evidencia": "Moderada-forte",
-            "populacao": "ANVISA Formulário Fitoterápico"
+            "indicacao": "Tosse aguda (resfriado, gripe)",
+            "evidencia": "Forte (uso tradicional + estudos clínicos)",
+            "populacao": "Adultos e crianças >2 anos — Farmacopeia Brasileira; Goulart et al. (USP)"
           },
           {
             "indicacao": "Bronquite aguda",
             "evidencia": "Moderada",
-            "populacao": "Múltiplos ensaios nacionais"
+            "populacao": "Adultos — múltiplos estudos clínicos nacionais"
           },
           {
             "indicacao": "Asma leve (adjuvante)",
             "evidencia": "Preliminar",
-            "populacao": "Estudos in vitro"
+            "populacao": "Adultos — estudos pré-clínicos"
+          },
+          {
+            "indicacao": "Faringite (gargarejo)",
+            "evidencia": "Tradicional forte",
+            "populacao": "Adultos — uso popular"
           }
         ],
+        "alerta_critico": {
+          "titulo": "Cumarina — anticoagulação fraca cumulativa",
+          "titulo2": "Cautela em anticoagulados e uso prolongado",
+          "corpo": "A cumarina do guaco tem ação anticoagulante fraca (cumulativa em uso prolongado). NÃO confundir com varfarina (cumarinas sintéticas potentes). Em uso por >4 semanas em anticoagulados: monitorar INR. Uso ocasional em xarope respiratório: seguro. Crianças <2 anos: evitar pelo álcool dos xaropes comerciais (não pela cumarina em si)."
+        },
         "contraindicacoes": [
-          "Gestação — cumarina uterotônica, evitar",
-          "Hepatopatias — cautela com cumarina",
-          "Anticoagulados — potencialização (cumarina)",
-          "Alergia à família Asteraceae (reação cruzada possível)"
+          "Anticoagulados (varfarina, heparina): potencialização leve — monitorar INR",
+          "Hepatopatias graves: cumarina é metabolizada pelo fígado",
+          "Pré-cirurgia (>2 semanas): suspender",
+          "Crianças <2 anos: xaropes alcoólicos comerciais não recomendados",
+          "Alergia a Asteraceae (rara — reação cruzada possível)"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
-      },
-      "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
-      },
-      "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O guaco é o fitoterápico respiratório mais vendido em farmácias de manipulação e ervanários brasileiros — o xarope de guaco com mel é presença obrigatória em armários de remédio de famílias do interior de São Paulo, Rio, Minas e Sul do Brasil.  A ANVISA aprovou o xarope de guaco como fitoterápico registrado — um dos poucos produtos fitoterápicos com registro completo e rastreabilidade de cadeia no Brasil.",
-        "curiosidade": ""
-      },
-      "regulacao": {
-        "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Monografia oficial. Fitoterápico xarope registrado. Indicação: expectorante, broncodilatador.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas coletadas preferentemente no período vegetativo ativo"
-      },
-      "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
-    },
-    {
-      "slug": "maracuja",
-      "nome_popular": "Maracujá",
-      "nome_cientifico": "Passiflora edulis Sims / Passiflora incarnata L. (espécie norte-americana — mais monografada internacionalmente)",
-      "tagline": "A flor da paixão ansiolítica — sedativo suave com validação científica, perfil sensorial extraordinário e carga simbólica que vai da flor da cruz à farmácia natural.",
-      "schema_version": "1.1",
-      "identificacao": {
-        "nome_cientifico": "Passiflora edulis Sims / Passiflora incarnata L. (espécie norte-americana — mais monografada internacionalmente)",
-        "familia_botanica": "Passifloraceae",
-        "tipo_botanico": "Fitoterápico ansiolítico / sedativo suave",
-        "parte_usada": "Folhas e ramos finos secos (parte aérea).",
-        "sinonimos": [
-          "Maracujá · flor-da-paixão · maracujá-azedo (fruto)",
-          "Passion flower (inglês) · Passiflore (francês) · Granadilla (espanhol)",
-          "ATENÇÃO: P. edulis (maracujá-azedo brasileiro) e P. incarnata (maypop norte-americano) têm alcaloides diferentes — as monografias internacionais são principalmente para P. incarnata"
+        "interacoes": [
+          {
+            "label": "Anticoagulantes (varfarina, dabigatrana)",
+            "texto": "Cumarina natural potencializa anticoagulação. Conduta: monitorar INR; espaçar doses"
+          },
+          {
+            "label": "Antiagregantes (AAS)",
+            "texto": "Risco de sangramento aumentado. Conduta: cautela em uso prolongado"
+          },
+          {
+            "label": "Hepatotóxicos (paracetamol em altas doses)",
+            "texto": "Hepatotoxicidade aditiva. Conduta: cautela em uso prolongado"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais: raros. Doses altas: cefaleia leve, sonolência. Reações alérgicas raras (Asteraceae).",
+        "dose_maxima": "Folhas secas em infusão: até 6 g/dia. Xarope: conforme bula do produto registrado. Tintura: 5–10 ml/dia.",
+        "fontes": [
+          "Farmacopeia Brasileira 6ª Ed. — monografia oficial Mikania glomerata",
+          "RENISUS (Ministério da Saúde) — guaco como prioridade fitoterápica do SUS",
+          "Goulart S et al. — Pharmacological evaluation of Mikania glomerata leaves (Acta Farm Bonaerense, 2005)",
+          "Bolina RC et al. — Phytochemical and antiulcerogenic studies of Mikania laevigata (Rev Bras Farmacogn, 2011)",
+          "Sá RC et al. — Mikania glomerata: a comprehensive review (J Ethnopharmacol, 2017)",
+          "Veneziani RC, Oliveira DCR — Constituents of Mikania glomerata (Biochem Syst Ecol, 1999)"
         ]
-      },
-      "caracterizacao": {
-        "sabor_dominante": "Levemente amargo-herbáceo, verde, discreto. Neutro no fundo — não impõe sabor, aceita misturas.",
-        "aroma": "Flor tropical discreta, folha verde, levemente frutado (traços).",
-        "cor_da_infusao": "Verde-amarelado pálido a âmbar claro. #D4C86A",
-        "intensidade": "1–2/5 — infusão muito suave. Perfil amistoso.",
-        "notas": "Cabeça: floral discreto | Corpo: herbáceo neutro | Fundo: leve amargor suave | BIOMA: Mata Atlântica e Cerrado — cultivado em todo o Brasil tropical; maior produtor mundial.",
-        "bioma_de_origem": "Mata Atlântica e Cerrado — cultivado em todo o Brasil tropical; maior produtor mundial.",
-        "distribuicao_geografica": []
-      },
-      "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 colheres de sopa (3–5 g) de folhas secas para 250 ml.",
-        "metodo": "Infusão simples, coberta.",
-        "reinfusoes": "1–2 possíveis.",
-        "melhor_momento": "Final de tarde e noite (30–60 min antes de dormir). Uso diurno leve possível para ansiedade.",
-        "combina_com": "Camomila (clássico ansiolítico) · Melissa · Lavanda · Valeriana · Erva-cidreira · Flor de laranjeira · Mel"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [
-          "Compressa calmante (uso popular): Infusão forte resfriada, gaze, 15 min sobre têmporas ou nuca em cefaleia tensional. Evidência exclusivamente tradicional."
-        ],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Ansiolítico suave (ação GABAérgica)",
-          "Sedativo leve (indutor de sono)",
-          "Antiespasmódico",
-          "Antidepressivo leve (estudos preliminares)",
-          "Analgésico suave (mecanismo central)",
-          "Hipotensor leve",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Gestação — cautela (alcaloides harmana)",
-          "Uso concomitante com benzodiazepínicos — potencialização",
-          "Uso concomitante com IMAO — contraindicado (beta-carbolinas)",
-          "Não dirigir veículos após doses mais altas"
-        ],
-        "componentes_ativos": [
-          {
-            "label": "CRISINA (flavonoide)",
-            "texto": "Agonista parcial GABA-A — ansiolítico"
-          },
-          {
-            "label": "VITEXINA, ISOVITEXINA",
-            "texto": "Sedativo, ansiolítico"
-          },
-          {
-            "label": "ORIENTINA",
-            "texto": "Anti-inflamatório, antioxidante"
-          },
-          {
-            "label": "HARMANA (alcaloide)",
-            "texto": "Inibição leve de MAO-A"
-          },
-          {
-            "label": "PASSIFLORINA",
-            "texto": "Sedativa"
-          },
-          {
-            "label": "BETA-CARBOLINAS",
-            "texto": "Ação GABAérgica"
-          }
-        ],
-        "evidencia": [
-          {
-            "indicacao": "Ansiedade generalizada leve",
-            "evidencia": "Moderada",
-            "populacao": "Akhondzadeh et al."
-          },
-          {
-            "indicacao": "Insônia leve",
-            "evidencia": "Moderada",
-            "populacao": "Ngan & Conduit, 2011"
-          },
-          {
-            "indicacao": "Abstinência de opioide (adjuvante)",
-            "evidencia": "Moderada",
-            "populacao": "Akhondzadeh et al."
-          }
-        ],
-        "contraindicacoes": [
-          "Gestação — cautela (alcaloides harmana)",
-          "Uso concomitante com benzodiazepínicos — potencialização",
-          "Uso concomitante com IMAO — contraindicado (beta-carbolinas)",
-          "Não dirigir veículos após doses mais altas"
-        ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
       },
       "perfil_sensorial": {
         "gustativo": [
           {
             "dimensao": "Doce",
-            "intensidade": "0/3",
-            "observacao": "Ausente"
+            "intensidade": "2/3",
+            "observacao": "Pronunciada — cumarina percebida como doce (mesmo mecanismo da imburana e do cumaru)"
           },
           {
             "dimensao": "Amargo",
             "intensidade": "1/3",
-            "observacao": "Discreto, agradável"
+            "observacao": "Discreto — diterpenos no fundo"
           },
           {
             "dimensao": "Umami",
@@ -2948,37 +2916,336 @@
             "observacao": "Ausente"
           },
           {
-            "dimensao": "Adstringência",
-            "intensidade": "Muito baixa",
-            "observacao": "Traços"
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
           }
         ],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "olfativo_familia": "Cumarina-baunilha-quente com fundo herbáceo",
+        "olfativo_descritores": [
+          "Baunilha quente (cumarina cristalizada)",
+          "Feno seco cortado ao sol",
+          "Folha verde-herbácea",
+          "Levemente amadeirado",
+          "Mel quente discreto"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa",
+            "molecula": "Taninos mínimos"
+          }
+        ],
+        "tatil": "Corpo leve-médio. Textura aveludada, sem adstringência significativa. Persistência aromática moderada — aroma de baunilha permanece 10–15 min na garganta.",
+        "descricao_integrada": "O guaco é a cumarina da Mata Atlântica — mesma molécula da imburana (Caatinga) e do cumaru (Amazônia), em bioma e contexto cultural diferentes. Os três compõem um 'eixo da cumarina brasileira' que une biomas distintos por uma molécula compartilhada. Para o Ervatório, o guaco é o ingrediente mais reconhecível em xaropes de tosse — o aroma de baunilha do 'remédio de criança' é, para muitos brasileiros, o cheiro do guaco."
       },
       "cultura": {
-        "historia": "Os missionários jesuítas que chegaram ao Brasil nos séculos XVI-XVII viram na flor do maracujá uma narrativa da Paixão de Cristo: as 10 pétalas como os dez apóstolos (excluindo Judas e Pedro), os filamentos como a coroa de espinhos, os cinco estames como as cinco chagas. Batizaram a planta de \"flos passionis\" — flor da paixão. Esse batismo europeu-cristão de uma planta indígena brasileira é um dos documentos mais reveladores do choque de cosmovisões na colonização.  Para os Tupi, o maracujá era \"murucuja\" — planta de curativo e alimento, sem carga simbólica cristã.",
-        "cerimonial": "",
-        "brasil": "O Brasil é o maior produtor mundial de maracujá — mais de 600.000 toneladas por ano (dado IBGE). O fruto é amplamente consumido como suco e sobremesa. As folhas, abundantíssimas na produção agrícola como subproduto, são raramente aproveitadas farmacologicamente — enorme oportunidade de cadeia circular.",
-        "curiosidade": ""
+        "historia": "O guaco foi uma das primeiras plantas medicinais brasileiras a entrar na Farmacopeia Oficial e no SUS. A 'tradição do xarope de guaco' atravessa gerações de famílias brasileiras — preparado caseiramente com folhas + mel + limão. Fitoterápicos industrializados de guaco são vendidos em farmácias há mais de 50 anos (xaropes Plamel, Vick Pyrena Mel etc.).",
+        "cerimonial": "Sem cerimônia codificada — mas o ritual de 'fazer xarope de guaco em casa' (ferver folhas com mel e açúcar) é prática familiar brasileira que atravessa gerações. A avó que prepara é figura arquetípica.",
+        "brasil": "Guaco é uma das ervas brasileiras mais bem estabelecidas no SUS — incluída na RENISUS (Relação Nacional de Plantas Medicinais de Interesse ao SUS), com xarope manipulado disponível em UBS de vários estados. Programa SUS de fitoterápicos prioriza guaco para tratamento de tosse e bronquite leve.",
+        "curiosidade": "O guaco compõe um 'eixo da cumarina brasileira' com a imburana (Caatinga, Fabaceae) e o cumaru (Amazônia, Fabaceae). As três espécies, de famílias diferentes (Asteraceae + Fabaceae), produziram independentemente a mesma molécula aromática (cumarina). É um exemplo extraordinário de convergência evolutiva — biossíntese paralela em linhagens distintas. O Brasil é um dos países do mundo com maior concentração de plantas produtoras de cumarina."
+      },
+      "regulacao": {
+        "eixo_botanico_tpc": "Phyto-ANVISA",
+        "status_anvisa": [
+          "Monografia oficial — Farmacopeia Brasileira",
+          "Memento Fitoterápico ANVISA",
+          "Indicação registrada: tosse, expectorante, bronquite leve"
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "RENISUS (SUS): incluído como prioridade fitoterápica. Cooperativas no SP (Vale do Paraíba) e MG (Sul de Minas) com cultivo orgânico certificado.",
+        "sazonalidade": "Folhas: ano todo, mas concentração máxima de cumarina antes da floração (set–nov)."
+      },
+      "marketplace": {
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas medicinais do SP (Vale do Paraíba), MG, PR. Cultivo agroflorestal — possibilidade de certificação orgânica.",
+        "faixa_de_preco": [
+          "Folhas secas (ervanário): R$ 20–40/100 g",
+          "Tintura (farmácia de manipulação): R$ 30–60/100 ml",
+          "Xarope industrializado (drogaria): R$ 15–35/150 ml",
+          "Sachês (saquinhos para infusão): R$ 25–50/cx 25un"
+        ],
+        "formatos": "Folhas secas (infusão); Tintura hidroalcoólica; Xarope industrializado; Sachês para infusão; Spray nasal (formulações modernas)."
+      },
+      "destaques": [
+        {
+          "label": "RENISUS / SUS",
+          "texto": "Prioridade fitoterápica nacional — xarope manipulado disponível em UBS"
+        },
+        {
+          "label": "Eixo da cumarina BR",
+          "texto": "Junto com imburana e cumaru, compõe trilogia única de plantas brasileiras com cumarina"
+        },
+        {
+          "label": "Tradição centenária",
+          "texto": "Xarope caseiro de guaco é remédio de família há 4+ gerações no Brasil"
+        }
+      ]
+    },
+    {
+      "slug": "maracuja",
+      "nome_popular": "Maracujá",
+      "nome_cientifico": "Passiflora incarnata L. / Passiflora edulis Sims",
+      "tagline": "A flor da Paixão — sedativo natural com nome cristão dado por jesuítas portugueses, ansiolítico validado pela EMA, e o fruto tropical mais consumido do Brasil que esconde um dos perfis ansiolíticos mais bem documentados da fitoterapia mundial.",
+      "schema_version": "1.1",
+      "identificacao": {
+        "nome_cientifico": "Passiflora incarnata L. (espécie monografada — uso medicinal principal) / Passiflora edulis Sims (maracujá-azedo, fruto e folhas)",
+        "familia_botanica": "Passifloraceae",
+        "tipo_botanico": "Fitoterápico ansiolítico / sedativo leve / hipnótico suave",
+        "parte_usada": "Folhas e ramos secos (uso ansiolítico/sedativo). Fruto de P. edulis: alimentar (suco). ATENÇÃO regulatória: a EMA monografa P. incarnata especificamente. P. edulis (maracujá-azedo brasileiro) tem perfil farmacológico similar mas literatura menor. No Brasil, ambas espécies são usadas, com P. edulis dominante no fruto e P. incarnata em fitoterápicos importados.",
+        "sinonimos": [
+          "Maracujá · maracujá-doce (P. alata) · maracujá-azedo (P. edulis) · maracujá-medicinal (P. incarnata)",
+          "Passion flower (inglês) · Passionsblume (alemão)",
+          "ATENÇÃO: gênero Passiflora tem >500 espécies. P. incarnata e P. edulis são as duas com uso medicinal regulamentado. Outras espécies podem ter alcalóides indólicos com perfil de segurança incerto."
+        ]
+      },
+      "caracterizacao": {
+        "sabor_dominante": "Folhas em infusão: levemente amargo-herbáceo, suave, neutro — sem grandes características marcantes. Fruto: ácido-doce intenso, tropical-floral, frescor cítrico característico.",
+        "aroma": "Folhas: herbáceo suave, levemente floral, neutro. Fruto: tropical-floral inebriante (ésteres voláteis), cítrico-frutado.",
+        "cor_da_infusao": "Verde-amarelado pálido. #C4D080",
+        "intensidade": "Folhas: 1–2/5 (suave, palatável). Fruto: 4/5 (intenso e icônico).",
+        "notas": "Folhas — Cabeça: herbáceo suave | Corpo: levemente amargo | Fundo: floral discreto",
+        "bioma_de_origem": "Mata Atlântica e Cerrado (P. edulis brasileira). P. incarnata é nativa do sudeste dos EUA (Carolina do Sul/Geórgia até Texas), naturalizada no Brasil. Trepadeiras tropicais e subtropicais — adaptáveis a múltiplos biomas.",
+        "distribuicao_geografica": [
+          "Brasil é o MAIOR PRODUTOR MUNDIAL de maracujá (fruto) — BA, ES, CE, SE, MG, SP, PR.",
+          "P. incarnata: cultivo especializado para fitoterapia em SP, MG, RS.",
+          "EUA, México, Peru, Colômbia: produção significativa.",
+          "Centros de pesquisa: USP, UNESP (Botucatu — Fitoterapia), UNICAMP."
+        ]
+      },
+      "preparo": {
+        "temperatura_ideal": "85–90 °C — não ferver para preservar flavonóides ansiolíticos.",
+        "tempo_de_infusao": "5–10 min coberto.",
+        "quantidade": "2–4 g de folhas secas para 250 ml. Tintura: 1:5 em álcool 30%, 5–10 ml até 3x/dia.",
+        "metodo": "Infusão coberta. Maceração a frio (12h) também eficaz para preservar princípios termolábeis.",
+        "reinfusoes": "1 reinfusão.",
+        "melhor_momento": "30–60 min antes de dormir (efeito hipnótico-sedativo). 2–3x/dia para uso ansiolítico contínuo.",
+        "combina_com": "Camomila (sinergia ansiolítica clássica) · Melissa · Lavanda · Erva-cidreira · Mel"
+      },
+      "usos_topicos": {
+        "evidencia": "Fraca para uso tópico isolado.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressa para hematomas (uso popular)",
+            "texto": "Decocção forte resfriada em compressa — anti-inflamatório tópico leve. Evidência: tradicional."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações relevantes para uso tópico."
+      },
+      "acoes_e_seguranca": {
+        "acoes_principais": [
+          "Ansiolítico (modulação GABAérgica via flavonóides)",
+          "Sedativo leve / hipnótico suave (insônia leve)",
+          "Antiespasmódico",
+          "Antidepressivo leve (dados preliminares)",
+          "Analgésico suave (cefaleia tensional)"
+        ],
+        "componentes_ativos": [
+          {
+            "label": "Crisina (flavonoide)",
+            "texto": "Principal ansiolítico — agonista parcial GABA-A; mecanismo similar ao diazepam mas muito mais fraco e sem dependência. Marcador de identidade da P. incarnata"
+          },
+          {
+            "label": "Vitexina e Isovitexina",
+            "texto": "Flavonóides C-glicosídeos — ansiolítico, antioxidante, antiespasmódico"
+          },
+          {
+            "label": "Apigenina",
+            "texto": "Ansiolítico, anti-inflamatório (mesmo composto da camomila)"
+          },
+          {
+            "label": "Harmana (alcaloide indol)",
+            "texto": "Traços — IMAO reversível fraco. Concentração baixa demais para efeito IMAO clinicamente relevante em infusão padrão"
+          },
+          {
+            "label": "Maltol",
+            "texto": "Aromático com efeito sedativo discreto"
+          },
+          {
+            "label": "Ácido cumárico",
+            "texto": "Antioxidante"
+          }
+        ],
+        "evidencia": [
+          {
+            "indicacao": "Ansiedade leve a moderada",
+            "evidencia": "Forte (EMA well-established use)",
+            "populacao": "Adultos — Akhondzadeh et al. (RCT vs oxazepam, 2001); Movafegh et al. (2008)"
+          },
+          {
+            "indicacao": "Insônia leve",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — Ngan & Conduit (2011)"
+          },
+          {
+            "indicacao": "Ansiedade pré-cirúrgica (adjuvante)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — múltiplos RCTs"
+          },
+          {
+            "indicacao": "Síndrome da abstinência (adjuvante)",
+            "evidencia": "Preliminar",
+            "populacao": "Adultos em desintoxicação — estudos clínicos"
+          }
+        ],
+        "alerta_critico": {
+          "titulo": "Sem dependência — vantagem sobre benzodiazepínicos",
+          "titulo2": "Mas potencializa sedativos farmacêuticos",
+          "corpo": "O grande diferencial do maracujá vs benzodiazepínicos é a AUSÊNCIA DE DEPENDÊNCIA — a crisina é agonista PARCIAL de GABA-A, não causa tolerância significativa nem síndrome de abstinência. Pode ser usado por períodos prolongados sem os riscos de diazepam/clonazepam. ATENÇÃO: potencializa sedativos farmacêuticos (ansiolíticos, hipnóticos, álcool) — não usar em conjunto sem orientação médica. Em doses muito altas: sedação excessiva, redução de reflexos."
+        },
+        "contraindicacoes": [
+          "Gestação (dados insuficientes — alcalóides traços)",
+          "Lactação (cautela)",
+          "Operação de máquinas pesadas/direção em doses altas",
+          "Uso concomitante com sedativos farmacêuticos (potencialização) — orientação médica",
+          "Uso concomitante com IMAO (alcalóides traços — risco teórico)"
+        ],
+        "interacoes": [
+          {
+            "label": "Benzodiazepínicos (diazepam, clonazepam)",
+            "texto": "Potencialização sedativa. Conduta: não usar conjuntamente sem orientação"
+          },
+          {
+            "label": "Antidepressivos ISRS",
+            "texto": "Possível potencialização. Conduta: monitorar"
+          },
+          {
+            "label": "Álcool",
+            "texto": "Potencialização sedativa significativa. Conduta: evitar uso conjunto"
+          },
+          {
+            "label": "IMAO (raro)",
+            "texto": "Alcalóides traços — risco teórico. Conduta: evitar uso conjunto"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais: muito raros. Sonolência diurna em uso noturno. Tontura leve em doses altas.",
+        "dose_maxima": "Folhas secas em infusão: até 8 g/dia. Tintura: 5–10 ml até 3x/dia. Extratos secos padronizados (cápsulas): 250–500 mg até 3x/dia.",
+        "fontes": [
+          "Farmacopeia Brasileira 6ª Ed. — monografia oficial Passiflora incarnata",
+          "EMA/HMPC — Monografia Passiflora incarnata (well-established use para ansiedade)",
+          "Akhondzadeh S et al. — Passionflower in the treatment of generalized anxiety: a pilot double-blind randomized controlled trial with oxazepam (J Clin Pharm Ther, 2001)",
+          "Movafegh A et al. — Preoperative oral Passiflora incarnata reduces anxiety in ambulatory surgery patients (Anesth Analg, 2008)",
+          "Ngan A, Conduit R — A double-blind, placebo-controlled investigation of the effects of Passiflora incarnata herbal tea on subjective sleep quality (Phytother Res, 2011)",
+          "Miroddi M et al. — Passiflora incarnata: a comprehensive review (J Ethnopharmacol, 2013)"
+        ]
+      },
+      "perfil_sensorial": {
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Folhas: ausente. Fruto: 2/3 (acidez doce dominante)"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Folhas: leve, herbáceo. Fruto: 0/3"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Folhas: 0/3. Fruto: 3/3 (ácido-cítrico dominante)"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Folhas: herbáceo neutro. Fruto: floral-tropical inebriante",
+        "olfativo_descritores": [
+          "Folhas — Herbáceo verde suave · Levemente floral · Neutro",
+          "Fruto — Floral-tropical (ésteres voláteis) · Cítrico-frutado · Manga jovem · Pêssego doce"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa",
+            "molecula": "Taninos mínimos"
+          }
+        ],
+        "tatil": "Folhas: corpo leve, textura limpa, persistência curta. Fruto: textura suculenta-fibrosa com sementes crocantes características — uma das experiências táteis mais reconhecíveis do reino frutal tropical.",
+        "descricao_integrada": "O maracujá é uma das poucas ervas do catálogo com identidade dual: o fruto é estrela gastronômica brasileira (o maior consumo per capita do mundo está no Brasil) enquanto as folhas são fitoterápico ansiolítico monografado pela EMA. Para o Ervatório, narrar a ponte entre o suco que toda criança brasileira conhece e o fitoterápico que a Europa receita para ansiedade é uma das oportunidades editoriais mais elegantes do catálogo."
+      },
+      "cultura": {
+        "historia": "O nome 'maracujá' vem do Tupi 'mara-kuiá' (alimento que se serve em cuia). 'Flor da Paixão' (Passiflora) foi nome dado por jesuítas portugueses do séc. XVI–XVII, que viram na flor uma representação da Paixão de Cristo: 5 estames = 5 chagas; 3 estigmas = 3 cravos; 10 pétalas = 10 apóstolos (excluindo Judas e Pedro); coroa de filamentos = coroa de espinhos; folhas trilobadas = lança de Longino. Foi catequese botânica codificada na taxonomia.",
+        "cerimonial": "Sem cerimônia codificada — mas o consumo de suco de maracujá natural antes de eventos estressantes (exames, viagens) é prática popular brasileira amplamente difundida. O 'suquinho de maracujá pra acalmar' é gesto materno arquetípico no Brasil.",
+        "brasil": "Brasil é o MAIOR PRODUTOR MUNDIAL de maracujá — 700+ mil toneladas/ano. Bahia lidera produção; Espírito Santo e Ceará seguem. Indústria de polpa, suco e fitoterápico totaliza > R$ 2 bilhões/ano. P. incarnata para uso medicinal: importação ainda majoritária, com cultivo nacional em crescimento.",
+        "curiosidade": "A crisina (flavonoide ansiolítico do maracujá) é estudada como possível modulador de testosterona — pesquisa preliminar sugere que pode reduzir conversão de testosterona em estrogênio (inibição de aromatase). Por isso fisiculturistas usam suplementos de crisina, embora a evidência clínica seja limitada. Esse uso 'ergogênico' é completamente distinto do uso ansiolítico tradicional do maracujá."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA + Funcional global",
-        "status_anvisa": "Monografia oficial. Indicação: ansiolítico e sedativo leve.",
-        "status_ema": "Monografia HMPC para P. incarnata — well-established use. P. edulis em avaliação.",
-        "status_fda": "GRAS (P. edulis como alimento)",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas disponíveis o ano todo (cultivo perene)"
+        "status_anvisa": [
+          "Monografia oficial — Farmacopeia Brasileira",
+          "Memento Fitoterápico ANVISA",
+          "Indicação registrada: ansiolítico leve, sedativo suave"
+        ],
+        "status_ema": "Monografia HMPC well-established use (P. incarnata) — indicação aprovada para ansiedade leve",
+        "status_fda": "GRAS para uso alimentar (P. edulis fruto). Suplemento (P. incarnata folhas).",
+        "certificacao_organica": "Cultivo orgânico de P. edulis amplamente disponível (BA, ES). P. incarnata orgânica: oferta menor, importada principalmente.",
+        "sazonalidade": "Folhas: ano todo. Fruto P. edulis: pico jul-out (BA), com produção quase contínua em estufa."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas frutícolas BA/ES (P. edulis fruto). Produtores especializados de fitomedicinais SP/MG (P. incarnata folhas). Importadores de P. incarnata europeus.",
+        "faixa_de_preco": [
+          "Folhas secas (ervanário): R$ 25–60/100 g",
+          "Tintura (farmácia de manipulação): R$ 30–60/100 ml",
+          "Extrato seco padronizado em vitexina (cápsulas): R$ 40–80/30 cápsulas",
+          "Sachês para infusão: R$ 25–50/cx 25un"
+        ],
+        "formatos": "Folhas secas (infusão); Sachês; Tintura hidroalcoólica; Extrato seco padronizado (cápsulas — fitoterápico premium); Comprimidos combinados (com camomila, valeriana)."
+      },
+      "destaques": [
+        {
+          "label": "EMA well-established use",
+          "texto": "Único fitoterápico ansiolítico brasileiro com nível 1 de evidência europeia"
+        },
+        {
+          "label": "Sem dependência",
+          "texto": "Crisina é agonista parcial — alternativa real a benzodiazepínicos para ansiedade leve"
+        },
+        {
+          "label": "Maior produtor mundial",
+          "texto": "Brasil = 700+ mil ton/ano de maracujá — fruto + fitoterápico"
+        }
+      ]
     },
     {
       "slug": "carqueja",
