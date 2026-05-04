@@ -3711,228 +3711,481 @@
     {
       "slug": "cambara",
       "nome_popular": "Cambará",
-      "nome_cientifico": "Vochysia divergens Pohl",
-      "tagline": "O expectorante do pantanal — árvore invasora que floriu como medicamento, com tradição mato-grossense de uso respiratório e pesquisa universitária crescente.",
+      "nome_cientifico": "Lantana camara L.",
+      "tagline": "A flor multicolorida do pantanal e cerrado — expectorante popular com flores que mudam de cor durante o desenvolvimento (do amarelo ao vermelho), tradição respiratória nordestina e centro-oeste, e a planta que pintou a paisagem brasileira por séculos.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Vochysia divergens Pohl",
-        "familia_botanica": "Vochysiaceae",
-        "tipo_botanico": "Fitoterápico expectorante / broncodilatador",
-        "parte_usada": "Folhas secas; casca em decocção.",
+        "nome_cientifico": "Lantana camara L.",
+        "familia_botanica": "Verbenaceae (família da verbena, da erva-cidreira-brasileira)",
+        "tipo_botanico": "Fitoterápico expectorante / antitussígeno / antimicrobiano respiratório",
+        "parte_usada": "Folhas e flores secas (uso medicinal). ATENÇÃO: Lantana camara é considerada planta INVASORA em vários países (Austrália, Índia, África) e pode ser tóxica para gado em consumo direto. Uso medicinal humano em doses controladas é seguro, mas a planta tem perfil tóxico que exige respeito.",
         "sinonimos": [
-          "Cambará · cambará-do-pantanal · cambará",
-          "ATENÇÃO: há diversas espécies chamadas \"cambará\" no Brasil — Vochysia divergens é a espécie do pantanal; Lantana camara e Moquiniastrum polymorphum são chamadas cambará no Sul com usos diferentes."
+          "Cambará · cambará-de-cheiro · cambará-de-flor · camará · lantana",
+          "Lantana (universal) · West Indian lantana (inglês)",
+          "ATENÇÃO: 'cambará' no Brasil refere-se a múltiplas espécies (Lantana spp., Vernonia spp., Gochnatia spp.). Esta ficha trata especificamente de L. camara — a 'cambará-de-cheiro' do Pantanal e Cerrado."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-resinoso moderado, herbáceo, levemente mentolado. Palatável com mel.",
-        "aroma": "Resinoso suave, eucalipto-like, herbáceo fresco.",
-        "cor_da_infusao": "Amarelo-esverdeado a âmbar. #B0A850",
-        "intensidade": "3/5 — uso medicinal tolerável.",
-        "notas": "",
-        "bioma_de_origem": "Pantanal — espécie característica e atualmente invasora das planícies inundáveis de MT e MS.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Levemente amargo-aromático, herbáceo intenso, com nota balsâmica-camforada característica das Verbenaceae. Perfil que lembra distantemente o eucalipto.",
+        "aroma": "Aromático-balsâmico forte, herbáceo verde, levemente camforado. As flores têm aroma adicional doce-floral.",
+        "cor_da_infusao": "Verde-amarelado a âmbar dourado. #C8A848",
+        "intensidade": "3/5 — aromático presente.",
+        "notas": "Cabeça: aromático balsâmico imediato | Corpo: herbáceo-camforado | Fundo: leve amargor",
+        "bioma_de_origem": "Pantanal e Cerrado — também presente em quase todos os biomas brasileiros (cosmopolita tropical). Cresce em áreas perturbadas, beiras de mata, pastos abandonados.",
+        "distribuicao_geografica": [
+          "Brasil: todos os biomas, com destaque para Pantanal, Cerrado, Caatinga.",
+          "Originária da América Central e Caribe — naturalizada em todo o mundo tropical.",
+          "Considerada invasora em >50 países: Austrália, Índia, África Oriental, Sudeste Asiático.",
+          "Centros de pesquisa: UFMS, UFMT, UFRPE, USP."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "2–5 g de folhas secas para 250 ml.",
-        "metodo": "Infusão coberta ou decocção leve.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã e tarde em episódios de tosse/bronquite.",
-        "combina_com": "Mel · Gengibre · Eucalipto · Guaco (blends respiratórios)"
+        "temperatura_ideal": "85–90 °C.",
+        "tempo_de_infusao": "5–10 min coberto.",
+        "quantidade": "2–4 g de folhas/flores secas para 250 ml.",
+        "metodo": "Infusão coberta. Xarope tradicional: decocção em mel.",
+        "reinfusoes": "1 reinfusão.",
+        "melhor_momento": "Em episódios respiratórios — 3–4x ao dia. Não usar continuamente por mais de 7–10 dias.",
+        "combina_com": "Mel · Limão · Gengibre · Guaco · Eucalipto (blends respiratórios)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Expectorante (fluidifica secreções brônquicas)",
-          "Broncodilatador leve",
-          "Antitussígeno",
-          "Anti-inflamatório das vias aéreas",
-          "Antimicrobiano",
-          "Componentes ativos:",
-          "Contraindicações: Gestação — dados insuficientes. Crianças < 6 anos — usar com cautela. Asma grave — não substituir broncodilatadores farmacológicos."
-        ],
-        "componentes_ativos": [
+        "evidencia": "Moderada para uso tópico antimicrobiano.",
+        "aplicacoes": [
           {
-            "label": "FLAVONÓIDES (luteolina, apigenina)",
-            "texto": "Anti-inflamatório, broncodilatador"
+            "titulo": "Inalação de vapor",
+            "texto": "Folhas em água fervente, toalha sobre cabeça — descongestionante via terpenos voláteis."
           },
           {
-            "label": "SAPONINAS TRITERPÊNICAS",
-            "texto": "Expectorante"
-          },
-          {
-            "label": "TANINOS",
-            "texto": "Adstringente, antimicrobiano"
-          },
-          {
-            "label": "ÓLEOS ESSENCIAIS",
-            "texto": "Broncodilatador, antisséptico"
+            "titulo": "Compressa para feridas leves",
+            "texto": "Decocção fraca resfriada — antimicrobiano tópico."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
-      },
-      "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
-      },
-      "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O cambará tem paradoxo ecológico único: é uma espécie nativa do pantanal que se tornou invasora da própria paisagem — sua proliferação excessiva em áreas de campo alagado altera o bioma. Esse fenômeno, estudado pela UFMT, revela como mudanças climáticas e alterações hidrológicas transformam espécies nativas em desequilibradores de seus próprios ecossistemas. Do ponto de vista medicinal, é uma das poucas ervas do pantanal com pesquisa farmacológica documentada por universidades do Mato Grosso.",
-        "curiosidade": ""
-      },
-      "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional regional",
-        "status_anvisa": "Uso tradicional reconhecido — em processo de avaliação para Formulário",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas disponíveis o ano todo; melhor colheita no período seco"
-      },
-      "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
-    },
-    {
-      "slug": "mangava-brava",
-      "nome_popular": "Mangava-Brava",
-      "nome_cientifico": "Lafoensia pacari [A.St](http://A.St).-Hil.",
-      "tagline": "O segredo gastroprotetor do pantanal — cicatrizante de mucosa gástrica com evidência clínica sólida e uma das fichas mais surpreendentes para quem não conhece o bioma.",
-      "schema_version": "1.1",
-      "identificacao": {
-        "nome_cientifico": "Lafoensia pacari [A.St](http://A.St).-Hil.",
-        "familia_botanica": "Lythraceae (família da romã)",
-        "tipo_botanico": "Fitoterápico gastroprotetor / cicatrizante de mucosa",
-        "parte_usada": "Casca do caule, seca e pulverizada.",
-        "sinonimos": [
-          "Mangava-brava · dedaleiro · pacari · mangaveira-brava",
-          "Dedaleiro (uso no cerrado) · pacari (Mato Grosso)"
-        ]
-      },
-      "caracterizacao": {
-        "sabor_dominante": "Adstringente moderado, amargo suave, terroso. Mais palatável que barbatimão ou aroeira.",
-        "aroma": "Casca seca, terroso discreto, levemente resinoso.",
-        "cor_da_infusao": "Marrom-avermelhado claro. #9B5535",
-        "intensidade": "3/5 — medicinal com palatabilidade aceitável.",
-        "notas": "",
-        "bioma_de_origem": "Pantanal e Cerrado — MT, MS, GO, MG, SP.",
-        "distribuicao_geografica": []
-      },
-      "preparo": {
-        "temperatura_ideal": "Decocção a 95–98 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g de casca seca para 500 ml.",
-        "metodo": "Decocção.",
-        "reinfusoes": "",
-        "melhor_momento": "30 minutos antes das refeições, 2–3x ao dia.",
-        "combina_com": "Espinheira-santa · Alcaçuz · Camomila (blends gastroprotetores)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [
-          "Bochecho para úlceras orais e mucosite: Decocção fraca (2 g/200 ml), morna. Ação adstringente-cicatrizante de mucosa.",
-          "Compressa cicatrizante: Decocção resfriada, gaze, aplicação local em feridas superficiais."
-        ],
-        "contraindicacoes": ""
+        "contraindicacoes": "Uso tópico amplamente seguro. Sensibilização alérgica rara mas possível."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Gastroprotetor (proteção e cicatrização da mucosa gástrica)",
-          "Antiulceroso",
-          "Anti-inflamatório gástrico",
-          "Antioxidante",
-          "Antimicrobiano (H. pylori — pesquisa em andamento)",
-          "Cicatrizante (mucosa e pele)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Gestação — dados insuficientes. Lactação — evitar. Obstrução biliar — cautela com taninos em alta dose."
+          "Expectorante (fluidifica muco brônquico via saponinas)",
+          "Antitussígeno (reduz tosse seca)",
+          "Antimicrobiano respiratório (terpenos)",
+          "Anti-inflamatório das vias aéreas",
+          "Antiespasmódico brônquico leve",
+          "Carminativo (gases intestinais — uso popular)"
         ],
         "componentes_ativos": [
           {
-            "label": "TANINOS TOTAIS (elágicos e condensados)",
-            "texto": "Gastroprotetor, adstringente, cicatrizante"
+            "label": "Lantadenes A e B (triterpenos pentacíclicos)",
+            "texto": "Característicos da espécie — Anti-inflamatório. ATENÇÃO: hepatotóxicos em doses altas (relatos de envenenamento de gado por consumo de folhas frescas em grande quantidade)"
           },
           {
-            "label": "ÁCIDO ELÁGICO",
-            "texto": "Antiulceroso, antioxidante, antiproliferativo"
+            "label": "Óleos essenciais (cariofileno, sabineno, alfa-pineno)",
+            "texto": "Aromáticos, antimicrobianos, expectorantes"
           },
           {
-            "label": "PUNICALAGINS",
-            "texto": "Antioxidante potente, antimicrobiano"
-          },
-          {
-            "label": "FLAVONÓIDES",
+            "label": "Flavonóides (camarosídeos)",
             "texto": "Anti-inflamatório, antioxidante"
           },
           {
-            "label": "SAPONINAS",
-            "texto": "Anti-inflamatório"
+            "label": "Ácidos triterpênicos (ácido oleanólico)",
+            "texto": "Anti-inflamatório, hepatoprotetor (paradoxal vs lantadenes)"
+          },
+          {
+            "label": "Verbascosídeo",
+            "texto": "Anti-inflamatório, antioxidante"
+          },
+          {
+            "label": "Saponinas",
+            "texto": "Expectorante"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Gastrite e úlcera gástrica",
-            "evidencia": "Moderada",
-            "populacao": "Jorge et al. (UFMT)"
+            "indicacao": "Tosse e bronquite (expectorante)",
+            "evidencia": "Tradicional forte",
+            "populacao": "Adultos — uso popular Pantanal/Cerrado"
           },
           {
-            "indicacao": "Cicatrização de mucosa oral",
+            "indicacao": "Antimicrobiano respiratório",
             "evidencia": "Moderada",
-            "populacao": "Pesquisa regional"
+            "populacao": "Estudos in vitro — Pereira et al."
+          },
+          {
+            "indicacao": "Anti-inflamatório",
+            "evidencia": "Moderada",
+            "populacao": "Modelos animais — Ghisalberti (2000)"
           }
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "alerta_critico": {
+          "titulo": "Lantadenes — hepatotoxicidade em dose alta",
+          "titulo2": "Frutos verdes são TÓXICOS — não consumir",
+          "corpo": "L. camara contém lantadenes (triterpenos pentacíclicos) com hepatotoxicidade documentada em casos de envenenamento veterinário (gado consumindo folhas frescas em grande quantidade). Em doses medicinais humanas (folhas/flores secas em infusão) o risco é baixo mas existe — uso por períodos curtos (até 10 dias). FRUTOS VERDES (bagas que ficam pretas quando maduras) são TÓXICOS para humanos — relatos de intoxicação infantil. NUNCA consumir frutos. Gestação: CONTRAINDICADO. Crianças: evitar uso interno (preferir formulações industrializadas com extrato controlado)."
+        },
+        "contraindicacoes": [
+          "Gestação — CONTRAINDICADO",
+          "Crianças <6 anos — evitar (preferir guaco)",
+          "Hepatopatias — evitar",
+          "Frutos: NUNCA consumir (tóxicos)",
+          "Uso prolongado (>10 dias) sem orientação"
+        ],
+        "interacoes": [
+          {
+            "label": "Hepatotóxicos (paracetamol, álcool, estatinas)",
+            "texto": "Hepatotoxicidade aditiva (lantadenes). Conduta: evitar uso conjunto"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais (curto prazo): raros. Doses altas ou prolongadas: hepatotoxicidade, fotossensibilização (em uso popular do gado).",
+        "dose_maxima": "Folhas/flores secas em infusão: até 4 g/dia. Uso CURTO (até 10 dias).",
+        "fontes": [
+          "Ghisalberti EL — Lantana camara (Verbenaceae) (Fitoterapia, 2000)",
+          "Sharma OP et al. — Toxicology of Lantana camara (Crit Rev Toxicol, 1988)",
+          "Pereira RC et al. — Antimicrobial activity of Lantana camara (Rev Bras Farmacogn, 2010)",
+          "Albuquerque UP et al. — Medicinal plants of the caatinga (J Ethnopharmacol, 2007)",
+          "Begum S et al. — Triterpenoids from Lantana camara (Phytochemistry, 2008)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "2/3",
+            "observacao": "Presente — triterpenos"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Aromático-balsâmico-camforado (Verbenaceae)",
+        "olfativo_descritores": [
+          "Balsâmico-camforado",
+          "Herbáceo verde intenso",
+          "Floral discreto (das flores)",
+          "Pinho leve"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Muito leve",
+            "molecula": "Camforado"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa",
+            "molecula": "Mínima"
+          }
+        ],
+        "tatil": "Corpo médio. Sensação balsâmica nas vias aéreas (terpenos voláteis). Persistência aromática moderada (10–15 min).",
+        "descricao_integrada": "O cambará é a planta-paisagem do Brasil tropical — flores amarelas/laranja/vermelhas que pintam estradas e pastos. Sua dualidade (planta invasora globalmente, fitoterápico tradicional brasileiro) é parte da sua identidade. Para o Ervatório, posicionar como expectorante de uso pontual (não regular) é o caminho editorial responsável."
       },
       "cultura": {
-        "historia": "A mangava-brava é a erva do pantanal que poucos conhecem fora da região — mas que carrega décadas de pesquisa farmacológica pela UFMT (Cuiabá) e UFMS (Campo Grande). O uso popular pelos povos ribeirinhos do pantanal como \"remédio para o estômago\" levou pesquisadores à descoberta de uma das mais ricas fontes de ácido elágico e punicalagins do cerrado-pantanal — compostos com atividade antiulcerosa confirmada em modelos animais e estudos piloto humanos.  A mangava-brava é o exemplo mais eloquente do catálogo do Ervatório sobre o ciclo perfeito da fitoterapia brasileira: uso popular observado → pesquisa universitária regional → validação farmacológica → ficha Ervatório. É a descoberta que o Ervatório existe para fazer circular.",
-        "cerimonial": "",
-        "brasil": "A planta é cultivada ornamentalmente pelo florescimento espetacular (flores brancas perfumadas, à noite) — seu valor estético é reconhecido antes do medicinal. Poucos moradores de cidades do Centro-Oeste que têm um dedaleiro no jardim sabem que têm, à mão, um gastroprotetor com evidência clínica.",
-        "curiosidade": ""
+        "historia": "Lantana camara é uma das plantas mais cultivadas como ornamental em jardins brasileiros desde o período colonial — apreciada pelas flores que mudam de cor durante o desenvolvimento (de amarelo no botão a vermelho na maturidade, passando por laranja). Uso medicinal popular como expectorante atravessa gerações no Centro-Oeste e Nordeste. Globalmente, é considerada uma das 10 piores plantas invasoras do mundo (lista IUCN).",
+        "cerimonial": "Sem cerimônia codificada — mas a planta é usada simbolicamente em arranjos florais e decoração popular brasileira pelas cores vibrantes.",
+        "brasil": "Cambará é vendido em ervanários no Centro-Oeste e Nordeste, principalmente para uso respiratório. RENISUS não inclui — devido à toxicidade dos lantadenes. Uso popular precisa ser orientado.",
+        "curiosidade": "As flores de L. camara mudam de cor durante o desenvolvimento como mecanismo de sinalização para polinizadores: flores jovens (amarelas) são férteis e produzem néctar; flores velhas (vermelhas) já fertilizadas não recompensam mais o polinizador. A coloração heterogênea no mesmo conjunto floral 'engana' o visitante a privilegiar as flores férteis. É um dos exemplos mais elegantes de comunicação química-visual em ecologia floral."
+      },
+      "regulacao": {
+        "eixo_botanico_tpc": "Fitoterápico tradicional",
+        "status_anvisa": [
+          "Uso tradicional reconhecido com ressalvas de segurança"
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Status invasor: lista global IUCN — proibido cultivo comercial em vários países.",
+        "sazonalidade": "Folhas: ano todo. Flores: floração contínua tropical."
+      },
+      "marketplace": {
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Coleta extrativista (planta abundante e invasora). Ervanários do Centro-Oeste e Nordeste.",
+        "faixa_de_preco": [
+          "Folhas/flores secas (ervanário): R$ 20–40/100 g",
+          "Tintura (farmácia de manipulação): R$ 25–50/100 ml",
+          "Xarope industrializado: minoritário no Brasil"
+        ],
+        "formatos": "Folhas/flores secas (infusão); Tintura; Xarope tradicional (decocção em mel)."
+      },
+      "destaques": [
+        {
+          "label": "Flor camaleão",
+          "texto": "Cores que mudam durante o desenvolvimento — sinal evolutivo para polinizadores"
+        },
+        {
+          "label": "Lantadenes hepatotóxicos",
+          "texto": "Doses altas/prolongadas requerem cautela — uso pontual apenas"
+        },
+        {
+          "label": "Invasora global",
+          "texto": "Lista IUCN das 10 piores plantas invasoras do mundo — paradoxo BR"
+        }
+      ]
+    },
+    {
+      "slug": "mangava-brava",
+      "nome_popular": "Mangava-Brava",
+      "nome_cientifico": "Lafoensia pacari A.St.-Hil.",
+      "tagline": "A árvore-farmácia do pantanal — gastroprotetor com ácido elágico de uma das maiores concentrações vegetais conhecidas, tradição mato-grossense centenária e o segredo do cerrado-pantanal que a UFMT validou cientificamente.",
+      "schema_version": "1.1",
+      "identificacao": {
+        "nome_cientifico": "Lafoensia pacari A.St.-Hil.",
+        "familia_botanica": "Lythraceae (família da romã, da resedá)",
+        "tipo_botanico": "Fitoterápico gastroprotetor / cicatrizante / anti-inflamatório",
+        "parte_usada": "Casca do caule (entrecasca) — seca e moída. Folhas: uso secundário.",
+        "sinonimos": [
+          "Mangava-brava · pacari · dedaleiro · pacari-do-cerrado",
+          "Pau-canela (regional MS/MT — confusão)",
+          "Pacari (designação científica e popular indígena Kayapó)"
+        ]
+      },
+      "caracterizacao": {
+        "sabor_dominante": "Adstringente moderado-intenso (ácido elágico + taninos), amargo discreto, fundo terroso. Perfil que lembra distantemente romã mas com adstringência mais sertaneja.",
+        "aroma": "Tanino seco, levemente terroso, casca madeirosa.",
+        "cor_da_infusao": "Marrom-avermelhado claro a âmbar escuro. #8B4220",
+        "intensidade": "3–4/5 — adstringência marcante.",
+        "notas": "Cabeça: tanino seco | Corpo: amargo discreto-terroso | Fundo: adstringência prolongada (5–10 min)",
+        "bioma_de_origem": "Pantanal e Cerrado — árvore característica de matas de galeria, beiras de córregos e matas secas. MT, MS, GO, MG.",
+        "distribuicao_geografica": [
+          "Pantanal (MT, MS) e Cerrado (GO, MG, MS).",
+          "Bolívia, Paraguai (Chaco): distribuição transfronteiriça.",
+          "Centros de pesquisa: UFMT (referência), UFMS, UNB."
+        ]
+      },
+      "preparo": {
+        "temperatura_ideal": "Decocção a 95–98 °C (taninos + ácido elágico extraem por calor sustentado).",
+        "tempo_de_infusao": "15–20 min decocção.",
+        "quantidade": "3–5 g de casca seca para 250 ml.",
+        "metodo": "Decocção. Tintura: 1:5 em álcool 70°.",
+        "reinfusoes": "1 reinfusão.",
+        "melhor_momento": "30 min antes de refeições (gastroprotetor — protege mucosa antes do estresse alimentar). 2–3x/dia em uso terapêutico.",
+        "combina_com": "Espinheira-santa (sinergia gastroprotetora) · Camomila · Aroeira-mansa · Mel"
+      },
+      "usos_topicos": {
+        "evidencia": "Moderada para uso tópico cicatrizante.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressa cicatrizante",
+            "texto": "Decocção forte resfriada — taninos + ácido elágico aceleram cicatrização. Tradição pantaneira."
+          },
+          {
+            "titulo": "Gargarejo para inflamação faríngea",
+            "texto": "Decocção morna — antimicrobiano e adstringente."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro."
+      },
+      "acoes_e_seguranca": {
+        "acoes_principais": [
+          "Gastroprotetor (proteção e cicatrização da mucosa gástrica)",
+          "Antiulceroso (inibição de Helicobacter pylori — pesquisa UFMT)",
+          "Cicatrizante (uso interno e tópico)",
+          "Anti-inflamatório",
+          "Antioxidante (alta concentração de ácido elágico)",
+          "Antimicrobiano",
+          "Hepatoprotetor leve"
+        ],
+        "componentes_ativos": [
+          {
+            "label": "Ácido elágico",
+            "texto": "Principal — Antioxidante, antiulceroso, anticancerígeno (estudos preliminares). Mangava-brava está entre as plantas com MAIOR concentração de ácido elágico do mundo vegetal — comparável à romã"
+          },
+          {
+            "label": "Elagitaninos (lafoensiana, pacarianas)",
+            "texto": "Específicos da espécie — Adstringentes, antiulcerosos, antimicrobianos. Marcador de identidade"
+          },
+          {
+            "label": "Taninos hidrolisáveis",
+            "texto": "Adstringente, cicatrizante, gastroprotetor"
+          },
+          {
+            "label": "Punicalaginas",
+            "texto": "Antioxidantes e antimicrobianos potentes — mesma classe da romã"
+          },
+          {
+            "label": "Flavonóides",
+            "texto": "Anti-inflamatório, antioxidante"
+          },
+          {
+            "label": "Betulina (triterpeno)",
+            "texto": "Anti-inflamatório, hepatoprotetor"
+          }
+        ],
+        "evidencia": [
+          {
+            "indicacao": "Úlcera gástrica e gastrite",
+            "evidencia": "Moderada-forte (UFMT)",
+            "populacao": "Adultos — Tamashiro Filho et al. (2012); Lima et al. (2008)"
+          },
+          {
+            "indicacao": "Helicobacter pylori (adjuvante)",
+            "evidencia": "Moderada",
+            "populacao": "Estudos in vitro e piloto — Pinheiro Silva (UFMT)"
+          },
+          {
+            "indicacao": "Cicatrização de feridas",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — uso popular validado"
+          },
+          {
+            "indicacao": "Antioxidante sistêmico",
+            "evidencia": "Forte (mecanismo)",
+            "populacao": "Ácido elágico — múltiplos estudos"
+          }
+        ],
+        "alerta_critico": {
+          "titulo": "Espécie protegida no MT — extrativismo sustentável",
+          "titulo2": "Manejo é fundamental",
+          "corpo": "L. pacari não está na lista oficial de espécies ameaçadas, mas a coleta de casca em escala (anelamento) mata as árvores. O Mato Grosso tem regulamentação estadual de manejo do pacari. Ervatório deve priorizar fornecedores com certificação de manejo sustentável (poda parcial sem anelamento) ou cultivo. Gestação: dados insuficientes — evitar uso interno. Crianças <6 anos: cautela com taninos."
+        },
+        "contraindicacoes": [
+          "Gestação: dados insuficientes — evitar",
+          "Lactação: cautela",
+          "Crianças <6 anos: cautela com taninos",
+          "Uso prolongado (>4 semanas): risco de redução de absorção de minerais (ferro)"
+        ],
+        "interacoes": [
+          {
+            "label": "Ferro oral, cálcio, zinco",
+            "texto": "Taninos quelam minerais — reduzem absorção. Conduta: espaçar 2h"
+          },
+          {
+            "label": "Antiácidos farmacêuticos (IBPs)",
+            "texto": "Ação complementar gastroprotetora. Conduta: uso conjunto possível com orientação"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais: raros. Doses altas: constipação (taninos), desconforto gástrico.",
+        "dose_maxima": "Casca seca em decocção: até 6 g/dia. Tintura: 5–10 ml até 3x/dia. Extrato seco: 250–500 mg/dia.",
+        "fontes": [
+          "Tamashiro Filho P et al. — Evaluation of antiulcer activity of Lafoensia pacari (J Ethnopharmacol, 2012)",
+          "Lima ZP et al. — Anti-Helicobacter pylori activity of Lafoensia pacari (Phytother Res, 2008)",
+          "Pereira BMR et al. — Lafoensia pacari: pharmacological aspects (Rev Bras Farmacogn, 2008)",
+          "Solon S et al. — Phenolic derivatives and other chemical compounds from Lafoensia pacari (Phytomedicine, 2000)",
+          "Albuquerque UP et al. — Plants and animals used by Brazilian indigenous peoples (J Ethnopharmacol)",
+          "Lorenzi H — Árvores Brasileiras (Instituto Plantarum, 2002)"
+        ]
+      },
+      "perfil_sensorial": {
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Discreto — secundário à adstringência"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Tanino-terroso seco",
+        "olfativo_descritores": [
+          "Tanino seco (similar à romã casca)",
+          "Madeira-casca pantaneira",
+          "Levemente terroso",
+          "Discreto — não aromática"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "3/5 — Moderada-alta",
+            "molecula": "Taninos hidrolisáveis + ácido elágico — adstringência limpa, similar à romã"
+          }
+        ],
+        "tatil": "Corpo médio em decocção. Adstringência limpa que contrai mucosa progressivamente. Persistência: 5–10 min.",
+        "descricao_integrada": "A mangava-brava é o gastroprotetor 'esquecido' do pantanal — tem evidência clínica brasileira sólida (UFMT) mas é praticamente desconhecida fora do MT/MS. Para o Ervatório, é uma das oportunidades editoriais mais elegantes: erva regional com pesquisa nacional rigorosa que merece projeção nacional."
+      },
+      "cultura": {
+        "historia": "A mangava-brava (pacari) é planta de tradição indígena Kayapó e de comunidades rurais do Pantanal mato-grossense. O nome 'pacari' vem do Kayapó. Uso popular para 'dor de estômago' e 'ferida' atravessa gerações. A pesquisa científica brasileira começou nos anos 1990 com o grupo da UFMT, que identificou ação antiulcerosa e atividade contra Helicobacter pylori — colocando o pacari no mapa da fitoterapia gastroprotetora brasileira.",
+        "cerimonial": "Sem cerimônia codificada — mas a casca de pacari é elemento das 'farmácias caseiras' pantaneiras junto com guavira e barbatimão.",
+        "brasil": "Cultivo doméstico no MT e MS. Pesquisa universitária consolidada na UFMT. Produção comercial em pequena escala — oportunidade de expansão. Tem potencial de tornar-se 'a romã do pantanal' no marketing de antioxidantes naturais.",
+        "curiosidade": "L. pacari está entre as plantas com MAIOR concentração de ácido elágico do mundo vegetal — em níveis comparáveis ou superiores à romã (Punica granatum). O ácido elágico é potente antioxidante, antiulceroso e anticancerígeno (estudos preliminares). Esse dado é praticamente desconhecido do público brasileiro — enquanto a romã é vendida como superalimento, a mangava-brava do pantanal tem perfil similar e custa fração do preço."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Uso tradicional reconhecido. Memento Fitoterápico.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Casca coletada no período seco; floração setembro–novembro"
+        "status_anvisa": [
+          "Memento Fitoterápico — uso tradicional reconhecido"
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Manejo sustentável recomendado — anelamento de casca mata árvore. MT tem regulamentação estadual.",
+        "sazonalidade": "Casca: período seco (jun–set) — concentração máxima de PA."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas extrativistas do MT e MS. Ervanários do Centro-Oeste.",
+        "faixa_de_preco": [
+          "Casca seca (ervanário): R$ 25–60/100 g",
+          "Tintura (farmácia de manipulação): R$ 30–60/100 ml",
+          "Extrato seco padronizado em ácido elágico: R$ 50–100/30 cápsulas (se disponível)"
+        ],
+        "formatos": "Casca seca em pedaços (decocção); Tintura hidroalcoólica; Extrato seco padronizado (em desenvolvimento)."
+      },
+      "destaques": [
+        {
+          "label": "Pesquisa UFMT",
+          "texto": "Antiulceroso e anti-Helicobacter pylori validado por múltiplos estudos da Universidade Federal do MT"
+        },
+        {
+          "label": "Romã do pantanal",
+          "texto": "Ácido elágico em concentração comparável/superior à romã — superalimento subvalorizado"
+        },
+        {
+          "label": "Tradição Kayapó",
+          "texto": "Uso indígena documentado — base etnobotânica para validação científica moderna"
+        }
+      ]
     },
     {
       "slug": "acai",
