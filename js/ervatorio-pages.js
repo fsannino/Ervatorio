@@ -50,7 +50,9 @@
   }
 
   // ── Facetas / filtros do catálogo ──────────────────────────────────
-  // Ordem das facetas determina a ordem de render no sidebar.
+  // Cada faceta usa um mapeador canônico: regex → label canônico, evitando
+  // o caos de splittar texto narrativo em vírgulas. As taxonomias abaixo
+  // foram derivadas das fichas reais (97 fichas → 7-18 valores por faceta).
   var FACETS = [
     { id: 'tipo',       label: 'Tipo',         icon: '🍵', extract: extractTipo },
     { id: 'localizacao',label: 'Localização',  icon: '🌍', extract: extractLocalizacao },
@@ -60,6 +62,168 @@
     { id: 'sabor',      label: 'Sabor',        icon: '👅', extract: extractSabor },
     { id: 'parte',      label: 'Parte usada',  icon: '🌱', extract: extractParte }
   ];
+
+  // [canônico, regex em minúsculas]
+  var TIPO_RULES = [
+    ['Chá Tradicional', /camellia sinensis/],
+    ['Erva-mate',       /ilex paraguariensis/],
+    ['Especiaria',      /especiaria|tempero/],
+    ['Adaptógeno',      /adapt[oó]gen/],
+    ['Aromática',       /arom[aá]/],
+    ['Ritual',          /ritual|cerimon/],
+    ['Funcional',       /alimento funcional|funcional/],
+    ['Medicinal',       /fitoter|phyto-?anvisa|medicinal/]
+  ];
+
+  var BIOMA_RULES = [
+    ['Amazônia',           /amaz[oô]ni/],
+    ['Cerrado',            /cerrad/],
+    ['Mata Atlântica',     /mata atl[aâ]nti|atl[aâ]ntic/],
+    ['Caatinga',           /caating/],
+    ['Pampa',              /pampas?\b/],
+    ['Pantanal',           /pantanal/],
+    ['Restinga',           /restinga/],
+    ['Mediterrâneo',       /mediterr[aâ]ne/],
+    ['Floresta Tropical',  /tropical|floresta [úu]mid/],
+    ['Floresta Temperada', /temperad/],
+    ['Savana',             /savana|savan/],
+    ['Tundra',             /tundra/],
+    ['Taiga',              /taiga|boreal/],
+    ['Pradaria',           /pradaria|grassland/],
+    ['Deserto',            /deserto|semi[\s-]?[aá]rid/],
+    ['Andes',              /andes\b|andin[oa]/]
+  ];
+
+  var PAIS_RULES = [
+    ['Brasil',         /\bbrasil\b/],
+    ['Argentina',      /\bargentina\b/],
+    ['Uruguai',        /\buruguai\w*/],
+    ['Paraguai',       /\bparaguai\w*/],
+    ['Peru',           /\bperu\b|peruan/],
+    ['Bolívia',        /\bbol[íi]via\b/],
+    ['Chile',          /\bchile/],
+    ['Colômbia',       /\bcol[oô]mbia\b/],
+    ['Venezuela',      /\bvenezuela\b/],
+    ['Equador',        /\bequador\b/],
+    ['México',         /\bm[eé]xico\b/],
+    ['Estados Unidos', /\beua\b|estados unidos|am[eé]rica do norte/],
+    ['Canadá',         /\bcanad[aá]\b/],
+    ['Portugal',       /\bportugal|portuguese?s?\b/],
+    ['Espanha',        /\bespanha\b|\bespan[hñ]ola?\b/],
+    ['França',         /\bfran[çc]a\b|franc[eê]s/],
+    ['Itália',         /\bit[aá]lia\b|italian/],
+    ['Alemanha',       /\balemanha\b|alem[aã]/],
+    ['Reino Unido',    /inglaterra|reino unido|brit[âa]nic/],
+    ['Grécia',         /\bgr[eé]cia\b|greg[oa]s?/],
+    ['China',          /\bchin[aês]+/],
+    ['Japão',          /\bjap[aã]o\b|japon[eê]/],
+    ['Índia',          /\b[íi]ndia\b|indian[oa]/],
+    ['Coreia',         /\bcoreia\b|coreano/],
+    ['Tailândia',      /\btail[aâ]ndia\b/],
+    ['Vietnã',         /\bvietn[aã]\w*/],
+    ['Indonésia',      /\bindon[eé]sia\b/],
+    ['Sri Lanka',      /\bsri lanka\b|ceil[aã]o/],
+    ['Egito',          /\begito\b|eg[íi]pcio/],
+    ['Marrocos',       /\bmarrocos\b/],
+    ['África do Sul',  /[áa]frica do sul/],
+    ['Etiópia',        /\beti[oó]pia\b/],
+    ['Austrália',      /\baustr[aá]l/],
+    ['Guianas',        /\bguian[as]?\b/]
+  ];
+
+  // Estados brasileiros: detectados por código UF (case-sensitive) ou nome completo (insensível).
+  var ESTADOS_BR = {
+    'AC':'Acre','AL':'Alagoas','AP':'Amapá','AM':'Amazonas','BA':'Bahia',
+    'CE':'Ceará','DF':'Distrito Federal','ES':'Espírito Santo','GO':'Goiás',
+    'MA':'Maranhão','MT':'Mato Grosso','MS':'Mato Grosso do Sul','MG':'Minas Gerais',
+    'PA':'Pará','PB':'Paraíba','PR':'Paraná','PE':'Pernambuco','PI':'Piauí',
+    'RJ':'Rio de Janeiro','RN':'Rio Grande do Norte','RS':'Rio Grande do Sul',
+    'RO':'Rondônia','RR':'Roraima','SC':'Santa Catarina','SP':'São Paulo',
+    'SE':'Sergipe','TO':'Tocantins'
+  };
+
+  // Vetores sensoriais agrupados — alinhado com a Roda Funcional. O usuário
+  // pensa "o que busco no chá", não na nomenclatura clínica das fichas.
+  var SENSORIAL_RULES = [
+    ['Calmante',          /ansiol|sedat|hipno|calmant|antidepres|nootróp|cognit/],
+    ['Digestivo',         /digest|antidisp|carmin|antiulcer|antiespasm|aperient|protetor da mucosa|hep[aá]t|colag|coler[ée]t/],
+    ['Imunológico',       /antimicrob|antif[uú]ng|antiviral|antibacter|imunomod|imunoest/],
+    ['Anti-inflamatório', /anti-?inflama/],
+    ['Antioxidante',      /antioxidante/],
+    ['Energético',        /estimulant|energ[eé]tic|adapt[oó]g/],
+    ['Cardiovascular',    /cardio|hipertens|hipotens|vasodil|vasocon|venopr|antiagreg|hipolipem/],
+    ['Diurético',         /diur[eé]t|litol[ií]t/],
+    ['Respiratório',      /expector|broncodi|antituss|antiastm|descong/],
+    ['Cicatrizante',      /cicatriz|antiss[eé]p/],
+    ['Analgésico',        /analg[eé]/],
+    ['Hormonal',          /afrodis|fitoestr|emenag/],
+    ['Metabólico',        /termog|hipoglic|lipol[ií]t|antidiab/],
+    ['Tópico',            /t[oó]pic|cosm[eé]t/],
+    ['Antialérgico',      /antial[eé]rg|antihist/]
+  ];
+  // Filtra entradas de acoes_principais que NÃO descrevem ação sensorial
+  // (alertas, contraindicações, comentários sobre uso, etc.).
+  var SENSORIAL_DENY = /^(aten[çc][aã]o|cuidado|alerta|contraindica|interaç|uso prolongado|restri|toxicid|neurot[oó]xic)/i;
+
+  var SABOR_RULES = [
+    ['Amargo',       /amarg/],
+    ['Doce',         /\bdoce\b|adoçant|baunilha|adocica/],
+    ['Adstringente', /adstring|tan[íi]n/],
+    ['Cítrico',      /c[íi]tric|lim[aã]o|limon|laranja/],
+    ['Floral',       /\bfloral\b|flor[ae]s\b/],
+    ['Picante',      /picant|pungent|apimenta/],
+    ['Refrescante',  /mentol|refresc|fresco\b|gélid/],
+    ['Resinoso',     /resino|balsâmic/],
+    ['Terroso',      /terros|terra/],
+    ['Herbáceo',     /herb[aá]c|verde/],
+    ['Frutado',      /frutad|frutal/],
+    ['Mucilaginoso', /mucilag/],
+    ['Amadeirado',   /amadeira|madeir|woody/],
+    ['Defumado',     /defum|smok/],
+    ['Anisado',      /anis|alcaçuz|fennel/],
+    ['Ácido',        /\bácid|azedo/],
+    ['Mineral',      /mineral/],
+    ['Salgado',      /salgad/]
+  ];
+
+  var PARTE_RULES = [
+    ['Folha',          /\bfolha/],
+    ['Flor',           /\bflor[ae]?s?\b|inflorescência|capítulo|sumidade flor|botão flor/],
+    ['Pétala',         /\bp[eé]tal/],
+    ['Estigma',        /estigma/],
+    ['Raiz',           /\braiz|raízes/],
+    ['Rizoma',         /rizoma/],
+    ['Casca',          /casca|entrecasca/],
+    ['Semente',        /semente|fava\b|tonka/],
+    ['Fruto',          /\bfruto|baga|drupa/],
+    ['Caule',          /caule|tronco|hast/],
+    ['Bulbo',          /bulbo/],
+    ['Resina',         /resina|óleo[\s-]?resina|exsudato|goma|látex/],
+    ['Cone',           /\bcone\b|estróbil/],
+    ['Vagem',          /vagem/],
+    ['Polpa',          /polpa/],
+    ['Óleo essencial', /óleo essencial/],
+    ['Partes aéreas',  /parte[s]? a[eé]rea|sumidade/]
+  ];
+
+  // Coloração — paleta canônica (uma cor por keyword, dedupada).
+  var COR_RULES = [
+    ['Amarelo',  /amarel/, '#e8c547'],
+    ['Dourado',  /dourad|ouro\b/, '#d4a017'],
+    ['Verde',    /\bverde/, '#5b8a3a'],
+    ['Âmbar',    /[aâ]mbar/, '#c08038'],
+    ['Cobre',    /\bcobre|cobread/, '#a85a2a'],
+    ['Vermelho', /vermelh|rubr|rubi/, '#9a3024'],
+    ['Rosa',     /\brosa\b|rosad/, '#d97a8a'],
+    ['Marrom',   /marrom|castanh/, '#6b4423'],
+    ['Preto',    /\bpret[oa]\b|negro/, '#2a1a14'],
+    ['Roxo',     /\broxo|violet|púrpur/, '#5a2d6b'],
+    ['Azul',     /\bazul/, '#3a4a8a'],
+    ['Branco',   /\bbranc|transparen|cristalin|incolor/, '#e8dcc8'],
+    ['Laranja',  /laranj/, '#d97a3a']
+  ];
+  var COR_HEX = {};
+  COR_RULES.forEach(function(r) { COR_HEX[r[0]] = r[2]; });
 
   // Estado dos filtros — Map<facetId, Set<value>>
   var ervFilters = {};
@@ -72,47 +236,66 @@
     });
   }
 
-  // Eixo botânico TPC (Chá Tradicional, Infusão, Medicinal, etc.) +
-  // tipo botânico (arbusto, erva...) compõem a faceta "Tipo".
-  function extractTipo(row) {
-    var f = row.ficha || {};
-    var rg = f.regulacao || {};
-    var id = f.identificacao || {};
+  // ── Mapeadores canônicos ─────────────────────────────────────────
+  function matchRules(text, rules) {
+    if (!text) return [];
+    var lower = String(text).toLowerCase();
     var out = [];
-    if (rg.eixo_botanico_tpc) out.push(String(rg.eixo_botanico_tpc).trim());
-    if (id.tipo_botanico) {
-      String(id.tipo_botanico).split(/[,;\/]+/).forEach(function(t) {
-        t = t.trim(); if (t) out.push(t);
-      });
-    }
+    var seen = {};
+    rules.forEach(function(r) {
+      var canon = r[0], rx = r[1];
+      if (!seen[canon] && rx.test(lower)) { seen[canon] = true; out.push(canon); }
+    });
     return out;
   }
 
-  function extractLocalizacao(row) {
+  function extractTipo(row) {
     var f = row.ficha || {};
-    var car = f.caracterizacao || {};
-    var arr = Array.isArray(car.distribuicao_geografica) ? car.distribuicao_geografica : [];
-    var out = [];
-    arr.forEach(function(item) {
-      String(item || '').split(/[,;\/]+/).forEach(function(p) {
-        p = p.trim();
-        // Limpa parenteses ("Sudeste asiático (Vietnã, Tailândia)")
-        p = p.replace(/\s*\(.*\)\s*$/, '').trim();
-        if (p && p.length < 60) out.push(p);
-      });
-    });
-    return out;
+    var rg = f.regulacao || {};
+    var text = (rg.eixo_botanico_tpc || '') + ' ' + (f.nome_cientifico || '');
+    var hits = matchRules(text, TIPO_RULES);
+    return hits.length ? hits : ['Infusão'];
   }
 
   function extractBioma(row) {
     var f = row.ficha || {};
     var car = f.caracterizacao || {};
-    if (!car.bioma_de_origem) return [];
-    return String(car.bioma_de_origem).split(/[,;\/]+/).map(function(s) { return s.trim(); }).filter(Boolean);
+    var text = (car.bioma_de_origem || '') + ' ' + (car.notas || '');
+    return matchRules(text, BIOMA_RULES);
   }
 
-  // Vetor terapêutico — usa o mesmo classificador da Roda Funcional para
-  // agrupar ações principais em rótulos sensoriais ("calmante", "digestivo"...).
+  function gatherLocText(f) {
+    var car = f.caracterizacao || {};
+    var cu = f.cultura || {};
+    var arr = Array.isArray(car.distribuicao_geografica) ? car.distribuicao_geografica.join(' ') : (car.distribuicao_geografica || '');
+    return [
+      car.bioma_de_origem || '',
+      car.notas || '',
+      arr,
+      cu.brasil || '',
+      cu.historia || '',
+      cu.cerimonial || ''
+    ].join(' ');
+  }
+
+  function extractLocalizacao(row) {
+    var f = row.ficha || {};
+    var text = gatherLocText(f);
+    if (!text) return [];
+    var out = matchRules(text, PAIS_RULES);
+    var seen = {};
+    out.forEach(function(v) { seen[v] = true; });
+    var hasState = false;
+    Object.keys(ESTADOS_BR).forEach(function(code) {
+      var full = ESTADOS_BR[code];
+      var matched = new RegExp('\\b' + code + '\\b').test(text)
+        || new RegExp('\\b' + full.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b').test(text.toLowerCase());
+      if (matched && !seen[full]) { seen[full] = true; out.push(full); hasState = true; }
+    });
+    if (hasState && !seen['Brasil']) out.unshift('Brasil');
+    return out;
+  }
+
   function extractSensorial(row) {
     var f = row.ficha || {};
     var ac = f.acoes_e_seguranca || {};
@@ -120,67 +303,35 @@
     var seen = {};
     var out = [];
     acoes.forEach(function(a) {
-      var clean = String(a || '').split(/\s+—\s+|\s+\(/)[0].trim();
-      if (!clean) return;
-      // Capitaliza primeira letra para apresentação
-      var label = clean.charAt(0).toUpperCase() + clean.slice(1);
-      if (!seen[label.toLowerCase()]) {
-        seen[label.toLowerCase()] = true;
-        out.push(label);
-      }
+      var s = String(a || '').trim();
+      if (!s || SENSORIAL_DENY.test(s)) return;
+      var lower = s.toLowerCase();
+      SENSORIAL_RULES.forEach(function(r) {
+        var canon = r[0], rx = r[1];
+        if (!seen[canon] && rx.test(lower)) { seen[canon] = true; out.push(canon); }
+      });
     });
     return out;
   }
 
-  // Mapeamento aproximado nome → cor (apenas para a bolinha de pré-visualização).
-  var COLOR_MAP = {
-    'amarelo': '#e8c547', 'amarelado': '#e8c547', 'dourado': '#d4a017', 'dourada': '#d4a017',
-    'verde': '#5b8a3a', 'verde claro': '#8fb371', 'verde escuro': '#3d5a2a',
-    'âmbar': '#c08038', 'ambar': '#c08038', 'cobre': '#a85a2a',
-    'vermelho': '#9a3024', 'vermelha': '#9a3024', 'rubro': '#7a1a14', 'avermelhado': '#a8443a',
-    'rosa': '#d97a8a', 'rosado': '#d97a8a',
-    'castanho': '#6b4423', 'marrom': '#5a3a1a', 'marrom claro': '#8a6a4a',
-    'preto': '#2a1a14', 'escuro': '#2a1a14',
-    'roxo': '#5a2d6b', 'violeta': '#5a2d6b', 'púrpura': '#5a2d6b', 'purpura': '#5a2d6b',
-    'azul': '#3a4a8a',
-    'branco': '#e8dcc8', 'transparente': '#e8dcc8', 'cristalino': '#e8dcc8',
-    'laranja': '#d97a3a'
-  };
   function extractColoracao(row) {
     var f = row.ficha || {};
     var car = f.caracterizacao || {};
     if (!car.cor_da_infusao) return [];
-    var raw = String(car.cor_da_infusao).toLowerCase();
-    var hits = [];
-    Object.keys(COLOR_MAP).forEach(function(k) {
-      if (raw.indexOf(k) >= 0) hits.push(k.charAt(0).toUpperCase() + k.slice(1));
-    });
-    if (!hits.length) {
-      // Fallback: primeira palavra significativa
-      var first = raw.split(/[,;\/\s]+/)[0];
-      if (first) hits.push(first.charAt(0).toUpperCase() + first.slice(1));
-    }
-    return hits;
+    return matchRules(car.cor_da_infusao, COR_RULES.map(function(r) { return [r[0], r[1]]; }));
   }
 
   function extractSabor(row) {
     var f = row.ficha || {};
     var car = f.caracterizacao || {};
-    if (!car.sabor_dominante) return [];
-    return String(car.sabor_dominante).split(/[,;\/]+/).map(function(s) {
-      s = s.trim();
-      return s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
-    }).filter(Boolean);
+    var text = (car.sabor_dominante || '') + ' ' + (car.aroma || '') + ' ' + (car.notas || '');
+    return matchRules(text, SABOR_RULES);
   }
 
   function extractParte(row) {
     var f = row.ficha || {};
     var id = f.identificacao || {};
-    if (!id.parte_usada) return [];
-    return String(id.parte_usada).split(/[,;\/]+/).map(function(s) {
-      s = s.trim();
-      return s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
-    }).filter(Boolean);
+    return matchRules(id.parte_usada || '', PARTE_RULES);
   }
 
   // Computa contagem por valor para cada faceta a partir de uma lista de fichas.
@@ -264,7 +415,7 @@
           var checked = ervFilters[facet.id] && ervFilters[facet.id].has(val);
           var swatch = '';
           if (facet.swatch) {
-            var color = COLOR_MAP[val.toLowerCase()] || '#888';
+            var color = COR_HEX[val] || '#888';
             swatch = '<span class="erv-filter-color-swatch" style="background:' + color + '"></span>';
           }
           html += '<label class="erv-filter-option">' +
