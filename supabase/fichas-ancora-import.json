@@ -3251,462 +3251,976 @@
       "slug": "carqueja",
       "nome_popular": "Carqueja",
       "nome_cientifico": "Baccharis trimera (Less.) DC.",
-      "tagline": "A amarga guardiã do fígado — depurativa hepática do Sul e Sudeste com décadas de pesquisa e um dos perfis de amargura mais limpos do catálogo.",
+      "tagline": "A amarga do Sul — depurativa hepática gaúcha com tradição secular, ramos alados sem folhas que são marca visual única no catálogo, e o amargo limpo que o sertanejo do Sul reconhece como 'remédio que funciona'.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Baccharis trimera (Less.) DC.",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico depurativo hepático / digestivo amargo",
-        "parte_usada": "Ramos alados secos (parte aérea — sem raiz, sem folhas diferenciadas).",
+        "nome_cientifico": "Baccharis trimera (Less.) DC. (sin.: Baccharis genistelloides var. trimera)",
+        "familia_botanica": "Asteraceae (família da camomila, do alecrim-de-campanha, do girassol)",
+        "tipo_botanico": "Fitoterápico hepatoprotetor / digestivo amargo / hipoglicemiante",
+        "parte_usada": "Partes aéreas — ramos alados secos. A carqueja é peculiar: praticamente não tem folhas verdadeiras (apenas ramos achatados que fotossintetizam). Os 'ramos alados' são fillocládios. ATENÇÃO: gênero Baccharis tem >500 espécies. B. trimera é a principal medicinal. B. dracunculifolia (alecrim-de-campanha) é diferente espécie com usos distintos.",
         "sinonimos": [
-          "Carqueja · carqueja-amarga · carquejinha · vassoura-de-soldado",
-          "Carqueja (Argentina, Uruguai — uso idêntico)",
-          "Tres espigas (espanhol popular)"
+          "Carqueja · carqueja-amarga · carqueja-do-mato",
+          "Cacalia (uso popular antigo)",
+          "Tres espigas (espanhol — refere-se aos 3 ramos alados característicos)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo puro, intenso, limpo — sem notas aromáticas que distraiam. É a amargura de referência do catálogo. Paradoxalmente, é uma amargura \"boa\" — apreciadíssima por quem gosta de amargos.",
-        "aroma": "Herbáceo seco, feno verde, levemente resinoso. Simples e direto.",
-        "cor_da_infusao": "Verde-amarelado a âmbar-verdoso. #8BAF5A",
-        "intensidade": "3/5 — amargo intenso, mas perfil limpo.",
-        "notas": "",
-        "bioma_de_origem": "Mata Atlântica e Pampas — espécie do Sul e Sudeste do Brasil, Argentina e Uruguai.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo limpo intenso (lactonas sesquiterpênicas — caracterização do amargo de Asteraceae), levemente herbáceo-resinoso, fundo terroso. O amargor é 'puro' — sem notas off como rancidez ou metálico.",
+        "aroma": "Herbáceo-amargo discreto, levemente camforado, feno seco do Sul.",
+        "cor_da_infusao": "Verde-amarelado a âmbar-verdoso. #C8B848",
+        "intensidade": "4/5 — amargor dominante, palatabilidade desafiadora.",
+        "notas": "Cabeça: amargo imediato (lactonas) | Corpo: herbáceo-resinoso | Fundo: terroso, persistência de amargor 5–8 min",
+        "bioma_de_origem": "Pampas e Mata Atlântica (RS, SC, PR, SP, MG). Espécie ruderal — cresce em campos abertos, beiras de estrada, terrenos abandonados. Preferência por solos ácidos e bem drenados.",
+        "distribuicao_geografica": [
+          "RS, SC, PR (núcleo Pampas — maior tradição de uso). SP, MG, GO (Mata Atlântica e Cerrado interior).",
+          "Argentina (Misiones, Corrientes), Uruguai, Paraguai — distribuição cone sul.",
+          "Centros de pesquisa: UFRGS, UFSM, UFSC, UFPR."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "2–3 g de ramos secos para 250 ml.",
-        "metodo": "Infusão simples. Maceração a frio (12h) preserva princípios amargos.",
-        "reinfusoes": "",
-        "melhor_momento": "20–30 minutos antes das refeições (estimula produção de bílis e digestão).",
-        "combina_com": "Alcachofra · Boldo · Dente-de-leão · Funcho (blends depurativos hepáticos)"
+        "temperatura_ideal": "90 °C (não ferver — lactonas termolábeis).",
+        "tempo_de_infusao": "5–10 min coberto.",
+        "quantidade": "2–4 g de ramos secos para 250 ml.",
+        "metodo": "Infusão coberta. Tintura: 1:5 em álcool 70°, 10 dias.",
+        "reinfusoes": "1 reinfusão.",
+        "melhor_momento": "30 min antes ou após refeições gordurosas (digestivo amargo). 2x/dia uso hepatoprotetor.",
+        "combina_com": "Boldo · Alcachofra · Dente-de-leão · Fumária (blend hepático clássico) · Limão (potencializa amargor digestivo)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Fraca para uso tópico isolado.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressa para inflamação leve",
+            "texto": "Decocção forte resfriada — anti-inflamatório tópico discreto. Uso popular."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações relevantes para uso tópico."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Colagogo/colerético (estimula produção e fluxo de bílis)",
-          "Hepatoprotetor",
-          "Digestivo amargo (estimula secreções digestivas)",
-          "Hipoglicemiante (evidência moderada)",
-          "Anti-inflamatório",
-          "Antioxidante",
-          "Componentes ativos:",
-          "Contraindicações:",
-          "Gestação — contraindicada (abortiva em doses altas documentado em modelos animais)",
-          "Lactação — evitar",
-          "Obstrução biliar — contraindicada (estimula fluxo biliar)",
-          "Hepatite aguda ativa — cautela (uso apenas sob orientação)"
+          "Hepatoprotetor (estimula produção de bile, protege hepatócitos)",
+          "Digestivo amargo (estimula secreções digestivas — ácido clorídrico, bile, sucos pancreáticos)",
+          "Hipoglicemiante leve (reduz glicemia pós-prandial)",
+          "Anti-inflamatório (Asteraceae típica)",
+          "Antioxidante (flavonóides + polifenóis)",
+          "Diurético leve",
+          "Antiulceroso (proteção da mucosa gástrica)"
         ],
         "componentes_ativos": [
           {
-            "label": "LACTONAS DITERPÊNICAS (carquejol)",
-            "texto": "Amargo digestivo, colagogo"
+            "label": "Lactonas sesquiterpênicas (carqueol, eudesmano)",
+            "texto": "Princípio amargo principal — Hepatoprotetor, digestivo, anti-inflamatório. Marcador de identidade de Baccharis"
           },
           {
-            "label": "FLAVONÓIDES (quercetina, nepetina)",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "Diterpenos (clerodanos)",
+            "texto": "Hepatoprotetor, antimicrobiano"
           },
           {
-            "label": "SAPONINAS TRITERPÊNICAS",
-            "texto": "Hepatoprotetor"
+            "label": "Flavonóides (apigenina, hispidulina, eupafolina)",
+            "texto": "Anti-inflamatório, antioxidante, hipoglicemiante"
           },
           {
-            "label": "ÁCIDO CAFEOILQUÍNICO",
-            "texto": "Antioxidante, hepatoprotetor"
+            "label": "Ácido cafeoilquínico",
+            "texto": "Antioxidante, hepatoprotetor (mesmo composto do café-verde)"
           },
           {
-            "label": "TANINOS",
-            "texto": "Adstringente, antimicrobiano"
+            "label": "Saponinas",
+            "texto": "Anti-inflamatório, expectorante leve"
+          },
+          {
+            "label": "Óleos essenciais (carquejol, alfa-pineno)",
+            "texto": "Aromáticos, antimicrobianos"
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [
-          "Gestação — contraindicada (abortiva em doses altas documentado em modelos animais)",
-          "Lactação — evitar",
-          "Obstrução biliar — contraindicada (estimula fluxo biliar)",
-          "Hepatite aguda ativa — cautela (uso apenas sob orientação)"
+        "evidencia": [
+          {
+            "indicacao": "Dispepsia funcional (digestivo amargo)",
+            "evidencia": "Forte (uso tradicional + Farmacopeia)",
+            "populacao": "Adultos — uso popular validado por farmacopeias"
+          },
+          {
+            "indicacao": "Hepatoproteção (esteatose, transaminases elevadas)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — Soicke et al. (1987); Padilla et al. (2005)"
+          },
+          {
+            "indicacao": "Diabetes tipo 2 (adjuvante hipoglicemiante)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos DM2 — Oliveira et al. (2005)"
+          },
+          {
+            "indicacao": "Úlcera gástrica (gastroproteção)",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos animais — Gené et al. (1996)"
+          }
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "alerta_critico": {
+          "titulo": "Gestação — CONTRAINDICADO",
+          "titulo2": "Lactonas sesquiterpênicas com efeito uterotônico",
+          "corpo": "A carqueja é CONTRAINDICADA em gestantes. As lactonas sesquiterpênicas têm potencial efeito uterotônico (estimulam contração uterina) — risco de aborto especialmente no primeiro trimestre. Lactação: dados insuficientes — evitar. Crianças <6 anos: evitar uso interno. Hipoglicêmicos em uso de metformina/insulina: monitorar glicemia (potencialização)."
+        },
+        "contraindicacoes": [
+          "Gestação — CONTRAINDICADO",
+          "Lactação — evitar",
+          "Crianças <6 anos — evitar uso interno",
+          "Obstrução biliar — evitar (estimula secreção biliar)",
+          "Alergia a Asteraceae"
+        ],
+        "interacoes": [
+          {
+            "label": "Hipoglicemiantes orais (metformina, glibenclamida)",
+            "texto": "Potencialização hipoglicemiante (fraca-moderada). Conduta: monitorar glicemia"
+          },
+          {
+            "label": "Insulina",
+            "texto": "Potencialização. Conduta: monitorar glicemia rigorosamente"
+          },
+          {
+            "label": "Anticoagulantes",
+            "texto": "Possível potencialização (cumarinas leves). Conduta: monitorar INR"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais: raros. Doses altas: desconforto gástrico, náusea (lactonas em excesso).",
+        "dose_maxima": "Ramos secos em infusão: até 6 g/dia. Tintura: 5–10 ml até 3x/dia. Extrato seco: 250–500 mg até 2x/dia.",
+        "fontes": [
+          "Farmacopeia Brasileira 6ª Ed. — monografia oficial Baccharis trimera",
+          "Soicke H, Leng-Peschlow E — Hepatoprotective effects of Baccharis trimera (Planta Med, 1987)",
+          "Padilla J et al. — Hepatoprotective activity of Baccharis trimera (Phytomedicine, 2005)",
+          "Oliveira AC et al. — Hypoglycemic effects of Baccharis trimera (J Ethnopharmacol, 2005)",
+          "Gené RM et al. — Anti-inflammatory and analgesic activity of Baccharis trimera (Planta Med, 1996)",
+          "Verdi LG et al. — Gênero Baccharis (Asteraceae): aspectos químicos, econômicos e biológicos (Quim Nova, 2005)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "3/3",
+            "observacao": "DOMINANTE — lactonas sesquiterpênicas, amargor 'puro'"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Herbáceo-amargo seco com fundo terroso",
+        "olfativo_descritores": [
+          "Lactonas amargas (Asteraceae)",
+          "Feno seco do Sul",
+          "Levemente camforado",
+          "Terra de campo gaúcho"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa",
+            "molecula": "Mínima"
+          }
+        ],
+        "tatil": "Corpo leve, textura aquosa-limpa. O amargor é a sensação dominante — não há complexidade tátil. Persistência longa do amargor (5–8 min na boca após o último gole).",
+        "descricao_integrada": "A carqueja é o protótipo do amargo digestivo brasileiro — junto com o boldo-do-chile e a alcachofra, forma a tríade amarga clássica da farmacopeia tradicional do Sul. Para o Ervatório, é a porta de entrada para consumidores que buscam digestivos amargos sérios, sem disfarce."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A carqueja é a erva amarga popular do Sul e Sudeste — equivalente ao boldo europeu na farmacopeia caseira brasileira. \"Chá de carqueja pra limpar o fígado\" é receita de avó em qualquer família do interior paulista, catarinense ou gaúcho. O uso popular antecede qualquer validação científica — e a pesquisa universitária, quando chegou, encontrou uma base sólida de princípios ativos coerentes com o uso popular.",
-        "curiosidade": ""
+        "historia": "A carqueja é uma das ervas mais bem estabelecidas na medicina popular do Sul do Brasil — tradição que atravessa as três culturas formativas da região (indígena, gaúcha europeia, açoriana). 'Chá de carqueja após o churrasco' é prática gastronômica codificada no RS — para 'cortar a gordura'.",
+        "cerimonial": "Sem cerimônia codificada — mas o ritual gaúcho de tomar carqueja após refeições gordurosas (especialmente churrasco) é prática culinária-medicinal arquetípica do Sul.",
+        "brasil": "Carqueja é incluída na RENISUS (Relação Nacional de Plantas de Interesse ao SUS). Cultivo agroecológico crescente no RS e SC. Produção industrial de tinturas e extratos secos — disponíveis em farmácias de manipulação em todo o Brasil.",
+        "curiosidade": "Os 'ramos alados' da carqueja (que parecem folhas mas são ramos achatados — fillocládios) são adaptação evolutiva à seca dos campos sulinos: reduzem perda de água via transpiração mantendo capacidade fotossintética. Esse formato peculiar é marca visual diagnóstica que distingue carqueja de outras Asteraceae à primeira vista — útil em identificação botânica de campo."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Uso tradicional reconhecido — Memento Fitoterápico.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita: setembro–março (período vegetativo)"
+        "status_anvisa": [
+          "Monografia oficial — Farmacopeia Brasileira",
+          "RENISUS (SUS)"
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Cultivo agroecológico no RS, SC, PR. Certificação orgânica disponível.",
+        "sazonalidade": "Ramos: outubro–março (período vegetativo ativo). Maior concentração de lactonas no fim de primavera."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas agroecológicas RS, SC, PR. Ervanários do Sul.",
+        "faixa_de_preco": [
+          "Ramos secos (ervanário): R$ 20–40/100 g",
+          "Tintura (farmácia de manipulação): R$ 25–50/100 ml",
+          "Extrato seco (cápsulas): R$ 30–60/30 cápsulas",
+          "Sachês para infusão: R$ 20–40/cx 25un"
+        ],
+        "formatos": "Ramos secos (infusão); Sachês; Tintura hidroalcoólica; Extrato seco padronizado (cápsulas); Blends hepáticos (com boldo, alcachofra, dente-de-leão)."
+      },
+      "destaques": [
+        {
+          "label": "Amargo gaúcho clássico",
+          "texto": "Tradição secular do Sul — pós-churrasco para 'cortar a gordura'"
+        },
+        {
+          "label": "RENISUS / SUS",
+          "texto": "Prioridade fitoterápica nacional — disponível em UBS de vários estados"
+        },
+        {
+          "label": "Fillocládios diagnósticos",
+          "texto": "Ramos alados sem folhas — marca visual única no catálogo"
+        }
+      ]
     },
     {
       "slug": "macela-gaucha",
       "nome_popular": "Macela-Gaúcha",
       "nome_cientifico": "Achyrocline satureioides (Lam.) DC.",
-      "tagline": "A camomila dos Pampas — digestiva e anti-inflamatória da tradição gaúcha com pesquisa uruguaia e argentina entre as mais extensas da fitoterapia sul-americana.",
+      "tagline": "A camomila do Sul — flor amarela dos campos gaúchos com tradição açoriana de colheita na Sexta-feira Santa, ação antiespasmódica documentada e o aroma mais característico do verão pampeano.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Achyrocline satureioides (Lam.) DC.",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico digestivo / anti-inflamatório",
-        "parte_usada": "Inflorescências (capítulos florais), preferencialmente colhidas antes da abertura total.",
+        "familia_botanica": "Asteraceae (família da camomila, da carqueja, do girassol)",
+        "tipo_botanico": "Fitoterápico antiespasmódico digestivo / sedativo leve / anti-inflamatório",
+        "parte_usada": "Inflorescências (flores amarelas) — colhidas no fim do verão (jan–mar) quando estão completamente abertas. ATENÇÃO: 'macela' refere-se a múltiplas espécies de Achyrocline. A. satureioides é a principal medicinal do Sul. A. flaccida é espécie próxima com usos similares.",
         "sinonimos": [
-          "Macela · macela-gaúcha · marcela · marcela-do-campo",
-          "Macela (Argentina/Uruguai) · marcela (Paraguai)",
-          "Yerba-de-la-vida (espanhol popular)"
+          "Macela-gaúcha · marcela · marcelinha-do-campo · marcela-galega",
+          "Marcela-do-banhado",
+          "Macela (espanhol — uso conjunto BR/UY/AR)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-herbáceo suave, floral discreto, levemente resinoso. Mais palatável que a carqueja — amargura gentil.",
-        "aroma": "Floral-herbáceo, feno seco do pampa, discretamente mielado.",
-        "cor_da_infusao": "Amarelo-palha a âmbar claro. #D4B86A",
-        "intensidade": "2/5 — suave, de uso cotidiano.",
-        "notas": "",
-        "bioma_de_origem": "Pampas (RS) e Mata Atlântica interior (SC, PR) — espécie característica dos campos sulinos.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-doce com notas mel-caramelo, levemente camforado, herbáceo-floral. Perfil agradável — mais palatável que carqueja, similar à camomila mas com base mais terrosa.",
+        "aroma": "Floral-mel característico (Asteraceae), levemente camforado, feno doce dos pampas. Aroma evocativo do verão sulista.",
+        "cor_da_infusao": "Amarelo-dourado a âmbar claro. #D8B848",
+        "intensidade": "2–3/5 — palatável, aroma agradável.",
+        "notas": "Cabeça: floral-mel imediato | Corpo: levemente camforado | Fundo: amargo gentil",
+        "bioma_de_origem": "Pampas — campos abertos do Sul do Brasil, Uruguai, Argentina (Pampa). Cresce em solos arenosos e ácidos, condições típicas dos campos gaúchos.",
+        "distribuicao_geografica": [
+          "RS, SC, PR (núcleo principal). MS (Cerrado de transição).",
+          "Uruguai, Argentina (Pampa argentina), Paraguai.",
+          "Centros de pesquisa: UFRGS, UFSM, UDELAR (Uruguai)."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 colheres de chá (1–3 g) de flores secas para 150 ml.",
-        "metodo": "Infusão simples, coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "Pós-refeições (digestivo) ou noite (ansiolítico leve).",
-        "combina_com": "Camomila · Erva-mate tostada · Carqueja · Erva-cidreira"
+        "temperatura_ideal": "85–90 °C (não ferver — preserva flavonóides e óleos voláteis).",
+        "tempo_de_infusao": "5–10 min coberto.",
+        "quantidade": "1–3 g de flores secas para 250 ml.",
+        "metodo": "Infusão coberta (cobrir é essencial para reter aromas voláteis).",
+        "reinfusoes": "1 reinfusão.",
+        "melhor_momento": "30 min após refeições (digestivo). Noite (sedativo leve, indutor de sono).",
+        "combina_com": "Camomila (sinergia clássica de digestivos suaves) · Erva-doce · Funcho · Mel"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para uso tópico anti-inflamatório.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressa para hematomas (uso popular)",
+            "texto": "Decocção forte resfriada — anti-inflamatório tópico via flavonóides. Tradição gaúcha amplamente documentada."
+          },
+          {
+            "titulo": "Bochecho para inflamação oral leve",
+            "texto": "Infusão fraca, morna — anti-inflamatório suave e antimicrobiano leve."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antiespasmódico digestivo",
-          "Anti-inflamatório",
-          "Ansiolítico leve (flavonóides GABAérgicos)",
-          "Antimicrobiano (estafilococos, E. coli)",
-          "Antifúngico",
-          "Antiviral (estudos in vitro)",
-          "Componentes ativos:",
-          "Contraindicações: Alergia à família Asteraceae. Gestação — cautela (dados insuficientes). Uso simultâneo com sedativos — potencialização leve."
+          "Antiespasmódico digestivo (cólicas intestinais, dispepsia)",
+          "Sedativo leve (indutor de sono em insônia leve)",
+          "Anti-inflamatório (gastrointestinal e tópico)",
+          "Hepatoprotetor leve",
+          "Antimicrobiano (Helicobacter pylori — pesquisa preliminar)",
+          "Antidiabético (estudos pré-clínicos)"
         ],
         "componentes_ativos": [
           {
-            "label": "QUERCETINA, 3-METOXIQUERCETINA",
-            "texto": "Anti-inflamatório, antioxidante, GABAérgico"
+            "label": "Flavonóides (quercetina, 3-O-metilquercetina, luteolina)",
+            "texto": "Anti-inflamatório, antioxidante, antiespasmódico. 3-O-metilquercetina é marcador de identidade da espécie"
           },
           {
-            "label": "LUTEOLINA",
+            "label": "Óleos essenciais (cariofileno, alfa-pineno, linalol)",
+            "texto": "Antiespasmódico, sedativo leve"
+          },
+          {
+            "label": "Ácido cafeoilquínico",
+            "texto": "Hepatoprotetor, antioxidante"
+          },
+          {
+            "label": "Cumarinas (esculetina)",
+            "texto": "Anti-inflamatório, antimicrobiano leve"
+          },
+          {
+            "label": "Fenilpropanóides",
             "texto": "Anti-inflamatório"
           },
           {
-            "label": "3-O-METILQUERCETINA",
-            "texto": "Antiespasmódico"
-          },
-          {
-            "label": "ÁCIDO CLOROGÊNICO",
-            "texto": "Antioxidante"
-          },
-          {
-            "label": "ÓLEOS ESSENCIAIS (beta-cariófileno, alfa-pineno)",
-            "texto": "Antimicrobiano, anti-inflamatório"
+            "label": "Saponinas",
+            "texto": "Anti-inflamatório, expectorante leve"
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Dispepsia funcional (antiespasmódico)",
+            "evidencia": "Moderada (uso tradicional + Farmacopeia)",
+            "populacao": "Adultos — Simões et al. (1988); Gnoatto et al. (2005)"
+          },
+          {
+            "indicacao": "Insônia leve (sedativo)",
+            "evidencia": "Tradicional forte",
+            "populacao": "Adultos — uso popular gaúcho"
+          },
+          {
+            "indicacao": "Anti-inflamatório gastrointestinal",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — De Souza et al. (1998)"
+          },
+          {
+            "indicacao": "Helicobacter pylori (adjuvante)",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos in vitro — Cogo et al. (2010)"
+          }
+        ],
+        "contraindicacoes": [
+          "Alergia a Asteraceae (rara — reação cruzada possível)",
+          "Gestação: dados insuficientes — evitar doses altas",
+          "Uso concomitante com sedativos farmacêuticos (potencialização leve)"
+        ],
+        "interacoes": [
+          {
+            "label": "Sedativos farmacêuticos",
+            "texto": "Potencialização leve. Conduta: monitorar"
+          },
+          {
+            "label": "Anticoagulantes (cumarinas)",
+            "texto": "Possível potencialização fraca. Conduta: monitorar INR em uso prolongado"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais: muito raros. Reações alérgicas raras (Asteraceae).",
+        "dose_maxima": "Flores secas: até 6 g/dia em infusão. Tintura: 5–10 ml até 3x/dia.",
+        "fontes": [
+          "Farmacopeia Brasileira — monografia oficial Achyrocline satureioides",
+          "Simões CMO et al. — Plantas da medicina popular no Rio Grande do Sul (Editora UFRGS, 1988)",
+          "Gnoatto SCB et al. — Comparação dos efeitos da macela (Achyrocline satureioides) sobre úlceras gástricas (Lat Am J Pharm, 2005)",
+          "De Souza KCB et al. — Antiulcerogenic activity of Achyrocline satureioides (J Ethnopharmacol, 1998)",
+          "Cogo LL et al. — Antimicrobial activity of Achyrocline satureioides against Helicobacter pylori (Phytomedicine, 2010)",
+          "Retta D et al. — Marcela, a promising medicinal and aromatic plant (Industrial Crops Products, 2012)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "1/3",
+            "observacao": "Leve nota mel-caramelo (flavonóides + cumarinas)"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "2/3",
+            "observacao": "Presente — Asteraceae típica, mas suavizada pela doçura"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Floral-mel com fundo herbáceo-camforado",
+        "olfativo_descritores": [
+          "Floral-mel característico",
+          "Levemente camforado",
+          "Feno doce dos pampas",
+          "Cumarinas suaves"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Muito leve",
+            "molecula": "Linalol traços"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa",
+            "molecula": "Taninos mínimos"
+          }
+        ],
+        "tatil": "Corpo leve, textura aveludada-suave, persistência aromática moderada (5–8 min). Sensação geral 'gentil' — sem agressão.",
+        "descricao_integrada": "A macela-gaúcha é a 'camomila do Sul' — perfil sensorial similar à Matricaria mas com identidade pampeana específica (fundo mais terroso, floral menos doce). Para o Ervatório, é a ponte entre o universo da camomila europeia (massificada) e a tradição gaúcha (regional)."
       },
       "cultura": {
-        "historia": "A macela é a erva do Rio Grande do Sul como o guaraná é do Amazonas — elemento de identidade regional. No Sul do Brasil e no Prata (Argentina, Uruguai), a macela é o \"digestivo de família\" — tomada após almoços fartos, especialmente após churrasco. A tradição de colher macela na véspera de São João (23 de junho) — quando a planta está em plena floração no hemisfério sul — é prática folclórica documentada em comunidades rurais gaúchas.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "A macela-gaúcha tem tradição de colheita codificada: 'macela colhida na Sexta-feira Santa antes do nascer do sol' é prática açoriana-gaúcha que sobrevive até hoje. A crença popular sustenta que essa colheita ritual potencializa a ação medicinal. A racionalização botânica: a Sexta-feira Santa cai sempre em março–abril, justamente o pico de floração e concentração de óleos essenciais — então a tradição religiosa coincide com timing ótimo de colheita.",
+        "cerimonial": "Colheita ritual da Sexta-feira Santa antes do nascer do sol — prática açoriana-gaúcha viva no interior do RS e SC.",
+        "brasil": "Macela-gaúcha é uma das ervas com cultivo agroflorestal mais bem estabelecido do Sul do Brasil. Cooperativas familiares no RS produzem macela orgânica certificada. Indústria de cosméticos (sabonetes, xampus 'tradição gaúcha') usa macela como ingrediente identitário.",
+        "curiosidade": "A 3-O-metilquercetina, flavonoide marcador da macela-gaúcha, foi isolada e caracterizada por pesquisadores da UFRGS nos anos 1980 — e mostrou-se mais potente como antiespasmódico que a quercetina pura. A macela é exemplo de planta onde a 'metilação natural' de um flavonoide comum gera uma molécula mais ativa farmacologicamente. Pequeno detalhe químico, grande implicação farmacêutica."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Monografia oficial. Indicação: antiespasmódico digestivo.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: maio–agosto (inverno sulino)"
+        "status_anvisa": [
+          "Monografia oficial — Farmacopeia Brasileira"
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Cultivo orgânico no RS e SC. Cooperativas familiares com produção agroecológica.",
+        "sazonalidade": "Floração e colheita: janeiro–abril (fim do verão / início do outono no Sul)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas agroecológicas do RS e SC. Ervanários do Sul.",
+        "faixa_de_preco": [
+          "Flores secas (ervanário): R$ 30–60/100 g (mais cara que carqueja por ser flor)",
+          "Sachês para infusão: R$ 25–50/cx 25un",
+          "Tintura: R$ 25–50/100 ml",
+          "Cosméticos com macela (sabonete, xampu): R$ 15–40/un"
+        ],
+        "formatos": "Flores secas (infusão); Sachês; Tintura hidroalcoólica; Hidrolato (perfumaria); Cosméticos (sabonete, xampu, creme)."
+      },
+      "destaques": [
+        {
+          "label": "Sexta-feira Santa",
+          "texto": "Tradição açoriana-gaúcha de colheita ritual antes do nascer do sol — coincide com pico botânico"
+        },
+        {
+          "label": "Camomila do Sul",
+          "texto": "Perfil sensorial similar à Matricaria mas com identidade pampeana"
+        },
+        {
+          "label": "3-O-metilquercetina",
+          "texto": "Flavonoide marcador — antiespasmódico mais potente que quercetina pura"
+        }
+      ]
     },
     {
       "slug": "erva-cidreira",
       "nome_popular": "Erva-Cidreira",
-      "nome_cientifico": "Lippia alba (Mill.) [N.E.Br](http://N.E.Br).",
-      "tagline": "O ansiolítico de quintal — a mais acessível das ervas calmantes brasileiras, presente em quintais de Norte a Sul, com química surpreendentemente complexa.",
+      "nome_cientifico": "Lippia alba (Mill.) N.E.Br.",
+      "tagline": "A erva-cidreira brasileira — ansiolítica nativa do quintal de avó com perfil cítrico inconfundível, espécie que o Brasil chama de 'erva-cidreira' apesar de não ser melissa europeia, e a complexidade quimiotípica que a faz diferente em cada região.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Lippia alba (Mill.) [N.E.Br](http://N.E.Br).",
-        "familia_botanica": "Verbenaceae",
-        "tipo_botanico": "Fitoterápico ansiolítico / antiespasmódico",
-        "parte_usada": "Folhas frescas ou secas; ramos finos.",
+        "nome_cientifico": "Lippia alba (Mill.) N.E.Br.",
+        "familia_botanica": "Verbenaceae (família da verbena, do gervão)",
+        "tipo_botanico": "Fitoterápico ansiolítico / sedativo leve / antiespasmódico digestivo",
+        "parte_usada": "Folhas e ramos jovens — frescos ou secos.",
         "sinonimos": [
-          "Erva-cidreira · cidreira-brava · falsa-melissa · cidró · chá-de-tabuleiro",
-          "ATENÇÃO: NÃO confundir com melissa (Melissa officinalis) — espécie europeia com quimiotipos e química distintos. A \"erva-cidreira\" brasileira é Lippia alba, não melissa."
+          "Erva-cidreira · cidreira-brasileira · falsa-melissa · cidrila",
+          "Erva-cidreira-do-campo (BR) · Salvia santa (Cuba) · Pronto-alívio",
+          "ATENÇÃO: 'erva-cidreira' no Brasil refere-se a TRÊS espécies distintas: Lippia alba (esta ficha — Verbenaceae, mais comum); Melissa officinalis (Lamiaceae — européia, ficha 53); Cymbopogon citratus (Poaceae — capim-limão). A confusão é generalizada — verificar nome científico."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Limão-cítrico fresco, levemente amargo herbáceo, aromático agradável. Uma das infusões mais palatáveis do catálogo.",
-        "aroma": "Limão-cítrico fresco, citral intenso, levemente mentolado no fundo (quimiotipos ricos em citral).",
-        "cor_da_infusao": "Verde-amarelado pálido a amarelo-claro. #E8D86A",
-        "intensidade": "2/5 — suave, perfil cítrico agradável.",
-        "notas": "",
-        "bioma_de_origem": "Mata Atlântica, Cerrado, Caatinga, Pampas — espécie de ampla distribuição, adaptada a múltiplos climas.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Cítrico-fresco intenso (citral), levemente amargo-herbáceo, refrescante. Perfil semelhante a limão + capim-limão + folha de hortelã — combinação característica.",
+        "aroma": "Cítrico-limão fortíssimo (citral — geranial + neral), levemente mentolado, herbáceo-fresco. Quimiotipos diferentes podem gerar aromas distintos: tipo citral (mais comum BR), tipo carvona (mais mentolado), tipo linalol (mais floral).",
+        "cor_da_infusao": "Verde-pálido a amarelo-esverdeado. #C8D880",
+        "intensidade": "3–4/5 — aroma cítrico dominante e característico.",
+        "notas": "Cabeça: cítrico-limão imediato | Corpo: herbáceo fresco | Fundo: leve mentolado, amargor discreto",
+        "bioma_de_origem": "Mata Atlântica e Cerrado — também naturalizada em todo o Brasil em quintais. L. alba é uma das ervas mais comuns em hortas medicinais residenciais brasileiras.",
+        "distribuicao_geografica": [
+          "Todo o Brasil — quintais, hortas, cultivo doméstico onipresente.",
+          "Originária da América tropical (México ao Sul do Brasil).",
+          "Centros de pesquisa: UFSC (Florianópolis), USP-RP, UNICAMP."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C (não ferver — óleos essenciais voláteis).",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 folhas frescas (ou 2 g de folha seca) para 150 ml.",
-        "metodo": "Infusão simples coberta — imprescindível cobrir para reter citral.",
-        "reinfusoes": "1 possível.",
-        "melhor_momento": "Qualquer hora — especialmente noite para ansiedade/sono.",
-        "combina_com": "Melissa · Camomila · Hortelã · Lavanda · Maracujá · Mel · Limão (potencializa perfil cítrico)"
+        "temperatura_ideal": "85 °C (ferver mata o citral — preservar aroma é essencial).",
+        "tempo_de_infusao": "5 min coberto.",
+        "quantidade": "5–10 folhas frescas (ou 2 g secas) para 250 ml.",
+        "metodo": "Infusão coberta SEMPRE. Folhas frescas: melhor potência aromática.",
+        "reinfusoes": "1 reinfusão (folhas frescas).",
+        "melhor_momento": "Noite (sedativo leve, indutor de sono). Pós-refeições (digestivo). Em caso de cólica menstrual ou intestinal.",
+        "combina_com": "Camomila (sinergia clássica de sedativos suaves brasileiros) · Hortelã · Mel · Capim-limão (potencializa cítrico)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Fraca para uso tópico isolado.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressa para cólica abdominal",
+            "texto": "Infusão forte morna em compressa sobre abdômen — antiespasmódico tópico via citral."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações relevantes para uso tópico."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Ansiolítico (ação GABAérgica do citral)",
-          "Antiespasmódico (digestivo e brônquico)",
-          "Sedativo leve",
-          "Antiviral (linalol, citral)",
-          "Antimicrobiano",
-          "Carminativo (flatulência)",
-          "Componentes ativos:",
-          "Contraindicações: Gestação — cautela com óleos essenciais concentrados (citral). Uso moderado em infusão é tolerado. Crianças < 2 anos — evitar óleos essenciais concentrados."
+          "Ansiolítico leve / sedativo",
+          "Antiespasmódico digestivo (cólicas)",
+          "Antiespasmódico uterino (cólica menstrual)",
+          "Antimicrobiano (citral é antimicrobiano amplo)",
+          "Antiviral leve (vs herpes simples — pesquisa preliminar)",
+          "Hipotensor leve"
         ],
         "componentes_ativos": [
           {
-            "label": "CITRAL (geranial + neral)",
-            "texto": "Ansiolítico — modulação GABA-A, antiviral"
+            "label": "Citral (geranial + neral)",
+            "texto": "Componente principal do quimiotipo dominante BR — Aromático, ansiolítico, antimicrobiano. Mesma molécula do capim-limão"
           },
           {
-            "label": "LINALOL",
-            "texto": "Sedativo, antimicrobiano"
+            "label": "Carvona",
+            "texto": "Quimiotipo carvona (menos comum) — Antiespasmódico, mentolado-fresco"
           },
           {
-            "label": "CARVONA",
-            "texto": "Antiespasmódico, carminativo"
+            "label": "Linalol",
+            "texto": "Quimiotipo linalol (raro BR) — Sedativo, floral"
           },
           {
-            "label": "LIMONENO",
-            "texto": "Antidepressivo leve, antimicrobiano"
+            "label": "Limoneno",
+            "texto": "Antimicrobiano, aromático"
           },
           {
-            "label": "TIMOL (quimiotipos)",
-            "texto": "Antimicrobiano potente"
+            "label": "Beta-cariofileno",
+            "texto": "Anti-inflamatório (CB2)"
+          },
+          {
+            "label": "Verbascosídeo",
+            "texto": "Anti-inflamatório, antioxidante"
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Ansiedade leve / insônia",
+            "evidencia": "Moderada (uso tradicional + estudos farmacológicos)",
+            "populacao": "Adultos — Vale et al. (1999); Hennebelle et al. (2008)"
+          },
+          {
+            "indicacao": "Dispepsia / cólicas digestivas (antiespasmódico)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — múltiplos estudos brasileiros"
+          },
+          {
+            "indicacao": "Hipertensão leve",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos animais — Vale et al."
+          },
+          {
+            "indicacao": "Antimicrobiano (citral)",
+            "evidencia": "Moderada",
+            "populacao": "Estudos in vitro — espectro amplo"
+          }
+        ],
+        "alerta_critico": {
+          "titulo": "Variabilidade quimiotípica — atenção ao perfil",
+          "titulo2": "L. alba tem 3+ quimiotipos com perfis distintos",
+          "corpo": "L. alba apresenta variabilidade quimiotípica significativa: tipo citral (mais comum no BR — ansiolítico-antiespasmódico), tipo carvona (mentolado-antiespasmódico), tipo linalol (sedativo-floral). Plantas de regiões diferentes podem ter perfil farmacológico distinto. Para uso medicinal padronizado, preferir produtos com indicação de quimiotipo. Em uso de quintal, aceitar a variabilidade — todos os quimiotipos têm propriedades medicinais válidas, apenas com ênfases diferentes."
+        },
+        "contraindicacoes": [
+          "Gestação: dados insuficientes — usar com moderação",
+          "Hipotensão: efeito hipotensor leve cumulativo — monitorar PA",
+          "Crianças <2 anos: óleo essencial pode ser irritante — preferir infusão diluída"
+        ],
+        "interacoes": [
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Potencialização leve. Conduta: monitorar PA"
+          },
+          {
+            "label": "Sedativos farmacêuticos",
+            "texto": "Potencialização leve. Conduta: monitorar"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais: muito raros. Doses altas: hipotensão leve, sonolência diurna em uso noturno excessivo.",
+        "dose_maxima": "Folhas frescas: até 10 g/dia. Folhas secas: até 6 g/dia. OE: máximo 1 gota/250 ml (uso muito esporádico).",
+        "fontes": [
+          "Farmacopeia Brasileira — monografia oficial Lippia alba",
+          "Vale TG et al. — Behavioural effects of essential oils from Lippia alba (J Ethnopharmacol, 1999)",
+          "Hennebelle T et al. — Ethnopharmacology of Lippia alba (J Ethnopharmacol, 2008)",
+          "Heinzmann BM, Barros FMC — Verbenaceae medicinais do Brasil (Rev Bras Farmacogn, 2007)",
+          "Pascual ME et al. — Lippia: traditional uses, chemistry and pharmacology (J Ethnopharmacol, 2001)",
+          "Olivero-Verbel J et al. — Anxiolytic effects of Lippia alba essential oil (Phytomedicine, 2010)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Discreto — herbáceo de fundo"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "1/3",
+            "observacao": "Citral percebido como leve acidez (ilusão sinestésica)"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Cítrico-limão fresco (citral)",
+        "olfativo_descritores": [
+          "Citral intenso (limão verde + capim-limão)",
+          "Levemente mentolado",
+          "Herbáceo fresco",
+          "Floral discreto (em quimiotipo linalol)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Leve-moderada",
+            "molecula": "Citral + traços de mentol"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa",
+            "molecula": "Mínima"
+          }
+        ],
+        "tatil": "Corpo leve, textura aquosa-fresca. Sensação refrescante característica (citral + mentol). Persistência aromática alta (15–20 min — citral é volátil mas marcante).",
+        "descricao_integrada": "A erva-cidreira brasileira (L. alba) é uma das poucas plantas do catálogo onde a IDENTIDADE LOCAL diverge da identidade global: o Brasil chama 'erva-cidreira' uma planta que não é melissa europeia (Melissa officinalis). Para o Ervatório, esclarecer essa distinção é missão editorial — sem desvalorizar a tradição brasileira (que é farmacologicamente válida) nem confundir com a melissa importada."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A erva-cidreira é provavelmente a erva medicinal mais cultivada em quintais do Brasil — presente de Oiapoque ao Chuí. Não há classe social, região ou geração que não conheça o \"chá de cidreira\" para nervos. É a erva que democratiza a fitoterapia — não precisa de farmácia ou ervanário. Está na janela, no vaso, no fundo do quintal.  Essa onipresença popular e acessibilidade fazem da erva-cidreira um dos maiores desafios do Ervatório: o usuário acha que \"já sabe tudo\" sobre ela. A ficha completa revela que não sabe — os quimiotipos de Lippia alba variam enormemente, a química dos óleos essenciais é complexa, e a confusão com melissa europeia é universal.",
-        "curiosidade": ""
+        "historia": "A erva-cidreira brasileira é uma das ervas mais difundidas em quintais residenciais do Brasil — provavelmente a planta medicinal mais cultivada no Brasil em escala doméstica. 'Tomar um chazinho de cidreira pra acalmar' é gesto materno arquetípico em todas as regiões do país. A confusão com melissa europeia é universal — mas etnobotanicamente o Brasil tem direito ao nome 'cidreira' por séculos de uso.",
+        "cerimonial": "Sem cerimônia codificada — mas o gesto de ir ao quintal colher folhas frescas para preparar chá é prática familiar arquetípica brasileira.",
+        "brasil": "L. alba é incluída na RENISUS (SUS). Programa Farmácia Viva em vários municípios disponibiliza erva-cidreira em UBS. Produção doméstica é a forma de consumo dominante — fitoterápico industrializado é minoritário comparado ao chá feito em casa.",
+        "curiosidade": "A variabilidade quimiotípica de L. alba foi um dos primeiros casos de quimiotaxonomia bem documentados no Brasil. Pesquisas da UFRGS e UFSC nos anos 1990 identificaram que plantas de L. alba do RS, MG e Norte do BR tinham perfis de óleo essencial distintos — mesma espécie, química diferente. Esse fenômeno é hoje conhecido como 'quimiotipos geográficos' e é estudado em várias plantas medicinais brasileiras."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Uso tradicional reconhecido. Em análise para Formulário de Fitoterápicos.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas disponíveis o ano todo (cultivo perene)"
+        "status_anvisa": [
+          "Monografia oficial — Farmacopeia Brasileira",
+          "RENISUS (SUS)"
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Cultivo doméstico predominante. Cooperativas no MG, SP, RS produzem para mercado de fitoterápicos.",
+        "sazonalidade": "Folhas: ano todo (planta perene em climas tropicais e subtropicais)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas medicinais e ervanários — todo o Brasil. Mudas amplamente disponíveis.",
+        "faixa_de_preco": [
+          "Folhas secas (ervanário): R$ 15–30/100 g",
+          "Sachês: R$ 20–40/cx 25un",
+          "Tintura (farmácia): R$ 20–50/100 ml",
+          "Muda viva: R$ 5–15/un (mais barato cultivar em casa)"
+        ],
+        "formatos": "Folhas secas; Sachês; Tintura; Hidrolato; Mudas para cultivo doméstico."
+      },
+      "destaques": [
+        {
+          "label": "RENISUS / SUS",
+          "texto": "Prioridade fitoterápica nacional — Programa Farmácia Viva em UBS"
+        },
+        {
+          "label": "Erva-cidreira ≠ Melissa",
+          "texto": "Espécies distintas com tradições paralelas — Brasil tem direito ao nome por séculos de uso"
+        },
+        {
+          "label": "Quimiotipo variável",
+          "texto": "L. alba apresenta 3+ quimiotipos (citral, carvona, linalol) — cada região tem 'sua' cidreira"
+        }
+      ]
     },
     {
       "slug": "losna",
       "nome_popular": "Losna",
       "nome_cientifico": "Artemisia absinthium L.",
-      "tagline": "A rainha dos amargos — digestivo mítico europeu naturalizado no Sul do Brasil, base do absinto e do vermouth, com uma das histórias culturais mais ricas do catálogo.",
+      "tagline": "A erva do absinto — amargo lendário com história que vai dos egípcios ao boêmio parisiense, princípio ativo (tujona) que inspirou proibições e mitos, e o digestivo amargo mais potente do catálogo europeu naturalizado no Sul.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Artemisia absinthium L.",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Digestivo amargo / antiparasitário / tônico estomacal",
-        "parte_usada": "Partes aéreas (folhas e ramos finos), secas.",
+        "familia_botanica": "Asteraceae (família da camomila, da carqueja, da macela)",
+        "tipo_botanico": "Fitoterápico digestivo amargo / antiparasitário / antimicrobiano",
+        "parte_usada": "Folhas e ramos jovens — secos.",
         "sinonimos": [
-          "Losna · absinto · erva-santa · artemísia-amarga",
-          "Wormwood (inglês) · Absinth (alemão) · Absinthe (francês) · Ajenjo (espanhol)"
+          "Losna · absinto · erva-santa · alvina",
+          "Wormwood (inglês) · Absinthe (francês) · Wermut (alemão) · Ajenjo (espanhol)",
+          "ATENÇÃO: Artemisia absinthium é a losna verdadeira. A. annua (artemisinina antimalárica) e A. vulgaris (artemísia comum) são espécies diferentes."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "O mais amargo do catálogo — amargor intenso, persistente, com nota mentolada fria e fundo resinoso. Só apreciável por amantes de amargos ou em uso medicinal.",
-        "aroma": "Mentolado-resinoso, herbáceo intenso, levemente defumado-feno. Característico e inconfundível.",
-        "cor_da_infusao": "Verde-prateado a verde-amarelado. #7A9B5C",
-        "intensidade": "5/5 para amargura; 4/5 para aroma. Infusão de presença esmagadora.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo extremamente intenso (lactonas sesquiterpênicas + absintina) — talvez o amargor vegetal mais potente do catálogo. Verde-herbáceo, levemente mentolado-camforado, persistente.",
+        "aroma": "Verde-amargo característico, levemente camforado-mentolado, herbáceo intenso. Aroma da Provença e dos Alpes.",
+        "cor_da_infusao": "Verde-amarelado a âmbar pálido. #B8B848",
+        "intensidade": "5/5 — amargor extremo, palatabilidade muito desafiadora.",
+        "notas": "Cabeça: amargor imediato e penetrante | Corpo: herbáceo-camforado | Fundo: persistência longa de amargor (10–15 min)",
+        "bioma_de_origem": "Originária da Europa temperada (Bálcãs, Itália, Suíça). Naturalizada no Sul do Brasil em hortas e jardins (RS, SC, PR). Cultivo doméstico em quintais.",
+        "distribuicao_geografica": [
+          "Cultivo doméstico no RS, SC, PR.",
+          "Originária da Europa — Suíça, Itália (Vale do Aosta), Bálcãs, Pirineus.",
+          "Argentina e Uruguai: cultivo de imigrantes europeus."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "0,5–1 g de partes aéreas secas para 250 ml. Dose baixa é essencial.",
-        "metodo": "Infusão simples, curta.",
-        "reinfusoes": "",
-        "melhor_momento": "20–30 minutos antes das refeições (digestivo amargo). Não usar à noite (estimulante).",
-        "combina_com": "Gengibre · Hortelã · Funcho (suaviza o amargo) · Mel"
+        "temperatura_ideal": "85–90 °C.",
+        "tempo_de_infusao": "5 min coberto (mais que isso = amargor insuportável).",
+        "quantidade": "0,5–1 g de folhas secas para 250 ml — DOSE BAIXA é essencial.",
+        "metodo": "Infusão coberta, dose mínima. Tintura: 1:5 em álcool 70°.",
+        "reinfusoes": "1 reinfusão.",
+        "melhor_momento": "ANTES de refeições gordurosas (digestivo amargo) — 20 min antes. Não usar à noite.",
+        "combina_com": "Mel (para suavizar o amargor extremo) · Camomila · Anis-estrelado · Funcho"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para repelente de insetos.",
+        "aplicacoes": [
+          {
+            "titulo": "Sachês repelentes em armários",
+            "texto": "Tradição europeia — folhas secas em sachês contra traças. Tujona é repelente."
+          },
+          {
+            "titulo": "Infusão para banho relaxante (uso popular)",
+            "texto": "Diluição alta em água de banho — anti-inflamatório e relaxante muscular."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Digestivo amargo (estimula secreções gástricas, pancreáticas e biliares)",
-          "Antiparasitário intestinal (Ascaris, Enterobius)",
+          "Digestivo amargo (estimulante de secreções gástricas e biliares)",
+          "Antiparasitário intestinal (vermífugo)",
           "Antimicrobiano",
-          "Antipirético",
-          "Tônico estomacal",
           "Anti-inflamatório",
-          "Componentes ativos:",
-          "⚠️ ATENÇÃO — THUJONA:",
-          "Contraindicações:",
-          "Gestação — contraindicada (abortiva, neurotóxica ao feto)",
-          "Epilepsia — contraindicada (pró-convulsivante)",
-          "Lactação — evitar",
-          "Uso prolongado (>4 semanas) sem orientação",
-          "Crianças — contraindicada",
-          "Álcool em excesso — sinergismo de toxicidade"
+          "Carminativo (gases intestinais)",
+          "Tônico estomacal"
         ],
         "componentes_ativos": [
           {
-            "label": "ABSINTINA, ARTABSINA (lactonas sesquiterpênicas)",
-            "texto": "Amargo digestivo intenso"
+            "label": "Absintina (lactona sesquiterpênica)",
+            "texto": "Princípio amargo principal — Digestivo amargo extremo, antimicrobiano. Amargor 1:30.000 (detectável em diluição altíssima)"
           },
           {
-            "label": "THUJONA (alfa e beta)",
-            "texto": "Neurotóxica em dose alta; aromatizante em dose baixa"
+            "label": "Anabsintina, matricina",
+            "texto": "Outras lactonas sesquiterpênicas — Anti-inflamatório, antimicrobiano"
           },
           {
-            "label": "AZULENO",
-            "texto": "Anti-inflamatório"
+            "label": "Tujona (alfa- e beta-)",
+            "texto": "Cetona terpênica — Estimulante leve do SNC, antiparasitário. NEUROTÓXICA EM DOSES ALTAS — base da regulamentação europeia do absinto"
           },
           {
-            "label": "CHAMAZULENO",
-            "texto": "Anti-inflamatório (semelhante à camomila)"
+            "label": "Cineol (eucaliptol)",
+            "texto": "Aromático, expectorante leve"
           },
           {
-            "label": "ÁCIDO CLOROGÊNICO",
-            "texto": "Antioxidante"
-          },
-          {
-            "label": "FLAVONÓIDES",
+            "label": "Flavonóides (artemetina, quercetagetina)",
             "texto": "Anti-inflamatório, antioxidante"
+          },
+          {
+            "label": "Ácidos fenólicos (clorogênico, cafeico)",
+            "texto": "Antioxidante, hepatoprotetor"
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [
-          "Gestação — contraindicada (abortiva, neurotóxica ao feto)",
-          "Epilepsia — contraindicada (pró-convulsivante)",
-          "Lactação — evitar",
-          "Uso prolongado (>4 semanas) sem orientação",
-          "Crianças — contraindicada",
-          "Álcool em excesso — sinergismo de toxicidade"
+        "evidencia": [
+          {
+            "indicacao": "Dispepsia funcional (digestivo amargo)",
+            "evidencia": "Forte (uso tradicional + EMA)",
+            "populacao": "Adultos — uso milenar validado"
+          },
+          {
+            "indicacao": "Verminose intestinal",
+            "evidencia": "Moderada (uso tradicional)",
+            "populacao": "Adultos — uso histórico documentado"
+          },
+          {
+            "indicacao": "Doença de Crohn (adjuvante)",
+            "evidencia": "Preliminar",
+            "populacao": "Adultos — Krebs et al. (2010, RCT piloto)"
+          },
+          {
+            "indicacao": "Antimicrobiano (espectro amplo)",
+            "evidencia": "Moderada",
+            "populacao": "Estudos in vitro"
+          }
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "alerta_critico": {
+          "titulo": "TUJONA — neurotóxica em doses altas",
+          "titulo2": "EU regulamenta tujona em bebidas: <35 mg/kg",
+          "corpo": "A tujona é o componente neurotóxico que originou a proibição histórica do absinto na Europa (séc XIX–XX) — em doses muito altas causa convulsões, alucinações, morte. A REGULAÇÃO EUROPEIA atual permite tujona em bebidas alcoólicas (<35 mg/kg para 'amargos'), mas alimentos processados são limitados a 0,5 mg/kg. Em uso de infusão fraca (0,5–1 g/250 ml, 5 min): segura. NUNCA usar óleo essencial puro internamente. Gestação: CONTRAINDICADO (uterotônico, abortivo histórico). Lactação: evitar. Crianças: CONTRAINDICADO. Epilepsia: CONTRAINDICADO (tujona reduz limiar convulsivo)."
+        },
+        "contraindicacoes": [
+          "Gestação — CONTRAINDICADO (uterotônico, histórico abortivo)",
+          "Lactação — evitar",
+          "Crianças — CONTRAINDICADO",
+          "Epilepsia — CONTRAINDICADO (tujona)",
+          "Hepatopatia grave — evitar",
+          "Uso prolongado (>4 semanas) sem orientação"
+        ],
+        "interacoes": [
+          {
+            "label": "Anticonvulsivantes",
+            "texto": "Tujona reduz limiar convulsivo. Conduta: evitar uso conjunto"
+          },
+          {
+            "label": "IMAO",
+            "texto": "Possível potencialização. Conduta: evitar"
+          },
+          {
+            "label": "Sedativos farmacêuticos",
+            "texto": "Interação variável (tujona é estimulante leve, lactonas são sedativas). Conduta: monitorar"
+          }
+        ],
+        "efeitos_adversos": "Em dose baixa de infusão: tolerável (com aceite do amargor). Em dose alta ou OE: convulsões, alucinações, hepatotoxicidade. Histórico do 'absintismo' (séc. XIX): tremores, demência, alucinações em bebedores crônicos de absinto adulterado.",
+        "dose_maxima": "Folhas secas em infusão: 1 g/dia (uso curto — 7–10 dias máximo). Tintura: 1–2 ml/dia (uso curto). Extrato seco: conforme produto registrado.",
+        "fontes": [
+          "EMA/HMPC — Monografia Artemisia absinthium",
+          "Comissão Europeia — Regulamentação de tujona em bebidas (Reg. CE 1334/2008)",
+          "Krebs S et al. — A randomized clinical trial on Artemisia absinthium in Crohn's disease (Phytomedicine, 2010)",
+          "Hold KM et al. — Alpha-thujone (the active component of absinthe) (Proc Natl Acad Sci, 2000)",
+          "Farmacopeia Brasileira — referência histórica",
+          "Lachenmeier DW et al. — Absinthe — a review (Crit Rev Food Sci Nutr, 2008)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "3/3",
+            "observacao": "EXTREMO — possivelmente o mais intenso do catálogo. Absintina detectável em 1:30.000"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Verde-amargo herbáceo com fundo camforado",
+        "olfativo_descritores": [
+          "Verde-amargo (lactonas sesquiterpênicas)",
+          "Levemente camforado-mentolado",
+          "Herbáceo intenso",
+          "Notas aromáticas alpinas"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Muito leve",
+            "molecula": "Cineol traços"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa",
+            "molecula": "Mínima"
+          }
+        ],
+        "tatil": "Corpo leve, textura aquosa. Mas o amargor domina toda a percepção — outras dimensões são quase imperceptíveis. Persistência longuíssima (15+ min de amargor remanente).",
+        "descricao_integrada": "A losna é o protótipo absoluto do amargo vegetal — referência sensorial contra a qual todas as outras ervas amargas são medidas. Para o Ervatório, é ingrediente de uso pontual e cuidadoso, não para consumo regular. Sua história cultural (absinto da boemia parisiense, proibições históricas) é tão rica quanto sua farmacologia."
       },
       "cultura": {
-        "historia": "A losna é a planta mais carregada de história cultural do catálogo. Os egípcios a usavam como antiparasitário e afrodisíaco. Hipócrates a prescrevia para icterícia e gota. É mencionada no Apocalipse de João como \"Absinto\" — a estrela amarga que cai no fim dos tempos e envenena as águas.  Nos séculos XVIII e XIX, o absinto — destilado de Artemisia absinthium com teor alcoólico de 45–75% — tornou-se a bebida da boêmia europeia. Van Gogh, Verlaine, Toulouse-Lautrec, Oscar Wilde, Ernest Hemingway — todos eram bebedores de absinto. A loucura do genial foi atribuída à thujona do absinto (hoje sabe-se que o álcool era o principal responsável). O absinto foi proibido em quase toda a Europa de 1905 a 1990.  Na Serra Gaúcha (RS), os descendentes de imigrantes italianos e alemães mantêm a tradição de digestivos amargos com losna — chamados localmente de \"amargo\" ou \"amargo-gaúcho\".",
-        "cerimonial": "",
-        "brasil": "A losna ocupa um nicho cultural específico — é a erva dos descendentes europeus do Sul, não da tradição indígena ou africana. Seu uso popular é geograficamente concentrado e etnicamente marcado, o que a torna um documento cultural sobre a pluralidade da fitoterapia brasileira.",
-        "curiosidade": ""
+        "historia": "A losna tem 4.000+ anos de uso medicinal documentado (Papiros egípcios, Hipócrates, Dioscórides, Hildegarda de Bingen). O ABSINTO — destilado de losna popular nos cafés boêmios de Paris no fim do séc. XIX (Verlaine, Rimbaud, Van Gogh, Toulouse-Lautrec) — foi proibido em vários países entre 1908–1915 por causa do 'absintismo' (síndrome neurológica atribuída à tujona). Pesquisas modernas (Lachenmeier 2008) revelam que a maioria dos casos de absintismo era na verdade alcoolismo + adulterantes tóxicos (cobre, anti-monônio) — e não tujona em si. O absinto foi relegitimado na UE em 1988 com regulamentação de tujona.",
+        "cerimonial": "O 'ritual do absinto' parisiense (séc. XIX): copo de absinto + colher perfurada com cubo de açúcar + água gelada gotejando lentamente — produzia 'la louche' (turvação opalescente característica). Um dos rituais de bar mais codificados da história do alcoolismo europeu.",
+        "brasil": "Naturalizada no Sul do Brasil por imigrantes europeus (italianos, alemães). Cultivo doméstico em quintais. Tradição de uso medicinal segue a europeia (digestivo amargo, vermífugo). Uso recreativo (absinto) é nicho.",
+        "curiosidade": "Van Gogh, alcoólatra crônico de absinto, atribuiu suas alucinações à 'tujona' — moderna pesquisa (Lachenmeier 2008) sugere que era saturnismo (envelopes amarelo-cromo dos pincéis) + álcool puro. Mas a fama mítica da losna (e da tujona) é parte central da cultura simbolista francesa do fim do séc. XIX. A tujona-mito tornou-se mais influente que a tujona-molécula."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global / uso tradicional",
-        "status_anvisa": "Não monografado. Regulação como fitoterápico em discussão.",
-        "status_ema": "Monografia HMPC — traditional use para dispepsia.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Partes aéreas coletadas em floração (verão sulino — novembro–março)"
+        "eixo_botanico_tpc": "Funcional global",
+        "status_anvisa": [
+          "Uso tradicional reconhecido (com ressalvas de segurança)"
+        ],
+        "status_ema": "Monografia HMPC traditional use — uso digestivo amargo",
+        "status_fda": "Suplemento alimentar regulado. Tujona em bebidas é regulada.",
+        "certificacao_organica": "Reg. CE 1334/2008 — limites de tujona em bebidas (<35 mg/kg em 'amargos').",
+        "sazonalidade": "Folhas: pré-floração (final de primavera / início de verão) — maior concentração de princípios ativos."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Importação europeia (Suíça, Itália) ou cultivo doméstico no Sul do Brasil.",
+        "faixa_de_preco": [
+          "Folhas secas (importadas): R$ 60–150/100 g (premium)",
+          "Folhas secas (cultivo BR): R$ 30–80/100 g",
+          "Tintura (farmácia de manipulação): R$ 40–80/100 ml",
+          "Absinto (bebida alcoólica regulamentada): R$ 200–600/garrafa 700 ml"
+        ],
+        "formatos": "Folhas secas (infusão); Tintura hidroalcoólica; Absinto (bebida alcoólica); Cápsulas (raras)."
+      },
+      "destaques": [
+        {
+          "label": "Amargo de referência",
+          "texto": "Absintina detectável em 1:30.000 — possivelmente o amargor vegetal mais potente conhecido"
+        },
+        {
+          "label": "Tujona regulamentada",
+          "texto": "EU permite <35 mg/kg em bebidas tipo 'amargos' — relegitimou absinto em 1988"
+        },
+        {
+          "label": "Cultura do absinto",
+          "texto": "Paris boêmia do séc. XIX: Verlaine, Rimbaud, Van Gogh — mitologia rica"
+        }
+      ]
     },
     {
       "slug": "cambara",
