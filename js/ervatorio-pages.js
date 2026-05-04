@@ -388,6 +388,61 @@
     return n;
   }
 
+  // Conjunto de estados brasileiros (nomes completos) para detecção rápida.
+  var ESTADOS_BR_SET = (function() {
+    var s = {};
+    Object.keys(ESTADOS_BR).forEach(function(k) { s[ESTADOS_BR[k]] = true; });
+    return s;
+  })();
+
+  // Renderização hierárquica da faceta Localização: estados brasileiros
+  // ficam aninhados sob "Brasil"; demais países aparecem no nível raiz.
+  // Países sem estados são listados após Brasil, ordenados por contagem.
+  function renderLocalizacaoOptions(values, valueCounts) {
+    var brasilCount = valueCounts['Brasil'] || 0;
+    var states = [];
+    var countries = [];
+    values.forEach(function(v) {
+      if (v === 'Brasil') return;
+      if (ESTADOS_BR_SET[v]) states.push(v);
+      else countries.push(v);
+    });
+    // Estados ordenados por contagem desc (já vem sorted, mantém ordem global)
+    var selected = ervFilters['localizacao'] || new Set();
+
+    function optHTML(val, indent) {
+      var checked = selected.has(val);
+      return '<label class="erv-filter-option' + (indent ? ' erv-filter-option-nested' : '') + '">' +
+        '<input type="checkbox" data-facet="localizacao" value="' + safeEsc(val) + '"' + (checked ? ' checked' : '') + '>' +
+        '<span class="erv-filter-option-label" title="' + safeEsc(val) + '">' + safeEsc(val) + '</span>' +
+        '<span class="erv-filter-option-tally">' + (valueCounts[val] || 0) + '</span>' +
+        '</label>';
+    }
+
+    var html = '';
+    if (brasilCount > 0 || states.length) {
+      // Agrupador "Brasil" colapsável quando tem estados
+      var hasStates = states.length > 0;
+      var anyStateSelected = states.some(function(s) { return selected.has(s); });
+      var groupCollapsed = !selected.has('Brasil') && !anyStateSelected;
+      html += '<div class="erv-filter-loc-group' + (groupCollapsed ? ' collapsed' : '') + '">' +
+        '<div class="erv-filter-loc-parent">' +
+          optHTML('Brasil', false);
+      if (hasStates) {
+        html += '<button type="button" class="erv-filter-loc-chevron" data-action="toggle-loc-group" aria-label="Mostrar estados">▾</button>';
+      }
+      html += '</div>';
+      if (hasStates) {
+        html += '<div class="erv-filter-loc-children">';
+        states.forEach(function(s) { html += optHTML(s, true); });
+        html += '</div>';
+      }
+      html += '</div>';
+    }
+    countries.forEach(function(c) { html += optHTML(c, false); });
+    return html;
+  }
+
   function renderFiltersSidebar(fichas) {
     var body = document.getElementById('ervFiltersBody');
     if (!body) return;
@@ -410,6 +465,8 @@
         '<div class="erv-filter-options">';
       if (!values.length) {
         html += '<div class="erv-filter-empty">Sem dados disponíveis</div>';
+      } else if (facet.id === 'localizacao') {
+        html += renderLocalizacaoOptions(values, counts[facet.id]);
       } else {
         values.forEach(function(val) {
           var checked = ervFilters[facet.id] && ervFilters[facet.id].has(val);
@@ -434,6 +491,14 @@
     body.querySelectorAll('[data-action="toggle-facet"]').forEach(function(btn) {
       btn.addEventListener('click', function() {
         btn.parentElement.classList.toggle('collapsed');
+      });
+    });
+    // Toggle expand/collapse do grupo Brasil → estados
+    body.querySelectorAll('[data-action="toggle-loc-group"]').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var group = btn.closest('.erv-filter-loc-group');
+        if (group) group.classList.toggle('collapsed');
       });
     });
     // Checkbox change
