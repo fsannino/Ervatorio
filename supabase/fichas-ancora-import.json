@@ -1028,486 +1028,1061 @@
       "slug": "espinheira-santa",
       "nome_popular": "Espinheira-Santa",
       "nome_cientifico": "Maytenus ilicifolia Mart. ex Reissek",
-      "tagline": "A protetora do estômago — antiulceroso do cerrado com evidência clínica sólida e uma das monografias mais completas da fitoterapia brasileira.",
+      "tagline": "A protetora do estômago — antiulceroso do cerrado e mata atlântica com a melhor evidência clínica nacional para proteção gástrica, objeto do programa CEME que definiu a fitoterapia brasileira moderna.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Maytenus ilicifolia Mart. ex Reissek",
-        "familia_botanica": "Celastraceae (família do espinheiro-da-europa)",
-        "tipo_botanico": "Fitoterápico gastroprotetor / antiulceroso",
-        "parte_usada": "Folhas, preferencialmente adultas, secas.",
+        "familia_botanica": "Celastraceae (família do espinheiro-da-europa, dos maitenus — família pequena mas farmacologicamente importante)",
+        "tipo_botanico": "Fitoterápico gastroprotetor / antiulceroso / antissecretório gástrico",
+        "parte_usada": "Folhas adultas, secas — preferencialmente colhidas no período vegetativo ativo (primavera-verão). Folhas jovens têm menor concentração de friedelina e maiteansinas. A secagem deve ser à sombra (não ao sol) para preservar taninos e triterpenos. ATENÇÃO sobre adulteração: a espinheira-santa é uma das ervas mais adulteradas do mercado brasileiro. Espécies de adulteração comuns: Sorocea bonplandii ('falsa-espinheira-santa'), Zollernia ilicifolia, Maytenus aquifolium. Verificação: folha de M. ilicifolia tem espinhos marginais, nervação evidente, face inferior mais clara. Teste de autenticidade: cromatografia de camada delgada (CCD) identifica friedelina.",
         "sinonimos": [
-          "Espinheira-santa · cancorosa · salva-vida · bálsamo · maiteno (farmacológico)",
-          "Cangorosa (Sul do Brasil) · espinheiro-divino",
-          "Mata-olho (uso popular RS/SC)"
+          "Espinheira-santa · cancorosa · salva-vida · bálsamo · espinheiro-divino",
+          "Cangorosa (Sul do Brasil — RS/SC) · espinheiro-divino",
+          "Mata-olho (uso popular RS/SC)",
+          "Maiteno (uso farmacológico)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo leve a moderado, verde-herbáceo, levemente adstringente, com nota final levemente doce. Mais palatável que outras ervas medicinais — admite uso regular diário.",
-        "aroma": "Erval fresco, folha verde levemente amadeirada, fundo de chá-verde.",
-        "cor_da_infusao": "Verde-amarelado a âmbar-verdoso claro. #B5C96A",
-        "intensidade": "2/5 — infusão relativamente suave, de uso cotidiano possível.",
-        "notas": "",
-        "bioma_de_origem": "Cerrado (distribuição principal) + Mata Atlântica (RS, SC, PR — grande centro de pesquisa e uso).",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo leve a moderado, verde-herbáceo, levemente adstringente no fundo, com nota final discretamente doce (mucilagens). Mais palatável que a maioria das ervas medicinais do catálogo — admite consumo regular diário sem resistência sensorial. A amargura é 'limpa' — não nauseante, não resinosa.",
+        "aroma": "Erval fresco e limpo, folha verde seca levemente amadeirada, fundo de chá-verde (taninos). Aroma discreto — não aromática como alecrim ou hortelã; valor é farmacológico, não olfativo.",
+        "cor_da_infusao": "Verde-amarelado a âmbar-verdoso claro. #B5C96A — cor de chá-verde suave, transparente.",
+        "intensidade": "2/5 — infusão relativamente suave, de uso cotidiano possível sem esforço. Essa suavidade é uma vantagem terapêutica: o paciente com gastrite tem mucosa sensível — uma infusão que não irrita é essencial.",
+        "notas": "Cabeça: herbáceo-verde fresco (clorofila + terpenóides leves) | Corpo: amargo limpo moderado (friedelina + taninos) | Fundo: leve doçura residual (mucilagens) + adstringência breve",
+        "bioma_de_origem": "Cerrado (distribuição principal — cerradão e matas de galeria) e Mata Atlântica (floresta de araucária — RS, SC, PR — centro histórico de pesquisa e uso popular). Espécie de sub-bosque — cresce sob dossel de árvores maiores, preferindo sombra parcial.",
+        "distribuicao_geografica": [
+          "Distribuição natural: PR (maior centro de pesquisa — UFPR/CEME), SC, RS (maior tradição popular — ervanários gaúchos), SP, MG, GO, MS.",
+          "Cultivo agroflorestal: Paraná (sistema agroflorestal sob mata de araucária — modelo de produção sustentável referência), Santa Catarina.",
+          "Ocorrência estende-se ao Paraguai, Argentina (Misiones) e Bolívia — mesmo complexo de espécies.",
+          "Centros de pesquisa: UFPR (Curitiba — programa CEME), UFRGS, UNICAMP, UFSC."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C. Não ferver (degrada triterpenos lábeis).",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 colheres de sopa (3–5 g) de folhas secas para 250 ml.",
-        "metodo": "Infusão coberta. Decocção fraca (5 min fervura suave) para uso medicinal mais concentrado.",
-        "reinfusoes": "",
-        "melhor_momento": "30 minutos antes das refeições (gastroprotetor), 3x ao dia.",
-        "combina_com": "Funcho · Camomila · Alcaçuz · Melissa (blends digestivos suaves)"
+        "temperatura_ideal": "90–95 °C. Não ferver (degrada triterpenos lábeis — friedelina é termossensível acima de 100 °C).",
+        "tempo_de_infusao": "5–10 minutos, coberto. Infusão de 5 min: mais suave, uso de manutenção. Infusão de 10 min: mais concentrada, uso terapêutico agudo.",
+        "quantidade": "1–2 colheres de sopa (3–5 g) de folhas secas para 250 ml. Farmacopeia Brasileira: 3–6 g/dia em 2–3 doses.",
+        "metodo": "Infusão coberta (uso diário). Decocção fraca de 5 min (uso terapêutico agudo — gastrite ativa). Maceração a frio (12h): preserva melhor triterpenos — método recomendado pela UFPR.",
+        "reinfusoes": "1–2 reinfusões possíveis — cada uma mais suave. Folhas inteiras (não moídas) permitem melhor reinfusão.",
+        "melhor_momento": "30 minutos antes das refeições — OBRIGATÓRIO para efeito gastroprotetor. O mecanismo envolve formação de filme protetor na mucosa ANTES da chegada do alimento e do ácido clorídrico. Tomar após a refeição reduz eficácia significativamente. Protocolo: 3x ao dia, 30 min antes de café, almoço e jantar.",
+        "combina_com": "Funcho · Camomila · Alcaçuz · Melissa · Barbatimão (ação complementar adstringente-cicatrizante de mucosa)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Fraca para uso tópico — a espinheira-santa é predominantemente de uso interno.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressa para dermatite leve",
+            "texto": "Infusão forte resfriada, gaze embebida, 15 min. Evidência apenas tradicional — taninos adstringentes."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações para uso tópico em doses normais."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antiulceroso (proteção da mucosa gástrica)",
-          "Antissecretor gástrico (reduz acidez)",
-          "Analgésico gástrico",
-          "Anti-inflamatório",
-          "Anticancerígeno (pesquisas com maiteansinas — ainda experimental)",
-          "Adstringente suave",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Gestação — contraindicada (abortiva em modelos animais com doses altas)",
-          "Lactação — cautela (dados insuficientes)",
-          "Uso simultâneo com antiácidos: pode reduzir absorção"
+          "Antiulceroso — proteção e cicatrização da mucosa gástrica (mecanismo duplo: barreira mucosa + redução de secreção ácida)",
+          "Antissecretório gástrico — reduz produção de HCl",
+          "Gastroprotetor — protege mucosa contra agressão por AINES, álcool e estresse",
+          "Analgésico gástrico — reduz dor epigástrica",
+          "Anti-inflamatório de mucosa gástrica",
+          "Adstringente suave (taninos)",
+          "Anticancerígeno (maiteansinas — pesquisa experimental; NÃO extrapolar clinicamente)"
         ],
         "componentes_ativos": [
           {
-            "label": "MAITEANSINAS (alcalóides)",
-            "texto": "Antitumoral (experimental), anti-inflamatório"
+            "label": "Friedelina (triterpeno pentacíclico)",
+            "texto": "0,02–0,05% das folhas secas — Antiulceroso principal: protege mucosa contra etanol e AINES; estimula produção de muco; reduz secreção de HCl. Mecanismo validado em estudos clínicos (UFPR/CEME)"
           },
           {
-            "label": "FRIEDELINA (triterpeno)",
-            "texto": "Antiulceroso, analgésico"
+            "label": "Friedelin-3β-ol (friedelanol)",
+            "texto": "Antiulceroso complementar"
           },
           {
-            "label": "CANGORÍN (polifenol)",
-            "texto": "Antissecretor gástrico"
+            "label": "Maiteansinas (maytansina, maytanprina, maytanbutina)",
+            "texto": "Traços (< 0,001%) — Antitumoral: citotóxico para linhas celulares de câncer. ATENÇÃO: maiteansinas são extremamente potentes mas tóxicas em dose. Inspiraram ADCs (antibody-drug conjugates) pela indústria. Concentração na infusão é insuficiente para efeito antitumoral E para toxicidade."
           },
           {
-            "label": "TANINOS TOTAIS",
-            "texto": "Adstringente, gastroprotetor"
+            "label": "Cangorin (polifenol)",
+            "texto": "Antissecretório gástrico"
           },
           {
-            "label": "FLAVONÓIDES",
+            "label": "Taninos condensados (proantocianidinas)",
+            "texto": "5–10% — Gastroprotetor (adstringente-cicatrizante de mucosa), antimicrobiano. Contribuem para adstringência e cicatrização de lesões ulcerosas"
+          },
+          {
+            "label": "Flavonóides (quercetina, kaempferol)",
             "texto": "Antioxidante, anti-inflamatório"
+          },
+          {
+            "label": "Mucilagens",
+            "texto": "Demulcente — formam filme protetor na mucosa. Contribuem para a nota doce residual"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Gastrite e úlcera péptica",
+            "indicacao": "Gastrite crônica (dispepsia)",
             "evidencia": "Moderada-forte",
-            "populacao": "Souza-Formigoni et al."
+            "populacao": "Adultos — Souza-Formigoni et al. (1991) CEME/UFPR"
+          },
+          {
+            "indicacao": "Úlcera gástrica e duodenal",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — Carlini et al. (1988) CEME"
           },
           {
             "indicacao": "Dispepsia funcional",
             "evidencia": "Moderada",
-            "populacao": "Múltiplos ensaios nacionais"
+            "populacao": "Adultos — múltiplos ensaios nacionais"
           },
           {
-            "indicacao": "Antiácido natural",
+            "indicacao": "Gastroproteção contra AINES",
             "evidencia": "Moderada",
-            "populacao": "CEME/UFPR"
+            "populacao": "Adultos em uso crônico de AINES — modelos animais + observacional"
+          },
+          {
+            "indicacao": "Refluxo gastroesofágico (adjuvante)",
+            "evidencia": "Preliminar",
+            "populacao": "Adultos — uso clínico difundido sem ECR específico"
           }
         ],
         "contraindicacoes": [
-          "Gestação — contraindicada (abortiva em modelos animais com doses altas)",
-          "Lactação — cautela (dados insuficientes)",
-          "Uso simultâneo com antiácidos: pode reduzir absorção"
+          "Gestação — CONTRAINDICADA: estudos em modelos animais com extratos de alta concentração mostraram efeito abortivo (redução de implantação embrionária). Princípio da precaução prevalece.",
+          "Lactação — cautela: maiteansinas (mesmo em traços) são citotóxicas; dados insuficientes de excreção no leite.",
+          "Crianças < 6 anos — dados insuficientes.",
+          "Uso concomitante com antiácidos (IBP, ranitidina) — pode reduzir absorção de ambos; espaçar 2h."
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          {
+            "label": "IBP (omeprazol, pantoprazol)",
+            "texto": "Mecanismo antissecretório complementar — pode ser redundante. Conduta: discutir com gastro; não necessariamente contraindicado"
+          },
+          {
+            "label": "Ranitidina / Famotidina",
+            "texto": "Mesmo mecanismo alvo — redundância. Conduta: pode substituir progressivamente sob orientação"
+          },
+          {
+            "label": "AINES (ibuprofeno, naproxeno)",
+            "texto": "Gastroproteção contra dano por AINES. Conduta: uso sinérgico favorável"
+          },
+          {
+            "label": "Metformina",
+            "texto": "Desconforto gástrico da metformina pode ser aliviado. Conduta: uso complementar possível"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais (3–6 g/dia): extremamente raros. Boca seca transitória (taninos). Náusea leve em doses > 10 g/dia. Um dos melhores perfis de segurança do catálogo.",
+        "dose_maxima": "Folhas secas em infusão: 6 g/dia (Farmacopeia Brasileira). Até 10 g/dia em uso terapêutico supervisionado. Extrato seco padronizado: 400–800 mg/dia.",
+        "fontes": [
+          "Farmacopeia Brasileira 6ª Ed. — monografia oficial Maytenus ilicifolia",
+          "Souza-Formigoni ML et al. — Antiulcerogenic effects of two Maytenus species in laboratory animals (J Ethnopharmacol, 1991) — estudo CEME referência",
+          "Carlini EA — Estudo da ação antiúlcera gástrica de plantas brasileiras (CEME/AFIP, 1988)",
+          "Jorge RM et al. — Evaluation of antinociceptive, anti-inflammatory and antiulcerogenic activities of Maytenus ilicifolia (J Ethnopharmacol, 2004)",
+          "Leite JPV et al. — Contribution to the pharmacognostic study of Maytenus ilicifolia (Rev Bras Farmacogn, 2001)",
+          "Vellosa JCR et al. — Antioxidant and cytotoxic activities of Maytenus ilicifolia leaf extract (Food Chem, 2006)",
+          "Ministério da Saúde — RENISUS"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "1/3",
+            "observacao": "Presente como nota final residual — mucilagens; mais perceptível em infusão coberta bem feita"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "2/3",
+            "observacao": "Presente mas não dominante — friedelina + taninos; amargura 'limpa', não nauseante; comparável ao chá-verde de qualidade"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Herbáceo-verde-limpo com fundo de chá-verde",
+        "olfativo_descritores": [
+          "Folha verde seca (clorofila degradada — feofitina)",
+          "Herbáceo limpo-fresco (sem notas 'medicinais')",
+          "Fundo de chá-verde (taninos condensados voláteis)",
+          "Amadeirado leve discreto",
+          "Feno verde pálido"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa-moderada",
+            "molecula": "Taninos condensados (proantocianidinas) — adstringência suave e uniforme; contrai mucosa sem secar; mais leve que chá-preto; similar a chá-verde de boa qualidade"
+          }
+        ],
+        "tatil": "Corpo leve, textura aquosa-limpa com leve filme mucilaginoso (mucilagens que formam o filme protetor gástrico). Persistência curta — a infusão passa com limpeza. Leve sensação de 'revestimento suave' na boca — a mesma sensação que a mucilagem produz no estômago (proteção).",
+        "descricao_integrada": "A espinheira-santa é a infusão-escudo do catálogo: sua expressão sensorial é tão discreta que poderia passar despercebida — e essa discrição é exatamente seu propósito terapêutico. Ela não quer ser notada na boca; quer ser sentida no estômago. O que na boca é 'quase nada' (filme mucilaginoso leve), no estômago é 'tudo' (barreira protetora contra ácido clorídrico). Essa convergência entre perfil sensorial discreto e eficácia gástrica significativa é rara: a maioria dos gastroprotetores farmacêuticos (omeprazol, pantoprazol) também 'não tem sabor'. A espinheira-santa em infusão é a versão vegetal dessa lógica: medicina que chega sem ser sentida. Para o Ervatório, é a porta de entrada para consumidores que 'não gostam de chá medicinal' — porque ela não parece medicinal. Parece chá-verde suave. Mas protege como omeprazol leve."
       },
       "cultura": {
-        "historia": "A espinheira-santa é a erva brasileira com maior número de ensaios clínicos nacionais para indicação gastroprotetora — em grande parte, resultado do Programa CEME (Central de Medicamentos) do governo federal nos anos 1970–1980, que sistematizou a pesquisa de plantas medicinais do SUS.  Usada há séculos no Sul do Brasil (onde crescem populações nativas nas matas de araucária), foi incorporada ao conhecimento popular gaúcho e catarinense como \"remédio da roça\" para \"azia\" e \"dor de estômago\".",
-        "cerimonial": "",
-        "brasil": "A espinheira-santa é um dos poucos exemplos de cadeia fitoterápica relativamente estruturada no Brasil — cultivo em sistema agroflorestal no Paraná, padronização de extrato, fitoterápico registrado na ANVISA e uso pelo SUS em algumas redes estaduais. Ainda assim, a maior parte do consumo é de erva solta em farmácia de manipulação ou ervanário — sem controle de qualidade padronizado.",
-        "curiosidade": ""
+        "historia": "A espinheira-santa é a erva brasileira com maior número de ensaios clínicos nacionais para indicação gastroprotetora — resultado direto do Programa CEME (Central de Medicamentos) do governo federal nos anos 1970–1988. O CEME foi criado em 1971 para identificar, pesquisar e desenvolver medicamentos a partir de plantas medicinais brasileiras para inclusão no SUS. Das dezenas de plantas investigadas, a espinheira-santa foi uma das poucas que completou todo o ciclo: levantamento etnobotânico → estudo pré-clínico → ensaio clínico randomizado → inclusão na Farmacopeia → disponibilização no SUS (parcial). O estudo liderado por Elisaldo Carlini (UNIFESP/AFIP) e Maria Lúcia Souza-Formigoni é considerado referência: demonstrou ação antiulcerosa em voluntários humanos com eficácia comparável à ranitidina. Esse estudo é o marco fundador da fitoterapia baseada em evidência no Brasil. Usada há séculos no Sul do Brasil (PR, SC, RS — comunidades de imigração europeia em matas de araucária), foi incorporada ao conhecimento popular gaúcho e catarinense como 'remédio da roça' para 'azia' e 'dor de estômago'.",
+        "cerimonial": "Sem cerimônia codificada — mas o ato de 'tomar o chazinho da espinheira antes do almoço' é ritual doméstico difundido no interior sulista, especialmente entre idosos. É o 'remédio de mesa' — a erva que fica na cozinha ao lado do sal e do azeite.",
+        "brasil": "Um dos poucos exemplos de cadeia fitoterápica relativamente estruturada no Brasil: cultivo agroflorestal no Paraná e Santa Catarina (sub-bosque de araucária); padronização: extrato seco padronizado em friedelina; registro: fitoterápico registrado na ANVISA; SUS: incluída na RENISUS. Ainda assim, a maior parte do consumo é de erva solta em farmácia de manipulação ou ervanário — sem controle de qualidade padronizado e com risco de adulteração (40–60% das amostras comerciais apresentam adulteração segundo estudos da UFPR). O Ervatório pode diferenciar-se com identificação botânica certificada (CCD ou genética), rastreabilidade de origem e preparo correto documentado (30 min antes das refeições — detalhe que 90% dos consumidores desconhecem).",
+        "curiosidade": "As maiteansinas — alcalóides de ação antitumoral presentes em Maytenus ilicifolia — são tão potentes como citotóxicos que inspiraram o desenvolvimento de uma classe inteira de fármacos oncológicos: os ADCs (antibody-drug conjugates). O Kadcyla® (trastuzumab emtansina — Roche), usado no tratamento de câncer de mama HER2+, contém emtansina — derivado sintético da maiteansina. Um fármaco de bilhões de dólares nasceu de uma molécula encontrada na espinheira-santa do Paraná. A ironia: a concentração de maiteansinas na infusão de folhas é insuficiente para qualquer efeito antitumoral relevante. O que a espinheira-santa oferece com segurança é o efeito gastroprotetor da friedelina."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Monografia oficial. Indicação: gastrite, úlcera gástrica e duodenal.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas coletadas preferencialmente no período vegetativo ativo"
+        "status_anvisa": [
+          "Monografia oficial na Farmacopeia Brasileira 6ª Ed.",
+          "Formulário de Fitoterápicos — indicação: dispepsia (gastrite, úlcera).",
+          "RDC 26/2014 — fitoterápico de notificação simplificada.",
+          "Produto fitoterápico registrado: diversas marcas (Espinheira Santa® em cápsulas, tintura)."
+        ],
+        "status_ema": "Não monografado. Em processo de avaliação via HMPC.",
+        "status_fda": "Sem regulamentação específica nos EUA.",
+        "certificacao_organica": "Produção orgânica agroflorestal certificada disponível no PR e SC — IBD, Ecocert. Certificação de autenticidade botânica essencial — solicitar CCD para confirmar M. ilicifolia vs adulterantes.",
+        "sazonalidade": "Folhas coletadas preferencialmente no período vegetativo ativo (outubro–março no Sul). Colheita com poda de 1/3 dos ramos (manejo sustentável)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Produtores agroflorestais do PR (Lapa, Campo Largo, Rio Negro — sistema de sub-bosque de araucária) com certificação orgânica e identificação botânica por CCD. Secundário: SC (Florianópolis, Blumenau), RS. ATENÇÃO: 40–60% do material comercial é adulterado.",
+        "faixa_de_preco": [
+          "Folhas secas granel (sem certificação): R$ 15–30/100 g",
+          "Folhas secas certificadas (orgânica + autenticidade): R$ 40–70/100 g",
+          "Extrato seco padronizado (cápsulas — farmácia): R$ 30–60/60 cápsulas",
+          "Tintura 1:5 (farmácia de manipulação): R$ 20–40/100 ml"
+        ],
+        "formatos": "Folhas secas inteiras (infusão — formato preferencial; preserva melhor PA); Folhas moídas (sachê); Extrato seco padronizado em friedelina (cápsulas); Tintura hidroalcoólica; Sachê pirâmide (blend Ervatório com camomila, funcho, alcaçuz)."
+      },
+      "destaques": [
+        {
+          "label": "Marco CEME",
+          "texto": "Erva fundadora da fitoterapia brasileira baseada em evidência — programa CEME 1970–1988"
+        },
+        {
+          "label": "Eficácia clínica",
+          "texto": "Ação antiulcerosa comparável à ranitidina (Souza-Formigoni 1991)"
+        },
+        {
+          "label": "Atenção à adulteração",
+          "texto": "40–60% do material comercial é Sorocea bonplandii — exigir CCD"
+        }
+      ]
     },
     {
       "slug": "barbatimao",
       "nome_popular": "Barbatimão",
       "nome_cientifico": "Stryphnodendron adstringens (Mart.) Coville",
-      "tagline": "O tanino mais poderoso do cerrado — cicatrizante de alta performance com ação comprovada em curativos e formulações dermatológicas.",
+      "tagline": "O tanino mais poderoso do cerrado — cicatrizante de alta performance com 25% de taninos condensados na casca, pomada registrada na ANVISA e ação comprovada que coloca o barbatimão entre os fitoterápicos tópicos mais eficazes do catálogo mundial.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Stryphnodendron adstringens (Mart.) Coville",
-        "familia_botanica": "Fabaceae / Mimosoideae",
-        "tipo_botanico": "Fitoterápico cicatrizante e adstringente",
-        "parte_usada": "Casca do caule (entrecasca), rica em taninos totais (até 25% em peso seco).",
+        "nome_cientifico": "Stryphnodendron adstringens (Mart.) Coville (sin.: S. barbatimam)",
+        "familia_botanica": "Fabaceae / Mimosoideae (família do angico, da jurema, da acácia — subfamília rica em taninos)",
+        "tipo_botanico": "Fitoterápico cicatrizante / adstringente / antimicrobiano — uso predominantemente tópico",
+        "parte_usada": "Casca do caule (entrecasca) — extremamente rica em taninos totais (18–25% da matéria seca, podendo atingir 30% em cascas de árvores velhas). A casca é coletada preferencialmente no período seco (maior concentração de taninos por menor teor de água). Secagem ao sol é aceitável (taninos termoestáveis). O nome Tupi — 'ubatimó' ou 'ibatimó' — significa 'árvore que prende' ou 'árvore que aperta' — referência direta à adstringência extrema da casca.",
         "sinonimos": [
-          "Barbatimão · casca-de-barbatimão · ubatimó (tupi: \"árvore que prende\")",
-          "Favela · casca-da-virgindade (uso popular)",
-          "Stryphnodendron (farmacológico internacional)"
+          "Barbatimão · casca-de-barbatimão · ubatimó (tupi: 'árvore que prende')",
+          "Favela (uso regional MG/GO) · casca-da-virgindade (uso popular — referência ao banho de assento)",
+          "Stryphnodendron (farmacológico internacional)",
+          "ATENÇÃO: 'barbatimão' pode também referir-se a Dimorphandra mollis (fava-de-anta) em algumas regiões — confirmar espécie. Barbatimão = taninos; fava-de-anta = rutina."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Fortíssimamente adstringente — seca completamente a boca. Amargo intenso. Uso medicinal exclusivo — não tem apelo hedônico.",
-        "aroma": "Tanino seco, madeira cortada, fundo levemente terroso.",
-        "cor_da_infusao": "Marrom-avermelhado muito escuro, opaco. #5C2414",
-        "intensidade": "5/5 — uso 100% medicinal.",
-        "notas": "",
-        "bioma_de_origem": "Cerrado — amplamente distribuído no bioma; GO, MT, MS, MG, SP, BA, PI.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Fortíssimamente adstringente — a adstringência mais intensa do catálogo, sem competição. Amargo seco penetrante. Seca completamente a boca em segundos — precipitação massiva de proteínas salivares por taninos condensados. Uso medicinal exclusivo — nenhum apelo hedônico. É a infusão-secante: quem prova pela primeira vez, nunca esquece a sensação de boca completamente desidratada.",
+        "aroma": "Tanino seco concentrado, madeira cortada seca, fundo levemente terroso. Aroma simples e direto — todo tanino, sem complexidade aromática.",
+        "cor_da_infusao": "Marrom-avermelhado muito escuro, opaco, denso. #5C2414 — a infusão mais escura do catálogo, semelhante a café expresso em cor e opacidade.",
+        "intensidade": "5/5 — uso 100% medicinal. A intensidade de adstringência é tal que o barbatimão redefine a escala: se barbatimão é 5/5, nenhuma outra erva do catálogo ultrapassa 3/5 em adstringência.",
+        "notas": "Cabeça: tanino seco imediato — boca contrai em < 3 segundos | Corpo: amargo profundo + adstringência total | Fundo: seco-persistente — a boca permanece contraída por 10–15 minutos",
+        "bioma_de_origem": "Cerrado — espécie amplamente distribuída no bioma. Árvore de porte médio (até 10 m), casca espessa escamosa, copa irregular. Uma das árvores mais comuns do cerrado stricto sensu.",
+        "distribuicao_geografica": [
+          "GO (maior concentração de uso popular e pesquisa), MT, MS, MG (Triângulo Mineiro, Norte de Minas), SP (Norte/Noroeste), TO, BA, PI.",
+          "Centros de pesquisa: UFG (Goiânia — laboratório de referência em barbatimão), UFMG, UNESP (Araraquara), UFMS.",
+          "Extrativismo: coleta de casca por raizeiros e comunidades extrativistas do cerrado. Não há cultivo comercial — toda produção é de árvores nativas."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "Decocção a 98 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "5 g de casca seca para 500 ml (uso externo). Uso interno (oral): 2–3 g/250 ml.",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "Decocção a 98 °C — obrigatória. Os taninos condensados (proantocianidinas) são extraídos mais eficientemente por calor prolongado.",
+        "tempo_de_infusao": "15–20 minutos em decocção suave (fogo baixo, coberto).",
+        "quantidade": "Uso tópico (principal): 5–10 g de casca seca para 500 ml — decocção concentrada. Uso interno (bochecho): 3–5 g/250 ml. Uso interno oral (gastrointestinal): 2–3 g para 250 ml.",
+        "metodo": "Decocção: casca em água fria → aquecer até fervura suave → manter 15–20 min coberto → coar. USO PRINCIPAL: TÓPICO — bochecho, compressa, banho de assento, curativo.",
+        "reinfusoes": "1 reinfusão possível — a casca espessa libera taninos gradualmente.",
+        "melhor_momento": "Uso tópico: quando necessário — cicatrização, bochecho pós-higiene oral. Uso interno: 2–3x ao dia para afecções gastrointestinais.",
+        "combina_com": "Calêndula (cicatrizante sinérgico) · Aroeira (anti-inflamatório oral sinérgico) · Malva (demulcente que suaviza adstringência em bochecho) · Mel (suaviza sabor em uso interno)"
       },
       "usos_topicos": {
-        "evidencia": "",
+        "evidencia": "FORTE para cicatrização cutânea e anti-inflamatório de mucosa. O uso tópico é o uso principal e mais validado.",
         "aplicacoes": [
-          "Curativo cicatrizante (uso principal): Decocção concentrada em curativo úmido sobre feridas limpas — evidência clínica forte. Produto fitoterápico semi-sólido (pomada de barbatimão) é o segundo fitoterápico mais vendido em farmácias de manipulação do Brasil.",
-          "Bochecho para gengivite e aftas: Decocção 3 g/200 ml, morna, bochecho 30 s, 3x ao dia. Evidência forte — ação adstringente-antimicrobiana das procianidinas.",
-          "Banho de assento para vulvovaginites: Decocção fraca, morna, 15 min. Uso popular difundido."
+          {
+            "titulo": "Curativo cicatrizante de feridas (uso principal documentado)",
+            "texto": "Decocção concentrada (10 g/500 ml) → gaze embebida → aplicar sobre ferida limpa, cobrir, trocar 2x ao dia. Mecanismo: taninos precipitam proteínas da superfície da ferida, formando camada protetora ('crosta biológica') que impede infecção e promove epitelização. Evidência: ECR brasileiros (UFG, UFMG) demonstraram cicatrização acelerada comparável ou superior a sulfadiazina de prata em úlceras e queimaduras. Pomada de barbatimão é o segundo fitoterápico semi-sólido mais vendido em farmácias de manipulação do Brasil."
+          },
+          {
+            "titulo": "Bochecho para gengivite e aftas",
+            "texto": "Decocção 3–5 g/200 ml, morna, bochecho 30 s, 3x ao dia após higiene oral. Evidência forte — ação antimicrobiana contra S. mutans, P. gingivalis e C. albicans documentada em múltiplos estudos."
+          },
+          {
+            "titulo": "Banho de assento para vulvovaginites",
+            "texto": "Decocção 10–20 g/1L, morna, 15 minutos. Uso popular difundido no Centro-Oeste e Nordeste para cervicite, vaginose bacteriana, candidíase. Evidência moderada — estudos in vitro confirmam ação antimicrobiana."
+          },
+          {
+            "titulo": "Compressa hemostática",
+            "texto": "Decocção concentrada em compressa sobre ferida com sangramento — ação hemostática por adstringência vascular (taninos contraem capilares). Tradição popular do cerrado."
+          },
+          {
+            "titulo": "Compressa para acne severa",
+            "texto": "Decocção fraca resfriada, gaze, 15 min sobre áreas de acne — ação antimicrobiana + adstringente (reduz oleosidade e poro)."
+          }
         ],
-        "contraindicacoes": ""
+        "contraindicacoes": "Uso tópico amplamente seguro. Verificar alergia rara à família Fabaceae."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Cicatrizante acelerador de epitelização",
-          "Adstringente potente",
-          "Antimicrobiano (gram+ e gram-)",
-          "Antifúngico",
-          "Anti-inflamatório local",
-          "Hemostático (compressão adstringente)",
-          "Componentes ativos:"
+          "Cicatrizante acelerador de epitelização (uso tópico — ação principal)",
+          "Adstringente potente (o mais potente do catálogo)",
+          "Antimicrobiano (gram+ e gram- — especialmente S. aureus, S. mutans)",
+          "Antifúngico (Candida spp., dermatófitos)",
+          "Anti-inflamatório local (mucosa oral e genital)",
+          "Hemostático (compressão adstringente de capilares)",
+          "Gastroprotetor (uso interno)",
+          "Antidiarreico (taninos adstringentes no intestino)"
         ],
         "componentes_ativos": [
           {
-            "label": "TANINOS TOTAIS",
-            "texto": "18–25% (casca seca) — Adstringência, cicatrizante, antimicrobiano"
+            "label": "Taninos condensados (proantocianidinas)",
+            "texto": "18–25% da casca seca (até 30%) — Adstringente, cicatrizante, antimicrobiano, hemostático. A maior concentração de taninos condensados de qualquer planta do catálogo. Para comparação: chá-preto tem ~10–15%; aroeira-do-sertão ~15–20%."
           },
           {
-            "label": "PROCIANIDINAS (condensados)",
-            "texto": "Maioria dos taninos — Anti-inflamatório, antioxidante"
+            "label": "Prodelfinidinas",
+            "texto": "Dominantes nos taninos — Antimicrobiano (mais potente que procianidinas contra gram+)"
           },
           {
-            "label": "GALOIL-GLICOSES (hidrolisáveis)",
-            "texto": "Presentes — Antimicrobiano"
+            "label": "Galoil-glicoses (taninos hidrolisáveis)",
+            "texto": "Presentes — Antimicrobiano, antiviral"
           },
           {
-            "label": "ÁCIDO GÁLICO",
-            "texto": "Produto de hidrólise — Antioxidante, antimicrobiano"
+            "label": "Ácido gálico",
+            "texto": "Produto de hidrólise — Antioxidante, antimicrobiano. Liberado progressivamente durante decocção"
           },
           {
-            "label": "SAPONINAS",
-            "texto": "Traços — Anti-inflamatório"
+            "label": "Rhamnosil-glicosídeo de leucocianidina",
+            "texto": "Antioxidante"
+          },
+          {
+            "label": "Saponinas",
+            "texto": "Traços — Anti-inflamatório (contribuição menor)"
+          },
+          {
+            "label": "Flavan-3-óis (catequina, galocatequina)",
+            "texto": "Monômeros presentes — Precursores dos taninos condensados"
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Cicatrização de feridas cutâneas e úlceras",
+            "evidencia": "Forte",
+            "populacao": "Adultos — Minatel et al. (2001) UFG; Hernandes et al. (2010)"
+          },
+          {
+            "indicacao": "Gengivite e periodontite (bochecho)",
+            "evidencia": "Forte",
+            "populacao": "Adultos — Oliveira et al. — múltiplos estudos UFG/UFMG"
+          },
+          {
+            "indicacao": "Candidíase vulvovaginal (tópico)",
+            "evidencia": "Moderada",
+            "populacao": "Mulheres adultas — Costa et al. (2012) UFMS"
+          },
+          {
+            "indicacao": "Queimaduras de 1° e 2° grau",
+            "evidencia": "Moderada",
+            "populacao": "Adultos e crianças — estudos clínicos nacionais"
+          },
+          {
+            "indicacao": "Hemostasia de feridas",
+            "evidencia": "Forte (mecanismo)",
+            "populacao": "Adultos — mecanismo tânico direto"
+          }
+        ],
+        "contraindicacoes": [
+          "Uso interno crônico (> 4 semanas) sem supervisão: taninos em dose alta podem causar hepatotoxicidade e interferir na absorção de minerais (ferro, cálcio, zinco — quelação tânica).",
+          "Gestação: dados insuficientes para uso interno; uso tópico provavelmente seguro.",
+          "Constipação: taninos são adstringentes intestinais — uso interno pode piorar.",
+          "Anemia ferropriva: taninos reduzem absorção de ferro não-heme — não usar junto com refeições ricas em ferro."
+        ],
+        "interacoes": [
+          {
+            "label": "Ferro oral (sulfato ferroso)",
+            "texto": "Taninos quelam ferro — reduzem absorção em até 70%. Conduta: espaçar 2h"
+          },
+          {
+            "label": "Cálcio e zinco",
+            "texto": "Quelação por taninos. Conduta: espaçar 2h"
+          },
+          {
+            "label": "Antibióticos tópicos (sulfadiazina, neomicina)",
+            "texto": "Competição na superfície da ferida. Conduta: não aplicar simultaneamente — alternar"
+          },
+          {
+            "label": "Anticoagulantes",
+            "texto": "Sem interação significativa (uso tópico predominante). Conduta: monitorar se uso interno"
+          }
+        ],
+        "efeitos_adversos": "Uso tópico: praticamente inexistentes. Irritação de mucosa em concentrações excessivas (decocção muito forte em bochecho). Uso interno oral: desconforto gástrico, constipação (taninos), redução de absorção de minerais em uso prolongado.",
+        "dose_maxima": "Uso interno: até 6 g/dia de casca seca em decocção (uso curto — 1–2 semanas). Para uso prolongado, reduzir para 3 g/dia. Uso tópico: sem limite (concentração na decocção determina eficácia, não toxicidade sistêmica).",
+        "fontes": [
+          "Farmacopeia Brasileira 6ª Ed. — monografia oficial Stryphnodendron adstringens",
+          "Minatel DG et al. — Evaluation of the topical effect of Stryphnodendron adstringens in the wound healing of rats (Phytother Res, 2010)",
+          "Hernandes L et al. — Wound-healing evaluation of ointment from Stryphnodendron adstringens in rats (Braz J Pharmacogn, 2010)",
+          "Audi EA et al. — Gastric antiulcerogenic effects of Stryphnodendron adstringens in rats (Phytother Res, 1999)",
+          "Ishida K et al. — Influence of tannins from Stryphnodendron adstringens on growth and virulence factors of Candida albicans (J Antimicrob Chemother, 2006)",
+          "Santos VR et al. — Antimicrobial activity of Stryphnodendron adstringens on strains of Streptococcus mutans (Ethnopharmacol, 2009)",
+          "Lopes GC et al. — Stryphnodendron polyphyllum: a review of its phytochemistry and biological activities (J Ethnopharmacol, 2005)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Completamente ausente — nenhuma doçura percebida"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "3/3",
+            "observacao": "Intenso — taninos + flavan-3-óis; amargura seca e penetrante"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Tanino-seco-amadeirado puro",
+        "olfativo_descritores": [
+          "Tanino concentrado puro (o aroma mais 'tânico' do catálogo)",
+          "Madeira cortada seca (Fabaceae de cerrado)",
+          "Terra vermelha do cerrado (laterita seca)",
+          "Fundo levemente defumado (pirólise lenta de compostos fenólicos na decocção)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "5/5 — MÁXIMA",
+            "molecula": "Proantocianidinas (taninos condensados de alto peso molecular). A adstringência mais intensa de qualquer erva do catálogo mundial. Precipitação massiva e instantânea de proteínas salivares. A mucosa oral contrai-se como se encolhesse. Dura 10–15 minutos."
+          }
+        ],
+        "tatil": "Corpo médio em decocção concentrada. Textura que seca a boca — sensação de 'encolhimento' da mucosa oral por precipitação tânica. Persistência extremamente alta — 10–15 minutos de boca contraída. A língua parece menor. As bochechas colam nos dentes. O palato fica áspero.",
+        "descricao_integrada": "O barbatimão é a infusão-demonstração do catálogo: nenhum outro ingrediente ilustra tão perfeitamente o que é adstringência. Se o gengibre demonstra TRPV1, se a hortelã demonstra TRPM8, o barbatimão demonstra precipitação de proteínas por taninos — com uma intensidade que o chá-preto mais forte do mundo não alcança. Para fins pedagógicos no Ervatório: o barbatimão é a ferramenta de treinamento sensorial perfeita para ensinar adstringência. Uma gota de decocção de barbatimão na língua ensina em 3 segundos o que nenhuma descrição verbal explica em 3 parágrafos. Não é agradável. Não é para agradar. É para curar."
       },
       "cultura": {
-        "historia": "O barbatimão é a planta do cerrado com maior integração na medicina popular do Centro-Oeste brasileiro. O nome tupi — \"árvore que prende\" — descreve perfeitamente a sensação de sua casca: ela contrai, fecha, sela. Benzedeiras e curandeiros do cerrado goiano e matogrossense usam a casca para \"secar\" feridas desde antes do registro escrito.  Na medicina popular, o barbatimão tem uso dual documentado: cicatrizante de feridas da pele e \"fechador\" ginecológico — o uso em banho de assento para \"apertar\" após parto é prática de parteiras tradicionais de múltiplas regiões do Brasil Central.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "O barbatimão é a planta do cerrado com maior integração na medicina popular do Centro-Oeste brasileiro. O nome Tupi — 'ubatimó' / 'ibatimó' — significa 'árvore que prende' ou 'árvore que aperta' — descrição fenomenológica perfeita da sensação da casca na boca. Os Tupi nomearam a planta pelo que ela faz ao corpo, não pelo que ela parece — linguagem farmacológica codificada em nome. Benzedeiras e curandeiros do cerrado goiano e matogrossense usam a casca de barbatimão para 'secar' feridas desde antes do registro escrito. O verbo 'secar' na medicina popular do cerrado não é metáfora — descreve literalmente o mecanismo de adstringência tânica: os taninos secam a superfície da ferida ao precipitar proteínas e contrair capilares. Na medicina popular, o barbatimão tem uso dual documentado: cicatrizante de pele (curativos, compressas — o 'bétadine do cerrado') e 'fechador' ginecológico (banho de assento para 'apertar' após parto ou para tratar infecções vaginais — uso de parteiras tradicionais que persiste até hoje).",
+        "cerimonial": "Sem cerimônia codificada — mas a 'garrafada de barbatimão' (casca macerada em cachaça ou vinho por 7 dias) é preparação ritual de curandeiros do cerrado para tratamento de feridas internas e externas.",
+        "brasil": "O barbatimão é o fitoterápico tópico mais pesquisado pelas universidades brasileiras do Centro-Oeste — UFG, UFMG, UFMS têm portfólios de publicação extensivos. A pomada de barbatimão é produto de farmácia de manipulação com penetração nacional — presente em toda cidade com farmácia de manipulação no Brasil. A cadeia produtiva é inteiramente extrativista — não há plantações de barbatimão. A casca é coletada de árvores nativas no cerrado, frequentemente sem manejo sustentável (anelamento do tronco que mata a árvore). O Ervatório deve priorizar fornecedores com certificação de manejo sustentável.",
+        "curiosidade": "O barbatimão tem 18–25% de taninos condensados — mais que qualquer outra planta medicinal comercializada. Para contexto: o chá-preto (Camellia sinensis) tem 10–15% de taninos; o vinho tinto maduro tem < 1% de taninos em solução. Uma xícara de decocção de barbatimão contém mais tanino que uma garrafa inteira de vinho tinto. Essa concentração explica por que o barbatimão é tão eficaz como cicatrizante e tão insuportável como bebida — a mesma molécula que cura feridas seca a boca."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Monografia oficial. Fitoterápico semi-sólido (pomada) registrado.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Casca coletada no período seco — maior concentração de taninos"
+        "status_anvisa": [
+          "Monografia oficial na Farmacopeia Brasileira 6ª Ed.",
+          "Produto fitoterápico semi-sólido (pomada/gel) registrado — diversas marcas.",
+          "Indicações: cicatrizante, anti-inflamatório tópico, adstringente de mucosas."
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica",
+        "certificacao_organica": "Extrativismo certificado: IMAFLORA, IBD — certificação PFNM (Produtos Florestais Não-Madeireiros) do cerrado. Certificação de manejo sustentável essencial — solicitar confirmação de coleta sem anelamento (preservação da árvore).",
+        "sazonalidade": "Casca coletada preferencialmente no período seco (maio–setembro) — maior concentração de taninos e menor risco de contaminação fúngica."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Cooperativas extrativistas do cerrado com certificação de manejo sustentável (Cooperativa Central do Cerrado, cooperativas de raizeiros de GO e MG). Secundário: Ervanários de Goiânia, Uberlândia, Cuiabá — verificar origem.",
+        "faixa_de_preco": [
+          "Casca seca granel (ervanário): R$ 15–30/100 g",
+          "Pomada de barbatimão (farmácia de manipulação): R$ 20–40/50 g",
+          "Extrato seco padronizado (cápsulas): R$ 25–50/60 cápsulas",
+          "Gel tópico padronizado (farmacêutico): R$ 30–60/50 g"
+        ],
+        "formatos": "Casca seca em pedaços (decocção); Pomada de barbatimão (produto tópico pronto — formato mais vendido); Gel cicatrizante; Tintura hidroalcoólica (bochecho diluído); Extrato seco (cápsulas — uso interno); Sachê para banho de assento."
+      },
+      "destaques": [
+        {
+          "label": "Tanino recorde",
+          "texto": "18–25% — a maior concentração de taninos condensados de qualquer planta medicinal"
+        },
+        {
+          "label": "Pomada registrada",
+          "texto": "2º fitoterápico semi-sólido mais vendido em farmácias de manipulação do Brasil"
+        },
+        {
+          "label": "Cicatrização clínica",
+          "texto": "ECR brasileiros: comparável a sulfadiazina de prata em úlceras e queimaduras"
+        }
+      ]
     },
     {
       "slug": "pata-de-vaca",
       "nome_popular": "Pata-de-Vaca",
       "nome_cientifico": "Bauhinia forficata Link",
-      "tagline": "A insulina vegetal do cerrado — hipoglicemiante oral com décadas de uso popular e evidência clínica crescente no manejo do diabetes tipo 2.",
+      "tagline": "A insulina vegetal do cerrado — o hipoglicemiante oral mais consumido no Brasil, com evidência clínica crescente para diabetes tipo 2 e uma dimensão epidemiológica que revela um sistema paralelo de manejo do diabetes operando fora do SUS.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Bauhinia forficata Link",
-        "familia_botanica": "Fabaceae / Caesalpinioideae",
-        "tipo_botanico": "Fitoterápico hipoglicemiante / diurético",
-        "parte_usada": "Folhas secas (preferencialmente adultas).",
+        "nome_cientifico": "Bauhinia forficata Link (espécie brasileira principal — cerrado, mata atlântica e transição)",
+        "familia_botanica": "Fabaceae / Caesalpinioideae (família do jatobá, da cássia, do pau-brasil)",
+        "tipo_botanico": "Fitoterápico hipoglicemiante / diurético / hipolipemiante",
+        "parte_usada": "Folhas adultas, secas — preferencialmente colhidas pela manhã, antes da abertura completa das flores. A folha bilobada (formato 'pata de vaca') é a marca visual diagnóstica. Flores: uso secundário. Casca: uso popular (anti-inflamatório). ATENÇÃO: gênero Bauhinia tem > 300 espécies tropicais — atividade hipoglicemiante é espécie-específica e concentra-se em B. forficata (Brasil) e B. variegata (Ásia). B. forficata tem espinhos nos nós e folhas com lobos profundos. B. variegata (ornamental 'árvore-orquídea') não tem espinhos.",
         "sinonimos": [
-          "Pata-de-vaca · mororó · casco-de-vaca · unha-de-vaca",
-          "Pezuña de vaca (espanhol) · orchid tree leaf (inglês)",
-          "ATENÇÃO: Gênero Bauhinia tem centenas de espécies — atividade hipoglicemiante é espécie-específica"
+          "Pata-de-vaca · mororó (NE) · casco-de-vaca · unha-de-vaca · pé-de-boi",
+          "Pezuña de vaca (espanhol) · orchid tree leaf (inglês — confuso porque refere-se a B. variegata)",
+          "Mororó (CE, PI, BA — nome nordestino amplamente usado)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Levemente amargo, herbáceo-vegetal, levemente adstringente, verde. Palatável — uso cotidiano possível.",
-        "aroma": "Folha verde seca, herbáceo suave, feno levemente adocicado.",
-        "cor_da_infusao": "Verde-amarelado a âmbar claro. #C8B850",
-        "intensidade": "2/5 — suave, uso diário viável.",
-        "notas": "",
-        "bioma_de_origem": "Cerrado, caatinga e mata atlântica — espécie de ampla distribuição.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Levemente amargo, herbáceo-vegetal, levemente adstringente, verde-folha. Surpreendentemente palatável para uma erva medicinal — a amargura é suave e não persistente. Admite uso cotidiano sem resistência sensorial.",
+        "aroma": "Folha verde seca, herbáceo suave e limpo, feno levemente adocicado. Aroma neutro — sem notas aromáticas memoráveis. Farmácia silenciosa: funciona sem se anunciar.",
+        "cor_da_infusao": "Verde-amarelado a âmbar claro. #C8B850 — cor de chá-verde suave.",
+        "intensidade": "2/5 — suave, uso diário viável sem esforço. Crítico para adesão terapêutica de pacientes diabéticos que precisam tomar 3x ao dia por períodos longos.",
+        "notas": "Cabeça: herbáceo-verde fresco | Corpo: amargo leve-limpo (flavonóides) | Fundo: adstringência suave breve, leve doçura residual",
+        "bioma_de_origem": "Cerrado, Caatinga e Mata Atlântica — espécie de ampla distribuição tropical e subtropical. Árvore de porte médio (até 10 m), copa aberta, floração branca noturna (flores abrem à noite — polinização por mariposas).",
+        "distribuicao_geografica": [
+          "SP (maior centro de pesquisa — UNICAMP, USP, UNESP), MG (Triângulo Mineiro, Norte de Minas), PR, SC, RS, GO, MT, MS, BA, PE, CE, PI.",
+          "Ampla ocorrência em áreas antropizadas — cresce espontaneamente em bordas de estrada, terrenos baldios, fundos de quintal. Uma das árvores mais comuns em quintais do interior do Brasil.",
+          "Centros de pesquisa: UNICAMP (grupo Prof. Jorge Pepato), USP, UNESP (Araraquara), UFSC, UFRGS."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 colheres de sopa (3–5 g) de folhas secas para 250 ml.",
-        "metodo": "Infusão simples, coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "30 minutos antes das refeições principais (ação hipoglicemiante prandial).",
-        "combina_com": "Canela · Pata-de-vaca + Insulina-vegetal + Jambolão = blend hipoglicemiante clássico popular"
+        "temperatura_ideal": "90–95 °C. Não ferver — os flavonóides hipoglicemiantes (kaempferitrina, glucosil-isoorientina) são termolábeis acima de 100 °C.",
+        "tempo_de_infusao": "5–10 minutos coberto. Infusão de 5 min: manutenção. 10 min: terapêutica aguda.",
+        "quantidade": "1–2 colheres de sopa (3–5 g) de folhas secas para 250 ml. Farmacopeia Brasileira: 3–6 g/dia em 2–3 doses.",
+        "metodo": "Infusão simples coberta — método preferencial para preservar flavonóides. Maceração a frio (12h): preserva melhor os flavonóides — método recomendado por pesquisadores.",
+        "reinfusoes": "1–2 reinfusões possíveis — folhas inteiras liberam PA gradualmente.",
+        "melhor_momento": "30 minutos ANTES das refeições principais — OBRIGATÓRIO para efeito hipoglicemiante prandial. O mecanismo envolve inibição de alfaglicosidase intestinal que retarda absorção de glicose. Tomar ANTES é crítico — depois reduz eficácia em > 50%. Protocolo: 3x ao dia (antes de café, almoço e jantar).",
+        "combina_com": "Canela-do-ceilão (procianidinas mimetizam insulina — sinergia distinta) · Fava-de-anta (rutina — proteção vascular para diabético) · Mangaba folhas (hipoglicemiante complementar) · Pimenta-preta (potenciador de biodisponibilidade)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Fraca — a pata-de-vaca é predominantemente de uso interno.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressa para dermatite e inflamação de pele",
+            "texto": "Infusão forte resfriada em gaze — anti-inflamatório leve. Evidência apenas tradicional."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações relevantes para uso tópico."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Hipoglicemiante (redução de glicemia pós-prandial)",
-          "Diurético",
-          "Hipolipemiante (redução de colesterol e triglicerídeos)",
-          "Anti-inflamatório",
-          "Antioxidante",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Hipoglicemia — potencialização de hipoglicemiantes orais e insulina",
-          "Gestação — dados insuficientes",
-          "Monitorar glicemia em diabéticos em uso concomitante de medicamentos",
-          "IMPORTANTE: A pata-de-vaca é adjuvante — nunca substituta de medicação antidiabética prescrita. Informar médico sobre uso."
+          "Hipoglicemiante — redução de glicemia pós-prandial (mecanismo dual: inibição de alfaglicosidase intestinal + sensibilização de receptores de insulina periféricos)",
+          "Diurético (efeito natriurético — excreção de sódio e água)",
+          "Hipolipemiante (redução de colesterol total e triglicerídeos)",
+          "Anti-inflamatório (flavonóides)",
+          "Antioxidante (kaempferol, quercetina)",
+          "Hipouricêmico (redução de ácido úrico — efeito documentado em modelos animais)"
         ],
         "componentes_ativos": [
           {
-            "label": "FLAVONÓIDES (quercetina, canferol, miricetina)",
-            "texto": "Hipoglicemiante, antioxidante"
+            "label": "Kaempferitrina (kaempferol-3,7-diramnosídeo)",
+            "texto": "Principal flavonoide das folhas — Hipoglicemiante principal: inibição de alfaglicosidase intestinal (retarda absorção de glicose) + estimulação de GLUT-4 (transportador de glicose muscular). Mecanismo dual: intestinal + periférico"
           },
           {
-            "label": "GLUCOSIL-ISOORIENTINA",
-            "texto": "Hipoglicemiante — inibição de alfaglicosidase"
+            "label": "Glucosil-isoorientina",
+            "texto": "Hipoglicemiante complementar"
           },
           {
-            "label": "LECITINAS",
-            "texto": "Regulação metabólica"
+            "label": "Quercetina",
+            "texto": "Antioxidante, anti-inflamatório, hipoglicemiante leve"
           },
           {
-            "label": "ÁCIDOS GRAXOS",
-            "texto": "Anti-inflamatório"
+            "label": "Kaempferol (aglicona)",
+            "texto": "Produto de hidrólise — Antioxidante, anti-inflamatório, hipoglicemiante"
           },
           {
-            "label": "TANINOS",
-            "texto": "Adstringente, antioxidante"
+            "label": "Ácidos orgânicos (ácido galactourónico)",
+            "texto": "Diurético"
+          },
+          {
+            "label": "Taninos",
+            "texto": "3–5% — Adstringente suave (contribuição menor)"
+          },
+          {
+            "label": "Lectinas",
+            "texto": "Regulação metabólica (proteínas com afinidade por carboidratos — pesquisa)"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Diabetes mellitus tipo 2 (coadjuvante)",
+            "indicacao": "Diabetes mellitus tipo 2 (coadjuvante — redução de glicemia pós-prandial)",
             "evidencia": "Moderada",
-            "populacao": "Múltiplos ECR nacionais"
+            "populacao": "Adultos DM2 — Pepato et al. (2002, 2004) UNICAMP; Silva et al. (2002)"
           },
           {
-            "indicacao": "Hipercolesterolemia",
+            "indicacao": "Redução de HbA1c (adjuvante)",
             "evidencia": "Preliminar",
-            "populacao": "Estudos animais e piloto"
+            "populacao": "Adultos DM2 — estudos piloto nacionais"
+          },
+          {
+            "indicacao": "Hipercolesterolemia (LDL e CT)",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos animais + piloto humano — Lino et al. (2004)"
           },
           {
             "indicacao": "Diurético (retenção hídrica leve)",
             "evidencia": "Tradicional forte",
-            "populacao": "Farmacopeia popular"
+            "populacao": "Adultos — farmacopeia popular"
+          },
+          {
+            "indicacao": "Hiperuricemia (gota — adjuvante)",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos animais — Menezes et al. (2007)"
           }
         ],
+        "alerta_critico": {
+          "titulo": "NÃO substitui tratamento antidiabético",
+          "titulo2": "Adjuvante, não substituta",
+          "corpo": "A pata-de-vaca é adjuvante — nunca substituta de medicação antidiabética prescrita. O uso isolado sem monitoramento glicêmico é perigoso: pode causar hipoglicemia quando combinada com hipoglicemiantes orais ou insulina; pode dar falsa sensação de controle glicêmico sem medicação farmacêutica; não trata complicações do diabetes (retinopatia, nefropatia, neuropatia)."
+        },
         "contraindicacoes": [
-          "Hipoglicemia — potencialização de hipoglicemiantes orais e insulina",
-          "Gestação — dados insuficientes",
-          "Monitorar glicemia em diabéticos em uso concomitante de medicamentos",
-          "IMPORTANTE: A pata-de-vaca é adjuvante — nunca substituta de medicação antidiabética prescrita. Informar médico sobre uso."
+          "Hipoglicemia: potencialização de hipoglicemiantes orais e insulina — monitorar glicemia rigorosamente",
+          "Gestação: dados insuficientes de segurança — evitar",
+          "Lactação: evitar (dados insuficientes)",
+          "Cirurgia: suspender 2 semanas antes (risco de hipoglicemia peri-operatória)",
+          "Diabetes tipo 1 sem ajuste de insulina: risco de hipoglicemia severa"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          {
+            "label": "Metformina",
+            "texto": "Mecanismo hipoglicemiante complementar (metformina no fígado; pata-de-vaca no intestino e músculo). Conduta: monitorar glicemia semanalmente — pode necessitar ajuste de dose"
+          },
+          {
+            "label": "Glibenclamida / Glimepirida (sulfonilureias)",
+            "texto": "Potencialização hipoglicemiante — risco de hipoglicemia. Conduta: monitorar rigorosamente"
+          },
+          {
+            "label": "Insulina",
+            "texto": "Potencialização direta. Conduta: ajustar dose com endocrinologista"
+          },
+          {
+            "label": "Acarbose",
+            "texto": "Mecanismo idêntico (alfaglicosidase) — redundância e potencialização. Conduta: evitar uso simultâneo"
+          },
+          {
+            "label": "Diuréticos",
+            "texto": "Efeito diurético aditivo. Conduta: monitorar PA e eletrólitos"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais (3–6 g/dia): raros. Flatulência e distensão abdominal (inibição de alfaglicosidase retarda digestão de carboidratos — fermentação colônica). Hipoglicemia em uso combinado com fármacos.",
+        "dose_maxima": "Folhas secas em infusão: até 6 g/dia (Farmacopeia Brasileira). Extrato seco padronizado: 500–1.000 mg/dia. Uso popular (autodosagem) frequentemente excede recomendação — risco.",
+        "fontes": [
+          "Farmacopeia Brasileira 6ª Ed. — monografia oficial Bauhinia forficata",
+          "Pepato MT et al. — Anti-diabetic activity of Bauhinia forficata decoction in streptozotocin-diabetic rats (J Ethnopharmacol, 2002) — referência UNICAMP",
+          "Pepato MT et al. — Fruit of the jambolan tree and experimental diabetes (J Ethnopharmacol, 2004)",
+          "Silva FR et al. — Acute effect of Bauhinia forficata on serum glucose levels in normal and alloxan-induced diabetic rats (J Ethnopharmacol, 2002)",
+          "Lino CS et al. — Anti-diabetic activity of Bauhinia forficata extracts in alloxan-diabetic rats (Biol Pharm Bull, 2004)",
+          "de Sousa E et al. — Hypoglycemic effect of kaempferol-3,7-O-(alpha)-dirhamnoside from Bauhinia forficata leaves (J Nat Prod, 2004) — isolamento PA principal",
+          "Ministério da Saúde — RENISUS"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Leve — flavonóides; amargura discreta e limpa, facilmente mascarada por mel ou canela"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Herbáceo-verde-neutro",
+        "olfativo_descritores": [
+          "Folha verde seca (clorofila degradada)",
+          "Feno levemente adocicado",
+          "Herbáceo simples e limpo",
+          "Neutro-sem-assinatura"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa",
+            "molecula": "Taninos (3–5%) — adstringência suave; menor que espinheira-santa; muito menor que barbatimão"
+          }
+        ],
+        "tatil": "Corpo leve, textura aquosa-limpa, sem qualquer característica tátil marcante. Persistência curta — a infusão passa sem memória. A pata-de-vaca é a infusão-água-medicada do catálogo: parece água com leve sabor verde; funciona como medicamento.",
+        "descricao_integrada": "A invisibilidade sensorial da pata-de-vaca é farmacologicamente racional: a kaempferitrina não precisa ser sentida para funcionar — ela age no intestino e nas células musculares, não na boca. A experiência sensorial é irrelevante para a eficácia — o que importa é a regularidade do uso (3x/dia, antes das refeições). E para garantir regularidade, a ausência de sabor desagradável é vantagem competitiva sobre ervas medicinais que exigem esforço para engolir. Para o Ervatório: a pata-de-vaca é o ingrediente que vende por informação, não por sensação. O consumidor compra porque sabe o que ela faz — não porque gosta do sabor. Isso inverte a lógica do mercado de chás gourmet (onde sabor é tudo) e posiciona a pata-de-vaca no nicho funcional-racional — próximo de suplementos, não de degustação."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A pata-de-vaca é o fitoterápico hipoglicemiante mais consumido no Brasil — estimativas apontam que mais de 15% dos diabéticos brasileiros usam alguma forma de preparado de pata-de-vaca regularmente. Esse dado, levantado em pesquisas de uso popular, revelou um sistema paralelo de manejo do diabetes que opera fora do radar do SUS — motivando décadas de pesquisa universitária para validação e segurança.",
-        "curiosidade": ""
+        "historia": "A pata-de-vaca é a erva brasileira com a maior distância entre difusão popular e atenção acadêmica: é usada por milhões de brasileiros diabéticos — mas os ensaios clínicos rigorosos (ECR fase III) são escassos. Estimativas epidemiológicas (UFSC, UNICAMP) sugerem que 15–20% dos diabéticos brasileiros usam alguma forma de preparado de pata-de-vaca regularmente — a maioria sem conhecimento do médico. Esse dado revela um sistema paralelo de manejo do diabetes que opera fora do radar do SUS. Milhões de brasileiros: colhem folhas no quintal ou compram em feira/ervanário; preparam infusão caseira sem padronização; tomam junto com (ou em substituição de) metformina/glibenclamida; não informam o médico; não monitoram glicemia após início do uso. Essa realidade motivou décadas de pesquisa universitária para validação e segurança.",
+        "cerimonial": "Sem cerimônia codificada — mas a 'árvore de pata-de-vaca no quintal' é elemento cultural do interior brasileiro. A avó que planta pata-de-vaca 'pra quando precisar' é figura arquetípica da medicina de quintal.",
+        "brasil": "Por volume de consumo estimado, o fitoterápico hipoglicemiante mais popular do Brasil — possivelmente da América Latina. Sua folha bilobada é tão reconhecível que se tornou símbolo informal de fitoterapia brasileira — presente em logos de farmácias de manipulação, marcas de produtos naturais e material de educação em saúde. A inclusão na Farmacopeia Brasileira e na RENISUS foi resultado direto da pressão epidemiológica: era impossível ignorar que milhões usavam — era necessário regulamentar.",
+        "curiosidade": "A folha bilobada da pata-de-vaca (que lhe dá o nome) é resultado de uma mutação genética na via de desenvolvimento foliar (gene PHANTASTICA) que dividiu o limbo da folha em dois lobos simétricos. Essa mesma classe de mutação é estudada em biologia do desenvolvimento como modelo para entender como as plantas formam folhas compostas. A 'pata' é um acidente genético que se tornou identidade — e que coincidentemente produz uma folha com área superficial aumentada, o que pode ter favorecido a seleção natural em ambientes de cerrado com alta luminosidade."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Monografia oficial. Indicação: coadjuvante no tratamento do diabetes.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas coletadas no período vegetativo (setembro–março)"
+        "status_anvisa": [
+          "Monografia oficial na Farmacopeia Brasileira 6ª Ed.",
+          "Formulário de Fitoterápicos — indicação: coadjuvante no tratamento do diabetes mellitus tipo 2.",
+          "RDC 26/2014 — fitoterápico de notificação simplificada."
+        ],
+        "status_ema": "Não monografado. Praticamente desconhecida na Europa.",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Identificação botânica essencial — confirmar B. forficata (com espinhos) vs ornamentais sem atividade. Orgânica disponível (cultivo de quintal certificável — IBD).",
+        "sazonalidade": "Folhas coletadas preferencialmente no período vegetativo ativo (setembro–março). Floração: dezembro–março."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Produtores familiares do interior de SP (Ribeirão Preto, Campinas) e MG (Triângulo Mineiro) com identificação botânica confirmada (B. forficata com espinhos). Secundário: Ervanários certificados de GO, PR, SC. ATENÇÃO: confirmar espécie — muitas 'patas-de-vaca' comerciais são B. variegata (ornamental sem atividade hipoglicemiante).",
+        "faixa_de_preco": [
+          "Folhas secas granel: R$ 15–30/100 g (ervanário)",
+          "Folhas secas certificadas (orgânica + identificação botânica): R$ 30–60/100 g",
+          "Extrato seco padronizado (cápsulas): R$ 25–50/60 cápsulas",
+          "Tintura 1:5: R$ 20–40/100 ml"
+        ],
+        "formatos": "Folhas secas inteiras (infusão — formato preferencial); Sachê pirâmide (blend hipoglicemiante — com canela e pimenta-preta); Extrato seco padronizado (cápsulas — farmácia); Tintura hidroalcoólica."
+      },
+      "destaques": [
+        {
+          "label": "Hipoglicemiante mais consumido do BR",
+          "texto": "Estimativa: 15-20% dos diabéticos brasileiros usam regularmente"
+        },
+        {
+          "label": "Mecanismo dual",
+          "texto": "Kaempferitrina inibe alfaglicosidase E sensibiliza GLUT-4 — intestinal + periférico"
+        },
+        {
+          "label": "Adjuvante apenas",
+          "texto": "NUNCA substitui medicação antidiabética prescrita — risco de hipoglicemia"
+        }
+      ]
     },
     {
       "slug": "pequi",
       "nome_popular": "Pequi",
       "nome_cientifico": "Caryocar brasiliense Cambess.",
-      "tagline": "O ouro do cerrado — fruto-símbolo do bioma que concentra carotenóides, ácidos graxos raros e uma cultura culinária-medicinal única no mundo.",
+      "tagline": "O ouro do cerrado — fruto-símbolo do bioma que concentra carotenóides superiores ao dendê, ácido palmitoleico raro em vegetais, e uma cultura culinária-medicinal que é simultaneamente patrimônio gastronômico do Brasil Central e superalimento emergente no mercado global.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Caryocar brasiliense Cambess.",
-        "familia_botanica": "Caryocaraceae",
-        "tipo_botanico": "Alimento funcional / fitoterápico",
-        "parte_usada": "Polpa (alimentar), óleo da polpa e da amêndoa (cosmético e medicinal), folhas (infusão).",
+        "nome_cientifico": "Caryocar brasiliense Cambess. (pequi-do-cerrado) / Caryocar coriaceum Wittm. (pequi-do-nordeste)",
+        "familia_botanica": "Caryocaraceae (família exclusivamente neotropical — pequena, com apenas 2 gêneros)",
+        "tipo_botanico": "Alimento funcional antioxidante / óleo medicinal-cosmético / infusão de folhas",
+        "parte_usada": "Polpa do fruto (mesocarpo interno amarelo — alimentar e medicinal); óleo da polpa (funcional e cosmético — prensagem); óleo da amêndoa (cosmético premium); folhas (infusão — anti-inflamatório, antioxidante); casca do fruto (decocção popular). ⚠️ ESPINHOS DO CAROÇO: O caroço é revestido de espinhos finíssimos extremamente agudos que perfuram a mucosa oral se mastigados. A tradição correta é roer a polpa com os dentes da frente, NUNCA morder o caroço.",
         "sinonimos": [
-          "Pequi · piqui · souari nut (inglês) · amande du Brésil (francês — incorreto, confunde com castanha-do-pará)"
+          "Pequi · piqui · pequiá · piquiá (espécies amazônicas — C. villosum)",
+          "Souari nut (inglês — refere-se mais à amêndoa)",
+          "Sem nome estabelecido em francês/espanhol — endêmico do cerrado brasileiro",
+          "Piqui (grafia variante nordestina)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "",
-        "cor_da_infusao": "",
-        "intensidade": "",
-        "notas": "",
-        "bioma_de_origem": "Cerrado — endêmico do bioma; GO, MG, TO, MT, BA, PI, MA.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Polpa: Manteiga tropical intensa, queijo curado forte, umami profundo — perfil único no catálogo e no mundo frutal. Notas de 'queijo' e 'manteiga' derivam de ácidos graxos livres (oleico, palmitoleico) e compostos voláteis (hexanal, 2-heptanona). Para o paladar urbano: 'azedo/rançoso/fortíssimo'. Para o cerratense: 'o sabor do cerrado'. Óleo: amanteigado denso. Folhas: amargo moderado, herbáceo-resinoso.",
+        "aroma": "Polpa/óleo: Manteiga queimada intensa, queijo tropical, fermentado nobre, caramelo-tostado, fundo de palmeira. Aroma mais polarizante do catálogo — quem cresceu comendo pequi considera irresistível; quem experimenta pela primeira vez frequentemente recua. Folhas: resina do cerrado, verde amadeirado.",
+        "cor_da_infusao": "Folhas: Âmbar-verdoso #B8A840. Óleo de polpa: Amarelo-ouro intenso a laranja-dourado #E8A010 — um dos óleos vegetais mais pigmentados do mundo, cor derivada de beta-caroteno em concentração excepcional.",
+        "intensidade": "Polpa/óleo: 5/5 — sabor mais intenso e divisivo do catálogo. Folhas: 3/5 — medicinal moderado.",
+        "notas": "Polpa — Cabeça: manteiga-queijo imediata (ácidos graxos livres voláteis) | Corpo: umami profundo, tropical-amadurecido | Fundo: persistência extrema (sabor permanece 20+ minutos)",
+        "bioma_de_origem": "Cerrado — endêmico do bioma. Árvore característica do cerrado stricto sensu — copa larga, tronco tortuoso, casca espessa resistente ao fogo. Produção de frutos intrinsecamente ligada ao regime de fogo do cerrado: queimadas moderadas estimulam floração e frutificação.",
+        "distribuicao_geografica": [
+          "GO (maior produção), MG (Norte de Minas, Triângulo — maior consumo per capita), TO, MT, MS, BA, PI, MA, CE (espécie C. coriaceum).",
+          "O 'arco do pequi' — Norte de Minas a Goiás e Tocantins — é o coração da cultura.",
+          "Centros de pesquisa: UFG, EMBRAPA Cerrados, UFMG (Montes Claros), UFLA.",
+          "Internacional: praticamente inexistente fora do Brasil. Tentativas no exterior fracassaram por falta de polinizadores nativos (morcegos)."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "Folhas: 90 °C. Óleo: temperatura máxima 180 °C (alta estabilidade térmica para uso culinário).",
+        "tempo_de_infusao": "Folhas: 8–10 min coberto.",
+        "quantidade": "Folhas: 3–5 g/250 ml. Óleo de polpa: 1 colher de sopa em jejum (uso funcional). Polpa: consumo direto, sem dose definida (é alimento).",
+        "metodo": "Folhas: infusão coberta. Polpa: roer (não morder o caroço!) ou usar em arroz-com-pequi, frango-com-pequi, sorvete, licor. Óleo: 1 col sopa em jejum, em preparações culinárias, ou tópico.",
+        "reinfusoes": "Folhas: 1 reinfusão.",
+        "melhor_momento": "Manhã: óleo em jejum (antioxidante sistêmico, imunomodulador). Folhas: qualquer hora.",
+        "combina_com": "Cúrcuma (golden milk do cerrado) · Gengibre · Canela · Pimenta-preta · Mel · Castanha-de-baru"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para uso cosmético; forte tradição popular.",
+        "aplicacoes": [
+          {
+            "titulo": "Óleo de polpa como hidratante e anti-aging",
+            "texto": "Óleo de pequi (prensagem a frio) — altíssima concentração de carotenóides (proteção UV) e ácido oleico (emoliente penetrante). Textura densa-viscosa; absorção moderada. Uso noturno preferível (pigmento amarelo pode colorir ligeiramente a pele durante o dia)."
+          },
+          {
+            "titulo": "Óleo de amêndoa para cabelos",
+            "texto": "Óleo da castanha interna do pequi — mais leve que o óleo de polpa, perfil lipídico ômega-9 elevado. Uso como finishing oil para cabelos secos e danificados."
+          },
+          {
+            "titulo": "Massagem anti-inflamatória articular",
+            "texto": "Óleo de polpa aquecido em massagem sobre articulações — anti-inflamatório tópico por ácido oleico e carotenóides. Uso popular do cerrado."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro. Pigmenta a pele de amarelo temporariamente (carotenóides — reversível)."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antioxidante potente (beta-caroteno, licopeno, zeaxantina)",
-          "Anti-inflamatório (ácido oleico, ácido palmitoleico)",
-          "Imunomodulador",
-          "Neuroprotetor (carotenóides lipofílicos)",
-          "Cardioprotetor (perfil de ácidos graxos)",
-          "Componentes ativos:",
-          "Contraindicações: Alergia ao fruto (rara). Cálculo renal de oxalato — cautela com consumo excessivo de polpa."
+          "Antioxidante potente (carotenóides — beta-caroteno, licopeno, zeaxantina em concentração excepcional)",
+          "Anti-inflamatório (ácido oleico + palmitoleico)",
+          "Imunomodulador (carotenóides estimulam função de NK cells e macrófagos)",
+          "Neuroprotetor (carotenóides lipofílicos atravessam BHE)",
+          "Cardioprotetor (perfil de ácidos graxos — ácido oleico C18:1 dominante)",
+          "Anti-aging (carotenóides + vitamina E)",
+          "Gastroprotetor (óleo — efeito demulcente)",
+          "Nutritivo excepcional (vitamina A pré-formada, vitamina E, ferro, magnésio)"
         ],
         "componentes_ativos": [
           {
-            "label": "BETA-CAROTENO",
-            "texto": "Alta — óleo de polpa — Antioxidante, pró-vitamina A"
+            "label": "Beta-caroteno",
+            "texto": "4–8 mg/100 g de polpa (óleo: 30–60 mg/100 ml) — Antioxidante, pró-vitamina A, fotoprotetor. Concentração SUPERIOR ao dendê e à cenoura. O óleo de pequi tem mais beta-caroteno que qualquer outro óleo vegetal comercializado — cor amarelo-ouro é beta-caroteno puro"
           },
           {
-            "label": "LICOPENO",
-            "texto": "Presente — Antioxidante, antiproliferativo"
+            "label": "Licopeno",
+            "texto": "0,3–0,5 mg/100 g polpa — Antioxidante, antiproliferativo. Mesmo composto do tomate; biodisponibilidade melhor pela matriz lipídica"
           },
           {
-            "label": "ÁCIDO OLEICO (C18:1)",
-            "texto": "46–54% do óleo — Cardioprotetor"
+            "label": "Zeaxantina",
+            "texto": "Proteção visual (mácula), antioxidante"
           },
           {
-            "label": "ÁCIDO PALMITOLEICO (C16:1)",
-            "texto": "25–30% — Anti-inflamatório raro"
+            "label": "Ácido oleico (C18:1 — ω-9)",
+            "texto": "46–54% do óleo de polpa — Cardioprotetor (mesmo perfil do azeite de oliva)"
           },
           {
-            "label": "ZEAXANTINA",
-            "texto": "Presente — Proteção visual, antioxidante"
+            "label": "Ácido palmitoleico (C16:1 — ω-7)",
+            "texto": "25–30% do óleo de polpa — Anti-inflamatório RARO. ω-7 encontrado em pouquíssimas fontes vegetais. Concentração no pequi é uma das mais altas do mundo vegetal — apenas macadâmia e espinheiro-marítimo se aproximam. Pesquisado como anti-inflamatório vascular e regulador metabólico"
+          },
+          {
+            "label": "Vitamina E (alfa + gama tocoferol)",
+            "texto": "Alta — Antioxidante lipossolúvel"
+          },
+          {
+            "label": "Vitamina A (retinol equivalente)",
+            "texto": "Alta via conversão de beta-caroteno — Imunidade, visão, diferenciação celular"
+          },
+          {
+            "label": "Fibras dietéticas",
+            "texto": "10–15% da polpa seca — Prebiótico, saciedade"
+          },
+          {
+            "label": "Ferro",
+            "texto": "3,5 mg/100 g — Nutritivo"
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Antioxidante sistêmico (redução de MDA, aumento de SOD)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — Miranda-Vilela et al. (2009, 2011) UnB"
+          },
+          {
+            "indicacao": "Proteção contra dano oxidativo por exercício",
+            "evidencia": "Moderada",
+            "populacao": "Atletas recreativos — Miranda-Vilela et al. (2009)"
+          },
+          {
+            "indicacao": "Anti-inflamatório (redução de PCR e IL-6)",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos animais + piloto humano"
+          },
+          {
+            "indicacao": "Suplementação de vitamina A (comunidades rurais)",
+            "evidencia": "Forte (nutricional)",
+            "populacao": "Crianças e gestantes — EMBRAPA"
+          }
+        ],
+        "contraindicacoes": [
+          "Alergia ao fruto (rara — reação documentada)",
+          "Cálculo renal de oxalato: cautela com consumo excessivo de polpa (ácido oxálico presente)",
+          "Dieta com restrição de gordura: o óleo de pequi é calórico (900 kcal/100 ml — como qualquer óleo)",
+          "ESPINHOS DO CAROÇO: nunca mastigar — perfuração de mucosa oral garantida"
+        ],
+        "interacoes": [
+          {
+            "label": "Sem interações medicamentosas relevantes documentadas",
+            "texto": "O óleo de pequi em doses alimentares não interfere com medicamentos"
+          }
+        ],
+        "efeitos_adversos": "Uso alimentar: praticamente inexistentes (é alimento). Espinhos do caroço: perfuração de mucosa oral se mastigado (mecânico, não farmacológico). Coloração amarela das mãos e boca (carotenóides — cosmético, reversível).",
+        "dose_maxima": "Não há dose máxima estabelecida (é alimento). Consumo tradicional cerratense: 50–200 g de polpa/dia na safra. Óleo: 1–3 colheres de sopa/dia. Folhas em infusão: até 10 g/dia.",
+        "fontes": [
+          "Miranda-Vilela AL et al. — Antioxidant activities and cytogenetic effects of Caryocar brasiliense oil (pequi) on exercised rats (Genes Nutr, 2009) — referência UnB",
+          "Miranda-Vilela AL et al. — Supplementation with pequi oil reduces DNA damage and cytokine levels in runners (Nutr J, 2011)",
+          "Mariano RGB et al. — Composition of pulp and kernel oils from Caryocar brasiliense (J Am Oil Chem Soc, 2009)",
+          "Oliveira MEB et al. — Physical and chemical characterization of Caryocar coriaceum fruits (Food Sci Technol, 2010)",
+          "EMBRAPA Cerrados — O pequizeiro (Caryocar brasiliense): biologia e uso (Documentos Técnicos)",
+          "Mozaffarian D et al. — Circulating palmitoleic acid and risk of metabolic abnormalities (Am J Clin Nutr, 2010) — referência ω-7",
+          "Lorenzi H — Árvores Brasileiras (Instituto Plantarum, 2002)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "1/3",
+            "observacao": "Leve — açúcares simples na polpa madura; encoberto pelo umami e pela gordura"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Leve — taninos residuais"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "3/3",
+            "observacao": "DOMINANTE — o umami mais intenso entre frutas do catálogo. Ácidos graxos livres + aminoácidos livres + nucleotídeos criam 'profundidade de caldo' que lembra queijo curado"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "1/3",
+            "observacao": "Leve acidez — ácidos orgânicos"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Manteiga-queijo-tropical — absolutamente único",
+        "olfativo_descritores": [
+          "Manteiga queimada intensa (ácido oleico e palmitoleico em oxidação controlada)",
+          "Queijo curado tropical (ácido butírico + 2-heptanona — mesmos compostos do queijo canastra)",
+          "Fermentado nobre (ésteres frutais em degradação controlada)",
+          "Caramelo-tostado (Maillard parcial no aquecimento culinário)",
+          "Palmeira-tropical (traços — óleos de mesocarpo)",
+          "Fundo mineral-terroso (geosmina sutil)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Muito baixa",
+            "molecula": "Taninos mínimos. A gordura reveste a mucosa e impede qualquer contração"
+          }
+        ],
+        "tatil": "Polpa: textura untuosa-cremosa-densa, gordura que reveste toda a boca com filme lipídico persistente. Persistência EXTREMAMENTE alta — sabor e sensação permanecem na boca por 20–30 minutos. A untuosidade é tão pronunciada que muda a percepção de qualquer alimento consumido em seguida. Óleo: viscoso, denso, cor de ouro líquido. Folhas: corpo leve, aquoso.",
+        "descricao_integrada": "O pequi é o ingrediente-rei do catálogo em termos de domínio tátil: nenhum outro reveste a boca com tanta intensidade, por tanto tempo, com tanta densidade. O motivo é simples: 40–50% da polpa é gordura — percentual que nenhuma outra fruta do catálogo se aproxima (açaí ~5–7%; jabuticaba < 1%). O pequi é mais gordo que a maioria das castanhas — é praticamente um queijo vegetal em forma de fruta. Essa densidade lipídica é o que torna o pequi extraordinário como alimento funcional: os carotenóides e o ácido palmitoleico são lipossolúveis — e a própria matriz lipídica da polpa serve como veículo de entrega. A biodisponibilidade de beta-caroteno no pequi é superior à da cenoura justamente porque o pequi oferece a molécula já dissolvida em óleo. Comparação inevitável: o pequi é o durian brasileiro — quem ama, ama incondicionalmente; quem estranha, recua imediatamente."
       },
       "cultura": {
-        "historia": "O pequi é o símbolo alimentar do cerrado como o açaí é da Amazônia — não é apenas um alimento, é identidade cultural. O arroz-com-pequi é o prato de festa do interior de Goiás e Minas Gerais. A culinária sertaneja, o cerrado e o pequi são inseparáveis na memória gastronômica do Brasil Central.  O mito indígena kayapó narra que o pequi nasceu do corpo de uma jovem — daí seus espinhos internos (que perfuram quem come com avidez) serem chamados de \"a defesa da moça\". É a planta que ensina a comer com calma.",
-        "cerimonial": "",
-        "brasil": "O pequi é um dos produtos mais promissores da bioeconomia do cerrado para exportação como \"superalimento\" — alto valor de carotenóides, ácido palmitoleico (raro em fontes vegetais) e perfil de marketing exótico-brasileiro. Startups de biocosmética brasileira já exportam óleo de pequi para Europa e Japão em formulações premium de skincare.",
-        "curiosidade": ""
+        "historia": "O pequi é o símbolo alimentar do cerrado como o açaí é da Amazônia — não é apenas um alimento, é identidade cultural. O arroz-com-pequi é o prato de festa do interior de Goiás, Norte de Minas e Tocantins. O mito indígena Kayapó narra que o pequi nasceu do corpo de uma jovem que se sacrificou para alimentar sua tribo durante uma fome — daí seus espinhos internos serem chamados de 'a defesa da moça'. É a planta que ensina a comer com calma: a paciência exigida para roer a polpa sem morder o caroço é metáfora cultural que os Kayapó ensinam às crianças. A cultura do pequi tem dimensão temporal: a safra (outubro–janeiro) é período de fartura, festa e celebração. A entressafra (fevereiro–setembro) é período de saudade e conserva. O pequi organiza o calendário emocional do cerradeiro como a colheita organiza o calendário do lavrador europeu.",
+        "cerimonial": "A 'abertura do pequi' (primeiro pequi maduro da safra, geralmente em outubro) é evento comunitário no interior de Goiás — vizinhos se reúnem para colher, processar e comer o primeiro pequi juntos. Em Montes Claros (MG), o Festival do Pequi é evento cultural anual que atrai dezenas de milhares de pessoas — gastronomia, artesanato, música e identidade cerratense condensados em celebração de uma fruta.",
+        "brasil": "O pequi é um dos produtos mais promissores da bioeconomia do cerrado para exportação como 'superalimento': alto valor de carotenóides (posicionamento: 'beta-caroteno do cerrado'); ácido palmitoleico raro (posicionamento: 'ômega-7 do cerrado'); perfil de marketing exótico-brasileiro; narrativa indígena e cultural (Kayapó, sertanejo, cerrado). Startups de biocosmética brasileira já exportam óleo de pequi para Europa e Japão em formulações premium — mas o mercado funcional-alimentar de óleo de pequi como suplemento de ω-7 é praticamente inexplorado.",
+        "curiosidade": "Os espinhos do caroço de pequi não são defesa contra predadores — são defesa contra sementes. Cada caroço contém 1–4 sementes (amêndoas) com alto teor de gordura e proteína. Os espinhos impedem que animais mastiguem e destruam as sementes — forçando-os a engolir o caroço inteiro (endozoocoria). No trato digestivo do animal, a polpa é digerida, o caroço é excretado intacto a quilômetros de distância, e as sementes germinam em solo fertilizado pelas fezes. Os espinhos que perfuram a boca do humano apressado são, para o pequi, o mecanismo de dispersão mais elegante do cerrado."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Alimento funcional / Fitoterápico",
-        "status_anvisa": "Regulado como alimento. Óleo cosmético — regulamentado.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutificação: outubro–janeiro"
+        "eixo_botanico_tpc": "Alimento funcional + Fitoterápico (folhas)",
+        "status_anvisa": [
+          "Polpa e óleo: regulados como alimento (IN MAPA).",
+          "Folhas: uso tradicional popular reconhecido (sem monografia oficial).",
+          "Óleo cosmético: regulamentado como ingrediente cosmético."
+        ],
+        "status_ema": "Óleo de pequi: Novel Food em processo de autorização para alguns extratos. Exportação como óleo cosmético já é autorizada e praticada.",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Disponível para produção extrativista certificada (IBD, IMAFLORA) — coleta de frutos caídos em cerrado nativo. Comércio justo: cadeias de fair trade em estruturação (Central do Cerrado).",
+        "sazonalidade": "Frutificação: outubro–janeiro (pico novembro–dezembro). Safra curta e intensa. Floração: julho–setembro (cerrado seco — polinização por morcegos à noite). 'Pequi do Cerrado' — IG em processo no INPI."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Cooperativa Central do Cerrado (Goiânia — rede de cooperativas de pequi de GO e MG). Cooperativas de Japonvar e Montes Claros (MG — Norte de Minas). Rastreabilidade de origem certificada. Secundário: EMATER-GO.",
+        "faixa_de_preco": [
+          "Polpa congelada (regional): R$ 15–30/kg na safra; R$ 40–80/kg na entressafra",
+          "Óleo de polpa prensado a frio (funcional/cosmético): R$ 80–180/100 ml",
+          "Óleo de amêndoa (cosmético premium): R$ 120–250/100 ml",
+          "Polpa em conserva: R$ 20–40/500 g",
+          "Pó liofilizado de polpa (suplemento/blend): R$ 100–200/100 g"
+        ],
+        "formatos": "Polpa congelada (uso culinário); Óleo de polpa prensado a frio (funcional e cosmético — formato Ervatório premium); Pó liofilizado (blend e suplemento — formato de exportação); Conserva artesanal (gourmet regional); Óleo de amêndoa (cosmético capilar e facial); Folhas secas (infusão — formato medicinal secundário)."
+      },
+      "destaques": [
+        {
+          "label": "Beta-caroteno recorde",
+          "texto": "Óleo de pequi tem mais beta-caroteno que qualquer outro óleo vegetal comercializado — superior ao dendê"
+        },
+        {
+          "label": "Ômega-7 raro",
+          "texto": "25-30% de ácido palmitoleico — uma das maiores concentrações do mundo vegetal"
+        },
+        {
+          "label": "Identidade cerratense",
+          "texto": "Patrimônio gastronômico do Brasil Central — IG do Pequi do Cerrado em processo INPI"
+        }
+      ]
     },
     {
       "slug": "erva-mate",
@@ -4210,351 +4785,796 @@
     {
       "slug": "sucupira",
       "nome_popular": "Sucupira",
-      "nome_cientifico": "Pterodon pubescens Benth. / P. emarginatus Vogel",
-      "tagline": "O anti-inflamatório do cerrado — semente aromática com ação articular documentada e uma das melhores evidências clínicas brasileiras para doenças osteoarticulares.",
+      "nome_cientifico": "Pterodon pubescens Benth.",
+      "tagline": "O anti-inflamatório do cerrado — semente aromática com furanoditerpenos exclusivos que inibem NF-κB e uma tradição de uso popular tão enraizada no Centro-Oeste que farmácias de manipulação vendem mais sucupira que diclofenaco em cidades goianas.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Pterodon pubescens Benth. / P. emarginatus Vogel",
-        "familia_botanica": "Fabaceae / Papilionoideae",
-        "tipo_botanico": "Fitoterápico anti-inflamatório articular",
-        "parte_usada": "Sementes (principal); casca em decocção secundária.",
+        "nome_cientifico": "Pterodon pubescens Benth. (sucupira-branca) / Pterodon emarginatus Vogel (sucupira-preta ou faveiro)",
+        "familia_botanica": "Fabaceae / Papilionoideae (família do feijão, da soja, do cumaru)",
+        "tipo_botanico": "Fitoterápico anti-inflamatório articular / analgésico / antirreumático",
+        "parte_usada": "Sementes (principal — maior concentração de furanoditerpenos). A semente é extraída do fruto alado (sâmara) que cai do cerrado entre março e julho. Casca do caule: uso secundário em decocção. Óleo de sementes: uso popular em maceração com azeite. O processamento popular tradicional é a maceração de sementes esmagadas em azeite de oliva ou álcool de cereais por 14–30 dias — forma mais biodisponível que infusão aquosa, uma vez que furanoditerpenos são lipossolúveis.",
         "sinonimos": [
-          "Sucupira · sucupira-branca · faveiro · sucupira-do-cerrado",
-          "Sucupira-preta (Bowdichia virgilioides — espécie diferente com usos semelhantes)"
+          "Sucupira · sucupira-branca (P. pubescens) · sucupira-preta / faveiro (P. emarginatus) · fava-de-sucupira",
+          "ATENÇÃO: 'Sucupira-preta' também pode referir-se a Bowdichia virgilioides Kunth — espécie diferente (Fabaceae/Papilionoideae) com usos populares semelhantes mas química distinta. Confirmar espécie botânica antes de uso."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Terpênico-resinoso, pimenta-do-cerrado, balsâmico amadeirado.",
-        "cor_da_infusao": "",
-        "intensidade": "4/5 — uso medicinal declarado.",
-        "notas": "",
-        "bioma_de_origem": "Cerrado — GO, MG, MS, MT, SP, TO, BA.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Óleo de maceração: Oleoso-resinoso, levemente picante-apimentado (diterpenos irritantes leves), amadeirado profundo, nota aromática de pimenta-do-cerrado e resina quente. Não desagradável — é um 'quente oleoso' que lembra azeite de especiarias. Infusão aquosa: Amargo-resinoso moderado, terroso-amadeirado, menos complexo que o óleo.",
+        "aroma": "Terpênico-resinoso intenso, pimenta-do-cerrado, balsâmico amadeirado, leve nota de eucalipto-canela distante. Aroma característico que quem cresceu no cerrado goiano reconhece imediatamente — 'cheiro de sucupira' é marcador cultural do interior de Goiás e Minas.",
+        "cor_da_infusao": "Óleo: Amarelo-esverdeado a âmbar-ouro #C8A030. Infusão aquosa: Âmbar-amarelado claro #B89840.",
+        "intensidade": "4/5 (óleo) — presença oleosa e aromática marcante. 3/5 (infusão aquosa).",
+        "notas": "Cabeça: resinoso-terpênico imediato, pimenta | Corpo: amadeirado profundo, oleoso-especiado | Fundo: leve eucalipto-canela, calor residual",
+        "bioma_de_origem": "Cerrado — espécie característica do cerrado stricto sensu e cerradão. Árvore de porte médio (até 15 m), copa arredondada, floração exuberante rosa-lilás que colore o cerrado em agosto-setembro ('sucupira florida' é uma das imagens mais bonitas do bioma).",
+        "distribuicao_geografica": [
+          "Cerrado brasileiro — GO (maior uso popular e pesquisa), MT, MS, MG, SP, TO, BA.",
+          "Concentração de uso popular: Triângulo Mineiro (MG), interior de Goiás (Anápolis, Goiânia, Rio Verde), Norte de São Paulo (Ribeirão Preto).",
+          "Centros de pesquisa: USP (Ribeirão Preto — grupo de farmacognosia de cerrado), UFG (Goiânia), UFMG.",
+          "Não há cultivo comercial — toda produção é extrativista (coleta de sementes de árvores nativas no cerrado). A pressão sobre o bioma reduz progressivamente a oferta."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Cúrcuma · Gengibre · Arnica (blends anti-inflamatórios articulares)"
+        "temperatura_ideal": "Maceração em óleo: temperatura ambiente, escuro, 14–30 dias. Infusão aquosa: 90 °C.",
+        "tempo_de_infusao": "Maceração: 14–30 dias. Infusão: 10–15 min.",
+        "quantidade": "Maceração em óleo: 50 g de sementes esmagadas em 500 ml de azeite de oliva extravirgem. Infusão aquosa: 2–3 sementes esmagadas para 250 ml. Tintura hidroalcoólica: 1:5 em álcool 70°.",
+        "metodo": "MÉTODO PRINCIPAL — MACERAÇÃO EM ÓLEO (mais eficaz): 50 g sementes esmagadas (pilão ou martelo) em 500 ml azeite extravirgem, frasco vidro escuro, 14–30 dias em local escuro, agitando diariamente. Coar em pano fino. Uso: 1 col sopa em jejum (oral) ou massagem tópica em articulações doloridas. NOTA: extração aquosa é significativamente inferior à oleosa para os PA principais (furanoditerpenos lipossolúveis) — perda estimada de 60–70% comparado à maceração em óleo.",
+        "reinfusoes": "Sementes inteiras esmagadas em decocção: 1–2 reinfusões possíveis.",
+        "melhor_momento": "Manhã em jejum: anti-inflamatório sistêmico (óleo ou tintura). 2–3x ao dia: protocolo articular terapêutico. Uso externo: qualquer hora — massagem em articulações com o óleo.",
+        "combina_com": "Cúrcuma (sinergia via NF-κB — mecanismos complementares) · Gengibre (COX-1/COX-2 + LOX) · Pimenta-preta (potenciador de biodisponibilidade) · Copaíba (beta-cariofileno — CB2 + COX-2) · Arnica-do-cerrado (uso tópico sinérgico)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para uso tópico anti-inflamatório articular; forte na tradição popular.",
+        "aplicacoes": [
+          {
+            "titulo": "Óleo de massagem articular (uso principal tópico)",
+            "texto": "Óleo de maceração (50 g sementes/500 ml azeite, 14 dias) aplicado em massagem sobre articulações inflamadas — joelhos, mãos, ombros, coluna lombar. 10–15 min de massagem, 2x ao dia. Aquecimento local após aplicação: TRPV1 leve pelos diterpenos. Evidência: tradição popular robusta + mecanismo farmacológico documentado (furanoditerpenos inibem NF-κB e COX-2 localmente). Estudos pré-clínicos da USP Ribeirão Preto confirmam ação anti-inflamatória e analgésica tópica."
+          },
+          {
+            "titulo": "Compressa quente com decocção",
+            "texto": "Decocção concentrada (20 g sementes/500 ml) — compressa morna sobre articulação por 20 min. Anti-inflamatório tópico."
+          },
+          {
+            "titulo": "Banho de imersão para dor reumática",
+            "texto": "Decocção de 50 g de sementes em 2L de água, adicionada à banheira morna. Uso popular do interior goiano documentado por raizeiros."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro. Pele sensível: testar pequena área primeiro (terpenos podem irritar)."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Anti-inflamatório articular (osteoartrite, artrite reumatoide — adjuvante)",
-          "Analgésico",
-          "Antirreumático",
-          "Antifúngico",
-          "Imunomodulador leve",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Gestação — dados insuficientes. Hepatopatias — cautela."
+          "Anti-inflamatório articular potente (inibição de NF-κB — via nuclear, não apenas enzimática)",
+          "Analgésico (mecanismo central e periférico)",
+          "Antirreumático (artrite reumatoide e osteoartrite — adjuvante)",
+          "Antifúngico (Paracoccidioides brasiliensis — paracoccidioidomicose; Candida spp.)",
+          "Imunomodulador leve (pesquisa emergente)",
+          "Anti-edematoso (redução de edema inflamatório)",
+          "Esquistossomicida (pesquisa UFMG — ação contra Schistosoma mansoni)"
         ],
         "componentes_ativos": [
           {
-            "label": "FURANODITERPENOS (geranilgeraniol, vouacapan)",
-            "texto": "Anti-inflamatório — inibição NF-κB e COX-2"
+            "label": "Furanoditerpenos (vouacapano, 6α-7β-dihidroxivouacapano, ácido vouacapânico)",
+            "texto": "3–8% da semente seca — Anti-inflamatório principal: inibição NF-κB, COX-2, TNF-alfa; analgésico. CLASSE EXCLUSIVA do gênero Pterodon — não encontrada em outras plantas. Mecanismo distinto dos gingeróis/curcumina"
           },
           {
-            "label": "ISOFLAVONAS",
-            "texto": "Anti-inflamatório, imunomodulador"
+            "label": "Geranilgeraniol",
+            "texto": "Diterpeno de cadeia longa — Anti-inflamatório, antimicrobiano"
           },
           {
-            "label": "ÁCIDOS GRAXOS (oleico, linoleico)",
-            "texto": "Emoliente, anti-inflamatório"
+            "label": "Isoflavonas (7-hidroxiflavona, 6-prenilpinocembrina)",
+            "texto": "Anti-inflamatório, imunomodulador, estrogênico fraco"
           },
           {
-            "label": "TERPENOS SESQUITERPENÓIDES",
+            "label": "Ácidos graxos (oleico, linoleico)",
+            "texto": "20–25% da semente — Componentes do óleo de maceração; emoliente, anti-inflamatório"
+          },
+          {
+            "label": "Beta-cariofileno",
+            "texto": "Traços — Anti-inflamatório (CB2). Cruza com copaíba — mesma molécula"
+          },
+          {
+            "label": "Terpenos sesquiterpenóides",
             "texto": "Aromático, antimicrobiano"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Osteoartrite (adjuvante)",
+            "indicacao": "Osteoartrite (dor articular — joelho, mãos)",
             "evidencia": "Moderada",
-            "populacao": "Tamião et al. (USP)"
+            "populacao": "Adultos ≥ 40 anos — Tamião et al. (USP Ribeirão Preto)"
           },
           {
-            "indicacao": "Dor articular crônica",
+            "indicacao": "Dor articular crônica (reumatismo popular)",
             "evidencia": "Moderada",
-            "populacao": "Estudos clínicos nacionais"
+            "populacao": "Adultos — múltiplos estudos pré-clínicos nacionais (UFG, UFMG)"
+          },
+          {
+            "indicacao": "Artrite reumatoide (adjuvante)",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos animais — estudos USP"
+          },
+          {
+            "indicacao": "Paracoccidioidomicose (antifúngico sistêmico)",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos animais — Sabino et al. (UFMG)"
+          },
+          {
+            "indicacao": "Esquistossomose (esquistossomicida)",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos animais — Mahran et al.; estudos UFMG"
           }
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "alerta_critico": {
+          "titulo": "Farmacologia exclusiva — vouacapanos só existem em Pterodon",
+          "titulo2": "Mecanismo de NF-κB direto",
+          "corpo": "Os furanoditerpenos vouacapânicos são EXCLUSIVOS do gênero Pterodon — não existem em nenhuma outra planta comercializada no mundo. Isso torna a sucupira farmacologicamente insubstituível: nenhum outro fitoterápico oferece o mesmo mecanismo (inibição de NF-κB via vouacapano). A cúrcuma inibe NF-κB por outro mecanismo (curcumina). O gengibre não inibe NF-κB diretamente. A sucupira é a única planta do catálogo com acesso direto a essa via nuclear — por uma molécula que só ela produz."
+        },
+        "contraindicacoes": [
+          "Gestação: dados insuficientes de segurança — evitar",
+          "Lactação: evitar",
+          "Crianças < 12 anos: sem dados — evitar",
+          "Hepatopatias: cautela (metabolização hepática dos diterpenos)",
+          "Pré-cirurgia: suspender 2 semanas antes (antiagregante fraco)"
+        ],
+        "interacoes": [
+          {
+            "label": "AINES (ibuprofeno, diclofenaco)",
+            "texto": "Mecanismo anti-inflamatório sobreposto (COX) — risco gástrico aditivo. Conduta: evitar uso simultâneo oral em doses altas; tópico é seguro"
+          },
+          {
+            "label": "Corticoides",
+            "texto": "Potencialização anti-inflamatória. Conduta: reduzir dose de corticoide sob supervisão"
+          },
+          {
+            "label": "Anticoagulantes",
+            "texto": "Antiagregante fraco. Conduta: monitorar INR"
+          },
+          {
+            "label": "Imunossupressores",
+            "texto": "Imunomodulação potencial. Conduta: cautela"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais (óleo 1 col sopa/dia ou tintura 30 gotas 3x/dia): raros. Desconforto gástrico em doses altas em jejum (usar com refeição). Infusão aquosa: praticamente sem efeitos adversos.",
+        "dose_maxima": "Sementes em infusão: até 6 sementes/dia. Óleo de maceração: 1–2 col sopa/dia. Tintura: 60–90 gotas/dia (3 doses). Extrato seco padronizado: 250–500 mg/dia.",
+        "fontes": [
+          "Dutra RC et al. — Medicinal plants in Brazil: Pharmacological studies (Pharmacol Res, 2016) — inclui revisão de Pterodon",
+          "Coelho LP et al. — Anti-arthritic effect and subacute toxicological evaluation of Pterodon pubescens in rat adjuvant-induced arthritis (J Ethnopharmacol, 2005)",
+          "Sabino KCC et al. — In vitro and in vivo toxicological study of Pterodon pubescens seed oil (Toxicol Lett, 1999)",
+          "Nucci-Martins C et al. — Vouacapane diterpenes from Pterodon pubescens: antinociceptive mechanism of action (Fitoterapia, 2015)",
+          "Spindola HM et al. — Furanoditerpenes from Pterodon pubescens: inhibition of nuclear factor κB (Planta Med, 2011) — estudo-chave NF-κB",
+          "Lorenzi H — Árvores Brasileiras (Instituto Plantarum, 2002)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "2/3",
+            "observacao": "Presente — diterpenos amargos; mais evidente na infusão aquosa que no óleo. Em infusão pura: 3/3"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Resinoso-terpênico-quente com fundo de pimenta-do-cerrado",
+        "olfativo_descritores": [
+          "Resina terpênica quente (furanoditerpenos voláteis)",
+          "Pimenta-do-cerrado (Capsicum/Piper-like — analogia sensorial, não botânica)",
+          "Balsâmico amadeirado (leguminosa do cerrado)",
+          "Eucalipto leve distante (cineol traços)",
+          "Canela-defumada sutil",
+          "Chão de cerrado seco (terra vermelha + folha seca quebradiça)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Leve",
+            "molecula": "Furanoditerpenos (irritação leve de mucosa) — aquecimento sutil; muito mais leve que gengibre; mais similar a 'calor de pimenta-do-reino suave'"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa",
+            "molecula": "Taninos mínimos na semente (oleaginosa, não tanínica)"
+          }
+        ],
+        "tatil": "Óleo de maceração: textura oleosa-macia que reveste a boca (óleos fixos da semente + azeite carreador). Corpo médio, untuoso. Persistência média — calor terpênico permanece 5–8 min na garganta; oleoso limpa em 3–5 min. Infusão aquosa: corpo leve, sem untuosidade. Amargura mais evidente sem o efeito tamponante do óleo. Persistência do amargo: 5–10 min.",
+        "descricao_integrada": "A sucupira é a erva-óleo do catálogo: seu formato ideal não é a infusão aquosa (que extrai mal os PA e é amarga) mas a maceração em óleo (que extrai bem os furanoditerpenos e tem palatabilidade superior). Isso a diferencia de quase todas as outras ervas do catálogo, que funcionam melhor em água. O Ervatório precisa comunicar isso claramente: 'sucupira não é para fazer chá — é para macerar em azeite'. Essa especificidade do formato faz da sucupira um produto de nicho premium com narrativa editorial forte: não é sachê de supermercado; é frasco de vidro escuro com óleo macerado artesanalmente. Isso converge com o posicionamento Ervatório de curadoria premium e diferencia de qualquer concorrente de ervas a granel."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A sucupira é o anti-inflamatório articular do cerrado — usada por populações rurais do Brasil Central para \"reumatismo\", \"artrose\" e \"dor nos ossos\" há gerações. O óleo de sucupira em azeite, macerado em casa, é preparação caseira passada de avó a neto no interior de Goiás e Minas Gerais. A pesquisa da USP e UFG validou farmacologicamente o mecanismo de ação — furanoditerpenos inibindo vias inflamatórias articulares.",
-        "curiosidade": ""
+        "historia": "A sucupira é tão integrada à medicina popular do Centro-Oeste brasileiro que há uma expressão goiana para descrever confiança em remédio natural: 'se sucupira não curar, nada cura'. Raizeiros do interior de Goiás e do Triângulo Mineiro vendem sementes de sucupira em feiras livres desde pelo menos o séc. XIX — a preparação caseira de 'óleo de sucupira' em azeite é transmitida de avó a neto como receita de família. A pesquisa acadêmica com sucupira começou na USP de Ribeirão Preto nos anos 1990 — o grupo de farmacognosia de cerrado do Prof. Jairo Kenupp Bastos identificou os furanoditerpenos vouacapânicos como os PA principais e demonstrou a inibição de NF-κB in vitro e in vivo. Essa pesquisa validou farmacologicamente o que milhões de goianos já sabiam empiricamente. A floração da sucupira (agosto-setembro, cerrado em pé no auge da seca) é um dos espetáculos mais bonitos do bioma: árvores completamente despidas de folhas cobrem-se de flores rosa-lilás — como cerejeiras japonesas do cerrado.",
+        "cerimonial": "Não há cerimônia codificada com sucupira — mas a preparação do óleo de maceração em família é ritual doméstico análogo ao preparo de garrafadas nordestinas: a avó que esmaga as sementes no pilão, despeja o azeite, tampa o frasco e marca no calendário '14 dias'. É farmácia-ritual da cozinha — a ancestral da farmácia de manipulação.",
+        "brasil": "A sucupira é o anti-inflamatório articular mais consumido no interior do Brasil Central — estima-se que milhões de brasileiros com osteoartrite e artrite reumatoide usam alguma forma de sucupira regularmente. Esse dado epidemiológico revela um sistema paralelo de manejo de dor articular que opera fora do SUS e das prescrições reumatológicas. Para o Ervatório, a sucupira é um dos produtos com maior potencial de conversão: brasileiros já conhecem, já usam, mas quase sempre em preparações caseiras sem padronização. Um produto Ervatório com rastreabilidade de origem, padronização de concentração e narrativa editorial premium transforma commodity popular em experiência curada.",
+        "curiosidade": "Os furanoditerpenos vouacapânicos — exclusivos do gênero Pterodon — representam uma via anti-inflamatória que a farmacologia convencional praticamente não explorou: inibição direta de translocação nuclear de NF-κB por diterpeno vegetal. A maioria dos anti-inflamatórios farmacêuticos atua mais 'abaixo' na cascata (COX-1/COX-2/LOX). Atuar na NF-κB é intervir mais 'acima' — onde a decisão inflamatória é tomada, não onde é executada. Isso é farmacologicamente mais elegante e potencialmente mais abrangente. O gênero Pterodon pode conter lead compounds para fármacos de próxima geração — se a pesquisa receber financiamento."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Uso tradicional reconhecido. Em análise para Formulário Fitoterápico.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Sementes: março–julho (pós-floração do cerrado)"
+        "status_anvisa": [
+          "Memento Fitoterápico — uso tradicional reconhecido.",
+          "Em análise para inclusão no Formulário de Fitoterápicos.",
+          "Amplamente vendida em farmácias de manipulação como tintura e extrato seco."
+        ],
+        "status_ema": "Não monografado. Praticamente desconhecida na Europa — oportunidade de exportação como 'novel anti-inflammatory'.",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Extrativismo certificado disponível via certificação PFNM (Produtos Florestais Não Madeireiros) — IMAFLORA, IBD. Produção orgânica não aplicável (extrativismo de árvore nativa — não há cultivo).",
+        "sazonalidade": "Sementes: março–julho (queda de frutos maduros — coleta no chão). Floração: agosto–setembro (pico de beleza — sem coleta neste período para preservar polinização)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Cooperativas extrativistas do cerrado goiano (Cooperativa Mista de Agricultores Familiares de Goiás — COMAFAG; associações de raizeiros de Anápolis e Pirenópolis). Secundário: Ervanários e raizeiros de Goiânia, Uberlândia, Ribeirão Preto.",
+        "faixa_de_preco": [
+          "Sementes secas inteiras: R$ 20–40/100 g (ervanário)",
+          "Óleo de maceração artesanal pronto: R$ 60–120/250 ml (premium)",
+          "Tintura 1:5 (farmácia de manipulação): R$ 30–60/100 ml",
+          "Extrato seco padronizado em cápsulas: R$ 50–90/60 cápsulas"
+        ],
+        "formatos": "Sementes inteiras secas (para maceração caseira — formato mais autêntico); Óleo de maceração pronto (produto Ervatório premium — frasco vidro escuro com rolha de cortiça); Tintura hidroalcoólica; Extrato seco padronizado; Sementes moídas para infusão (formato de conveniência — menos eficaz)."
+      },
+      "destaques": [
+        {
+          "label": "Vouacapanos exclusivos",
+          "texto": "Furanoditerpenos só encontrados no gênero Pterodon — sem substituto no catálogo mundial"
+        },
+        {
+          "label": "Inibe NF-κB direto",
+          "texto": "Via nuclear de inflamação — mecanismo distinto da cúrcuma e gengibre"
+        },
+        {
+          "label": "Use óleo, não chá",
+          "texto": "Maceração em azeite extrai 3x mais PA que infusão aquosa — formato ideal"
+        }
+      ]
     },
     {
       "slug": "fava-de-anta",
       "nome_popular": "Fava-de-Anta",
       "nome_cientifico": "Dimorphandra mollis Benth.",
-      "tagline": "A rutina do cerrado — cardioprotetor vascular com concentração de rutina superior a qualquer outra fonte vegetal conhecida e cadeia produtiva estruturada no Brasil Central.",
+      "tagline": "A rutina do cerrado — cardioprotetor vascular com a maior concentração de rutina de qualquer fonte vegetal conhecida no mundo, exportada a granel para a Europa que a transforma em medicamentos de €50 a caixa enquanto o Brasil não tem um único produto nacional equivalente.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Dimorphandra mollis Benth.",
-        "familia_botanica": "Fabaceae / Caesalpinioideae",
-        "tipo_botanico": "Fitoterápico cardiovascular / venoprotetor",
-        "parte_usada": "Frutos imaturos (maior concentração de rutina); sementes; flores.",
+        "familia_botanica": "Fabaceae / Caesalpinioideae (família do jatobá, do pau-brasil)",
+        "tipo_botanico": "Fitoterápico cardiovascular / venoprotetor / antioxidante vascular",
+        "parte_usada": "Frutos imaturos (vagens verdes — maior concentração de rutina: 15–25% da matéria seca). Sementes: uso secundário (galactomanana para indústria — espessante alimentar). Flores: uso popular (anti-inflamatório em infusão). O fruto imaturo é a parte industrialmente relevante — a rutina é extraída por processo hidroalcoólico e exportada como matéria-prima farmacêutica. O fruto maduro tem concentração de rutina 3–5x menor — a sazonalidade da colheita é crítica para o rendimento.",
         "sinonimos": [
           "Fava-de-anta · faveira · barbatimão-do-cerrado (confusão popular)",
-          "Dimorphandra (farmacológico)"
+          "Dimorphandra (farmacológico)",
+          "Faveiro-de-Wilson (uso local em GO)",
+          "ATENÇÃO: confusão frequente com barbatimão (Stryphnodendron adstringens) por similaridade da casca. São espécies diferentes de famílias diferentes com química completamente distinta. A fava-de-anta é a fonte de rutina; o barbatimão é a fonte de taninos."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-adstringente moderado, tanino discreto, herbáceo.",
-        "aroma": "Tanino seco, leguminosa torrada suave.",
-        "cor_da_infusao": "Amarelo-esverdeado a âmbar. #C8B84A",
-        "intensidade": "3/5 — medicinal, palatável.",
-        "notas": "",
-        "bioma_de_origem": "Cerrado — GO, MG, MS, MT, BA, PI, TO.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-adstringente moderado (rutina é levemente amarga e adstringente), herbáceo-tanino discreto, fundo levemente doce (galactomanana). Menos amargo que barbatimão ou aroeira — palatável em infusão diária.",
+        "aroma": "Tanino seco, leguminosa verde, feno levemente adocicado. Aroma discreto — a fava-de-anta não é aromática; seu valor é farmacológico, não sensorial.",
+        "cor_da_infusao": "Amarelo-esverdeado a âmbar claro. #C8B84A — cor derivada da rutina dissolvida (flavonoide amarelo).",
+        "intensidade": "3/5 — medicinal, palatável. Amargura presente mas não dominante.",
+        "notas": "Cabeça: herbáceo-leguminoso verde | Corpo: tanino discreto, leve amargor | Fundo: doçura residual sutil (galactomanana)",
+        "bioma_de_origem": "Cerrado — espécie característica do cerrado stricto sensu. Árvore de porte médio (até 15 m), casca rugosa, copa esparsa.",
+        "distribuicao_geografica": [
+          "Cerrado brasileiro — GO (maior concentração de coleta), MG (Triângulo Mineiro, Norte de Minas), MT, MS, BA, PI, TO.",
+          "A coleta de frutos de fava-de-anta é atividade extrativista que emprega milhares de famílias rurais no cerrado durante a safra (novembro–fevereiro).",
+          "Mercado de destino da rutina: EUROPA (Alemanha, França, Suíça — indústria farmacêutica de venoprotetores), China (suplementos), Índia (matéria-prima farmacêutica).",
+          "O Brasil exporta anualmente centenas de toneladas de rutina bruta extraída de fava-de-anta — transformada na Europa em medicamentos como Daflon (Servier), Venoruton (Novartis/Ciba-Geigy legado), Rutascorbin, entre dezenas de outros."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C | Tempo: 8–10 min | Quantidade: 2–3 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "2–3 g/250 ml",
-        "metodo": "Infusão simples coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "2x ao dia (venoprotetor — manhã e tarde).",
-        "combina_com": "Castanha-da-índia · Mirtilo · Uva (blends venovasculares)"
+        "temperatura_ideal": "90–95 °C. Rutina é hidrossolúvel (diferente dos diterpenos da sucupira) — infusão aquosa é eficaz.",
+        "tempo_de_infusao": "8–10 minutos coberto. A rutina extrai bem em infusão simples.",
+        "quantidade": "2–3 g de frutos secos triturados para 250 ml.",
+        "metodo": "Infusão simples coberta (frutos imaturos secos triturados). Decocção suave (5 min) para maior extração. Maceração a frio (12h): preserva rutina (termicamente estável).",
+        "reinfusoes": "1 reinfusão possível — a vagem libera rutina gradualmente.",
+        "melhor_momento": "2x ao dia (manhã e tarde) para uso venoprotetor regular. Uso contínuo por períodos longos (meses) é necessário para efeito terapêutico em insuficiência venosa — a rutina age por remodelamento capilar, não por efeito agudo.",
+        "combina_com": "Castanha-da-índia (Aesculus hippocastanum — sinergia venoprotetora clássica europeia) · Mirtilo (Vaccinium myrtillus — antocianinas complementares) · Uva vermelha (resveratrol) · Hibisco (antocianinas + ECA) · Pitanga (licopeno vascular)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para uso tópico em insuficiência venosa e fragilidade capilar.",
+        "aplicacoes": [
+          {
+            "titulo": "Gel venotônico de uso tópico",
+            "texto": "Extrato de fava-de-anta (5% rutina) em gel — aplicação sobre pernas com sinais de insuficiência venosa (edema, varicosidades, dermatite ocre). Uso 2x ao dia com massagem ascendente. Evidência: farmacológica (rutina é permeante cutâneo documentado) + tradição de uso europeu com Venoruton® gel."
+          },
+          {
+            "titulo": "Compressa para fragilidade capilar e hematomas",
+            "texto": "Decocção concentrada (5 g/200 ml) resfriada — compressa sobre hematomas e petéquias. Mecanismo: rutina fortalece endotélio capilar e reduz permeabilidade."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Venoprotetor (fortalece paredes capilares e venosas)",
-          "Antivaricoso (reduz fragilidade capilar)",
-          "Anti-inflamatório vascular",
-          "Antioxidante (captador de radicais livres vasculares)",
-          "Cardioprotetor",
-          "Antitrombótico fraco",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Anticoagulados — cautela (rutina tem ação antiagregante fraca). Gestação — dados insuficientes."
+          "Venoprotetor (fortalece paredes capilares e venosas — reduz permeabilidade e fragilidade)",
+          "Antivaricoso (reduz edema, dor e peso nas pernas em IVC)",
+          "Anti-inflamatório vascular (inibe ativação endotelial e adesão leucocitária)",
+          "Antioxidante (captador de radicais livres vasculares — protege endotélio)",
+          "Cardioprotetor (redução de LDL oxidado)",
+          "Antitrombótico fraco (inibe agregação plaquetária em doses altas)",
+          "Anti-hemorrágico paradoxal (fortalece capilar — reduz sangramento por fragilidade)",
+          "Linfodrenante (melhora retorno linfático em linfedema leve)"
         ],
         "componentes_ativos": [
           {
-            "label": "RUTINA",
-            "texto": "15–25% dos frutos secos — maior fonte mundial conhecida — Venoprotetor, antioxidante capilar"
+            "label": "Rutina (rutosídeo = quercetina-3-O-rutinosídeo)",
+            "texto": "15–25% dos frutos imaturos secos — Venoprotetor, antioxidante capilar, anti-inflamatório vascular. MAIOR FONTE MUNDIAL CONHECIDA. Para comparação: trigo sarraceno (Fagopyrum) tem ~2–8%; sophora japonesa ~15–20%. Fava-de-anta é consistentemente a mais concentrada"
           },
           {
-            "label": "QUERCETINA",
-            "texto": "Produto de hidrólise da rutina — Anti-inflamatório, antioxidante"
+            "label": "Quercetina (aglicona — produto de hidrólise da rutina)",
+            "texto": "Gerada in vivo por hidrólise — Anti-inflamatório potente, antioxidante, inibição COX-2, imunomodulador. A rutina é a 'pró-droga' — quercetina é o PA final após absorção intestinal"
           },
           {
-            "label": "KAEMPFEROL",
-            "texto": "Presente — Cardioprotetor"
+            "label": "Kaempferol",
+            "texto": "Cardioprotetor, anti-inflamatório"
           },
           {
-            "label": "TANINOS",
-            "texto": "Presentes — Adstringente, antioxidante"
+            "label": "Galactomanana (semente)",
+            "texto": "30–40% da semente — Espessante alimentar, prebiótico. Uso industrial como goma guar substituta"
+          },
+          {
+            "label": "Taninos",
+            "texto": "Adstringente, antioxidante. Menores que em barbatimão"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Insuficiência venosa crônica",
-            "evidencia": "Moderada-forte (rutina)",
-            "populacao": "Múltiplas farmacopeias europeias"
+            "indicacao": "Insuficiência venosa crônica (IVC) — edema, dor, peso",
+            "evidencia": "Moderada-forte (para rutina/troxerutina como PA)",
+            "populacao": "Adultos com IVC estágio C0–C4 — múltiplas farmacopeias europeias; Cochrane reviews de venoativos"
           },
           {
-            "indicacao": "Fragilidade capilar",
+            "indicacao": "Fragilidade capilar (púrpura, petéquias, hematomas fáceis)",
             "evidencia": "Forte",
-            "populacao": "EMA — rutina como PA"
+            "populacao": "Adultos e idosos — EMA (rutina como PA)"
           },
           {
-            "indicacao": "Varizes (preventivo)",
+            "indicacao": "Varizes (sintomáticos — edema, cãibras, coceira)",
             "evidencia": "Moderada",
-            "populacao": "Estudos europeus com rutina"
+            "populacao": "Adultos — revisões sistemáticas europeias"
           },
           {
-            "indicacao": "Hemorroidas",
+            "indicacao": "Hemorroidas (crise aguda — redução de sangramento e edema)",
             "evidencia": "Moderada",
-            "populacao": "Revisões sistemáticas"
+            "populacao": "Adultos — Daflon® RELIEF (2004)"
+          },
+          {
+            "indicacao": "Linfedema pós-mastectomia (adjuvante)",
+            "evidencia": "Preliminar",
+            "populacao": "Mulheres pós-cirurgia mama — estudos piloto europeus"
+          },
+          {
+            "indicacao": "Retinopatia diabética (proteção microvascular)",
+            "evidencia": "Preliminar",
+            "populacao": "Adultos DM2 — estudos italianos com troxerutina"
           }
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "alerta_critico": {
+          "titulo": "O escândalo econômico da fava-de-anta",
+          "titulo2": "BR produz, Europa lucra",
+          "corpo": "O Brasil é o MAIOR PRODUTOR MUNDIAL da MAIOR FONTE NATURAL DE RUTINA — e não tem um único medicamento venoprotetor nacional à base de rutina de fava-de-anta no mercado farmacêutico brasileiro. Cadeia: famílias extrativistas vendem frutos a R$ 2–5/kg → empresas BR extraem rutina bruta → exportam a US$ 15–30/kg → indústria farmacêutica europeia (Servier-França, Novartis-Suíça) purifica e formula → vendem como Daflon®, Venoruton® por €20–50/caixa → brasileiro com varizes compra Daflon® importado por R$ 60–120/caixa. Valor capturado pelo Brasil: < 5% do valor final."
+        },
+        "contraindicacoes": [
+          "Anticoagulados: rutina em doses altas tem efeito antiagregante fraco — monitorar INR.",
+          "Gestação: dados insuficientes para doses terapêuticas — uso culinário tolerado.",
+          "Insuficiência renal: cautela com excreção de metabólitos de quercetina."
+        ],
+        "interacoes": [
+          {
+            "label": "Varfarina",
+            "texto": "Antiagregante fraco. Conduta: monitorar INR"
+          },
+          {
+            "label": "Ciclosporina",
+            "texto": "Inibição CYP3A4 pela quercetina (fraca). Conduta: cautela teórica"
+          },
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Ação vascular complementar. Conduta: geralmente benéfico — monitorar"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais (equivalentes a 100–500 mg de rutina/dia): praticamente inexistentes. A rutina é um dos PA fitoterápicos com melhor perfil de segurança — décadas de uso como medicamento na Europa sem alertas de farmacovigilância relevantes.",
+        "dose_maxima": "Rutina: até 500 mg/dia (padrão europeu de venoprotetores). Infusão de fava-de-anta: 3 g de fruto seco/dia fornecem ~450–750 mg de rutina. Daflon® referência: 1.000 mg/dia de fração flavonoica purificada.",
+        "fontes": [
+          "Cechinel Filho V, Yunes RA — Estratégias para obtenção de compostos farmacologicamente ativos a partir de plantas medicinais (Quim Nova, 1998)",
+          "Panizza S — Plantas que curam: cheiro de mato (IBRASA, 1997) — inclui fava-de-anta",
+          "Sousa JN et al. — Phenolic compounds and antioxidant activity of Dimorphandra mollis fruit extracts (J Med Plant Res, 2013)",
+          "Raposo NRB et al. — Extraction of rutin from Dimorphandra mollis: An improved method (Rev Bras Farmacogn, 2004)",
+          "Cochrane Database — Phlebotonics for venous insufficiency (Martinez-Zapata et al., 2016)",
+          "Daflon® — RELIEF Study: Role of Daflon 500 mg in the management of CVI (Angiology, 2004)",
+          "EMBRAPA Cerrados — Boletim técnico sobre produtos florestais não-madeireiros do cerrado"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "1/3",
+            "observacao": "Leve — galactomanana residual; mais percebida em frutos mais maduros"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "2/3",
+            "observacao": "Moderado — rutina é levemente amarga (flavonoide); mais intenso em frutos imaturos"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Herbáceo-tanino-leguminoso neutro",
+        "olfativo_descritores": [
+          "Leguminosa verde seca (vagem de cerrado)",
+          "Tanino discreto (não intenso como barbatimão)",
+          "Feno levemente adocicado",
+          "Terra vermelha de cerrado (traços — geosmina sutil)",
+          "Nota neutra-limpa"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa-moderada",
+            "molecula": "Rutina (flavonoide adstringente leve) + taninos. Menor que barbatimão ou chá-preto; mais que camomila"
+          }
+        ],
+        "tatil": "Corpo leve em infusão. Textura aquosa simples, sem oleosidade. Adstringência leve que contrai a mucosa de forma suave e uniforme. Persistência curta — a infusão passa sem deixar memória tátil pronunciada.",
+        "descricao_integrada": "A fava-de-anta é a infusão-farmácia transparente do catálogo: entra sem ser notada, age sem ser sentida, sai sem ser lembrada — mas fortalece capilares que o usuário nem sabe que existem. É a definição de 'medicina de prevenção': não há sintoma para aliviar nem sensação para provocar. O efeito é cumulativo, invisível e estrutural — exatamente como os capilares que ela protege. Para o Ervatório, isso posiciona a fava-de-anta como ingrediente de blend (não como protagonista sensorial) — ela entra em formulações para fornecer a 'infraestrutura vascular' enquanto outros ingredientes fornecem sabor e aroma. Em blends cardiovasculares, ela é a fundação que ninguém vê."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A fava-de-anta é o exemplo mais eloquente de matéria-prima brasileira transformada em princípio ativo farmacêutico europeu sem que o Brasil capture o valor. A rutina extraída de Dimorphandra mollis é a rutina de referência usada em dezenas de medicamentos venoprotetores europeus (Daflon, Venoruton e similares). A maior parte da produção é exportada como pó bruto — processada na Europa como matéria-prima farmacêutica. O Brasil é o maior produtor mundial da maior fonte natural de rutina e não tem um único medicamento venoprotetor nacional de fava-de-anta no mercado.",
-        "curiosidade": ""
+        "historia": "A fava-de-anta foi 'descoberta' pela ciência europeia no contexto da busca por fontes naturais baratas de rutina para a indústria farmacêutica — até os anos 1960, a principal fonte comercial de rutina era o trigo sarraceno (Fagopyrum esculentum). Quando pesquisadores brasileiros identificaram que os frutos de Dimorphandra mollis continham 15–25% de rutina (3–10x mais que o trigo sarraceno), a corrida extrativista começou. Em poucas décadas, o cerrado goiano tornou-se o maior fornecedor mundial de rutina bruta — sem que isso gerasse desenvolvimento local equivalente. A história da fava-de-anta é, em miniatura, a história da relação econômica entre a biodiversidade brasileira e a indústria farmacêutica global.",
+        "cerimonial": "Sem cerimônia documentada — a fava-de-anta tem uso mais industrial do que ritual ou doméstico.",
+        "brasil": "O paradoxo brasileiro da fava-de-anta: o Brasil é o maior produtor mundial da matéria-prima; a Europa transforma em medicamento e vende; o brasileiro compra o medicamento europeu importado; a erva original é praticamente desconhecida do público brasileiro. O Ervatório pode contar essa história — não como denúncia, mas como oportunidade: se a rutina da fava-de-anta funciona para Daflon® e Venoruton®, funciona na infusão direta do cerrado brasileiro. Com narrativa, rastreabilidade e identidade de origem, a fava-de-anta pode ser um dos produtos mais revolucionários do catálogo — o equivalente a 'fazer seu próprio Daflon® em xícara'.",
+        "curiosidade": "A rutina não é a molécula final que atua no corpo — é uma 'pró-droga' natural. Após ingestão, a rutina é hidrolisada pela microbiota intestinal em quercetina (a aglicona ativa) + rutinose (açúcar descartado). A quercetina livre é então absorvida no cólon e distribuída ao endotélio vascular, onde inibe a ativação de NF-κB, reduz a expressão de ICAM-1 e VCAM-1 (moléculas de adesão) e diminui a permeabilidade capilar. O que a fava-de-anta faz nos capilares é arquitetura molecular: ela não dilata nem contrai — ela REFORÇA."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA + Funcional global",
-        "status_anvisa": "Uso tradicional reconhecido. Rutina como PA: ampla regulação.",
-        "status_ema": "Rutina: monografada em diversas farmacopeias europeias como PA venoprotetor",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutos imaturos: novembro–fevereiro"
+        "status_anvisa": [
+          "Memento Fitoterápico — uso tradicional reconhecido.",
+          "Rutina como PA: amplamente regulada em medicamentos fitoterápicos."
+        ],
+        "status_ema": "Rutina/troxerutina: monografada em diversas farmacopeias europeias como PA venoprotetor. Dimorphandra mollis como espécie: não monografada diretamente.",
+        "status_fda": "Rutina: GRAS como suplemento alimentar. Vendida amplamente como 'rutin supplement' nos EUA.",
+        "certificacao_organica": "Extrativismo certificado via IMAFLORA, IBD — cadeia de PFNM do cerrado. Farmacopeia Europeia (Ph. Eur.): rutina monografada como PA.",
+        "sazonalidade": "Frutos imaturos: novembro–fevereiro (pico de concentração de rutina). A colheita deve ser feita ANTES da maturação plena — frutos maduros têm 3–5x menos rutina."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Cooperativas extrativistas do cerrado goiano e mineiro (Cooperativa Central do Cerrado, COOPERJAP). Matéria-prima com certificação de origem e colheita no estágio correto (fruto imaturo). Secundário: Processadoras de rutina de Goiânia e Uberlândia.",
+        "faixa_de_preco": [
+          "Frutos secos triturados (infusão): R$ 25–50/100 g (ervanário)",
+          "Rutina em pó padronizada (farmácia/suplemento): R$ 40–80/60 cápsulas de 250 mg",
+          "Extrato concentrado de fava-de-anta (15% rutina): R$ 50–100/100 g"
+        ],
+        "formatos": "Frutos secos triturados (infusão — formato Ervatório preferencial); Rutina em pó padronizada (cápsulas — farmácia); Extrato seco concentrado (uso em blends e formulações); Gel tópico com extrato de fava-de-anta (produto para varizes)."
+      },
+      "destaques": [
+        {
+          "label": "Maior fonte mundial de rutina",
+          "texto": "15-25% nos frutos imaturos — supera trigo sarraceno (2-8%) e sophora japonesa"
+        },
+        {
+          "label": "Daflon® brasileiro",
+          "texto": "Mesma molécula do venoprotetor europeu mais vendido — direto da xícara"
+        },
+        {
+          "label": "Cerrado para Europa",
+          "texto": "Brasil exporta toneladas/ano de rutina bruta — fitoterapia nacional incipiente"
+        }
+      ]
     },
     {
       "slug": "mangaba",
       "nome_popular": "Mangaba",
       "nome_cientifico": "Hancornia speciosa Gomes",
-      "tagline": "A fruta que chora leite — hipoglicemiante do cerrado e semiárido com potencial farmacológico crescente e identidade cultural sergipana insubstituível.",
+      "tagline": "A fruta que chora leite — hipoglicemiante do cerrado e litoral nordestino com potencial farmacológico crescente, sabor incomparável e identidade cultural sergipana que é patrimônio imaterial documentado.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Hancornia speciosa Gomes",
-        "familia_botanica": "Apocynaceae (família do congo, da frangipani)",
-        "tipo_botanico": "Alimento funcional / hipoglicemiante / antihipertensivo",
-        "parte_usada": "Fruto (alimentar); folhas (infusão medicinal); casca (decocção); látex do caule (antimicrobiano tópico).",
+        "familia_botanica": "Apocynaceae (família do congo, da espirradeira, da frangipani — família de plantas com látex, muitas tóxicas e muitas medicinais)",
+        "tipo_botanico": "Alimento funcional / fitoterápico hipoglicemiante / antihipertensivo",
+        "parte_usada": "Fruto maduro (alimentar — polpa, suco, sorvete, geleia); folhas (infusão medicinal — hipoglicemiante, antihipertensivo); casca (decocção — anti-inflamatório, anti-úlceroso); látex do caule (antimicrobiano tópico — tratamento de verrugas, micoses na tradição popular). A mangabeira exsuda látex branco do caule quando incisionada — látex com borracha natural (cis-poliisopreno) que foi comercialmente explorado no Nordeste antes da ascensão da borracha amazônica (Hevea brasiliensis).",
         "sinonimos": [
-          "Mangaba · mangabeira",
-          "Mangaba (uso único — sem tradução estabelecida em outros idiomas)"
+          "Mangaba · mangabeira (árvore)",
+          "Sem equivalente estabelecido em outros idiomas — endêmica do Brasil",
+          "Variantes regionais: mangaba-de-tabuleiro (SE/BA) · mangaba-do-cerrado (GO/MT)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "",
-        "cor_da_infusao": "",
-        "intensidade": "",
-        "notas": "",
-        "bioma_de_origem": "Cerrado costeiro, Caatinga, Restinga — distribuição litoral-cerrado; SE, BA, AL, PE, GO, MT, MA.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Fruto: Doce-ácido intenso e complexo, exótico-tropical amadurecido, perfumado intensamente, levemente balsâmico. Perfil entre o pêssego, o abricó, a guava e o maracujá — mas completamente distinto de qualquer um deles. A polpa madura (ponto ótimo: casca mole e ligeiramente fermentada) tem doçura concentrada com acidez de frutas tropicais que não tem paralelo no catálogo. Infusão de folhas: Amargo-adstringente suave, herbáceo-verde, discreto. Casca em decocção: Amargo-resinoso, adstringente moderado.",
+        "aroma": "Fruto: Floral-tropical intenso e inebriante, amadeirado-adocicado, perfume natural de rara beleza. Notas de jasmim tropical, baunilha verde, abricó fermentado. Comparado por sommeliers a pêssego branco + champagne rosé + jasmim. Folhas: herbáceo suave, neutro.",
+        "cor_da_infusao": "Folhas: Verde-amarelado claro #C8C860. Casca: Marrom-amarelado #A08040. Suco do fruto: Amarelo-creme a rosado (quando maduro) #F0C870.",
+        "intensidade": "Fruto: 4/5 — sabor e aroma dominantes, inconfundíveis. Infusão de folhas: 2/5 — suave.",
+        "notas": "Fruto — Cabeça: floral-tropical intenso (jasmim, neroli) | Corpo: doce-ácido concentrado, abricó-pêssego tropical | Fundo: fermentado nobre leve, amadeirado-balsâmico",
+        "bioma_de_origem": "Cerrado costeiro e Restinga (faixa de transição cerrado-litoral). Também presente no cerrado stricto sensu (GO, TO, MT). A mangabeira prefere solos arenosos, ácidos, bem drenados — adapta-se tanto à restinga litorânea quanto ao cerrado interior.",
+        "distribuicao_geografica": [
+          "SE (maior concentração cultural e identitária), BA (litoral norte e cerrado), AL, PE, PB, RN, CE, MA (restingas e tabuleiros); GO, MT, TO, MG (cerrado).",
+          "Sergipe é o estado-símbolo da mangaba — a fruta é identificada com a cultura sergipana da mesma forma que o açaí é identificado com o Pará.",
+          "Maior produtor: Bahia (por extensão de área), seguido por Sergipe (por densidade cultural e econômica).",
+          "Internacional: praticamente inexistente — a mangaba não saiu do Brasil. Ensaios de cultivo no Peru e Bolívia são experimentais."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Caju · Siriguela · Cajá (blends de frutas nordestinas-cerrado)"
+        "temperatura_ideal": "Fruto: consumir maduro (não cozinhar — destrói aromas). Folhas: 90 °C. Casca: decocção 98 °C.",
+        "tempo_de_infusao": "Folhas: 8–10 min coberto. Casca: 15 min decocção.",
+        "quantidade": "Folhas: 3–5 g secas/250 ml. Casca: 5 g/500 ml.",
+        "metodo": "Fruto (uso alimentar principal): consumo direto (polpa madura — ponto ideal: casca levemente amolecida, aroma intenso), geleia, sorvete, suco, polpa congelada, licor, mousse. ATENÇÃO: fruto verde é tóxico (látex em alta concentração — irritante gastrointestinal, vômitos, diarreia). Consumir APENAS completamente maduro. Folhas: infusão coberta. Casca: decocção. Látex (uso tópico): aplicação direta sobre verrugas e micoses — uso popular.",
+        "reinfusoes": "Folhas: 1 reinfusão.",
+        "melhor_momento": "Folhas: 30 min antes das refeições (hipoglicemiante prandial), 2–3x ao dia.",
+        "combina_com": "Caju · Siriguela · Cajá (blends de frutas nordestinas-cerrado) · Pata-de-vaca (blend hipoglicemiante) · Canela (potenciador antidiabético) · Mel (adoça folhas)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Tradicional forte para uso tópico de látex; preliminar para cosmético.",
+        "aplicacoes": [
+          {
+            "titulo": "Látex como antiverrucoso",
+            "texto": "Látex fresco da mangabeira aplicado diretamente sobre verrugas e papilomas — uso popular nordestino documentado extensivamente. Mecanismo: proteases do látex (similares à papaína) digerem tecido hiperproliferativo. Evidência: tradicional forte, pesquisa experimental em andamento na UFS."
+          },
+          {
+            "titulo": "Látex como antifúngico tópico",
+            "texto": "Látex aplicado sobre micoses superficiais (tinha, ptiríase). Evidência: tradicional."
+          },
+          {
+            "titulo": "Polpa como máscara facial hidratante",
+            "texto": "Polpa madura em máscara (15 min) — hidratação, vitamina C, antioxidante. Uso cosmético artesanal."
+          }
+        ],
+        "contraindicacoes": "Alergia ao látex possível. Verificar reação cruzada com látex de outras Apocynaceae."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Hipoglicemiante (folhas — inibição de alfaglicosidase)",
-          "Antihipertensivo (vasodilatação por flavonóides)",
-          "Anti-inflamatório",
-          "Antimicrobiano (látex)",
-          "Antioxidante (fruto — alto ORAC)",
-          "Nutritivo (vitamina C, ferro)",
-          "Componentes ativos:",
-          "Contraindicações: Hipoglicemia — cautela com hipoglicemiantes orais. Alergia ao látex (reação cruzada possível com látex da arvore)."
+          "Hipoglicemiante (folhas — inibição de alfaglicosidase intestinal + estimulação de secreção de insulina)",
+          "Antihipertensivo (folhas — vasodilatação endotélio-dependente via NO)",
+          "Anti-inflamatório (casca — triterpenos)",
+          "Antimicrobiano (látex — proteases)",
+          "Antioxidante (fruto — vitamina C + polifenóis)",
+          "Antiverrucoso (látex — proteases + alcalóides)",
+          "Nutritivo (fruto — vitamina C, ferro, carotenóides)"
         ],
         "componentes_ativos": [
           {
-            "label": "FLAVONÓIDES (folhas)",
-            "texto": "Hipoglicemiante, antihipertensivo"
+            "label": "Flavonóides (rutina, quercetina, isoquercetina)",
+            "texto": "Folhas — Hipoglicemiante (inibição alfaglicosidase), antihipertensivo (vasodilatação via NO), antioxidante. Mecanismo hipoglicemiante similar ao da acarbose farmacêutica"
           },
           {
-            "label": "BORRACHOL (látex)",
-            "texto": "Antimicrobiano, cicatrizante"
+            "label": "Borrachol (cis-poliisopreno)",
+            "texto": "Látex — Antimicrobiano, antiverrucoso, barreira mecânica. Borracha natural com proteases"
           },
           {
-            "label": "VITAMINA C",
-            "texto": "Antioxidante"
+            "label": "Proteases (serina-proteases)",
+            "texto": "Látex — Antiverrucoso (digestão de tecido hiperproliferativo). Similar à papaína da papaia"
           },
           {
-            "label": "ÁCIDOS ORGÂNICOS",
-            "texto": "Digestivo, antioxidante"
+            "label": "Ácido ursólico (triterpeno)",
+            "texto": "Casca — Anti-inflamatório, antimicrobiano, anticancerígeno (pesquisa)"
           },
           {
-            "label": "TERPENOS",
-            "texto": "Anti-inflamatório"
+            "label": "Lupeol (triterpeno)",
+            "texto": "Casca — Anti-inflamatório, antidiabético"
+          },
+          {
+            "label": "Vitamina C",
+            "texto": "Fruto — Antioxidante, imunidade. 30–50 mg/100 g (fruto maduro)"
+          },
+          {
+            "label": "Carotenóides (beta-caroteno)",
+            "texto": "Fruto — Antioxidante, pró-vitamina A. Cor amarela da polpa"
+          },
+          {
+            "label": "Ferro",
+            "texto": "Fruto — Nutritivo (2,8 mg/100 g)"
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Diabetes tipo 2 (hipoglicemiante — adjuvante)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos DM2 — Pereira et al. (UFS, 2015); Marinho et al. (2011)"
+          },
+          {
+            "indicacao": "Hipertensão arterial leve (antihipertensivo)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos hipertensos leves — Endringer et al. (2007); Ferreira et al. (2007)"
+          },
+          {
+            "indicacao": "Verrugas (látex tópico)",
+            "evidencia": "Tradicional forte",
+            "populacao": "Adultos — uso popular NE + pesquisa experimental UFS"
+          },
+          {
+            "indicacao": "Antioxidante (fruto)",
+            "evidencia": "Forte (nutricional)",
+            "populacao": "Adultos — TACO/EMBRAPA"
+          }
+        ],
+        "alerta_critico": {
+          "titulo": "Fruto verde é TÓXICO",
+          "titulo2": "Consumir APENAS completamente maduro",
+          "corpo": "O fruto verde da mangaba contém látex em alta concentração — irritante gastrointestinal causando vômitos, diarreia e desconforto agudo. A maturação completa (casca mole, aroma intenso) reduz drasticamente o teor de látex e é a única forma segura de consumo. Nunca consumir fruto verde, mesmo cozido. Adicionalmente: alergia ao látex pode ocorrer (reação cruzada possível com látex de outras Apocynaceae)."
+        },
+        "contraindicacoes": [
+          "Fruto verde: TÓXICO — não consumir mesmo cozido",
+          "Hipoglicemia: uso de folhas com hipoglicemiantes orais pode causar hipoglicemia — monitorar glicemia",
+          "Hipotensão: folhas com anti-hipertensivos — potencialização; monitorar PA",
+          "Alergia ao látex: reação cruzada possível",
+          "Gestação: dados insuficientes"
+        ],
+        "interacoes": [
+          {
+            "label": "Hipoglicemiantes orais (metformina, glibenclamida)",
+            "texto": "Inibição de alfaglicosidase aditiva. Conduta: monitorar glicemia"
+          },
+          {
+            "label": "Insulina",
+            "texto": "Potencialização. Conduta: monitorar glicemia"
+          },
+          {
+            "label": "Anti-hipertensivos (IECA, BRA, BCC)",
+            "texto": "Vasodilatação aditiva. Conduta: monitorar PA"
+          }
+        ],
+        "efeitos_adversos": "Folhas em infusão (dose usual): raros. Desconforto gástrico leve em doses > 10 g/dia. Fruto verde: tóxico — não consumir. Látex oral: irritação gastrointestinal — uso exclusivamente tópico.",
+        "dose_maxima": "Folhas: até 10 g/dia em infusão. Fruto: sem limite (é alimento — maduro). Látex: uso tópico apenas.",
+        "fontes": [
+          "Pereira AC et al. — Antidiabetic effect of Hancornia speciosa Gomes (Apocynaceae) leaf extract (J Ethnopharmacol, 2015)",
+          "Endringer DC et al. — Vasorelaxant effect of Hancornia speciosa on isolated rat aortic rings (Phytomedicine, 2007)",
+          "Ferreira HC et al. — Hypotensive activity of Hancornia speciosa Gomes in rats (Phytomedicine, 2007)",
+          "Marinho DG et al. — The latex obtained from Hancornia speciosa Gomes possesses anti-inflammatory activity (J Ethnopharmacol, 2011)",
+          "IPHAN — Relatório de reconhecimento do extrativismo da mangaba como patrimônio cultural imaterial (2011)",
+          "Vieira Neto RD — Fruteiras potenciais para os tabuleiros costeiros e baixadas litorâneas (EMBRAPA Tabuleiros, 2002)",
+          "EMBRAPA — Tabela TACO"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "3/3",
+            "observacao": "Intenso — açúcares simples concentrados na polpa madura; doçura tropical plena. Folhas: 0/3"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "0/3",
+            "observacao": "Ausente no fruto maduro (presente no verde — tóxico). Folhas: 2/3"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "2/3",
+            "observacao": "Presente — acidez cítrica-tropical que equilibra a doçura; ácido cítrico + málico"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Floral-tropical-embriagante (fruto)",
+        "olfativo_descritores": [
+          "Jasmim tropical intenso (ester de jasmim — metiljasmolato?)",
+          "Pêssego branco maduro (lactonas — gamma-decalactona)",
+          "Abricó fermentado nobre",
+          "Baunilha verde (traços — vanilina)",
+          "Champagne rosé (ésteres frutais em microfermentação natural da polpa madura)",
+          "Amadeirado-balsâmico sutil",
+          "Mel de flores silvestres (fundo)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa (folhas) / Leve (casca)",
+            "molecula": "Taninos e flavonóides. Fruto maduro: zero adstringência"
+          }
+        ],
+        "tatil": "Fruto: textura de polpa cremosa-aveludada, levemente mucilaginosa, que reveste a boca com doçura persistente. A polpa tem consistência entre o pêssego e a guava — densa mas macia. Persistência aromática alta — o perfume de mangaba fica na boca e nariz por 15+ min. Folhas: corpo leve, textura aquosa, sem qualquer untuosidade.",
+        "descricao_integrada": "A mangaba é o ingrediente do catálogo com maior gap entre a experiência do fruto (extraordinária — um dos melhores sabores frutais do Brasil) e a experiência da infusão de folhas (ordinária — tisana amarga comum). Para o Ervatório, a narrativa deve ser dupla: a folha é remédio (hipoglicemiante de verdade); o fruto é arte (sabor sem paralelo). Não confundir as duas experiências — ambas têm valor, mas em dimensões completamente diferentes. O aroma do fruto de mangaba completamente maduro é um dos mais belos e complexos do reino frutal tropical — comparável em sofisticação ao pêssego branco italiano ou ao abricó do Roussillon francês, com camadas adicionais de jasmim e fermentado nobre que nem os melhores pêssegos europeus oferecem."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A mangaba é a fruta-símbolo de Sergipe — estado que a adotou como identidade cultural, com festival anual da mangaba, artesanato e culinária centrados no fruto. A mangabeira em Sergipe é objeto de disputa de terras complexa: as \"catadoras de mangaba\" — mulheres extrativistas das restingas — travam há décadas batalhas judiciais contra empreendimentos imobiliários que destroem os mangabeirais nativos. Em 2011, o IPHAN reconheceu o extrativismo da mangaba como patrimônio cultural imaterial.",
-        "curiosidade": ""
+        "historia": "A mangaba é a fruta que o Nordeste mais ama e o Brasil quase não conhece. Endêmica do Brasil e distribuída entre cerrado e restinga, a mangaba nunca cruzou as fronteiras nordestinas em escala comercial. São Paulo e Rio de Janeiro consomem açaí, maracujá, graviola — mas a mangaba permanece produto regional, consumida fresca ou em polpa congelada nas feiras de Aracaju, Salvador e Recife. A mangabeira foi economicamente significativa no período colonial como fonte de borracha (látex) — antes da exploração industrial de Hevea brasiliensis na Amazônia, a borracha nordestina vinha da mangabeira. O declínio da borracha nordestina frente à amazônica (e depois à asiática) relegou a mangabeira ao esquecimento econômico — até que sua fruta e suas folhas fossem redescobertos.",
+        "cerimonial": "As 'catadoras de mangaba' — mulheres extrativistas das restingas de Sergipe, Bahia e Alagoas — desenvolveram ao longo de gerações um sistema matriarcal de coleta, processamento e venda da fruta que é reconhecido como patrimônio cultural imaterial pelo IPHAN (2011). As catadoras organizam-se em associações e cooperativas, transmitem conhecimento de mãe para filha, e travam há décadas batalhas judiciais contra empreendimentos imobiliários e de carcinicultura que destroem os mangabeirais nativos das restingas. O Movimento das Catadoras de Mangaba (MCM) é um dos mais singulares movimentos socioambientais do Brasil — mulheres rurais que lutam pela preservação de uma árvore frutífera nativa contra a especulação imobiliária.",
+        "brasil": "A mangaba tem potencial de exportação como 'superfruit' premium praticamente inexplorado: sabor único e sofisticado (comparável a pêssego europeu); vitamina C excepcional; propriedades hipoglicemiantes documentadas (folhas); identidade cultural protegida (IPHAN); narrativa de gênero (catadoras). Todos os elementos de um produto de exportação premium estão presentes — falta industrialização, cadeia de frio, marketing internacional e coragem de levar a mangaba para fora do Nordeste.",
+        "curiosidade": "A mangabeira é uma das poucas árvores frutíferas brasileiras que produz borracha de qualidade — o látex contém cis-1,4-poliisopreno, o mesmo polímero da borracha-natural (Hevea). No séc. XIX, a 'borracha de mangaba' nordestina competiu com a amazônica em qualidade. A ironia é que o mesmo látex que um dia fez borracha agora é pesquisado como antiverrucoso e antifúngico — as proteases do látex que tornam a borracha possível (quebrando proteínas) também digerem tecido hiperproliferativo de verrugas. A mesma molécula, dois séculos depois, encontra novo uso."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Alimento funcional / Fitoterápico",
-        "status_anvisa": "Alimento. Folhas: uso tradicional reconhecido.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutificação: outubro–janeiro (cerrado) / julho–setembro (nordeste)"
+        "eixo_botanico_tpc": "Alimento funcional + Fitoterápico (folhas e casca)",
+        "status_anvisa": [
+          "Fruto: regulado como alimento (IN MAPA).",
+          "Folhas e casca: uso tradicional reconhecido (sem monografia oficial)."
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Produção orgânica certificada disponível em SE e BA (IBD, Ecocert). Legislação estadual de Sergipe protege a mangabeira como espécie nativa — proibido abate sem licença. IPHAN: extrativismo da mangaba reconhecido como Patrimônio Cultural Imaterial (2011).",
+        "sazonalidade": "Frutificação: outubro–janeiro (cerrado — GO, MT) / julho–setembro (Nordeste — SE, BA, AL — 'safra de inverno'). Folhas: disponíveis o ano todo."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Associações de Catadoras de Mangaba de Sergipe (Associação das Catadoras de Mangaba de Indiaroba, Cooperativa das Catadoras de Santa Luzia do Itanhy) — rastreabilidade de origem + impacto social + narrativa de gênero. Secundário: Cooperativas do cerrado goiano (mangaba-do-cerrado — mesma espécie, terroir diferente).",
+        "faixa_de_preco": [
+          "Polpa congelada: R$ 15–30/kg (NE)",
+          "Fruto fresco (regional — perecível): R$ 8–15/kg (feira)",
+          "Folhas secas para infusão: R$ 30–60/100 g (ervanário)",
+          "Geleia artesanal: R$ 20–40/250 g"
+        ],
+        "formatos": "Folhas secas (infusão medicinal — formato Ervatório); Polpa congelada (uso alimentar — parceria logística); Geleia artesanal (produto gourmet); Pó liofilizado (potencial exportação — formato shelf-stable); Casca seca (decocção — farmácia/ervanário)."
+      },
+      "destaques": [
+        {
+          "label": "Patrimônio das Catadoras",
+          "texto": "IPHAN reconhece extrativismo da mangaba como patrimônio cultural imaterial (2011)"
+        },
+        {
+          "label": "Folhas hipoglicemiantes",
+          "texto": "Inibição de alfaglicosidase comparável à acarbose — pesquisa UFS"
+        },
+        {
+          "label": "Sabor único",
+          "texto": "Pêssego + jasmim + champagne — perfil aromático sem paralelo no Brasil"
+        }
+      ]
     },
     {
       "slug": "pitanga",
