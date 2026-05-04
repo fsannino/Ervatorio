@@ -1308,9 +1308,7 @@ function applyI18n() {
 
 // ─── Language switcher UI ────────────────────────────────
 function renderLangSwitcher() {
-  const el = document.getElementById('langSwitcher');
-  if (!el) return;
-  el.innerHTML = Object.entries(LANGS).map(([code, info]) =>
+  const html = Object.entries(LANGS).map(([code, info]) =>
     `<button class="lang-btn${_lang === code ? ' on' : ''}"
              onclick="setLang('${code}')"
              title="${info.name}"
@@ -1318,6 +1316,9 @@ function renderLangSwitcher() {
        ${info.flag}
      </button>`
   ).join('');
+  // Renderiza em todos os containers (.lang-switcher) — header do app E
+  // header da landing page têm o mesmo seletor.
+  document.querySelectorAll('.lang-switcher').forEach(el => { el.innerHTML = html; });
 }
 
 // ─── Init ────────────────────────────────────────────────

@@ -178,6 +178,23 @@
     transition: background .3s !important;
   }
   .btn-clube:hover { background: var(--verde-musgo) !important; }
+  /* Toggles na landing — herdam paleta do header bege */
+  .landing .landing-lang { display: inline-flex; gap: 2px; }
+  .landing .landing-lang .lang-btn {
+    background: transparent; border: 0.5px solid rgba(45,80,40,.25);
+    color: var(--verde-profundo); font-size: 13px; padding: 3px 8px;
+    border-radius: 4px; cursor: pointer; line-height: 1; transition: all .2s;
+  }
+  .landing .landing-lang .lang-btn:hover { border-color: var(--ouro); }
+  .landing .landing-lang .lang-btn.on { background: var(--verde-profundo); color: var(--creme); border-color: var(--verde-profundo); }
+  .landing-theme-toggle {
+    background: transparent; border: 0.5px solid rgba(45,80,40,.25);
+    color: var(--verde-profundo); font-size: 14px; width: 28px; height: 28px;
+    border-radius: 50%; cursor: pointer; line-height: 1; padding: 0;
+    display: inline-flex; align-items: center; justify-content: center;
+    transition: all .2s;
+  }
+  .landing-theme-toggle:hover { border-color: var(--ouro); color: var(--ouro); }
 
   /* ── HERO ─────────────────────────────────────────── */
   .hero {
@@ -1158,6 +1175,8 @@
     </a>
     <div class="header-actions">
       <a href="#mapa">Mapa</a>
+      <div id="landingLangSwitcher" class="lang-switcher landing-lang"></div>
+      <button id="landingThemeToggle" class="landing-theme-toggle" onclick="toggleTheme()" title="Alternar tema claro/escuro" aria-label="Alternar tema claro/escuro">☀</button>
       <a href="#" onclick="enterApp();return false">Entrar</a>
       <a href="#" onclick="enterApp();goPage('sobre');return false" class="btn-clube">Clube</a>
     </div>
@@ -1213,15 +1232,15 @@
 
     <div class="hero-stat-panel">
       <div class="stat-card">
-        <span class="stat-number">13</span>
+        <span class="stat-number" id="statCategorias">15</span>
         <span class="stat-label">Categorias funcionais</span>
       </div>
       <div class="stat-card">
-        <span class="stat-number">28</span>
+        <span class="stat-number" id="statErvas">96</span>
         <span class="stat-label">Ervas catalogadas</span>
       </div>
       <div class="stat-card">
-        <span class="stat-number">3</span>
+        <span class="stat-number" id="statLinhas">5</span>
         <span class="stat-label">Linhas de produto</span>
       </div>
     </div>

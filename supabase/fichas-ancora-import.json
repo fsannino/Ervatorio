@@ -6054,81 +6054,6 @@
       }
     },
     {
-      "slug": "erva-cidreira-europeia",
-      "nome_popular": "Erva-Cidreira Europeia (Melissa)",
-      "nome_cientifico": "",
-      "tagline": "",
-      "schema_version": "1.1",
-      "identificacao": {
-        "nome_cientifico": "",
-        "familia_botanica": "",
-        "tipo_botanico": "",
-        "parte_usada": "",
-        "sinonimos": []
-      },
-      "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "",
-        "cor_da_infusao": "",
-        "intensidade": "",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
-      },
-      "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [],
-        "componentes_ativos": [],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
-      },
-      "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
-      },
-      "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
-      },
-      "regulacao": {
-        "eixo_botanico_tpc": "",
-        "status_anvisa": "",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": ""
-      },
-      "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
-    },
-    {
       "slug": "calendula",
       "nome_popular": "Calêndula",
       "nome_cientifico": "Calendula officinalis L.",
@@ -6477,7 +6402,7 @@
       }
     },
     {
-      "slug": "gengibre-japones",
+      "slug": "galanga",
       "nome_popular": "Gengibre-Japonês",
       "nome_cientifico": "Alpinia officinarum Hance (galanga-menor) / Alpinia galanga (L.) Willd. (galanga-maior — culinária tailandesa)",
       "tagline": "O gengibre real da Ásia — a especiaria do Sudeste Asiático que Hildegarda de Bingen chamava de \"a especiaria da vida\" e que a gastronomia tailandesa e indonésia tornaram indispensável ao mundo.",
@@ -10087,7 +10012,7 @@
       }
     },
     {
-      "slug": "no-moscada",
+      "slug": "noz-moscada",
       "nome_popular": "Nó-Moscada",
       "nome_cientifico": "Myristica fragrans Houtt.",
       "tagline": "O alucinógeno da cozinha — a especiaria mais dual do catálogo, que em doses culinárias é nutritiva e aromática e em doses \"medicinais\" populares é tóxica e psicoativa, com farmacologia que explica ambos.",
@@ -10538,7 +10463,7 @@
       }
     },
     {
-      "slug": "capim-santo",
+      "slug": "palmarosa",
       "nome_popular": "Capim-Santo",
       "nome_cientifico": "Cymbopogon martinii (Roxb.) Wats.",
       "tagline": "O aroma de rosas sem rosas — gramínea aromática parente do capim-limão com o mais alto teor de geraniol de qualquer planta comercial e uso crescente em cosmética, aromaterapia e fitoterapia.",
@@ -10638,7 +10563,7 @@
       }
     },
     {
-      "slug": "murici-de-tabuleiro",
+      "slug": "murici",
       "nome_popular": "Murici-de-Tabuleiro",
       "nome_cientifico": "Byrsonima crassifolia (L.) Kunth / B. crassa Nied. (cerrado)",
       "tagline": "O fruto do sol do cerrado e da restinga — antioxidante tropical com vitamina C excepcional, sabor único e tradição de uso que vai do quintal nordestino à alta gastronomia brasileira.",

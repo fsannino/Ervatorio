@@ -864,20 +864,26 @@ async function submitProfile() {
 }
 
 // ── THEME TOGGLE ──
+function _setThemeIcon(icon){
+  ['themeToggle', 'landingThemeToggle'].forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) el.textContent = icon;
+  });
+}
 function toggleTheme(){
   document.body.classList.toggle('light');
   const isLight = document.body.classList.contains('light');
   localStorage.setItem('erb_theme', isLight ? 'light' : 'dark');
-  document.getElementById('themeToggle').textContent = isLight ? '☽' : '☀';
+  _setThemeIcon(isLight ? '☽' : '☀');
 }
 // Restore saved theme (default: light)
 (function(){
   const saved = localStorage.getItem('erb_theme');
   if(saved === 'dark'){
-    // User explicitly chose dark
+    _setThemeIcon('☀');
   } else {
     document.body.classList.add('light');
-    document.getElementById('themeToggle').textContent = '☽';
+    _setThemeIcon('☽');
   }
 })();
 
@@ -922,11 +928,25 @@ function goToRodaFromLanding(btn){
   if (typeof goPage === 'function') goPage('roda');
   return false;
 }
-// Skip landing if already logged in
+// Landing page é sempre exibida ao carregar — usuário entra no app
+// clicando num CTA ("Entrar", "Descobrir meu chá", etc.). enterApp() já
+// detecta sessão prévia (erb_entered) e pula o modal de login se possível.
+
+// Atualiza o contador de "Ervas catalogadas" da landing com o total real
+// de fichas v1.1 publicadas no Supabase. Mantém o número da landing sempre
+// alinhado ao catálogo conforme novas fichas são importadas.
 (function(){
-  if(localStorage.getItem('erb_entered')){
-    document.getElementById('landingPage').style.display = 'none';
-    document.getElementById('appContainer').style.display = 'block';
+  function updateStat(){
+    var el = document.getElementById('statErvas');
+    if (!el || typeof ErvatorioData === 'undefined') return;
+    ErvatorioData.getAllFichas().then(function(fichas){
+      if (fichas && fichas.length) el.textContent = String(fichas.length);
+    }).catch(function(){ /* mantém valor estático se offline */ });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updateStat);
+  } else {
+    updateStat();
   }
 })();
 
