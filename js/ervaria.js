@@ -418,6 +418,9 @@ const ervaria = {
         freq: r.frequency || '',
         tags: Array.isArray(r.tags) ? r.tags : [],
         momento: Array.isArray(r.momento) ? r.momento : [],
+        bioma: r.bioma || '',
+        usos: Array.isArray(r.usos) ? r.usos : [],
+        restricoes_pais: Array.isArray(r.restricoes_pais) ? r.restricoes_pais : [],
       };
     });
     if (!mapped.length) return;
