@@ -56,6 +56,37 @@
     --cinza-suave:    #e8e0d5;
     --texto-escuro:   #1a1a16;
   }
+  /* Dark theme da landing: ativa quando body NÃO tem .light (toggle do app
+     remove .light para entrar em modo escuro). Inverte a paleta clara para
+     uma escura consistente, mantendo --ouro como acento legível em ambos. */
+  body:not(.light) .landing {
+    --verde-profundo: #e8dcc8;
+    --verde-musgo:    #d4c8b0;
+    --verde-folha:    #c8b89a;
+    --creme:          #1a1410;
+    --creme-escuro:   #221a14;
+    --ouro:           #d4af7a;
+    --ouro-claro:     #e8c9a0;
+    --terra:          #c8a070;
+    --off-white:      #0e0a08;
+    --cinza-suave:    #2a2218;
+    --texto-escuro:   #e8dcc8;
+  }
+  body:not(.light) .landing header {
+    background: rgba(14, 10, 8, 0.96);
+    border-bottom-color: rgba(232, 220, 200, 0.08);
+  }
+  body:not(.light) .landing .top-banner {
+    border-bottom-color: rgba(212, 175, 122, 0.15);
+  }
+  body:not(.light) .landing .strip {
+    background: var(--creme-escuro);
+    border-color: rgba(212, 175, 122, 0.12);
+  }
+  body:not(.light) .landing-theme-toggle,
+  body:not(.light) .landing .landing-lang .lang-btn {
+    border-color: rgba(212, 175, 122, 0.35);
+  }
 
   html { scroll-behavior: smooth; }
 
@@ -1155,30 +1186,30 @@
 <div class="landing" id="landingPage">
 <!-- ANÚNCIO TOPO -->
 <div class="top-banner">
-  <a href="#clube">Clube das Chazerias — Inscreva-se</a> &nbsp;·&nbsp;
-  Ervas do Brasil e do Mundo &nbsp;·&nbsp;
-  Marketplace em breve
+  <a href="#clube" data-i18n="lp.banner.club">Clube das Chazerias — Inscreva-se</a> &nbsp;·&nbsp;
+  <span data-i18n="lp.banner.world">Ervas do Brasil e do Mundo</span> &nbsp;·&nbsp;
+  <span data-i18n="lp.banner.marketplace">Marketplace em breve</span>
 </div>
 
 <!-- HEADER -->
 <header>
   <div class="header-inner">
     <nav class="main-nav">
-      <a href="#colecoes">Coleções</a>
-      <a href="#mapa">Origens</a>
-      <a href="#roda">Roda dos Chás</a>
-      <a href="#diario">Diário</a>
+      <a href="#colecoes" data-i18n="lp.nav.collections">Coleções</a>
+      <a href="#mapa" data-i18n="lp.nav.origins">Origens</a>
+      <a href="#roda" data-i18n="lp.nav.wheel">Roda dos Chás</a>
+      <a href="#diario" data-i18n="lp.nav.diary">Diário</a>
     </nav>
     <a href="#" class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">
       <span class="logo-mark">Ervatório</span>
-      <span class="logo-sub">Ervas do Brasil e do Mundo</span>
+      <span class="logo-sub" data-i18n="lp.logo.sub">Ervas do Brasil e do Mundo</span>
     </a>
     <div class="header-actions">
-      <a href="#mapa">Mapa</a>
+      <a href="#mapa" data-i18n="lp.actions.map">Mapa</a>
       <div id="landingLangSwitcher" class="lang-switcher landing-lang"></div>
       <button id="landingThemeToggle" class="landing-theme-toggle" onclick="toggleTheme()" title="Alternar tema claro/escuro" aria-label="Alternar tema claro/escuro">☀</button>
-      <a href="#" onclick="enterApp();return false">Entrar</a>
-      <a href="#" onclick="enterApp();goPage('sobre');return false" class="btn-clube">Clube</a>
+      <a href="#" onclick="enterApp();return false" data-i18n="lp.actions.enter">Entrar</a>
+      <a href="#" onclick="enterApp();goPage('sobre');return false" class="btn-clube" data-i18n="lp.actions.club">Clube</a>
     </div>
   </div>
 </header>
@@ -1213,35 +1244,35 @@
   <div class="hero-content">
     <div class="hero-text">
       <p class="hero-eyebrow">ervatorio.com.br</p>
-      <h1 class="hero-headline">
+      <h1 class="hero-headline" data-i18n-html="lp.hero.headline">
         As ervas do mundo<br>
         reunidas em<br>
         <em>uma só porta</em>
       </h1>
-      <p class="hero-body">
-        Do Japonês Matcha ao Yerba Mate sul-americano, do Darjeeling 
-        indiano à Camomila egípcia — e com orgulho especial pelas 
-        ervas únicas dos biomas brasileiros. Origem rastreável, 
+      <p class="hero-body" data-i18n="lp.hero.body">
+        Do Japonês Matcha ao Yerba Mate sul-americano, do Darjeeling
+        indiano à Camomila egípcia — e com orgulho especial pelas
+        ervas únicas dos biomas brasileiros. Origem rastreável,
         curadoria botânica, para cada momento da sua vida.
       </p>
       <div class="hero-ctas">
-        <a href="#" onclick="enterApp();goPage('search');return false" class="btn-primary">Descobrir meu chá</a>
-        <a href="#colecoes" class="btn-outline">Ver coleções</a>
+        <a href="#" onclick="enterApp();goPage('search');return false" class="btn-primary" data-i18n="lp.hero.cta_primary">Descobrir meu chá</a>
+        <a href="#colecoes" class="btn-outline" data-i18n="lp.hero.cta_outline">Ver coleções</a>
       </div>
     </div>
 
     <div class="hero-stat-panel">
       <div class="stat-card">
         <span class="stat-number" id="statCategorias">15</span>
-        <span class="stat-label">Categorias funcionais</span>
+        <span class="stat-label" data-i18n="lp.stats.categories">Categorias funcionais</span>
       </div>
       <div class="stat-card">
         <span class="stat-number" id="statErvas">96</span>
-        <span class="stat-label">Ervas catalogadas</span>
+        <span class="stat-label" data-i18n="lp.stats.herbs">Ervas catalogadas</span>
       </div>
       <div class="stat-card">
         <span class="stat-number" id="statLinhas">5</span>
-        <span class="stat-label">Linhas de produto</span>
+        <span class="stat-label" data-i18n="lp.stats.lines">Linhas de produto</span>
       </div>
     </div>
   </div>
@@ -1251,17 +1282,17 @@
 <div class="strip">
   <div class="strip-item">
     <span class="strip-icon">🌍</span>
-    Ervas do mundo todo
+    <span data-i18n="lp.strip.world">Ervas do mundo todo</span>
   </div>
   <span class="strip-divider">·</span>
   <div class="strip-item">
     <span class="strip-icon">🌿</span>
-    Linha Brasileira exclusiva
+    <span data-i18n="lp.strip.brazil">Linha Brasileira exclusiva</span>
   </div>
   <span class="strip-divider">·</span>
   <div class="strip-item">
     <span class="strip-icon">🗺</span>
-    Mapa Mundi dos Chás
+    <span data-i18n="lp.strip.map">Mapa Mundi dos Chás</span>
   </div>
   <span class="strip-divider">·</span>
   <div class="strip-item">
