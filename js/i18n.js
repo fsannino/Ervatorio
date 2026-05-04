@@ -240,6 +240,31 @@ const TRANSLATIONS = {
     'auth.or_with':             'ou continue com',
     'auth.google_btn':          'Entrar com Google',
     'auth.guest_link':          'Continuar sem login',
+      // Landing v2 + Ervopedia
+    'page.ervatorio.filters': 'Filtros',
+    'page.ervatorio.filters_clear': 'Limpar',
+    'page.ervatorio.search_placeholder': 'Buscar erva, ciência, tagline...',
+    'lp.nav.collections': 'Coleções',
+    'lp.nav.origins': 'Origens',
+    'lp.nav.wheel': 'Roda dos Chás',
+    'lp.nav.diary': 'Diário',
+    'lp.banner.club': 'Clube das Chazerias — Inscreva-se',
+    'lp.banner.world': 'Ervas do Brasil e do Mundo',
+    'lp.banner.marketplace': 'Marketplace em breve',
+    'lp.logo.sub': 'Ervas do Brasil e do Mundo',
+    'lp.actions.map': 'Mapa',
+    'lp.actions.enter': 'Entrar',
+    'lp.actions.club': 'Clube',
+    'lp.hero.headline': 'As ervas do mundo<br>reunidas em<br><em>uma só porta</em>',
+    'lp.hero.body': 'Do Japonês Matcha ao Yerba Mate sul-americano, do Darjeeling indiano à Camomila egípcia — e com orgulho especial pelas ervas únicas dos biomas brasileiros. Origem rastreável, curadoria botânica, para cada momento da sua vida.',
+    'lp.hero.cta_primary': 'Descobrir meu chá',
+    'lp.hero.cta_outline': 'Ver coleções',
+    'lp.stats.categories': 'Categorias funcionais',
+    'lp.stats.herbs': 'Ervas catalogadas',
+    'lp.stats.lines': 'Linhas de produto',
+    'lp.strip.world': 'Ervas do mundo todo',
+    'lp.strip.brazil': 'Linha Brasileira exclusiva',
+    'lp.strip.map': 'Mapa Mundi dos Chás',
   },
 
   // ── ENGLISH ───────────────────────────────────────────
@@ -445,6 +470,31 @@ const TRANSLATIONS = {
     'auth.or_with':             'or continue with',
     'auth.google_btn':          'Sign in with Google',
     'auth.guest_link':          'Continue without login',
+      // Landing v2 + Ervopedia
+    'page.ervatorio.filters': 'Filters',
+    'page.ervatorio.filters_clear': 'Clear',
+    'page.ervatorio.search_placeholder': 'Search herb, science, tagline...',
+    'lp.nav.collections': 'Collections',
+    'lp.nav.origins': 'Origins',
+    'lp.nav.wheel': 'Tea Wheel',
+    'lp.nav.diary': 'Journal',
+    'lp.banner.club': 'Tea House Club — Subscribe',
+    'lp.banner.world': 'Herbs from Brazil and the World',
+    'lp.banner.marketplace': 'Marketplace coming soon',
+    'lp.logo.sub': 'Herbs from Brazil and the World',
+    'lp.actions.map': 'Map',
+    'lp.actions.enter': 'Enter',
+    'lp.actions.club': 'Club',
+    'lp.hero.headline': 'The world\'s herbs<br>gathered at<br><em>a single door</em>',
+    'lp.hero.body': 'From Japanese Matcha to South American Yerba Mate, from Indian Darjeeling to Egyptian Chamomile — with special pride in the unique herbs of Brazilian biomes. Traceable origin, botanical curation, for every moment of your life.',
+    'lp.hero.cta_primary': 'Discover my tea',
+    'lp.hero.cta_outline': 'View collections',
+    'lp.stats.categories': 'Functional categories',
+    'lp.stats.herbs': 'Herbs catalogued',
+    'lp.stats.lines': 'Product lines',
+    'lp.strip.world': 'Herbs from all over the world',
+    'lp.strip.brazil': 'Exclusive Brazilian line',
+    'lp.strip.map': 'World Map of Teas',
   },
 
   // ── ESPAÑOL ───────────────────────────────────────────
@@ -650,6 +700,31 @@ const TRANSLATIONS = {
     'auth.or_with':             'o continúa con',
     'auth.google_btn':          'Entrar con Google',
     'auth.guest_link':          'Continuar sin inicio de sesión',
+      // Landing v2 + Ervopedia
+    'page.ervatorio.filters': 'Filtros',
+    'page.ervatorio.filters_clear': 'Limpiar',
+    'page.ervatorio.search_placeholder': 'Buscar hierba, ciencia, tagline...',
+    'lp.nav.collections': 'Colecciones',
+    'lp.nav.origins': 'Orígenes',
+    'lp.nav.wheel': 'Rueda de Tés',
+    'lp.nav.diary': 'Diario',
+    'lp.banner.club': 'Club de las Casas de Té — Suscríbete',
+    'lp.banner.world': 'Hierbas de Brasil y del Mundo',
+    'lp.banner.marketplace': 'Mercado próximamente',
+    'lp.logo.sub': 'Hierbas de Brasil y del Mundo',
+    'lp.actions.map': 'Mapa',
+    'lp.actions.enter': 'Entrar',
+    'lp.actions.club': 'Club',
+    'lp.hero.headline': 'Las hierbas del mundo<br>reunidas en<br><em>una sola puerta</em>',
+    'lp.hero.body': 'Del Matcha japonés al Yerba Mate sudamericano, del Darjeeling indio a la Manzanilla egipcia — con orgullo especial por las hierbas únicas de los biomas brasileños. Origen rastreable, curaduría botánica, para cada momento de tu vida.',
+    'lp.hero.cta_primary': 'Descubrir mi té',
+    'lp.hero.cta_outline': 'Ver colecciones',
+    'lp.stats.categories': 'Categorías funcionales',
+    'lp.stats.herbs': 'Hierbas catalogadas',
+    'lp.stats.lines': 'Líneas de producto',
+    'lp.strip.world': 'Hierbas de todo el mundo',
+    'lp.strip.brazil': 'Línea Brasileña exclusiva',
+    'lp.strip.map': 'Mapamundi de Tés',
   },
 
   // ── 日本語 ────────────────────────────────────────────
@@ -855,6 +930,31 @@ const TRANSLATIONS = {
     'auth.or_with':             'または続ける',
     'auth.google_btn':          'Googleでサインイン',
     'auth.guest_link':          'ログインせずに続ける',
+      // Landing v2 + Ervopedia
+    'page.ervatorio.filters': 'フィルター',
+    'page.ervatorio.filters_clear': 'クリア',
+    'page.ervatorio.search_placeholder': 'ハーブ、学名、タグラインを検索...',
+    'lp.nav.collections': 'コレクション',
+    'lp.nav.origins': '原産地',
+    'lp.nav.wheel': 'お茶の輪',
+    'lp.nav.diary': '日記',
+    'lp.banner.club': 'チャゼリアクラブ — 登録',
+    'lp.banner.world': 'ブラジルと世界のハーブ',
+    'lp.banner.marketplace': 'マーケットプレイス近日公開',
+    'lp.logo.sub': 'ブラジルと世界のハーブ',
+    'lp.actions.map': 'マップ',
+    'lp.actions.enter': '入る',
+    'lp.actions.club': 'クラブ',
+    'lp.hero.headline': '世界のハーブが<br>ひとつの扉に<br><em>集まる</em>',
+    'lp.hero.body': '日本の抹茶から南米のイェルバマテ、インドのダージリンからエジプトのカモミールまで — そしてブラジルの生物群系のユニークなハーブ。追跡可能な原産地、植物学的キュレーション、あなたの人生のあらゆる瞬間に。',
+    'lp.hero.cta_primary': 'お茶を見つける',
+    'lp.hero.cta_outline': 'コレクションを見る',
+    'lp.stats.categories': '機能カテゴリー',
+    'lp.stats.herbs': 'カタログ化されたハーブ',
+    'lp.stats.lines': '製品ライン',
+    'lp.strip.world': '世界中のハーブ',
+    'lp.strip.brazil': 'ブラジル限定ライン',
+    'lp.strip.map': 'お茶の世界地図',
   },
 
   // ── DEUTSCH ───────────────────────────────────────────
@@ -1060,6 +1160,31 @@ const TRANSLATIONS = {
     'auth.or_with':             'oder weiter mit',
     'auth.google_btn':          'Mit Google anmelden',
     'auth.guest_link':          'Ohne Anmeldung fortfahren',
+      // Landing v2 + Ervopedia
+    'page.ervatorio.filters': 'Filter',
+    'page.ervatorio.filters_clear': 'Löschen',
+    'page.ervatorio.search_placeholder': 'Kraut, Wissenschaft, Tagline suchen...',
+    'lp.nav.collections': 'Kollektionen',
+    'lp.nav.origins': 'Herkunft',
+    'lp.nav.wheel': 'Tee-Rad',
+    'lp.nav.diary': 'Tagebuch',
+    'lp.banner.club': 'Teehausklub — Abonnieren',
+    'lp.banner.world': 'Kräuter aus Brasilien und der Welt',
+    'lp.banner.marketplace': 'Marktplatz in Kürze',
+    'lp.logo.sub': 'Kräuter aus Brasilien und der Welt',
+    'lp.actions.map': 'Karte',
+    'lp.actions.enter': 'Eintreten',
+    'lp.actions.club': 'Klub',
+    'lp.hero.headline': 'Die Kräuter der Welt<br>vereint an<br><em>einer Tür</em>',
+    'lp.hero.body': 'Vom japanischen Matcha zum südamerikanischen Yerba Mate, vom indischen Darjeeling zur ägyptischen Kamille — mit besonderem Stolz auf die einzigartigen Kräuter der brasilianischen Biome. Rückverfolgbare Herkunft, botanische Kuration, für jeden Moment deines Lebens.',
+    'lp.hero.cta_primary': 'Meinen Tee entdecken',
+    'lp.hero.cta_outline': 'Kollektionen ansehen',
+    'lp.stats.categories': 'Funktionale Kategorien',
+    'lp.stats.herbs': 'Katalogisierte Kräuter',
+    'lp.stats.lines': 'Produktlinien',
+    'lp.strip.world': 'Kräuter aus aller Welt',
+    'lp.strip.brazil': 'Exklusive brasilianische Linie',
+    'lp.strip.map': 'Tee-Weltkarte',
   },
 
   // ── FRANÇAIS ──────────────────────────────────────────
@@ -1265,6 +1390,31 @@ const TRANSLATIONS = {
     'auth.or_with':             'ou continuez avec',
     'auth.google_btn':          'Se connecter avec Google',
     'auth.guest_link':          'Continuer sans connexion',
+      // Landing v2 + Ervopedia
+    'page.ervatorio.filters': 'Filtres',
+    'page.ervatorio.filters_clear': 'Effacer',
+    'page.ervatorio.search_placeholder': 'Rechercher herbe, science, tagline...',
+    'lp.nav.collections': 'Collections',
+    'lp.nav.origins': 'Origines',
+    'lp.nav.wheel': 'Roue des Thés',
+    'lp.nav.diary': 'Journal',
+    'lp.banner.club': 'Club des Salons de Thé — Inscrivez-vous',
+    'lp.banner.world': 'Herbes du Brésil et du Monde',
+    'lp.banner.marketplace': 'Marché bientôt disponible',
+    'lp.logo.sub': 'Herbes du Brésil et du Monde',
+    'lp.actions.map': 'Carte',
+    'lp.actions.enter': 'Entrer',
+    'lp.actions.club': 'Club',
+    'lp.hero.headline': 'Les herbes du monde<br>réunies à<br><em>une seule porte</em>',
+    'lp.hero.body': 'Du Matcha japonais au Yerba Mate sud-américain, du Darjeeling indien à la Camomille égyptienne — avec une fierté spéciale pour les herbes uniques des biomes brésiliens. Origine traçable, curation botanique, pour chaque moment de votre vie.',
+    'lp.hero.cta_primary': 'Découvrir mon thé',
+    'lp.hero.cta_outline': 'Voir les collections',
+    'lp.stats.categories': 'Catégories fonctionnelles',
+    'lp.stats.herbs': 'Herbes cataloguées',
+    'lp.stats.lines': 'Lignes de produits',
+    'lp.strip.world': 'Herbes du monde entier',
+    'lp.strip.brazil': 'Ligne Brésilienne exclusive',
+    'lp.strip.map': 'Mappemonde des Thés',
   },
 };
 
@@ -1295,13 +1445,22 @@ function applyI18n() {
     const val = t(key);
     if (val !== key) el.textContent = val;
   });
+  // data-i18n-html: usado quando o conteúdo traduzido contém marcação
+  // segura controlada (ex.: <br>, <em>) — landing hero headline.
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    const val = t(key);
+    if (val !== key) el.innerHTML = val;
+  });
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-    const val = t(el.getAttribute('data-i18n-placeholder'));
-    if (val) el.placeholder = val;
+    const key = el.getAttribute('data-i18n-placeholder');
+    const val = t(key);
+    if (val && val !== key) el.placeholder = val;
   });
   document.querySelectorAll('[data-i18n-title]').forEach(el => {
-    const val = t(el.getAttribute('data-i18n-title'));
-    if (val) el.title = val;
+    const key = el.getAttribute('data-i18n-title');
+    const val = t(key);
+    if (val && val !== key) el.title = val;
   });
   document.documentElement.lang = LANGS[_lang]?.locale || 'pt-BR';
 }
