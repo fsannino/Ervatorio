@@ -27,3 +27,4 @@ supabase/.branches/
 
 # Pasta local de inputs/seeds (nao versionar)
 _ervatorio-inputs/
+supabase/fichas-ancora-import.json.bak-*
