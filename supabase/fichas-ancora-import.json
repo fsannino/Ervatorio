@@ -2691,130 +2691,444 @@
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Euterpe oleracea Mart.",
-        "familia_botanica": "Arecaceae (família das palmeiras)",
-        "tipo_botanico": "Alimento funcional antioxidante / fitoterápico",
-        "parte_usada": "Polpa do fruto (principal); palmito (alimentar); folhas (infusão popular); óleo do fruto (cosmético e medicinal).",
+        "familia_botanica": "Arecaceae (família das palmeiras — coqueiro, babaçu, buriti)",
+        "tipo_botanico": "Alimento funcional antioxidante / fitoterápico / cosmético",
+        "parte_usada": "Polpa do fruto maduro (uso alimentar e funcional principal — cor violeta-escura); palmito (alimentar — palmito de açaí); folhas (infusão popular — anti-inflamatório, diurético); óleo do fruto (cosmético — skincare, capilar); sementes (fibra — uso artesanal e como substrato agrícola). A polpa é extraída por maceração dos frutos em água, processo tradicional ribeirinho que determina a consistência (açaí grosso = tipo A, com mais polpa; açaí fino = tipo C, mais diluído). A classificação de espessura é regulamentada pelo MAPA (IN 01/2000): tipo A > 14% de sólidos totais; tipo B = 11–14%; tipo C = 8–11%.",
         "sinonimos": [
-          "Açaí · açaizeiro · juçara (espécie diferente, E. edulis, Mata Atlântica)",
-          "Acai (inglês/francês/espanhol — grafia sem cedilha no exterior)",
-          "Manaka (línguas indígenas do estuário)",
-          "ATENÇÃO: Euterpe oleracea (açaí-do-pará, touceira, estuário) ≠ Euterpe precatoria (açaí-solteiro, Amazônia ocidental) — perfis nutricionais similares mas ecologias distintas."
+          "Açaí · açaizeiro · açaí-do-pará",
+          "Juçara (Euterpe edulis — espécie distinta da Mata Atlântica, fruto similar, mais ameaçada)",
+          "Acai (inglês/francês/espanhol — grafia sem cedilha internacionalmente)",
+          "Manaka · wasaí (línguas indígenas do estuário)",
+          "ATENÇÃO: Euterpe oleracea (açaí-do-pará — touceira, estuarino, maior produção) ≠ Euterpe precatoria (açaí-solteiro — estipe único, Amazônia ocidental AM/AC — perfil nutricional similar mas ecologia e manejo distintos). Ambos são 'açaí' mas o mercado comercial é dominado por E. oleracea."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Cacau selvagem, fruta vermelha concentrada, terra úmida de várzea, leve fermentado nobre.",
-        "cor_da_infusao": "Roxo-escuro a preto-violeta intenso. #2A0A2E",
-        "intensidade": "4/5 — presença marcante, perfil denso.",
-        "notas": "Cabeça: frutado-roxo concentrado | Corpo: terroso-cacauado profundo | Fundo: amargo limpo, tanino suave | BIOMA: Amazônia de várzea e igapó — florestas inundáveis do estuário amazônico. PA, AM, AP, MA. | DISTRIBUIÇÃO GEOGRÁFICA:",
-        "bioma_de_origem": "Amazônia de várzea e igapó — florestas inundáveis do estuário amazônico. PA, AM, AP, MA.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Polpa/infusão: Frutado-terroso profundo, levemente amargo-achocolatado, earthy (terroso de várzea), notas de cacau amargo cru e frutas vermelhas maduras (amora, mirtilo concentrado). Polpa tipo A: mais encorpada, mais achocolatada. Polpa tipo C: mais aquosa, mais frutada. Infusão de folhas: herbáceo-suave, sem as notas frutadas da polpa. Perfil que divide opiniões fora do Brasil — para o paladar amazônico, é o sabor do cotidiano; para o paladar europeu, é 'terra frutada' — exótico e desconcertante.",
+        "aroma": "Cacau selvagem cru (teobromina + ácidos fenólicos), fruta vermelha concentrada (antocianinas voláteis), terra úmida de floresta de várzea após chuva (geosmina), leve fermentado nobre como vinho jovem (ácidos orgânicos em transformação). Fundo mineral metálico discreto (ferro não-heme).",
+        "cor_da_infusao": "Polpa reconstituída / pó liofilizado: roxo-escuro a preto-violeta intenso. #2A0A2E. Infusão de folhas: verde-amarelado #B8C060. A intensidade da cor violeta é proporcional à concentração de antocianinas — indicador visual de qualidade.",
+        "intensidade": "Polpa: 4/5 — presença marcante, perfil denso, protagonista. Infusão de folhas: 2/5 — suave, secundário.",
+        "notas": "Cabeça: frutado-roxo concentrado (amora silvestre, mirtilo) | Corpo: terroso-cacauado profundo (geosmina + cacau cru) | Fundo: amargo limpo de taninos, leve metálico (ferro)",
+        "bioma_de_origem": "Amazônia de várzea e igapó — florestas inundáveis do estuário amazônico. O açaizeiro é espécie dominante em floresta de várzea estuarina — formando populações densas chamadas 'açaizais' que podem cobrir centenas de hectares contínuos.",
+        "distribuicao_geografica": [
+          "Centro de produção: Ilha de Marajó (PA), estuário do Tocantins (Cametá, Abaetetuba, Igarapé-Miri — maior produtor municipal do mundo), baixo Amazonas (Santarém), região das ilhas de Belém.",
+          "Pará: > 90% da produção nacional.",
+          "Outros estados: AM (crescente), AP, MA, TO.",
+          "Internacional: cultivado experimentalmente no Peru, Colômbia, Equador. Importação de polpa congelada e pó liofilizado: EUA (maior mercado externo — US$ 300+ milhões/ano), Europa (Alemanha, UK, França — crescente), Japão e Coreia do Sul (mercado premium de saúde).",
+          "Brasil processa > 90% do açaí mundial. A produção é majoritariamente extrativista (escalada de palmeiras por 'peconheiros' — trabalhadores especializados) com manejo agroflorestal crescente."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Cacau · Guaraná · Banana · Mel · Goji berry (blends antioxidantes) · Cumaru · Castanha-do-pará"
+        "temperatura_ideal": "Polpa: consumir frio ou em temperatura ambiente — antocianinas degradam acima de 70 °C. Infusão de folhas: 90 °C.",
+        "tempo_de_infusao": "Folhas: 8–10 min coberto.",
+        "quantidade": "Pó liofilizado: 3–10 g/dia em água fria, suco ou smoothie. Folhas secas: 3–5 g/250 ml.",
+        "metodo": "Polpa: consumo direto, smoothie, bowl. Não aquecer acima de 70 °C — antocianinas termossensíveis (perda de 30–50% acima de 70 °C em 30 min). Pó liofilizado: dissolver em líquido frio. Folhas: infusão coberta.",
+        "reinfusoes": "Folhas: 1 reinfusão possível. Pó: não reinfunde.",
+        "melhor_momento": "Manhã e início de tarde: energético (lipídeos de cadeia média), antioxidante, pré-treino. Não indicado para noite: calórico (60–70 kcal/100 ml), lipídico, pode dificultar sono em sensíveis.",
+        "combina_com": "Cacau em pó · Guaraná em pó · Banana · Mel · Goji berry · Cumaru ralado (baunilha amazônica) · Castanha-do-pará · Granola · Morango · Mirtilo"
       },
       "usos_topicos": {
-        "evidencia": "",
+        "evidencia": "Moderada para formulações cosméticas antioxidantes e anti-aging; preliminar para fotoproteção.",
         "aplicacoes": [
-          "Sérum anti-aging: Óleo de açaí (prensagem a frio) em formulações dermocosméticas — alto ORAC, ácido oleico e palmítico em proporção favorável. Marca brasileira Natura exporta para Europa com açaí como ingrediente flagship.",
-          "Máscara capilar nutritiva: Óleo de açaí + manteiga de cupuaçu — hidratação profunda para cabelos crespos e cacheados. Segmento em crescimento acelerado no mercado afro-beauty global.",
-          "Protetor solar natural (adjuvante): Óleo de açaí em formulações com FPS — antocianinas absorvem UV-B. Evidência moderada como co-protetor."
+          {
+            "titulo": "Sérum anti-aging facial",
+            "texto": "Óleo de açaí (prensagem a frio das sementes e polpa) em formulações dermocosméticas — alto ORAC, ácido oleico e palmítico em proporção favorável à pele. Rico em vitamina E (tocoferóis). Textura leve, absorção rápida, não comedogênico. Marca brasileira Natura exporta para Europa com açaí como ingrediente flagship da linha 'Ekos Açaí'."
+          },
+          {
+            "titulo": "Máscara capilar nutritiva",
+            "texto": "Óleo de açaí + manteiga de cupuaçu — hidratação profunda para cabelos crespos e cacheados. Segmento em crescimento acelerado no mercado afro-beauty global."
+          },
+          {
+            "titulo": "Protetor solar natural (adjuvante)",
+            "texto": "Óleo de açaí em formulações com FPS — antocianinas absorvem UV-B. Evidência moderada como co-protetor (não substitui filtro solar; complementa)."
+          },
+          {
+            "titulo": "Esfoliante corporal com semente de açaí",
+            "texto": "Sementes moídas (granulometria grossa) em óleo de coco — esfoliação mecânica + antioxidante. Uso difundido em spas amazônicos."
+          }
         ],
-        "contraindicacoes": ""
+        "contraindicacoes": "Uso tópico seguro. Sem contraindicações documentadas exceto alergia rara ao pólen de palmeira."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antioxidante de altíssimo ORAC (Oxygen Radical Absorbance Capacity)",
-          "Antiinflamatório (inibição de COX-1/COX-2)",
-          "Cardioprotetor (melhora perfil lipídico)",
-          "Neuroprotetor (antocianinas atravessam barreira hematoencefálica)",
-          "Hipoglicemiante leve",
-          "Imunomodulador",
-          "Energético (lipídeos de cadeia média)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Sem contraindicações conhecidas em doses alimentares. Alergia ao pólen de palmeira (rara — reação cruzada possível). Evitar combinação com anticoagulantes em doses suplementares altas."
+          "Antioxidante de altíssimo ORAC (Oxygen Radical Absorbance Capacity) — entre os mais altos registrados em frutas",
+          "Anti-inflamatório (inibição de COX-1/COX-2 por antocianinas e procianidinas)",
+          "Cardioprotetor (melhora perfil lipídico — aumento de HDL, redução de LDL oxidado)",
+          "Neuroprotetor (antocianinas atravessam barreira hematoencefálica — proteção contra neuroinflamação e estresse oxidativo neuronal)",
+          "Hipoglicemiante leve (fibra + antocianinas — modulação de absorção de glicose)",
+          "Imunomodulador (polissacarídeos — ativação de macrófagos e NK cells)",
+          "Energético (lipídeos de cadeia média — ácido oleico, ácido palmítico)",
+          "Prebiótico (fibra dietética solúvel e insolúvel — polpa tipo A: ~44 g/100 g seco)",
+          "Anti-aging (antocianinas + vitamina E — proteção contra estresse oxidativo celular)"
         ],
         "componentes_ativos": [
           {
-            "label": "ANTOCIANINAS (cianidina-3-glucosídeo)",
-            "texto": "3.190 mg/100 g ORAC — Antioxidante máximo, neuroprotetor"
+            "label": "Antocianinas (cianidina-3-glucosídeo, cianidina-3-rutinosídeo)",
+            "texto": "3.190 µmol TE/100 g (ORAC total) — antioxidante máximo, neuroprotetor, anti-inflamatório, cardioprotetor. Cianidina-3-glucosídeo é a antocianina dominante (~90% do total)"
           },
           {
-            "label": "ÁCIDO OLEICO (C18:1)",
-            "texto": "56% do óleo — Cardioprotetor"
+            "label": "Ácido oleico (C18:1 — ω-9)",
+            "texto": "56% do óleo total — cardioprotetor (mesmo perfil do azeite de oliva). Incomum em frutas — mais típico de oleaginosas"
           },
           {
-            "label": "ÁCIDO PALMÍTICO (C16:0)",
-            "texto": "24% — Emoliente"
+            "label": "Ácido palmítico (C16:0)",
+            "texto": "24% do óleo total — emoliente, energético"
           },
           {
-            "label": "RESVERATROL",
-            "texto": "Presente — Cardioprotetor, anti-aging"
+            "label": "Resveratrol",
+            "texto": "Presente (concentração variável) — cardioprotetor, neuroprotetor, anti-aging. Mesmo composto do vinho tinto"
           },
           {
-            "label": "QUERCETINA, CATEQUINAS",
-            "texto": "Presentes — Antioxidante, anti-inflamatório"
+            "label": "Catequinas, epicatequinas",
+            "texto": "Antioxidante, anti-inflamatório. Comuns em chá-verde; contribuem para amargura"
           },
           {
-            "label": "VITAMINA E (tocoferóis)",
-            "texto": "Alta — Antioxidante lipossolúvel"
+            "label": "Quercetina",
+            "texto": "Anti-inflamatório, anti-histamínico"
           },
           {
-            "label": "FIBRAS DIETÉTICAS",
-            "texto": "44 g/100 g (polpa seca) — Prebiótico, saciedade"
+            "label": "Vitamina E (tocoferóis alfa e gama)",
+            "texto": "Alta — antioxidante lipossolúvel, protetor de membranas celulares"
+          },
+          {
+            "label": "Fibras dietéticas",
+            "texto": "44 g/100 g (polpa liofilizada) — prebiótico, saciedade, modulação glicêmica. Uma das maiores concentrações de fibra entre frutas"
+          },
+          {
+            "label": "Ferro não-heme",
+            "texto": "4,4 mg/100 g (polpa) — nutritivo (biodisponibilidade limitada). Contribui para nota metálica no sabor"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Redução de estresse oxidativo",
+            "indicacao": "Redução de estresse oxidativo sistêmico",
             "evidencia": "Forte",
-            "populacao": "Schauss et al., 2006"
+            "populacao": "Adultos saudáveis"
           },
           {
-            "indicacao": "Melhora de perfil lipídico",
+            "indicacao": "Melhora de perfil lipídico (HDL↑, LDL↓)",
             "evidencia": "Moderada",
-            "populacao": "Rocha et al., 2007"
+            "populacao": "Adultos dislipidêmicos"
           },
           {
-            "indicacao": "Neuroproteção cognitiva",
+            "indicacao": "Neuroproteção (anti-neuroinflamação)",
             "evidencia": "Preliminar",
-            "populacao": "Poulose et al., 2012"
+            "populacao": "Modelos animais e idosos"
           },
           {
-            "indicacao": "Anti-inflamatório sistêmico",
+            "indicacao": "Anti-inflamatório sistêmico (redução de PCR)",
             "evidencia": "Moderada",
-            "populacao": "Mullen et al., 2002"
+            "populacao": "Adultos com sobrepeso"
+          },
+          {
+            "indicacao": "Melhora de função endotelial (vasodilatação)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos com SM"
           }
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "Sem contraindicações conhecidas em doses alimentares normais.",
+          "Alergia ao pólen de palmeira (rara — reação cruzada possível).",
+          "Anticoagulados: em doses suplementares altas (> 30 g/dia de pó liofilizado), antocianinas têm efeito antiagregante fraco — cautela teórica.",
+          "Contaminação por Trypanosoma cruzi (doença de Chagas): risco documentado em açaí não pasteurizado de venda informal no Pará — SEMPRE consumir açaí de fonte certificada e pasteurizada. Este risco é microbiológico, não farmacológico."
+        ],
+        "interacoes": [
+          {
+            "label": "Varfarina",
+            "texto": "Antocianinas antiagregantes (fraco) — monitorar INR se consumo > 30 g pó/dia"
+          },
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Efeito vasodilatador aditivo (fraco) — monitorar PA, geralmente benéfico"
+          },
+          {
+            "label": "Estatinas",
+            "texto": "Ação sinérgica favorável no perfil lipídico — manter, uso complementar"
+          }
+        ],
+        "efeitos_adversos": "Em doses alimentares (200–500 ml de polpa/dia): praticamente inexistentes. Em doses suplementares altas de pó liofilizado: diarreia (fibra), distensão abdominal. Coloração roxa das fezes (cosmético — antocianinas excretadas).",
+        "dose_maxima": "Não há dose máxima estabelecida por farmacopeias (é alimento). Consumo tradicional ribeirinho: 500–1.000 ml de polpa/dia como alimento básico. Suplemento liofilizado: 10–30 g/dia em estudos. Uso prático: 1–2 tigelas/dia ou 5–15 g de pó liofilizado.",
+        "fontes": [
+          "Schauss AG et al. — Antioxidant capacity and other bioactivities of the freeze-dried Amazonian palm berry, Euterpe oleracea Mart. (J Agric Food Chem, 2006)",
+          "Jensen GS et al. — Consumption of freeze-dried açaí products triggers acute antioxidant response in human volunteers (J Agric Food Chem, 2008)",
+          "Poulose SM et al. — Açaí berries: A review of neurocognitive and metabolic effects (Mol Nutr Food Res, 2012)",
+          "Udani JK et al. — Effects of açaí (Euterpe oleracea Mart.) berry preparation on metabolic parameters in a healthy overweight population (Nutr J, 2011)",
+          "Rogez H — Açaí: Preparo, composição e melhoramento da conservação (EDUFPA, 2000)",
+          "Ministério da Agricultura, Pecuária e Abastecimento — IN 01/2000 (padrões de qualidade de polpa de açaí)",
+          "EMBRAPA Amazônia Oriental — Boletim técnico sobre manejo de açaizais nativos"
+        ]
       },
       "perfil_sensorial": {
         "gustativo": [
           {
             "dimensao": "Doce",
             "intensidade": "1/3",
-            "observacao": "Presente na polpa madura"
+            "observacao": "Presente na polpa completamente madura (tipo A); ausente na polpa tipo C diluída"
           },
           {
             "dimensao": "Amargo",
             "intensidade": "2/3",
-            "observacao": "Tanino suave, característico"
+            "observacao": "Taninos e polifenóis — amargura achocolatada, não vegetal; mais intensa na polpa pura sem açúcar"
           },
           {
             "dimensao": "Umami",
             "intensidade": "1/3",
-            "observacao": "Notas terrosas profundas"
+            "observacao": "Notas terrosas profundas — lipídeos + ácidos orgânicos criam 'profundidade' semelhante ao umami"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente (pH ligeiramente ácido mas sem acidez percebida)"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Frutado-terroso profundo com fundo cacauado",
+        "olfativo_descritores": [
+          "Fruta vermelha concentrada (amora silvestre, mirtilo selvagem, framboesa escura)",
+          "Cacau amargo cru (teobromina + fenólicos — sem processamento holandês)",
+          "Terra úmida de floresta de várzea após chuva (geosmina — a molécula do 'cheiro de chuva')",
+          "Leve fermentado nobre (como vinho tinto jovem antes da estabilização)",
+          "Fundo mineral-metálico (ferro não-heme)",
+          "Nota de palmeira tropical (traços — óleos do mesocarpo)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Moderada",
+            "molecula": "Taninos condensados (procianidinas) — adstringência mais pronunciada que na maioria das frutas; similar a vinho tinto jovem. Polpa tipo A é mais adstringente que tipo C"
+          }
+        ],
+        "tatil": "Polpa tipo A: textura densa, quase cremosa, que reveste a boca — propriedade única no catálogo frutal. A untuosidade vem dos 5–7% de lipídeos da polpa (ácido oleico + palmítico), incomum em frutas e responsável pela sensação de 'substância' na boca. Persistência média: o sabor sai com limpeza — a adstringência tânica é a última percepção, equivalente ao tanino de um Malbec jovem. Infusão de folhas: corpo leve, sem a densidade nem a untuosidade da polpa. Sensação herbácea simples. São quase dois produtos distintos sensorialmente.",
+        "descricao_integrada": "O açaí é o único ingrediente do catálogo que muda fundamentalmente de identidade sensorial entre a forma fruta e a forma fitoterápica. A polpa é um alimento denso, calórico, untuoso, aromático, pigmentado — experiência sensorial completa. A infusão de folhas é uma tisana herbácea leve, anôdina, sem cor violeta nem sabor achocolatado. A polpa e as folhas compartilham a mesma árvore mas não compartilham experiência — é como comparar a maçã com o chá de folha de macieira. Essa dualidade é o que torna o açaí um desafio editorial para o Ervatório: a ficha precisa falar de dois produtos em um, com honestidade sobre o fato de que o valor funcional excepcional (antocianinas, ORAC) está na polpa — não na infusão de folhas. O chá de folha de açaí é um diurético-anti-inflamatório leve, válido mas ordinário. A polpa é extraordinária."
+      },
+      "cultura": {
+        "historia": "O açaí é alimento-base de populações ribeirinhas do estuário amazônico há milênios — datação arqueológica de sementes de açaí em sítios indígenas no Marajó remonta a pelo menos 5.000 anos. A 'dieta do açaí' — farinha de tapioca + açaí + peixe seco — foi e ainda é o sustento calórico diário de famílias marajoaras. O açaí não é complemento; é refeição. Famílias ribeirinhas do Pará consomem 500–1.000 ml de polpa por dia como comida principal. Para o ribeirinho, o açaí não é superalimento; é comida. A reframagem ocidental como 'superfood' inverte a lógica: o que era cotidiano vira extraordinário; o que era barato vira premium. Essa inversão tem consequências materiais: o preço do açaí no mercado internacional elevou tanto o preço local que famílias ribeirinhas pobres do Marajó — que sempre comeram açaí como alimento básico — passaram a ter dificuldade para comprá-lo em anos de baixa produção. O açaí chegou ao Brasil urbano na Bahia dos anos 1970, trazido por lutadores de jiu-jitsu paraenses que o usavam como fonte de energia pré-treino. A academia de Gracie Barra em São Paulo popularizou o 'tigela de açaí' nos anos 1990 — misturando o fruto com guaraná, banana e granola. Dos tatames cariocas para os mercados globais — em 30 anos, uma cadeia de US$ 2+ bilhões.",
+        "cerimonial": "Na cultura ribeirinha marajoara e estuarina, o 'açaí das 6 da tarde' é ritual diário de comunhão — a família se reúne em torno da tigela de açaí (servida em cuia de cuité ou bacia esmaltada) após o trabalho na roça ou no rio. Sem açaí, não há refeição completa; o dia de trabalho termina quando o açaí chega. Essa dimensão ritual — invisível na exportação como 'superfood' — é o que o Ervatório precisa narrar. O mito Tupi-Guaraní narra que Iaçá — jovem indígena sacrificada pela tribo em período de fome — transformou-se em palmeira de açaí: seus olhos escuros viraram os frutos roxos que alimentaram a tribo para sempre. O nome 'açaí' vem de 'ïwasa'i' (Tupi: 'fruto que chora' ou 'fruto que dá água'). A cidade de Belém, capital mundial do açaí, consome mais açaí per capita que qualquer cidade do mundo — estima-se 200.000 litros de polpa por dia.",
+        "brasil": "O açaí é o produto da bioeconomia amazônica com maior sucesso comercial global — e também o exemplo mais complexo de tensão entre mercado e território. Sucesso: cadeia produtiva de US$ 2+ bilhões, 300.000+ empregos diretos e indiretos, exportação para 40+ países. Tensão: preço local elevado impacta alimentação popular; monocultura de açaizeiros (manejo intensivo) substitui biodiversidade de várzea; contaminação por T. cruzi em venda informal coloca questão de segurança alimentar. Oportunidade: a demanda global por açaí está longe de saturar — o mercado de 'superfoods' roxos cresce 15–20% ao ano. O desafio é capturar o valor agregado no Brasil, não apenas exportar polpa bruta.",
+        "curiosidade": "O ORAC (Oxygen Radical Absorbance Capacity) do açaí liofilizado é ~102.700 µmol TE/100 g — entre os mais altos registrados em qualquer alimento. Para comparação: mirtilo selvagem (blueberry) tem ~9.500; romã ~4.500; uva vermelha ~1.260. A razão dessa capacidade antioxidante extrema é a concentração incomum de cianidina-3-glucosídeo — antocianina que no açaí aparece em concentrações 15–30x maiores que no mirtilo. Esse dado, porém, é medido in vitro — a translação para efeito in vivo depende de biodisponibilidade, metabolismo de primeira passagem e distribuição tecidual. O ORAC é indicativo, não conclusivo."
+      },
+      "regulacao": {
+        "eixo_botanico_tpc": "Alimento funcional + Fitoterápico (folhas)",
+        "status_anvisa": [
+          "Polpa: Regulada como alimento — RDC 240/2018. Padrões de identidade e qualidade: IN MAPA 01/2000.",
+          "Polpa liofilizada: suplemento alimentar — IN 28/2018.",
+          "Folhas: uso tradicional popular reconhecido (sem monografia oficial).",
+          "Açaí em cápsulas/extrato: suplemento alimentar regulamentado."
+        ],
+        "status_ema": "Novel Food autorizado para polpa de açaí e derivados (Decisão 2008/203/CE — autorização para comercialização na UE como novo ingrediente alimentar).",
+        "status_fda": "GRAS para uso alimentar. Suplemento amplamente vendido nos EUA.",
+        "certificacao_organica": [
+          "Disponível: IMAFLORA, IBD, Ecocert (Brasil). USDA Organic (exportação EUA). EU Organic (exportação Europa).",
+          "Produção orgânica certificada concentrada no Marajó e Cametá (PA) — cooperativas familiares."
+        ],
+        "sazonalidade": "Safra principal: julho–dezembro (PA — 'safra do verão amazônico' — pico agosto–outubro). Segunda safra (entressafra): fevereiro–abril — volume menor, preço mais alto. A sazonalidade marcada é o principal gargalo da cadeia: na safra, sobra açaí e preço cai; na entressafra, escassez e preço triplica. Processamento de polpa congelada e liofilização são as soluções industriais para dessazonalização."
+      },
+      "marketplace": {
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Cooperativas ribeirinhas do Marajó e Cametá (PA) — rastreabilidade de origem garantida, perfil sensorial premium de várzea estuarina. Cooperativas de referência: CAMTA (Tomé-Açu), COFRUTA (Abaetetuba), cooperativas familiares do STTR Cametá. Secundário: fazendas de manejo agroflorestal em Santarém e Óbidos (PA) — produção mais regular, menor sazonalidade.",
+        "faixa_de_preco": [
+          "Polpa congelada tipo A (atacado Belém): R$ 12–30/litro (safra) a R$ 40–80/litro (entressafra).",
+          "Pó liofilizado orgânico certificado: R$ 120–250/100 g (varejo premium).",
+          "Pó liofilizado convencional: R$ 60–120/100 g.",
+          "Óleo de açaí (cosmético): R$ 80–200/100 ml."
+        ],
+        "formatos": "Polpa congelada (consumo direto — formato mais comum no Brasil); Pó liofilizado (suplemento — formato preferencial para exportação e blend Ervatório); Polpa pasteurizada e desidratada (shelf-stable); Óleo de fruto prensado a frio (cosmético e funcional); Cápsulas de extrato padronizado (farmácia); Folhas secas (infusão medicinal — formato minoritário)."
+      },
+      "destaques": [
+        {
+          "label": "ORAC excepcional",
+          "texto": "~102.700 µmol TE/100 g (liofilizado) — entre os mais altos de qualquer alimento conhecido"
+        },
+        {
+          "label": "Ácido oleico",
+          "texto": "56% do óleo total — perfil cardioprotetor similar ao azeite de oliva"
+        },
+        {
+          "label": "Identidade ribeirinha",
+          "texto": "Alimento-base do Marajó há 5.000+ anos — patrimônio cultural alimentar"
+        }
+      ]
+    },
+    {
+      "slug": "cumaru",
+      "nome_popular": "Cumaru",
+      "nome_cientifico": "Dipteryx odorata (Aubl.) Willd.",
+      "tagline": "A baunilha da floresta — semente aromática amazônica com a maior concentração de cumarina do mundo vegetal, uso histórico em perfumaria de luxo europeia e potencial gastronômico que a alta cozinha brasileira está apenas começando a explorar.",
+      "schema_version": "1.1",
+      "identificacao": {
+        "nome_cientifico": "Dipteryx odorata (Aubl.) Willd.",
+        "familia_botanica": "Fabaceae / Papilionoideae (família do feijão, da soja, da acácia — a maior família de árvores tropicais)",
+        "tipo_botanico": "Especiaria aromática premium / fitoterápico antiespasmódico / ingrediente de perfumaria",
+        "parte_usada": "Semente seca (fava de cumaru / tonka bean) — extraída do interior do fruto drupáceo. A semente é a parte aromática; a polpa do fruto é descartada ou usada como alimento animal. O processamento inclui secagem ao sol + maceração em álcool (método tradicional extrativista) que cristaliza a cumarina na superfície da semente como um pó branco-brilhante.",
+        "sinonimos": [
+          "Cumaru · cumarú · fava-tonka · fava de cumaru · cumaruzeiro",
+          "Tonka bean (inglês/francês — nome do mercado internacional de perfumaria)",
+          "Coumarou (francês histórico — origem da palavra 'cumarina': o químico Vogel nomeou a molécula em 1820 a partir da fava de cumaru)",
+          "Sarrapia (Venezuela — mercado local)",
+          "ATENÇÃO: a cumarina presente no cumaru é a mesma substância da imburana-de-cheiro (Amburana cearensis), do guaco (Mikania glomerata) e da canela-cássia (C. cassia) — mas em concentração muito maior na fava de cumaru (1–3% da semente seca vs 0,01–0,1% nas outras)."
+        ]
+      },
+      "caracterizacao": {
+        "sabor_dominante": "Doce-baunilha intensíssimo, cumarina pura (a molécula que define o 'cheiro de baunilha artificial'), amêndoa tostada, caramelo profundo, fundo de fava de baunilha bourbon com nota de almíscar amadeirado. Leve amargor no final — a cumarina é ligeiramente amarga, o que adiciona complexidade à doçura. Perfil de sabor absolutamente singular no catálogo.",
+        "aroma": "Baunilha bourbon madura (cumarina + vanilina traços), cumarina cristalizada (o aroma específico de 'roupa lavada com amaciante', 'feno recém-cortado ao sol', 'tabaco de cachimbo de qualidade'), amêndoa torrada, caramelo escuro, leve almíscar amadeirado, fundo de couro velho e tabaco fino. É um aroma que opera na fronteira entre alimento e perfume.",
+        "cor_da_infusao": "Âmbar-dourado a marrom-mel. #C8882A",
+        "intensidade": "4/5 para aroma — dominante, transformador de qualquer blend em que entra. 3/5 para sabor — doçura presente mas sem ser agressiva.",
+        "notas": "Cabeça: baunilha-cumarina imediata, doce-floral | Corpo: amêndoa torrada, caramelo profundo, amadeirado | Fundo: almíscar seco, couro velho, tabaco fino, leve amargor",
+        "bioma_de_origem": "Amazônia — floresta de terra firme (não-inundável). Árvore de grande porte (até 30 m), copa emergente, crescimento lento (ciclo longo — árvore secular).",
+        "distribuicao_geografica": [
+          "Produção concentrada na Amazônia oriental e central: AM (médio Amazonas — Parintins, Maués), PA (Baixo Amazonas — Oriximiná, Óbidos, Alenquer), RO, AC.",
+          "Internacional: Venezuela (Bolívar — maior exportador mundial de fava tonka), Guianas, Colômbia, Trindade e Tobago.",
+          "Mercado de destino: perfumaria europeia (França — Grasse; Suíça — Givaudan), alta gastronomia (restaurantes estrelados na Europa e EUA), chocolateria premium.",
+          "O Brasil é o segundo maior produtor mundial de fava tonka, atrás da Venezuela — mas exporta quase toda a produção como matéria-prima bruta, sem capturar valor de processamento."
+        ]
+      },
+      "preparo": {
+        "temperatura_ideal": "85–90 °C (cumarina é volátil — ebulição plena dissipa parte do aroma antes da extração completa em fase líquida).",
+        "tempo_de_infusao": "5–8 minutos coberto (infusão de semente ralada). A cumarina extrai rapidamente — infusão longa não melhora o perfil.",
+        "quantidade": "0,5–1 g de semente ralada (microplaina ou ralador fino) para 250 ml. Dose necessariamente baixa — cumaru é poderosamente aromático e farmacologicamente ativo.",
+        "metodo": "Infusão coberta de semente ralada fina. Decocção curta da semente inteira esmagada (3 min — não mais). Maceração em leite quente (tradicional — cumarina é lipossolúvel; leite extrai melhor que água). Uso gastronômico: semente ralada diretamente sobre sobremesas, chocolates, risotos — como finalização, não como cozimento.",
+        "reinfusoes": "1 reinfusão possível com semente inteira esmagada. Pó ralado: 0 reinfusões eficazes.",
+        "melhor_momento": "Noite (sedativo leve — cumarina é depressora leve de SNC) ou pós-refeições (digestivo aromático).",
+        "combina_com": "Cacau (clássico amazônico) · Canela-do-ceilão · Cardamomo · Açaí · Guaraná · Baunilha · Mel · Café"
+      },
+      "usos_topicos": {
+        "evidencia": "Fraca para uso tópico medicinal isolado; forte para uso em perfumaria (cumarina é ingrediente de base em centenas de perfumes).",
+        "aplicacoes": [
+          {
+            "titulo": "Perfumaria (uso principal tópico)",
+            "texto": "Cumarina extraída do cumaru é ingrediente de base em perfumaria de luxo desde o séc. XIX. Chanel Nº5, Guerlain Shalimar, Dior Sauvage, Hermès Terre d'Hermès — todos contêm cumarina (hoje sintética na maioria dos casos, mas a referência olfativa é a fava de cumaru natural)."
+          },
+          {
+            "titulo": "Óleo de massagem aromático",
+            "texto": "Maceração de fava ralada em óleo de amêndoa (30 g/500 ml, 3 semanas em escuro) — óleo aromático para massagem relaxante. Uso difundido em spas amazônicos de luxo."
+          },
+          {
+            "titulo": "Sachê para armários e gavetas",
+            "texto": "Favas inteiras em sachê de algodão — aromatizante natural de ambiente. Dura 6–12 meses."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro. Sem contraindicações relevantes."
+      },
+      "acoes_e_seguranca": {
+        "acoes_principais": [
+          "Antiespasmódico (relaxamento musculatura lisa)",
+          "Broncodilatador leve (cumarina — relaxamento brônquico)",
+          "Sedativo suave (depressão leve de SNC)",
+          "Anticoagulante fraco (cumarina inibe síntese de vitamina K — mecanismo base da varfarina)",
+          "Aromático de alto valor (perfumaria, cosmética, gastronomia)",
+          "Analgésico tópico leve (tradição indígena)"
+        ],
+        "componentes_ativos": [
+          {
+            "label": "Cumarina (1,2-benzopirona)",
+            "texto": "1–3% da semente seca (10.000–30.000 ppm) — antiespasmódico, broncodilatador, anticoagulante fraco, aromático. A maior concentração de cumarina de qualquer planta comercial. Para comparação: cassia tem ~5.000 ppm; guaco ~200 ppm"
+          },
+          {
+            "label": "Ácido cumárico (p-ácido hidroxicinâmico)",
+            "texto": "Antioxidante, precursor metabólico"
+          },
+          {
+            "label": "Flavonóides (lupeol)",
+            "texto": "Anti-inflamatório"
+          },
+          {
+            "label": "Dihidrocumarina",
+            "texto": "Aromático secundário"
+          },
+          {
+            "label": "Óleos fixos (oleico + palmítico)",
+            "texto": "20–25% da semente — nutritivo, emoliente. Perfil lipídico similar ao da amêndoa"
+          }
+        ],
+        "evidencia": [
+          {
+            "indicacao": "Antiespasmódico brônquico",
+            "evidencia": "Moderada (cumarina)",
+            "populacao": "Adultos com broncoespasmo leve — Farmacopeias europeias históricas"
+          },
+          {
+            "indicacao": "Sedativo leve",
+            "evidencia": "Tradicional forte",
+            "populacao": "Adultos — Farmacopeia popular amazônica"
+          },
+          {
+            "indicacao": "Anticoagulante fraco",
+            "evidencia": "Forte (mecanismo)",
+            "populacao": "Não indicado para uso clínico (margem estreita) — O mecanismo é a base da varfarina farmacêutica"
+          }
+        ],
+        "alerta_critico": {
+          "titulo": "Atenção — Cumarina em alta concentração",
+          "titulo2": "EFSA: TDI de 0,1 mg/kg de peso corporal/dia",
+          "corpo": "A fava de cumaru tem a concentração mais alta de cumarina de qualquer planta comercializada no mundo. EFSA: limite de ingestão diária aceitável (TDI) de cumarina = 0,1 mg/kg/dia. Para adulto de 70 kg = 7 mg/dia. 1 g de cumaru ralado contém ~10–30 mg de cumarina → potencialmente acima do TDI em dose única. Infusão de 0,5 g em 250 ml: ~5–15 mg de cumarina extraída → no limite ou acima do TDI. Uso ocasional (1–2x/semana) é seguro; uso diário intenso requer monitoramento — especialmente em hepatopatas e anticoagulados. FDA proibiu cumaru como aditivo alimentar direto nos EUA (21 CFR 189.130 — 1954)."
+        },
+        "contraindicacoes": [
+          "Gestação: cumarina é potencialmente teratogênica em doses altas e uterotônica — evitar uso regular",
+          "Anticoagulados (varfarina, heparina): potencialização significativa — contraindicado uso regular",
+          "Hepatopatias: cumarina é hepatotóxica em doses acumuladas (metabolização hepática via CYP2A6)",
+          "Crianças < 6 anos: evitar uso regular (limite de peso corporal reduz drasticamente o TDI)",
+          "Uso diário intenso por períodos prolongados (> 4 semanas) sem orientação"
+        ],
+        "interacoes": [
+          {
+            "label": "Varfarina",
+            "texto": "Mesma classe química — potencialização anticoagulante direta. Conduta: Contraindicado uso regular conjunto"
+          },
+          {
+            "label": "Hepatotóxicos (paracetamol, estatinas)",
+            "texto": "Hepatotoxicidade aditiva. Conduta: Evitar uso regular"
+          },
+          {
+            "label": "Sedativos",
+            "texto": "Potencialização de sedação. Conduta: Cautela"
+          }
+        ],
+        "efeitos_adversos": "Em uso ocasional (1–2x/semana, 0,5 g/dose): praticamente inexistentes. Em uso diário intenso: cefaleia, tontura, hepatotoxicidade (elevação de transaminases). Em overdose (> 5 g de semente): náusea, vômitos, diarreia, hepatotoxicidade aguda.",
+        "dose_maxima": "Baseada no TDI da EFSA: 0,1 mg cumarina/kg/dia → para adulto de 70 kg = 7 mg cumarina/dia → equivalente a ~0,5 g de semente ralada/dia como limite conservador. Uso gastronômico (pitada sobre sobremesa): bem abaixo do limite.",
+        "fontes": [
+          "Rodrigues RAF et al. — Composition and antioxidant activity of the essential oil from Dipteryx odorata seeds (Rev Bras Farmacogn, 2006)",
+          "Lake BG — Coumarin Metabolism, Toxicity and Carcinogenicity: Relevance for Human Risk Assessment (Food Chem Toxicol, 1999)",
+          "EFSA Panel on Food Additives — Coumarin in flavourings and other food ingredients (EFSA J, 2008)",
+          "FDA — 21 CFR 189.130 (Coumarin — prohibited as food additive)",
+          "Reg. CE 1334/2008 — Limits of coumarin in foodstuffs (European Parliament)",
+          "Shanley P et al. — Frutíferas e Plantas Úteis na Vida Amazônica (CIFOR/EMBRAPA, 2005)",
+          "Atala A, Dória CA — D.O.M.: Rediscovering Brazilian Ingredients (Phaidon, 2013)"
+        ]
+      },
+      "perfil_sensorial": {
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "3/3",
+            "observacao": "Dominante — cumarina é percebida como 'doce' pelo sistema olfativo retronasal mesmo sem açúcares; a amêndoa natural da semente adiciona doçura real"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Presente no fundo — cumarina tem componente amargo leve; mais evidente na infusão aquosa pura"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
           },
           {
             "dimensao": "Azedo",
@@ -2822,409 +3136,618 @@
             "observacao": "Ausente"
           },
           {
-            "dimensao": "Adstringência",
-            "intensidade": "Moderada",
-            "observacao": "Taninos condensados"
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
           }
         ],
-        "olfativo_familia": "- Fruta vermelha concentrada (amora, mirtilo selvagem)",
+        "olfativo_familia": "Baunilha-coumarin com fundo amadeirado-almíscar",
         "olfativo_descritores": [
-          "Fruta vermelha concentrada (amora, mirtilo selvagem)",
-          "Cacau amargo cru",
-          "Terra úmida de floresta de várzea",
-          "Leve fermentado nobre (como vinho jovem)",
-          "Fundo mineral"
+          "Baunilha bourbon madura (cumarina cristalizada)",
+          "Cumarina pura (feno cortado ao sol, roupa no varal, amaciante de tecido)",
+          "Amêndoa torrada profunda",
+          "Caramelo escuro-toffee",
+          "Almíscar de madeira tropical",
+          "Couro envelhecido (nota de fundo — perceptível em maceração longa)",
+          "Tabaco fino de cachimbo (nota de fundo)",
+          "Mel de floresta (traços — vanilina)"
         ],
-        "trigeminal": [],
-        "tatil": "Polpa: textura densa, quase cremosa, que reveste a boca — propriedade única no catálogo frutal. Infusão de folhas: mais leve, sem a densidade da polpa. O açaí é o único ingrediente do catálogo que muda fundamentalmente de expressão entre a forma fruta e a forma fitoterápica — são quase dois produtos distintos em termos de experiência sensorial.",
-        "descricao_integrada": ""
-      },
-      "cultura": {
-        "historia": "O açaí é alimento-base de populações ribeirinhas do estuário amazônico há milênios. A \"dieta do açaí\" — farinha de tapioca + açaí + peixe seco — foi e ainda é o sustento calórico diário de famílias marajoaras. Para o ribeirinho, o açaí não é superalimento; é comida. A reframagem ocidental como \"superfood\" inverte a lógica: o que era cotidiano vira extraordinário; o que era barato vira premium.  O açaí chegou ao Brasil urbano na Bahia dos anos 1970, trazido por lutadores de jiu-jitsu paraenses que o usavam como fonte de energia pré-treino. A academia de Gracie Barra em São Paulo popularizou o \"tigela de açaí\" nos anos 1990. Dos tatames cariocas para os mercados globais — em 30 anos.",
-        "cerimonial": "Na cultura ribeirinha, o \"açaí das 6 da tarde\" é ritual diário de comunhão — a família se reúne em torno da tigela de açaí após o trabalho. Sem açaí, não há refeição completa. Essa dimensão cultural — invisível na exportação como \"superfood\" — é o que o Ervatório precisa narrar.",
-        "brasil": "O açaí é o produto da bioeconomia amazônica com maior sucesso comercial global — e também o exemplo mais complexo de tensão entre mercado e território. O preço do açaí no mercado internacional elevou tanto o preço local que famílias ribeirinhas pobres do Marajó, que sempre comeram açaí como alimento básico, hoje não conseguem mais comprá-lo. É o paradoxo da mercantilização do sagrado.",
-        "curiosidade": ""
-      },
-      "regulacao": {
-        "eixo_botanico_tpc": "Alimento funcional / Fitoterápico",
-        "status_anvisa": "Regulado como alimento. Polpa liofilizada como suplemento — RDC 240/2018.",
-        "status_ema": "",
-        "status_fda": "GRAS para uso alimentar",
-        "certificacao_organica": "",
-        "sazonalidade": "Safra principal: julho–dezembro (Pará). Segunda safra: fevereiro–abril."
-      },
-      "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
-    },
-    {
-      "slug": "cumaru",
-      "nome_popular": "Cumaru",
-      "nome_cientifico": "Dipteryx odorata (Aubl.) Willd.",
-      "tagline": "A baunilha da floresta — semente aromática amazônica com cumarina intensa, uso histórico em perfumaria europeia e potencial gastronômico e fitoterápico ainda subutilizado.",
-      "schema_version": "1.1",
-      "identificacao": {
-        "nome_cientifico": "Dipteryx odorata (Aubl.) Willd.",
-        "familia_botanica": "Fabaceae / Papilionoideae",
-        "tipo_botanico": "Especiaria aromática / fitoterápico",
-        "parte_usada": "Semente seca (fava de cumaru / tonka bean); casca do fruto (uso popular).",
-        "sinonimos": [
-          "Cumaru · cumarú · fava-tonka · fava de cumaru",
-          "Tonka bean (inglês/francês — nome do mercado de perfumaria)",
-          "Coumarou (francês histórico — origem da palavra \"cumarina\")",
-          "ATENÇÃO: a cumarina presente no cumaru é a mesma substância da imburana-de-cheiro (Amburana cearensis) — mas em concentração muito maior na fava de cumaru."
-        ]
-      },
-      "caracterizacao": {
-        "sabor_dominante": "Doce-baunilha intensíssimo, cumarina pura, amêndoa tostada, caramelo, fava de baunilha bourbon com nota de almíscar. Um dos sabores mais complexos e sedutores do catálogo.",
-        "aroma": "Baunilha bourbon madura, cumarina cristalizada, amêndoa torrada, caramelo, leve almíscar de madeira. Perfume de luxo em semente.",
-        "cor_da_infusao": "Âmbar-dourado a marrom-mel. #C8882A",
-        "intensidade": "4/5 — aroma dominante, sabor inconfundível.",
-        "notas": "",
-        "bioma_de_origem": "Amazônia — floresta de terra firme. AM, PA, RO, AC, também Guianas e Venezuela.",
-        "distribuicao_geografica": []
-      },
-      "preparo": {
-        "temperatura_ideal": "85–90 °C (cumarina é volátil — não ferver).",
-        "tempo_de_infusao": "",
-        "quantidade": "0,5–1 g de semente ralada para 250 ml (poderoso — dose baixa).",
-        "metodo": "Infusão coberta de semente ralada fina (microplaina). Decocção curta da casca.",
-        "reinfusoes": "",
-        "melhor_momento": "Noite (sedativo leve) ou pós-refeições (digestivo aromático).",
-        "combina_com": "Cacau · Canela · Cardamomo · Açaí · Guaraná · Baunilha · Mel (blends amazônico-premium)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Antiespasmódico",
-          "Broncodilatador leve (cumarina)",
-          "Sedativo suave",
-          "Anticoagulante fraco",
-          "Aromático (perfumaria, cosmética)",
-          "Analgésico tópico",
-          "Componentes ativos:",
-          "⚠️ ATENÇÃO — CUMARINA EM ALTA CONCENTRAÇÃO:",
-          "Contraindicações:",
-          "Gestação — cumarina uterotônica",
-          "Anticoagulados — potencialização significativa",
-          "Hepatopatias — hepatotóxico em doses altas",
-          "Uso diário intenso por períodos prolongados"
-        ],
-        "componentes_ativos": [
+        "trigeminal": [
           {
-            "label": "CUMARINA",
-            "texto": "1–3% (semente seca) — Broncodilatador, antiespasmódico, anticoagulante fraco"
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
           },
           {
-            "label": "ÁCIDO CUMÁRICO",
-            "texto": "Presente — Antioxidante"
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "Sem qualquer picância"
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Presentes — Anti-inflamatório"
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
           },
           {
-            "label": "ALCALÓIDES (traços)",
-            "texto": "Traços — Tonificante leve"
+            "receptor": "Adstringência",
+            "ativacao": "Muito baixa",
+            "molecula": "Taninos traços — quase imperceptível; a semente é oleosa, não tanínica"
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [
-          "Gestação — cumarina uterotônica",
-          "Anticoagulados — potencialização significativa",
-          "Hepatopatias — hepatotóxico em doses altas",
-          "Uso diário intenso por períodos prolongados"
-        ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
-      },
-      "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "tatil": "Corpo leve a médio em infusão. Textura levemente oleosa (20–25% de lipídeos na semente — notas de amêndoa na sensação tátil). Persistência olfativa extremamente alta — a cumarina permanece no nariz e na garganta por 30+ minutos após o último gole. A persistência gustativa é menor — a boca limpa em 5 min, mas o nariz continua registrando baunilha.",
+        "descricao_integrada": "O cumaru é a erva-perfume do catálogo: aroma que excede duração de qualquer outro ingrediente. Numa analogia de perfumaria, o cumaru seria uma 'nota de fundo' — aquela que aparece depois que tudo passa e permanece na pele por horas. Essa característica torna o cumaru o finalizador ideal de blends: adicionado por último, ralado diretamente sobre a xícara, ele perfuma sem dominar o primeiro gole — mas domina a memória olfativa do último. Há uma expressão em perfumaria para descrever a persistência do cumaru: 'sillage' — o rastro aromático que fica atrás de quem passa. A infusão de cumaru tem sillage: o cômodo em que você tomou o chá de cumaru cheirará a baunilha-amêndoa por uma hora após a xícara ser lavada. Nenhuma outra erva do catálogo faz isso."
       },
       "cultura": {
-        "historia": "O cumaru é a semente que nomeou uma molécula — o químico Vogel, ao isolar em 1820 o composto aromático da fava de cumaru, nomeou-o \"cumarina\" (coumarin). A partir daí, a cumarina tornou-se molécula-referência em química orgânica e uma das mais usadas em perfumaria do século XX.  A fava tonka (cumaru) é ingrediente histórico da perfumaria europeia de luxo — Chanel Nº5 e Guerlain Shalimar têm cumarina como nota de fundo. Durante décadas, perfumistas compravam favas de cumaru do Brasil para destilar cumarina sintética — hoje usam cumarina sintética, mas a fava natural tem mercado premium crescente.  Na cozinha, o cumaru é o \"truffe noire da Amazônia\" — chefs de alta gastronomia como Alex Atala (D.O.M., São Paulo) popularizaram a fava de cumaru ralada sobre sobremesas, risotos e drinks, elevando um produto extrativista amazônico a ingrediente de elite gastronômica global.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "O cumaru é a semente que nomeou uma molécula — e uma classe inteira de compostos farmacológicos. O químico August Vogel, ao isolar em 1820 o composto aromático cristalino da fava de cumaru, nomeou-o 'coumarin' (cumarina). A partir daí, a cumarina tornou-se molécula-referência em química orgânica aromática e uma das mais usadas em perfumaria do séc. XX. A família dos 'cumarínicos' em farmacologia (incluindo a varfarina, o acenocumarol e o fenprocumon — anticoagulantes orais usados por milhões de pessoas) foi nomeada em referência à fava de cumaru. A fava tonka (cumaru) foi ingrediente histórico da perfumaria europeia de luxo desde o séc. XIX — quando perfumistas de Grasse (Provence, França) compravam favas de cumaru do Brasil e da Venezuela. Chanel Nº5 (1921) e Guerlain Shalimar (1925) — dois dos perfumes mais vendidos da história — têm cumarina como nota de fundo essencial. Na cozinha, o cumaru é o 'truffe noire da Amazônia' — chefs de alta gastronomia como Alex Atala (D.O.M., São Paulo), Helena Rizzo (Maní), Bel Coelho (Clandestino) e Thomas Troisgros popularizaram a fava de cumaru ralada sobre sobremesas, risotos, carpaccios e drinks, elevando um produto extrativista amazônico a ingrediente de elite gastronômica global. O 'crème brûlée de cumaru' do D.O.M. é considerado um dos pratos que redefiniram a alta gastronomia brasileira.",
+        "cerimonial": "Povos indígenas do médio Amazonas (Munduruku, Sateré-Mawé) usam a fava de cumaru como amuleto — carregada no pescoço ou na cintura como proteção contra serpentes e doenças. O aroma intenso é considerado 'protetor de espíritos' — interpretação que pode ter base pragmática: cumarina é repelente de alguns insetos.",
+        "brasil": "O cumaru é exportado quase inteiramente como matéria-prima bruta — fava seca a granel, comprada por intermediários e enviada para Europa (perfumaria) e EUA/Europa (gastronomia). O valor final do perfume que contém cumarina de cumaru é centenas de vezes maior que o preço pago ao extrativista amazônico que coletou a fava. O Ervatório pode e deve narrar essa assimetria — é a mesma dinâmica da fava-de-anta com rutina, do látex com Goodyear, do pau-brasil com corante europeu.",
+        "curiosidade": "A varfarina — o anticoagulante oral mais prescrito do mundo por décadas — deve seu nome à Wisconsin Alumni Research Foundation (WARF) + cumarina (coumarin). O composto foi descoberto em 1940 quando gado no Wisconsin morreu de hemorragia após comer trevo-doce mofado (Melilotus) — o mofo converteu a cumarina natural do trevo em dicumarol, um anticoagulante potente. A cumarina do cumaru não é dicumarol — mas é precursora metabólica. A distância entre 'fava aromática da Amazônia' e 'anticoagulante farmacêutico' é menor do que parece."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Aromático / Funcional",
-        "status_anvisa": "Regulado como especiaria alimentar. Limite de cumarina em alimentos: EFSA 0,1 mg/kg/dia",
-        "status_ema": "",
-        "status_fda": "Proibido como aditivo alimentar nos EUA (mas fava inteira permitida como especiaria)",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita de sementes: agosto–novembro"
+        "status_anvisa": [
+          "Regulado como especiaria alimentar (uso culinário). Sem monografia fitoterápica.",
+          "Cumarina como aditivo: regulada pela ANVISA seguindo limites EFSA."
+        ],
+        "status_ema": "Cumarina: não tem monografia como PA independente. Regulada indiretamente via limites em alimentos e cosméticos.",
+        "status_fda": "Proibido como aditivo alimentar direto nos EUA (21 CFR 189.130 — desde 1954). Fava inteira como especiaria: permitida.",
+        "certificacao_organica": "Disponível via IMAFLORA e IBD para produção extrativista certificada no PA e AM.",
+        "sazonalidade": "Frutificação: março–junho (Amazônia). Colheita de frutos caídos (extrativismo): abril–julho. Secagem de sementes: maio–agosto."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Cooperativas extrativistas de Oriximiná e Óbidos (PA) — comunidades quilombolas e ribeirinhas com tradição centenária de coleta de cumaru. Rastreabilidade de origem documentada. Secundário: Produção extrativista de Parintins (AM) — perfil aromático levemente distinto.",
+        "faixa_de_preco": [
+          "Fava inteira convencional: R$ 80–150/100 g (varejo especializado).",
+          "Fava orgânica certificada: R$ 150–300/100 g.",
+          "Pó de cumaru ralado: R$ 120–250/50 g (formato gastronômico premium).",
+          "Mercado internacional: €30–80/kg (atacado de fava seca para perfumaria)."
+        ],
+        "formatos": "Fava inteira (preferível — máxima preservação de aroma; ralar na hora com microplaina); Fava pré-ralada (pó — conveniência; perda aromática em 2–4 semanas); Macerado em mel (produto gourmet pronto); Óleo aromático de maceração (cosmético/aromaterapia)."
+      },
+      "destaques": [
+        {
+          "label": "Cumarina recorde",
+          "texto": "1–3% — a maior concentração de cumarina de qualquer planta comercial"
+        },
+        {
+          "label": "Sillage olfativo",
+          "texto": "Persistência aromática 30+ min — único no catálogo"
+        },
+        {
+          "label": "Heritage perfumaria",
+          "texto": "Nota de fundo de Chanel Nº5, Shalimar e Sauvage"
+        }
+      ]
     },
     {
       "slug": "unha-de-gato",
       "nome_popular": "Unha-de-Gato",
       "nome_cientifico": "Uncaria tomentosa (Willd. ex Schult.) DC.",
-      "tagline": "A garra da imunidade — adaptógeno amazônico com um dos maiores portfólios de pesquisa internacional entre as ervas do catálogo; monografada em 4 continentes.",
+      "tagline": "A garra da imunidade — adaptógeno amazônico com um dos maiores portfólios de pesquisa internacional entre as ervas do catálogo, monografada pelo governo peruano e pesquisada em 4 continentes.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Uncaria tomentosa (Willd. ex Schult.) DC.",
-        "familia_botanica": "Rubiaceae (família do café, do quínio)",
+        "familia_botanica": "Rubiaceae (família do café, do quínio, da ípeca — uma das maiores famílias de plantas medicinais)",
         "tipo_botanico": "Fitoterápico imunomodulador / anti-inflamatório / adaptógeno",
-        "parte_usada": "Casca do caule (entrecasca) e raiz.",
+        "parte_usada": "Casca do caule (entrecasca) — parte mais rica em alcalóides oxindólicos. Raiz: uso tradicional indígena (mais potente mas extrativismo destrutivo — coleta de casca é preferível por sustentabilidade). Folhas: uso secundário em infusão (menor concentração de PA). A casca é coletada preferencialmente do caule jovem-médio (diâmetro 5–15 cm) sem abate da planta — técnica de coleta sustentável documentada.",
         "sinonimos": [
           "Unha-de-gato · cat's claw · uña de gato (espanhol)",
-          "Vilcacora (quéchua — Peru)",
-          "ATENÇÃO: Uncaria tomentosa ≠ Uncaria guianensis — espécie irmã com alcalóides distintos. A maioria das pesquisas clínicas é com U. tomentosa."
+          "Vilcacora · samento (quéchua — Peru — nome indígena original)",
+          "Uncária (farmacológico) · Katzenkralle (alemão)",
+          "ATENÇÃO: Uncaria tomentosa ≠ Uncaria guianensis — espécie irmã ('unha-de-gato-lisa') com alcalóides distintos e menor portfólio de pesquisa. A maioria esmagadora da pesquisa clínica é com U. tomentosa. No mercado brasileiro, ambas são vendidas como 'unha-de-gato' sem diferenciação — adulteração frequente."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo moderado, terroso-resinoso, levemente adstringente. Não é desagradável — palatável com mel.",
-        "aroma": "Casca de madeira tropical, terroso limpo, leve resina.",
-        "cor_da_infusao": "Marrom-avermelhado a âmbar escuro. #8B4A22",
-        "intensidade": "3/5 — medicinal, de uso regular possível.",
-        "notas": "",
-        "bioma_de_origem": "Amazônia — floresta tropical úmida de terra firme. Peru, Bolívia, Brasil (AM, PA, AC).",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo moderado (alcalóides), terroso-resinoso, levemente adstringente (taninos), fundo amadeirado de casca tropical. Não é desagradável — é medicinal assumido com personalidade. Palatável com mel — uso regular possível.",
+        "aroma": "Casca de madeira tropical seca, terroso limpo, leve resina balsâmica, fundo de chão de floresta. Aroma discreto — a unha-de-gato não é aromática no sentido de especiaria; seu valor é farmacológico, não sensorial.",
+        "cor_da_infusao": "Marrom-avermelhado a âmbar escuro, levemente opaco. #8B4A22",
+        "intensidade": "3/5 — medicinal mas tolerável. Menos amarga que o boldo; mais amarga que a espinheira-santa.",
+        "notas": "Cabeça: terroso-resinoso imediato | Corpo: amargo limpo de alcaloide, amadeirado | Fundo: adstringência leve-média, leve metálico",
+        "bioma_de_origem": "Amazônia — floresta tropical úmida de terra firme. Liana (trepadeira lenhosa) que pode atingir 30 m de altura usando outras árvores como suporte. Os espinhos curvos em forma de garra de gato nos nós dos ramos são a estrutura de escalada — e a origem do nome em todas as línguas.",
+        "distribuicao_geografica": [
+          "Distribuição natural: Peru (maior concentração e pesquisa), Bolívia, Brasil (AM, PA, AC, RO), Colômbia, Equador.",
+          "No Peru: floresta de Selva Central (Junín, Ucayali, Loreto) — centro de pesquisa e exportação.",
+          "No Brasil: Amazônia ocidental (AC, AM) e central (PA). Produção extrativista.",
+          "Mercado internacional: EUA (maior consumidor — US$ 100+ milhões/ano em suplementos), Europa (Alemanha, Áustria — tradição de uso por médicos naturopatas), Japão.",
+          "O Peru domina a produção regulamentada — o governo peruano publicou monografia oficial e regulamenta exportação como recurso nacional."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "Decocção a 95–98 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g de casca seca para 500 ml.",
-        "metodo": "Decocção (alcalóides oxindólicos extraídos melhor por decocção que infusão).",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã em jejum (imunomodulador) ou 2x ao dia em uso terapêutico.",
-        "combina_com": "Mel · Gengibre · Cúrcuma · Echinacea (blends imunidade global)"
+        "temperatura_ideal": "Decocção a 95–98 °C — obrigatória. Alcalóides oxindólicos são extraídos muito mais eficientemente por decocção (15–20 min) do que por infusão simples. A infusão a 90 °C extrai apenas 30–40% dos PA comparado com a decocção.",
+        "tempo_de_infusao": "15–20 minutos em decocção suave (fogo baixo, não ebulição vigorosa).",
+        "quantidade": "3–5 g de casca seca para 500 ml de água. Para uso terapêutico: até 10 g/500 ml.",
+        "metodo": "Decocção: colocar a casca em água fria, aquecer até ebulição suave, manter por 15–20 min coberto, coar. Maceração a frio (12h): alternativa para preservar alcalóides termolábeis — menos eficiente em extração total mas preserva melhor o perfil de alcalóides pentacíclicos.",
+        "reinfusoes": "1 reinfusão possível (a casca libera PA residuais).",
+        "melhor_momento": "Manhã em jejum: imunomodulador sistêmico. 2x ao dia: protocolo terapêutico padrão em naturopatia. Início de sintomas de gripe/resfriado: 3–4x ao dia por 7 dias.",
+        "combina_com": "Mel (suaviza amargura) · Gengibre · Cúrcuma (ação sinérgica via NF-κB) · Equinácea · Própolis verde (artepilina C + alcalóides = dupla modulação imune)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para uso tópico anti-inflamatório e cicatrizante.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressa anti-inflamatória articular",
+            "texto": "Decocção concentrada (10 g/250 ml), resfriada a morno — compressa sobre articulação inflamada, 20 min, 2x ao dia. Uso documentado pela etnomedicina Asháninka (Peru) para dores articulares e musculares."
+          },
+          {
+            "titulo": "Lavagem de feridas crônicas",
+            "texto": "Decocção fraca resfriada — lavagem de feridas com cicatrização retardada. Evidência preliminar — uso hospitalar em Iquitos (Peru) documentado."
+          },
+          {
+            "titulo": "Bochecho para gengivite e periodontite",
+            "texto": "Decocção concentrada, morna, 30 s de bochecho, 3x ao dia. Ação anti-inflamatória e antimicrobiana oral."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro. Verificar alergia à família Rubiaceae (rara)."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Imunomodulador (estimula e regula função imune)",
-          "Anti-inflamatório potente (inibição NF-κB)",
+          "Imunomodulador (estimula e regula função imune — ativa macrófagos, NK cells, neutrófilos; modula linfócitos T)",
+          "Anti-inflamatório potente (inibição de NF-κB — mesma via da cúrcuma mas por mecanismo distinto)",
           "Antioxidante",
-          "Antimutagênico (proteção do DNA)",
-          "Antiviral",
-          "Antiartrítico (redução de dor e inflamação articular)",
-          "Gastroprotetor leve",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Transplantados — imunomodulação pode conflitar com imunossupressão",
-          "Gestação — alcalóides controversos",
-          "Uso concomitante com anticoagulantes — cautela",
-          "Hipertensão — monitorar (alcalóides vasoativos)"
+          "Antimutagênico (proteção do DNA contra dano oxidativo e por radiação)",
+          "Antiviral (influenza, herpes, HIV — estudos in vitro)",
+          "Antiartrítico (redução de dor, rigidez e inflamação articular)",
+          "Gastroprotetor leve (proteção de mucosa gástrica)",
+          "Adaptógeno (modulação de cortisol — evidência emergente)"
         ],
         "componentes_ativos": [
           {
-            "label": "ALCALÓIDES OXINDÓLICOS (pteropodina, isorincofila, mitrfilina)",
-            "texto": "Imunomodulação — ativação macrófagos e linfócitos"
+            "label": "Alcalóides oxindólicos pentacíclicos (pteropodina, isopteropodina, mitrafilina, isomitrafilina, uncarina F)",
+            "texto": "0,3–0,7% da casca seca — Imunomodulação (ativação de macrófagos e produção de IL-1, IL-6); citotóxicos contra linhas tumorais. Pentacíclicos = imunoestimulantes. Dominantes em U. tomentosa tipo POA."
           },
           {
-            "label": "ALCALÓIDES TETRACÍCLICOS (rincofila, isorincofila)",
-            "texto": "Regulação nervosa, anti-inflamatório"
+            "label": "Alcalóides oxindólicos tetracíclicos (rincofila, isorincofila)",
+            "texto": "0,02–0,1% — Regulação nervosa, vasodilatação, anti-inflamatório cerebral. Tetracíclicos = moduladores de SNC."
           },
           {
-            "label": "GLICOSÍDEOS DO ÁCIDO QUINÓVICO",
-            "texto": "Anti-inflamatório, antiviral"
+            "label": "Glicosídeos do ácido quinóvico",
+            "texto": "Anti-inflamatório, antiviral, antimicrobiano. Mecanismo complementar aos alcalóides"
           },
           {
-            "label": "CATEQUINAS, EPICATEQUINAS",
+            "label": "Catequinas, epicatequinas (procianidinas)",
             "texto": "Antioxidante, anti-inflamatório"
           },
           {
-            "label": "BETA-SITOSTEROL, ESTIGMASTEROL",
+            "label": "Beta-sitosterol, estigmasterol",
             "texto": "Anti-inflamatório, imunomodulador"
+          },
+          {
+            "label": "Ácidos triterpênicos (ácido oleanólico, ursólico)",
+            "texto": "Anti-inflamatório, hepatoprotetor"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Artrite reumatoide (adjuvante)",
+            "indicacao": "Artrite reumatoide (adjuvante a MTX)",
             "evidencia": "Moderada",
-            "populacao": "Mur et al., 2002"
+            "populacao": "Adultos com AR ativa — Mur et al. (2002) ECR 40 semanas"
           },
           {
-            "indicacao": "Osteoartrite joelho",
+            "indicacao": "Osteoartrite de joelho (dor e função)",
             "evidencia": "Moderada",
-            "populacao": "Piscoya et al., 2001"
+            "populacao": "Adultos ≥ 50 anos — Piscoya et al. (2001) ECR 4 semanas"
           },
           {
             "indicacao": "Imunoestimulação (quimioterapia adjuvante)",
             "evidencia": "Moderada",
-            "populacao": "Sheng et al., 2000"
+            "populacao": "Pacientes oncológicos — Sheng et al. (2000); Akesson et al. (2003)"
           },
           {
             "indicacao": "Proteção do DNA contra radiação",
             "evidencia": "Preliminar",
-            "populacao": "Modelos in vitro"
+            "populacao": "Modelos in vitro e voluntários — Sheng et al. (2001)"
+          },
+          {
+            "indicacao": "Gastrite por AINE (proteção mucosa)",
+            "evidencia": "Preliminar",
+            "populacao": "Adultos usuários de AINE — Sandoval et al. (2000)"
           }
         ],
+        "alerta_critico": {
+          "titulo": "Quimiotipo POA vs TOA — diferença farmacológica crítica",
+          "titulo2": "Priorizar extratos POA-dominant",
+          "corpo": "U. tomentosa apresenta dois quimiotipos genéticos distintos: POA (pentacyclic oxindole alkaloid) — dominância de pentacíclicos → ação imunoestimulante (este é o tipo desejado clinicamente); TOA (tetracyclic oxindole alkaloid) — dominância de tetracíclicos → ação mais neurológica; ANTAGONIZA a ação imunoestimulante dos pentacíclicos em doses combinadas. Casca mista (POA + TOA) tem eficácia reduzida vs casca pura POA. Extratos padronizados premium certificam 'free of TOA' ou 'POA-dominant'. Priorizar fornecedores que certificam o quimiotipo."
+        },
         "contraindicacoes": [
-          "Transplantados — imunomodulação pode conflitar com imunossupressão",
-          "Gestação — alcalóides controversos",
-          "Uso concomitante com anticoagulantes — cautela",
-          "Hipertensão — monitorar (alcalóides vasoativos)"
+          "Transplantados em uso de imunossupressores (ciclosporina, tacrolimus, micofenolato): imunomodulação pode conflitar com imunossupressão terapêutica — contraindicado.",
+          "Doenças autoimunes ativas (lúpus, AR severa em flare, esclerose múltipla): estimulação imune pode exacerbar — usar apenas com supervisão reumatológica.",
+          "Gestação: alcalóides — dados insuficientes de segurança; evitar.",
+          "Lactação: evitar (alcalóides excretados no leite).",
+          "Pré-cirurgia: suspender 2 semanas antes (anticoagulante fraco).",
+          "Uso concomitante com anticoagulantes: cautela (inibição de agregação plaquetária)."
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          {
+            "label": "Imunossupressores (ciclosporina, tacrolimus)",
+            "texto": "Antagonismo imunológico direto. Conduta: Contraindicado"
+          },
+          {
+            "label": "Anti-hipertensivos (IECA, BRA)",
+            "texto": "Alcalóides tetracíclicos vasodilatadores — efeito aditivo. Conduta: Monitorar PA"
+          },
+          {
+            "label": "Anticoagulantes",
+            "texto": "Inibição plaquetária fraca. Conduta: Monitorar INR"
+          },
+          {
+            "label": "Inibidores de protease (HIV)",
+            "texto": "Interação com CYP3A4 (potencial). Conduta: Informar infectologista"
+          },
+          {
+            "label": "Metotrexato (AR)",
+            "texto": "Sinergia favorável documentada (Mur 2002). Conduta: Uso conjunto possível sob supervisão"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais (casca 3–5 g/dia ou extrato 250–500 mg/dia): raros. Diarreia leve, desconforto gástrico em doses > 10 g/dia. Cefaleia transitória (alcalóides tetracíclicos em doses altas).",
+        "dose_maxima": "Casca em decocção: até 10 g/dia (uso terapêutico supervisionado). Extrato padronizado: 250–500 mg/dia (uso regular). 1.000 mg/dia em pesquisas clínicas.",
+        "fontes": [
+          "Mur E et al. — Randomized double blind trial of an extract from the pentacyclic alkaloid-chemotype of Uncaria tomentosa for the treatment of rheumatoid arthritis (J Rheumatol, 2002)",
+          "Piscoya J et al. — Efficacy and safety of freeze-dried cat's claw in osteoarthritis of the knee (Inflamm Res, 2001)",
+          "Sheng Y et al. — DNA repair enhancement of aqueous extracts of Uncaria tomentosa in a human volunteer study (Phytomedicine, 2001)",
+          "Sandoval M et al. — Anti-inflammatory and antioxidant activities of cat's claw (Uncaria tomentosa) (Free Radic Biol Med, 2000)",
+          "Reinhard KH — Uncaria tomentosa (Willd.) D.C.: Cat's Claw, Uña de Gato, or Saventaro (J Altern Complement Med, 1999)",
+          "Keplinger K et al. — Uncaria tomentosa (Willd.) DC. — Ethnomedicinal use and new pharmacological, toxicological and botanical results (J Ethnopharmacol, 1999)",
+          "DIGEMID (Peru) — Monografia oficial de Uncaria tomentosa"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "2/3",
+            "observacao": "Dominante — alcalóides oxindólicos + taninos; amargura limpa, não nauseante"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente (leve nota mineral do ferro da casca, mas abaixo do limiar de salgado)"
+          }
+        ],
+        "olfativo_familia": "Terroso-amadeirado com fundo resinoso discreto",
+        "olfativo_descritores": [
+          "Casca de madeira tropical seca",
+          "Terroso limpo de floresta (sem geosmina — diferente do açaí)",
+          "Leve resina balsâmica (não cumarina; mais leve)",
+          "Fundo de chão de floresta após varredura (folha seca + terra + umidade)",
+          "Mineral leve (ferro da casca)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Moderada",
+            "molecula": "Taninos condensados (procianidinas) + catequinas — adstringência de casca taninosa, similar ao chá-preto forte; contrai mucosa sem secá-la"
+          }
+        ],
+        "tatil": "Corpo médio em decocção concentrada. Textura levemente adstringente — a decocção contrai a mucosa oral de forma limpa e uniforme. Persistência média — a amargura dos alcalóides permanece 5–10 minutos; a adstringência tânica dura 3–5 minutos.",
+        "descricao_integrada": "A unha-de-gato é a infusão-casca arquetípica do catálogo amazônico: terrosa, amarga, adstringente, sem aromáticos memoráveis, sem doçura, sem frescor. É uma infusão que se toma por propósito, não por prazer — o que não é crítica mas descrição honesta. Em culturas herbalistas tradicionais (Asháninka, Shipibo-Conibo), a amargura é sinal de potência — o remédio que não amarga não cura. A unha-de-gato se posiciona exatamente nesse registro: não se pergunta se é boa; se pergunta se funciona. Para o Ervatório, isso cria um desafio editorial: como apresentar uma erva cujo valor é farmacológico sem valor hedônico? A resposta é contexto — narrar a lógica indígena que trata amargura como virtude, não como defeito. E oferecer combinações (mel, gengibre, canela) que suavizam sem comprometer."
       },
       "cultura": {
-        "historia": "A unha-de-gato é a planta medicinal peruana mais estudada internacionalmente — o Instituto Nacional de Saúde do Peru (INS) dedicou décadas à sua pesquisa. O nome vem dos espinhos curvos em forma de garra que a planta usa para trepar — morfologia que se tornou ícone visual de sua identidade.  Conhecida pelos Ashaninka e Shipibo-Conibo do Peru como \"uña de gato\" e usada ritualmente por xamãs para fortalecer o sistema imune antes de expedições e rituais. A etnobotânica documental dos povos amazônicos peruanos foi o ponto de partida para toda a pesquisa farmacológica moderna.",
-        "cerimonial": "",
-        "brasil": "Amplamente vendida em farmácias de manipulação e ervanários. O produto importado do Peru (mais pesquisado) compite com a produção nacional. É um dos itens mais vendidos em lojas de produtos naturais brasileiras para \"imunidade\".",
-        "curiosidade": ""
+        "historia": "A unha-de-gato é a planta medicinal peruana mais estudada internacionalmente — o Instituto Nacional de Saúde do Peru (INS) dedicou décadas à sua pesquisa; a DIGEMID publicou monografia oficial; o governo peruano declarou-a 'patrimônio natural' em 1999 e regulou a exportação. O nome vem dos espinhos curvos em forma de garra de gato nos nós dos ramos — estrutura que a planta usa para trepar em outras árvores na floresta densa. Conhecida pelos Asháninka e Shipibo-Conibo do Peru como 'uña de gato' e usada ritualmente por xamãs para fortalecer o sistema imune antes de expedições longas na floresta, tratar 'doenças dos ossos' (artrite, dor articular), purificar o corpo após infecções, ritual de preparação para a caça. A etnobotânica documental dos povos amazônicos peruanos — especialmente o trabalho de Klaus Keplinger e Brent Davis nos anos 1980–90 — foi o ponto de partida para toda a pesquisa farmacológica moderna com unha-de-gato.",
+        "cerimonial": "Na tradição Asháninka, a casca de unha-de-gato é preparada por decocção longa (1–2 horas) e oferecida ao guerreiro ou caçador antes de partidas importantes — como 'escudo interno'. O uso ritual não é recreativo — é pragmático: fortalecer o corpo para o que vem.",
+        "brasil": "Amplamente vendida em farmácias de manipulação, ervanários e lojas de produtos naturais. O produto importado do Peru (mais pesquisado e com padronização mais rigorosa) compete com a produção nacional (extrativismo no AM e AC — sem padronização de quimiotipo, risco de adulteração com U. guianensis). É um dos itens mais vendidos em lojas de produtos naturais brasileiras sob a categoria 'imunidade' — especialmente desde a pandemia de COVID-19. O Ervatório deve diferenciar: Unha-de-gato com quimiotipo certificado (POA-dominant) — premium; Unha-de-gato de origem não-certificada — commodity com eficácia incerta.",
+        "curiosidade": "Os alcalóides oxindólicos da unha-de-gato têm uma peculiaridade bioquímica rara: os pentacíclicos (que estimulam imunidade) e os tetracíclicos (que modulam SNC) são antagonistas diretos quando presentes em mistura. Isso significa que um extrato com 50% POA + 50% TOA pode ser menos eficaz que um extrato com 100% POA — os tetracíclicos 'cancelam' parte da ação imunoestimulante dos pentacíclicos. Esta é uma das primeiras evidências de antagonismo intra-planta documentadas na fitoterapia — e tem implicação prática direta para a qualidade do produto."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA + Funcional global",
-        "status_anvisa": "Uso tradicional reconhecido. Em avaliação para Formulário.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Casca coletada no período seco"
+        "status_anvisa": [
+          "Memento Fitoterápico — uso tradicional reconhecido. Em análise para inclusão no Formulário de Fitoterápicos.",
+          "Extratos de unha-de-gato amplamente comercializados como suplementos (IN 28/2018)."
+        ],
+        "status_ema": "Não há monografia HMPC publicada — em avaliação. Amplamente vendida como suplemento na Alemanha e Áustria sob regulamentação nacional.",
+        "status_fda": "Suplemento amplamente vendido — sem status medicamentoso. Vendas estimadas em US$ 100+ milhões/ano.",
+        "certificacao_organica": "Certificação de quimiotipo (POA vs TOA) disponível em extratos premium. Certificação orgânica disponível via USDA, EU Organic (Peru).",
+        "sazonalidade": "Casca coletável o ano todo — preferência pelo período seco (junho–outubro na Amazônia) para facilitar secagem e reduzir contaminação fúngica."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Extratos peruanos certificados POA-dominant (Rainforest Herbs, Nutraceutica — Peru). Rastreabilidade de quimiotipo garantida. Secundário: Produção extrativista brasileira (cooperativas do AC e AM) — verificar identificação botânica (tomentosa vs guianensis) e quimiotipo.",
+        "faixa_de_preco": [
+          "Casca seca granel (Brasil): R$ 40–80/100 g.",
+          "Extrato seco padronizado POA-dominant (importado Peru): R$ 80–150/60 cápsulas.",
+          "Casca moída para chá (Brasil): R$ 50–90/100 g.",
+          "Extrato premium certificado (Samento® — Immugenics/Áustria): R$ 200–350/120 cápsulas (mercado europeu referência)."
+        ],
+        "formatos": "Casca seca em pedaços (decocção — formato tradicional mais eficaz); Casca moída (pó para decocção — conveniência); Extrato seco padronizado em cápsulas (POA-dominant — formato farmacêutico); Tintura 1:5 (extrato hidroalcoólico — uso sublingual); Extrato líquido concentrado (gotas)."
+      },
+      "destaques": [
+        {
+          "label": "Imunomodulador validado",
+          "texto": "Inibição de NF-κB com mecanismo distinto da cúrcuma — POA-dominant"
+        },
+        {
+          "label": "Pesquisa peruana",
+          "texto": "Monografia DIGEMID, patrimônio natural do Peru desde 1999"
+        },
+        {
+          "label": "Quimiotipo crítico",
+          "texto": "POA estimula imunidade; TOA antagoniza — escolher POA-dominant"
+        }
+      ]
     },
     {
       "slug": "jatoba",
       "nome_popular": "Jatobá",
-      "nome_cientifico": "Hymenaea courbaril L. / H. stigonocarpa Mart. ex Hayne (cerrado)",
-      "tagline": "A árvore-farmácia da floresta — resina milenar usada desde os maias até os quilombolas, com ação energética, respiratória e antimicrobiana comprovadas.",
+      "nome_cientifico": "Hymenaea courbaril L.",
+      "tagline": "A árvore-farmácia da floresta — resina milenar usada desde os maias até os quilombolas, com ação energética, respiratória e antimicrobiana comprovadas, e uma farinha de polpa que é um dos superalimentos mais subestimados do Brasil.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Hymenaea courbaril L. / H. stigonocarpa Mart. ex Hayne (cerrado)",
-        "familia_botanica": "Fabaceae / Caesalpinioideae",
-        "tipo_botanico": "Fitoterápico energético / expectorante / antimicrobiano",
-        "parte_usada": "Casca do caule (decocção); resina (uso medicinal e ritual); polpa do fruto (farinha energética); folhas (infusão popular).",
+        "nome_cientifico": "Hymenaea courbaril L. (jatobá-da-mata, Amazônia e Mata Atlântica) / Hymenaea stigonocarpa Mart. ex Hayne (jatobá-do-cerrado)",
+        "familia_botanica": "Fabaceae / Caesalpinioideae (família do feijão, do jatobá, do pau-brasil)",
+        "tipo_botanico": "Fitoterápico energético / expectorante / antimicrobiano / alimento funcional",
+        "parte_usada": "Casca do caule (decocção — uso respiratório e anti-inflamatório); resina (jatobá-resina/copal — uso medicinal, ritual e artesanal); polpa do fruto (farinha energética — alimento funcional); folhas (infusão popular — uso secundário). A árvore oferece quatro produtos medicinais distintos de partes diferentes — é uma das poucas espécies do catálogo com uso integral: casca, resina, polpa e folha.",
         "sinonimos": [
-          "Jatobá · jatobá-da-mata · jataí · copal (México/C.A.)",
-          "Courbaril · West Indian locust (inglês caribenho)",
-          "Jutaí (AM) · jataúba (PA)"
+          "Jatobá · jatobá-da-mata · jataí · jataúba (PA) · jutaí (AM)",
+          "Courbaril · West Indian locust (inglês caribenho) · Stinking toe (inglês caribenho popular — pelo cheiro da polpa)",
+          "Copal (México/América Central — refere-se à resina, não à árvore)",
+          "Jatobá-do-cerrado (H. stigonocarpa — espécie do cerrado, menor porte, mesmos usos)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Resina balsâmica quente, âmbar, leve baunilha, amadeirado profundo.",
-        "cor_da_infusao": "",
-        "intensidade": "4/5 (decocção de casca) / 2/5 (polpa em água).",
-        "notas": "",
-        "bioma_de_origem": "Amazônia e Cerrado — ampla distribuição em todo o Brasil extra-pampeano.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Casca/decocção: Amargo-resinoso intenso, balsâmico profundo, terroso, fundo de canela-baunilha (resina). Perfil medicinal declarado. Polpa (farinha): Adocicada, amilácea, com aroma peculiar de baunilha-caramelo + queijo forte (ácidos voláteis — o 'stinking toe' do Caribe). Sabor que divide: indígenas e populações rurais consideram delícia; paladar urbano frequentemente rejeita pelo aroma.",
+        "aroma": "Casca/decocção: Resina balsâmica quente (terpenos), âmbar, leve baunilha (cumarina traços), amadeirado profundo. Polpa: Baunilha-caramelo-fermentado intenso com nota de queijo maduro (ácidos butírico e propiônico). O aroma mais controverso do catálogo — atrai ou repele instantaneamente.",
+        "cor_da_infusao": "Casca: Marrom-escuro avermelhado, intenso, opaco. #6B3318. Polpa em água: Marrom-amarelado claro. #C09050",
+        "intensidade": "4/5 (decocção de casca) — intenso, balsâmico, presente. 2/5 (polpa em água) — suave, amiláceo.",
+        "notas": "Casca — Cabeça: resinoso-balsâmico imediato (terpenos) | Corpo: amargo de casca, amadeirado profundo | Fundo: baunilha-cumarina distante, adstringência leve. Polpa — Cabeça: baunilha-caramelo | Corpo: amiláceo-farináceo | Fundo: fermentado-queijoso (divisivo)",
+        "bioma_de_origem": "Amazônia e Mata Atlântica (H. courbaril) — árvore de grande porte (até 40 m), copa larga, floresta de terra firme e de transição. Cerrado (H. stigonocarpa) — cerrado stricto sensu e cerradão, porte menor (até 12 m). Distribuição ampla em todo o Brasil extra-pampeano.",
+        "distribuicao_geografica": [
+          "H. courbaril: Amazônia (PA, AM, MA, TO), Mata Atlântica (MG, SP, RJ, ES, BA), América Central (México a Panamá), Caribe.",
+          "H. stigonocarpa: Cerrado (GO, MT, MS, MG, SP, TO, BA, PI).",
+          "Maiores volumes de coleta: Goiás (cerrado), Pará (amazônico), Minas Gerais (transição).",
+          "A resina fóssil de jatobá (âmbar brasileiro) é encontrada em depósitos terciários — insetos de milhões de anos preservados em resina de ancestrais do jatobá."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Mel · Gengibre · Guaco (blends respiratórios) · Açaí (blends energéticos)"
+        "temperatura_ideal": "Decocção de casca: 98 °C. Farinha de polpa: não aquecer excessivamente para preservar amido resistente.",
+        "tempo_de_infusao": "Casca: 15–20 min em decocção. Resina (incenso): queima sobre brasa.",
+        "quantidade": "Casca: 5 g/500 ml de água (decocção respiratória/energética). Farinha: 1–2 colheres de sopa em água, suco, iogurte ou receitas (substituição parcial de farinha).",
+        "metodo": "Casca: decocção tradicional. Resina: tintura em álcool 70° por 15 dias OU queima como incenso. Farinha de polpa: misturar em líquido frio ou morno; pode ser consumido com mel, cacau, canela.",
+        "reinfusoes": "Casca: 1 reinfusão possível (libera PA gradualmente).",
+        "melhor_momento": "Manhã: energético (farinha de polpa — amido de digestão lenta, ferro, cálcio). 3x ao dia: protocolo respiratório (decocção de casca — bronquite, tosse).",
+        "combina_com": "Mel · Gengibre · Guaco (blend respiratório amazônico) · Eucalipto · Açaí (blend energético) · Cacau (mascara aroma da polpa)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para uso antimicrobiano tópico (resina); forte na tradição etnomedicinal.",
+        "aplicacoes": [
+          {
+            "titulo": "Resina como cicatrizante tópico",
+            "texto": "Resina de jatobá aquecida e aplicada diretamente sobre feridas e cortes — uso indígena milenar. A resina forma película protetora antimicrobiana que sela a ferida. Mecanismo: diterpenos com ação antimicrobiana de contato."
+          },
+          {
+            "titulo": "Tintura de casca para bochecho (gengivite, aftas)",
+            "texto": "Tintura de casca (1:5 em álcool 70°) diluída em água — bochecho 30 s, 3x ao dia. Ação antimicrobiana e adstringente."
+          },
+          {
+            "titulo": "Incenso de resina (uso aromático)",
+            "texto": "Resina queimada sobre brasa — uso aromático e ritual. Aroma balsâmico-resinoso que funciona como repelente leve de insetos e purificador de ambiente."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro. Ingestão de resina sólida pode causar desconforto gástrico — uso externo apenas."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Expectorante e broncodilatador",
-          "Energético (amido de digestão lenta + ferro)",
-          "Antimicrobiano (fungos e bactérias)",
-          "Antifúngico (candidíase)",
-          "Anti-inflamatório",
-          "Gastroprotetor (resina)",
-          "Componentes ativos:",
-          "Contraindicações: Sem contraindicações relevantes em uso moderado. Gestação — cautela com decocção concentrada."
+          "Expectorante e broncodilatador (casca — terpenos)",
+          "Energético de liberação lenta (polpa — amido resistente + ferro)",
+          "Antimicrobiano potente (resina — diterpenos contra fungos e bactérias)",
+          "Antifúngico (resina — ação documentada contra Candida, Aspergillus)",
+          "Anti-inflamatório (casca — inibição de mediadores)",
+          "Gastroprotetor (resina — ação demulcente)",
+          "Imunomodulador leve",
+          "Nutritivo excepcional (polpa — ferro, cálcio, magnésio, amido resistente, fibra)"
         ],
         "componentes_ativos": [
           {
-            "label": "DITERPENOS (ácido courbarílico, jatereosídeos)",
-            "texto": "Anti-inflamatório, antimicrobiano"
+            "label": "Diterpenos (ácido courbarílico, jatereosídeos, ácido copálico)",
+            "texto": "Casca e resina — Anti-inflamatório, antimicrobiano, antifúngico. Mesma classe terpênica da copaíba — Fabaceae amazônica"
           },
           {
-            "label": "RESINA (copal)",
-            "texto": "Antifúngico, cicatrizante"
+            "label": "Resina (copal — terpenóides complexos)",
+            "texto": "Tronco — Antifúngico, cicatrizante, selante biológico. Resina fossilizável — mesma composição química do âmbar"
           },
           {
-            "label": "AMIDO RESISTENTE",
-            "texto": "Prebiótico, energético de baixo IG"
+            "label": "Amido resistente",
+            "texto": "Polpa — Prebiótico, energético de baixo índice glicêmico, saciedade. Amido tipo RS2 — resiste à digestão enzimática; fermenta no cólon"
           },
           {
-            "label": "FERRO, CÁLCIO, MAGNÉSIO",
-            "texto": "Nutritivo — polpa"
+            "label": "Ferro",
+            "texto": "Polpa — Nutritivo (0,9 mg/100 g de polpa fresca). Ferro não-heme; biodisponibilidade aumenta com vitamina C"
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Antioxidante"
+            "label": "Cálcio",
+            "texto": "Polpa — Nutritivo (36 mg/100 g)"
+          },
+          {
+            "label": "Magnésio",
+            "texto": "Polpa — Nutritivo, relaxante muscular"
+          },
+          {
+            "label": "Fibras insolúveis",
+            "texto": "Polpa — Prebiótico, trânsito intestinal (15–20% da polpa seca)"
+          },
+          {
+            "label": "Flavonóides (astilbina)",
+            "texto": "Casca e folhas — Antioxidante, anti-inflamatório"
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Bronquite aguda (expectorante)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — Uso tradicional + estudos pré-clínicos (UFPA)"
+          },
+          {
+            "indicacao": "Candidíase oral e vaginal (antifúngico — resina)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — Estudos in vitro (UFMG)"
+          },
+          {
+            "indicacao": "Fonte de amido resistente (prebiótico)",
+            "evidencia": "Forte (nutricional)",
+            "populacao": "Adultos e crianças — EMBRAPA Tabela TACO"
+          },
+          {
+            "indicacao": "Anti-inflamatório articular",
+            "evidencia": "Tradicional forte",
+            "populacao": "Adultos — Etnomedicina documentada"
+          }
+        ],
+        "contraindicacoes": [
+          "Sem contraindicações relevantes em uso moderado.",
+          "Gestação: cautela com decocção concentrada de casca (dados insuficientes).",
+          "Polpa/farinha: sem contraindicações — é alimento.",
+          "Resina: uso externo apenas; ingestão de resina sólida pode causar desconforto gástrico."
+        ],
+        "interacoes": [
+          {
+            "label": "Sem interações medicamentosas relevantes documentadas",
+            "texto": "Conduta: Uso seguro com a maioria das medicações"
+          }
+        ],
+        "efeitos_adversos": "Decocção de casca em dose usual: raros. Adstringência e desconforto gástrico em doses > 10 g/dia. Polpa: flatulência (amido resistente fermentável — normal, indica ação prebiótica).",
+        "dose_maxima": "Casca: até 10 g/dia em decocção. Farinha de polpa: até 30 g/dia (como alimento).",
+        "fontes": [
+          "Jayaprakasam B et al. — Anticancer and antiinflammatory activities of ofernadienone, isolated from Hymenaea courbaril (Chem Pharm Bull, 2007)",
+          "Lima Silva JC et al. — Antimicrobial activity of Hymenaea courbaril resin (Fitoterapia, 2012)",
+          "EMBRAPA — Tabela Brasileira de Composição de Alimentos (TACO) — ficha nutricional de farinha de jatobá",
+          "Lorenzi H — Árvores Brasileiras: Manual de Identificação e Cultivo de Plantas Arbóreas Nativas do Brasil (Instituto Plantarum, 2002)",
+          "Shanley P et al. — Frutíferas e Plantas Úteis na Vida Amazônica (CIFOR/EMBRAPA, 2005)",
+          "Cartaxo SL et al. — Medicinal plants used in Crato, NE Brazil (J Ethnobiol Ethnomed, 2010)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente na decocção. Presente na polpa (amido convertido em açúcares — 2/3 na polpa)"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "3/3",
+            "observacao": "Dominante na decocção de casca — diterpenos + taninos. Amargura resinosa-medicinal, persistente. 0/3 na polpa."
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "1/3",
+            "observacao": "Notas fermentadas que tangenciam umami (especialmente na polpa)"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "1/3",
+            "observacao": "Leve acidez fermentativa na polpa"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Resinoso-balsâmico-quente (casca) / Baunilha-fermentado-divisivo (polpa)",
+        "olfativo_descritores": [
+          "Resina balsâmica quente (copal — terpenos)",
+          "Âmbar (resina fossilizável — literalmente o cheiro de âmbar antes de se tornar pedra)",
+          "Leve baunilha-canela (cumarina traços)",
+          "Amadeirado profundo de Fabaceae tropical",
+          "Incenso natural (copal queimado)",
+          "Polpa: Baunilha-caramelo + Queijo maduro intenso (ácido butírico — nota que divide o público) + Levadura"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Moderada-alta (casca)",
+            "molecula": "Taninos condensados — adstringência pronunciada na decocção forte; a casca seca a boca. Polpa: adstringência zero."
+          }
+        ],
+        "tatil": "Decocção de casca: corpo médio-encorpado, textura adstringente que contrai a mucosa com firmeza. Persistência alta — a amargura balsâmica e a adstringência permanecem 10–15 min na boca. Polpa em água: corpo leve, amiláceo, farináceo. Textura suave que lembra mingau ralo. Persistência curta.",
+        "descricao_integrada": "O jatobá é o ingrediente do catálogo com a maior distância sensorial entre duas partes da mesma planta: a casca é intensa, amarga, adstringente, balsâmica, medicinal pura — e a polpa é doce, amilácea, fermentada, alimentar pura. Parecem vir de plantas diferentes. Na verdade, vêm do mesmo tronco: a casca protege a árvore; a polpa alimenta quem a encontra. Farmácia por fora, cozinha por dentro. Essa dualidade torna o jatobá um dos ingredientes mais pedagógicos do Ervatório: demonstra que a mesma espécie pode ser alimento e medicamento — dependendo da parte que se usa, do preparo e da intenção. É a definição botânica de 'fitocomplexo' em forma de árvore."
       },
       "cultura": {
-        "historia": "A resina de jatobá — chamada copal pelos povos mesoamericanos — é uma das substâncias rituais mais antigas das Américas. Queimada como incenso em rituais maias e astecas; usada como verniz em instrumentos musicais coloniais no Brasil; vendida em farmácias europeias do século XIX como \"copaline\". O âmbar brasileiro pré-histórico é fossilização de resina de ancestrais do jatobá — insetos extintos foram preservados em resina de jatobá por dezenas de milhões de anos.",
-        "cerimonial": "",
-        "brasil": "A farinha de jatobá é o alimento funcional \"esquecido\" do Brasil — extremamente nutritiva (ferro, cálcio, proteína, amido resistente de baixo índice glicêmico), produzida por comunidades extrativistas do cerrado e amazônia, mas praticamente ausente do mercado urbano. É uma das grandes oportunidades de produção alimentar sustentável da bioeconomia brasileira.",
-        "curiosidade": ""
+        "historia": "A resina de jatobá — chamada copal pelos povos mesoamericanos — é uma das substâncias rituais mais antigas das Américas. Os maias e os astecas queimavam copal como incenso em cerimônias religiosas, funerárias e divinatórias. O Códice de Florença (séc. XVI — compilação de Sahagún) lista o copal como oferenda obrigatória aos deuses. Quando os missionários espanhóis chegaram ao México, encontraram templos inteiros perfumados com fumaça de copal — e a substituíram por incenso de olíbano (frankincense). No Brasil, a resina de jatobá foi usada como verniz natural em instrumentos musicais coloniais — a viola de cocho do pantanal e as rabecas nordestinas recebiam verniz de resina de jatobá que protegia a madeira e melhorava a ressonância acústica. A farinha de jatobá alimentou viajantes do sertão, tropeiros e bandeirantes como 'ração de marcha' — alimento concentrado, de alta durabilidade. O âmbar brasileiro pré-histórico é fossilização de resina de ancestrais do jatobá — insetos de dezenas de milhões de anos foram preservados em resina de jatobá antigo. A árvore produz o mesmo verniz há mais tempo do que existem hominídeos.",
+        "cerimonial": "Queima de resina de jatobá (copal) em rituais indígenas pan-amazônicos e mesoamericanos: purificação de espaços, afastamento de doenças, oferenda a espíritos. Uso documentado entre Tupi-Guaraní, Munduruku, Kayapó (Brasil), Nahua, Maya, Zapoteca (México/Guatemala). O copal-incenso é a forma de uso ritual que une as Américas de Norte a Sul numa linguagem aromática comum.",
+        "brasil": "A farinha de jatobá é o alimento funcional 'esquecido' do Brasil — extremamente nutritiva (ferro, cálcio, proteína, amido resistente de baixo índice glicêmico), produzida artesanalmente por comunidades extrativistas do cerrado e amazônia, mas praticamente ausente do mercado urbano. Alto teor de amido resistente (prebiótico natural — superior à banana verde); rico em ferro e cálcio (minerais deficientes na dieta brasileira); baixo índice glicêmico (adequado para diabéticos); shelf-life longo (meses sem refrigeração); produção extrativista sustentável (frutos caídos — sem abate). A EMBRAPA pesquisa a farinha de jatobá como ingrediente de panificação funcional.",
+        "curiosidade": "O âmbar brasileiro pré-histórico (encontrado em depósitos terciários da bacia amazônica) é fossilização de resina de ancestrais do jatobá — o gênero Hymenaea é um dos mais comuns no registro fóssil de âmbar neotropical. Insetos extintos foram preservados em resina de jatobá por dezenas de milhões de anos. A resina que o índio queima como incenso há 5.000 anos é quimicamente similar à que preservou insetos há 50 milhões de anos. A árvore produz o mesmo verniz por mais tempo do que existem hominídeos."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional amazônico e atlântico",
-        "status_anvisa": "Uso tradicional reconhecido. Farinha de jatobá — alimento.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutos: outubro–março (cerrado); colheita de casca: ano todo"
+        "eixo_botanico_tpc": "Fitoterápico tradicional + Alimento funcional",
+        "status_anvisa": [
+          "Casca: uso tradicional reconhecido (sem monografia oficial).",
+          "Farinha de polpa: regulada como alimento (IN MAPA).",
+          "Resina: uso artesanal e cosmético (sem regulamentação específica)."
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Farinha orgânica de jatobá disponível via IBD e Ecocert (produção no cerrado — GO, MG, MT).",
+        "sazonalidade": "Frutos: outubro–março (cerrado); dezembro–abril (amazônico). Colheita de casca: ano todo (preferência período seco). Coleta de resina: ano todo."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Farinha de polpa: Cooperativas de extrativismo do cerrado (GO, MG — COOPERJAP, Coop. Central do Cerrado). Produção artesanal e certificada. Casca: Ervanários de Belém e Manaus (produção extrativista amazônica). Resina: Comunidades artesanais (PA, GO, MT) — produto de nicho para incenso e cosmético.",
+        "faixa_de_preco": [
+          "Farinha de polpa orgânica: R$ 30–60/100 g (varejo premium).",
+          "Casca seca para decocção: R$ 20–40/100 g (ervanário).",
+          "Resina (copal) para incenso: R$ 15–30/50 g."
+        ],
+        "formatos": "Farinha de polpa (uso alimentar — biscoitos, smoothie, mingau); Casca seca em pedaços (decocção — formato tradicional); Resina natural em pedaços (incenso, uso artesanal); Tintura de casca (extrato hidroalcoólico — farmácia de manipulação); Xarope de casca com mel (produto pronto — formato popular)."
+      },
+      "destaques": [
+        {
+          "label": "Uso integral",
+          "texto": "Casca, resina, polpa e folhas — quatro produtos medicinais distintos da mesma árvore"
+        },
+        {
+          "label": "Amido resistente recorde",
+          "texto": "Polpa rica em RS2 — superior à banana verde como prebiótico"
+        },
+        {
+          "label": "Copal milenar",
+          "texto": "Resina ritual usada de Belém aos templos astecas há 5.000 anos"
+        }
+      ]
     },
     {
       "slug": "rompe-pedra",
