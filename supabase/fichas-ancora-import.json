@@ -641,388 +641,797 @@
     {
       "slug": "aroeira",
       "nome_popular": "Aroeira",
-      "nome_cientifico": "Myracrodruon urundeuva Allemão (sin.: Astronium urundeuva (Allemão) Engl.)",
-      "tagline": "A guardiã da caatinga — adstringente sagrada do sertão nordestino com ação anti-inflamatória oral entre as mais validadas da medicina popular brasileira.",
+      "nome_cientifico": "Myracrodruon urundeuva Allemão",
+      "tagline": "A guardiã da caatinga — adstringente sagrada do sertão nordestino com ação anti-inflamatória oral entre as mais validadas da fitoterapia brasileira, mais de 40 publicações indexadas da UFRN, e eficácia em bochecho comparável à clorexidina com menos efeitos colaterais.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Myracrodruon urundeuva Allemão (sin.: Astronium urundeuva (Allemão) Engl.)",
-        "familia_botanica": "Anacardiaceae (família da manga, do caju, do pistache)",
-        "tipo_botanico": "Fitoterápico adstringente/anti-inflamatório",
-        "parte_usada": "Casca do caule (entrecasca), seca e pulverizada.",
+        "nome_cientifico": "Myracrodruon urundeuva Allemão (sin.: Astronium urundeuva)",
+        "familia_botanica": "Anacardiaceae (família da manga, do caju, do pistache, da aroeira-mansa Schinus)",
+        "tipo_botanico": "Fitoterápico adstringente / anti-inflamatório de mucosas / antimicrobiano / cicatrizante",
+        "parte_usada": "Casca do caule (entrecasca) — seca e pulverizada. A entrecasca é a porção entre a casca externa rugosa e o cerne — concentra taninos e chalconas em proporção superior à casca externa. Coleta no período seco (maior concentração de PA por menor teor de água). ATENÇÃO: 'aroeira' refere-se a 3 espécies distintas: Myracrodruon urundeuva (esta ficha — Anacardiaceae); Schinus terebinthifolia (aroeira-mansa/pimenta-rosa); Lithraea molleoides (aroeira-branca — alergênica do Sul).",
         "sinonimos": [
-          "Aroeira-do-sertão · urundeuva · urunday · aderno (BA)",
-          "ATENÇÃO: não confundir com Schinus terebinthifolia (aroeira-mansa/aroeira-da-praia) — espécie diferente, química distinta"
+          "Aroeira · aroeira-do-sertão · urundeuva · urundeúva · urunday (Argentina/Paraguai)",
+          "Aderno (BA) · aroeira-preta · aroeira-legítima (NE)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Intensamente adstringente, amargo seco, terroso. Seca a boca de forma eficiente — uso medicinal declarado.",
-        "aroma": "Madeira seca do sertão, tanino seco, fundo resinoso discreto.",
-        "cor_da_infusao": "Marrom-avermelhado escuro, opaco. #7B3F1E",
-        "intensidade": "4/5 — uso terapêutico, não hedônico.",
-        "notas": "",
-        "bioma_de_origem": "Caatinga — característica do bioma, endêmica da região semiárida brasileira (PI, CE, RN, PB, PE, AL, SE, BA, MG, MT, MS).",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Intensamente adstringente — segunda casca mais adstringente do catálogo (após barbatimão). Amargo seco pronunciado, terroso-resinoso, fundo de madeira sertaneja queimada pelo sol. Boca seca de forma rápida e eficiente — uso medicinal declarado.",
+        "aroma": "Madeira seca do sertão nordestino — aroma de cerca de fazenda, de mourão ao sol. Tanino seco, levemente resinoso, fundo de terra vermelha do semiárido.",
+        "cor_da_infusao": "Marrom-avermelhado escuro, opaco, denso. #7B3F1E — cor de terra vermelha do agreste dissolvida em água.",
+        "intensidade": "4/5 — uso terapêutico declarado. Não há dimensão hedônica.",
+        "notas": "Cabeça: tanino seco imediato | Corpo: amargo-resinoso de casca, amadeirado profundo | Fundo: persistência adstringente (8–12 min)",
+        "bioma_de_origem": "Caatinga — espécie característica e emblemática do bioma semiárido brasileiro. Árvore de grande porte (até 20 m), madeira extremamente densa (densidade > 1,0 — afunda na água). Decidual.",
+        "distribuicao_geografica": [
+          "PI, CE, RN, PB, PE, AL, SE, BA (caatinga stricto sensu).",
+          "Extensão a MG (Norte de Minas), MT, MS (cerrado seco), GO.",
+          "Centros de pesquisa: UFRN (Natal) — maior portfólio de pesquisa clínica com aroeira do mundo (>40 publicações). UFC (Fortaleza), UFPE, UFPB.",
+          "Ocorre também na Argentina (Misiones, Chaco) e Paraguai (Gran Chaco) — chamada 'urunday'."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "Decocção a 98 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "5 g de casca seca para 500 ml (uso oral); 10 g para uso tópico/bochecho.",
-        "metodo": "Decocção.",
-        "reinfusoes": "",
-        "melhor_momento": "Uso medicinal — 2–3x/dia conforme indicação.",
-        "combina_com": ""
+        "temperatura_ideal": "Decocção a 98 °C — obrigatória. Taninos e chalconas extraídos eficientemente por calor prolongado.",
+        "tempo_de_infusao": "15–20 minutos em decocção suave (fogo baixo, coberto).",
+        "quantidade": "Bochecho/gargarejo: 5 g/250 ml. Banho de assento/compressa: 10–20 g/500 ml–1L. Uso interno (secundário): 2–3 g/250 ml.",
+        "metodo": "Decocção: casca em água fria → aquecer → fervura suave 15–20 min → coar. USO PRINCIPAL: BOCHECHO E TÓPICO.",
+        "reinfusoes": "1 reinfusão possível.",
+        "melhor_momento": "Bochecho: após higiene oral — 3x ao dia. Banho de assento: 1–2x ao dia conforme indicação.",
+        "combina_com": "Barbatimão (adstringência sinérgica para uso tópico) · Camomila (anti-inflamatório complementar mais suave para bochecho) · Malva (demulcente que suaviza adstringência) · Mel (palatabilidade)"
       },
       "usos_topicos": {
-        "evidencia": "",
+        "evidencia": "FORTE para bochecho anti-inflamatório oral. MODERADA para uso ginecológico tópico. A aroeira é PREDOMINANTEMENTE de uso tópico.",
         "aplicacoes": [
-          "Bochecho para gengivite, periodontite e mucosite: Decocção de 5 g/250 ml, morna, bochecho por 30 segundos, 3x ao dia. Evidência clínica forte — ensaios clínicos randomizados brasileiros (UFRN, UFC) demonstraram redução de índice gengival comparável à clorexidina 0,12% com menor efeito colateral de pigmentação.",
-          "Banho de assento para cervicite, vaginose, candidíase: Decocção forte (20 g/1L), morna, 15 minutos. Uso tradicional nordestino amplamente documentado. Evidência moderada em estudos in vitro.",
-          "Compressa para dermatite e feridas: Decocção resfriada, gaze embebida, 15 min. Ação adstringente-cicatrizante."
+          {
+            "titulo": "Bochecho para gengivite, periodontite e mucosite oral (USO PRINCIPAL VALIDADO)",
+            "texto": "Decocção de 5 g/250 ml, morna (37–40 °C), bochecho vigoroso por 30 segundos, cuspir (não engolir), 3x ao dia após higiene oral. Evidência FORTE — ECRs da UFRN (grupo Prof. Márcio Botelho): redução de índice gengival comparável à clorexidina 0,12% (padrão-ouro farmacêutico); menor pigmentação dental; menor alteração de paladar; ação antimicrobiana contra P. gingivalis, S. mutans, A. actinomycetemcomitans. Resultado clínico mais robusto de qualquer planta brasileira para uso oral tópico — alternativa real à clorexidina."
+          },
+          {
+            "titulo": "Gargarejo para faringite e amigdalite",
+            "texto": "Decocção 5 g/250 ml, morna, gargarejo 30 s, 3–4x ao dia. Ação antimicrobiana + adstringente de mucosa faríngea."
+          },
+          {
+            "titulo": "Banho de assento para cervicite, vaginose, candidíase",
+            "texto": "Decocção forte (20 g/1L), morna (38–40 °C), imersão por 15 minutos, 1–2x ao dia. Uso tradicional nordestino. Estudos in vitro confirmam ação antimicrobiana contra C. albicans, G. vaginalis."
+          },
+          {
+            "titulo": "Compressa para dermatite, feridas e queimaduras",
+            "texto": "Decocção resfriada (5 g/250 ml), gaze embebida, 15 min sobre a área 2x ao dia. Ação adstringente-cicatrizante."
+          },
+          {
+            "titulo": "Bochecho pós-extração dental",
+            "texto": "Decocção fraca (3 g/250 ml), morna, bochecho suave 20 s, a partir de 24h após extração. Hemostático + antimicrobiano."
+          }
         ],
-        "contraindicacoes": ""
+        "contraindicacoes": "Uso tópico amplamente seguro. Verificar alergia rara à família Anacardiaceae."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Adstringente potente",
-          "Anti-inflamatório (mucosa oral e geniturinária)",
-          "Antimicrobiano (bactérias gram+ e gram-)",
+          "Adstringente potente (precipitação de proteínas mucosais)",
+          "Anti-inflamatório de mucosas (oral, faríngea, geniturinária — inibição de PGE2 e TNF-alfa)",
+          "Antimicrobiano de amplo espectro (gram+ e gram- — especialmente periodontopatógenos)",
           "Antifúngico (Candida spp.)",
-          "Cicatrizante",
-          "Gastroprotetor (uso popular)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Gestação: evitar uso interno (dados insuficientes de segurança)",
-          "Hepatopatias graves: cautela com taninos em dose alta",
-          "Uso interno prolongado (>4 semanas) sem orientação",
-          "Espécie ameaçada: Myracrodruon urundeuva consta na lista de espécies ameaçadas do Brasil (IBAMA). Preferir fornecedores com cultivo sustentável ou certificação de manejo."
+          "Cicatrizante (aceleração de epitelização)",
+          "Hemostático (contração capilar por adstringência tânica)",
+          "Gastroprotetor (uso interno)",
+          "Analgésico oral tópico"
         ],
         "componentes_ativos": [
           {
-            "label": "TANINOS HIDROLISÁVEIS (galoil-glicoses)",
-            "texto": "Adstringência, antimicrobiano, anti-inflamatório"
+            "label": "Taninos hidrolisáveis (galoil-glicoses — especialmente 1,2,3,4,6-penta-O-galoilglicose)",
+            "texto": "10–15% da casca seca — Adstringente principal, antimicrobiano (precipitação de proteínas de membrana bacteriana), anti-inflamatório. Aroeira tem proporção maior de taninos HIDROLISÁVEIS que o barbatimão (CONDENSADOS) — perfil tânico qualitativamente diferente"
           },
           {
-            "label": "TANINOS CONDENSADOS (procianidinas)",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "Taninos condensados (procianidinas)",
+            "texto": "5–8% — Anti-inflamatório sistêmico, antioxidante. Complementares aos hidrolisáveis"
           },
           {
-            "label": "FENÓIS TOTAIS",
-            "texto": "Antimicrobiano, antifúngico"
+            "label": "Chalconas (urundeuvina A, B, C)",
+            "texto": "ESPECÍFICAS DA ESPÉCIE — Anti-inflamatório mais potente que os taninos: inibição de NF-κB, COX-2, TNF-alfa. EXCLUSIVAS de M. urundeuva. Diferencial farmacológico da espécie"
           },
           {
-            "label": "TERPENÓIDES",
+            "label": "Ácido gálico",
+            "texto": "Produto de hidrólise — Antimicrobiano, antioxidante"
+          },
+          {
+            "label": "Fenóis totais",
+            "texto": "25–35% da casca — Antimicrobiano, anti-inflamatório, antioxidante. Uma das cascas mais ricas em fenóis totais do catálogo"
+          },
+          {
+            "label": "Flavonóides (luteolina, quercetina)",
+            "texto": "Antioxidante, anti-inflamatório"
+          },
+          {
+            "label": "Terpenóides",
             "texto": "Anti-inflamatório secundário"
-          },
-          {
-            "label": "FLAVONÓIDES (luteolina, quercetina)",
-            "texto": "Antioxidante"
           }
         ],
         "evidencia": [
           {
             "indicacao": "Gengivite (bochecho)",
             "evidencia": "Forte — ECR",
-            "populacao": "Botelho et al. (UFRN)"
+            "populacao": "Adultos com gengivite — Botelho MA et al. (UFRN, 2007, 2008, 2010) múltiplos ECR"
           },
           {
-            "indicacao": "Candidíase vaginal (tópico)",
+            "indicacao": "Periodontite (adjuvante a raspagem)",
+            "evidencia": "Moderada-forte",
+            "populacao": "Adultos — Botelho MA et al. (UFRN, 2012)"
+          },
+          {
+            "indicacao": "Candidíase oral (bochecho antifúngico)",
             "evidencia": "Moderada",
-            "populacao": "Estudos in vitro e piloto"
+            "populacao": "Adultos e pacientes oncológicos — estudos in vitro + piloto clínico"
           },
           {
-            "indicacao": "Inflamação de mucosa oral",
-            "evidencia": "Forte",
-            "populacao": "Múltiplos estudos nacionais"
+            "indicacao": "Candidíase vaginal (banho de assento)",
+            "evidencia": "Moderada",
+            "populacao": "Mulheres adultas — Costa et al. — estudos in vitro e piloto"
+          },
+          {
+            "indicacao": "Mucosite oral por quimioterapia (bochecho)",
+            "evidencia": "Moderada",
+            "populacao": "Pacientes oncológicos — estudos piloto (UFRN)"
+          },
+          {
+            "indicacao": "Faringite (gargarejo)",
+            "evidencia": "Tradicional forte",
+            "populacao": "Adultos e crianças >6 anos — uso popular NE documentado"
           }
         ],
+        "alerta_critico": {
+          "titulo": "Espécie ameaçada — Lista MMA",
+          "titulo2": "Categoria 'vulnerável' (Portaria 443/2014)",
+          "corpo": "Myracrodruon urundeuva consta na Lista Oficial de Espécies da Flora Brasileira Ameaçadas de Extinção (Portaria MMA 443/2014) — categoria 'vulnerável'. A exploração madeireira intensiva (madeira nobre, densidade >1,0) levou a espécie ao risco. Certificação de origem sustentável é obrigatória para comercialização responsável. Priorizar fornecedores com certificação de manejo (coleta parcial de casca sem anelamento)."
+        },
         "contraindicacoes": [
-          "Gestação: evitar uso interno (dados insuficientes de segurança)",
-          "Hepatopatias graves: cautela com taninos em dose alta",
-          "Uso interno prolongado (>4 semanas) sem orientação",
-          "Espécie ameaçada: Myracrodruon urundeuva consta na lista de espécies ameaçadas do Brasil (IBAMA). Preferir fornecedores com cultivo sustentável ou certificação de manejo."
+          "Gestação: evitar uso interno (dados insuficientes para uso sistêmico). Uso tópico (bochecho — cuspir): provavelmente seguro.",
+          "Hepatopatias graves: cautela com taninos em dose alta (uso interno prolongado)",
+          "Alergia à família Anacardiaceae (manga, caju, pistache): reação cruzada possível — testar antes",
+          "Uso interno prolongado (>4 semanas) sem orientação: risco de interferência na absorção de minerais",
+          "Crianças <6 anos: bochecho não recomendado (risco de deglutição)"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          {
+            "label": "Ferro oral",
+            "texto": "Taninos quelam ferro — reduzem absorção. Conduta: espaçar 2h"
+          },
+          {
+            "label": "Clorexidina oral",
+            "texto": "Mecanismo similar (antimicrobiano tópico) — redundância. Conduta: substituir um pelo outro"
+          },
+          {
+            "label": "Antibióticos sistêmicos (amoxicilina em periodontite)",
+            "texto": "Ação complementar — aroeira tópica + antibiótico sistêmico. Conduta: uso combinado possível e potencialmente sinérgico"
+          }
+        ],
+        "efeitos_adversos": "Bochecho: praticamente inexistentes. Leve pigmentação dental em uso prolongado (menos que clorexidina). Sabor desagradável (adstringência intensa — característica). Uso interno: constipação (taninos), redução de absorção de minerais em uso prolongado.",
+        "dose_maxima": "Bochecho: até 4 bochechos/dia com decocção 5 g/250 ml (uso seguro por semanas). Uso interno: até 6 g/dia de casca seca (uso curto — 2 semanas).",
+        "fontes": [
+          "Farmacopeia Brasileira 6ª Ed. — monografia oficial Myracrodruon urundeuva",
+          "Botelho MA et al. — Antimicrobial activity of the essential oil from Myracrodruon urundeuva against oral pathogens (Phytother Res, 2007)",
+          "Botelho MA et al. — Effect of a novel essential oil mouthrinse without alcohol on gingivitis: a double-blinded RCT (J Appl Oral Sci, 2008) — ECR REFERÊNCIA",
+          "Botelho MA et al. — Clinical trial with Myracrodruon urundeuva mouthwash in chronic gingivitis (J Contemp Dental Practice, 2010)",
+          "Viana GSB et al. — Anti-inflammatory effects of chalcones isolated from Myracrodruon urundeuva (Phytomedicine, 2003) — estudo das urundeuvinas",
+          "Albuquerque UP et al. — Medicinal plants of the caatinga (J Ethnopharmacol, 2007)",
+          "Ministério da Saúde — RENISUS"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Completamente ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "3/3",
+            "observacao": "Intenso — taninos hidrolisáveis + chalconas; amargura seca, persistente"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Tanino-seco-sertanejo com fundo de madeira calcinada",
+        "olfativo_descritores": [
+          "Madeira seca do sertão (mourão de cerca ao sol)",
+          "Tanino concentrado seco (similar a vinho tinto tânico mas sem frutado)",
+          "Terra vermelha do semiárido (laterita seca)",
+          "Fundo de casca calcinada (pirólise lenta natural — sol da caatinga)",
+          "Resina seca discreta"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "4/5 — Muito alta",
+            "molecula": "Taninos hidrolisáveis (galoil-glicoses) + condensados — segunda adstringência mais intensa do catálogo, após barbatimão. Diferença qualitativa: barbatimão contrai 'em bloco' (condensados); aroeira contrai 'em camadas' (hidrolisáveis liberam ácido gálico progressivamente)"
+          }
+        ],
+        "tatil": "Corpo médio em decocção. A adstringência da aroeira tem textura distinta da do barbatimão: enquanto barbatimão 'seca de uma vez', aroeira 'seca em ondas' — taninos hidrolisáveis liberam ácido gálico progressivamente, criando adstringência crescente nos primeiros 30 segundos. Persistência: 8–12 min. Inferior ao barbatimão (10–15 min) mas superior a qualquer outra erva.",
+        "descricao_integrada": "A aroeira é a infusão-bochecho do catálogo: sua expressão sensorial é otimizada para uso oral tópico, não para ingestão. A adstringência gradual é terapêutica na mucosa oral — contrai gengiva inflamada progressivamente, permitindo que os taninos penetrem nos sulcos gengivais antes de secar a superfície. Essa cinética de adstringência — gradual, não instantânea — é farmacologicamente mais eficaz para gengivite que a adstringência 'em bloco' do barbatimão. Para o Ervatório, a distinção (aroeira = bochecho ideal; barbatimão = curativo ideal) é a narrativa central da diferenciação entre as duas cascas adstringentes do catálogo."
       },
       "cultura": {
-        "historia": "A aroeira-do-sertão é uma das espécies mais antigas da farmacopeia nordestina. Curandeiros, benzedeiras e parteiras do sertão nordestino usam a casca de aroeira há séculos para tratar \"inflamação de boca\", \"corrimento\" e \"ferida que não sara\". Esses usos, documentados pela medicina popular desde o século XVIII, foram sistematicamente validados por pesquisadores brasileiros a partir dos anos 1990.  A UFRN (Universidade Federal do Rio Grande do Norte) possui um dos maiores portfólios de pesquisa clínica com aroeira do mundo — mais de 40 publicações em periódicos internacionais indexados.",
-        "cerimonial": "",
-        "brasil": "A aroeira ilustra um paradoxo central da fitoterapia brasileira: uma planta com evidência clínica forte, monografia oficial na Farmacopeia Brasileira e décadas de pesquisa universitária que ainda enfrenta barreiras de acesso no sistema de saúde pública. O SUS inclui a aroeira na RENISUS (Relação Nacional de Plantas Medicinais de Interesse ao SUS), mas a cadeia de fornecimento regulamentado ainda é incipiente.",
-        "curiosidade": ""
+        "historia": "A aroeira-do-sertão é uma das espécies mais importantes da etnomedicina nordestina — usada por curandeiros, benzedeiras e parteiras do sertão desde antes de qualquer registro escrito. O chá da casca de aroeira para 'inflamação de boca', 'corrimento' e 'ferida que não sara' é prescrição de avó em todo o semiárido. A UFRN possui o maior portfólio de pesquisa clínica com aroeira do mundo — o grupo do Prof. Márcio Botelho publicou mais de 40 artigos indexados em periódicos internacionais sobre M. urundeuva, incluindo ECRs que compararam bochecho de aroeira com clorexidina. Esse corpo de pesquisa é um dos maiores exemplos de ciência nordestina traduzindo conhecimento popular em evidência clínica de padrão internacional. A madeira da aroeira-do-sertão é uma das mais nobres e densas do Brasil (densidade > 1,0 — afunda na água). A exploração madeireira intensiva levou a espécie à lista de espécies ameaçadas do IBAMA.",
+        "cerimonial": "A aroeira é planta de rezadeira no sertão — a casca é usada em garrafadas ('preparados de cura' em cachaça ou vinho) e em rituais de benzeduras para 'fechar o corpo' contra doença. A rezadeira que faz bochecho de aroeira na criança com dor de garganta enquanto reza ave-maria é a imagem-síntese da medicina popular nordestina — fé e farmacologia no mesmo gesto.",
+        "brasil": "A aroeira ilustra um paradoxo central da fitoterapia brasileira: uma planta com EVIDÊNCIA CLÍNICA FORTE (ECR publicados em periódicos indexados), monografia oficial na Farmacopeia Brasileira, e inclusão na RENISUS — que ainda enfrenta barreiras para acesso pelo SUS. O bochecho de aroeira poderia substituir parcialmente a clorexidina em UBS com custo muito menor e efeitos colaterais menores — mas a cadeia de fornecimento regulamentado é incipiente e a cultura médica odontológica brasileira ainda prefere o produto farmacêutico industrializado.",
+        "curiosidade": "As chalconas urundeuvinas (A, B, C) — compostos anti-inflamatórios exclusivos da aroeira — foram descobertas pelo grupo de pesquisa de Glauce Viana na UFC nos anos 2000. A urundeuvina A inibe NF-κB com potência comparável a fármacos anti-inflamatórios de síntese. Essa descoberta abriu linha de pesquisa para desenvolvimento de fármacos anti-inflamatórios orais a partir de uma casca de árvore do sertão nordestino. O percurso — da casca que a rezadeira de Quixadá colocava no gargarejo da criança até o laboratório de biologia molecular da UFC que identificou a inibição de NF-κB — é uma das jornadas mais bonitas da ciência brasileira."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Monografia oficial. Indicação: anti-inflamatório e adstringente de mucosas.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Casca coletada preferencialmente na estação seca"
+        "status_anvisa": [
+          "Monografia oficial na Farmacopeia Brasileira 6ª Ed.",
+          "Indicações: anti-inflamatório e adstringente de mucosas (uso tópico — bochecho, banho de assento)."
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Extrativismo certificado: ESSENCIAL — verificar origem e manejo. Espécie ameaçada (Portaria MMA 443/2014). Cultivo sustentável: existem iniciativas no CE e RN, mas produção insuficiente para a demanda.",
+        "sazonalidade": "Casca coletada preferencialmente na estação seca (junho–outubro) — menor teor de água = maior concentração de taninos e chalconas."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Fornecedores com certificação de manejo sustentável (coleta parcial de casca sem anelamento) ou cultivo — CE, RN, PB, PE. ATENÇÃO: verificar status de espécie ameaçada — exigir documentação de origem legal. Secundário: Ervanários certificados do NE.",
+        "faixa_de_preco": [
+          "Casca seca granel (verificar origem): R$ 20–40/100 g",
+          "Casca seca certificada (manejo sustentável): R$ 40–80/100 g",
+          "Extrato seco padronizado (cápsulas): R$ 30–60/60 cápsulas",
+          "Tintura 1:5 para bochecho (farmácia): R$ 25–50/100 ml"
+        ],
+        "formatos": "Casca seca em pedaços (decocção); Tintura hidroalcoólica para bochecho (diluída em água); Extrato seco padronizado (cápsulas — uso interno); Gel oral (formulação moderna para gengivite — desenvolvimento em andamento); Sachê para banho de assento."
+      },
+      "destaques": [
+        {
+          "label": "Bochecho clínico",
+          "texto": "ECRs UFRN: comparável à clorexidina 0,12% com menos efeitos colaterais"
+        },
+        {
+          "label": "Chalconas exclusivas",
+          "texto": "Urundeuvinas A/B/C: anti-inflamatórios EXCLUSIVOS da espécie — inibem NF-κB"
+        },
+        {
+          "label": "Espécie ameaçada",
+          "texto": "Categoria vulnerável (MMA 443/2014) — exigir origem certificada"
+        }
+      ]
     },
     {
       "slug": "jurema-preta",
       "nome_popular": "Jurema-Preta",
-      "nome_cientifico": "Mimosa tenuiflora (Willd.) Poir. (sin.: Mimosa hostilis)",
-      "tagline": "A árvore da pele e do rito — cicatrizante da caatinga com ação antibacteriana confirmada e história sagrada nos cultos afro-brasileiros.",
+      "nome_cientifico": "Mimosa tenuiflora (Willd.) Poir.",
+      "tagline": "A árvore da pele e do rito — cicatrizante da caatinga com ação antibacteriana confirmada em queimaduras, história sagrada nos cultos afro-indígenas do Nordeste, e a tensão mais complexa do catálogo entre uso medicinal, uso ritual e regulação de substância controlada.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Mimosa tenuiflora (Willd.) Poir. (sin.: Mimosa hostilis)",
-        "familia_botanica": "Fabaceae / Mimosoideae",
-        "tipo_botanico": "Fitoterápico cicatrizante e ritual",
-        "parte_usada": "Casca da raiz e do caule (uso medicinal); casca da raiz (uso ritual — contém DMT em concentrações variáveis).",
+        "nome_cientifico": "Mimosa tenuiflora (Willd.) Poir. (sin.: Mimosa hostilis — sinonímia rejeitada mas amplamente usada no comércio)",
+        "familia_botanica": "Fabaceae / Mimosoideae (família do angico, do barbatimão, da acácia)",
+        "tipo_botanico": "Fitoterápico cicatrizante / antimicrobiano / cosmético capilar / planta ritual (raiz)",
+        "parte_usada": "Casca do CAULE (entrecasca) — uso medicinal principal: cicatrizante, antimicrobiano, cosmético. Casca da RAIZ — uso ritual: contém DMT (N,N-dimetiltriptamina) em concentrações significativas (0,3–0,6%). DISTINÇÃO CRÍTICA: casca do caule = sem DMT relevante, uso medicinal seguro e legal; casca da raiz = DMT significativo, substância controlada. O Ervatório trabalha exclusivamente com casca do CAULE.",
         "sinonimos": [
-          "Jurema-preta · jurema-branca (espécie diferente) · tepezcohuite (México)",
-          "Mimosa hostilis (sinonímia botânica rejeitada, ainda usada comercialmente)",
-          "ATENÇÃO: A casca da raiz contém DMT (N,N-dimetiltriptamina) — substância psicoativa controlada no Brasil e em diversos países. Uso ritual regulamentado exclusivamente no contexto do culto da jurema e religiões afro-brasileiras reconhecidas."
+          "Jurema-preta · jurema · calumbi (NE)",
+          "Tepezcohuite (México — nome comercial cosmético)",
+          "Mimosa hostilis (sinonímia botânica rejeitada — ainda usada em mercado de psicoativos)",
+          "ATENÇÃO: M. tenuiflora ≠ Mimosa verrucosa (jurema-branca) — espécie diferente sem DMT"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-adstringente intenso, tanino pronunciado, fundo terroso de sertão.",
-        "aroma": "Terra seca, madeira queimada, tanino seco, fundo levemente defumado.",
-        "cor_da_infusao": "Marrom-escuro opaco, quase preto em infusões concentradas. #2D1B0E",
-        "intensidade": "",
-        "notas": "",
-        "bioma_de_origem": "Caatinga — espécie característica da região semiárida, adaptada ao clima de extremos.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-adstringente intenso, tanino pronunciado e persistente, fundo terroso de sertão seco. Amargura que 'gruda' na mucosa — taninos da jurema são de alto peso molecular. Uso exclusivamente medicinal.",
+        "aroma": "Terra seca do sertão, madeira queimada pelo sol, tanino seco concentrado, leve defumado. Aroma austero e direto — o cheiro da caatinga destilado em casca.",
+        "cor_da_infusao": "Marrom-escuro opaco a quase preto em decocções concentradas. #2D1B0E — uma das infusões mais escuras do catálogo.",
+        "intensidade": "5/5 — uso 100% medicinal/tópico. Intensidade cromática e adstringência máximas.",
+        "notas": "Cabeça: tanino imediato, adstringência rápida | Corpo: amargo profundo, terroso-defumado | Fundo: adstringência prolongada (10+ min)",
+        "bioma_de_origem": "Caatinga — espécie pioneira e resistente à seca extrema. Árvore de porte pequeno a médio (até 8 m), espinhosa, decidual, extremamente rústica. Indicadora de resiliência da caatinga — uma das primeiras a recolonizar áreas degradadas.",
+        "distribuicao_geografica": [
+          "PI, CE, RN, PB, PE, AL, SE, BA (caatinga stricto sensu).",
+          "Extensão a MG (Norte de Minas).",
+          "México: distribuição natural em regiões semiáridas (Oaxaca, Chiapas) — onde é chamada 'tepezcohuite' e amplamente utilizada como cicatrizante.",
+          "Convergência etnobotânica transcontinental — uso cicatrizante documentado tanto na caatinga brasileira quanto no semiárido mexicano."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "Decocção a 98 °C — obrigatória para extrair taninos e saponinas.",
+        "tempo_de_infusao": "20 minutos.",
+        "quantidade": "5–10 g casca do CAULE seco/500 ml (uso tópico). Uso interno: 2–3 g/250 ml.",
+        "metodo": "Decocção. USO TÓPICO PRINCIPAL — lavagem de feridas, queimaduras, dermatites. Uso interno (cauteloso, casca do caule apenas) para anti-inflamatório.",
+        "reinfusoes": "1 reinfusão possível.",
+        "melhor_momento": "Uso tópico: quando necessário. Cosmético capilar: enxágue após shampoo, 2–3x por semana.",
+        "combina_com": "Barbatimão (cicatrizante sinérgico) · Calêndula (anti-inflamatório tópico suave) · Mel (palatabilidade para uso interno)"
       },
       "usos_topicos": {
-        "evidencia": "",
+        "evidencia": "FORTE para cicatrização de queimaduras (estudos mexicanos com tepezcohuite). MODERADA para antimicrobiano tópico.",
         "aplicacoes": [
-          "Cicatrizante de queimaduras (uso principal validado): Decocção concentrada de casca do caule, resfriada, lavagem 2–3x ao dia em queimaduras de 1° e 2° grau. Estudos clínicos mexicanos (onde a planta é chamada tepezcohuite e utilizada amplamente em queimaduras pós-erupção vulcânica) demonstraram cicatrização acelerada com redução de infecção secundária.",
-          "Xampu e condicionador capilar: Extrato de casca em formulações para dermatite seborreica e calvície (uso popular e cosmético difundido no México e Brasil)."
-        ],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Cicatrizante acelerador de epitelização",
-          "Antibacteriano (amplo espectro)",
-          "Anti-inflamatório tópico",
-          "Antifúngico",
-          "Analgésico tópico",
-          "Componentes ativos:",
-          "Contraindicações: Uso interno da casca da raiz sem contexto ritual/clínico supervisionado — contraindicado (DMT). Gestação — evitar uso interno. Crianças — apenas uso tópico supervisionado."
-        ],
-        "componentes_ativos": [
           {
-            "label": "TANINOS (13–15% na casca)",
-            "texto": "Adstringente, antibacteriano, cicatrizante"
+            "titulo": "Cicatrizante de queimaduras — USO PRINCIPAL VALIDADO",
+            "texto": "Decocção concentrada de casca do caule (10 g/500 ml), resfriada a temperatura corporal, lavagem direta da queimadura 2–3x ao dia, cobrir com gaze estéril. Evidência FORTE — estudos clínicos mexicanos documentaram cicatrização acelerada de queimaduras de 1° e 2° grau com redução significativa de infecção secundária. CONTEXTO HISTÓRICO: Em 1984, explosão catastrófica de gás natural em San Juanico (Cidade do México) matou >500 pessoas e queimou milhares. Hospitais lotados levaram curandeiros a tratar queimados com pasta de tepezcohuite. Resultados — documentados por médicos comparando com tratamentos convencionais — mostraram cicatrização acelerada e menor infecção. Esse episódio gerou interesse científico global pela jurema."
           },
           {
-            "label": "SAPONINAS",
-            "texto": "Anti-inflamatório, antifúngico"
+            "titulo": "Xampu e condicionador capilar",
+            "texto": "Extrato de casca em formulações para dermatite seborreica, calvície (uso popular) e fortalecimento capilar. Ampla oferta comercial no México (produtos 'tepezcohuite') e crescente no Brasil."
           },
           {
-            "label": "ALCALÓIDES (incluindo DMT na raiz)",
-            "texto": "Psicoativo (raiz); modulação nervosa (traços em casca do caule)"
-          },
-          {
-            "label": "LUPEOL, BETA-SITOSTEROL",
-            "texto": "Anti-inflamatório"
-          },
-          {
-            "label": "MIRICETINA, NARINGENINA",
-            "texto": "Antioxidante"
+            "titulo": "Creme facial anti-aging",
+            "texto": "Extrato de casca em cremes — antioxidante (taninos) + estimulante de colágeno (saponinas). Linha cosmética 'tepezcohuite' é uma das mais vendidas no México e na América Central."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
-      },
-      "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
-      },
-      "cultura": {
-        "historia": "A jurema é planta sagrada no Nordeste brasileiro há milênios — artefatos arqueológicos com sementes de jurema foram encontrados em sítios da Tradição Agreste (Pernambuco), datados de 2000–3000 anos. O culto da jurema — sistema espiritual indígena nordestino que incorporou elementos afro-brasileiros — é um dos fenômenos religiosos mais singulares do Brasil, com rituais de uso do \"vinho da jurema\" (bebida ritual da casca da raiz) documentados desde o século XVII.  O tepezcohuite mexicano tornou-se internacionalmente conhecido após a explosão de gás na Cidade do México (1984) — a planta foi usada em massa para tratar queimados, com resultados documentados que geraram interesse científico global.",
-        "cerimonial": "",
-        "brasil": "A jurema é objeto de disputas legais e culturais complexas. O culto da jurema foi proibido pelo Estado brasileiro em períodos históricos e hoje é protegido como patrimônio cultural imaterial. A planta navega entre o status de fitoterápico cicatrizante (uso medicinal documentado), patrimônio espiritual indígena e substância psicoativa regulamentada — três categorias que raramente coexistem na mesma espécie.",
-        "curiosidade": ""
-      },
-      "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional / ritual",
-        "status_anvisa": "Uso tópico popular reconhecido. Casca da raiz: contém DMT — substância controlada.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita de casca: preferência estação seca"
-      },
-      "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
-    },
-    {
-      "slug": "imburana-de-cheiro",
-      "nome_popular": "Imburana-de-Cheiro",
-      "nome_cientifico": "Amburana cearensis (Allemão) [A.C.Sm](http://A.C.Sm).",
-      "tagline": "O cumaru do sertão — broncodilatador aromático da caatinga com aroma de baunilha e ação comprovada nas vias respiratórias.",
-      "schema_version": "1.1",
-      "identificacao": {
-        "nome_cientifico": "Amburana cearensis (Allemão) [A.C.Sm](http://A.C.Sm).",
-        "familia_botanica": "Fabaceae / Papilionoideae",
-        "tipo_botanico": "Fitoterápico respiratório / antiespasmódico",
-        "parte_usada": "Casca do caule, sementes (ambas medicinais); madeira em uso artesanal.",
-        "sinonimos": [
-          "Imburana-de-cheiro · amburana · cumaru-de-cheiro · cumaru-do-ceará",
-          "Cerejeira-do-sertão (MG) · louro-do-sertão (BA)",
-          "ATENÇÃO: não confundir com Dipteryx odorata (cumaru-verdadeiro), espécie amazônica diferente com aroma similar"
-        ]
-      },
-      "caracterizacao": {
-        "sabor_dominante": "Doce-balsâmico pronunciado, baunilha e canela, fundo amargo discreto. Uma das poucas ervas da caatinga com perfil hedônico natural.",
-        "aroma": "Baunilha madura, canela, cumarina doce — aroma entre baunilha e coumarin (Chanel Nº5). Extraordinariamente agradável para uma casca medicinal.",
-        "cor_da_infusao": "Âmbar-dourado, levemente opaco. #C9923A",
-        "intensidade": "3/5 — palatável, aroma sedutor, amargo discreto.",
-        "notas": "",
-        "bioma_de_origem": "Caatinga — espécie da floresta caducifólia sertaneja. Ceará, Pernambuco, Bahia, Minas Gerais.",
-        "distribuicao_geografica": []
-      },
-      "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "2–5 g de casca seca para 250 ml.",
-        "metodo": "Infusão coberta (preservar cumarina volátil).",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã (respiratório/expectorante) ou à noite (antiespasmódico, sedativo leve).",
-        "combina_com": "Mel · Gengibre · Eucalipto · Hortelã (blends respiratórios) · Canela · Cravo (blends especiados nordestinos)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "contraindicacoes": "Uso tópico amplamente seguro. Verificar alergia rara à família Fabaceae."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Broncodilatador (relaxamento musculatura brônquica)",
-          "Expectorante (fluidifica muco brônquico)",
-          "Antiespasmódico",
-          "Analgésico (dores musculares, reumático)",
-          "Sedativo leve",
-          "Anti-inflamatório das vias respiratórias",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Gestação — cumarina pode ser uterotônica",
-          "Hepatopatias — cumarina em dose alta hepatotóxica",
-          "Anticoagulados — potencialização (cumarina)",
-          "Crianças < 6 anos — evitar uso interno",
-          "Espécie ameaçada: Amburana cearensis está na lista de espécies ameaçadas do IBAMA — preferir fornecedores certificados de cultivo."
+          "Cicatrizante acelerador de epitelização (uso tópico — ação principal)",
+          "Antibacteriano de amplo espectro (S. aureus, P. aeruginosa — patógenos de queimaduras)",
+          "Anti-inflamatório tópico",
+          "Antifúngico (dermatófitos, Candida)",
+          "Analgésico tópico (redução de dor em queimaduras)",
+          "Estimulante de colágeno (saponinas)",
+          "Cosmético capilar (anti-seborreico, fortalecimento)"
         ],
         "componentes_ativos": [
           {
-            "label": "CUMARINA (cumarin)",
-            "texto": "Broncodilatador, anti-inflamatório, anticoagulante fraco"
+            "label": "Taninos (condensados — proantocianidinas)",
+            "texto": "13–16% da casca do caule — Adstringente, antimicrobiano, cicatrizante (precipitação de proteínas de superfície). Perfil tânico similar ao barbatimão; concentração ligeiramente menor"
           },
           {
-            "label": "AMBUROSÍDEO A",
-            "texto": "Broncodilatador — mecanismo b2-agonista parcial pesquisado"
+            "label": "Saponinas (mimonosídeos)",
+            "texto": "3–5% — Estimulante de fibroblastos e produção de colágeno; anti-inflamatório; emulsificante natural. Componente que diferencia jurema de barbatimão — saponinas estimulam regeneração ATIVA"
           },
           {
-            "label": "ISOAMBUROSÍDEO",
-            "texto": "Antiespasmódico"
+            "label": "Alcalóides (DMT, NMT — na casca da RAIZ)",
+            "texto": "0,3–0,6% na casca da RAIZ; traços a ausente na casca do CAULE — Psicoativo (raiz). Presença de DMT na raiz é a razão da regulação como substância controlada"
           },
           {
-            "label": "ÁCIDO OLEANÓLICO",
+            "label": "Lupeol",
+            "texto": "Anti-inflamatório, cicatrizante"
+          },
+          {
+            "label": "Beta-sitosterol",
             "texto": "Anti-inflamatório"
           },
           {
-            "label": "LUPEOL, BETA-SITOSTEROL",
-            "texto": "Anti-inflamatório"
+            "label": "Miricetina, naringenina (flavonóides)",
+            "texto": "Antioxidante, anti-inflamatório"
+          },
+          {
+            "label": "Arabinogalactanas (polissacarídeos)",
+            "texto": "Imunomodulador, cicatrizante"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Bronquite aguda e crônica",
+            "indicacao": "Queimaduras de 1° e 2° grau (cicatrizante tópico)",
+            "evidencia": "Forte",
+            "populacao": "Adultos e crianças — Rivera-Arce et al. (2007); Zippel et al. (2009) estudos mexicanos"
+          },
+          {
+            "indicacao": "Infecções bacterianas de pele (antimicrobiano tópico)",
             "evidencia": "Moderada",
-            "populacao": "Viana et al. (UFC)"
+            "populacao": "Adultos — estudos in vitro + clínico observacional"
+          },
+          {
+            "indicacao": "Dermatite seborreica (capilar)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — uso cosmético mexicano documentado"
+          },
+          {
+            "indicacao": "Úlceras varicosas (cicatrizante)",
+            "evidencia": "Preliminar",
+            "populacao": "Adultos — estudos piloto"
+          }
+        ],
+        "alerta_critico": {
+          "titulo": "Casca da raiz — substância controlada (DMT)",
+          "titulo2": "Portaria 344/98 ANVISA — Lista F2",
+          "corpo": "A casca da RAIZ contém DMT (N,N-dimetiltriptamina) em concentrações de 0,3–0,6% — substância da Lista F2 da Portaria 344/98 ANVISA. Posse, comércio e uso de DMT são regulamentados. Uso ritual em contexto religioso reconhecido (culto da jurema) é protegido por jurisprudência e pela FUNAI/IPHAN. O Ervatório trabalha EXCLUSIVAMENTE com a casca do CAULE — uso cicatrizante e cosmético seguro e legal. Verificar sempre que o produto comercializado seja casca do caule, não da raiz."
+        },
+        "contraindicacoes": [
+          "Uso interno da casca da RAIZ fora de contexto ritual supervisionado: contraindicado — DMT é substância controlada",
+          "Gestação: evitar qualquer forma de uso interno",
+          "Crianças: uso tópico supervisionado apenas",
+          "Alergia a leguminosas: reação cruzada possível (Fabaceae)"
+        ],
+        "interacoes": [
+          {
+            "label": "IMAO (antidepressivos inibidores da monoamina oxidase)",
+            "texto": "Interação potencialmente perigosa com DMT (casca da raiz) — contraindicado. Casca do caule: risco irrelevante (DMT ausente/traços)"
+          },
+          {
+            "label": "Sedativos",
+            "texto": "Cautela com uso interno (alcalóides traços)"
+          }
+        ],
+        "efeitos_adversos": "Uso tópico (casca do caule): praticamente inexistentes — amplamente seguro. Uso interno (casca do caule, dose baixa): raros — desconforto gástrico possível. Uso da casca da raiz (contexto ritual): efeitos psicoativos dose-dependentes — fora do escopo do Ervatório.",
+        "dose_maxima": "Casca do caule tópico: sem limite (concentração na decocção determina eficácia). Casca do caule uso interno: até 6 g/dia em decocção (uso curto).",
+        "fontes": [
+          "Rivera-Arce E et al. — Pharmacognostical studies of the plant drug Mimosae tenuiflorae cortex (J Ethnopharmacol, 2007)",
+          "Zippel J et al. — Arabinogalactan from Mimosa tenuiflora (Willd.) Poir. bark as active principle for wound healing (Phytomedicine, 2009)",
+          "Meckes-Lozoya M et al. — Effect of Mimosa tenuiflora bark extract on wound healing (Arch Med Res, 1990) — estudo pós-explosão de San Juanico",
+          "Albuquerque UP et al. — Medicinal plants of the caatinga (J Ethnopharmacol, 2007)",
+          "Pachter IJ et al. — Indole alkaloids of Acer saccharinum, Dictyoloma incanescens, Piptadenia colubrina, and Mimosa hostilis (J Org Chem, 1959) — primeiro isolamento de DMT",
+          "FUNAI/IPHAN — Reconhecimento do culto da jurema como patrimônio cultural imaterial"
+        ]
+      },
+      "perfil_sensorial": {
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Completamente ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "3/3",
+            "observacao": "Intenso — taninos de alto peso molecular; amargura persistente"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Tanino-sertanejo-queimado",
+        "olfativo_descritores": [
+          "Terra seca do sertão (laterita calcinada)",
+          "Madeira queimada (pirólise natural — sol da caatinga sobre casca)",
+          "Tanino seco concentrado",
+          "Defumado leve (compostos fenólicos degradados pelo calor ambiental)",
+          "Fundo de carvão vegetal"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "4/5 — Muito alta",
+            "molecula": "Taninos condensados (proantocianidinas de alto PM) — similar ao barbatimão; jurema tem adstringência mais 'áspera' (taninos da jurema têm textura mais granulosa que os do barbatimão, possivelmente pelas saponinas)"
+          }
+        ],
+        "tatil": "Corpo médio-encorpado em decocção concentrada. Adstringência intensa e 'granulosa' — diferente da adstringência 'uniforme' do barbatimão. Persistência: alta — 10+ min.",
+        "descricao_integrada": "A jurema é sensorialmente austera — é madeira, tanino e seca. Não há notas florais, frutadas, cítricas ou balsâmicas para aliviar. É a casca mais 'sertaneja' do catálogo: direta, dura, sem concessão. Para o Ervatório, a narrativa da jurema não pode ser sensorial — tem que ser história. O sabor não vende; a história de San Juanico, das rezadeiras, do culto da jurema, das queimaduras cicatrizadas, da casca que é remédio por fora e rito por dentro — isso vende. É a erva com mais história por grama do catálogo."
+      },
+      "cultura": {
+        "historia": "A jurema é planta sagrada no Nordeste brasileiro há milênios — artefatos arqueológicos com sementes e resíduos foram encontrados em sítios da Tradição Agreste (Pernambuco), datados de 2.000–3.000 anos. O culto da jurema — sistema espiritual indígena nordestino que incorporou elementos afro-brasileiros e católicos populares — é um dos fenômenos religiosos mais singulares do Brasil. O 'vinho da jurema' (bebida ritual da casca da raiz) foi documentado desde o século XVII por missionários. O culto foi proibido pelo Estado em múltiplos períodos e hoje é protegido como patrimônio cultural imaterial. A HISTÓRIA DE SAN JUANICO (1984): em 19 de novembro, série de explosões de gás LP em San Juanico (periferia da Cidade do México) matou >500 pessoas e queimou >4.000. Com hospitais sobrecarregados e medicamentos esgotados, curandeiros indígenas trataram centenas de queimados com cataplasma de tepezcohuite (jurema). Médicos documentaram cicatrização acelerada e menor taxa de infecção. Esse episódio colocou a jurema no mapa da pesquisa dermatológica mundial.",
+        "cerimonial": "O 'vinho da jurema' e o uso ritual da casca da raiz são protegidos por jurisprudência brasileira (caso jurema, caso ayahuasca) e pela FUNAI como prática indígena. O Ervatório respeita esse contexto e trabalha exclusivamente com a casca do CAULE — dimensão cicatrizante e cosmética da planta.",
+        "brasil": "A jurema navega entre três identidades distintas que raramente coexistem na mesma espécie: 1) Fitoterápico cicatrizante — uso medicinal documentado, legal, seguro (casca do caule); 2) Patrimônio espiritual indígena — uso ritual protegido por lei (casca da raiz — vinho da jurema); 3) Substância psicoativa regulamentada — DMT na casca da raiz é substância controlada. Essa tridimensionalidade torna a jurema o ingrediente mais complexo do catálogo em termos regulatórios e narrativos. O Ervatório navega essas três dimensões com honestidade e clareza: celebra o uso cicatrizante, respeita o uso ritual, e explica a regulação do DMT.",
+        "curiosidade": "O DMT (N,N-dimetiltriptamina) presente na casca da raiz é uma das substâncias psicoativas mais simples em estrutura química — apenas uma triptamina com dois grupos metila. É produzida naturalmente pelo corpo humano (glândula pineal, pulmão — em concentrações traço) e está presente em dezenas de espécies vegetais. A jurema brasileira e a ayahuasca amazônica (Psychotria viridis + Banisteriopsis caapi) são as duas tradições rituais mais documentadas de uso de DMT nas Américas — mas com mecanismos farmacológicos distintos: na ayahuasca, o DMT é ativado por IMAO do caapi; na jurema, o mecanismo de ativação oral ainda é debatido."
+      },
+      "regulacao": {
+        "eixo_botanico_tpc": "Fitoterápico tradicional / ritual",
+        "status_anvisa": [
+          "Casca do caule: uso tópico popular reconhecido. Sem monografia oficial fitoterápica.",
+          "Casca da raiz: contém DMT — substância da Lista F2 (Portaria 344/98 ANVISA)."
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Status ritual: culto da jurema reconhecido pela FUNAI como prática cultural indígena protegida. IPHAN reconhece o contexto espiritual. México (tepezcohuite): amplamente regulamentada como ingrediente cosmético e dermatológico. Extrativismo de casca do caule: manejo sustentável recomendado.",
+        "sazonalidade": "Casca do caule coletada preferencialmente na estação seca (junho–outubro). A jurema é decidual — casca no período seco tem maior concentração de PA."
+      },
+      "marketplace": {
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Fornecedores do NE com clareza sobre parte da planta (casca do CAULE, não da raiz). CE, PE, RN. ATENÇÃO: garantir que o produto comercializado seja casca do caule (cicatrizante) — não casca da raiz (psicoativo regulamentado). Secundário: Produtos cosméticos formulados (creme, xampu) com extrato padronizado.",
+        "faixa_de_preco": [
+          "Casca do caule seca (ervanário): R$ 20–40/100 g",
+          "Creme cicatrizante de jurema (formulação cosmética): R$ 30–60/50 g",
+          "Xampu de jurema (capilar): R$ 25–50/250 ml"
+        ],
+        "formatos": "Casca seca do caule (decocção tópica — formato tradicional); Creme cicatrizante formulado (produto tópico pronto); Xampu/condicionador (capilar — anti-seborreico); Sachê para compressa; Tintura de casca do caule (uso tópico diluído)."
+      },
+      "destaques": [
+        {
+          "label": "San Juanico 1984",
+          "texto": "Cicatrização documentada em 4.000+ queimados após explosão de gás no México"
+        },
+        {
+          "label": "Caule ≠ Raiz",
+          "texto": "Ervatório usa casca do CAULE (cicatrizante seguro). Raiz contém DMT controlado"
+        },
+        {
+          "label": "Tridimensional",
+          "texto": "Fitoterápico + patrimônio espiritual + substância regulamentada — narrativa única"
+        }
+      ]
+    },
+    {
+      "slug": "imburana-de-cheiro",
+      "nome_popular": "Imburana-de-Cheiro",
+      "nome_cientifico": "Amburana cearensis (Allemão) A.C.Sm.",
+      "tagline": "O cumaru do sertão — broncodilatador aromático da caatinga com perfume de baunilha, ação comprovada nas vias respiratórias, e a presença mais reconfortante em qualquer garrafada nordestina.",
+      "schema_version": "1.1",
+      "identificacao": {
+        "nome_cientifico": "Amburana cearensis (Allemão) A.C.Sm.",
+        "familia_botanica": "Fabaceae / Papilionoideae (família do cumaru, da sucupira, do feijão)",
+        "tipo_botanico": "Fitoterápico respiratório (broncodilatador / expectorante) / antiespasmódico / analgésico",
+        "parte_usada": "Casca do caule (entrecasca) — rica em cumarina e amburosídeo A; sementes (uso popular — xarope); madeira (artesanal — extraordinariamente aromática). A imburana e o cumaru (Dipteryx odorata) compartilham a cumarina mas são gêneros diferentes. A imburana tem MENOS cumarina (0,1–0,5% vs 1–3% do cumaru) e possui um composto EXCLUSIVO: o amburosídeo A (fenilglicosídeo broncodilatador).",
+        "sinonimos": [
+          "Imburana-de-cheiro · amburana · cumaru-de-cheiro · cumaru-do-ceará",
+          "Cerejeira-do-sertão (MG) · louro-do-sertão (BA) · umburana (variante)",
+          "ATENÇÃO: não confundir com Dipteryx odorata (cumaru-verdadeiro) — espécie amazônica diferente com aroma similar mas química distinta. Imburana é a versão sertaneja do cumaru — mesmo perfume, outro bioma."
+        ]
+      },
+      "caracterizacao": {
+        "sabor_dominante": "Doce-balsâmico pronunciado, baunilha e canela, fundo amargo discreto. Uma das poucas ervas da caatinga com perfil hedônico natural — a imburana é agradável. A doçura da cumarina mascara o amargo dos outros compostos, criando equilíbrio raro em casca medicinal.",
+        "aroma": "Baunilha madura e quente (cumarina), canela doce (aldeído cinâmico traços), cumarina cristalizada (cheiro de feno cortado ao sol, de roupa limpa no varal). Extraordinariamente agradável — é perfume, não remédio. Aroma do sertão nordestino que as pessoas gostam: enquanto aroeira cheira a madeira seca e jurema cheira a tanino, a imburana cheira a baunilha e conforto.",
+        "cor_da_infusao": "Âmbar-dourado quente, levemente opaco. #C9923A — cor de mel de jataí.",
+        "intensidade": "3/5 — palatável, aromático sedutor, amargo discreto. A infusão medicinal mais agradável da Caatinga.",
+        "notas": "Cabeça: baunilha-cumarina imediata (doce e quente) | Corpo: canela-balsâmico, amadeirado suave | Fundo: amargo discreto, leve adstringência",
+        "bioma_de_origem": "Caatinga — espécie da floresta caducifólia sertaneja (matas secas decíduas). Árvore de grande porte (até 20 m), casca aromática lisa, copa larga na estação chuvosa, completamente despida na seca.",
+        "distribuicao_geografica": [
+          "CE (maior referência etnobotânica — o nome 'cearensis' homenageia o Ceará), PE, PB, RN, PI, BA, AL, SE.",
+          "Extensão a MG (Norte de Minas — Vale do Jequitinhonha), GO (cerrado seco).",
+          "Centros de pesquisa: UFC (Fortaleza — grupo de farmacognosia nordestina), UFPB (João Pessoa), UECE."
+        ]
+      },
+      "preparo": {
+        "temperatura_ideal": "90–95 °C (cumarina é volátil — ebulição plena dissipa aroma).",
+        "tempo_de_infusao": "8–12 minutos coberto — cobrir é essencial para reter cumarina e amburosídeo no vapor condensado.",
+        "quantidade": "2–5 g de casca seca para 250 ml.",
+        "metodo": "Infusão coberta (uso diário, mais suave). Decocção suave de 5 min (uso terapêutico respiratório). Xarope tradicional nordestino: casca macerada em mel de abelha por 7–14 dias — o 'lambedor de imburana' é o xarope respiratório mais tradicional do Nordeste.",
+        "reinfusoes": "1 reinfusão possível.",
+        "melhor_momento": "Manhã: expectorante/broncodilatador em episódios respiratórios. Noite: antiespasmódico e sedativo leve. 3x ao dia em tratamento de tosse/bronquite.",
+        "combina_com": "Mel (clássico nordestino — 'lambedor') · Gengibre · Eucalipto · Hortelã · Canela · Cravo · Limão (blend respiratório quente nordestino)"
+      },
+      "usos_topicos": {
+        "evidencia": "Fraca para uso tópico isolado; uso artesanal da madeira.",
+        "aplicacoes": [
+          {
+            "titulo": "Inalação de vapor para congestão nasal",
+            "texto": "Casca em água fervente, toalha sobre a cabeça, 5 min. Cumarina + amburosídeo em vapor — broncodilatação por inalação direta. Evidência tradicional forte."
+          },
+          {
+            "titulo": "Uso artesanal aromático",
+            "texto": "A madeira da imburana é esculpida em estatuetas, rosários, cachimbos e colheres de pau no Vale do Cariri (CE) — a fragrância da madeira é liberada por anos. Ofício transmitido por gerações."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro."
+      },
+      "acoes_e_seguranca": {
+        "acoes_principais": [
+          "Broncodilatador (relaxamento da musculatura brônquica — amburosídeo A + cumarina)",
+          "Expectorante (fluidifica muco brônquico)",
+          "Antiespasmódico (musculatura lisa — brônquica e intestinal)",
+          "Analgésico (dores musculares, reumático — tradição popular)",
+          "Sedativo leve (cumarina — depressora leve de SNC)",
+          "Anti-inflamatório das vias respiratórias",
+          "Antimicrobiano respiratório leve"
+        ],
+        "componentes_ativos": [
+          {
+            "label": "Cumarina (1,2-benzopirona)",
+            "texto": "0,1–0,5% da casca seca — Broncodilatador, antiespasmódico, anticoagulante fraco, sedativo. Mesma molécula do cumaru — mas concentração 5–10x menor. Imburana é mais segura para uso regular"
+          },
+          {
+            "label": "Amburosídeo A (fenilglicosídeo)",
+            "texto": "EXCLUSIVO da espécie — Broncodilatador (mecanismo β2-agonista parcial pesquisado pela UFC); anti-inflamatório. Composto que diferencia imburana de cumaru. Mecanismo similar ao salbutamol mas com potência muito menor e ação mais gradual"
+          },
+          {
+            "label": "Isoamburosídeo",
+            "texto": "Antiespasmódico"
+          },
+          {
+            "label": "Ácido oleanólico",
+            "texto": "Anti-inflamatório, hepatoprotetor"
+          },
+          {
+            "label": "Lupeol",
+            "texto": "Anti-inflamatório"
+          },
+          {
+            "label": "Beta-sitosterol",
+            "texto": "Anti-inflamatório"
+          },
+          {
+            "label": "Aldeído cinâmico (traços)",
+            "texto": "Aromático (nota de canela)"
+          },
+          {
+            "label": "Ácido protocatecuico",
+            "texto": "Antioxidante, anti-inflamatório"
+          }
+        ],
+        "evidencia": [
+          {
+            "indicacao": "Bronquite aguda (expectorante/broncodilatador)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos e crianças >6 anos — Leal et al. (UFC, 2003); Canuto et al. (2012)"
           },
           {
             "indicacao": "Tosse seca espasmódica",
             "evidencia": "Moderada",
-            "populacao": "Pesquisa nordestina"
+            "populacao": "Adultos — pesquisa nordestina UFC, UFPB"
           },
           {
             "indicacao": "Asma leve (adjuvante)",
             "evidencia": "Preliminar",
-            "populacao": "Modelos in vitro e animal"
+            "populacao": "Modelos in vitro e animal — amburosídeo A mecanismo β2 parcial"
+          },
+          {
+            "indicacao": "Dor muscular e reumática",
+            "evidencia": "Tradicional forte",
+            "populacao": "Adultos — farmacopeia popular NE"
           }
         ],
+        "alerta_critico": {
+          "titulo": "Espécie ameaçada — Lista MMA",
+          "titulo2": "Categoria 'vulnerável' (Portaria 443/2014)",
+          "corpo": "Amburana cearensis consta na Lista Oficial de Espécies da Flora Brasileira Ameaçadas de Extinção (Portaria MMA 443/2014) — categoria 'vulnerável'. A casca medicinal é coletada frequentemente por anelamento do tronco (que mata a árvore), e a madeira aromática é cortada sem reposição. Certificação de origem obrigatória. O Ervatório prioriza fornecedores que operam com manejo sustentável ou cultivo (iniciativas no CE e PE — produção ainda insuficiente)."
+        },
         "contraindicacoes": [
-          "Gestação — cumarina pode ser uterotônica",
-          "Hepatopatias — cumarina em dose alta hepatotóxica",
-          "Anticoagulados — potencialização (cumarina)",
-          "Crianças < 6 anos — evitar uso interno",
-          "Espécie ameaçada: Amburana cearensis está na lista de espécies ameaçadas do IBAMA — preferir fornecedores certificados de cultivo."
+          "Gestação: cumarina é potencialmente uterotônica — evitar uso regular",
+          "Anticoagulados: cumarina potencializa anticoagulação (fraco — mas cumulativo)",
+          "Hepatopatias: cumarina hepatotóxica em doses acumuladas",
+          "Crianças <6 anos: evitar uso interno (dados insuficientes)"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          {
+            "label": "Varfarina",
+            "texto": "Cumarina potencializa anticoagulação. Conduta: monitorar INR"
+          },
+          {
+            "label": "Broncodilatadores (salbutamol, formoterol)",
+            "texto": "Mecanismo complementar (β2). Conduta: uso conjunto possível — pode permitir redução de dose do fármaco sob supervisão"
+          },
+          {
+            "label": "Hepatotóxicos (paracetamol, estatinas)",
+            "texto": "Hepatotoxicidade aditiva (cumarina). Conduta: cautela em uso prolongado"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais (2–5 g/dia): raros. Cefaleia em doses >10 g/dia (cumarina). Sonolência leve (sedativo).",
+        "dose_maxima": "Casca seca em infusão: até 6 g/dia. Xarope (lambedor): conforme receita tradicional. Extrato seco: 250–500 mg/dia.",
+        "fontes": [
+          "Leal LKAM et al. — Anti-inflammatory and smooth muscle relaxant activities of the hydroalcoholic extract and chemical constituents from Amburana cearensis (Phytother Res, 2003) — estudo UFC referência",
+          "Canuto KM et al. — Chemical composition of the essential oil and tincture of Amburana cearensis (J Essential Oil Res, 2012)",
+          "Rao VS et al. — Pharmacological studies on Amburana cearensis: antiinflammatory, analgesic and bronchodilator effects (Phytomedicine, 2005)",
+          "Costa-Lotufo LV et al. — The contribution of Northeastern Brazil to the development of plant-derived drugs (J Ethnopharmacol, 2005)",
+          "Albuquerque UP et al. — Medicinal plants of the caatinga (J Ethnopharmacol, 2007)",
+          "IPHAN — Inventário de ofícios artesanais do Vale do Cariri (CE)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "2/3",
+            "observacao": "Presente e pronunciada — cumarina + baunilha-canela criam percepção doce intensa sem açúcares. É a casca mais 'doce' do catálogo da caatinga"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Discreto — mascarado pela doçura da cumarina; emerge no final como fundo"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Baunilha-cumarina-quente com fundo de canela",
+        "olfativo_descritores": [
+          "Baunilha madura e quente (cumarina cristalizada — idêntica ao cumaru mas mais suave)",
+          "Canela doce (aldeído cinâmico traços)",
+          "Feno seco cortado ao sol (cumarina volátil — 'cheiro de roupa no varal')",
+          "Mel quente (traços — associação sinestésica com a cor âmbar)",
+          "Amadeirado suave-doce (madeira de Fabaceae aromática)",
+          "Fundo de caramelo discreto"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Muito baixa",
+            "molecula": "Taninos mínimos. A imburana é a casca menos adstringente do catálogo da caatinga — cumarina e glicosídeos fenólicos dominam sobre taninos"
+          }
+        ],
+        "tatil": "Corpo leve-médio. Textura quase aveludada — sem adstringência significativa, sem rugosidade, sem secura. Persistência aromática alta — o aroma de baunilha permanece 15+ min na garganta e no nariz (mesmo mecanismo de persistência do cumaru, mas mais suave).",
+        "descricao_integrada": "A imburana é a infusão-conforto da caatinga: quente, doce-baunilhada, sem agressão. É a casca que a avó nordestina dá para a criança com tosse SEM que a criança chore — porque cheira e sabe a baunilha, não a remédio. Essa palatabilidade infantil não é acidente — é razão evolutiva: a cumarina, que atrai polinizadores e dispersores de sementes, também atrai humanos. A imburana 'quer' ser consumida. Para o Ervatório, a imburana é a porta de entrada sensorial da Caatinga: enquanto aroeira e jurema exigem contexto medicinal para serem apreciadas, a imburana seduz."
       },
       "cultura": {
-        "historia": "A imburana é a árvore dos xaropes de farmácia popular nordestina. Qualquer criança criada no interior do Nordeste brasileiro conhece o cheiro inconfundível da imburana — sua casca é vendida em feiras livres de Fortaleza, Recife e Salvador desde o século XIX. Rezadeiras e raizeiros nordestinos usam a casca em garrafadas (preparados compostos de múltiplas ervas em aguardente ou mel) para tratar \"falta de ar\", \"catarro no peito\" e \"tosse danada\".  A madeira da imburana, extraordinariamente aromática, é esculpida artesanalmente em estatuetas, rosários e cachimbos no Vale do Cariri (CE) — ofício transmitido por gerações que transformou o aroma medicinal em produto cultural.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "A imburana é a árvore dos xaropes de farmácia popular nordestina — talvez a árvore mais emocionalmente carregada do sertão para quem cresceu ali. O 'lambedor de imburana' (xarope de casca macerada em mel) é o remédio de infância de gerações nordestinas: criança com tosse = lambedor de imburana. O cheiro da imburana é o cheiro de cuidado materno no sertão. Rezadeiras e raizeiros nordestinos usam a casca em garrafadas (preparados compostos de múltiplas ervas em aguardente ou mel) para tratar 'falta de ar', 'catarro no peito' e 'tosse danada'. A imburana é ingrediente quase obrigatório de garrafadas respiratórias no Nordeste — sua presença é identificada pelo aroma de baunilha que a garrafada exala. A madeira da imburana é esculpida artesanalmente em estatuetas religiosas, rosários, cachimbos e colheres de pau no Vale do Cariri (CE).",
+        "cerimonial": "O ato de preparar o 'lambedor de imburana' é ritual doméstico nordestino: a avó que separa a casca, esquenta o mel, macera, tampa o frasco e diz 'descansa três dias antes de dar pra criança' está transmitindo farmacologia ancestral por gesto e palavra. Não é cerimônia codificada — é liturgia de cuidado.",
+        "brasil": "A imburana é uma das ervas mais ameaçadas do catálogo: árvore de grande porte (madeira valiosa) em bioma sob pressão extrema (caatinga — desmatamento para pecuária e agricultura). A erva que mais conforta a infância nordestina está desaparecendo. O Ervatório tem responsabilidade de narrar essa urgência e de priorizar fornecedores que operam com manejo sustentável ou cultivo.",
+        "curiosidade": "O amburosídeo A — molécula EXCLUSIVA da imburana, com mecanismo β2-agonista parcial — foi identificado como lead compound potencial para desenvolvimento de broncodilatadores naturais pelo grupo de pesquisa da UFC. Se a pesquisa avançar (financiamento é o gargalo), a imburana do sertão nordestino poderia originar um fármaco broncodilatador com o mesmo mecanismo do salbutamol mas com perfil de efeitos adversos potencialmente melhor (por ser agonista parcial, não pleno — menor risco de taquicardia e tremores). De casca de garrafada a lead farmacêutico — a distância é menor do que parece."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Uso tradicional reconhecido. Em análise para Formulário de Fitoterápicos.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita de casca: estação seca (junho–outubro)"
+        "status_anvisa": [
+          "Memento Fitoterápico — uso tradicional reconhecido. Em análise para inclusão no Formulário de Fitoterápicos.",
+          "Indicações tradicionais: broncodilatador, expectorante, antiespasmódico."
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Espécie AMEAÇADA — categoria 'vulnerável' (Portaria MMA 443/2014). Certificação de origem OBRIGATÓRIA. Cultivo: iniciativas de plantio no CE e PE — produção ainda insuficiente.",
+        "sazonalidade": "Casca coletada preferencialmente na estação seca (junho–outubro) — maior concentração de cumarina e amburosídeo por menor teor de água."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Fornecedores com certificação de manejo sustentável ou cultivo — CE (Vale do Cariri, Crato), PE, PB. ATENÇÃO: espécie ameaçada — exigir documentação de origem. Secundário: Ervanários certificados do NE.",
+        "faixa_de_preco": [
+          "Casca seca granel (ervanário): R$ 25–50/100 g",
+          "Casca seca certificada (manejo sustentável): R$ 50–90/100 g",
+          "Xarope/lambedor artesanal (mel + imburana): R$ 30–60/250 ml"
+        ],
+        "formatos": "Casca seca (infusão/decocção — formato tradicional); Xarope artesanal (mel + casca — 'lambedor' — formato NE clássico); Tintura hidroalcoólica (farmácia de manipulação); Extrato seco (cápsulas — formato farmacêutico); Madeira artesanal (artesanato aromático — produto complementar)."
+      },
+      "destaques": [
+        {
+          "label": "Amburosídeo A exclusivo",
+          "texto": "β2-agonista parcial natural — análogo vegetal do salbutamol, só na imburana"
+        },
+        {
+          "label": "Lambedor nordestino",
+          "texto": "O xarope respiratório mais tradicional do Nordeste — memória olfativa de gerações"
+        },
+        {
+          "label": "Espécie ameaçada",
+          "texto": "Categoria vulnerável (MMA 443/2014) — exigir origem certificada"
+        }
+      ]
     },
     {
       "slug": "espinheira-santa",
@@ -4327,245 +4736,540 @@
     {
       "slug": "rompe-pedra",
       "nome_popular": "Rompe-Pedra",
-      "nome_cientifico": "Phyllanthus niruri L. / P. amarus Schumach. & Thonn. (sinonímia parcial aceita)",
-      "tagline": "O dissolve-pedras do nordeste — diurético e litolítico com uma das melhores evidências clínicas do catálogo para cálculo renal, estudado por dezenas de universidades no mundo todo.",
+      "nome_cientifico": "Phyllanthus niruri L.",
+      "tagline": "O dissolve-pedras do nordeste — diurético e litolítico com uma das melhores evidências clínicas do catálogo para cálculo renal, pesquisado por dezenas de universidades em 4 continentes, e a prova de que a erva daninha da calçada de Fortaleza pode mudar a urologia mundial.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Phyllanthus niruri L. / P. amarus Schumach. & Thonn. (sinonímia parcial aceita)",
-        "familia_botanica": "Phyllanthaceae (antes Euphorbiaceae)",
-        "tipo_botanico": "Fitoterápico diurético / litolítico / hepatoprotetor",
-        "parte_usada": "Partes aéreas secas (erva toda — ramos, folhas, frutos).",
+        "nome_cientifico": "Phyllanthus niruri L. (sin. parcial: Phyllanthus amarus)",
+        "familia_botanica": "Phyllanthaceae (anteriormente Euphorbiaceae — reclassificada por análise molecular)",
+        "tipo_botanico": "Fitoterápico diurético / litolítico (dissolve e previne cálculos renais) / hepatoprotetor",
+        "parte_usada": "Partes aéreas secas (erva inteira — ramos, folhas, flores e frutos) colhidas em floração/frutificação. Os PA distribuem-se: lignanas nas folhas, flavonóides no caule, filantina/hipofilantina nos frutos. ATENÇÃO: Phyllanthus tem >700 espécies tropicais. Espécies com atividade litolítica documentada: P. niruri (principal — Brasil/Ásia), P. amarus (Ásia), P. urinaria (Ásia). Outras Phyllanthus vendidas como 'quebra-pedra' podem não ter a mesma atividade.",
         "sinonimos": [
-          "Rompe-pedra · quebra-pedra · arrebenta-pedra · erva-pombinha",
-          "Stonebreaker / chanca piedra (espanhol — Peru)",
-          "Leafflower (inglês)"
+          "Rompe-pedra · quebra-pedra · arrebenta-pedra · erva-pombinha · fura-parede",
+          "Stonebreaker (inglês — tradução literal) · Chanca piedra (espanhol — Peru, amplamente difundido)",
+          "Bhumyamalaki (sânscrito — Ayurveda) · Leafflower (inglês botânico)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Levemente amargo, herbáceo-vegetal, adstringente suave. Um dos mais palatáveis do catálogo medicinal.",
-        "aroma": "Folha verde seca, herbáceo suave, levemente resinoso.",
-        "cor_da_infusao": "Verde-amarelado a âmbar claro. #C4B84A",
-        "intensidade": "2/5 — infusão gentil, de uso cotidiano possível.",
-        "notas": "",
-        "bioma_de_origem": "Caatinga, Cerrado, Mata Atlântica — espécie ruderal de ampla distribuição, cresce em calçadas, quintais, terrenos baldios de Norte a Sul do Brasil.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Levemente amargo, herbáceo-vegetal fresco, adstringente suave. Um dos perfis mais palatáveis entre as ervas medicinais do catálogo — amargura discreta, sem notas desagradáveis, admite consumo diário sem esforço.",
+        "aroma": "Folha verde seca fresca, herbáceo suave e limpo, levemente resinoso-vegetal. Aroma neutro e inofensivo.",
+        "cor_da_infusao": "Verde-amarelado a âmbar claro. #C4B84A — cor de chá-verde suave.",
+        "intensidade": "2/5 — infusão gentil, de uso cotidiano fácil. A palatabilidade é vantagem terapêutica — pacientes com litíase precisam tomar a infusão por semanas/meses para efeito preventivo.",
+        "notas": "Cabeça: herbáceo-verde fresco, levemente cítrico | Corpo: amargo leve-limpo (lignanas) | Fundo: adstringência suave breve, leve residual vegetal",
+        "bioma_de_origem": "Ruderal pantropical — a planta cresce espontaneamente em calçadas, muros, terrenos baldios, jardins, vasos de plantas — praticamente qualquer solo perturbado em clima tropical e subtropical. É uma das plantas mais ubíquas do Brasil — presente de Norte a Sul, do nível do mar a 1.000 m. Na Caatinga, é particularmente abundante em áreas antropizadas — é a 'erva daninha medicinal' que cresce sem ser plantada e trata sem ser prescrita.",
+        "distribuicao_geografica": [
+          "Distribuição global: pantropical — África, Ásia, Américas tropicais e subtropicais, Oceania.",
+          "No Brasil: todo o território nacional — literalmente em qualquer cidade, qualquer bairro, qualquer calçada que tenha uma fresta. A planta é tão comum que a maioria dos brasileiros pisa nela sem saber.",
+          "Centros de pesquisa: UNIFESP/EPM (São Paulo — grupo do Prof. Nestor Schor, referência mundial), UFC (Fortaleza), USP, UFMG, UFPE.",
+          "Internacional: Índia (pesquisa extensiva em hepatite B — grupo de Thyagarajan, Madras), Peru ('chanca piedra'), Nigéria, Filipinas."
+        ]
       },
       "preparo": {
         "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "2–5 g de partes aéreas secas para 250 ml.",
-        "metodo": "Infusão simples coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã e tarde (diurético — evitar à noite).",
-        "combina_com": "Cavalinha · Uva-ursina · Dente-de-leão (blends diuréticos/renais)"
+        "tempo_de_infusao": "5–10 minutos coberto. Infusão de 5 min: uso de manutenção. 10 min: uso terapêutico agudo.",
+        "quantidade": "2–5 g de partes aéreas secas para 250 ml. Farmacopeia Brasileira: 3–6 g/dia em 2–3 doses.",
+        "metodo": "Infusão simples coberta — método preferencial (lignanas extraem bem em infusão). Maceração a frio (12h): alternativa.",
+        "reinfusoes": "1 reinfusão possível.",
+        "melhor_momento": "Manhã e início de tarde — efeito diurético (evitar à noite para não comprometer sono). Protocolo litolítico: 2–3x ao dia por 4–12 semanas (prevenção de recorrência). Crise de cólica renal: 4–5x ao dia como adjuvante (NÃO substitui atendimento médico urgente).",
+        "combina_com": "Cavalinha (diurético sinérgico — sílica + saponinas) · Solidago (diurético + anti-inflamatório uretral) · Dente-de-leão (diurético hepático complementar) · Limão (citrato — alcaliniza urina, inibe cristalização de oxalato) · Mel (palatabilidade)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Fraca — o rompe-pedra é predominantemente de uso interno.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressa para herpes labial",
+            "texto": "Infusão forte resfriada em gaze sobre vesículas — uso popular. Evidência: apenas in vitro (atividade antiviral contra HSV documentada para P. niruri e P. urinaria)."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações relevantes para uso tópico."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Litolítico (dissolve e previne cálculos renais de oxalato e urato)",
-          "Diurético",
-          "Hepatoprotetor (anti-hepatite B — estudos pioneiros)",
-          "Anti-inflamatório",
-          "Antiviral (HIV, hepatite B — pesquisa em andamento)",
-          "Antiespasmódico uretral (alivia cólica renal)",
+          "Litolítico — dissolve cálculos renais de oxalato de cálcio e ácido úrico (mecanismo: inibição de cristalização + relaxamento ureteral)",
+          "Litoprofilático — previne formação de novos cálculos (inibição de nucleação e agregação)",
+          "Diurético — aumenta volume urinário (dilui urina — menor supersaturação)",
+          "Antiespasmódico ureteral — relaxa musculatura lisa do ureter (alivia cólica renal)",
+          "Hepatoprotetor — proteção hepática com ação antiviral (hepatite B — pesquisa indiana)",
+          "Anti-inflamatório (renal e sistêmico)",
+          "Antiviral (HIV, hepatite B — pesquisas in vitro e ensaios clínicos preliminares)",
           "Hipoglicemiante leve",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Gestação — diurético intenso; evitar. Crianças — cautela. Uso concomitante com anticoagulantes — monitorar."
+          "Antimicrobiano urinário leve"
         ],
         "componentes_ativos": [
           {
-            "label": "FILANTINA (lignana)",
-            "texto": "Hepatoprotetor, antiviral"
+            "label": "Filantina (lignana)",
+            "texto": "Principal — Hepatoprotetor: inibe replicação viral de hepatite B; anti-inflamatório hepático. Composto mais estudado da espécie; usado como marcador de qualidade do extrato"
           },
           {
-            "label": "HIPOFILANTINA",
-            "texto": "Litolítico — inibe cristalização de oxalato"
+            "label": "Hipofilantina (lignana)",
+            "texto": "Principal — LITOLÍTICO PRINCIPAL: inibe cristalização de oxalato de cálcio; relaxa musculatura ureteral. Mecanismo: (1) inibição de nucleação; (2) inibição de crescimento cristalino; (3) inibição de agregação; (4) relaxamento do ureter"
           },
           {
-            "label": "ÁCIDO ELÁGICO",
-            "texto": "Antioxidante, litolítico"
+            "label": "Nirantina (lignana)",
+            "texto": "Hepatoprotetor, anti-inflamatório"
           },
           {
-            "label": "QUERCETINA, RUTINA",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "Ácido elágico (elagitanino)",
+            "texto": "Antioxidante, litolítico complementar — quelante de cálcio, reduz cálcio livre disponível para cristalização"
           },
           {
-            "label": "GERANINA (elagitanino)",
-            "texto": "Antiviral (HIV, hepatite), antioxidante"
+            "label": "Quercetina, rutina",
+            "texto": "Anti-inflamatório, antioxidante, litolítico auxiliar"
+          },
+          {
+            "label": "Geranina (elagitanino)",
+            "texto": "Antiviral (HIV, hepatite) — inibição de transcriptase reversa e integrase. Mecanismo antiviral mais promissor"
+          },
+          {
+            "label": "Corilagina (elagitanino)",
+            "texto": "Antiviral, anti-inflamatório"
+          },
+          {
+            "label": "Ácido gálico",
+            "texto": "Antioxidante, antimicrobiano"
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Litíase renal (prevenção e dissolução)",
+            "indicacao": "Litíase renal (prevenção de recorrência de CaOx)",
             "evidencia": "Moderada-forte",
-            "populacao": "Barros et al. (UFCE)"
+            "populacao": "Adultos com litíase recorrente — Barros ME et al. (UNIFESP, 2003, 2006); Nishiura JL et al. (2004)"
           },
           {
-            "indicacao": "Hepatite B (adjuvante)",
+            "indicacao": "Litíase renal (dissolução de cálculos pequenos)",
             "evidencia": "Moderada",
-            "populacao": "Thyagarajan et al., 1988"
+            "populacao": "Adultos com cálculos <10 mm — estudos clínicos + observacionais nacionais"
           },
           {
-            "indicacao": "Hipertensão renal leve",
+            "indicacao": "Cólica renal (antiespasmódico ureteral — adjuvante)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos em crise — mecanismo espasmolítico documentado"
+          },
+          {
+            "indicacao": "Hepatite B crônica (adjuvante antiviral)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos HBsAg+ — Thyagarajan SP et al. (1988, 1990) estudos indianos pioneiros"
+          },
+          {
+            "indicacao": "Hipertensão renal leve (diurético)",
             "evidencia": "Preliminar",
-            "populacao": "Estudos animais"
+            "populacao": "Adultos — estudos animais"
+          },
+          {
+            "indicacao": "Hipoglicemiante (adjuvante)",
+            "evidencia": "Preliminar",
+            "populacao": "Adultos DM2 — estudos piloto"
           }
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "alerta_critico": {
+          "titulo": "Pesquisa indiana com hepatite B (1988)",
+          "titulo2": "Marco de validação científica do uso popular",
+          "corpo": "Em 1988, SP Thyagarajan (King Institute, Madras/Chennai, Índia) publicou no Lancet o primeiro estudo demonstrando que extrato de Phyllanthus amarus (espécie irmã de P. niruri) eliminava o HBsAg (antígeno de superfície da hepatite B) em 59% dos portadores crônicos tratados — resultado extraordinário que gerou pesquisa global. Estudos subsequentes mostraram resultados variáveis (20–60% de soroconversão). A filantina e a geranina são os PA antivirais implicados. Essa linha de pesquisa continua ativa — com potencial de contribuir para o tratamento de 300+ milhões de portadores crônicos de hepatite B no mundo."
+        },
+        "contraindicacoes": [
+          "Gestação: diurético intenso e possível efeito uterotônico — evitar",
+          "Lactação: dados insuficientes — cautela",
+          "Crianças <6 anos: dados insuficientes",
+          "Litíase por ácido úrico associada a gota: o diurético pode precipitar crise de gota em hiperuricêmicos — monitorar ácido úrico",
+          "Anticoagulados: interação teórica (compostos fenólicos antiagregantes) — monitorar INR"
+        ],
+        "interacoes": [
+          {
+            "label": "Anticoagulantes (varfarina)",
+            "texto": "Fenólicos antiagregantes (fraco). Conduta: monitorar INR"
+          },
+          {
+            "label": "Lítio",
+            "texto": "Diurético pode aumentar nível sérico de lítio (reduz excreção). Conduta: monitorar litemia"
+          },
+          {
+            "label": "Hipoglicemiantes",
+            "texto": "Potencialização hipoglicemiante (fraca). Conduta: monitorar glicemia"
+          },
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Efeito hipotensor aditivo (diurético). Conduta: monitorar PA"
+          },
+          {
+            "label": "Antivirais (hepatite B — entecavir, tenofovir)",
+            "texto": "Ação complementar possível. Conduta: informar hepatologista"
+          }
+        ],
+        "efeitos_adversos": "Em doses usuais (3–6 g/dia): raros. Poliúria (diurético — esperado). Cólica abdominal leve em doses >10 g/dia (efeito dose-dependente paradoxal: antiespasmódico em dose baixa → espasmogênico em dose muito alta). Hipotensão em doses altas em pacientes já hipotensos.",
+        "dose_maxima": "Partes aéreas secas em infusão: até 6 g/dia (Farmacopeia Brasileira). Uso terapêutico supervisionado: até 10 g/dia. Extrato seco padronizado (filantina): 250–500 mg/dia.",
+        "fontes": [
+          "Farmacopeia Brasileira 6ª Ed. — monografia oficial Phyllanthus niruri",
+          "Barros ME et al. — Effect of an aqueous extract from Phyllanthus niruri on calcium oxalate crystallization in vitro (Urol Res, 2003) — UNIFESP referência",
+          "Nishiura JL et al. — Phyllanthus niruri normalizes elevated urinary calcium levels in calcium stone-forming patients (Urol Res, 2004)",
+          "Barros ME et al. — Effects of an aqueous extract of Phyllanthus niruri on the growth of urinary calculi (BJU Int, 2006)",
+          "Thyagarajan SP et al. — Effect of Phyllanthus amarus on chronic carriers of hepatitis B virus (Lancet, 1988) — estudo indiano pioneiro",
+          "Calixto JB et al. — A review of the plants of the genus Phyllanthus: their chemistry, pharmacology, and therapeutic potential (Med Res Rev, 1998)",
+          "Murugaiyah V, Chan KL — Mechanisms of antihyperuricemic effect of Phyllanthus niruri and its lignans (J Ethnopharmacol, 2009)",
+          "Ministério da Saúde — RENISUS"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Leve — lignanas e elagitaninos; amargura discreta e limpa, facilmente tolerada"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente (leve nota mineral — abaixo do limiar consciente)"
+          }
+        ],
+        "olfativo_familia": "Herbáceo-verde-neutro limpo",
+        "olfativo_descritores": [
+          "Folha verde seca fresca (clorofila degradada)",
+          "Herbáceo simples e limpo (sem notas aromáticas distintas)",
+          "Leve vegetal-resinoso (traços)",
+          "Neutro-sem-assinatura olfativa"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa",
+            "molecula": "Elagitaninos (peso molecular menor que proantocianidinas) — adstringência leve e breve; muito menor que aroeira ou barbatimão; similar à da espinheira-santa"
+          }
+        ],
+        "tatil": "Corpo leve, textura aquosa-limpa, quase imperceptível. Persistência muito curta — a infusão passa sem deixar memória tátil.",
+        "descricao_integrada": "O rompe-pedra é a infusão-água-medicada arquetípica: parece água com leve cor e sabor — e funciona como litolítico potente nos rins. A distância entre a experiência sensorial (quase nula) e a ação farmacológica (significativa) é a maior do catálogo. Nenhuma outra erva tem tanto gap entre 'o que se sente na boca' e 'o que acontece nos órgãos'. Essa invisibilidade sensorial é farmacologicamente coerente: os PA ativos (hipofilantina, filantina) não são aromáticos nem gustativamente percebidos — são lignanas hidrossolúveis que passam pela boca sem ativar nenhum receptor e chegam aos rins onde inibem cristalização. A erva é silenciosa na boca e eloquente no rim. Para o Ervatório, o rompe-pedra é o ingrediente que vende por ciência, não por sensação."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O rompe-pedra é uma das plantas medicinais mais consumidas no nordeste e norte do Brasil — praticamente todo portador de cálculo renal no interior do nordeste já tomou ou conhece o \"chá de quebra-pedra\". Essa planta ruderal que cresce em calçadas de Fortaleza, Recife e Salvador é simultaneamente erva daninha e farmácia de bairro.  A pesquisa brasileira com rompe-pedra, especialmente pela UFCE (Fortaleza), é das mais citadas internacionalmente no campo de litíase renal fitoterápica — exemplo notável de ciência desenvolvida a partir do conhecimento popular nordestino.",
-        "curiosidade": ""
+        "historia": "O rompe-pedra tem uma das histórias de convergência etnobotânica mais notáveis do catálogo: povos que nunca se encontraram — indígenas brasileiros, curandeiros andinos peruanos, praticantes de Ayurveda na Índia, herbalistas tradicionais na Nigéria — usaram independentemente espécies de Phyllanthus para tratar 'pedra nos rins' e 'doença do fígado'. Quatro continentes, mesma planta, mesmo uso. Essa convergência não é coincidência: Phyllanthus é gênero pantropical que cresce em calçadas e terrenos baldios de todas as cidades tropicais. É a planta mais acessível que existe — cresce literalmente nos pés de quem a observa. No Brasil, a pesquisa com rompe-pedra tem dois marcos: UNIFESP/EPM (grupo do Prof. Nestor Schor, nefrologista) documentou o mecanismo litolítico completo em série de estudos (2003–2006) com nível de rigor comparável a pesquisas farmacêuticas. Esse trabalho é citado internacionalmente como referência. UFC (Fortaleza) — pesquisa etnobotânica e farmacológica no contexto nordestino.",
+        "cerimonial": "Sem cerimônia codificada — mas o ato de 'ir na calçada pegar quebra-pedra' é prática de automedicação urbana tão difundida no Nordeste que é virtualmente universal: qualquer portador de cálculo renal no interior do CE, RN, PB ou PE já coletou rompe-pedra da calçada e fez chá caseiro. É farmácia de rua — no sentido literal.",
+        "brasil": "O rompe-pedra é uma das plantas medicinais mais consumidas no Nordeste e Norte — praticamente todo portador de cálculo renal no interior brasileiro já usou ou conhece o 'chá de quebra-pedra'. Levantamentos epidemiológicos estimam que >20% dos pacientes com litíase renal no Nordeste usam rompe-pedra regularmente — a maioria sem informar o urologista. A planta cresce espontaneamente em calçadas de Fortaleza, Recife, Salvador, João Pessoa e Natal — é simultaneamente erva daninha urbana e farmácia de bairro. A distância entre o pé do paciente e o remédio é zero — a planta está sob a sola do sapato.",
+        "curiosidade": "O nome Phyllanthus vem do grego phyllon (folha) + anthos (flor) — 'flores nas folhas'. As flores e frutos do rompe-pedra parecem nascer na superfície inferior das folhas (na verdade, nascem em ramos achatados que mimetizam folhas — cladódios). Essa ilusão morfológica torna a planta facilmente identificável: 'a erva com frutinhas embaixo das folhas' é descrição popular universal que identifica Phyllanthus sem erro. O nome popular 'quebra-pedra'/'stonebreaker'/'chanca piedra' é notavelmente consistente entre línguas — todas fazem referência à mesma ação. Quando culturas que nunca interagiram nomeiam a mesma planta da mesma forma, a probabilidade de que a observação empírica esteja correta é alta."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Monografia oficial. Indicação: diurético, coadjuvante em litíase renal.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita de partes aéreas em floração/frutificação"
+        "status_anvisa": [
+          "Monografia oficial na Farmacopeia Brasileira 6ª Ed.",
+          "Formulário de Fitoterápicos — indicação: diurético, coadjuvante em litíase renal.",
+          "RDC 26/2014 — fitoterápico de notificação simplificada."
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Cultivo controlado é possível e recomendado para garantir identidade botânica (evitar adulteração com outras espécies de Phyllanthus). Indian Pharmacopoeia: P. amarus monografado — indicação hepatoprotetor.",
+        "sazonalidade": "Partes aéreas disponíveis quase o ano todo em regiões tropicais. Colheita ideal: em floração/frutificação (maior concentração de lignanas)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Cultivo controlado com identificação botânica certificada (P. niruri confirmado por CCD ou genética) — produtores do CE, RN, SP. Secundário: Ervanários certificados — verificar espécie. ATENÇÃO: a principal fraude no mercado de rompe-pedra é coleta de espécie errada — diversos Phyllanthus sem atividade litolítica documentada são vendidos como 'quebra-pedra'.",
+        "faixa_de_preco": [
+          "Partes aéreas secas granel (ervanário): R$ 15–30/100 g",
+          "Material certificado (espécie + orgânico): R$ 30–60/100 g",
+          "Extrato seco padronizado em filantina (cápsulas): R$ 30–60/60 cápsulas",
+          "Tintura 1:5: R$ 20–40/100 ml"
+        ],
+        "formatos": "Partes aéreas secas (infusão — formato Ervatório preferencial); Sachê pirâmide (blend diurético/litolítico — com cavalinha e solidago); Extrato seco padronizado em filantina (cápsulas — farmácia); Tintura hidroalcoólica; Planta fresca (disponível no quintal — coleta própria possível com identificação correta)."
+      },
+      "destaques": [
+        {
+          "label": "Convergência 4 continentes",
+          "texto": "BR, Peru, Índia, Nigéria — uso litolítico independente em todas as culturas tropicais"
+        },
+        {
+          "label": "Mecanismo quadrifásico",
+          "texto": "Hipofilantina inibe nucleação + crescimento + agregação + relaxa ureter — Schor UNIFESP"
+        },
+        {
+          "label": "Hepatite B promissor",
+          "texto": "Eliminou HBsAg em 59% dos portadores crônicos — Thyagarajan Lancet 1988"
+        }
+      ]
     },
     {
       "slug": "angico",
       "nome_popular": "Angico",
-      "nome_cientifico": "Anadenanthera colubrina (Vell.) Brenan var. cebil (Griseb.) Altschul",
-      "tagline": "A casca da respiração sertaneja — expectorante e antisséptico da caatinga com tradição nordestina secular e ação confirmada contra infecções respiratórias.",
+      "nome_cientifico": "Anadenanthera colubrina (Vell.) Brenan",
+      "tagline": "A casca da respiração sertaneja — expectorante e antisséptico da caatinga com tradição nordestina secular, goma medicinal usada desde a colônia, e uma complexidade regulatória que separa a casca medicinal das sementes psicoativas.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Anadenanthera colubrina (Vell.) Brenan var. cebil (Griseb.) Altschul",
-        "familia_botanica": "Fabaceae / Mimosoideae",
-        "tipo_botanico": "Fitoterápico expectorante / antisséptico",
-        "parte_usada": "Casca do caule (entrecasca); goma (exsudato resinoso).",
+        "familia_botanica": "Fabaceae / Mimosoideae (família do barbatimão, da jurema, da acácia)",
+        "tipo_botanico": "Fitoterápico expectorante / antisséptico / adstringente",
+        "parte_usada": "Casca do caule (entrecasca) — uso medicinal principal: expectorante, antisséptico oral/faríngeo. Goma do tronco (exsudato resinoso — 'goma de angico') — uso demulcente, emoliente, cosmético. DISTINÇÃO CRÍTICA: casca do caule = rica em taninos e saponinas; uso medicinal seguro. Sementes = contêm bufotenina (5-HO-DMT) em 2–12%; substância psicoativa controlada; uso ritual exclusivamente indígena. O Ervatório trabalha exclusivamente com casca do caule e goma.",
         "sinonimos": [
-          "Angico · angico-do-cerrado · angico-branco · curupay (Argentina/Paraguai)",
-          "Cebil (espanhol sul-americano)",
-          "ATENÇÃO: sementes de angico contêm bufotenina (5-HO-DMT) — substância psicoativa controlada. Sementes são usadas ritualmente em contexto indígena; uso recreativo é ilegal."
+          "Angico · angico-branco · angico-do-cerrado · angico-preto (confusão regional)",
+          "Curupay (Argentina/Paraguai — mesmo uso) · Cebil (espanhol — refere-se mais às sementes)",
+          "Vilca (quéchua — Peru — refere-se às sementes no contexto ritual)",
+          "ATENÇÃO: 'angico' no Brasil pode referir-se a múltiplas espécies de Anadenanthera, Piptadenia e Parapiptadenia — confirmar espécie botânica."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Madeira sertaneja seca, tanino, leve balsâmico.",
-        "cor_da_infusao": "Marrom-avermelhado escuro. #7A3020",
-        "intensidade": "4/5 — medicinal intenso.",
-        "notas": "",
-        "bioma_de_origem": "Caatinga e Cerrado — CE, RN, PB, PE, BA, PI, MG.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Casca: Adstringente intenso, amargo moderado, tanino limpo e pronunciado, fundo resinoso. Similar à aroeira em intensidade. Goma: Neutra, mucilaginosa, levemente adocicada — textura de goma arábica.",
+        "aroma": "Casca: Madeira sertaneja seca, tanino concentrado, leve balsâmico-resinoso. Fundo de terra vermelha. Goma: Praticamente inodora — neutra.",
+        "cor_da_infusao": "Casca: Marrom-avermelhado escuro, opaco. #7A3020. Goma dissolvida: Âmbar claro transparente. #D8B870",
+        "intensidade": "4/5 (casca em decocção) — medicinal intenso. 1/5 (goma) — neutra, demulcente.",
+        "notas": "Casca — Cabeça: tanino seco imediato | Corpo: amargo-resinoso, amadeirado | Fundo: adstringência prolongada (8–10 min)",
+        "bioma_de_origem": "Caatinga e Cerrado seco — espécie de transição entre os dois biomas. Árvore de grande porte (até 25 m), casca escura fendida, copa ampla. Uma das árvores mais imponentes da caatinga.",
+        "distribuicao_geografica": [
+          "CE, RN, PB, PE, BA, PI, AL, SE (caatinga). MG, GO, MT, MS (cerrado seco/transição).",
+          "Extensão: Argentina (Misiones, Chaco — 'curupay'), Paraguai, Bolívia, Peru (Andes — 'vilca'/'cebil').",
+          "O angico tem distribuição ampla na América do Sul — uma das Fabaceae mais disseminadas do continente."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "Decocção a 98 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "5 g de casca seca para 500 ml.",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Mel · Propólis · Gengibre (blends antissépticos respiratórios)"
+        "temperatura_ideal": "Decocção a 98 °C — extrai eficientemente taninos e saponinas.",
+        "tempo_de_infusao": "15–20 minutos.",
+        "quantidade": "Casca em gargarejo/bochecho: 5 g/250 ml. Uso interno oral: 2–3 g/250 ml. Goma dissolvida: 5 g/250 ml.",
+        "metodo": "Casca: decocção suave para gargarejo/bochecho (faringite, amigdalite, gengivite). Goma: dissolvida em água morna para uso demulcente (tosse seca, irritação de garganta). A goma de angico é análoga funcional à goma arábica (Acacia senegal) — mesma família, mesma função.",
+        "reinfusoes": "1 reinfusão possível.",
+        "melhor_momento": "Gargarejo: 3–4x ao dia em episódios respiratórios. Goma: conforme necessário.",
+        "combina_com": "Mel (essencial para palatabilidade) · Própolis · Gengibre (blends antissépticos respiratórios) · Imburana-de-cheiro (aroma de baunilha suaviza o tanino)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para uso tópico antisséptico; forte tradição popular.",
+        "aplicacoes": [
+          {
+            "titulo": "Gargarejo para faringite e amigdalite",
+            "texto": "Decocção concentrada (5 g/250 ml), morna, gargarejo 30 s, 3–4x ao dia. Mecanismo: taninos precipitam proteínas na superfície da mucosa faríngea, criando barreira + ação antimicrobiana direta contra estreptococos."
+          },
+          {
+            "titulo": "Compressa para feridas",
+            "texto": "Decocção resfriada em gaze — antimicrobiano e adstringente tópico."
+          },
+          {
+            "titulo": "Goma como emoliente cutâneo",
+            "texto": "Goma dissolvida em água — aplicação como emoliente em pele ressecada. Uso cosmético popular."
+          }
+        ],
+        "contraindicacoes": "Uso tópico amplamente seguro."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Expectorante (fluidifica muco)",
-          "Antisséptico de mucosa respiratória e oral",
-          "Antimicrobiano (bactérias gram+ — especialmente estreptococos)",
-          "Adstringente",
+          "Expectorante (saponinas fluidificam muco brônquico)",
+          "Antisséptico de mucosa respiratória e oral (taninos antimicrobianos)",
+          "Antimicrobiano (gram+ — especialmente Streptococcus pyogenes, S. mutans)",
+          "Adstringente (precipitação de proteínas — barreira mucosa)",
           "Anti-inflamatório de vias aéreas",
-          "Componentes ativos:",
-          "Contraindicações: Gestação — dados insuficientes. Sementes: contraindicadas (psicoativas)."
+          "Demulcente (goma — proteção de mucosa irritada)"
         ],
         "componentes_ativos": [
           {
-            "label": "TANINOS CONDENSADOS",
-            "texto": "Adstringente, antimicrobiano"
+            "label": "Taninos condensados (proantocianidinas)",
+            "texto": "Casca (12–18%) — Adstringente, antimicrobiano, anti-inflamatório. Perfil tânico similar à aroeira"
           },
           {
-            "label": "SAPONINAS",
-            "texto": "Expectorante"
+            "label": "Saponinas triterpênicas",
+            "texto": "Casca — Expectorante (reduzem tensão superficial do muco → muco mais fluido e fácil de expectorar). Mecanismo clássico de saponinas como expectorantes"
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Anti-inflamatório"
+            "label": "Goma (arabinogalactana)",
+            "texto": "Exsudato do tronco — Demulcente, emoliente, espessante. Análoga à goma arábica"
           },
           {
-            "label": "GOMA ARÁBICA (exsudato)",
-            "texto": "Demulcente, emoliente"
+            "label": "Flavonóides (quercetina, luteolina)",
+            "texto": "Casca — Anti-inflamatório, antioxidante"
+          },
+          {
+            "label": "Bufotenina (5-HO-DMT)",
+            "texto": "SEMENTES apenas (2–12%); ausente ou em traços irrelevantes na casca — Psicoativo, substância controlada. Presença na raiz é a razão da regulação"
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Faringite e amigdalite (gargarejo)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos e crianças >6 anos — uso tradicional NE + mecanismo tânico documentado"
+          },
+          {
+            "indicacao": "Tosse produtiva (expectorante)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — saponinas, mecanismo clássico"
+          },
+          {
+            "indicacao": "Gengivite (bochecho)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — antimicrobiano contra S. mutans"
+          },
+          {
+            "indicacao": "Bronquite aguda",
+            "evidencia": "Tradicional forte",
+            "populacao": "Adultos — garrafadas nordestinas documentadas"
+          }
+        ],
+        "alerta_critico": {
+          "titulo": "Sementes — substância controlada (bufotenina)",
+          "titulo2": "Portaria 344/98 ANVISA — Lista F2",
+          "corpo": "As sementes de angico contêm bufotenina (5-HO-DMT) em concentrações de 2–12% — substância psicoativa controlada (Lista F2 da Portaria 344/98). Foram usadas como rapé ritualístico por povos indígenas das Américas por milênios (cachimbos arqueológicos de 4.000 anos no norte da Argentina e Chile). Na região andina, o 'vilca' ou 'cebil' era usado por sacerdotes Tiwanaku e Wari. No Brasil, povos do semiárido usavam em rituais de passagem e cura. Esse contexto é historicamente importante mas regulamentarmente distinto do uso medicinal da casca — o Ervatório narra a história completa mas trabalha exclusivamente com casca e goma."
+        },
+        "contraindicacoes": [
+          "Gestação: dados insuficientes — evitar uso interno",
+          "Sementes: contraindicadas — psicoativas (bufotenina controlada)",
+          "Crianças <6 anos: bochecho não recomendado (risco de deglutição)",
+          "Uso interno prolongado (>4 semanas): cautela com taninos"
+        ],
+        "interacoes": [
+          {
+            "label": "Ferro oral",
+            "texto": "Taninos quelam ferro. Conduta: espaçar 2h"
+          },
+          {
+            "label": "Antibióticos orais",
+            "texto": "Ação complementar (antimicrobiano local + sistêmico). Conduta: uso combinado possível"
+          }
+        ],
+        "efeitos_adversos": "Casca em dose usual: raros. Constipação em uso interno prolongado (taninos). Desconforto gástrico em doses >10 g/dia.",
+        "dose_maxima": "Casca seca: até 6 g/dia em decocção. Gargarejo: sem limite relevante (uso tópico).",
+        "fontes": [
+          "Monteiro JM et al. — Taninos: uma abordagem da química à ecologia (Quim Nova, 2005) — inclui Anadenanthera",
+          "Albuquerque UP et al. — Medicinal plants of the caatinga (semi-arid) vegetation of NE Brazil (J Ethnopharmacol, 2007)",
+          "Santos SC et al. — Tannin composition of barbatimão and angico species and their antibacterial activity (Braz J Pharmacogn, 2006)",
+          "Lorenzi H — Árvores Brasileiras (Instituto Plantarum, 2002)",
+          "Torres AR et al. — An ethnobotanical survey in the Chapada do Araripe (Ceará, Brazil) (J Ethnopharmacol, 2005)",
+          "Pachter IJ et al. — Indole alkaloids of Acer saccharinum, Dictyoloma incanescens, Piptadenia colubrina, and Mimosa hostilis (J Org Chem, 1959)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente (1/3 na goma — galactose e arabinose liberadas na hidrólise)"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "3/3",
+            "observacao": "Intenso na decocção de casca — taninos + alcalóides traços; amargura seca de casca. 0/3 na goma."
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Tanino-sertanejo-amadeirado",
+        "olfativo_descritores": [
+          "Madeira seca do sertão (similar à aroeira)",
+          "Tanino concentrado (proantocianidinas voláteis)",
+          "Terra vermelha do semiárido",
+          "Leve balsâmico-resinoso (inferior ao da imburana)",
+          "Casca calcinada pelo sol"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "4/5 — Muito alta (casca)",
+            "molecula": "Taninos condensados (12–18%) — similar à aroeira em intensidade e prolongação. A casca de angico é intercambiável com a aroeira em intensidade adstringente"
+          }
+        ],
+        "tatil": "Casca: corpo médio em decocção. Adstringência intensa que contrai a mucosa de forma pronunciada. Persistência alta — 8–10 min. Goma: textura mucilaginosa — reveste a boca com filme protetor suave e escorregadio. É o oposto tátil da casca: enquanto a casca seca, a goma hidrata.",
+        "descricao_integrada": "O angico é farmacologicamente dual: casca para 'fechar' (adstringência antimicrobiana) e goma para 'proteger' (demulcente emoliente). A mesma árvore oferece a ferramenta de ataque (casca) e de defesa (goma). Para o Ervatório: o angico é a erva das garrafadas — ingrediente quase obrigatório das fórmulas compostas de raizeiros nordestinos. Sozinho, é casca adstringente sem grande diferenciação sensorial vs aroeira. Em blend, é a fundação adstringente que permite que ingredientes aromáticos (imburana, gengibre) brilhem. Seu papel é estrutural, não protagonista."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O angico é a árvore do sertão nordestino mais usada em garrafadas — preparados compostos de múltiplas cascas em água ou aguardente que rezadeiras e raizeiros do interior nordestino prescrevem para \"tosse, catarro e peito cheio\". A casca de angico é ingrediente obrigatório dessas fórmulas tradicionais. Sua madeira é a mais densa do Brasil — usada em estacas, construção e carvão de altíssimo poder calorífico.",
-        "curiosidade": ""
+        "historia": "O angico é a árvore do sertão nordestino mais presente em garrafadas — preparados compostos de múltiplas cascas em cachaça ou mel que rezadeiras e raizeiros do interior prescrevem para 'tosse, catarro, peito cheio, garganta inflamada'. A casca de angico é ingrediente tão obrigatório nas garrafadas respiratórias quanto a aroeira nas garrafadas anti-inflamatórias. A goma de angico foi produto comercial no Brasil colonial — exportada como substituta da goma arábica africana para uso em farmácia, confeitaria e indústria têxtil. As primeiras farmacopeias brasileiras (séc. XIX) listam 'goma de angico' como excipiente farmacêutico. O CONTEXTO RITUAL DAS SEMENTES: as sementes de angico (contendo bufotenina — 5-HO-DMT) foram usadas como psicoativo ritualístico por povos indígenas das Américas por milênios. Cachimbos de rapé de Anadenanthera datados de 4.000 anos foram encontrados em sítios arqueológicos no norte da Argentina e no Chile. Na região andina, o 'vilca' ou 'cebil' (rapé de sementes de angico) era usado por sacerdotes Tiwanaku e Wari em cerimônias divinatórias.",
+        "cerimonial": "O contexto ritual das sementes (vilca/cebil) é historicamente importante mas regulamentarmente distinto do uso medicinal da casca. O Ervatório respeita essa distinção e trabalha exclusivamente com casca do caule e goma — uso medicinal seguro e legal.",
+        "brasil": "A casca de angico é vendida em todas as feiras livres e ervanários do Nordeste brasileiro — tão difundida quanto a aroeira e a jurema. Seu uso é particularmente forte no Piauí, Ceará e Pernambuco para afecções respiratórias. A madeira é das mais densas do Brasil — usada em construção, carvão vegetal e cercas.",
+        "curiosidade": "A bufotenina (5-HO-DMT) das sementes recebeu seu nome da toxina de sapos do gênero Bufo — que produzem a mesma molécula em suas glândulas parotóides. A convergência evolutiva entre um sapo e uma árvore produzindo a mesma molécula psicoativa é um dos exemplos mais curiosos de química ecológica: moléculas que afetam o sistema nervoso de predadores evoluíram independentemente em reinos biológicos completamente distintos."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Fitoterápico tradicional",
-        "status_anvisa": "Uso popular reconhecido. Sementes: bufotenina é substância controlada.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Casca coletada no período seco"
+        "status_anvisa": [
+          "Casca do caule: uso popular reconhecido (sem monografia oficial).",
+          "Goma: uso alimentar/farmacêutico como excipiente.",
+          "Sementes: contêm bufotenina — substância da Lista F2 (Portaria 344/98)."
+        ],
+        "status_ema": "Não monografado",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Sem certificação específica para a casca. Manejo sustentável recomendado (coleta parcial sem anelamento).",
+        "sazonalidade": "Casca: coletada preferencialmente no período seco (junho–outubro). Goma: exsudação contínua — coleta no período seco facilita."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Prioridade: Raizeiros e ervanários certificados do NE — CE, PI, PE. ATENÇÃO: confirmar que o produto é casca do caule (medicinal) — não sementes (controladas).",
+        "faixa_de_preco": [
+          "Casca seca granel: R$ 15–30/100 g",
+          "Goma de angico: R$ 30–60/100 g",
+          "Tintura de casca: R$ 20–40/100 ml"
+        ],
+        "formatos": "Casca seca em pedaços (decocção — formato tradicional); Goma natural (demulcente — uso oral); Tintura de casca (gargarejo/bochecho — farmácia); Pó de casca (sachê para infusão)."
+      },
+      "destaques": [
+        {
+          "label": "Garrafada nordestina",
+          "texto": "Ingrediente obrigatório das fórmulas respiratórias de raizeiros do sertão"
+        },
+        {
+          "label": "Goma medicinal",
+          "texto": "Análoga à goma arábica — usada em farmácia desde o séc. XIX"
+        },
+        {
+          "label": "Caule ≠ Sementes",
+          "texto": "Ervatório usa casca medicinal. Sementes contêm bufotenina (substância controlada)"
+        }
+      ]
     },
     {
       "slug": "mastruz",
       "nome_popular": "Mastruz",
-      "nome_cientifico": "Dysphania ambrosioides (L.) Mosyakin & Clemants (sin.: Chenopodium ambrosioides L.)",
-      "tagline": "O antiparasitário do quintal — vermífugo popular de distribuição pantropical com ação confirmada e uma das plantas mais usadas na medicina doméstica do Nordeste.",
+      "nome_cientifico": "Dysphania ambrosioides (L.) Mosyakin & Clemants",
+      "tagline": "O antiparasitário do quintal — vermífugo popular de distribuição pantropical com ação confirmada, margem terapêutica estreita e a tensão mais antiga entre remédio de avó e toxicologia moderna.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Dysphania ambrosioides (L.) Mosyakin & Clemants (sin.: Chenopodium ambrosioides L.)",
-        "familia_botanica": "Amaranthaceae",
-        "tipo_botanico": "Antiparasitário intestinal / cicatrizante",
-        "parte_usada": "Partes aéreas frescas ou secas (folhas, ramos); sementes (uso mais intenso — mais tóxico).",
+        "familia_botanica": "Amaranthaceae (antes Chenopodiaceae)",
+        "tipo_botanico": "Antiparasitário intestinal / cicatrizante / antimicrobiano",
+        "parte_usada": "Partes aéreas frescas ou secas (folhas, ramos); sementes (uso mais concentrado — mais tóxico). O ascaridol — PA antiparasitário principal — concentra-se mais nas sementes (3–5% do OE) que nas folhas (1–3%). A escolha entre folhas e sementes determina a margem de segurança: folhas = mais seguras, menor potência; sementes = maior potência, maior risco.",
         "sinonimos": [
           "Mastruz · mastruço · erva-de-santa-maria · quenopódio",
           "Epazote (México) · Wormseed (inglês)",
@@ -4573,214 +5277,446 @@
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Forte, aromático-pungente, levemente amargo, resinoso-herbáceo intenso. Aroma que divide opiniões radicalmente — quem cresceu com mastruz ama; quem não conhece, estranha.",
-        "aroma": "Mentolado-resinoso intenso, terpenóide pungente, feno aromático, levemente petrolado (ascaridol).",
+        "sabor_dominante": "Forte, aromático-pungente, levemente amargo, resinoso-herbáceo intenso. Perfil que divide: quem cresceu com mastruz reconhece como 'remédio de verdade'; quem não conhece, recua.",
+        "aroma": "Mentolado-resinoso intenso, terpenóide pungente (ascaridol + p-cimeno), feno aromático, levemente petrolado. Aroma invasivo que impregna o ambiente de preparo.",
         "cor_da_infusao": "Verde-amarelado a âmbar-verdoso. #8A9B40",
-        "intensidade": "4/5 — aroma invasivo, uso medicinal declarado.",
-        "notas": "",
-        "bioma_de_origem": "Pantropical ruderal — Caatinga, Cerrado, Mata Atlântica — quintais, terrenos, ambientes antropizados de Norte a Sul.",
-        "distribuicao_geografica": []
+        "intensidade": "4/5 — uso medicinal declarado.",
+        "notas": "Cabeça: terpênico-mentolado pungente | Corpo: herbáceo-resinoso amargo | Fundo: petrolato leve, persistente",
+        "bioma_de_origem": "Pantropical ruderal — Caatinga, Cerrado, Mata Atlântica — quintais, terrenos, calçadas de Norte a Sul. Cresce espontaneamente em qualquer terreno perturbado.",
+        "distribuicao_geografica": [
+          "Originária das Américas tropicais, naturalizada globalmente.",
+          "No Brasil: ubíqua — cresce espontaneamente em qualquer terreno perturbado.",
+          "México: ingrediente culinário obrigatório (epazote em feijões e quesadillas) — uso preventivo antiparasitário em dose culinária."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C (ascaridol volátil — não ferver para uso interno; ferver para uso tópico).",
-        "tempo_de_infusao": "",
-        "quantidade": "2–3 g de partes aéreas frescas ou 1–2 g de secas para 200 ml.",
-        "metodo": "Infusão coberta (interno — dose baixa). Decocção (tópico — cicatrizante).",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "85–90 °C (ascaridol volátil — não ferver para uso interno; ferver para uso tópico cicatrizante).",
+        "tempo_de_infusao": "5–8 min coberto — NÃO mais (ascaridol extraído progressivamente — infusão longa = dose mais alta = mais risco).",
+        "quantidade": "2–3 g de partes aéreas frescas ou 1–2 g de secas para 200 ml. DOSE BAIXA é essencial.",
+        "metodo": "Infusão coberta (interno — dose baixa). Decocção (tópico — cicatrizante). USO POPULAR NE: suco de folhas frescas batidas com mel e limão (ou leite) — vermífugo caseiro. ATENÇÃO: margem terapêutica estreita neste formato.",
+        "reinfusoes": "0 — descartar após primeira infusão (ascaridol já extraído).",
+        "melhor_momento": "Uso vermífugo: 3–5 dias máximo, dose única matinal em jejum. NÃO usar continuamente.",
+        "combina_com": "Mel (palatabilidade) · Limão (vitamina C complementar) · Hortelã (refresca o pungente)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para cicatrização e antimicrobiano tópico.",
+        "aplicacoes": [
+          {
+            "titulo": "Cataplasma cicatrizante (uso principal tópico)",
+            "texto": "Folhas frescas maceradas ou levemente aquecidas, aplicadas diretamente sobre feridas, contusões e hematomas. Uso popular amplíssimo no NE para 'pancada' e 'torcedura'. Mecanismo: ascaridol + p-cimeno — antimicrobiano + anti-inflamatório de contato."
+          },
+          {
+            "titulo": "Lavagem de feridas",
+            "texto": "Decocção forte (10 g/500 ml) resfriada — antisséptico."
+          }
+        ],
+        "contraindicacoes": "Pele sensível: irritação possível (terpenos pungentes). Testar pequena área primeiro."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antiparasitário intestinal (Ascaris, Ancilostoma, Enterobius)",
-          "Cicatrizante (uso tópico)",
+          "Antiparasitário intestinal (Ascaris lumbricoides, Ancylostoma duodenale, Enterobius vermicularis, Strongyloides)",
+          "Cicatrizante tópico",
           "Antimicrobiano",
           "Anti-inflamatório",
-          "Expectorante leve",
-          "Componentes ativos:",
-          "⚠️ ATENÇÃO — ASCARIDOL:",
-          "Contraindicações:",
-          "Gestação — contraindicado (abortivo em doses moderadas)",
-          "Lactação — evitar",
-          "Crianças < 2 anos — contraindicado",
-          "Hepatopatias e nefropatias — contraindicado",
-          "Óleo essencial: contraindicado em qualquer forma de uso interno"
+          "Expectorante leve"
         ],
         "componentes_ativos": [
           {
-            "label": "ASCARIDOL",
-            "texto": "Antiparasitário potente — peróxido terpênico — TÓXICO em dose alta"
+            "label": "Ascaridol",
+            "texto": "40–70% do OE (sementes); 20–40% (folhas) — Antiparasitário: peróxido terpênico que danifica tegumento e musculatura de helmintos. TÓXICO em dose alta — hepatotóxico, nefrotóxico, neurotóxico. DL50 relativamente baixa"
           },
           {
-            "label": "P-CIMENO",
-            "texto": "Antimicrobiano, antifúngico — —"
+            "label": "P-cimeno",
+            "texto": "15–25% — Antimicrobiano, antifúngico. Baixa toxicidade"
           },
           {
-            "label": "LIMONENO",
-            "texto": "Antimicrobiano, carminativo — —"
+            "label": "Limoneno",
+            "texto": "5–10% — Antimicrobiano, carminativo. Seguro"
           },
           {
-            "label": "ÁCIDO ASCÓRBICO",
-            "texto": "Nutritivo — Vitamina C"
+            "label": "Alfa-terpineno",
+            "texto": "Precursor metabólico do ascaridol"
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Anti-inflamatório — —"
+            "label": "Ácido ascórbico",
+            "texto": "Folhas frescas — Antioxidante, imunidade. Seguro"
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [
-          "Gestação — contraindicado (abortivo em doses moderadas)",
-          "Lactação — evitar",
-          "Crianças < 2 anos — contraindicado",
-          "Hepatopatias e nefropatias — contraindicado",
-          "Óleo essencial: contraindicado em qualquer forma de uso interno"
+        "evidencia": [
+          {
+            "indicacao": "Ascaridíase (verminose por Ascaris)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos e crianças (com cautela) — uso tradicional validado + estudos pré-clínicos"
+          },
+          {
+            "indicacao": "Ancilostomíase",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — farmacopeias históricas"
+          },
+          {
+            "indicacao": "Cicatrização tópica (cataplasma)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — uso popular NE documentado"
+          }
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "alerta_critico": {
+          "titulo": "Toxicologia do ASCARIDOL",
+          "titulo2": "Margem terapêutica ESTREITA",
+          "corpo": "O ascaridol é um peróxido terpênico — quimicamente instável e biologicamente reativo. É o PA antiparasitário MAS também o agente tóxico. Mortes por overdose de óleo essencial de mastruz estão documentadas na literatura — especialmente tentativas de uso como abortivo. ÓLEO ESSENCIAL PURO DE MASTRUZ: PROIBIDO PARA USO INTERNO EM QUALQUER DOSE. A infusão fraca de folhas (1–2 g/200 ml, 5 min) extrai quantidade de ascaridol abaixo do limiar tóxico para adultos saudáveis — mas a margem é estreita. Uso curto (3–5 dias máximo) e dose baixa são imperativos."
+        },
+        "contraindicacoes": [
+          "Gestação — CONTRAINDICADO (abortivo em doses moderadas)",
+          "Lactação — evitar",
+          "Crianças <2 anos — CONTRAINDICADO",
+          "Hepatopatias e nefropatias — CONTRAINDICADO",
+          "Óleo essencial interno — CONTRAINDICADO em qualquer forma"
+        ],
+        "interacoes": [
+          {
+            "label": "Hepatotóxicos (paracetamol, estatinas, álcool)",
+            "texto": "Hepatotoxicidade aditiva. Conduta: contraindicado uso conjunto"
+          },
+          {
+            "label": "Anticonvulsivantes",
+            "texto": "Ascaridol pode reduzir limiar convulsivo. Conduta: monitorar"
+          }
+        ],
+        "efeitos_adversos": "Em dose baixa de infusão de folhas (uso curto): tolerável. Em dose alta ou óleo essencial: hepatotoxicidade aguda, convulsões, depressão respiratória, morte.",
+        "dose_maxima": "Folhas frescas em infusão: 3 g/dia (adultos saudáveis). Uso CURTO: 3–5 dias máximo para vermífugo — não uso crônico. Crianças: somente sob orientação médica especializada.",
+        "fontes": [
+          "Farmacopeia Brasileira — referência histórica para Chenopodium ambrosioides",
+          "Monzote L et al. — Activity of the essential oil from Chenopodium ambrosioides against Leishmania (Phytomedicine, 2006)",
+          "Reis JDE et al. — Chenopodium ambrosioides: medicinal uses, phytochemistry, and toxicology (Rev Bras Farmacogn, 2019)",
+          "MacDonald D et al. — Ascaridole-less infusions of Chenopodium ambrosioides contain a nematocide(s) (J Ethnopharmacol, 2004)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "2/3",
+            "observacao": "Presente — ascaridol e terpenos; amargura resinosa-pungente"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Mentolado-resinoso pungente (terpenoide)",
+        "olfativo_descritores": [
+          "Mentolado-resinoso pungente",
+          "Petrolato-terpênico (ascaridol)",
+          "Feno aromático intenso",
+          "P-cimeno 'limpo'",
+          "Terra de quintal"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Leve",
+            "molecula": "Ascaridol (irritante leve de mucosa)"
+          },
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Leve",
+            "molecula": "P-cimeno + mentol traços"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Leve",
+            "molecula": "Terpenos pungentes"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Baixa",
+            "molecula": "Taninos mínimos"
+          }
+        ],
+        "tatil": "Corpo leve. Sensação de 'limpeza pungente' na boca — o ascaridol cria micro-irritação que é percebida como 'remédio forte'. Persistência média (5–8 min).",
+        "descricao_integrada": "O mastruz é a infusão que cheira e sabe a 'quintal de avó nordestina' — aroma que evoca memória olfativa de infância para quem cresceu no NE. Para o Ervatório, o mastruz é o caso mais delicado de comunicação editorial: precisa equilibrar respeito à tradição popular (vermífugo de geração) com transparência toxicológica (margem terapêutica estreita). A narrativa correta não é proibir nem promover — é educar sobre dose, duração e quem deve evitar."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O mastruz é o vermífugo de quintal de boa parte do Brasil. \"Suco de mastruz com mel e leite\" para verme em criança é prática popular documentada em todo o Nordeste — e discutida entre pediatras e fitoterapeutas pela estreita margem entre dose terapêutica e tóxica. No México, a planta (epazote) é ingrediente culinário obrigatório em feijões e quesadillas — uso que reduz flatulência e tem ação antiparasitária preventiva sutil.",
-        "curiosidade": ""
+        "historia": "O mastruz é o vermífugo de quintal de boa parte do Brasil. 'Suco de mastruz com mel e leite' para verme em criança é prática popular documentada em todo o Nordeste — e discutida entre pediatras e fitoterapeutas pela estreita margem entre dose terapêutica e tóxica. No México (epazote), é ingrediente culinário obrigatório em feijões e quesadillas — uso preventivo antiparasitário em dose culinária (dose muito menor que a medicinal).",
+        "cerimonial": "Sem cerimônia codificada — mas o ato de 'fazer suco de mastruz pra criança que tá com verme' é prática familiar nordestina que atravessa gerações sem questionamento. A avó que prepara é a mesma que tomou da bisavó.",
+        "brasil": "O mastruz ilustra a tensão entre conhecimento popular e farmacologia moderna: tradição valida o uso vermífugo (e há mecanismo farmacológico real); toxicologia alerta para margem estreita. O Ervatório posiciona o mastruz como erva de uso pontual e dose controlada — não como infusão de consumo regular.",
+        "curiosidade": "O ascaridol foi o primeiro peróxido orgânico natural identificado (1895) e o primeiro antiparasitário vegetal industrializado — 'óleo de quenopódio' era medicamento de farmácia nos EUA e Europa até os anos 1940, quando foi substituído por anti-helmínticos sintéticos mais seguros. A história do mastruz é a história da transição de remédio de quintal para fármaco industrial e de volta para quintal — quando a indústria o abandonou, a avó continuou usando."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Fitoterápico tradicional",
-        "status_anvisa": "Uso tradicional reconhecido com ressalvas de segurança. Óleo essencial: proibido para uso interno.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": ""
+        "status_anvisa": [
+          "Uso tradicional reconhecido com ressalvas de segurança.",
+          "Óleo essencial: PROIBIDO para uso interno."
+        ],
+        "status_ema": "Não monografado (uso histórico europeu como erva-de-santa-maria)",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "RENISUS: incluído com observações de segurança.",
+        "sazonalidade": "Disponível o ano todo (ruderal tropical perene). Folhas frescas: melhor potência."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Folhas secas: R$ 15–30/100 g (ervanários). Planta fresca: disponível em qualquer quintal tropical.",
+        "faixa_de_preco": [
+          "Folhas secas (ervanário): R$ 15–30/100 g",
+          "Tintura (farmácia de manipulação): R$ 25–50/100 ml"
+        ],
+        "formatos": "Folhas secas (infusão); Planta fresca (suco — formato popular NE); Tintura (farmácia)."
+      },
+      "destaques": [
+        {
+          "label": "Vermífugo de quintal",
+          "texto": "Tradição NE secular para verminose intestinal — uso curto e dose controlada"
+        },
+        {
+          "label": "Ascaridol — margem estreita",
+          "texto": "Princípio ativo é também o tóxico — folhas em dose baixa, NUNCA óleo essencial"
+        },
+        {
+          "label": "Epazote mexicano",
+          "texto": "Mesma erva, uso culinário preventivo no México (feijões e quesadillas)"
+        }
+      ]
     },
     {
       "slug": "umbu",
       "nome_popular": "Umbu",
       "nome_cientifico": "Spondias tuberosa Arruda",
-      "tagline": "O sabor do sertão — fruto endêmico da caatinga com vitamina C excepcional, adaptação extrema à seca e uma identidade cultural nordestina insubstituível.",
+      "tagline": "O sabor do sertão — fruto endêmico da caatinga com vitamina C excepcional, adaptação extrema à seca que armazena 3.000 litros de água nas raízes, e uma identidade cultural nordestina que nenhuma fruta importada substitui.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Spondias tuberosa Arruda",
-        "familia_botanica": "Anacardiaceae (família da manga, do caju)",
+        "familia_botanica": "Anacardiaceae (família da manga, do caju, da aroeira)",
         "tipo_botanico": "Alimento funcional / fitoterápico",
-        "parte_usada": "Fruto (polpa e suco); folhas (infusão); casca (decocção); raiz tuberosa (reservatório de água — uso de sobrevivência indígena).",
+        "parte_usada": "Fruto maduro (polpa e suco — alimentar/funcional); folhas (infusão — anti-inflamatório, antidiarreico); casca do caule (decocção — adstringente); raiz tuberosa (xilopódio — reservatório de água — uso de sobrevivência indígena, não medicinal). O umbuzeiro possui raízes tuberosas (xilopódios) que armazenam até 3.000 litros de água — adaptação à seca que permite à árvore sobreviver meses sem chuva e que serviu como fonte de água para viajantes, tropeiros e animais no sertão por séculos.",
         "sinonimos": [
           "Umbu · imbu · imbuzeiro (árvore)",
-          "Umbuzeiro (arvore sagrada do sertão)"
+          "Taperebá-do-sertão (confusão com S. mombin)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Cítrico tropical intenso, manga jovem, frutas amarelas, levemente fermentado agradável.",
-        "cor_da_infusao": "",
-        "intensidade": "",
-        "notas": "",
-        "bioma_de_origem": "Caatinga — endêmico. CE, RN, PB, PE, AL, SE, BA, PI, MG.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Fruto: Azedo-doce intenso e inconfundível, cítrico tropical vibrante, fruta amarela madura, refrescante puro. Polpa agridoce sem paralelo no catálogo — mais ácido que manga, mais doce que limão, mais complexo que ambos.",
+        "aroma": "Cítrico tropical intenso, manga jovem verde, frutas amarelas maduras (abricó, cajá), levemente fermentado agradável — o aroma de 'sertão que deu chuva'.",
+        "cor_da_infusao": "Suco: Amarelo-esverdeado turvo. #D4C020",
+        "intensidade": "Fruto 4/5 — sabor dominante. Folhas 2/5 — suave.",
+        "notas": "Cabeça: cítrico-tropical vívido | Corpo: doce-ácido equilibrado, manga jovem | Fundo: fermentado nobre suave, refrescância persistente",
+        "bioma_de_origem": "Caatinga — ENDÊMICO. Não existe naturalmente fora do semiárido brasileiro. A árvore é tão identificada com a caatinga que Euclides da Cunha a descreveu como 'a árvore sagrada do sertão'.",
+        "distribuicao_geografica": [
+          "CE, RN, PB, PE, AL, SE, BA, PI, MG (Norte de Minas).",
+          "Não cultivado fora da caatinga em escala — tentativas em irrigação fracassaram (a árvore precisa da seca para frutificar bem)."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "Folhas: 90 °C. Casca: 98 °C decocção.",
+        "tempo_de_infusao": "Folhas: 8 min. Casca: 15 min.",
+        "quantidade": "Folhas: 3–5 g/250 ml. Casca: 5 g/500 ml.",
+        "metodo": "Suco do fruto (uso principal): fruto maduro amassado + água + açúcar opcional. Umbuzada: suco + leite condensado — bebida típica NE. Geleia · Polpa congelada · Sorvete · Licor. Folhas: infusão. Casca: decocção.",
+        "reinfusoes": "Folhas: 1 reinfusão.",
+        "melhor_momento": "Suco: bebida refrescante de verão. Folhas: anti-inflamatório/antidiarreico conforme necessário.",
+        "combina_com": "Caju · Siriguela · Cajá · Mel · Gengibre (blends frutais NE)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Fraca para uso tópico isolado.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressa de folhas para inflamação leve",
+            "texto": "Infusão forte resfriada em gaze — anti-inflamatório tópico leve. Uso popular."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações relevantes para uso tópico."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antioxidante (vitamina C excepcional — até 3x a laranja)",
-          "Anti-inflamatório (folhas)",
-          "Antidiarreico (casca adstringente)",
+          "Antioxidante excepcional (vitamina C até 3x a laranja)",
+          "Anti-inflamatório (folhas — taninos)",
+          "Antidiarreico (casca — adstringência tânica)",
           "Vitamínico e nutritivo",
-          "Hidratante (fruto rico em água — adaptação ao bioma)",
-          "Componentes ativos:",
-          "Contraindicações: Sem contraindicações relevantes em uso alimentar. Casca: gestação — cautela."
+          "Hidratante (fruto — alto teor de água adaptado à seca)"
         ],
         "componentes_ativos": [
           {
-            "label": "VITAMINA C (ácido ascórbico)",
-            "texto": "Antioxidante, imunidade — concentração excepcional"
+            "label": "Vitamina C (ácido ascórbico)",
+            "texto": "Fruto — 18–33 mg/100 g (algumas variedades >50 mg) — Antioxidante, imunidade"
           },
           {
-            "label": "CAROTENÓIDES (beta-caroteno)",
-            "texto": "Antioxidante, pró-vitamina A"
+            "label": "Carotenóides (beta-caroteno)",
+            "texto": "Fruto — Antioxidante, pró-vitamina A"
           },
           {
-            "label": "TANINOS (casca/folhas)",
-            "texto": "Antidiarreico, anti-inflamatório"
+            "label": "Taninos condensados",
+            "texto": "Casca/folhas — 8–12% — Antidiarreico, anti-inflamatório, adstringente"
           },
           {
-            "label": "ÁCIDOS ORGÂNICOS (cítrico, málico)",
-            "texto": "Digestivo, acidulante natural"
+            "label": "Ácidos orgânicos (cítrico, málico, tartárico)",
+            "texto": "Fruto — Digestivo, acidulante natural, antioxidante"
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Antioxidante"
+            "label": "Flavonóides (quercetina, rutina)",
+            "texto": "Folhas — Antioxidante, anti-inflamatório"
+          },
+          {
+            "label": "Fibras (pectina)",
+            "texto": "Fruto — Prebiótico, regulador intestinal"
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Antioxidante (fruto)",
+            "evidencia": "Forte (nutricional)",
+            "populacao": "Adultos e crianças — TACO/EMBRAPA"
+          },
+          {
+            "indicacao": "Anti-inflamatório (folhas)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — uso tradicional + estudos pré-clínicos"
+          },
+          {
+            "indicacao": "Antidiarreico (casca)",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — taninos, mecanismo clássico"
+          },
+          {
+            "indicacao": "Suplementação de vitamina C (semiárido)",
+            "evidencia": "Forte (nutricional)",
+            "populacao": "Comunidades rurais NE — programas de segurança alimentar"
+          }
+        ],
+        "contraindicacoes": [
+          "Sem contraindicações relevantes em uso alimentar.",
+          "Casca: gestação — cautela (taninos)."
+        ],
+        "interacoes": [
+          {
+            "label": "Sem interações medicamentosas relevantes documentadas",
+            "texto": "Uso seguro com a maioria das medicações"
+          }
+        ],
+        "efeitos_adversos": "Praticamente inexistentes em uso alimentar normal.",
+        "dose_maxima": "Fruto: sem limite (é alimento). Folhas: até 10 g/dia. Casca: até 6 g/dia.",
+        "fontes": [
+          "Silva ARA et al. — Physicochemical characterization and antioxidant potential of Spondias tuberosa (Food Sci Technol, 2012)",
+          "Albuquerque UP et al. — Medicinal plants of the caatinga (J Ethnopharmacol, 2007)",
+          "EMBRAPA Semiárido — O umbuzeiro e a agricultura familiar no semiárido (Documentos Técnicos)",
+          "Lorenzi H — Árvores Brasileiras (Instituto Plantarum, 2002)",
+          "Cavalcanti NB et al. — Uso do umbu no semiárido nordestino (EMBRAPA, 2000)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "2/3",
+            "observacao": "Presente — açúcares simples; equilibrada pela acidez"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "0/3",
+            "observacao": "Ausente no fruto maduro"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "3/3",
+            "observacao": "DOMINANTE — ácidos cítrico + málico; a acidez mais viva e refrescante entre frutas do catálogo"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Cítrico tropical com fundo de manga jovem",
+        "olfativo_descritores": [
+          "Cítrico tropical intenso",
+          "Manga jovem verde",
+          "Abricó-cajá",
+          "Fermentado nobre suave",
+          "Frescor de sertão após chuva"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Muito baixa (fruto) / Moderada (casca)",
+            "molecula": "Taninos mínimos na polpa"
+          }
+        ],
+        "tatil": "Fruto: polpa suculenta-fibrosa, textura entre manga e cajá — suculência que explode na boca. O umbu é a fruta-água do sertão: seu teor de umidade (85%) é adaptação para hidratar quem a come num bioma onde a água falta. A persistência ácida é longa (10+ min) — refrescância que dura.",
+        "descricao_integrada": "O umbu é endêmico da caatinga e protegido culturalmente: sertanejo não derruba umbuzeiro mesmo em terra degradada. Sua raiz tuberosa (xilopódio) armazena até 3.000 litros de água — mecanismo de adaptação à seca que também serviu como fonte de água para viajantes e animais em séculos de exploração do sertão. O umbu é a fruta que o Nordeste mais ama e que o Brasil quase não conhece. São Paulo e Rio consomem manga, açaí, graviola — mas o umbu, endêmico da caatinga, nunca cruzou o Nordeste em escala comercial. Isso é oportunidade e missão para o Ervatório."
       },
       "cultura": {
-        "historia": "O umbuzeiro é a árvore sagrada do sertão nordestino. João Guimarães Rosa descreveu o encontro com o umbuzeiro como o encontro com o próprio sertão. A árvore é objeto de proteção cultural informal — sertanejos não derrubam umbuzeiro mesmo em terra degradada. Sua raiz tuberosa (xilopódio) armazena até 3.000 litros de água — mecanismo de adaptação à seca que também serviu como fonte de água para viajantes e animais em séculos de exploração do sertão.",
-        "cerimonial": "",
-        "brasil": "O umbu é a fruta que o Nordeste mais ama e que o Brasil quase não conhece. São Paulo e Rio consomem manga, açaí, graviola — mas o umbu, endêmico da caatinga, nunca cruzou o Nordeste em escala comercial. A polpa congelada existe em nichos, mas o fruto fresco é quase impossível de encontrar fora da caatinga. Isso é oportunidade e missão para o Ervatório.",
-        "curiosidade": ""
+        "historia": "O umbuzeiro é a árvore sagrada do sertão. João Guimarães Rosa em 'Grande Sertão: Veredas' e Euclides da Cunha em 'Os Sertões' descrevem o umbuzeiro como a árvore que define a paisagem e a sobrevivência sertaneja. A raiz tuberosa (xilopódio) — que armazena até 3.000 litros — era escavada por viajantes e indígenas como fonte de água de emergência.",
+        "cerimonial": "A árvore é objeto de proteção cultural informal — sertanejos não derrubam umbuzeiro mesmo em terra degradada. A umbuzada (suco + leite condensado) é patrimônio afetivo de gerações nordestinas.",
+        "brasil": "O umbu é a fruta que o Nordeste mais ama e o Brasil quase não conhece. Polpa congelada existe em nichos, o fruto fresco é quase impossível fora da caatinga. Oportunidade para o Ervatório: narrar e distribuir o que o Nordeste guarda para si.",
+        "curiosidade": "O xilopódio do umbuzeiro é uma das maiores estruturas de armazenamento de água subterrâneo do reino vegetal — até 3.000 litros em uma rede radicular que pode cobrir 100 m² ao redor da árvore. Essa adaptação ao semiárido não tem paralelo entre árvores frutíferas — é engenharia hídrica vegetal de precisão extrema."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Alimento funcional / Fitoterápico",
-        "status_anvisa": "Regulado como alimento",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutificação: dezembro–março (pico de umidificação da caatinga)"
+        "eixo_botanico_tpc": "Alimento funcional + Fitoterápico (folhas/casca)",
+        "status_anvisa": [
+          "Alimento regulamentado.",
+          "Folhas e casca: uso tradicional reconhecido."
+        ],
+        "status_ema": "Não presente no mercado europeu",
+        "status_fda": "Sem regulamentação específica nos EUA",
+        "certificacao_organica": "Status ambiental: protegido culturalmente — legislação estadual no NE.",
+        "sazonalidade": "Frutificação: dezembro–março (pico das chuvas na caatinga). Folhas: ano todo."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Polpa congelada: cooperativas extrativistas do NE. Fruto fresco: feiras locais (perecível). Folhas secas: ervanários NE.",
+        "faixa_de_preco": [
+          "Polpa congelada: R$ 15–30/kg",
+          "Fruto fresco: R$ 8–15/kg (feira NE)",
+          "Folhas secas: R$ 25–50/100 g"
+        ],
+        "formatos": "Polpa congelada · Geleia artesanal · Folhas secas (infusão) · Pó liofilizado (potencial exportação)"
+      },
+      "destaques": [
+        {
+          "label": "Endêmico da caatinga",
+          "texto": "Não existe naturalmente fora do semiárido brasileiro — identidade cultural sertaneja"
+        },
+        {
+          "label": "Xilopódio milagroso",
+          "texto": "Raiz armazena até 3.000 litros de água — engenharia hídrica vegetal sem paralelo"
+        },
+        {
+          "label": "Vitamina C excepcional",
+          "texto": "Até 3x a laranja em algumas variedades — superalimento esquecido do sertão"
+        }
+      ]
     },
     {
       "slug": "sucupira",
