@@ -932,6 +932,24 @@ function goToRodaFromLanding(btn){
 // clicando num CTA ("Entrar", "Descobrir meu chá", etc.). enterApp() já
 // detecta sessão prévia (erb_entered) e pula o modal de login se possível.
 
+// Atualiza o contador de "Ervas catalogadas" da landing com o total real
+// de fichas v1.1 publicadas no Supabase. Mantém o número da landing sempre
+// alinhado ao catálogo conforme novas fichas são importadas.
+(function(){
+  function updateStat(){
+    var el = document.getElementById('statErvas');
+    if (!el || typeof ErvatorioData === 'undefined') return;
+    ErvatorioData.getAllFichas().then(function(fichas){
+      if (fichas && fichas.length) el.textContent = String(fichas.length);
+    }).catch(function(){ /* mantém valor estático se offline */ });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updateStat);
+  } else {
+    updateStat();
+  }
+})();
+
 // ── PWA INSTALL ──
 let deferredPrompt = null;
 window.addEventListener('beforeinstallprompt', (e) => {
