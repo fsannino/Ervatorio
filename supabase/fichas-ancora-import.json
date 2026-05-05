@@ -11041,120 +11041,176 @@
     },
     {
       "slug": "boldo-do-chile",
-      "nome_popular": "Boldo-do-Chile",
-      "nome_cientifico": "Peumus boldus Molina",
-      "tagline": "O fígado da América do Sul — digestivo hepático sul-americano com a maior penetração de mercado de qualquer fitoterápico no Brasil e na América Latina, com eficácia sólida e riscos subnotificados.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Peumus boldus Molina",
-        "familia_botanica": "Monimiaceae",
-        "tipo_botanico": "Fitoterápico hepático / colagogo / digestivo",
-        "parte_usada": "Folhas secas.",
-        "sinonimos": [
-          "Boldo · boldo-do-chile · boldo-verdadeiro",
-          "Boldo (inglês/francês) · Boldo del Chile (espanhol)",
-          "ATENÇÃO: \"boldo-brasileiro\" é Plectranthus barbatus — espécie completamente diferente, familia diferente, química diferente."
+        "nome_popular": "Boldo-do-chile",
+        "nome_cientifico": "Peumus boldus",
+        "familia": "Monimiaceae",
+        "outros_nomes": [
+          "boldo-verdadeiro",
+          "boldo-chileno",
+          "boldo (ing.)",
+          "boldo du Chili (fr.)"
+        ],
+        "origem": "Chile e Peru (Andes)",
+        "partes_usadas": [
+          "folhas secas",
+          "extrato das folhas"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Intensamente amargo, resinoso-alcaloídico, persistente. Amargor denso e complexo — um dos mais ricos do catálogo.",
-        "aroma": "Resinoso-mentolado intenso, cânfora, herbal robusto, levemente eucaliptoide.",
-        "cor_da_infusao": "Verde-escuro a âmbar-esverdeado. #6A8028",
-        "intensidade": "4/5 — presença dominante.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Arbusto ou pequena árvore perene de 2–7 m, endêmica dos Andes chilenos e peruanos. Folhas coriáceas, ovais a elípticas (4–8 cm), verde-acinzentadas, com superfície rugosa coberta de papilas. Flores amarelo-esverdeadas em racemos. Frutos (drupas) amarelo-esverdeados, comestíveis. Aroma muito característico, forte e camphorado-herbáceo — inconfundível.",
+        "composicao_quimica": [
+          "Alcaloides isoquinolínicos (0,2–0,7%): boldina (principal ativo, 25–50% dos alcaloides totais) — hepatoprotetor e colerético",
+          "Outros alcaloides: isocoridina, reticulina, boldina N-óxido, laurotetanina",
+          "Óleo essencial (1–3%): ascaridol (20–40%) — potencialmente tóxico; p-cimeno, linalol, α-terpineno",
+          "Flavonoides: isorhamnetina, kaempferol",
+          "Taninos",
+          "Alantoína"
+        ],
+        "bioma": "Andino — Chile central e Peru, maquis mediterrâneo-americano",
+        "cultivo": "Pleno sol, solo bem drenado, clima mediterrâneo ou subtropical seco. Multiplica por sementes (germinação lenta) ou estacas. Crescimento lento. Plantas mais velhas têm maior concentração de boldina."
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C (boldina sensível ao calor intenso).",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 g de folhas secas para 250 ml. Dose baixa é essencial.",
-        "metodo": "Infusão simples coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "20–30 min antes das refeições — 2–3x ao dia.",
-        "combina_com": "Alcachofra · Carqueja · Dente-de-leão · Funcho"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Colagogo/colerético (maior indutor de fluxo biliar entre os fitoterápicos hepáticos)",
-          "Hepatoprotetor (boldina — antioxidante hepático)",
-          "Digestivo amargo",
-          "Diurético",
-          "Antiespasmódico",
-          "Componentes ativos:",
-          "⚠️ ATENÇÃO — BOLDINA:",
-          "Contraindicações:",
-          "Obstrução biliar — colagogo intenso, contraindicado",
-          "Gestação — boldina hepatotóxica e possivelmente teratogênica em doses altas",
-          "Hepatite aguda — pode agravar; usar apenas na fase crônica/manutenção",
-          "Ascaridol (OE) — hepatotóxico em dose alta"
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "BOLDINA (alcaloide aporfínico)",
-            "texto": "Colagogo potente, hepatoprotetor, antioxidante"
+            "tipo": "Infusão (uso interno — mais comum)",
+            "descricao": "1–2 folhas secas (1,5–3 g) em 150 mL de água a 80–90°C. Cobrir 10 min. Coar. 1–2 xícaras/dia, preferencialmente antes das refeições.",
+            "indicacoes": [
+              "dispepsia",
+              "hepatite leve",
+              "cálculos biliares (colerético)",
+              "constipação leve",
+              "digestão"
+            ]
           },
           {
-            "label": "ISOBOLDINA",
-            "texto": "Colagogo"
+            "tipo": "Decocção suave",
+            "descricao": "2–3 g de folhas em 200 mL. Aquecer até ferver suavemente e desligar imediatamente. Cobrir e infundir 10 min. Coar bem.",
+            "indicacoes": [
+              "esteatose hepática leve",
+              "digestão lenta",
+              "flatulência"
+            ]
           },
           {
-            "label": "NORISOCORYDINA",
-            "texto": "Antiespasmódico"
-          },
-          {
-            "label": "ÓLEOS ESSENCIAIS (ascaridol, p-cimeno)",
-            "texto": "Aromático, antimicrobiano"
-          },
-          {
-            "label": "FLAVONÓIDES",
-            "texto": "Antioxidante"
+            "tipo": "Extrato seco em cápsulas",
+            "descricao": "Cápsulas padronizadas em boldina (2–5 mg/cápsula). Conforme bula.",
+            "indicacoes": [
+              "hepatoproteção",
+              "colerético",
+              "digestão"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [
-          "Obstrução biliar — colagogo intenso, contraindicado",
-          "Gestação — boldina hepatotóxica e possivelmente teratogênica em doses altas",
-          "Hepatite aguda — pode agravar; usar apenas na fase crônica/manutenção",
-          "Ascaridol (OE) — hepatotóxico em dose alta"
+        "dicas": "Doses baixas e tempo de infusão moderado — ascaridol (no OE) pode ser tóxico em doses elevadas. A infusão curta extrai principalmente boldina e flavonoides; decocção prolongada extrai mais ascaridol. Não usar boldo com excesso de gorduras na dieta — potencializa o risco de sobrecarga biliar em pacientes com cálculos."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Compressa hepática",
+            "preparo": "Infusão morna. Compressa sobre região do hipocôndrio direito por 15–20 min.",
+            "indicacoes": [
+              "desconforto hepático",
+              "digestão pesada"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Colerético: boldina estimula secreção de bile pelo fígado — aumenta volume e fluidez da bile",
+          "Colagogo: facilita esvaziamento da vesícula biliar",
+          "Hepatoprotetor: boldina inibe lipoperoxidação hepática; protege hepatócitos do dano oxidativo",
+          "Antioxidante: boldina é um dos antioxidantes mais potentes entre alcaloides conhecidos (ORAC > vitamina E in vitro)",
+          "Espasmolítico: relaxa músculo liso do ducto biliar e intestinal",
+          "Laxante leve: aumento do fluxo biliar estimula motilidade intestinal",
+          "Anti-inflamatório: boldina inibe COX-2 e 5-LOX"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "CÁLCULOS BILIARES GRANDES: colagogo pode deslocar cálculos e causar cólica biliar — CONTRAINDICADO",
+          "OBSTRUÇÃO DAS VIAS BILIARES",
+          "GESTAÇÃO: alcaloides e ascaridol — contraindicado",
+          "LACTAÇÃO: contraindicado",
+          "Hepatite aguda grave ou insuficiência hepática severa",
+          "Crianças < 12 anos"
+        ],
+        "efeitos_adversos": [
+          "Diarreia em doses elevadas",
+          "Cólica abdominal",
+          "Ascaridol em doses excessivas: nefrotóxico e hepatotóxico",
+          "Cólica biliar em portadores de cálculos (deslocamento)"
+        ],
+        "interacoes": [
+          "Anticoagulantes: boldina tem ação antiagregante plaquetária — monitorar RNI",
+          "Hepatotóxicos (paracetamol, estatinas): possível sinergia hepatoprotetora mas também possível sobrecarga",
+          "Laxantes: efeito aditivo"
+        ],
+        "dose_segura": "Folhas secas: 2–4 g/dia em infusão (máx 2 xícaras). Uso máximo contínuo: 4–6 semanas. EMA/ESCOP: uso medicinal tradicional para dispepsia e afecções hepáticas leves. Não exceder doses recomendadas.",
+        "nivel_evidencia": "EMA/HMPC: uso medicinal tradicional bem estabelecido para dispepsia e suporte hepático leve. ESCOP monografia. Boldina: extensos estudos pré-clínicos in vitro e in vivo. Estudos clínicos: limitados mas com resultados positivos para função hepática e digestão."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Intenso, camphorado, herbáceo-mentolado, levemente ácre e característico — aroma muito reconhecível e persistente",
+        "sabor": "Amargo marcado, camphorado, adstringente, herbáceo; gosto forte e medicinal",
+        "cor_visual": "Folhas verde-acinzentadas rugosas; infusão amarelo-esverdeada a castanho-claro",
+        "textura": "Folhas coriáceas e rugosas; infusão levíssima",
+        "sensacao": "Digestivo imediato — sensação de 'limpeza' e leveza após 15–20 min; estimula salivação e secreções digestivas"
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O boldo é o fitoterápico mais vendido no Brasil — disparado. \"Chá de boldo para ressaca\" é prática universal na cultura brasileira — presente em botecos, festas, famílias. O volume de consumo é inversamente proporcional ao nível de informação sobre uso correto: a maioria das pessoas que toma boldo não sabe da limitação de tempo de infusão, da dose máxima, nem da diferença entre boldo-do-chile e boldo-brasileiro. O Ervatório tem responsabilidade pedagógica específica com o boldo — é a erva que mais precisa de ficha detalhada no Brasil.",
-        "curiosidade": ""
+        "historia": "O boldo-do-chile é a planta medicinal mais consumida no Brasil — estima-se que seja o chá mais vendido em volume no país, superando a camomila. É endêmico do Chile, onde foi usado pelos povos Mapuche há séculos antes da chegada dos europeus. Os espanhóis o levaram para a Europa no século XVII como remédio hepático. Chegou ao Brasil no século XIX e se naturalizou como 'remédio do fígado' na cultura popular, especialmente após festas e refeições gordurosas.",
+        "uso_tradicional": "Chile/Mapuche: doenças do fígado, diarreia, dores de cabeça. Europa (séc XVII): hepatoprotetor e digestivo. Brasil: 'chá para o fígado' após excessos alimentares e alcoólicos — uso cultural profundamente enraizado. Argentina: digestivo e colerético. Farmacologia moderna: boldina validada como hepatoprotetor e antioxidante.",
+        "simbolismo": "Cura do fígado, sobriedade, digestão. Na cultura brasileira: 'salvação do dia seguinte' após festas. Símbolo do saber popular que converge com a ciência.",
+        "curiosidades": [
+          "O boldo-do-chile é o chá mais vendido no Brasil em valor absoluto — uma planta chilena que se tornou mais 'brasileira' que muitas nativas",
+          "Boldina é considerado um dos antioxidantes mais potentes encontrados em plantas — in vitro supera a vitamina E em capacidade de scavenging",
+          "O uso cultural 'para o fígado após a feijoada' é cientificamente plausível — a boldina tem ação hepatoprotetora documentada",
+          "O Chile tem programas de conservação para o boldo — árvore de crescimento lento que pode levar 20 anos para produzir folhas em quantidade comercial"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global (Sul-Americano)",
-        "status_anvisa": "Monografia oficial. Indicações: colagogo, digestivo. Alerta de uso correto obrigatório.",
-        "status_ema": "Monografia HMPC — traditional use para dispepsia.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas disponíveis o ano todo"
+        "status_brasil": "ANVISA RDC 26/2014: Peumus boldus folha — notificado como fitoterápico isento de prescrição para afecções do fígado e dispepsia. Um dos fitoterápicos mais vendidos do Brasil.",
+        "status_europa": "EMA/HMPC: uso medicinal tradicional bem estabelecido para dispepsia e suporte hepático leve. Monografia publicada. ESCOP monografia.",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Boldi folium. Farmacopeia Brasileira 6ª ed.",
+        "registro": "Fitoterápico registrado amplamente no Brasil e Europa. Vários produtos comerciais (extratos, cápsulas, sachês)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Folhas secas a granel",
+          "Chá em sachês (o mais vendido)",
+          "Extrato seco em cápsulas (padronizado em boldina)",
+          "Tintura hidroalcoólica",
+          "Extrato líquido"
+        ],
+        "preco_estimado": "Folhas secas: R$ 8–20/50 g. Sachês: R$ 5–15/caixa (produto mais barato do segmento). Cápsulas: R$ 25–60/frasco.",
+        "disponibilidade": "Ubíqua — supermercados, farmácias, ervanarias, padarias, bares. O chá mais acessível do Brasil.",
+        "como_escolher": "Folhas secas: aroma forte e camphorado imediato; verde-acinzentado com textura rugosa. Cápsulas: preferir padronizadas em boldina (2–5 mg/cápsula). Sachês: marcas certificadas com controle de qualidade — produto adulterado com espécies similares é frequente.",
+        "armazenamento": "Folhas secas: pote hermético, local fresco e seco. Validade: 12–18 meses. Preservar aroma."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Dispepsia, digestão lenta, fígado pesado após refeições gordurosas",
+          "Colerético — estimula produção e fluxo de bile (digestão de gorduras)",
+          "Hepatoprotetor leve em esteatose e dano hepático por toxinas",
+          "Constipação por insuficiência biliar"
+        ],
+        "diferenciais": [
+          "O chá mais consumido no Brasil — planta de cultura popular com validação científica robusta",
+          "Boldina: um dos antioxidantes mais potentes do reino vegetal (supera vitamina E in vitro)",
+          "EMA e ANVISA bem estabelecido — base regulatória dupla sólida",
+          "Ação colerética documentada: mecanismo biliar elucidado — não é placebo"
+        ],
+        "sinergias": [
+          "Boldo + alcachofra: suporte hepático e biliar sinérgico (colerético + hipolipemiante)",
+          "Boldo + dente-de-leão: fígado + vesícula + drenagem linfática",
+          "Boldo + funcho: digestão e flatulência (colerético + carminativo)",
+          "Boldo + cardo-mariano: hepatoproteção intensiva (silimarina + boldina)"
+        ],
+        "alertas": [
+          "CÁLCULOS BILIARES: CONTRAINDICADO — pode deslocar cálculos e causar cólica biliar severa",
+          "GESTAÇÃO: CONTRAINDICADO — alcaloides e ascaridol",
+          "Uso máximo 4–6 semanas contínuas — pausar antes de continuar",
+          "Adulteração frequente no mercado — comprar de fontes confiáveis com controle de qualidade"
+        ]
       }
     },
     {
@@ -13197,114 +13253,178 @@
     },
     {
       "slug": "poejo",
-      "nome_popular": "Poejo",
-      "nome_cientifico": "Mentha pulegium L.",
-      "tagline": "A hortelã dos nervos — aromática europeia naturalizada nos pampas com ação antiespasmódica documentada e reputação de emenagogas que merece clareza científica.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Mentha pulegium L.",
-        "familia_botanica": "Lamiaceae (família da hortelã, do alecrim, da sálvia)",
-        "tipo_botanico": "Fitoterápico aromático / antiespasmódico / emenagogo",
-        "parte_usada": "Partes aéreas frescas ou secas.",
-        "sinonimos": [
-          "Poejo · poejo-da-europa · mentastro · erva-de-são-lourenço",
-          "Pennyroyal (inglês) · Pouliot (francês) · Poleo (espanhol)"
+        "nome_popular": "Poejo",
+        "nome_cientifico": "Mentha pulegium",
+        "familia": "Lamiaceae",
+        "outros_nomes": [
+          "poejo-real",
+          "hortelã-de-burro",
+          "pennyroyal (ing.)",
+          "pouliot (fr.)"
+        ],
+        "origem": "Europa e Mediterrâneo",
+        "partes_usadas": [
+          "partes aéreas floridas",
+          "folhas",
+          "sumidades"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Mentolado intenso, mais picante e menos fresco que a hortelã-pimenta, levemente amargo.",
-        "aroma": "Menta pungente-quente, pulegona característica — mais agreste e intenso que qualquer outra menta.",
-        "cor_da_infusao": "Verde-pálido a âmbar esverdeado. #B0C850",
-        "intensidade": "4/5 — aroma e sabor dominantes.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Herbácea perene de 10–40 cm, rasteira a ascendente, muito aromática. Caules quadrangulares com pelos. Folhas pequenas (1–2 cm), oval-elípticas, levemente dentadas, verde-acinzentadas com tomento. Flores lilás-rosadas em verticilos espaçados ao longo do caule. Cheiro mentolado intenso e característico, mais forte que a hortelã comum.",
+        "composicao_quimica": [
+          "Óleo essencial (1–2%): pulegona (60–90%) — o principal ativo e também o principal risco",
+          "Mentona (até 20%)",
+          "Isopulegona, piperitenona",
+          "Flavonoides: hesperidina, diosmina, luteolina",
+          "Ácido rosmarínico e ácidos fenólicos",
+          "Taninos (traços)"
+        ],
+        "bioma": "Mediterrâneo, europeu",
+        "cultivo": "Sol a meia-sombra, solo úmido e fértil, pH 6–7. Multiplica por divisão de touceira ou estolões. Invasora em solos úmidos. Colheita antes e durante a floração (maior teor de pulegona)."
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C (pulegona volátil — não ferver).",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 g de folhas secas para 250 ml (dose baixa — respeitar limite).",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "Pós-refeições (digestivo) ou em dismenorreia.",
-        "combina_com": ""
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Antiespasmódico digestivo",
-          "Emenagogo (estimula menstruação)",
-          "Carminativo",
-          "Antimicrobiano",
-          "Expectorante leve",
-          "Repelente de insetos (uso externo — pulegona)",
-          "Componentes ativos:",
-          "⚠️ ATENÇÃO — PULEGONA:",
-          "Contraindicações:",
-          "Gestação — contraindicado (abortivo comprovado em doses moderadas)",
-          "Lactação — evitar",
-          "Crianças — contraindicado",
-          "Hepatopatias e nefropatias — contraindicado",
-          "Óleo essencial interno — contraindicado em qualquer dose"
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "PULEGONA",
-            "texto": "60–90% do óleo essencial — Antiespasmódico, emenagogo, hepatotóxico em dose alta"
+            "tipo": "Infusão (uso interno — dose baixa)",
+            "descricao": "1 colher de chá rasa de planta seca (1,5–2 g) em 200 mL a 90°C. Cobrir 10 min. Coar. 1–2 xícaras/dia, máximo. Não ultrapassar 2 g/dia de planta seca.",
+            "indicacoes": [
+              "flatulência",
+              "dispepsia",
+              "tosse leve",
+              "resfriado"
+            ]
           },
           {
-            "label": "ISOMENTONA",
-            "texto": "Presente — Aromático, carminativo"
+            "tipo": "Inalação de vapor",
+            "descricao": "Um punhado de folhas frescas em bacia de água quente. Inalar por 5–10 min coberto com toalha.",
+            "indicacoes": [
+              "congestão nasal",
+              "sinusite",
+              "tosse"
+            ]
           },
           {
-            "label": "MENTOL",
-            "texto": "Traços — Frescor, antisséptico"
+            "tipo": "Repelente tópico (folhas frescas)",
+            "descricao": "Esfregar folhas frescas na pele ou deixar maços nas áreas a proteger.",
+            "indicacoes": [
+              "repelente de insetos (mosquitos, pulgas, carrapatos)"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [
-          "Gestação — contraindicado (abortivo comprovado em doses moderadas)",
-          "Lactação — evitar",
-          "Crianças — contraindicado",
-          "Hepatopatias e nefropatias — contraindicado",
-          "Óleo essencial interno — contraindicado em qualquer dose"
+        "dicas": "DOSES MUITO BAIXAS. Nunca usar o óleo essencial internamente — altamente tóxico. A infusão em doses baixas é razoavelmente segura para adultos saudáveis, mas o risco da pulegona exige cautela rigorosa."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Repelente de insetos",
+            "preparo": "Folhas frescas esfregadas na pele, ou infusão forte como spray.",
+            "indicacoes": [
+              "mosquitos",
+              "pulgas",
+              "carrapatos",
+              "borrachudos"
+            ]
+          },
+          {
+            "forma": "Inalação",
+            "preparo": "Folhas em água quente ou sachê de folhas secas.",
+            "indicacoes": [
+              "congestão nasal",
+              "sinusite",
+              "dor de cabeça tensional"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Carminativo e espasmolítico: óleo essencial relaxa músculo liso intestinal",
+          "Expectorante: estimula secreção brônquica",
+          "Repelente de insetos: pulegona repele diptera, pulicídeos e carrapatos",
+          "Emmenagogo: estimula contrações uterinas — efeito dose-dependente",
+          "Hepatotóxico (doses elevadas): pulegona → mentofurano (metabólito tóxico hepático) via CYP450"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "GESTAÇÃO: CONTRAINDICADO — pulegona é potentemente uterotônica e abortiva. Casos de morte materna por óleo essencial de poejo",
+          "Lactação: contraindicado",
+          "Crianças < 12 anos",
+          "Hepatopatias",
+          "Insuficiência renal"
+        ],
+        "efeitos_adversos": [
+          "Doses elevadas: hepatotoxicidade severa (mentofurano), insuficiência hepática fulminante",
+          "Nefrotoxicidade",
+          "Neurotoxicidade (convulsões em intoxicação)",
+          "Morte: casos documentados com óleo essencial de poejo"
+        ],
+        "interacoes": [
+          "Hepatotóxicos (paracetamol, estatinas, álcool): sinergismo hepatotóxico",
+          "Anticoagulantes: possível potenciação"
+        ],
+        "dose_segura": "Planta seca em infusão: máximo 2 g/dia, máximo 1–2 semanas. ÓLEO ESSENCIAL: NÃO USAR INTERNAMENTE. ESCOP/EMA: uso medicinal não recomendado formalmente — riscos superam benefícios para a maioria das indicações.",
+        "nivel_evidencia": "Dados clínicos favoráveis muito limitados. Evidência toxicológica forte para hepatotoxicidade da pulegona. EMA não emitiu monografia de uso positivo — planta na lista de preocupação toxicológica."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Mentolado muito intenso, penetrante, levemente camphorado, com nota herbal-amarga",
+        "sabor": "Forte, mentolado, amargo, levemente picante; mais agressivo que hortelã-pimenta",
+        "cor_visual": "Folhas verde-acinzentadas; infusão amarelo-esverdeada pálida",
+        "textura": "Folhas macias e aveludadas; infusão leve",
+        "sensacao": "Frescor intenso e prolongado, levemente anestesiante na mucosa oral"
       },
       "cultura": {
-        "historia": "O poejo é uma das ervas mais antigas da Europa mediterrânea — citado por Plínio, Dioscórides e Hildegarda. Na tradição europeia, era o abortivo herbal de uso popular — seu uso para \"provocar a regra\" (emenagogo) atravessou séculos de medicina popular feminina, frequentemente sem que as mulheres que o usavam soubessem o risco de hepatotoxicidade.  No Sul do Brasil, chegou com imigrantes italianos e portugueses e foi incorporado à medicina de quintal como \"poejo para cólica\" — uso digestivo que é distinto e mais seguro que o uso emenagogo.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Conhecida desde a Antiguidade — Dioscórides, Plínio e Hipócrates a descrevem. Na Roma Antiga, usada para aromatizar banhos e como repelente. A palavra 'pulegium' deriva de 'pulex' (pulga em latim) — referência ao uso antiparasitário. Na Idade Média europeia: emmenagogo e abortivo amplamente conhecido (e temido). Planta com longa história de uso e também de intoxicações.",
+        "uso_tradicional": "Europa: emmenagogo, digestivo, repelente. América Latina: 'poejo' para gripe, resfriado e digestão. Uso culinário ibérico: tempero de carnes e enchidos (em doses baixíssimas). Tradição portuguesa: 'chá de poejo' para gripe (dose culinária, não medicinal).",
+        "simbolismo": "Proteção, limpeza, purificação. No folclore romano: proteção da casa contra pulgas. Na tradição ibérica: planta de cozinha com história medicinal dual.",
+        "curiosidades": [
+          "O nome 'pennyroyal' em inglês vem de 'puliol real' (espanhol/occitano) — 'pulga-real'",
+          "Mortes por uso abortivo de óleo de poejo são documentadas em literatura médica moderna",
+          "Uma das plantas mais antigas da farmacobotânica europeia — referenciada por praticamente todos os herbários medievais",
+          "Repelente eficaz comprovado: pulegona afasta pulgas, mosquitos e carrapatos (uso externo seguro)"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global / uso tradicional",
-        "status_anvisa": "Não monografado. Óleo essencial: proibido para uso interno.",
-        "status_ema": "Monografia HMPC — uso externo somente (repelente). Uso interno: não recomendado.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Partes aéreas: floração (primavera-verão sulino)"
+        "status_brasil": "ANVISA: não consta na RDC 26/2014 como fitoterápico isento. Uso não regulamentado formalmente.",
+        "status_europa": "EMA: sem monografia positiva. Planta de preocupação toxicológica. Proibida como aditivo alimentar na UE (Regulamento CE 1334/2008 — pulegona com limites muito baixos).",
+        "farmacopeia": "Farmacopeia Europeia lista o óleo essencial mas sem indicação terapêutica. Não consta na Farmacopeia Brasileira.",
+        "registro": "Sem produtos registrados como medicamentos na UE ou Brasil. Comercializada como erva seca, mas sem indicações oficiais."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Planta seca a granel",
+          "Óleo essencial (uso externo — repelente)",
+          "Chá em sachês (uso culinário/digestivo leve)"
+        ],
+        "preco_estimado": "Planta seca: R$ 8–20/50 g. Óleo essencial: R$ 20–50/10 mL.",
+        "disponibilidade": "Moderada — ervanarias, mercados populares. Menos comum que outras mentas.",
+        "como_escolher": "Planta seca: aroma mentolado intenso característico. Para repelente: óleo essencial diluído (1–2% em óleo vegetal) — nunca usar puro na pele. NUNCA adquirir para uso interno em doses elevadas.",
+        "armazenamento": "Planta seca: pote hermético, escuro, seco. Validade: 12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Repelente natural de insetos (uso externo — óleo diluído ou folhas frescas)",
+          "Digestivo leve em doses baixas (flatulência, dispepsia)",
+          "Expectorante em resfriados leves (inalação ou infusão fraca)",
+          "Uso culinário ibérico em doses condimentares mínimas"
+        ],
+        "diferenciais": [
+          "Repelente de insetos mais eficaz entre as mentas (pulegona > mentol como repelente)",
+          "Planta de alto risco/alto uso popular — fundamental desmistificar e orientar com precisão",
+          "História botânica e toxicológica rica — plant com dupla face medicinal/tóxica bem documentada",
+          "Aroma único — mais intenso e penetrante que qualquer outra menta"
+        ],
+        "sinergias": [
+          "Poejo (externo) + citronela + lavanda: blend repelente natural",
+          "Poejo (infusão fraca) + camomila: digestivo suave",
+          "Poejo (inalação) + eucalipto: descongestionante potente"
+        ],
+        "alertas": [
+          "GESTAÇÃO: CONTRAINDICADO ABSOLUTAMENTE — risco de aborto e morte materna",
+          "ÓLEO ESSENCIAL INTERNO: NUNCA USAR — hepatotóxico, potencialmente fatal",
+          "Doses internas: manter baixíssimas (máx 2 g planta seca/dia, máx 2 semanas)",
+          "Não confundir 'uso tradicional' com 'uso seguro' — popularidade ≠ segurança"
+        ]
       }
     },
     {
@@ -18049,102 +18169,203 @@
     },
     {
       "slug": "palmarosa",
-      "nome_popular": "Capim-Santo",
-      "nome_cientifico": "Cymbopogon martinii (Roxb.) Wats.",
-      "tagline": "O aroma de rosas sem rosas — gramínea aromática parente do capim-limão com o mais alto teor de geraniol de qualquer planta comercial e uso crescente em cosmética, aromaterapia e fitoterapia.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Cymbopogon martinii (Roxb.) Wats.",
-        "familia_botanica": "Poaceae (gramíneas)",
-        "tipo_botanico": "Aromático / cosmético / antimicrobiano",
-        "parte_usada": "Partes aéreas frescas ou secas; óleo essencial (destilação).",
-        "sinonimos": [
-          "Palmarosa · capim-palmarosa · grama-de-rosas",
-          "Palmarosa (inglês/universal) · Palmrosa (alemão)",
-          "Rosha grass (inglês técnico)"
+        "nome_popular": "Palmarosa",
+        "nome_cientifico": "Cymbopogon martinii",
+        "familia": "Poaceae",
+        "outros_nomes": [
+          "palma-rosa",
+          "rusa grass",
+          "rosha grass (ing.)",
+          "herbe de palmarosa (fr.)"
+        ],
+        "origem": "Índia (especialmente Rajastão e Gujarat)",
+        "partes_usadas": [
+          "folhas e hastes (para extração de óleo essencial)",
+          "óleo essencial"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Floral-roseado suave, levemente cítrico, geraniol puro.",
-        "aroma": "Rosa fresca com nota herbácea-gramínea, geraniol dominante, leve cítrico. Mais fresco e menos pesado que o óleo de rosa verdadeira.",
-        "cor_da_infusao": "Verde-pálido a amarelo. #DCE880",
-        "intensidade": "2/5 — floral suave.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Gramínea perene de 1,5–2 m, formando touceiras densas. Folhas lineares longas (50–90 cm), verde-claro brilhante, com nervura central branca. Caule roliço, sólido na base. Inflorescência em panículas terminais avermelhadas. Raízes fibrosas. Cheiro característico de rosas com notas herbais verdes — surpreendentemente floral para uma gramínea.",
+        "composicao_quimica": [
+          "Óleo essencial (0,5–1,5%): geraniol (75–95%) — componente dominante e responsável pelo aroma rosáceo",
+          "Geranial e neral (citral): notas cítricas",
+          "Linalol (traços)",
+          "β-cariofileno",
+          "Farnesol (traços)",
+          "Ésteres de geraniol: acetato de geranila"
+        ],
+        "bioma": "Tropical e subtropical — Índia, cultivada em toda a faixa tropical",
+        "cultivo": "Pleno sol, clima quente, solo bem drenado, pH 5,5–7. Multiplica por divisão de touceira ou sementes. Colheita antes da floração para máximo teor de geraniol. Tolerante à seca após estabelecida. Produção de óleo por destilação a vapor das partes aéreas."
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Antimicrobiano amplo (geraniol — bactérias e fungos)",
-          "Hidratante (OE em formulações cosméticas)",
-          "Antifúngico (candidíase — uso tópico)",
-          "Ansiolítico leve (aromaterapia — geraniol)",
-          "Anti-inflamatório",
-          "Componentes ativos:",
-          "Contraindicações: Sem contraindicações relevantes em doses culinárias/cosméticas. OE diluído para uso tópico."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "GERANIOL",
-            "texto": "75–95% — Antimicrobiano, antifúngico, hidratante, ansiolítico"
+            "tipo": "Óleo essencial diluído (uso tópico)",
+            "descricao": "2–5 gotas de OE em 10 mL de óleo vegetal (jojoba, rosa-mosqueta, amêndoas). Aplicar na pele 1–2×/dia.",
+            "indicacoes": [
+              "acne",
+              "pele oleosa",
+              "dermatite",
+              "candidíase cutânea",
+              "herpes labial",
+              "feridas"
+            ]
           },
           {
-            "label": "ACETATO DE GERANILA",
-            "texto": "2–10% — Aromático, emoliente"
+            "tipo": "Aromaterapia / difusão",
+            "descricao": "5–10 gotas no difusor por 30–60 min, 2–3×/dia.",
+            "indicacoes": [
+              "ansiedade",
+              "estresse",
+              "fadiga mental",
+              "equilíbrio emocional"
+            ]
           },
           {
-            "label": "LINALOL",
-            "texto": "1–5% — Ansiolítico, antimicrobiano"
+            "tipo": "Banho aromaterapêutico",
+            "descricao": "5–8 gotas de OE diluídas em 1 colher de sopa de sal grosso ou leite integral antes de adicionar à banheira.",
+            "indicacoes": [
+              "relaxamento",
+              "infecções cutâneas",
+              "fadiga"
+            ]
+          },
+          {
+            "tipo": "Infusão das folhas (uso interno leve)",
+            "descricao": "1–2 g de folhas frescas ou secas em 200 mL. Infundir 8–10 min. 1–2 xícaras/dia.",
+            "indicacoes": [
+              "ansiedade leve",
+              "digestão",
+              "infecções urinárias leves"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "O geraniol é sensível à oxidação — fechar OE após uso e armazenar na geladeira para preservar qualidade. Para pele sensível, testar patch test antes de aplicação extensiva."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Sérum facial",
+            "preparo": "3–4 gotas em 10 mL de óleo de jojoba ou rosa-mosqueta. Aplicar à noite.",
+            "indicacoes": [
+              "acne",
+              "pele oleosa",
+              "poros dilatados",
+              "manchas",
+              "hidratação"
+            ]
+          },
+          {
+            "forma": "Compressa antifúngica",
+            "preparo": "2–3 gotas em 50 mL de água morna. Compressa por 15–20 min.",
+            "indicacoes": [
+              "candidíase cutânea",
+              "tinea pedis (pé de atleta)",
+              "onicomicose leve"
+            ]
+          },
+          {
+            "forma": "Spray refrescante",
+            "preparo": "5 gotas em 100 mL de água + 5 mL de álcool 70% (como emulsificante). Agitar antes de usar.",
+            "indicacoes": [
+              "refrescante corporal",
+              "antisséptico cutâneo",
+              "repelente leve"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Antimicrobiano amplo: geraniol inibe S. aureus, E. coli, Candida albicans, dermatófitos (CIM 0,2–1 mg/mL)",
+          "Antifúngico: geraniol altera membrana fúngica (ergosterol) — eficácia comparável a fluconazol in vitro",
+          "Ansiolítico: inalação de geraniol modula receptores GABA-A (estudos animais)",
+          "Anti-inflamatório: geraniol inibe NF-κB e prostaglandinas",
+          "Antioxidante: geraniol e farnesol capturam radicais livres",
+          "Cicatrizante: estimula queratinócitos e fibroblastos",
+          "Repelente de insetos: geraniol repele Aedes aegypti, Anopheles gambiae"
+        ],
+        "contraindicacoes": [
+          "Alergia a geraniol ou compostos terpênicos",
+          "Uso interno do óleo essencial puro: contraindicado",
+          "Gestação (1° trimestre): cautela com uso extensivo tópico",
+          "Crianças < 2 anos: evitar OE tópico"
+        ],
+        "efeitos_adversos": [
+          "Dermatite de contato por geraniol (sensibilizante moderado — testar antes)",
+          "Irritação ocular se OE atingir os olhos",
+          "Raramente: fotossensibilização"
+        ],
+        "interacoes": [
+          "Poucos dados de interação sistêmica (uso principalmente tópico/aromaterapia)",
+          "Geraniol inibe CYP2B6 in vitro — possível interação com medicamentos deste CYP em uso interno"
+        ],
+        "dose_segura": "Óleo essencial tópico: 1–3% em base vegetal (1–3 gotas/10 mL). Difusão: 5–10 gotas/30–60 min. Uso interno: não recomendado para OE. Folhas: 1–2 g/dia em infusão.",
+        "nivel_evidencia": "Estudos in vitro e in vivo sólidos para atividade antimicrobiana e antifúngica. Estudos clínicos em aromaterapia para ansiedade: resultados promissores mas metodologia variável. Amplamente documentado na aromaterapia clínica europeia."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Floral intenso de rosas, suave, ligeiramente herbáceo e verde; mais doce que geranio bourbon",
+        "sabor": "Floral, adocicado, levemente herbáceo (folhas); muito delicado",
+        "cor_visual": "Óleo essencial: amarelo-pálido a incolor; folhas verde-claro brilhante",
+        "textura": "OE fluido; folhas lisas e longas como capim-limão",
+        "sensacao": "Suavizante e calmante; aroma persiste por horas na pele"
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A palmarosa está crescendo rapidamente como matéria-prima para cosmética natural brasileira — empresas como Surya Brasil e Granado incorporam o óleo de palmarosa em linhas de cabelo e corpo. Seu aroma de \"rosa sem custo de rosa\" é uma das soluções mais elegantes da perfumaria natural acessível.",
-        "curiosidade": ""
+        "historia": "Originária das planícies tropicais da Índia, onde foi destilada por séculos para produzir o óleo de 'rusa' — exportado para a Europa como adulterante de óleo de rosas turco (mais barato e com aroma semelhante). No século XIX, a perfumaria europeia descobriu que palmarosa era na verdade superior ao geranio em certas composições. Hoje é componente de perfumes clássicos (Chanel Nº 5 original, entre outros).",
+        "uso_tradicional": "Medicina ayurvédica: digestivo, febrifugo, antisséptico cutâneo. Tradição indiana: óleo para massagem em dores articulares e musculares. Perfumaria: adulterante histórico do óleo de rosas; hoje ingrediente valorizado por si mesmo. Cosmética moderna: ingrediente antimicrobiano natural em produtos premium.",
+        "simbolismo": "Renovação, frescor, equilíbrio emocional. Na aromaterapia: planta do coração — conecta com sentimentos e emoções.",
+        "curiosidades": [
+          "Palmarosa é uma gramínea — planta da mesma família do milho, trigo e capim-limão — mas produz um dos aromas mais florais do reino vegetal",
+          "Historicamente vendida como adulterante de óleo de rosas: o engodo revelou uma planta excepcional",
+          "Geraniol é um dos ingredientes mais estudados em aromaterapia clínica para ansiedade e infecções fúngicas",
+          "Uma das poucas plantas em que o aroma (geraniol) e a atividade biológica são o mesmo composto"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso cosmético regulamentado.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita: floração — verão tropical"
+        "status_brasil": "Sem registro ANVISA como fitoterápico. OE comercializado como cosmético/aromaterapia. Importado principalmente da Índia.",
+        "status_europa": "Não consta em monografias EMA/HMPC. EFSA aprova geraniol como aditivo aromatizante (QPS). Amplamente usado em cosméticos (INCI: Cymbopogon martinii herb oil).",
+        "farmacopeia": "Não consta em farmacopeias como monografia medicinal. ISO 4727 — norma para óleo de palmarosa.",
+        "registro": "Comercializado como OE cosmético e aromaterapêutico. Sem medicamento registrado."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Óleo essencial (principal forma)",
+          "Hidrolato (água floral de palmarosa)",
+          "Produtos cosméticos (séruns, cremes com OE)",
+          "Planta seca (raro — mais difícil de encontrar)"
+        ],
+        "preco_estimado": "Óleo essencial: R$ 25–70/10 mL. Hidrolato: R$ 30–60/100 mL. Produtos cosméticos: variável.",
+        "disponibilidade": "Moderada — lojas de aromaterapia, cosmética natural, plataformas online. Menos comum em ervanarias tradicionais.",
+        "como_escolher": "OE: verificar nome botânico (Cymbopogon martinii var. motia — maior teor de geraniol; var. sofia — diferente). GC/MS ou laudo de pureza são diferenciais de qualidade. Aroma: floral de rosas doce e persistente.",
+        "armazenamento": "Frasco âmbar, tampado, refrigerado após aberto. Validade: 2–3 anos fechado; 12–18 meses aberto."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Acne e pele oleosa (antimicrobiano e regulador sebáceo)",
+          "Candidíase cutânea e tinea pedis (antifúngico comprovado in vitro)",
+          "Ansiedade e estresse (aromaterapia com geraniol)",
+          "Feridas e cicatrização (cicatrizante e antimicrobiano)"
+        ],
+        "diferenciais": [
+          "Maior fonte natural de geraniol do mundo (75–95%) — benchmark de qualidade para OEs",
+          "Dupla ação: antifúngico + aromático = tratamento e prazer simultâneos",
+          "Gramínea com aroma de rosa — botânica surpreendente e ótimo gancho educativo",
+          "Geraniol: mesmo composto ativo nas rosas e no geranio bourbon — mas muito mais concentrado"
+        ],
+        "sinergias": [
+          "Palmarosa + tea tree: acne severa (potência antimicrobiana ampliada)",
+          "Palmarosa + lavanda: ansiedade e distúrbios do sono",
+          "Palmarosa + rosa-mosqueta (óleo): sérum facial regenerativo e antimicrobiano",
+          "Palmarosa + niaouli: infecções urinárias (uso externo na região abdominal)"
+        ],
+        "alertas": [
+          "Testar patch test — geraniol é sensibilizante moderado reconhecido pela IFRA",
+          "Não usar OE puro na pele — sempre diluir a 1–3%",
+          "Verificar variedade: Cymbopogon martinii var. sofia tem composição diferente (menos geraniol)",
+          "Não confundir com capim-limão (Cymbopogon citratus) — gênero similar, composição totalmente diferente"
+        ]
       }
     },
     {
@@ -18905,951 +19126,1768 @@
     },
     {
       "slug": "acafroa",
-      "nome_popular": "Açafroa",
-      "nome_cientifico": "Carthamus tinctorius L.",
-      "tagline": "O pseudoaçafrão universal — especiaria floral que substituiu o açafrão verdadeiro em culinários por séculos, com óleo de alto valor nutricional e ação anti-inflamatória crescentemente documentada.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Carthamus tinctorius L.",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Especiaria aromática / óleo funcional / corante",
-        "parte_usada": "Flores (pétalas secas — corante e especiaria); sementes (óleo).",
-        "sinonimos": [
-          "Açafroa · cártamo · açafrão-bastardo · falso-açafrão",
-          "Safflower (inglês) · Carthame (francês) · Saflor (alemão)",
-          "Kusumbha (sânscrito)"
+        "nome_popular": "Açafroa",
+        "nome_cientifico": "Carthamus tinctorius",
+        "familia": "Asteraceae",
+        "outros_nomes": [
+          "cártamo",
+          "falso-açafrão",
+          "safflower (ing.)",
+          "carthame (fr.)"
+        ],
+        "origem": "Ásia Central, Mediterrâneo Oriental",
+        "partes_usadas": [
+          "flores (pétalas)",
+          "sementes (para óleo)",
+          "óleo de cártamo"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Floral-seco, feno, levemente aromático.",
-        "cor_da_infusao": "Amarelo intenso a laranja-avermelhado. #E89020 — corante natural intenso.",
-        "intensidade": "2/5 — corante mais que sabor.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Planta anual de 30–150 cm, erecta, muito ramificada, com espinhos nas margens das folhas (semelhante ao cardo). Folhas lanceoladas a ovadas, dentadas com espinhos terminais, coriáceas. Capítulos florais terminais de 2–4 cm com flores tubulosas amarelas a laranja-avermelhadas. Frutos (aquênios) brancos, lisos, oleaginosos. A cor das flores vai do amarelo-pálido ao laranja intenso, dependendo da variedade.",
+        "composicao_quimica": [
+          "Flores: cartamina (pigmento vermelho-laranja solúvel em álcool) e safflor amarelo (solúvel em água)",
+          "Flores: chalconas: carthamine, safflower yellow A e B",
+          "Flores: flavonoides: kaempferol, quercetina, luteolina",
+          "Flores: polissacarídeos imunomodeladores",
+          "Sementes: ácido linoleico (70–80%) — omega-6 predominante",
+          "Sementes: vitamina E (α-tocoferol): potente antioxidante",
+          "Sementes: proteínas (15–20%)",
+          "Óleo: ratio omega-6/omega-3 muito elevado (cautela)"
+        ],
+        "bioma": "Mediterrâneo, Ásia Central, regiões semiáridas",
+        "cultivo": "Pleno sol, solo bem drenado, tolerante à seca e ao calor. Multiplica por sementes. Colheita das flores antes da abertura completa (mais pigmento). Importante cultura oleaginosa em regiões semiáridas."
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "formas": [
+          {
+            "tipo": "Infusão das flores (uso interno)",
+            "descricao": "1–2 colheres de sopa de flores secas (2–4 g) em 200 mL a 90°C. Cobrir 10–15 min. Coar. 1–2 xícaras/dia.",
+            "indicacoes": [
+              "irregularidade menstrual",
+              "amenorréia",
+              "dismenorreia",
+              "circulação",
+              "tosse"
+            ]
+          },
+          {
+            "tipo": "Decocção das flores (medicina chinesa)",
+            "descricao": "3–5 g de flores em 200 mL. Ferver suavemente 10–15 min. Coar. 1–2 vezes/dia.",
+            "indicacoes": [
+              "dores articulares",
+              "circulação periférica",
+              "amenorréia (TCM)"
+            ]
+          },
+          {
+            "tipo": "Óleo de cártamo (uso alimentar e tópico)",
+            "descricao": "1–2 colheres de sopa/dia como parte da dieta (uso alimentar). Tópico: aplicar diretamente na pele.",
+            "indicacoes": [
+              "saúde cardiovascular (uso alimentar)",
+              "hidratação cutânea",
+              "massagem"
+            ]
+          },
+          {
+            "tipo": "Corante alimentar/cosmético",
+            "descricao": "Pétalas secas em pratos, arrozes, sopas. Infusão das flores como corante natural amarelo-laranja.",
+            "indicacoes": [
+              "coloração natural de alimentos",
+              "cosmética artesanal"
+            ]
+          }
+        ],
+        "dicas": "As flores de açafroa soltas em água quente liberam o pigmento amarelo (hidrossolúvel), diferente do pigmento vermelho que requer álcool. Como substituto do açafrão (Crocus sativus) na coloração de alimentos, é eficaz e muito mais barato — mas sem o aroma e os ativos do açafrão verdadeiro."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "aplicacoes": [
+          {
+            "forma": "Óleo de cártamo para pele e cabelo",
+            "preparo": "Óleo puro ou diluído em outros óleos. Aplicar em pele seca, cabelo ou cutículas.",
+            "indicacoes": [
+              "pele seca",
+              "eczema",
+              "hidratação capilar",
+              "antienvelhecimento"
+            ]
+          },
+          {
+            "forma": "Máscara capilar",
+            "preparo": "2–3 colheres de sopa de óleo de cártamo + vitamina E. Aplicar no cabelo, cobrir com touca por 30 min.",
+            "indicacoes": [
+              "cabelo seco",
+              "pontas duplas",
+              "brilho capilar"
+            ]
+          },
+          {
+            "forma": "Cataplasma de flores",
+            "preparo": "Flores amassadas com água quente formando pasta. Aplicar sobre área dolorida.",
+            "indicacoes": [
+              "dores articulares",
+              "contusões",
+              "inchaço"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Corante natural (cartamina — laranja; safraflor amarelo)",
-          "Anti-inflamatório (flores e óleo)",
-          "Cardioprotetor (óleo — ácido linoleico)",
-          "Hipoglicemiante (estudos com extrato)",
-          "Emenagogo (flores — uso tradicional)",
-          "Componentes ativos (flores):",
-          "Contraindicações: Gestação — emenagogo. Alergia à Asteraceae."
+        "acoes_farmacologicas": [
+          "Emmenagoga: chalconas estimulam contração uterina — uso tradicional para irregularidade menstrual",
+          "Anticoagulante: inibe agregação plaquetária (chalconas e flavonoides)",
+          "Anti-inflamatório: quercetina e luteolina inibem COX e mediadores inflamatórios",
+          "Antioxidante: vitamina E e flavonoides",
+          "Hipolipemiante: ácido linoleico reduz LDL quando substitui gordura saturada (efeito do óleo)",
+          "Imunomodulador: polissacarídeos das flores estimulam macrófagos",
+          "Corante/pigmentante: cartamina — uso histórico têxtil e alimentar"
         ],
-        "componentes_ativos": [],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "Gestação: CONTRAINDICADO — emmenagoga e potencialmente abortiva",
+          "Distúrbios de coagulação ou uso de anticoagulantes",
+          "Úlcera péptica ativa",
+          "Cirurgia iminente (2 semanas antes)"
+        ],
+        "efeitos_adversos": [
+          "Reação alérgica (Asteraceae — reação cruzada possível)",
+          "Sangramento aumentado em pacientes com distúrbios de coagulação",
+          "Cólica uterina em doses elevadas"
+        ],
+        "interacoes": [
+          "Anticoagulantes (varfarina, heparina, aspirina): potenciação do risco de sangramento",
+          "Anti-inflamatórios (AINEs): sinergia no risco de sangramento",
+          "Hipotensivos: possível potenciação (efeito vasodilatador das chalconas)"
+        ],
+        "dose_segura": "Flores secas: 3–6 g/dia em infusão. Óleo de cártamo alimentar: 1–2 colheres/dia. Monografias TCM (Hong Kong, China): doses de 3–9 g de flores/dia.",
+        "nivel_evidencia": "Medicina Tradicional Chinesa: uso bem documentado para distúrbios do 'xue' (sangue). Estudos clínicos modernos: óleo de cártamo mostra benefícios cardiovasculares em estudos de substituição de gorduras. Flores: estudos pré-clínicos sólidos; ensaios clínicos limitados na medicina ocidental."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Flores: leve, levemente floral-herbáceo, sem aroma pronunciado. Óleo: neutro, suave",
+        "sabor": "Flores: levemente amargo, suave, quase neutro; sem sabor marcante",
+        "cor_visual": "Flores laranja-avermelhadas ou amarelas intensas; infusão amarela brilhante; óleo dourado-pálido",
+        "textura": "Flores sedosas; infusão levíssima; óleo fluido e não-gorduroso ao toque",
+        "sensacao": "Neutra internamente; óleo deixa pele suave e levemente acetinada"
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A açafroa é a \"mentira nobre\" da culinária brasileira — o \"açafrão\" da paella nordestina, do arroz amarelo mineiro e das moquecas capixabas é quase sempre cártamo, não Crocus sativus. Essa substituição é praticada há séculos não por adulteração intencional, mas por adaptação culinária pragmática — o cártamo tem o visual do açafrão (cor amarela) por fração do custo. O Ervatório tem a missão de esclarecer, não condenar — o cártamo tem valor próprio que merece ser narrado honestamente.",
-        "curiosidade": ""
+        "historia": "Cultivada há mais de 4.000 anos no Egito — encontrada em tumbas do Egito Antigo (incluindo a de Tutancâmon, 1323 aC), usada para tingir tecidos de múmias. Na China, registrada há 2.000 anos como medicamento para distúrbios do sangue (Medicina Tradicional Chinesa). Na Europa medieval: substituto do açafrão para tingir tecidos e alimentos. A indústria moderna redescobriu como oleaginosa de alto valor.",
+        "uso_tradicional": "Egito Antigo: corante têxtil e pigmento para maquiagem. TCM: 'hong hua' (flor vermelha) — ativa a circulação, dissolve estase de sangue, trata amenorréia e dores articulares. Europa: colorante de tecidos e alimentos. Ayurveda: emmenagoga e anti-inflamatório.",
+        "simbolismo": "Prosperidade, vitalidade, cor (cultura da tinturaria natural). No Egito: vida após a morte (presente nas tumbas).",
+        "curiosidades": [
+          "Encontrada na tumba de Tutancâmon — usada para tingir as faixas das múmias há 3.300 anos",
+          "Confundida frequentemente com o açafrão verdadeiro (Crocus sativus) em mercados — mas sem nenhum dos ativos do açafrão (safranal, crocina)",
+          "O pigmento vermelho (cartamina) requer álcool para extração; o pigmento amarelo dissolve em água — os dois são usados separadamente na tinturaria natural",
+          "Variedades sem espinhos foram desenvolvidas para colheita mecanizada — antes, a colheita era um trabalho doloroso"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Alimento funcional / fitoterápico",
-        "status_anvisa": "Uso alimentar. Óleo: amplamente comercializado.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: verão"
+        "status_brasil": "ANVISA: sem registro específico como fitoterápico. Óleo de cártamo: alimento funcional/oleaginosa. Flores: comercializadas como erva.",
+        "status_europa": "EMA: sem monografia. Óleo de cártamo: autorizado como aditivo alimentar e cosmético (INCI: Carthamus tinctorius seed oil). TCM registrada em alguns países europeus.",
+        "farmacopeia": "Farmacopeia Chinesa (ChP): hong hua (Carthami Flos) — monografia completa. Não consta em farmacopeias europeias ou brasileira.",
+        "registro": "Óleo amplamente disponível como alimento funcional. Flores: suplemento/erva importada."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Flores secas a granel",
+          "Óleo de cártamo prensado a frio",
+          "Cápsulas de óleo de cártamo",
+          "Extrato de flores (suplemento)"
+        ],
+        "preco_estimado": "Flores secas: R$ 15–35/50 g. Óleo: R$ 25–60/500 mL. Cápsulas: R$ 30–70/frasco.",
+        "disponibilidade": "Moderada — lojas de produtos naturais, importadores, online. Óleo em supermercados especializados.",
+        "como_escolher": "Flores: cor laranja-avermelhada intensa; sem flores amarelas em excesso (menor teor de cartamina). Óleo: prensado a frio, cor dourada, sem odor rançoso. Certificação orgânica preferível.",
+        "armazenamento": "Flores secas: pote hermético, escuro, seco. Validade: 12 meses. Óleo: frasco escuro, refrigerado após aberto. Validade: 6–12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Irregularidade menstrual e dismenorreia (emmenagoga — uso interno das flores)",
+          "Dores articulares e circulação (TCM — uso bem estabelecido)",
+          "Hidratação cutânea e capilar (óleo de cártamo)",
+          "Corante natural alimentar e cosmético (substituto do açafrão na cor)"
+        ],
+        "diferenciais": [
+          "Planta encontrada em tumbas egípcias de 3.300 anos — uma das oleaginosas mais antigas cultivadas pelo ser humano",
+          "Dois pigmentos distintos em uma única planta: amarelo (hidrossolúvel) e vermelho (lipossolúvel) — versatilidade única",
+          "Óleo com maior teor de ácido linoleico do mundo (70–80%) — benchmark de omega-6",
+          "Substituto econômico do açafrão para coloração (sem ativos do açafrão, mas cor muito eficaz)"
+        ],
+        "sinergias": [
+          "Açafroa + dong quai: circulação e saúde menstrual (TCM)",
+          "Açafroa (óleo) + rosa-mosqueta (óleo): pele madura e antienvelhecimento",
+          "Açafroa + açafrão verdadeiro: sinergia na coloração e no suporte ao humor",
+          "Açafroa + calêndula: anti-inflamatório cutâneo (uso tópico)"
+        ],
+        "alertas": [
+          "GESTAÇÃO: CONTRAINDICADA — emmenagoga e potencialmente abortiva",
+          "Anticoagulantes: alto risco de sangramento — não combinar sem supervisão médica",
+          "NÃO confundir com açafrão verdadeiro (Crocus sativus) — composição e indicações totalmente diferentes",
+          "Óleo: alta proporção de omega-6 — não usar como única fonte de óleo (equilibrar com omega-3)"
+        ]
       }
     },
     {
       "slug": "flor-de-laranjeira",
-      "nome_popular": "Flor de Laranjeira",
-      "nome_cientifico": "Citrus aurantium L. (laranja-amarga)",
-      "tagline": "O neroli da farmácia popular — a flor branca da laranja-amarga com o mais elegante dos aromas florais-cítricos e ação ansiolítica e sedativa documentada em múltiplos sistemas.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Citrus aurantium L. (laranja-amarga)",
-        "familia_botanica": "Rutaceae (família dos cítricos)",
-        "tipo_botanico": "Fitoterápico ansiolítico / sedativo / aromático",
-        "parte_usada": "Flores secas (tília de laranjeira) — da laranja-amarga (C. aurantium), não da laranja-doce (C. sinensis).",
-        "sinonimos": [
-          "Flor de laranjeira · tília-de-laranjeira · água de flor de laranjeira",
-          "Orange blossom (inglês) · Fleur d'oranger (francês) · Orangenblüte (alemão)",
-          "Neroli (quando OE destilado por vapor) — nome vem da princesa italiana Anna Maria de La Trémoille, princesa de Nerola"
+        "nome_popular": "Flor-de-laranjeira",
+        "nome_cientifico": "Citrus aurantium (var. amara)",
+        "familia": "Rutaceae",
+        "outros_nomes": [
+          "laranja-amarga",
+          "neroli (óleo essencial)",
+          "água de flor de laranjeira",
+          "azahar (esp.)",
+          "fleur d'oranger (fr.)"
+        ],
+        "origem": "Sudeste Asiático; amplamente cultivada no Mediterrâneo",
+        "partes_usadas": [
+          "flores frescas",
+          "pétalas secas",
+          "óleo essencial (neroli)",
+          "hidrolato (água de laranjeira)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Floral-cítrico suave e elegante, levemente amargo-herbáceo, mel floral.",
-        "aroma": "Neroli — floral-cítrico-amadeirado, o mais elegante do catálogo floral. Limoneno + linalol + antranilato de metila = perfume de luxo em flor.",
-        "cor_da_infusao": "Amarelo-pálido a dourado discreto. #F0E890",
-        "intensidade": "2/5 — suave e elegante.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Árvore perenifólia de 3–10 m, com espinhos axilares. Folhas oval-elípticas, coriáceas, verde-brilhante, com peciolo alado característico. Flores brancas (2–4 cm), 5 pétalas cerosas, muito perfumadas, solitárias ou em pequenos grupos axilares. Frutos (laranjas amargas) de 6–8 cm, casca rugosa, laranja-dourada, muito ácidos e amargos.",
+        "composicao_quimica": [
+          "Óleo essencial das flores (neroli, 0,1–0,2%): linalol (30–40%), acetato de linalila (5–15%), α-terpineol, nerolidol, farnesol, nerol, geraniol",
+          "Hidrolato: linalol, acetato de linalila (em menores concentrações)",
+          "Flavonoides das flores: naringenina, hesperidina, nobiletina",
+          "Antranilato de metila (responsável por parte do aroma floral)",
+          "Benzoato de benzila (traços)",
+          "Sesquiterpenos: β-cariofileno, germacreno"
+        ],
+        "bioma": "Mediterrâneo, subtropical",
+        "cultivo": "Sol pleno, clima mediterrâneo ou subtropical, solo bem drenado, pH 6–7. Flores coletadas manualmente na primavera (curto período de 2–3 semanas). Produção de neroli: requer 1 tonelada de flores para ~1 kg de óleo — um dos OEs mais preciosos."
       },
       "preparo": {
-        "temperatura_ideal": "80–85 °C (linalol muito volátil).",
-        "tempo_de_infusao": "",
-        "quantidade": "2–4 g flores secas para 250 ml.",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "Noite (ansiolítico/sedativo) — ritual do sono.",
-        "combina_com": "Camomila · Melissa · Lavanda · Maracujá · Mel (blends florais do sono)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Ansiolítico suave (linalol — modulação GABAérgica)",
-          "Sedativo leve",
-          "Antiespasmódico",
-          "Cardioprotetor (redução de FC em estresse)",
-          "Antimicrobiano suave",
-          "Componentes ativos:",
-          "Contraindicações: Sem contraindicações relevantes em doses usuais. Gestação: uso moderado tolerado."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "LINALOL",
-            "texto": "Ansiolítico, sedativo (GABA), antimicrobiano"
+            "tipo": "Infusão das flores",
+            "descricao": "1–2 colheres de sopa de flores frescas ou 1 colher de secas (2–3 g) em 200 mL a 80–90°C. Cobrir 10 min. Coar. 1–2 xícaras/dia à noite.",
+            "indicacoes": [
+              "insônia",
+              "ansiedade",
+              "nervosismo",
+              "palpitações",
+              "digestão nervosa"
+            ]
           },
           {
-            "label": "ANTRANILATO DE METILA",
-            "texto": "Aromático floral — neroli"
+            "tipo": "Água de flor de laranjeira (hidrolato — uso interno)",
+            "descricao": "1–2 colheres de sopa (15–30 mL) diluídas em água ou leite. 1–2×/dia. Também usada culinariamente.",
+            "indicacoes": [
+              "ansiedade",
+              "insônia leve",
+              "digestão nervosa",
+              "uso culinário em sobremesas"
+            ]
           },
           {
-            "label": "LIMONENO",
-            "texto": "Antimicrobiano, antidepressivo leve"
+            "tipo": "Óleo essencial neroli (aromaterapia)",
+            "descricao": "2–3 gotas no difusor, 30–60 min. Ou 1–2 gotas em travesseiro.",
+            "indicacoes": [
+              "ansiedade",
+              "pânico",
+              "insônia",
+              "depressão leve",
+              "parto (alívio de ansiedade)"
+            ]
           },
           {
-            "label": "GERANIOL",
-            "texto": "Ansiolítico, antimicrobiano"
-          },
-          {
-            "label": "FLAVONÓIDES (naringenina, hesperidina)",
-            "texto": "Anti-inflamatório, cardioprotetor"
+            "tipo": "Banho relaxante",
+            "descricao": "5–8 gotas de neroli em sal grosso ou leite integral. Adicionar ao banho morno. 20–30 min.",
+            "indicacoes": [
+              "estresse",
+              "insônia",
+              "menopausa (calores e ansiedade)"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "A água de flor de laranjeira autêntica (hidrolato de destilação a vapor) é superior aos aromas sintéticos de laranjeira em eficácia. Culinariamente: usada em pastéis de nata, baklava, madeleine, rahat lokum. O óleo neroli é extremamente caro — verificar pureza antes de comprar."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Sérum facial com neroli",
+            "preparo": "2–3 gotas de OE neroli em 10 mL de óleo de jojoba ou rosa-mosqueta. Aplicar à noite.",
+            "indicacoes": [
+              "pele madura",
+              "rugas",
+              "ressecamento",
+              "cicatrizes",
+              "manchas pós-acne"
+            ]
+          },
+          {
+            "forma": "Tônico facial (hidrolato)",
+            "preparo": "Hidrolato puro ou diluído 50%. Pulverizar no rosto após limpeza.",
+            "indicacoes": [
+              "hidratação",
+              "equilíbrio do pH cutâneo",
+              "pele sensível",
+              "frescor"
+            ]
+          },
+          {
+            "forma": "Massagem relaxante",
+            "preparo": "3–5 gotas de neroli em 15 mL de óleo de amêndoas. Massagem nas costas, ombros ou solas dos pés antes de dormir.",
+            "indicacoes": [
+              "tensão muscular",
+              "ansiedade",
+              "insônia",
+              "menopausa"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Ansiolítico: linalol e acetato de linalila modulam receptores GABA-A (estudos clínicos em salas cirúrgicas e obstetrícia)",
+          "Sedativo leve: ação sobre SNC via inalação e uso interno",
+          "Antiespasmódico: relaxa músculo liso intestinal e uterino",
+          "Antidepressivo leve: inalação de neroli aumenta serotonina e dopamina em modelos animais",
+          "Antioxidante: flavonoides das flores",
+          "Antifúngico: linalol inibe Candida in vitro",
+          "Cicatrizante e regenerante cutâneo: estimula fibroblastos (neroli em cosméticos)"
+        ],
+        "contraindicacoes": [
+          "Alergia a Rutaceae ou limoneno (verificar patch test)",
+          "Uso interno do OE puro: não recomendado",
+          "Fotossensibilização: furanocumarinas presentes (principalmente na casca — as flores têm teor menor mas atenção no uso tópico + sol)"
+        ],
+        "efeitos_adversos": [
+          "Sonolência excessiva em doses altas (sedativo)",
+          "Dermatite de contato (rara)",
+          "Fotossensibilização em uso tópico + exposição solar"
+        ],
+        "interacoes": [
+          "Benzodiazepínicos e sedativos: potenciação",
+          "Anestésicos: possível interação (uso de neroli pré-cirúrgico — informar anestesista)"
+        ],
+        "dose_segura": "Flores secas: 2–4 g/dia em infusão. Hidrolato: 15–30 mL/dia. OE neroli tópico: 1–2% em base. Difusão: 5–10 gotas/30–60 min.",
+        "nivel_evidencia": "Estudos clínicos controlados (RCTs) confirmam eficácia de neroli em aromaterapia para ansiedade pré-operatória, ansiedade no parto, e menopausa. Linalol tem mecanismo ansiolítico bem elucidado in vitro e in vivo."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Floral intenso e profundo, com notas cítricas suaves; cálido, cremoso, exótico; persistente; considerado um dos aromas mais belos do mundo vegetal",
+        "sabor": "Floral delicado, levemente adocicado, com nota cítrica suave; água de laranjeira tem sabor mais concentrado",
+        "cor_visual": "Flores brancas cerosas; hidrolato incolor a levemente opalescente; OE: amarelo pálido a marrom-claro",
+        "textura": "Flores carnosas e cerosas; hidrolato fluido; infusão levíssima",
+        "sensacao": "Calmante imediata ao olfato; levemente sedativo; sensação de luxury e bem-estar"
       },
       "cultura": {
-        "historia": "A água de flor de laranjeira é o mais antigo perfume do mundo ocidental com uso medicinal documentado — produzida por destilação em países árabes desde o séc. X, usada em culinária, cosmética e medicina. No casamento europeu, a noiva usa flor de laranjeira como símbolo de pureza e fertilidade — tradição que remonta à Espanha moura.  Na culinária portuguesa e brasileira, a água de flor de laranjeira aromatiza rabanadas, biscoitos e licores — herança direta da influência árabe na culinária ibérica.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "O óleo neroli leva o nome da Princesa Anna Maria de Nerola (Itália, século XVII) que usava o óleo para perfumar suas luvas e banhos — tornando o aroma símbolo de aristocracia. Na tradição mediterrânea, flores de laranjeira adornam noivas desde a Idade Média (pureza e fertilidade). No norte da África (Marrocos, Tunísia), a destilação artesanal da água de laranjeira é tradição familiar de séculos. A 'água de azahar' (espanhol/árabe) é ingrediente culinário em toda a culinária árabe e mediterrânea.",
+        "uso_tradicional": "Mediterrâneo e Oriente Médio: infusão de flores para nervos, insônia e palpitações. Culinária: pastéis de nata (Portugal), baklava (Turquia), madeleine (França), rahat lokum, m'hencha. Perfumaria: base de grandes clássicos (Eau de Cologne original, 4711). Aromaterapia: ansiedade e menopausa. Cosméticos: antienvelhecimento e regeneração cutânea.",
+        "simbolismo": "Pureza, fertilidade, nobreza. Nas tradições mediterrâneas: buquê de noiva. No islã: 'flor do paraíso'. Na aromaterapia moderna: flor da paz interior.",
+        "curiosidades": [
+          "Para produzir 1 kg de óleo essencial neroli são necessárias aproximadamente 1.000 kg de flores — por isso é um dos OEs mais caros do mundo (R$ 300–800/10 mL)",
+          "A Eau de Cologne original (século XVIII, Colônia, Alemanha) era composta principalmente de neroli, bergamota e rosmarinho — o neroli deu ao perfume seu sucesso",
+          "A tradição de noivas usarem flores de laranjeira brancas remonta à China e chegou à Europa pelos mouros da Andaluzia medieval",
+          "Pastéis de nata e baklava usam água de flor de laranjeira como ingrediente 'secreto' de autenticidade"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido.",
-        "status_ema": "Monografia HMPC — traditional use para ansiedade e insônia.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: primavera (setembro–novembro no Brasil)"
+        "status_brasil": "Flores e hidrolato: sem registro ANVISA como fitoterápico. OE neroli: cosmético. Água de laranjeira: aditivo alimentar aprovado (ANVISA).",
+        "status_europa": "EMA: sem monografia específica para as flores. OE neroli: amplamente usado em cosméticos (INCI: Citrus aurantium amara flower oil). Hidrolato: aditivo alimentar (EFSA).",
+        "farmacopeia": "Não consta em monografias medicinais. OE listado em farmacopeias para uso cosmético.",
+        "registro": "Água de laranjeira (hidrolato): aprovada como aditivo alimentar. OE: cosmético. Flores: erva/chá."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Flores secas a granel",
+          "Água de flor de laranjeira (hidrolato para culinária e cosmética)",
+          "Óleo essencial neroli (premium)",
+          "Produtos cosméticos com neroli (cremes, séruns)",
+          "Sachês de flores para chá"
+        ],
+        "preco_estimado": "Flores secas: R$ 15–35/50 g. Água de laranjeira culinária: R$ 10–25/250 mL. OE neroli: R$ 150–500/5 mL. Cremes com neroli: R$ 60–200.",
+        "disponibilidade": "Flores: moderada — lojas de ervas e online. Água de laranjeira culinária: supermercados especializados e lojas árabes/portuguesas. OE: lojas premium de aromaterapia.",
+        "como_escolher": "OE neroli: GC/MS ou laudo de pureza; aroma floral intenso e persistente — adulterações com linalol sintético são comuns. Água de laranjeira: hidrolato de destilação (não extrato de aroma sintético). Flores: aroma suave mas perceptível.",
+        "armazenamento": "Flores secas: pote hermético, escuro. Validade: 12 meses. OE: frasco âmbar, refrigerado. Hidrolato: geladeira após aberto, 6–12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Ansiedade, insônia e nervosismo (infusão + aromaterapia com neroli — RCTs positivos)",
+          "Pré-operatório e parto (neroli: estudos clínicos controlados para ansiedade)",
+          "Pele madura e regeneração cutânea (sérum com neroli)",
+          "Culinária mediterrânea e árabe (água de laranjeira)"
+        ],
+        "diferenciais": [
+          "RCTs controlados confirmam eficácia de neroli para ansiedade — evidência diferenciada para aromaterapia",
+          "Planta com 3 produtos distintos de alto valor: OE neroli + hidrolato + flores secas",
+          "Um dos aromas mais complexos e valorizados da perfumaria mundial",
+          "Ponte entre saúde e gastronomia — ingrediente culinário de patrimônio cultural"
+        ],
+        "sinergias": [
+          "Flor-de-laranjeira + lavanda + ylang-ylang: blend ansiolítico clássico",
+          "Flor-de-laranjeira + camomila-romana: insônia profunda e nervosismo",
+          "Flor-de-laranjeira + melissa: ansiedade com palpitações e digestão nervosa",
+          "Neroli + rosa-mosqueta (óleo): regeneração cutânea premium pós-50"
+        ],
+        "alertas": [
+          "OE neroli autêntico é caríssimo — desconfiar de preços muito baixos (adulteração frequente)",
+          "Fotossensibilização: evitar exposição solar após aplicação tópica direta de OE",
+          "Sedativo: não combinar com benzodiazepínicos sem orientação médica",
+          "Diferença importante: água de laranjeira culinária (de supermercado) ≠ hidrolato medicinal — composição diferente"
+        ]
       }
     },
     {
       "slug": "rosa-mosqueta",
-      "nome_popular": "Rosa-Mosqueta",
-      "nome_cientifico": "Rosa canina L. (rosa-silvestre europeia) / Rosa rubiginosa L. (rosa-mosqueta andina — principal para óleo cosmético)",
-      "tagline": "A rosa medicinal — o fruto mais rico em vitamina C das plantas temperadas, com ação articular documentada e história que vai de remédio de guerra a cosmético premium global.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Rosa canina L. (rosa-silvestre europeia) / Rosa rubiginosa L. (rosa-mosqueta andina — principal para óleo cosmético)",
-        "familia_botanica": "Rosaceae",
-        "tipo_botanico": "Fitoterápico vitamínico / articular / cosmético",
-        "parte_usada": "Pseudo-frutos secos (quadril/coxinho — \"hip\"), despolpados das sementes; óleo das sementes (cosmético); pétalas (aromáticas).",
-        "sinonimos": [
-          "Rosa-mosqueta · rosa-canina · escaramujo",
-          "Rosehip (inglês) · Cynorrhodon (francês) · Hagebutte (alemão)",
-          "Rosa silvestre / mosqueta (espanhol)"
+        "nome_popular": "Rosa-mosqueta",
+        "nome_cientifico": "Rosa canina / Rosa rubiginosa",
+        "familia": "Rosaceae",
+        "outros_nomes": [
+          "roseira-brava",
+          "rosa-selvagem",
+          "dog rose (ing.)",
+          "cynorrhodon (fr.)"
+        ],
+        "origem": "Europa e Ásia Central",
+        "partes_usadas": [
+          "frutos secos (quadris/cinorrodões)",
+          "pétalas",
+          "óleo das sementes (óleo de rosa-mosqueta)",
+          "sementes"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Ácido-frutado suave, levemente adstringente, framboesa-rosácea, discretamente doce.",
-        "aroma": "Frutal-rosáceo suave, tanino seco, levemente herbáceo.",
-        "cor_da_infusao": "Vermelho-rosado a âmbar. #D84858",
-        "intensidade": "2/5 — suave e agradável.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Arbusto caducifólio de 1–5 m, muito ramificado, com acúleos (espinhos) recurvados. Folhas pinadas compostas (5–7 folíolos). Flores rosas a brancas, 5 pétalas, 3–5 cm, perfumadas. Frutos carnosos (cinorrodões/rosquinhas): 1,5–2 cm, vermelho-alaranjados a escarlates na maturidade, contendo múltiplas sementes pilosas. Os frutos são a principal fonte medicinal.",
+        "composicao_quimica": [
+          "Frutos: vitamina C (400–2000 mg/100 g peso fresco) — uma das maiores concentrações vegetais",
+          "Frutos: carotenoides: β-caroteno, licopeno, luteína",
+          "Frutos: flavonoides: rutina, quercetina, isoquercitrina",
+          "Frutos: pectina (até 15%) — fibra solúvel",
+          "Frutos: ácidos orgânicos: cítrico, málico",
+          "Óleo das sementes: ácido trans-retinoico (tretinoin natural — controverso), ácido linoleico (45–55%), ácido α-linolênico (30–35%), ácido oleico",
+          "Óleo das sementes: carotenoides lipossolúveis"
+        ],
+        "bioma": "Europeu-Mediterrâneo, temperado",
+        "cultivo": "Arbusto silvestre de beiras de estrada, sebes e clareiras. Pleno sol a meia-sombra. Colheita dos frutos no outono (após as primeiras geadas, quando mais doces). Cultivo comercial para óleo no Chile (Rosa rubiginosa) e Europa."
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g de pseudo-frutos secos para 250 ml.",
-        "metodo": "Decocção suave.",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Hibisco · Flor de laranjeira · Camomila · Mel · Canela (blends florais vitamínicos)"
+        "formas": [
+          {
+            "tipo": "Decocção dos frutos (vitamina C e flavonoides)",
+            "descricao": "1–2 colheres de sopa de frutos secos e amassados (sem sementes — pelos irritantes) em 200 mL. Ferver suavemente 15 min. Coar bem (pelos das sementes). 1–2 xícaras/dia.",
+            "indicacoes": [
+              "vitamina C",
+              "imunidade",
+              "gripes e resfriados",
+              "antioxidante",
+              "artrite (anti-inflamatório)"
+            ]
+          },
+          {
+            "tipo": "Geléia/xarope caseiro",
+            "descricao": "Frutos maduros cozidos com açúcar e limão. Rico em vitamina C e pectina. Colher de sopa ao dia.",
+            "indicacoes": [
+              "vitamina C",
+              "imunidade",
+              "uso culinário medicinal"
+            ]
+          },
+          {
+            "tipo": "Óleo de rosa-mosqueta (uso tópico)",
+            "descricao": "Aplicar 3–5 gotas puras ou diluídas em óleo de jojoba no rosto limpo, à noite. Massagear suavemente.",
+            "indicacoes": [
+              "rugas e envelhecimento",
+              "manchas",
+              "cicatrizes",
+              "estrias",
+              "pele seca"
+            ]
+          },
+          {
+            "tipo": "Cápsulas de extrato padronizado",
+            "descricao": "500–1000 mg de extrato 2×/dia. Conforme produto.",
+            "indicacoes": [
+              "osteoartrite (anti-inflamatório documentado)",
+              "vitamina C",
+              "antioxidante sistêmico"
+            ]
+          }
+        ],
+        "dicas": "Remover SEMPRE as sementes e os pelos internos ao preparar a decocção — os pelos são irritantes gastrointestinais. A vitamina C é termolábil: a decocção perde parte da vitamina C, mas preserva flavonoides e carotenoides. O óleo das sementes não contém vitamina C (hidrossolúvel)."
       },
       "usos_topicos": {
-        "evidencia": "",
         "aplicacoes": [
-          "Óleo de semente (anti-aging, cicatrizante): Óleo de sementes de R. rubiginosa (prensagem a frio) — altíssima concentração de ácido linolênico (ω-3) e ácido trans-retinoico natural. Evidência moderada-forte para redução de manchas, cicatrizes e rugas."
-        ],
-        "contraindicacoes": ""
+          {
+            "forma": "Óleo facial puro",
+            "preparo": "3–5 gotas no rosto limpo. Massagem suave em movimentos circulares ascendentes. Aplicar à noite.",
+            "indicacoes": [
+              "antienvelhecimento",
+              "manchas",
+              "cicatrizes de acne",
+              "pele desidratada"
+            ]
+          },
+          {
+            "forma": "Sérum concentrado",
+            "preparo": "Rosa-mosqueta puro ou misturado com neroli, palmarosa ou lavanda. 2–3% de OE em base de rosa-mosqueta.",
+            "indicacoes": [
+              "regeneração intensa",
+              "pele madura",
+              "pós-procedimentos estéticos"
+            ]
+          },
+          {
+            "forma": "Tratamento de estrias",
+            "preparo": "Massagem com óleo puro 2×/dia na área afetada, por 12–24 semanas.",
+            "indicacoes": [
+              "estrias na gestação e pós-parto",
+              "cicatrizes cirúrgicas",
+              "queimaduras leves"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Vitamina C excepcional (pseudo-fruto seco: até 400 mg/100g — 5x a laranja)",
-          "Anti-inflamatório articular (GOPO — galactolipídeo específico)",
-          "Antioxidante",
-          "Cardioprotetor",
-          "Diurético suave",
-          "Cosmético regenerador (óleo de semente)",
-          "Componentes ativos:",
-          "Indicações com evidência:"
+        "acoes_farmacologicas": [
+          "Antioxidante: vitamina C, carotenoides e flavonoides — sinergismo excepcional",
+          "Anti-inflamatório (frutos): GOPO® (galactolipídio) inibe migração de leucócitos — RCTs positivos para osteoartrite",
+          "Imunoestimulador: vitamina C e polissacarídeos",
+          "Regenerante cutâneo (óleo): ácido trans-retinoico e ácidos graxos essenciais estimulam renovação celular",
+          "Antiaterogênico: vitamina C + flavonoides protegem LDL da oxidação",
+          "Antidiabético leve: fibras (pectina) + antioxidantes modulam glicemia"
         ],
-        "componentes_ativos": [
-          {
-            "label": "VITAMINA C",
-            "texto": "Antioxidante, imunidade, colágeno"
-          },
-          {
-            "label": "GOPO (galactolipídeo)",
-            "texto": "Anti-inflamatório articular documentado"
-          },
-          {
-            "label": "BETA-CAROTENO",
-            "texto": "Antioxidante, pró-vitamina A"
-          },
-          {
-            "label": "LICOPENO",
-            "texto": "Antioxidante"
-          },
-          {
-            "label": "PECTINAS",
-            "texto": "Prebiótico, hipoglicemiante leve"
-          },
-          {
-            "label": "ÁCIDO LINOLÊNICO (óleo semente)",
-            "texto": "Anti-inflamatório, regenerador cutâneo"
-          }
+        "contraindicacoes": [
+          "Cálculos renais de oxalato: altas doses de vitamina C podem aumentar oxalúria",
+          "Hemocromatose: vitamina C aumenta absorção de ferro",
+          "Rins: doses muito altas de vitamina C (> 2 g/dia) — cautela em insuficiência renal"
         ],
-        "evidencia": [
-          {
-            "indicacao": "Osteoartrite (dor e mobilidade)",
-            "evidencia": "Moderada",
-            "populacao": "Winther et al. (2005) — GOPO"
-          },
-          {
-            "indicacao": "Artrite reumatoide",
-            "evidencia": "Moderada",
-            "populacao": "Christensen et al. (2008)"
-          },
-          {
-            "indicacao": "Deficiência de vitamina C",
-            "evidencia": "Forte",
-            "populacao": "EMA"
-          }
+        "efeitos_adversos": [
+          "Diarreia e distúrbios gastrointestinais em doses elevadas de vitamina C",
+          "Pelos das sementes: irritação gastrintestinal se não removidos",
+          "Raramente: reação alérgica a Rosaceae"
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          "Ferro (suplemento): vitamina C aumenta absorção de ferro não-heme",
+          "Anticoagulantes: altas doses de vitamina C podem reduzir eficácia da varfarina",
+          "Quimioterapia: vitamin C em altas doses — consultar oncologista"
+        ],
+        "dose_segura": "Frutos secos (decocção): 5–10 g/dia. Extrato padronizado: 2–4 g/dia. Óleo: sem dose máxima documentada (uso tópico). EMA/HMPC: uso tradicional bem estabelecido para complemento de vitamina C.",
+        "nivel_evidencia": "EMA/HMPC: uso bem estabelecido para suplementação de vitamina C. Metanálise Cochrane (2012): extrato padronizado de rosa-mosqueta reduz dor e melhora função em osteoartrite do joelho e quadril (NNT~3). Óleo: estudos clínicos fase II para cicatrizes e envelhecimento cutâneo com resultados positivos."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Frutos: leve, adocicado, frutado, com nota de rosa e tanino. Óleo: suave, levemente frutado e terroso, quase sem odor",
+        "sabor": "Frutos: ácido, adocicado, com taninos; polpa mucilaginosa. Chá: herbáceo-ácido agradável",
+        "cor_visual": "Frutos: vermelho-alaranjado intenso. Decocção: laranja-avermelhada. Óleo: laranja-escuro a dourado-profundo",
+        "textura": "Frutos carnosos; decocção com leve corpo. Óleo: seco ao toque (non-greasy), absorção rápida",
+        "sensacao": "Decocção: levemente adstringente e refrescante. Óleo: suavizante, aquece levemente ao massagear"
       },
       "cultura": {
-        "historia": "Durante a Segunda Guerra Mundial, quando o bloqueio alemão interrompeu importações de frutas cítricas para a Grã-Bretanha, o governo britânico organizou campanhas nacionais de coleta de rosa-mosqueta silvestre para produção de xarope vitamínico para crianças. Estimativas indicam que mais de 450 toneladas de pseudo-frutos foram coletados em 1941 por voluntários civis — uma das histórias mais tocantes de etnobotânica de emergência da história.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Usada desde a Pré-história — frutos encontrados em sítios arqueológicos neolíticos. Hipócrates recomendava para inflamações. Na Idade Média europeia: geléia de cinorrodão era medicamento padrão para gripes e vitamina C (antes da vitamina C ser descoberta). Soldados britânicos na 2ª Guerra Mundial tomavam xarope de cinorrodão (vitamina C) por falta de frutas cítricas. O óleo de rosa-mosqueta foi popularizado pelo Dr. Fernando Galleguillos (Chile, 1980s) para cicatrizes e envelhecimento.",
+        "uso_tradicional": "Europa: frutos para imunidade e vitamina C. Escandinávia: sopa de cinorrodão (nyponsoppa). América do Sul (Chile): óleo de rosa-mosqueta — popularizado para cicatrizes de queimaduras em pacientes do Pinochet. Tradição árabe: pétalas em água de rosas. Cosmética: ingrediente premium anti-aging.",
+        "simbolismo": "Amor, beleza, cura. A rosa, com seus espinhos, simboliza que a beleza tem um custo. Cinorrodão: resiliência — o fruto mais nutritivo nasce do mais simples arbusto espinhoso.",
+        "curiosidades": [
+          "O xarope de cinorrodão foi distribuído pelo governo britânico na 2ª Guerra Mundial para prevenir escorbuto quando laranjas e limões eram escassos",
+          "Uma colher de chá de frutos frescos de rosa-mosqueta fornece mais vitamina C do que uma laranja inteira",
+          "O óleo foi usado nos anos 80 no Chile para tratar cicatrizes de queimaduras em ex-presos políticos — essa aplicação lançou a reputação global do óleo",
+          "Os pelos internos das sementes (usados como 'coceira' em brincadeiras de infância) são o motivo pelo qual a decocção deve ser filtrada muito bem"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido.",
-        "status_ema": "Monografia HMPC — traditional use para vitamina C.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Pseudo-frutos: setembro–novembro (Europa)"
+        "status_brasil": "ANVISA RDC 26/2014: Rosa canina fruto — notificado como fitoterápico isento para suplementação de vitamina C. Óleo: cosmético regulado.",
+        "status_europa": "EMA/HMPC: uso tradicional bem estabelecido para suplementação de vitamina C. Monografia publicada.",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Rosae pseudofructus. Farmacopeia Brasileira 6ª ed.",
+        "registro": "Produtos fitoterápicos registrados no Brasil e Europa. Óleo: cosmético amplamente registrado."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Frutos secos a granel",
+          "Chá em sachês",
+          "Extrato seco em cápsulas (padronizado em GOPO/vitamina C)",
+          "Óleo das sementes (cosmético/tópico)",
+          "Geléia/xarope de cinorrodão"
+        ],
+        "preco_estimado": "Frutos secos: R$ 12–30/100 g. Cápsulas: R$ 40–120/frasco. Óleo: R$ 30–120/30 mL.",
+        "disponibilidade": "Boa — ervanarias, farmácias, lojas naturais. Óleo: lojas de cosmética natural e online.",
+        "como_escolher": "Frutos: vermelho intenso, sem mofo. Cápsulas: preferir padronizados em GOPO® ou vitamina C. Óleo: cor laranja-escuro intensa (mais carotenoides e ácidos graxos essenciais) — óleo claro pode ser refinado ou adulterado.",
+        "armazenamento": "Frutos secos: pote hermético. Validade: 12–18 meses. Óleo: frasco âmbar, geladeira após aberto. Validade: 6–12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Vitamina C natural e antioxidante (frutos — imunidade e prevenção)",
+          "Osteoartrite — anti-inflamatório documentado em RCTs (extrato GOPO®)",
+          "Regeneração cutânea e antienvelhecimento (óleo das sementes)",
+          "Cicatrizes, estrias e manchas (óleo tópico)"
+        ],
+        "diferenciais": [
+          "Metanálise Cochrane confirma eficácia para osteoartrite — base de evidência rara para plantas medicinais",
+          "Fruto com uma das maiores concentrações de vitamina C do reino vegetal (supera laranja e kiwi)",
+          "Óleo com ácidos graxos essenciais omega-3 e omega-6 em proporção equilibrada — único entre os óleos faciais",
+          "Planta de alto uso histórico confirmado por ciência moderna — validação dupla"
+        ],
+        "sinergias": [
+          "Rosa-mosqueta (frutos) + equinácea: imunidade reforçada com sinergia vitamina C + imunomodulação",
+          "Rosa-mosqueta (óleo) + neroli + palmarosa: sérum facial regenerativo premium",
+          "Rosa-mosqueta (cápsulas) + cúrcuma: anti-inflamatório para artrite (abordagem integrativa)",
+          "Rosa-mosqueta + calêndula (óleo): cicatrização cutânea completa"
+        ],
+        "alertas": [
+          "REMOVER sementes e pelos internos ao preparar decocção — pelos são irritantes intestinais",
+          "Altas doses de vitamina C: oxalúria em predispostos a cálculos renais",
+          "Óleo claro ou inodoro: desconfiar — pode ser refinado (perda de ativos)",
+          "Varfarina: vitamina C em altas doses pode reduzir anticoagulação — monitorar RNI"
+        ]
       }
     },
     {
       "slug": "tilia",
-      "nome_popular": "Tília",
-      "nome_cientifico": "Tilia cordata Mill. (tília-de-folhas-pequenas) / T. platyphyllos Scop. (tília-de-folhas-grandes)",
-      "tagline": "A calmante dos boulevards — a flor dos tilos europeus com o perfume mais suave de qualquer infusão e ação sedativa gentil que a tradição europeia preserva há séculos nos chás noturnos.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Tilia cordata Mill. (tília-de-folhas-pequenas) / T. platyphyllos Scop. (tília-de-folhas-grandes)",
-        "familia_botanica": "Malvaceae (antes Tiliaceae)",
-        "tipo_botanico": "Fitoterápico ansiolítico / sedativo / diaforético",
-        "parte_usada": "Flores e brácteas secas.",
-        "sinonimos": [
-          "Tília · tilo · tília-europeia",
-          "Linden / Lime tree (inglês) · Tilleul (francês) · Linde (alemão)",
-          "Linden tea — a tisana de referência da Europa continental para sono e ansiedade"
+        "nome_popular": "Tília",
+        "nome_cientifico": "Tilia cordata / Tilia platyphyllos",
+        "familia": "Malvaceae (antes Tiliaceae)",
+        "outros_nomes": [
+          "tília-de-folha-pequena",
+          "tilleul (fr.)",
+          "linden (ing.)",
+          "linde (al.)"
+        ],
+        "origem": "Europa e oeste da Ásia",
+        "partes_usadas": [
+          "flores com brácteas (tília florida)",
+          "brácteas",
+          "folhas jovens",
+          "carvão de madeira (uso específico)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Floral-mel delicado, levemente herbáceo, mucilaginoso suave, doce natural. O sabor mais gentil entre os sedativos do catálogo.",
-        "aroma": "Floral-mel intenso, néctar de abelha, feno florido europeu. Das mais agradáveis do catálogo.",
-        "cor_da_infusao": "Amarelo-pálido a dourado-mel. #F0E070",
-        "intensidade": "1–2/5 — a infusão mais delicada entre os sedativos.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Árvore caducifólia de 20–40 m, longevíssima (pode ultrapassar 1.000 anos). Copa densa e arredondada. Folhas cordiformes, assimétrica na base, finamente serradas, verde-escuras na face superior e verde-acinzentadas com tufos de pelos nas axilas das nervuras na face inferior. Flores pequenas (7–12 mm), amarelo-esverdeadas, muito perfumadas, reunidas em inflorescências cimosas (3–15 flores) com uma bráctea ligulada membranosa que serve como asa dispersora dos frutos.",
+        "composicao_quimica": [
+          "Mucilagens (10%): arabinogalactanas — demulcentes",
+          "Flavonoides (1–1,5%): tiliroside (kaempferol-3-O-glucosídeo-coumaril), quercetina, rutina, luteolina",
+          "Óleo essencial (traços): farnesol, geraniol, linalol — responsáveis pelo aroma característico",
+          "Proantocianidinas",
+          "Ácidos fenólicos: ácido cafeico, ácido clorogênico",
+          "Saponinas (traços)",
+          "Aminoácidos: glicina, alanina (flores)"
+        ],
+        "bioma": "Europeu temperado — florestas mistas e bosques",
+        "cultivo": "Árvore de parques e avenidas. Floração curta: 2–3 semanas em junho-julho. Colheita das flores + brácteas quando 50–70% abertas (mais aromáticas e ricas em flavonoides). Secar rapidamente à sombra para preservar cor e ativos."
       },
       "preparo": {
-        "temperatura_ideal": "80–85 °C (farnesol e linalol voláteis).",
-        "tempo_de_infusao": "",
-        "quantidade": "2–3 g flores e brácteas secas para 250 ml.",
-        "metodo": "Infusão coberta, preferencialmente em bule com tampa dupla.",
-        "reinfusoes": "",
-        "melhor_momento": "Noite — ritual do sono europeu clássico.",
-        "combina_com": "Camomila · Melissa · Lavanda · Valeriana · Mel · Flor de laranjeira"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Ansiolítico suave",
-          "Sedativo leve (indutor de sono)",
-          "Diaforético (estimula transpiração em estados febris)",
-          "Antiespasmódico",
-          "Demulcente (mucilagens)",
-          "Cardioprotetor (flavonóides — tiliroside)",
-          "Componentes ativos:",
-          "Contraindicações: Sem contraindicações relevantes em doses usuais. Uso excessivo prolongado: associado a cardiotoxicidade em relatos históricos não confirmados modernamente."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "FARNESOL",
-            "texto": "Sedativo, ansiolítico"
+            "tipo": "Infusão (uso interno)",
+            "descricao": "1–2 colheres de sopa de flores + brácteas secas (2–4 g) em 200 mL a 90°C. Cobrir 10–15 min. Coar. 1–3 xícaras/dia, especialmente à noite.",
+            "indicacoes": [
+              "insônia",
+              "ansiedade",
+              "nervosismo",
+              "resfriado com febre",
+              "tosse",
+              "dor de cabeça tensional"
+            ]
           },
           {
-            "label": "LINALOL",
-            "texto": "Ansiolítico, sedativo"
+            "tipo": "Infusão concentrada (banho)",
+            "descricao": "50–100 g de flores em 2 L de água quente. Infundir 20 min. Adicionar ao banho quente.",
+            "indicacoes": [
+              "relaxamento profundo",
+              "estresse intenso",
+              "insônia",
+              "ansiedade"
+            ]
           },
           {
-            "label": "TILIROSIDE (flavonoide)",
-            "texto": "Cardioprotetor, anti-inflamatório"
-          },
-          {
-            "label": "MUCILAGENS",
-            "texto": "Demulcente, expectorante suave"
-          },
-          {
-            "label": "ÁCIDO CLOROGÊNICO",
-            "texto": "Antioxidante"
-          },
-          {
-            "label": "P-CUMARINA",
-            "texto": "Diaforético"
+            "tipo": "Mel de tília (uso culinário-medicinal)",
+            "descricao": "Mel produzido por abelhas nas flores de tília — um dos méis mais valorosos da Europa. Uso direto.",
+            "indicacoes": [
+              "tosse",
+              "garganta irritada",
+              "insônia (colher à noite)",
+              "imunidade"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "As flores com brácteas (inflorescência inteira) são mais ricas em ativos do que as flores separadas. Não deixar a infusão ferver — aromas e mucilagens degradam. O chá de tília tem ação gentil e segura — uma das poucas plantas sedativas adequadas para crianças."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Compressas faciais",
+            "preparo": "Infusão forte (5 g/200 mL), fria. Gaze embebida sobre o rosto por 15 min.",
+            "indicacoes": [
+              "pele sensível e avermelhada",
+              "dermatite",
+              "olhos cansados"
+            ]
+          },
+          {
+            "forma": "Banho relaxante",
+            "preparo": "100 g de flores em bacia com água quente; infundir 20 min; adicionar ao banho cheio.",
+            "indicacoes": [
+              "estresse",
+              "insônia",
+              "tensão muscular",
+              "criança agitada"
+            ]
+          },
+          {
+            "forma": "Enxágue capilar",
+            "preparo": "Infusão concentrada fria após lavagem. Deixar agir sem enxaguar.",
+            "indicacoes": [
+              "brilho capilar",
+              "couro cabeludo sensível"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Ansiolítico e sedativo: tiliroside e flavonoides interagem com receptores benzodiazepínicos (GABA-A)",
+          "Diaforético: promove sudorese — uso tradicional para febre (uso quente + envolvimento em coberta)",
+          "Antiespasmódico: mucilagens e flavonoides relaxam músculo liso brônquico e intestinal",
+          "Anti-inflamatório: ácidos fenólicos e flavonoides inibem NF-κB",
+          "Antimicrobiano leve: farnesol e ácido cafeico",
+          "Emoliente: mucilagens protegem mucosas respiratória e digestiva",
+          "Diurético leve"
+        ],
+        "contraindicacoes": [
+          "Uso excessivo prolongado: cardiotoxicidade descrita em uso de flores velhas ou superdosagem (raro — doses normais são seguras)",
+          "Hipersensibilidade a tília (rara)"
+        ],
+        "efeitos_adversos": [
+          "Sonolência (efeito desejado em insônia, mas atenção antes de dirigir)",
+          "Cardiotoxicidade: casos raros com uso excessivo e prolongado de flores muito maduras",
+          "Raramente: dermatite de contato"
+        ],
+        "interacoes": [
+          "Sedativos e hipnóticos (benzodiazepínicos, zopiclona): potenciação",
+          "Anticoagulantes: possível potenciação leve"
+        ],
+        "dose_segura": "Flores secas: 2–4 g/dia em 1–3 xícaras. EMA/HMPC: uso bem estabelecido. Uso em crianças: 1–2 g em infusão — seguro. Uso prolongado: sem restrições em doses normais.",
+        "nivel_evidencia": "EMA/HMPC: uso medicinal tradicional bem estabelecido para tensão nervosa e perturbações do sono, e como adjuvante em resfriados. ESCOP monografia. Tiliroside: mecanismo ansiolítico documentado in vitro e in vivo."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Floral suave e mel-de-flores, delicado, levemente herbáceo; um dos aromas mais reconfortantes do reino vegetal",
+        "sabor": "Suave, adocicado, floral, com nota levemente melosa e mucilaginosa; muito agradável",
+        "cor_visual": "Flores amarelo-esverdeadas; infusão amarelo-dourada pálida a dourada",
+        "textura": "Flores delicadas; infusão com leve corpo mucilaginoso suave",
+        "sensacao": "Calmante imediata; suaviza a garganta; chá de tília é universalmente bem tolerado — sem adstringência ou amargor"
       },
       "cultura": {
-        "historia": "Os tilos são as árvores das praças e boulevards da Europa continental — em Paris, Berlim, Viena, Amsterdam. Sob os tilos, as comunidades europeias se reuniam para discutir assuntos públicos, negociar casamentos, celebrar festas. A tília era a árvore da comunidade por excelência na Alemanha medieval — a palavra alemã para praça central de vila era frequentemente \"Unter der Linde\" (embaixo do tilo).  O \"tilleul\" francês é a infusão noturna de referência da France inteira — mais consumida que qualquer outro chá calmante no país. Marcel Proust descreveu a madeleine mergulhada no tilleul como o portal de volta ao passado na abertura de \"Em Busca do Tempo Perdido\" — a infusão mais literária da história.",
-        "cerimonial": "",
-        "brasil": "A tília é praticamente desconhecida na medicina popular brasileira — chegou timidamente via lojas de produtos naturais importados e farmácias de manipulação. Tem potencial de crescimento no mercado de chás premium para sono, onde a diferenciação aromática (floral-mel) a distingue da valeriana (aroma desafiador) e da camomila (já massificada).",
-        "curiosidade": ""
+        "historia": "A tília tem papel central na cultura europeia há milênios. Na mitologia germânica: árvore sagrada dedicada a Freya (deusa do amor). Nas aldeias medievais alemãs, as decisões comunitárias eram tomadas sob a Linde (tília). Em Berlim, a Unter den Linden (sob as tílias) é a mais famosa avenida da cidade. Na França: 'tilleul' é o chá das avós — símbolo de casa, cuidado e calma. Marcel Proust, em 'Em Busca do Tempo Perdido', descreve a madeleine mergulhada em chá de tília como o gatilho de suas memórias mais profundas.",
+        "uso_tradicional": "Europa central: chá para insônia, resfriado e ansiedade — planta das avós em toda a Europa. França: tilleul — chá de relaxamento mais consumido. Medicina árabe: Ibn Sina (Avicena) usava para febre. Medicina popular brasileira: cultivada em parques e usada como substituta da camomila para insônia.",
+        "simbolismo": "Paz, amor, longevidade, sabedoria comunitária. Na Alemanha: árvore da justiça e das assembleias. Na França: símbolo do cuidado materno. Árvore que pode viver 1.000 anos — símbolo de continuidade.",
+        "curiosidades": [
+          "A tília de Neuenstadt am Kocher (Alemanha) tem mais de 1.000 anos e ainda produz flores medicínais todo ano",
+          "Proust usa o chá de tília como o veículo da memória involuntária em 'Em Busca do Tempo Perdido' — o episódio literário mais famoso sobre uma planta medicinal",
+          "O mel de tília ('Lindenhonig') é considerado um dos méis mais finos da Europa — levíssimo, cristalização lenta, aroma de mentol suave",
+          "A madeira de tília é a preferida de luthiers (fabricantes de violinos) para a construção de instrumentos de corda"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido.",
-        "status_ema": "Monografia HMPC — traditional use para ansiedade e insônia.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: junho–julho (Europa). Produto importado seco."
+        "status_brasil": "ANVISA RDC 26/2014: Tilia cordata/platyphyllos flores — notificada como fitoterápico isento de prescrição para tensão nervosa e distúrbios do sono.",
+        "status_europa": "EMA/HMPC: uso medicinal tradicional bem estabelecido — tensão nervosa, perturbações do sono, resfriados. Monografia publicada. ESCOP monografia.",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Tiliae flos. Farmacopeia Brasileira 6ª ed.",
+        "registro": "Fitoterápico registrado em vários países europeus e no Brasil."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Flores com brácteas secas a granel",
+          "Chá em sachês",
+          "Tintura hidroalcoólica",
+          "Cápsulas de extrato seco",
+          "Mel de tília",
+          "Mistura de chás relaxantes (tília + camomila + melissa)"
+        ],
+        "preco_estimado": "Flores secas: R$ 12–30/50 g. Sachês: R$ 10–25/caixa. Mel de tília: R$ 40–100/250 g.",
+        "disponibilidade": "Boa — ervanarias, farmácias naturais, supermercados (sachês). Flores frescas: árvores em parques no sul do Brasil (junho-julho).",
+        "como_escolher": "Flores com brácteas intactas e amarelo-esverdeadas, sem flores escurecidas (flores velhas têm maior risco cardiotóxico). Aroma floral suave presente. Para crianças: preferir sachês ou flores de qualidade certificada.",
+        "armazenamento": "Flores secas: pote hermético, escuro, seco. Validade: 12 meses. Evitar flores com > 1 ano (risco de degradação e cardiotoxicidade de compostos de degradação)."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Insônia e nervosismo (sedativo suave — seguro para crianças e idosos)",
+          "Resfriado com febre — diaforético (beber quente + coberta)",
+          "Tosse e bronquite leve (expectorante e antiespasmódico brônquico)",
+          "Ansiedade e tensão muscular (banho + infusão)"
+        ],
+        "diferenciais": [
+          "Uma das poucas plantas sedativas com perfil de segurança adequado para crianças",
+          "EMA uso bem estabelecido — entre as plantas mais bem regulamentadas da Europa",
+          "Aroma e sabor universalmente agradáveis — maior adesão terapêutica de qualquer chá sedativo",
+          "Referência cultural literária (Proust) — planta com identidade cultural européia única"
+        ],
+        "sinergias": [
+          "Tília + camomila + melissa: insônia e nervosismo (blend clássico europeu)",
+          "Tília + elderberry (sabugueiro): resfriado + imunidade",
+          "Tília + lavanda: ansiedade com tensão muscular",
+          "Tília + funcho: digestão nervosa e espasmo intestinal"
+        ],
+        "alertas": [
+          "Flores velhas (> 1 ano) ou muito maduras: risco de cardiotoxicidade — usar flores frescas/recentes",
+          "Sonolência: não combinar com sedativos prescritos sem orientação",
+          "Crianças: doses menores (1–2 g) e sob supervisão",
+          "Dirigir: atenção à sonolência, especialmente na primeira vez"
+        ]
       }
     },
     {
       "slug": "manjericao",
-      "nome_popular": "Manjericão",
-      "nome_cientifico": "Ocimum basilicum L.",
-      "tagline": "A erva do amor mediterrâneo — aromático culinário universal com ação antimicrobiana potente, adaptogênica leve e perfil sensorial que é simultaneamente o mais famoso e o menos explorado medicinalmente do catálogo.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Ocimum basilicum L.",
-        "familia_botanica": "Lamiaceae",
-        "tipo_botanico": "Especiaria aromática / antimicrobiana / adaptogênica leve",
-        "parte_usada": "Folhas frescas ou secas; flores.",
-        "sinonimos": [
-          "Manjericão · alfavaca · alfavaca-cravo",
-          "Basil (inglês) · Basilic (francês) · Basilikum (alemão)",
-          "Tulsi-não-sagrado (diferenciação popular do tulsi O. tenuiflorum)"
+        "nome_popular": "Manjericão",
+        "nome_cientifico": "Ocimum basilicum",
+        "familia": "Lamiaceae",
+        "outros_nomes": [
+          "alfavaca",
+          "basil (ing.)",
+          "basilic (fr.)",
+          "basilico (it.)"
+        ],
+        "origem": "Índia e Sudeste Asiático",
+        "partes_usadas": [
+          "folhas frescas",
+          "folhas secas",
+          "sumidades floridas",
+          "óleo essencial"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Aromático-floral-apimentado complexo, levemente anisado (metilchavicol), pimentado (eugenol), herbáceo fresco. Sabor que define a culinária mediterrânea e italiana.",
-        "aroma": "Linalol-floral + metilchavicol-anisado + eugenol-apimentado — aroma que evoca imediatamente Itália, Provence, cozinha de verão.",
-        "cor_da_infusao": "Verde-pálido claro. #C8DC78",
-        "intensidade": "3/5 — aromático presente.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Herbácea anual (clima temperado) ou perene (tropical) de 30–80 cm. Caules quadrangulares, ramificados. Folhas opostas, oval-elípticas (2–8 cm), verde-brilhante intenso, glabras ou levemente pubescentes, muito aromáticas. Flores brancas a lilás em espigas terminais. Muitas variedades: 'Genovese' (pesto), 'Napolitano' (folha grande), roxo, limão, manjericão-tailandês, alfavaca-cravo.",
+        "composicao_quimica": [
+          "Óleo essencial (0,5–1,5%): composição varia pela quimiotipo — estragol (metilchavicol, 70–88% no tipo europeu), linalol (40–70% no tipo asiático/africano), eugenol (tipo cravo), cineol",
+          "Flavonoides: orientina, vicenina, apigenina, luteolina",
+          "Ácido rosmarínico (potente antioxidante)",
+          "Ácido ursólico e oleanólico (triterpenos)",
+          "Beta-caroteno, vitamina K, vitamina C",
+          "Minerais: cálcio, ferro, potássio, manganês"
+        ],
+        "bioma": "Tropical e subtropical — origem asiática, cosmopolita",
+        "cultivo": "Pleno sol, solo fértil e úmido, pH 6–7, temperatura > 15°C. Anual em climas frios. Multiplica por sementes. Despontar frequentemente para retardar floração e manter folhas vigorosas. Colheita das folhas antes e durante floração."
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Antimicrobiano potente (linalol + eugenol)",
-          "Antifúngico (Candida — eugenol)",
-          "Adaptogênico leve (OE — modulação de estresse)",
-          "Antioxidante",
-          "Anti-inflamatório",
-          "Carminativo",
-          "Antidepressivo leve (linalol)",
-          "Componentes ativos:",
-          "Contraindicações: Estragol (metilchavicol) — genotóxico em doses altas de OE (culinária: seguro). Gestação em doses de OE."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "Quimiotipo",
-            "texto": "Componente dominante — Perfil"
+            "tipo": "Uso culinário fresco",
+            "descricao": "Folhas frescas adicionadas no final do cozimento ou cruas (pesto, pizza, saladas, molhos). Calor excessivo destrói os aromas.",
+            "indicacoes": [
+              "digestão",
+              "carminativo",
+              "antisséptico alimentar",
+              "suporte nutricional"
+            ]
           },
           {
-            "label": "Europeu (linalol)",
-            "texto": "Linalol (60%) — Floral, ansiolítico"
+            "tipo": "Infusão (uso interno)",
+            "descricao": "1–2 colheres de sopa de folhas frescas ou 1 de secas (2–3 g) em 200 mL a 90°C. Cobrir 10 min. Coar. 2–3 xícaras/dia.",
+            "indicacoes": [
+              "flatulência",
+              "cólica",
+              "indigestão",
+              "ansiedade leve",
+              "tosse"
+            ]
           },
           {
-            "label": "Tropical (metilchavicol)",
-            "texto": "Metilchavicol (estragol) (80%) — Anisado, mais picante"
+            "tipo": "Óleo essencial (aromaterapia e tópico)",
+            "descricao": "Difusão: 3–5 gotas. Tópico: 1–2% em base vegetal.",
+            "indicacoes": [
+              "ansiedade",
+              "fadiga mental",
+              "cefaleia",
+              "repelente de insetos"
+            ]
           },
           {
-            "label": "Cravo (eugenol)",
-            "texto": "Eugenol (70%) — Apimentado, antimicrobiano forte"
+            "tipo": "Pesto fresco (uso culinário-medicinal)",
+            "descricao": "Folhas frescas + alho + azeite + pinoli + parmesão. Alto valor nutricional e antioxidante.",
+            "indicacoes": [
+              "antioxidante",
+              "anti-inflamatório",
+              "digestivo"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "Quimiotipo importa: manjericão europeu (Genovese) tem estragol elevado — potencialmente genotóxico em doses altas; o uso culinário habitual é seguro. Manjericão linalol (tropical/africano) é mais seguro para uso medicinal prolongado. Folhas frescas têm mais ativo que secas."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Repelente de insetos",
+            "preparo": "Folhas frescas esfregadas na pele, ou spray com infusão forte + álcool 70%.",
+            "indicacoes": [
+              "mosquitos",
+              "pernilongos",
+              "borrachudos"
+            ]
+          },
+          {
+            "forma": "Compressa para cefaleia",
+            "preparo": "Folhas frescas amassadas. Aplicar diretamente na testa por 10–15 min.",
+            "indicacoes": [
+              "cefaleia tensional",
+              "enxaqueca leve"
+            ]
+          },
+          {
+            "forma": "Cataplasma anti-inflamatório",
+            "preparo": "Folhas levemente aquecidas, amassadas, aplicadas na área dolorida.",
+            "indicacoes": [
+              "artralgia",
+              "contusões",
+              "picadas de insetos"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Carminativo e espasmolítico: óleo essencial relaxa músculo liso gastrointestinal",
+          "Antimicrobiano: estragol, linalol e eugenol inibem amplo espectro de bactérias e fungos",
+          "Antioxidante: ácido rosmarínico, flavonoides, vitaminas — sinergismo potente",
+          "Anti-inflamatório: ácido ursólico e rosmarínico inibem COX-2 e NF-κB",
+          "Adaptogênico leve: uso tradicional em ayurveda como 'tulsi do Ocidente'",
+          "Repelente de insetos: estragol e eugenol repelem Aedes aegypti",
+          "Ansiolítico leve: linalol (quimiotipo linalol) modula GABA"
+        ],
+        "contraindicacoes": [
+          "Gestação em doses medicinais: estragol potencialmente genotóxico — evitar altas doses de OE interno",
+          "Lactação: cautela com OE",
+          "Crianças < 2 anos: OE interno não recomendado",
+          "Anticoagulados: vitamina K presente (folhas frescas em grandes quantidades)"
+        ],
+        "efeitos_adversos": [
+          "Altas doses de estragol (OE rico em estragol): hepatotoxicidade potencial (genotóxico in vitro)",
+          "Sensibilização cutânea ao OE (rara)",
+          "Hipoglicemia leve em diabéticos"
+        ],
+        "interacoes": [
+          "Anticoagulantes (varfarina): vitamina K em grandes quantidades culinárias — monitorar RNI",
+          "Hipoglicemiantes: potenciação leve (monitorar glicemia)"
+        ],
+        "dose_segura": "Uso culinário: ilimitado — seguro. Infusão: 2–4 g/dia. OE: 1–2% tópico; difusão: 3–5 gotas. EFSA: estragol no uso culinário normal não representa risco — contexto matricial (planta inteira) difere do estragol isolado.",
+        "nivel_evidencia": "Dados pré-clínicos sólidos para antimicrobiano e anti-inflamatório. Estudos clínicos limitados para uso medicinal específico. Vasta evidência para segurança de uso culinário. EFSA: avaliação de risco do estragol — uso alimentar normal é seguro."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Aromático, doce-picante, com notas anisadas (estragol) ou florais-mentoladas (linalol), variando muito pelo quimiotipo",
+        "sabor": "Picante-aromático, levemente anisado, pungente; quente e refrescante simultaneamente",
+        "cor_visual": "Verde-brilhante intenso (fresco); verde-escuro (seco); infusão verde-amarelada",
+        "textura": "Folhas lisas, sedosas ao toque; infusão leve",
+        "sensacao": "Aquecedor e estimulante; carminativo perceptível rapidamente após ingestão"
       },
       "cultura": {
-        "historia": "Basilikos em grego significa \"real\" ou \"do rei\" — o manjericão era planta de reis. Na Grécia antiga, era cultivado apenas em jardins reais. Na Índia, cada casa hindu tem uma planta sagrada de tulsi (O. tenuiflorum, parente próximo) — e o manjericão carrega essa aura sagrada por toda a tradição mediterrânea.  Em Itália, oferecer um ramo de manjericão a alguém era declaração de amor. Em Roma, a serva que colocava manjericão na janela sinalizava que estava disponível para um pretendente. A planta do amor, da realeza e da cozinha — tudo ao mesmo tempo.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Originário da Índia, onde é cultivado há mais de 5.000 anos e considerado sagrado no hinduísmo. Chegou à Europa através dos gregos e romanos (os gregos o chamavam de 'herba regale' — erva real, 'basileus' = rei). Na Itália medieval: planta do amor — mulheres colocavam manjericão na janela para sinalizar disponibilidade. No século XIX, Genovese Pesto surgiu como patrimônio culinário ligúrio. Na medicina ayurvédica, o tulsi (Ocimum tenuiflorum — parente próximo) é a planta mais sagrada.",
+        "uso_tradicional": "Índia/Ayurveda: adaptogênico, anti-inflamatório, digestivo. Europa mediterrânea: culinária (pesto, pizza, pasta) + digestivo. Brasil: alfavaca — chá para gripe, tosse, gases, repelente. Medicina popular brasileira: 'alfavacão' (O. gratissimum) com eugenol alto para dor de dente.",
+        "simbolismo": "Realeza, amor, sagrado (hinduísmo). Na Itália: amor e devoção. Na Grécia antiga: riqueza. No Brasil popular: sorte e proteção do lar.",
+        "curiosidades": [
+          "'Basileum' em grego significa 'planta do rei' — manjericão foi considerado digno apenas da realeza na Grécia Antiga",
+          "O pesto genovese tem DOP (Denominação de Origem Protegida) na União Europeia — apenas o manjericão 'Genovese' de Pra, na Ligúria, é reconhecido",
+          "Manjericão tailandês, limão e alfavaca são variedades tão diferentes na composição que funcionam como plantas distintas terapeuticamente",
+          "O estragol do manjericão europeu foi durante anos um alerta de segurança — estudos de 2012 em contexto de planta inteira mostram que os polifenóis inibem a genotoxicidade"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso alimentar.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Disponível o ano todo (cultivo perene tropical)"
+        "status_brasil": "ANVISA: sem registro específico como fitoterápico. Amplamente usado como alimento/condimento. Óleo essencial: cosmético.",
+        "status_europa": "EMA: sem monografia medicinal. EFSA: avaliação de risco de estragol no uso alimentar — sem restrições para uso culinário normal. Uso cosmético do OE regulado por IFRA.",
+        "farmacopeia": "Farmacopeia Europeia: Ocimum basilicum herba mencionada. Não há monografia medicinal completa.",
+        "registro": "Sem medicamentos registrados. Amplamente comercializado como alimento, condimento e aromaterapia."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Planta fresca (supermercados, hortas)",
+          "Folhas secas a granel e sachês",
+          "Óleo essencial",
+          "Extrato seco em cápsulas (suplemento)",
+          "Pesto pronto (culinário)"
+        ],
+        "preco_estimado": "Fresco: R$ 3–8/maço. Seco: R$ 5–15/20 g. OE: R$ 20–50/10 mL.",
+        "disponibilidade": "Muito ampla — supermercados (fresco e seco), ervanarias, feiras, hortas domésticas.",
+        "como_escolher": "Fresco: folhas verde-brilhante sem manchas, aroma intenso ao friccionar. Seco: preferir folhas inteiras; aroma presente. OE: verificar quimiotipo (linalol ou estragol) conforme o uso desejado.",
+        "armazenamento": "Fresco: temperatura ambiente em copo de água, ou refrigerado envolvido em papel úmido. Seco: pote hermético, escuro. Validade: 12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Digestivo carminativo (flatulência, cólica, indigestão)",
+          "Antimicrobiano alimentar e culinário (pesto, molhos, marinadas)",
+          "Repelente natural de insetos (uso externo)",
+          "Antioxidante e anti-inflamatório alimentar"
+        ],
+        "diferenciais": [
+          "Planta culinária de alto valor medicinal — bridge perfeita entre gastronomia e fitoterapia",
+          "Diversidade de quimiotipos: permite escolher composição ideal para cada uso",
+          "Pesto como delivery medicinal: manjericão + alho + azeite = anti-inflamatório, antioxidante e antimicrobiano simultâneos",
+          "Planta sagrada em duas tradições (hinduísmo e culinária italiana) — identidade cultural duplamente forte"
+        ],
+        "sinergias": [
+          "Manjericão + alho + azeite (pesto): anti-inflamatório + antimicrobiano + cardiovascular",
+          "Manjericão + funcho + camomila: digestivo completo para cólica e gases",
+          "Manjericão (OE) + citronela: repelente de insetos potente",
+          "Manjericão + gengibre: digestivo aquecedor para náusea e indigestão"
+        ],
+        "alertas": [
+          "OE quimiotipo estragol: evitar uso interno em gestantes e em doses elevadas",
+          "Varfarina: grandes quantidades culinárias de manjericão fresco podem alterar RNI",
+          "Diferença entre quimiotipos é clinicamente relevante — especificar quimiotipo ao usar como OE",
+          "Não confundir alfavaca-do-brasil (O. gratissimum) com manjericão europeu — eugenol muito maior"
+        ]
       }
     },
     {
       "slug": "erva-de-santa-barbara",
-      "nome_popular": "Erva-de-Santa-Bárbara",
-      "nome_cientifico": "Artemisia vulgaris L. (artemísia-comum)",
-      "tagline": "A mãe de todas as ervas — a artemísia europeia, planta das mulheres e das viagens, com a mais longa história de uso medicinal do mundo ocidental e princípios ativos que incluem a base da artemisinina, o maior avanço antipalúdico do século XX.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Artemisia vulgaris L. (artemísia-comum)",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico emenagogo / digestivo amargo / anti-inflamatório",
-        "parte_usada": "Partes aéreas (antes da floração), secas.",
-        "sinonimos": [
-          "Artemísia · losna-menor · erva-de-santa-bárbara · artemísia-comum",
-          "Mugwort (inglês) · Armoise (francês) · Beifuß (alemão)",
-          "DISTINÇÃO: A. vulgaris ≠ A. absinthium (losna — Ficha 18) ≠ A. annua (qinghao — artemisinina antipalúdica)"
+        "nome_popular": "Erva-de-santa-bárbara",
+        "nome_cientifico": "Barbarea vulgaris",
+        "familia": "Brassicaceae",
+        "outros_nomes": [
+          "bárbara-de-inverno",
+          "rocketcress",
+          "winter cress (ing.)",
+          "barbarée commune (fr.)"
+        ],
+        "origem": "Europa e Ásia Ocidental",
+        "partes_usadas": [
+          "folhas jovens frescas",
+          "flores",
+          "sementes"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-herbáceo moderado, levemente tujona, artemísia característico.",
-        "aroma": "Herbáceo-camforáceo, artemísia típica, leve defumado.",
-        "cor_da_infusao": "Verde-amarelado a âmbar. #B8B048",
-        "intensidade": "3/5 — medicinal.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Herbácea bienal ou perene de 30–90 cm. Folhas basais em roseta, grandes (5–20 cm), pinadas com lobo terminal arredondado muito grande — as 'orelhas' que abraçam o caule. Folhas caulinares menores, amplexicaules. Flores amarelas em racemos terminais (típicas da família Brassicaceae, 4 pétalas em cruz). Frutos em silíquas longas (2–3 cm). Gosto levemente amargo e pungente, lembrando agrião.",
+        "composicao_quimica": [
+          "Glucosinolatos: glucobarbarina (principal) — convertido em gluconastrurtina ao mastigar; barbarina tem atividade inseticida e antifúngica",
+          "Flavonoides: kaempferol, quercetina, isorhamnetina",
+          "Vitamina C (até 60 mg/100 g folhas frescas)",
+          "Vitamina K",
+          "Beta-caroteno",
+          "Glucosinolatos sulfurosos: compostos antimicrobianos",
+          "Saponinas (traços)"
+        ],
+        "bioma": "Europeu temperado — beiras de rios, terrenos úmidos, campos",
+        "cultivo": "Semi-sombra a sol, solos úmidos e ricos, pH 6–7. Bienal: roseta no 1° ano, floresce no 2°. Naturalizada em várias regiões do sul do Brasil como invasora de hortas e campos."
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C | Tempo: 5 min (não mais — tujona aumenta) | Quantidade: 1–2 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 g/250 ml",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "Pré-menstrual (emenagogo) ou pós-refeições (digestivo).",
-        "combina_com": ""
+        "formas": [
+          {
+            "tipo": "Uso culinário (folhas jovens frescas)",
+            "descricao": "Folhas jovens de roseta (antes da floração) em saladas, refogadas como espinafre, em sanduíches ou sopas. Sabor levemente amargo e pungente — semelhante ao agrião.",
+            "indicacoes": [
+              "vitamina C",
+              "vitamina K",
+              "antioxidante",
+              "digestivo"
+            ]
+          },
+          {
+            "tipo": "Infusão (uso interno medicinal)",
+            "descricao": "1–2 colheres de sopa de folhas frescas ou 1 de secas em 200 mL a 80–90°C. Infundir 8–10 min. 1–2 xícaras/dia.",
+            "indicacoes": [
+              "escorbuto",
+              "deficiência de vitamina C",
+              "antiescorbútico histórico",
+              "digestão"
+            ]
+          },
+          {
+            "tipo": "Cataplasma (uso externo histórico)",
+            "descricao": "Folhas frescas amassadas aplicadas sobre feridas ou abcessos.",
+            "indicacoes": [
+              "feridas",
+              "abcessos",
+              "furúnculos (uso tradicional)"
+            ]
+          }
+        ],
+        "dicas": "As folhas jovens da roseta (outono/inverno) são as mais nutritivas e menos amargas. Após a floração, as folhas ficam mais duras e amargas. Branquear levemente (30 sec de água quente) reduz o amargor se desejado."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "aplicacoes": [
+          {
+            "forma": "Cataplasma",
+            "preparo": "Folhas frescas amassadas ou trituradas, aplicadas diretamente.",
+            "indicacoes": [
+              "feridas",
+              "abcessos",
+              "lesões cutâneas (uso histórico)"
+            ]
+          },
+          {
+            "forma": "Suco foliar",
+            "preparo": "Folhas frescas centrifugadas ou liquidificadas, coadas. Aplicar com compressa.",
+            "indicacoes": [
+              "anti-inflamatório tópico",
+              "cicatrização"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Emenagogo (regula ciclo menstrual)",
-          "Digestivo amargo",
-          "Antiparasitário leve",
-          "Diaforético",
-          "Moxabustão (uso externo em MTC — aquecimento de pontos de acupuntura)",
-          "⚠️ TUJONA — mesmos alertas da losna (Ficha 18): Doses baixas em infusão curta: seguras. OE interno: contraindicado.",
-          "Contraindicações: Gestação — contraindicada (emenagoga, possível abortiva). Epilepsia — tujona pró-convulsivante."
+        "acoes_farmacologicas": [
+          "Antiescorbútico: vitamina C elevada — uso histórico para prevenir escorbuto nos séculos XVI–XIX",
+          "Antioxidante: vitamina C + carotenoides + flavonoides",
+          "Antifúngico: glucosinolatos e seus produtos de hidrólise inibem fungos patogênicos",
+          "Inseticida/anti-herbivoria: glucobarbarina repele lagartas e insetos",
+          "Anti-inflamatório: flavonoides inibem mediadores inflamatórios",
+          "Vitamina K: coagulação e saúde óssea"
         ],
-        "componentes_ativos": [],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "Hipotireoidismo: glucosinolatos em excesso podem interferir na função tireoidiana",
+          "Anticoagulados com varfarina: vitamina K pode alterar RNI",
+          "Cálculos renais de oxalato: consumo excessivo"
+        ],
+        "efeitos_adversos": [
+          "Em excesso: distúrbio gastrointestinal (sabor pungente)",
+          "Hipotireoidismo: consumo regular em grandes quantidades pode suprimir tireoide (glucosinolatos)"
+        ],
+        "interacoes": [
+          "Varfarina: vitamina K — monitorar RNI se consumo regular e volumoso",
+          "Medicamentos para tireoide: glucosinolatos em excesso"
+        ],
+        "dose_segura": "Uso culinário: sem limitações específicas. Infusão: 2–4 g/dia. Sem monografia medicinal formal — uso baseado em tradição culinária e histórica.",
+        "nivel_evidencia": "Evidência histórica bem documentada para antiescorbútico (vitamina C). Estudos pré-clínicos para glucosinolatos e flavonoides. Sem ensaios clínicos modernos específicos. Uso culinário bem estabelecido."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Leve, herbáceo, levemente pungente (glucosinolatos), sem aroma muito pronunciado",
+        "sabor": "Amargo e pungente, lembrando agrião ou mostarda suave; com notas verdes e um leve picante",
+        "cor_visual": "Folhas verde-escuras brilhantes; flores amarelas vivas; infusão verde-amarelada",
+        "textura": "Folhas crocantes e suculentas; após cocção: macia como espinafre",
+        "sensacao": "Tonificante e levemente estimulante; sabor que 'acorda' o paladar"
       },
       "cultura": {
-        "historia": "A artemísia é a planta dedicada à deusa Ártemis — deusa da lua, da caça e do parto. Na mitologia grega, Ártemis protegia as mulheres no trabalho de parto — e a artemísia era dada para facilitar o nascimento. A planta das mulheres por excelência da Europa antiga.  O maior feito farmacológico moderno ligado ao gênero Artemisia é a descoberta da artemisinina por Tu Youyou (Nobel de Medicina 2015) — isolada de A. annua (qinghao, espécie chinesa diferente da vulgaris). A artemisinina é o antipalúdico mais eficaz do mundo e salvou centenas de milhões de vidas. O prêmio Nobel foi para uma pesquisa baseada em textos de medicina tradicional chinesa do séc. IV d.C. — o caso mais eloquente de etnobotânica validada que a história científica registra.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "O nome 'Bárbara' refere-se a Santa Bárbara (4 de dezembro no calendário cristão) — época em que as folhas estão mais tenras e disponíveis no inverno europeu. Era colhida por marinheiros e exploradores como 'planta antiescorbútica de inverno', junto com agrião e cascas de limão, durante as Grandes Navegações dos séculos XV–XVII. Francis Drake a mencionou como provisão de suas expedições. No norte da Europa, era alimento básico de inverno antes da chegada das estufas.",
+        "uso_tradicional": "Europa medieval e renascentista: antiescorbútico essencial no inverno quando frutas cítricas eram raras. Marinheiros europeus: provisão obrigatória de longas viagens. Culinária nórdica e britânica: salada de inverno. Medicina tradicional: feridas e abcessos (cataplasma de folhas). Brasil sul: planta naturalizada, coletada como 'agrião-do-campo'.",
+        "simbolismo": "Sobrevivência invernal, resistência, alimento-remédio. Santa Bárbara: proteção contra tempestades (daí a planta do marinheiro).",
+        "curiosidades": [
+          "Considerada a 'planta das Grandes Navegações' — antiescorbútica de inverno que manteve tripulações vivas antes do limão se popularizar",
+          "O nome científico 'Barbarea' vem de Santa Bárbara — tradição medieval de colher as folhas em 4 de dezembro",
+          "Glucobarbarina tem efeito inseticida paradoxal: repele a maioria das lagartas, mas atrai especificamente a borboleta Pieris rapae que aprende a detectá-la como 'planta segura'",
+          "No Brasil, é invasora comum em hortas do sul — a maioria dos agricultores a arranca sem saber que é comestível e nutritiva"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Não monografado.",
-        "status_ema": "Monografia HMPC — traditional use para dismenorreia e dispepsia.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Partes aéreas: pré-floração (verão)"
+        "status_brasil": "Sem registro ANVISA. Planta naturalizada coletada casualmente. Uso como alimento não regulamentado especificamente.",
+        "status_europa": "Sem monografia EMA/HMPC. Uso culinário documentado historicamente. Glucosinolatos: avaliados pela EFSA no contexto de Brassicaceae.",
+        "farmacopeia": "Não consta em farmacopeias medicinais.",
+        "registro": "Sem produtos medicinais registrados. Uso culinário e histórico."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Planta silvestre (coleta em campo — sul do Brasil e Europa)",
+          "Sementes (cultivo doméstico)",
+          "Raramente disponível a granel em ervanarias especializadas"
+        ],
+        "preco_estimado": "Sementes: R$ 8–20/pacote. Planta: coleta gratuita em campo. Raramente comercializada.",
+        "disponibilidade": "Baixa comercialmente — autocultura ou coleta silvestre.",
+        "como_escolher": "Folhas jovens de roseta, verde-escuro intenso, sem manchas. Confirmar identificação botânica antes de coletar — confundir com outras Brassicaceae não comestíveis é possível.",
+        "armazenamento": "Folhas frescas: geladeira em saco ou pote. 3–5 dias. Secar ao sol/sombra: validade 12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Alimento funcional de inverno (vitamina C, K, carotenoides) — saladas e refogados",
+          "Antiescorbútico histórico e vitamina C natural",
+          "Digestivo tonificante (uso culinário com folhas cruas)",
+          "Antimicrobiano alimentar (glucosinolatos)"
+        ],
+        "diferenciais": [
+          "Planta das Grandes Navegações — vitamina C de inverno antes do limão",
+          "Invasora subestimada: cresce em hortas do sul do Brasil e a maioria não sabe que é comestível",
+          "Glucobarbarina: glucosinolato com efeito inseticida raro — potencial agrícola para manejo de pragas",
+          "Ótimo exemplo de 'comida-remédio' sem necessidade de compra"
+        ],
+        "sinergias": [
+          "Erva-de-santa-bárbara + agrião + espinafre: salada de inverno antiescorbútica completa",
+          "Erva-de-santa-bárbara + alho + limão: dressing anti-inflamatório",
+          "Erva-de-santa-bárbara + camomila (infusão): digestivo tonificante + calmante"
+        ],
+        "alertas": [
+          "Hipotireoidismo: limitar consumo regular de grandes quantidades (glucosinolatos)",
+          "Varfarina: vitamina K — monitorar RNI se consumo diário e volumoso",
+          "Identificação botânica: confirmar antes de coletar no campo — Brassicaceae com folhas similares existem",
+          "Plantas coletadas perto de rodovias ou campos tratados com agrotóxicos: evitar"
+        ]
       }
     },
     {
       "slug": "camomila-romana",
-      "nome_popular": "Camomila-Romana",
-      "nome_cientifico": "Chamaemelum nobile (L.) All. (sin.: Anthemis nobilis)",
-      "tagline": "A prima nobre da camomila — mais intensa, mais densa em princípios ativos e mais rara que a camomila-alemã, com uso privilegiado em perfumaria de luxo e aromaterapia de alta precisão.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Chamaemelum nobile (L.) All. (sin.: Anthemis nobilis)",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico ansiolítico / anti-inflamatório / aromático",
-        "parte_usada": "Flores secas.",
-        "sinonimos": [
-          "Camomila-romana · camomila-inglesa · camomila-nobre",
-          "Roman chamomile (inglês) · Camomille romaine (francês) · Römische Kamille (alemão)",
-          "DISTINÇÃO ESSENCIAL: Chamaemelum nobile (camomila-romana) ≠ Matricaria chamomilla (camomila-alemã — Ficha 01). Ambas são \"camomila\" mas são espécies distintas com química diferente."
+        "nome_popular": "Camomila-romana",
+        "nome_cientifico": "Chamaemelum nobile (syn. Anthemis nobilis)",
+        "familia": "Asteraceae",
+        "outros_nomes": [
+          "camomila-inglesa",
+          "camomila-nobre",
+          "Roman chamomile (ing.)",
+          "camomille romaine (fr.)"
+        ],
+        "origem": "Europa Ocidental (Irlanda, Portugal, norte da África)",
+        "partes_usadas": [
+          "capítulos florais",
+          "flores secas",
+          "óleo essencial"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-floral intenso, maçã verde mais pronunciada que a camomila-alemã, frutado-herbáceo.",
-        "aroma": "Maçã verde mais intensa e quente que a alemã, floral-frutado profundo, éster-frutado característico (isobutirato de isobutila). Mais complexa e \"adulta\" que a camomila-alemã.",
-        "cor_da_infusao": "Amarelo-pálido a âmbar. #E8D068",
-        "intensidade": "3/5 — mais intensa que a camomila-alemã.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Herbácea perene rasteira (10–30 cm), fortemente aromática. Difere da camomila-alemã (M. recutita) por ser perene, menor e mais compacta. Folhas bi/tripinadas em segmentos filiformes, verde-cinza pubescentes. Capítulos solitários com flores liguladas brancas e disco amarelo convexo (não cônico como na alemã). Receptáculo SÓLIDO (distingue da alemã que é oco). Aroma mais adocicado e denso que a alemã.",
+        "composicao_quimica": [
+          "Óleo essencial (0,5–1,8%): isobutiro de isoamila (~ 35%), angelatos de isoamila, angelatos de metilo — ésteres únicos distintos da camomila-alemã",
+          "Flavonoides: apigenina, luteolina, quercetina — semelhantes à alemã mas em proporções distintas",
+          "Lactonas sesquiterpênicas: nobilina, 3-epinobilina — diferentes da matricina/camazuleno da alemã",
+          "Cumarinas: esculetina, herniarina, umbeliferona",
+          "Ácidos fenólicos: ácido cafeico, ácido gentísico",
+          "Polissacarídeos"
+        ],
+        "bioma": "Europeu ocidental — pastagens, beiras de caminhos, prados",
+        "cultivo": "Sol pleno a meia-sombra leve, solo bem drenado e levemente ácido (pH 5,5–6,5). Perene — vantagem sobre a camomila-alemã (anual). Tolerante ao pisoteio. Multiplica por divisão de touceira ou sementes."
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C | Tempo: 5–8 min coberto | Quantidade: 1–2 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 g/250 ml",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Lavanda · Melissa · Mel · Flores de laranjeira (blend de sono premium)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Ansiolítico (isobutirato de isobutila + ésteres aromáticos)",
-          "Anti-inflamatório (mais potente que a camomila-alemã em alguns estudos)",
-          "Antiespasmódico",
-          "Sedativo leve",
-          "Antifúngico",
-          "Componentes ativos:",
-          "Contraindicações: Alergia à família Asteraceae. Gestação em doses altas — cautela."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "ISOBUTIRATO DE ISOBUTILA",
-            "texto": "Aromático característico, ansiolítico"
+            "tipo": "Infusão (uso interno)",
+            "descricao": "1–2 colheres de chá de flores secas (1,5–2 g) em 150 mL a 80–90°C. Cobrir 5–8 min. Coar. 2–3 xícaras/dia.",
+            "indicacoes": [
+              "insônia",
+              "ansiedade",
+              "nervosismo",
+              "cólica",
+              "espasmo digestivo",
+              "náusea"
+            ]
           },
           {
-            "label": "METIL-2-METILBUTIRATO",
-            "texto": "Aromático frutado"
+            "tipo": "Óleo essencial (aromaterapia)",
+            "descricao": "2–3 gotas no difusor por 30 min. Ou 1–2 gotas diluídas (2%) em óleo vegetal para massagem.",
+            "indicacoes": [
+              "ansiedade intensa",
+              "estresse pós-traumático",
+              "insônia",
+              "raiva e frustração"
+            ]
           },
           {
-            "label": "ALFA-BISABOLOL",
-            "texto": "Anti-inflamatório (mesma molécula da camomila-alemã)"
-          },
-          {
-            "label": "ÁCIDO ANGÉLICO (ésteres)",
-            "texto": "Anti-inflamatório, antiespasmódico"
-          },
-          {
-            "label": "CHAMAZULENO",
-            "texto": "Anti-inflamatório (menor concentração que na camomila-alemã)"
+            "tipo": "Banho aromaterapêutico",
+            "descricao": "5–8 gotas de OE em sal grosso ou leite + banho morno. 20 min.",
+            "indicacoes": [
+              "tensão emocional profunda",
+              "insônia",
+              "cólica infantil (banho do bebê)"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "A camomila-romana tem OE com perfil de ésteres únicos — aroma mais rico, macio e frutal que a alemã. Para uso emocional/aromaterapêutico, a romana é geralmente preferida. Para uso anti-inflamatório cutâneo (pele inflamada), a alemã (com camazuleno) pode ser superior."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Compressa facial",
+            "preparo": "Infusão forte (4 g/200 mL), fria. Compressa sobre olhos cansados ou pele irritada por 15 min.",
+            "indicacoes": [
+              "olhos cansados",
+              "pele sensível",
+              "eritema facial",
+              "conjuntivite leve"
+            ]
+          },
+          {
+            "forma": "Creme ou óleo de massagem",
+            "preparo": "1–2% de OE romano em óleo de jojoba ou calêndula. Massagem em áreas tensas.",
+            "indicacoes": [
+              "tensão muscular",
+              "enxaqueca (têmporas)",
+              "nervosismo com sintomas físicos"
+            ]
+          },
+          {
+            "forma": "Inalação direta",
+            "preparo": "1–2 gotas de OE em lenço ou palma das mãos. Inalar por 30–60 seg.",
+            "indicacoes": [
+              "crise de ansiedade",
+              "pânico",
+              "irritabilidade aguda"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Ansiolítico: apigenina se liga a receptores benzodiazepínicos (GABA-A) com alta afinidade",
+          "Sedativo suave: efeito central documentado em estudos com infusão e OE",
+          "Antiespasmódico: OE relaxa músculo liso — intestinal e uterino (dose-dependente)",
+          "Anti-inflamatório: flavonoides e lactonas sesquiterpênicas",
+          "Antinociceptivo: reduz percepção de dor em modelos animais",
+          "Ansiolítico emocional (aromaterapia): ésteres do OE romano têm efeito calmante marcado"
+        ],
+        "contraindicacoes": [
+          "Alergia a Asteraceae — reação cruzada com camomila-alemã, árnica, calêndula",
+          "Gestação: uso em doses medicinais elevadas não recomendado (antiespasmódico uterino)",
+          "Lactação: cautela"
+        ],
+        "efeitos_adversos": [
+          "Reação alérgica (mais comum que com camomila-alemã — sesquiterpenos diferentes)",
+          "Sonolência excessiva em doses muito altas",
+          "Dermatite de contato ao OE (sensiblizante moderado)"
+        ],
+        "interacoes": [
+          "Sedativos e hipnóticos: potenciação",
+          "Anticoagulantes: possível potenciação leve (cumarinas)"
+        ],
+        "dose_segura": "Flores secas: 2–4 g/dia em infusão. OE tópico: 1–2% em base. Difusão: 3–5 gotas/30 min. EMA/HMPC: uso tradicional bem estabelecido.",
+        "nivel_evidencia": "EMA/HMPC: uso medicinal tradicional bem estabelecido para tensão nervosa e distúrbios do sono. Apigenina: mecanismo ansiolítico bem documentado. OE romano em aromaterapia clínica: estudos em UTI e pré-operatório com resultados positivos para ansiedade."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Floral-adocicado intenso com notas frutais (maçã, pêra), mais rico e complexo que a camomila-alemã; levemente terroso",
+        "sabor": "Amargo-adocicado, floral, com suave nota de maçã; mais intensa e menos suave que a alemã",
+        "cor_visual": "Flores brancas com centro amarelo; infusão amarelo-dourada; OE: azul pálido a incolor (sem camazuleno como na alemã)",
+        "textura": "Flores secas delicadas; infusão com leve corpo",
+        "sensacao": "Calmante e aconchegante; aroma do OE é imediatamente relaxante — resposta emocional rápida"
       },
       "cultura": {
-        "historia": "A camomila-romana é a camomila dos jardins de ervas formais ingleses e franceses — cultivada em monastérios e castelos medievais como tapete aromático (as flores esmagadas sob os pés liberam o aroma). Nos jardins formais do Castelo de Sissinghurst e de Versailles, a camomila-romana forma \"tapetes\" históricos que perfumam os passeios.  Para o Ervatório, a distinção entre camomila-alemã (popular, acessível, bem documentada) e camomila-romana (premium, rara, mais aromática) é oportunidade de narrativa sobre qualidade e especificidade — duas plantas com o mesmo nome popular mas identidades distintas.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "A camomila-romana foi a camomila medieval europeia por excelência antes que a alemã se popularizasse. Usada nos jardins dos mosteiros medievais como 'planta do chão' — plantada em caminhos e gramados para liberar aroma ao pisar. O 'chamomile lawn' britânico (gramado de camomila) é tradição paisagística que remonta aos jardins tudor (século XV–XVII). Shakespeare a menciona no Henrique IV: 'The more it is trodden on, the faster it grows' (Quanto mais pisada, mais cresce).",
+        "uso_tradicional": "Europa medieval: nervosismo, insônia, cólica. Aromaterapia francesa: OE romano para ansiedade e 'crianças nervosas'. Grã-Bretanha: chá tradicional para insônia e cólica do bebê. Jardinagem histórica: 'chamomile lawns' nos jardins ingleses. Brasil: menos comum que a alemã, mas usada em aromaterapia clínica.",
+        "simbolismo": "Paciência e resiliência — a planta que cresce mais vigorosa ao ser pisada (Shakespeare). Paz e relaxamento. Em aromaterapia: 'planta do sol interior'.",
+        "curiosidades": [
+          "Shakespeare citou a camomila-romana no Henrique IV como símbolo de resiliência — 'the more it is trodden on, the faster it grows'",
+          "O 'chamomile lawn' de Buckfast Abbey (Devon, Inglaterra) é um gramado medieval de camomila-romana que existe há séculos",
+          "OE romano não tem camazuleno (que dá o azul à camomila-alemã) — azul no OE = alemã; incolor/amarelo = romana",
+          "A camomila-romana e a alemã são botânica e quimicamente distintas — não são substitutas equivalentes para todas as indicações"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido — distinção de Matricaria chamomilla feita na regulação.",
-        "status_ema": "Monografia HMPC — traditional use.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: junho–agosto (Europa). Produto majoritariamente importado."
+        "status_brasil": "ANVISA: sem monografia específica como produto separado da camomila-alemã. OE romano: cosmético. Flores: erva/chá.",
+        "status_europa": "EMA/HMPC: uso medicinal tradicional bem estabelecido para tensão nervosa e distúrbios do sono. Monografia publicada (Chamaemelum nobile flos).",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Chamomillae romanae flos.",
+        "registro": "Produtos fitoterápicos registrados na Europa. No Brasil: menos comum que a alemã."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Flores secas a granel",
+          "Chá em sachês",
+          "Óleo essencial (premium)",
+          "Produtos cosméticos com OE romano"
+        ],
+        "preco_estimado": "Flores secas: R$ 20–50/50 g (mais cara que a alemã). OE romano: R$ 80–250/5 mL (muito mais caro que o alemão). Sachês: R$ 15–35/caixa.",
+        "disponibilidade": "Moderada — lojas de aromaterapia premium e ervanarias especializadas. Menos comum que a camomila-alemã.",
+        "como_escolher": "OE romano: incolor a amarelo pálido (não azul); aroma frutal-floral (não herbáceo). Flores: receptáculo sólido (distingue da alemã). Aroma mais 'rico' e menos 'medicinal' que a alemã.",
+        "armazenamento": "Flores: pote hermético, escuro. Validade: 12 meses. OE: frasco âmbar, fresco. Validade: 2–3 anos."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Ansiedade e tensão emocional profunda (OE em aromaterapia — resposta emocional intensa)",
+          "Insônia e distúrbios do sono (infusão + difusão noturna)",
+          "Cólica infantil e nervosismo em crianças (banho + infusão suave)",
+          "Pele sensível e olhos cansados (uso tópico)"
+        ],
+        "diferenciais": [
+          "OE com perfil único de ésteres — aroma mais rico e emocional que a camomila-alemã",
+          "Perene: planta que retorna todo ano, ao contrário da camomila-alemã (anual)",
+          "Apigenina: mecanismo ansiolítico GABA-A melhor documentado que qualquer outra planta",
+          "Tradição literária inglesa (Shakespeare) — identidade cultural única"
+        ],
+        "sinergias": [
+          "Camomila-romana (OE) + lavanda: blend ansiolítico e indutor de sono clássico",
+          "Camomila-romana + flor-de-laranjeira + melissa: nervosismo com palpitações",
+          "Camomila-romana + calêndula: pele sensível e inflamada (anti-inflamatório dual)",
+          "Camomila-romana + tília: insônia profunda e ansiedade noturna"
+        ],
+        "alertas": [
+          "Mais alergênica que a camomila-alemã — testar antes do uso extenso",
+          "OE é distinto da alemã — não são substitutas equivalentes",
+          "Gestação em doses medicinais: evitar (antiespasmódico uterino)",
+          "OE com coloração azul = provavelmente adulterado com OE de camomila-alemã"
+        ]
       }
     },
     {
       "slug": "verbena",
-      "nome_popular": "Verbena",
-      "nome_cientifico": "Verbena officinalis L.",
-      "tagline": "A erva sagrada dos druidas — tônico nervoso e anti-inflamatório europeu com história pré-cristã de uso ritual e ação farmacológica crescentemente confirmada para sistema nervoso e fígado.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Verbena officinalis L.",
-        "familia_botanica": "Verbenaceae",
-        "tipo_botanico": "Fitoterápico tônico nervoso / hepatoprotetor / anti-inflamatório",
-        "parte_usada": "Partes aéreas (folhas e flores), secas.",
-        "sinonimos": [
-          "Verbena · gervão-europeu · erva-sagrada",
-          "Vervain (inglês) · Verveine (francês — ATENÇÃO: \"verveine\" no comércio francês frequentemente = Lippia citriodora, verbena-limão, não V. officinalis) · Eisenkraut (alemão)"
+        "nome_popular": "Verbena",
+        "nome_cientifico": "Verbena officinalis",
+        "familia": "Verbenaceae",
+        "outros_nomes": [
+          "gervão",
+          "verbena-comum",
+          "iron herb (ing.)",
+          "verveine officinale (fr.)"
+        ],
+        "origem": "Europa, norte da África e Ásia temperada",
+        "partes_usadas": [
+          "partes aéreas floridas",
+          "folhas",
+          "sumidades"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-herbáceo moderado, levemente adstringente, terroso.",
-        "aroma": "Herbáceo discreto, neutro.",
-        "cor_da_infusao": "Verde-amarelado. #C4BC50",
-        "intensidade": "2/5 — suave.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Herbácea perene (ou anual em climas frios) de 30–80 cm, erecta, ramificada. Caules quadrangulares, ásperos, pubescentes. Folhas opostas, oval-lanceoladas, profundamente lobadas ou recortadas (pinatipartidas), ásperas. Flores pequenas (4–5 mm), lilás-rosadas em espigas terminais delgadas e longas. Semelhante superficialmente a outras Verbenaceae, mas não ao gervão-branco (Stachytarpheta spp.) do Brasil.",
+        "composicao_quimica": [
+          "Iridoides: verbenanósido (verbenalin), hastatoside — amargos e hepatoprotetores",
+          "Flavonoides: luteolina, apigenina, luteolina-7-glucosídeo",
+          "Taninos (traços)",
+          "Mucilagens",
+          "Ácidos cafeicos: ácido cafeico, ácido clorogênico",
+          "Triterpenos: ácido ursólico",
+          "Óleo essencial (traços): citral, linalol"
+        ],
+        "bioma": "Europeu-Mediterrâneo, beiras de caminhos e campos",
+        "cultivo": "Sol a meia-sombra, solo bem drenado, pH 6–7,5. Multiplica por sementes. Planta de beira de caminho, muito rústica. Floração junho-setembro. Colheita durante a floração."
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Tônico nervoso (neuroproteg — verbenalin)",
-          "Hepatoprotetor",
-          "Anti-inflamatório",
-          "Ansiolítico leve",
-          "Emenagogo",
-          "Galactogogo (estimula leite — uso popular europeu)",
-          "Componentes ativos:",
-          "Contraindicações: Gestação — emenagoga. Lactação: stimula leite (uso popular europeu para desmame inverso — aumentar lactação)."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "VERBENALIN (iridóide)",
-            "texto": "Tônico nervoso, anti-inflamatório, hepatoprotetor"
+            "tipo": "Infusão (uso interno)",
+            "descricao": "1–2 colheres de chá de sumidades secas (2–3 g) em 200 mL a 90°C. Cobrir 10 min. Coar. 2–3 xícaras/dia.",
+            "indicacoes": [
+              "nervosismo",
+              "tensão",
+              "cefaleia",
+              "depressão leve",
+              "febre",
+              "afecções hepáticas leves"
+            ]
           },
           {
-            "label": "HASTATOSIDE (iridóide)",
-            "texto": "Anti-inflamatório"
+            "tipo": "Decocção (uso mais intenso)",
+            "descricao": "3–5 g em 200 mL. Ferver 10 min. Coar. 2 xícaras/dia.",
+            "indicacoes": [
+              "afecções hepáticas",
+              "digestão lenta",
+              "febre"
+            ]
           },
           {
-            "label": "ÁCIDO CAFEICO",
-            "texto": "Antioxidante, anti-inflamatório"
-          },
-          {
-            "label": "FLAVONÓIDES (luteolina)",
-            "texto": "Anti-inflamatório"
+            "tipo": "Tintura (1:5 em etanol 40%)",
+            "descricao": "2–3 mL, 3×/dia.",
+            "indicacoes": [
+              "depressão leve",
+              "esgotamento nervoso",
+              "suporte hepático"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "Verbena tem sabor amargo marcado — difícil de beber sem adoçante. Misturar com mel ou stevia melhora a palatabilidade. O amargor é sinal de concentração de iridoides ativos."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Compressa para cefaleia",
+            "preparo": "Infusão forte, morna. Compressa aplicada nas têmporas por 15 min.",
+            "indicacoes": [
+              "cefaleia tensional",
+              "enxaqueca"
+            ]
+          },
+          {
+            "forma": "Gargarejo",
+            "preparo": "Infusão (4 g/200 mL), morna. 3–4×/dia.",
+            "indicacoes": [
+              "faringite",
+              "gengivite",
+              "aftas"
+            ]
+          },
+          {
+            "forma": "Banho de pés",
+            "preparo": "100 g em 2 L de água quente. Banho de pés por 20 min.",
+            "indicacoes": [
+              "tensão",
+              "cansaço dos pés",
+              "circulação periférica"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Nervino tônico: verbenanósido modula sistema nervoso — 'nutrição do sistema nervoso' na herbalismo tradicional",
+          "Hepatoprotetor: iridoides protegem hepatócitos contra dano oxidativo",
+          "Diaforético: estimula sudorese em estados febris",
+          "Anti-inflamatório: luteolina e ácido cafeico inibem COX e mediadores inflamatórios",
+          "Antiespasmódico: relaxa musculatura lisa brônquica e uterina leve",
+          "Galactagogo: uso tradicional para estimular lactação (evidência limitada)",
+          "Antidepressivo adaptogênico: uso em herbalismo para 'esgotamento e agotamento do nervo'"
+        ],
+        "contraindicacoes": [
+          "Gestação: iridoides podem estimular contrações uterinas — CONTRAINDICADO",
+          "Lactação: galactagogo pode influenciar composição do leite — cautela",
+          "Crianças < 12 anos: dados insuficientes"
+        ],
+        "efeitos_adversos": [
+          "Náusea em doses elevadas (amargor e iridoides)",
+          "Cólica abdominal em doses excessivas",
+          "Raramente: reação alérgica"
+        ],
+        "interacoes": [
+          "Litio: diurético leve pode alterar excreção de lítio",
+          "Antidepressivos: sinergia possível — monitorar"
+        ],
+        "dose_segura": "Partes aéreas secas: 4–8 g/dia (infusão). Tintura: 6–9 mL/dia. EMA/HMPC: uso medicinal tradicional reconhecido.",
+        "nivel_evidencia": "EMA/HMPC: uso medicinal tradicional bem estabelecido. Iridoides verbenanósido: estudos pré-clínicos para neuroproteção, hepatoproteção e anti-inflamatório. Sem ECRs publicados de alta qualidade para indicações específicas."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Levemente herbáceo, suave, com notas terrosas e florais muito discretas",
+        "sabor": "Amargo marcado e adstringente, herbáceo; sem doçura ou picância",
+        "cor_visual": "Hastes e folhas verde-escuras; infusão verde-amarelada a dourada-esverdeada",
+        "textura": "Planta áspera ao toque; infusão leve",
+        "sensacao": "Amargo que 'aciona' o fígado e a digestão; leve sensação de tonificação"
       },
       "cultura": {
-        "historia": "A verbena foi planta sagrada dos druidas celtas e dos sacerdotes romanos — usada em purificações, juramentos e rituais de paz. Os romanos chamavam qualquer planta sagrada de herba sacra — e a verbena era a erba sacra por excelência. Enviar um ramo de verbena era sinal de aliança e boa fé entre grupos em conflito.  Os alquimistas medievais incluíam verbena em elixires de transmutação. John Gerard (séc. XVII) atribuiu-lhe poderes contra fantasmas e malefícios. Toda essa mitologia encobre uma planta com farmacologia real — os iridóides verbenalin e hastatoside têm ação neuroprotetora e anti-inflamatória documentada.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Uma das plantas mais mágicas e rituais da história europeia. Na Roma Antiga: erva sagrada de Vênus, usada para limpar altares e preparar sacerdotes para cerimônias. Os druidas celtas a usavam para adivinhação e proteção. Hipócrates e Dioscórides a prescreviam para febre e doenças hepáticas. Na Idade Média: 'herba sacra' — presente em todas as fórmulas mágico-medicinais. O 'verbena' da expressão 'sub verbo' (sob a proteção da palavra) — planta dos juramentos.",
+        "uso_tradicional": "Roma Antiga: purificação ritual e medicina. Druidas: adivinhação e proteção. Europa medieval: doenças do fígado, febre, nervosismo. Herbalismo moderno (tradição inglesa): 'nervino tônico' — para esgotamento nervoso e burnout. Brasil: 'gervão' — confusão frequente com Stachytarpheta jamaicensis (gervão-azul, planta diferente).",
+        "simbolismo": "Magia, proteção, juramentos, pureza. Planta de poder ritual em Roma e entre os celtas. Em aromaterapia: renovação e transformação.",
+        "curiosidades": [
+          "Na Roma Antiga, o embaixador romano carregava verbena quando ia negociar com povos inimigos — era o símbolo da inviolabilidade diplomática",
+          "Os druidas colhiam verbena ao amanhecer, sem usar ferro, devolvendo algo ao solo em troca — práticas rituais detalhadas por Plínio",
+          "Não confundir com 'erva-luísa' (Aloysia citrodora, também chamada 'verbena-limão' no Brasil) — planta diferente e muito mais aromática",
+          "A palavra 'verbal' e 'verbum' (palavra) compartilham raiz com 'verbena' — a planta dos juramentos sagrados"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso popular reconhecido",
-        "status_ema": "Monografia HMPC — traditional use",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Partes aéreas: floração (verão)"
+        "status_brasil": "ANVISA: sem registro específico. 'Gervão' no Brasil frequentemente se refere a Stachytarpheta spp. (planta diferente). Uso como erva tradicional.",
+        "status_europa": "EMA/HMPC: uso medicinal tradicional reconhecido — tensão nervosa, perturbações do sono. Monografia publicada.",
+        "farmacopeia": "Farmacopeia Europeia: Verbenae herba mencionada. Monografia HMPC publicada.",
+        "registro": "Disponível como erva medicinal na Europa. Fitoterápico em alguns países."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Partes aéreas secas a granel",
+          "Chá em sachês",
+          "Tintura hidroalcoólica",
+          "Cápsulas de extrato seco"
+        ],
+        "preco_estimado": "Planta seca: R$ 10–25/50 g. Sachês: R$ 12–28/caixa. Tintura: R$ 30–70/50 mL.",
+        "disponibilidade": "Moderada — lojas de ervas europeias e online. Menos comum no Brasil.",
+        "como_escolher": "Aroma levemente herbáceo; sumidades floridas preservadas (maior teor de iridoides). Confirmar nome botânico — risco de confusão com gervão brasileiro (Stachytarpheta).",
+        "armazenamento": "Pote hermético, escuro, seco. Validade: 12–18 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Nervosismo, tensão e esgotamento nervoso (nervino tônico)",
+          "Suporte hepático leve (hepatoprotetor por iridoides)",
+          "Cefaleia tensional (interno e compressa)",
+          "Diaforético em estados febris"
+        ],
+        "diferenciais": [
+          "Uma das plantas mais sagradas da Antiguidade — Roma, Grécia e druidas celtas",
+          "Iridoides verbenanósido: mecanismo hepatoprotetor e neuroprotetor único",
+          "Nervino tônico no sentido herbalístico clássico — tonifica, não apenas acalma",
+          "EMA uso bem estabelecido — validação regulatória de tradição milenar"
+        ],
+        "sinergias": [
+          "Verbena + melissa + tília: esgotamento nervoso e insônia (blend clássico europeu)",
+          "Verbena + dente-de-leão: suporte hepático e biliar",
+          "Verbena + lavanda: cefaleia tensional (interno + tópico)",
+          "Verbena + equinácea: imunidade durante esgotamento físico"
+        ],
+        "alertas": [
+          "GESTAÇÃO: CONTRAINDICADA — iridoides uterotônicos",
+          "Sabor amargo marcado — misturar com mel ou ervas mais aromáticas para melhor adesão",
+          "Não confundir com erva-luísa/verbena-limão (Aloysia citrodora) ou gervão-azul brasileiro",
+          "Litio: monitorar níveis séricos em uso concomitante"
+        ]
       }
     },
     {
       "slug": "erva-principe",
-      "nome_popular": "Erva-Príncipe",
-      "nome_cientifico": "Cymbopogon nardus (L.) Rendle",
-      "tagline": "A citronela completa — a gramínea repelente que também é ansiolítica, antimicrobiana e aromatizante, com o perfil de uso mais multifuncional entre todas as gramíneas aromáticas do catálogo.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Cymbopogon nardus (L.) Rendle",
-        "familia_botanica": "Poaceae (gramíneas)",
-        "tipo_botanico": "Repelente natural / aromático / ansiolítico",
-        "parte_usada": "Partes aéreas frescas ou secas; óleo essencial.",
-        "sinonimos": [
-          "Citronela · erva-príncipe · capim-citronela",
-          "Citronella grass (inglês) · Citronnelle (francês)",
-          "DISTINÇÃO: C. nardus (citronela de Ceilão — citronelal dominante) ≠ C. winterianus (citronela de Java — geraniol dominante) ≠ C. citratus (capim-limão — citral dominante, Ficha 59)"
+        "nome_popular": "Erva-príncipe",
+        "nome_cientifico": "Cymbopogon citratus",
+        "familia": "Poaceae",
+        "outros_nomes": [
+          "capim-limão",
+          "capim-cidreira",
+          "lemongrass (ing.)",
+          "citronnelle (fr.)",
+          "té de limón (esp.)"
+        ],
+        "origem": "Sul da Índia e Sri Lanka",
+        "partes_usadas": [
+          "folhas frescas e secas",
+          "partes basais do caule",
+          "óleo essencial"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Cítrico-limão com nota terrosa-defumada, mais \"capim\" que o capim-limão.",
-        "aroma": "Citronelal dominante — cítrico-floral-terroso, levemente geraniol. O aroma que repele mosquitos.",
-        "cor_da_infusao": "Verde-pálido a amarelado. #D8E070",
-        "intensidade": "2/5 — aromático suave.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Gramínea perene tropical de 0,8–1,8 m, formando touceiras robustas e densas. Folhas longas (50–100 cm), lineares, com bordas cortantes, verde-acinzentado com nervura central evidente. Base dos caules engrossada e aromática. Raramente floresce em cultivo. Fortíssimo aroma cítrico característico. A 'erva-príncipe' é o nome mais comum no Sul e Sudeste do Brasil — o mesmo que 'capim-limão' em todo o país.",
+        "composicao_quimica": [
+          "Óleo essencial (0,4–0,8%): citral (65–85%) — mistura de neral + geranial, responsável pelo aroma cítrico intenso",
+          "Mirceno (10–25%): sedativo e analgésico",
+          "Linalol (traços)",
+          "Geraniol (traços)",
+          "Flavonoides: luteolina, isoorientin, swertiajaponin",
+          "Ácidos fenólicos: ácido cafeico, ácido clorogênico",
+          "Vitaminas: A, B1, B2, C, ferro, cálcio, potássio (nas folhas)"
+        ],
+        "bioma": "Tropical e subtropical — sul da Ásia, amplamente naturalizado nos trópicos",
+        "cultivo": "Pleno sol, solo fértil e bem drenado, clima quente. Multiplica por divisão de touceiras (não por sementes comercialmente). Excelente em jardins brasileiros — cresce facilmente. Colheita das folhas ao longo do ano."
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Repelente de insetos (citronelal — comprovado contra Aedes, Anopheles, Culex)",
-          "Ansiolítico leve (citronelal — modulação GABAérgica)",
-          "Antimicrobiano (citronelal + geraniol)",
-          "Antifúngico",
-          "Anti-inflamatório",
-          "Carminativo",
-          "Componentes ativos:",
-          "Contraindicações: OE tópico em crianças < 2 anos — usar produtos regulamentados específicos. Gestação: infusão moderada segura; OE — cautela."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "CITRONELAL",
-            "texto": "30–45% — Repelente, ansiolítico"
+            "tipo": "Infusão (uso interno — mais comum)",
+            "descricao": "2–4 folhas frescas picadas ou 1–2 colheres de chá de folhas secas (2–4 g) em 200 mL a 90°C. Cobrir 10–12 min. Coar. 2–3 xícaras/dia.",
+            "indicacoes": [
+              "ansiedade",
+              "insônia leve",
+              "gripe e febre",
+              "dor de cabeça",
+              "flatulência",
+              "digestão"
+            ]
           },
           {
-            "label": "GERANIOL",
-            "texto": "20–25% — Repelente, antimicrobiano"
+            "tipo": "Chá com palito de capim-limão (culinário)",
+            "descricao": "Caule inferior (palito) em chás, sopas (Tom Kha, Pho), curries e marinadas. Retirar antes de servir.",
+            "indicacoes": [
+              "digestivo culinário",
+              "antisséptico alimentar",
+              "saborizante"
+            ]
           },
           {
-            "label": "CITRONELOL",
-            "texto": "12–15% — Repelente, aromático"
+            "tipo": "Óleo essencial (aromaterapia e repelente)",
+            "descricao": "Difusão: 5–8 gotas/30 min. Repelente tópico: 2–3% em óleo vegetal.",
+            "indicacoes": [
+              "ansiedade",
+              "fadiga mental",
+              "repelente de insetos",
+              "ambientação"
+            ]
           },
           {
-            "label": "LIMONENO",
-            "texto": "Presente — Antimicrobiano"
+            "tipo": "Banho relaxante e antipirético",
+            "descricao": "20–30 g de folhas frescas em 2 L de água quente. Infundir 15 min. Adicionar ao banho morno.",
+            "indicacoes": [
+              "febre",
+              "gripe",
+              "tensão muscular",
+              "relaxamento"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "As folhas frescas têm OE mais volátil — usar logo após colheita para máximo aroma. O palito (base do caule) é mais concentrado em citral que as folhas. Comprar OE: verificar nome botânico (Cymbopogon citratus — para chá; C. flexuosus — tipo industrial)."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Repelente de insetos",
+            "preparo": "5% de OE em álcool 70% (spray) ou 2–3% em óleo vegetal.",
+            "indicacoes": [
+              "Aedes aegypti",
+              "pernilongos",
+              "borrachudos",
+              "maruins"
+            ]
+          },
+          {
+            "forma": "Massagem muscular",
+            "preparo": "3–5 gotas de OE em 10 mL de óleo de coco ou amêndoa. Massagem em músculos tensos.",
+            "indicacoes": [
+              "dores musculares",
+              "contraturas",
+              "fadiga muscular"
+            ]
+          },
+          {
+            "forma": "Tônico e antifúngico para pés",
+            "preparo": "Banho de pés com decocção de 30 g de folhas em 2 L de água quente por 20 min.",
+            "indicacoes": [
+              "pé de atleta",
+              "odor nos pés",
+              "relaxamento dos pés"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Ansiolítico e sedativo leve: citral e mirceno modulam receptores GABA; estudos clínicos em humanos",
+          "Antipirético: citral reduz febre em modelos animais; uso tradicional amplamente confirmado",
+          "Antifúngico: OE inibe Candida albicans, C. tropicalis, dermatófitos (CIM 0,25–1 mg/mL)",
+          "Antimicrobiano: citral inibe S. aureus, E. coli, Salmonella",
+          "Repelente de insetos: citral repele Aedes aegypti eficazmente (estudos FIOCRUZ)",
+          "Anti-inflamatório: citral inibe NF-κB; luteolina inibe COX-2",
+          "Hipoglicemiante: estudos clínicos em diabéticos mostram redução de glicemia de jejum"
+        ],
+        "contraindicacoes": [
+          "Alergia ao citral (verificar com patch test do OE)",
+          "Uso interno do OE puro: não recomendado",
+          "Gestação: uso moderado em infusão aceitável; OE interno não recomendado"
+        ],
+        "efeitos_adversos": [
+          "Dermatite de contato ao OE em alta concentração (citral é sensibilizante moderado)",
+          "Raramente: náusea ou irritação gástrica em doses muito elevadas",
+          "Hipoglicemia em diabéticos em medicação (monitorar)"
+        ],
+        "interacoes": [
+          "Hipoglicemiantes: potenciação — monitorar glicemia",
+          "Anti-hipertensivos: citral tem ação hipotensora leve — monitorar PA",
+          "Sedativos: potenciação leve possível"
+        ],
+        "dose_segura": "Folhas secas: 4–8 g/dia em infusão. OE tópico: 1–3% em base. Difusão: 5–10 gotas/30 min. ANVISA: uso seguro em infusão. ESCOP/EMA: não há monografia formal — uso baseado em tradição.",
+        "nivel_evidencia": "Estudos clínicos controlados para ansiedade (RCT com infusão, 2017, resultados positivos). FIOCRUZ: estudos in vitro e in vivo para repelência do Aedes. Evidências para hipoglicemia: estudos clínicos fase II em Gana e Brasil com resultados positivos."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Cítrico intenso e fresco, limão com nota floral suave, limpo e penetrante; um dos aromas mais reconhecíveis do mundo vegetal",
+        "sabor": "Cítrico-limão marcado, levemente amargo e herbáceo; muito agradável em infusão",
+        "cor_visual": "Folhas verde-claro brilhante; infusão amarelo-limão a dourado-claro",
+        "textura": "Folhas longas e flexíveis; infusão leve e refrescante",
+        "sensacao": "Refrescante e revigorante; clareia a mente; levemente relaxante após 15–20 min"
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A citronela é a planta repelente por excelência do Brasil tropical — cultivada em quintais, plantada em vasos nas janelas, queimada em velas aromáticas nas variedades comerciais. Com o avanço da dengue, zika e chikungunya, a citronela tornou-se tema de saúde pública, com pesquisas nacionais documentando sua eficácia como repelente natural de baixo custo para populações vulneráveis.  A centésima ficha do catálogo — fechando em uma gramínea humilde de quintal que protege corpos, calma nervos e perfuma ambientes — é um registro do princípio que o Ervatório sempre defendeu: a planta mais comum pode ter o valor mais profundo.",
-        "curiosidade": ""
+        "historia": "Originário do sul da Índia, onde é usado há séculos na culinária e medicina ayurvédica. Levado pelos colonizadores portugueses e ingleses para as Américas e África no século XVI–XVII. No Brasil, naturalizou-se facilmente e tornou-se um dos chás mais populares do país, especialmente no Nordeste e Sudeste. Na culinária tailandesa e vietnamita: ingrediente básico de pratos nacionais (Tom Yum, Pho). Hoje cultivado em todo o cinturão tropical.",
+        "uso_tradicional": "Ayurveda: febre, indigestão, dores. Brasil popular: 'capim-cidreira' para ansiedade, dor de cabeça e febre. África Ocidental: antimalárico e antipirético. Culinária tailandesa e vietnamita: ingrediente essencial. Perfumaria: citral base de fragrâncias cítricas. FIOCRUZ: estudos para repelente natural de dengue.",
+        "simbolismo": "Frescor, alegria, clareza mental. No nordeste brasileiro: hospitalidade — oferecido ao visitante como 'o chá da casa'.",
+        "curiosidades": [
+          "Citral é a molécula responsável pelo cheiro de 'limão' em dezenas de produtos — detergentes, perfumes, balas — extraído principalmente do capim-limão",
+          "A FIOCRUZ conduziu estudos confirmando eficácia do óleo de capim-limão como repelente de Aedes aegypti em concentrações comparáveis ao DEET em curto prazo",
+          "Cada folha de capim-limão pode produzir até 0,8 mL de óleo essencial — uma das gramíneas mais produtivas em OE",
+          "Em tradições nordestinas brasileiras, oferecer capim-limão ao visitante é gesto de hospitalidade — a 'planta da boas-vindas'"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global / tropical",
-        "status_anvisa": "Uso tradicional reconhecido. OE em repelentes: regulamentado.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Disponível o ano todo (tropical perene)"
+        "status_brasil": "ANVISA RDC 26/2014: Cymbopogon citratus — notificado como fitoterápico isento de prescrição para ansiedade leve e insônia. Uma das poucas plantas nativas/naturalizadas com status ANVISA.",
+        "status_europa": "EMA: sem monografia formal. Amplamente usado em cosméticos (INCI: Cymbopogon citratus leaf/stem oil). EFSA: citral aprovado como aditivo aromático.",
+        "farmacopeia": "Não consta em farmacopeias europeias como monografia medicinal. Farmacopeia Brasileira 6ª ed.: menção.",
+        "registro": "Fitoterápico isento registrado no Brasil. OE: cosmético. Alimento: amplamente aprovado."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Folhas frescas (hortas, feiras)",
+          "Folhas secas a granel",
+          "Chá em sachês",
+          "Óleo essencial",
+          "Cápsulas de extrato seco",
+          "Touceiras para cultivo"
+        ],
+        "preco_estimado": "Fresco: R$ 2–5/maço. Seco: R$ 5–15/50 g. OE: R$ 15–40/10 mL. Touceira: R$ 8–20.",
+        "disponibilidade": "Muito ampla — supermercados, feiras, hortas domésticas, ervanarias, farmácias.",
+        "como_escolher": "Fresco: folhas verde-brilhante, aroma cítrico intenso ao amassar. Seco: aroma presente e cor preservada. OE: nome Cymbopogon citratus (não flexuosus); aroma limão-fresco limpo.",
+        "armazenamento": "Fresco: temperatura ambiente em pote com água, ou refrigerado. 1–2 semanas. Seco: pote hermético. Validade: 12–18 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Ansiedade e insônia leve (RCT positivo — um dos poucos para planta brasileira popular)",
+          "Repelente natural de Aedes aegypti e outros insetos (FIOCRUZ)",
+          "Antipirético e gripe (banho + infusão)",
+          "Antifúngico (pé de atleta, candidíase cutânea)"
+        ],
+        "diferenciais": [
+          "ANVISA isento — uma das poucas plantas brasileiras populares com status regulatório",
+          "RCT para ansiedade: raridade entre plantas populares do Brasil — base científica sólida",
+          "Citral: molécula cítrica mais estudada em repelência de insetos (OMS e FIOCRUZ)",
+          "Planta de autocultura fácil — touceira que qualquer pessoa pode ter no quintal"
+        ],
+        "sinergias": [
+          "Capim-limão + melissa: ansiedade com nervosismo digestivo",
+          "Capim-limão + citronela (OE): repelente de insetos potenciado",
+          "Capim-limão + gengibre: gripe e febre (diaforético + antipirético)",
+          "Capim-limão + hortelã: digestivo refrescante e carminativo"
+        ],
+        "alertas": [
+          "OE: citral é sensibilizante moderado — sempre diluir antes do uso tópico",
+          "Diabéticos: monitorar glicemia com uso regular (hipoglicemiante documentado)",
+          "Anti-hipertensivos: possível potenciação hipotensora",
+          "Não confundir com palmarosa ou citronela — mesma família, composição diferente"
+        ]
       }
     }
   ],
