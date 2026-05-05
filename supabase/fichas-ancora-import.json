@@ -15889,109 +15889,223 @@
     },
     {
       "slug": "murici",
-      "nome_popular": "Murici-de-Tabuleiro",
-      "nome_cientifico": "Byrsonima crassifolia (L.) Kunth / B. crassa Nied. (cerrado)",
-      "tagline": "O fruto do sol do cerrado e da restinga — antioxidante tropical com vitamina C excepcional, sabor único e tradição de uso que vai do quintal nordestino à alta gastronomia brasileira.",
+      "nome_popular": "Murici",
+      "nome_cientifico": "Byrsonima crassifolia (L.) Kunth",
+      "tagline": "O fruto do sol do cerrado e da restinga — antioxidante tropical com vitamina C excepcional, sabor único e tradição que vai do quintal nordestino à alta gastronomia.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Byrsonima crassifolia (L.) Kunth / B. crassa Nied. (cerrado)",
+        "nome_cientifico": "Byrsonima crassifolia (L.) Kunth",
         "familia_botanica": "Malpighiaceae",
-        "tipo_botanico": "Alimento funcional antioxidante / antidiarreico",
-        "parte_usada": "Fruto (alimentar); folhas (infusão medicinal — antidiarreico).",
+        "tipo_botanico": "Alimento funcional / Antidiarreico tradicional",
+        "parte_usada": "Fruto (alimentar, licores, sorvetes); folhas (infusão medicinal antidiarreica e anti-inflamatória).",
         "sinonimos": [
-          "Murici · murici-de-tabuleiro · muruci · nance (América Central)",
-          "Murici (uso único no Brasil)"
+          "muruci · murici-de-tabuleiro · nance (América Central) · craboo (Belize)",
+          "Byrsonima crassa Nied. (espécie cerradense afim)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Aromático-oleoso intenso, tropical-exótico, queijoso (ácidos graxos livres característicos).",
-        "cor_da_infusao": "",
-        "intensidade": "4/5 — perfil de sabor extremo, inconfundível.",
-        "notas": "",
-        "bioma_de_origem": "Cerrado e Restinga — BA, PE, MA, PI, CE, GO, MT, MS.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Azedo-adocicado com caráter queijoso-rançoso característico (ácidos graxos livres: butírico, caprílico) e retrogusto tropical persistente.",
+        "aroma": "Aromático-oleoso intenso, exótico-tropical, reminiscente de queijo-de-manteiga e frutas fermentadas; inconfundível e polarizador.",
+        "cor_da_infusao": "Infusão de folhas: âmbar-esverdeado, levemente turva. Polpa: amarelo-ouro vibrante.",
+        "intensidade": "5/5 — sabor extremo, polarizador; quem ama, ama visceralmente.",
+        "notas": "A intensidade aromática é resultado de ácidos graxos de cadeia curta e média livres na polpa — fenômeno raro em frutas tropicais. O sabor queijoso é marca registrada e razão de culto gastronômico.",
+        "bioma_de_origem": "Cerrado (Byrsonima crassa) e Restinga / Caatinga costeira (Byrsonima crassifolia) — BA, PE, MA, PI, CE, GO, MT, MS.",
+        "distribuicao_geografica": [
+          "Nordeste brasileiro (Restinga e Caatinga costeira): maior volume comercial",
+          "Cerrado (GO, MT, MS, MG): B. crassa associada a veredas e campos abertos",
+          "América Central e Caribe: nance — consumo tradicional amplo (México ao Panamá)",
+          "Venezuela e Colômbia: uso alimentar e medicinal nas savanas"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "Folhas: 90–95 °C (infusão). Fruto: consumo in natura, licor, sorvete, geleia — sem calor elevado para preservar vitamina C.",
+        "tempo_de_infusao": "Folhas: 8–12 minutos coberto. Fruto: direto (in natura) ou processado a frio.",
+        "quantidade": "Folhas secas: 5 g / 200 ml. Polpa congelada: 100–150 g por porção (sorvete/suco).",
+        "metodo": "Folhas: infusão coberta em água quente. Polpa: liquidificar com água de coco ou leite e coar; ou usar diretamente em sorvetes, mousses e licores artesanais.",
+        "reinfusoes": "Folhas: até 2 infusões (redução de 30% de taninos na 2ª). Polpa: uso único.",
+        "melhor_momento": "Folhas: ao acordar (antidiarreico) ou antes de refeições (digestivo). Fruto/polpa: lanche, sobremesa, coquetéis.",
+        "combina_com": "Tapioca, castanha-de-caju, cupuaçu, pimenta-de-cheiro; cachaça artesanal (licor); mel do cerrado; sorvete de creme como base neutra."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Preliminar — uso etnobotânico e dados in vitro/in vivo em modelos animais.",
+        "aplicacoes": [
+          {
+            "titulo": "Ação cicatrizante (extrato foliar)",
+            "texto": "Extratos de folhas de B. crassifolia em estudos com roedores aceleraram a epitelização de feridas cutâneas. Mecanismo proposto: taninos condensados promovem contração tecidual e inibem Staphylococcus aureus local."
+          },
+          {
+            "titulo": "Anti-inflamatório tópico (folhas)",
+            "texto": "Triterpenos (ácido ursólico, ácido betulínico) isolados de folhas demonstraram inibição de COX-2 e redução de edema em modelos murinos de inflamação cutânea. Uso popular: cataplasma de folhas esmagadas sobre picadas de insetos."
+          }
+        ],
+        "contraindicacoes": "Evitar uso tópico em feridas abertas profundas sem orientação. Gestantes: sem dados de segurança tópica."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antioxidante (vitamina C + polifenóis)",
+          "Antioxidante (vitamina C + polifenóis totais elevados)",
           "Antidiarreico (folhas — taninos adstringentes)",
-          "Anti-inflamatório (folhas)",
-          "Antifúngico (folhas — ácido betulínico)",
-          "Nutritivo (vitamina C, ferro, cálcio)",
-          "Componentes ativos:"
+          "Anti-inflamatório (folhas — triterpenos: ácido ursólico, betulínico)",
+          "Antifúngico (folhas — ácido betulínico, flavonoides)",
+          "Nutritivo-funcional (vitamina C, ferro não-heme, cálcio, carotenoides)"
         ],
         "componentes_ativos": [
           {
-            "label": "VITAMINA C",
-            "texto": "Antioxidante, imunidade"
+            "label": "VITAMINA C (ácido ascórbico)",
+            "texto": "30–60 mg/100 g de polpa fresca — teor expressivo para fruta tropical. Antioxidante essencial, cofator de síntese de colágeno, imunomodulador. Sensível ao calor: preservar consumo in natura ou polpa crua."
           },
           {
-            "label": "TANINOS (folhas)",
-            "texto": "Antidiarreico, adstringente"
+            "label": "TANINOS CONDENSADOS (folhas)",
+            "texto": "Proantocianidinas de alto peso molecular. Mecanismo antidiarreico: precipitam proteínas da mucosa intestinal, formando barreira protetora; inibem adesão de patógenos (E. coli, Shigella) ao epitélio. Concentração máxima em folhas jovens."
           },
           {
-            "label": "ÁCIDO BETULÍNICO (folhas)",
-            "texto": "Anti-inflamatório, antifúngico, antitumoral"
+            "label": "ÁCIDO URSÓLICO e ÁCIDO BETULÍNICO (folhas)",
+            "texto": "Triterpenos pentacíclicos com atividade anti-inflamatória (inibição NF-κB, COX-2) e antifúngica (ruptura de membrana de Candida spp.). Ácido betulínico demonstra citotoxicidade seletiva para células melanoma in vitro."
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Antioxidante, anti-inflamatório"
+            "label": "CAROTENOIDES (polpa)",
+            "texto": "β-caroteno e luteína na polpa amarela. Precursores de vitamina A; antioxidantes lipossolúveis; proteção ocular e cutânea."
           },
           {
-            "label": "ÁCIDOS GRAXOS (fruto)",
-            "texto": "Nutritivo, aromático"
+            "label": "ÁCIDOS GRAXOS VOLÁTEIS (polpa)",
+            "texto": "Ácido butírico, caprílico e caproico em concentrações incomuns para frutas. Responsáveis pelo aroma queijoso-rançoso característico. Ácido butírico: substrato preferencial de colonócitos, potencialmente benéfico à microbiota colônica."
+          },
+          {
+            "label": "FLAVONOIDES (quercetin, rutina — folhas e polpa)",
+            "texto": "Antioxidantes, anti-inflamatórios, vasoprotegimento capilar. Potencializam ação da vitamina C por efeito poupador (quelação de metais pró-oxidantes)."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Diarreia aguda (folhas)",
+            "evidencia": "Moderada",
+            "populacao": "Etnobotânica extensa (nordeste, cerrado) + estudos in vitro e em modelos animais confirmando ação antidiarreica via taninos. Ausência de ensaios clínicos randomizados."
+          },
+          {
+            "indicacao": "Estresse oxidativo / antioxidante",
+            "evidencia": "In vitro (alta), in vivo (preliminar)",
+            "populacao": "Capacidade DPPH elevada da polpa e folhas; dados clínicos em humanos ainda ausentes."
+          },
+          {
+            "indicacao": "Antifúngico (candidíase — uso popular com folhas)",
+            "evidencia": "Preliminar (in vitro)",
+            "populacao": "CIM favorável contra Candida albicans em extratos de folhas. Sem ensaios clínicos."
+          }
+        ],
+        "contraindicacoes": "Folhas (infusão concentrada): evitar em casos de obstipação grave (ação adstringente). Gestação: sem dados clínicos — usar com cautela. Não substituir tratamento médico em diarreias infecciosas graves.",
+        "interacoes": [
+          {
+            "label": "Ferro (absorção)",
+            "texto": "Taninos das folhas podem quelatar ferro não-heme. Não consumir infusão de folhas simultânea a alimentos ricos em ferro ou suplementos minerais."
+          },
+          {
+            "label": "Anticoagulantes",
+            "texto": "Vitamina K presente nas folhas pode antagonizar warfarina em consumo intensivo. Dados insuficientes para quantificar risco clínico."
+          }
+        ],
+        "efeitos_adversos": "Polpa: intolerância ao sabor intenso em não-habituados (comum). Folhas em dose alta: obstipação, cólicas. Alergia a Malpighiaceae: rara, mas possível.",
+        "dose_maxima": "Folhas: 10 g/dia (infusão). Polpa: sem restrição conhecida em consumo alimentar normal (30–150 g/dia).",
+        "fontes": [
+          "Almeida CF et al. (2006). Plants of the caatinga with antibiotic activity. J Ethnopharmacol.",
+          "Rocha WS et al. (2011). Compostos fenólicos totais e taninos condensados em frutas nativas do cerrado. Rev Bras Frutic.",
+          "Garmus TT et al. (2014). Extração de compostos fenólicos de folhas de Byrsonima crassifolia. Ciênc Tecnol Aliment.",
+          "EMBRAPA Cerrados — Fichas de frutas nativas do cerrado: murici.",
+          "USDA FoodData Central — Nance (Byrsonima crassifolia) composition."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Acidez",
+            "intensidade": "Alta (4/5)",
+            "observacao": "pH 3,2–3,8; ácidos málico e cítrico dominantes. Acidez viva que equilibra o dulçor."
+          },
+          {
+            "dimensao": "Dulçor",
+            "intensidade": "Moderado (3/5)",
+            "observacao": "Açúcares simples (glicose + frutose): 8–14 Brix dependendo do estágio de maturação. Doçura opacada pelo caráter graxo-queijoso."
+          },
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Leve (1–2/5)",
+            "observacao": "Polifenóis da polpa; aumenta levemente em frutos verdes ou com casca."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Leve (polpa) / Alta (folhas)",
+            "observacao": "Polpa: taninos residuais causam leve secura. Folhas: adstringência marcante — base do uso antidiarreico."
+          },
+          {
+            "dimensao": "Caráter queijoso-rançoso",
+            "intensidade": "Alta (4–5/5) — traço identitário",
+            "observacao": "Ácidos graxos voláteis livres (butírico, caprílico). Polarizador: quem se adapta valoriza como assinatura sensorial única entre frutas brasileiras."
+          }
+        ],
+        "olfativo_familia": "Frutal-tropical exótico com nota lácteo-queijosa e fundo oleoso.",
+        "olfativo_descritores": [
+          "queijo-de-coalho tropical",
+          "manteiga rançosa",
+          "fruta amarela madura (manga-abacaxi)",
+          "notas oleosas e fermentadas",
+          "fundo terroso-cerradeiro"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Mecanorreceptores bucais",
+            "ativacao": "Alta",
+            "molecula": "Taninos condensados (folhas) → adstringência / precipitação de proteínas salivares"
+          }
+        ],
+        "tatil": "Polpa: pastosa, cremosa-oleosa; casca fina e macia. Polpa congelada: textura cremosa ideal para sorvete.",
+        "descricao_integrada": "O murici é a fruta mais polarizadora do Brasil — não por agressividade, mas por singularidade extrema. Seu perfil queijoso-tropical não tem paralelo no mundo das frutas; quem chega sem expectativa freqüentemente rejeita; quem é apresentado com contexto transforma-se em defensor fervoroso. Na infusão, as folhas entregam adstringência medicinal limpa, tânica, sem o perfil graxo do fruto — são mundos sensoriais completamente distintos na mesma planta."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O murici é o fruto que mais divide opiniões no Brasil — quem cresceu comendo ama incondicionalmente; quem experimenta pela primeira vez muitas vezes estranha o cheiro \"queijoso\". Alex Atala (D.O.M.) serviu murici em sobremesas premiadas — elevando a \"estranheza\" do fruto a virtude gastronômica. O sorvete de murici é uma das melhores combinações de sabor e memória afetiva do Brasil nordestino-cerratense.",
-        "curiosidade": ""
+        "historia": "O murici era consumido por populações indígenas do cerrado e da caatinga costeira há milênios — sementes carbonizadas foram encontradas em sítios arqueológicos do nordeste datados de 3.000 a.p. No México e América Central, o nance (B. crassifolia) é considerado fruta nacional em regiões do Pacífico, consumido in natura, em chicha fermentada e conservas em aguardente. No Brasil, o murici entrou na dieta nordestina por via indígena e permaneceu como alimento de extrativismo, base de licores artesanais e sorvetes regionais que definem identidade gastronômica.",
+        "cerimonial": "Entre povos indígenas do cerrado (Kayapó, Xavante), o murici está associado à coleta coletiva feminina — as mulheres colhem juntas no cerrado no início da estação chuvosa (outubro-novembro). Os frutos são compartilhados imediatamente após a coleta, numa prática social de reciprocidade alimentar. Na América Central, o nance fermentado em aguardente (chicha de nance) é usado em celebrações de fim de colheita.",
+        "brasil": "O nordeste brasileiro é o maior polo de consumo de murici. Fortaleza, Recife e Salvador têm mercados de extrativismo onde o fruto é vendido fresco, congelado e em polpa. O sorvete de murici é considerado um dos sabores mais autenticamente nordestinos — ao lado do cupuaçu e do cajá — e é símbolo de identidade regional. A alta gastronomia brasileira, influenciada pelo movimento 'Cozinha Brasil' de Alex Atala e outros, redescobriu o murici nos anos 2010 como ingrediente premium para menu degustação: usam-se curd de murici, esfera de murici em gel de maracujá, ganache de murici com chocolate 70%. O paradoxo é que o fruto considerado 'pobre' no interior nordestino virou iguaria de fine dining paulistano.",
+        "curiosidade": "O murici tem o cheiro mais controverso de todas as frutas brasileiras. O ácido butírico — o mesmo composto responsável pelo odor de queijo, vômito e manteiga rançosa — está presente na polpa em concentração incomum para frutas. A explicação evolucionária é curiosa: o murici co-evoluiu com aves frugívoras que são atraídas por odores fermentados-gordurosos, não com primatas que preferem aromas florais e açucarados. O resultado é uma fruta que divide a humanidade entre repulsa imediata e devoção incondicional — sem meio-termo possível."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Alimento funcional / Fitoterápico",
-        "status_anvisa": "Alimento.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutificação: novembro–março"
+        "eixo_botanico_tpc": "Alimento funcional / Produto alimentício de origem vegetal (PAOV) — não enquadrado como planta medicinal pela ANVISA.",
+        "status_anvisa": "Polpa: alimento convencional (GGALI). Folhas como fitoterápico: sem monografia publicada — uso tradicional não regularizado pela IN 02/2014.",
+        "status_ema": "Não avaliado pela EMA (planta com distribuição restrita à América tropical).",
+        "status_fda": "GRAS implícito para polpa (nance) em uso alimentar tradicional na América Central e Caribe; sem avaliação formal.",
+        "certificacao_organica": "Extrativismo sustentável predomina — potencial de certificação orgânica por manejo (IBAMA / IBD). Ausência de pesticidas na produção extrativista típica.",
+        "sazonalidade": "Nordeste (restinga): outubro–janeiro (pico novembro-dezembro). Cerrado: novembro–fevereiro. Polpa congelada disponível o ano todo em mercados do nordeste."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Produtores extrativistas do nordeste (BA, PE, CE, PI, MA) — venda em feiras e atacados regionais",
+          "Polpa congelada: distribuidores nordestinos (Frutap, Amazônia Polpas, fornecedores locais)",
+          "Alta gastronomia: importado do nordeste por distribuidores especializados (SP, RJ)"
+        ],
+        "faixa_de_preco": "Fruto fresco: R$ 8–20/kg (sazonal, mercados nordestinos). Polpa congelada: R$ 15–35/kg. Folhas secas: R$ 20–40/100g (herbanárias especializadas).",
+        "formatos": [
+          "Fruto fresco (sazonal, nordeste)",
+          "Polpa congelada (100g–1kg)",
+          "Sorvete artesanal (produtores regionais)",
+          "Licor artesanal de murici (cachaça + murici macerado)",
+          "Folhas secas (herbanárias — uso medicinal antidiarreico)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "Fruta mais polarizadora do Brasil",
+          "texto": "O murici divide opiniões como nenhuma outra: seu perfil queijoso-tropical, resultado de ácidos graxos voláteis raros em frutas, provoca rejeição imediata ou devoção total — sem meio-termo. Essa singularidade extrema é sua marca identitária e motor de culto gastronômico."
+        },
+        {
+          "label": "Dois usos completamente diferentes na mesma planta",
+          "texto": "O fruto é alimento funcional aromático, rico em vitamina C e carotenoides, base de sorvetes, licores e fine dining. As folhas são medicamento tradicional antidiarreico, ricas em taninos adstringentes e triterpenos anti-inflamatórios — mundos sensoriais e farmacológicos opostos na mesma Malpighiaceae."
+        },
+        {
+          "label": "Do quintal pobre ao prato de fine dining",
+          "texto": "O murici percorreu o caminho improvável de fruta de extrativismo nordestino a ingrediente premium da alta gastronomia brasileira — curd, esfera, ganache e gelificados aparecem em menus degustação de São Paulo. Símbolo da valorização das frutas nativas no Brasil do século XXI."
+        },
+        {
+          "label": "Ácido butírico: o paradoxo evolutivo",
+          "texto": "A polpa contém ácido butírico em concentração incomum para frutas — o mesmo composto do queijo e da manteiga rançosa. Co-evolução com aves frugívoras (atraídas por odores fermentados-gordurosos) em vez de primatas explica o aroma controverso. Bônus inesperado: ácido butírico é substrato preferencial de colonócitos e protege a barreira intestinal."
+        }
+      ]
     },
     {
       "slug": "jabuticaba",
