@@ -16720,104 +16720,218 @@
       "slug": "hibisco-rosa",
       "nome_popular": "Hibisco-Rosa",
       "nome_cientifico": "Hibiscus rosa-sinensis L.",
-      "tagline": "A flor tropical de ornamento com ação medicinal — prima do hibisco vermelho (H. sabdariffa) com uso cosmético e tópico documentado e perfil fitoterápico crescente.",
+      "tagline": "A flor ornamental de mil usos medicinais — antioxidante, anti-hipertensiva e depurativa com antocianinas excepcionais, antocianidinas e ácido hibístico que unem jardins tropicais, fitoterapia africana e moderna cosmetologia.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Hibiscus rosa-sinensis L.",
         "familia_botanica": "Malvaceae",
-        "tipo_botanico": "Fitoterápico tópico / cosmético / antidiabético leve",
-        "parte_usada": "Flores frescas ou secas; folhas.",
+        "tipo_botanico": "Planta ornamental com usos medicinais / Alimento funcional",
+        "parte_usada": "Flores frescas ou secas (chá, suco, corante natural); folhas (uso tópico e culinário em algumas culturas); raízes (uso medicinal em fitoterapia ayurvédica).",
         "sinonimos": [
-          "Hibisco · hibisco-rosa · rosa-da-china · papoula-da-china",
-          "Chinese hibiscus / Shoe flower (inglês) · Rose de Chine (francês)",
-          "Gudhal (hindi)"
+          "hibisco-rosa · hibisco-ornamental · papoula-da-China · rosa-da-China · mimo-de-Vênus",
+          "Nota: não confundir com Hibiscus sabdariffa (hibisco-azedo / cálice de hibisco) — espécie diferente com uso culinário mais comum no Brasil",
+          "Hibiscus rosa-sinensis var. sinensis; cultivares ornamentais inúmeros (flores simples, dobradas, bicolores)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Leve-floral, mucilaginoso suave, levemente ácido.",
-        "aroma": "Floral delicado, rosa-tropical suave.",
-        "cor_da_infusao": "Variável por cultivar — rosa pálido a rosado. #E8B8C8",
-        "intensidade": "1/5 — extremamente suave.",
-        "notas": "",
-        "bioma_de_origem": "Pantropical ornamental — cultivado em todo o Brasil.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Suave, levemente mucilaginoso com notas florais delicadas e dulçor discreto; retrogusto herbáceo limpo. Muito menos ácido que H. sabdariffa.",
+        "aroma": "Floral delicado, levemente adocicado com notas de rosa tropical e fundo verde suave; sem componente aromático forte.",
+        "cor_da_infusao": "Roxo-violeta a rosa intenso (flores vermelhas/rosas) ou amarelo-palha (flores amarelas/brancas) — dependendo da cultivar. Cor vibrante por antocianinas.",
+        "intensidade": "2/5 — perfil sensorial discreto, elegante; predomina a cor sobre o sabor. Fácil de combinar.",
+        "notas": "H. rosa-sinensis é muito menos estudado que H. sabdariffa (hibisco-azedo), mas tem uso medicinal documentado em fitoterapia ayurvédica, africana e asiática. A confusão entre as duas espécies é comum no mercado brasileiro — onde 'hibisco' geralmente se refere ao H. sabdariffa.",
+        "bioma_de_origem": "Originário do sudeste asiático (China/Malásia) — naturalizado em regiões tropicais e subtropicais de todo o mundo. No Brasil: cultivado amplamente como ornamental em todo o país.",
+        "distribuicao_geografica": [
+          "Brasil: cultivado como ornamental em todas as regiões — não é nativo",
+          "Ásia tropical (origem): China, Malásia, Índia — uso medicinal e culinário tradicional intenso",
+          "África tropical: uso medicinal bem documentado (Nigéria, Gana, Tanzânia)",
+          "Caribe e América Central: uso culinário e medicinal popular"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "80–85 °C — temperatura mais baixa que o ponto de ebulição preserva antocianinas termossensíveis e maximiza a cor.",
+        "tempo_de_infusao": "5–8 minutos. Não exceder 10 min — extração prolongada aumenta amargor de compostos fenólicos e degrada antocianinas.",
+        "quantidade": "Flores frescas: 3–5 flores médias / 200 ml. Flores secas: 3–5 g / 200 ml.",
+        "metodo": "Infusão coberta em água quente. Para suco frio: maceração de flores frescas em água fria por 2–4 horas (preserva melhor as antocianinas). Para uso culinário: pétalas frescas em saladas, sobremesas, drinks.",
+        "reinfusoes": "1 reinfusão aceitável com redução de 50% de antocianinas. Cor ainda atraente.",
+        "melhor_momento": "Qualquer horário — sem estimulante. Pela manhã como tônico antioxidante. À tarde como bebida funcional visual e nutritiva.",
+        "combina_com": "Gengibre (sinergia anti-inflamatória), limão (intensifica cor por pH — mais ácido = mais vermelho-rosa), hibisco-azedo (H. sabdariffa — potencializa acidez), mel, hortelã, água de coco."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada — uso em cosmetologia documentado; estudos in vitro e tradição ayurvédica extensa.",
+        "aplicacoes": [
+          {
+            "titulo": "Condicionador e fortalecedor capilar (flores e folhas)",
+            "texto": "Mucilagem das folhas e flores de H. rosa-sinensis é amplamente usada em ayurveda como condicionador capilar — reduz quebra, aumenta brilho e hidratação. Estudos in vitro confirmam adsorção de proteínas e redução de coeficiente de atrito do cabelo. Base de produtos capilares ayurvédicos premium (pó de hibisco para cabelo)."
+          },
+          {
+            "titulo": "Anti-inflamatório cutâneo e cicatrizante",
+            "texto": "Extrato de flores em formulações tópicas demonstrou atividade anti-inflamatória (redução de eritema), antioxidante e leve estimulação de síntese de colágeno in vitro. Uso popular em Ayurveda para queimaduras leves e irritação de pele."
+          },
+          {
+            "titulo": "Tônico facial antioxidante",
+            "texto": "Antocianinas e polifenóis em extrato aquoso: atividade antioxidante cutânea, proteção contra dano UV (in vitro). Uso em cosméticos antienvelhecimento com extrato de H. rosa-sinensis crescente no mercado global."
+          }
+        ],
+        "contraindicacoes": "Alergia a Malvaceae: rara. Manchas temporárias em pele clara pelo pigmento de antocianinas — lavar após uso tópico."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Cosmético capilar (condicionamento, crescimento)",
-          "Antioxidante",
-          "Hipoglicemiante leve (folhas — estudos)",
-          "Anti-inflamatório",
-          "Antibacteriano (tópico)",
-          "Componentes ativos:"
+          "Antioxidante (antocianinas, flavonoides — DPPH e ORAC elevados)",
+          "Anti-hipertensivo discreto (ácido hibístico — vasodilatação; flavonoides)",
+          "Emoliente / mucilaginoso (mucilagem — proteção de mucosas)",
+          "Anti-inflamatório (quercetina, campferol — COX-2)",
+          "Hepatoprotetor potencial (flavonoides — in vitro e modelos animais)",
+          "Hipoglicemiante discreto (ácido hibístico — inibição de α-glucosidase)"
         ],
         "componentes_ativos": [
           {
-            "label": "MUCILAGENS",
-            "texto": "Condicionamento capilar, demulcente"
+            "label": "ANTOCIANINAS (cianidina-3-soforosídeo, cianidina-3,5-diglucosídeo)",
+            "texto": "Principal fração antioxidante das flores. Concentração varia com cultivar — flores vermelhas e roxas têm maior teor. Antioxidantes potentes (inibição de peroxidação lipídica, quelação de metais pró-oxidantes). Vasoprotegentes (reforço de capilares endoteliais). Anti-inflamatórios via inibição de NF-κB. Responsáveis pela cor vibrante da infusão."
           },
           {
-            "label": "ANTOCIANINAS",
-            "texto": "Antioxidante, anti-inflamatório"
+            "label": "ÁCIDO HIBÍSTICO (ácido 2-hidroxipropan-1,2,3-tricarboxílico derivado)",
+            "texto": "Ácido orgânico característico do gênero Hibiscus. Inibe α-glucosidase intestinal (reduz absorção de glicose pós-prandial). Vasodilatador discreto. Anti-hipertensivo por mecanismo diurético + vasodilatação periférica. Mais concentrado em H. sabdariffa, mas presente em H. rosa-sinensis."
           },
           {
-            "label": "TANINOS",
-            "texto": "Adstringente, tônico"
+            "label": "FLAVONOIDES (quercetina, campferol, miricetina, gossipetina)",
+            "texto": "Anti-inflamatórios (COX-1/COX-2, NF-κB), antioxidantes, vasoprotegentes. Gossipetina: flavonoide específico de Hibiscus, com atividade antibacteriana e antioxidante documentada. Campferol: proteção endotelial, inibição de angiogênese tumoral in vitro."
           },
           {
-            "label": "FLAVONÓIDES (quercetina)",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "MUCILAGEM (polissacarídeos ácidos)",
+            "texto": "Presente em flores e folhas. Emoliente de mucosas — protege trato digestivo, brônquios e trato urinário de irritação. Prebiótico potencial (fermentação por microbiota colônica). Base do uso popular para tosse, gastrite e irritação urinária."
+          },
+          {
+            "label": "ÁCIDO ASCÓRBICO (vitamina C) e CAROTENOIDES",
+            "texto": "Flores frescas com vitamina C relevante. Carotenoides (β-caroteno, luteína) presentes especialmente em cultivares amarelas e alaranjadas. Complementam o perfil antioxidante das antocianinas."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Hipertensão arterial leve",
+            "evidencia": "Moderada para H. sabdariffa (mais estudado); preliminar para H. rosa-sinensis — mecanismo similar mas dados próprios escassos",
+            "populacao": "Adultos com hipertensão leve. Não substituir tratamento anti-hipertensivo estabelecido."
+          },
+          {
+            "indicacao": "Antioxidante / proteção cardiovascular",
+            "evidencia": "In vitro (forte) e in vivo em modelos animais (moderada). Dados clínicos humanos diretos para H. rosa-sinensis: ausentes.",
+            "populacao": "Uso preventivo — sem ensaios clínicos específicos para H. rosa-sinensis."
+          },
+          {
+            "indicacao": "Saúde capilar (uso tópico)",
+            "evidencia": "Moderada — evidências in vitro e tradição ayurvédica robusta; poucos ensaios clínicos controlados",
+            "populacao": "Adultos com queda capilar, cabelo quebradiço. Uso em pó capilar ayurvédico com feedback positivo documentado."
+          }
+        ],
+        "contraindicacoes": "Gestação: sem dados adequados de segurança para uso medicinal intensivo — uso culinário pontual provavelmente seguro. Hipotensão: monitorar pressão com uso diário de chá concentrado. Diabetes em uso de hipoglicemiantes: monitorar glicemia (inibição discreta de α-glucosidase).",
+        "interacoes": [
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Potencialização discreta do efeito hipotensor com uso diário de chá concentrado. Monitorar pressão arterial."
+          },
+          {
+            "label": "Antidiabéticos orais",
+            "texto": "Ácido hibístico inibe α-glucosidase — efeito hipoglicemiante aditivo possível. Monitorar glicemia com uso regular."
+          }
+        ],
+        "efeitos_adversos": "Doses habituais: excelente tolerância. Rarissimamente: náusea leve por mucilagem em excesso. Alergia a Malvaceae: rara.",
+        "dose_maxima": "Flores secas: 10 g/dia. Flores frescas: sem restrição em uso culinário. Uso medicinal regular: máximo 8 semanas sem pausa.",
+        "fontes": [
+          "Fasola TR & Egunyomi A. (2005). Ethnobotanical uses of Hibiscus rosa-sinensis in Nigeria. Ethnobot Leaflets.",
+          "Adhirajan N et al. (2003). In vivo and in vitro evaluation of hair growth promoting activity of Hibiscus rosa-sinensis. J Ethnopharmacol.",
+          "Jonadet M et al. (1990). Anthocyanosides extracted from Vitis vinifera, Vaccinium myrtillus and Hibiscus sabdariffa. J Pharm Belg.",
+          "Ali BH et al. (2005). Some phytochemical, pharmacological and toxicological properties of ginger. Food Chem Toxicol. [contexto comparativo]",
+          "Puro K et al. (2014). Phytochemical analysis and antibacterial activity of Hibiscus rosa-sinensis L. Int J Curr Microbiol App Sci."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Dulçor floral",
+            "intensidade": "Leve (1–2/5)",
+            "observacao": "Açúcares livres e glicosídeos florais. Dulçor suave que convida sem saturar."
+          },
+          {
+            "dimensao": "Mucilaginoso",
+            "intensidade": "Leve a moderado (2/5)",
+            "observacao": "Polissacarídeos ácidos. Sensação levemente aveludada na boca — característica agradável que suaviza infusões."
+          },
+          {
+            "dimensao": "Floral neutro",
+            "intensidade": "Moderado (2–3/5)",
+            "observacao": "Nota floral tropical delicada — presente mas não dominante. Mais cor do que sabor."
+          },
+          {
+            "dimensao": "Acidez",
+            "intensidade": "Mínima (0–1/5)",
+            "observacao": "Muito menos ácido que H. sabdariffa. Ácido hibístico em baixa concentração — não contribui com azedume perceptível."
+          }
+        ],
+        "olfativo_familia": "Floral tropical delicado com fundo verde suave.",
+        "olfativo_descritores": [
+          "flor tropical suave",
+          "notas de rosa-tropical",
+          "fundo verde de folha fresca",
+          "levemente mel-floral"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Mecanorreceptores bucais",
+            "ativacao": "Baixíssima",
+            "molecula": "Mucilagem — sensação aveludada suave, sem irritação"
+          }
+        ],
+        "tatil": "Corpo leve-médio com suavidade mucilaginosa — infusão sedosa, agradável. Finalização limpa.",
+        "descricao_integrada": "O hibisco-rosa é antes de tudo um espetáculo visual — a infusão roxo-violeta vibrante ou rosa intensa domina a experiência. O sabor é elegantemente discreto: floral suave, levemente mucilaginoso, sem a acidez marcante do hibisco-azedo. É um chá de beleza — cuja principal contribuição sensorial é a cor, seguida pela suavidade no palato. Combina perfeitamente com outros ingredientes porque não compete, apenas complementa com sua presença cromática inigualável."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O hibisco-rosa é a flor de jardim mais cultivada no Brasil — e a mais subutilizada medicinalmente. Está nos quintais de Norte a Sul como ornamental, enquanto o mesmo gênero (Hibiscus sabdariffa) é vendido a preço premium em farmácias. A ficha do hibisco-rosa no Ervatório cumpre a função de resgatar o valor fitoterápico do que os brasileiros já têm em casa sem saber.",
-        "curiosidade": ""
+        "historia": "Hibiscus rosa-sinensis tem origem provável no sudeste asiático (China ou Malásia) e foi disseminado por todo o mundo tropical como ornamental pelos mercadores árabes e europeus nos séculos XV–XVII. No subcontinente indiano, a planta entrou profundamente na tradição ayurvédica — usada há mais de dois mil anos para saúde capilar, fertilidade, e como tônico geral. Na África Ocidental, tornou-se planta medicinal local no tempo de poucos séculos. No Brasil, chegou com a colonização portuguesa e hoje é um dos arbustos ornamentais mais cultivados do país — presente em quintais, praças e jardins de todo o território.",
+        "cerimonial": "Na Malásia, H. rosa-sinensis é a flor nacional (Bunga Raya) — símbolo nacional oficial desde 1960, representando os cinco princípios do estado malaio (Rukun Negara). Em templos hindus, as flores vermelhas são oferendas a Ganesh e Lakshmi. Na cultura afro-caribenha, o hibisco vermelho é associado à beleza feminina e a rituais de amor e atração.",
+        "brasil": "No Brasil, o hibisco-rosa é quase exclusivamente ornamental — a maioria das pessoas não sabe que as flores são comestíveis e medicinais. A confusão com H. sabdariffa ('hibisco') contribui para que o hibisco-rosa permaneça subutilizado medicinalmente. Há uso popular esporádico na medicina doméstica do nordeste e do interior do sudeste — especialmente para cabelo (água de hibisco como condicionador final no banho). O mercado de cosméticos naturais brasileiro começa a explorar extratos de H. rosa-sinensis em produtos capilares premium.",
+        "curiosidade": "A flor do hibisco-rosa dura apenas um dia — abre ao amanhecer e murcha ao anoitecer (antese diária). Essa efemeridade extrema a tornou símbolo de beleza transitória em culturas asiáticas, especialmente no Japão e na China, onde a comparação de beleza humana ao hibisco de um dia é tema poético recorrente. Do ponto de vista fitoquímico, a produção concentrada de antocianinas, flavonoides e néctar em apenas 24 horas é um exemplo de otimização metabólica para atração de polinizadores — todo aquele poder antioxidante que o chá entrega é originalmente sinalização para beija-flores e borboletas."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico / cosmético",
-        "status_anvisa": "Uso popular reconhecido.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Flores disponíveis o ano todo (tropical)"
+        "eixo_botanico_tpc": "Alimento funcional / planta ornamental com uso medicinal tradicional — não enquadrado como fitoterápico pela ANVISA.",
+        "status_anvisa": "Flores: alimento convencional permitido. Sem monografia de fitoterápico. H. sabdariffa (afim): também sem monografia específica no Brasil.",
+        "status_ema": "Não avaliado. H. sabdariffa: sem monografia EMA.",
+        "status_fda": "GRAS implícito para uso alimentar das flores. Sem avaliação formal de H. rosa-sinensis.",
+        "certificacao_organica": "Cultivo ornamental em jardins domésticos: amplamente orgânico por default. Produção comercial de flores para chá/cosméticos: certificação IBD ou Ecocert possível.",
+        "sazonalidade": "Floração praticamente o ano todo em regiões tropicais e subtropicais do Brasil. Pico de floração: primavera-verão (setembro–março). Flores para coleta: cedo pela manhã, no dia de abertura."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Jardins domésticos e ornamentais: fonte mais acessível no Brasil",
+          "Herbanárias especializadas: flores secas de hibisco (frequentemente H. sabdariffa — verificar espécie)",
+          "Mercados de flores e viveiros: planta viva para cultivo",
+          "Cosméticos capilares ayurvédicos: pó de hibisco (H. rosa-sinensis) importado da Índia"
+        ],
+        "faixa_de_preco": "Flores secas: R$ 15–30/50g (confusão com H. sabdariffa no mercado). Pó capilar ayurvédico de hibisco: R$ 30–80/100g. Planta viva: R$ 15–40 em viveiros.",
+        "formatos": [
+          "Flores frescas (quintais e jardins)",
+          "Flores secas (herbanárias)",
+          "Pó de flores secas (uso capilar ayurvédico)",
+          "Extrato em cosméticos capilares (shampoo, condicionador, máscaras)",
+          "Pétalas em chás de flores decorativos"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "A flor nacional da Malásia no quintal brasileiro",
+          "texto": "Bunga Raya — flor nacional da Malásia desde 1960 — cresce em quintais brasileiros como ornamental comum, frequentemente sem que o dono saiba que as flores são comestíveis, medicinais e ricas em antocianinas antioxidantes. Talvez nenhuma outra planta medicinal seja tão subutilizada no Brasil por pura ignorância de uso."
+        },
+        {
+          "label": "A infusão mais fotogênica da fitoterapia",
+          "texto": "O roxo-violeta ou rosa intenso da infusão de hibisco-rosa — resultado das antocianinas das flores — é visualmente incomparável entre os chás medicinais. E a cor responde ao pH: adicione limão (ácido) e muda para rosa-vivo; adicione bicarbonato (alcalino) e vira azul-arroxeado. A flor que mudou a cultura ornamental tropical entrega, no copo, um laboratório de química ácido-base."
+        },
+        {
+          "label": "Dois mil anos de cabelo saudável na Índia",
+          "texto": "A tradição ayurvédica usa H. rosa-sinensis como o tônico capilar feminino mais importante do subcontinente há dois milênios — flores e folhas trituradas como pasta capilar, água de infusão como último enxágue, óleo de flores maceradas como tônico do couro cabeludo. Estudos in vitro confirmam redução de quebra capilar e aumento de resistência de proteínas do fio. A ciência chegou onde a avó indiana já sabia."
+        },
+        {
+          "label": "Flor que dura um dia, antocianinas que duram uma vida",
+          "texto": "A flor abre ao amanhecer e murcha ao anoitecer — toda a produção de antocianinas, flavonoides e néctar concentrada em 24 horas. A efemeridade que a tornou símbolo poético de beleza transitória na Ásia é, bioquimicamente, um estratagema de polinização que concentra poder antioxidante no momento certo. A flor que os poetas admiram e as abelhas adoram é a mesma que o chá preserva."
+        }
+      ]
     },
     {
       "slug": "palmarosa",
