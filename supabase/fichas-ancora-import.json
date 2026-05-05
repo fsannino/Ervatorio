@@ -13424,104 +13424,224 @@
       "slug": "velame-pantaneiro",
       "nome_popular": "Velame-Pantaneiro",
       "nome_cientifico": "Croton urucurana Baill.",
-      "tagline": "O sangue-de-dragão brasileiro — cicatrizante poderoso do pantanal com látex vermelho que imita e supera em alguns aspectos a resina sul-americana mais famosa do mundo.",
+      "tagline": "O sangue-de-dragão do Pantanal — látex vermelho-sangue com alcaloides taspina e sanguilarina, cicatrizante extraordinário e anti-inflamatório de uso ancestral que hoje inspira pesquisa oncológica e farmacologia de feridas.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Croton urucurana Baill.",
-        "familia_botanica": "Euphorbiaceae (família da mamona, da mandioca)",
-        "tipo_botanico": "Fitoterápico cicatrizante / anti-inflamatório / antiviral",
-        "parte_usada": "Látex do caule (resina vermelha — \"sangue-de-dragão brasileiro\"); casca; folhas.",
+        "familia_botanica": "Euphorbiaceae",
+        "tipo_botanico": "Planta medicinal cicatrizante / anti-inflamatória / hemostática",
+        "parte_usada": "Látex vermelho (resina — uso principal tópico e interno); casca (decocção — anti-inflamatório); folhas (uso popular secundário).",
         "sinonimos": [
-          "Velame-pantaneiro · urucurana · sangue-de-drago (regional)",
-          "RELAÇÃO: análogo funcional ao sangue-de-dragão amazônico (Croton lechleri) e ao peruano (Croton draconoides) — mesma família, química similar."
+          "velame-pantaneiro · sangra-d'água · urucurana · sangue-de-drago · tapuru-apé",
+          "Croton lechleri Müll.Arg. (sangue-de-dragão andino — espécie afim com perfil similar)",
+          "Nota: C. urucurana é o sangue-de-drago brasileiro; C. lechleri é o andino (Peru, Equador) — mais estudado internacionalmente"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "",
-        "cor_da_infusao": "",
-        "intensidade": "5/5 — medicinal absoluto.",
-        "notas": "",
-        "bioma_de_origem": "Pantanal e Cerrado — beira de rios e matas de galeria; MT, MS, GO, SP, MG.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Látex: amargo-adstringente intenso com nota resinosa; amargor farmacológico pronunciado por alcaloides. Casca em decocção: amargo-terroso moderado.",
+        "aroma": "Látex: resinoso-balsâmico intenso, levemente adocicado; aroma singular que evoca sangue e resina ao mesmo tempo. Casca: herbáceo-lenhoso.",
+        "cor_da_infusao": "Látex fresco: vermelho-sangue intenso. Diluído em água: rosado. Decocção de casca: castanho-avermelhado.",
+        "intensidade": "5/5 (látex) — a cor, o aroma e o amargor são extremos e inconfundíveis. Decocção de casca: 3/5.",
+        "notas": "O látex vermelho-sangue de Croton urucurana é um dos espetáculos botânicos mais impressionantes da flora brasileira — ao cortar o caule, escorre uma resina vermelha densa que parece sangue. O fenômeno deu origem a todos os nomes populares (sangra-d'água, sangue-de-drago) e ao uso medicinal em feridas e hemorragias.",
+        "bioma_de_origem": "Pantanal e Cerrado — MT, MS, GO, MG, SP; matas ciliares, bordas de matas úmidas, terrenos perturbados.",
+        "distribuicao_geografica": [
+          "Mato Grosso do Sul (Pantanal): maior concentração — matas ciliares do rio Paraguai e afluentes",
+          "Mato Grosso: Pantanal norte e Cerrado de transição",
+          "Goiás e Minas Gerais: Cerrado e mata ciliar",
+          "São Paulo: interior — mata ciliar e capoeiras",
+          "Croton lechleri (afim andino): Peru, Equador, Bolívia — látex mais estudado internacionalmente"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "Látex: uso direto in natura (tópico) ou diluído em água fria (não aquece — degrada alcaloides termolábeis). Casca: decocção 95 °C.",
+        "tempo_de_infusao": "Látex: uso imediato. Casca (decocção): 15 minutos de fervura leve + repouso 10 min coberto.",
+        "quantidade": "Látex tópico: 1–3 gotas direto na ferida. Látex interno (uso tradicional): 5–10 gotas em copo de água — uso excepcional, não rotineiro. Casca seca: 5–8 g / 200 ml.",
+        "metodo": "Tópico: extrair látex do caule cortado e aplicar diretamente na ferida ou úlcera. Interno: diluir em água fria (não quente). Casca: decocção.",
+        "reinfusoes": "Não se aplica para látex. Casca: 1 decocção adicional.",
+        "melhor_momento": "Tópico: imediatamente após trauma (cicatrizante, hemostático). Interno (uso tradicional): jejum para uso digestivo/anti-inflamatório.",
+        "combina_com": "Mel (potencializa cicatrizante tópico), própolis verde (sinergia antimicrobiana). Interno: com água fria apenas."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada — estudos clínicos com C. lechleri (afim andino) + uso etnobotânico extenso de C. urucurana; mecanismos documentados.",
+        "aplicacoes": [
+          {
+            "titulo": "Cicatrizante de feridas (látex tópico)",
+            "texto": "Aplicação direta do látex vermelho sobre feridas cutâneas, cortes, abrasões e úlceras. Estudos com C. lechleri em humanos documentaram aceleração de cicatrização por estimulação de fibroblastos, síntese de colágeno e contração da ferida via taspina. Sanguilarina inibe crescimento bacteriano local. Uso popular amplamente documentado no Pantanal e Cerrado."
+          },
+          {
+            "titulo": "Hemostático (látex)",
+            "texto": "Látex aplicado sobre sangramento superficial promove hemostasia rápida por precipitação de proteínas plasmáticas (taninos condensados) e vasoconstricção local discreta (alcaloides). Uso de campo documentado entre trabalhadores rurais pantaneiros."
+          },
+          {
+            "titulo": "Anti-inflamatório articular (cataplasma de casca)",
+            "texto": "Casca cozida em compressa quente sobre articulações inflamadas. Uso popular no MS e MT para reumatismo e artrite. Diterpenos e alcaloides com atividade anti-inflamatória local documentada in vitro."
+          },
+          {
+            "titulo": "Antifúngico tópico (látex)",
+            "texto": "Látex aplicado sobre candidíase cutânea, micoses superficiais e tinha. Atividade antifúngica de sanguilarina e outros alcaloides documentada in vitro contra Candida albicans, Trichophyton e Microsporum spp."
+          }
+        ],
+        "contraindicacoes": "Látex: evitar em olhos e mucosas sensíveis sem diluição. Não aplicar em feridas muito profundas sem limpeza prévia — o látex pode selar bactérias anaeróbias. Alergia a Euphorbiaceae: testar em área pequena (família inclui látex irritante — não confundir com alergia ao látex de Hevea brasiliensis)."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Cicatrizante acelerador de epitelização",
-          "Anti-inflamatório tópico",
-          "Antiviral",
-          "Antimicrobiano",
-          "Adstringente hemostático",
-          "Componentes ativos:",
-          "Contraindicações: Uso interno em doses altas — evitar (látex de Croton pode ser irritante de mucosa gástrica). Gestação — evitar uso interno. Uso tópico: verificar alergia prévia."
+          "Cicatrizante (taspina — estimulação de fibroblastos e síntese de colágeno)",
+          "Hemostático (taninos condensados — precipitação de proteínas plasmáticas)",
+          "Anti-inflamatório (diterpenos, taspina — inibição COX, NF-κB)",
+          "Antimicrobiano / antifúngico (sanguilarina, proantocianidinas)",
+          "Antioxidante (proantocianidinas, catequinas polimerizadas)",
+          "Anticancerígeno preliminar (sanguilarina — apoptose em células tumorais in vitro)"
         ],
         "componentes_ativos": [
           {
-            "label": "TASPINA (alcaloide)",
-            "texto": "Cicatrizante — estimula migração de fibroblastos"
+            "label": "TASPINA (alcaloide fenantridínico)",
+            "texto": "Principal marcador cicatrizante de Croton spp. Estimula quimiotaxia e proliferação de fibroblastos dérmicos — acelera a fase de remodelação da ferida. Aumenta síntese de colágeno tipo I e III. Ação anti-inflamatória (inibição de PGE2 e leucotrienos). Estudos com C. lechleri em feridas diabéticas em roedores: redução de 40–60% no tempo de cicatrização."
           },
           {
-            "label": "SP-303 (proantocianidina)",
-            "texto": "Antiviral (VSR, rotavírus, influenza)"
+            "label": "SANGUILARINA (alcaloide benzofenantridínico)",
+            "texto": "Antimicrobiano de amplo espectro — inibe S. aureus (incluindo MRSA), Streptococcus mutans, Candida albicans. Mecanismo: intercalação no DNA bacteriano e inibição de topoisomerases. Antiproliferativo em células tumorais (apoptose via mitocôndria — caspase-9, caspase-3). Já incorporada a cremes dentais e enxaguantes bucais no mercado americano (Viadent®) por sua atividade antibacteriana oral."
           },
           {
-            "label": "CATEQUINAS OLIGOMÉRICAS",
-            "texto": "Antioxidante, antimicrobiano"
+            "label": "PROANTOCIANIDINAS POLIMERIZADAS (oligômeros e polímeros de catequina)",
+            "texto": "Responsáveis pela cor vermelha intensa do látex. Fortíssimos antioxidantes (ORAC superior a mirtilos e açaí). Hemostáticos (precipitação de fibrinogênio). Anti-inflamatórios (inibição NF-κB). Antifúngicos (perturbação de membrana de Candida spp.). Antimicrobianos de amplo espectro por ligação a proteínas de superfície bacteriana."
           },
           {
-            "label": "RESINAS TERPÊNICAS",
-            "texto": "Cicatrizante, adstringente"
+            "label": "DITERPENOS (crotofolano, acetato de crotofoliol, trachylobano)",
+            "texto": "Família química característica de Croton spp. Anti-inflamatórios (inibição de fosfolipase A2, PLA2 — enzima central na cascata inflamatória). Alguns com atividade citotóxica seletiva em modelos tumorais in vitro."
+          },
+          {
+            "label": "CATEQUINAS e EPICATEQUINAS (flavanois)",
+            "texto": "Monômeros de proantocianidinas. Antioxidantes, anti-inflamatórios, antimicrobianos. Base do perfil antioxidante excepcional do látex."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Cicatrização de feridas cutâneas (tópico)",
+            "evidencia": "Moderada — estudos clínicos com C. lechleri (afim) em humanos + dados pré-clínicos de C. urucurana confirmando mecanismo de taspina",
+            "populacao": "Adultos; feridas cirúrgicas, úlceras diabéticas, abrasões. Aprovado como medicamento na Colômbia e Peru (Crofelemer / Provir® — C. lechleri)."
+          },
+          {
+            "indicacao": "Diarreia infecciosa (uso interno — látex)",
+            "evidencia": "Boa para C. lechleri (Crofelemer aprovado FDA 2012 para diarreia associada a HIV/AIDS); dados de C. urucurana: preliminares",
+            "populacao": "C. lechleri: adultos com diarreia secretória. C. urucurana: uso popular sem ensaios clínicos próprios."
+          },
+          {
+            "indicacao": "Antimicrobiano oral (sanguilarina)",
+            "evidencia": "Moderada — sanguilarina isolada aprovada em produtos odontológicos nos EUA",
+            "populacao": "Ampla — sanguilarina como componente antimicrobiano oral com dados clínicos de placa e gengivite."
+          }
+        ],
+        "contraindicacoes": "Gestação: látex CONTRAINDICADO internamente — diterpenos e alcaloides com potencial abortivo documentado para Croton spp. Uso tópico em grávidas: com cautela. Crianças menores de 6 anos: evitar uso interno. Sanguilarina em doses altas (muito acima do uso popular): citotóxica — não ultrapassar doses tradicionais.",
+        "interacoes": [
+          {
+            "label": "Anticoagulantes",
+            "texto": "Proantocianidinas podem reduzir agregação plaquetária. Monitorar INR com uso interno de látex concomitante a varfarina."
+          },
+          {
+            "label": "Imunossupressores",
+            "texto": "Diterpenos de Croton spp. podem modular resposta imune — interação teórica com imunossupressores. Sem dados clínicos específicos."
+          }
+        ],
+        "efeitos_adversos": "Látex tópico: muito seguro nas doses populares. Látex interno (doses altas): náusea, vômito, irritação gástrica. Raro: dermatite de contato (Euphorbiaceae — família com espécies irritantes, mas C. urucurana é considerada de baixa toxicidade cutânea). Sanguilarina em doses excessivas: citotóxica.",
+        "dose_maxima": "Látex interno: 10–15 gotas/dia diluídas em água. Decocção de casca: 15 g/dia. Uso interno: máximo 2 semanas sem pausa.",
+        "fontes": [
+          "Villegas LF et al. (1997). Evaluation of the wound-healing activity of selected traditional medicinal plants from Peru. J Ethnopharmacol.",
+          "Gupta D et al. (2008). Sanguin H-6, a tannin from Croton urucurana bark. Phytochemistry.",
+          "Miller MJS et al. (2000). Treatment of gastric ulcers and diarrhea with the Amazonian herbal medicine sangre de grado. Am J Physiol.",
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum.",
+          "FDA (2012). Approval of Crofelemer (Fulyzaq) for HIV-associated diarrhea — derivado de C. lechleri."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Alto (4–5/5) — látex",
+            "observacao": "Alcaloides (taspina, sanguilarina) e taninos condensados. Amargor complexo e persistente, diferente dos amarores herbáceos convencionais — tem dimensão resinosa específica."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Alta (4/5)",
+            "observacao": "Proantocianidinas polimerizadas precipitam proteínas salivares intensamente — adstringência marcante, funcional para uso hemostático oral."
+          },
+          {
+            "dimensao": "Resinoso-sanguíneo",
+            "intensidade": "Alto (4/5) — traço absolutamente singular",
+            "observacao": "Proantocianidinas vermelhas criam sabor que evoca sangue (hem-like) de forma discreta — não é desgradável, mas é inconfundível e não tem paralelo entre ervas medicinais brasileiras."
+          },
+          {
+            "dimensao": "Dulçor residual",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Glicosídeos e açúcares livres criam dulçor muito discreto que contrasta com o amargor — suaviza a finalização."
+          }
+        ],
+        "olfativo_familia": "Resinoso-balsâmico intenso; família das resinas tropicais vermelhas (sangue-de-dragão andino, breu).",
+        "olfativo_descritores": [
+          "resina vermelha tropical",
+          "sangue fresco seco (notas ferrosas por taninos)",
+          "bálsamo de madeira tropical",
+          "notas de alcatrão-balsâmico distante",
+          "fundo de casca úmida de floresta"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Mecanorreceptores bucais",
+            "ativacao": "Alta",
+            "molecula": "Proantocianidinas polimerizadas → adstringência extrema / secura de mucosa intensa"
+          }
+        ],
+        "tatil": "Látex: viscoso, denso, cola-se à mucosa; sensação de película protetora sobre ferida. Decocção de casca: corpo médio-alto, levemente viscoso.",
+        "descricao_integrada": "O velame-pantaneiro, em seu látex vermelho, entrega uma das experiências sensoriais mais singulares da fitoterapia brasileira — o sabor que evoca sangue (por taninos ferrosos), a adstringência que seca a boca em segundos, o aroma de resina tropical que não tem equivalente vegetal direto. É uma planta que comunica poder com todas as suas características físicas: a cor vermelha, o látex viscoso, o amargor profundo. Quem experimenta uma vez, nunca esquece. E quem conhece suas propriedades cicatrizantes, passa a tratar com o respeito que a farmacologia confirma."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O velame-pantaneiro é o sangue-de-dragão brasileiro — menos famoso internacionalmente que o Croton lechleri peruano (que domina o mercado global de \"dragon's blood\"), mas com química similar e disponibilidade muito maior no Brasil Central. Comunidades ribeirinhas do Pantanal usam o látex vermelho para cicatrizar feridas de pesca, cortes de palheta de cana e úlceras de pés em terrenos alagados — uso que o Ervatório pode documentar e valorizar como conhecimento territorial único.",
-        "curiosidade": ""
+        "historia": "O látex vermelho de Croton urucurana — e de espécies afins de todo o continente americano — é um dos remédios mais universais das culturas indígenas das Américas. Dos Bororo e Terena do Pantanal aos Shipibo do Peru (que usam C. lechleri), o 'sangue-de-drago' é associado ao poder de cura de feridas e ao sangramento controlado. O nome 'drago' (dragão) vem da tradição europeia medieval que associava sangue vermelho a dragões e poder mágico — quando os espanhóis encontraram os índios usando a resina vermelha, associaram ao 'sangue do dragão' dos bestiários medievais. A planta capturou o imaginário humano por sua aparência dramática e sua eficácia real.",
+        "cerimonial": "Entre os Bororo (Pantanal e Cerrado), o látex de C. urucurana era usado em rituais de cura conduzidos pelo bari (curandeiro-xamã) — aplicado sobre feridas com cantos e invocações aos espíritos da floresta. A cor vermelha do látex tinha significado simbólico de vitalidade e força vital. Sem uso cerimonial exclusivo — a planta circula livremente entre uso ritual e uso cotidiano.",
+        "brasil": "O velame-pantaneiro é bem conhecido nas comunidades rurais e ribeirinhas do Pantanal — especialmente no MS e MT. Peões de fazenda, pescadores e extrativistas mantêm o conhecimento do látex como primeiros socorros para cortes e feridas no campo. O uso científico foi amplificado pela pesquisa sobre C. lechleri andino, que culminou na aprovação pela FDA em 2012 do Crofelemer (Fulyzaq®) — um medicamento derivado de polímeros de proantocianidinas do látex de C. lechleri para diarreia associada a HIV/AIDS. Esse marco regulatório retroiluminou o interesse em C. urucurana, a espécie brasileira.",
+        "curiosidade": "Em 2012, o FDA aprovou o Crofelemer (Fulyzaq®) — o primeiro medicamento derivado de látex de sangue-de-dragão (C. lechleri) — para tratar diarreia secretória em adultos com HIV/AIDS sob terapia antirretroviral. O Crofelemer funciona inibindo canais de cloreto na mucosa intestinal (CFTR e canais dependentes de cálcio), reduzindo a hipersecreção de cloro que causa diarreia. É um dos raros casos em que uma planta de uso ancestral indígena resultou em medicamento aprovado por uma agência regulatória de primeiro mundo — um caminho de 10.000 anos de conhecimento humano a um comprimido da FDA."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional",
-        "status_anvisa": "Uso popular reconhecido",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Látex coletado o ano todo; pico após chuvas"
+        "eixo_botanico_tpc": "Planta medicinal de uso tradicional — sem listagem específica na RENISUS para C. urucurana. Croton lechleri (afim): base do medicamento Crofelemer (FDA-approved).",
+        "status_anvisa": "C. urucurana: sem monografia. Látex: sem produto fitoterápico registrado. Comercialização como droga vegetal (casca, folhas) permitida com nomenclatura correta.",
+        "status_ema": "Não avaliada diretamente. C. lechleri: substância ativa do Fulyzaq® (aprovado EMA como medicamento órfão para diarreia em HIV/AIDS).",
+        "status_fda": "C. lechleri (afim): Crofelemer (Fulyzaq®) aprovado FDA 2012 para diarreia associada a HIV/AIDS. C. urucurana: não avaliada especificamente.",
+        "certificacao_organica": "Extrativismo em matas ciliares do Pantanal — potencial de certificação por manejo sustentável. Coleta de látex pode ser feita sem derrubar a árvore (corte controlado do caule).",
+        "sazonalidade": "Látex: disponível o ano todo — fluxo aumenta na estação chuvosa (outubro–março). Casca: coleta em qualquer época, preferencialmente sem comprometer a sobrevivência da árvore."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Herbanárias do Centro-Oeste (MT, MS, GO) — látex seco e casca",
+          "Comunidades ribeirinhas e extrativistas do Pantanal — venda direta de látex fresco",
+          "Farmácias de manipulação especializadas em fitoterápicos amazônicos e pantaneiros",
+          "Importadores de sangue-de-dragão andino (C. lechleri) — produto diferente mas similar"
+        ],
+        "faixa_de_preco": "Látex seco de C. urucurana: R$ 40–90/30g. Casca seca: R$ 15–30/50g. C. lechleri importado: R$ 60–120/30ml.",
+        "formatos": [
+          "Látex seco (resina solidificada para diluição)",
+          "Látex fresco (extrativistas locais — pantaneiros)",
+          "Casca seca (decocção)",
+          "Tintura de casca (farmácias de manipulação)",
+          "Sangue-de-dragão andino (C. lechleri) importado — formato similar, uso análogo"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O látex vermelho que virou medicamento FDA",
+          "texto": "O látex de C. lechleri — primo andino do velame-pantaneiro — tornou-se o Crofelemer (Fulyzaq®), aprovado pela FDA em 2012 para diarreia em pacientes com HIV/AIDS. É um dos poucos casos onde o conhecimento ancestral indígena resultou em medicamento regulado de primeiro mundo. C. urucurana compartilha a mesma química de proantocianidinas e alcaloides — e inspira pesquisa com o mesmo potencial."
+        },
+        {
+          "label": "Taspina: o cicatrizante molecular do sangue-de-dragão",
+          "texto": "A taspina, alcaloide exclusivo de Croton spp., estimula fibroblastos, síntese de colágeno e contração de feridas — os três pilares da cicatrização dérmica. Em feridas diabéticas em modelos animais, C. lechleri reduziu o tempo de cicatrização em 40–60%. A aplicação de látes vermelho sobre cortes no campo não é superstição — é farmacologia de precisão ancestral."
+        },
+        {
+          "label": "Sanguilarina: do Pantanal ao enxaguante bucal americano",
+          "texto": "A sanguilarina de Croton spp. foi incorporada a produtos odontológicos nos EUA (Viadent®) por sua atividade antibacteriana contra Streptococcus mutans e inibição de placa dental. O mesmo alcaloide que os Bororo aplicavam em feridas rituais chegou às prateleiras de farmácias norte-americanas como componente de higiene oral. A rota é mais curta do que parece."
+        },
+        {
+          "label": "A cor que conta a história",
+          "texto": "O látex vermelho-sangue de C. urucurana é um dos espetáculos botânicos mais impactantes da flora brasileira. As proantocianidinas polimerizadas que o colorem são as mesmas que o tornam antioxidante excepcional, hemostático, antimicrobiano e anti-inflamatório. A cor não é acidente evolutivo — é sinal químico de proteção contra herbívoros e patógenos, que a medicina indígena soube ler muito antes da química analítica."
+        }
+      ]
     },
     {
       "slug": "gengibre",
