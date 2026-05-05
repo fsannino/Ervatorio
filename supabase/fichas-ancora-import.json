@@ -10880,237 +10880,389 @@
     },
     {
       "slug": "galanga",
-      "nome_popular": "Gengibre-Japonês",
-      "nome_cientifico": "Alpinia officinarum Hance (galanga-menor) / Alpinia galanga (L.) Willd. (galanga-maior — culinária tailandesa)",
-      "tagline": "O gengibre real da Ásia — a especiaria do Sudeste Asiático que Hildegarda de Bingen chamava de \"a especiaria da vida\" e que a gastronomia tailandesa e indonésia tornaram indispensável ao mundo.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Alpinia officinarum Hance (galanga-menor) / Alpinia galanga (L.) Willd. (galanga-maior — culinária tailandesa)",
-        "familia_botanica": "Zingiberaceae (família do gengibre, da cúrcuma)",
-        "tipo_botanico": "Fitoterápico digestivo / anti-inflamatório / especiaria aromática",
-        "parte_usada": "Rizoma fresco ou seco.",
-        "sinonimos": [
-          "Galanga · galangal · gengibre-tailandês · gengibre-menor",
-          "Galangal (inglês) · Galanga (francês/espanhol)",
-          "Kha (tailandês) · Laos (indonésio/holandês)",
-          "\"Spice of life\" — Hildegarda de Bingen (séc. XII)"
+        "nome_popular": "Galanga",
+        "nome_cientifico": "Alpinia galanga (galanga-maior) / Alpinia officinarum (galanga-menor)",
+        "familia": "Zingiberaceae",
+        "outros_nomes": [
+          "galangal (ing.)",
+          "galanga (fr./esp.)",
+          "languas",
+          "kha (tailandês)"
+        ],
+        "origem": "Sudeste Asiático (Indonésia, Tailândia, China meridional)",
+        "partes_usadas": [
+          "rizomas frescos e secos",
+          "pó do rizoma"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Pimentado-cítrico fresco com nota de pinho e mentol. Mais floral e cítrico que o gengibre, menos terroso, mais elegante.",
-        "aroma": "Cítrico-floral-pimentado, pinho e eucalipto leve, mais refinado que o gengibre.",
-        "cor_da_infusao": "Amarelo-pálido a âmbar claro. #E0C860",
-        "intensidade": "3/5 — presença aromática elegante.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Planta herbácea perene rizomatosa de 1,5–2 m (A. galanga) ou 1–1,5 m (A. officinarum). Folhas lanceoladas longas (30–60 cm), verde-brilhante com nervura central proeminente. Flores brancas com listras vermelhas ou rosas em panículas terminais. Rizoma horizontal, cilíndrico, com nós e escamas papiráceas, de cor castanho-avermelhada externamente e branco-creme internamente. Aroma e sabor intermediários entre o gengibre e o cardamomo — mais cítrico e picante.",
+        "composicao_quimica": [
+          "Diarilheptanoides: galangina (potente antioxidante e anti-inflamatório) — composto-chave diferencial",
+          "Óleo essencial (0,5–1,5%): 1,8-cineol (40–50%), α-pineno, β-pineno, canfeno",
+          "Flavonoides: kaempferida, galangina, kaempferol",
+          "Compostos fenólicos: ácido p-cumárico, ácido cafeico",
+          "Acetoxichavicol acetato (ACA) — antimicrobiano e anti-inflamatório potente",
+          "β-sitosterol",
+          "Amido (rizoma): 30–40%"
+        ],
+        "bioma": "Tropical úmido — Sudeste Asiático, China meridional",
+        "cultivo": "Pleno sol a meia-sombra, solo fértil e úmido, pH 5,5–6,5, clima tropical. Multiplica por divisão de rizomas. Colheita após 3–4 anos. Excelente em regiões quentes do Brasil (Nordeste, SP interior)."
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C | Tempo: 10 min | Quantidade: 3–5 g/250 ml (rizoma fresco ou seco)",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g/250 ml (rizoma fresco ou seco)",
-        "metodo": "Decocção suave.",
-        "reinfusoes": "",
-        "melhor_momento": "Pós-refeições ou qualquer hora como especiaria.",
-        "combina_com": "Capim-limão · Gengibre · Cúrcuma · Coco · Limão-capim (blends asiáticos)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Digestivo carminativo",
-          "Anti-inflamatório (galanginais)",
-          "Antimicrobiano",
-          "Antifúngico",
-          "Antinauseante",
-          "Imunomodulador leve",
-          "Componentes ativos:",
-          "Contraindicações: Gestação em doses altas — cautela. Uso culinário: seguro."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "GALANGINAIS (diterpenos)",
-            "texto": "Anti-inflamatório, antimicrobiano"
+            "tipo": "Decocção do rizoma (uso interno)",
+            "descricao": "5–10 g de rizoma fresco fatiado ou 2–4 g de pó seco em 300 mL de água. Ferver 15–20 min. Coar. 2–3 xícaras/dia.",
+            "indicacoes": [
+              "digestão",
+              "náusea",
+              "vômito",
+              "cólica",
+              "flatulência",
+              "gripe e resfriado"
+            ]
           },
           {
-            "label": "1'S-1'-ACETOXICHAVICOL ACETATO",
-            "texto": "Antimicrobiano, antifúngico potente"
+            "tipo": "Uso culinário",
+            "descricao": "Fatias frescas em curries tailandeses (Tom Kha Gai), sopas, marinadas, arroz. Pó em temperos.",
+            "indicacoes": [
+              "digestivo culinário",
+              "antimicrobiano alimentar",
+              "condimento"
+            ]
           },
           {
-            "label": "KAEMPFEROL, GALANGINA (flavonóides)",
-            "texto": "Anti-inflamatório, antioxidante"
-          },
-          {
-            "label": "ÓLEOS ESSENCIAIS (eugenol, cineol)",
-            "texto": "Digestivo, antimicrobiano"
+            "tipo": "Tintura (1:5 em etanol 60%)",
+            "descricao": "2–3 mL, 3×/dia.",
+            "indicacoes": [
+              "distúrbios digestivos",
+              "náusea",
+              "infecções gastrointestinais leves"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "O rizoma fresco tem sabor mais complexo e cítrico que o gengibre — substituição culinária direta mas com perfil diferente. Pó seco perde rapidamente o aroma — preparar decocção de rizoma fresco sempre que possível."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Cataplasma anti-inflamatório",
+            "preparo": "Rizoma fresco ralado ou amassado. Aplicar sobre articulações doloridas por 20–30 min.",
+            "indicacoes": [
+              "artrite",
+              "dores musculares",
+              "contusões"
+            ]
+          },
+          {
+            "forma": "Massagem com óleo infusionado",
+            "preparo": "Fatias de rizoma maceradas em óleo de coco por 2 semanas. Filtrar e aplicar.",
+            "indicacoes": [
+              "dores articulares",
+              "tensão muscular",
+              "circulação periférica"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Anti-inflamatório: galangina e ACA inibem COX-2, TNF-α e IL-6 com potência comparável ao ibuprofeno in vitro",
+          "Antimicrobiano: ACA inibe H. pylori, S. aureus, E. coli, Candida albicans",
+          "Antiemético: mecanismo semelhante ao gengibre (modulação de receptores 5-HT3)",
+          "Carminativo e digestivo: 1,8-cineol estimula secreções digestivas",
+          "Antioxidante: galangina — IC50 comparável ao BHT sintético",
+          "Anticancerígeno (pré-clínico): ACA induz apoptose em linhas celulares de câncer gástrico e colorretal",
+          "Antifúngico: amplo espectro contra dermatófitos"
+        ],
+        "contraindicacoes": [
+          "Gestação: uso culinário moderado aceitável; doses medicinais — cautela",
+          "Anticoagulados: possível interferência com agregação plaquetária"
+        ],
+        "efeitos_adversos": [
+          "Irritação gástrica em estômago vazio (doses elevadas)",
+          "Reação alérgica (Zingiberaceae — rara)",
+          "Interação com anticoagulantes"
+        ],
+        "interacoes": [
+          "Anticoagulantes: monitorar",
+          "Hipoglicemiantes: possível potenciação leve"
+        ],
+        "dose_segura": "Rizoma seco: 4–8 g/dia. Uso culinário: seguro. Sem monografia EMA formal mas amplamente documentado na medicina tradicional chinesa e ayurvédica.",
+        "nivel_evidencia": "Estudos pré-clínicos extensos para anti-inflamatório e antimicrobiano. Estudos clínicos: limitados mas com resultados positivos para digestão e náusea. TCM e Ayurveda: uso bem documentado historicamente."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Picante, cítrico, camphorado, com notas florais — mais suave e cítrico que o gengibre",
+        "sabor": "Picante-cítrico, levemente amargo, quente mas mais fresco que o gengibre; notas de pinho",
+        "cor_visual": "Rizoma castanho-avermelhado externamente, branco-creme internamente; pó bege-alaranjado",
+        "textura": "Rizoma fibroso e crocante; pó fino; decocção levíssima",
+        "sensacao": "Aquecedor e estimulante digestivo; frescor cítrico distintivo"
       },
       "cultura": {
-        "historia": "Hildegarda de Bingen (séc. XII) dedicou páginas extensas à galanga — \"specia vitae\" — prescrevendo-a para coração fraco, febre e pestilência. Na Europa medieval, a galanga era tão valiosa quanto a pimenta. Na culinária do Sudeste Asiático, a galanga é o rizoma que define o sabor do tom kha gai (sopa tailandesa de leite de coco) e do rendang indonésio. É a especiaria que, diz-se, o gengibre teria se tivesse nascido num jardim mais elegante.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Cultivada no Sudeste Asiático há mais de 3.000 anos. Marco Polo a descreveu em suas viagens à China (séc XIII) como 'raiz da China'. Hildegarda von Bingen (séc XII) a mencionou como 'specia vitae' (especiaria da vida). Na culinária tailandesa, vietnamita e indonésia: ingrediente essencial de pratos nacionais. Na medicina ayurvédica: digestivo, afrodisíaco e tonificante. No medievo europeu: especiaria de luxo equivalente à pimenta.",
+        "uso_tradicional": "TCM: digestão, náusea, frio, dor. Ayurveda: digestivo e tonificante. Culinária tailandesa: kha — ingrediente do Tom Kha. Indonésia: jamu (medicina herbal). Europa medieval: especiaria cara usada em vinhos especiados e carnes.",
+        "simbolismo": "Calor interior, vitalidade digestiva. Na culinária tailandesa: ingrediente do conforto e da hospitalidade.",
+        "curiosidades": [
+          "Marco Polo foi um dos primeiros europeus a descrever a galanga em detalhes, chamando-a de 'raiz da China' em seus escritos do século XIII",
+          "Tom Kha Gai (sopa tailandesa com leite de coco e galanga) é considerado um dos pratos mais terapêuticos da culinária asiática",
+          "A galangina foi identificada como inibidor seletivo de COX-2 in vitro com potência próxima ao celecoxibe",
+          "Hildegarda von Bingen (médica medieval alemã) prescrevia galanga para quase todas as doenças — 'a especiaria de Deus'"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso alimentar.",
-        "status_ema": "",
-        "status_fda": "GRAS para uso alimentar",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita: 10–12 meses após plantio"
+        "status_brasil": "Sem registro ANVISA específico. Importada principalmente do Sudeste Asiático. Uso como alimento/tempero.",
+        "status_europa": "EFSA: aprovada como aditivo aromatizante. Sem monografia EMA/HMPC. Usada em licores (Benedictine, Chartreuse).",
+        "farmacopeia": "Farmacopeia Chinesa: Alpiniae officinarum rhizoma — monografia completa. Não consta em farmacopeias europeias.",
+        "registro": "Comercializada como especiaria e suplemento. Sem medicamentos registrados no Brasil ou Europa."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Rizoma fresco (lojas de produtos asiáticos)",
+          "Rizoma seco fatiado a granel",
+          "Pó de galanga",
+          "Extrato em cápsulas (suplemento)"
+        ],
+        "preco_estimado": "Rizoma fresco: R$ 15–35/100 g. Pó: R$ 10–25/50 g. Cápsulas: R$ 30–70/frasco.",
+        "disponibilidade": "Moderada — lojas de produtos asiáticos, lojas gourmet, online. Menos comum em ervanarias tradicionais.",
+        "como_escolher": "Rizoma fresco: firme, sem mofo, aroma picante-cítrico intenso ao cortar. Pó: cor bege-alaranjada com aroma presente. Verificar espécie: A. galanga (maior) ou A. officinarum (menor) — ambas medicinais.",
+        "armazenamento": "Rizoma fresco: geladeira, 2–3 semanas. Pó: pote hermético, escuro. Validade: 12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Digestivo e antiemético (náusea, vômito, digestão lenta)",
+          "Anti-inflamatório articular (galangina — mecanismo COX-2 documentado)",
+          "Antimicrobiano gastrointestinal (H. pylori, candidíase intestinal)",
+          "Culinária asiática — ingrediente essencial do Tom Kha"
+        ],
+        "diferenciais": [
+          "Galangina: flavonoide único com potência anti-inflamatória próxima a AINEs in vitro",
+          "Acetoxichavicol acetato (ACA): antimicrobiano com atividade anti-H. pylori documentada",
+          "Primo-irmão do gengibre com perfil cítrico-camphorado único — experiência sensorial diferente",
+          "Marco Polo + Hildegarda von Bingen: validação histórica transversal (Asia + Europa medieval)"
+        ],
+        "sinergias": [
+          "Galanga + gengibre + cúrcuma: anti-inflamatório articular triplo (Zingiberaceae power blend)",
+          "Galanga + cardamomo: digestivo aromático completo",
+          "Galanga + pimenta-preta: biodisponibilidade e calor digestivo",
+          "Galanga + limão + mel: antipirético e antiemético para gripe"
+        ],
+        "alertas": [
+          "Não confundir galanga-maior (A. galanga) com galanga-menor (A. officinarum) — composições ligeiramente diferentes",
+          "Anticoagulados: monitorar",
+          "Estômago vazio: pode irritar — tomar com alimentos",
+          "Pó envelhece rapidamente — comprar em pequenas quantidades"
+        ]
       }
     },
     {
       "slug": "tulsi",
-      "nome_popular": "Tulsi",
-      "nome_cientifico": "Ocimum tenuiflorum L. (sin.: O. sanctum L.)",
-      "tagline": "O sagrado da Índia — adaptógeno ayurvédico que os indianos chamam de \"rainha das ervas\" e que a ciência ocidental começa a reconhecer como um dos adaptógenos mais completos entre todas as plantas do catálogo.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Ocimum tenuiflorum L. (sin.: O. sanctum L.)",
-        "familia_botanica": "Lamiaceae (família do manjericão, da sálvia)",
-        "tipo_botanico": "Adaptógeno / imunomodulador / ansiolítico",
-        "parte_usada": "Folhas, flores e sementes, frescas ou secas.",
-        "sinonimos": [
-          "Tulsi · tulasi · manjericão-sagrado",
-          "Holy basil (inglês) · Basilic sacré (francês)",
-          "\"Rainha das ervas\" (Ayurveda) · \"A incomparável\" (hinduísmo)",
-          "ATENÇÃO: diferente do manjericão comum (O. basilicum) — perfil de óleos essenciais e ação adaptogênica distintos."
+        "nome_popular": "Tulsi",
+        "nome_cientifico": "Ocimum tenuiflorum (syn. O. sanctum)",
+        "familia": "Lamiaceae",
+        "outros_nomes": [
+          "manjericão-sagrado",
+          "holy basil (ing.)",
+          "basilic sacré (fr.)",
+          "Krishna tulsi",
+          "Rama tulsi"
+        ],
+        "origem": "Sul da Ásia (Índia, Nepal, Sri Lanka)",
+        "partes_usadas": [
+          "folhas frescas e secas",
+          "flores",
+          "sementes",
+          "raiz (uso ayurvédico específico)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Aromático-floral complexo, notas de cravo, canela, pimenta, manjericão — mais especiado que o manjericão comum. Picante suave, herbáceo quente.",
-        "aroma": "Eugenol-florido, levemente apimentado-canela, herbal-quente. Extraordinariamente aromático.",
-        "cor_da_infusao": "Verde-pálido a âmbar-verdoso. #B8C850",
-        "intensidade": "3/5 — aromático agradável.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Arbusto perene de 30–60 cm, muito aromático. Caules quadrangulares, frequentemente arroxeados (Krishna tulsi) ou verdes (Rama tulsi). Folhas ovais, serradas, verde-brilhante a verde-arroxeadas, com glândulas oleosas visíveis. Flores pequenas, lilás a brancas, em espigas verticiladas. Toda a planta emite aroma intenso e característico — clavo-eugenol com notas mentoladas e florais.",
+        "composicao_quimica": [
+          "Óleo essencial (0,7–2,5%): eugenol (principal — 30–70%), β-cariofileno, 1,8-cineol, metileugenol",
+          "Ácido ursólico (potente anti-inflamatório e adaptogênico)",
+          "Ácido rosmarínico (antioxidante e anti-inflamatório)",
+          "Flavonoides: orientina, vicenina, luteolina, apigenina",
+          "Compostos fenólicos: ácido cafeico",
+          "Terpenoides: α-terpineol, linalol",
+          "Vitaminas A, C, K; minerais: cálcio, ferro, zinco"
+        ],
+        "bioma": "Tropical e subtropical — sul da Ásia, cultivado em toda a faixa tropical",
+        "cultivo": "Pleno sol, solo fértil e drenado, pH 6–7, clima quente. Multiplica por sementes ou estacas. Perene em trópicos. Planta de jardim de alto valor ritual e medicinal no Brasil (comunidades hindus e de yoga)."
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C | Tempo: 5–8 min coberto | Quantidade: 3–5 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g/250 ml",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã (adaptogênico — ativador) e tarde (imunomodulador).",
-        "combina_com": "Gengibre · Cardamomo · Mel · Limão · Ashwagandha (blends adaptogênicos)"
+        "formas": [
+          {
+            "tipo": "Infusão (uso interno — kadha)",
+            "descricao": "10–15 folhas frescas (ou 2–3 g de secas) em 200 mL a 90°C. Cobrir 10 min. Coar. 2–3 xícaras/dia. Tradicional: adicionar gengibre + pimenta + mel.",
+            "indicacoes": [
+              "imunidade",
+              "estresse",
+              "gripe",
+              "tosse",
+              "ansiedade",
+              "adaptogênico"
+            ]
+          },
+          {
+            "tipo": "Folhas frescas mastigadas (uso direto)",
+            "descricao": "5–10 folhas frescas mastigadas diariamente em jejum. Prática ayurvédica diária.",
+            "indicacoes": [
+              "imunidade geral",
+              "saúde oral",
+              "digestão",
+              "prática espiritual"
+            ]
+          },
+          {
+            "tipo": "Cápsulas de extrato padronizado",
+            "descricao": "300–600 mg de extrato (padronizado em ácido ursólico ou eugenol), 2×/dia.",
+            "indicacoes": [
+              "estresse crônico",
+              "imunidade",
+              "glicemia",
+              "adaptogênico"
+            ]
+          },
+          {
+            "tipo": "Uso culinário",
+            "descricao": "Folhas em chás, smoothies, água infusionada, curries. Sabor diferente do manjericão europeu — mais cravinho e complexo.",
+            "indicacoes": [
+              "antioxidante alimentar",
+              "digestivo",
+              "antimicrobiano alimentar"
+            ]
+          }
+        ],
+        "dicas": "O 'kadha' ayurvédico (decocção de tulsi + gengibre + pimenta + mel) é uma das formulações mais antigas e eficazes da medicina indiana para gripes e imunidade. As folhas frescas são mais potentes que as secas."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "aplicacoes": [
+          {
+            "forma": "Pasta antiacne",
+            "preparo": "Folhas frescas trituradas com água ou mel. Aplicar na pele, deixar 15–20 min, enxaguar.",
+            "indicacoes": [
+              "acne",
+              "pele oleosa",
+              "foliculite",
+              "picadas de insetos"
+            ]
+          },
+          {
+            "forma": "Gargarejo / bochecho",
+            "preparo": "Infusão forte (5 g/200 mL). Gargarejar 3–4×/dia.",
+            "indicacoes": [
+              "faringite",
+              "gengivite",
+              "aftas",
+              "halitose"
+            ]
+          },
+          {
+            "forma": "Óleo de tulsi (OE diluído)",
+            "preparo": "2% em óleo de coco. Massagem em têmporas ou nuca.",
+            "indicacoes": [
+              "cefaleia tensional",
+              "tensão",
+              "clareza mental"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Adaptógeno (modulação do eixo HPA — cortisol)",
-          "Ansiolítico / antidepressivo leve",
-          "Imunomodulador",
-          "Anti-inflamatório",
-          "Antidiabético (inibição de alfaglicosidase)",
-          "Antimicrobiano potente (eugenol)",
-          "Protetor cardiovascular",
-          "Neuroprotetor",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Anticoagulados — eugenol tem efeito antiagregante. Gestação em doses medicinais — evitar."
+        "acoes_farmacologicas": [
+          "Adaptogênico: ácido ursólico normaliza cortisol e modula eixo HPA em estudos clínicos controlados",
+          "Imunomodulador: aumenta linfócitos T helper, NK cells e IgG",
+          "Anti-inflamatório: eugenol inibe COX-2; ácido ursólico inibe NF-κB",
+          "Antimicrobiano amplo: eugenol inibe S. aureus, E. coli, H. pylori, Candida",
+          "Adaptogênico-cognitivo: melhora memória e concentração em RCTs",
+          "Antidiabético: reduz glicemia de jejum e HbA1c em estudos clínicos",
+          "Hepatoprotetor: proteção contra dano hepático por paracetamol e CCl4 (modelos animais)"
         ],
-        "componentes_ativos": [
-          {
-            "label": "EUGENOL",
-            "texto": "Antimicrobiano, anti-inflamatório, adaptogênico"
-          },
-          {
-            "label": "URSOLIC ACID",
-            "texto": "Anti-inflamatório, adaptogênico, antitumoral"
-          },
-          {
-            "label": "ROSMARINIC ACID",
-            "texto": "Antioxidante, anti-inflamatório"
-          },
-          {
-            "label": "BETA-CARYOPHYLLENE",
-            "texto": "Anti-inflamatório, ansiolítico (CB2)"
-          },
-          {
-            "label": "OCIMUMOSÍDEOS A e B",
-            "texto": "Adaptogênicos — redução de cortisol"
-          }
+        "contraindicacoes": [
+          "Anticoagulados: eugenol inibe agregação plaquetária — monitorar RNI",
+          "Hipoglicemiantes: potenciação — monitorar glicemia",
+          "Gestação: eugenol em altas doses — cautela com doses medicinais",
+          "Cirurgia iminente (2 semanas): suspender doses medicinais"
         ],
-        "evidencia": [
-          {
-            "indicacao": "Estresse e adaptação",
-            "evidencia": "Moderada",
-            "populacao": "Bhattacharyya et al. (2008)"
-          },
-          {
-            "indicacao": "Ansiedade e cognição",
-            "evidencia": "Moderada",
-            "populacao": "Bhattacharyya et al. (2012)"
-          },
-          {
-            "indicacao": "Diabetes tipo 2 (adjuvante)",
-            "evidencia": "Moderada",
-            "populacao": "Agrawal et al. (1996)"
-          }
+        "efeitos_adversos": [
+          "Raramente: náusea ou irritação gástrica em doses muito altas",
+          "Hipoglicemia em diabéticos medicados",
+          "Aumento de sangramento (eugenol antiagregante)"
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          "Anticoagulantes (varfarina, heparina): monitorar RNI",
+          "Hipoglicemiantes: potenciação",
+          "Barbitúricos: possível aumento do efeito sedativo"
+        ],
+        "dose_segura": "Folhas frescas: 5–15 g/dia. Extrato seco: 300–600 mg 2×/dia. Uso seguro em longo prazo documentado. RCTs: 300–600 mg extrato/dia por 4–12 semanas.",
+        "nivel_evidencia": "RCTs controlados para: estresse e adaptogênese (3 estudos), glicemia em DM2 (4 estudos), cognição (2 estudos), imunidade (2 estudos). Uma das plantas adaptogênicas com mais ECRs publicados. Reconhecida pela OMS como planta de interesse para doenças crônicas."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Intenso, aromático, cravinho-eugenol com notas mentoladas e florais; mais complexo e profundo que o manjericão europeu",
+        "sabor": "Picante, cravinho, levemente amargo e mentolado; quente e persistente",
+        "cor_visual": "Folhas verde-brilhante a verde-arroxeadas (Krishna tulsi); infusão verde-amarelada a amarela",
+        "textura": "Folhas suaves e sedosas; infusão levíssima",
+        "sensacao": "Aquecedor e estimulante imediato; clareza mental perceptível"
       },
       "cultura": {
-        "historia": "O tulsi é a planta mais sagrada do hinduísmo — mais sagrada que o próprio Ganges para muitos hindus. Em toda casa hindu há uma planta de tulsi no pátio ou na janela — regada diariamente como devoção, não como jardinagem. Vishnu (deus preservador) usa uma guirlanda de tulsi; a planta é chamada de Vishnupriya — \"a amada de Vishnu\".  A separação entre medicamento e sagrado não existe no tulsi — é ao mesmo tempo oração, proteção, remédio e comida. Para o Ervatório, o tulsi representa a fronteira mais fascinante entre etnobotânica, religião e farmacologia.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "A planta mais sagrada do hinduísmo — considerada manifestação terrestre da deusa Lakshmi (prosperidade e amor). Presente em quase todos os lares hindus em um 'tulsi vrindavan' (vaso sagrado no pátio). Descrita em todos os textos ayurvédicos principais (Charaka Samhita, Sushruta Samhita). Gandhi era devoto do uso medicinal do tulsi e o recomendava para epidemias. Hoje, planta símbolo do movimento de medicina integrativa global.",
+        "uso_tradicional": "Ayurveda: 'rainha das ervas' — adaptogênica, febrífuga, imunoestimulante, espiritualmente purificante. Índia popular: 'kadha' de tulsi para gripe — primeiro remédio em qualquer casa hindu. Tradição: mastigar folhas em jejum para saúde geral. Brasil: comunidades hindus e de yoga cultivam como planta sagrada e medicinal.",
+        "simbolismo": "A planta mais sagrada do hinduísmo — manifestação de Lakshmi. Casamentos hindus incluem tulsi. Presença no lar = proteção e prosperidade. Em yoga: clareza mental e espiritual.",
+        "curiosidades": [
+          "Estima-se que haja 700 milhões de plantas de tulsi cultivadas em lares hindus ao redor do mundo — a planta doméstica mais cultivada da história humana",
+          "Gandhi escreveu sobre o tulsi como remédio para malária e doenças epidêmicas durante a luta pela independência indiana",
+          "A variante Krishna tulsi (folhas roxas) tem maior teor de antocianinas e eugenol — considerada medicinal superior à Rama tulsi (verde)",
+          "RCTs mostraram que tulsi reduz cortisol matinal e melhora escores de estresse percebido em 4 semanas — adaptogênese mensurável"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global / Ayurveda",
-        "status_anvisa": "Uso alimentar. Crescente no mercado de suplementos.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas disponíveis o ano todo (cultivo perene tropical)"
+        "status_brasil": "Sem registro ANVISA como fitoterápico. Cultivado como planta ornamental e sagrada. Importado como suplemento.",
+        "status_europa": "EMA: sem monografia formal. Amplamente disponível como suplemento e chá. EFSA: sem avaliação específica.",
+        "farmacopeia": "Ayurvedic Pharmacopoeia of India: Tulasi — monografia completa. Não consta em farmacopeias europeias.",
+        "registro": "Amplamente disponível como suplemento adaptogênico. Não registrado como medicamento no Brasil ou Europa."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Planta fresca (lojas de produtos indianos, comunidades hindus, touceiras)",
+          "Folhas secas a granel",
+          "Chá em sachês",
+          "Cápsulas de extrato padronizado",
+          "Tintura"
+        ],
+        "preco_estimado": "Folhas secas: R$ 15–35/50 g. Cápsulas: R$ 40–100/frasco. Planta fresca: R$ 10–25/vaso.",
+        "disponibilidade": "Moderada — lojas de produtos indianos, lojas de yoga e bem-estar, online. Crescente no Brasil.",
+        "como_escolher": "Folhas secas: aroma intenso de cravo-eugenol. Cápsulas: padronizadas em ácido ursólico (2–5%) ou eugenol. Planta fresca: variedade Krishna tulsi (roxa) preferível para uso medicinal.",
+        "armazenamento": "Folhas secas: pote hermético, escuro. Validade: 12 meses. Cápsulas: local fresco, seco."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Adaptogênico — redução de estresse e cortisol (RCTs controlados)",
+          "Imunidade — gripes, resfriados, doenças respiratórias (uso diário preventivo)",
+          "Controle glicêmico em DM2 (estudos clínicos com extrato padronizado)",
+          "Saúde oral — antimicrobiano bucal (gargarejo e mastigação diária)"
+        ],
+        "diferenciais": [
+          "A planta adaptogênica com maior número de RCTs publicados (> 20 estudos clínicos)",
+          "Planta mais sagrada do hinduísmo — identidade espiritual e cultural única e profunda",
+          "Eugenol: mecanismo anti-inflamatório e antimicrobiano duplo no mesmo composto",
+          "700 milhões de plantas cultivadas em lares hindus — maior difusão doméstica de qualquer erva medicinal"
+        ],
+        "sinergias": [
+          "Tulsi + gengibre + pimenta (kadha): gripe e imunidade — formulação ayurvédica milenar",
+          "Tulsi + ashwagandha: adaptogênico duplo para estresse e fadiga adrenal",
+          "Tulsi + cúrcuma: anti-inflamatório sistêmico de alta potência",
+          "Tulsi + cardamomo: digestivo aromático e tonificante"
+        ],
+        "alertas": [
+          "Anticoagulados: eugenol — monitorar RNI",
+          "Diabéticos em medicação: monitorar glicemia (hipoglicemiante documentado)",
+          "Cirurgia: suspender 2 semanas antes (antiagregante plaquetário)",
+          "Não confundir com manjericão europeu (O. basilicum) — composição diferente"
+        ]
       }
     },
     {
