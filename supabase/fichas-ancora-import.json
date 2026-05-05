@@ -10425,244 +10425,415 @@
     {
       "slug": "dente-de-leao",
       "nome_popular": "Dente-de-Leão",
-      "nome_cientifico": "Taraxacum officinale F.H.Wigg. (complexo de espécies)",
-      "tagline": "A erva daninha que é uma farmácia — diurético, hepático e nutritivo de distribuição global que cresce em quintais do mundo inteiro e é subutilizado por todos.",
+      "nome_cientifico": "Taraxacum officinale F.H.Wigg.",
+      "tagline": "A erva daninha comestível mais nutritiva do jardim — diurética, hepatoprotetora e prebiótica com inulina, taraxacina e luteolina que tornam o dente-de-leão um alimento funcional de excelência em toda a planta.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Taraxacum officinale F.H.Wigg. (complexo de espécies)",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico diurético / hepático / nutritivo",
-        "parte_usada": "Raiz (hepático/digestivo); folhas (diurético/nutritivo); flores (antioxidante/alimentar).",
+        "nome_cientifico": "Taraxacum officinale F.H.Wigg.",
+        "familia_botanica": "Asteraceae (Compositae)",
+        "tipo_botanico": "Planta medicinal diurética / hepatoprotetora / alimento funcional",
+        "parte_usada": "Folhas (salada, infusão — diurético); raízes (decocção — hepatoprotetor, digestivo); flores (culinário — xarope, vinho); toda a planta em floração completa.",
         "sinonimos": [
-          "Dente-de-leão · amargão · taraxaco",
-          "Dandelion (inglês) · Pissenlit (francês — \"mija-na-cama\") · Löwenzahn (alemão — \"dente de leão\")"
+          "dente-de-leão · dente-de-leão-comum · taraxaco · amargão · pissenlit (francês)",
+          "Taraxacum officinale agg. (complexo de espécies apomíticas — centenas de microespécies)",
+          "Nota: 'officinale' = da farmácia — designação medieval de planta de uso medicinal estabelecido"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Terroso-amargo, raiz torrada, levemente caramelado (raiz torrada).",
-        "cor_da_infusao": "Marrom-escuro (raiz torrada) a âmbar (raiz crua). #7A5030",
-        "intensidade": "3/5 — amargo assertivo, digestivo.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Folhas: amargo-herbáceo intenso com notas de radicchio e chicória — amargor de inulina e sesquiterpenos. Raízes assadas: notas de café-chicória, terroso-torrado.",
+        "aroma": "Folhas: herbáceo-terroso, notas de látex fresco ao amassá-las. Flores: floral-mel suave. Raízes assadas: tostado de café-chicória, terra úmida.",
+        "cor_da_infusao": "Folhas: amarelo-esverdeado a castanho-claro. Raízes: castanho-âmbar a castanho-escuro, semelhante a café de chicória.",
+        "intensidade": "Folhas: 3/5. Raízes: 3–4/5 — amargor mais pronunciado.",
+        "notas": "O dente-de-leão é talvez a única planta onde toda a planta é usada culinariamente: raízes torradas como café-substituto, folhas em salada, flores em xarope e vinho, e suco do caule (látex) em uso popular tópico para verrugas.",
+        "bioma_de_origem": "Europa e Ásia temperada (origem). Naturalizado em todos os continentes — erva daninha cosmopolita de gramados, calçadas e jardins.",
+        "distribuicao_geografica": [
+          "Presente em todos os continentes temperados e subtropicais",
+          "Europa (origem): culinária e medicina popular extensiva",
+          "Brasil: naturalizado no Sul (RS, SC, PR) — considerado erva invasora",
+          "América do Norte: naturalizado — uso culinário crescente no movimento de foraging"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã (hepático/digestivo). Moderado à tarde (diurético).",
-        "combina_com": "Chicória · Alcachofra · Carqueja · Boldo (blends hepáticos) · Mel (adoça o amargo)"
+        "temperatura_ideal": "Folhas: infusão a 90 °C. Raízes: decocção a 95–100 °C (10 min). Raízes assadas: café de chicória — moer e preparar como café.",
+        "tempo_de_infusao": "Folhas: 8–10 min coberto. Raízes: decocção 10 min + repouso 10 min.",
+        "quantidade": "Folhas secas: 4–6 g / 200 ml. Raízes secas: 3–5 g / 200 ml. Raízes assadas em pó: 1 colher de chá (5 g) / 200 ml como café.",
+        "metodo": "Folhas: infusão. Raízes: decocção ou preparo como café (torradas e moídas). Folhas frescas: salada (excelente amargura que estimula digestão). Flores frescas: xarope (flores + açúcar + limão).",
+        "reinfusoes": "1 reinfusão para raízes. Folhas: sem reinfusão recomendada.",
+        "melhor_momento": "Manhã em jejum (diurético e hepatoprotetor). Antes das refeições como aperitivo amargo (estimula bile e digestão). Raízes assadas: café matinal sem cafeína.",
+        "combina_com": "Alcachofra (sinergia hepatoprotetora), bardana (sinergia depurativa e diurética), carqueja, chicória (família dos amargos digestivos), limão."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Diurético (folhas — aumento de diurese sem depleção de K+, ao contrário de diuréticos farmacológicos)",
-          "Colagogo/colerético (raiz — estimula bílis)",
-          "Hepatoprotetor",
-          "Prebiótico (inulina — substrato para bifidobactérias)",
-          "Hipoglicemiante leve",
-          "Antioxidante",
-          "Nutritivo excepcional (folhas: vitaminas A, C, K, ferro, cálcio)",
-          "Componentes ativos:",
-          "Contraindicações: Cálculo biliar — colagogo, pode precipitar cólica. Alergia à Asteraceae. Gestação — cautela com raiz em dose alta."
-        ],
-        "componentes_ativos": [
+        "evidencia": "Etnobotânico — látex do caule em verrugas; sem ensaios clínicos formais.",
+        "aplicacoes": [
           {
-            "label": "SESQUITERPENOS AMARGOS (taraxacina, taraxacerina)",
-            "texto": "Raiz — Digestivo amargo, colagogo"
-          },
-          {
-            "label": "INULINA",
-            "texto": "Raiz — Prebiótico, hipoglicemiante leve"
-          },
-          {
-            "label": "TARAXASTEROL",
-            "texto": "Raiz — Anti-inflamatório, hepatoprotetor"
-          },
-          {
-            "label": "ÁCIDO CAFEOILQUÍNICO",
-            "texto": "Folhas/raiz — Antioxidante, hepatoprotetor"
-          },
-          {
-            "label": "VITAMINA A (beta-caroteno)",
-            "texto": "Folhas — Antioxidante, nutritivo"
-          },
-          {
-            "label": "VITAMINA C",
-            "texto": "Folhas — Antioxidante, imunidade"
-          },
-          {
-            "label": "FERRO, CÁLCIO, POTÁSSIO",
-            "texto": "Folhas — Nutritivo"
+            "titulo": "Látex do caule em verrugas (uso popular)",
+            "texto": "Suco leitoso branco do caule cortado aplicado diretamente sobre verrugas. Uso popular amplamente documentado na Europa. Mecanismo proposto: sesquiterpenos e compostos do látex com atividade citotóxica local. Sem estudos clínicos controlados, mas com uso consistente por séculos."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
-      },
-      "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
-      },
-      "cultura": {
-        "historia": "O dente-de-leão é a erva-daninha mais farmacologicamente rica dos quintais do mundo — e a mais perseguida pelos jardineiros. A ironia de gastar horas arrancando plantas com vitaminas, minerais, prebióticos e ação hepática documentada para que o gramado fique \"limpo\" é uma metáfora sobre o que a modernidade perdeu na relação com a natureza.  Toda criança do mundo soprou as sementes-paraquedas do dente-de-leão e fez um pedido. Essa memória afetiva universal é uma das histórias mais lindas do catálogo — a erva que nenhuma criança tem medo, que todos conhecem, que todos pisoteiam e que cuida do fígado.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
-      },
-      "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido. Folhas: alimento. Raiz: uso medicinal.",
-        "status_ema": "Monografia HMPC — traditional use para digestivo e diurético.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Disponível o ano todo (perene)"
-      },
-      "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
-    },
-    {
-      "slug": "alcachofra",
-      "nome_popular": "Alcachofra",
-      "nome_cientifico": "Cynara scolymus L. / Cynara cardunculus var. scolymus",
-      "tagline": "O cardoprotetor hepático — o fitoterápico com a melhor evidência clínica para proteção do fígado e melhora de dislipidemias entre todas as ervas do catálogo, com uma das farmacologias mais elegantes da fitoterapia europeia.",
-      "schema_version": "1.1",
-      "identificacao": {
-        "nome_cientifico": "Cynara scolymus L. / Cynara cardunculus var. scolymus",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico hepatoprotetor / colagogo / hipolipemiante",
-        "parte_usada": "Folhas (uso medicinal — não o fruto/flor que se come).",
-        "sinonimos": [
-          "Alcachofra · alcachofra-de-cabeça",
-          "Artichoke (inglês) · Artichaut (francês) · Artischocke (alemão)"
-        ]
-      },
-      "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Herbáceo amargo, levemente alcaloídico, terroso-vegetal.",
-        "cor_da_infusao": "Verde-escuro a verde-amarelado. #6A9030",
-        "intensidade": "4/5 — amargo intenso, uso medicinal declarado.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
-      },
-      "preparo": {
-        "temperatura_ideal": "90 °C | Tempo: 8–10 min coberto | Quantidade: 2–4 g folhas secas/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "2–4 g folhas secas/250 ml",
-        "metodo": "Infusão coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "20–30 min antes das refeições (hepático/colagogo) — 2–3x ao dia.",
-        "combina_com": "Dente-de-leão · Boldo · Carqueja · Funcho · Alcaçuz (adoça o amargo)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "contraindicacoes": "Látex: pode causar dermatite de contato em peles sensíveis. Alergia a Asteraceae: risco de reação com o látex."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Hepatoprotetor (proteção e regeneração hepatocelular)",
-          "Colagogo/colerético (estimula produção e fluxo de bílis)",
-          "Hipolipemiante (reduz colesterol LDL e total)",
-          "Antioxidante (ORAC elevado)",
-          "Diurético",
-          "Digestivo amargo",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Obstrução biliar — colagogo intenso, contraindicado. Alergia às Asteraceae."
+          "Diurético (potássio + flavonoides — aumento de diurese sem depleção de potássio)",
+          "Hepatoprotetor / colerético (taraxacina — estimulação da produção e fluxo biliar)",
+          "Prebiótico (inulina — substrato de Bifidobacterium e Lactobacillus)",
+          "Anti-inflamatório (luteolina, taraxacosídeo — inibição COX-2, NF-κB)",
+          "Antioxidante (betacaroteno, luteína, vitamina C — folhas frescas excepcional)",
+          "Hipoglicemiante potencial (inulina — inibição de α-glucosidase; chicorino)"
         ],
         "componentes_ativos": [
           {
-            "label": "ÁCIDO CLOROGÊNICO",
-            "texto": "Hepatoprotetor, antioxidante, hipolipemiante"
+            "label": "TARAXACINA e TARAXACERINA (sesquiterpenos lactonas)",
+            "texto": "Responsáveis pelo amargor característico. Colerético: estimulam secreção biliar pelo fígado e contração da vesícula. Hepatoprotetores: reduzem dano oxidativo hepático in vivo. Anti-inflamatórios via inibição de NF-κB. Taraxacina: leve atividade antiproliferativa em células hepáticas tumorais in vitro."
           },
           {
-            "label": "CINARINA",
-            "texto": "Colagogo, hipolipemiante, hepatoprotetor — composto-chave"
+            "label": "INULINA (frutooligossacarídeos — raízes: 12–45% do peso seco)",
+            "texto": "Fibra prebiótica de cadeia longa. Substrato preferencial de Bifidobacterium longum e Lactobacillus acidophilus — promove microbiota saudável. Reduz absorção de glicose pós-prandial (inibição de α-glucosidase). Hipocolesterolemiante (ligação de ácidos biliares). Maior concentração nas raízes outono-invernais. Base do 'café de chicória' — extrato de inulina com sabor tostado sem cafeína."
           },
           {
-            "label": "LUTEOLINA, APIGENINA",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "LUTEOLINA e APIGENINA (flavonas)",
+            "texto": "Anti-inflamatórias, antioxidantes, hepatoprotetoras. Luteolina: inibição de NF-κB e TNF-α; hepatoprotetora por inibição de apoptose hepática induzida por LPS. Apigenina: ansiolítica discreta (modulação GABA-A), anti-inflamatória, antiproliferativa in vitro."
           },
           {
-            "label": "CINAROPICRINA (lactona sesquiterpênica)",
-            "texto": "Digestivo amargo, anti-inflamatório"
+            "label": "POTÁSSIO (folhas frescas: 397 mg/100g — excepcional)",
+            "texto": "Base do diurético único do dente-de-leão: aumenta diurese sem causar hipocalemia (como diuréticos tiazídicos), porque a planta reporõe o potássio perdido na urina com seu próprio teor. É o único diurético vegetal com auto-reposição de potássio integrada — vantagem farmacológica elegante."
           },
           {
-            "label": "ÁCIDO CAFEICO",
-            "texto": "Antioxidante, hepatoprotetor"
+            "label": "BETACAROTENO, LUTEÍNA e VITAMINA C (folhas frescas)",
+            "texto": "Folhas frescas de dente-de-leão: betacaroteno superior a cenoura (em base de peso), luteína para proteção ocular, vitamina C relevante. Folhas secas: esses nutrientes são parcialmente degradados. A planta como alimento cru é nutricionalmente excepcional — uma das ervas silvestres mais nutritivas do hemisfério norte."
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Dislipidemia (redução LDL)",
-            "evidencia": "Moderada-forte",
-            "populacao": "Wider et al. (2013) Cochrane"
+            "indicacao": "Diurese / retenção de líquidos",
+            "evidencia": "Moderada — estudo clínico (Escot 2011): aumento significativo de frequência e volume urinário após extrato de folhas vs. placebo; mecanismo de potássio documentado",
+            "populacao": "Adultos com retenção hídrica funcional."
           },
           {
-            "indicacao": "Dispepsia funcional",
-            "evidencia": "Forte",
-            "populacao": "EMA — well-established use"
+            "indicacao": "Apoio hepatoprotetor / digestivo (estimulação biliar)",
+            "evidencia": "Moderada por mecanismo documentado e uso EMA; estudos in vitro e in vivo em modelos animais de dano hepático com resultados positivos",
+            "populacao": "Adultos com dispepsia e função hepática comprometida leve."
           },
           {
-            "indicacao": "Hepatoproteção",
-            "evidencia": "Moderada",
-            "populacao": "Múltiplos ECR europeus"
+            "indicacao": "Prebiótico / saúde intestinal",
+            "evidencia": "Boa — inulina com extensa base clínica como prebiótico; dados específicos para inulina de T. officinale limitados mas mecanismo compartilhado",
+            "populacao": "Adultos com disbiose intestinal e função colônica comprometida."
           }
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": "Obstrução de vias biliares ou cálculos biliares grandes: contraindicado (colerético pode causar cólica biliar). Alergia a Asteraceae. Insuficiência renal grave: diurético potente — monitorar função renal.",
+        "interacoes": [
+          {
+            "label": "Diuréticos farmacológicos",
+            "texto": "Sinergia diurética — monitorar eletrólitos. Diferentemente da maioria dos diuréticos: o dente-de-leão não causa hipocalemia por repor potássio."
+          },
+          {
+            "label": "Antidiabéticos",
+            "texto": "Inulina reduz glicemia pós-prandial. Efeito hipoglicemiante aditivo possível — monitorar glicemia."
+          },
+          {
+            "label": "Antibióticos (absorção)",
+            "texto": "Inulina pode reduzir absorção de alguns antibióticos (quinolonas, tetraciclinas). Separar horários de uso."
+          }
+        ],
+        "efeitos_adversos": "Doses usuais: excelente tolerância. Cólica biliar em pacientes com cálculos (contraindicação). Flatulência e distensão abdominal (inulina em dose alta — prebiótico fermenta no cólon). Raro: alergia.",
+        "dose_maxima": "Folhas secas: 15 g/dia. Raízes secas: 10 g/dia. Inulina de raízes: sem limite estabelecido para uso alimentar.",
+        "fontes": [
+          "EMA/HMPC (2009). Community Herbal Monograph on Taraxacum officinale. EMA/HMPC/316184/2007.",
+          "Schütz K et al. (2006). Taraxacum — a review on its phytochemical and pharmacological profile. J Phytopharmacol.",
+          "Escot V et al. (2011). A pilot study to evaluate the diuretic activity of Taraxacum officinale. J Altern Complement Med.",
+          "Rúa P et al. (2021). The nutritional composition of fresh dandelion. Foods.",
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Moderado-alto (3–4/5) — folhas frescas; moderado nas secas",
+            "observacao": "Taraxacina, sesquiterpenos. Amargor de chicória-radicchio, mais vegetal que farmacológico — integrável em saladas."
+          },
+          {
+            "dimensao": "Terroso-tostado (raízes)",
+            "intensidade": "Moderado-alto (3/5)",
+            "observacao": "Inulina caramelizada por torra. Nota de café-chicória muito satisfatória para quem busca substituto sem cafeína."
+          },
+          {
+            "dimensao": "Herbáceo-vegetal",
+            "intensidade": "Moderado (2–3/5) — folhas",
+            "observacao": "Nota de folha verde vigorosa, notas de azedinha e almeirão."
+          },
+          {
+            "dimensao": "Floral-mel (flores)",
+            "intensidade": "Leve (1–2/5)",
+            "observacao": "Flores: dulçor nectárino suave — completamente diferente das folhas amargas."
+          }
+        ],
+        "olfativo_familia": "Folhas: herbáceo-amargo, látex vegetal. Raízes: terroso-tostado de café-chicória. Flores: floral-mel.",
+        "olfativo_descritores": [
+          "Folhas: chicória amarga, látex vegetal",
+          "Raízes tostadas: café de chicória, caramelo terroso",
+          "Flores: mel floral, néctar de campo"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Mecanorreceptores",
+            "ativacao": "Baixa",
+            "molecula": "Látex do caule — leve sensação de viscosidade; sem ativação trigeminal específica"
+          }
+        ],
+        "tatil": "Folhas em salada: textura levemente coriácea, suculenta. Infusão de folhas: corpo leve. Decocção de raízes: corpo médio-alto, levemente viscoso por inulina.",
+        "descricao_integrada": "O dente-de-leão é o espetáculo da versatilidade: a mesma planta que o jardineiro trata como praga, o chef usa como ingrediente premium (flores em restaurantes bistrô), o herborista usa como hepatoprotetor e diurético, e o barista usa como café sem cafeína. Cada parte tem personalidade sensorial própria e radicalmente diferente. As folhas amargas em salada são alimento funcional de excelência; as raízes tostadas são o melhor café-substituto da natureza; as flores são poesia culinária. Tudo na mesma erva daninha do jardim."
       },
       "cultura": {
-        "historia": "A alcachofra foi considerada afrodisíaco na Roma Antiga — Plínio a descreve como alimento de luxo das elites romanas. Na Renascença italiana, Catarina de Médici era consumidora tão entusiasta de alcachofra que escandalizou a corte francesa por comer \"tanto quanto um homem\". A passagem de alimento erótico a fitoterápico hepático é uma das mais curiosas da história botânica.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "O dente-de-leão aparece em farmacopeias europeias desde o século X (medicina árabe medieval: Ibn Sina / Avicena menciona 'tarkhashqon' como hepático). Na Europa medieval, era 'pissenlit' — nome francês que revela diretamente a ação diurética ('urinar na cama'). Herbalistas do século XVII incluíam obrigatoriamente o dente-de-leão nas prescrições para 'fígado fraco' e 'humor melancólico'. A culinária francesa elevou a planta a ingrediente de respeito — salade de pissenlit avec lardons é prato clássico da brasserie francesa que ainda aparece em menus de Lyon e Paris.",
+        "cerimonial": "O sopro nas sementes de dente-de-leão — dispersando os aquênios brancos ao vento — é um dos gestos infantis mais universais do mundo temperado. Nas tradições britânicas e alemãs, soprar e contar as sementes que restam responde à pergunta 'que horas são?' ou 'quantos anos tenho?'. Sem uso cerimonial médico documentado.",
+        "brasil": "No Brasil, o dente-de-leão naturalizou-se no Sul e é tratado como invasora indesejada em gramados e jardins. Poucos brasileiros sabem que as folhas são comestíveis e medicinais. O uso culinário ainda é incipiente — mas cresce com o movimento de gastronomia de foraging e alimentação selvagem que chegou ao Brasil por influência europeia e escandinava.",
+        "curiosidade": "O dente-de-leão tem o único diurético vegetal com auto-reposição de potássio integrada. Diuréticos tiazídicos e de alça causam hipocalemia — perda de potássio na urina que precisa ser suplementada. As folhas de dente-de-leão têm 397 mg de potássio por 100g — mais que bananas — e o diurético da planta aumenta diurese sem esgotar o estoque de potássio porque a própria planta o repõe. A natureza resolveu elegantemente o principal efeito adverso dos diuréticos farmacológicos."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Indicações: colagogo, hepatoprotetor.",
-        "status_ema": "Monografia HMPC — well-established use para dispepsia e dislipidemia.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas: período vegetativo ativo"
+        "eixo_botanico_tpc": "Planta medicinal com monografia EMA/HMPC. Alimento funcional simultâneo.",
+        "status_anvisa": "Sem monografia específica na IN 02/2014. RENISUS: não listado. Comercialização como droga vegetal e alimento permitida.",
+        "status_ema": "EMA/HMPC (2009): monografia publicada para folhas e raízes — uso tradicional reconhecido para diurese e dispepsia.",
+        "status_fda": "GRAS para uso alimentar. Sem aprovação farmacêutica formal.",
+        "certificacao_organica": "Coleta silvestre em áreas sem agrotóxico: amplamente disponível. Cultivo orgânico simples.",
+        "sazonalidade": "Folhas: melhor na primavera (menos amargas, mais tenras). Raízes: outono-inverno (maior concentração de inulina). Flores: primavera (março–junho no hemisfério norte)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Coleta própria em jardins não tratados — fonte mais acessível no Sul do Brasil",
+          "Herbanárias: folhas e raízes secas importadas ou nacionais",
+          "Lojas de produtos naturais: cápsulas de extrato seco",
+          "Empórios e lojas gourmet: folhas frescas para salada (raro no Brasil)"
+        ],
+        "faixa_de_preco": "Folhas secas: R$ 10–25/50g. Raízes secas: R$ 15–35/50g. Raízes tostadas (café): R$ 20–40/100g.",
+        "formatos": [
+          "Folhas secas (infusão diurética)",
+          "Raízes secas (decocção hepatoprotetora)",
+          "Raízes tostadas e moídas (café-substituto sem cafeína)",
+          "Folhas frescas (salada, suco verde)",
+          "Extrato seco em cápsulas",
+          "Xarope de flores (culinário e medicinal)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O único diurético com auto-reposição de potássio",
+          "texto": "Diuréticos farmacológicos causam hipocalemia — a planta diurética tem 397 mg de potássio/100g, mais que banana, e repõe o que a diurese elimina. Farmacologia elegante: o remédio carrega o antídoto do seu principal efeito adverso. Nenhum diurético sintético conseguiu isso."
+        },
+        {
+          "label": "O café sem cafeína que vem do jardim",
+          "texto": "Raízes de dente-de-leão tostadas e moídas produzem um café-substituto sem cafeína de surpreendente qualidade — sabor terroso-tostado, corpo médio, levemente amargo por inulina caramelizada. Alemães e britânicos usam o 'dandelion coffee' como alternativa ao café desde a Segunda Guerra Mundial, quando o café escasseou. É funcional: inulina prebiótica no lugar da cafeína estimulante."
+        },
+        {
+          "label": "Toda a planta é usada — nada se perde",
+          "texto": "Raízes: café e hepatoprotetor. Folhas: salada e diurético. Flores: xarope, vinho, decoração culinária. Látex do caule: popular em verrugas. Sementes: soprar ao vento é uma das experiências de infância mais universais do mundo temperado. Poucas plantas têm uso integral tão completo — e nenhuma começa como erva daninha do jardim."
+        }
+      ]
+    },
+    {
+      "slug": "alcachofra",
+      "nome_popular": "Alcachofra",
+      "nome_cientifico": "Cynara scolymus L.",
+      "tagline": "O vegetal que é medicamento — cinarina, cinaropicrina e luteolina com ação hepatoprotetora, hipolipemiante e colerética validada clinicamente, tornando a alcachofra o fitoterápico cardiovascular de maior base alimentar do mundo.",
+      "schema_version": "1.1",
+      "identificacao": {
+        "nome_cientifico": "Cynara scolymus L.",
+        "familia_botanica": "Asteraceae (Compositae)",
+        "tipo_botanico": "Alimento funcional / Planta medicinal hepatoprotetora / hipolipemiante",
+        "parte_usada": "Folhas (extrato — uso medicinal principal; extrato seco padronizado); receptáculos florais (parte comestível — uso alimentar e funcional); alcachofra inteira (uso culinário integral).",
+        "sinonimos": [
+          "alcachofra · artichoke · carciofo (italiano) · artichaut (francês)",
+          "Cynara cardunculus var. scolymus (Garsault) Alef. (classificação mais recente)",
+          "Cynara cardunculus L. (alcachofra brava / cardo — ancestral selvagem)"
+        ]
+      },
+      "caracterizacao": {
+        "sabor_dominante": "Amargo-doce característico — cinaropicrina confere amargor, cinarina confere dulçor pós-gustativo peculiar que faz água e vinho ficarem mais doces após comer alcachofra. Retrogusto vegetal complexo e persistente.",
+        "aroma": "Herbáceo-vegetal com notas de alcachofra cozida, fundo levemente terroso e notas de noz-verde.",
+        "cor_da_infusao": "Folhas: castanho-esverdeado a âmbar; turva por compostos fenólicos. Extrato seco: amorfo.",
+        "intensidade": "3/5 — amargo moderado com a nota doce pós-gustativa que define a experiência sensorial da alcachofra.",
+        "notas": "A cinarina é responsável por um fenômeno gustativo único: após comer alcachofra, água e vinho ficam temporariamente mais doces. Esse efeito (descoberto em 1972 por Linda Bartoshuk) é causado pela inibição dos receptores de amargor na língua, que 'ressaltam' a doçura relativa de outros sabores.",
+        "bioma_de_origem": "Mediterrâneo ocidental (norte da África, sul da Europa). Cultivada amplamente no Brasil (MG, SP, RS, SC).",
+        "distribuicao_geografica": [
+          "Mediterrâneo (origem): Itália, Espanha, França, Marrocos — maior produção e consumo mundial",
+          "Brasil (2° maior produtor): Minas Gerais (Barbacena), São Paulo, Sul",
+          "EUA (Califórnia): produção significativa para mercado norte-americano"
+        ]
+      },
+      "preparo": {
+        "temperatura_ideal": "Folhas: infusão a 85–90 °C (preservar cinarina — estável, mas concentrações variáveis). Receptáculos: cozimento convencional.",
+        "tempo_de_infusao": "Folhas secas: 10–15 minutos coberto. Extrato seco: conforme produto.",
+        "quantidade": "Folhas secas: 4–6 g / 200 ml. Extrato seco padronizado (2–5% cinarina): 300–600 mg/dose, 2–3×/dia — forma clínica mais estudada.",
+        "metodo": "Infusão de folhas (uso popular). Extrato seco em cápsulas (uso clínico). Alcachofra inteira cozida: culinário — come-se os receptáculos e folhas internas; o caldo de cozimento é também funcional.",
+        "reinfusoes": "1 reinfusão de folhas com perda de 40% de cinarina.",
+        "melhor_momento": "Antes das refeições principais (colerético — estimula bile antes do alimento). Uso hipolipemiante: regular, às refeições.",
+        "combina_com": "Dente-de-leão (sinergia hepatoprotetora), boldo (sinergia colerética), cardo-mariano (sinergia hepatoprotetora), limão, alho."
+      },
+      "usos_topicos": {
+        "evidencia": "Minimal — sem uso tópico documentado com evidência.",
+        "aplicacoes": [
+          {
+            "titulo": "Nenhum uso tópico estabelecido",
+            "texto": "A alcachofra não tem tradição de uso tópico medicinal documentada. Os extratos são usados em cosméticos hidratantes por seus polifenóis antioxidantes — ação cosmética, não medicinal."
+          }
+        ],
+        "contraindicacoes": "Alergia a Asteraceae: possível reação cruzada com extratos de alcachofra em produtos tópicos."
+      },
+      "acoes_e_seguranca": {
+        "acoes_principais": [
+          "Hepatoprotetor (cinarina, cinaropicrina — redução de dano oxidativo hepático, estimulação de regeneração)",
+          "Colerético (cinarina — aumento de secreção biliar pelo fígado)",
+          "Hipolipemiante (cinarina + luteolina — redução de LDL e triglicerídeos)",
+          "Diurético discreto (potássio + flavonoides)",
+          "Antioxidante (ácido clorogênico, luteolina, cinarina)",
+          "Prebiótico (inulina — presente no receptáculo)"
+        ],
+        "componentes_ativos": [
+          {
+            "label": "CINARINA (ácido 1,5-di-O-cafeoilquínico)",
+            "texto": "Marcador químico de Cynara scolymus. Colerético: aumenta secreção biliar em 50–100% em estudos com voluntários. Hipolipemiante: reduz síntese hepática de colesterol (inibição de HMG-CoA redutase — mesmo alvo das estatinas), aumenta catabolismo de LDL. Antioxidante potente. Responsável pelo fenômeno gustativo de 'doçura da água após alcachofra' (inibição de receptores amargos na língua)."
+          },
+          {
+            "label": "CINAROPICRINA (lactona sesquiterpênica)",
+            "texto": "Principal componente amargo. Hepatoprotetora (anti-inflamatória hepática por inibição de NF-κB; redução de apoptose de hepatócitos em modelos de dano por CCl4). Anticancerígena in vitro (células hepáticas e colônicas). Responsável pelo amargor característico e pela estimulação do apetite (aperitivo amargo)."
+          },
+          {
+            "label": "LUTEOLINA (flavona)",
+            "texto": "Hipolipemiante (inibição de HMG-CoA redutase, aumento de receptores de LDL hepáticos). Hepatoprotetora (anti-inflamatória via COX-2, NF-κB; antifibrótica — reduz ativação de células estrelares hepáticas). Anti-inflamatória sistêmica. Antioxidante potente. Antifúngica."
+          },
+          {
+            "label": "ÁCIDO CLOROGÊNICO e ÁCIDO CAFEICO",
+            "texto": "Antioxidantes de referência. Ácido clorogênico: inibição de absorção de glicose intestinal (hipoglicemiante discreto), anti-hipertensivo, hepatoprotetor. A alcachofra tem das maiores concentrações de ácido clorogênico entre vegetais consumidos no Brasil."
+          },
+          {
+            "label": "INULINA (receptáculo: 3–10%)",
+            "texto": "Fibra prebiótica de cadeia longa — substrato de bifidobactérias. Hipocolesterolemiante (ligação de ácidos biliares). Complementa a ação hipolipemiante da cinarina por mecanismo fibra-dependente adicional."
+          }
+        ],
+        "evidencia": [
+          {
+            "indicacao": "Dislipidemia / redução de LDL-colesterol",
+            "evidencia": "Moderada a boa — meta-análise (Sahebkar 2018) com 9 ensaios clínicos: extrato de folhas de alcachofra reduziu LDL-c em média 18,5 mg/dL e triglicerídeos em média 7,9 mg/dL vs. placebo",
+            "populacao": "Adultos com hipercolesterolemia leve a moderada; adjuvante a mudanças de estilo de vida."
+          },
+          {
+            "indicacao": "Dispepsia funcional / apoio hepático",
+            "evidencia": "Boa — EMA reconhece use traditonal para dispepsia; ensaios clínicos confirmam melhora de sintomas dispépticos (náusea, plenitude, flatulência)",
+            "populacao": "Adultos com dispepsia funcional e disfunção hepática leve."
+          },
+          {
+            "indicacao": "Hepatoproteção (dano hepático leve — esteatose inicial)",
+            "evidencia": "Moderada — estudos in vitro e in vivo + dados clínicos preliminares em esteatose hepática não alcoólica (NAFLD)",
+            "populacao": "Adultos com esteatose hepática inicial; adjuvante a mudanças dietéticas."
+          }
+        ],
+        "contraindicacoes": "Obstrução biliar e cálculos biliares grandes: contraindicado (colerético pode precipitar cólica biliar). Alergia a Asteraceae. Insuficiência hepática grave: paradoxalmente pode sobrecarregar fígado com estimulação biliar excessiva — sem dados clínicos adequados.",
+        "interacoes": [
+          {
+            "label": "Estatinas (sinvastatina, atorvastatina)",
+            "texto": "Mecanismo de inibição de HMG-CoA redutase sobreposto — efeito hipolipemiante aditivo. Potencialmente benéfico em combinação, mas monitorar função hepática."
+          },
+          {
+            "label": "Anticoagulantes",
+            "texto": "Vitamina K nas folhas — consumo intensivo pode antagonizar varfarina. Monitorar INR."
+          },
+          {
+            "label": "Antidiabéticos",
+            "texto": "Ácido clorogênico + inulina podem reduzir glicemia pós-prandial. Efeito hipoglicemiante aditivo possível."
+          }
+        ],
+        "efeitos_adversos": "Excelente tolerância como alimento. Extrato concentrado: flatulência e distensão por inulina. Cólica biliar em predispostos (cálculos biliares). Alergia a Asteraceae: rara.",
+        "dose_maxima": "Folhas secas: 15 g/dia. Extrato seco padronizado: 600–1.800 mg/dia (conforme produto). Uso contínuo: seguro por 12+ semanas conforme ensaios clínicos.",
+        "fontes": [
+          "Sahebkar A et al. (2018). Lipid-lowering activity of artichoke extracts. Crit Rev Food Sci Nutr.",
+          "EMA/HMPC (2011). Community Herbal Monograph on Cynara scolymus. EMA/HMPC/123687/2010.",
+          "Kraft K. (1997). Artichoke leaf extract — recent findings reflecting effects on lipid metabolism. Phytomedicine.",
+          "Pittler MH et al. (2003). Artichoke leaf extract for treating hypercholesterolaemia. Cochrane Database Syst Rev.",
+          "Holtmann G et al. (2003). Efficacy of artichoke leaf extract in the treatment of patients with functional dyspepsia. Aliment Pharmacol Ther."
+        ]
+      },
+      "perfil_sensorial": {
+        "gustativo": [
+          {
+            "dimensao": "Amargo-doce (fenômeno cinarina)",
+            "intensidade": "Moderado (3/5) — com pós-gustativo adocicado único",
+            "observacao": "Cinaropicrina (amargo) + cinarina (inibição de receptores de amargor → percepção de doçura relativa). O fenômeno 'água fica doce após alcachofra' é real e farmacologicamente explicado."
+          },
+          {
+            "dimensao": "Vegetal-verde",
+            "intensidade": "Moderado (2–3/5)",
+            "observacao": "Nota de alcachofra cozida, noz-verde, artigo vegetal complexo."
+          },
+          {
+            "dimensao": "Terroso",
+            "intensidade": "Leve (1–2/5)",
+            "observacao": "Fundo terroso da Asteraceae mediterrânea."
+          }
+        ],
+        "olfativo_familia": "Herbáceo-vegetal mediterrâneo; Asteraceae com notas de alcachofra cozida.",
+        "olfativo_descritores": [
+          "alcachofra cozida",
+          "noz-verde",
+          "erva mediterrânea",
+          "notas de azeitona distante",
+          "fundo terroso de horta"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Receptores de amargor (TAS2R — gustativo, não trigeminal)",
+            "ativacao": "Moderada → inibição por cinarina",
+            "molecula": "Cinarina — inibe receptores de amargor criando percepção de dulçor relativo pós-gustativo"
+          }
+        ],
+        "tatil": "Infusão de folhas: corpo leve-médio. Receptáculo cozido: textura carnosa, suculenta, única.",
+        "descricao_integrada": "A alcachofra é o único vegetal medicinal com um fenômeno gustativo documentado cientificamente: a cinarina inibe receptores de amargor, fazendo água e vinho ficarem mais doces por minutos após o consumo. É o alimento funcional que explica a fisiologia da percepção gustativa enquanto protege o fígado. O extrato das folhas — a parte que não se come no restaurante — é onde a farmacologia está concentrada. O paradoxo da alcachofra: o medicamento é a parte descartada, o alimento é o receptor floral."
+      },
+      "cultura": {
+        "historia": "A alcachofra tem origem incerta — provavelmente selecionada a partir do cardo selvagem (Cynara cardunculus) no norte da África ou sul da Europa há 2.000–3.000 anos. Os gregos e romanos antigos consumiam alcachofra e descrições de seu cultivo aparecem em Plínio (século I d.C.). Na Idade Média, a planta ficou associada à nobreza europeia — cara, difícil de cultivar, consumida em banquetes aristocráticos. Catarina de Médici teria introduzido a alcachofra na França quando se casou com Henrique II em 1533, criando um escândalo por comer a planta em público (considerada afrodisíaca e imprópria para mulheres).",
+        "cerimonial": "Sem uso cerimonial documentado na fitoterapia. A alcachofra é alimento de civilização — não de ritual. Sua presença em banquetes aristocráticos europeus e sua associação à afrodisia são folclore, não medicina.",
+        "brasil": "O Brasil é o segundo maior produtor mundial de alcachofra — com Minas Gerais (especialmente Barbacena e Carandaí) como polo principal. Consumida principalmente cozida como vegetal premium, a utilização do extrato de folhas para fins medicinais ainda é subdesenvolvida no contexto brasileiro. Farmácias de manipulação oferecem extrato seco padronizado em cápsulas para colesterol. O potencial de alcachofra como funcional acessível é alto — mas a cultura culinária de aproveitamento integral (incluindo as folhas externas amargas em chá) ainda não chegou ao grande público brasileiro.",
+        "curiosidade": "O fenômeno 'água doce após alcachofra' foi descrito qualitativamente por milênios — vinho parecia mais doce após o prato. A explicação científica veio em 1972, quando a pesquisadora Linda Bartoshuk (Yale) descobriu que a cinarina é um antagonista competitivo dos receptores de amargor (TAS2R) na língua. Quando os receptores de amargor estão inibidos pela cinarina, o sistema gustativo interpreta os sabores restantes (doce, ácido, salgado) como relativamente mais intensos — especialmente o doce. É um dos fenômenos mais elegantes da farmacologia gustativa: a planta que protege o fígado também hacker a percepção do sabor."
+      },
+      "regulacao": {
+        "eixo_botanico_tpc": "Alimento funcional e planta medicinal com monografia EMA/HMPC.",
+        "status_anvisa": "Cynara scolymus: sem monografia na IN 02/2014. Extrato seco em cápsulas: registrado como suplemento alimentar ou fitoterápico com dossiê. Amplamente comercializado no Brasil.",
+        "status_ema": "EMA/HMPC (2011): monografia de folhas — uso tradicional reconhecido para dispepsia e adjuvante em hipercolesterolemia.",
+        "status_fda": "GRAS para uso alimentar. Sem aprovação como medicamento.",
+        "certificacao_organica": "Produção orgânica em MG e SP — IBD e USDA Organic disponíveis. Consumo in natura facilita acesso a produto orgânico certificado.",
+        "sazonalidade": "Produção brasileira: principal safra abril–setembro (outono-inverno). Extrato seco disponível o ano todo. Folhas para uso medicinal: mais concentradas em cinarina nas folhas adultas antes da floração."
+      },
+      "marketplace": {
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Supermercados: alcachofra fresca (vegetal) — MG, SP, Sul",
+          "Farmácias e lojas de produtos naturais: cápsulas de extrato seco (marcas nacionais: Herbarium, Catarinense; importadas)",
+          "Farmácias de manipulação: extrato seco padronizado em cápsulas",
+          "Herbanárias: folhas secas (produto de nicho)"
+        ],
+        "faixa_de_preco": "Alcachofra fresca: R$ 3–8/unidade. Folhas secas: R$ 20–40/50g. Extrato seco em cápsulas (500mg, 60 caps): R$ 30–80.",
+        "formatos": [
+          "Alcachofra fresca (culinário + funcional)",
+          "Folhas secas (infusão medicinal)",
+          "Extrato seco padronizado em cápsulas (uso clínico hipolipemiante/hepático)",
+          "Tintura hidroalcoólica",
+          "Conserva em azeite (culinário — menos ativa medicinalmente)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "A estatina vegetal",
+          "texto": "Cinarina e luteolina inibem HMG-CoA redutase — o mesmo alvo das estatinas (sinvastatina, atorvastatina). Meta-análise 2018 com 9 ensaios clínicos: redução de LDL-c em média 18,5 mg/dL. Não tem a potência das estatinas farmacêuticas, mas tem o perfil de segurança de um vegetal. Para hipercolesterolemia leve, é uma opção adjuvante com evidência real."
+        },
+        {
+          "label": "A cinarina que hackeia o paladar",
+          "texto": "Após comer alcachofra, água e vinho ficam mais doces por minutos. Linda Bartoshuk (Yale, 1972) explicou: cinarina inibe receptores de amargor TAS2R na língua, fazendo o sistema gustativo interpretar o doce relativo como mais intenso. A planta que protege o fígado também demonstra que o sabor é farmacologia aplicada."
+        },
+        {
+          "label": "O medicamento é a parte descartada",
+          "texto": "No restaurante, come-se o receptáculo floral carnoso e as folhas internas tenras — descartando as folhas externas fibrosas e amargas. Na farmácia, usa-se exatamente essas folhas externas em extrato seco. O paradoxo da alcachofra: a parte mais valiosa medicinalmente é a que mais pessoas jogam fora."
+        }
+      ]
     },
     {
       "slug": "salvia",
