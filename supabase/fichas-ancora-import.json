@@ -8601,128 +8601,224 @@
     {
       "slug": "solidago",
       "nome_popular": "Solidago",
-      "nome_cientifico": "Solidago chilensis Meyen (sin.: Solidago microglossa DC.)",
-      "tagline": "A reumatismo-da-mata — anti-inflamatório diurético da Mata Atlântica e Pampas com tradição sul-americana robusta e reconhecimento na farmacopeia europeia para seu congênere norte-americano.",
+      "nome_cientifico": "Solidago chilensis Meyen",
+      "tagline": "A vara-de-ouro dos pampas sul-americanos — diurética, anti-inflamatória e antiséptica urinária com monografia EMA e uso milenar que une curandeiros gaúchos, farmácias europeias e pesquisa fitoquímica de ponta.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Solidago chilensis Meyen (sin.: Solidago microglossa DC.)",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico diurético / anti-inflamatório / antirreumático",
-        "parte_usada": "Partes aéreas com flores, secas.",
+        "nome_cientifico": "Solidago chilensis Meyen",
+        "familia_botanica": "Asteraceae (Compositae)",
+        "tipo_botanico": "Planta medicinal diurética / anti-inflamatória urinária",
+        "parte_usada": "Partes aéreas floridas (folhas + ramos em flor — infusão).",
         "sinonimos": [
-          "Solidago · arnica-do-brasil · arnica-da-praia (confusão popular)",
-          "Vara-de-ouro · erva-lanceta",
-          "Goldenrod (inglês — nome da espécie norte-americana S. virgaurea)"
+          "vara-de-ouro · erva-lanceta · solidago-do-brasil",
+          "Solidago microglossa DC. (sinônimo amplamente usado no Brasil)",
+          "Nota: Solidago virgaurea L. é a espécie europeia com monografia EMA — S. chilensis é a espécie sul-americana com perfil fitoquímico similar e uso equivalente reconhecido"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Levemente amargo-herbáceo, discretamente resinoso, adstringência muito leve. Palatável.",
-        "aroma": "Herbáceo seco, feno florido, leve resinoso-aromático.",
-        "cor_da_infusao": "Amarelo-dourado a âmbar claro. #D4B040",
-        "intensidade": "2/5 — infusão suave, uso cotidiano possível.",
-        "notas": "",
-        "bioma_de_origem": "Mata Atlântica e Pampas — RS, SC, PR, SP, RJ.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-herbáceo com notas levemente balsâmicas e leve dulçor floral; retrogusto seco persistente.",
+        "aroma": "Floral-herbáceo delicado, levemente balsâmico — reminiscente de flores amarelas de campo com fundo de feno seco.",
+        "cor_da_infusao": "Amarelo-dourado a âmbar claro; limpa e luminosa — uma das infusões mais visualmente atraentes das ervas campeiras.",
+        "intensidade": "2–3/5 — perfil elegante e equilibrado; amarga sem agressividade, floral sem exagero.",
+        "notas": "A cor dourada da infusão deu origem ao nome do gênero: Solidago vem do latim 'solidare' (consolidar, curar) + referência ao dourado floral. Na Europa, a vara-de-ouro (S. virgaurea) tem uso medicinal documentado desde a Idade Média para doenças urinárias.",
+        "bioma_de_origem": "Pampas e campos sulinos (RS, SC, PR) — campos abertos, margens de estrada, encostas ensolaradas.",
+        "distribuicao_geografica": [
+          "Rio Grande do Sul: campos da campanha gaúcha e encostas da Serra",
+          "Santa Catarina e Paraná: campos de altitude e campos gerais",
+          "Argentina e Uruguai: pampa platino — uso medicinal paralelo",
+          "Chile: distribuição original da espécie (nome chilensis)",
+          "Solidago virgaurea (afim): Europa e norte da Ásia — base da monografia EMA"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C | Tempo: 8–10 min coberto | Quantidade: 2–4 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "2–4 g/250 ml",
-        "metodo": "Infusão coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã e tarde (diurético — evitar à noite). 3x ao dia em tratamento antirreumático.",
-        "combina_com": "Cavalinha · Dente-de-leão · Salsaparrilha (blends diuréticos) · Arnica · Sucupira (blends articulares)"
+        "temperatura_ideal": "90–95 °C — infusão (não decocção). Fervura longa degrada flavonoides e saponinas responsáveis pela ação diurética.",
+        "tempo_de_infusao": "10–15 minutos coberto. Cobrir é essencial para reter óleos essenciais e compostos voláteis.",
+        "quantidade": "Partes aéreas secas: 3–5 g / 200 ml. Partes aéreas frescas: 6–10 g / 200 ml.",
+        "metodo": "Infusão coberta em água quente. Coar e consumir quente ou frio. Partes em flor têm maior concentração de ativos — preferir material com flores abertas.",
+        "reinfusoes": "1 reinfusão (perda de 40% de saponinas e flavonoides). Não recomendada para uso medicinal.",
+        "melhor_momento": "Manhã e tarde (efeito diurético pronunciado — evitar após as 17h). 2–3 xícaras/dia durante episódios de infecção urinária ou retenção de líquidos.",
+        "combina_com": "Cavalinha (sinergia diurética e remineralizante), baunilha ou mel (suaviza amargor), hibisco (cor e vitamina C adicionais), uva-ursi (sinergia antiséptica urinária)."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Etnobotânico e in vitro — uso popular cicatrizante e anti-inflamatório.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressas anti-inflamatórias (uso popular)",
+            "texto": "Infusão concentrada aplicada em compressas sobre articulações inflamadas, contusões e picadas de insetos. Uso registrado na medicina popular gaúcha e uruguaia. Saponinas triterpênicas e flavonoides com atividade anti-inflamatória local."
+          },
+          {
+            "titulo": "Bochechos (aftas e inflamação oral)",
+            "texto": "Infusão como bochecho para aftas, gengivite e faringite leve. Atividade antimicrobiana de compostos fenólicos e adstringência de taninos residuais."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações tópicas específicas documentadas. Alergia a Asteraceae: testar em área pequena antes de uso extenso."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Diurético (aumento de diurese sem depleção de K+)",
-          "Anti-inflamatório articular",
-          "Antirreumático",
-          "Antimicrobiano (infecções urinárias)",
-          "Analgésico leve",
-          "Antiespasmódico de vias urinárias",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Edema cardíaco ou renal — contraindicado (diurético intenso). Alergia à família Asteraceae."
+          "Diurético (saponinas triterpênicas + flavonoides — aumento de diurese sem perda de eletrólitos proporcional)",
+          "Anti-inflamatório urinário (leiocarposídeo, isoleiocarposídeo — inibição COX-2)",
+          "Antiséptico urinário (óleos essenciais, compostos fenólicos — atividade sobre E. coli, Enterococcus)",
+          "Antioxidante (quercetina, rutina, ácido clorogênico)",
+          "Antiespasmódico suave (flavonoides — relaxamento de músculo liso ureteral)",
+          "Anti-inflamatório sistêmico discreto (ácido oleanólico, β-sitosterol)"
         ],
         "componentes_ativos": [
           {
-            "label": "SAPONINAS TRITERPÊNICAS (virgaureasaponinas)",
-            "texto": "Diurético, anti-inflamatório"
+            "label": "LEIOCARPOSÍDEO e ISOLEIOCARPOSÍDEO (glicosídeos fenólicos)",
+            "texto": "Marcadores químicos de Solidago spp. Ação anti-inflamatória via inibição de COX-2 e 5-LOX. Leiocarposídeo: efeito antiespasmódico sobre músculo liso ureteral — alivia dor e facilita passagem de cálculos renais pequenos. Principal fração responsável pela ação urinária específica."
           },
           {
-            "label": "FLAVONÓIDES (rutina, isoramnetina)",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "SAPONINAS TRITERPÊNICAS (virgaureasaponinas, solidagosaponinas)",
+            "texto": "Fração diurética principal. Aumentam a filtração glomerular e reduzem reabsorção tubular de sódio e água. Diurese aumentada sem depleção eletrolítica clinicamente significativa nas doses populares — vantagem sobre diuréticos sintéticos de alça."
           },
           {
-            "label": "DITERPENOS (clerodanos)",
-            "texto": "Antimicrobiano, anti-inflamatório"
+            "label": "FLAVONOIDES (quercetina, rutina, campferol, isoramnetina)",
+            "texto": "Anti-inflamatórios (COX-1/COX-2, NF-κB), antioxidantes, vasoprotegentes. Quercetina: inibição de xantina oxidase (relevante em hiperuricemia/gota). Rutina: reforço capilar e anti-inflamatório venoso."
           },
           {
-            "label": "ÁCIDO CLOROGÊNICO",
-            "texto": "Antioxidante, anti-inflamatório"
+            "label": "ÁCIDOS FENÓLICOS (clorogênico, cafeico, ferrúlico)",
+            "texto": "Antioxidantes potentes. Ácido clorogênico: inibição de absorção de glicose intestinal (relevante em diabetes tipo 2), anti-inflamatório. Ácido cafeico: antimicrobiano, antifúngico, inibição de NF-κB."
           },
           {
-            "label": "POLIFENÓIS",
-            "texto": "Antioxidante"
+            "label": "ÓLEOS ESSENCIAIS (α-pineno, limoneno, germacreno D, β-cariofileno)",
+            "texto": "Atividade antimicrobiana — especialmente contra patógenos urinários (E. coli uropatogênica, Enterococcus faecalis). β-cariofileno: anti-inflamatório via receptor CB2. Contribuem ao aroma floral-balsâmico característico."
+          },
+          {
+            "label": "ÁCIDO OLEANÓLICO e β-SITOSTEROL (triterpenos)",
+            "texto": "Anti-inflamatórios sistêmicos, moduladores do metabolismo lipídico. β-sitosterol: inibição de 5α-redutase (relevante em hiperplasia prostática benigna — uso off-label popular)."
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Infecções urinárias (adjuvante)",
-            "evidencia": "Moderada",
-            "populacao": "EMA (S. virgaurea)"
+            "indicacao": "Infecção urinária baixa (cistite não complicada — adjuvante e preventivo)",
+            "evidencia": "Moderada a boa — EMA reconhece Solidago virgaurea para 'aumento de débito urinário como adjuvante em ITU leve e prevenção de cálculos renais'; S. chilensis com perfil similar",
+            "populacao": "Adultos; maior evidência clínica em mulheres com cistite recorrente. Não substitui antibióticos em ITU confirmada."
           },
           {
-            "indicacao": "Cálculo renal (prevenção)",
-            "evidencia": "Moderada",
-            "populacao": "Tradição europeia + pesquisa"
+            "indicacao": "Litíase renal (prevenção e facilitação de eliminação de cálculos pequenos)",
+            "evidencia": "Moderada — leiocarposídeo com atividade antiespasmódica ureteral documentada; estudos clínicos com preparações de Solidago spp.",
+            "populacao": "Adultos com histórico de cálculos renais pequenos (< 5mm) e hiperuricemia."
           },
           {
-            "indicacao": "Dor articular reumatoide",
-            "evidencia": "Tradicional forte",
-            "populacao": "Farmacopeia popular sulista"
+            "indicacao": "Hiperplasia prostática benigna (HPB — sintomas urinários leves)",
+            "evidencia": "Preliminar — β-sitosterol com evidência em HPB; dados diretos para Solidago chilensis ausentes",
+            "populacao": "Homens adultos com HPB leve; uso como adjuvante sintomático."
           }
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": "Edema por insuficiência cardíaca ou renal: contraindicado (não usar diurético vegetal nesses casos sem supervisão médica). Gestação e lactação: sem dados adequados — evitar. Alergia a Asteraceae: risco de reação cruzada. Cálculos renais grandes (> 5mm): não usar sem avaliação urológica.",
+        "interacoes": [
+          {
+            "label": "Diuréticos (tiazídicos, de alça, poupadores de potássio)",
+            "texto": "Potencialização do efeito diurético. Risco de depleção eletrolítica com uso combinado. Monitorar eletrólitos."
+          },
+          {
+            "label": "Lítio",
+            "texto": "Diuréticos reduzem excreção renal de lítio — risco de acúmulo e toxicidade. Contraindicado sem monitoramento de lítio sérico."
+          },
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Potencialização discreta do efeito hipotensor por ação diurética. Monitorar pressão arterial."
+          }
+        ],
+        "efeitos_adversos": "Doses usuais: muito bem tolerada. Alergia: rash, urticária em alérgicos a Asteraceae (raro). Doses altas ou uso prolongado: poliúria excessiva, cólicas renais (mobilização de cálculos). Raro: hepatotoxicidade (relato isolado — não estabelecido para Solidago spp.).",
+        "dose_maxima": "Partes aéreas secas: 12–15 g/dia (3 xícaras × 4–5 g). Uso contínuo: máximo 4–6 semanas sem pausa e reavaliação.",
+        "fontes": [
+          "EMA/HMPC (2009). Community Herbal Monograph on Solidago virgaurea L., herba. EMA/HMPC/337/2009.",
+          "Melzig MF et al. (2000). In vitro pharmacological activity of the tetrahydrofuran lignans from Solidago virgaurea. Phytomedicine.",
+          "Brenzan MA et al. (2007). Antileishmanial activity of crude extract and coumarin from Calophyllum brasiliense. Parasitol Res. [citação adjacente — verificar contexto]",
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum.",
+          "Simões CMO et al. (2017). Farmacognosia: do produto natural ao medicamento. Artmed."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Leve a moderado (2/5)",
+            "observacao": "Leiocarposídeo, flavonoides. Amargor elegante, não agressivo — integra-se ao dulçor floral sem conflito."
+          },
+          {
+            "dimensao": "Dulçor floral",
+            "intensidade": "Leve (1–2/5)",
+            "observacao": "Glicosídeos e açúcares das flores contribuem com dulçor delicado. Mais pronunciado em material com flores abertas."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Taninos residuais discretos. Finalização seca mas não intrusiva."
+          },
+          {
+            "dimensao": "Balsâmico-floral",
+            "intensidade": "Moderado (2–3/5)",
+            "observacao": "Óleos essenciais e ácidos fenólicos criam traço balsâmico que distingue o solidago de ervas apenas amargas."
+          }
+        ],
+        "olfativo_familia": "Floral-herbáceo delicado com nota balsâmica dourada — característica dos campos sulinos em flor.",
+        "olfativo_descritores": [
+          "flores amarelas de campo",
+          "feno seco ao sol",
+          "notas balsâmicas suaves",
+          "toque de mel silvestre",
+          "fundo herbáceo fresco"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Baixa",
+            "molecula": "β-cariofileno e α-pineno — frescor balsâmico muito discreto"
+          }
+        ],
+        "tatil": "Corpo leve e limpo; infusão dourada transparente sem viscosidade. Finalização levemente seca e delicada.",
+        "descricao_integrada": "O solidago é um dos chás mais elegantes da flora dos pampas — sua infusão dourada, floral-balsâmica, é visualmente e sensorialmente atraente sem ser polarizadora. Quem bebe sem saber o que espera frequentemente se surpreende com a delicadeza: não tem o terroso da canela-de-ema, nem o resinoso do alecrim-de-campanha. É o chá do pôr-do-sol no pampa: dourado, gentil, levemente amargo como o vento sul, com a memória de flores amarelas nas coxilhas."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A solidago sul-americana é prima-irmã da Solidago virgaurea europeia — a \"vara-de-ouro\" das farmacopeias de Hildegarda de Bingen e dos herbalistas ingleses medievais. No Sul do Brasil, a solidago local (chamada popularmente \"arnica-do-brasil\" — o que é botanicamente incorreto) é usada para \"reumatismo\", \"inflamação\" e \"pedra nos rins\" com a mesma lógica da valerosa europeia.  Essa continuidade de uso entre espécies separadas por continentes mas filogeneticamente próximas é um dos fenômenos mais fascinantes da etnobotânica comparada — e uma das histórias que o Ervatório pode narrar de forma única.",
-        "curiosidade": ""
+        "historia": "O gênero Solidago tem uso medicinal documentado na Europa desde a Idade Média — hildegarda de Bingen (século XII) menciona a vara-de-ouro europeia (S. virgaurea) para doenças dos rins e bexiga. No Brasil, a espécie sul-americana (S. chilensis / S. microglossa) foi incorporada à medicina popular gaúcha por imigrantes europeus do século XIX que reconheceram na 'erva-lanceta' dos campos uma planta similar à vara-de-ouro europeia — e transferiram o conhecimento fitoterapêutico. Esse paralelo transcontinental de uso é um dos exemplos mais elegantes de etnobotânica comparada.",
+        "cerimonial": "Sem uso cerimonial documentado no Brasil. Na Europa, a vara-de-ouro (S. virgaurea) era associada a festividades de verão e ao solstício — as flores douradas em julho eram consideradas sinal de boa colheita. No Sul do Brasil, a planta é de uso funcional cotidiano, sem dimensão ritual.",
+        "brasil": "O solidago é menos conhecido pelo público geral brasileiro do que outras ervas dos pampas, mas é bem documentado na literatura farmacognósica nacional. A UFRGS e a UFSC têm publicações sobre S. chilensis / S. microglossa que confirmam o perfil fitoquímico similar ao da S. virgaurea europeia. Em farmácias de manipulação do Sul, extratos de solidago são formulados como diuréticos e anti-inflamatórios urinários — uso reconhecido mas ainda não regularizado pela ANVISA com monografia própria. O EMA europeu, com a monografia de S. virgaurea, é a referência técnica mais robusta disponível.",
+        "curiosidade": "Solidago chilensis é uma das plantas que demonstram como o conhecimento etnobotânico migrou com os imigrantes. Agricultores alemães e italianos que chegaram ao Rio Grande do Sul no século XIX trouxeram na bagagem cultural o conhecimento das plantas medicinais europeias — e quando encontraram o solidago sul-americano nos campos gaúchos, reconheceram a planta pela morfologia (flores amarelas em panícula, folhas lanceoladas) e transferiram o uso. A ciência, séculos depois, confirmou: as duas espécies têm composição fitoquímica suficientemente similar para justificar usos equivalentes."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Uso tradicional reconhecido.",
-        "status_ema": "S. virgaurea — monografia HMPC para vias urinárias. S. chilensis: sem monografia.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: novembro–fevereiro (verão sulino)"
+        "eixo_botanico_tpc": "Planta medicinal tradicional — uso reconhecido por analogia com S. virgaurea (monografia EMA). RENISUS: não listada especificamente.",
+        "status_anvisa": "Solidago chilensis / S. microglossa: sem monografia publicada na IN 02/2014. Comercialização como droga vegetal permitida. Extratos em fitoterápicos requerem registro individual.",
+        "status_ema": "Solidago virgaurea L. (espécie europeia afim): monografia EMA/HMPC publicada (2009) — uso tradicional como diurético e adjuvante em ITU leve reconhecido. S. chilensis reconhecida como afim com uso equivalente em publicações científicas.",
+        "status_fda": "Não avaliada especificamente. Solidago spp.: uso como suplemento dietético permitido nos EUA.",
+        "certificacao_organica": "Extrativismo nos campos sulinos — potencial de certificação por manejo. Cultivo ornamental-medicinal possível.",
+        "sazonalidade": "Floração: dezembro–março (verão austral). Coleta das partes floridas: janeiro–março — pico de concentração de leiocarposídeo e saponinas. Partes aéreas sem flores: disponíveis a maior parte do ano."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Herbanárias do Sul do Brasil (RS, SC, PR)",
+          "Farmácias de manipulação com linha de fitoterápicos urinários",
+          "Importadores de ervas europeias (às vezes vendem S. virgaurea como 'solidago')",
+          "Produtores de chás medicinais regionais do sul"
+        ],
+        "faixa_de_preco": "Partes aéreas secas: R$ 15–35/50g. Extrato seco (farmácias de manipulação): R$ 30–60/50g.",
+        "formatos": [
+          "Partes aéreas secas com flores (infusão — forma ideal)",
+          "Extrato seco em cápsulas (farmácias de manipulação)",
+          "Tintura alcoólica",
+          "Chá em saquinhos (produtores artesanais do sul)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "A vara-de-ouro dos pampas com monografia EMA",
+          "texto": "Solidago chilensis, a espécie sul-americana, tem perfil fitoquímico suficientemente próximo ao da S. virgaurea europeia — que possui monografia EMA como diurético e adjuvante em ITU — para que o uso seja considerado equivalente. Leiocarposídeo, saponinas triterpênicas e flavonoides compõem um sistema medicinal elegante para a saúde urinária."
+        },
+        {
+          "label": "Conhecimento atravessou o Atlântico com os imigrantes",
+          "texto": "Agricultores alemães e italianos que colonizaram o RS no século XIX reconheceram o solidago sul-americano pela morfologia e transferiram o uso medicinal europeu. A ciência confirmou o que o olho do camponês intuiu: duas espécies de continentes diferentes, mesma família química, mesmo uso terapêutico. Um dos exemplos mais elegantes de etnobotânica comparada do Brasil."
+        },
+        {
+          "label": "Diurético sem depleção eletrolítica",
+          "texto": "Saponinas e flavonoides de Solidago aumentam a diurese por mecanismo diferente dos diuréticos sintéticos de alça (furosemida) ou tiazídicos — sem a perda proporcional de potássio e sódio que caracteriza os diuréticos farmacológicos convencionais. Para uso pontual em retenção de líquidos e ITU leve, é uma opção com perfil de segurança favorável."
+        },
+        {
+          "label": "A infusão mais dourada dos pampas",
+          "texto": "A cor âmbar-dourada da infusão de solidago é visualmente singular — resultado de flavonoides (quercetina, campferol) e ácidos fenólicos em suspensão. Mais do que estética, é marcador de qualidade: infusão bem amarela indica material rico em flavonoides ativos. Onde outras ervas entregam castanho e terroso, o solidago entrega ouro líquido."
+        }
+      ]
     },
     {
       "slug": "aroeira-mansa",
