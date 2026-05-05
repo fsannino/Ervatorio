@@ -8486,117 +8486,218 @@
       "slug": "tansagem",
       "nome_popular": "Tansagem",
       "nome_cientifico": "Plantago major L.",
-      "tagline": "A planta dos caminhos — expectorante e cicatrizante universal que cresceu por todo o mundo nos passos europeus e foi incorporada a todas as farmacopeias tradicionais dos biomas que a recebeu.",
+      "tagline": "A erva daninha mais medicinal do mundo — presente em todos os continentes, pisada por todos os pés, usada por todas as culturas: expectorante, cicatrizante e anti-inflamatória com aucubina e plantagina que justificam milênios de uso universal.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Plantago major L.",
         "familia_botanica": "Plantaginaceae",
-        "tipo_botanico": "Fitoterápico expectorante / cicatrizante / antialérgico",
-        "parte_usada": "Folhas (principal); sementes (mucilagem laxativa).",
+        "tipo_botanico": "Planta medicinal expectorante / cicatrizante / anti-inflamatória",
+        "parte_usada": "Folhas (infusão, suco, cataplasma); sementes (mucilagem — uso interno e externo).",
         "sinonimos": [
-          "Tansagem · transagem · plantagem · tranchagem · chapéu-de-couro (confusão)",
-          "Plantain (inglês/francês) · Wegerich (alemão) · Llantén (espanhol)",
-          "\"Planta branca do homem\" (nomes indígenas das Américas — seguia os colonizadores europeus)"
+          "tansagem · tanchagem · trança-fio · plantago · língua-de-ovelha · sete-nervos",
+          "Plantago major var. major; var. asiatica (Decne.) Pilg.",
+          "Nota: não confundir com Plantago psyllium / P. ovata (psyllium) — espécies afins mas uso diferente (fibra dietética)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Levemente amargo-herbáceo, vegetal fresco, mucilaginoso (folhas frescas). Neutro e inofensivo.",
-        "aroma": "Folha verde fresca, herbáceo limpo, levemente terroso.",
-        "cor_da_infusao": "Verde-amarelado pálido. #C8D060",
-        "intensidade": "1–2/5 — suave, de uso cotidiano fácil.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Levemente amargo-herbáceo com notas verdes frescas e leve adstringência; retrogusto terroso suave. Suco fresco: levemente mucilaginoso e verde.",
+        "aroma": "Herbáceo-terroso discreto, notas de grama fresca e folha verde. Sem componente aromático dominante.",
+        "cor_da_infusao": "Verde-amarelado a castanho-esverdeado; levemente turva. Suco fresco: verde intenso.",
+        "intensidade": "2/5 — perfil discreto, não polarizador; fácil de beber com ou sem adoçante.",
+        "notas": "A tansagem é talvez a planta medicinal com maior extensão geográfica de uso humano — documentada como medicinal em praticamente todas as culturas que a encontraram, de índios norte-americanos a herboristas europeus medievais, de ayurveda a medicina popular sul-americana.",
+        "bioma_de_origem": "Originária da Europa e Ásia — naturalizada em todo o mundo como 'erva daninha'. No Brasil: presente em todos os estados, de terrenos urbanos a áreas rurais.",
+        "distribuicao_geografica": [
+          "Presente em todos os continentes (exceto Antártida) — uma das plantas com maior distribuição global",
+          "Europa (origem): uso medicinal documentado desde a Grécia antiga (Dioscórides)",
+          "Brasil: naturalizada amplamente — erva de calçada e terreno baldio em todo o país",
+          "América do Norte: chamada pelos nativos americanos de 'pegada do homem branco' — chegou com os colonizadores"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90 °C | Tempo: 5–8 min coberto | Quantidade: 3–5 g folhas secas/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g folhas secas/250 ml",
-        "metodo": "Infusão simples coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "3x ao dia em episódios agudos de tosse; qualquer hora para uso tópico.",
-        "combina_com": "Mel · Tomilho · Guaco · Eucalipto (blends respiratórios)"
+        "temperatura_ideal": "85–90 °C — preservar aucubina (iridoide termossensível) e mucilagem. Não ferver.",
+        "tempo_de_infusao": "8–12 minutos coberto. Suco fresco: liquidificar folhas frescas com água fria.",
+        "quantidade": "Folhas secas: 4–6 g / 200 ml. Folhas frescas: 8–15 g / 200 ml (suco).",
+        "metodo": "Infusão coberta. Suco: liquidificar folhas frescas com água filtrada, coar e beber imediatamente (antioxidantes se oxidam rapidamente). Cataplasma: folhas frescas amassadas sobre a ferida.",
+        "reinfusoes": "1 reinfusão — redução de 40% de iridoides e mucilagem.",
+        "melhor_momento": "Tosse/expectorante: 3 xícaras/dia durante episódios respiratórios. Cicatrizante: cataplasma contínuo trocado 2–3×/dia. Digestivo: antes das refeições.",
+        "combina_com": "Mel (sinergia expectorante e antibacteriana), própolis verde, tomilho (sinergia respiratória), malva (sinergia mucilaginosa), gengibre."
       },
       "usos_topicos": {
-        "evidencia": "",
+        "evidencia": "Moderada a boa — uso tópico amplamente documentado etnobotanicamente e confirmado in vitro/in vivo.",
         "aplicacoes": [
-          "Cataplasma cicatrizante: Folhas frescas maceradas ou aquecidas, aplicadas diretamente sobre feridas, cortes e picadas de inseto. Uso milenar com evidência moderada.",
-          "Bochecho para aftas e gengivite: Infusão forte, morna, 30 s de bochecho 3x ao dia. Anti-inflamatório e cicatrizante de mucosa oral."
+          {
+            "titulo": "Cataplasma cicatrizante (folhas frescas)",
+            "texto": "Folhas frescas amassadas ou levemente aquecidas aplicadas diretamente sobre feridas, picadas de insetos, queimaduras leves e contusões. Aucubina estimula proliferação de fibroblastos. Taninos adstringentes formam película protetora. Uso universal documentado em praticamente todas as culturas que cultivam a planta."
+          },
+          {
+            "titulo": "Anti-inflamatório ocular (compressas)",
+            "texto": "Compressa de infusão morna sobre olhos com conjuntivite leve e cansaço ocular. Aucubina e compostos fenólicos com atividade anti-inflamatória local documentada. Uso popular em toda a Europa e América Latina."
+          },
+          {
+            "titulo": "Bochecho (aftas, gengivite, faringite)",
+            "texto": "Infusão como bochecho 3–4 vezes/dia. Mucilagem protege mucosa, taninos adstringem, aucubina e ácido ursólico reduzem inflamação local. Uso popular extensíssimo."
+          }
         ],
-        "contraindicacoes": ""
+        "contraindicacoes": "Alergia a Plantaginaceae: rara. Polen da planta é alergênico (rinite) — sem implicação para uso das folhas em não-sensibilizados."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Expectorante (mucilagens)",
-          "Cicatrizante (alanthoína)",
-          "Antialérgico (inibição de histamina)",
-          "Anti-inflamatório",
-          "Antimicrobiano",
-          "Demulcente (protege mucosas irritadas)",
-          "Componentes ativos:",
-          "Contraindicações: Praticamente sem contraindicações em doses usuais. Sementes (mucilagem intensa): obstrução intestinal — contraindicado."
+          "Expectorante (mucilagem + aucubina — estimulam secreção brônquica fluida)",
+          "Cicatrizante (aucubina — estimulação de fibroblastos)",
+          "Anti-inflamatório (ácido ursólico, aucubina — inibição COX-2, NF-κB)",
+          "Antimicrobiano (plantagina — atividade antibacteriana)",
+          "Antioxidante (ácido rosmarínico, ácido clorogênico, flavonoides)",
+          "Emoliente / protetor de mucosas (mucilagem — trato respiratório e digestivo)"
         ],
         "componentes_ativos": [
           {
-            "label": "MUCILAGENS (arabinoxilanas)",
-            "texto": "Demulcente, expectorante, laxativo suave"
+            "label": "AUCUBINA (iridoide glicosídeo)",
+            "texto": "Principal marcador ativo de Plantago major. Anti-inflamatório potente (inibição NF-κB, TNF-α, IL-1β). Cicatrizante: estimula proliferação de fibroblastos e queratinócitos, aumenta síntese de colágeno. Antibacteriano (atividade contra S. aureus, H. pylori). Antinociceptivo (redução de dor em modelos animais). Termossensível — preservar com temperatura de infusão abaixo de 90 °C."
           },
           {
-            "label": "ALANTOÍNA",
-            "texto": "Cicatrizante, regenerador celular"
+            "label": "PLANTAGINA (alcaloide iridoide)",
+            "texto": "Bacteriostático — inibe crescimento de S. aureus, E. coli, Pseudomonas aeruginosa. Expectorante por estimulação de secreção brônquica. Componente que fundamenta o uso para tosse produtiva e bronquite leve."
           },
           {
-            "label": "AUCUBOSÍDEO (iridóide)",
-            "texto": "Anti-inflamatório, antialérgico"
+            "label": "ÁCIDO URSÓLICO (triterpeno pentacíclico)",
+            "texto": "Anti-inflamatório (inibição COX-2, lipoxigenase), antitumoral in vitro (indução de apoptose em várias linhagens), hepatoprotetor. Um dos triterpenos mais estudados da fitoquímica — presente em cascas de maçã, alecrim e tansagem. Concentração significativa em folhas jovens de P. major."
           },
           {
-            "label": "CATALPOL",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "ÁCIDO ROSMARÍNICO",
+            "texto": "Antioxidante potente (DPPH superior à vitamina C in vitro), anti-inflamatório (inibição NF-κB e COX), antiviral (inibição de proteases de vírus respiratórios). Presente em muitas Plantaginaceae e Lamiaceae."
           },
           {
-            "label": "ÁCIDO CAFEICO",
-            "texto": "Antioxidante, anti-inflamatório"
+            "label": "MUCILAGEM (polissacarídeos — planctaglucosídeo)",
+            "texto": "Emoliente de mucosas — reveste e protege brônquios, estômago e intestino de irritação. Prebiótico potencial. Expectorante por hidratação do muco brônquico. Levemente laxante em doses altas. Concentração maior nas sementes (P. psyllium tem uso específico como fibra)."
           },
           {
-            "label": "ZINCO, SILÍCIO",
-            "texto": "Cicatrizante"
+            "label": "FLAVONOIDES (apigenina, luteolina, baicalina)",
+            "texto": "Apigenina: ansiolítica discreta (modulação GABA-A), anti-inflamatória. Luteolina: antiasmática, anti-inflamatória brônquica. Baicalina: antioxidante, hepatoprotetora, antiinflamatória."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Tosse / bronquite leve (expectorante)",
+            "evidencia": "Moderada — EMA reconhece P. major para uso tradicional como expectorante (monografia HMPC); dados pré-clínicos robustos",
+            "populacao": "Adultos e crianças acima de 4 anos. Amplíssimo uso popular em toda a Europa e América Latina."
+          },
+          {
+            "indicacao": "Cicatrização de feridas (tópico)",
+            "evidencia": "Moderada — estudos in vitro e in vivo em modelos animais confirmando ação de aucubina; uso etnobotânico universal",
+            "populacao": "Uso amplo em feridas leves, picadas de insetos, abrasões."
+          },
+          {
+            "indicacao": "Anti-inflamatório oral / gengivite (bochecho)",
+            "evidencia": "Preliminar a moderada (in vitro + uso tradicional extenso)",
+            "populacao": "Adultos; uso popular amplíssimo."
+          }
+        ],
+        "contraindicacoes": "Gestação: uso culinário (folhas jovens em saladas) seguro; uso medicinal intensivo sem dados adequados — cautela. Alergia a pólens de Plantago (cross-reatividade com folhas: rara mas possível). Obstipação grave: mucilagem pode agravar.",
+        "interacoes": [
+          {
+            "label": "Anticoagulantes (varfarina)",
+            "texto": "Vitamina K presente nas folhas verdes — consumo muito elevado pode antagonizar varfarina. Doses medicinais: improvável impacto clínico significativo."
+          },
+          {
+            "label": "Lítio",
+            "texto": "Mucilagem pode reduzir absorção de lítio oral — separar horários de uso."
+          }
+        ],
+        "efeitos_adversos": "Muito segura nas doses populares. Raro: alergia (pólens Plantago). Dose alta de mucilagem: flatulência, fezes soltas.",
+        "dose_maxima": "Folhas secas: 15 g/dia (3 xícaras × 5 g). Uso contínuo: sem restrição estabelecida para uso alimentar; uso medicinal intensivo: 6–8 semanas com pausa.",
+        "fontes": [
+          "EMA/HMPC (2011). Community Herbal Monograph on Plantago major L., folium. EMA/HMPC/437/2010.",
+          "Samuelsen AB. (2000). The traditional uses, chemical constituents and biological activities of Plantago major. J Ethnopharmacol.",
+          "Mello JCP et al. (2008). Aucubin inhibits IL-1β-induced cyclooxygenase-2 expression. Phytomedicine.",
+          "Türel I et al. (2009). Hepatoprotective and anti-inflammatory activities of Plantago major L. Indian J Pharmacol.",
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Leve (1–2/5)",
+            "observacao": "Iridoides (aucubina) e flavonoides. Amargor suave, não intrusivo — facilmente mascarado por mel."
+          },
+          {
+            "dimensao": "Herbáceo-verde",
+            "intensidade": "Moderado (2–3/5)",
+            "observacao": "Traço dominante — nota de grama e folha fresca. Mais pronunciado no suco, mais suave na infusão."
+          },
+          {
+            "dimensao": "Mucilaginoso",
+            "intensidade": "Leve (1/5) — infusão; moderado (2/5) — suco fresco",
+            "observacao": "Polissacarídeos mucilaginosos. Suavidade aveludada discreta no chá quente."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Taninos em baixa concentração. Finalização levemente seca — quase imperceptível."
+          }
+        ],
+        "olfativo_familia": "Herbáceo-terroso discreto; família das ervas verdes de jardim e campo.",
+        "olfativo_descritores": [
+          "grama fresca cortada",
+          "folha verde amassada",
+          "terra úmida de jardim",
+          "notas de vegetais de folha verde"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Mecanorreceptores bucais",
+            "ativacao": "Baixíssima",
+            "molecula": "Mucilagem — apenas suavidade discreta, sem irritação ou frescor"
+          }
+        ],
+        "tatil": "Corpo leve com suave viscosidade mucilaginosa. Finalização limpa e levemente fresca.",
+        "descricao_integrada": "A tansagem é o chá da simplicidade radical — sem pretensão sensorial, sem amargor dramático, sem aroma sedutor. É verde, herbáceo, discretamente mucilaginoso e fácil de beber. Sua grandeza não está no palato mas na ubiquidade: a mesma erva pisada nas calçadas do mundo inteiro que aparece no chá da criança com tosse, no cataplasma do campo para picada de abelha, e na farmacologia europeia com monografia EMA. Humildade medicinal na sua forma mais completa."
       },
       "cultura": {
-        "historia": "Os povos indígenas das Américas chamavam a tansagem de \"planta do homem branco\" ou \"pegadas do inglês\" — reconhecendo que a planta chegou com os colonizadores europeus e crescia no rastro de seus caminhos. Essa história de invasão biológica silenciosa — a tansagem colonizou as Américas com a mesma eficiência que os humanos — é uma das mais fascinantes da etnobotânica.  Na Europa, a tansagem (plantain) é mencionada nas 10 ervas sagradas dos anglos-saxões e nos escritos de Hildegarda de Bingen como planta universal de cura. É a erva de todos os povos — não tem origem exclusiva, pertence a todos os lugares que habitou.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Plantago major está entre as plantas medicinais mais documentadas da história humana. Dioscórides (século I d.C.) descreveu seus usos na De Materia Medica. Hildegarda de Bingen (século XII) a recomendava para feridas e doenças respiratórias. O herbalista inglês Nicholas Culpeper (século XVII) a listava entre os remédios mais versáteis. Mas nenhuma descrição é mais poética que a dos nativos norte-americanos, que chamavam a planta de 'pegada do homem branco' — reconhecendo que ela aparecia nos caminhos onde os europeus passavam. A tansagem chegou à América com os colonizadores involuntariamente (sementes nas solas de sapatos, em fardos de palha) e se espalhou décadas antes de qualquer colonização intencional das regiões interioranas.",
+        "cerimonial": "Sem uso cerimonial documentado. Planta de uso doméstico e cotidiano em todas as culturas que a encontraram. A universalidade do uso é ela mesma uma forma de reconhecimento — sem necessitar de ritual, a tansagem foi adotada por todas as tradições como planta de valor prático imediato.",
+        "brasil": "No Brasil, a tansagem é conhecida em todo o território como 'tanchagem', 'língua-de-ovelha' ou 'sete-nervos'. Benzedeiras e raizeiros do nordeste ao sul do Brasil incluem a planta no repertório básico para tosse, catarro e feridas. As folhas jovens são comestíveis em saladas — prática muito menos comum no Brasil do que na Europa, onde P. major é ingrediente de sopas e saladas silvestres. A RENISUS lista a espécie como planta de interesse para o SUS.",
+        "curiosidade": "A 'pegada do homem branco' dos nativos americanos é uma das histórias mais fascinantes da etnobotânica. Antes mesmo da colonização intencional das regiões interioranas da América do Norte, a tansagem aparecia nas trilhas indígenas onde os europeus tinham passado — as sementes minúsculas e pegajosas viajavam na lama das solas. Os índios perceberam a correlação e criaram o nome poético que captura perfeitamente o fenômeno das plantas invasoras como indicadores de perturbação humana. A tansagem é, literalmente, uma planta que marca a presença humana pelo mundo."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global / Phyto-ANVISA",
-        "status_anvisa": "Uso tradicional reconhecido.",
-        "status_ema": "Monografia HMPC — traditional use para irritação mucosa oral e expectorante.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Disponível o ano todo (planta ruderal perene)"
+        "eixo_botanico_tpc": "Planta medicinal tradicional — RENISUS (2009) e monografia EMA/HMPC para uso como expectorante.",
+        "status_anvisa": "RENISUS: listada. Sem monografia de fitoterápico publicada na IN 02/2014. Comercialização como droga vegetal (folhas secas) permitida.",
+        "status_ema": "EMA/HMPC (2011): monografia publicada — uso tradicional reconhecido como expectorante para tosse associada a resfriado comum. Well-established use.",
+        "status_fda": "GRAS para uso alimentar das folhas. Sem avaliação formal como fitoterápico.",
+        "certificacao_organica": "Coleta silvestre em áreas não tratadas com pesticidas: amplamente disponível. Cultivo orgânico fácil — planta resistente sem necessidade de agroquímicos.",
+        "sazonalidade": "Folhas disponíveis praticamente o ano todo em climas tropicais e subtropicais. Em climas temperados: primavera-verão. Folhas jovens de primavera: maior concentração de aucubina."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Herbanárias de todo o Brasil — produto de baixo custo e ampla disponibilidade",
+          "Feiras de plantas medicinais — vendida a granel em todo o país",
+          "Coleta própria: disponível em terrenos não tratados de praticamente todo o Brasil",
+          "Farmácias de manipulação: extrato seco e tintura"
+        ],
+        "faixa_de_preco": "Folhas secas: R$ 5–15/50g — uma das ervas medicinais mais baratas disponíveis. Extrato seco: R$ 20–40/50g.",
+        "formatos": [
+          "Folhas secas (infusão)",
+          "Folhas frescas (cataplasma, suco, salada)",
+          "Extrato seco em cápsulas",
+          "Tintura alcoólica",
+          "Xarope expectorante (farmácias de manipulação)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "A pegada do homem branco",
+          "texto": "Os nativos norte-americanos chamavam P. major de 'pegada do homem branco' — a planta aparecia nas trilhas onde europeus tinham passado, sementes viajando nas solas de sapatos sem que ninguém soubesse. Uma das histórias mais poéticas e precisas da etnobotânica: uma planta como marcador involuntário de colonização, que ao mesmo tempo carrega poder curativo real."
+        },
+        {
+          "label": "Monografia EMA + RENISUS: duplo reconhecimento",
+          "texto": "Poucas plantas têm o reconhecimento simultâneo da Agência Europeia de Medicamentos (EMA/HMPC — monografia de uso tradicional como expectorante) e da RENISUS brasileira. A tansagem é uma delas — erva daninha de calçada com validação regulatória nos dois continentes que mais consomem fitoterápicos."
+        },
+        {
+          "label": "Aucubina: o cicatrizante molecular universal",
+          "texto": "A aucubina de P. major estimula fibroblastos, inibe NF-κB e COX-2, e tem atividade antibacteriana — tudo em uma molécula. É o mesmo composto em planta europeia (tansagem), africana (espécies afins) e asiática (P. asiatica). A convergência de uso médico em culturas sem contato entre si é explicada pela convergência química: onde há aucubina, há cicatrização."
+        }
+      ]
     },
     {
       "slug": "solidago",
@@ -9263,136 +9364,215 @@
       "slug": "lupulo",
       "nome_popular": "Lúpulo",
       "nome_cientifico": "Humulus lupulus L.",
-      "tagline": "O amargor que acalma — a flor feminina da cerveja artesanal que é simultaneamente um dos sedativos mais eficazes do catálogo e um fitoestrogênio com pesquisa farmacológica crescente.",
+      "tagline": "O sedativo da cerveja — estróbilos com humulona, lupulona e 2-metil-3-buten-2-ol que fundamentam a ação ansiolítica e hipnótica documentada clinicamente, tornando o lúpulo o fitoterápico sedativo mais bem validado da Europa.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Humulus lupulus L.",
-        "familia_botanica": "Cannabaceae (família da cannabis)",
-        "tipo_botanico": "Fitoterápico sedativo / hipnótico / fitoestrogênico",
-        "parte_usada": "Estróbilos (flores femininas secas — cones de lúpulo).",
+        "familia_botanica": "Cannabaceae",
+        "tipo_botanico": "Planta medicinal sedativa / ansiolítica / hipnótica",
+        "parte_usada": "Estróbilos (cones femininos — infusão, extrato, tintura); glândulas de lupulina (fração mais ativa — pó amarelo dos cones).",
         "sinonimos": [
-          "Lúpulo · côdea · cânhamo-bastardo",
-          "Hops (inglês) · Houblon (francês) · Hopfen (alemão)",
-          "Humulus (farmacológico)"
+          "lúpulo · hopfen (alemão) · hop (inglês)",
+          "Humulus lupulus var. lupulus; var. cordifolius",
+          "Nota: mesma família do Cannabis sativa (Cannabaceae) — sem compostos psicoativos como THC, mas com atividade sedativa por mecanismos distintos"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo intenso e refinado — o amargor floral da cerveja artesanal IPA. Resinoso, levemente frutado-tropical nas variedades aromáticas, herbal.",
-        "aroma": "Resinoso-floral intenso, tropical-frutado (linalol, mirceno), terroso-amadeirado. Aroma extraordinariamente complexo — os cervejeiros artesanais dedicam carreiras a entender as nuances de diferentes variedades de lúpulo.",
-        "cor_da_infusao": "Amarelo-âmbar a verde-amarelado. #C8A840",
-        "intensidade": "4/5 — amargor dominante. Uso em blends para equilibrar doces.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo intenso e característico — alfa-ácidos (humulona, cohumulona) conferem o amargor de cerveja. Notas resinosas, florais e levemente picantes. Retrogusto amargo prolongado.",
+        "aroma": "Resinoso-floral complexo com notas de pinheiro, flores brancas, especiarias e citrus — dependendo da variedade. Caráter distintivo e reconhecível imediatamente por qualquer apreciador de cervejas.",
+        "cor_da_infusao": "Amarelo-esverdeado a âmbar dourado; levemente turva por resinas.",
+        "intensidade": "4/5 — amargor resinoso intenso e aroma marcante; perfil polarizador entre amantes e não-apreciadores de cerveja.",
+        "notas": "O lúpulo é primariamente conhecido como ingrediente da cerveja — sua função original é antiséptica (preservação) e organoléptica (amargor, aroma). O uso medicinal como sedativo-ansiolítico foi descoberto empiricamente pelos colhedores de lúpulo na Europa medieval, que notavam sonolência excessiva durante a colheita.",
+        "bioma_de_origem": "Originário da Europa, Ásia e América do Norte temperada. Cultivado em escala industrial em Europa, EUA, Argentina e Brasil (RS, SC).",
+        "distribuicao_geografica": [
+          "Europa (origem e maior produção): Alemanha, República Tcheca, Eslovênia, Reino Unido",
+          "EUA (maior produtor mundial): Yakima Valley (Washington), Willamette Valley (Oregon)",
+          "Argentina: maior produtor da América do Sul (San Rafael, Mendoza)",
+          "Brasil: cultivo experimental e comercial no RS e SC — expansão recente"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C (2-metil-3-buten-2-ol sensível ao calor).",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 g de estróbilos secos para 250 ml.",
-        "metodo": "Infusão coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "30–60 min antes de dormir. Efeito sedativo mais imediato que valeriana.",
-        "combina_com": "Valeriana (clássico sono europeu) · Passiflora · Melissa · Camomila"
+        "temperatura_ideal": "85–90 °C — preservar 2-metil-3-buten-2-ol (principal componente sedativo, termossensível) e evitar extração excessiva de taninos amargos.",
+        "tempo_de_infusao": "5–8 minutos coberto. Não exceder 10 min — aumento de amargor sem ganho terapêutico.",
+        "quantidade": "Estróbilos secos: 1–2 g / 200 ml (uso sedativo). Extrato seco padronizado: conforme posologia do produto.",
+        "metodo": "Infusão coberta. Para uso sedativo: beber 30–60 minutos antes de dormir. Combinação clássica: lúpulo + valeriana (sinergia sedativa documentada clinicamente).",
+        "reinfusoes": "Não recomendada — perda significativa de compostos ativos.",
+        "melhor_momento": "Exclusivamente à noite, 30–60 min antes de dormir. NÃO usar durante o dia — sedação pode comprometer atenção e segurança em atividades que requerem vigilância (direção, máquinas).",
+        "combina_com": "Valeriana (sinergia sedativa — combinação com maior evidência clínica), melissa (sinergia ansiolítica), maracujá (sinergia GABAérgica), camomila."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Etnobotânico — uso em travesseiros e compressas; sem estudos clínicos tópicos formais.",
+        "aplicacoes": [
+          {
+            "titulo": "Travesseiro de ervas (almofada de lúpulo)",
+            "texto": "Travesseiros recheados com estróbilos secos de lúpulo — prática europeia medieval e moderna para insônia. O aroma resinoso dos estróbilos é inalado durante o sono. 2-metil-3-buten-2-ol é volátil e pode ser absorvido por inalação. Evidência: anedótica mas amplamente reportada."
+          }
+        ],
+        "contraindicacoes": "Alergia a Cannabaceae: raramente documentada, mas possível. Dermatite de contato com lupulina (pó das glândulas): bem documentada em colhedores industriais de lúpulo."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Sedativo / hipnótico (ação rápida — 30–60 min)",
-          "Ansiolítico",
-          "Fitoestrogênico (8-prenilnaringenina — fitoestrogênio mais potente conhecido)",
-          "Anti-inflamatório (iso-alfa-ácidos)",
-          "Antimicrobiano",
-          "Analgésico leve",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Gestação — fitoestrogênico, evitar",
-          "Depressão — potencializa sintomas depressivos em uso regular",
-          "Condutores — sedativo",
-          "Uso concomitante com sedativos e álcool — potencialização"
+          "Sedativo / hipnótico (2-metil-3-buten-2-ol — modulação GABAérgica)",
+          "Ansiolítico (alfa-ácidos, humulona — receptor GABA-A)",
+          "Estrogênico fraco (8-prenilnaringenina — fitoestrógeno mais potente conhecido)",
+          "Antibacteriano (alfa e beta-ácidos — antiséptico clássico da cerveja)",
+          "Anti-inflamatório (humulona, lupulona — inibição NF-κB)",
+          "Antitumoral preliminar (xanthohumol — antiproliferativo in vitro)"
         ],
         "componentes_ativos": [
           {
-            "label": "2-METIL-3-BUTEN-2-OL (produto de degradação do humulono)",
-            "texto": "Sedativo — modulação GABA"
+            "label": "2-METIL-3-BUTEN-2-OL (metabólito de humulona)",
+            "texto": "Principal responsável pelo efeito sedativo-hipnótico. Formado pela degradação oxidativa da humulona durante o armazenamento dos estróbilos. Modula receptores GABA-A (sítio de ação similar ao de benzodiazepínicos e barbitúricos — mas sem risco de dependência nas doses fitoterápicas). Explica por que estróbilos frescos têm menos atividade sedativa que estróbilos envelhecidos."
           },
           {
-            "label": "HUMULONA, LUPULONA (alfa e beta-ácidos)",
-            "texto": "Antimicrobiano, sedativo, anti-inflamatório"
+            "label": "HUMULONA e COHUMULONA (alfa-ácidos)",
+            "texto": "Responsáveis pelo amargor característico do lúpulo (e da cerveja). Anti-inflamatórios (inibição IKK-β / NF-κB). Antibacterianos (especialmente contra gram-positivos — Lactobacillus, S. aureus). Ansiolíticos (modulação GABA-A). Precursores do 2-metil-3-buten-2-ol por degradação oxidativa."
           },
           {
-            "label": "8-PRENILNARINGENINA",
-            "texto": "Fitoestrogênio mais potente vegetal conhecido"
+            "label": "8-PRENILNARINGENINA (8-PN)",
+            "texto": "Fitoestrógeno mais potente já identificado em plantas — maior afinidade ao receptor de estrogênio (ER-α) que qualquer outro fitoestrógeno. Presente em concentração muito baixa nos estróbilos (traços — microgramas/grama). Pode contribuir a efeitos estrogênicos em consumo crônico elevado de cerveja ou suplementos. Relevante para sintomas do climatério (potencial terapêutico e potencial risco em cânceres hormônio-dependentes)."
           },
           {
-            "label": "MIRCENO, LINALOL (OE)",
-            "texto": "Sedativo, aromático"
+            "label": "XANTHOHUMOL (chalcona prenilada)",
+            "texto": "Antiproliferativo em várias linhagens tumorais in vitro (mama, próstata, cólon) por inibição de NF-κB e indução de apoptose. Antioxidante potente. Antifúngico (Candida). Concentração nos estróbilos: 0,1–1%. Biodisponibilidade oral limitada — metabolizado rapidamente pelo fígado. Alvo de pesquisa oncológica intensa mas sem dados clínicos."
           },
           {
-            "label": "XANTUMOL (prenilchalcona)",
-            "texto": "Antitumoral (pesquisa extensiva), anti-inflamatório"
+            "label": "MIRCENO e OUTROS TERPENOS (beta-mirceno, linalol, geraniol)",
+            "texto": "Óleos essenciais responsáveis pelo aroma complexo do lúpulo. Mirceno: sedativo (modulação GABAérgica, potenciação de barbitúricos em modelos animais). Linalol: ansiolítico via GABA-A (compartilhado com lavanda). Geraniol: antimicrobiano, antiparasitário."
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Insônia (especialmente em combinação com valeriana)",
-            "evidencia": "Moderada-forte",
-            "populacao": "Müller-Limmroth & Ehrenstein (1977)"
+            "indicacao": "Insônia leve a moderada",
+            "evidencia": "Boa — EMA reconhece lúpulo para insônia leve; estudos clínicos com combinação lúpulo+valeriana demonstram redução de latência do sono e melhora da qualidade",
+            "populacao": "Adultos com insônia não-orgânica. Especialmente eficaz em combinação com valeriana."
           },
           {
-            "indicacao": "Ansiedade leve",
-            "evidencia": "Moderada",
-            "populacao": "Franco et al. (2012)"
+            "indicacao": "Ansiedade leve / nervosismo",
+            "evidencia": "Moderada — EMA reconhece uso tradicional para nervosismo e ansiedade leve; dados de combinação com valeriana mais robustos que lúpulo isolado",
+            "populacao": "Adultos com ansiedade funcional leve."
           },
           {
-            "indicacao": "Sintomas menopáusicos (fogachos)",
-            "evidencia": "Moderada",
-            "populacao": "Heyerick et al. (2006) — 8-PN"
+            "indicacao": "Sintomas do climatério (fogachos)",
+            "evidencia": "Preliminar a moderada — 8-prenilnaringenina com maior afinidade estrogênica; ensaios clínicos com extratos de lúpulo para fogachos com resultados mistos",
+            "populacao": "Mulheres na perimenopausa/menopausa."
           }
         ],
-        "contraindicacoes": [
-          "Gestação — fitoestrogênico, evitar",
-          "Depressão — potencializa sintomas depressivos em uso regular",
-          "Condutores — sedativo",
-          "Uso concomitante com sedativos e álcool — potencialização"
+        "contraindicacoes": "Depressão (SNC): lúpulo pode agravar depressão — contraindicado em depressão maior. Gestação e lactação: contraindicado (efeito estrogênico de 8-PN). Crianças: sem dados de segurança. Cânceres hormônio-dependentes (mama, endométrio): cautela por atividade estrogênica de 8-PN.",
+        "interacoes": [
+          {
+            "label": "Sedativos, hipnóticos, benzodiazepínicos, álcool",
+            "texto": "Potencialização da depressão do SNC — risco de sedação excessiva. Evitar combinação com medicamentos sedativos."
+          },
+          {
+            "label": "Antidepressivos (IMAOs, ISRS)",
+            "texto": "Potencial interação por mecanismos GABAérgicos. Sem dados clínicos específicos — usar com cautela e supervisão médica."
+          },
+          {
+            "label": "Terapia hormonal (estrogênios)",
+            "texto": "8-PN pode potencializar efeitos estrogênicos — monitorar com terapia hormonal concomitante."
+          }
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "efeitos_adversos": "Doses fitoterápicas: muito bem tolerado. Sedação diurna se usado incorretamente (manhã/tarde). Dermatite de contato por lupulina em manipuladores. Raro: reação alérgica.",
+        "dose_maxima": "Estróbilos secos: 2–3 g/dose, 1 vez à noite. Extrato seco (padronizado): conforme produto. Uso contínuo: máximo 4 semanas; reavaliação para uso mais longo.",
+        "fontes": [
+          "EMA/HMPC (2014). Community Herbal Monograph on Humulus lupulus L., flos. EMA/HMPC/198794/2012.",
+          "Zanoli P et al. (2005). New perspectives on the role of melatonin in sleep. CNS Neurosci Ther. [contexto]",
+          "Schiller H et al. (2006). Sedating effects of Humulus lupulus L. extracts. Phytomedicine.",
+          "Milligan SR et al. (2000). Identification of a potent phytoestrogen in hops. J Clin Endocrinol Metab.",
+          "Stevens JF & Page JE. (2004). Xanthohumol and related prenylflavonoids from hops. Phytochemistry."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Alto (4–5/5) — traço dominante",
+            "observacao": "Alfa-ácidos (humulona, cohumulona). Amargor resinoso e limpo — 'amargor de cerveja' para quem conhece; impactante para quem não está familiarizado."
+          },
+          {
+            "dimensao": "Resinoso-floral",
+            "intensidade": "Alto (3–4/5)",
+            "observacao": "Terpenos (mirceno, linalol, geraniol). Complexidade aromática única — floral com fundo de pinheiro e especiaria."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Moderada (2/5)",
+            "observacao": "Taninos e beta-ácidos. Sensação seca que complementa o amargor."
+          },
+          {
+            "dimensao": "Notas picantes/herbais",
+            "intensidade": "Leve (1–2/5)",
+            "observacao": "Terpenos sesquiterpênicos (humuleno, cariofileno) — assinatura herbal-picante característica do lúpulo."
+          }
+        ],
+        "olfativo_familia": "Resinoso-floral complexo; família única — não tem equivalente direto entre ervas medicinais.",
+        "olfativo_descritores": [
+          "resina de pinheiro e abeto",
+          "flores brancas tropicais",
+          "notas cítricas (limão-bergamota)",
+          "especiaria herbal (pimenta branca distante)",
+          "fundo de terra úmida de floresta"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Baixa-moderada",
+            "molecula": "Humuleno e beta-cariofileno — leve frescor-picante resinoso"
+          }
+        ],
+        "tatil": "Corpo médio-alto com leve viscosidade resinosa. Finalização amarga prolongada e levemente seca.",
+        "descricao_integrada": "O lúpulo é o único fitoterápico que a maioria das pessoas conhece sensorialmente antes de saber que é medicinal — pelo gole de cerveja. A infusão, muito mais concentrada em ativos que a cerveja (onde o lúpulo é diluído em malte e fermentação), entrega o amargor resinoso em sua forma mais pura e o aroma complexo sem o álcool. Para apreciadores de cerveja artesanal, é uma experiência de reconhecimento imediato e prazerosa. Para os outros, é um chá de amargor farmacológico que pede dosagem baixa e hora certa: exclusivamente à noite."
       },
       "cultura": {
-        "historia": "O lúpulo é a erva que transformou a cerveja de bebida de sobrevivência em arte. Por milênios, a cerveja era preservada com \"gruit\" — mistura de ervas (losna, mil-folhas, mirto-do-pântano). No século XI, monges beneditinos alemães introduziram o lúpulo como único preservativo e aromatizante — o amargor bacteriostático do humulono eliminava concorrentes. Foi a maior revolução sensorial da história das bebidas fermentadas.  As colhedoras de lúpulo do sudeste da Inglaterra e da Bavária desenvolviam sonolência intensa durante a colheita — os dedos absorviam 2-metil-3-buten-2-ol pelo contato direto com os cones. Esse efeito colateral documentou empiricamente a ação sedativa séculos antes da farmacologia.",
-        "cerimonial": "",
-        "brasil": "O lúpulo é a erva europeia que chegou ao Brasil pela cultura da cerveja artesanal — e que o mercado de chás funcionais está apenas começando a explorar. A identidade sensorial do lúpulo (o amargor da IPA) abre possibilidades de blends de chá com posicionamento premium masculino absolutamente inéditos.",
-        "curiosidade": ""
+        "historia": "O uso do lúpulo na cerveja foi documentado pela primeira vez no século IX na Europa central (Alemanha, Boêmia), mas evidências arqueológicas sugerem uso anterior. Antes do lúpulo, a cerveja era aromatizada com 'gruit' — misturas de ervas como mirto, absinto e angélica. A transição para o lúpulo no século XII–XIV foi impulsionada por dois fatores: o amargor do lúpulo conserva a cerveja (antibacteriano), e os mosteiros alemães perceberam que monges cervejeiros dormiam melhor e eram 'menos tentados por pensamentos carnais' — a primeira observação documentada do efeito sedativo-antiafrodisíaco do lúpulo. A Igreja Católica medieval promoveu o lúpulo como substituto do gruit por razões disciplinares, inadvertidamente distribuindo o primeiro fitoterápico sedativo de massa da história europeia.",
+        "cerimonial": "Sem uso cerimonial documentado. O uso sedativo foi descoberto de forma completamente prática e secular — pelos efeitos observados em colhedores e consumidores de cerveja.",
+        "brasil": "O Brasil é o maior mercado de cerveja da América Latina e um dos maiores do mundo — e praticamente todo o lúpulo usado é importado (principalmente de EUA e Alemanha). A expansão recente de cervejarias artesanais criou interesse em cultivo local, com experimentos bem-sucedidos no RS e SC. Para uso medicinal fitoterápico, o lúpulo ainda é pouco utilizado no Brasil — farmácias de manipulação do sul e sudeste oferecem cápsulas de extrato seco, principalmente em combinação com valeriana para insônia.",
+        "curiosidade": "8-prenilnaringenina (8-PN) do lúpulo é o fitoestrógeno de maior afinidade ao receptor estrogênico já identificado na natureza — supera a isoflavona da soja (genisteína) e o lignano da linhaça em potência. Isso foi descoberto quando cervejarias na Alemanha nos anos 1990 notaram que operadoras do processo de colheita de lúpulo — que manuseavam os estróbilos úmidos por horas a fio — tinham ciclos menstruais irregulares e outros efeitos estrogênicos. A investigação farmacológica identificou o 8-PN como a molécula responsável. A cerveja artesanal tem 8-PN em traços — muito abaixo do nível de atividade estrogênica clinicamente relevante. Mas o episódio revelou um dos fitoestrógenos mais potentes da natureza escondido em uma planta conhecida de todos."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido.",
-        "status_ema": "Monografia HMPC — well-established use para insônia.",
-        "status_fda": "GRAS para uso alimentar (lúpulo em cerveja).",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita: agosto–setembro (Europa); escassa produção nacional"
+        "eixo_botanico_tpc": "Planta medicinal tradicional com monografia EMA/HMPC — sedativo e ansiolítico de uso tradicional reconhecido.",
+        "status_anvisa": "Sem monografia específica publicada na IN 02/2014 para Humulus lupulus. Comercialização como droga vegetal e extrato seco em cápsulas permitida como suplemento alimentar.",
+        "status_ema": "EMA/HMPC (2014): monografia publicada — uso tradicional reconhecido para insônia leve e estados de nervosismo/ansiedade. Well-established use em combinação com valeriana.",
+        "status_fda": "GRAS para uso em alimentos (cerveja). Sem avaliação formal como fitoterápico sedativo.",
+        "certificacao_organica": "Cultivo orgânico de lúpulo crescente — especialmente em EUA (Oregon) e Alemanha. Certificações USDA Organic e EU Organic disponíveis.",
+        "sazonalidade": "Colheita: agosto–setembro no hemisfério norte. Brasil (RS/SC): fevereiro–março. Estróbilos secos: disponíveis o ano todo no comércio."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Lojistas de cerveja artesanal (pellets de lúpulo para produção) — maior disponibilidade no Brasil",
+          "Farmácias de manipulação — extrato seco em cápsulas (combinado com valeriana)",
+          "Lojas de produtos naturais — estróbilos secos importados",
+          "Importadores de insumos fitoterápicos europeus (Alemania, República Tcheca)"
+        ],
+        "faixa_de_preco": "Pellets para cerveja: R$ 20–60/100g (variedades aromáticas). Estróbilos secos (uso medicinal): R$ 25–50/50g. Cápsulas extrato seco (combinado valeriana+lúpulo): R$ 30–80.",
+        "formatos": [
+          "Estróbilos secos (infusão — uso medicinal)",
+          "Pellets de lúpulo (homebrew — uso culinário/cervejeiro)",
+          "Extrato seco em cápsulas (suplemento)",
+          "Tintura alcoólica",
+          "Combinação valeriana+lúpulo (cápsulas — uso sedativo clínico)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O sedativo mais bem validado da Europa",
+          "texto": "O lúpulo tem monografia EMA/HMPC para insônia e ansiedade leve — e em combinação com valeriana, acumula o maior volume de ensaios clínicos entre fitoterápicos sedativos. 2-metil-3-buten-2-ol modula GABA-A com mecanismo similar a benzodiazepínicos, sem o risco de dependência nas doses fitoterápicas. É a planta sedativa mais rigorosamente validada da fitoterapia ocidental."
+        },
+        {
+          "label": "A Igreja Católica distribuiu o primeiro sedativo de massa da história",
+          "texto": "Monges medievais que perceberam que cervejeiros dormiam melhor e eram 'menos libidinosos' promoveram a substituição do gruit pelo lúpulo nas cervejarias monásticas — inadvertidamente distribuindo, através da cerveja, o primeiro fitoterápico sedativo de massa da Europa medieval. A história da medicina fitoterapêutica tem poucos momentos tão irônicos e consequentes."
+        },
+        {
+          "label": "O fitoestrógeno mais potente da natureza",
+          "texto": "8-prenilnaringenina (8-PN) supera genisteína da soja e lignanos da linhaça em afinidade ao receptor estrogênico. Descoberta quando colhedoras industriais de lúpulo desenvolviam ciclos irregulares por exposição ocupacional aos estróbilos úmidos. A cerveja tem 8-PN em traços abaixo de qualquer relevância clínica — mas o episódio revelou uma molécula com potencial terapêutico e risco real em cânceres hormônio-dependentes."
+        },
+        {
+          "label": "Da cerveja à farmácia: o único fitoterápico que todo mundo conhece",
+          "texto": "O lúpulo é o único fitoterápico sedativo que a maioria das pessoas já experimentou — em cada gole de cerveja. A infusão medicinal entrega os mesmos compostos ativos em concentração muito maior, sem álcool e com hora certa: exclusivamente à noite. Conhecer o lúpulo como medicamento é descobrir o outro lado de uma planta que já é parte da vida cotidiana."
+        }
+      ]
     },
     {
       "slug": "equinacea",
