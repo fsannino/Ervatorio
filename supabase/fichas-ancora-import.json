@@ -12608,522 +12608,1040 @@
       "slug": "bocaiuva",
       "nome_popular": "Bocaiuva",
       "nome_cientifico": "Acrocomia aculeata (Jacq.) Lodd. ex Mart.",
-      "tagline": "A palmeira nutritiva do pantanal — fruto com perfil lipídico excepcional, antioxidante máximo entre as palmeiras brasileiras e potencial de exportação como \"superalimento pantaneiro\" ainda inexplorado.",
+      "tagline": "A palmeira de mil usos do Pantanal e Cerrado — alimento funcional com ácido oleico superior ao azeite, carotenoides excepcionais e potencial como bioenergia do futuro que não compete com a produção de alimentos.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Acrocomia aculeata (Jacq.) Lodd. ex Mart.",
-        "familia_botanica": "Arecaceae (palmeiras)",
-        "tipo_botanico": "Alimento funcional / óleo nutritivo",
-        "parte_usada": "Polpa do fruto (óleo e farinha); amêndoa (óleo de amendoa de bocaiuva); palmito (alimentar).",
+        "familia_botanica": "Arecaceae (Palmae)",
+        "tipo_botanico": "Alimento funcional / Oleaginosa tropical multifuncional",
+        "parte_usada": "Polpa do fruto (alimentar, óleo); amêndoa (óleo — cosmético e alimentar); palmito (alimentar); folhas jovens (forragem); tronco (estipe — reserva de água).",
         "sinonimos": [
-          "Bocaiuva · bocaiúva · macaúba · macaíba (variantes regionais)",
-          "Macaw palm (inglês) · Mocaya (espanhol sul-americano)",
-          "Mbocayá (guarani — \"palmeira espinhenta\")"
+          "bocaiuva · macaúba · coco-de-espinho · mocujá · mucujê · grugru",
+          "Acrocomia totai Mart. (espécie afim do Pantanal — às vezes tratada como sinônimo)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Coco tropical, palmeira, levemente frutado.",
-        "cor_da_infusao": "",
-        "intensidade": "3/5 — sabor agradável e marcante.",
-        "notas": "",
-        "bioma_de_origem": "Pantanal e Cerrado — MT, MS, GO, MG, SP; toda a América tropical.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Polpa: doce-gorduroso com notas de caramelo e coco tropical; textura cremosa característica. Óleo: suave, levemente amendoado, sem o ardor do dendê.",
+        "aroma": "Polpa: adocicado-tropical, reminiscente de coco com caramelo e notas de baunilha. Óleo de polpa: neutro-amendoado. Óleo de amêndoa: mais intenso, com notas de avelã.",
+        "cor_da_infusao": "Infusão não é o modo de preparo principal. Suco/vitamina: amarelo-alaranjado intenso por carotenoides. Óleo de polpa: amarelo-dourado. Óleo de amêndoa: amarelo-claro a incolor.",
+        "intensidade": "Polpa: 4/5 — sabor marcante e adocicado. Óleo: 2/5 — sabor neutro e elegante.",
+        "notas": "A bocaiuva não é uma planta medicinal no sentido estrito — é um alimento funcional denso de nutrientes. Seu valor medicinal decorre da composição nutricional excepcional: ácidos graxos, carotenoides, vitamina E e minerais em concentrações superiores às de culturas oleaginosas convencionais.",
+        "bioma_de_origem": "Cerrado e Pantanal — MT, MS, GO, MG, BA; ampla distribuição na América tropical (do México à Argentina).",
+        "distribuicao_geografica": [
+          "Mato Grosso do Sul e Mato Grosso: maior concentração no Pantanal e Cerrado",
+          "Goiás e Minas Gerais: Cerrado — bocaiuvais nativos e plantios",
+          "Bahia e Piauí: caatinga e cerrado — espécie afim A. intumescens",
+          "América Central ao norte da Argentina: distribuição pan-tropical"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "Polpa fresca: consumo in natura ou suco (sem calor — preservar carotenoides e vitamina E). Óleo: uso culinário até 200 °C (ponto de fumaça estável por alto teor de ácido oleico).",
+        "tempo_de_infusao": "Não se aplica — alimento funcional, não chá. Extração de óleo artesanal: polpa cozida + prensagem (método tradicional pantaneiro).",
+        "quantidade": "Polpa fresca: 50–100 g/porção (suco, mingau, vitamina). Óleo: 1–2 colheres de sopa/dia (uso culinário ou suplementação).",
+        "metodo": "Polpa: liquidificar com água, leite de coco ou leite para vitamina/suco. Mingau: cozinhar polpa com leite e mel. Óleo: extração a frio (cold press) ou prensagem a quente da polpa seca.",
+        "reinfusoes": "Não se aplica.",
+        "melhor_momento": "Suco/polpa: café da manhã (carga de carotenoides e energia). Óleo: uso culinário diário como substituto de azeite.",
+        "combina_com": "Leite de coco (sinergia de sabor), mel silvestre do Pantanal, castanha-de-caju, banana-da-terra, tapioca, polvilho. Óleo: marinadas, refogados, tempero frio (saladas)."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Tradicional + uso cosmético documentado — óleo de amêndoa amplamente usado.",
+        "aplicacoes": [
+          {
+            "titulo": "Óleo de amêndoa — hidratante e emoliente capilar",
+            "texto": "Óleo de amêndoa de macaúba é rico em ácido láurico e oleico — penetra no córtex capilar, reduz perda proteica por higroscopicidade e fornece brilho. Usado em cosméticos capilares premium brasileiros (linha Natura Ekos, entre outros). Aplicação direta no cabelo ou como pré-shampoo."
+          },
+          {
+            "titulo": "Óleo de polpa — antioxidante cutâneo",
+            "texto": "Óleo de polpa rico em β-caroteno e vitamina E. Uso tópico como óleo facial antienvelhecimento (antioxidante, regenerador). Cor amarelo-intensa limita uso cosmético sem refinamento."
+          }
+        ],
+        "contraindicacoes": "Alergia a Arecaceae (palmeiras) — rara mas possível. Óleo não refinado: cor intensa pode manchar roupas e pele clara temporariamente."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antioxidante potente (carotenóides — superior ao dendê)",
-          "Nutritivo excepcional (perfil lipídico, proteína, fibra)",
-          "Cardioprotetor (ácido oleico e laurico)",
-          "Energético de baixo índice glicêmico",
-          "Anti-inflamatório (ácidos graxos)",
-          "Componentes ativos:",
-          "Contraindicações: Sem contraindicações relevantes. Moderação em dietas com restrição de gorduras saturadas (ácido láurico)."
+          "Nutrição funcional densa (ácidos graxos monoinsaturados, carotenoides, vitamina E, minerais)",
+          "Antioxidante (β-caroteno, tocoferóis, compostos fenólicos da polpa)",
+          "Hipolipemiante potencial (ácido oleico — perfil similar ao azeite de oliva)",
+          "Imunomodulador nutricional (carotenoides pró-vitamina A)",
+          "Neuroprotetor potencial (tocoferóis — vitamina E)"
         ],
         "componentes_ativos": [
           {
-            "label": "BETA-CAROTENO (óleo de polpa)",
-            "texto": "Superior ao dendê — Antioxidante, pró-vitamina A"
+            "label": "ÁCIDO OLEICO (C18:1 ω-9) — óleo de polpa: 55–65%",
+            "texto": "Teor de ácido oleico superior ao de muitos azeites de oliva comerciais. Cardioprotegente: reduz LDL-colesterol sem reduzir HDL, inibe oxidação de LDL, reduz marcadores inflamatórios (PCR, IL-6). Estabilidade oxidativa elevada — resistente ao calor e ranço. Base da valorização do óleo de bocaiuva como 'azeite brasileiro'."
           },
           {
-            "label": "ÁCIDO OLEICO (C18:1)",
-            "texto": "50–60% (óleo amêndoa) — Cardioprotetor"
+            "label": "β-CAROTENO e CAROTENOIDES (polpa: 100–2.000 μg/100g)",
+            "texto": "Concentração de β-caroteno na polpa fresca comparável ou superior à cenoura crua. Pró-vitamina A essencial; antioxidante lipossolúvel; proteção ocular (luteína, zeaxantina em menor quantidade). Cor alaranjada intensa da polpa é marcador visual de riqueza em carotenoides."
           },
           {
-            "label": "ÁCIDO LÁURICO (C12:0)",
-            "texto": "40–50% (óleo amêndoa) — Antimicrobiano, energético"
+            "label": "TOCOFERÓIS (vitamina E) — óleo de amêndoa: alto teor",
+            "texto": "α-tocoferol e γ-tocoferol no óleo de amêndoa. Antioxidantes lipofílicos — protegem membranas celulares, lipoproteínas e DNA de dano oxidativo. Neuroprotetores (declínio cognitivo associado à deficiência de vitamina E). Estabilizadores naturais do óleo — prolongam vida útil sem conservantes."
           },
           {
-            "label": "TOCOFERÓIS (vitamina E)",
-            "texto": "Altos — Antioxidante"
+            "label": "ÁCIDO LÁURICO (C12:0) — óleo de amêndoa: 40–50%",
+            "texto": "Ácido graxo saturado de cadeia média com propriedades antimicrobianas (destruição de envelope lipídico de vírus e bactérias). Metabolismo energético preferencial — oxidação mitocondrial rápida sem acúmulo como gordura ectópica. Mesmo perfil do óleo de coco."
           },
           {
-            "label": "PROTEÍNA",
-            "texto": "11–13% (farinha) — Nutritivo"
-          },
-          {
-            "label": "FIBRAS",
-            "texto": "15–20% (farinha) — Prebiótico, saciedade"
+            "label": "MINERAIS (ferro, cálcio, potássio, magnésio — polpa)",
+            "texto": "Polpa com concentrações relevantes de ferro não-heme e cálcio para uma fruta tropical. Magnésio: cofator de mais de 300 reações enzimáticas. Potássio: regulação pressão arterial e função muscular."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Suporte nutricional / deficiência de vitamina A (carotenoides)",
+            "evidencia": "Boa — composição nutricional documentada; dados in vivo em modelos animais de deficiência de vitamina A confirmam eficácia de polpa de bocaiuva",
+            "populacao": "Populações com risco de hipovitaminose A — especialmente crianças e gestantes em regiões de Cerrado e Pantanal."
+          },
+          {
+            "indicacao": "Saúde cardiovascular (ácido oleico)",
+            "evidencia": "Moderada por analogia com azeite de oliva (mesmo perfil de AG); dados diretos com óleo de bocaiuva em humanos: preliminares",
+            "populacao": "Adultos com dislipidemia leve."
+          }
+        ],
+        "contraindicacoes": "Alimento seguro em quantidades alimentares normais. Óleo: alta densidade calórica — controlar quantidade em dietas de restrição calórica. Sem contraindicações médicas conhecidas para uso alimentar.",
+        "interacoes": [
+          {
+            "label": "Anticoagulantes (varfarina)",
+            "texto": "Vitamina E em doses altas (> 400 UI/dia — muito acima do consumo alimentar) pode potencializar efeito anticoagulante. Consumo alimentar normal: sem risco clínico."
+          }
+        ],
+        "efeitos_adversos": "Alimento seguro. Consumo excessivo de polpa: diarreia (fibras + gorduras em excesso). Raro: alergia a proteínas de Arecaceae.",
+        "dose_maxima": "Sem dose máxima estabelecida para uso alimentar. Óleo: 2–4 colheres de sopa/dia em contexto de dieta equilibrada.",
+        "fontes": [
+          "Coimbra MC & Jorge N. (2011). Fatty acids and bioactive compounds of the pulps and kernels of Acrocomia aculeata. J Sci Food Agric.",
+          "Sanjinez-Argandoña EJ & Chuba CAM. (2011). Biometrical, physical and chemical characterization of bocaiuva fruits. Rev Bras Frutic.",
+          "Hiane PA et al. (2006). Bocaiuva, Acrocomia aculeata: characterization and chemical composition. Ciênc Tecnol Aliment.",
+          "Motta PEF et al. (2002). Ocorrência da macaúba em Minas Gerais. Pesq Agropec Bras.",
+          "Embrapa Agroenergia — Macaúba: base de dados de composição e usos."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Dulçor",
+            "intensidade": "Alto (4/5) — polpa madura",
+            "observacao": "Açúcares simples e gorduras criam doçura cremosa e persistente. Maturação avançada intensifica o dulçor."
+          },
+          {
+            "dimensao": "Gorduroso-cremoso",
+            "intensidade": "Alto (4/5) — traço identitário",
+            "observacao": "Ácido oleico e láurico criam textura e sabor gorduroso agradável, sem o amargor do dendê ou a agressividade de alguns cocos."
+          },
+          {
+            "dimensao": "Notas de caramelo e baunilha",
+            "intensidade": "Moderada (2–3/5)",
+            "observacao": "Reação de Maillard em polpa madura. Notas complexas que elevam o perfil acima de uma simples fruta oleaginosa."
+          },
+          {
+            "dimensao": "Acidez",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Ácidos orgânicos em concentração baixa. Equilíbrio com o dulçor."
+          }
+        ],
+        "olfativo_familia": "Tropical-cremoso; família dos cocos e palmeiras tropicais com notas de caramelo.",
+        "olfativo_descritores": [
+          "coco tropical maduro",
+          "caramelo suave",
+          "baunilha silvestre",
+          "notas de avelã (óleo de amêndoa)",
+          "fruta tropical madura"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Termorreceptores (TRPV1 discreto)",
+            "ativacao": "Mínima",
+            "molecula": "Sem componentes pungentes ou picantes relevantes — perfil sensorial suave e palatável"
+          }
+        ],
+        "tatil": "Polpa fresca: cremosa, pastosa, levemente fibrosa. Suco: encorpado, aveludado por carotenoides e gorduras em emulsão.",
+        "descricao_integrada": "A bocaiuva é o alimento mais generoso do Cerrado e do Pantanal — uma palmeira que dá azeite, suco, vitamina, óleo capilar, biocombustível e alimenta o gado tudo de uma vez. Sensorialmente é uma festa tropical controlada: doce sem ser enjoativa, cremosa sem ser pesada, perfumada sem ser exuberante. O suco amarelo-alaranjado é visualmente exuberante e saboroso com uma intensidade que justifica o apelido popular de 'coco-de-ouro'."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A bocaiuva é o fruto-símbolo do Mato Grosso do Sul — objeto de festival anual em Miranda (MS) e ingrediente de pratos típicos pantaneiros (sorvete, pamonha, cupcake de bocaiuva). É o \"açaí do Pantanal\" — com potencial de exportação como superalimento ainda quase inexplorado.  A EMBRAPA e universidades do MS investem na industrialização da bocaiuva como alternativa à macaúba (espécie irmã) no mercado de biocombustíveis e alimentos funcionais. O desafio é o mesmo de outros produtos da bioeconomia brasileira: transformar matéria-prima extrativista em produto de valor agregado com identidade de origem.",
-        "curiosidade": ""
+        "historia": "A bocaiuva (macaúba) foi um dos alimentos mais importantes das populações indígenas do Brasil Central e do Pantanal — especialmente para os Guaná, Terena, Kadiwéu e Bororo. A polpa era consumida fresca e seca, o óleo era usado culinário e cosmético, e o estipe armazenava água em épocas de seca. Viajantes europeus do século XIX como Hercule Florence e Auguste de Saint-Hilaire registraram o uso extensivo da macaúba pelas populações pantaneiras. No século XX, com a expansão da agropecuária, os bocaiuvais nativos foram drasticamente reduzidos — mas a espécie sobreviveu em beiras de estrada e pastagens por ser espinhosa demais para o gado derrubar.",
+        "cerimonial": "Entre os Terena (Pantanal sul), a macaúba integra o repertório de alimentos de festas e rituais de colheita. O óleo era usado em rituais de adorno corporal — cabelos e pele ungidos com óleo de macaúba tinham significado estético e simbólico de saúde e prosperidade. Sem registros de uso cerimonial exclusivo ou restrito.",
+        "brasil": "O Brasil tem o maior bocaiuval nativo do mundo — estima-se mais de 150 milhões de palmeiras em estado silvestre no Cerrado e Pantanal, sem contar plantios. A Embrapa Agroenergia e várias universidades (UFV, UFMS, UFMT) desenvolvem pesquisa intensa para consolidar a macaúba como cultura oleaginosa de baixo impacto ambiental — sua produção de óleo por hectare (até 4.000 litros/ha) supera a soja (450 L/ha) e o girassol (900 L/ha) sem desmatar. A Natura usa óleo de amêndoa de macaúba na linha Ekos, e produtores artesanais de MT e MS vendem polpa congelada e óleo prensado a frio com crescente sucesso no mercado gourmet.",
+        "curiosidade": "A macaúba tem um paradoxo agronômico fascinante: é das plantas mais produtivas em óleo do planeta, cresce em solos pobres sem irrigação, resiste à seca, não compete com culturas alimentares — mas é quase impossível de cultivar em larga escala porque seus espinhos destroem máquinas colheitadeiras convencionais. Toda a produção atual é de extrativismo ou colheita manual. A barreira tecnológica é um problema de engenharia que, se resolvido, pode transformar a macaúba na cultura de biocombustível tropical mais sustentável já desenvolvida."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Alimento funcional",
-        "status_anvisa": "Alimento. Óleo: em processo de regulamentação como ingrediente.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutificação: junho–setembro (Pantanal/MS)"
+        "eixo_botanico_tpc": "Alimento funcional / PAOV (Produto Alimentício de Origem Vegetal) — não enquadrado como planta medicinal. Óleo: produto alimentício regulado pela ANVISA.",
+        "status_anvisa": "Polpa e óleo: alimentos convencionais (GGALI/ANVISA). Óleo de macaúba: sem regulação específica distinta de outros óleos vegetais. Cosmético (óleo de amêndoa): regulado como cosmético grau 2.",
+        "status_ema": "Não avaliada.",
+        "status_fda": "GRAS implícito para uso alimentar. Sem avaliação formal.",
+        "certificacao_organica": "Extrativismo sustentável em bocaiuvais nativos: certificação por manejo (IBD, USDA Organic) crescente em MT e MS. Plantios com manejo orgânico em desenvolvimento.",
+        "sazonalidade": "Frutificação: março–julho (outono-inverno austral) no Cerrado. Pantanal: fevereiro–junho. Polpa congelada: disponível o ano todo de produtores artesanais."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Produtores artesanais de MT, MS, GO — polpa congelada e óleo prensado a frio",
+          "Natura Ekos — óleo de amêndoa de macaúba em cosméticos",
+          "Mercados locais de Campo Grande, Cuiabá, Rondonópolis",
+          "Lojas online de produtos do Cerrado/Pantanal (Ciliada, Cerrado Gourmet)"
+        ],
+        "faixa_de_preco": "Polpa congelada: R$ 20–40/kg. Óleo de polpa prensado a frio: R$ 60–120/250ml. Óleo de amêndoa: R$ 80–150/250ml.",
+        "formatos": [
+          "Polpa congelada (suco, vitamina, mingau)",
+          "Óleo de polpa prensado a frio (culinário e suplementação)",
+          "Óleo de amêndoa prensado a frio (culinário e cosmético)",
+          "Farinha da polpa seca (panificação artesanal)",
+          "Cosmético com óleo de amêndoa (shampoo, condicionador, creme)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O azeite brasileiro que supera o azeite de oliva",
+          "texto": "O óleo de polpa de bocaiuva tem teor de ácido oleico (55–65%) comparável ao melhor azeite de oliva extravirgem — com estabilidade oxidativa superior por seu perfil de tocoferóis nativos. Produz até 4.000 litros de óleo/hectare sem irrigação em solos pobres, ante os 500 litros do olivai mediterrâneo. A barreira: a colheita dos frutos espinhosos ainda não foi mecanizada."
+        },
+        {
+          "label": "Mais β-caroteno que a cenoura",
+          "texto": "A polpa alaranjada de bocaiuva concentra β-caroteno em teores comparáveis ou superiores à cenoura crua — com o bônus de ser emulsionada em gordura (óleo oleico), o que aumenta drasticamente a biodisponibilidade dos carotenoides. A mesma refeição entrega pró-vitamina A com absorção muito superior ao suco de cenoura em água."
+        },
+        {
+          "label": "150 milhões de palmeiras esperando ser colhidas",
+          "texto": "O Brasil tem o maior bocaiuval nativo do mundo — 150 milhões de palmeiras silvestres no Cerrado e Pantanal. Produção de óleo que poderia substituir soja e dendê sem desmatar um centímetro quadrado adicional, em solos que já foram desmatados. O único obstáculo é tecnológico: os espinhos que protegem a palmeira destroem as colheitadeiras. Um problema de engenharia com potencial de transformar a economia do biocombustível tropical."
+        },
+        {
+          "label": "Alimento, combustível, cosmético e forragem — na mesma planta",
+          "texto": "A bocaiuva não conhece resíduo: polpa vira alimento e óleo combustível; amêndoa vira óleo cosmético e alimentar; torta da extração vira ração; palmito vira alimento; estipe armazena água; folhas viram forragem. É o sistema de uso integral mais completo entre as palmeiras brasileiras — e provavelmente a candidata mais séria a 'planta do futuro' do Cerrado."
+        }
+      ]
     },
     {
       "slug": "assa-peixe",
       "nome_popular": "Assa-Peixe",
       "nome_cientifico": "Vernonia polyanthes Less.",
-      "tagline": "O expectorante dos brejos — anti-inflamatório respiratório do pantanal e cerrado com tradição popular robusta e ação broncodilatadora confirmada.",
+      "tagline": "A amarga do Cerrado e do Pantanal — expectorante, antibacteriana e anti-inflamatória respiratória com glicosídeos sesquiterpênicos que fundamentam o uso ancestral para tosse, bronquite e gripe nos campos do Brasil central.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Vernonia polyanthes Less.",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico expectorante / broncodilatador",
-        "parte_usada": "Folhas secas; casca em decocção.",
+        "familia_botanica": "Asteraceae (Compositae)",
+        "tipo_botanico": "Planta medicinal expectorante / anti-inflamatória respiratória",
+        "parte_usada": "Folhas (infusão — uso principal); cascas do caule (decocção — uso popular secundário).",
         "sinonimos": [
-          "Assa-peixe · assa-peixe-branco · cambarataia",
-          "ATENÇÃO: diversas espécies de Vernonia são chamadas \"assa-peixe\" no Brasil — confirmar espécie."
+          "assa-peixe · cambará-do-campo · cambará-amargo · erva-de-touro · fumacinha",
+          "Vernonia ferruginea Less. (espécie afim com usos similares)",
+          "Nota: não confundir com cambará-branco (Lantana camara) — espécie diferente"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-herbáceo moderado, levemente resinoso, terroso.",
-        "aroma": "Herbáceo-resinoso, fundo de caferana, levemente defumado.",
-        "cor_da_infusao": "Amarelo-esverdeado a âmbar. #B0A840",
-        "intensidade": "3/5 — medicinal tolerável.",
-        "notas": "",
-        "bioma_de_origem": "Pantanal, Cerrado, Mata Atlântica interior — MT, MS, GO, MG, SP.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Intensamente amargo — um dos amarores mais marcantes entre as ervas medicinais brasileiras. Retrogusto amargo-resinoso persistente.",
+        "aroma": "Herbáceo-resinoso intenso com notas campeiras e leve toque de eucalipto; característico e memorável.",
+        "cor_da_infusao": "Castanho-escuro a verde-escuro; levemente turva. Cor intensa reflete alta concentração de princípios ativos.",
+        "intensidade": "5/5 — amargo extremo; planta de uso puramente medicinal, não hedônico. Requer adoçante ou diluição para consumo.",
+        "notas": "O nome 'assa-peixe' tem origem curiosa: a fumaça da queima da planta seria usada para defumar peixes (assa-peixe = defumador de peixe). Outra versão: o odor da planta ao arder lembraria peixe assado. A etimologia exata é debatida.",
+        "bioma_de_origem": "Cerrado e Pantanal — MT, MS, GO, MG, SP; campos abertos, bordas de mata, terrenos perturbados.",
+        "distribuicao_geografica": [
+          "Cerrado central (GO, MG, MT, MS): maior concentração e uso medicinal",
+          "São Paulo (interior): campos de cerrado remanescentes",
+          "Pantanal (MT, MS): bordas e transições de campo-mata",
+          "Uruguai e Argentina: espécies afins do gênero Vernonia com usos similares"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C | Tempo: 8–10 min coberto | Quantidade: 2–4 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "2–4 g/250 ml",
-        "metodo": "Infusão coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã e tarde em episódios respiratórios.",
-        "combina_com": "Mel · Guaco · Eucalipto · Cambará (blends respiratórios pantaneiros)"
+        "temperatura_ideal": "90–95 °C. Infusão ou decocção breve — ambas extraem glicosídeos sesquiterpênicos responsáveis pela ação expectorante.",
+        "tempo_de_infusao": "8–12 minutos coberto (infusão). Decocção: 5 min fervura + 10 min repouso coberto.",
+        "quantidade": "Folhas secas: 3–5 g / 200 ml. Reduzir para 2–3 g se amargor for intolerável — aumentar gradualmente.",
+        "metodo": "Infusão coberta. Para uso expectorante: beber quente com mel. Decocção de casca: para usos anti-inflamatórios mais intensos.",
+        "reinfusoes": "Não recomendada — a 2ª infusão é ainda mais amarga com menor concentração de ativos.",
+        "melhor_momento": "Início de quadros gripais e respiratórios. 2–3 xícaras/dia com mel. Não usar à noite (efeito estimulante discreto).",
+        "combina_com": "Mel (suaviza amargor e potencializa ação antibacteriana), gengibre (sinergia expectorante), própolis verde, guaco (sinergia broncodilatadora), limão."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Etnobotânico — uso popular em inalações e compressas; dados in vitro confirmam atividade.",
+        "aplicacoes": [
+          {
+            "titulo": "Inalação (descongestionante nasal e brônquico)",
+            "texto": "Decocção concentrada de folhas em recipiente fechado, inalação do vapor por 10–15 minutos com toalha sobre a cabeça. Uso popular amplamente documentado no Cerrado para sinusite, bronquite e gripe. Óleos essenciais (α-pineno, β-cariofileno) com atividade descongestionante."
+          },
+          {
+            "titulo": "Compressa anti-inflamatória (uso popular)",
+            "texto": "Decocção de folhas em compressa quente sobre peito e costas em bronquite. Uso popular registrado em comunidades rurais de GO e MT."
+          }
+        ],
+        "contraindicacoes": "Inalação: evitar em crianças menores de 3 anos (risco de broncoespasmo). Gestantes: sem dados de segurança para inalação."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Expectorante",
-          "Broncodilatador leve",
-          "Anti-inflamatório das vias aéreas",
-          "Antisséptico respiratório",
-          "Antipirético",
-          "Componentes ativos:",
-          "Contraindicações: Alergia à família Asteraceae. Gestação — cautela com lactonas sesquiterpênicas."
+          "Expectorante (glicosídeos sesquiterpênicos — estimulam secreção brônquica fluida)",
+          "Broncodilatador discreto (flavonoides — relaxamento de músculo liso brônquico)",
+          "Antibacteriano (ácido vernólico, glicosídeos — atividade contra S. aureus, Strep. pneumoniae)",
+          "Anti-inflamatório (lactonas sesquiterpênicas — inibição NF-κB, COX-2)",
+          "Antipirético (ácido clorogênico, compostos fenólicos)",
+          "Amargo tônico digestivo (amaror dos glicosídeos — estimula digestão)"
         ],
         "componentes_ativos": [
           {
-            "label": "LACTONAS SESQUITERPÊNICAS (vernolina, glaucolídeo)",
-            "texto": "Anti-inflamatório, broncodilatador"
+            "label": "LACTONAS SESQUITERPÊNICAS (vernolida, hirsutinolida, glaucolida)",
+            "texto": "Principal fração ativa. Responsáveis pelo amargor extremo e pela ação anti-inflamatória (inibição NF-κB e IKK — redução de citocinas pró-inflamatórias IL-1β, TNF-α). Atividade citotóxica seletiva em algumas linhagens tumorais in vitro. Mecanismo expectorante: estimulam secreção de muco brônquico menos viscoso, facilitando a expectoração."
           },
           {
-            "label": "FLAVONÓIDES (luteolina, apigenina)",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "ÁCIDO VERNÓLICO e DERIVADOS",
+            "texto": "Ácido graxo epoxidado característico do gênero Vernonia. Atividade anti-inflamatória e antimicrobiana. Potencial industrial como monômero de polímeros biodegradáveis — pesquisa em andamento."
           },
           {
-            "label": "SAPONINAS",
-            "texto": "Expectorante"
+            "label": "FLAVONOIDES (luteolina, apigenina, quercetina)",
+            "texto": "Broncodilatadores (relaxamento de músculo liso via inibição de fosfodiesterase), anti-inflamatórios, antioxidantes. Luteolina: ação antiasmática em modelos animais. Quercetina: inibição da liberação de histamina por mastócitos."
           },
           {
-            "label": "ÓLEOS ESSENCIAIS",
-            "texto": "Antisséptico respiratório"
+            "label": "ÁCIDO CLOROGÊNICO e DERIVADOS (ácido cafeico, ferrúlico)",
+            "texto": "Antipiréticos (inibição de síntese de prostaglandinas via COX), anti-inflamatórios, antioxidantes. Ácido clorogênico: inibição de COX-2 com potência comparável ao ibuprofeno in vitro."
+          },
+          {
+            "label": "ÓLEOS ESSENCIAIS (α-pineno, β-cariofileno, espatulenol)",
+            "texto": "Descongestionantes (α-pineno), anti-inflamatórios (β-cariofileno via CB2), antimicrobianos. Responsáveis pelo aroma resinoso-campeiro e pela eficácia das inalações."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Tosse produtiva, bronquite aguda, gripe (expectorante)",
+            "evidencia": "Moderada — uso etnobotânico extenso + mecanismo farmacológico plausível (lactonas sesquiterpênicas expectorantes); estudos in vitro e em modelos animais confirmam atividade",
+            "populacao": "Adultos; uso popular amplíssimo no Cerrado e Pantanal. Ensaios clínicos em humanos ausentes para V. polyanthes especificamente."
+          },
+          {
+            "indicacao": "Anti-inflamatório sistêmico",
+            "evidencia": "Preliminar a moderada (in vitro + modelos animais com extratos de Vernonia spp.)",
+            "populacao": "Sem ensaios clínicos específicos para indicação anti-inflamatória."
+          }
+        ],
+        "contraindicacoes": "Gestação: contraindicada — lactonas sesquiterpênicas têm potencial uterotônico (documentado para espécies de Vernonia em animais). Lactação: evitar. Crianças menores de 6 anos: sem dados de segurança. Alergia a Asteraceae: risco de reação cruzada (lactonas sesquiterpênicas são alergênicos comuns da família).",
+        "interacoes": [
+          {
+            "label": "Anticoagulantes (varfarina)",
+            "texto": "Ácido clorogênico e flavonoides podem interferir no metabolismo da varfarina via CYP1A2. Monitorar INR com uso concomitante."
+          },
+          {
+            "label": "Antidiabéticos",
+            "texto": "Ácido clorogênico inibe absorção intestinal de glicose. Potencialização discreta do efeito hipoglicemiante — monitorar glicemia."
+          }
+        ],
+        "efeitos_adversos": "Doses usuais: náusea por amargor intenso (comum em não habituados). Doses altas: vômito, cólicas. Alergia: dermatite de contato por lactonas sesquiterpênicas (especialmente em manipulação da planta fresca).",
+        "dose_maxima": "Folhas secas: 10 g/dia (2–3 xícaras × 3–5 g). Uso contínuo: máximo 2 semanas em episódios agudos; não usar cronicamente.",
+        "fontes": [
+          "Rates SMK. (2001). Plants as source of drugs. Toxicon.",
+          "Brito FA et al. (2004). Antiinflammatory activity of extracts of Vernonia polyanthes. Phytomedicine.",
+          "Agra MF et al. (2007). Synopsis of the plants known as medicinal and poisonous in Northeast of Brazil. Rev Bras Farmacogn.",
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum.",
+          "Simões CMO et al. (2017). Farmacognosia: do produto natural ao medicamento. Artmed."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Extremo (5/5) — traço dominante absoluto",
+            "observacao": "Lactonas sesquiterpênicas. Entre os amarores mais intensos da flora medicinal brasileira. Escala de referência: genciana europeia (amarissimo) é comparável."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Moderada (2–3/5)",
+            "observacao": "Taninos e ácidos fenólicos. Sobreposta ao amargor, cria finalização seca complexa."
+          },
+          {
+            "dimensao": "Resinoso-balsâmico",
+            "intensidade": "Moderado (2/5)",
+            "observacao": "Óleos essenciais e resinas contribuem com nota balsâmica que contrasta com o amargor puro — elemento redentório do perfil."
+          }
+        ],
+        "olfativo_familia": "Herbáceo-resinoso intenso com nota campestre e toque medicinal de eucalipto.",
+        "olfativo_descritores": [
+          "erva amarga do campo",
+          "notas de eucalipto-campeiro",
+          "resina de cerrado",
+          "fumacinha (odor levemente defumado)",
+          "fundo de artemísia"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Baixa-moderada",
+            "molecula": "α-pineno e lactonas sesquiterpênicas — leve frescor irritativo mucoso, reforça percepção expectorante"
+          }
+        ],
+        "tatil": "Corpo médio-alto por resinas. Finalização seca e prolongadamente amarga — sem recuperação hedônica.",
+        "descricao_integrada": "O assa-peixe é honesto ao ponto da brutalidade: não tenta agradar, não tem notas florais para seduzir, não suaviza o amargor com dulçor. É a medicina na forma mais direta — uma xícara que comunica inequivocamente 'estou aqui para curar, não para prazer'. Os bebedores experientes do Cerrado conhecem essa linguagem e confiam nela. Com mel abundante, o perfil ganha complexidade — o amargo profundo encontra o doce floral e cria uma tensão sensorial que funciona."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O assa-peixe é erva dos brejos e matas de galeria — planta que marca a presença d'água no cerrado e no pantanal. Seu uso popular como expectorante está profundamente integrado à medicina caseira do Brasil Central e Pantaneiro — especialmente em comunidades rurais de MT e MS onde o acesso a serviços de saúde é limitado.  O nome \"assa-peixe\" vem do uso das folhas para defumar e conservar peixe fresco antes de refrigeração — propriedade antimicrobiana dos óleos essenciais aplicada à conserva de alimentos.",
-        "curiosidade": ""
+        "historia": "O assa-peixe é uma das plantas medicinais mais populares do Brasil central — especialmente em Goiás, Minas Gerais e Mato Grosso do Sul. Documentado desde o século XVIII por naturalistas europeus que exploraram o Cerrado, aparece nos primeiros tratados de medicina popular brasileira como remédio de excelência para 'peito fraco', tosse crônica e catarro. Os tropeiros que cortavam o sertão goiano e mineiro carregavam folhas secas de assa-peixe nas alforjas como remédio de campo para doenças respiratórias dos companheiros e das tropas de gado.",
+        "cerimonial": "Sem uso cerimonial documentado. Planta de uso funcional e cotidiano nas comunidades rurais do Cerrado. A transmissão do conhecimento é doméstica — a receita passa de avó para neta como parte do repertório de saúde familiar.",
+        "brasil": "O assa-peixe consta na RENISUS (2009) e é uma das plantas com maior base de uso popular documentado no Brasil. Em Goiás, é cultivada em quintais medicinais de praticamente todas as cidades do interior. Farmácias de manipulação de Goiânia e Campo Grande formulam extratos de assa-peixe para xaropes e cápsulas expectorantes. A pesquisa universitária (UFG, UFMS, UFMG) tem documentado sistematicamente a composição fitoquímica e a atividade farmacológica, construindo base científica para uso regulado.",
+        "curiosidade": "O gênero Vernonia tem mais de 1.000 espécies distribuídas em regiões tropicais e subtropicais de todo o mundo — é um dos maiores gêneros das Asteraceae. Espécies africanas de Vernonia são usadas como vegetais folhosos (bitter leaf) no oeste e centro da África — as folhas amargas são cozidas e consumidas regularmente como alimento. A conexão evolutiva entre o assa-peixe brasileiro e o 'bitter leaf' nigeriano (V. amygdalina) ilustra como grupos humanos separados por oceanos descobriram independentemente as propriedades medicinais de plantas do mesmo gênero."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Uso tradicional reconhecido. RENISUS incluído.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: agosto–novembro"
+        "eixo_botanico_tpc": "Planta medicinal de uso tradicional — RENISUS (2009): Vernonia polyanthes listada como espécie de interesse para o SUS.",
+        "status_anvisa": "RENISUS: listada. Sem monografia de fitoterápico publicada na IN 02/2014. Comercialização como droga vegetal permitida. Extratos em fitoterápicos requerem registro.",
+        "status_ema": "Não avaliada.",
+        "status_fda": "Não avaliada.",
+        "certificacao_organica": "Extrativismo em Cerrado nativo — potencial de certificação por manejo. Cultivo em quintais medicinais amplamente praticado.",
+        "sazonalidade": "Folhas disponíveis o ano todo. Floração: março–junho (outono). Concentração de lactonas sesquiterpênicas: maior em folhas jovens da estação seca (abril–setembro)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Herbanárias do Centro-Oeste (GO, MT, MS, MG) — principal mercado",
+          "Feiras de plantas medicinais de Goiânia, Campo Grande, Uberlândia",
+          "Farmácias de manipulação do centro-oeste e sudeste",
+          "Lojas de produtos naturais com foco em plantas do Cerrado"
+        ],
+        "faixa_de_preco": "Folhas secas: R$ 8–20/50g. Xarope de assa-peixe (farmácias de manipulação): R$ 25–50/100ml.",
+        "formatos": [
+          "Folhas secas (infusão)",
+          "Xarope expectorante (farmácias de manipulação)",
+          "Extrato seco em cápsulas",
+          "Tintura alcoólica",
+          "Planta fresca (quintais medicinais — venda local)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O expectorante mais amargo do Cerrado",
+          "texto": "O assa-peixe tem um dos perfis de amargor mais intensos entre as plantas medicinais brasileiras — resultado de lactonas sesquiterpênicas (vernolida, hirsutinolida) que inibem NF-κB, estimulam secreção brônquica fluida e inibem bactérias respiratórias. A intensidade do amargor é proporcional à concentração de ativos: quanto mais amargo, mais potente."
+        },
+        {
+          "label": "Do tropeiro ao SUS",
+          "texto": "Carregado nas alforjas dos tropeiros que cortavam o sertão goiano no século XIX, o assa-peixe chegou ao século XXI listado na RENISUS como planta de interesse para o SUS. O caminho do remédio de campo ao sistema público de saúde é uma das trajetórias mais longas e mais legítimas da fitoterapia brasileira."
+        },
+        {
+          "label": "Bitter leaf: o irmão africano",
+          "texto": "Vernonia amygdalina (bitter leaf), do oeste africano, é consumida regularmente como vegetal alimentar em países como Nigéria e Camarões — as folhas amargas cozidas são um prato cotidiano. A conexão evolutiva com o assa-peixe (V. polyanthes) ilustra como grupos humanos em continentes separados descobriram independentemente o valor medicinal de um mesmo gênero vegetal."
+        }
+      ]
     },
     {
       "slug": "raiz-de-bugre",
       "nome_popular": "Raiz-de-Bugre",
       "nome_cientifico": "Cordia ecalyculata Vell.",
-      "tagline": "O diurético-emagrecedor do pantanal — termogênico natural com tradição popular para controle de peso e ação diurética documentada.",
+      "tagline": "O diurético emagrecedor da medicina popular sul-americana — cafestol, ácido rosmarínico e alantoína fundamentam o uso secular para retenção de líquidos, celulite e 'limpeza do sangue' nas tradições indígenas e caipiras do Brasil central.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Cordia ecalyculata Vell.",
-        "familia_botanica": "Boraginaceae (família da borragem, do confrei)",
-        "tipo_botanico": "Fitoterápico diurético / coadjuvante de emagrecimento",
-        "parte_usada": "Folhas secas.",
+        "familia_botanica": "Boraginaceae",
+        "tipo_botanico": "Planta medicinal diurética / depurativa",
+        "parte_usada": "Folhas (infusão — uso principal); cascas (decocção — uso popular secundário).",
         "sinonimos": [
-          "Raiz-de-bugre · café-do-mato · louro-mole",
-          "Chá-de-bugre (nome comercial difundido)"
+          "raiz-de-bugre · café-do-mato · louro-mole · chá-de-bugre · porangaba",
+          "Cordia salicifolia Cham. (sinônimo botânico usado em algumas referências)",
+          "Nota: 'chá-de-bugre' é o nome comercial mais usado em suplementos para emagrecimento"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Levemente amargo-herbáceo, discreto, vegetal. Bastante palatável — lembra levemente o café muito fraco.",
-        "aroma": "Herbáceo suave, levemente tostado, feno.",
-        "cor_da_infusao": "Marrom-claro a âmbar. #C09050",
-        "intensidade": "2/5 — suave, uso cotidiano fácil.",
-        "notas": "",
-        "bioma_de_origem": "Pantanal, Cerrado, Mata Atlântica — MT, MS, GO, MG, SP, PR.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Levemente amargo com notas que lembram café fraco — herança do alcaloide cafeína e dos diterpenos cafestol e caveol. Retrogusto herbáceo discreto.",
+        "aroma": "Herbáceo suave com nota levemente torrada, lembrando café diluído; sem componente aromático marcante ou polarizador.",
+        "cor_da_infusao": "Castanho-claro a âmbar dourado; limpa, semelhante a um chá preto fraco.",
+        "intensidade": "2/5 — perfil discreto, fácil de beber, sem amargor pronunciado; ideal para consumo regular.",
+        "notas": "A popularidade da raiz-de-bugre no mercado de emagrecimento se deve à combinação de efeito diurético real, discreta atividade estimulante (cafeína em pequena quantidade) e a narrativa de 'queima gordura' — esta última sem sustentação científica robusta. O emagrecimento observado em usuários é majoritariamente resultado de perda hídrica, não de queima de gordura.",
+        "bioma_de_origem": "Mata Atlântica, Cerrado e Pantanal — RS, SC, PR, SP, MG, MT, MS; bordas de mata, capoeiras e matas secundárias.",
+        "distribuicao_geografica": [
+          "Sul do Brasil (RS, SC, PR): uso medicinal intensivo — mercado de emagrecimento popular",
+          "São Paulo e Minas Gerais: capoeiras e bordas de Mata Atlântica",
+          "Mato Grosso do Sul e Pantanal: ocorrência e uso medicinal documentados",
+          "Paraguai e Argentina (nordeste): uso medicinal paralelo"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90 °C | Tempo: 8 min | Quantidade: 3–5 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g/250 ml",
-        "metodo": "Infusão simples.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã e tarde (diurético/termogênico — evitar à noite).",
-        "combina_com": "Guaraná · Chá-verde · Hibisco (blends termogênicos/emagrecedores)"
+        "temperatura_ideal": "90–95 °C. Infusão ou decocção — ambas eficazes para extração de compostos ativos.",
+        "tempo_de_infusao": "8–10 minutos coberto (infusão). Decocção de casca: 10 min de fervura leve.",
+        "quantidade": "Folhas secas: 4–6 g / 200 ml. Folhas frescas: 8–12 g / 200 ml.",
+        "metodo": "Infusão coberta em água quente. Coar e beber quente ou frio. Bebida agradável mesmo sem adoçante por ser pouco amarga.",
+        "reinfusoes": "1 reinfusão aceitável — perda de 30% de ativos.",
+        "melhor_momento": "Manhã em jejum e antes do almoço (efeito diurético e leve supressor de apetite). Evitar após as 17h (cafeína residual pode interferir no sono).",
+        "combina_com": "Hibisco (sinergia diurética e antioxidante), cavalinha (sinergia depurativa), limão (potencializa diurese), gengibre (termogênico)."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Etnobotânico — uso popular em compressas; dados in vitro preliminares.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressas anti-celulite (uso popular)",
+            "texto": "Decocção concentrada de folhas em compressas sobre regiões com celulite e retenção localizada. Uso popular documentado no sul do Brasil. Alantoína pode ter ação cicatrizante e anti-inflamatória local; sem dados clínicos de eficácia para celulite."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações tópicas específicas. Alergia a Boraginaceae: rara mas possível."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Diurético",
-          "Termogênico leve (allanthoína + metilxantinas traços)",
-          "Supressor de apetite leve (anedótico — mecanismo não elucidado)",
-          "Anti-inflamatório",
-          "Antioxidante",
-          "Componentes ativos:",
-          "Contraindicações: Edema cardíaco ou renal — cautela. Gestação — diurético, evitar. Hipertensão — monitorar."
+          "Diurético (aumento de diurese — mecanismo não totalmente elucidado; possivelmente flavonoides + saponinas)",
+          "Depurativo / 'limpeza do sangue' (uso popular — mecanismo: aumento de filtração renal)",
+          "Supressor discreto de apetite (cafeína em pequena quantidade + efeito diurético)",
+          "Anti-inflamatório (ácido rosmarínico, compostos fenólicos)",
+          "Cicatrizante (alantoína — estimula proliferação celular)",
+          "Antioxidante (ácido rosmarínico, ácido clorogênico)"
         ],
         "componentes_ativos": [
           {
+            "label": "CAFESTOL e CAVEOL (diterpenos)",
+            "texto": "Diterpenos do café presentes em Cordia ecalyculata — base da analogia sensorial com café do mato. Cafestol: estimulante discreto, anticarcinogênico in vitro (indução de enzimas de detoxificação fase II). Em doses altas (café coado sem filtro de papel), cafestol eleva LDL-colesterol; nas concentrações do chá de bugre, efeito lipídico provavelmente insignificante."
+          },
+          {
+            "label": "CAFEÍNA (traços)",
+            "texto": "Presente em pequena quantidade — menos que uma xícara de café. Estimulante, supressor leve de apetite, sinergiza com diurese. Responsável pelo efeito 'energia' que usuários reportam. Não é suficiente para causar dependência de cafeína, mas pode somar com outras fontes."
+          },
+          {
+            "label": "ÁCIDO ROSMARÍNICO",
+            "texto": "Antioxidante potente, anti-inflamatório (inibição NF-κB, COX-2), antiviral. Encontrado em Boraginaceae e Lamiaceae. Contribui ao perfil depurativo e anti-inflamatório da planta."
+          },
+          {
             "label": "ALANTOÍNA",
-            "texto": "Cicatrizante, diurético leve"
+            "texto": "Derivado do ácido úrico; cicatrizante clássico — estimula proliferação de fibroblastos e queratinócitos, acelera epitelização. Comum em Boraginaceae (sínfito, borragem). Relevante para o uso tópico popular."
           },
           {
-            "label": "METILXANTINAS (traços)",
-            "texto": "Termogênico, diurético"
-          },
-          {
-            "label": "TANINOS",
-            "texto": "Adstringente, antioxidante"
-          },
-          {
-            "label": "FLAVONÓIDES",
-            "texto": "Anti-inflamatório"
+            "label": "ÁCIDO CLOROGÊNICO e FLAVONOIDES (rutina, quercetina)",
+            "texto": "Antioxidantes, anti-inflamatórios, vasoprotegentes. Ácido clorogênico: inibição de absorção de glicose, anti-hipertensivo discreto. Rutina: fortalecimento capilar — relevante para celulite (fragilidade capilar)."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Diurese / retenção de líquidos",
+            "evidencia": "Moderada por uso tradicional; estudos em modelos animais confirmam aumento de diurese com extratos de C. ecalyculata",
+            "populacao": "Adultos; amplo uso popular documentado no Sul e Sudeste do Brasil."
+          },
+          {
+            "indicacao": "Emagrecimento / queima de gordura",
+            "evidencia": "Fraca — sem evidência clínica robusta de efeito lipolítico; emagrecimento observado é principalmente perda hídrica",
+            "populacao": "Adultos; narrativa de mercado não sustentada por ensaios clínicos de alta qualidade."
+          },
+          {
+            "indicacao": "Anti-inflamatório / depurativo",
+            "evidencia": "Preliminar (in vitro + uso tradicional)",
+            "populacao": "Sem ensaios clínicos específicos."
+          }
+        ],
+        "contraindicacoes": "Insuficiência renal: contraindicada (diurético potente). Gestação: sem dados adequados — evitar. Hipertensão: monitorar (cafeína + efeito diurético). Cardiopatias: cafeína pode exacerbar arritmias em predispostos.",
+        "interacoes": [
+          {
+            "label": "Diuréticos (tiazídicos, de alça)",
+            "texto": "Potencialização do efeito diurético — risco de depleção eletrolítica. Evitar combinação sem supervisão."
+          },
+          {
+            "label": "Estimulantes do SNC (cafeína, efedrina, metilfenidato)",
+            "texto": "Soma do efeito estimulante — risco de taquicardia, ansiedade, insônia. Não combinar com suplementos termogênicos ricos em cafeína."
+          },
+          {
+            "label": "Anticoagulantes",
+            "texto": "Ácido rosmarínico pode interferir na agregação plaquetária in vitro. Monitorar com uso concomitante de varfarina."
+          }
+        ],
+        "efeitos_adversos": "Doses usuais: bem tolerada. Doses altas ou uso prolongado: insônia (cafeína), poliúria excessiva, depleção eletrolítica. Raro: taquicardia, ansiedade em sensíveis à cafeína.",
+        "dose_maxima": "Folhas secas: 15 g/dia (3 xícaras × 5 g). Não usar por mais de 4 semanas sem pausa e avaliação.",
+        "fontes": [
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum.",
+          "Pizzardo RMF et al. (2010). Phytochemical investigation of Cordia ecalyculata. Rev Bras Farmacogn.",
+          "Carvalho JLS et al. (2009). Contribuição ao estudo fitoquímico e farmacológico de Cordia ecalyculata. Infarma.",
+          "Simões CMO et al. (2017). Farmacognosia: do produto natural ao medicamento. Artmed.",
+          "ANVISA. (2010). Formulário de Fitoterápicos da Farmacopeia Brasileira."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Leve (1–2/5)",
+            "observacao": "Diterpenos (cafestol) e flavonoides. Amargor muito suave — similar a café muito fraco."
+          },
+          {
+            "dimensao": "Nota de café",
+            "intensidade": "Leve a moderada (2/5) — traço identitário",
+            "observacao": "Cafestol, caveol e cafeína em traços criam reminiscência inconfundível de café diluído. O nome 'café-do-mato' é sensorialmente justificado."
+          },
+          {
+            "dimensao": "Herbáceo-neutro",
+            "intensidade": "Moderado (2/5)",
+            "observacao": "Nota verde discreta sem dominância — perfil fácil e palatável."
+          },
+          {
+            "dimensao": "Acidez",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Ácido clorogênico e orgânicos em baixa concentração. Ilumina o perfil sem acidez intrusiva."
+          }
+        ],
+        "olfativo_familia": "Herbáceo discreto com nota levemente torrada — família café-chá sem dominância de nenhuma das duas.",
+        "olfativo_descritores": [
+          "café diluído",
+          "erva seca neutra",
+          "notas de feno leve",
+          "leve torrado distante"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Termorreceptores",
+            "ativacao": "Mínima",
+            "molecula": "Cafeína — discreta ativação termogênica sistêmica, não sensação tópica"
+          }
+        ],
+        "tatil": "Corpo leve e limpo; infusão âmbar sem viscosidade. Finalização limpa, levemente seca.",
+        "descricao_integrada": "A raiz-de-bugre é o chá mais fácil de beber do arsenal medicinal brasileiro para diurese — sem o amargor da canela-de-ema, sem o terroso do solidago, sem a intensidade do assa-peixe. O leve fantasma de café no fundo do copo cria uma familiaridade que facilita a adesão ao uso regular. É um chá que não precisa de convencimento sensorial — simplesmente funciona e se deixa beber sem cerimônia."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A raiz-de-bugre (mais conhecida pelo nome comercial \"chá-de-bugre\") é um dos fitoterápicos emagrecedores mais vendidos em farmácias de manipulação e ervanários brasileiros — produto que navega entre a tradição popular do pantanal e a indústria de suplementos para perda de peso. Sua eficácia emagrecedora direta é controversa; a ação diurética é confirmada. O marketing de \"queimador de gordura natural\" extrapola a evidência disponível.",
-        "curiosidade": ""
+        "historia": "O nome 'bugre' tem origem colonial — bugre era o termo pejorativo usado pelos colonizadores portugueses para designar indígenas que não aceitavam a catequização. A planta 'raiz-de-bugre' foi assim chamada por ser remédio dos indígenas do sul do Brasil, especialmente dos Kaingang e Guarani. O uso passou para as comunidades caboclas e caipiras do sul e sudeste, onde tornou-se remédio doméstico para 'inchaço', 'retenção de água' e 'limpeza do sangue'. No século XX, o mercado de emagrecimento se apoderou da planta e transformou o chá-de-bugre em produto de massas — com marketing agressivo e claims de queima de gordura que a ciência não sustenta.",
+        "cerimonial": "Entre os Kaingang (RS, SC, PR), a planta foi usada em práticas de purificação — banhos com decocção de folhas para 'limpar o corpo' antes de rituais. Sem registro de uso exclusivamente cerimonial.",
+        "brasil": "A raiz-de-bugre é um dos produtos de fitoterapia popular com maior volume de mercado no Brasil — vendida em cápsulas, sachês e a granel em toda a rede de farmácias e lojas de produtos naturais. O marketing de emagrecimento criou uma demanda massiva que o uso tradicional nunca justificou sozinho. A Anvisa já notificou fabricantes que atribuíam ao produto propriedades de queima de gordura sem evidência clínica. Ironicamente, a planta tem atividade diurética real e comprovada — que é modestamente útil mas foi inflada como solução mágica para obesidade.",
+        "curiosidade": "A raiz-de-bugre contém cafestol — o mesmo diterpeno do café que preocupa cardiologistas quando o café é preparado sem filtro de papel (cafeteira italiana, café turco). Sem o filtro, cafestol e caveol passam para a bebida e podem elevar o LDL-colesterol. Com filtro de papel, ficam retidos. No chá de bugre, a concentração de cafestol é muito menor que no café não filtrado — provavelmente sem impacto lipídico relevante nas doses populares. Mas a conexão bioquímica entre a 'erva do interior' e o debate sobre café filtrado vs. não filtrado é um exemplo fascinante de como a fitoquímica conecta mundos aparentemente distantes."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional",
-        "status_anvisa": "Uso tradicional reconhecido. Atenção para claims de emagrecimento não validados.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas disponíveis o ano todo"
+        "eixo_botanico_tpc": "Planta medicinal tradicional — presente na RENISUS (2009). Comercializada amplamente como suplemento de emagrecimento — categoria regulatória distinta de fitoterápico.",
+        "status_anvisa": "RENISUS: listada. Sem monografia de fitoterápico publicada na IN 02/2014. Cápsulas e produtos para emagrecimento: regulados como suplementos alimentares (RDC 240/2018). ANVISA já emitiu alertas contra claims de 'queima de gordura' não comprovados.",
+        "status_ema": "Não avaliada.",
+        "status_fda": "Não avaliada especificamente como Cordia ecalyculata.",
+        "certificacao_organica": "Extrativismo e cultivo em propriedades rurais — certificação orgânica possível. Produto amplamente disponível no mercado convencional.",
+        "sazonalidade": "Folhas disponíveis o ano todo (planta perene). Concentração de ativos: levemente maior em folhas jovens da primavera."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Farmácias e drogarias (cápsulas) — ampla distribuição nacional",
+          "Herbanárias — folhas secas a granel",
+          "Lojas de produtos naturais — sachês e cápsulas",
+          "Supermercados com seção de produtos naturais (marcas como Ervativa, Mundo Verde)"
+        ],
+        "faixa_de_preco": "Folhas secas: R$ 8–15/50g. Cápsulas 500mg (60 caps): R$ 25–60. Sachês: R$ 15–30/caixa 20 sachês.",
+        "formatos": [
+          "Folhas secas a granel (infusão)",
+          "Cápsulas de extrato seco (500mg)",
+          "Sachês de chá",
+          "Tintura hidroalcoólica",
+          "Combinações com outros diuréticos (cavalinha, hibisco)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "Diurético real, emagrecedor questionável",
+          "texto": "A raiz-de-bugre tem atividade diurética comprovada — real, moderada e útil para retenção de líquidos. O que o mercado de emagrecimento vendeu como 'queima de gordura' é majoritariamente perda hídrica. Distinguir os dois é respeitar o usuário: a planta tem valor medicinal genuíno que não precisa de exagero publicitário para ser relevante."
+        },
+        {
+          "label": "Café-do-mato: a conexão bioquímica com o cafezinho",
+          "texto": "Cafestol e caveol — os mesmos diterpenos do café não filtrado — estão presentes na raiz-de-bugre e são parcialmente responsáveis pela nota de café do chá. A mesma família química que preocupa cardiologistas em cafés de coador e cafeteiras italianas reaparece na erva do interior. A concentração no chá é muito menor e provavelmente sem impacto lipídico, mas a conexão fitoquímica é fascinante."
+        },
+        {
+          "label": "Do remédio indígena ao produto de farmácia",
+          "texto": "A raiz-de-bugre percorreu o caminho mais longo da fitoterapia brasileira: de remédio kaingang e guarani para inchaço, passou pelo receituário caipira do interior paulista e gaúcho, chegou ao mercado popular do século XX e hoje é um dos fitoterápicos com maior volume de venda no Brasil. O percurso revela como o conhecimento indígena foi capturado, transformado e comercializado — nem sempre com fidelidade ao uso original."
+        }
+      ]
     },
     {
       "slug": "erva-de-lagarto",
       "nome_popular": "Erva-de-Lagarto",
       "nome_cientifico": "Cissampelos ovalifolia DC.",
-      "tagline": "O analgésico esquecido do pantanal — planta trepadeira de uso popular difundido entre comunidades ribeirinhas para dores musculares e articulares, com alcalóides de ação confirmada.",
+      "tagline": "A antiveneno dos campos do sul e Pantanal — alcaloides bisbenzilisoquinolínicos com ação curarimimética e anti-inflamatória que justificam o uso ancestral como antídoto a picadas de cobra e remédio para dores reumáticas.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Cissampelos ovalifolia DC.",
-        "familia_botanica": "Menispermaceae (família do curare)",
-        "tipo_botanico": "Fitoterápico analgésico / anti-inflamatório / antiespasmódico",
-        "parte_usada": "Folhas e raiz, secas.",
+        "familia_botanica": "Menispermaceae",
+        "tipo_botanico": "Planta medicinal anti-inflamatória / antiespasmódica / antiofídica tradicional",
+        "parte_usada": "Folhas e raízes (infusão e decocção); uso interno e externo (cataplasma).",
         "sinonimos": [
-          "Erva-de-lagarto · buta-branca · orelha-de-onça (regional)",
-          "Relacionada ao gênero que inclui Cissampelos pareira — planta de uso medicinal amplamente distribuída nas Américas tropicais"
+          "erva-de-lagarto · caapeba-do-campo · butiá-de-lagarto · abutua-do-campo",
+          "Cissampelos pareira L. (espécie tropical afim com alcaloides similares — velame, abutua)",
+          "Nota: o nome 'lagarto' refere-se ao uso popular como antiveneno contra picadas de cobra e lagartos peçonhentos"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-alcaloídico moderado, resinoso, persistente. Medicinal declarado.",
-        "aroma": "Herbáceo-resinoso, amadeirado suave.",
-        "cor_da_infusao": "Marrom-amarelado a âmbar. #A88840",
-        "intensidade": "3/5 — medicinal, uso regular possível com orientação.",
-        "notas": "",
-        "bioma_de_origem": "Pantanal e Cerrado — MT, MS, GO; também presente na Mata Atlântica.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-adstringente pronunciado com notas terrosas; alcaloides bisbenzilisoquinolínicos conferem amargor de qualidade farmacológica clara.",
+        "aroma": "Herbáceo-terroso, levemente pungente; notas de raiz fresca e folha verde amassada.",
+        "cor_da_infusao": "Castanho-esverdeado a castanho médio; levemente turva.",
+        "intensidade": "3–4/5 — amargor farmacológico pronunciado; planta de uso exclusivamente medicinal.",
+        "notas": "A família Menispermaceae é a mesma do curare sul-americano — os alcaloides curarimiméticos que relaxam musculatura esquelética foram extraídos de espécies afins (Chondrodendron tomentosum). Cissampelos ovalifolia tem alcaloides da mesma classe química em concentração muito menor, sem o potencial de paralisia do curare, mas com atividade miorrelaxante e anti-inflamatória documentada.",
+        "bioma_de_origem": "Campos sulinos, Pampa e Pantanal — RS, SC, PR, MT, MS; bordas de mata, campos úmidos.",
+        "distribuicao_geografica": [
+          "Rio Grande do Sul e Santa Catarina: uso mais documentado na medicina popular sul-brasileira",
+          "Paraná e São Paulo: campos de cerrado e transição",
+          "Mato Grosso do Sul (Pantanal): uso como antiofídico em comunidades rurais",
+          "Uruguai e Argentina: espécies afins de Cissampelos com usos similares"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "Decocção a 95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "2–4 g de folhas/raiz secas para 250 ml.",
-        "metodo": "Decocção (alcalóides extraídos melhor por calor).",
-        "reinfusoes": "",
-        "melhor_momento": "2–3x ao dia em uso terapêutico de dor.",
-        "combina_com": "Sucupira · Gengibre · Cúrcuma (blends anti-inflamatórios)"
+        "temperatura_ideal": "Raízes: decocção a 95–100 °C (10 min fervura). Folhas: infusão a 90 °C.",
+        "tempo_de_infusao": "Raízes: decocção 10 min + repouso 10 min coberto. Folhas: 8–12 min infusão coberta.",
+        "quantidade": "Raízes secas: 3–5 g / 200 ml. Folhas secas: 4–6 g / 200 ml.",
+        "metodo": "Raízes: decocção. Folhas: infusão coberta. Para uso antiofídico popular: cataplasma de folhas frescas amassadas sobre a picada (uso externo, enquanto busca atendimento médico — NÃO substitui soro antiofídico).",
+        "reinfusoes": "Raízes: 1 decocção adicional (menor concentração de alcaloides). Folhas: sem reinfusão.",
+        "melhor_momento": "Anti-inflamatório: 2–3 vezes/dia com refeições. Antiespasmódico: conforme necessidade. Uso antiofídico: EMERGÊNCIA — buscar imediatamente atendimento médico e soro antiofídico.",
+        "combina_com": "Arnica-da-terra (sinergia anti-inflamatória articular), erva-baleeira, gengibre. Evitar combinar com curare ou bloqueadores neuromusculares."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Etnobotânico — uso popular extenso como cataplasma; dados in vitro confirmam atividade anti-inflamatória local.",
+        "aplicacoes": [
+          {
+            "titulo": "Cataplasma antiofídico (uso popular — NÃO substitui soro)",
+            "texto": "Folhas frescas amassadas aplicadas sobre o local da picada de cobra ou inseto peçonhento. Uso popular documentado extensamente no sul do Brasil e Pantanal. Mecanismo proposto: alcaloides com atividade anti-inflamatória local e possível quelação parcial de componentes do veneno. IMPORTANTE: é medida de primeiros socorros popular — o paciente DEVE receber soro antiofídico em serviço médico."
+          },
+          {
+            "titulo": "Anti-inflamatório articular (compressas)",
+            "texto": "Decocção de raízes em compressas quentes sobre articulações com artrite e reumatismo. Uso popular registrado no RS e SC. Alcaloides e compostos fenólicos com atividade anti-inflamatória local."
+          }
+        ],
+        "contraindicacoes": "Não aplicar cataplasma por tempo prolongado em feridas abertas. Alcaloides podem ser absorvidos cutaneamente em concentrações significativas — monitorar sintomas sistêmicos (fraqueza muscular, sonolência)."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Analgésico (alcalóides isoquinolínicos)",
-          "Anti-inflamatório",
-          "Antiespasmódico muscular",
-          "Diurético leve",
-          "Antipirético",
-          "Componentes ativos:",
-          "⚠️ ATENÇÃO: A família Menispermaceae inclui espécies produtoras de curare (veneno de flecha). C. ovalifolia em doses medicinas usuais é segura, mas doses altas de alcalóides isoquinolínicos podem ter ação curare-like (bloqueio neuromuscular). Uso interno apenas em infusão fraca e doses controladas.",
-          "Contraindicações: Gestação — alcalóides isoquinolínicos, evitar. Miastenia gravis — contraindicado. Uso de relaxantes musculares farmacológicos — cautela."
+          "Anti-inflamatório (alcaloides bisbenzilisoquinolínicos — inibição COX, NF-κB)",
+          "Miorrelaxante discreto (alcaloides curarimiméticos em baixa concentração)",
+          "Antiespasmódico (relaxamento de músculo liso — útil em cólicas)",
+          "Analgésico (mecanismo central e periférico — alcaloides)",
+          "Antiofídico popular (atividade anti-inflamatória local; sem ação neutralizante de veneno documentada clinicamente)"
         ],
         "componentes_ativos": [
           {
-            "label": "ALCALÓIDES ISOQUINOLÍNICOS (hayatina, hayatinina)",
-            "texto": "Analgésico, antiespasmódico, relaxante muscular"
+            "label": "ALCALOIDES BISBENZILISOQUINOLÍNICOS (cissampelina, hayatidina, curina)",
+            "texto": "Fração ativa principal. Cissampelina: miorrelaxante (bloqueio nicotínico em concentrações altas — curarimimético); anti-inflamatório (inibição de fosfolipase A2, cicloxigenases). Hayatidina e curina: anti-inflamatórios, antiespasmódicos. Os mesmos alcaloides de C. pareira — a 'velame' tropical — com rica literatura farmacológica. Nota de segurança: alcaloides curarimiméticos podem causar relaxamento muscular excessivo em doses altas."
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "APORFINA ALCALOIDES (reticulina, norcuclaurina)",
+            "texto": "Precursores biossintéticos dos alcaloides bisbenzilisoquinolínicos. Atividade antidopaminérgica discreta, analgésica central (receptores opioides) e anti-inflamatória."
           },
           {
-            "label": "TANINOS",
-            "texto": "Adstringente"
+            "label": "FLAVONOIDES (quercetina, campferol, miricetina)",
+            "texto": "Anti-inflamatórios e antioxidantes. Sinergizam com alcaloides na atividade anti-inflamatória articular — mecanismos complementares (COX vs. NF-κB)."
+          },
+          {
+            "label": "ESTEROIDES (β-sitosterol, estigmasterol)",
+            "texto": "Anti-inflamatórios, moduladores do metabolismo lipídico. β-sitosterol: inibição de 5α-redutase e COX-2."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Anti-inflamatório / reumatismo / artrite",
+            "evidencia": "Moderada — uso etnobotânico extenso + dados in vitro e em modelos animais confirmando atividade de alcaloides de Cissampelos spp.",
+            "populacao": "Adultos com quadros articulares inflamatórios. Ensaios clínicos humanos ausentes para C. ovalifolia especificamente."
+          },
+          {
+            "indicacao": "Antiespasmódico (cólicas)",
+            "evidencia": "Preliminar — mecanismo de relaxamento de músculo liso plausível pelos alcaloides",
+            "populacao": "Uso popular — sem ensaios clínicos."
+          },
+          {
+            "indicacao": "Antiofídico",
+            "evidencia": "Fraca (uso etnobotânico sem dados clínicos controlados) — NÃO usar como substituto de soro antiofídico",
+            "populacao": "Uso popular de emergência — deve ser complementado por soro antiofídico imediatamente."
+          }
+        ],
+        "contraindicacoes": "Gestação: CONTRAINDICADA — alcaloides curarimiméticos e aporfinas têm potencial uterotônico e risco fetal. Lactação: evitar. Miastenia gravis: contraindicada (miorrelaxante pode exacerbar fraqueza muscular). Crianças: sem dados de segurança. Doses altas: risco de miorrelaxamento excessivo.",
+        "interacoes": [
+          {
+            "label": "Bloqueadores neuromusculares (pancurônio, vecurônio, succinilcolina)",
+            "texto": "CONTRAINDICADA combinação — potencialização do bloqueio neuromuscular. Comunicar uso ao anestesista antes de cirurgias."
+          },
+          {
+            "label": "Sedativos e depressores do SNC",
+            "texto": "Alcaloides com atividade central podem potencializar sedação. Evitar com benzodiazepínicos, opioides, álcool."
+          }
+        ],
+        "efeitos_adversos": "Doses usuais: bem tolerada na maioria dos usuários. Doses altas: sonolência, fraqueza muscular, hipotensão. Raro: reação alérgica dermatológica. Toxicidade potencial: alcaloides curarimiméticos — respeitar doses populares.",
+        "dose_maxima": "Folhas secas: 10 g/dia. Raízes: 6 g/dia. Uso máximo contínuo: 2 semanas. Consultar profissional de saúde para uso além disso.",
+        "fontes": [
+          "Barros LM et al. (2010). Medicinal use of the fauna and flora in Northeastern Brazil. J Ethnobiol Ethnomed.",
+          "Freitas CS et al. (2009). Antiulcerogenic activity of Cissampelos ovalifolia. J Ethnopharmacol.",
+          "Simões CMO et al. (2017). Farmacognosia: do produto natural ao medicamento. Artmed.",
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum.",
+          "Bruneton J. (1999). Pharmacognosy, Phytochemistry, Medicinal Plants. Lavoisier."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Alto (4/5)",
+            "observacao": "Alcaloides bisbenzilisoquinolínicos. Amargor farmacológico intenso e limpo — comunica potência ao bebedor experiente."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Moderada (2–3/5)",
+            "observacao": "Taninos e flavonoides. Sensação seca persistente que complementa o amargor."
+          },
+          {
+            "dimensao": "Terroso-herbáceo",
+            "intensidade": "Moderado (2–3/5)",
+            "observacao": "Raízes especialmente: nota de terra úmida intensa, evocando campos do sul após chuva."
+          },
+          {
+            "dimensao": "Pungência leve",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Componentes voláteis das folhas frescas — discreta sensação de frescor-irritativo que distingue infusão de folha da decocção de raiz."
+          }
+        ],
+        "olfativo_familia": "Herbáceo-terroso, notas de raiz fresca; família das ervas medicinais de campo úmido.",
+        "olfativo_descritores": [
+          "raiz fresca de campo",
+          "terra úmida",
+          "folha verde amassada",
+          "notas amargas de alcaloide",
+          "fundo de musgo"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "nAChR (receptor nicotínico — efeito sistêmico, não sensação tópica)",
+            "ativacao": "Indireta — alcaloides curarimiméticos",
+            "molecula": "Cissampelina — miorrelaxamento sistêmico discreto em doses altas"
+          }
+        ],
+        "tatil": "Corpo médio; infusão castanho com leve turbidez. Finalização amarga e seca prolongada.",
+        "descricao_integrada": "A erva-de-lagarto é a medicina do campo em sua forma mais ancestral: amarga, terrosa, sem concessão estética. O cheiro de raiz fresca e terra úmida evoca o momento da coleta — no campo, depois da chuva, encontrando a planta rasteira nos campos do RS ou nas bordas pantaneiras. Quem bebe sabe que está tomando algo com história e com farmacologia real. Não é uma erva para quem busca conforto sensorial — é para quem busca eficácia."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A erva-de-lagarto é um dos exemplos mais claros de conhecimento fitoterápico pantaneiro que permanece quase inteiramente fora dos circuitos acadêmicos e comerciais. Usada por pescadores, peões de fazenda e ribeirinhos do Pantanal para \"dor nas costas\", \"puxado\" (lesão muscular) e \"febre\" — com alcalóides que justificam farmacologicamente esses usos. A ausência de pesquisa universitária não é ausência de evidência — é ausência de pesquisadores nesse território.",
-        "curiosidade": ""
+        "historia": "O uso de espécies de Cissampelos como antiveneno remonta às culturas indígenas pré-colombianas de toda a América do Sul. Os Guarani e Kaingang do sul do Brasil usavam C. ovalifolia como 'remédio de cobra' — cataplasma de folhas sobre a picada e chá das raízes como antídoto interno. Os naturalistas europeus do século XVIII documentaram extensamente o uso das 'velames' (Cissampelos spp.) como antiofídicos — e a planta deu origem ao nome da região 'velame-branco' em várias partes do Brasil. A descoberta científica dos alcaloides curarimiméticos na família Menispermaceae (incluindo o curare de C. tomentosum) no século XIX e XX retroiluminou o uso indígena ancestral: havia lógica farmacológica no antiveneno.",
+        "cerimonial": "Entre os Guarani, o uso de plantas antiofídicas tinha dimensão cerimonial — o curandeiro (pajé) preparava o remédio com cantos e invocações, e a planta era parte de um sistema de cura que integrava o físico e o espiritual. A erva-de-lagarto, especificamente, era associada a rituais de proteção contra cobras antes de expedições ao mato.",
+        "brasil": "A erva-de-lagarto permanece em uso ativo nas comunidades rurais do RS, SC e Pantanal — especialmente em regiões onde o acesso a serviços médicos é limitado e a picada de cobra é risco cotidiano real. Trabalhadores rurais e peões de fazenda pantaneiros conhecem a planta e a mantêm no repertório de primeiros socorros. A pesquisa acadêmica (UFRGS, UFMS) tem documentado o uso e a fitoquímica, confirmando parcialmente o que a tradição indígena descobriu empiricamente.",
+        "curiosidade": "A família Menispermaceae tem um dos capítulos mais dramáticos da história da farmacologia: o curare — extraído de Chondrodendron tomentosum e Strychnos toxifera, parentes de Cissampelos — foi a primeira droga bloqueadora neuromuscular da medicina moderna. Usado por indígenas amazônicos em pontas de flecha para caçar, o curare foi estudado por Claude Bernard no século XIX, que descobriu seu mecanismo de bloqueio nicotínico. Derivados sintéticos do curare (tubocurarina, pancurônio) são essenciais na anestesia cirúrgica até hoje. A erva-de-lagarto carrega, em doses moderadas e nas suas raízes, alcaloides da mesma família química que tornaram a cirurgia moderna possível."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional regional",
-        "status_anvisa": "Uso popular reconhecido",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas disponíveis o ano todo; raiz coletada no período seco"
+        "eixo_botanico_tpc": "Planta medicinal de uso tradicional — sem listagem específica na RENISUS. Uso popular documentado, regulação formal ausente.",
+        "status_anvisa": "Sem monografia. Comercialização como droga vegetal (folhas e raízes secas) permitida com nomenclatura correta. Não há produto fitoterápico registrado com C. ovalifolia como princípio ativo.",
+        "status_ema": "Não avaliada. Cissampelos pareira (afim tropical): mencionada em literatura europeia histórica, sem monografia EMA.",
+        "status_fda": "Não avaliada.",
+        "certificacao_organica": "Extrativismo em campos sulinos e pantaneiros — potencial de certificação por manejo sustentável. Cultivo artesanal possível.",
+        "sazonalidade": "Folhas e raízes disponíveis o ano todo. Concentração de alcaloides: ligeiramente maior nas raízes coletadas no inverno (planta em dormência parcial)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Herbanárias do Sul (RS, SC, PR) — produto de nicho, disponibilidade variável",
+          "Feiras de plantas medicinais de Porto Alegre e Florianópolis",
+          "Comunidades de medicina popular e quintais medicinais (venda direta)",
+          "Raro em grandes redes — produto de mercado local e regional"
+        ],
+        "faixa_de_preco": "Folhas/raízes secas: R$ 15–35/50g. Produto de nicho com disponibilidade limitada fora do Sul.",
+        "formatos": [
+          "Folhas secas (infusão)",
+          "Raízes secas (decocção)",
+          "Tintura alcoólica (farmácias de manipulação especializadas)",
+          "Planta fresca (feiras locais — venda sazonal)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O curare em dose segura",
+          "texto": "Cissampelos ovalifolia pertence à família Menispermaceae — a mesma do curare amazônico. Seus alcaloides bisbenzilisoquinolínicos (cissampelina, curina) têm o mesmo mecanismo de bloqueio nicotínico que o curare, mas em concentrações muito menores. O uso ancestral como antiveneno tem lógica farmacológica real: miorrelaxamento local e anti-inflamatório que mitiga os efeitos inflamatórios da picada enquanto aguarda soro antiofídico."
+        },
+        {
+          "label": "Do antiveneno indígena à anestesia cirúrgica",
+          "texto": "O curare — parente bioquímico da erva-de-lagarto — foi o primeiro bloqueador neuromuscular da medicina moderna. Descoberto pelos indígenas amazônicos, estudado por Claude Bernard no século XIX, transformado em tubocurarina e pancurônio pela farmacologia do século XX. A erva-de-lagarto carrega na raiz, em dose segura, a mesma classe de moléculas que tornaram a cirurgia abdominal profunda possível."
+        },
+        {
+          "label": "Comunicar uso ao anestesista — obrigatório",
+          "texto": "Alcaloides curarimiméticos de C. ovalifolia podem potencializar bloqueadores neuromusculares usados em anestesia cirúrgica — com risco de apneia prolongada. Usuários que farão cirurgia devem informar o anestesista sobre uso de erva-de-lagarto. Não é alarmismo: é farmacologia aplicada ao cuidado seguro do paciente."
+        }
+      ]
     },
     {
       "slug": "velame-pantaneiro",
       "nome_popular": "Velame-Pantaneiro",
       "nome_cientifico": "Croton urucurana Baill.",
-      "tagline": "O sangue-de-dragão brasileiro — cicatrizante poderoso do pantanal com látex vermelho que imita e supera em alguns aspectos a resina sul-americana mais famosa do mundo.",
+      "tagline": "O sangue-de-dragão do Pantanal — látex vermelho-sangue com alcaloides taspina e sanguilarina, cicatrizante extraordinário e anti-inflamatório de uso ancestral que hoje inspira pesquisa oncológica e farmacologia de feridas.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Croton urucurana Baill.",
-        "familia_botanica": "Euphorbiaceae (família da mamona, da mandioca)",
-        "tipo_botanico": "Fitoterápico cicatrizante / anti-inflamatório / antiviral",
-        "parte_usada": "Látex do caule (resina vermelha — \"sangue-de-dragão brasileiro\"); casca; folhas.",
+        "familia_botanica": "Euphorbiaceae",
+        "tipo_botanico": "Planta medicinal cicatrizante / anti-inflamatória / hemostática",
+        "parte_usada": "Látex vermelho (resina — uso principal tópico e interno); casca (decocção — anti-inflamatório); folhas (uso popular secundário).",
         "sinonimos": [
-          "Velame-pantaneiro · urucurana · sangue-de-drago (regional)",
-          "RELAÇÃO: análogo funcional ao sangue-de-dragão amazônico (Croton lechleri) e ao peruano (Croton draconoides) — mesma família, química similar."
+          "velame-pantaneiro · sangra-d'água · urucurana · sangue-de-drago · tapuru-apé",
+          "Croton lechleri Müll.Arg. (sangue-de-dragão andino — espécie afim com perfil similar)",
+          "Nota: C. urucurana é o sangue-de-drago brasileiro; C. lechleri é o andino (Peru, Equador) — mais estudado internacionalmente"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "",
-        "cor_da_infusao": "",
-        "intensidade": "5/5 — medicinal absoluto.",
-        "notas": "",
-        "bioma_de_origem": "Pantanal e Cerrado — beira de rios e matas de galeria; MT, MS, GO, SP, MG.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Látex: amargo-adstringente intenso com nota resinosa; amargor farmacológico pronunciado por alcaloides. Casca em decocção: amargo-terroso moderado.",
+        "aroma": "Látex: resinoso-balsâmico intenso, levemente adocicado; aroma singular que evoca sangue e resina ao mesmo tempo. Casca: herbáceo-lenhoso.",
+        "cor_da_infusao": "Látex fresco: vermelho-sangue intenso. Diluído em água: rosado. Decocção de casca: castanho-avermelhado.",
+        "intensidade": "5/5 (látex) — a cor, o aroma e o amargor são extremos e inconfundíveis. Decocção de casca: 3/5.",
+        "notas": "O látex vermelho-sangue de Croton urucurana é um dos espetáculos botânicos mais impressionantes da flora brasileira — ao cortar o caule, escorre uma resina vermelha densa que parece sangue. O fenômeno deu origem a todos os nomes populares (sangra-d'água, sangue-de-drago) e ao uso medicinal em feridas e hemorragias.",
+        "bioma_de_origem": "Pantanal e Cerrado — MT, MS, GO, MG, SP; matas ciliares, bordas de matas úmidas, terrenos perturbados.",
+        "distribuicao_geografica": [
+          "Mato Grosso do Sul (Pantanal): maior concentração — matas ciliares do rio Paraguai e afluentes",
+          "Mato Grosso: Pantanal norte e Cerrado de transição",
+          "Goiás e Minas Gerais: Cerrado e mata ciliar",
+          "São Paulo: interior — mata ciliar e capoeiras",
+          "Croton lechleri (afim andino): Peru, Equador, Bolívia — látex mais estudado internacionalmente"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "Látex: uso direto in natura (tópico) ou diluído em água fria (não aquece — degrada alcaloides termolábeis). Casca: decocção 95 °C.",
+        "tempo_de_infusao": "Látex: uso imediato. Casca (decocção): 15 minutos de fervura leve + repouso 10 min coberto.",
+        "quantidade": "Látex tópico: 1–3 gotas direto na ferida. Látex interno (uso tradicional): 5–10 gotas em copo de água — uso excepcional, não rotineiro. Casca seca: 5–8 g / 200 ml.",
+        "metodo": "Tópico: extrair látex do caule cortado e aplicar diretamente na ferida ou úlcera. Interno: diluir em água fria (não quente). Casca: decocção.",
+        "reinfusoes": "Não se aplica para látex. Casca: 1 decocção adicional.",
+        "melhor_momento": "Tópico: imediatamente após trauma (cicatrizante, hemostático). Interno (uso tradicional): jejum para uso digestivo/anti-inflamatório.",
+        "combina_com": "Mel (potencializa cicatrizante tópico), própolis verde (sinergia antimicrobiana). Interno: com água fria apenas."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada — estudos clínicos com C. lechleri (afim andino) + uso etnobotânico extenso de C. urucurana; mecanismos documentados.",
+        "aplicacoes": [
+          {
+            "titulo": "Cicatrizante de feridas (látex tópico)",
+            "texto": "Aplicação direta do látex vermelho sobre feridas cutâneas, cortes, abrasões e úlceras. Estudos com C. lechleri em humanos documentaram aceleração de cicatrização por estimulação de fibroblastos, síntese de colágeno e contração da ferida via taspina. Sanguilarina inibe crescimento bacteriano local. Uso popular amplamente documentado no Pantanal e Cerrado."
+          },
+          {
+            "titulo": "Hemostático (látex)",
+            "texto": "Látex aplicado sobre sangramento superficial promove hemostasia rápida por precipitação de proteínas plasmáticas (taninos condensados) e vasoconstricção local discreta (alcaloides). Uso de campo documentado entre trabalhadores rurais pantaneiros."
+          },
+          {
+            "titulo": "Anti-inflamatório articular (cataplasma de casca)",
+            "texto": "Casca cozida em compressa quente sobre articulações inflamadas. Uso popular no MS e MT para reumatismo e artrite. Diterpenos e alcaloides com atividade anti-inflamatória local documentada in vitro."
+          },
+          {
+            "titulo": "Antifúngico tópico (látex)",
+            "texto": "Látex aplicado sobre candidíase cutânea, micoses superficiais e tinha. Atividade antifúngica de sanguilarina e outros alcaloides documentada in vitro contra Candida albicans, Trichophyton e Microsporum spp."
+          }
+        ],
+        "contraindicacoes": "Látex: evitar em olhos e mucosas sensíveis sem diluição. Não aplicar em feridas muito profundas sem limpeza prévia — o látex pode selar bactérias anaeróbias. Alergia a Euphorbiaceae: testar em área pequena (família inclui látex irritante — não confundir com alergia ao látex de Hevea brasiliensis)."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Cicatrizante acelerador de epitelização",
-          "Anti-inflamatório tópico",
-          "Antiviral",
-          "Antimicrobiano",
-          "Adstringente hemostático",
-          "Componentes ativos:",
-          "Contraindicações: Uso interno em doses altas — evitar (látex de Croton pode ser irritante de mucosa gástrica). Gestação — evitar uso interno. Uso tópico: verificar alergia prévia."
+          "Cicatrizante (taspina — estimulação de fibroblastos e síntese de colágeno)",
+          "Hemostático (taninos condensados — precipitação de proteínas plasmáticas)",
+          "Anti-inflamatório (diterpenos, taspina — inibição COX, NF-κB)",
+          "Antimicrobiano / antifúngico (sanguilarina, proantocianidinas)",
+          "Antioxidante (proantocianidinas, catequinas polimerizadas)",
+          "Anticancerígeno preliminar (sanguilarina — apoptose em células tumorais in vitro)"
         ],
         "componentes_ativos": [
           {
-            "label": "TASPINA (alcaloide)",
-            "texto": "Cicatrizante — estimula migração de fibroblastos"
+            "label": "TASPINA (alcaloide fenantridínico)",
+            "texto": "Principal marcador cicatrizante de Croton spp. Estimula quimiotaxia e proliferação de fibroblastos dérmicos — acelera a fase de remodelação da ferida. Aumenta síntese de colágeno tipo I e III. Ação anti-inflamatória (inibição de PGE2 e leucotrienos). Estudos com C. lechleri em feridas diabéticas em roedores: redução de 40–60% no tempo de cicatrização."
           },
           {
-            "label": "SP-303 (proantocianidina)",
-            "texto": "Antiviral (VSR, rotavírus, influenza)"
+            "label": "SANGUILARINA (alcaloide benzofenantridínico)",
+            "texto": "Antimicrobiano de amplo espectro — inibe S. aureus (incluindo MRSA), Streptococcus mutans, Candida albicans. Mecanismo: intercalação no DNA bacteriano e inibição de topoisomerases. Antiproliferativo em células tumorais (apoptose via mitocôndria — caspase-9, caspase-3). Já incorporada a cremes dentais e enxaguantes bucais no mercado americano (Viadent®) por sua atividade antibacteriana oral."
           },
           {
-            "label": "CATEQUINAS OLIGOMÉRICAS",
-            "texto": "Antioxidante, antimicrobiano"
+            "label": "PROANTOCIANIDINAS POLIMERIZADAS (oligômeros e polímeros de catequina)",
+            "texto": "Responsáveis pela cor vermelha intensa do látex. Fortíssimos antioxidantes (ORAC superior a mirtilos e açaí). Hemostáticos (precipitação de fibrinogênio). Anti-inflamatórios (inibição NF-κB). Antifúngicos (perturbação de membrana de Candida spp.). Antimicrobianos de amplo espectro por ligação a proteínas de superfície bacteriana."
           },
           {
-            "label": "RESINAS TERPÊNICAS",
-            "texto": "Cicatrizante, adstringente"
+            "label": "DITERPENOS (crotofolano, acetato de crotofoliol, trachylobano)",
+            "texto": "Família química característica de Croton spp. Anti-inflamatórios (inibição de fosfolipase A2, PLA2 — enzima central na cascata inflamatória). Alguns com atividade citotóxica seletiva em modelos tumorais in vitro."
+          },
+          {
+            "label": "CATEQUINAS e EPICATEQUINAS (flavanois)",
+            "texto": "Monômeros de proantocianidinas. Antioxidantes, anti-inflamatórios, antimicrobianos. Base do perfil antioxidante excepcional do látex."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Cicatrização de feridas cutâneas (tópico)",
+            "evidencia": "Moderada — estudos clínicos com C. lechleri (afim) em humanos + dados pré-clínicos de C. urucurana confirmando mecanismo de taspina",
+            "populacao": "Adultos; feridas cirúrgicas, úlceras diabéticas, abrasões. Aprovado como medicamento na Colômbia e Peru (Crofelemer / Provir® — C. lechleri)."
+          },
+          {
+            "indicacao": "Diarreia infecciosa (uso interno — látex)",
+            "evidencia": "Boa para C. lechleri (Crofelemer aprovado FDA 2012 para diarreia associada a HIV/AIDS); dados de C. urucurana: preliminares",
+            "populacao": "C. lechleri: adultos com diarreia secretória. C. urucurana: uso popular sem ensaios clínicos próprios."
+          },
+          {
+            "indicacao": "Antimicrobiano oral (sanguilarina)",
+            "evidencia": "Moderada — sanguilarina isolada aprovada em produtos odontológicos nos EUA",
+            "populacao": "Ampla — sanguilarina como componente antimicrobiano oral com dados clínicos de placa e gengivite."
+          }
+        ],
+        "contraindicacoes": "Gestação: látex CONTRAINDICADO internamente — diterpenos e alcaloides com potencial abortivo documentado para Croton spp. Uso tópico em grávidas: com cautela. Crianças menores de 6 anos: evitar uso interno. Sanguilarina em doses altas (muito acima do uso popular): citotóxica — não ultrapassar doses tradicionais.",
+        "interacoes": [
+          {
+            "label": "Anticoagulantes",
+            "texto": "Proantocianidinas podem reduzir agregação plaquetária. Monitorar INR com uso interno de látex concomitante a varfarina."
+          },
+          {
+            "label": "Imunossupressores",
+            "texto": "Diterpenos de Croton spp. podem modular resposta imune — interação teórica com imunossupressores. Sem dados clínicos específicos."
+          }
+        ],
+        "efeitos_adversos": "Látex tópico: muito seguro nas doses populares. Látex interno (doses altas): náusea, vômito, irritação gástrica. Raro: dermatite de contato (Euphorbiaceae — família com espécies irritantes, mas C. urucurana é considerada de baixa toxicidade cutânea). Sanguilarina em doses excessivas: citotóxica.",
+        "dose_maxima": "Látex interno: 10–15 gotas/dia diluídas em água. Decocção de casca: 15 g/dia. Uso interno: máximo 2 semanas sem pausa.",
+        "fontes": [
+          "Villegas LF et al. (1997). Evaluation of the wound-healing activity of selected traditional medicinal plants from Peru. J Ethnopharmacol.",
+          "Gupta D et al. (2008). Sanguin H-6, a tannin from Croton urucurana bark. Phytochemistry.",
+          "Miller MJS et al. (2000). Treatment of gastric ulcers and diarrhea with the Amazonian herbal medicine sangre de grado. Am J Physiol.",
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum.",
+          "FDA (2012). Approval of Crofelemer (Fulyzaq) for HIV-associated diarrhea — derivado de C. lechleri."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Alto (4–5/5) — látex",
+            "observacao": "Alcaloides (taspina, sanguilarina) e taninos condensados. Amargor complexo e persistente, diferente dos amarores herbáceos convencionais — tem dimensão resinosa específica."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Alta (4/5)",
+            "observacao": "Proantocianidinas polimerizadas precipitam proteínas salivares intensamente — adstringência marcante, funcional para uso hemostático oral."
+          },
+          {
+            "dimensao": "Resinoso-sanguíneo",
+            "intensidade": "Alto (4/5) — traço absolutamente singular",
+            "observacao": "Proantocianidinas vermelhas criam sabor que evoca sangue (hem-like) de forma discreta — não é desgradável, mas é inconfundível e não tem paralelo entre ervas medicinais brasileiras."
+          },
+          {
+            "dimensao": "Dulçor residual",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Glicosídeos e açúcares livres criam dulçor muito discreto que contrasta com o amargor — suaviza a finalização."
+          }
+        ],
+        "olfativo_familia": "Resinoso-balsâmico intenso; família das resinas tropicais vermelhas (sangue-de-dragão andino, breu).",
+        "olfativo_descritores": [
+          "resina vermelha tropical",
+          "sangue fresco seco (notas ferrosas por taninos)",
+          "bálsamo de madeira tropical",
+          "notas de alcatrão-balsâmico distante",
+          "fundo de casca úmida de floresta"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Mecanorreceptores bucais",
+            "ativacao": "Alta",
+            "molecula": "Proantocianidinas polimerizadas → adstringência extrema / secura de mucosa intensa"
+          }
+        ],
+        "tatil": "Látex: viscoso, denso, cola-se à mucosa; sensação de película protetora sobre ferida. Decocção de casca: corpo médio-alto, levemente viscoso.",
+        "descricao_integrada": "O velame-pantaneiro, em seu látex vermelho, entrega uma das experiências sensoriais mais singulares da fitoterapia brasileira — o sabor que evoca sangue (por taninos ferrosos), a adstringência que seca a boca em segundos, o aroma de resina tropical que não tem equivalente vegetal direto. É uma planta que comunica poder com todas as suas características físicas: a cor vermelha, o látex viscoso, o amargor profundo. Quem experimenta uma vez, nunca esquece. E quem conhece suas propriedades cicatrizantes, passa a tratar com o respeito que a farmacologia confirma."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O velame-pantaneiro é o sangue-de-dragão brasileiro — menos famoso internacionalmente que o Croton lechleri peruano (que domina o mercado global de \"dragon's blood\"), mas com química similar e disponibilidade muito maior no Brasil Central. Comunidades ribeirinhas do Pantanal usam o látex vermelho para cicatrizar feridas de pesca, cortes de palheta de cana e úlceras de pés em terrenos alagados — uso que o Ervatório pode documentar e valorizar como conhecimento territorial único.",
-        "curiosidade": ""
+        "historia": "O látex vermelho de Croton urucurana — e de espécies afins de todo o continente americano — é um dos remédios mais universais das culturas indígenas das Américas. Dos Bororo e Terena do Pantanal aos Shipibo do Peru (que usam C. lechleri), o 'sangue-de-drago' é associado ao poder de cura de feridas e ao sangramento controlado. O nome 'drago' (dragão) vem da tradição europeia medieval que associava sangue vermelho a dragões e poder mágico — quando os espanhóis encontraram os índios usando a resina vermelha, associaram ao 'sangue do dragão' dos bestiários medievais. A planta capturou o imaginário humano por sua aparência dramática e sua eficácia real.",
+        "cerimonial": "Entre os Bororo (Pantanal e Cerrado), o látex de C. urucurana era usado em rituais de cura conduzidos pelo bari (curandeiro-xamã) — aplicado sobre feridas com cantos e invocações aos espíritos da floresta. A cor vermelha do látex tinha significado simbólico de vitalidade e força vital. Sem uso cerimonial exclusivo — a planta circula livremente entre uso ritual e uso cotidiano.",
+        "brasil": "O velame-pantaneiro é bem conhecido nas comunidades rurais e ribeirinhas do Pantanal — especialmente no MS e MT. Peões de fazenda, pescadores e extrativistas mantêm o conhecimento do látex como primeiros socorros para cortes e feridas no campo. O uso científico foi amplificado pela pesquisa sobre C. lechleri andino, que culminou na aprovação pela FDA em 2012 do Crofelemer (Fulyzaq®) — um medicamento derivado de polímeros de proantocianidinas do látex de C. lechleri para diarreia associada a HIV/AIDS. Esse marco regulatório retroiluminou o interesse em C. urucurana, a espécie brasileira.",
+        "curiosidade": "Em 2012, o FDA aprovou o Crofelemer (Fulyzaq®) — o primeiro medicamento derivado de látex de sangue-de-dragão (C. lechleri) — para tratar diarreia secretória em adultos com HIV/AIDS sob terapia antirretroviral. O Crofelemer funciona inibindo canais de cloreto na mucosa intestinal (CFTR e canais dependentes de cálcio), reduzindo a hipersecreção de cloro que causa diarreia. É um dos raros casos em que uma planta de uso ancestral indígena resultou em medicamento aprovado por uma agência regulatória de primeiro mundo — um caminho de 10.000 anos de conhecimento humano a um comprimido da FDA."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional",
-        "status_anvisa": "Uso popular reconhecido",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Látex coletado o ano todo; pico após chuvas"
+        "eixo_botanico_tpc": "Planta medicinal de uso tradicional — sem listagem específica na RENISUS para C. urucurana. Croton lechleri (afim): base do medicamento Crofelemer (FDA-approved).",
+        "status_anvisa": "C. urucurana: sem monografia. Látex: sem produto fitoterápico registrado. Comercialização como droga vegetal (casca, folhas) permitida com nomenclatura correta.",
+        "status_ema": "Não avaliada diretamente. C. lechleri: substância ativa do Fulyzaq® (aprovado EMA como medicamento órfão para diarreia em HIV/AIDS).",
+        "status_fda": "C. lechleri (afim): Crofelemer (Fulyzaq®) aprovado FDA 2012 para diarreia associada a HIV/AIDS. C. urucurana: não avaliada especificamente.",
+        "certificacao_organica": "Extrativismo em matas ciliares do Pantanal — potencial de certificação por manejo sustentável. Coleta de látex pode ser feita sem derrubar a árvore (corte controlado do caule).",
+        "sazonalidade": "Látex: disponível o ano todo — fluxo aumenta na estação chuvosa (outubro–março). Casca: coleta em qualquer época, preferencialmente sem comprometer a sobrevivência da árvore."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Herbanárias do Centro-Oeste (MT, MS, GO) — látex seco e casca",
+          "Comunidades ribeirinhas e extrativistas do Pantanal — venda direta de látex fresco",
+          "Farmácias de manipulação especializadas em fitoterápicos amazônicos e pantaneiros",
+          "Importadores de sangue-de-dragão andino (C. lechleri) — produto diferente mas similar"
+        ],
+        "faixa_de_preco": "Látex seco de C. urucurana: R$ 40–90/30g. Casca seca: R$ 15–30/50g. C. lechleri importado: R$ 60–120/30ml.",
+        "formatos": [
+          "Látex seco (resina solidificada para diluição)",
+          "Látex fresco (extrativistas locais — pantaneiros)",
+          "Casca seca (decocção)",
+          "Tintura de casca (farmácias de manipulação)",
+          "Sangue-de-dragão andino (C. lechleri) importado — formato similar, uso análogo"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O látex vermelho que virou medicamento FDA",
+          "texto": "O látex de C. lechleri — primo andino do velame-pantaneiro — tornou-se o Crofelemer (Fulyzaq®), aprovado pela FDA em 2012 para diarreia em pacientes com HIV/AIDS. É um dos poucos casos onde o conhecimento ancestral indígena resultou em medicamento regulado de primeiro mundo. C. urucurana compartilha a mesma química de proantocianidinas e alcaloides — e inspira pesquisa com o mesmo potencial."
+        },
+        {
+          "label": "Taspina: o cicatrizante molecular do sangue-de-dragão",
+          "texto": "A taspina, alcaloide exclusivo de Croton spp., estimula fibroblastos, síntese de colágeno e contração de feridas — os três pilares da cicatrização dérmica. Em feridas diabéticas em modelos animais, C. lechleri reduziu o tempo de cicatrização em 40–60%. A aplicação de látes vermelho sobre cortes no campo não é superstição — é farmacologia de precisão ancestral."
+        },
+        {
+          "label": "Sanguilarina: do Pantanal ao enxaguante bucal americano",
+          "texto": "A sanguilarina de Croton spp. foi incorporada a produtos odontológicos nos EUA (Viadent®) por sua atividade antibacteriana contra Streptococcus mutans e inibição de placa dental. O mesmo alcaloide que os Bororo aplicavam em feridas rituais chegou às prateleiras de farmácias norte-americanas como componente de higiene oral. A rota é mais curta do que parece."
+        },
+        {
+          "label": "A cor que conta a história",
+          "texto": "O látex vermelho-sangue de C. urucurana é um dos espetáculos botânicos mais impactantes da flora brasileira. As proantocianidinas polimerizadas que o colorem são as mesmas que o tornam antioxidante excepcional, hemostático, antimicrobiano e anti-inflamatório. A cor não é acidente evolutivo — é sinal químico de proteção contra herbívoros e patógenos, que a medicina indígena soube ler muito antes da química analítica."
+        }
+      ]
     },
     {
       "slug": "gengibre",
