@@ -19023,214 +19023,381 @@
     },
     {
       "slug": "camomila-romana",
-      "nome_popular": "Camomila-Romana",
-      "nome_cientifico": "Chamaemelum nobile (L.) All. (sin.: Anthemis nobilis)",
-      "tagline": "A prima nobre da camomila — mais intensa, mais densa em princípios ativos e mais rara que a camomila-alemã, com uso privilegiado em perfumaria de luxo e aromaterapia de alta precisão.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Chamaemelum nobile (L.) All. (sin.: Anthemis nobilis)",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico ansiolítico / anti-inflamatório / aromático",
-        "parte_usada": "Flores secas.",
-        "sinonimos": [
-          "Camomila-romana · camomila-inglesa · camomila-nobre",
-          "Roman chamomile (inglês) · Camomille romaine (francês) · Römische Kamille (alemão)",
-          "DISTINÇÃO ESSENCIAL: Chamaemelum nobile (camomila-romana) ≠ Matricaria chamomilla (camomila-alemã — Ficha 01). Ambas são \"camomila\" mas são espécies distintas com química diferente."
+        "nome_popular": "Camomila-romana",
+        "nome_cientifico": "Chamaemelum nobile (syn. Anthemis nobilis)",
+        "familia": "Asteraceae",
+        "outros_nomes": [
+          "camomila-inglesa",
+          "camomila-nobre",
+          "Roman chamomile (ing.)",
+          "camomille romaine (fr.)"
+        ],
+        "origem": "Europa Ocidental (Irlanda, Portugal, norte da África)",
+        "partes_usadas": [
+          "capítulos florais",
+          "flores secas",
+          "óleo essencial"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-floral intenso, maçã verde mais pronunciada que a camomila-alemã, frutado-herbáceo.",
-        "aroma": "Maçã verde mais intensa e quente que a alemã, floral-frutado profundo, éster-frutado característico (isobutirato de isobutila). Mais complexa e \"adulta\" que a camomila-alemã.",
-        "cor_da_infusao": "Amarelo-pálido a âmbar. #E8D068",
-        "intensidade": "3/5 — mais intensa que a camomila-alemã.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Herbácea perene rasteira (10–30 cm), fortemente aromática. Difere da camomila-alemã (M. recutita) por ser perene, menor e mais compacta. Folhas bi/tripinadas em segmentos filiformes, verde-cinza pubescentes. Capítulos solitários com flores liguladas brancas e disco amarelo convexo (não cônico como na alemã). Receptáculo SÓLIDO (distingue da alemã que é oco). Aroma mais adocicado e denso que a alemã.",
+        "composicao_quimica": [
+          "Óleo essencial (0,5–1,8%): isobutiro de isoamila (~ 35%), angelatos de isoamila, angelatos de metilo — ésteres únicos distintos da camomila-alemã",
+          "Flavonoides: apigenina, luteolina, quercetina — semelhantes à alemã mas em proporções distintas",
+          "Lactonas sesquiterpênicas: nobilina, 3-epinobilina — diferentes da matricina/camazuleno da alemã",
+          "Cumarinas: esculetina, herniarina, umbeliferona",
+          "Ácidos fenólicos: ácido cafeico, ácido gentísico",
+          "Polissacarídeos"
+        ],
+        "bioma": "Europeu ocidental — pastagens, beiras de caminhos, prados",
+        "cultivo": "Sol pleno a meia-sombra leve, solo bem drenado e levemente ácido (pH 5,5–6,5). Perene — vantagem sobre a camomila-alemã (anual). Tolerante ao pisoteio. Multiplica por divisão de touceira ou sementes."
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C | Tempo: 5–8 min coberto | Quantidade: 1–2 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 g/250 ml",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Lavanda · Melissa · Mel · Flores de laranjeira (blend de sono premium)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Ansiolítico (isobutirato de isobutila + ésteres aromáticos)",
-          "Anti-inflamatório (mais potente que a camomila-alemã em alguns estudos)",
-          "Antiespasmódico",
-          "Sedativo leve",
-          "Antifúngico",
-          "Componentes ativos:",
-          "Contraindicações: Alergia à família Asteraceae. Gestação em doses altas — cautela."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "ISOBUTIRATO DE ISOBUTILA",
-            "texto": "Aromático característico, ansiolítico"
+            "tipo": "Infusão (uso interno)",
+            "descricao": "1–2 colheres de chá de flores secas (1,5–2 g) em 150 mL a 80–90°C. Cobrir 5–8 min. Coar. 2–3 xícaras/dia.",
+            "indicacoes": [
+              "insônia",
+              "ansiedade",
+              "nervosismo",
+              "cólica",
+              "espasmo digestivo",
+              "náusea"
+            ]
           },
           {
-            "label": "METIL-2-METILBUTIRATO",
-            "texto": "Aromático frutado"
+            "tipo": "Óleo essencial (aromaterapia)",
+            "descricao": "2–3 gotas no difusor por 30 min. Ou 1–2 gotas diluídas (2%) em óleo vegetal para massagem.",
+            "indicacoes": [
+              "ansiedade intensa",
+              "estresse pós-traumático",
+              "insônia",
+              "raiva e frustração"
+            ]
           },
           {
-            "label": "ALFA-BISABOLOL",
-            "texto": "Anti-inflamatório (mesma molécula da camomila-alemã)"
-          },
-          {
-            "label": "ÁCIDO ANGÉLICO (ésteres)",
-            "texto": "Anti-inflamatório, antiespasmódico"
-          },
-          {
-            "label": "CHAMAZULENO",
-            "texto": "Anti-inflamatório (menor concentração que na camomila-alemã)"
+            "tipo": "Banho aromaterapêutico",
+            "descricao": "5–8 gotas de OE em sal grosso ou leite + banho morno. 20 min.",
+            "indicacoes": [
+              "tensão emocional profunda",
+              "insônia",
+              "cólica infantil (banho do bebê)"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "A camomila-romana tem OE com perfil de ésteres únicos — aroma mais rico, macio e frutal que a alemã. Para uso emocional/aromaterapêutico, a romana é geralmente preferida. Para uso anti-inflamatório cutâneo (pele inflamada), a alemã (com camazuleno) pode ser superior."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Compressa facial",
+            "preparo": "Infusão forte (4 g/200 mL), fria. Compressa sobre olhos cansados ou pele irritada por 15 min.",
+            "indicacoes": [
+              "olhos cansados",
+              "pele sensível",
+              "eritema facial",
+              "conjuntivite leve"
+            ]
+          },
+          {
+            "forma": "Creme ou óleo de massagem",
+            "preparo": "1–2% de OE romano em óleo de jojoba ou calêndula. Massagem em áreas tensas.",
+            "indicacoes": [
+              "tensão muscular",
+              "enxaqueca (têmporas)",
+              "nervosismo com sintomas físicos"
+            ]
+          },
+          {
+            "forma": "Inalação direta",
+            "preparo": "1–2 gotas de OE em lenço ou palma das mãos. Inalar por 30–60 seg.",
+            "indicacoes": [
+              "crise de ansiedade",
+              "pânico",
+              "irritabilidade aguda"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Ansiolítico: apigenina se liga a receptores benzodiazepínicos (GABA-A) com alta afinidade",
+          "Sedativo suave: efeito central documentado em estudos com infusão e OE",
+          "Antiespasmódico: OE relaxa músculo liso — intestinal e uterino (dose-dependente)",
+          "Anti-inflamatório: flavonoides e lactonas sesquiterpênicas",
+          "Antinociceptivo: reduz percepção de dor em modelos animais",
+          "Ansiolítico emocional (aromaterapia): ésteres do OE romano têm efeito calmante marcado"
+        ],
+        "contraindicacoes": [
+          "Alergia a Asteraceae — reação cruzada com camomila-alemã, árnica, calêndula",
+          "Gestação: uso em doses medicinais elevadas não recomendado (antiespasmódico uterino)",
+          "Lactação: cautela"
+        ],
+        "efeitos_adversos": [
+          "Reação alérgica (mais comum que com camomila-alemã — sesquiterpenos diferentes)",
+          "Sonolência excessiva em doses muito altas",
+          "Dermatite de contato ao OE (sensiblizante moderado)"
+        ],
+        "interacoes": [
+          "Sedativos e hipnóticos: potenciação",
+          "Anticoagulantes: possível potenciação leve (cumarinas)"
+        ],
+        "dose_segura": "Flores secas: 2–4 g/dia em infusão. OE tópico: 1–2% em base. Difusão: 3–5 gotas/30 min. EMA/HMPC: uso tradicional bem estabelecido.",
+        "nivel_evidencia": "EMA/HMPC: uso medicinal tradicional bem estabelecido para tensão nervosa e distúrbios do sono. Apigenina: mecanismo ansiolítico bem documentado. OE romano em aromaterapia clínica: estudos em UTI e pré-operatório com resultados positivos para ansiedade."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Floral-adocicado intenso com notas frutais (maçã, pêra), mais rico e complexo que a camomila-alemã; levemente terroso",
+        "sabor": "Amargo-adocicado, floral, com suave nota de maçã; mais intensa e menos suave que a alemã",
+        "cor_visual": "Flores brancas com centro amarelo; infusão amarelo-dourada; OE: azul pálido a incolor (sem camazuleno como na alemã)",
+        "textura": "Flores secas delicadas; infusão com leve corpo",
+        "sensacao": "Calmante e aconchegante; aroma do OE é imediatamente relaxante — resposta emocional rápida"
       },
       "cultura": {
-        "historia": "A camomila-romana é a camomila dos jardins de ervas formais ingleses e franceses — cultivada em monastérios e castelos medievais como tapete aromático (as flores esmagadas sob os pés liberam o aroma). Nos jardins formais do Castelo de Sissinghurst e de Versailles, a camomila-romana forma \"tapetes\" históricos que perfumam os passeios.  Para o Ervatório, a distinção entre camomila-alemã (popular, acessível, bem documentada) e camomila-romana (premium, rara, mais aromática) é oportunidade de narrativa sobre qualidade e especificidade — duas plantas com o mesmo nome popular mas identidades distintas.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "A camomila-romana foi a camomila medieval europeia por excelência antes que a alemã se popularizasse. Usada nos jardins dos mosteiros medievais como 'planta do chão' — plantada em caminhos e gramados para liberar aroma ao pisar. O 'chamomile lawn' britânico (gramado de camomila) é tradição paisagística que remonta aos jardins tudor (século XV–XVII). Shakespeare a menciona no Henrique IV: 'The more it is trodden on, the faster it grows' (Quanto mais pisada, mais cresce).",
+        "uso_tradicional": "Europa medieval: nervosismo, insônia, cólica. Aromaterapia francesa: OE romano para ansiedade e 'crianças nervosas'. Grã-Bretanha: chá tradicional para insônia e cólica do bebê. Jardinagem histórica: 'chamomile lawns' nos jardins ingleses. Brasil: menos comum que a alemã, mas usada em aromaterapia clínica.",
+        "simbolismo": "Paciência e resiliência — a planta que cresce mais vigorosa ao ser pisada (Shakespeare). Paz e relaxamento. Em aromaterapia: 'planta do sol interior'.",
+        "curiosidades": [
+          "Shakespeare citou a camomila-romana no Henrique IV como símbolo de resiliência — 'the more it is trodden on, the faster it grows'",
+          "O 'chamomile lawn' de Buckfast Abbey (Devon, Inglaterra) é um gramado medieval de camomila-romana que existe há séculos",
+          "OE romano não tem camazuleno (que dá o azul à camomila-alemã) — azul no OE = alemã; incolor/amarelo = romana",
+          "A camomila-romana e a alemã são botânica e quimicamente distintas — não são substitutas equivalentes para todas as indicações"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido — distinção de Matricaria chamomilla feita na regulação.",
-        "status_ema": "Monografia HMPC — traditional use.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: junho–agosto (Europa). Produto majoritariamente importado."
+        "status_brasil": "ANVISA: sem monografia específica como produto separado da camomila-alemã. OE romano: cosmético. Flores: erva/chá.",
+        "status_europa": "EMA/HMPC: uso medicinal tradicional bem estabelecido para tensão nervosa e distúrbios do sono. Monografia publicada (Chamaemelum nobile flos).",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Chamomillae romanae flos.",
+        "registro": "Produtos fitoterápicos registrados na Europa. No Brasil: menos comum que a alemã."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Flores secas a granel",
+          "Chá em sachês",
+          "Óleo essencial (premium)",
+          "Produtos cosméticos com OE romano"
+        ],
+        "preco_estimado": "Flores secas: R$ 20–50/50 g (mais cara que a alemã). OE romano: R$ 80–250/5 mL (muito mais caro que o alemão). Sachês: R$ 15–35/caixa.",
+        "disponibilidade": "Moderada — lojas de aromaterapia premium e ervanarias especializadas. Menos comum que a camomila-alemã.",
+        "como_escolher": "OE romano: incolor a amarelo pálido (não azul); aroma frutal-floral (não herbáceo). Flores: receptáculo sólido (distingue da alemã). Aroma mais 'rico' e menos 'medicinal' que a alemã.",
+        "armazenamento": "Flores: pote hermético, escuro. Validade: 12 meses. OE: frasco âmbar, fresco. Validade: 2–3 anos."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Ansiedade e tensão emocional profunda (OE em aromaterapia — resposta emocional intensa)",
+          "Insônia e distúrbios do sono (infusão + difusão noturna)",
+          "Cólica infantil e nervosismo em crianças (banho + infusão suave)",
+          "Pele sensível e olhos cansados (uso tópico)"
+        ],
+        "diferenciais": [
+          "OE com perfil único de ésteres — aroma mais rico e emocional que a camomila-alemã",
+          "Perene: planta que retorna todo ano, ao contrário da camomila-alemã (anual)",
+          "Apigenina: mecanismo ansiolítico GABA-A melhor documentado que qualquer outra planta",
+          "Tradição literária inglesa (Shakespeare) — identidade cultural única"
+        ],
+        "sinergias": [
+          "Camomila-romana (OE) + lavanda: blend ansiolítico e indutor de sono clássico",
+          "Camomila-romana + flor-de-laranjeira + melissa: nervosismo com palpitações",
+          "Camomila-romana + calêndula: pele sensível e inflamada (anti-inflamatório dual)",
+          "Camomila-romana + tília: insônia profunda e ansiedade noturna"
+        ],
+        "alertas": [
+          "Mais alergênica que a camomila-alemã — testar antes do uso extenso",
+          "OE é distinto da alemã — não são substitutas equivalentes",
+          "Gestação em doses medicinais: evitar (antiespasmódico uterino)",
+          "OE com coloração azul = provavelmente adulterado com OE de camomila-alemã"
+        ]
       }
     },
     {
       "slug": "verbena",
-      "nome_popular": "Verbena",
-      "nome_cientifico": "Verbena officinalis L.",
-      "tagline": "A erva sagrada dos druidas — tônico nervoso e anti-inflamatório europeu com história pré-cristã de uso ritual e ação farmacológica crescentemente confirmada para sistema nervoso e fígado.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Verbena officinalis L.",
-        "familia_botanica": "Verbenaceae",
-        "tipo_botanico": "Fitoterápico tônico nervoso / hepatoprotetor / anti-inflamatório",
-        "parte_usada": "Partes aéreas (folhas e flores), secas.",
-        "sinonimos": [
-          "Verbena · gervão-europeu · erva-sagrada",
-          "Vervain (inglês) · Verveine (francês — ATENÇÃO: \"verveine\" no comércio francês frequentemente = Lippia citriodora, verbena-limão, não V. officinalis) · Eisenkraut (alemão)"
+        "nome_popular": "Verbena",
+        "nome_cientifico": "Verbena officinalis",
+        "familia": "Verbenaceae",
+        "outros_nomes": [
+          "gervão",
+          "verbena-comum",
+          "iron herb (ing.)",
+          "verveine officinale (fr.)"
+        ],
+        "origem": "Europa, norte da África e Ásia temperada",
+        "partes_usadas": [
+          "partes aéreas floridas",
+          "folhas",
+          "sumidades"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-herbáceo moderado, levemente adstringente, terroso.",
-        "aroma": "Herbáceo discreto, neutro.",
-        "cor_da_infusao": "Verde-amarelado. #C4BC50",
-        "intensidade": "2/5 — suave.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Herbácea perene (ou anual em climas frios) de 30–80 cm, erecta, ramificada. Caules quadrangulares, ásperos, pubescentes. Folhas opostas, oval-lanceoladas, profundamente lobadas ou recortadas (pinatipartidas), ásperas. Flores pequenas (4–5 mm), lilás-rosadas em espigas terminais delgadas e longas. Semelhante superficialmente a outras Verbenaceae, mas não ao gervão-branco (Stachytarpheta spp.) do Brasil.",
+        "composicao_quimica": [
+          "Iridoides: verbenanósido (verbenalin), hastatoside — amargos e hepatoprotetores",
+          "Flavonoides: luteolina, apigenina, luteolina-7-glucosídeo",
+          "Taninos (traços)",
+          "Mucilagens",
+          "Ácidos cafeicos: ácido cafeico, ácido clorogênico",
+          "Triterpenos: ácido ursólico",
+          "Óleo essencial (traços): citral, linalol"
+        ],
+        "bioma": "Europeu-Mediterrâneo, beiras de caminhos e campos",
+        "cultivo": "Sol a meia-sombra, solo bem drenado, pH 6–7,5. Multiplica por sementes. Planta de beira de caminho, muito rústica. Floração junho-setembro. Colheita durante a floração."
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Tônico nervoso (neuroproteg — verbenalin)",
-          "Hepatoprotetor",
-          "Anti-inflamatório",
-          "Ansiolítico leve",
-          "Emenagogo",
-          "Galactogogo (estimula leite — uso popular europeu)",
-          "Componentes ativos:",
-          "Contraindicações: Gestação — emenagoga. Lactação: stimula leite (uso popular europeu para desmame inverso — aumentar lactação)."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "VERBENALIN (iridóide)",
-            "texto": "Tônico nervoso, anti-inflamatório, hepatoprotetor"
+            "tipo": "Infusão (uso interno)",
+            "descricao": "1–2 colheres de chá de sumidades secas (2–3 g) em 200 mL a 90°C. Cobrir 10 min. Coar. 2–3 xícaras/dia.",
+            "indicacoes": [
+              "nervosismo",
+              "tensão",
+              "cefaleia",
+              "depressão leve",
+              "febre",
+              "afecções hepáticas leves"
+            ]
           },
           {
-            "label": "HASTATOSIDE (iridóide)",
-            "texto": "Anti-inflamatório"
+            "tipo": "Decocção (uso mais intenso)",
+            "descricao": "3–5 g em 200 mL. Ferver 10 min. Coar. 2 xícaras/dia.",
+            "indicacoes": [
+              "afecções hepáticas",
+              "digestão lenta",
+              "febre"
+            ]
           },
           {
-            "label": "ÁCIDO CAFEICO",
-            "texto": "Antioxidante, anti-inflamatório"
-          },
-          {
-            "label": "FLAVONÓIDES (luteolina)",
-            "texto": "Anti-inflamatório"
+            "tipo": "Tintura (1:5 em etanol 40%)",
+            "descricao": "2–3 mL, 3×/dia.",
+            "indicacoes": [
+              "depressão leve",
+              "esgotamento nervoso",
+              "suporte hepático"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "Verbena tem sabor amargo marcado — difícil de beber sem adoçante. Misturar com mel ou stevia melhora a palatabilidade. O amargor é sinal de concentração de iridoides ativos."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Compressa para cefaleia",
+            "preparo": "Infusão forte, morna. Compressa aplicada nas têmporas por 15 min.",
+            "indicacoes": [
+              "cefaleia tensional",
+              "enxaqueca"
+            ]
+          },
+          {
+            "forma": "Gargarejo",
+            "preparo": "Infusão (4 g/200 mL), morna. 3–4×/dia.",
+            "indicacoes": [
+              "faringite",
+              "gengivite",
+              "aftas"
+            ]
+          },
+          {
+            "forma": "Banho de pés",
+            "preparo": "100 g em 2 L de água quente. Banho de pés por 20 min.",
+            "indicacoes": [
+              "tensão",
+              "cansaço dos pés",
+              "circulação periférica"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Nervino tônico: verbenanósido modula sistema nervoso — 'nutrição do sistema nervoso' na herbalismo tradicional",
+          "Hepatoprotetor: iridoides protegem hepatócitos contra dano oxidativo",
+          "Diaforético: estimula sudorese em estados febris",
+          "Anti-inflamatório: luteolina e ácido cafeico inibem COX e mediadores inflamatórios",
+          "Antiespasmódico: relaxa musculatura lisa brônquica e uterina leve",
+          "Galactagogo: uso tradicional para estimular lactação (evidência limitada)",
+          "Antidepressivo adaptogênico: uso em herbalismo para 'esgotamento e agotamento do nervo'"
+        ],
+        "contraindicacoes": [
+          "Gestação: iridoides podem estimular contrações uterinas — CONTRAINDICADO",
+          "Lactação: galactagogo pode influenciar composição do leite — cautela",
+          "Crianças < 12 anos: dados insuficientes"
+        ],
+        "efeitos_adversos": [
+          "Náusea em doses elevadas (amargor e iridoides)",
+          "Cólica abdominal em doses excessivas",
+          "Raramente: reação alérgica"
+        ],
+        "interacoes": [
+          "Litio: diurético leve pode alterar excreção de lítio",
+          "Antidepressivos: sinergia possível — monitorar"
+        ],
+        "dose_segura": "Partes aéreas secas: 4–8 g/dia (infusão). Tintura: 6–9 mL/dia. EMA/HMPC: uso medicinal tradicional reconhecido.",
+        "nivel_evidencia": "EMA/HMPC: uso medicinal tradicional bem estabelecido. Iridoides verbenanósido: estudos pré-clínicos para neuroproteção, hepatoproteção e anti-inflamatório. Sem ECRs publicados de alta qualidade para indicações específicas."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Levemente herbáceo, suave, com notas terrosas e florais muito discretas",
+        "sabor": "Amargo marcado e adstringente, herbáceo; sem doçura ou picância",
+        "cor_visual": "Hastes e folhas verde-escuras; infusão verde-amarelada a dourada-esverdeada",
+        "textura": "Planta áspera ao toque; infusão leve",
+        "sensacao": "Amargo que 'aciona' o fígado e a digestão; leve sensação de tonificação"
       },
       "cultura": {
-        "historia": "A verbena foi planta sagrada dos druidas celtas e dos sacerdotes romanos — usada em purificações, juramentos e rituais de paz. Os romanos chamavam qualquer planta sagrada de herba sacra — e a verbena era a erba sacra por excelência. Enviar um ramo de verbena era sinal de aliança e boa fé entre grupos em conflito.  Os alquimistas medievais incluíam verbena em elixires de transmutação. John Gerard (séc. XVII) atribuiu-lhe poderes contra fantasmas e malefícios. Toda essa mitologia encobre uma planta com farmacologia real — os iridóides verbenalin e hastatoside têm ação neuroprotetora e anti-inflamatória documentada.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Uma das plantas mais mágicas e rituais da história europeia. Na Roma Antiga: erva sagrada de Vênus, usada para limpar altares e preparar sacerdotes para cerimônias. Os druidas celtas a usavam para adivinhação e proteção. Hipócrates e Dioscórides a prescreviam para febre e doenças hepáticas. Na Idade Média: 'herba sacra' — presente em todas as fórmulas mágico-medicinais. O 'verbena' da expressão 'sub verbo' (sob a proteção da palavra) — planta dos juramentos.",
+        "uso_tradicional": "Roma Antiga: purificação ritual e medicina. Druidas: adivinhação e proteção. Europa medieval: doenças do fígado, febre, nervosismo. Herbalismo moderno (tradição inglesa): 'nervino tônico' — para esgotamento nervoso e burnout. Brasil: 'gervão' — confusão frequente com Stachytarpheta jamaicensis (gervão-azul, planta diferente).",
+        "simbolismo": "Magia, proteção, juramentos, pureza. Planta de poder ritual em Roma e entre os celtas. Em aromaterapia: renovação e transformação.",
+        "curiosidades": [
+          "Na Roma Antiga, o embaixador romano carregava verbena quando ia negociar com povos inimigos — era o símbolo da inviolabilidade diplomática",
+          "Os druidas colhiam verbena ao amanhecer, sem usar ferro, devolvendo algo ao solo em troca — práticas rituais detalhadas por Plínio",
+          "Não confundir com 'erva-luísa' (Aloysia citrodora, também chamada 'verbena-limão' no Brasil) — planta diferente e muito mais aromática",
+          "A palavra 'verbal' e 'verbum' (palavra) compartilham raiz com 'verbena' — a planta dos juramentos sagrados"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso popular reconhecido",
-        "status_ema": "Monografia HMPC — traditional use",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Partes aéreas: floração (verão)"
+        "status_brasil": "ANVISA: sem registro específico. 'Gervão' no Brasil frequentemente se refere a Stachytarpheta spp. (planta diferente). Uso como erva tradicional.",
+        "status_europa": "EMA/HMPC: uso medicinal tradicional reconhecido — tensão nervosa, perturbações do sono. Monografia publicada.",
+        "farmacopeia": "Farmacopeia Europeia: Verbenae herba mencionada. Monografia HMPC publicada.",
+        "registro": "Disponível como erva medicinal na Europa. Fitoterápico em alguns países."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Partes aéreas secas a granel",
+          "Chá em sachês",
+          "Tintura hidroalcoólica",
+          "Cápsulas de extrato seco"
+        ],
+        "preco_estimado": "Planta seca: R$ 10–25/50 g. Sachês: R$ 12–28/caixa. Tintura: R$ 30–70/50 mL.",
+        "disponibilidade": "Moderada — lojas de ervas europeias e online. Menos comum no Brasil.",
+        "como_escolher": "Aroma levemente herbáceo; sumidades floridas preservadas (maior teor de iridoides). Confirmar nome botânico — risco de confusão com gervão brasileiro (Stachytarpheta).",
+        "armazenamento": "Pote hermético, escuro, seco. Validade: 12–18 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Nervosismo, tensão e esgotamento nervoso (nervino tônico)",
+          "Suporte hepático leve (hepatoprotetor por iridoides)",
+          "Cefaleia tensional (interno e compressa)",
+          "Diaforético em estados febris"
+        ],
+        "diferenciais": [
+          "Uma das plantas mais sagradas da Antiguidade — Roma, Grécia e druidas celtas",
+          "Iridoides verbenanósido: mecanismo hepatoprotetor e neuroprotetor único",
+          "Nervino tônico no sentido herbalístico clássico — tonifica, não apenas acalma",
+          "EMA uso bem estabelecido — validação regulatória de tradição milenar"
+        ],
+        "sinergias": [
+          "Verbena + melissa + tília: esgotamento nervoso e insônia (blend clássico europeu)",
+          "Verbena + dente-de-leão: suporte hepático e biliar",
+          "Verbena + lavanda: cefaleia tensional (interno + tópico)",
+          "Verbena + equinácea: imunidade durante esgotamento físico"
+        ],
+        "alertas": [
+          "GESTAÇÃO: CONTRAINDICADA — iridoides uterotônicos",
+          "Sabor amargo marcado — misturar com mel ou ervas mais aromáticas para melhor adesão",
+          "Não confundir com erva-luísa/verbena-limão (Aloysia citrodora) ou gervão-azul brasileiro",
+          "Litio: monitorar níveis séricos em uso concomitante"
+        ]
       }
     },
     {
