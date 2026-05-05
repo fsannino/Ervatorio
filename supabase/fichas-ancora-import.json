@@ -18647,195 +18647,378 @@
     },
     {
       "slug": "manjericao",
-      "nome_popular": "Manjericão",
-      "nome_cientifico": "Ocimum basilicum L.",
-      "tagline": "A erva do amor mediterrâneo — aromático culinário universal com ação antimicrobiana potente, adaptogênica leve e perfil sensorial que é simultaneamente o mais famoso e o menos explorado medicinalmente do catálogo.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Ocimum basilicum L.",
-        "familia_botanica": "Lamiaceae",
-        "tipo_botanico": "Especiaria aromática / antimicrobiana / adaptogênica leve",
-        "parte_usada": "Folhas frescas ou secas; flores.",
-        "sinonimos": [
-          "Manjericão · alfavaca · alfavaca-cravo",
-          "Basil (inglês) · Basilic (francês) · Basilikum (alemão)",
-          "Tulsi-não-sagrado (diferenciação popular do tulsi O. tenuiflorum)"
+        "nome_popular": "Manjericão",
+        "nome_cientifico": "Ocimum basilicum",
+        "familia": "Lamiaceae",
+        "outros_nomes": [
+          "alfavaca",
+          "basil (ing.)",
+          "basilic (fr.)",
+          "basilico (it.)"
+        ],
+        "origem": "Índia e Sudeste Asiático",
+        "partes_usadas": [
+          "folhas frescas",
+          "folhas secas",
+          "sumidades floridas",
+          "óleo essencial"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Aromático-floral-apimentado complexo, levemente anisado (metilchavicol), pimentado (eugenol), herbáceo fresco. Sabor que define a culinária mediterrânea e italiana.",
-        "aroma": "Linalol-floral + metilchavicol-anisado + eugenol-apimentado — aroma que evoca imediatamente Itália, Provence, cozinha de verão.",
-        "cor_da_infusao": "Verde-pálido claro. #C8DC78",
-        "intensidade": "3/5 — aromático presente.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Herbácea anual (clima temperado) ou perene (tropical) de 30–80 cm. Caules quadrangulares, ramificados. Folhas opostas, oval-elípticas (2–8 cm), verde-brilhante intenso, glabras ou levemente pubescentes, muito aromáticas. Flores brancas a lilás em espigas terminais. Muitas variedades: 'Genovese' (pesto), 'Napolitano' (folha grande), roxo, limão, manjericão-tailandês, alfavaca-cravo.",
+        "composicao_quimica": [
+          "Óleo essencial (0,5–1,5%): composição varia pela quimiotipo — estragol (metilchavicol, 70–88% no tipo europeu), linalol (40–70% no tipo asiático/africano), eugenol (tipo cravo), cineol",
+          "Flavonoides: orientina, vicenina, apigenina, luteolina",
+          "Ácido rosmarínico (potente antioxidante)",
+          "Ácido ursólico e oleanólico (triterpenos)",
+          "Beta-caroteno, vitamina K, vitamina C",
+          "Minerais: cálcio, ferro, potássio, manganês"
+        ],
+        "bioma": "Tropical e subtropical — origem asiática, cosmopolita",
+        "cultivo": "Pleno sol, solo fértil e úmido, pH 6–7, temperatura > 15°C. Anual em climas frios. Multiplica por sementes. Despontar frequentemente para retardar floração e manter folhas vigorosas. Colheita das folhas antes e durante floração."
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Antimicrobiano potente (linalol + eugenol)",
-          "Antifúngico (Candida — eugenol)",
-          "Adaptogênico leve (OE — modulação de estresse)",
-          "Antioxidante",
-          "Anti-inflamatório",
-          "Carminativo",
-          "Antidepressivo leve (linalol)",
-          "Componentes ativos:",
-          "Contraindicações: Estragol (metilchavicol) — genotóxico em doses altas de OE (culinária: seguro). Gestação em doses de OE."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "Quimiotipo",
-            "texto": "Componente dominante — Perfil"
+            "tipo": "Uso culinário fresco",
+            "descricao": "Folhas frescas adicionadas no final do cozimento ou cruas (pesto, pizza, saladas, molhos). Calor excessivo destrói os aromas.",
+            "indicacoes": [
+              "digestão",
+              "carminativo",
+              "antisséptico alimentar",
+              "suporte nutricional"
+            ]
           },
           {
-            "label": "Europeu (linalol)",
-            "texto": "Linalol (60%) — Floral, ansiolítico"
+            "tipo": "Infusão (uso interno)",
+            "descricao": "1–2 colheres de sopa de folhas frescas ou 1 de secas (2–3 g) em 200 mL a 90°C. Cobrir 10 min. Coar. 2–3 xícaras/dia.",
+            "indicacoes": [
+              "flatulência",
+              "cólica",
+              "indigestão",
+              "ansiedade leve",
+              "tosse"
+            ]
           },
           {
-            "label": "Tropical (metilchavicol)",
-            "texto": "Metilchavicol (estragol) (80%) — Anisado, mais picante"
+            "tipo": "Óleo essencial (aromaterapia e tópico)",
+            "descricao": "Difusão: 3–5 gotas. Tópico: 1–2% em base vegetal.",
+            "indicacoes": [
+              "ansiedade",
+              "fadiga mental",
+              "cefaleia",
+              "repelente de insetos"
+            ]
           },
           {
-            "label": "Cravo (eugenol)",
-            "texto": "Eugenol (70%) — Apimentado, antimicrobiano forte"
+            "tipo": "Pesto fresco (uso culinário-medicinal)",
+            "descricao": "Folhas frescas + alho + azeite + pinoli + parmesão. Alto valor nutricional e antioxidante.",
+            "indicacoes": [
+              "antioxidante",
+              "anti-inflamatório",
+              "digestivo"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "Quimiotipo importa: manjericão europeu (Genovese) tem estragol elevado — potencialmente genotóxico em doses altas; o uso culinário habitual é seguro. Manjericão linalol (tropical/africano) é mais seguro para uso medicinal prolongado. Folhas frescas têm mais ativo que secas."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Repelente de insetos",
+            "preparo": "Folhas frescas esfregadas na pele, ou spray com infusão forte + álcool 70%.",
+            "indicacoes": [
+              "mosquitos",
+              "pernilongos",
+              "borrachudos"
+            ]
+          },
+          {
+            "forma": "Compressa para cefaleia",
+            "preparo": "Folhas frescas amassadas. Aplicar diretamente na testa por 10–15 min.",
+            "indicacoes": [
+              "cefaleia tensional",
+              "enxaqueca leve"
+            ]
+          },
+          {
+            "forma": "Cataplasma anti-inflamatório",
+            "preparo": "Folhas levemente aquecidas, amassadas, aplicadas na área dolorida.",
+            "indicacoes": [
+              "artralgia",
+              "contusões",
+              "picadas de insetos"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Carminativo e espasmolítico: óleo essencial relaxa músculo liso gastrointestinal",
+          "Antimicrobiano: estragol, linalol e eugenol inibem amplo espectro de bactérias e fungos",
+          "Antioxidante: ácido rosmarínico, flavonoides, vitaminas — sinergismo potente",
+          "Anti-inflamatório: ácido ursólico e rosmarínico inibem COX-2 e NF-κB",
+          "Adaptogênico leve: uso tradicional em ayurveda como 'tulsi do Ocidente'",
+          "Repelente de insetos: estragol e eugenol repelem Aedes aegypti",
+          "Ansiolítico leve: linalol (quimiotipo linalol) modula GABA"
+        ],
+        "contraindicacoes": [
+          "Gestação em doses medicinais: estragol potencialmente genotóxico — evitar altas doses de OE interno",
+          "Lactação: cautela com OE",
+          "Crianças < 2 anos: OE interno não recomendado",
+          "Anticoagulados: vitamina K presente (folhas frescas em grandes quantidades)"
+        ],
+        "efeitos_adversos": [
+          "Altas doses de estragol (OE rico em estragol): hepatotoxicidade potencial (genotóxico in vitro)",
+          "Sensibilização cutânea ao OE (rara)",
+          "Hipoglicemia leve em diabéticos"
+        ],
+        "interacoes": [
+          "Anticoagulantes (varfarina): vitamina K em grandes quantidades culinárias — monitorar RNI",
+          "Hipoglicemiantes: potenciação leve (monitorar glicemia)"
+        ],
+        "dose_segura": "Uso culinário: ilimitado — seguro. Infusão: 2–4 g/dia. OE: 1–2% tópico; difusão: 3–5 gotas. EFSA: estragol no uso culinário normal não representa risco — contexto matricial (planta inteira) difere do estragol isolado.",
+        "nivel_evidencia": "Dados pré-clínicos sólidos para antimicrobiano e anti-inflamatório. Estudos clínicos limitados para uso medicinal específico. Vasta evidência para segurança de uso culinário. EFSA: avaliação de risco do estragol — uso alimentar normal é seguro."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Aromático, doce-picante, com notas anisadas (estragol) ou florais-mentoladas (linalol), variando muito pelo quimiotipo",
+        "sabor": "Picante-aromático, levemente anisado, pungente; quente e refrescante simultaneamente",
+        "cor_visual": "Verde-brilhante intenso (fresco); verde-escuro (seco); infusão verde-amarelada",
+        "textura": "Folhas lisas, sedosas ao toque; infusão leve",
+        "sensacao": "Aquecedor e estimulante; carminativo perceptível rapidamente após ingestão"
       },
       "cultura": {
-        "historia": "Basilikos em grego significa \"real\" ou \"do rei\" — o manjericão era planta de reis. Na Grécia antiga, era cultivado apenas em jardins reais. Na Índia, cada casa hindu tem uma planta sagrada de tulsi (O. tenuiflorum, parente próximo) — e o manjericão carrega essa aura sagrada por toda a tradição mediterrânea.  Em Itália, oferecer um ramo de manjericão a alguém era declaração de amor. Em Roma, a serva que colocava manjericão na janela sinalizava que estava disponível para um pretendente. A planta do amor, da realeza e da cozinha — tudo ao mesmo tempo.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Originário da Índia, onde é cultivado há mais de 5.000 anos e considerado sagrado no hinduísmo. Chegou à Europa através dos gregos e romanos (os gregos o chamavam de 'herba regale' — erva real, 'basileus' = rei). Na Itália medieval: planta do amor — mulheres colocavam manjericão na janela para sinalizar disponibilidade. No século XIX, Genovese Pesto surgiu como patrimônio culinário ligúrio. Na medicina ayurvédica, o tulsi (Ocimum tenuiflorum — parente próximo) é a planta mais sagrada.",
+        "uso_tradicional": "Índia/Ayurveda: adaptogênico, anti-inflamatório, digestivo. Europa mediterrânea: culinária (pesto, pizza, pasta) + digestivo. Brasil: alfavaca — chá para gripe, tosse, gases, repelente. Medicina popular brasileira: 'alfavacão' (O. gratissimum) com eugenol alto para dor de dente.",
+        "simbolismo": "Realeza, amor, sagrado (hinduísmo). Na Itália: amor e devoção. Na Grécia antiga: riqueza. No Brasil popular: sorte e proteção do lar.",
+        "curiosidades": [
+          "'Basileum' em grego significa 'planta do rei' — manjericão foi considerado digno apenas da realeza na Grécia Antiga",
+          "O pesto genovese tem DOP (Denominação de Origem Protegida) na União Europeia — apenas o manjericão 'Genovese' de Pra, na Ligúria, é reconhecido",
+          "Manjericão tailandês, limão e alfavaca são variedades tão diferentes na composição que funcionam como plantas distintas terapeuticamente",
+          "O estragol do manjericão europeu foi durante anos um alerta de segurança — estudos de 2012 em contexto de planta inteira mostram que os polifenóis inibem a genotoxicidade"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso alimentar.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Disponível o ano todo (cultivo perene tropical)"
+        "status_brasil": "ANVISA: sem registro específico como fitoterápico. Amplamente usado como alimento/condimento. Óleo essencial: cosmético.",
+        "status_europa": "EMA: sem monografia medicinal. EFSA: avaliação de risco de estragol no uso alimentar — sem restrições para uso culinário normal. Uso cosmético do OE regulado por IFRA.",
+        "farmacopeia": "Farmacopeia Europeia: Ocimum basilicum herba mencionada. Não há monografia medicinal completa.",
+        "registro": "Sem medicamentos registrados. Amplamente comercializado como alimento, condimento e aromaterapia."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Planta fresca (supermercados, hortas)",
+          "Folhas secas a granel e sachês",
+          "Óleo essencial",
+          "Extrato seco em cápsulas (suplemento)",
+          "Pesto pronto (culinário)"
+        ],
+        "preco_estimado": "Fresco: R$ 3–8/maço. Seco: R$ 5–15/20 g. OE: R$ 20–50/10 mL.",
+        "disponibilidade": "Muito ampla — supermercados (fresco e seco), ervanarias, feiras, hortas domésticas.",
+        "como_escolher": "Fresco: folhas verde-brilhante sem manchas, aroma intenso ao friccionar. Seco: preferir folhas inteiras; aroma presente. OE: verificar quimiotipo (linalol ou estragol) conforme o uso desejado.",
+        "armazenamento": "Fresco: temperatura ambiente em copo de água, ou refrigerado envolvido em papel úmido. Seco: pote hermético, escuro. Validade: 12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Digestivo carminativo (flatulência, cólica, indigestão)",
+          "Antimicrobiano alimentar e culinário (pesto, molhos, marinadas)",
+          "Repelente natural de insetos (uso externo)",
+          "Antioxidante e anti-inflamatório alimentar"
+        ],
+        "diferenciais": [
+          "Planta culinária de alto valor medicinal — bridge perfeita entre gastronomia e fitoterapia",
+          "Diversidade de quimiotipos: permite escolher composição ideal para cada uso",
+          "Pesto como delivery medicinal: manjericão + alho + azeite = anti-inflamatório, antioxidante e antimicrobiano simultâneos",
+          "Planta sagrada em duas tradições (hinduísmo e culinária italiana) — identidade cultural duplamente forte"
+        ],
+        "sinergias": [
+          "Manjericão + alho + azeite (pesto): anti-inflamatório + antimicrobiano + cardiovascular",
+          "Manjericão + funcho + camomila: digestivo completo para cólica e gases",
+          "Manjericão (OE) + citronela: repelente de insetos potente",
+          "Manjericão + gengibre: digestivo aquecedor para náusea e indigestão"
+        ],
+        "alertas": [
+          "OE quimiotipo estragol: evitar uso interno em gestantes e em doses elevadas",
+          "Varfarina: grandes quantidades culinárias de manjericão fresco podem alterar RNI",
+          "Diferença entre quimiotipos é clinicamente relevante — especificar quimiotipo ao usar como OE",
+          "Não confundir alfavaca-do-brasil (O. gratissimum) com manjericão europeu — eugenol muito maior"
+        ]
       }
     },
     {
       "slug": "erva-de-santa-barbara",
-      "nome_popular": "Erva-de-Santa-Bárbara",
-      "nome_cientifico": "Artemisia vulgaris L. (artemísia-comum)",
-      "tagline": "A mãe de todas as ervas — a artemísia europeia, planta das mulheres e das viagens, com a mais longa história de uso medicinal do mundo ocidental e princípios ativos que incluem a base da artemisinina, o maior avanço antipalúdico do século XX.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Artemisia vulgaris L. (artemísia-comum)",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico emenagogo / digestivo amargo / anti-inflamatório",
-        "parte_usada": "Partes aéreas (antes da floração), secas.",
-        "sinonimos": [
-          "Artemísia · losna-menor · erva-de-santa-bárbara · artemísia-comum",
-          "Mugwort (inglês) · Armoise (francês) · Beifuß (alemão)",
-          "DISTINÇÃO: A. vulgaris ≠ A. absinthium (losna — Ficha 18) ≠ A. annua (qinghao — artemisinina antipalúdica)"
+        "nome_popular": "Erva-de-santa-bárbara",
+        "nome_cientifico": "Barbarea vulgaris",
+        "familia": "Brassicaceae",
+        "outros_nomes": [
+          "bárbara-de-inverno",
+          "rocketcress",
+          "winter cress (ing.)",
+          "barbarée commune (fr.)"
+        ],
+        "origem": "Europa e Ásia Ocidental",
+        "partes_usadas": [
+          "folhas jovens frescas",
+          "flores",
+          "sementes"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-herbáceo moderado, levemente tujona, artemísia característico.",
-        "aroma": "Herbáceo-camforáceo, artemísia típica, leve defumado.",
-        "cor_da_infusao": "Verde-amarelado a âmbar. #B8B048",
-        "intensidade": "3/5 — medicinal.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Herbácea bienal ou perene de 30–90 cm. Folhas basais em roseta, grandes (5–20 cm), pinadas com lobo terminal arredondado muito grande — as 'orelhas' que abraçam o caule. Folhas caulinares menores, amplexicaules. Flores amarelas em racemos terminais (típicas da família Brassicaceae, 4 pétalas em cruz). Frutos em silíquas longas (2–3 cm). Gosto levemente amargo e pungente, lembrando agrião.",
+        "composicao_quimica": [
+          "Glucosinolatos: glucobarbarina (principal) — convertido em gluconastrurtina ao mastigar; barbarina tem atividade inseticida e antifúngica",
+          "Flavonoides: kaempferol, quercetina, isorhamnetina",
+          "Vitamina C (até 60 mg/100 g folhas frescas)",
+          "Vitamina K",
+          "Beta-caroteno",
+          "Glucosinolatos sulfurosos: compostos antimicrobianos",
+          "Saponinas (traços)"
+        ],
+        "bioma": "Europeu temperado — beiras de rios, terrenos úmidos, campos",
+        "cultivo": "Semi-sombra a sol, solos úmidos e ricos, pH 6–7. Bienal: roseta no 1° ano, floresce no 2°. Naturalizada em várias regiões do sul do Brasil como invasora de hortas e campos."
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C | Tempo: 5 min (não mais — tujona aumenta) | Quantidade: 1–2 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 g/250 ml",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "Pré-menstrual (emenagogo) ou pós-refeições (digestivo).",
-        "combina_com": ""
+        "formas": [
+          {
+            "tipo": "Uso culinário (folhas jovens frescas)",
+            "descricao": "Folhas jovens de roseta (antes da floração) em saladas, refogadas como espinafre, em sanduíches ou sopas. Sabor levemente amargo e pungente — semelhante ao agrião.",
+            "indicacoes": [
+              "vitamina C",
+              "vitamina K",
+              "antioxidante",
+              "digestivo"
+            ]
+          },
+          {
+            "tipo": "Infusão (uso interno medicinal)",
+            "descricao": "1–2 colheres de sopa de folhas frescas ou 1 de secas em 200 mL a 80–90°C. Infundir 8–10 min. 1–2 xícaras/dia.",
+            "indicacoes": [
+              "escorbuto",
+              "deficiência de vitamina C",
+              "antiescorbútico histórico",
+              "digestão"
+            ]
+          },
+          {
+            "tipo": "Cataplasma (uso externo histórico)",
+            "descricao": "Folhas frescas amassadas aplicadas sobre feridas ou abcessos.",
+            "indicacoes": [
+              "feridas",
+              "abcessos",
+              "furúnculos (uso tradicional)"
+            ]
+          }
+        ],
+        "dicas": "As folhas jovens da roseta (outono/inverno) são as mais nutritivas e menos amargas. Após a floração, as folhas ficam mais duras e amargas. Branquear levemente (30 sec de água quente) reduz o amargor se desejado."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "aplicacoes": [
+          {
+            "forma": "Cataplasma",
+            "preparo": "Folhas frescas amassadas ou trituradas, aplicadas diretamente.",
+            "indicacoes": [
+              "feridas",
+              "abcessos",
+              "lesões cutâneas (uso histórico)"
+            ]
+          },
+          {
+            "forma": "Suco foliar",
+            "preparo": "Folhas frescas centrifugadas ou liquidificadas, coadas. Aplicar com compressa.",
+            "indicacoes": [
+              "anti-inflamatório tópico",
+              "cicatrização"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Emenagogo (regula ciclo menstrual)",
-          "Digestivo amargo",
-          "Antiparasitário leve",
-          "Diaforético",
-          "Moxabustão (uso externo em MTC — aquecimento de pontos de acupuntura)",
-          "⚠️ TUJONA — mesmos alertas da losna (Ficha 18): Doses baixas em infusão curta: seguras. OE interno: contraindicado.",
-          "Contraindicações: Gestação — contraindicada (emenagoga, possível abortiva). Epilepsia — tujona pró-convulsivante."
+        "acoes_farmacologicas": [
+          "Antiescorbútico: vitamina C elevada — uso histórico para prevenir escorbuto nos séculos XVI–XIX",
+          "Antioxidante: vitamina C + carotenoides + flavonoides",
+          "Antifúngico: glucosinolatos e seus produtos de hidrólise inibem fungos patogênicos",
+          "Inseticida/anti-herbivoria: glucobarbarina repele lagartas e insetos",
+          "Anti-inflamatório: flavonoides inibem mediadores inflamatórios",
+          "Vitamina K: coagulação e saúde óssea"
         ],
-        "componentes_ativos": [],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "Hipotireoidismo: glucosinolatos em excesso podem interferir na função tireoidiana",
+          "Anticoagulados com varfarina: vitamina K pode alterar RNI",
+          "Cálculos renais de oxalato: consumo excessivo"
+        ],
+        "efeitos_adversos": [
+          "Em excesso: distúrbio gastrointestinal (sabor pungente)",
+          "Hipotireoidismo: consumo regular em grandes quantidades pode suprimir tireoide (glucosinolatos)"
+        ],
+        "interacoes": [
+          "Varfarina: vitamina K — monitorar RNI se consumo regular e volumoso",
+          "Medicamentos para tireoide: glucosinolatos em excesso"
+        ],
+        "dose_segura": "Uso culinário: sem limitações específicas. Infusão: 2–4 g/dia. Sem monografia medicinal formal — uso baseado em tradição culinária e histórica.",
+        "nivel_evidencia": "Evidência histórica bem documentada para antiescorbútico (vitamina C). Estudos pré-clínicos para glucosinolatos e flavonoides. Sem ensaios clínicos modernos específicos. Uso culinário bem estabelecido."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Leve, herbáceo, levemente pungente (glucosinolatos), sem aroma muito pronunciado",
+        "sabor": "Amargo e pungente, lembrando agrião ou mostarda suave; com notas verdes e um leve picante",
+        "cor_visual": "Folhas verde-escuras brilhantes; flores amarelas vivas; infusão verde-amarelada",
+        "textura": "Folhas crocantes e suculentas; após cocção: macia como espinafre",
+        "sensacao": "Tonificante e levemente estimulante; sabor que 'acorda' o paladar"
       },
       "cultura": {
-        "historia": "A artemísia é a planta dedicada à deusa Ártemis — deusa da lua, da caça e do parto. Na mitologia grega, Ártemis protegia as mulheres no trabalho de parto — e a artemísia era dada para facilitar o nascimento. A planta das mulheres por excelência da Europa antiga.  O maior feito farmacológico moderno ligado ao gênero Artemisia é a descoberta da artemisinina por Tu Youyou (Nobel de Medicina 2015) — isolada de A. annua (qinghao, espécie chinesa diferente da vulgaris). A artemisinina é o antipalúdico mais eficaz do mundo e salvou centenas de milhões de vidas. O prêmio Nobel foi para uma pesquisa baseada em textos de medicina tradicional chinesa do séc. IV d.C. — o caso mais eloquente de etnobotânica validada que a história científica registra.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "O nome 'Bárbara' refere-se a Santa Bárbara (4 de dezembro no calendário cristão) — época em que as folhas estão mais tenras e disponíveis no inverno europeu. Era colhida por marinheiros e exploradores como 'planta antiescorbútica de inverno', junto com agrião e cascas de limão, durante as Grandes Navegações dos séculos XV–XVII. Francis Drake a mencionou como provisão de suas expedições. No norte da Europa, era alimento básico de inverno antes da chegada das estufas.",
+        "uso_tradicional": "Europa medieval e renascentista: antiescorbútico essencial no inverno quando frutas cítricas eram raras. Marinheiros europeus: provisão obrigatória de longas viagens. Culinária nórdica e britânica: salada de inverno. Medicina tradicional: feridas e abcessos (cataplasma de folhas). Brasil sul: planta naturalizada, coletada como 'agrião-do-campo'.",
+        "simbolismo": "Sobrevivência invernal, resistência, alimento-remédio. Santa Bárbara: proteção contra tempestades (daí a planta do marinheiro).",
+        "curiosidades": [
+          "Considerada a 'planta das Grandes Navegações' — antiescorbútica de inverno que manteve tripulações vivas antes do limão se popularizar",
+          "O nome científico 'Barbarea' vem de Santa Bárbara — tradição medieval de colher as folhas em 4 de dezembro",
+          "Glucobarbarina tem efeito inseticida paradoxal: repele a maioria das lagartas, mas atrai especificamente a borboleta Pieris rapae que aprende a detectá-la como 'planta segura'",
+          "No Brasil, é invasora comum em hortas do sul — a maioria dos agricultores a arranca sem saber que é comestível e nutritiva"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Não monografado.",
-        "status_ema": "Monografia HMPC — traditional use para dismenorreia e dispepsia.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Partes aéreas: pré-floração (verão)"
+        "status_brasil": "Sem registro ANVISA. Planta naturalizada coletada casualmente. Uso como alimento não regulamentado especificamente.",
+        "status_europa": "Sem monografia EMA/HMPC. Uso culinário documentado historicamente. Glucosinolatos: avaliados pela EFSA no contexto de Brassicaceae.",
+        "farmacopeia": "Não consta em farmacopeias medicinais.",
+        "registro": "Sem produtos medicinais registrados. Uso culinário e histórico."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Planta silvestre (coleta em campo — sul do Brasil e Europa)",
+          "Sementes (cultivo doméstico)",
+          "Raramente disponível a granel em ervanarias especializadas"
+        ],
+        "preco_estimado": "Sementes: R$ 8–20/pacote. Planta: coleta gratuita em campo. Raramente comercializada.",
+        "disponibilidade": "Baixa comercialmente — autocultura ou coleta silvestre.",
+        "como_escolher": "Folhas jovens de roseta, verde-escuro intenso, sem manchas. Confirmar identificação botânica antes de coletar — confundir com outras Brassicaceae não comestíveis é possível.",
+        "armazenamento": "Folhas frescas: geladeira em saco ou pote. 3–5 dias. Secar ao sol/sombra: validade 12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Alimento funcional de inverno (vitamina C, K, carotenoides) — saladas e refogados",
+          "Antiescorbútico histórico e vitamina C natural",
+          "Digestivo tonificante (uso culinário com folhas cruas)",
+          "Antimicrobiano alimentar (glucosinolatos)"
+        ],
+        "diferenciais": [
+          "Planta das Grandes Navegações — vitamina C de inverno antes do limão",
+          "Invasora subestimada: cresce em hortas do sul do Brasil e a maioria não sabe que é comestível",
+          "Glucobarbarina: glucosinolato com efeito inseticida raro — potencial agrícola para manejo de pragas",
+          "Ótimo exemplo de 'comida-remédio' sem necessidade de compra"
+        ],
+        "sinergias": [
+          "Erva-de-santa-bárbara + agrião + espinafre: salada de inverno antiescorbútica completa",
+          "Erva-de-santa-bárbara + alho + limão: dressing anti-inflamatório",
+          "Erva-de-santa-bárbara + camomila (infusão): digestivo tonificante + calmante"
+        ],
+        "alertas": [
+          "Hipotireoidismo: limitar consumo regular de grandes quantidades (glucosinolatos)",
+          "Varfarina: vitamina K — monitorar RNI se consumo diário e volumoso",
+          "Identificação botânica: confirmar antes de coletar no campo — Brassicaceae com folhas similares existem",
+          "Plantas coletadas perto de rodovias ou campos tratados com agrotóxicos: evitar"
+        ]
       }
     },
     {
