@@ -12101,202 +12101,412 @@
       "slug": "espinheira-gaucha",
       "nome_popular": "Espinheira-Gaúcha",
       "nome_cientifico": "Maytenus dasyclada Mart.",
-      "tagline": "A prima sulina da espinheira-santa — gastroprotetor endêmico dos campos do Rio Grande do Sul com ação documentada e identidade regional forte.",
+      "tagline": "A prima gaúcha da espinheira-santa — antiulcerosa dos pampas com maytansinoides e triterpenos que protegem a mucosa gástrica e guardam a memória fitoquímica de um gênero com 200 espécies medicinais.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Maytenus dasyclada Mart.",
         "familia_botanica": "Celastraceae",
-        "tipo_botanico": "Fitoterápico gastroprotetor / antiulceroso",
-        "parte_usada": "Folhas secas.",
+        "tipo_botanico": "Planta medicinal antiulcerosa / gastroprotetora",
+        "parte_usada": "Folhas (infusão — uso medicinal principal); casca do caule (decocção — uso popular secundário).",
         "sinonimos": [
-          "Espinheira-gaúcha · cancorosa-gaúcha · espinheira-do-sul",
-          "Relacionada à espinheira-santa (M. ilicifolia) — mesmo gênero, química similar"
+          "espinheira-gaúcha · cancorosa · cancorosa-do-sul",
+          "Maytenus ilicifolia Mart. ex Reiss. (espinheira-santa — espécie afim mais estudada, uso similar)",
+          "Nota: espinheira-gaúcha e espinheira-santa são espécies distintas do mesmo gênero com perfil fitoquímico e indicações sobreponíveis"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo leve, herbáceo-verde, levemente adstringente. Perfil similar à espinheira-santa (M. ilicifolia) mas levemente mais amargo.",
-        "aroma": "Erval fresco, folha verde amadeirada.",
-        "cor_da_infusao": "Verde-amarelado a âmbar claro. #B8C460",
-        "intensidade": "2/5 — suave, uso cotidiano possível.",
-        "notas": "",
-        "bioma_de_origem": "Pampas e Mata Atlântica interior — endêmica do RS, ocorrência em SC e PR.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-adstringente com notas terrosas e leve dulçor residual; retrogusto herbáceo seco.",
+        "aroma": "Herbáceo-lenhoso discreto, notas verdes frescas e fundo terroso suave; sem componente aromático marcante.",
+        "cor_da_infusao": "Castanho-esverdeado a âmbar claro; levemente turva.",
+        "intensidade": "3/5 — presença medicinal clara, não agressiva; amargor e adstringência equilibrados.",
+        "notas": "A espinheira-gaúcha é frequentemente substituída ou confundida com a espinheira-santa (M. ilicifolia) no mercado. Ambas têm composição e indicações similares, mas M. dasyclada é a espécie nativa dos campos sulinos e pampas gaúchos.",
+        "bioma_de_origem": "Mata Atlântica (porção sul) e campos de altitude do RS e SC — mata ciliar, bordas de floresta ombrófila mista.",
+        "distribuicao_geografica": [
+          "Rio Grande do Sul: floresta com araucária, campos de altitude, mata ciliar",
+          "Santa Catarina: planalto serrano, bordas de floresta ombrófila mista",
+          "Paraná: ocorrência menos comum — M. ilicifolia predomina",
+          "Argentina (Misiones): ocorrência documentada"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90 °C | Tempo: 5–10 min coberto | Quantidade: 3–5 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g/250 ml",
-        "metodo": "Infusão coberta. Idêntico à espinheira-santa.",
-        "reinfusoes": "",
-        "melhor_momento": "30 min antes das refeições (gastroprotetor).",
-        "combina_com": "Camomila · Funcho · Melissa (blends digestivos)"
+        "temperatura_ideal": "85–90 °C — temperatura abaixo do ponto de ebulição preserva taninos hidrolisáveis e triterpenos sensíveis ao calor.",
+        "tempo_de_infusao": "10–15 minutos coberto. Casca: decocção 15 minutos.",
+        "quantidade": "Folhas secas: 4–6 g / 200 ml. Folhas frescas: 6–10 g / 200 ml.",
+        "metodo": "Infusão coberta em água quente. Não ferver as folhas — perda de compostos voláteis e alteração de taninos.",
+        "reinfusoes": "Até 1 reinfusão (redução de 30–40% de ativos).",
+        "melhor_momento": "30 minutos antes das refeições (efeito gastroprotetor preventivo) ou ao acordar em jejum (antiulceroso). Evitar ao deitar — efeito diurético discreto.",
+        "combina_com": "Melissa, camomila (sinergismo ansiolítico e gastroprotetor); alcaçuz (sinergia antiulcerosa); erva-doce (suaviza amargor e adstringência)."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Etnobotânico — uso popular em compressas; sem estudos clínicos tópicos formais para M. dasyclada.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressa antiulcerosa bucal (uso popular)",
+            "texto": "Decocção concentrada de folhas usada como bochecho em aftas e inflamações da mucosa oral. Mecanismo: taninos e triterpenos com ação adstringente e anti-inflamatória local. Prática registrada em comunidades rurais do RS."
+          }
+        ],
+        "contraindicacoes": "Evitar uso tópico por períodos prolongados — taninos em alta concentração podem ressecar mucosas."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Gastroprotetor (proteção da mucosa gástrica)",
-          "Antiulceroso",
-          "Analgésico gástrico",
-          "Anti-inflamatório digestivo",
-          "Componentes ativos:",
-          "Contraindicações: Gestação — contraindicada (mesmas precauções que M. ilicifolia). Lactação — cautela."
+          "Antiulceroso / gastroprotetor (triterpenos — friedelina, friedelanol — e taninos)",
+          "Anti-inflamatório gástrico (inibição de prostaglandinas pró-inflamatórias)",
+          "Antioxidante (polifenóis totais — catequinas, flavonoides)",
+          "Analgésico discreto (triterpenos)",
+          "Antidiarreico (taninos adstringentes)"
         ],
         "componentes_ativos": [
           {
-            "label": "FRIEDELINA (triterpeno)",
-            "texto": "Antiulceroso, analgésico"
+            "label": "FRIEDELINA e FRIEDELANOL (triterpenos pentacíclicos)",
+            "texto": "Principais responsáveis pela ação gastroprotetora. Mecanismo: estimulam produção de muco gástrico (prostaglandina E2 endógena), reduzem secreção ácida por inibição de H+/K+-ATPase (bomba de prótons), e protegem a mucosa de agentes ulcerogênicos (indometacina, etanol). Documentado para M. ilicifolia e extrapolado para M. dasyclada por perfil fitoquímico similar."
           },
           {
-            "label": "MAITEANSINAS",
-            "texto": "Anti-inflamatório, antitumoral (experimental)"
+            "label": "TANINOS CONDENSADOS (catequinas, proantocianidinas)",
+            "texto": "Adstringentes; formam filme protetor sobre a mucosa gástrica lesionada. Atividade antibacteriana contra H. pylori in vitro (CIM documentada para extratos de Maytenus spp.) — complementa ação gastroprotetora."
           },
           {
-            "label": "TANINOS",
-            "texto": "Gastroprotetor, adstringente"
+            "label": "FLAVONOIDES (quercetina, rutina, miricetina)",
+            "texto": "Anti-inflamatórios via COX-2, antioxidantes, vasoprotegentes. Rutina: fortalece capilares da mucosa gástrica. Quercetina: inibe secreção ácida e reduz inflamação da mucosa."
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Anti-inflamatório"
+            "label": "MAYTANSINOIDES (maytansina — traços)",
+            "texto": "Alcaloides citotóxicos encontrados em algumas espécies de Maytenus. Ação antitumoral potente em modelos experimentais — inibição de polimerização de tubulina. Concentração em M. dasyclada: baixa nos órgãos vegetativos (folhas, casca). Relevância farmacológica nas doses de chá: mínima. Importância histórica: maytansina foi o primeiro composto de Maytenus com ensaio clínico oncológico (Fase I/II, anos 1970 — eficácia limitada, toxicidade elevada)."
+          },
+          {
+            "label": "CELASTRINA e MAYTINA (sesquiterpenos piridínicos)",
+            "texto": "Presentes em diversas Celastraceae incluindo Maytenus spp. Atividade antimicrobiana e inseticida. Contribuem ao perfil amargo-adstringente."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Úlcera gástrica / gastrite (proteção e tratamento complementar)",
+            "evidencia": "Moderada — estudos clínicos com M. ilicifolia (espécie afim) + dados pré-clínicos de M. dasyclada",
+            "populacao": "Adultos com gastrite e úlcera péptica; ANVISA reconhece M. ilicifolia (espinheira-santa) como fitoterápico antiulceroso. M. dasyclada tem base etnobotânica forte e fitoquímica similar."
+          },
+          {
+            "indicacao": "Dispepsia funcional",
+            "evidencia": "Preliminar (uso tradicional + mecanismo plausível)",
+            "populacao": "Adultos; sem ensaios clínicos específicos para dispepsia funcional com M. dasyclada."
+          }
+        ],
+        "contraindicacoes": "Gestação: contraindicada — triterpenos e taninos em dose medicinal têm potencial abortivo (documentado para Maytenus spp. em estudos animais). Lactação: evitar. Crianças menores de 12 anos: sem dados adequados. Não substituir tratamento de H. pylori confirmado sem orientação médica.",
+        "interacoes": [
+          {
+            "label": "Antiácidos e inibidores de bomba de prótons (omeprazol)",
+            "texto": "Mecanismo de ação parcialmente sobreponível — potencialização possível. Monitorar sinais de hipocloridria com uso concomitante prolongado."
+          },
+          {
+            "label": "Ferro (absorção)",
+            "texto": "Taninos condensados quelam ferro não-heme. Não consumir junto a suplementos de ferro ou refeições ricas em ferro."
+          }
+        ],
+        "efeitos_adversos": "Doses usuais: bem tolerada. Doses altas: obstipação (taninos), náusea. Uso prolongado sem pausa: possível interferência na absorção de micronutrientes (ferro, zinco).",
+        "dose_maxima": "Folhas secas: 12 g/dia (3 xícaras × 4 g). Não usar por mais de 8 semanas consecutivas sem avaliação.",
+        "fontes": [
+          "Gonzalez FG et al. (2001). Antiulcer activity of Maytenus aquifolium in rats. J Ethnopharmacol.",
+          "Souza-Formigoni ML et al. (1991). Antiulcerogenic effects of two Maytenus species in laboratory animals. J Ethnopharmacol.",
+          "ANVISA — Instrução Normativa 02/2014: Maytenus ilicifolia (espinheira-santa) monografia fitoterápica.",
+          "Simões CMO et al. (2017). Farmacognosia: do produto natural ao medicamento. Artmed.",
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Moderado (3/5)",
+            "observacao": "Friedelina e flavonoides. Amargor limpo, sem agressividade; integra bem com mel."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Moderada (3/5)",
+            "observacao": "Taninos condensados. Sensação seca persistente no palato — assinatura do gênero Maytenus."
+          },
+          {
+            "dimensao": "Terroso-herbáceo",
+            "intensidade": "Moderado (2–3/5)",
+            "observacao": "Nota de solo úmido e folha verde seca. Não há notas florais ou frutadas — perfil austero e funcional."
+          },
+          {
+            "dimensao": "Dulçor residual",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Açúcares livres e pequenas quantidades de glicosídeos criam dulçor discreto que suaviza o final."
+          }
+        ],
+        "olfativo_familia": "Herbáceo-lenhoso discreto; sem família aromática dominante — perfil neutro funcional.",
+        "olfativo_descritores": [
+          "folha verde seca",
+          "madeira úmida",
+          "feno leve",
+          "terra de floresta",
+          "fundo levemente resinoso"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Mecanorreceptores bucais",
+            "ativacao": "Moderada",
+            "molecula": "Taninos condensados → adstringência / secura de mucosa"
+          }
+        ],
+        "tatil": "Corpo leve a médio; finalização seca e levemente adstringente — típica de ervas ricas em taninos.",
+        "descricao_integrada": "A espinheira-gaúcha é um chá de intenção medicinal clara — sem apelos florais ou aromáticos, entrega amargor e adstringência funcionais que 'comunicam' ação ao bebedor. Quem a toma para gastrite não está buscando prazer sensorial, está buscando alívio, e a austeridade do perfil é coerente com essa expectativa. Complementada com mel e erva-doce, torna-se bebida agradável sem perder identidade medicinal."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A espinheira-gaúcha é o equivalente regional da espinheira-santa (M. ilicifolia) para os gaúchos do Rio Grande do Sul — endêmica dos campos e bosques nativos do estado, usada pela medicina popular gaúcha para \"azia\" e \"gastrite\" com a mesma lógica da espinheira-santa mais famosa. A diferença entre as duas espécies é geograficamente marcada: M. ilicifolia no Cerrado e Mata Atlântica interior; M. dasyclada nos pampas sulinos. Para o Ervatório, a narrativa da especificidade regional é o diferencial.",
-        "curiosidade": ""
+        "historia": "O gênero Maytenus é utilizado medicinalmente por populações indígenas sul-americanas há milênios — registros de uso das celastráceas nas crônicas de viajantes europeus do século XVI descrevem o uso de 'espinheiras' para dores de estômago e feridas. No Sul do Brasil, a espinheira-gaúcha foi a alternativa local à espinheira-santa (M. ilicifolia) do planalto paranaense, usada nas comunidades de imigrantes alemães e italianos do RS como remédio caseiro para 'estômago fraco', gastrite e úlceras. O conhecimento foi transmitido pelas benzedeiras e parteiras, e sobreviveu na medicina popular gaúcha.",
+        "cerimonial": "Sem uso cerimonial documentado. Integrada à medicina doméstica gaúcha como remédio funcional de cozinha — preparada pela matriarca da família para membros com queixas gástricas. A dimensão cultural é a do cuidado cotidiano, não do ritual.",
+        "brasil": "A confusão comercial entre espinheira-gaúcha (M. dasyclada) e espinheira-santa (M. ilicifolia) é comum no mercado de plantas medicinais — ambas são vendidas indistintamente. A ANVISA tem monografia apenas para M. ilicifolia, mas o uso de M. dasyclada nas regiões onde ela é nativa tem legitimidade etnobotânica sólida. Pesquisadores da UFRGS e UFSC documentaram o uso e a composição fitoquímica de M. dasyclada, consolidando sua identidade como espécie medicinal própria, não mero substituto.",
+        "curiosidade": "A maytansina — um alcaloide citotóxico isolado de Maytenus spp. nos anos 1970 — foi o primeiro composto do gênero testado clinicamente como anticancerígeno. Os ensaios de Fase I e II mostraram atividade antitumoral real, mas com janela terapêutica estreita demais para uso clínico seguro. Décadas depois, derivados sintéticos da maytansina (DM1, DM4) foram conjugados a anticorpos monoclonais e tornaram-se componentes de antibody-drug conjugates (ADCs) aprovados pela FDA — como ado-trastuzumab emtansina (Kadcyla®) para câncer de mama HER2+. A planta que não serviu como medicamento isolado voltou pela porta dos fundos como payload de terapia de alvo molecular."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Uso tradicional reconhecido — mesmo grupo de Maytenus monografados",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas disponíveis o ano todo"
+        "eixo_botanico_tpc": "Planta medicinal tradicional — sem RENISUS para M. dasyclada especificamente; M. ilicifolia consta na lista.",
+        "status_anvisa": "M. dasyclada: sem monografia publicada. M. ilicifolia (afim): fitoterápico com monografia na IN 02/2014 (antiulceroso). Comercialização de M. dasyclada como droga vegetal permitida com nomenclatura correta.",
+        "status_ema": "Não avaliada pela EMA.",
+        "status_fda": "Não avaliada.",
+        "certificacao_organica": "Extrativismo em remanescentes de mata com araucária — potencial de certificação orgânica por manejo. Cultivo incipiente.",
+        "sazonalidade": "Folhas disponíveis o ano todo. Coleta recomendada na primavera (setembro–novembro) — maior concentração de polifenóis em folhas jovens."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Herbanárias do Sul (RS, SC, PR) — frequentemente vendida como 'espinheira' sem distinção de espécie",
+          "Farmácias de manipulação do sul do Brasil",
+          "Feiras de plantas medicinais de Porto Alegre, Florianópolis, Curitiba",
+          "Lojas de produtos naturais com foco em fitoterapia sul-brasileira"
+        ],
+        "faixa_de_preco": "Folhas secas: R$ 10–25/50g. Produto regional sem premium diferenciado.",
+        "formatos": [
+          "Folhas secas inteiras ou trituradas (infusão)",
+          "Extrato seco em cápsulas (farmácias de manipulação)",
+          "Tintura hidroalcoólica (farmácias de manipulação)",
+          "Chá em saquinhos (produtores artesanais do sul)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "A antiulcerosa gaúcha: prima da espinheira-santa",
+          "texto": "Maytenus dasyclada é a espécie nativa dos campos e matas do Sul — com perfil fitoquímico e indicações antiulcerosas praticamente idênticas à espinheira-santa (M. ilicifolia). Friedelina e friedelanol protegem a mucosa gástrica estimulando muco e inibindo a bomba de prótons — mecanismo duplo documentado para o gênero Maytenus."
+        },
+        {
+          "label": "Da planta que falhou ao payload que salvou vidas",
+          "texto": "A maytansina isolada de Maytenus nos anos 1970 teve janela terapêutica estreita demais como droga oncológica isolada. Décadas depois, derivados sintéticos (DM1, DM4) tornaram-se payloads de antibody-drug conjugates aprovados pela FDA — incluindo o Kadcyla® para câncer de mama HER2+. A planta que 'falhou' voltou como componente de uma das terapias oncológicas de precisão mais importantes da medicina moderna."
+        },
+        {
+          "label": "Identidade própria, não mero substituto",
+          "texto": "A confusão comercial com a espinheira-santa é comum, mas M. dasyclada tem identidade própria: espécie dos campos gaúchos e matas de araucária, com composição ligeiramente diferente e base etnobotânica regional específica. Reconhecer essa distinção é valorizar a diversidade medicinal dos ecossistemas sulinos."
+        }
+      ]
     },
     {
       "slug": "sete-sangrias",
       "nome_popular": "Sete-Sangrias",
       "nome_cientifico": "Cuphea carthagenensis (Jacq.) J.F.Macbr.",
-      "tagline": "A antihipertensiva do campo — erva dos pastos que cuida do coração com tradição nordestina e sulista e mecanismo vasodilatador comprovado.",
+      "tagline": "A erva das sete sagrias — anti-hipertensiva popular dos campos sulinos e da medicina afro-brasileira, com ácido elágico e taninos que fundamentam o uso secular para pressão alta e sangramento.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Cuphea carthagenensis (Jacq.) J.F.Macbr.",
-        "familia_botanica": "Lythraceae (família da romã, da mangava-brava)",
-        "tipo_botanico": "Fitoterápico antihipertensivo / diurético",
-        "parte_usada": "Partes aéreas (folhas e ramos finos), secas.",
+        "familia_botanica": "Lythraceae",
+        "tipo_botanico": "Planta medicinal anti-hipertensiva / hemostática / diurética",
+        "parte_usada": "Partes aéreas (folhas e ramos finos) — infusão e decocção.",
         "sinonimos": [
-          "Sete-sangrias · sete-sangues · coerana",
-          "Guanxuma (confusão regional)"
+          "sete-sangrias · guanxuma · herva-de-sangue · erva-das-sete-sangrias",
+          "Cuphea balsamona Cham. & Schltdl.",
+          "Parsonsia carthagenensis Jacq."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-herbáceo suave, levemente adstringente, vegetal.",
-        "aroma": "Campo aberto, herbáceo simples, feno.",
-        "cor_da_infusao": "Verde-amarelado a âmbar. #C0B840",
-        "intensidade": "2/5 — suave, uso cotidiano possível.",
-        "notas": "",
-        "bioma_de_origem": "Pampas, Mata Atlântica, Caatinga — ruderal de distribuição ampla.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-adstringente leve com notas herbáceas e leve toque ácido; perfil discreto e funcional.",
+        "aroma": "Herbáceo suave, levemente balsâmico; notas verdes frescas sem dominância aromática marcante.",
+        "cor_da_infusao": "Castanho-esverdeado a castanho claro; límpida ou levemente turva.",
+        "intensidade": "2–3/5 — perfil discreto, não imponente; fácil de beber, sem polarização sensorial.",
+        "notas": "O nome 'sete-sangrias' refere-se ao uso popular como hemostático e ao uso em quadros de 'excesso de sangue' (hipertensão, hemorragias) pela medicina tradicional. O número sete tem conotação mágico-religiosa nas tradições afro-brasileiras.",
+        "bioma_de_origem": "Campos sulinos, Cerrado e Caatinga — ampla distribuição no Brasil; prefere solos úmidos de beira de riacho.",
+        "distribuicao_geografica": [
+          "Sul do Brasil (RS, SC, PR): campos úmidos, margens de arroios — uso medicinal mais intensivo",
+          "Sudeste (MG, SP, RJ): uso medicinal popular registrado",
+          "Nordeste (BA, PE, CE): medicina popular e medicina afro-brasileira",
+          "América Central e do Sul tropical: uso medicinal paralelo em vários países"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90 °C | Tempo: 5–8 min | Quantidade: 3–5 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g/250 ml",
-        "metodo": "Infusão simples.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã e tarde (antihipertensivo — monitorar PA).",
-        "combina_com": "Maracujá · Melissa · Capim-limão (blends cardio-calmantes)"
+        "temperatura_ideal": "90–95 °C. Infusão ou decocção breve igualmente eficazes para extração dos compostos ativos.",
+        "tempo_de_infusao": "8–12 minutos coberto (infusão). Decocção: 5 minutos de fervura leve + 10 minutos coberto.",
+        "quantidade": "Partes aéreas secas: 4–6 g / 200 ml. Frescas: 8–12 g / 200 ml.",
+        "metodo": "Infusão coberta. Decocção breve (preferida pela medicina popular para maximizar extração de taninos).",
+        "reinfusoes": "Até 1 reinfusão com redução de 30% de taninos.",
+        "melhor_momento": "Manhã em jejum (efeito anti-hipertensivo e diurético). 2–3 xícaras/dia distribuídas. Evitar após as 18h.",
+        "combina_com": "Erva-mate (tradição sul-brasileira), canela-de-ema (sinergia anti-hipertensiva), cavalinha (sinergia diurética)."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Etnobotânico — uso popular hemostático e cicatrizante; dados in vitro confirmam atividade.",
+        "aplicacoes": [
+          {
+            "titulo": "Hemostático tópico (compressas)",
+            "texto": "Compressa de decocção concentrada sobre pequenos cortes e feridas superficiais. Uso popular amplamente registrado. Mecanismo: taninos hidrolisáveis e ácido elágico promovem coagulação local por precipitação de proteínas e contração capilar. Prática registrada em comunidades rurais do Sul e em terreiros de candomblé e umbanda."
+          },
+          {
+            "titulo": "Anti-inflamatório bucal (bochecho)",
+            "texto": "Decocção como bochecho para aftas, gengivite e inflamações orais. Taninos adstringentes e ácido elágico com atividade anti-inflamatória e antimicrobiana local."
+          }
+        ],
+        "contraindicacoes": "Não aplicar em feridas profundas. Evitar uso tópico extenso em mucosas sensíveis sem orientação."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antihipertensivo (vasodilatação periférica)",
-          "Diurético",
-          "Hipoglicemiante leve",
-          "Anti-inflamatório",
-          "Antioxidante",
-          "Componentes ativos:",
-          "Contraindicações: Hipotensão — potencialização. Uso concomitante com anti-hipertensivos — monitorar. Gestação — cautela."
+          "Anti-hipertensivo (vasodilatação discreta — mecanismo não totalmente elucidado)",
+          "Diurético (aumento de diurese — mecanismo provável: flavonoides + saponinas)",
+          "Hemostático (taninos — coagulação local)",
+          "Anti-inflamatório (ácido elágico, flavonoides)",
+          "Antioxidante (ácido elágico, elagitaninos, flavonoides)",
+          "Antimicrobiano leve (taninos + compostos fenólicos)"
         ],
         "componentes_ativos": [
           {
-            "label": "FLAVONÓIDES (vitexina, isovitexina)",
-            "texto": "Vasodilatador, antihipertensivo"
+            "label": "ÁCIDO ELÁGICO e ELAGITANINOS",
+            "texto": "Principal fração polifenólica ativa. Ácido elágico: antioxidante potente (inibição de peroxidação lipídica), anti-inflamatório (inibição NF-κB, COX-2), antimicrobiano, vasodilatador discreto (relaxamento de músculo liso vascular). Metabolizado a urolitinas pela microbiota intestinal — atividade anti-inflamatória sistêmica aumentada em respondedores."
           },
           {
-            "label": "TANINOS",
-            "texto": "Adstringente, antioxidante"
+            "label": "TANINOS HIDROLISÁVEIS (punicalaginas, pedunculagina)",
+            "texto": "Responsáveis pela atividade hemostática e adstringente. Precipitam proteínas séricas e promovem coagulação local. Atividade antimicrobiana contra S. aureus, E. coli e Candida albicans documentada in vitro."
           },
           {
-            "label": "SAPONINAS",
-            "texto": "Diurético"
+            "label": "FLAVONOIDES (vitexina, isovitexina, orientina)",
+            "texto": "C-glicosídeos de apigenina e luteolina. Vasodilatadores (relaxamento de músculo liso via GMPc), anti-inflamatórios, antioxidantes. Vitexina: efeito ansiolítico leve em modelos animais (modulação GABA-A)."
+          },
+          {
+            "label": "ALCALOIDES (lythraceae-type — bases quinolizidínicas em traços)",
+            "texto": "Presença em traços nas Lythraceae. Sem relevância farmacológica documentada nas doses populares usuais."
+          },
+          {
+            "label": "ESTEROIDES e TRITERPENOS",
+            "texto": "β-sitosterol e derivados — anti-inflamatórios, modulação do metabolismo lipídico. Contribuem à ação vasoprotegente geral."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Hipertensão arterial leve",
+            "evidencia": "Etnobotânica forte + mecanismo plausível (vasodilatação via flavonoides + diurese); estudos em modelos animais confirmam redução de pressão arterial com extratos de Cuphea spp.",
+            "populacao": "Adultos com hipertensão leve. Ensaios clínicos em humanos ausentes para C. carthagenensis especificamente."
+          },
+          {
+            "indicacao": "Hemostasia (uso tópico)",
+            "evidencia": "Moderada — mecanismo de taninos bem estabelecido; uso etnobotânico extenso como hemostático",
+            "populacao": "Uso popular amplo em cortes superficiais e sangramento mucoso."
+          },
+          {
+            "indicacao": "Anti-inflamatório",
+            "evidencia": "Preliminar (in vitro + modelos animais com ácido elágico e elagitaninos)",
+            "populacao": "Sem ensaios clínicos específicos para C. carthagenensis."
+          }
+        ],
+        "contraindicacoes": "Hipotensão: monitorar com uso concomitante de anti-hipertensivos. Gestação: sem dados de segurança — evitar uso medicinal. Crianças: sem dados. Insuficiência renal grave: elagitaninos em dose alta podem sobrecarregar metabolismo renal.",
+        "interacoes": [
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Potencialização do efeito hipotensor — risco de hipotensão sintomática. Monitorar pressão arterial."
+          },
+          {
+            "label": "Diuréticos",
+            "texto": "Sinergia diurética — risco de depleção eletrolítica com uso combinado prolongado."
+          },
+          {
+            "label": "Anticoagulantes (varfarina)",
+            "texto": "Ácido elágico demonstrou inibição de agregação plaquetária in vitro. Monitorar INR com uso concomitante."
+          }
+        ],
+        "efeitos_adversos": "Doses usuais: muito bem tolerada. Doses altas ou uso prolongado: obstipação (taninos), hipotensão sintomática. Raro: reação alérgica dermatológica (contato com planta fresca).",
+        "dose_maxima": "Partes aéreas secas: 15 g/dia (3 xícaras × 5 g). Não usar continuamente por mais de 4 semanas sem avaliação.",
+        "fontes": [
+          "Cunha AP et al. (2009). Plantas e Produtos Vegetais em Fitoterapia. Fundação Calouste Gulbenkian, Lisboa.",
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum.",
+          "Agra MF et al. (2007). Synopsis of the plants known as medicinal and poisonous in Northeast of Brazil. Rev Bras Farmacogn.",
+          "Freire SM et al. (1991). Hypotensive effect of Cuphea carthagenensis in rats. J Ethnopharmacol.",
+          "Pizzolatti MG et al. (2002). Two epimeric flavoalkaloids from Cuphea carthagenensis. Phytochemistry."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Leve a moderado (2/5)",
+            "observacao": "Flavonoides C-glicosídeos e ácido elágico. Amargor suave, não intimidador — convida ao consumo regular."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Moderada (2–3/5)",
+            "observacao": "Taninos hidrolisáveis — sensação seca no palato sem exagero; característica funcional reconhecível."
+          },
+          {
+            "dimensao": "Acidez",
+            "intensidade": "Leve (1–2/5)",
+            "observacao": "Ácido elágico e ácidos orgânicos contribuem com frescor discreto que ilumina o perfil herbáceo."
+          },
+          {
+            "dimensao": "Herbáceo-neutro",
+            "intensidade": "Moderado (2–3/5)",
+            "observacao": "Nota de erva verde seca, sem personalidade aromática marcante — perfil utilitário que facilita mistura com outras ervas."
+          }
+        ],
+        "olfativo_familia": "Herbáceo discreto; neutro-campestre sem notas florais ou resinosas dominantes.",
+        "olfativo_descritores": [
+          "erva verde seca",
+          "feno suave",
+          "notas aquosas de brejo",
+          "fundo terroso leve"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Mecanorreceptores bucais",
+            "ativacao": "Baixa-moderada",
+            "molecula": "Taninos hidrolisáveis → adstringência discreta"
+          }
+        ],
+        "tatil": "Corpo leve; finalização levemente seca. Bebida limpa, sem viscosidade.",
+        "descricao_integrada": "A sete-sangrias é um chá de perfil comedido e funcional — sem pretensão aromática ou sensorial marcante. Seu apelo é medicinal, não hedônico. Fácil de beber, fácil de combinar, fácil de tomar regularmente. O perfil discreto é uma virtude para uma erva anti-hipertensiva de uso cotidiano: não cansa, não polariza, não requer adaptação. É o chá que a avó gaúcha serve todo dia de manhã sem cerimônia."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A sete-sangrias ocupa o mesmo nicho que a espinheira-santa para o estômago — mas para a pressão arterial. É o \"chá pra abaixar a pressão\" do interior nordestino e sulista. O nome \"sete-sangrias\" refere-se ao uso popular histórico de sangrias terapêuticas — a planta substitui a sangria como forma de \"aliviar a pressão\". Metáfora que revela mais sobre a história da medicina popular do que qualquer dado farmacológico.",
-        "curiosidade": ""
+        "historia": "O nome 'sete-sangrias' tem dupla origem: a morfologia da planta (folhas com nervuras que lembram veias sanguíneas, pequenas flores vermelhas-róseas) e o uso medicinal para condições associadas ao 'excesso de sangue' — hipertensão, hemorragias, 'sangue grosso' na linguagem popular. O número sete tem forte conotação mágico-religiosa na cultura afro-brasileira e popular, e plantas com esse numeral no nome são frequentemente associadas a poderes especiais de cura. Cuphea carthagenensis foi documentada como medicinal desde as primeiras expedições naturalistas ao Brasil colônia (séculos XVII–XVIII).",
+        "cerimonial": "Na medicina afro-brasileira (candomblé, umbanda, pajelança), a sete-sangrias está associada ao orixá Oxum (água doce, cura, fertilidade) e é usada em banhos de descarrego e defumações para 'limpar o sangue' e proteger contra energias negativas. O uso simbólico do número sete — sete folhas, sete ramos, preparado sete dias — é comum em receituários de terreiros do nordeste e sudeste.",
+        "brasil": "A sete-sangrias é uma das plantas medicinais mais populares da medicina tradicional do Sul do Brasil, especialmente no RS e SC, onde é usada como anti-hipertensiva popular ao lado da canela-de-ema e do alecrim-de-campanha. Também tem forte presença na medicina popular do nordeste, especialmente na Bahia, onde o uso afro-brasileiro é mais documentado. É uma das plantas que atravessam a divisão regional — aparece tanto no chimarrão gaúcho como nos banhos de terreiro baianos.",
+        "curiosidade": "Cuphea é um gênero com mais de 260 espécies, predominantemente americanas, com uma propriedade bioquímica única: várias espécies acumulam triglicerídeos ricos em ácidos graxos de cadeia média (caprílico C8, cáprico C10, láurico C12) em suas sementes — um perfil raramente encontrado em plantas terrestres (mais comum em cocos e palma). Por essa razão, espécies de Cuphea foram avaliadas nas décadas de 1980–90 como potenciais culturas industriais para substituir óleos de coco e palma. O projeto foi abandonado por dificuldades agronômicas, mas a fitoquímica fascinante do gênero sobrevive na espécie medicinal mais comum do Brasil."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Uso tradicional reconhecido. RENISUS incluída.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Partes aéreas: colheita no período vegetativo"
+        "eixo_botanico_tpc": "Planta medicinal de uso tradicional — consta na RENISUS (2009) como espécie de interesse para o SUS.",
+        "status_anvisa": "RENISUS: Cuphea carthagenensis listada. Sem monografia de fitoterápico publicada na IN 02/2014. Comercialização como droga vegetal permitida.",
+        "status_ema": "Não avaliada pela EMA.",
+        "status_fda": "Não avaliada.",
+        "certificacao_organica": "Coleta extrativista em margens de arroios e campos úmidos — potencial de certificação por manejo. Cultivo raro.",
+        "sazonalidade": "Planta perene de ampla distribuição — disponível o ano todo. Floração primavera-verão (outubro–março). Coleta de partes aéreas: o ano inteiro, com maior concentração de polifenóis na floração."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Herbanárias do Sul e Nordeste — produto de extrativismo local",
+          "Feiras de plantas medicinais (Porto Alegre, Florianópolis, Salvador, Recife)",
+          "Farmácias de manipulação com linha de fitoterápicos tradicionais",
+          "Lojas de produtos naturais com foco em plantas da medicina popular"
+        ],
+        "faixa_de_preco": "Partes aéreas secas: R$ 8–20/50g. Produto popular de baixo custo — acessível.",
+        "formatos": [
+          "Partes aéreas secas (infusão/decocção)",
+          "Chá em saquinhos (produtores artesanais)",
+          "Tintura alcoólica (farmácias de manipulação)",
+          "Cápsulas de extrato seco (produtores menores)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "Anti-hipertensiva popular entre dois mundos",
+          "texto": "A sete-sangrias atravessa fronteiras culturais como poucas ervas brasileiras: é o chá da manhã do gaúcho com hipertensão e o banho de descarrego do terreiro de candomblé na Bahia. Vitexina, isovitexina e ácido elágico explicam a ação vasodilatadora e diurética — o mecanismo é o mesmo, o contexto cultural é radicalmente diferente."
+        },
+        {
+          "label": "Ácido elágico: do chá à urolitina",
+          "texto": "Ácido elágico e elagitaninos da sete-sangrias são metabolizados pela microbiota intestinal em urolitinas — compostos com atividade anti-inflamatória e potencialmente senolítica (remoção de células senescentes). Respondedores ao metabolismo de elagitaninos (Urolitina A) têm benefícios antiinflamatórios ampliados. A variabilidade de microbiota explica diferenças individuais de resposta."
+        },
+        {
+          "label": "O gênero que quase virou o novo coco",
+          "texto": "Cuphea spp. foram avaliadas como alternativa industrial ao óleo de coco e palma por acumularem ácidos graxos de cadeia média nas sementes — perfil bioquímico rarísimo em plantas terrestres. O projeto fracassou agronomicamente, mas revelou um gênero fitoquimicamente extraordinário. A sete-sangrias, a espécie medicinal mais popular, é apenas a ponta do iceberg de um gênero com 260 espécies e química fascinante."
+        }
+      ]
     },
     {
       "slug": "bocaiuva",
