@@ -14180,144 +14180,190 @@
     },
     {
       "slug": "curcuma",
-      "nome_popular": "Cúrcuma",
-      "nome_cientifico": "Curcuma longa L.",
-      "tagline": "O ouro anti-inflamatório da Ásia — a planta mais estudada da medicina integrativa moderna, com mais de 10.000 publicações científicas e curcumina como um dos princípios ativos mais pesquisados do mundo.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Curcuma longa L.",
-        "familia_botanica": "Zingiberaceae",
-        "tipo_botanico": "Fitoterápico anti-inflamatório / hepatoprotetor / antioxidante",
-        "parte_usada": "Rizoma seco e pulverizado (cúrcuma em pó); rizoma fresco.",
-        "sinonimos": [
-          "Cúrcuma · açafrão-da-terra · açafrão-da-índia · gengibre-amarelo",
-          "Turmeric (inglês) · Curcuma (francês/espanhol) · Kurkuma (alemão)",
-          "Haldi (hindi) · Haridra (sânscrito — \"a amarela\")"
+        "nome_popular": "Cúrcuma",
+        "nome_cientifico": "Curcuma longa",
+        "familia": "Zingiberaceae",
+        "outros_nomes": [
+          "açafrão-da-terra",
+          "açafrão-da-índia",
+          "turmeric (ing.)",
+          "curcuma (fr.)",
+          "हल्दी (haldi)"
+        ],
+        "origem": "Sul da Índia e Indonésia",
+        "partes_usadas": [
+          "rizomas secos e frescos",
+          "pó do rizoma",
+          "extrato padronizado em curcuminoides"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Terroso-amargo suave, levemente picante-apimentado, nota de mostarda, fundo de madeira. A curcumina é pouco solúvel em água — infusão aquosa extrai menos curcumina que leite ou óleo.",
-        "aroma": "Terroso-quente, amadeirado-apimentado, leve cítrico-floral, característico e inconfundível.",
-        "cor_da_infusao": "Amarelo-ouro intenso a laranja-dourado. #E8A820 — pigmento de amarelo mais intenso do catálogo.",
-        "intensidade": "3/5 — sabor moderado, cor espetacular.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Planta herbácea perene rizomatosa de 60–100 cm. Folhas lanceoladas grandes (45–90 cm × 18–20 cm), verde-brilhante com nervura central proeminente. Flores brancas a amarelas em espigas centrais com brácteas rosas e verdes. Rizoma horizontal ramificado, intensamente amarelo-laranja internamente (curcumina). Aroma terroso-pimentado-cúrcuma característico.",
+        "composicao_quimica": [
+          "Curcuminoides (2–5%): curcumina (principal, ~77%), demetoxicurcumina, bis-demetoxicurcumina",
+          "Óleo essencial (3–5%): ar-turmerona, α-turmerona, β-turmerona, zingibereno — analgésicos e anti-inflamatórios",
+          "Polissacarídeos: ukonan A, B, C, D — imunomoduladores",
+          "Proteínas, fibras, carboidratos",
+          "Vitaminas B3, C; minerais: ferro, potássio, manganês",
+          "Sesquiterpenos: bisabolano, guaiano"
+        ],
+        "bioma": "Tropical úmido — sul da Ásia, cultivada em toda a faixa tropical",
+        "cultivo": "Pleno sol a meia-sombra, solo fértil e úmido, pH 5,5–7, clima quente. Multiplica por divisão de rizomas. Colheita 9–10 meses após plantio. Excelente em jardins brasileiros — rizoma disponível nas feiras."
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Gengibre · Pimenta-preta · Canela · Mel · Leite de coco (golden milk) · Capim-limão (chá anti-inflamatório)"
+        "formas": [
+          {
+            "tipo": "Pó + pimenta-preta + gordura (leite dourado / golden milk)",
+            "descricao": "1 colher de chá de pó (3 g) + 1/4 colher de chá de pimenta-preta moída + 200 mL de leite vegetal + 1 colher de óleo de coco ou ghee. Aquecer sem ferver. 1×/dia.",
+            "indicacoes": [
+              "anti-inflamatório sistêmico",
+              "artrite",
+              "dores crônicas",
+              "digestão",
+              "imunidade"
+            ]
+          },
+          {
+            "tipo": "Extrato padronizado em curcuminoides (cápsulas)",
+            "descricao": "500–1000 mg de extrato (95% curcuminoides) + piperina (5–10 mg) ou formulação lipossomal. 2–3×/dia com refeição.",
+            "indicacoes": [
+              "artrite reumatoide",
+              "osteoartrite",
+              "doença inflamatória intestinal",
+              "síndrome metabólica"
+            ]
+          },
+          {
+            "tipo": "Uso culinário",
+            "descricao": "Em curries, arrozes, ovos, sopas, smoothies. Com pimenta-preta e gordura para máxima biodisponibilidade.",
+            "indicacoes": [
+              "antioxidante alimentar",
+              "anti-inflamatório",
+              "saúde gastrointestinal"
+            ]
+          }
+        ],
+        "dicas": "BIODISPONIBILIDADE é o maior desafio da cúrcuma — curcumina pura tem absorção < 1%. Solução: combinar SEMPRE com pimenta-preta (piperina aumenta 2000% a absorção via inibição do CYP3A4) E com gordura (curcumina é lipossolúvel). Formulações lipossomais e nanoparticuladas superam esse problema."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "aplicacoes": [
+          {
+            "forma": "Pasta anti-inflamatória",
+            "preparo": "Pó de cúrcuma + óleo de coco + mel. Aplicar em articulações doloridas, pele inflamada ou feridas.",
+            "indicacoes": [
+              "artrite",
+              "dermatite",
+              "eczema",
+              "feridas",
+              "acne"
+            ]
+          },
+          {
+            "forma": "Máscara facial",
+            "preparo": "1 colher de chá de pó + iogurte ou mel. Aplicar 15–20 min (cuidado — mancha a pele temporariamente).",
+            "indicacoes": [
+              "acne",
+              "hiperpigmentação",
+              "pele brilhante"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Anti-inflamatório potente (inibição NF-κB, COX-2, TNF-alfa)",
-          "Antioxidante de alta capacidade",
-          "Hepatoprotetor (proteção e regeneração hepática)",
-          "Neuroprotetor (curcumina atravessa barreira hematoencefálica)",
-          "Antidepressivo (pesquisa crescente — modulação serotonina/dopamina)",
-          "Antidiabético (sensibilizador de insulina)",
-          "Antitumoral (pesquisa extensiva — múltiplas vias)",
-          "Gastroprotetor (antiulceroso leve)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Cálculo biliar — colagogo intenso; pode precipitar cólica",
-          "Anticoagulados — cautela (inibição plaquetária)",
-          "Pré-cirurgia — suspender 2 semanas antes",
-          "Gestação em doses altas — emenagogo leve (uso culinário: seguro)"
-        ],
-        "componentes_ativos": [
-          {
-            "label": "CURCUMINA",
-            "texto": "2–5% do rizoma seco — Anti-inflamatório máximo, antioxidante, antitumoral"
-          },
-          {
-            "label": "DEMETOXICURCUMINA",
-            "texto": "Presente — Anti-inflamatório"
-          },
-          {
-            "label": "BISDEMETOXICURCUMINA",
-            "texto": "Presente — Anti-inflamatório"
-          },
-          {
-            "label": "AR-TURMERONA (óleo essencial)",
-            "texto": "Alto — Antimicrobiano, neuroprotetor"
-          },
-          {
-            "label": "TURMERONA ALFA E BETA",
-            "texto": "Presentes — Anti-inflamatório, neuroprotetor"
-          }
-        ],
-        "evidencia": [
-          {
-            "indicacao": "Osteoartrite (dor articular)",
-            "evidencia": "Moderada-forte",
-            "populacao": "Belcaro et al., 2010"
-          },
-          {
-            "indicacao": "Colite ulcerativa (manutenção)",
-            "evidencia": "Moderada",
-            "populacao": "Hanai et al., 2006"
-          },
-          {
-            "indicacao": "Depressão (adjuvante)",
-            "evidencia": "Moderada",
-            "populacao": "Sanmukhani et al., 2014"
-          },
-          {
-            "indicacao": "Síndrome metabólica",
-            "evidencia": "Moderada",
-            "populacao": "Múltiplos ECR"
-          }
+        "acoes_farmacologicas": [
+          "Anti-inflamatório: curcumina inibe NF-κB, COX-2, 5-LOX e múltiplas citocinas — mecanismo mais amplo que AINEs",
+          "Antioxidante: capacidade ORAC excepcional; induz HO-1 e glutationa",
+          "Anticancerígeno (pré-clínico/clínico fase I/II): induz apoptose, inibe angiogênese tumoral em múltiplas linhagens",
+          "Neuroprotetor: atravessa barreira hemato-encefálica; reduz β-amiloide e tau (modelos de Alzheimer)",
+          "Hepatoprotetor: protege hepatócitos e estimula regeneração hepática",
+          "Hipoglicemiante: melhora sensibilidade à insulina em DM2",
+          "Hipolipemiante: reduz LDL, triglicerídeos; aumenta HDL"
         ],
         "contraindicacoes": [
-          "Cálculo biliar — colagogo intenso; pode precipitar cólica",
-          "Anticoagulados — cautela (inibição plaquetária)",
-          "Pré-cirurgia — suspender 2 semanas antes",
-          "Gestação em doses altas — emenagogo leve (uso culinário: seguro)"
+          "Cálculos biliares: curcumina estimula contração da vesícula — pode deslocar cálculos",
+          "Anticoagulados: curcumina tem efeito antiagregante plaquetário",
+          "Gestação em altas doses medicinais: emmenagoga",
+          "Cirurgia iminente: suspender 2 semanas antes"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "efeitos_adversos": [
+          "Distúrbios GI em doses elevadas (náusea, diarreia, cólica)",
+          "Mancha dentes e pele (uso tópico)",
+          "Interação com anticoagulantes"
+        ],
+        "interacoes": [
+          "Anticoagulantes: potenciação — monitorar RNI",
+          "Piperina (pimenta-preta): aumenta biodisponibilidade da curcumina em 2000% via inibição CYP3A4/P-gp",
+          "Quimioterapia (taxol, ciclofosfamida): pode aumentar eficácia e reduzir toxicidade — consultar oncologista",
+          "Hipoglicemiantes: potenciação"
+        ],
+        "dose_segura": "Pó: 3–6 g/dia (com piperina e gordura). Extrato 95% curcuminoides: 500–1000 mg 2–3×/dia. Uso seguro documentado por até 3 meses em estudos. EMA/ESCOP: uso tradicional reconhecido.",
+        "nivel_evidencia": "Metanálise (2016, 8 RCTs): redução significativa de dor em osteoartrite comparável ao ibuprofeno. Metanálise (2019, DII): melhora em doença inflamatória intestinal. > 120 ensaios clínicos registrados. Limitação: biodisponibilidade oral baixa compromete resultados com pó simples — formulações avançadas superam."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Terroso, levemente picante e pimentado, com notas cítricas e amadeiradas; inconfundível",
+        "sabor": "Terroso-amargo, levemente picante, com suave doçura e astringência; aquecedor",
+        "cor_visual": "Rizoma: amarelo-laranja intenso interno; pó: amarelo-dourado brilhante. Golden milk: dourado",
+        "textura": "Pó fino; rizoma fibroso; golden milk: cremoso",
+        "sensacao": "Aquecedor progressivo; digestivo; sensação de 'limpeza' e leveza"
       },
       "cultura": {
-        "historia": "A cúrcuma é simultaneamente espécia, corante, cosmético, remédio e símbolo espiritual — uma das poucas plantas que as 5 maiores civilizações do mundo (indiana, chinesa, árabe, europeia medieval, brasileira popular) incorporaram em seus sistemas de significados sem reserva.  Na Índia, a pasta de cúrcuma no rosto da noiva antes do casamento é ritual de proteção e beleza (haldi ceremony) — uma das tradições nupciais mais antigas do mundo. Na medicina ayurvédica, a cúrcuma é \"varinha de condão\" herbal — usada para quase tudo.  No mundo ocidental, a \"curcuma latte\" e o \"golden milk\" tornaram-se fenômenos de wellness na última década — impulsionando pesquisa que confirmou parcialmente o que a Ayurveda sabia há 5.000 anos.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Cultivada na Índia há mais de 4.000 anos. Mencionada em textos sânscritos do século 600 aC. Na tradição hinduísta: ingrediente sagrado do casamento ('haldi ceremony') — pasta amarela aplicada em noivos como purificação e proteção. Usada como corante têxtil, cosmético, alimento e medicina na Ásia por milênios. Marco Polo a descreveu como 'vegetal com propriedades semelhantes ao açafrão'. No século XXI: tornou-se a planta medicinal mais pesquisada do mundo (+ de 12.000 artigos científicos).",
+        "uso_tradicional": "Ayurveda: anti-inflamatório universal, digestivo, antisséptico. TCM: ativa a circulação do Qi e do sangue. Medicina popular indiana: leite com cúrcuma para tudo — gripe, feridas, dores. Culinária: curry é impossível sem cúrcuma. Cosmética: 'haldi' como tratamento pré-casamento para a pele.",
+        "simbolismo": "Pureza, prosperidade, fertilidade. No hinduísmo: cor sagrada (amarelo-açafrão). A 'Cerimônia do Haldi' é a segunda mais importante do casamento hindu.",
+        "curiosidades": [
+          "Com mais de 12.000 artigos científicos indexados, cúrcuma é a planta medicinal mais pesquisada da história moderna",
+          "A curcumina tem biodisponibilidade oral de < 1% — 99% passa pelo intestino sem ser absorvida sem piperina e gordura",
+          "Na cerimônia Hindu do Haldi, pasta de cúrcuma é aplicada em todo o corpo da noiva e do noivo — tanto por beleza quanto por proteção espiritual",
+          "Curcumina é o pigmento amarelo do curry mas NÃO tem sabor picante — o picante do curry vem da pimenta e do gengibre"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido. Indicações: digestivo, anti-inflamatório.",
-        "status_ema": "Monografia HMPC — traditional use",
-        "status_fda": "GRAS para uso alimentar",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita: 8–9 meses após plantio"
+        "status_brasil": "ANVISA RDC 26/2014: Curcuma longa rizoma — notificada como fitoterápico isento de prescrição para dispepsia e digestão. Extrato: produto registrado.",
+        "status_europa": "EMA/HMPC: uso medicinal tradicional bem estabelecido para dispepsia funcional. Monografia publicada. ESCOP monografia.",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Curcumae longae rhizoma. Farmacopeia Brasileira 6ª ed. Farmacopeia Indiana.",
+        "registro": "Fitoterápico registrado no Brasil e Europa. Amplamente disponível como suplemento e alimento."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Rizoma fresco (supermercados e feiras)",
+          "Pó a granel",
+          "Cápsulas de extrato padronizado (95% curcuminoides)",
+          "Formulações lipossomais e nanoparticuladas (alta biodisponibilidade)",
+          "Golden milk pronto",
+          "Combinações com piperina"
+        ],
+        "preco_estimado": "Pó: R$ 8–20/100 g. Cápsulas 95% curcuminoides: R$ 40–100/frasco. Formulação lipossomal: R$ 80–200/frasco.",
+        "disponibilidade": "Ubíqua — supermercados (pó), farmácias, ervanarias, lojas de suplementos.",
+        "como_escolher": "Pó: cor amarela intensa (menor curcumina = menos intensa). Cápsulas: 95% curcuminoides + piperina incluída. Para uso anti-inflamatório intensivo: formulações lipossomais ou fosfatidilcolina-curcumina (Meriva) são superiores.",
+        "armazenamento": "Pó: pote hermético, escuro. Validade: 18–24 meses. Rizoma fresco: geladeira, 2–3 semanas."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Anti-inflamatório articular (osteoartrite, artrite reumatoide) — metanálise positiva",
+          "Doença inflamatória intestinal e dispepsia",
+          "Neuroproteção e prevenção de Alzheimer (ensaios clínicos em andamento)",
+          "Suporte imunológico e antioxidante sistêmico"
+        ],
+        "diferenciais": [
+          "Planta medicinal mais pesquisada do mundo — > 12.000 artigos científicos",
+          "Mecanismo anti-inflamatório multitarget: NF-κB + COX-2 + 5-LOX + citocinas — mais amplo que qualquer AINE",
+          "Golden milk: forma de consumo com adesão cultural elevada — ponte perfeita culinária/medicina",
+          "Biodisponibilidade resolvida: formulações modernas (lipossomais, nanoparticuladas) superam a limitação histórica"
+        ],
+        "sinergias": [
+          "Cúrcuma + pimenta-preta (OBRIGATÓRIO): aumento de 2000% na absorção via piperina",
+          "Cúrcuma + gengibre: anti-inflamatório Zingiberaceae sinérgico",
+          "Cúrcuma + boswellia: anti-inflamatório articular potente",
+          "Cúrcuma + vitamina D + omega-3: cocktail anti-inflamatório sistêmico completo"
+        ],
+        "alertas": [
+          "SEM PIMENTA-PRETA E GORDURA: absorção < 1% — uso ineficaz",
+          "Cálculos biliares: pode deslocar cálculos — contraindicado",
+          "Anticoagulantes: monitorar RNI — antiagregante plaquetário",
+          "Mancha roupas, dentes e pele intensamente — usar com cuidado"
+        ]
       }
     },
     {
@@ -16329,143 +16375,192 @@
     },
     {
       "slug": "cardamomo",
-      "nome_popular": "Cardamomo",
-      "nome_cientifico": "Elettaria cardamomum (L.) Maton",
-      "tagline": "A rainha das especiarias — o aromático mais caro do mundo por peso (após açafrão e baunilha), digestivo de elite com ação cardioprotetora e um perfil sensorial que nenhum outro vegetal replica.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Elettaria cardamomum (L.) Maton",
-        "familia_botanica": "Zingiberaceae (família do gengibre, da cúrcuma, da galanga)",
-        "tipo_botanico": "Especiaria aromática / digestivo / cardioprotetor",
-        "parte_usada": "Sementes (dentro das cápsulas verdes) — as sementes são o concentrado de aroma; as cápsulas têm aroma mais suave.",
-        "sinonimos": [
-          "Cardamomo · cardamom · eleitária",
-          "Cardamom (inglês) · Cardamome (francês) · Kardamom (alemão)",
-          "Elaichi (hindi) · Hel (árabe) · Kakule (turco)",
-          "DISTINÇÃO: E. cardamomum (cardamomo-verde / cardamomo-verdadeiro) ≠ Amomum subulatum (cardamomo-preto — sabor mais robusto, menos elegante)"
+        "nome_popular": "Cardamomo",
+        "nome_cientifico": "Elettaria cardamomum",
+        "familia": "Zingiberaceae",
+        "outros_nomes": [
+          "cardamom (ing.)",
+          "cardamome (fr.)",
+          "elaichi (hindi)",
+          "cardamomo verde"
+        ],
+        "origem": "Sul da Índia (Kerala) e Sri Lanka",
+        "partes_usadas": [
+          "sementes (dentro das cápsulas)",
+          "cápsulas inteiras",
+          "óleo essencial"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Floral-cítrico-eucaliptoide-apimentado — o sabor mais complexo e multidimensional do catálogo. Doce floral, cítrico fresco, eucalipto mentolado, picante quente, amadeirado seco — tudo simultaneamente. Impossível de comparar com qualquer outra coisa.",
-        "aroma": "1,8-cineol (eucalipto) + acetato de terpenila (floral-frutado) + linalol (floral-lavanda) + limoneno (cítrico). Aroma de perfume de alta costura nascido numa semente.",
-        "cor_da_infusao": "Amarelo-pálido a dourado. #ECD878",
-        "intensidade": "4/5 — aromático dominante que transforma qualquer blend.",
-        "notas": "Cabeça: floral-cítrico vívido | Corpo: eucaliptoide-mentolado | Fundo: amadeirado-apimentado quente | DISTRIBUIÇÃO: Originário do sudoeste da Índia (Ghats Ocidentais). Maior produtor: Guatemala. Índia: segundo produtor. Brasil: cultivo experimental no AM, PA.",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Planta herbácea perene rizomatosa de 2–4 m. Folhas lanceoladas longas (30–60 cm), verde-brilhante, aromáticas. Caules florais rasteiros com flores brancas manchadas de lilás. Frutos: cápsulas ovais verdes (1,5–2,5 cm), com 3 compartimentos contendo 6–9 sementes cada. As sementes são a parte aromática principal — pequenas, angulares, castanho-escuras. Terceira especiaria mais cara do mundo (após açafrão e baunilha).",
+        "composicao_quimica": [
+          "Óleo essencial (3–8% das sementes): 1,8-cineol (α-terpineol, 30–45%), acetato de α-terpinila (30–40%), linalol, limoneno",
+          "α-Terpinyl acetate: responsável pelo aroma floral-doce característico",
+          "Monoterpenos: α-pineno, sabineno, mirceno",
+          "Flavonoides: quercetina, kaempferol",
+          "Ácidos graxos nas sementes",
+          "Amido, fibras, minerais: ferro, cálcio, manganês"
+        ],
+        "bioma": "Tropical úmido montanhoso — Karnataka/Kerala (Índia), Sri Lanka",
+        "cultivo": "Meia-sombra (floresta subtropical), solo fértil e úmido, pH 6–6,8, altitude 600–1500 m. Multiplica por divisão de rizomas. 3–4 anos para primeira produção. Colheita manual das cápsulas antes de abrirem — 1–2 colheitas/ano. Cultura intensiva de mão-de-obra."
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C (1,8-cineol estável).",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 sementes esmagadas para 250 ml (ou 0,5–1 g de sementes moídas).",
-        "metodo": "Infusão de sementes levemente maceradas — essencial triturar para liberar óleos. Decocção suave para extração máxima.",
-        "reinfusoes": "",
-        "melhor_momento": "Pós-refeições (digestivo) ou manhã (tônico energizante).",
-        "combina_com": "Canela · Gengibre · Cravo · Pimenta-rosa · Mel · Leite de coco · Cacau · Café (chai e blends orientais)"
+        "formas": [
+          {
+            "tipo": "Chá (infusão/decocção)",
+            "descricao": "3–5 cápsulas levemente amassadas em 200 mL de água. Ferver suavemente 5–8 min. Coar. 1–3 xícaras/dia. Ou: 2–3 sementes de cápsulas abertas em infusão 10 min.",
+            "indicacoes": [
+              "digestão",
+              "flatulência",
+              "náusea",
+              "mau hálito",
+              "resfriado",
+              "tosse"
+            ]
+          },
+          {
+            "tipo": "Café com cardamomo (tradição árabe/indiana)",
+            "descricao": "2–3 cápsulas amassadas por xícara de café. Preparar juntos. Tradição nórdica: cardamomo em pães.",
+            "indicacoes": [
+              "digestivo pós-refeição",
+              "antimicrobiano oral",
+              "aromatizante"
+            ]
+          },
+          {
+            "tipo": "Mastigação direta das sementes",
+            "descricao": "2–3 sementes mastigadas após refeições. Prática ayurvédica e árabe tradicional.",
+            "indicacoes": [
+              "hálito",
+              "digestão imediata",
+              "antisséptico oral"
+            ]
+          },
+          {
+            "tipo": "Óleo essencial (aromaterapia)",
+            "descricao": "3–5 gotas no difusor. Ou 1–2% em base vegetal para massagem digestiva.",
+            "indicacoes": [
+              "náusea",
+              "digestão",
+              "clareza mental",
+              "energia suave"
+            ]
+          }
+        ],
+        "dicas": "Mascar as sementes após refeições é a forma mais imediata de ação digestiva e antimicrobiana oral. Cápsulas inteiras preservam melhor o aroma que sementes já removidas. Moer na hora do uso para máxima potência aromática."
       },
       "usos_topicos": {
-        "evidencia": "",
         "aplicacoes": [
-          "Antisséptico bucal natural: Mastigar 2–3 sementes após refeições — antimicrobiano oral, eliminação de mau hálito. Prática milenar indiana com base farmacológica (1,8-cineol + terpineol contra S. mutans e C. albicans).",
-          "Inalação aromática: Sementes trituradas em vapor — descongestionante nasal, broncodilatação leve."
-        ],
-        "contraindicacoes": ""
+          {
+            "forma": "Enxágue bucal",
+            "preparo": "Decocção de 5 cápsulas em 200 mL. Usar morno como bochecho por 30 seg.",
+            "indicacoes": [
+              "mau hálito",
+              "gengivite",
+              "saúde oral",
+              "boca seca"
+            ]
+          },
+          {
+            "forma": "Massagem digestiva",
+            "preparo": "2% de OE de cardamomo em óleo de coco. Massagem circular no abdômen.",
+            "indicacoes": [
+              "cólica",
+              "flatulência",
+              "distensão abdominal"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Carminativo (elimina gases — ação mais rápida do catálogo)",
-          "Antiespasmódico digestivo",
-          "Antimicrobiano bucal e digestivo",
-          "Cardioprotetor (redução de PA em hipertensos — estudos clínicos indianos)",
-          "Broncodilatador leve (1,8-cineol)",
-          "Afrodisíaco (tradição ayurvédica — mecanismo não elucidado farmacologicamente)",
-          "Antioxidante",
-          "Diurético suave",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Cálculo biliar — estimula contração vesicular. Gestação em doses de OE."
+        "acoes_farmacologicas": [
+          "Carminativo e espasmolítico: 1,8-cineol e acetato de α-terpinila relaxam musculatura lisa gastrointestinal",
+          "Antimicrobiano oral: OE inibe S. mutans (cáries), Porphyromonas gingivalis (periodontite) e H. pylori",
+          "Expectorante: 1,8-cineol estimula clearance mucociliar brônquico",
+          "Anti-hipertensivo: estudos clínicos mostram redução da PA sistólica/diastólica em hipertensos (mecanismo diurético leve)",
+          "Antioxidante: flavonoides e polifenóis",
+          "Antiemético: 1,8-cineol modula receptores 5-HT3 (mecanismo anti-náusea)",
+          "Hipoglicemiante leve: estudos em modelos animais"
         ],
-        "componentes_ativos": [
-          {
-            "label": "1,8-CINEOL (eucaliptol)",
-            "texto": "20–45% do OE — Broncodilatador, antimicrobiano, descongestionante"
-          },
-          {
-            "label": "ACETATO DE ALFA-TERPENILA",
-            "texto": "30–40% do OE — Aromático floral, carminativo"
-          },
-          {
-            "label": "LINALOL",
-            "texto": "1–5% — Ansiolítico, aromático"
-          },
-          {
-            "label": "SABINENO",
-            "texto": "Presente — Antimicrobiano"
-          },
-          {
-            "label": "LIMONENO",
-            "texto": "Presente — Antimicrobiano, digestivo"
-          },
-          {
-            "label": "METIL-EUGENOL",
-            "texto": "Traços — Aromático, anestésico local"
-          }
+        "contraindicacoes": [
+          "Cálculos biliares: colagogo leve — cautela",
+          "Alergia a Zingiberaceae (rara)"
         ],
-        "evidencia": [
-          {
-            "indicacao": "Hipertensão arterial",
-            "evidencia": "Moderada",
-            "populacao": "Verma et al. (2009) — 3 meses de extrato"
-          },
-          {
-            "indicacao": "Síndrome metabólica (fibrinólise)",
-            "evidencia": "Moderada",
-            "populacao": "Poonam Verma, 2009"
-          },
-          {
-            "indicacao": "Flatulência e dispepsia",
-            "evidencia": "Forte (uso tradicional)",
-            "populacao": "EMA referência indireta"
-          },
-          {
-            "indicacao": "Mau hálito",
-            "evidencia": "Forte",
-            "populacao": "Farmacologia oral — múltiplos estudos"
-          }
+        "efeitos_adversos": [
+          "Raramente: irritação gástrica em doses muito elevadas",
+          "Dermatite de contato ao OE (rara)"
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          "Anti-hipertensivos: potenciação leve possível",
+          "Aspirina: possível efeito antiagregante aditivo (leve)"
+        ],
+        "dose_segura": "Sementes: 1–3 g/dia. Uso culinário: ilimitado. OE: 1–2% tópico; difusão: 5 gotas. Seguro em longo prazo — uso alimentar por milênios.",
+        "nivel_evidencia": "Estudos clínicos controlados para anti-hipertensão (3 RCTs — resultados positivos). Estudos in vitro para antimicrobiano oral: sólidos. Uso culinário e medicinal: amplamente documentado. EMA: sem monografia formal mas uso tradicional reconhecido em toda a Ásia."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Floral, doce, quente, levemente cítrico e mentolado; único e inconfundível; considerado um dos mais complexos do reino vegetal",
+        "sabor": "Aromático-floral, levemente doce-picante, mentolado, quente e refrescante simultaneamente; persistente",
+        "cor_visual": "Cápsulas verdes (frescas) a bege-esverdeadas (secas); sementes castanho-escuras; OE incolor a amarelo-pálido",
+        "textura": "Cápsulas crocantes; sementes duras e angulosas; ao mascar: liberação aromática imediata",
+        "sensacao": "Frescor oral imediato; suaviza e perfuma o hálito instantaneamente; leveza digestiva"
       },
       "cultura": {
-        "historia": "O cardamomo é mencionado nos textos cuneiformes babilônicos (3.000 a.C.) como especiaria de jardins reais. Os gregos importavam cardamomo da Índia via rota árabe — Dioscórides o descreve como digestivo e afrodisíaco. Os vikings escandinavos comercializavam cardamomo na Europa do Norte no séc. X — levado por rotas comerciais árabes até o Báltico. Por isso o cardamomo é ingrediente obrigatório nos bolos natalinos escandinavos: uma herança de rotas comerciais medievais.  No mundo árabe, o café ao cardamomo (qahwa) é símbolo de hospitalidade — servido em xícara pequena sem alça durante negociações e recepções. Recusar é descortesia grave. O cardamomo neutraliza a amargura do café e adiciona aroma que os árabes associam a generosidade e status.",
-        "cerimonial": "",
-        "brasil": "O cardamomo chegou ao Brasil via culinária árabe (comunidade libanesa e síria em SP) e via Ayurveda (comunidade indiana). Hoje é ingrediente de blends de chai premium que proliferam em cafeterias e lojas de chá. O Ervatório pode posicioná-lo como ponte entre tradição oriental e sophistication brasileira.",
-        "curiosidade": ""
+        "historia": "Terceira especiaria mais cara do mundo (após açafrão e baunilha) — cultivada no sul da Índia há mais de 3.000 anos. Mencionada no Atharva Veda (séc VIII aC) e no Kama Sutra (séc IV dC) como afrodisíaco. Na Grécia Antiga e Roma: ingrediente de perfumes e digestivos de luxo. Os vikings escandinavos levaram o cardamomo da Constantinopla para a Escandinávia no século IX — hoje a culinária escandinava é a que mais usa cardamomo per capita fora da Ásia. Na culinária árabe e indiana: ingrediente indispensável do chai masala, kafeh hel (café árabe) e biriani.",
+        "uso_tradicional": "Ayurveda: digestivo, afrodisíaco, expectorante, neutralizador de venenos. Medicina árabe: digestivo pós-refeição, antimicrobiano oral. Escandinávia: pão e biscoitos de cardamomo (tradition viking). TCM: aquecedor do baço e estômago. Brasil: chegou com imigrantes árabes e indianos — usado no café árabe.",
+        "simbolismo": "Hospitalidade e generosidade (mundo árabe — café com cardamomo = boas-vindas). Sensualidade e afrodisíaco (Kama Sutra). Frescor e pureza oral.",
+        "curiosidades": [
+          "Os vikings escandinavos trouxeram o cardamomo da Turquia/Bizâncio no século IX — hoje a Escandinávia consome mais cardamomo per capita do que qualquer país fora da Ásia",
+          "O café árabe (gahwa) com cardamomo é obrigatório em recepções de hóspedes no Golfo Pérsico — recusar é considerado descortesia",
+          "O cardamomo é a especiaria que dá o sabor característico do chai masala indiano e dos biscoitos de Natal escandinavos (pepperkaker) — culturas opostas, mesma planta",
+          "Um estudo clínico iraniano (2020) mostrou que 3 g/dia de cardamomo por 8 semanas reduziram a pressão arterial sistólica em 9 mmHg — equivalente a muitos anti-hipertensivos"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso alimentar reconhecido. Especiaria regulamentada.",
-        "status_ema": "",
-        "status_fda": "GRAS para uso alimentar",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita: outubro–fevereiro (Guatemala) / agosto–novembro (Índia)"
+        "status_brasil": "Sem registro ANVISA como fitoterápico. Amplamente disponível como alimento/condimento. OE: cosmético.",
+        "status_europa": "EMA: sem monografia formal. Amplamente usado em cosméticos e alimentos. EFSA: aprovado como aditivo aromatizante.",
+        "farmacopeia": "Farmacopeia Indiana: Elettaria cardamomum — monografia completa. Farmacopeia Europeia: sem monografia. Farmacopeia Americana (USP): menção.",
+        "registro": "Sem medicamento registrado. Comercializado como alimento, condimento e OE cosmético."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Cápsulas inteiras (verde — mais aromáticas; branca/bleached — menos)",
+          "Sementes a granel",
+          "Pó de cardamomo",
+          "Óleo essencial",
+          "Extratos para bebidas"
+        ],
+        "preco_estimado": "Cápsulas: R$ 20–60/50 g. Pó: R$ 15–40/50 g. OE: R$ 30–70/10 mL.",
+        "disponibilidade": "Boa — supermercados, lojas de especiarias, lojas árabes e indianas, online.",
+        "como_escolher": "Cápsulas verdes intactas (mais aromáticas que brancas ou marrons). Ao amassar: aroma floral imediato e intenso. Pó: aroma presente, cor bege-esverdeada. Evitar pó sem aroma (degradação).",
+        "armazenamento": "Cápsulas inteiras: melhor preservação. Pote hermético, temperatura ambiente. Validade: 18–24 meses (cápsulas), 6–12 meses (pó)."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Digestivo e carminativo pós-refeição (mastigação de sementes — prática instantânea)",
+          "Saúde oral e hálito (antimicrobiano bucal — H. pylori, S. mutans)",
+          "Hipertensão leve (RCT positivo — redução de PA documentada)",
+          "Expectorante em tosse e bronquite leve"
+        ],
+        "diferenciais": [
+          "Terceira especiaria mais cara do mundo — qualidade e escassez são marcadores de valor",
+          "RCT iraniano 2020: redução de PA equivalente a anti-hipertensivo suave — raridade clínica para especiaria",
+          "Aroma único e inconfundível — maior especiaria em complexidade aromática do reino vegetal",
+          "Tradição árabe e escandinava simultâneas — bridge cultural entre civilizações geograficamente opostas"
+        ],
+        "sinergias": [
+          "Cardamomo + gengibre + canela + pimenta: chai masala — blend digestivo ayurvédico clássico",
+          "Cardamomo + cúrcuma + mel: anti-inflamatório e digestivo com sabor excelente",
+          "Cardamomo + café: digestivo potenciado e proteção gástrica do café",
+          "Cardamomo + funcho + erva-doce: digestivo aromático suave para crianças"
+        ],
+        "alertas": [
+          "Uso culinário: sem restrições — seguro para toda a família",
+          "OE interno: não recomendado sem supervisão",
+          "Cálculos biliares: colagogo leve — usar com moderação",
+          "Pó perde aroma rapidamente — moinhos frescos ou cápsulas inteiras"
+        ]
       }
     },
     {
