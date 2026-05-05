@@ -12083,114 +12083,178 @@
     },
     {
       "slug": "poejo",
-      "nome_popular": "Poejo",
-      "nome_cientifico": "Mentha pulegium L.",
-      "tagline": "A hortelã dos nervos — aromática europeia naturalizada nos pampas com ação antiespasmódica documentada e reputação de emenagogas que merece clareza científica.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Mentha pulegium L.",
-        "familia_botanica": "Lamiaceae (família da hortelã, do alecrim, da sálvia)",
-        "tipo_botanico": "Fitoterápico aromático / antiespasmódico / emenagogo",
-        "parte_usada": "Partes aéreas frescas ou secas.",
-        "sinonimos": [
-          "Poejo · poejo-da-europa · mentastro · erva-de-são-lourenço",
-          "Pennyroyal (inglês) · Pouliot (francês) · Poleo (espanhol)"
+        "nome_popular": "Poejo",
+        "nome_cientifico": "Mentha pulegium",
+        "familia": "Lamiaceae",
+        "outros_nomes": [
+          "poejo-real",
+          "hortelã-de-burro",
+          "pennyroyal (ing.)",
+          "pouliot (fr.)"
+        ],
+        "origem": "Europa e Mediterrâneo",
+        "partes_usadas": [
+          "partes aéreas floridas",
+          "folhas",
+          "sumidades"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Mentolado intenso, mais picante e menos fresco que a hortelã-pimenta, levemente amargo.",
-        "aroma": "Menta pungente-quente, pulegona característica — mais agreste e intenso que qualquer outra menta.",
-        "cor_da_infusao": "Verde-pálido a âmbar esverdeado. #B0C850",
-        "intensidade": "4/5 — aroma e sabor dominantes.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Herbácea perene de 10–40 cm, rasteira a ascendente, muito aromática. Caules quadrangulares com pelos. Folhas pequenas (1–2 cm), oval-elípticas, levemente dentadas, verde-acinzentadas com tomento. Flores lilás-rosadas em verticilos espaçados ao longo do caule. Cheiro mentolado intenso e característico, mais forte que a hortelã comum.",
+        "composicao_quimica": [
+          "Óleo essencial (1–2%): pulegona (60–90%) — o principal ativo e também o principal risco",
+          "Mentona (até 20%)",
+          "Isopulegona, piperitenona",
+          "Flavonoides: hesperidina, diosmina, luteolina",
+          "Ácido rosmarínico e ácidos fenólicos",
+          "Taninos (traços)"
+        ],
+        "bioma": "Mediterrâneo, europeu",
+        "cultivo": "Sol a meia-sombra, solo úmido e fértil, pH 6–7. Multiplica por divisão de touceira ou estolões. Invasora em solos úmidos. Colheita antes e durante a floração (maior teor de pulegona)."
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C (pulegona volátil — não ferver).",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 g de folhas secas para 250 ml (dose baixa — respeitar limite).",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "Pós-refeições (digestivo) ou em dismenorreia.",
-        "combina_com": ""
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Antiespasmódico digestivo",
-          "Emenagogo (estimula menstruação)",
-          "Carminativo",
-          "Antimicrobiano",
-          "Expectorante leve",
-          "Repelente de insetos (uso externo — pulegona)",
-          "Componentes ativos:",
-          "⚠️ ATENÇÃO — PULEGONA:",
-          "Contraindicações:",
-          "Gestação — contraindicado (abortivo comprovado em doses moderadas)",
-          "Lactação — evitar",
-          "Crianças — contraindicado",
-          "Hepatopatias e nefropatias — contraindicado",
-          "Óleo essencial interno — contraindicado em qualquer dose"
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "PULEGONA",
-            "texto": "60–90% do óleo essencial — Antiespasmódico, emenagogo, hepatotóxico em dose alta"
+            "tipo": "Infusão (uso interno — dose baixa)",
+            "descricao": "1 colher de chá rasa de planta seca (1,5–2 g) em 200 mL a 90°C. Cobrir 10 min. Coar. 1–2 xícaras/dia, máximo. Não ultrapassar 2 g/dia de planta seca.",
+            "indicacoes": [
+              "flatulência",
+              "dispepsia",
+              "tosse leve",
+              "resfriado"
+            ]
           },
           {
-            "label": "ISOMENTONA",
-            "texto": "Presente — Aromático, carminativo"
+            "tipo": "Inalação de vapor",
+            "descricao": "Um punhado de folhas frescas em bacia de água quente. Inalar por 5–10 min coberto com toalha.",
+            "indicacoes": [
+              "congestão nasal",
+              "sinusite",
+              "tosse"
+            ]
           },
           {
-            "label": "MENTOL",
-            "texto": "Traços — Frescor, antisséptico"
+            "tipo": "Repelente tópico (folhas frescas)",
+            "descricao": "Esfregar folhas frescas na pele ou deixar maços nas áreas a proteger.",
+            "indicacoes": [
+              "repelente de insetos (mosquitos, pulgas, carrapatos)"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [
-          "Gestação — contraindicado (abortivo comprovado em doses moderadas)",
-          "Lactação — evitar",
-          "Crianças — contraindicado",
-          "Hepatopatias e nefropatias — contraindicado",
-          "Óleo essencial interno — contraindicado em qualquer dose"
+        "dicas": "DOSES MUITO BAIXAS. Nunca usar o óleo essencial internamente — altamente tóxico. A infusão em doses baixas é razoavelmente segura para adultos saudáveis, mas o risco da pulegona exige cautela rigorosa."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Repelente de insetos",
+            "preparo": "Folhas frescas esfregadas na pele, ou infusão forte como spray.",
+            "indicacoes": [
+              "mosquitos",
+              "pulgas",
+              "carrapatos",
+              "borrachudos"
+            ]
+          },
+          {
+            "forma": "Inalação",
+            "preparo": "Folhas em água quente ou sachê de folhas secas.",
+            "indicacoes": [
+              "congestão nasal",
+              "sinusite",
+              "dor de cabeça tensional"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Carminativo e espasmolítico: óleo essencial relaxa músculo liso intestinal",
+          "Expectorante: estimula secreção brônquica",
+          "Repelente de insetos: pulegona repele diptera, pulicídeos e carrapatos",
+          "Emmenagogo: estimula contrações uterinas — efeito dose-dependente",
+          "Hepatotóxico (doses elevadas): pulegona → mentofurano (metabólito tóxico hepático) via CYP450"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "GESTAÇÃO: CONTRAINDICADO — pulegona é potentemente uterotônica e abortiva. Casos de morte materna por óleo essencial de poejo",
+          "Lactação: contraindicado",
+          "Crianças < 12 anos",
+          "Hepatopatias",
+          "Insuficiência renal"
+        ],
+        "efeitos_adversos": [
+          "Doses elevadas: hepatotoxicidade severa (mentofurano), insuficiência hepática fulminante",
+          "Nefrotoxicidade",
+          "Neurotoxicidade (convulsões em intoxicação)",
+          "Morte: casos documentados com óleo essencial de poejo"
+        ],
+        "interacoes": [
+          "Hepatotóxicos (paracetamol, estatinas, álcool): sinergismo hepatotóxico",
+          "Anticoagulantes: possível potenciação"
+        ],
+        "dose_segura": "Planta seca em infusão: máximo 2 g/dia, máximo 1–2 semanas. ÓLEO ESSENCIAL: NÃO USAR INTERNAMENTE. ESCOP/EMA: uso medicinal não recomendado formalmente — riscos superam benefícios para a maioria das indicações.",
+        "nivel_evidencia": "Dados clínicos favoráveis muito limitados. Evidência toxicológica forte para hepatotoxicidade da pulegona. EMA não emitiu monografia de uso positivo — planta na lista de preocupação toxicológica."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Mentolado muito intenso, penetrante, levemente camphorado, com nota herbal-amarga",
+        "sabor": "Forte, mentolado, amargo, levemente picante; mais agressivo que hortelã-pimenta",
+        "cor_visual": "Folhas verde-acinzentadas; infusão amarelo-esverdeada pálida",
+        "textura": "Folhas macias e aveludadas; infusão leve",
+        "sensacao": "Frescor intenso e prolongado, levemente anestesiante na mucosa oral"
       },
       "cultura": {
-        "historia": "O poejo é uma das ervas mais antigas da Europa mediterrânea — citado por Plínio, Dioscórides e Hildegarda. Na tradição europeia, era o abortivo herbal de uso popular — seu uso para \"provocar a regra\" (emenagogo) atravessou séculos de medicina popular feminina, frequentemente sem que as mulheres que o usavam soubessem o risco de hepatotoxicidade.  No Sul do Brasil, chegou com imigrantes italianos e portugueses e foi incorporado à medicina de quintal como \"poejo para cólica\" — uso digestivo que é distinto e mais seguro que o uso emenagogo.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Conhecida desde a Antiguidade — Dioscórides, Plínio e Hipócrates a descrevem. Na Roma Antiga, usada para aromatizar banhos e como repelente. A palavra 'pulegium' deriva de 'pulex' (pulga em latim) — referência ao uso antiparasitário. Na Idade Média europeia: emmenagogo e abortivo amplamente conhecido (e temido). Planta com longa história de uso e também de intoxicações.",
+        "uso_tradicional": "Europa: emmenagogo, digestivo, repelente. América Latina: 'poejo' para gripe, resfriado e digestão. Uso culinário ibérico: tempero de carnes e enchidos (em doses baixíssimas). Tradição portuguesa: 'chá de poejo' para gripe (dose culinária, não medicinal).",
+        "simbolismo": "Proteção, limpeza, purificação. No folclore romano: proteção da casa contra pulgas. Na tradição ibérica: planta de cozinha com história medicinal dual.",
+        "curiosidades": [
+          "O nome 'pennyroyal' em inglês vem de 'puliol real' (espanhol/occitano) — 'pulga-real'",
+          "Mortes por uso abortivo de óleo de poejo são documentadas em literatura médica moderna",
+          "Uma das plantas mais antigas da farmacobotânica europeia — referenciada por praticamente todos os herbários medievais",
+          "Repelente eficaz comprovado: pulegona afasta pulgas, mosquitos e carrapatos (uso externo seguro)"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global / uso tradicional",
-        "status_anvisa": "Não monografado. Óleo essencial: proibido para uso interno.",
-        "status_ema": "Monografia HMPC — uso externo somente (repelente). Uso interno: não recomendado.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Partes aéreas: floração (primavera-verão sulino)"
+        "status_brasil": "ANVISA: não consta na RDC 26/2014 como fitoterápico isento. Uso não regulamentado formalmente.",
+        "status_europa": "EMA: sem monografia positiva. Planta de preocupação toxicológica. Proibida como aditivo alimentar na UE (Regulamento CE 1334/2008 — pulegona com limites muito baixos).",
+        "farmacopeia": "Farmacopeia Europeia lista o óleo essencial mas sem indicação terapêutica. Não consta na Farmacopeia Brasileira.",
+        "registro": "Sem produtos registrados como medicamentos na UE ou Brasil. Comercializada como erva seca, mas sem indicações oficiais."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Planta seca a granel",
+          "Óleo essencial (uso externo — repelente)",
+          "Chá em sachês (uso culinário/digestivo leve)"
+        ],
+        "preco_estimado": "Planta seca: R$ 8–20/50 g. Óleo essencial: R$ 20–50/10 mL.",
+        "disponibilidade": "Moderada — ervanarias, mercados populares. Menos comum que outras mentas.",
+        "como_escolher": "Planta seca: aroma mentolado intenso característico. Para repelente: óleo essencial diluído (1–2% em óleo vegetal) — nunca usar puro na pele. NUNCA adquirir para uso interno em doses elevadas.",
+        "armazenamento": "Planta seca: pote hermético, escuro, seco. Validade: 12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Repelente natural de insetos (uso externo — óleo diluído ou folhas frescas)",
+          "Digestivo leve em doses baixas (flatulência, dispepsia)",
+          "Expectorante em resfriados leves (inalação ou infusão fraca)",
+          "Uso culinário ibérico em doses condimentares mínimas"
+        ],
+        "diferenciais": [
+          "Repelente de insetos mais eficaz entre as mentas (pulegona > mentol como repelente)",
+          "Planta de alto risco/alto uso popular — fundamental desmistificar e orientar com precisão",
+          "História botânica e toxicológica rica — plant com dupla face medicinal/tóxica bem documentada",
+          "Aroma único — mais intenso e penetrante que qualquer outra menta"
+        ],
+        "sinergias": [
+          "Poejo (externo) + citronela + lavanda: blend repelente natural",
+          "Poejo (infusão fraca) + camomila: digestivo suave",
+          "Poejo (inalação) + eucalipto: descongestionante potente"
+        ],
+        "alertas": [
+          "GESTAÇÃO: CONTRAINDICADO ABSOLUTAMENTE — risco de aborto e morte materna",
+          "ÓLEO ESSENCIAL INTERNO: NUNCA USAR — hepatotóxico, potencialmente fatal",
+          "Doses internas: manter baixíssimas (máx 2 g planta seca/dia, máx 2 semanas)",
+          "Não confundir 'uso tradicional' com 'uso seguro' — popularidade ≠ segurança"
+        ]
       }
     },
     {
@@ -16821,102 +16885,203 @@
     },
     {
       "slug": "palmarosa",
-      "nome_popular": "Capim-Santo",
-      "nome_cientifico": "Cymbopogon martinii (Roxb.) Wats.",
-      "tagline": "O aroma de rosas sem rosas — gramínea aromática parente do capim-limão com o mais alto teor de geraniol de qualquer planta comercial e uso crescente em cosmética, aromaterapia e fitoterapia.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Cymbopogon martinii (Roxb.) Wats.",
-        "familia_botanica": "Poaceae (gramíneas)",
-        "tipo_botanico": "Aromático / cosmético / antimicrobiano",
-        "parte_usada": "Partes aéreas frescas ou secas; óleo essencial (destilação).",
-        "sinonimos": [
-          "Palmarosa · capim-palmarosa · grama-de-rosas",
-          "Palmarosa (inglês/universal) · Palmrosa (alemão)",
-          "Rosha grass (inglês técnico)"
+        "nome_popular": "Palmarosa",
+        "nome_cientifico": "Cymbopogon martinii",
+        "familia": "Poaceae",
+        "outros_nomes": [
+          "palma-rosa",
+          "rusa grass",
+          "rosha grass (ing.)",
+          "herbe de palmarosa (fr.)"
+        ],
+        "origem": "Índia (especialmente Rajastão e Gujarat)",
+        "partes_usadas": [
+          "folhas e hastes (para extração de óleo essencial)",
+          "óleo essencial"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Floral-roseado suave, levemente cítrico, geraniol puro.",
-        "aroma": "Rosa fresca com nota herbácea-gramínea, geraniol dominante, leve cítrico. Mais fresco e menos pesado que o óleo de rosa verdadeira.",
-        "cor_da_infusao": "Verde-pálido a amarelo. #DCE880",
-        "intensidade": "2/5 — floral suave.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Gramínea perene de 1,5–2 m, formando touceiras densas. Folhas lineares longas (50–90 cm), verde-claro brilhante, com nervura central branca. Caule roliço, sólido na base. Inflorescência em panículas terminais avermelhadas. Raízes fibrosas. Cheiro característico de rosas com notas herbais verdes — surpreendentemente floral para uma gramínea.",
+        "composicao_quimica": [
+          "Óleo essencial (0,5–1,5%): geraniol (75–95%) — componente dominante e responsável pelo aroma rosáceo",
+          "Geranial e neral (citral): notas cítricas",
+          "Linalol (traços)",
+          "β-cariofileno",
+          "Farnesol (traços)",
+          "Ésteres de geraniol: acetato de geranila"
+        ],
+        "bioma": "Tropical e subtropical — Índia, cultivada em toda a faixa tropical",
+        "cultivo": "Pleno sol, clima quente, solo bem drenado, pH 5,5–7. Multiplica por divisão de touceira ou sementes. Colheita antes da floração para máximo teor de geraniol. Tolerante à seca após estabelecida. Produção de óleo por destilação a vapor das partes aéreas."
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Antimicrobiano amplo (geraniol — bactérias e fungos)",
-          "Hidratante (OE em formulações cosméticas)",
-          "Antifúngico (candidíase — uso tópico)",
-          "Ansiolítico leve (aromaterapia — geraniol)",
-          "Anti-inflamatório",
-          "Componentes ativos:",
-          "Contraindicações: Sem contraindicações relevantes em doses culinárias/cosméticas. OE diluído para uso tópico."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "GERANIOL",
-            "texto": "75–95% — Antimicrobiano, antifúngico, hidratante, ansiolítico"
+            "tipo": "Óleo essencial diluído (uso tópico)",
+            "descricao": "2–5 gotas de OE em 10 mL de óleo vegetal (jojoba, rosa-mosqueta, amêndoas). Aplicar na pele 1–2×/dia.",
+            "indicacoes": [
+              "acne",
+              "pele oleosa",
+              "dermatite",
+              "candidíase cutânea",
+              "herpes labial",
+              "feridas"
+            ]
           },
           {
-            "label": "ACETATO DE GERANILA",
-            "texto": "2–10% — Aromático, emoliente"
+            "tipo": "Aromaterapia / difusão",
+            "descricao": "5–10 gotas no difusor por 30–60 min, 2–3×/dia.",
+            "indicacoes": [
+              "ansiedade",
+              "estresse",
+              "fadiga mental",
+              "equilíbrio emocional"
+            ]
           },
           {
-            "label": "LINALOL",
-            "texto": "1–5% — Ansiolítico, antimicrobiano"
+            "tipo": "Banho aromaterapêutico",
+            "descricao": "5–8 gotas de OE diluídas em 1 colher de sopa de sal grosso ou leite integral antes de adicionar à banheira.",
+            "indicacoes": [
+              "relaxamento",
+              "infecções cutâneas",
+              "fadiga"
+            ]
+          },
+          {
+            "tipo": "Infusão das folhas (uso interno leve)",
+            "descricao": "1–2 g de folhas frescas ou secas em 200 mL. Infundir 8–10 min. 1–2 xícaras/dia.",
+            "indicacoes": [
+              "ansiedade leve",
+              "digestão",
+              "infecções urinárias leves"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "O geraniol é sensível à oxidação — fechar OE após uso e armazenar na geladeira para preservar qualidade. Para pele sensível, testar patch test antes de aplicação extensiva."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Sérum facial",
+            "preparo": "3–4 gotas em 10 mL de óleo de jojoba ou rosa-mosqueta. Aplicar à noite.",
+            "indicacoes": [
+              "acne",
+              "pele oleosa",
+              "poros dilatados",
+              "manchas",
+              "hidratação"
+            ]
+          },
+          {
+            "forma": "Compressa antifúngica",
+            "preparo": "2–3 gotas em 50 mL de água morna. Compressa por 15–20 min.",
+            "indicacoes": [
+              "candidíase cutânea",
+              "tinea pedis (pé de atleta)",
+              "onicomicose leve"
+            ]
+          },
+          {
+            "forma": "Spray refrescante",
+            "preparo": "5 gotas em 100 mL de água + 5 mL de álcool 70% (como emulsificante). Agitar antes de usar.",
+            "indicacoes": [
+              "refrescante corporal",
+              "antisséptico cutâneo",
+              "repelente leve"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Antimicrobiano amplo: geraniol inibe S. aureus, E. coli, Candida albicans, dermatófitos (CIM 0,2–1 mg/mL)",
+          "Antifúngico: geraniol altera membrana fúngica (ergosterol) — eficácia comparável a fluconazol in vitro",
+          "Ansiolítico: inalação de geraniol modula receptores GABA-A (estudos animais)",
+          "Anti-inflamatório: geraniol inibe NF-κB e prostaglandinas",
+          "Antioxidante: geraniol e farnesol capturam radicais livres",
+          "Cicatrizante: estimula queratinócitos e fibroblastos",
+          "Repelente de insetos: geraniol repele Aedes aegypti, Anopheles gambiae"
+        ],
+        "contraindicacoes": [
+          "Alergia a geraniol ou compostos terpênicos",
+          "Uso interno do óleo essencial puro: contraindicado",
+          "Gestação (1° trimestre): cautela com uso extensivo tópico",
+          "Crianças < 2 anos: evitar OE tópico"
+        ],
+        "efeitos_adversos": [
+          "Dermatite de contato por geraniol (sensibilizante moderado — testar antes)",
+          "Irritação ocular se OE atingir os olhos",
+          "Raramente: fotossensibilização"
+        ],
+        "interacoes": [
+          "Poucos dados de interação sistêmica (uso principalmente tópico/aromaterapia)",
+          "Geraniol inibe CYP2B6 in vitro — possível interação com medicamentos deste CYP em uso interno"
+        ],
+        "dose_segura": "Óleo essencial tópico: 1–3% em base vegetal (1–3 gotas/10 mL). Difusão: 5–10 gotas/30–60 min. Uso interno: não recomendado para OE. Folhas: 1–2 g/dia em infusão.",
+        "nivel_evidencia": "Estudos in vitro e in vivo sólidos para atividade antimicrobiana e antifúngica. Estudos clínicos em aromaterapia para ansiedade: resultados promissores mas metodologia variável. Amplamente documentado na aromaterapia clínica europeia."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Floral intenso de rosas, suave, ligeiramente herbáceo e verde; mais doce que geranio bourbon",
+        "sabor": "Floral, adocicado, levemente herbáceo (folhas); muito delicado",
+        "cor_visual": "Óleo essencial: amarelo-pálido a incolor; folhas verde-claro brilhante",
+        "textura": "OE fluido; folhas lisas e longas como capim-limão",
+        "sensacao": "Suavizante e calmante; aroma persiste por horas na pele"
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A palmarosa está crescendo rapidamente como matéria-prima para cosmética natural brasileira — empresas como Surya Brasil e Granado incorporam o óleo de palmarosa em linhas de cabelo e corpo. Seu aroma de \"rosa sem custo de rosa\" é uma das soluções mais elegantes da perfumaria natural acessível.",
-        "curiosidade": ""
+        "historia": "Originária das planícies tropicais da Índia, onde foi destilada por séculos para produzir o óleo de 'rusa' — exportado para a Europa como adulterante de óleo de rosas turco (mais barato e com aroma semelhante). No século XIX, a perfumaria europeia descobriu que palmarosa era na verdade superior ao geranio em certas composições. Hoje é componente de perfumes clássicos (Chanel Nº 5 original, entre outros).",
+        "uso_tradicional": "Medicina ayurvédica: digestivo, febrifugo, antisséptico cutâneo. Tradição indiana: óleo para massagem em dores articulares e musculares. Perfumaria: adulterante histórico do óleo de rosas; hoje ingrediente valorizado por si mesmo. Cosmética moderna: ingrediente antimicrobiano natural em produtos premium.",
+        "simbolismo": "Renovação, frescor, equilíbrio emocional. Na aromaterapia: planta do coração — conecta com sentimentos e emoções.",
+        "curiosidades": [
+          "Palmarosa é uma gramínea — planta da mesma família do milho, trigo e capim-limão — mas produz um dos aromas mais florais do reino vegetal",
+          "Historicamente vendida como adulterante de óleo de rosas: o engodo revelou uma planta excepcional",
+          "Geraniol é um dos ingredientes mais estudados em aromaterapia clínica para ansiedade e infecções fúngicas",
+          "Uma das poucas plantas em que o aroma (geraniol) e a atividade biológica são o mesmo composto"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso cosmético regulamentado.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita: floração — verão tropical"
+        "status_brasil": "Sem registro ANVISA como fitoterápico. OE comercializado como cosmético/aromaterapia. Importado principalmente da Índia.",
+        "status_europa": "Não consta em monografias EMA/HMPC. EFSA aprova geraniol como aditivo aromatizante (QPS). Amplamente usado em cosméticos (INCI: Cymbopogon martinii herb oil).",
+        "farmacopeia": "Não consta em farmacopeias como monografia medicinal. ISO 4727 — norma para óleo de palmarosa.",
+        "registro": "Comercializado como OE cosmético e aromaterapêutico. Sem medicamento registrado."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Óleo essencial (principal forma)",
+          "Hidrolato (água floral de palmarosa)",
+          "Produtos cosméticos (séruns, cremes com OE)",
+          "Planta seca (raro — mais difícil de encontrar)"
+        ],
+        "preco_estimado": "Óleo essencial: R$ 25–70/10 mL. Hidrolato: R$ 30–60/100 mL. Produtos cosméticos: variável.",
+        "disponibilidade": "Moderada — lojas de aromaterapia, cosmética natural, plataformas online. Menos comum em ervanarias tradicionais.",
+        "como_escolher": "OE: verificar nome botânico (Cymbopogon martinii var. motia — maior teor de geraniol; var. sofia — diferente). GC/MS ou laudo de pureza são diferenciais de qualidade. Aroma: floral de rosas doce e persistente.",
+        "armazenamento": "Frasco âmbar, tampado, refrigerado após aberto. Validade: 2–3 anos fechado; 12–18 meses aberto."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Acne e pele oleosa (antimicrobiano e regulador sebáceo)",
+          "Candidíase cutânea e tinea pedis (antifúngico comprovado in vitro)",
+          "Ansiedade e estresse (aromaterapia com geraniol)",
+          "Feridas e cicatrização (cicatrizante e antimicrobiano)"
+        ],
+        "diferenciais": [
+          "Maior fonte natural de geraniol do mundo (75–95%) — benchmark de qualidade para OEs",
+          "Dupla ação: antifúngico + aromático = tratamento e prazer simultâneos",
+          "Gramínea com aroma de rosa — botânica surpreendente e ótimo gancho educativo",
+          "Geraniol: mesmo composto ativo nas rosas e no geranio bourbon — mas muito mais concentrado"
+        ],
+        "sinergias": [
+          "Palmarosa + tea tree: acne severa (potência antimicrobiana ampliada)",
+          "Palmarosa + lavanda: ansiedade e distúrbios do sono",
+          "Palmarosa + rosa-mosqueta (óleo): sérum facial regenerativo e antimicrobiano",
+          "Palmarosa + niaouli: infecções urinárias (uso externo na região abdominal)"
+        ],
+        "alertas": [
+          "Testar patch test — geraniol é sensibilizante moderado reconhecido pela IFRA",
+          "Não usar OE puro na pele — sempre diluir a 1–3%",
+          "Verificar variedade: Cymbopogon martinii var. sofia tem composição diferente (menos geraniol)",
+          "Não confundir com capim-limão (Cymbopogon citratus) — gênero similar, composição totalmente diferente"
+        ]
       }
     },
     {
