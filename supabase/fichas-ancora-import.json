@@ -7969,219 +7969,518 @@
       "slug": "pitanga",
       "nome_popular": "Pitanga",
       "nome_cientifico": "Eugenia uniflora L.",
-      "tagline": "A joia vermelha da mata atlântica — antioxidante potente, hipotensora e com perfil sensorial que rivaliza qualquer fruta do hemisfério norte em complexidade aromática.",
+      "tagline": "A joia vermelha do quintal brasileiro — o licopeno da pitanga supera o tomate, as antocianinas da pitanga negra rivalizam com o mirtilo, e a fruta da infância de todo brasileiro é o superfruit que o mundo ainda não descobriu.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Eugenia uniflora L.",
-        "familia_botanica": "Myrtaceae (família da goiaba, da jabuticaba, do eucalipto)",
-        "tipo_botanico": "Alimento funcional antioxidante / fitoterápico",
-        "parte_usada": "Fruto (alimentar); folhas (infusão medicinal).",
+        "familia_botanica": "Myrtaceae (família da goiaba — Psidium guajava, da jabuticaba — Plinia cauliflora, do eucalipto — Eucalyptus spp. — família com característico aroma cítrico-resinoso em todas as espécies)",
+        "tipo_botanico": "Alimento funcional antioxidante / fitoterápico / cosmético natural",
+        "parte_usada": "Fruto maduro — polpa (uso alimentar e funcional; pitanga vermelha e negra têm perfis nutricionais distintos); folhas (infusão medicinal — anti-hipertensivo, antidiarreico, repelente); casca do fruto (taninos). A pitanga negra madura é o estágio máximo de maturação do mesmo fruto que antes era vermelho — não é variedade diferente. Do vermelho ao negro, antocianinas aumentam 3–5× e açúcares se concentram.",
         "sinonimos": [
           "Pitanga · pitangueira · cereja-brasileira",
-          "Surinam cherry (inglês) · Cerise carée (francês)",
-          "Ñangapirí (guarani)"
+          "Surinam cherry / Brazilian cherry (inglês) · cerise carée / cerisier de Cayenne (francês)",
+          "Ñangapirí (guarani — RS, SC, PR) — nome com significado sagrado na cultura guarani",
+          "ATENÇÃO: Eugenia uniflora (pitanga — Mata Atlântica, nativa) ≠ Eugenia uniflora naturalizada (introduzida em África do Sul, Israel, Flórida EUA, Caribe — mesmo genótipo mas solo e clima distintos podem alterar o perfil fitoquímico)."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "",
-        "cor_da_infusao": "",
-        "intensidade": "4/5 para o fruto; 2/5 para a infusão de folhas.",
-        "notas": "",
-        "bioma_de_origem": "Mata Atlântica — amplamente distribuída; RS, SC, PR, SP, RJ, MG, BA.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Fruto maduro (vermelho): doce-ácido complexo com fundo resinoso-cítrico — cereja silvestre, goiaba tropical, leve pimenta-vegetal na casca. Pitanga negra madura: doce profundo, ácido suave, resinoso envolvente — o perfil mais complexo e palatável. Infusão de folhas: herbáceo-cítrico leve, suave, medicinal. São produtos sensorialmente distintos: o fruto tem complexidade de vinho frutado; a infusão de folhas é tisana simples.",
+        "aroma": "Cítrico-resinoso tropical de Myrtaceae, cereja silvestre concentrada, goiaba distante e tropical, traço eucaliptoide suavíssimo (α-terpineol — herança Myrtaceae), pimenta-vegetal discreta no fundo (sesquiterpenos da casca). Moléculas: mirceno, limoneno, α-terpineol, trans-β-ocimeno, sesquiterpenos.",
+        "cor_da_infusao": "Fruto vermelho (polpa): escarlate intenso (#C42B1C). Fruto negro (polpa): roxo-escuro profundo (#4A1528). Infusão de folhas: verde-amarelado dourado (#B8C870). A cor da polpa é indicador de estágio: quanto mais escuro o roxo, maior a concentração de antocianinas.",
+        "intensidade": "Fruto: 4/5 — aromático e saboroso. Infusão de folhas: 2/5 — suave, medicinal.",
+        "notas": "Cabeça: cítrico-resinoso vivo (limoneno + mirceno — lembra limão-siciliano com resina vegetal) | Corpo: doce-frutado de cereja silvestre com adstringência suave de casca | Fundo: pimenta-vegetal discreta (sesquiterpenos) + floral tênue de quintal (trans-β-ocimeno)",
+        "bioma_de_origem": "Mata Atlântica — amplamente distribuída do RS ao BA. Espécie pioneira e de borda de mata, frequente em quintais, pomares e áreas urbanizadas do litoral brasileiro.",
+        "distribuicao_geografica": [
+          "Mata Atlântica: RS (Serra Gaúcha, Vale dos Sinos), SC, PR, SP (interior e litoral), RJ, MG (Zona da Mata), BA (sul do estado).",
+          "Naturalizada: Caatinga (CE, PE, PI), Cerrado (GO, DF).",
+          "América do Sul: Paraguai (ñangapirí — consumo cultural significativo), norte da Argentina, Uruguai, Suriname, Venezuela.",
+          "Introduzida e naturalizada: África do Sul, Israel, Flórida (EUA — 'Surinam cherry' em mercados gourmet), Caribe, Índia, Indonésia.",
+          "A pitanga é a fruta brasileira mais amplamente introduzida em outros países tropicais — paradoxo: exportada como 'Surinam cherry' no mundo, subestimada no Brasil."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Hibisco · Açaí · Jabuticaba · Maracujá (blends antioxidantes da Mata Atlântica)"
+        "temperatura_ideal": "Infusão de folhas: 90–95 °C. Fruto: consumo direto ou suco a frio. Não aquecer suco/polpa acima de 60 °C — antocianinas termossensíveis (perda de 30–50% em altas temperaturas).",
+        "tempo_de_infusao": "Folhas secas: 8–10 min coberto.",
+        "quantidade": "Folhas secas: 5–8 g para 500 ml. Fruto fresco: 50–200 g/dia (uso alimentar livre). Pó liofilizado de fruto: 5–15 g/dia.",
+        "metodo": "Infusão coberta (folhas). Suco a frio ou smoothie (fruto fresco). Polpa congelada ou liofilizada para blend. NÃO ferver o suco.",
+        "reinfusoes": "Folhas: 1 reinfusão possível (40% de rendimento restante).",
+        "melhor_momento": "Fruto: manhã (vitamina C e antioxidante em jejum). Folhas: manhã ou tarde (efeito hipotensivo e diurético — evitar noite).",
+        "combina_com": "Hibisco (blend antioxidante MA — cor e antocianinas) · Açaí (roxo vitamínico amazônico) · Jabuticaba (blend negro MA — antocianinas duplas) · Maracujá (cítrico-ácido tropical) · Camu-camu (vitamina C amplificada)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para antimicrobiano oral (óleo essencial de folhas); preliminar para antioxidante tópico de extrato de fruto.",
+        "aplicacoes": [
+          {
+            "titulo": "Antisséptico bucal",
+            "texto": "Extrato aquoso ou hidroalcoólico de folhas (5%) como enxágue oral — atividade antimicrobiana contra Streptococcus mutans e Candida albicans. Evidência moderada em estudos brasileiros in vitro. Óleos essenciais (limoneno, mirceno, α-terpineol) são os agentes ativos."
+          },
+          {
+            "titulo": "Tônico anti-aging facial",
+            "texto": "Extrato aquoso de pitanga negra (antocianinas + licopeno + vitamina C) em formulações tônicas e séricas — antioxidante, anti-pigmentação (inibição de tirosinase), anti-aging. Mercado cosmético artesanal crescente no Brasil. Indicado como alternativa natural ao extrato de mirtilo europeu (perfil de antocianinas similar)."
+          },
+          {
+            "titulo": "Repelente natural de insetos",
+            "texto": "Óleo essencial de folhas de pitanga (limoneno, mirceno) — atividade repelente comprovada in vitro contra Aedes aegypti e Culex. Evidência moderada em estudos de campo. Uso popular tradicional no NE/SE do Brasil — ramos de pitangueira pendurados em janelas como repelente natural."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações documentadas para uso tópico. Atenção: suco e extrato de fruto mancham roupas permanentemente (antocianinas — pigmento intenso)."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antioxidante potente (licopeno + antocianinas)",
-          "Antihipertensivo (vasodilator — flavonóides)",
-          "Antidiarreico (folhas — taninos)",
-          "Hipoglicemiante leve (folhas)",
-          "Anti-inflamatório",
-          "Antiviral (terpenos — estudos preliminares)",
-          "Repelente natural de insetos (óleos essenciais das folhas)",
-          "Componentes ativos:",
-          "Contraindicações: Sem contraindicações relevantes em uso alimentar. Folhas em decocção: gestação — cautela."
+          "Antioxidante potente — licopeno (> tomate) + antocianinas (pitanga negra ≈ mirtilo) + vitamina C: tripla cobertura antioxidante",
+          "Anti-hipertensivo (flavonóides — vasodilatação endotélio-dependente e inibição leve de ECA)",
+          "Anti-inflamatório (quercetina, miricetina, rutina — inibição de COX)",
+          "Antidiarreico (taninos das folhas — adstringência de mucosa intestinal)",
+          "Hipoglicemiante leve (folhas — inibição de α-glicosidase)",
+          "Antimicrobiano (óleos essenciais de folhas — S. mutans, C. albicans, E. coli)",
+          "Antiviral (terpenos de folhas — estudos preliminares contra vírus respiratórios)",
+          "Repelente natural de insetos (óleos essenciais de folhas — Aedes aegypti)"
         ],
         "componentes_ativos": [
           {
-            "label": "LICOPENO",
-            "texto": "Antioxidante, antiproliferativo — concentração superior ao tomate"
+            "label": "Licopeno",
+            "texto": "5–10 mg/100 g no fruto vermelho — superior ao tomate (3 mg/100 g). Antioxidante, antiproliferativo prostático. A concentração de licopeno da pitanga é das mais altas entre frutas."
           },
           {
-            "label": "ANTOCIANINAS (fruto negro)",
-            "texto": "Antioxidante, anti-inflamatório"
+            "label": "Antocianinas (cianidina-3-glucosídeo, delfinidina-3-glucosídeo)",
+            "texto": "Fruto negro >> fruto vermelho (3–5× maior). Antioxidante, anti-inflamatório, neuroprotetor. Perfil similar ao mirtilo europeu."
           },
           {
-            "label": "VITAMINA C",
-            "texto": "Antioxidante — 30–40 mg/100g"
+            "label": "Vitamina C (ácido ascórbico)",
+            "texto": "30–40 mg/100 g (fruto) — menor que camu-camu mas com sinergia com licopeno e antocianinas."
           },
           {
-            "label": "ÓLEOS ESSENCIAIS FOLHAS (mirceno, limoneno)",
-            "texto": "Antimicrobiano, repelente"
+            "label": "Óleos essenciais de folhas (mirceno, limoneno, α-terpineol, trans-β-ocimeno, sesquiterpenos)",
+            "texto": "Antimicrobiano, repelente de insetos, anti-inflamatório local. Responsáveis pelo aroma característico da folha amassada."
           },
           {
-            "label": "TANINOS (folhas)",
-            "texto": "Antidiarreico, adstringente"
+            "label": "Taninos condensados (folhas e casca do fruto)",
+            "texto": "Antidiarreico, adstringente cicatrizante, antimicrobiano. Mais concentrados na folha do que na polpa."
           },
           {
-            "label": "QUERCETINA, MIRICETINA",
-            "texto": "Anti-inflamatório, antihipertensivo"
+            "label": "Quercetina, miricetina, rutina (flavonóides)",
+            "texto": "Anti-inflamatório, anti-hipertensivo (inibição de ECA), cardioprotetor, antiistamínico."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Atividade antioxidante (ORAC/DPPH — pitanga negra supera vermelha)",
+            "evidencia": "Forte",
+            "populacao": "Estudos in vitro múltiplos (Lima VLA et al.; Auger J et al.)"
+          },
+          {
+            "indicacao": "Anti-hipertensivo (vasodilatação endotélio-dependente)",
+            "evidencia": "Moderada",
+            "populacao": "Modelos animais + uso tradicional amplamente documentado"
+          },
+          {
+            "indicacao": "Hipoglicemiante (inibição de α-glicosidase — folhas)",
+            "evidencia": "Moderada",
+            "populacao": "Modelos animais + estudos in vitro"
+          },
+          {
+            "indicacao": "Antimicrobiano oral (S. mutans, C. albicans)",
+            "evidencia": "Moderada",
+            "populacao": "Estudos brasileiros in vitro"
+          },
+          {
+            "indicacao": "Antidiarreico (taninos de folhas)",
+            "evidencia": "Tradicional forte",
+            "populacao": "Uso popular NE/SE amplamente documentado e farmacologicamente plausível"
+          }
+        ],
+        "contraindicacoes": [
+          "Gestação (infusão de folhas): óleos essenciais em altas doses têm potencial abortivo teórico — fruto em doses alimentares é seguro; folhas: cautela e doses moderadas.",
+          "Hipotensão: efeito hipotensivo de folhas pode potencializar anti-hipertensivos — monitorar PA.",
+          "Sem contraindicações para uso alimentar do fruto em qualquer população."
+        ],
+        "interacoes": [
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Efeito aditivo (flavonóides + infusão de folhas) — monitorar PA; geralmente benéfico mas pode exigir ajuste de dose."
+          },
+          {
+            "label": "Hipoglicemiantes (metformina, insulina)",
+            "texto": "Efeito aditivo leve (folhas) — monitorar glicemia em uso regular de infusão de folhas."
+          },
+          {
+            "label": "Anticoagulantes (varfarina)",
+            "texto": "Vitamina C + quercetina em altas doses — monitorar INR em uso excessivo de extrato concentrado."
+          }
+        ],
+        "efeitos_adversos": "Fruto: sem adversos em doses alimentares. Folhas em uso excessivo: náusea leve (terpenos em alta concentração). Suco concentrado: diarreia osmótica (açúcares e ácidos). Mancha roupas — antocianinas são pigmentos permanentes.",
+        "dose_maxima": "Fruto: sem dose máxima (alimento). Folhas secas: 5–8 g 2×/dia. Infusão de folhas: uso prolongado máx. 30 dias sem reavaliação.",
+        "fontes": [
+          "Lima VLA et al. — Physical and chemical characteristics of pitanga (Eugenia uniflora L.) fruit (Sci Hortic, 2002)",
+          "Oliveira MEB et al. — Anti-inflammatory activity of Eugenia uniflora leaves (J Ethnopharmacol, 2009)",
+          "Auger J et al. — Comparison of antioxidant activity of pitanga pulp (J Agric Food Chem, 2003)",
+          "Serafini MR et al. — Antinociceptive and antiedematogenic effects of Eugenia uniflora (J Ethnopharmacol, 2010)",
+          "Bezerra IC et al. — Medicinal plants used in NE Brazil (J Ethnobiol Ethnomed, 2019)",
+          "ANVISA — Formulário de Fitoterápicos da Farmacopeia Brasileira, 2.ª ed. (2021)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "2/3 (vermelho) · 3/3 (negro)",
+            "observacao": "Frutado genuíno — pitanga negra tem o doce mais concentrado e profundo"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Terpenos da casca — discreto, vegetal, não agressivo; mais pronunciado na casca do fruto verde"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "1/3",
+            "observacao": "Profundidade frutada madura — ácidos orgânicos + açúcares em fermentação natural"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "2/3 (vermelho) · 1/3 (negro)",
+            "observacao": "Ácido cítrico-málico vibrante no fruto vermelho; muito equilibrado pelo doce no fruto negro"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Cítrico-resinoso tropical com fundo de cereja silvestre e herança eucaliptoide de Myrtaceae",
+        "olfativo_descritores": [
+          "Cereja silvestre concentrada (ésteres + antocianinas — não cereja europeia; mais intensa, mais tropical, menos adocicada)",
+          "Goiaba tropical distante (Myrtaceae — família inteira compartilha esse fundo floral-frutado)",
+          "Cítrico-resinoso (limoneno + mirceno — limão-siciliano com resina vegetal viva)",
+          "Eucalipto tropical suavíssimo (α-terpineol traço — herança Myrtaceae, presente em todas as espécies da família)",
+          "Pimenta-vegetal discreta no fundo (sesquiterpenos da casca — identifica a pitanga em blend)",
+          "Floral tênue de quintal tropical (trans-β-ocimeno — 'cheiro de jardim' que ativa memória afetiva)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Fraca",
+            "molecula": "Sesquiterpenos e terpenos da casca — leve ativação; discreta"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Moderada (casca do fruto) · Moderada (folhas)",
+            "molecula": "Taninos condensados — menor que jabuticaba, mais que goiaba. A casca do fruto tem adstringência própria — muitos comem só a polpa por isso"
+          }
+        ],
+        "tatil": "Fruto: textura dual única — casca firme e fina resistindo um segundo antes de ceder à pressão dos dentes, liberando a polpa macia e suculenta num estouro de suco. A pitanga negra tem casca mais fina e polpa mais suculenta e viscosa. A diferença de textura entre o fruto vermelho (mais firme, menos suculento) e o negro (quase líquido por dentro) é tão grande quanto entre dois estágios distintos de uma uva. Infusão de folhas: corpo leve, herbácea, sem a textura viva do fruto — dois produtos sensorialmente distintos saindo da mesma planta. Suco: aquoso, levemente viscoso pelas antocianinas, cora a língua de vermelho-púrpura imediatamente.",
+        "descricao_integrada": "A pitanga carrega o peso de ser ao mesmo tempo a fruta mais comum e a mais subestimada do Brasil. Cada brasileiro do Sul e Sudeste tem uma memória olfativa da pitangueira — o quintal, a árvore que ninguém plantou mas estava lá, o fruto que caía e manchava o chão. Essa memória afetiva é o maior ativo de marketing que a pitanga tem — e o mundo gourmet já percebeu: a 'Surinam cherry' é produto premium em mercados de São Francisco, Londres e Tel Aviv. O paradoxo é completo: o que o brasileiro colhe do quintal por hábito, o europeu compra como superfruit exótico por convicção. Scientificamente, ambos têm razão — a pitanga negra madura é genuinamente excepcional: mais licopeno que o tomate, antocianinas como o mirtilo, vitamina C presente. O erro é que no Brasil esse dado ainda não virou produto."
       },
       "cultura": {
-        "historia": "A pitanga é a fruta da infância do Brasil costeiro — toda casa de interior do Sul e Sudeste tinha (ou tem) um pé de pitanga no quintal. Euclides da Cunha e Carlos Drummond de Andrade a mencionam em textos como símbolo da natureza mineira e carioca. É uma das primeiras frutas que as crianças aprendem a colher — cor vermelha chamar, sabor memorável guardar.",
-        "cerimonial": "",
-        "brasil": "A pitanga tem potencial de exportação como \"superfruit\" antioxidante quase inexplorado. O licopeno da pitanga vermelha é superior ao do tomate em concentração — dado que, com marketing adequado, justificaria posicionamento premium em mercados europeus e norte-americanos. Hoje, praticamente 100% do consumo é local e informal.",
-        "curiosidade": ""
+        "historia": "A pitanga é fruta nativa de Mata Atlântica documentada pelos colonizadores portugueses nas primeiras décadas do século XVI — Pero de Magalhães Gândavo (1576) a menciona como 'cereja vermelha muito boa de comer'. O nome vem do Tupi 'pe'tãng' ('vermelho vivo' ou 'coisa vermelha') — o próprio nome é uma instrução de maturidade: quando está vermelha (ou melhor, negra), está pronta. Euclides da Cunha e Carlos Drummond de Andrade a mencionam em prosa e verso como símbolo da natureza mineira e carioca. É uma das primeiras frutas que crianças do interior aprendem a distinguir — a cor escarlate como sinal universal de maturidade, o sabor inesquecível como primeiro ensinamento da floresta.",
+        "cerimonial": "Comunidades guarani (ñandeva, mbya) do RS e SC têm uso cerimonial do ñangapirí (nome guarani) em rituais de cura e como alimento sagrado em cerimônias de colheita. O xamã-pajé guarani usa folhas de pitanga em banhos de ervas purificadores antes de rituais. A frutificação da pitanga (setembro–dezembro) coincide com rituais guarani de agradecimento pela colheita — o ciclo da pitangueira é calendário natural da comunidade.",
+        "brasil": "A pitanga tem potencial de exportação como superfruit antioxidante quase inexplorado no Brasil. O licopeno da pitanga vermelha supera o tomate em concentração. As antocianinas da pitanga negra madura rivalizam com o mirtilo europeu. Ambos os dados justificariam posicionamento premium em mercados europeus e norte-americanos — onde a fruta já circula como 'Surinam cherry' em nichos gourmet sem participação brasileira na cadeia de valor. Hoje, quase 100% do consumo nacional é local e informal — pé de quintal, feira de bairro, geleia caseira. A falta de cadeia produtiva organizada (beneficiamento, liofilização, exportação) é o único obstáculo entre a pitanga e o mercado global.",
+        "curiosidade": "A pitanga vermelha e a pitanga negra são a mesma espécie — a cor negra é simplesmente o estágio de maturação máxima. Do vermelho ao negro, a concentração de antocianinas aumenta 3–5× e o licopeno varia por cultivar. O fruto que ninguém quer comprar porque parece 'passado' — o negro escuro caído da árvore espontaneamente — é o mais nutritivo de todos. A agricultura convencional colhe pitanga vermelha para evitar perdas; o consumidor sábio espera a negra madura cair."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Alimento funcional / Fitoterápico",
-        "status_anvisa": "Alimento. Folhas: uso tradicional reconhecido.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutificação: setembro–dezembro (principal), com segunda safra em regiões mais quentes"
+        "status_anvisa": [
+          "Fruto: alimento — sem regulação específica.",
+          "Folhas: uso tradicional reconhecido no Formulário de Fitoterápicos da Farmacopeia Brasileira (2021).",
+          "Pó liofilizado de fruto: suplemento alimentar (IN 28/2018)."
+        ],
+        "status_ema": "Não monografado. Fruto: uso alimentar sem restrições na UE. Alergia rara documentada em casos isolados.",
+        "status_fda": "Não regulamentado para uso medicinal. Fruto: GRAS como alimento. Amplamente disponível em supermercados da Flórida como 'Surinam cherry'.",
+        "certificacao_organica": [
+          "Disponível para produção em transição agroecológica (RS, SC, SP).",
+          "Certificação IBD e Ecocert para pomares orgânicos. Escala ainda incipiente para exportação."
+        ],
+        "sazonalidade": "Frutificação principal: setembro–dezembro (florada de primavera). Segunda safra possível em regiões mais quentes: março–maio. A pitanga floresce e frutifica em pulsos — colheita pode ser semanal durante o pico."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Produtores agroecológicos da Serra Gaúcha (RS), litoral SC e SP. Quintais produtivos e associações de coletores urbanos (SP, RJ). Cooperativas de agricultura familiar do Vale do Ribeira (SP) e sul de MG.",
+        "faixa_de_preco": [
+          "Fruto fresco (kg): R$ 15–35 (feira local); R$ 50–90 (delivery premium urbano).",
+          "Pó liofilizado 100 g: R$ 60–130.",
+          "Geleia artesanal 200 g: R$ 18–40.",
+          "Folhas secas 50 g: R$ 10–20."
+        ],
+        "formatos": "Fruto fresco (sazonal); polpa congelada; pó liofilizado (blend antioxidante); geleia artesanal; folhas secas para infusão; extrato hidroalcoólico de folhas (farmácia de manipulação)."
+      },
+      "destaques": [
+        {
+          "label": "Licopeno superior ao tomate",
+          "texto": "5–10 mg/100 g vs. 3 mg/100 g no tomate — o superfruto antioxidante do quintal que o mundo gourmet já conhece como 'Surinam cherry'."
+        },
+        {
+          "label": "Pitanga negra = mirtilo brasileiro",
+          "texto": "Antocianinas 3–5× maiores na pitanga negra madura — perfil comparável ao mirtilo europeu no superfruit mais subestimado da Mata Atlântica."
+        },
+        {
+          "label": "Memória afetiva nacional insubstituível",
+          "texto": "O quintal de toda infância brasileira do litoral — a carga afetiva mais poderosa do catálogo para marketing de identidade."
+        }
+      ]
     },
     {
       "slug": "jurubeba",
       "nome_popular": "Jurubeba",
       "nome_cientifico": "Solanum paniculatum L.",
-      "tagline": "O guardião do fígado nordestino — digestivo e hepatoprotetor com tradição do interior brasileiro e uso popular que antecede qualquer pesquisa farmacológica.",
+      "tagline": "O guardião amargo do fígado brasileiro — colagogo potente do interior do país, do aperitivo de boteco ao laboratório de oncologia, via alcaloide esteroídico pesquisado no MD Anderson.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Solanum paniculatum L.",
-        "familia_botanica": "Solanaceae (família do tomate, da berinjela, da batata)",
-        "tipo_botanico": "Fitoterápico hepático / digestivo amargo",
-        "parte_usada": "Fruto imaturo (principal); raiz; folhas.",
+        "familia_botanica": "Solanaceae (família do tomate — Solanum lycopersicum, da berinjela — S. melongena, da batata — S. tuberosum, do jiló — S. gilo — todas Solanum; 1.500+ espécies no gênero)",
+        "tipo_botanico": "Fitoterápico hepático / digestivo amargo / colagogo",
+        "parte_usada": "Fruto imaturo verde pequeno (principal — uso interno colagogo e digestivo; máximo de alcaloides antes da maturação); raiz (decocção concentrada — uso hepático intensivo); folhas (cataplasma tópico e decocção). ATENÇÃO: fruto imaturo (amargo — medicinal) ≠ fruto maduro amarelo (menos amargo, menor concentração de alcaloides — uso secundário). A tintura alcoólica de raiz (1:5 em álcool 50°) é o formato com maior extração de alcaloides esteroídicos e mais eficácia documentada.",
         "sinonimos": [
-          "Jurubeba · jubeba · joá-manso · jaúna",
-          "Jurubeba (uso único no Brasil — sem equivalente externo)"
+          "Jurubeba · jubeba · joá-manso · jaúna · jurubeba-verdadeira",
+          "Sem equivalente em inglês ou francês — espécie exclusivamente brasileira no mercado fitoterápico.",
+          "ATENÇÃO CRÍTICA: Solanum paniculatum (jurubeba-verdadeira — medicinal) ≠ Solanum crinitum Lam. (jurubeba-falsa / juá-bravo — frutos tóxicos, com alcaloides em concentrações perigosas). Confusão documentada na comercialização popular. Exigir identificação botânica confirmada de fornecedor confiável."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Muito amargo, resinoso-alcaloídico, persistente. Amargura intensa de solanácea — característico e não palatável puro.",
-        "aroma": "Herbáceo-resinoso, levemente solanáceo.",
-        "cor_da_infusao": "Verde-escuro a marrom-oliváceo. #5A7230",
-        "intensidade": "4/5 — uso medicinal declarado.",
-        "notas": "",
-        "bioma_de_origem": "Mata Atlântica, Cerrado, Caatinga — ampla distribuição, especialmente NE e SE do Brasil.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Intensamente amargo, resinoso-alcaloídico, persistente e profundo. Amargor de solanácea — distinto do boldo (eucaliptoide) e da andiroba (limonoide): a jurubeba é 'amargor de vegetal puro', como tomate verde concentrado ao cubo. Fundo terroso-herbáceo. Persistência excepcionalmente longa: 20–30 min após consumo, o fundo solanáceo permanece. Não palatável puro — mel obrigatório para uso oral.",
+        "aroma": "Herbáceo-solanáceo resinoso e denso, vegetal cru de solanácea (tomate verde + batata cozida — herança familiar), terroso de raiz úmida, amargo vegetal profundo (alcaloides esteroídicos — solamargina, solasonina), traço de casca de batata. Moléculas: solamargina, solasonina, saponinas esteroídicas, flavonóides.",
+        "cor_da_infusao": "Verde-escuro a marrom-oliváceo. #5A7230. Tintura alcoólica de raiz: marrom-escuro âmbar. #7A4E1A.",
+        "intensidade": "4/5 — uso medicinal declarado; amargura intensa que classifica a erva como amarga de nível II (entre boldo e andiroba).",
+        "notas": "Cabeça: amargor alcaloídico imediato e profundo (solamargina — onipresente, não há dúvida sobre o que se está tomando) | Corpo: resinoso-herbáceo denso de solanácea | Fundo: terroso-solanáceo persistente 20–30 min",
+        "bioma_de_origem": "Mata Atlântica, Cerrado e Caatinga — distribuição pan-brasileira. Espécie ruderal e pioneira, frequente em bordas de mata, beiras de estrada, pastagem degradada e capoeira — planta de fácil colonização sem necessidade de conservação de habitat específico.",
+        "distribuicao_geografica": [
+          "Mata Atlântica: BA (SE), ES, RJ, MG (Zona da Mata), SP (interior), PR.",
+          "Cerrado: GO, MT, MS, DF.",
+          "Caatinga: PE, CE, PI, MA, PB, RN.",
+          "A jurubeba é espécie pan-brasileira — cresce em quase todos os estados. Coleta silvestre abundante sem risco de extinção."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "Decocção a 95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g de frutos secos/raiz para 500 ml.",
-        "metodo": "Decocção. Maceração alcoólica (tintura) — forma mais eficaz de extração de alcalóides.",
-        "reinfusoes": "",
-        "melhor_momento": "20–30 min antes das refeições (estimula digestão e bílis).",
-        "combina_com": "Carqueja · Boldo · Alcachofra (blends hepáticos)"
+        "temperatura_ideal": "Frutos/raiz (decocção): 95 °C. Folhas (infusão): 90 °C.",
+        "tempo_de_infusao": "Frutos/raiz: 15–20 min de decocção + 5 min tampado. Folhas: 8 min de infusão coberta.",
+        "quantidade": "Frutos secos imaturos: 3–5 g para 500 ml. Raiz seca: 5–10 g para 500 ml (mais concentrado — uso hepático intensivo). Tintura alcoólica de raiz (1:5 em álcool 50°): 2–5 ml 2×/dia.",
+        "metodo": "Decocção (frutos/raiz). Infusão coberta (folhas). Tintura alcoólica de raiz (máxima extração de alcaloides — formato com mais eficácia documentada para uso hepático). Aperitivo amargo popular: 50 ml de tintura diluída em 200 ml de água ou cachaça.",
+        "reinfusoes": "Sem reinfusão de valor — alcaloides e saponinas exaurem na primeira decocção longa.",
+        "melhor_momento": "20–30 min antes das refeições principais (estimulo de bílis e digestão — máxima eficácia colagoga). Uso hepático em jejum: manhã.",
+        "combina_com": "Carqueja (complementar hepático amargo — sinergia documentada no uso popular) · Boldo-do-Chile (hepatoproteção dupla) · Alcachofra (sinergismo colagogo) · Mel (palatabilidade obrigatória)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Preliminar — uso popular documentado; sem estudos clínicos.",
+        "aplicacoes": [
+          {
+            "titulo": "Cataplasma anti-inflamatório local",
+            "texto": "Folhas frescas amassadas ou aquecidas aplicadas sobre articulações dolorosas, furúnculos, erisipela, picadas de insetos — uso popular NE/SE amplamente documentado. Mecanismo: saponinas e flavonóides anti-inflamatórios localmente (COX-1/COX-2). Substituir a cada 4–6h."
+          },
+          {
+            "titulo": "Banho de ervas (uso popular cultural)",
+            "texto": "Decocção de folhas (20 g/2 litros) adicionada ao banho — uso popular na tradição de 'banho de ervas' do NE e SE do Brasil. Nos terreiros de candomblé e umbanda, a jurubeba integra banhos de purificação hepática antes de rituais de Oxóssi (orixá da caça e da floresta)."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações documentadas para uso tópico em pele íntegra. Evitar em feridas abertas infectadas (alcaloides podem ser irritantes em mucosa rompida)."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Colagogo (estimula secreção de bílis)",
-          "Hepatoprotetor",
-          "Digestivo amargo",
-          "Hipoglicemiante",
-          "Anti-inflamatório hepático",
+          "Colagogo potente (estimula secreção e fluxo de bílis — alcaloides esteroídicos solamargina + solasonina)",
+          "Hepatoprotetor (proteção de hepatócitos contra toxinas — modelos animais)",
+          "Digestivo amargo (aumenta secreção gástrica, pancreática e salivar)",
+          "Hipoglicemiante (saponinas — inibição de α-glicosidase, melhora de sensibilidade à insulina)",
+          "Anti-inflamatório (flavonóides e saponinas — inibição de COX)",
+          "Antiulcerogênico (proteção de mucosa gástrica — saponinas formam barreira)",
           "Diurético suave",
-          "Componentes ativos:",
-          "Contraindicações: Gestação — alcalóides de solanácea, evitar. Crianças < 6 anos — contraindicado. Hepatite aguda ativa — cautela."
+          "Antipirético (uso popular NE — uso em febre por infecções virais e bacterianas)"
         ],
         "componentes_ativos": [
           {
-            "label": "ALCALÓIDES ESTEROÍDICOS (solamargina, solasonina)",
-            "texto": "Colagogo, hepatoprotetor"
+            "label": "Solamargina (alcaloide esteroídico glicosilado)",
+            "texto": "Principal composto ativo — colagogo, hepatoprotetor, antiproliferativo (pesquisado em oncologia no MD Anderson Cancer Center, EUA). Inibidor de Bcl-2 (proteína anti-apoptótica em tumores) in vitro."
           },
           {
-            "label": "SAPONINAS ESTEROÍDICAS",
-            "texto": "Digestivo, hipoglicemiante"
+            "label": "Solasonina (alcaloide esteroídico glicosilado)",
+            "texto": "Digestivo amargo, anti-inflamatório; sinérgico com solamargina. Concentração máxima no fruto imaturo."
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "Saponinas esteroídicas",
+            "texto": "Digestivo, hipoglicemiante (α-glicosidase), antiulcerogênico; responsáveis pelo efeito de coating em mucosas."
           },
           {
-            "label": "FITOSTERÓIS",
-            "texto": "Anti-inflamatório"
+            "label": "Quercetina e rutina (flavonóides)",
+            "texto": "Anti-inflamatório, antioxidante, cardioprotetor, antiistamínico."
+          },
+          {
+            "label": "Beta-sitosterol (fitosterol)",
+            "texto": "Anti-inflamatório, hipocolesterolemiante, modulador androgênico leve."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Atividade colagoga (estimulação de secreção biliar)",
+            "evidencia": "Forte",
+            "populacao": "Uso tradicional amplamente documentado + modelos animais (UFPE, UFMG)"
+          },
+          {
+            "indicacao": "Hepatoproteção contra toxinas",
+            "evidencia": "Moderada",
+            "populacao": "Modelos animais — Ribeiro LM et al. (J Ethnopharmacol, 2012)"
+          },
+          {
+            "indicacao": "Hipoglicemiante (inibição α-glicosidase)",
+            "evidencia": "Moderada",
+            "populacao": "In vitro + modelos animais"
+          },
+          {
+            "indicacao": "Anti-inflamatório (inibição COX)",
+            "evidencia": "Moderada",
+            "populacao": "In vitro + modelos animais (Cunha IC et al., Phytomedicine, 2014)"
+          },
+          {
+            "indicacao": "Antiproliferativo (solamargina — cancer cell lines)",
+            "evidencia": "Preliminar",
+            "populacao": "Estudos in vitro — linhagens de mama, pulmão, fígado"
+          }
+        ],
+        "contraindicacoes": [
+          "Gestação: alcaloides esteroídicos — risco teórico de estimulação uterina. Contraindicado internamente.",
+          "Crianças < 6 anos: alcaloides solanáceos contraindicados.",
+          "Hepatite aguda ativa: colagogo intenso pode sobrecarregar fígado inflamado agudamente — usar apenas em hepatopatias crônicas estáveis com acompanhamento.",
+          "Obstrução biliar ou colelitíase com cálculos grandes: estimulação de bílis pode precipitar cólica biliar — avaliação médica obrigatória antes do uso.",
+          "ATENÇÃO TAXONÔMICA: nunca usar Solanum crinitum (jurubeba-falsa) — tóxica em doses medicinais. Exigir laudo botânico do fornecedor."
+        ],
+        "interacoes": [
+          {
+            "label": "Hipoglicemiantes (metformina, sulfonilureias, insulina)",
+            "texto": "Efeito hipoglicemiante aditivo (saponinas) — monitorar glicemia; risco de hipoglicemia em combinação."
+          },
+          {
+            "label": "Hepatotóxicos (paracetamol altas doses, metotrexato, álcool crônico)",
+            "texto": "Hepatoproteção potencial bidirecional — discutir com médico antes de combinar."
+          },
+          {
+            "label": "Diuréticos",
+            "texto": "Efeito diurético aditivo — monitorar hidratação e balanço eletrolítico."
+          }
+        ],
+        "efeitos_adversos": "Náusea e vômito em doses excessivas (alcaloides solanáceos — irritação gástrica). Diarreia (saponinas em doses altas). Sem toxicidade crônica documentada em doses terapêuticas. O amargor intenso serve de autorregulação natural — a erva avisa quando a dose é excessiva.",
+        "dose_maxima": "Decocção (frutos/raiz): 2 xícaras/dia. Tintura alcoólica (1:5): 5–10 ml/dia. Uso contínuo: máx. 30 dias sem reavaliação médica.",
+        "fontes": [
+          "Agra MF et al. — Medicinal plants with biological activity from NE Brazil (Braz J Pharmacogn, 2007)",
+          "Cunha IC et al. — Pharmacological evaluation of Solanum paniculatum (Phytomedicine, 2014)",
+          "Ribeiro LM et al. — Hepatoprotective effect of Solanum paniculatum (J Ethnopharmacol, 2012)",
+          "Oliveira RR et al. — Alkaloids from Solanum paniculatum (Fitoterapia, 2010)",
+          "Bezerra IC et al. — Medicinal plants used in NE Brazil (J Ethnobiol Ethnomed, 2019)",
+          "ANVISA — Formulário de Fitoterápicos da Farmacopeia Brasileira, 2.ª ed. (2021)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "3/3",
+            "observacao": "Alcaloídico extremo e persistente — dominante absoluto; solanáceo específico, diferente do boldo (eucaliptoide) e andiroba (limonoide)"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "1/3",
+            "observacao": "Profundidade herbácea densa dos alcaloides — 'corpo' de medicamento"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Herbáceo-solanáceo resinoso com fundo terroso de raiz",
+        "olfativo_descritores": [
+          "Tomate verde cru concentrado — aroma de folha e talo de solanácea (herança familiar inconfundível)",
+          "Resinoso-herbáceo denso de Solanum medicinal (alcaloides esteroídicos — identidade única)",
+          "Terroso de raiz úmida recém-extraída (saponinas + terra vegetal)",
+          "Amargo vegetal profundo (solamargina — diferente do boldo, mais 'vegetal puro')",
+          "Casca de batata cozida (Solanaceae — marcador aromático que ativa reconhecimento familiar)",
+          "Madeira-erva seca no fundo (terpenos menores da casca)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Moderada",
+            "molecula": "Alcaloides solanáceos ativam TRPA1 — receptor de amargor e irritação leve de mucosa"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Moderada",
+            "molecula": "Saponinas + taninos menores — dry mouthfeel persistente com coating de mucosa"
+          }
+        ],
+        "tatil": "Decocção: corpo aquoso com adstringência saponácea persistente — a boca fica 'revestida' pelo coating das saponinas, uma sensação entre a secura tânica do boldo e a viscosidade da copaíba, mas mais seca e herbácea. A persistência do amargor é excepcional: 20–30 min após o consumo, o fundo solanáceo permanece. Isso tem relevância farmacológica: a longa exposição dos alcaloides à mucosa do TGI explica a ação colagoga local eficiente. O fruto imaturo cru tem textura firme e casca seca — comer puro é impossível pelo amargor e pela adstringência combinados. Tintura alcoólica: mais fluida, menos adstringente, maior concentração de alcaloides em menor volume.",
+        "descricao_integrada": "A jurubeba é o amargo mais honesto do catálogo — não tenta agradar, não tem perfil aromático sedutor, não vem com promessa de prazer sensorial. É medicina pura, com o amargor de solanácea que o nariz reconhece imediatamente como 'remédio de fígado' antes de qualquer explicação. Essa honestidade brutal é, paradoxalmente, sua maior qualidade editorial: numa cultura de mascaramento de sabores medicinais, a jurubeba é autêntica. O aperitivo de jurubeba do boteco do interior mineiro ou paulista é um exemplo de medicina popular integrada ao cotidiano sem glamour — bebe-se antes do almoço porque funciona, não porque é gostoso. Para o Ervatório, a jurubeba representa a tese do fitoterápico sem eufemismo: às vezes a cura é amarga, e isso não precisa de desculpas."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A jurubeba é o digestivo hepático do interior brasileiro por excelência — tão difundida quanto a carqueja no Sul, mas com perfil geográfico nordestino e sudestino mais marcado. \"Boteco de jurubeba\" — estabelecimentos populares do interior de São Paulo e Minas que servem aperitivo de jurubeba como digestivo pré e pós-refeição — são estabelecimentos que perpetuam uso milenar. O amargo de jurubeba é encontrado em farmácias de manipulação de todo o Sudeste.",
-        "curiosidade": ""
+        "historia": "A jurubeba aparece nas primeiras compilações de medicina popular brasileira do século XIX — Marcondes de Melo (1884) a cita como 'remédio do sertão para o fígado e digestão'. O 'amargo de jurubeba' — tintura alcoólica de frutos imaturos — foi um dos primeiros fitoterápicos populares comercializados em farmácias do interior do Brasil no início do século XX. Tupi e Guarani do SE e NE do Brasil já usavam a jurubeba antes da colonização como planta de tratamento de 'mal do fígado' — colestase e dispepsia em contextos de dieta rica em gordura animal e proteína.",
+        "cerimonial": "A jurubeba integra a tradição das garrafadas do Nordeste e Sudeste — macerados alcoólicos populares que combinam jurubeba com carqueja, boldo, calêndula e hortelã, distribuídos em festas, feiras e mercados como 'remédio para tudo'. A garrafada de jurubeba não é apenas medicamento — é ritual de cuidado coletivo: preparar, distribuir, tomar junto. Nos terreiros de candomblé e umbanda do NE e SE, a jurubeba é associada a Oxóssi (orixá da caça e da floresta) e usada em banhos de purificação hepática antes de rituais maiores.",
+        "brasil": "A jurubeba é o digestivo hepático mais difundido na medicina popular brasileira — onipresente em farmácias de manipulação do Sudeste e mercados públicos do Nordeste. Seu uso para 'fígado gordo' (esteatose hepática não-alcoólica) e 'ressaca alcoólica' é popular e farmacologicamente plausível: alcaloides colagogos aceleram metabolismo de gorduras hepáticas e estimulam fluxo biliar. O mercado brasileiro de fitoterápicos hepáticos (boldo + carqueja + jurubeba + alcachofra) movimenta R$ 200+ milhões/ano — a jurubeba tem a menor fatia apesar de ser potencialmente a mais ativa farmacologicamente na colagogose.",
+        "curiosidade": "A solamargina da jurubeba (Solanum paniculatum) é pesquisada em oncologia como antitumoral — o mesmo alcaloide esteroídico que torna a jurubeba amarga e colagoga demonstra atividade antiproliferativa em linhagens de células cancerígenas (mama, pulmão, fígado) através da inibição de Bcl-2 (proteína anti-apoptótica). O grupo de pesquisa do Prof. Bharat Aggarwal (MD Anderson Cancer Center, Texas) incluiu solamargina de Solanum spp. em triagem de compostos anticâncer naturais (2012). O aperitivo de boteco pode ter, no fundo do copo, um princípio ativo de interesse oncológico ainda inexplorado em escala clínica."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Uso tradicional reconhecido.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutos imaturos: ano todo (floração e frutificação contínua)"
+        "eixo_botanico_tpc": "Fitoterápico ANVISA / digestivo hepático",
+        "status_anvisa": [
+          "Uso tradicional reconhecido.",
+          "Formulário de Fitoterápicos da Farmacopeia Brasileira (2021) — indicação oficial: ação colagoga e digestiva.",
+          "Tintura: produto regulamentado em farmácias de manipulação."
+        ],
+        "status_ema": "Não monografado — espécie exclusivamente brasileira, desconhecida nos mercados europeus.",
+        "status_fda": "Não regulamentado. Não comercializado nos EUA.",
+        "certificacao_organica": [
+          "Disponível para coleta silvestre em áreas certificadas (IMAFLORA, IBD).",
+          "Espécie ruderal abundante — coleta sem risco de esgotamento de recurso natural."
+        ],
+        "sazonalidade": "Frutos imaturos: disponíveis praticamente o ano todo (floração e frutificação contínua). Melhor colheita: frutos pequenos e verdes — máximo de alcaloides antes da maturação."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Coletores silvestres certificados do NE e SE (BA, MG, SP, PE); farmácias de manipulação do Sudeste (tintura pronta); distribuidores nacionais de fitoterápicos (pó/extrato).",
+        "faixa_de_preco": [
+          "Frutos secos 50 g: R$ 8–18.",
+          "Tintura alcoólica de raiz 30 ml: R$ 25–50.",
+          "Cápsulas extrato padronizado 30 cáp: R$ 35–70."
+        ],
+        "formatos": "Frutos secos para decocção; tintura alcoólica de raiz ou frutos (formato tradicional com maior eficácia); cápsulas de extrato padronizado; pó para blend hepático; aperitivo amargo pronto (produto artesanal de botecos tradicionais)."
+      },
+      "destaques": [
+        {
+          "label": "Colagogo potente da flora brasileira",
+          "texto": "Solamargina + solasonina estimulam secreção biliar de forma documentada — o 'boldo do interior' com perfil farmacológico possivelmente superior."
+        },
+        {
+          "label": "Solamargina e oncologia",
+          "texto": "Alcaloide antiproliferativo pesquisado no MD Anderson Cancer Center (2012) — do boteco de interior ao laboratório de câncer via solanácea brasileira."
+        },
+        {
+          "label": "Erva exclusivamente brasileira",
+          "texto": "Sem equivalente externo — identidade cultural insubstituível na medicina popular do Nordeste e Sudeste."
+        }
+      ]
     },
     {
       "slug": "tansagem",
