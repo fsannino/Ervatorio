@@ -18250,246 +18250,399 @@
     },
     {
       "slug": "rosa-mosqueta",
-      "nome_popular": "Rosa-Mosqueta",
-      "nome_cientifico": "Rosa canina L. (rosa-silvestre europeia) / Rosa rubiginosa L. (rosa-mosqueta andina — principal para óleo cosmético)",
-      "tagline": "A rosa medicinal — o fruto mais rico em vitamina C das plantas temperadas, com ação articular documentada e história que vai de remédio de guerra a cosmético premium global.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Rosa canina L. (rosa-silvestre europeia) / Rosa rubiginosa L. (rosa-mosqueta andina — principal para óleo cosmético)",
-        "familia_botanica": "Rosaceae",
-        "tipo_botanico": "Fitoterápico vitamínico / articular / cosmético",
-        "parte_usada": "Pseudo-frutos secos (quadril/coxinho — \"hip\"), despolpados das sementes; óleo das sementes (cosmético); pétalas (aromáticas).",
-        "sinonimos": [
-          "Rosa-mosqueta · rosa-canina · escaramujo",
-          "Rosehip (inglês) · Cynorrhodon (francês) · Hagebutte (alemão)",
-          "Rosa silvestre / mosqueta (espanhol)"
+        "nome_popular": "Rosa-mosqueta",
+        "nome_cientifico": "Rosa canina / Rosa rubiginosa",
+        "familia": "Rosaceae",
+        "outros_nomes": [
+          "roseira-brava",
+          "rosa-selvagem",
+          "dog rose (ing.)",
+          "cynorrhodon (fr.)"
+        ],
+        "origem": "Europa e Ásia Central",
+        "partes_usadas": [
+          "frutos secos (quadris/cinorrodões)",
+          "pétalas",
+          "óleo das sementes (óleo de rosa-mosqueta)",
+          "sementes"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Ácido-frutado suave, levemente adstringente, framboesa-rosácea, discretamente doce.",
-        "aroma": "Frutal-rosáceo suave, tanino seco, levemente herbáceo.",
-        "cor_da_infusao": "Vermelho-rosado a âmbar. #D84858",
-        "intensidade": "2/5 — suave e agradável.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Arbusto caducifólio de 1–5 m, muito ramificado, com acúleos (espinhos) recurvados. Folhas pinadas compostas (5–7 folíolos). Flores rosas a brancas, 5 pétalas, 3–5 cm, perfumadas. Frutos carnosos (cinorrodões/rosquinhas): 1,5–2 cm, vermelho-alaranjados a escarlates na maturidade, contendo múltiplas sementes pilosas. Os frutos são a principal fonte medicinal.",
+        "composicao_quimica": [
+          "Frutos: vitamina C (400–2000 mg/100 g peso fresco) — uma das maiores concentrações vegetais",
+          "Frutos: carotenoides: β-caroteno, licopeno, luteína",
+          "Frutos: flavonoides: rutina, quercetina, isoquercitrina",
+          "Frutos: pectina (até 15%) — fibra solúvel",
+          "Frutos: ácidos orgânicos: cítrico, málico",
+          "Óleo das sementes: ácido trans-retinoico (tretinoin natural — controverso), ácido linoleico (45–55%), ácido α-linolênico (30–35%), ácido oleico",
+          "Óleo das sementes: carotenoides lipossolúveis"
+        ],
+        "bioma": "Europeu-Mediterrâneo, temperado",
+        "cultivo": "Arbusto silvestre de beiras de estrada, sebes e clareiras. Pleno sol a meia-sombra. Colheita dos frutos no outono (após as primeiras geadas, quando mais doces). Cultivo comercial para óleo no Chile (Rosa rubiginosa) e Europa."
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g de pseudo-frutos secos para 250 ml.",
-        "metodo": "Decocção suave.",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Hibisco · Flor de laranjeira · Camomila · Mel · Canela (blends florais vitamínicos)"
+        "formas": [
+          {
+            "tipo": "Decocção dos frutos (vitamina C e flavonoides)",
+            "descricao": "1–2 colheres de sopa de frutos secos e amassados (sem sementes — pelos irritantes) em 200 mL. Ferver suavemente 15 min. Coar bem (pelos das sementes). 1–2 xícaras/dia.",
+            "indicacoes": [
+              "vitamina C",
+              "imunidade",
+              "gripes e resfriados",
+              "antioxidante",
+              "artrite (anti-inflamatório)"
+            ]
+          },
+          {
+            "tipo": "Geléia/xarope caseiro",
+            "descricao": "Frutos maduros cozidos com açúcar e limão. Rico em vitamina C e pectina. Colher de sopa ao dia.",
+            "indicacoes": [
+              "vitamina C",
+              "imunidade",
+              "uso culinário medicinal"
+            ]
+          },
+          {
+            "tipo": "Óleo de rosa-mosqueta (uso tópico)",
+            "descricao": "Aplicar 3–5 gotas puras ou diluídas em óleo de jojoba no rosto limpo, à noite. Massagear suavemente.",
+            "indicacoes": [
+              "rugas e envelhecimento",
+              "manchas",
+              "cicatrizes",
+              "estrias",
+              "pele seca"
+            ]
+          },
+          {
+            "tipo": "Cápsulas de extrato padronizado",
+            "descricao": "500–1000 mg de extrato 2×/dia. Conforme produto.",
+            "indicacoes": [
+              "osteoartrite (anti-inflamatório documentado)",
+              "vitamina C",
+              "antioxidante sistêmico"
+            ]
+          }
+        ],
+        "dicas": "Remover SEMPRE as sementes e os pelos internos ao preparar a decocção — os pelos são irritantes gastrointestinais. A vitamina C é termolábil: a decocção perde parte da vitamina C, mas preserva flavonoides e carotenoides. O óleo das sementes não contém vitamina C (hidrossolúvel)."
       },
       "usos_topicos": {
-        "evidencia": "",
         "aplicacoes": [
-          "Óleo de semente (anti-aging, cicatrizante): Óleo de sementes de R. rubiginosa (prensagem a frio) — altíssima concentração de ácido linolênico (ω-3) e ácido trans-retinoico natural. Evidência moderada-forte para redução de manchas, cicatrizes e rugas."
-        ],
-        "contraindicacoes": ""
+          {
+            "forma": "Óleo facial puro",
+            "preparo": "3–5 gotas no rosto limpo. Massagem suave em movimentos circulares ascendentes. Aplicar à noite.",
+            "indicacoes": [
+              "antienvelhecimento",
+              "manchas",
+              "cicatrizes de acne",
+              "pele desidratada"
+            ]
+          },
+          {
+            "forma": "Sérum concentrado",
+            "preparo": "Rosa-mosqueta puro ou misturado com neroli, palmarosa ou lavanda. 2–3% de OE em base de rosa-mosqueta.",
+            "indicacoes": [
+              "regeneração intensa",
+              "pele madura",
+              "pós-procedimentos estéticos"
+            ]
+          },
+          {
+            "forma": "Tratamento de estrias",
+            "preparo": "Massagem com óleo puro 2×/dia na área afetada, por 12–24 semanas.",
+            "indicacoes": [
+              "estrias na gestação e pós-parto",
+              "cicatrizes cirúrgicas",
+              "queimaduras leves"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Vitamina C excepcional (pseudo-fruto seco: até 400 mg/100g — 5x a laranja)",
-          "Anti-inflamatório articular (GOPO — galactolipídeo específico)",
-          "Antioxidante",
-          "Cardioprotetor",
-          "Diurético suave",
-          "Cosmético regenerador (óleo de semente)",
-          "Componentes ativos:",
-          "Indicações com evidência:"
+        "acoes_farmacologicas": [
+          "Antioxidante: vitamina C, carotenoides e flavonoides — sinergismo excepcional",
+          "Anti-inflamatório (frutos): GOPO® (galactolipídio) inibe migração de leucócitos — RCTs positivos para osteoartrite",
+          "Imunoestimulador: vitamina C e polissacarídeos",
+          "Regenerante cutâneo (óleo): ácido trans-retinoico e ácidos graxos essenciais estimulam renovação celular",
+          "Antiaterogênico: vitamina C + flavonoides protegem LDL da oxidação",
+          "Antidiabético leve: fibras (pectina) + antioxidantes modulam glicemia"
         ],
-        "componentes_ativos": [
-          {
-            "label": "VITAMINA C",
-            "texto": "Antioxidante, imunidade, colágeno"
-          },
-          {
-            "label": "GOPO (galactolipídeo)",
-            "texto": "Anti-inflamatório articular documentado"
-          },
-          {
-            "label": "BETA-CAROTENO",
-            "texto": "Antioxidante, pró-vitamina A"
-          },
-          {
-            "label": "LICOPENO",
-            "texto": "Antioxidante"
-          },
-          {
-            "label": "PECTINAS",
-            "texto": "Prebiótico, hipoglicemiante leve"
-          },
-          {
-            "label": "ÁCIDO LINOLÊNICO (óleo semente)",
-            "texto": "Anti-inflamatório, regenerador cutâneo"
-          }
+        "contraindicacoes": [
+          "Cálculos renais de oxalato: altas doses de vitamina C podem aumentar oxalúria",
+          "Hemocromatose: vitamina C aumenta absorção de ferro",
+          "Rins: doses muito altas de vitamina C (> 2 g/dia) — cautela em insuficiência renal"
         ],
-        "evidencia": [
-          {
-            "indicacao": "Osteoartrite (dor e mobilidade)",
-            "evidencia": "Moderada",
-            "populacao": "Winther et al. (2005) — GOPO"
-          },
-          {
-            "indicacao": "Artrite reumatoide",
-            "evidencia": "Moderada",
-            "populacao": "Christensen et al. (2008)"
-          },
-          {
-            "indicacao": "Deficiência de vitamina C",
-            "evidencia": "Forte",
-            "populacao": "EMA"
-          }
+        "efeitos_adversos": [
+          "Diarreia e distúrbios gastrointestinais em doses elevadas de vitamina C",
+          "Pelos das sementes: irritação gastrintestinal se não removidos",
+          "Raramente: reação alérgica a Rosaceae"
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          "Ferro (suplemento): vitamina C aumenta absorção de ferro não-heme",
+          "Anticoagulantes: altas doses de vitamina C podem reduzir eficácia da varfarina",
+          "Quimioterapia: vitamin C em altas doses — consultar oncologista"
+        ],
+        "dose_segura": "Frutos secos (decocção): 5–10 g/dia. Extrato padronizado: 2–4 g/dia. Óleo: sem dose máxima documentada (uso tópico). EMA/HMPC: uso tradicional bem estabelecido para complemento de vitamina C.",
+        "nivel_evidencia": "EMA/HMPC: uso bem estabelecido para suplementação de vitamina C. Metanálise Cochrane (2012): extrato padronizado de rosa-mosqueta reduz dor e melhora função em osteoartrite do joelho e quadril (NNT~3). Óleo: estudos clínicos fase II para cicatrizes e envelhecimento cutâneo com resultados positivos."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Frutos: leve, adocicado, frutado, com nota de rosa e tanino. Óleo: suave, levemente frutado e terroso, quase sem odor",
+        "sabor": "Frutos: ácido, adocicado, com taninos; polpa mucilaginosa. Chá: herbáceo-ácido agradável",
+        "cor_visual": "Frutos: vermelho-alaranjado intenso. Decocção: laranja-avermelhada. Óleo: laranja-escuro a dourado-profundo",
+        "textura": "Frutos carnosos; decocção com leve corpo. Óleo: seco ao toque (non-greasy), absorção rápida",
+        "sensacao": "Decocção: levemente adstringente e refrescante. Óleo: suavizante, aquece levemente ao massagear"
       },
       "cultura": {
-        "historia": "Durante a Segunda Guerra Mundial, quando o bloqueio alemão interrompeu importações de frutas cítricas para a Grã-Bretanha, o governo britânico organizou campanhas nacionais de coleta de rosa-mosqueta silvestre para produção de xarope vitamínico para crianças. Estimativas indicam que mais de 450 toneladas de pseudo-frutos foram coletados em 1941 por voluntários civis — uma das histórias mais tocantes de etnobotânica de emergência da história.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Usada desde a Pré-história — frutos encontrados em sítios arqueológicos neolíticos. Hipócrates recomendava para inflamações. Na Idade Média europeia: geléia de cinorrodão era medicamento padrão para gripes e vitamina C (antes da vitamina C ser descoberta). Soldados britânicos na 2ª Guerra Mundial tomavam xarope de cinorrodão (vitamina C) por falta de frutas cítricas. O óleo de rosa-mosqueta foi popularizado pelo Dr. Fernando Galleguillos (Chile, 1980s) para cicatrizes e envelhecimento.",
+        "uso_tradicional": "Europa: frutos para imunidade e vitamina C. Escandinávia: sopa de cinorrodão (nyponsoppa). América do Sul (Chile): óleo de rosa-mosqueta — popularizado para cicatrizes de queimaduras em pacientes do Pinochet. Tradição árabe: pétalas em água de rosas. Cosmética: ingrediente premium anti-aging.",
+        "simbolismo": "Amor, beleza, cura. A rosa, com seus espinhos, simboliza que a beleza tem um custo. Cinorrodão: resiliência — o fruto mais nutritivo nasce do mais simples arbusto espinhoso.",
+        "curiosidades": [
+          "O xarope de cinorrodão foi distribuído pelo governo britânico na 2ª Guerra Mundial para prevenir escorbuto quando laranjas e limões eram escassos",
+          "Uma colher de chá de frutos frescos de rosa-mosqueta fornece mais vitamina C do que uma laranja inteira",
+          "O óleo foi usado nos anos 80 no Chile para tratar cicatrizes de queimaduras em ex-presos políticos — essa aplicação lançou a reputação global do óleo",
+          "Os pelos internos das sementes (usados como 'coceira' em brincadeiras de infância) são o motivo pelo qual a decocção deve ser filtrada muito bem"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido.",
-        "status_ema": "Monografia HMPC — traditional use para vitamina C.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Pseudo-frutos: setembro–novembro (Europa)"
+        "status_brasil": "ANVISA RDC 26/2014: Rosa canina fruto — notificado como fitoterápico isento para suplementação de vitamina C. Óleo: cosmético regulado.",
+        "status_europa": "EMA/HMPC: uso tradicional bem estabelecido para suplementação de vitamina C. Monografia publicada.",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Rosae pseudofructus. Farmacopeia Brasileira 6ª ed.",
+        "registro": "Produtos fitoterápicos registrados no Brasil e Europa. Óleo: cosmético amplamente registrado."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Frutos secos a granel",
+          "Chá em sachês",
+          "Extrato seco em cápsulas (padronizado em GOPO/vitamina C)",
+          "Óleo das sementes (cosmético/tópico)",
+          "Geléia/xarope de cinorrodão"
+        ],
+        "preco_estimado": "Frutos secos: R$ 12–30/100 g. Cápsulas: R$ 40–120/frasco. Óleo: R$ 30–120/30 mL.",
+        "disponibilidade": "Boa — ervanarias, farmácias, lojas naturais. Óleo: lojas de cosmética natural e online.",
+        "como_escolher": "Frutos: vermelho intenso, sem mofo. Cápsulas: preferir padronizados em GOPO® ou vitamina C. Óleo: cor laranja-escuro intensa (mais carotenoides e ácidos graxos essenciais) — óleo claro pode ser refinado ou adulterado.",
+        "armazenamento": "Frutos secos: pote hermético. Validade: 12–18 meses. Óleo: frasco âmbar, geladeira após aberto. Validade: 6–12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Vitamina C natural e antioxidante (frutos — imunidade e prevenção)",
+          "Osteoartrite — anti-inflamatório documentado em RCTs (extrato GOPO®)",
+          "Regeneração cutânea e antienvelhecimento (óleo das sementes)",
+          "Cicatrizes, estrias e manchas (óleo tópico)"
+        ],
+        "diferenciais": [
+          "Metanálise Cochrane confirma eficácia para osteoartrite — base de evidência rara para plantas medicinais",
+          "Fruto com uma das maiores concentrações de vitamina C do reino vegetal (supera laranja e kiwi)",
+          "Óleo com ácidos graxos essenciais omega-3 e omega-6 em proporção equilibrada — único entre os óleos faciais",
+          "Planta de alto uso histórico confirmado por ciência moderna — validação dupla"
+        ],
+        "sinergias": [
+          "Rosa-mosqueta (frutos) + equinácea: imunidade reforçada com sinergia vitamina C + imunomodulação",
+          "Rosa-mosqueta (óleo) + neroli + palmarosa: sérum facial regenerativo premium",
+          "Rosa-mosqueta (cápsulas) + cúrcuma: anti-inflamatório para artrite (abordagem integrativa)",
+          "Rosa-mosqueta + calêndula (óleo): cicatrização cutânea completa"
+        ],
+        "alertas": [
+          "REMOVER sementes e pelos internos ao preparar decocção — pelos são irritantes intestinais",
+          "Altas doses de vitamina C: oxalúria em predispostos a cálculos renais",
+          "Óleo claro ou inodoro: desconfiar — pode ser refinado (perda de ativos)",
+          "Varfarina: vitamina C em altas doses pode reduzir anticoagulação — monitorar RNI"
+        ]
       }
     },
     {
       "slug": "tilia",
-      "nome_popular": "Tília",
-      "nome_cientifico": "Tilia cordata Mill. (tília-de-folhas-pequenas) / T. platyphyllos Scop. (tília-de-folhas-grandes)",
-      "tagline": "A calmante dos boulevards — a flor dos tilos europeus com o perfume mais suave de qualquer infusão e ação sedativa gentil que a tradição europeia preserva há séculos nos chás noturnos.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Tilia cordata Mill. (tília-de-folhas-pequenas) / T. platyphyllos Scop. (tília-de-folhas-grandes)",
-        "familia_botanica": "Malvaceae (antes Tiliaceae)",
-        "tipo_botanico": "Fitoterápico ansiolítico / sedativo / diaforético",
-        "parte_usada": "Flores e brácteas secas.",
-        "sinonimos": [
-          "Tília · tilo · tília-europeia",
-          "Linden / Lime tree (inglês) · Tilleul (francês) · Linde (alemão)",
-          "Linden tea — a tisana de referência da Europa continental para sono e ansiedade"
+        "nome_popular": "Tília",
+        "nome_cientifico": "Tilia cordata / Tilia platyphyllos",
+        "familia": "Malvaceae (antes Tiliaceae)",
+        "outros_nomes": [
+          "tília-de-folha-pequena",
+          "tilleul (fr.)",
+          "linden (ing.)",
+          "linde (al.)"
+        ],
+        "origem": "Europa e oeste da Ásia",
+        "partes_usadas": [
+          "flores com brácteas (tília florida)",
+          "brácteas",
+          "folhas jovens",
+          "carvão de madeira (uso específico)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Floral-mel delicado, levemente herbáceo, mucilaginoso suave, doce natural. O sabor mais gentil entre os sedativos do catálogo.",
-        "aroma": "Floral-mel intenso, néctar de abelha, feno florido europeu. Das mais agradáveis do catálogo.",
-        "cor_da_infusao": "Amarelo-pálido a dourado-mel. #F0E070",
-        "intensidade": "1–2/5 — a infusão mais delicada entre os sedativos.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Árvore caducifólia de 20–40 m, longevíssima (pode ultrapassar 1.000 anos). Copa densa e arredondada. Folhas cordiformes, assimétrica na base, finamente serradas, verde-escuras na face superior e verde-acinzentadas com tufos de pelos nas axilas das nervuras na face inferior. Flores pequenas (7–12 mm), amarelo-esverdeadas, muito perfumadas, reunidas em inflorescências cimosas (3–15 flores) com uma bráctea ligulada membranosa que serve como asa dispersora dos frutos.",
+        "composicao_quimica": [
+          "Mucilagens (10%): arabinogalactanas — demulcentes",
+          "Flavonoides (1–1,5%): tiliroside (kaempferol-3-O-glucosídeo-coumaril), quercetina, rutina, luteolina",
+          "Óleo essencial (traços): farnesol, geraniol, linalol — responsáveis pelo aroma característico",
+          "Proantocianidinas",
+          "Ácidos fenólicos: ácido cafeico, ácido clorogênico",
+          "Saponinas (traços)",
+          "Aminoácidos: glicina, alanina (flores)"
+        ],
+        "bioma": "Europeu temperado — florestas mistas e bosques",
+        "cultivo": "Árvore de parques e avenidas. Floração curta: 2–3 semanas em junho-julho. Colheita das flores + brácteas quando 50–70% abertas (mais aromáticas e ricas em flavonoides). Secar rapidamente à sombra para preservar cor e ativos."
       },
       "preparo": {
-        "temperatura_ideal": "80–85 °C (farnesol e linalol voláteis).",
-        "tempo_de_infusao": "",
-        "quantidade": "2–3 g flores e brácteas secas para 250 ml.",
-        "metodo": "Infusão coberta, preferencialmente em bule com tampa dupla.",
-        "reinfusoes": "",
-        "melhor_momento": "Noite — ritual do sono europeu clássico.",
-        "combina_com": "Camomila · Melissa · Lavanda · Valeriana · Mel · Flor de laranjeira"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Ansiolítico suave",
-          "Sedativo leve (indutor de sono)",
-          "Diaforético (estimula transpiração em estados febris)",
-          "Antiespasmódico",
-          "Demulcente (mucilagens)",
-          "Cardioprotetor (flavonóides — tiliroside)",
-          "Componentes ativos:",
-          "Contraindicações: Sem contraindicações relevantes em doses usuais. Uso excessivo prolongado: associado a cardiotoxicidade em relatos históricos não confirmados modernamente."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "FARNESOL",
-            "texto": "Sedativo, ansiolítico"
+            "tipo": "Infusão (uso interno)",
+            "descricao": "1–2 colheres de sopa de flores + brácteas secas (2–4 g) em 200 mL a 90°C. Cobrir 10–15 min. Coar. 1–3 xícaras/dia, especialmente à noite.",
+            "indicacoes": [
+              "insônia",
+              "ansiedade",
+              "nervosismo",
+              "resfriado com febre",
+              "tosse",
+              "dor de cabeça tensional"
+            ]
           },
           {
-            "label": "LINALOL",
-            "texto": "Ansiolítico, sedativo"
+            "tipo": "Infusão concentrada (banho)",
+            "descricao": "50–100 g de flores em 2 L de água quente. Infundir 20 min. Adicionar ao banho quente.",
+            "indicacoes": [
+              "relaxamento profundo",
+              "estresse intenso",
+              "insônia",
+              "ansiedade"
+            ]
           },
           {
-            "label": "TILIROSIDE (flavonoide)",
-            "texto": "Cardioprotetor, anti-inflamatório"
-          },
-          {
-            "label": "MUCILAGENS",
-            "texto": "Demulcente, expectorante suave"
-          },
-          {
-            "label": "ÁCIDO CLOROGÊNICO",
-            "texto": "Antioxidante"
-          },
-          {
-            "label": "P-CUMARINA",
-            "texto": "Diaforético"
+            "tipo": "Mel de tília (uso culinário-medicinal)",
+            "descricao": "Mel produzido por abelhas nas flores de tília — um dos méis mais valorosos da Europa. Uso direto.",
+            "indicacoes": [
+              "tosse",
+              "garganta irritada",
+              "insônia (colher à noite)",
+              "imunidade"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "As flores com brácteas (inflorescência inteira) são mais ricas em ativos do que as flores separadas. Não deixar a infusão ferver — aromas e mucilagens degradam. O chá de tília tem ação gentil e segura — uma das poucas plantas sedativas adequadas para crianças."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Compressas faciais",
+            "preparo": "Infusão forte (5 g/200 mL), fria. Gaze embebida sobre o rosto por 15 min.",
+            "indicacoes": [
+              "pele sensível e avermelhada",
+              "dermatite",
+              "olhos cansados"
+            ]
+          },
+          {
+            "forma": "Banho relaxante",
+            "preparo": "100 g de flores em bacia com água quente; infundir 20 min; adicionar ao banho cheio.",
+            "indicacoes": [
+              "estresse",
+              "insônia",
+              "tensão muscular",
+              "criança agitada"
+            ]
+          },
+          {
+            "forma": "Enxágue capilar",
+            "preparo": "Infusão concentrada fria após lavagem. Deixar agir sem enxaguar.",
+            "indicacoes": [
+              "brilho capilar",
+              "couro cabeludo sensível"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Ansiolítico e sedativo: tiliroside e flavonoides interagem com receptores benzodiazepínicos (GABA-A)",
+          "Diaforético: promove sudorese — uso tradicional para febre (uso quente + envolvimento em coberta)",
+          "Antiespasmódico: mucilagens e flavonoides relaxam músculo liso brônquico e intestinal",
+          "Anti-inflamatório: ácidos fenólicos e flavonoides inibem NF-κB",
+          "Antimicrobiano leve: farnesol e ácido cafeico",
+          "Emoliente: mucilagens protegem mucosas respiratória e digestiva",
+          "Diurético leve"
+        ],
+        "contraindicacoes": [
+          "Uso excessivo prolongado: cardiotoxicidade descrita em uso de flores velhas ou superdosagem (raro — doses normais são seguras)",
+          "Hipersensibilidade a tília (rara)"
+        ],
+        "efeitos_adversos": [
+          "Sonolência (efeito desejado em insônia, mas atenção antes de dirigir)",
+          "Cardiotoxicidade: casos raros com uso excessivo e prolongado de flores muito maduras",
+          "Raramente: dermatite de contato"
+        ],
+        "interacoes": [
+          "Sedativos e hipnóticos (benzodiazepínicos, zopiclona): potenciação",
+          "Anticoagulantes: possível potenciação leve"
+        ],
+        "dose_segura": "Flores secas: 2–4 g/dia em 1–3 xícaras. EMA/HMPC: uso bem estabelecido. Uso em crianças: 1–2 g em infusão — seguro. Uso prolongado: sem restrições em doses normais.",
+        "nivel_evidencia": "EMA/HMPC: uso medicinal tradicional bem estabelecido para tensão nervosa e perturbações do sono, e como adjuvante em resfriados. ESCOP monografia. Tiliroside: mecanismo ansiolítico documentado in vitro e in vivo."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Floral suave e mel-de-flores, delicado, levemente herbáceo; um dos aromas mais reconfortantes do reino vegetal",
+        "sabor": "Suave, adocicado, floral, com nota levemente melosa e mucilaginosa; muito agradável",
+        "cor_visual": "Flores amarelo-esverdeadas; infusão amarelo-dourada pálida a dourada",
+        "textura": "Flores delicadas; infusão com leve corpo mucilaginoso suave",
+        "sensacao": "Calmante imediata; suaviza a garganta; chá de tília é universalmente bem tolerado — sem adstringência ou amargor"
       },
       "cultura": {
-        "historia": "Os tilos são as árvores das praças e boulevards da Europa continental — em Paris, Berlim, Viena, Amsterdam. Sob os tilos, as comunidades europeias se reuniam para discutir assuntos públicos, negociar casamentos, celebrar festas. A tília era a árvore da comunidade por excelência na Alemanha medieval — a palavra alemã para praça central de vila era frequentemente \"Unter der Linde\" (embaixo do tilo).  O \"tilleul\" francês é a infusão noturna de referência da France inteira — mais consumida que qualquer outro chá calmante no país. Marcel Proust descreveu a madeleine mergulhada no tilleul como o portal de volta ao passado na abertura de \"Em Busca do Tempo Perdido\" — a infusão mais literária da história.",
-        "cerimonial": "",
-        "brasil": "A tília é praticamente desconhecida na medicina popular brasileira — chegou timidamente via lojas de produtos naturais importados e farmácias de manipulação. Tem potencial de crescimento no mercado de chás premium para sono, onde a diferenciação aromática (floral-mel) a distingue da valeriana (aroma desafiador) e da camomila (já massificada).",
-        "curiosidade": ""
+        "historia": "A tília tem papel central na cultura europeia há milênios. Na mitologia germânica: árvore sagrada dedicada a Freya (deusa do amor). Nas aldeias medievais alemãs, as decisões comunitárias eram tomadas sob a Linde (tília). Em Berlim, a Unter den Linden (sob as tílias) é a mais famosa avenida da cidade. Na França: 'tilleul' é o chá das avós — símbolo de casa, cuidado e calma. Marcel Proust, em 'Em Busca do Tempo Perdido', descreve a madeleine mergulhada em chá de tília como o gatilho de suas memórias mais profundas.",
+        "uso_tradicional": "Europa central: chá para insônia, resfriado e ansiedade — planta das avós em toda a Europa. França: tilleul — chá de relaxamento mais consumido. Medicina árabe: Ibn Sina (Avicena) usava para febre. Medicina popular brasileira: cultivada em parques e usada como substituta da camomila para insônia.",
+        "simbolismo": "Paz, amor, longevidade, sabedoria comunitária. Na Alemanha: árvore da justiça e das assembleias. Na França: símbolo do cuidado materno. Árvore que pode viver 1.000 anos — símbolo de continuidade.",
+        "curiosidades": [
+          "A tília de Neuenstadt am Kocher (Alemanha) tem mais de 1.000 anos e ainda produz flores medicínais todo ano",
+          "Proust usa o chá de tília como o veículo da memória involuntária em 'Em Busca do Tempo Perdido' — o episódio literário mais famoso sobre uma planta medicinal",
+          "O mel de tília ('Lindenhonig') é considerado um dos méis mais finos da Europa — levíssimo, cristalização lenta, aroma de mentol suave",
+          "A madeira de tília é a preferida de luthiers (fabricantes de violinos) para a construção de instrumentos de corda"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido.",
-        "status_ema": "Monografia HMPC — traditional use para ansiedade e insônia.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: junho–julho (Europa). Produto importado seco."
+        "status_brasil": "ANVISA RDC 26/2014: Tilia cordata/platyphyllos flores — notificada como fitoterápico isento de prescrição para tensão nervosa e distúrbios do sono.",
+        "status_europa": "EMA/HMPC: uso medicinal tradicional bem estabelecido — tensão nervosa, perturbações do sono, resfriados. Monografia publicada. ESCOP monografia.",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Tiliae flos. Farmacopeia Brasileira 6ª ed.",
+        "registro": "Fitoterápico registrado em vários países europeus e no Brasil."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Flores com brácteas secas a granel",
+          "Chá em sachês",
+          "Tintura hidroalcoólica",
+          "Cápsulas de extrato seco",
+          "Mel de tília",
+          "Mistura de chás relaxantes (tília + camomila + melissa)"
+        ],
+        "preco_estimado": "Flores secas: R$ 12–30/50 g. Sachês: R$ 10–25/caixa. Mel de tília: R$ 40–100/250 g.",
+        "disponibilidade": "Boa — ervanarias, farmácias naturais, supermercados (sachês). Flores frescas: árvores em parques no sul do Brasil (junho-julho).",
+        "como_escolher": "Flores com brácteas intactas e amarelo-esverdeadas, sem flores escurecidas (flores velhas têm maior risco cardiotóxico). Aroma floral suave presente. Para crianças: preferir sachês ou flores de qualidade certificada.",
+        "armazenamento": "Flores secas: pote hermético, escuro, seco. Validade: 12 meses. Evitar flores com > 1 ano (risco de degradação e cardiotoxicidade de compostos de degradação)."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Insônia e nervosismo (sedativo suave — seguro para crianças e idosos)",
+          "Resfriado com febre — diaforético (beber quente + coberta)",
+          "Tosse e bronquite leve (expectorante e antiespasmódico brônquico)",
+          "Ansiedade e tensão muscular (banho + infusão)"
+        ],
+        "diferenciais": [
+          "Uma das poucas plantas sedativas com perfil de segurança adequado para crianças",
+          "EMA uso bem estabelecido — entre as plantas mais bem regulamentadas da Europa",
+          "Aroma e sabor universalmente agradáveis — maior adesão terapêutica de qualquer chá sedativo",
+          "Referência cultural literária (Proust) — planta com identidade cultural européia única"
+        ],
+        "sinergias": [
+          "Tília + camomila + melissa: insônia e nervosismo (blend clássico europeu)",
+          "Tília + elderberry (sabugueiro): resfriado + imunidade",
+          "Tília + lavanda: ansiedade com tensão muscular",
+          "Tília + funcho: digestão nervosa e espasmo intestinal"
+        ],
+        "alertas": [
+          "Flores velhas (> 1 ano) ou muito maduras: risco de cardiotoxicidade — usar flores frescas/recentes",
+          "Sonolência: não combinar com sedativos prescritos sem orientação",
+          "Crianças: doses menores (1–2 g) e sob supervisão",
+          "Dirigir: atenção à sonolência, especialmente na primeira vez"
+        ]
       }
     },
     {
