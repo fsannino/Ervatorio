@@ -11654,256 +11654,347 @@
     },
     {
       "slug": "ginkgo",
-      "nome_popular": "Ginkgo",
-      "nome_cientifico": "Ginkgo biloba L.",
-      "tagline": "A árvore dos 270 milhões de anos — o único sobrevivente de uma linha evolutiva inteira, com a mais robusta evidência de qualquer fitoterápico para circulação cerebral e memória.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Ginkgo biloba L.",
-        "familia_botanica": "Ginkgoaceae (família isolada — único membro vivo da divisão Ginkgophyta)",
-        "tipo_botanico": "Fitoterápico nootrópico / vasodilatador cerebral / antioxidante",
-        "parte_usada": "Folhas verdes secas (extrato padronizado EGb761 — referência clínica).",
-        "sinonimos": [
-          "Ginkgo · ginkgo-biloba · nogueira-do-japão",
-          "Ginkgo / Maidenhair tree (inglês) · Ginkgo (universal)",
-          "Yín xìng (chinês — \"damasco prateado\")"
+        "nome_popular": "Ginkgo",
+        "nome_cientifico": "Ginkgo biloba",
+        "familia": "Ginkgoaceae",
+        "outros_nomes": [
+          "árvore-dos-quarenta-escudos",
+          "maidenhair tree (ing.)",
+          "ginkgo biloba (fr.)",
+          "银杏 (yínxìng)"
+        ],
+        "origem": "China (único sobrevivente selvagem em Zhejiang)",
+        "partes_usadas": [
+          "folhas secas",
+          "extrato das folhas (EGB 761)",
+          "sementes (uso culinário, com cuidado)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Levemente amargo-herbáceo, adstringente suave, neutro. Não é infusão de apreciação — é fitoterápico de uso sistemático.",
-        "aroma": "Herbáceo neutro, levemente resinoso.",
-        "cor_da_infusao": "Amarelo-pálido a âmbar claro. #E0CC78",
-        "intensidade": "2/5 — suave.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Árvore dioica caducifólia de 20–35 m (pode atingir 50 m), longevíssima — exemplares de 3.000+ anos documentados. Casca cinzenta, profundamente sulcada. Folhas em leque (bilobadas — daí 'biloba'), com nervação dicotômica singular, inseridas por pecíolo longo. Verde-brilhante no verão, amarelas-douradas no outono. Espécie 'fóssil viva' — gênero com 270 milhões de anos, sem parentes vivos conhecidos.",
+        "composicao_quimica": [
+          "Flavonoides ginkgolídeos (22–27% no extrato EGB 761): quercetina, kaempferol, isorhamnetina — glicosilados",
+          "Terpenolídeos (5–7%): ginkgolídeos A, B, C, J (diterpenos) e bilobalide (sesquiterpeno)",
+          "Ginkgolídeo B: antagonista específico do PAF (Fator de Ativação Plaquetária) — anti-trombótico único",
+          "Ácido ginkgólico (nas sementes e algumas folhas não processadas): alérgeno e neurotóxico — removido no extrato EGB 761",
+          "Proantocianidinas"
+        ],
+        "bioma": "Temperado — endêmico da China, cultivado mundialmente em parques e avenidas",
+        "cultivo": "Pleno sol, solo profundo e drenado, pH 5–8. Crescimento lento; árvore de parque. Folhas colhidas em setembro-outubro (maior teor de ativos antes da queda). Fóssil vivo: sem pragas naturais conhecidas."
       },
       "preparo": {
-        "temperatura_ideal": "90 °C | Tempo: 8–10 min | Quantidade: 2–3 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "2–3 g/250 ml",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã e tarde — uso regular (4–6 semanas) para efeito nootrópico.",
-        "combina_com": "Ginseng · Melissa · Alecrim (blends cognitivos)"
+        "formas": [
+          {
+            "tipo": "Extrato padronizado EGB 761 (cápsulas — método de eleição)",
+            "descricao": "120–240 mg/dia de extrato padronizado (24% flavonoides + 6% terpenolídeos). 2×/dia com refeição. EGB 761 é o extrato com maior evidência clínica.",
+            "indicacoes": [
+              "cognição",
+              "demência",
+              "zumbido",
+              "tinnitus",
+              "claudicação intermitente",
+              "vertigem"
+            ]
+          },
+          {
+            "tipo": "Infusão das folhas (uso menos padronizado)",
+            "descricao": "2–3 g de folhas secas em 200 mL a 90°C. Cobrir 10–15 min. Coar. 2 xícaras/dia.",
+            "indicacoes": [
+              "circulação periférica",
+              "memória",
+              "fadiga mental"
+            ]
+          }
+        ],
+        "dicas": "Extratos padronizados (EGB 761, LI 1370) são superiores à infusão — padronização em terpenolídeos é o que diferencia clinicamente. Folhas brutas têm menor concentração e variabilidade no teor. Não usar sementes (ácido ginkgólico neurotóxico)."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "aplicacoes": [
+          {
+            "forma": "Creme com extrato de ginkgo",
+            "preparo": "Extrato cosmético de ginkgo incorporado em base creme ou sérum.",
+            "indicacoes": [
+              "antienvelhecimento",
+              "circulação cutânea",
+              "antioxidante dérmico"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Vasodilatador cerebral (aumenta fluxo sanguíneo cerebral)",
-          "Nootrópico (melhora memória e concentração)",
-          "Antioxidante de alta capacidade (neutraliza radicais livres cerebrais)",
-          "Antiagregante plaquetário",
-          "Neuroprotetor (proteção contra isquemia)",
-          "Melhora da circulação periférica (claudicação intermitente)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Anticoagulados — antiagregante plaquetário (risco de sangramento)",
-          "Pré-cirurgia — suspender 2 semanas",
-          "Anticonvulsivantes — pode reduzir limiar convulsivo (bilobalídeo)",
-          "Gestação — dados insuficientes"
-        ],
-        "componentes_ativos": [
-          {
-            "label": "FLAVONÓIDES GINKGOIDES (quercetina, kaempferol, isorhamnetina)",
-            "texto": "24% — Antioxidante, vasodilatador"
-          },
-          {
-            "label": "TERPENÓIDES (ginkgolídeos A, B, C, J)",
-            "texto": "6% — Antiagregante (antagonista PAF), vasodilatador"
-          },
-          {
-            "label": "BILOBALÍDEO",
-            "texto": "2,6% — Neuroprotetor, anticonvulsivante"
-          }
-        ],
-        "evidencia": [
-          {
-            "indicacao": "Demência (incluindo Alzheimer precoce)",
-            "evidencia": "Moderada-forte",
-            "populacao": "Cochrane — Birks & Grimley (2009)"
-          },
-          {
-            "indicacao": "Claudicação intermitente",
-            "evidencia": "Moderada-forte",
-            "populacao": "EMA — well-established use"
-          },
-          {
-            "indicacao": "Zumbido (tinnitus)",
-            "evidencia": "Moderada",
-            "populacao": "Drew & Davies (2001)"
-          },
-          {
-            "indicacao": "Déficit cognitivo leve",
-            "evidencia": "Moderada",
-            "populacao": "Múltiplos ECR europeus"
-          }
+        "acoes_farmacologicas": [
+          "Vasodilatador cerebral: ginkgolídeos aumentam fluxo sanguíneo cerebral via inibição do PAF e vasodilatação NO-dependente",
+          "Neuroprotetor: flavonoides e bilobalide protegem neurônios contra isquemia e dano oxidativo",
+          "Antiagregante plaquetário: ginkgolídeo B é antagonista potente do PAF — anti-trombótico",
+          "Antioxidante: flavonoides capturam radicais livres com alta capacidade",
+          "Neuroplasticidade: ginkgo aumenta NGF (fator de crescimento nervoso) in vitro",
+          "Auditivo: melhora fluxo sanguíneo coclear — zumbido e surdez neurossensorial"
         ],
         "contraindicacoes": [
-          "Anticoagulados — antiagregante plaquetário (risco de sangramento)",
-          "Pré-cirurgia — suspender 2 semanas",
-          "Anticonvulsivantes — pode reduzir limiar convulsivo (bilobalídeo)",
-          "Gestação — dados insuficientes"
+          "Anticoagulados (varfarina, heparina): risco de sangramento aumentado",
+          "Antiagregantes (aspirina, clopidogrel): risco aditivo",
+          "Epilepsia: ginkgolídeos podem diminuir limiar convulsivo",
+          "Gestação: contraindicado — antiagregante e possível efeito uterotônico",
+          "Cirurgia iminente: suspender 2 semanas antes"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "efeitos_adversos": [
+          "Cefaleia, tonturas nas primeiras semanas",
+          "Sangramento (GI, intracerebral) — especialmente com anticoagulantes",
+          "Raramente: convulsões"
+        ],
+        "interacoes": [
+          "Varfarina: aumenta INR — risco de hemorragia",
+          "Aspirina/AINEs: sinergismo antiagregante — monitorar",
+          "MAOIs: interação grave descrita",
+          "Anticonvulsivantes: pode reduzir eficácia"
+        ],
+        "dose_segura": "Extrato EGB 761: 120–240 mg/dia. Folhas: 3–6 g/dia (extratos não padronizados têm menor evidência). Uso de longo prazo: documentado seguro até 6 anos em estudos (demência). EMA: uso medicinal bem estabelecido.",
+        "nivel_evidencia": "EMA/HMPC: uso medicinal bem estabelecido para claudicação intermitente e distúrbios cognitivos associados a insuficiência vascular. Metanálise Cochrane (2009, 36 RCTs): melhora modesta mas significativa em cognição em demência. Cochrane (2013): redução de sintomas de tinnitus. Extrato EGB 761: > 50 RCTs publicados."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Folhas: levemente herbáceo, terroso, quase inodoro. Sementes frescas: odor forte e desagradável (butirato)",
+        "sabor": "Folhas: levemente amargo e adstringente, neutro",
+        "cor_visual": "Folhas em leque, verde-brilhante; amarelas-douradas no outono; extrato: amarelo a marrom",
+        "textura": "Folhas coriáceas e delicadas; cápsulas de extrato padronizado",
+        "sensacao": "Sem impacto organoléptico marcante — a valor é farmacológico, não sensorial"
       },
       "cultura": {
-        "historia": "O ginkgo sobreviveu à extinção em massa do Permiano (252 Ma), à do Cretáceo (66 Ma), à Glaciação do Pleistoceno — e à bomba atômica de Hiroshima. Seis ginkgos cresciam a menos de 2 km do hipocentro da bomba. Enquanto tudo ao redor foi destruído, as seis árvores rebrotaram na primavera seguinte — sem mutações detectadas. Hoje são chamadas de \"ginkgos de Hiroshima\" e protegidas como patrimônio da paz.  O ginkgo crescia apenas na China por dezenas de milhões de anos — salvo da extinção pelos monges budistas que o cultivavam em mosteiros como árvore sagrada. Chegou ao Ocidente em 1730 (Jardim Botânico de Utrecht). Hoje é a árvore ornamental mais plantada em calçadas de cidades europeias e norte-americanas.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "A árvore mais antiga da Terra com história medicinal documentada. Fóssil vivo de 270 milhões de anos — sobreviveu às extinções que eliminaram os dinossauros e à bomba de Hiroshima (6 árvores de ginkgo sobreviveram a 1 km do epicentro e rebrotaram em 1946). Na China: cultivada em templos budistas há 1.500 anos como árvore sagrada. O naturalista alemão Engelbert Kaempfer a descreveu no Japão em 1691. Em 1965, o extrato EGB 761 foi desenvolvido por Schwabe (Alemanha) — hoje um dos fitoterápicos mais vendidos do mundo.",
+        "uso_tradicional": "TCM: ginkgo — sementes para asma, tosse e incontinência urinária (não as folhas!). Japão: árvore sagrada de templos. Medicina moderna europeia: folhas como agente circulatório cerebral — uso invertido em relação à tradição chinesa. Brasil: amplamente vendido como nootrópico e anti-envelhecimento.",
+        "simbolismo": "Longevidade, resistência, esperança. A árvore de Hiroshima. No Japão: símbolo de Tóquio (folha do ginkgo é o símbolo da cidade). Goethe escreveu um poema sobre o ginkgo ('Ginkgo biloba', 1815).",
+        "curiosidades": [
+          "As 6 árvores de ginkgo que sobreviveram à bomba atômica de Hiroshima a 1 km do epicentro são chamadas de 'hibakujumoku' (árvores sobreviventes) e ainda estão vivas",
+          "Goethe dedicou um poema à folha bilobada do ginkgo em 1815: 'Dieses Baums Blatt...' — uma das mais famosas homenagens poéticas a uma planta",
+          "A árvore mais velha de ginkgo conhecida tem 3.500 anos e está no Templo de Guanyin, China",
+          "Ginkgo biloba é o único membro vivo da divisão Ginkgophyta — literalmente não tem parentes vivos no planeta"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Extrato padronizado EGb761.",
-        "status_ema": "Monografia HMPC — well-established use para distúrbios cognitivos.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas colhidas no verão (máxima concentração de flavonóides)"
+        "status_brasil": "ANVISA: Ginkgo biloba extrato — registrado como fitoterápico para insuficiência vascular cerebral e periférica. Extrato EGB 761 disponível em farmácias.",
+        "status_europa": "EMA/HMPC: uso medicinal bem estabelecido — claudicação intermitente e sintomas cognitivos de demência leve. Monografia publicada.",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Ginkgonis folium e Ginkgonis extractum siccum. Farmacopeia Brasileira 6ª ed.",
+        "registro": "Medicamentos registrados no Brasil (EGB 761) e em toda a Europa. Um dos fitoterápicos mais vendidos no mundo."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Cápsulas de extrato padronizado EGB 761",
+          "Comprimidos",
+          "Folhas secas a granel",
+          "Extrato líquido",
+          "Produtos cosméticos"
+        ],
+        "preco_estimado": "Cápsulas EGB 761: R$ 30–90/frasco. Folhas secas: R$ 15–35/50 g.",
+        "disponibilidade": "Muito ampla — farmácias, drogarias, lojas naturais, supermercados.",
+        "como_escolher": "Preferir extratos padronizados EGB 761 (24% flavonoides + 6% terpenolídeos) — maior evidência clínica. Verificar ácido ginkgólico < 5 ppm (limite EMA). Marcas confiáveis: Dr. Willmar Schwabe, Pharmaton.",
+        "armazenamento": "Cápsulas: local fresco e seco. Validade: conforme fabricante. Folhas: pote hermético, escuro. Validade: 12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Cognição e memória em idosos (EMA bem estabelecido — Cochrane positivo)",
+          "Claudicação intermitente e circulação periférica",
+          "Tinnitus (zumbido) — evidência Cochrane",
+          "Vertigo e tontura de origem vascular"
+        ],
+        "diferenciais": [
+          "Fóssil vivo de 270 milhões de anos — planta sem parentes vivos, único de seu gênero",
+          "Sobrevivente de Hiroshima — símbolo de resiliência extrema",
+          "Extrato EGB 761: > 50 RCTs — base científica excepcional para um fitoterápico",
+          "Ginkgolídeo B: único inibidor seletivo do PAF no reino vegetal"
+        ],
+        "sinergias": [
+          "Ginkgo + ginseng: cognição e memória (Gincosan — produto registrado)",
+          "Ginkgo + vinpocetina: circulação cerebral potenciada",
+          "Ginkgo + vitamina E: antioxidante cerebral combinado",
+          "Ginkgo + rhodiola: fadiga mental e clareza cognitiva"
+        ],
+        "alertas": [
+          "ANTICOAGULANTES E ANTIAGREGANTES: alto risco de sangramento — não combinar sem supervisão médica",
+          "EPILEPSIA: ginkgolídeos podem reduzir limiar convulsivo",
+          "CIRURGIA: suspender 2 semanas antes",
+          "SEMENTES: não usar como medicina — ácido ginkgólico neurotóxico"
+        ]
       }
     },
     {
       "slug": "schisandra",
-      "nome_popular": "Schisandra",
-      "nome_cientifico": "Schisandra chinensis (Turcz.) Baill.",
-      "tagline": "A baga dos cinco sabores — adaptógeno chinês único com a distinção de ativar os cinco gostos simultaneamente e uma farmacologia hepatoprotetora entre as mais potentes do catálogo.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Schisandra chinensis (Turcz.) Baill.",
-        "familia_botanica": "Schisandraceae",
-        "tipo_botanico": "Adaptógeno / hepatoprotetor / nootrópico",
-        "parte_usada": "Frutos secos.",
-        "sinonimos": [
-          "Schisandra · esquizandra · baga-dos-cinco-sabores",
-          "Five-flavor berry (inglês) · Wǔ wèi zǐ (chinês — \"baga dos cinco sabores\")"
+        "nome_popular": "Schisandra",
+        "nome_cientifico": "Schisandra chinensis",
+        "familia": "Schisandraceae",
+        "outros_nomes": [
+          "schizandra",
+          "cinco-sabores",
+          "wu wei zi (五味子)",
+          "magnolia vine (ing.)"
+        ],
+        "origem": "China nordeste, Rússia (Extremo Oriente), Coreia, Japão",
+        "partes_usadas": [
+          "frutos maduros secos (bagas vermelhas)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Extraordinário — aciona os cinco gostos simultaneamente: doce, azedo, amargo, salgado e picante. Experiência sensorial única no catálogo — e provavelmente no mundo vegetal.",
-        "aroma": "Frutado-ácido, levemente resinoso, frutas vermelhas ácidas.",
-        "cor_da_infusao": "Vermelho-rosado a rubi. #C04858",
-        "intensidade": "4/5 — experiência sensorial intensa e única.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Trepadeira lenhosa decídua de 5–8 m. Folhas alternas, oval-elípticas (5–12 cm), serradas, verde-brilhante. Flores pequenas (1,5–2 cm), brancas a róseas. Frutos em bagas vermelhas (0,5–1 cm) agrupados em espigas pendentes de 5–10 cm — visualmente muito ornamentais. O nome 'wu wei zi' (五味子) significa 'fruto dos cinco sabores' pois a baga contém simultaneamente: ácido (casca), doce (polpa), salgado (sementes), amargo e picante — fenômeno sensorial único no reino vegetal.",
+        "composicao_quimica": [
+          "Lignanas (3–19%): esquizandrina, deoxi-esquizandrina, γ-esquizandrina — hepatoprotetoras e adaptogênicas",
+          "Lignanas especiais: gomisinas (A, B, C, G, N) — neuroprotetoras",
+          "Ácidos orgânicos: ácido cítrico, málico, tartárico",
+          "Vitamina C, vitamina E",
+          "Óleos essenciais (0,04%): β-chamigreno, α-chamigreno",
+          "Taninos",
+          "Minerais: cálcio, fósforo, ferro"
+        ],
+        "bioma": "Temperado frio — florestas mistas da China nordeste e Sibéria",
+        "cultivo": "Meia-sombra, solo fértil, úmido e bem drenado, pH 6–7, clima temperado frio. Trepadeira necessitando suporte. Difícil de cultivar em climas tropicais. Produção comercial na China nordeste e Rússia."
       },
       "preparo": {
-        "temperatura_ideal": "90 °C | Tempo: 10–15 min | Quantidade: 3–5 g frutos secos/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g frutos secos/250 ml",
-        "metodo": "Decocção suave (frutos duros).",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã (adaptogênico/energético).",
-        "combina_com": "Ginseng · Ashwagandha · Mel · Hibisco (blends adaptogênicos)"
+        "formas": [
+          {
+            "tipo": "Decocção dos frutos",
+            "descricao": "5–10 g de frutos secos em 300 mL. Ferver suavemente 20–30 min. Coar. 2 xícaras/dia.",
+            "indicacoes": [
+              "fadiga",
+              "hepatoproteção",
+              "adaptogênico",
+              "visão",
+              "tosse crônica"
+            ]
+          },
+          {
+            "tipo": "Pó dos frutos",
+            "descricao": "1–3 g de pó misturado em água, suco ou smoothie. 1×/dia.",
+            "indicacoes": [
+              "adaptogênico",
+              "hepatoproteção",
+              "cognição"
+            ]
+          },
+          {
+            "tipo": "Cápsulas de extrato padronizado",
+            "descricao": "200–500 mg de extrato (padronizado em esquizandrina 2–5%), 2×/dia.",
+            "indicacoes": [
+              "hepatoproteção (hepatite, esteatose)",
+              "adaptogênico",
+              "performance cognitiva"
+            ]
+          },
+          {
+            "tipo": "Tintura (1:5 em etanol 40%)",
+            "descricao": "2–4 mL, 2–3×/dia.",
+            "indicacoes": [
+              "adaptogênico",
+              "suporte hepático"
+            ]
+          }
+        ],
+        "dicas": "Os cinco sabores simultâneos tornam o chá de schisandra uma experiência organoléptica única — ácido, doce, salgado, amargo e picante em uma baga. Frutos levemente amassados antes da decocção extraem mais lignanas. O sabor ácido intenso é normal e esperado."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "aplicacoes": [
+          {
+            "forma": "Extrato cosmético",
+            "preparo": "Extrato de schisandra em séruns e cremes.",
+            "indicacoes": [
+              "antioxidante dérmico",
+              "antienvelhecimento",
+              "brilho cutâneo"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Adaptógeno (modulação HPA e cortisol)",
-          "Hepatoprotetor potente (lignanas — proteção hepática documentada em hepatite)",
-          "Nootrópico (melhora de reflexos e concentração — pesquisa russa extensiva)",
-          "Antioxidante",
-          "Imunomodulador",
-          "Antiestressante",
-          "Afrodisíaco (uso tradicional chinês)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Gestação — levemente uterotônico. Uso de medicamentos metabolizados por CYP (indutor moderado). Epilepsia — cautela."
+        "acoes_farmacologicas": [
+          "Hepatoprotetor: esquizandrina e gomisinas estimulam regeneração hepática, aumentam glutationa hepática e inibem ALT/AST — estudos clínicos em hepatite viral",
+          "Adaptogênico: lignanas modulam eixo HPA, reduzem cortisol e aumentam resistência ao estresse",
+          "Neuroprotetor: gomisinas protegem neurônios contra glutamato-excitotoxicidade",
+          "Nootropico: melhora atenção, concentração e tempo de reação (estudos clínicos russos)",
+          "Antioxidante: capacidade ORAC muito elevada",
+          "Imunomodulador: aumenta atividade de macrófagos e células NK",
+          "Adaptogênico físico: usado por atletas soviéticos/russos para performance (mesmo programa de pesquisa do ginseng)"
         ],
-        "componentes_ativos": [
-          {
-            "label": "LIGNANAS (esquizandrina, gomisin, deoxi-esquizandrina)",
-            "texto": "Hepatoprotetor, adaptogênico, nootrópico"
-          },
-          {
-            "label": "ÁCIDOS ORGÂNICOS (cítrico, málico, tartárico)",
-            "texto": "Acidez característica, digestivo"
-          },
-          {
-            "label": "VITAMINA C",
-            "texto": "Antioxidante"
-          },
-          {
-            "label": "ÓLEOS ESSENCIAIS",
-            "texto": "Aromático, antimicrobiano"
-          }
+        "contraindicacoes": [
+          "Gestação: contraindicado — lignanas podem estimular contrações uterinas",
+          "Epilepsia: possível redução do limiar convulsivo",
+          "Hipertensão grave: pode aumentar pressão em alguns indivíduos",
+          "Doenças hepáticas graves (insuficiência): paradoxalmente pode sobrecarregar o metabolismo"
         ],
-        "evidencia": [
-          {
-            "indicacao": "Hepatite viral (adjuvante)",
-            "evidencia": "Moderada",
-            "populacao": "Pesquisa chinesa e russa"
-          },
-          {
-            "indicacao": "Fadiga e desempenho atlético",
-            "evidencia": "Moderada",
-            "populacao": "Panossian & Wikman (2009)"
-          },
-          {
-            "indicacao": "Estresse adaptogênico",
-            "evidencia": "Moderada",
-            "populacao": "Tradição soviética + pesquisa moderna"
-          }
+        "efeitos_adversos": [
+          "Azia e refluxo (acidez dos frutos)",
+          "Insônia em doses elevadas (estimulante leve)",
+          "Erupção cutânea (rara)"
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          "CYP3A4: esquizandrina inibe CYP3A4 — múltiplas interações possíveis com medicamentos metabolizados por essa via",
+          "Tacrolimus, ciclosporina: aumento de níveis séricos (inibição CYP3A4/P-gp)",
+          "Midazolam, estatinas: aumento de biodisponibilidade"
+        ],
+        "dose_segura": "Frutos secos: 3–9 g/dia (decocção). Extrato padronizado: 200–500 mg/dia. Monografia TCM (Farmacopeia Chinesa): 3–9 g/dia.",
+        "nivel_evidencia": "Estudos clínicos russos (séc XX): adaptogênico para pilotos e atletas. Estudos clínicos modernos (Coreia, China): hepatoproteção em hepatite crônica B — redução significativa de transaminases. Metanálise 2020: redução de ALT/AST em hepatopatias. Base científica sólida, especialmente para hepatoproteção."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Frutado-azedo, levemente balsâmico; mais aromático que o sabor sugere",
+        "sabor": "Os cinco sabores: ácido (dominante), doce (polpa), salgado (sementes), amargo e picante — experiência sensorial única e intensa",
+        "cor_visual": "Frutos: vermelhos intensos (frescos) a escarlate-escuros (secos); decocção: vermelha a vermelho-púrpura",
+        "textura": "Frutos macios e pegajosos; decocção levíssima com acidez marcada",
+        "sensacao": "Acidez imediata intensa; estimulante e tonificante; afeta salivação e digestão"
       },
       "cultura": {
-        "historia": "A schisandra é o adaptógeno dos pilotos soviéticos — extensivamente pesquisada pelo Instituto Botânico de Vladivostok durante a Guerra Fria como \"agente farmacológico de estado\" para aumentar performance cognitiva, resistência à fadiga e capacidade de recuperação em condições extremas. Pilotos da força aérea soviética recebiam extratos de schisandra em missões de alta demanda. A farmacologia adaptogênica como campo científico foi em grande parte desenvolvida pelos soviéticos em torno dessa planta e do ginseng-siberiano.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Descrita no Shennong Bencao Jing (séc I aC) — a mais antiga farmacopeia chinesa — como planta de longevidade e restauração do Qi. Na medicina traditional chinesa: 'calma o coração e acalma a mente, repõe o Qi e nutre os rins'. Amplamente pesquisada na URSS nos anos 1950–70 como adaptogênico para astronautas, pilotos e atletas olímpicos — junto com o ginseng e o eleuterococo. Hoje crescente interesse global como hepatoprotetor e nootropico.",
+        "uso_tradicional": "TCM: wu wei zi — tonificante geral, visão, tosse crônica, diarreia, hepatoproteção. Rússia/URSS: adaptogênico para condições extremas (pilotos, cosmonautas, mergulhadores). Medicina popular coreana: fadiga e suporte hepático. Japão: longevidade e bem-estar.",
+        "simbolismo": "Os cinco sabores = os cinco elementos da cosmologia chinesa (madeira, fogo, terra, metal, água) = os cinco órgãos-alvo. Símbolo de completude e equilíbrio.",
+        "curiosidades": [
+          "A schisandra é a única planta conhecida que contém simultaneamente os cinco sabores básicos — ácido, doce, salgado, amargo e picante — em uma única baga",
+          "Pesquisadores soviéticos dos anos 50 escolheram schisandra e ginseng para estudar como 'adaptogênicos' para o programa espacial soviético",
+          "A inibição do CYP3A4 pela esquizandrina foi descoberta ao observar que schisandra aumentava 2–4x a biodisponibilidade de vários medicamentos",
+          "No NCI (Instituto Nacional do Câncer dos EUA), a esquizandrina está sendo pesquisada como sensitizador de quimioterapia — reverte resistência a medicamentos em células cancerígenas"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Suplemento alimentar.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutos: agosto–outubro (China/Rússia)"
+        "status_brasil": "Sem registro ANVISA como fitoterápico. Importada da China. Comercializada como suplemento.",
+        "status_europa": "EMA: sem monografia formal. Disponível como suplemento em vários países europeus. TCM reconhecida em alguns países.",
+        "farmacopeia": "Farmacopeia Chinesa (ChP): Schisandrae chinensis fructus — monografia completa. Farmacopeia da Rússia. Não consta em Ph.Eur.",
+        "registro": "Suplemento alimentar no Brasil e Europa. Sem medicamento registrado."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Frutos secos a granel",
+          "Pó dos frutos",
+          "Cápsulas de extrato padronizado",
+          "Tintura",
+          "Sucos e bebidas funcionais"
+        ],
+        "preco_estimado": "Frutos secos: R$ 20–50/50 g. Cápsulas: R$ 50–130/frasco. Pó: R$ 30–70/100 g.",
+        "disponibilidade": "Moderada — lojas de suplementos asiáticos, lojas naturais premium, online.",
+        "como_escolher": "Frutos: vermelhos intensos, sem mofo, acidez pronunciada ao mastigar. Cápsulas: padronizadas em esquizandrina (2–5%). Verificar origem (China nordeste ou Rússia — maior qualidade).",
+        "armazenamento": "Frutos secos: pote hermético, fresco. Validade: 12–18 meses. Cápsulas: fresco e seco."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Hepatoproteção em hepatite e esteatose (estudos clínicos — redução de transaminases)",
+          "Adaptogênico para fadiga crônica e estresse (pesquisa soviética + moderna)",
+          "Cognição e tempo de reação (nootropico com estudos de performance)",
+          "Os cinco sabores: culinária e uso ritual no chá"
+        ],
+        "diferenciais": [
+          "Única planta com os cinco sabores simultâneos — fenômeno sensorial sem equivalente no reino vegetal",
+          "Hepatoprotetor com maior número de estudos clínicos modernos (> 10 RCTs para hepatopatias)",
+          "Adaptogênese soviética histórica — programa científico que definiu a categoria",
+          "Inibição de CYP3A4: clinicamente relevante para interações medicamentosas"
+        ],
+        "sinergias": [
+          "Schisandra + milk thistle (cardo-mariano): hepatoproteção máxima",
+          "Schisandra + ginseng + rhodiola: trio adaptogênico russo clássico",
+          "Schisandra + ashwagandha: fadiga e estresse crônico",
+          "Schisandra + astragalus: imunidade e suporte hepático"
+        ],
+        "alertas": [
+          "CYP3A4: interação com múltiplos medicamentos — consultar farmacêutico se em polifarmácia",
+          "Ciclosporina e tacrolimus: aumento significativo de biodisponibilidade — monitorar níveis",
+          "GESTAÇÃO: contraindicado",
+          "Acidez: pode agravar refluxo e gastrite — tomar com alimentos"
+        ]
       }
     },
     {
