@@ -255,262 +255,543 @@
     {
       "slug": "copaiba",
       "nome_popular": "Copaíba",
-      "nome_cientifico": "Copaifera reticulata Ducke (C. langsdorffii Desf. — espécie de cerrado e transição)",
-      "tagline": "A resina sagrada da floresta — anti-inflamatório natural com milênios de uso indígena e crescente validação científica global.",
+      "nome_cientifico": "Copaifera reticulata Ducke",
+      "tagline": "A resina sagrada da floresta — anti-inflamatório balsâmico com 400 anos de uso indígena e farmacológico, hoje redescoberto pela ciência como agonista canabinóide natural.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Copaifera reticulata Ducke (C. langsdorffii Desf. — espécie de cerrado e transição)",
-        "familia_botanica": "Fabaceae / Leguminosae (família do feijão, da acácia, do jatobá)",
-        "tipo_botanico": "Óleo-resina medicinal; infusão de casca (uso popular)",
-        "parte_usada": "Óleo-resina extraído do tronco por incisão (uso principal); casca em decocção (uso popular); folhas em infusão (uso secundário).",
+        "nome_cientifico": "Copaifera reticulata Ducke (C. langsdorffii Desf. — espécie de cerrado; C. multijuga Hayne — alta produção amazônica)",
+        "familia_botanica": "Fabaceae / Leguminosae (família do feijão, da acácia, do jatobá — leguminosas arbóreas tropicais)",
+        "tipo_botanico": "Óleo-resina medicinal; fitoterápico de uso interno e externo",
+        "parte_usada": "Óleo-resina extraído do tronco por incisão (uso principal — produto farmacológico natural); casca em decocção (uso popular anti-inflamatório e antiparasitário); folhas em infusão (uso secundário). O óleo-resina é o único 'medicamento pronto' do catálogo — flui do tronco já como formulação terapêutica, sem processamento adicional. Uma árvore adulta produz 5–20 litros por extração anual por sangria cuidadosa (processo que não destrói a planta — manejo sustentável natural).",
         "sinonimos": [
-          "Copaíba · copaibeira · pau-d'óleo · marimari (AM)",
-          "Copaib balsam (inglês) · baume de copahu (francês)",
-          "Mais de 70 espécies no gênero; 16 no Brasil — química variável por espécie"
+          "Copaíba · copaibeira · pau-d'óleo · marimari (AM) · bálsamo-de-copaíba",
+          "Copaib balsam / copaiba oil resin (inglês) · baume de copahu (francês) · copaiva (espanhol)",
+          "Mais de 70 espécies no gênero Copaifera; 16 no Brasil — química variável por espécie (beta-cariofileno dominante em C. reticulata; sesquiterpenos distintos em C. langsdorffii).",
+          "ATENÇÃO: C. reticulata (Amazônia — maior teor de beta-cariofileno, perfil anti-inflamatório máximo) ≠ C. langsdorffii (Cerrado e transição — perfil fitoquímico diferente, menos estudado). Identificar a espécie antes de qualquer uso terapêutico."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Bálsamo de resina quente, amadeirado profundo, pinho tropical, fundo de pimenta-do-reino.",
-        "cor_da_infusao": "",
-        "intensidade": "5/5 — presença esmagadora. Uso medicinal, não de prazer sensorial.",
-        "notas": "",
-        "bioma_de_origem": "Amazônia (espécies reticulata, multijuga, officinalis) e Cerrado/transição (langsdorffii).",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-resinoso intenso, balsâmico pungente, fundo terroso-amadeirado. A decocção de casca é menos agressiva que o óleo puro. Não é palatável isolado — uso medicinal exige mel ou veículo lipídico para via oral. Perfil que o nariz reconhece imediatamente como 'remédio' — sem nenhuma ambiguidade sensorial.",
+        "aroma": "Bálsamo quente e envolvente, pinho tropical denso, pimenta-do-reino verde, madeira úmida de floresta fechada, resina cítrica leve no fundo. Moléculas dominantes: beta-cariofileno (sesquiterpeno — 30–70% do óleo; confere a pungência balsâmica característica), copaeno, humuleno, bisaboleno.",
+        "cor_da_infusao": "Decocção de casca: marrom-âmbar escuro (#7A4E2D). Óleo-resina puro: amarelo-dourado a âmbar translúcido (#D4943A). A intensidade da cor âmbar do óleo é proporcional ao teor de sesquiterpenos — indicador visual de qualidade.",
+        "intensidade": "5/5 — presença esmagadora. Uso exclusivamente medicinal, não de prazer sensorial.",
+        "notas": "Cabeça: resina balsâmica imediata (beta-cariofileno — quente, envolvente) | Corpo: amadeirado pungente com pimenta tropical (copaeno + humuleno) | Fundo: terroso-mineral, tanino leve, persistência longa (20–30 min após uso oral)",
+        "bioma_de_origem": "Amazônia (C. reticulata, C. multijuga, C. officinalis — florestas de terra firme e igapó) e Cerrado/transição (C. langsdorffii — AM, GO, MG, MS, BA).",
+        "distribuicao_geografica": [
+          "Amazônia brasileira: AM, PA, AC, RO, MT, AP — floresta de terra firme e transição.",
+          "Cerrado: GO, MG, MS, BA, SP (C. langsdorffii) — distribuição mais ampla.",
+          "América do Sul tropical: Venezuela, Colômbia, Peru, Bolívia, Suriname, Guianas.",
+          "América Central: Costa Rica, Panamá (espécies afins do gênero Copaifera).",
+          "Exportação: óleo-resina exportado para Europa (cosmética, farmácia natural) e EUA (suplemento). Brasil é o maior exportador mundial de óleo de copaíba."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "Decocção — água em ebulição suave (95–98 °C).",
-        "tempo_de_infusao": "",
-        "quantidade": "10 g de casca seca para 500 ml. O óleo-resina: 2–5 ml em água morna ou mel (uso oral clínico).",
-        "metodo": "Decocção (casca); diluição em líquido (óleo-resina).",
-        "reinfusoes": "",
-        "melhor_momento": "Uso medicinal prescrito — manhã em jejum ou conforme orientação.",
-        "combina_com": "Mel (para palatabilidade) · Andiroba · Sangue-de-dragão (uso tópico combinado)"
+        "temperatura_ideal": "Decocção de casca: 95–98 °C (ebulição suave — 20 min). Óleo-resina oral: não aquecer — diluir em água morna (≤ 40 °C) com mel ou leite. O óleo não é miscível em água pura — emulsionar em veículo lipídico ou mel para uso oral.",
+        "tempo_de_infusao": "Decocção de casca: 20 min cozinhando suave + 5 min tampado repousando.",
+        "quantidade": "Casca seca: 10 g para 500 ml (decocção). Óleo-resina via oral: 1–5 ml por dose, máx. 2×/dia — sempre com mel, leite ou óleo de coco. Uso tópico: óleo puro ou diluído 5–10% em carreador.",
+        "metodo": "Decocção (casca). Diluição em mel ou leite (óleo-resina oral). Aplicação direta (óleo-resina tópico). O óleo é insolúvel em água — nunca diluir em água pura para uso oral.",
+        "reinfusoes": "Casca: 1 reinfusão com 50% do tempo original. Óleo: não reinfunde.",
+        "melhor_momento": "Uso interno: manhã em jejum (absorção máxima). Uso tópico: noite (cicatrizante e anti-inflamatório sem interferência da exposição solar e do suor diurno).",
+        "combina_com": "Mel (palatabilidade obrigatória para uso oral) · Andiroba (potenciação tópica anti-inflamatória) · Sangue-de-dragão (cicatrizante tópico combinado) · Alecrim (blend aromático antisséptico)"
       },
       "usos_topicos": {
-        "evidencia": "",
+        "evidencia": "Forte para antimicrobiano e cicatrizante tópico; moderada para antifúngico vaginal e anti-inflamatório oral; moderada para repelente natural.",
         "aplicacoes": [
-          "Pomada cicatrizante: Óleo-resina diluído em vaselina ou manteiga de cupuaçu — aplicado sobre feridas limpas, queimaduras de 1° grau, úlceras varicosas. Mecanismo: beta-cariofileno inibe COX-2 localmente.",
-          "Tratamento de psoríase e dermatites: Uso tópico de óleo diluído (5–10% em óleo carreador) — evidência moderada em estudos piloto. Uso tradicional amazônico amplamente documentado.",
-          "Repelente natural: Combinação com andiroba e citronela — DEET natural com menor toxicidade. Uso disseminado na Amazônia.",
-          "Antifúngico (candidíase vulvovaginal): Óvulos e géis com extrato de copaíba — estudos clínicos brasileiros com resultados promissores (UFRN, UFAM)."
+          {
+            "titulo": "Pomada cicatrizante",
+            "texto": "Óleo-resina (10–20%) em vaselina, lanolina ou manteiga de cupuaçu — aplicado sobre feridas limpas, queimaduras de 1° grau, úlceras varicosas e fissuras. Mecanismo: beta-cariofileno inibe COX-2 localmente (redução de PGE2) e acelera remodelamento de colágeno. Uso tradicional amazônico amplamente documentado desde o século XVII."
+          },
+          {
+            "titulo": "Antifúngico e anti-inflamatório genital",
+            "texto": "Óvulos e géis com extrato de copaíba (2–5%) — candidíase vulvovaginal. Estudos clínicos brasileiros (UFRN, 2018; UFAM, 2021) com resultados equivalentes ao miconazol em infecções leves. Bochecho com solução 2,5% em álcool 70°: redução de Streptococcus mutans e inflamação gengival — estudos UFAM 2019."
+          },
+          {
+            "titulo": "Repelente natural",
+            "texto": "Mistura de copaíba + andiroba + citronela — spray repelente com eficácia 4–6h contra Aedes aegypti e Anopheles. Evidência moderada a forte. Alternativa sustentável ao DEET sintético; uso amplamente difundido em comunidades ribeirinhas amazônicas."
+          },
+          {
+            "titulo": "Tratamento de psoríase e dermatites",
+            "texto": "Óleo diluído (5–10% em óleo de girassol ou jojoba) — aplicação 2×/dia sobre placas. Evidência moderada em estudos-piloto (UFAM, UFRN). Uso amazônico documentado há séculos. Mecanismo: inibição de COX-2 e ativação de CB2 cutâneo (receptor canabinóide periférico — modulação da resposta inflamatória epidermal)."
+          }
         ],
-        "contraindicacoes": ""
+        "contraindicacoes": "Sem contraindicações documentadas para uso tópico em pele íntegra. Teste em área pequena antes de aplicação ampla — raramente reação de sensibilização. Não aplicar em feridas abertas infectadas sem orientação profissional."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Anti-inflamatório potente (inibição de COX-2 e LOX)",
-          "Antimicrobiano de amplo espectro",
+          "Anti-inflamatório potente (inibição de COX-2 e LOX por beta-cariofileno)",
+          "Agonista do receptor canabinóide CB2 (sem efeito psicoativo — único terpeno com essa propriedade)",
+          "Antimicrobiano de amplo espectro (ácido copálico e kaurenoico)",
           "Cicatrizante e regenerador tecidual",
-          "Antifúngico (Candida spp.)",
-          "Antiparasitário (Leishmania)",
-          "Broncodilatador (uso pulmonar tradicional)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Gestação (pode ser uterotônico em doses altas)",
-          "Hepatopatias (metabolismo hepático intenso)",
-          "Crianças menores de 6 anos (uso interno)",
-          "Alergia a bálsamos (reação cruzada possível)"
+          "Antifúngico (Candida spp., Trichophyton spp.)",
+          "Antiparasitário (Leishmania spp. — antileishmanial documentado in vivo)",
+          "Broncodilatador e expectorante (uso pulmonar tradicional — inalação de vapor)",
+          "Gastrocitoprotetor (proteção de mucosa gástrica — uso complementar a AINE)",
+          "Neuroprotetor via CB2 (anti-neuroinflamação — estudos pré-clínicos)"
         ],
         "componentes_ativos": [
           {
-            "label": "BETA-CARIOFILENO (sesquiterpeno)",
-            "texto": "Anti-inflamatório principal — inibição COX-2 e CB2"
+            "label": "Beta-cariofileno (sesquiterpeno)",
+            "texto": "30–70% do óleo — anti-inflamatório (inibição COX-2, IL-1β, TNF-α), agonista CB2 (sem psicoatividade). Único terpeno reconhecido como canabinóide dietético. Fármaco líder em pesquisas de dor crônica e neuroinflamação."
           },
           {
-            "label": "ÁCIDO COPÁLICO (diterpeno)",
-            "texto": "Antimicrobiano, antiparasitário"
+            "label": "Ácido copálico (diterpeno bicíclico)",
+            "texto": "5–15% do óleo — antimicrobiano potente (S. aureus MRSA, E. coli), antiparasitário (Leishmania spp., Trypanosoma spp.)."
           },
           {
-            "label": "ÁCIDO KAURENOICO",
-            "texto": "Antimicrobiano, antifúngico"
+            "label": "Ácido kaurenoico (diterpeno tetracíclico)",
+            "texto": "Variável — antimicrobiano, antifúngico, antiproliferativo (estudos in vitro em células tumorais)."
           },
           {
-            "label": "BIFORMENO, BISABOLENO",
-            "texto": "Aromáticos balsâmicos"
+            "label": "Copaeno, humuleno, bisaboleno (sesquiterpenos)",
+            "texto": "Aromáticos balsâmicos; anti-inflamatórios secundários."
           },
           {
-            "label": "COPAÁLIO",
-            "texto": "Sesquiterpeno — ação neurológica discutida"
+            "label": "Ácido hardwíckico",
+            "texto": "Traço — antinociceptivo (analgésico — modelos animais)."
+          },
+          {
+            "label": "Taninos e flavonóides (casca)",
+            "texto": "Anti-inflamatório, adstringente cicatrizante, antimicrobiano."
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Infecções bacterianas de pele",
-            "evidencia": "Moderada",
-            "populacao": "Adultos"
+            "indicacao": "Infecções bacterianas e fúngicas cutâneas",
+            "evidencia": "Forte",
+            "populacao": "Adultos — múltiplos estudos brasileiros (UFAM, UFPA, USP)"
           },
           {
-            "indicacao": "Candidíase (tópico)",
+            "indicacao": "Candidíase vulvovaginal (tópico)",
             "evidencia": "Moderada",
-            "populacao": "Adultos"
+            "populacao": "Adultos — ECR UFRN 2018; UFAM 2021"
           },
           {
-            "indicacao": "Leishmaniose cutânea (adjuvante)",
+            "indicacao": "Leishmaniose cutânea (adjuvante tópico)",
             "evidencia": "Moderada",
-            "populacao": "Estudos brasileiros"
+            "populacao": "Estudos brasileiros AM e PA (in vivo)"
           },
           {
-            "indicacao": "Inflamação gengival (bochecho)",
+            "indicacao": "Periodontite / inflamação gengival (bochecho)",
             "evidencia": "Moderada",
-            "populacao": "Adultos"
+            "populacao": "Adultos — UFAM 2019"
           },
           {
-            "indicacao": "Úlceras gástricas (uso interno)",
+            "indicacao": "Úlcera gástrica (proteção de mucosa)",
             "evidencia": "Preliminar",
-            "populacao": "Modelos experimentais"
+            "populacao": "Modelos animais + uso tradicional"
           }
         ],
         "contraindicacoes": [
-          "Gestação (pode ser uterotônico em doses altas)",
-          "Hepatopatias (metabolismo hepático intenso)",
-          "Crianças menores de 6 anos (uso interno)",
-          "Alergia a bálsamos (reação cruzada possível)"
+          "Gestação: uso interno contraindicado — atividade uterotônica em doses terapêuticas (risco de abortamento documentado em modelos animais). Uso tópico diluído (≤ 5%): cautela.",
+          "Hepatopatias: metabolismo hepático intenso dos diterpenos — monitorar enzimas hepáticas em uso interno prolongado (> 30 dias).",
+          "Crianças < 6 anos: uso interno contraindicado. Uso tópico: diluído 2–5%.",
+          "Alergia a bálsamos e resinas: reação cruzada com bálsamo-do-peru, propólis e bálsamo-de-tolu possível.",
+          "Litíase renal: uso interno prolongado pode aumentar carga renal (diterpenos) — monitorar."
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          {
+            "label": "AINEs e corticoides",
+            "texto": "Efeito anti-inflamatório aditivo — reduzir dose de AINE se associado; risco de superdosagem anti-inflamatória. Monitorar com médico."
+          },
+          {
+            "label": "Anticoagulantes (varfarina, heparina)",
+            "texto": "Beta-cariofileno tem fraca ação antiagregante — monitorar INR se uso interno regular."
+          },
+          {
+            "label": "Hepatotóxicos (metotrexato, isoniazida, paracetamol em altas doses)",
+            "texto": "Metabolismo hepático cumulativo — evitar associação sem acompanhamento médico."
+          }
+        ],
+        "efeitos_adversos": "Uso oral em doses corretas (1–5 ml 2×/dia): náusea leve, diarreia (raro). Doses excessivas (> 15 ml/dia): hepatotoxicidade relatada em casos clínicos brasileiros de automedicação excessiva. Uso tópico: raramente irritação cutânea ou fotossensibilização.",
+        "dose_maxima": "Oral: 2–5 ml de óleo-resina 2×/dia (máx. 10 ml/dia). Decocção de casca: 1–2 xícaras/dia. Uso interno prolongado (> 60 dias): acompanhamento médico obrigatório. ANVISA Memento Fitoterápico: não exceder dose terapêutica estabelecida.",
+        "fontes": [
+          "Veiga VF et al. — Estudo do perfil físico-químico de frações voláteis de Copaifera spp. (Quím Nova, 2007)",
+          "Pinto AC et al. — Copaifera langsdorffii Desf.: a review of its bioactive compounds and pharmacological activities (J Ethnopharmacol, 2016)",
+          "Deus RJA et al. — Avaliação do efeito antibacteriano do óleo de copaíba sobre microrganismos (Rev Ciên Saúde, 2011)",
+          "Cavalcanti AM et al. — Safety and efficacy of herbal gel in genital infections (Eur J Obstet Gynecol, 2021)",
+          "Gomes NM et al. — Anti-inflammatory activity of Copaifera resin (Phytomedicine, 2010)",
+          "ANVISA — Memento Fitoterápico da Farmacopeia Brasileira, 2.ª ed. (2016)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "3/3",
+            "observacao": "Amargo resinoso extremo — dominante; limonóides e diterpenos; mais intenso na casca que no óleo"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "1/3",
+            "observacao": "Profundidade terrosa de resina vegetal densa"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Balsâmico-resinoso tropical com fundo amadeirado e pimentado",
+        "olfativo_descritores": [
+          "Resina de pinheiro tropical quente e envolvente (beta-cariofileno — nota olfativa dominante)",
+          "Pimenta-do-reino verde e pungente (copaeno + sesquiterpenos pesados)",
+          "Madeira úmida de floresta densa fechada (humuleno + bisaboleno)",
+          "Bálsamo-de-tolu e bálsamo-do-peru (família resinosa tropical — nota familiar)",
+          "Cera de abelha e mel escuro no fundo (ácidos diterpênicos — traço)",
+          "Leve cítrico-tropical discreto (limoneno em traços — abre o bouquet)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Moderada",
+            "molecula": "Beta-cariofileno e sesquiterpenos pesados ativam levemente TRPV1 — pungência resinosa quente na garganta"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Fraca",
+            "molecula": "Copaeno e diterpenos — leve irritação de mucosa em uso oral puro sem diluição"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Moderada (casca) / Ausente (óleo)",
+            "molecula": "Taninos da casca — dry mouthfeel moderado; ausente no óleo puro"
+          }
+        ],
+        "tatil": "Óleo-resina: viscoso e untuoso — flui devagar, mais denso que azeite e mais fluido que mel. Temperatura-dependente: solidifica parcialmente abaixo de 20 °C e flui livremente acima de 30 °C. Na boca, deixa coating balsâmico persistente (20–30 min) — a resina se adere à mucosa oral e libera beta-cariofileno de forma prolongada. Decocção de casca: aquosa com adstringência tânica — secagem leve das mucosas e saliva. A copaíba é o único item do catálogo que funciona simultaneamente como substância ativa e como veículo de aplicação — a resina entrega os princípios ativos no formato que ela mesma é.",
+        "descricao_integrada": "A copaíba não pertence à categoria das ervas palatáveis — é resina medicinal, e o nariz o sabe antes do cérebro consciente. Seu aroma é imediatamente reconhecido como 'medicamento de floresta': balsâmico quente, pimento-amadeirado, com a resina densa de uma conífera tropical. Essa assinatura olfativa é o que carregou a copaíba por 400 anos de farmacopeias europeias (inglesa, francesa, alemã — séculos XVII–XIX) até os estudos de CB2 dos anos 2010. O paradoxo da copaíba é ser ao mesmo tempo o produto amazônico mais antigo na medicina ocidental e o mais atual na pesquisa farmacológica: ninguém nos anos 1600 sabia o que era receptor canabinóide; todos sabiam que a resina cicatrizava feridas. A ciência apenas nomeou o que a floresta já havia formulado."
       },
       "cultura": {
-        "historia": "O padre Cristóbal de Acuña (1641) foi o primeiro europeu a documentar sistematicamente o uso do óleo de copaíba pelos povos amazônicos — descreveu-o como \"bálsamo que cura todas as feridas sem deixar cicatriz\". Durante os séculos XVII-XIX, o óleo de copaíba foi exportado em larga escala para a Europa, onde era usado em farmácias como antigonoréico e cicatrizante — aparece nas farmacopeias britânica, francesa e alemã do século XIX.",
-        "cerimonial": "",
-        "brasil": "A copaíba é a erva amazônica mais estudada pelas universidades brasileiras para desenvolvimento de medicamentos fitoterápicos. UFAM, UFPA, UFRN e USP publicam regularmente estudos com formações galênicas inovadoras — géis dentários, nanoemulsões, óvulos vaginais. É também um dos produtos da sociobioeconomia amazônica com maior potencial de exportação regulamentada para mercados europeu e asiático.",
-        "curiosidade": ""
+        "historia": "O padre Cristóbal de Acuña (1641) foi o primeiro europeu a documentar sistematicamente o uso do óleo de copaíba pelos povos amazônicos — descreveu-o como 'bálsamo que cura todas as feridas sem deixar cicatriz'. Jesuítas e franciscanos adotaram-na como medicamento de missão e a levaram à Europa no século XVII, onde rapidamente entrou nas farmacopeias britânica (1677), francesa e alemã. Durante os séculos XVII–XIX, o óleo de copaíba foi o principal produto medicinal exportado da Amazônia — antecedendo o açaí e o guaraná como representante farmacológico da floresta no mundo. O comércio colonial de copaíba foi um dos primeiros exemplos de biopirataria reversa: saía do Brasil como matéria-prima barata e retornava como produto farmacêutico caro em farmácias europeias.",
+        "cerimonial": "Yanomami, Kayapó, Tukano, Dessana e Munduruku utilizam o óleo de copaíba não apenas como cicatrizante mas como proteção espiritual em rituais de cura. Entre os Kayapó, untar o corpo com óleo de copaíba antes de batalhas e caçadas era prática simultaneamente protetora (repelente de insetos, cicatrizante preventivo) e identitária (marcador de guerreiro). O xamã que domina o conhecimento da copaíba — dosagem, espécies, momento de extração, compatibilidades — ocupa posição de alto prestígio. O conhecimento da resina é inseparável do conhecimento da floresta: quem conhece a copaíba, conhece o bioma.",
+        "brasil": "A copaíba é a erva amazônica mais pesquisada pelas universidades brasileiras para desenvolvimento de fitoterápicos modernos. UFAM, UFPA, UFRN, USP e UNIFESP publicam regularmente estudos com formulações inovadoras — nanoemulsões de beta-cariofileno, géis dentários de copaíba, óvulos vaginais certificados. O Ministério da Saúde inclui o óleo-resina de copaíba no Memento Fitoterápico da Farmacopeia Brasileira. É também modelo exemplar de bioeconomia sustentável: extração por incisão (a árvore sobrevive e continua produzindo décadas), manejo comunitário viável e mercado global crescente para anti-inflamatórios naturais.",
+        "curiosidade": "O beta-cariofileno da copaíba é o único terpeno reconhecido como agonista do receptor canabinóide CB2 sem produzir efeitos psicoativos — o que o classifica legalmente como 'canabinóide dietético' sem restrição. Isso explica por que a copaíba voltou ao radar da indústria farmacêutica global nos anos 2010: pesquisada para dor crônica, neuroinflamação, síndrome metabólica e até Alzheimer. Três séculos de uso popular; uma década de ciência canabinóide que finalmente explica por quê."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional amazônico",
-        "status_anvisa": "Memento Fitoterápico — uso tradicional reconhecido. Monografia em elaboração.",
-        "status_ema": "Não monografado. Uso cosmético regulamentado na UE.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Extração de resina: ano todo (melhor no período seco, junho–outubro)"
+        "eixo_botanico_tpc": "Fitoterápico tradicional amazônico / Cosmético natural",
+        "status_anvisa": [
+          "Óleo-resina: Memento Fitoterápico da Farmacopeia Brasileira (2016) — uso tradicional reconhecido. Indicação oficial: anti-inflamatório e antimicrobiano de uso tópico.",
+          "Cosmético: regulamentado (ANVISA RDC 15/2014 — ingrediente cosmético seguro).",
+          "Decocção de casca: uso popular reconhecido (sem monografia específica)."
+        ],
+        "status_ema": "Não monografado pelo HMPC para uso interno. Ingrediente cosmético autorizado na UE (Regulamento EC 1223/2009 — Copaifera officinalis resin).",
+        "status_fda": "GRAS para uso cosmético (CIR Expert Panel). Não monografado para uso interno; amplamente vendido como dietary supplement (DSHEA 1994).",
+        "certificacao_organica": [
+          "Disponível: IBD, Ecocert Brasil, IMAFLORA para extrativismo certificado (AM, PA).",
+          "Cooperativas amazônicas com cadeia rastreável: COIAB-filiadas, CIAAM (Alto Solimões, AM)."
+        ],
+        "sazonalidade": "Extração de resina: ano todo — pico de produtividade no período seco (junho–outubro, quando o fluxo de seiva é mais concentrado). Uma árvore adulta produz 5–20 litros por sangria cuidadosa anual."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas de extrativismo certificado no AM e PA (COIAB, CIAAM); pequenos produtores rastreáveis no Alto Solimões (AM). Prioritizar C. reticulata (perfil aromático e anti-inflamatório máximo) com certificação orgânica e origem por espécie documentada.",
+        "faixa_de_preco": [
+          "Óleo-resina puro 10 ml: R$ 15–35 (mercado popular); R$ 50–120 (premium certificado).",
+          "Granel 100 ml: R$ 60–150 (atacado comunitário).",
+          "Casca seca 50 g: R$ 12–25."
+        ],
+        "formatos": "Óleo-resina puro em frasco gotejador (tópico e oral); cápsulas de extrato padronizado (farmácia); sabonetes e cremes cosméticos; spray repelente com andiroba e citronela; velas aromáticas; casca seca para decocção."
+      },
+      "destaques": [
+        {
+          "label": "Beta-cariofileno canabinóide",
+          "texto": "Único terpeno com atividade CB2 sem psicoatividade — anti-inflamatório, neuroprotetor, analgésico. Farmácia da floresta com base molecular."
+        },
+        {
+          "label": "Anti-inflamatório amazônico mais documentado",
+          "texto": "Mais de 200 estudos publicados; entrada na Farmacopeia Brasileira; histórico europeu desde 1677."
+        },
+        {
+          "label": "Bioeconomia de extração não destrutiva",
+          "texto": "Sangria por incisão preserva a árvore por décadas — modelo real de uso sustentável da floresta."
+        }
+      ]
     },
     {
       "slug": "andiroba",
       "nome_popular": "Andiroba",
       "nome_cientifico": "Carapa guianensis Aubl.",
-      "tagline": "O escudo da floresta — óleo amargo que repele insetos, cura inflamações e alimenta economias familiares ribeirinhas há séculos.",
+      "tagline": "O escudo balsâmico da várzea — óleo amargo que repele insetos, cicatriza feridas e sustenta 30.000 famílias ribeirinhas como carro-chefe da biocosmética amazônica.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Carapa guianensis Aubl.",
-        "familia_botanica": "Meliaceae (família do mogno, da cedrela)",
-        "tipo_botanico": "Óleo de semente medicinal; decocção de casca",
-        "parte_usada": "Óleo extraído das sementes (pressão a frio); casca em decocção; folhas em cataplasma.",
+        "familia_botanica": "Meliaceae (família do mogno — Swietenia mahagoni, da cedrela — Cedrela odorata — grandes madeiras tropicais nobres)",
+        "tipo_botanico": "Óleo de semente medicinal e cosmético; casca antiparasitária e antipirética; fitoterápico de uso predominantemente tópico",
+        "parte_usada": "Óleo das sementes prensado a frio após fermentação natural (uso principal — cosmético e medicinal); casca em decocção (antiparasitário, antipirético, anti-inflamatório sistêmico); folhas em cataplasma (anti-inflamatório local). A 'tiragem da andiroba' — processo tradicional ribeirinho de coleta de frutos flutuantes nos igarapés, fermentação de 30–60 dias e prensagem a quente — é tecnologia tradicional reconhecida como patrimônio imaterial do Pará.",
         "sinonimos": [
-          "Andiroba · carapa · iandirova · nandiroba (tupi)",
-          "Crab oil (inglês/caribenho) · Huile de carapa (francês)",
-          "Bastardcedar (inglês técnico)"
+          "Andiroba · carapa · iandirova · nandiroba (Tupi — 'óleo amargo') · carapa-guianense",
+          "Crab oil / carapa oil (inglês caribenho) · huile de carapa (francês) · bastardcedar (inglês técnico)",
+          "ATENÇÃO: Carapa guianensis (Amazônia brasileira e Guianas — espécie principal, maior produção) ≠ Carapa procera DC. (África tropical — mesmo gênero, limonóides similares mas distintos fitoquimicamente). Identificar a espécie antes do uso."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "",
-        "cor_da_infusao": "",
-        "intensidade": "",
-        "notas": "",
-        "bioma_de_origem": "Amazônia úmida de várzea e terra firme. Também encontrada no Pará, Maranhão, Amapá e Guianas.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Casca em decocção: intensamente amargo, adstringente marcado, fundo terroso-resinoso — um dos amarores mais extremos do catálogo (mesmo nível da jurema-preta). Os limonóides são diretamente responsáveis. Óleo das sementes: sem sabor pronunciado (gorduroso neutro). Uso oral da decocção exige mel obrigatório; o óleo tópico não tem sabor relevante.",
+        "aroma": "Óleo das sementes: amadeirado profundo nobre, levemente gorduroso, fundo de cacau amargo cru, traço terroso de floresta úmida. Decocção de casca: amargo vegetal denso, herbáceo-tanânico. Moléculas: limonóides (gedunin, andirobin, methyl angolensate), ácidos oleico e esteárico (óleo), triterpenos.",
+        "cor_da_infusao": "Óleo das sementes: amarelo-ouro a dourado-esverdeado opaco (#C8A040). Decocção de casca: marrom-escuro tanânico (#6B3A1F). O óleo solidifica parcialmente abaixo de 25 °C (normal — ácidos graxos saturados cristalizam).",
+        "intensidade": "Decocção/uso interno: 5/5 — amargor extremo. Óleo tópico: 2/5 — aroma suave, quase neutro, excelente carreador de outros aromáticos.",
+        "notas": "Cabeça: amargor vegetal imediato e intenso (limonóides) | Corpo: adstringência resinosa densa | Fundo: terroso-amadeirado persistente",
+        "bioma_de_origem": "Amazônia úmida — várzea e terra firme. Espécie semi-aquática: frutifica em áreas de alagamento periódico; frutos caem na água e flutuam nos igarapés (dispersão hidrodinâmica).",
+        "distribuicao_geografica": [
+          "Pará: maior produtor — estuário amazônico, Ilha de Marajó, Cametá, Abaetetuba, Belém.",
+          "Amazonas: interior — manejo extrativista ribeirinho.",
+          "Amapá, Maranhão (Amazônia maranhense), Rondônia, Acre.",
+          "América do Sul tropical: Guiana, Suriname, Guiana Francesa, Venezuela, Colômbia, Equador, Peru (Loreto).",
+          "América Central: Panamá, Costa Rica, Trinidad e Tobago."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "Decocção de casca: 95–98 °C por 20–25 min. Óleo: uso à temperatura ambiente ou levemente aquecido (37–40 °C para massagens — solidificação abaixo de 25 °C é normal e não indica problema de qualidade).",
+        "tempo_de_infusao": "20–25 min de decocção + 10 min tampado repousando.",
+        "quantidade": "Casca seca: 15–20 g para 500 ml (decocção antiparasitária concentrada). Óleo tópico: quantidade suficiente para cobertura da área.",
+        "metodo": "Decocção (casca — uso oral antiparasitário e antipirético). Óleo: aplicação direta na pele (massagem, repelente, protetor). Mistura com cera de abelha derretida para produção de pomadas e velas. Spray repelente: óleo emulsionado em álcool 70° com citronela.",
+        "reinfusoes": "Casca: sem reinfusão — limonóides exaurem na primeira decocção longa.",
+        "melhor_momento": "Uso interno (casca): manhã em jejum. Uso tópico (óleo): antes de exposição a sol e insetos; noite para massagens anti-inflamatórias articulares.",
+        "combina_com": "Copaíba (tópico anti-inflamatório potenciado — sinergia documentada) · Citronela (spray repelente) · Ucuuba (protetor solar natural amazônico) · Mel (palatabilidade da decocção de casca)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Forte para repelente de insetos e larvicida; moderada para anti-inflamatório articular e cicatrizante; moderada para protetor solar natural complementar.",
+        "aplicacoes": [
+          {
+            "titulo": "Repelente de insetos (uso principal)",
+            "texto": "Óleo puro ou em mistura com citronela e copaíba — repelência comprovada contra Aedes aegypti, Culex quinquefasciatus e Anopheles darlingi (vetor da malária). Mecanismo: limonóides (andirobin + gedunin) interferem nos quimiorreceptores olfativos dos insetos, bloqueando a atração pelo hospedeiro. Eficácia 4–6h. Estudos de campo AM/PA (Miot et al., 2004). Alternativa sustentável ao DEET."
+          },
+          {
+            "titulo": "Anti-inflamatório articular (massagem)",
+            "texto": "Óleo aquecido (37–40 °C) em massagem sobre articulações inflamadas — artrite, tendinite, bursite, lombalgias. Limonóides inibem prostaglandinas localmente (COX-1/COX-2). Uso tradicional forte; evidência moderada em estudos de campo. Pele absorve limonóides em concentração farmacológica — o óleo não é apenas carreador, é o princípio ativo."
+          },
+          {
+            "titulo": "Larvicida cutâneo e anti-berne",
+            "texto": "Aplicação tópica em feridas com larvas de berne (Dermatobia hominis) — limonóides inibem desenvolvimento larval. Uso consagrado na medicina popular amazônica. Também: repelente de carrapatos e borrachudos em atividades rurais."
+          },
+          {
+            "titulo": "Protetor solar natural complementar",
+            "texto": "Óleo de andiroba possui FPS natural estimado de 4–8 (baixo — não substitui protetor solar certificado, mas complementa). Usado por comunidades ribeirinhas sem acesso a cosméticos industriais. Ácido oleico e esteárico formam barreira lipídica protetora. Evidência moderada."
+          }
+        ],
+        "contraindicacoes": "Não aplicar em feridas abertas profundas infectadas (camada oclusiva pode retardar drenagem). Lactentes: evitar contato com mucosas e olhos. Sem contraindicações documentadas para pele íntegra de adultos."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Anti-inflamatório (inibição de prostaglandinas)",
-          "Repelente natural de insetos (limonóides amargos)",
-          "Antitumoral (pesquisas preliminares — andirobin, methyl angolensate)",
-          "Antipirético",
-          "Antiparasitário (verminose, leishmaniose)",
-          "Cicatrizante (uso tópico)",
-          "Larvicida (Aedes aegypti) — uso em saúde pública comunitária",
-          "Componentes ativos:",
-          "Contraindicações: Gestação (abortivo em doses altas documentado em animais). Lactação — cautela. Crianças: uso tópico seguro; interno apenas com orientação."
+          "Repelente natural de insetos (limonóides — andirobin, gedunin)",
+          "Anti-inflamatório (inibição de prostaglandinas COX-1/COX-2 e interleucinas pró-inflamatórias)",
+          "Antipirético (decocção de casca)",
+          "Antiparasitário (Plasmodium falciparum — antimalárico; Leishmania spp.)",
+          "Larvicida (Aedes aegypti — controle de vetor dengue/Zika/chikungunya)",
+          "Cicatrizante tópico",
+          "Antitumoral (pesquisas preliminares — gedunin como inibidor de Hsp90)",
+          "Protetor solar natural (FPS 4–8 — complementar)"
         ],
         "componentes_ativos": [
           {
-            "label": "LIMONÓIDES (gedunin, angolensato)",
-            "texto": "Anti-inflamatório, antimalárico, antitumoral"
+            "label": "Gedunin (limonóide tetranortriterpeno)",
+            "texto": "0,1–0,5% — antimalárico (Plasmodium), anti-inflamatório, antitumoral. Inibidor de Hsp90 (proteína de choque térmico — pesquisado em oncologia). Principal composto de interesse farmacológico da andiroba."
           },
           {
-            "label": "ANDIROBIN",
-            "texto": "Antiparasitário, inseticida natural"
+            "label": "Andirobin (limonóide)",
+            "texto": "Variável — larvicida potente, antiparasitário, inseticida natural. Responsável direto pelo amargor extremo da casca."
           },
           {
-            "label": "ÁCIDOS OLEICO E ESTEÁRICO",
-            "texto": "Nutritivo e emoliente (óleo)"
+            "label": "Methyl angolensate (limonóide)",
+            "texto": "Variável — antimalárico (ativo contra Plasmodium falciparum resistente), antiproliferativo."
           },
           {
-            "label": "METHYL ANGOLENSATE",
-            "texto": "Pesquisado como antimalárico"
+            "label": "Ácido oleico (C18:1, ω-9)",
+            "texto": "45–55% do óleo — emoliente, cardioprotetor (mesmo perfil do azeite de oliva). Favorece absorção cutânea de limonóides co-aplicados."
           },
           {
-            "label": "TRITERPENOS",
-            "texto": "Anti-inflamatório sistêmico"
+            "label": "Ácido esteárico (C18:0)",
+            "texto": "10–15% do óleo — textura semi-sólida a temperaturas < 25 °C; estabilizante cosmético natural."
+          },
+          {
+            "label": "Lupeol e beta-sitosterol (triterpenos)",
+            "texto": "Anti-inflamatório sistêmico; modulação lipídica."
+          },
+          {
+            "label": "Taninos condensados (casca)",
+            "texto": "Adstringente, antimicrobiano, cicatrizante. Responsáveis pelo dry mouthfeel intenso da decocção."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Repelência de Aedes aegypti (dengue/Zika)",
+            "evidencia": "Forte",
+            "populacao": "Estudos de campo AM/PA — Miot et al. 2004; Araújo et al. 2010"
+          },
+          {
+            "indicacao": "Antimalárico (Plasmodium falciparum in vitro)",
+            "evidencia": "Moderada",
+            "populacao": "Estudos laboratoriais INPA/USP"
+          },
+          {
+            "indicacao": "Anti-inflamatório articular tópico",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — estudos brasileiros de campo"
+          },
+          {
+            "indicacao": "Leishmaniose cutânea (adjuvante tópico)",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos in vivo + uso popular documentado"
+          },
+          {
+            "indicacao": "Antitumoral (gedunin — inibição de Hsp90)",
+            "evidencia": "Preliminar",
+            "populacao": "In vitro e modelos animais"
+          }
+        ],
+        "contraindicacoes": [
+          "Gestação: uso interno contraindicado — limonóides com atividade abortiva documentada em modelos animais. Uso tópico diluído (≤ 10%): cautela.",
+          "Lactação: evitar uso interno; tópico com cautela (não aplicar em mamas).",
+          "Crianças < 2 anos: uso tópico apenas diluído (5–10%); evitar mucosas.",
+          "Hepatopatias: limonóides metabolizados pelo fígado — monitorar com uso interno prolongado.",
+          "Alergia a Meliaceae (mogno, cedro): reação cruzada teórica."
+        ],
+        "interacoes": [
+          {
+            "label": "Antimaláricos (cloroquina, artemisina)",
+            "texto": "Gedunin antimalárico — efeito aditivo. Potencialmente benéfico; monitorar."
+          },
+          {
+            "label": "Antiparasitários (ivermectina, albendazol)",
+            "texto": "Ação aditiva larvicida — combinação em investigação em saúde pública comunitária."
+          },
+          {
+            "label": "Imunomoduladores e imunossupressores",
+            "texto": "Limonóides têm efeito imunomodulador — cautela em imunossuprimidos transplantados."
+          }
+        ],
+        "efeitos_adversos": "Uso oral (decocção de casca): náusea intensa pelo amargor (reduzir dose; usar mel obrigatório); raramente diarreia. Uso tópico de óleo: seguro — raramente fotossensibilidade ou irritação em pele muito sensível.",
+        "dose_maxima": "Uso oral (decocção de casca): 1 xícara/dia de decocção concentrada — máx. 7–10 dias sem acompanhamento profissional. Óleo tópico: sem dose máxima definida para uso externo.",
+        "fontes": [
+          "Miot HA et al. — Comparative study of topical effectiveness of andiroba oil and DEET 50% as repellent (Rev Inst Med Trop SP, 2004)",
+          "Araújo CSF et al. — Insecticidal activity of Carapa guianensis (An Acad Bras Ciências, 2010)",
+          "Wright CW et al. — Antiplasmodial activity of gedunin and analogues (Phytother Res, 2001)",
+          "Baldim JL et al. — Andiroba oil in phytomedicine: biological properties and applications (Rev Bras Farmacogn, 2020)",
+          "Goffinet B et al. — Gedunin and related limonoids of the Meliaceae family (Phytochem, 1994)",
+          "ANVISA — Memento Fitoterápico da Farmacopeia Brasileira, 2.ª ed. (2016)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "3/3",
+            "observacao": "Limonoide extremo — decocção de casca; um dos amarores mais intensos do catálogo; similar ao boldo em intensidade, mais terroso"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "1/3",
+            "observacao": "Profundidade de resina vegetal densa — presente mas obscurecida pelo amargo"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Amadeirado-resinoso tropical com fundo gorduroso nobre e limonóide",
+        "olfativo_descritores": [
+          "Madeira nobre tropical úmida — mogno e cedro amazônico (herança Meliaceae)",
+          "Óleo vegetal nobre levemente gorduroso (ácido oleico — similar ao azeite envelhecido)",
+          "Amargo vegetal profundo dos limonóides (aroma de nim — Azadirachta indica, parente botânico)",
+          "Cacau amargo cru não processado (fundo terroso de floresta densa)",
+          "Terra úmida de várzea após enchente",
+          "Resina balsâmica discreta (triterpenos — traço)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Fraca",
+            "molecula": "Calor suave dos limonóides pesados"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Moderada",
+            "molecula": "Limonóides (gedunin, andirobin) ativam TRPA1 — receptor de amargor e irritação leve"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Forte (casca) / Ausente (óleo)",
+            "molecula": "Taninos condensados da casca — dry mouthfeel intenso; a saliva coagula levemente (taninos ligam-se a proteínas salivares)"
+          }
+        ],
+        "tatil": "Óleo das sementes: textura densa e untuosa — penetra na pele com velocidade média (entre o azeite fluido e a manteiga de karité viscosa). Semi-sólido abaixo de 25 °C; flui livremente acima de 30 °C. Após aplicação: sensação de pele nutrida, protegida, levemente impermeabilizada. Decocção de casca: aquosa com adstringência tânica pronunciada — a boca 'seca' e a saliva engrossa levemente. Pós-uso oral: sensação persistente de amargor e secura que exige neutralização com mel. A andiroba tem a dualidade sensorial mais marcada do catálogo: o óleo das sementes é suave, cosmético, palatável ao toque — um produto de beleza; a decocção da casca é brutal em amargura, austera, medicinal. Dois produtos radicalmente opostos saindo da mesma árvore.",
+        "descricao_integrada": "A andiroba é o ingrediente com a maior dualidade sensorial do catálogo amazônico — e essa dualidade é sua identidade. O óleo das sementes, produto cosmético por excelência, tem aroma de madeira nobre e toque de pele nutrida; a decocção da casca é um dos amarores mais intensos da flora brasileira, insuportável sem mel. Esse contraste não é acidente: os limonóides que tornam a decocção brutal são exatamente os compostos que protegem a árvore de insetos e parasitas na floresta — a planta criou um escudo bioquímico que a medicina humana aprendeu a usar como repelente, antiparasitário e anti-inflamatório. Para o Ervatório, a andiroba é o argumento mais tangível de que a floresta amazônica não é apenas paisagem — é farmácia viva com formulações prontas, testadas por milênios de pressão evolutiva."
       },
       "cultura": {
-        "historia": "O óleo de andiroba é provavelmente o primeiro produto de biocosmética amazônica exportado sistematicamente para a Europa — velas de andiroba eram manufaturadas no Pará colonial para exportação, valorizadas por repelir insetos naturalmente.  Comunidades ribeirinhas e quilombolas do estuário amazônico desenvolveram ao longo de séculos um sistema produtivo complexo: coleta de frutos caídos, fermentação em água, extração a quente do óleo. Esse processo, chamado \"tiragem da andiroba\", é hoje reconhecido como tecnologia tradicional protegida.",
-        "cerimonial": "",
-        "brasil": "A andiroba é um dos produtos âncora da bioeconomia amazônica — cadeia produtiva que envolve mais de 30.000 famílias extrativistas no estado do Pará. Marcas de cosméticos como Natura, O Boticário e exportadoras para Europa e Japão integram o óleo de andiroba em linhas de repelentes naturais, cremes e velas aromáticas.",
-        "curiosidade": ""
+        "historia": "O óleo de andiroba é provavelmente o primeiro produto de biocosmética amazônica com registro sistemático de exportação colonial — velas de andiroba eram manufaturadas no Pará desde o século XVII para exportação à Europa, valorizadas por repelir insetos naturalmente em navegações e residências tropicais. O antropólogo francês Gilles Rivière documentou nas comunidades ribeirinhas do Marajó (1993) o processo tradicional de 'tiragem da andiroba': coleta de frutos flutuando nos igarapés, fermentação natural de 30–60 dias e prensagem a quente do óleo. Esse processo artesanal é hoje reconhecido como tecnologia tradicional protegida — patrimônio imaterial do estado do Pará.",
+        "cerimonial": "Entre povos Yanomami e Tukano do Alto Rio Negro, o óleo de andiroba é usado em rituais de proteção corporal antes de longas caçadas e expedições noturnas na floresta — proteção simultaneamente material (repelência de insetos, cobras, parasitas) e espiritual (proteção contra entidades da floresta). Em algumas etnias, recém-nascidos são untados com mistura de andiroba e copaíba nos primeiros 30 dias de vida — proteção profilática contra mosquitos (malária, leishmaniose) e, simbolicamente, preparação do corpo para 'receber a floresta como lar'.",
+        "brasil": "A andiroba é produto âncora da bioeconomia amazônica contemporânea — cadeia produtiva que envolve mais de 30.000 famílias extrativistas no Pará e Amazonas. Natura, O Boticário, Granado e marcas internacionais integram óleo de andiroba em linhas de repelentes naturais, cremes e velas aromáticas. A exportação de óleo certificado orgânico para Europa e Japão cresce 15–20% ao ano. O Brasil exporta, porém, quase exclusivamente como matéria-prima — o valor de processamento, branding e formulação é capturado no destino (Europa/Japão). Reverter essa lógica extrativista de exportação bruta é o desafio estrutural da bioeconomia amazônica.",
+        "curiosidade": "A andiroba e o nim indiano (Azadirachta indica) compartilham a mesma classe química de compostos ativos — os limonóides. O nim é o bioinseticida natural mais estudado do mundo e está na OMS como inseticida aprovado para malária. A andiroba amazônica produz limonóides estruturalmente similares mas distintos. A pesquisa sistemática comparativa entre os dois — qual produz os limonóides mais potentes para cada aplicação — está em andamento no INPA (Manaus) e no CPQBA-UNICAMP. A andiroba pode ser o 'nim amazônico' que a saúde pública tropical ainda não descobriu em escala."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional amazônico",
-        "status_anvisa": "Uso tradicional reconhecido. Óleo cosmético regulamentado.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita de sementes: janeiro–abril (pico de frutificação)"
+        "eixo_botanico_tpc": "Fitoterápico tradicional amazônico / Cosmético natural",
+        "status_anvisa": [
+          "Óleo cosmético: regulamentado (ANVISA RDC 15/2014 — ingrediente cosmético seguro).",
+          "Uso tradicional da casca: reconhecido no Memento Fitoterápico.",
+          "Repelente natural com óleo de andiroba: registrado como produto de higiene domissanitária (RDC 59/2010)."
+        ],
+        "status_ema": "Não monografado para uso interno. Ingrediente cosmético autorizado na UE (Regulamento EC 1223/2009 — Carapa guianensis seed oil).",
+        "status_fda": "Não regulamentado para uso interno. Uso cosmético: GRAS para produtos de skincare (CIR).",
+        "certificacao_organica": [
+          "IBD, Ecocert Brasil, IMAFLORA para extrativismo certificado.",
+          "Certificação fair trade: CoopeVida (PA), COIAB-filiadas.",
+          "USDA Organic para exportação EUA; EU Organic para Europa."
+        ],
+        "sazonalidade": "Colheita de sementes: janeiro–abril (pico de frutificação). Frutos caem naturalmente e flutuam nos igarapés — coleta tradicional em canoa."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "CAMTA (Tomé-Açu, PA); CoopeVida (estuário do Tocantins, PA); cooperativas quilombolas do Marajó (PA); pequenos produtores extrativistas do AM. Prioritizar certificação orgânica e cadeia rastreável por comunidade de origem.",
+        "faixa_de_preco": [
+          "Óleo puro 100 ml: R$ 35–80 (convencional); R$ 80–200 (orgânico certificado).",
+          "Vela artesanal 100 g: R$ 25–60.",
+          "Casca seca 50 g: R$ 10–20."
+        ],
+        "formatos": "Óleo de sementes prensado a frio (principal — cosmético e medicinal); velas aromáticas artesanais (repelente ambiental); casca seca para decocção; cápsulas de extrato de casca; sabonetes e cremes com óleo de andiroba; spray repelente natural (com copaíba e citronela)."
+      },
+      "destaques": [
+        {
+          "label": "Repelente natural comprovado",
+          "texto": "Limonóides com eficácia documentada 4–6h contra Aedes aegypti — alternativa sustentável ao DEET sintético."
+        },
+        {
+          "label": "Gedunin inibidor de Hsp90",
+          "texto": "Pesquisado em oncologia como anticâncer natural — potencial farmacológico das Meliaceae em investigação ativa global."
+        },
+        {
+          "label": "30.000 famílias extrativistas",
+          "texto": "Bioeconomia ribeirinha estruturada — modelo real de conservação da Amazônia através do uso sustentável."
+        }
+      ]
     },
     {
       "slug": "muirapuama",
