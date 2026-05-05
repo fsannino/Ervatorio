@@ -12608,216 +12608,404 @@
       "slug": "bocaiuva",
       "nome_popular": "Bocaiuva",
       "nome_cientifico": "Acrocomia aculeata (Jacq.) Lodd. ex Mart.",
-      "tagline": "A palmeira nutritiva do pantanal — fruto com perfil lipídico excepcional, antioxidante máximo entre as palmeiras brasileiras e potencial de exportação como \"superalimento pantaneiro\" ainda inexplorado.",
+      "tagline": "A palmeira de mil usos do Pantanal e Cerrado — alimento funcional com ácido oleico superior ao azeite, carotenoides excepcionais e potencial como bioenergia do futuro que não compete com a produção de alimentos.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Acrocomia aculeata (Jacq.) Lodd. ex Mart.",
-        "familia_botanica": "Arecaceae (palmeiras)",
-        "tipo_botanico": "Alimento funcional / óleo nutritivo",
-        "parte_usada": "Polpa do fruto (óleo e farinha); amêndoa (óleo de amendoa de bocaiuva); palmito (alimentar).",
+        "familia_botanica": "Arecaceae (Palmae)",
+        "tipo_botanico": "Alimento funcional / Oleaginosa tropical multifuncional",
+        "parte_usada": "Polpa do fruto (alimentar, óleo); amêndoa (óleo — cosmético e alimentar); palmito (alimentar); folhas jovens (forragem); tronco (estipe — reserva de água).",
         "sinonimos": [
-          "Bocaiuva · bocaiúva · macaúba · macaíba (variantes regionais)",
-          "Macaw palm (inglês) · Mocaya (espanhol sul-americano)",
-          "Mbocayá (guarani — \"palmeira espinhenta\")"
+          "bocaiuva · macaúba · coco-de-espinho · mocujá · mucujê · grugru",
+          "Acrocomia totai Mart. (espécie afim do Pantanal — às vezes tratada como sinônimo)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Coco tropical, palmeira, levemente frutado.",
-        "cor_da_infusao": "",
-        "intensidade": "3/5 — sabor agradável e marcante.",
-        "notas": "",
-        "bioma_de_origem": "Pantanal e Cerrado — MT, MS, GO, MG, SP; toda a América tropical.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Polpa: doce-gorduroso com notas de caramelo e coco tropical; textura cremosa característica. Óleo: suave, levemente amendoado, sem o ardor do dendê.",
+        "aroma": "Polpa: adocicado-tropical, reminiscente de coco com caramelo e notas de baunilha. Óleo de polpa: neutro-amendoado. Óleo de amêndoa: mais intenso, com notas de avelã.",
+        "cor_da_infusao": "Infusão não é o modo de preparo principal. Suco/vitamina: amarelo-alaranjado intenso por carotenoides. Óleo de polpa: amarelo-dourado. Óleo de amêndoa: amarelo-claro a incolor.",
+        "intensidade": "Polpa: 4/5 — sabor marcante e adocicado. Óleo: 2/5 — sabor neutro e elegante.",
+        "notas": "A bocaiuva não é uma planta medicinal no sentido estrito — é um alimento funcional denso de nutrientes. Seu valor medicinal decorre da composição nutricional excepcional: ácidos graxos, carotenoides, vitamina E e minerais em concentrações superiores às de culturas oleaginosas convencionais.",
+        "bioma_de_origem": "Cerrado e Pantanal — MT, MS, GO, MG, BA; ampla distribuição na América tropical (do México à Argentina).",
+        "distribuicao_geografica": [
+          "Mato Grosso do Sul e Mato Grosso: maior concentração no Pantanal e Cerrado",
+          "Goiás e Minas Gerais: Cerrado — bocaiuvais nativos e plantios",
+          "Bahia e Piauí: caatinga e cerrado — espécie afim A. intumescens",
+          "América Central ao norte da Argentina: distribuição pan-tropical"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "Polpa fresca: consumo in natura ou suco (sem calor — preservar carotenoides e vitamina E). Óleo: uso culinário até 200 °C (ponto de fumaça estável por alto teor de ácido oleico).",
+        "tempo_de_infusao": "Não se aplica — alimento funcional, não chá. Extração de óleo artesanal: polpa cozida + prensagem (método tradicional pantaneiro).",
+        "quantidade": "Polpa fresca: 50–100 g/porção (suco, mingau, vitamina). Óleo: 1–2 colheres de sopa/dia (uso culinário ou suplementação).",
+        "metodo": "Polpa: liquidificar com água, leite de coco ou leite para vitamina/suco. Mingau: cozinhar polpa com leite e mel. Óleo: extração a frio (cold press) ou prensagem a quente da polpa seca.",
+        "reinfusoes": "Não se aplica.",
+        "melhor_momento": "Suco/polpa: café da manhã (carga de carotenoides e energia). Óleo: uso culinário diário como substituto de azeite.",
+        "combina_com": "Leite de coco (sinergia de sabor), mel silvestre do Pantanal, castanha-de-caju, banana-da-terra, tapioca, polvilho. Óleo: marinadas, refogados, tempero frio (saladas)."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Tradicional + uso cosmético documentado — óleo de amêndoa amplamente usado.",
+        "aplicacoes": [
+          {
+            "titulo": "Óleo de amêndoa — hidratante e emoliente capilar",
+            "texto": "Óleo de amêndoa de macaúba é rico em ácido láurico e oleico — penetra no córtex capilar, reduz perda proteica por higroscopicidade e fornece brilho. Usado em cosméticos capilares premium brasileiros (linha Natura Ekos, entre outros). Aplicação direta no cabelo ou como pré-shampoo."
+          },
+          {
+            "titulo": "Óleo de polpa — antioxidante cutâneo",
+            "texto": "Óleo de polpa rico em β-caroteno e vitamina E. Uso tópico como óleo facial antienvelhecimento (antioxidante, regenerador). Cor amarelo-intensa limita uso cosmético sem refinamento."
+          }
+        ],
+        "contraindicacoes": "Alergia a Arecaceae (palmeiras) — rara mas possível. Óleo não refinado: cor intensa pode manchar roupas e pele clara temporariamente."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antioxidante potente (carotenóides — superior ao dendê)",
-          "Nutritivo excepcional (perfil lipídico, proteína, fibra)",
-          "Cardioprotetor (ácido oleico e laurico)",
-          "Energético de baixo índice glicêmico",
-          "Anti-inflamatório (ácidos graxos)",
-          "Componentes ativos:",
-          "Contraindicações: Sem contraindicações relevantes. Moderação em dietas com restrição de gorduras saturadas (ácido láurico)."
+          "Nutrição funcional densa (ácidos graxos monoinsaturados, carotenoides, vitamina E, minerais)",
+          "Antioxidante (β-caroteno, tocoferóis, compostos fenólicos da polpa)",
+          "Hipolipemiante potencial (ácido oleico — perfil similar ao azeite de oliva)",
+          "Imunomodulador nutricional (carotenoides pró-vitamina A)",
+          "Neuroprotetor potencial (tocoferóis — vitamina E)"
         ],
         "componentes_ativos": [
           {
-            "label": "BETA-CAROTENO (óleo de polpa)",
-            "texto": "Superior ao dendê — Antioxidante, pró-vitamina A"
+            "label": "ÁCIDO OLEICO (C18:1 ω-9) — óleo de polpa: 55–65%",
+            "texto": "Teor de ácido oleico superior ao de muitos azeites de oliva comerciais. Cardioprotegente: reduz LDL-colesterol sem reduzir HDL, inibe oxidação de LDL, reduz marcadores inflamatórios (PCR, IL-6). Estabilidade oxidativa elevada — resistente ao calor e ranço. Base da valorização do óleo de bocaiuva como 'azeite brasileiro'."
           },
           {
-            "label": "ÁCIDO OLEICO (C18:1)",
-            "texto": "50–60% (óleo amêndoa) — Cardioprotetor"
+            "label": "β-CAROTENO e CAROTENOIDES (polpa: 100–2.000 μg/100g)",
+            "texto": "Concentração de β-caroteno na polpa fresca comparável ou superior à cenoura crua. Pró-vitamina A essencial; antioxidante lipossolúvel; proteção ocular (luteína, zeaxantina em menor quantidade). Cor alaranjada intensa da polpa é marcador visual de riqueza em carotenoides."
           },
           {
-            "label": "ÁCIDO LÁURICO (C12:0)",
-            "texto": "40–50% (óleo amêndoa) — Antimicrobiano, energético"
+            "label": "TOCOFERÓIS (vitamina E) — óleo de amêndoa: alto teor",
+            "texto": "α-tocoferol e γ-tocoferol no óleo de amêndoa. Antioxidantes lipofílicos — protegem membranas celulares, lipoproteínas e DNA de dano oxidativo. Neuroprotetores (declínio cognitivo associado à deficiência de vitamina E). Estabilizadores naturais do óleo — prolongam vida útil sem conservantes."
           },
           {
-            "label": "TOCOFERÓIS (vitamina E)",
-            "texto": "Altos — Antioxidante"
+            "label": "ÁCIDO LÁURICO (C12:0) — óleo de amêndoa: 40–50%",
+            "texto": "Ácido graxo saturado de cadeia média com propriedades antimicrobianas (destruição de envelope lipídico de vírus e bactérias). Metabolismo energético preferencial — oxidação mitocondrial rápida sem acúmulo como gordura ectópica. Mesmo perfil do óleo de coco."
           },
           {
-            "label": "PROTEÍNA",
-            "texto": "11–13% (farinha) — Nutritivo"
-          },
-          {
-            "label": "FIBRAS",
-            "texto": "15–20% (farinha) — Prebiótico, saciedade"
+            "label": "MINERAIS (ferro, cálcio, potássio, magnésio — polpa)",
+            "texto": "Polpa com concentrações relevantes de ferro não-heme e cálcio para uma fruta tropical. Magnésio: cofator de mais de 300 reações enzimáticas. Potássio: regulação pressão arterial e função muscular."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Suporte nutricional / deficiência de vitamina A (carotenoides)",
+            "evidencia": "Boa — composição nutricional documentada; dados in vivo em modelos animais de deficiência de vitamina A confirmam eficácia de polpa de bocaiuva",
+            "populacao": "Populações com risco de hipovitaminose A — especialmente crianças e gestantes em regiões de Cerrado e Pantanal."
+          },
+          {
+            "indicacao": "Saúde cardiovascular (ácido oleico)",
+            "evidencia": "Moderada por analogia com azeite de oliva (mesmo perfil de AG); dados diretos com óleo de bocaiuva em humanos: preliminares",
+            "populacao": "Adultos com dislipidemia leve."
+          }
+        ],
+        "contraindicacoes": "Alimento seguro em quantidades alimentares normais. Óleo: alta densidade calórica — controlar quantidade em dietas de restrição calórica. Sem contraindicações médicas conhecidas para uso alimentar.",
+        "interacoes": [
+          {
+            "label": "Anticoagulantes (varfarina)",
+            "texto": "Vitamina E em doses altas (> 400 UI/dia — muito acima do consumo alimentar) pode potencializar efeito anticoagulante. Consumo alimentar normal: sem risco clínico."
+          }
+        ],
+        "efeitos_adversos": "Alimento seguro. Consumo excessivo de polpa: diarreia (fibras + gorduras em excesso). Raro: alergia a proteínas de Arecaceae.",
+        "dose_maxima": "Sem dose máxima estabelecida para uso alimentar. Óleo: 2–4 colheres de sopa/dia em contexto de dieta equilibrada.",
+        "fontes": [
+          "Coimbra MC & Jorge N. (2011). Fatty acids and bioactive compounds of the pulps and kernels of Acrocomia aculeata. J Sci Food Agric.",
+          "Sanjinez-Argandoña EJ & Chuba CAM. (2011). Biometrical, physical and chemical characterization of bocaiuva fruits. Rev Bras Frutic.",
+          "Hiane PA et al. (2006). Bocaiuva, Acrocomia aculeata: characterization and chemical composition. Ciênc Tecnol Aliment.",
+          "Motta PEF et al. (2002). Ocorrência da macaúba em Minas Gerais. Pesq Agropec Bras.",
+          "Embrapa Agroenergia — Macaúba: base de dados de composição e usos."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Dulçor",
+            "intensidade": "Alto (4/5) — polpa madura",
+            "observacao": "Açúcares simples e gorduras criam doçura cremosa e persistente. Maturação avançada intensifica o dulçor."
+          },
+          {
+            "dimensao": "Gorduroso-cremoso",
+            "intensidade": "Alto (4/5) — traço identitário",
+            "observacao": "Ácido oleico e láurico criam textura e sabor gorduroso agradável, sem o amargor do dendê ou a agressividade de alguns cocos."
+          },
+          {
+            "dimensao": "Notas de caramelo e baunilha",
+            "intensidade": "Moderada (2–3/5)",
+            "observacao": "Reação de Maillard em polpa madura. Notas complexas que elevam o perfil acima de uma simples fruta oleaginosa."
+          },
+          {
+            "dimensao": "Acidez",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Ácidos orgânicos em concentração baixa. Equilíbrio com o dulçor."
+          }
+        ],
+        "olfativo_familia": "Tropical-cremoso; família dos cocos e palmeiras tropicais com notas de caramelo.",
+        "olfativo_descritores": [
+          "coco tropical maduro",
+          "caramelo suave",
+          "baunilha silvestre",
+          "notas de avelã (óleo de amêndoa)",
+          "fruta tropical madura"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Termorreceptores (TRPV1 discreto)",
+            "ativacao": "Mínima",
+            "molecula": "Sem componentes pungentes ou picantes relevantes — perfil sensorial suave e palatável"
+          }
+        ],
+        "tatil": "Polpa fresca: cremosa, pastosa, levemente fibrosa. Suco: encorpado, aveludado por carotenoides e gorduras em emulsão.",
+        "descricao_integrada": "A bocaiuva é o alimento mais generoso do Cerrado e do Pantanal — uma palmeira que dá azeite, suco, vitamina, óleo capilar, biocombustível e alimenta o gado tudo de uma vez. Sensorialmente é uma festa tropical controlada: doce sem ser enjoativa, cremosa sem ser pesada, perfumada sem ser exuberante. O suco amarelo-alaranjado é visualmente exuberante e saboroso com uma intensidade que justifica o apelido popular de 'coco-de-ouro'."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A bocaiuva é o fruto-símbolo do Mato Grosso do Sul — objeto de festival anual em Miranda (MS) e ingrediente de pratos típicos pantaneiros (sorvete, pamonha, cupcake de bocaiuva). É o \"açaí do Pantanal\" — com potencial de exportação como superalimento ainda quase inexplorado.  A EMBRAPA e universidades do MS investem na industrialização da bocaiuva como alternativa à macaúba (espécie irmã) no mercado de biocombustíveis e alimentos funcionais. O desafio é o mesmo de outros produtos da bioeconomia brasileira: transformar matéria-prima extrativista em produto de valor agregado com identidade de origem.",
-        "curiosidade": ""
+        "historia": "A bocaiuva (macaúba) foi um dos alimentos mais importantes das populações indígenas do Brasil Central e do Pantanal — especialmente para os Guaná, Terena, Kadiwéu e Bororo. A polpa era consumida fresca e seca, o óleo era usado culinário e cosmético, e o estipe armazenava água em épocas de seca. Viajantes europeus do século XIX como Hercule Florence e Auguste de Saint-Hilaire registraram o uso extensivo da macaúba pelas populações pantaneiras. No século XX, com a expansão da agropecuária, os bocaiuvais nativos foram drasticamente reduzidos — mas a espécie sobreviveu em beiras de estrada e pastagens por ser espinhosa demais para o gado derrubar.",
+        "cerimonial": "Entre os Terena (Pantanal sul), a macaúba integra o repertório de alimentos de festas e rituais de colheita. O óleo era usado em rituais de adorno corporal — cabelos e pele ungidos com óleo de macaúba tinham significado estético e simbólico de saúde e prosperidade. Sem registros de uso cerimonial exclusivo ou restrito.",
+        "brasil": "O Brasil tem o maior bocaiuval nativo do mundo — estima-se mais de 150 milhões de palmeiras em estado silvestre no Cerrado e Pantanal, sem contar plantios. A Embrapa Agroenergia e várias universidades (UFV, UFMS, UFMT) desenvolvem pesquisa intensa para consolidar a macaúba como cultura oleaginosa de baixo impacto ambiental — sua produção de óleo por hectare (até 4.000 litros/ha) supera a soja (450 L/ha) e o girassol (900 L/ha) sem desmatar. A Natura usa óleo de amêndoa de macaúba na linha Ekos, e produtores artesanais de MT e MS vendem polpa congelada e óleo prensado a frio com crescente sucesso no mercado gourmet.",
+        "curiosidade": "A macaúba tem um paradoxo agronômico fascinante: é das plantas mais produtivas em óleo do planeta, cresce em solos pobres sem irrigação, resiste à seca, não compete com culturas alimentares — mas é quase impossível de cultivar em larga escala porque seus espinhos destroem máquinas colheitadeiras convencionais. Toda a produção atual é de extrativismo ou colheita manual. A barreira tecnológica é um problema de engenharia que, se resolvido, pode transformar a macaúba na cultura de biocombustível tropical mais sustentável já desenvolvida."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Alimento funcional",
-        "status_anvisa": "Alimento. Óleo: em processo de regulamentação como ingrediente.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutificação: junho–setembro (Pantanal/MS)"
+        "eixo_botanico_tpc": "Alimento funcional / PAOV (Produto Alimentício de Origem Vegetal) — não enquadrado como planta medicinal. Óleo: produto alimentício regulado pela ANVISA.",
+        "status_anvisa": "Polpa e óleo: alimentos convencionais (GGALI/ANVISA). Óleo de macaúba: sem regulação específica distinta de outros óleos vegetais. Cosmético (óleo de amêndoa): regulado como cosmético grau 2.",
+        "status_ema": "Não avaliada.",
+        "status_fda": "GRAS implícito para uso alimentar. Sem avaliação formal.",
+        "certificacao_organica": "Extrativismo sustentável em bocaiuvais nativos: certificação por manejo (IBD, USDA Organic) crescente em MT e MS. Plantios com manejo orgânico em desenvolvimento.",
+        "sazonalidade": "Frutificação: março–julho (outono-inverno austral) no Cerrado. Pantanal: fevereiro–junho. Polpa congelada: disponível o ano todo de produtores artesanais."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Produtores artesanais de MT, MS, GO — polpa congelada e óleo prensado a frio",
+          "Natura Ekos — óleo de amêndoa de macaúba em cosméticos",
+          "Mercados locais de Campo Grande, Cuiabá, Rondonópolis",
+          "Lojas online de produtos do Cerrado/Pantanal (Ciliada, Cerrado Gourmet)"
+        ],
+        "faixa_de_preco": "Polpa congelada: R$ 20–40/kg. Óleo de polpa prensado a frio: R$ 60–120/250ml. Óleo de amêndoa: R$ 80–150/250ml.",
+        "formatos": [
+          "Polpa congelada (suco, vitamina, mingau)",
+          "Óleo de polpa prensado a frio (culinário e suplementação)",
+          "Óleo de amêndoa prensado a frio (culinário e cosmético)",
+          "Farinha da polpa seca (panificação artesanal)",
+          "Cosmético com óleo de amêndoa (shampoo, condicionador, creme)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O azeite brasileiro que supera o azeite de oliva",
+          "texto": "O óleo de polpa de bocaiuva tem teor de ácido oleico (55–65%) comparável ao melhor azeite de oliva extravirgem — com estabilidade oxidativa superior por seu perfil de tocoferóis nativos. Produz até 4.000 litros de óleo/hectare sem irrigação em solos pobres, ante os 500 litros do olivai mediterrâneo. A barreira: a colheita dos frutos espinhosos ainda não foi mecanizada."
+        },
+        {
+          "label": "Mais β-caroteno que a cenoura",
+          "texto": "A polpa alaranjada de bocaiuva concentra β-caroteno em teores comparáveis ou superiores à cenoura crua — com o bônus de ser emulsionada em gordura (óleo oleico), o que aumenta drasticamente a biodisponibilidade dos carotenoides. A mesma refeição entrega pró-vitamina A com absorção muito superior ao suco de cenoura em água."
+        },
+        {
+          "label": "150 milhões de palmeiras esperando ser colhidas",
+          "texto": "O Brasil tem o maior bocaiuval nativo do mundo — 150 milhões de palmeiras silvestres no Cerrado e Pantanal. Produção de óleo que poderia substituir soja e dendê sem desmatar um centímetro quadrado adicional, em solos que já foram desmatados. O único obstáculo é tecnológico: os espinhos que protegem a palmeira destroem as colheitadeiras. Um problema de engenharia com potencial de transformar a economia do biocombustível tropical."
+        },
+        {
+          "label": "Alimento, combustível, cosmético e forragem — na mesma planta",
+          "texto": "A bocaiuva não conhece resíduo: polpa vira alimento e óleo combustível; amêndoa vira óleo cosmético e alimentar; torta da extração vira ração; palmito vira alimento; estipe armazena água; folhas viram forragem. É o sistema de uso integral mais completo entre as palmeiras brasileiras — e provavelmente a candidata mais séria a 'planta do futuro' do Cerrado."
+        }
+      ]
     },
     {
       "slug": "assa-peixe",
       "nome_popular": "Assa-Peixe",
       "nome_cientifico": "Vernonia polyanthes Less.",
-      "tagline": "O expectorante dos brejos — anti-inflamatório respiratório do pantanal e cerrado com tradição popular robusta e ação broncodilatadora confirmada.",
+      "tagline": "A amarga do Cerrado e do Pantanal — expectorante, antibacteriana e anti-inflamatória respiratória com glicosídeos sesquiterpênicos que fundamentam o uso ancestral para tosse, bronquite e gripe nos campos do Brasil central.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Vernonia polyanthes Less.",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico expectorante / broncodilatador",
-        "parte_usada": "Folhas secas; casca em decocção.",
+        "familia_botanica": "Asteraceae (Compositae)",
+        "tipo_botanico": "Planta medicinal expectorante / anti-inflamatória respiratória",
+        "parte_usada": "Folhas (infusão — uso principal); cascas do caule (decocção — uso popular secundário).",
         "sinonimos": [
-          "Assa-peixe · assa-peixe-branco · cambarataia",
-          "ATENÇÃO: diversas espécies de Vernonia são chamadas \"assa-peixe\" no Brasil — confirmar espécie."
+          "assa-peixe · cambará-do-campo · cambará-amargo · erva-de-touro · fumacinha",
+          "Vernonia ferruginea Less. (espécie afim com usos similares)",
+          "Nota: não confundir com cambará-branco (Lantana camara) — espécie diferente"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-herbáceo moderado, levemente resinoso, terroso.",
-        "aroma": "Herbáceo-resinoso, fundo de caferana, levemente defumado.",
-        "cor_da_infusao": "Amarelo-esverdeado a âmbar. #B0A840",
-        "intensidade": "3/5 — medicinal tolerável.",
-        "notas": "",
-        "bioma_de_origem": "Pantanal, Cerrado, Mata Atlântica interior — MT, MS, GO, MG, SP.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Intensamente amargo — um dos amarores mais marcantes entre as ervas medicinais brasileiras. Retrogusto amargo-resinoso persistente.",
+        "aroma": "Herbáceo-resinoso intenso com notas campeiras e leve toque de eucalipto; característico e memorável.",
+        "cor_da_infusao": "Castanho-escuro a verde-escuro; levemente turva. Cor intensa reflete alta concentração de princípios ativos.",
+        "intensidade": "5/5 — amargo extremo; planta de uso puramente medicinal, não hedônico. Requer adoçante ou diluição para consumo.",
+        "notas": "O nome 'assa-peixe' tem origem curiosa: a fumaça da queima da planta seria usada para defumar peixes (assa-peixe = defumador de peixe). Outra versão: o odor da planta ao arder lembraria peixe assado. A etimologia exata é debatida.",
+        "bioma_de_origem": "Cerrado e Pantanal — MT, MS, GO, MG, SP; campos abertos, bordas de mata, terrenos perturbados.",
+        "distribuicao_geografica": [
+          "Cerrado central (GO, MG, MT, MS): maior concentração e uso medicinal",
+          "São Paulo (interior): campos de cerrado remanescentes",
+          "Pantanal (MT, MS): bordas e transições de campo-mata",
+          "Uruguai e Argentina: espécies afins do gênero Vernonia com usos similares"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C | Tempo: 8–10 min coberto | Quantidade: 2–4 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "2–4 g/250 ml",
-        "metodo": "Infusão coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã e tarde em episódios respiratórios.",
-        "combina_com": "Mel · Guaco · Eucalipto · Cambará (blends respiratórios pantaneiros)"
+        "temperatura_ideal": "90–95 °C. Infusão ou decocção breve — ambas extraem glicosídeos sesquiterpênicos responsáveis pela ação expectorante.",
+        "tempo_de_infusao": "8–12 minutos coberto (infusão). Decocção: 5 min fervura + 10 min repouso coberto.",
+        "quantidade": "Folhas secas: 3–5 g / 200 ml. Reduzir para 2–3 g se amargor for intolerável — aumentar gradualmente.",
+        "metodo": "Infusão coberta. Para uso expectorante: beber quente com mel. Decocção de casca: para usos anti-inflamatórios mais intensos.",
+        "reinfusoes": "Não recomendada — a 2ª infusão é ainda mais amarga com menor concentração de ativos.",
+        "melhor_momento": "Início de quadros gripais e respiratórios. 2–3 xícaras/dia com mel. Não usar à noite (efeito estimulante discreto).",
+        "combina_com": "Mel (suaviza amargor e potencializa ação antibacteriana), gengibre (sinergia expectorante), própolis verde, guaco (sinergia broncodilatadora), limão."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Etnobotânico — uso popular em inalações e compressas; dados in vitro confirmam atividade.",
+        "aplicacoes": [
+          {
+            "titulo": "Inalação (descongestionante nasal e brônquico)",
+            "texto": "Decocção concentrada de folhas em recipiente fechado, inalação do vapor por 10–15 minutos com toalha sobre a cabeça. Uso popular amplamente documentado no Cerrado para sinusite, bronquite e gripe. Óleos essenciais (α-pineno, β-cariofileno) com atividade descongestionante."
+          },
+          {
+            "titulo": "Compressa anti-inflamatória (uso popular)",
+            "texto": "Decocção de folhas em compressa quente sobre peito e costas em bronquite. Uso popular registrado em comunidades rurais de GO e MT."
+          }
+        ],
+        "contraindicacoes": "Inalação: evitar em crianças menores de 3 anos (risco de broncoespasmo). Gestantes: sem dados de segurança para inalação."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Expectorante",
-          "Broncodilatador leve",
-          "Anti-inflamatório das vias aéreas",
-          "Antisséptico respiratório",
-          "Antipirético",
-          "Componentes ativos:",
-          "Contraindicações: Alergia à família Asteraceae. Gestação — cautela com lactonas sesquiterpênicas."
+          "Expectorante (glicosídeos sesquiterpênicos — estimulam secreção brônquica fluida)",
+          "Broncodilatador discreto (flavonoides — relaxamento de músculo liso brônquico)",
+          "Antibacteriano (ácido vernólico, glicosídeos — atividade contra S. aureus, Strep. pneumoniae)",
+          "Anti-inflamatório (lactonas sesquiterpênicas — inibição NF-κB, COX-2)",
+          "Antipirético (ácido clorogênico, compostos fenólicos)",
+          "Amargo tônico digestivo (amaror dos glicosídeos — estimula digestão)"
         ],
         "componentes_ativos": [
           {
-            "label": "LACTONAS SESQUITERPÊNICAS (vernolina, glaucolídeo)",
-            "texto": "Anti-inflamatório, broncodilatador"
+            "label": "LACTONAS SESQUITERPÊNICAS (vernolida, hirsutinolida, glaucolida)",
+            "texto": "Principal fração ativa. Responsáveis pelo amargor extremo e pela ação anti-inflamatória (inibição NF-κB e IKK — redução de citocinas pró-inflamatórias IL-1β, TNF-α). Atividade citotóxica seletiva em algumas linhagens tumorais in vitro. Mecanismo expectorante: estimulam secreção de muco brônquico menos viscoso, facilitando a expectoração."
           },
           {
-            "label": "FLAVONÓIDES (luteolina, apigenina)",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "ÁCIDO VERNÓLICO e DERIVADOS",
+            "texto": "Ácido graxo epoxidado característico do gênero Vernonia. Atividade anti-inflamatória e antimicrobiana. Potencial industrial como monômero de polímeros biodegradáveis — pesquisa em andamento."
           },
           {
-            "label": "SAPONINAS",
-            "texto": "Expectorante"
+            "label": "FLAVONOIDES (luteolina, apigenina, quercetina)",
+            "texto": "Broncodilatadores (relaxamento de músculo liso via inibição de fosfodiesterase), anti-inflamatórios, antioxidantes. Luteolina: ação antiasmática em modelos animais. Quercetina: inibição da liberação de histamina por mastócitos."
           },
           {
-            "label": "ÓLEOS ESSENCIAIS",
-            "texto": "Antisséptico respiratório"
+            "label": "ÁCIDO CLOROGÊNICO e DERIVADOS (ácido cafeico, ferrúlico)",
+            "texto": "Antipiréticos (inibição de síntese de prostaglandinas via COX), anti-inflamatórios, antioxidantes. Ácido clorogênico: inibição de COX-2 com potência comparável ao ibuprofeno in vitro."
+          },
+          {
+            "label": "ÓLEOS ESSENCIAIS (α-pineno, β-cariofileno, espatulenol)",
+            "texto": "Descongestionantes (α-pineno), anti-inflamatórios (β-cariofileno via CB2), antimicrobianos. Responsáveis pelo aroma resinoso-campeiro e pela eficácia das inalações."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Tosse produtiva, bronquite aguda, gripe (expectorante)",
+            "evidencia": "Moderada — uso etnobotânico extenso + mecanismo farmacológico plausível (lactonas sesquiterpênicas expectorantes); estudos in vitro e em modelos animais confirmam atividade",
+            "populacao": "Adultos; uso popular amplíssimo no Cerrado e Pantanal. Ensaios clínicos em humanos ausentes para V. polyanthes especificamente."
+          },
+          {
+            "indicacao": "Anti-inflamatório sistêmico",
+            "evidencia": "Preliminar a moderada (in vitro + modelos animais com extratos de Vernonia spp.)",
+            "populacao": "Sem ensaios clínicos específicos para indicação anti-inflamatória."
+          }
+        ],
+        "contraindicacoes": "Gestação: contraindicada — lactonas sesquiterpênicas têm potencial uterotônico (documentado para espécies de Vernonia em animais). Lactação: evitar. Crianças menores de 6 anos: sem dados de segurança. Alergia a Asteraceae: risco de reação cruzada (lactonas sesquiterpênicas são alergênicos comuns da família).",
+        "interacoes": [
+          {
+            "label": "Anticoagulantes (varfarina)",
+            "texto": "Ácido clorogênico e flavonoides podem interferir no metabolismo da varfarina via CYP1A2. Monitorar INR com uso concomitante."
+          },
+          {
+            "label": "Antidiabéticos",
+            "texto": "Ácido clorogênico inibe absorção intestinal de glicose. Potencialização discreta do efeito hipoglicemiante — monitorar glicemia."
+          }
+        ],
+        "efeitos_adversos": "Doses usuais: náusea por amargor intenso (comum em não habituados). Doses altas: vômito, cólicas. Alergia: dermatite de contato por lactonas sesquiterpênicas (especialmente em manipulação da planta fresca).",
+        "dose_maxima": "Folhas secas: 10 g/dia (2–3 xícaras × 3–5 g). Uso contínuo: máximo 2 semanas em episódios agudos; não usar cronicamente.",
+        "fontes": [
+          "Rates SMK. (2001). Plants as source of drugs. Toxicon.",
+          "Brito FA et al. (2004). Antiinflammatory activity of extracts of Vernonia polyanthes. Phytomedicine.",
+          "Agra MF et al. (2007). Synopsis of the plants known as medicinal and poisonous in Northeast of Brazil. Rev Bras Farmacogn.",
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum.",
+          "Simões CMO et al. (2017). Farmacognosia: do produto natural ao medicamento. Artmed."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Extremo (5/5) — traço dominante absoluto",
+            "observacao": "Lactonas sesquiterpênicas. Entre os amarores mais intensos da flora medicinal brasileira. Escala de referência: genciana europeia (amarissimo) é comparável."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Moderada (2–3/5)",
+            "observacao": "Taninos e ácidos fenólicos. Sobreposta ao amargor, cria finalização seca complexa."
+          },
+          {
+            "dimensao": "Resinoso-balsâmico",
+            "intensidade": "Moderado (2/5)",
+            "observacao": "Óleos essenciais e resinas contribuem com nota balsâmica que contrasta com o amargor puro — elemento redentório do perfil."
+          }
+        ],
+        "olfativo_familia": "Herbáceo-resinoso intenso com nota campestre e toque medicinal de eucalipto.",
+        "olfativo_descritores": [
+          "erva amarga do campo",
+          "notas de eucalipto-campeiro",
+          "resina de cerrado",
+          "fumacinha (odor levemente defumado)",
+          "fundo de artemísia"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Baixa-moderada",
+            "molecula": "α-pineno e lactonas sesquiterpênicas — leve frescor irritativo mucoso, reforça percepção expectorante"
+          }
+        ],
+        "tatil": "Corpo médio-alto por resinas. Finalização seca e prolongadamente amarga — sem recuperação hedônica.",
+        "descricao_integrada": "O assa-peixe é honesto ao ponto da brutalidade: não tenta agradar, não tem notas florais para seduzir, não suaviza o amargor com dulçor. É a medicina na forma mais direta — uma xícara que comunica inequivocamente 'estou aqui para curar, não para prazer'. Os bebedores experientes do Cerrado conhecem essa linguagem e confiam nela. Com mel abundante, o perfil ganha complexidade — o amargo profundo encontra o doce floral e cria uma tensão sensorial que funciona."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O assa-peixe é erva dos brejos e matas de galeria — planta que marca a presença d'água no cerrado e no pantanal. Seu uso popular como expectorante está profundamente integrado à medicina caseira do Brasil Central e Pantaneiro — especialmente em comunidades rurais de MT e MS onde o acesso a serviços de saúde é limitado.  O nome \"assa-peixe\" vem do uso das folhas para defumar e conservar peixe fresco antes de refrigeração — propriedade antimicrobiana dos óleos essenciais aplicada à conserva de alimentos.",
-        "curiosidade": ""
+        "historia": "O assa-peixe é uma das plantas medicinais mais populares do Brasil central — especialmente em Goiás, Minas Gerais e Mato Grosso do Sul. Documentado desde o século XVIII por naturalistas europeus que exploraram o Cerrado, aparece nos primeiros tratados de medicina popular brasileira como remédio de excelência para 'peito fraco', tosse crônica e catarro. Os tropeiros que cortavam o sertão goiano e mineiro carregavam folhas secas de assa-peixe nas alforjas como remédio de campo para doenças respiratórias dos companheiros e das tropas de gado.",
+        "cerimonial": "Sem uso cerimonial documentado. Planta de uso funcional e cotidiano nas comunidades rurais do Cerrado. A transmissão do conhecimento é doméstica — a receita passa de avó para neta como parte do repertório de saúde familiar.",
+        "brasil": "O assa-peixe consta na RENISUS (2009) e é uma das plantas com maior base de uso popular documentado no Brasil. Em Goiás, é cultivada em quintais medicinais de praticamente todas as cidades do interior. Farmácias de manipulação de Goiânia e Campo Grande formulam extratos de assa-peixe para xaropes e cápsulas expectorantes. A pesquisa universitária (UFG, UFMS, UFMG) tem documentado sistematicamente a composição fitoquímica e a atividade farmacológica, construindo base científica para uso regulado.",
+        "curiosidade": "O gênero Vernonia tem mais de 1.000 espécies distribuídas em regiões tropicais e subtropicais de todo o mundo — é um dos maiores gêneros das Asteraceae. Espécies africanas de Vernonia são usadas como vegetais folhosos (bitter leaf) no oeste e centro da África — as folhas amargas são cozidas e consumidas regularmente como alimento. A conexão evolutiva entre o assa-peixe brasileiro e o 'bitter leaf' nigeriano (V. amygdalina) ilustra como grupos humanos separados por oceanos descobriram independentemente as propriedades medicinais de plantas do mesmo gênero."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Uso tradicional reconhecido. RENISUS incluído.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: agosto–novembro"
+        "eixo_botanico_tpc": "Planta medicinal de uso tradicional — RENISUS (2009): Vernonia polyanthes listada como espécie de interesse para o SUS.",
+        "status_anvisa": "RENISUS: listada. Sem monografia de fitoterápico publicada na IN 02/2014. Comercialização como droga vegetal permitida. Extratos em fitoterápicos requerem registro.",
+        "status_ema": "Não avaliada.",
+        "status_fda": "Não avaliada.",
+        "certificacao_organica": "Extrativismo em Cerrado nativo — potencial de certificação por manejo. Cultivo em quintais medicinais amplamente praticado.",
+        "sazonalidade": "Folhas disponíveis o ano todo. Floração: março–junho (outono). Concentração de lactonas sesquiterpênicas: maior em folhas jovens da estação seca (abril–setembro)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Herbanárias do Centro-Oeste (GO, MT, MS, MG) — principal mercado",
+          "Feiras de plantas medicinais de Goiânia, Campo Grande, Uberlândia",
+          "Farmácias de manipulação do centro-oeste e sudeste",
+          "Lojas de produtos naturais com foco em plantas do Cerrado"
+        ],
+        "faixa_de_preco": "Folhas secas: R$ 8–20/50g. Xarope de assa-peixe (farmácias de manipulação): R$ 25–50/100ml.",
+        "formatos": [
+          "Folhas secas (infusão)",
+          "Xarope expectorante (farmácias de manipulação)",
+          "Extrato seco em cápsulas",
+          "Tintura alcoólica",
+          "Planta fresca (quintais medicinais — venda local)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O expectorante mais amargo do Cerrado",
+          "texto": "O assa-peixe tem um dos perfis de amargor mais intensos entre as plantas medicinais brasileiras — resultado de lactonas sesquiterpênicas (vernolida, hirsutinolida) que inibem NF-κB, estimulam secreção brônquica fluida e inibem bactérias respiratórias. A intensidade do amargor é proporcional à concentração de ativos: quanto mais amargo, mais potente."
+        },
+        {
+          "label": "Do tropeiro ao SUS",
+          "texto": "Carregado nas alforjas dos tropeiros que cortavam o sertão goiano no século XIX, o assa-peixe chegou ao século XXI listado na RENISUS como planta de interesse para o SUS. O caminho do remédio de campo ao sistema público de saúde é uma das trajetórias mais longas e mais legítimas da fitoterapia brasileira."
+        },
+        {
+          "label": "Bitter leaf: o irmão africano",
+          "texto": "Vernonia amygdalina (bitter leaf), do oeste africano, é consumida regularmente como vegetal alimentar em países como Nigéria e Camarões — as folhas amargas cozidas são um prato cotidiano. A conexão evolutiva com o assa-peixe (V. polyanthes) ilustra como grupos humanos em continentes separados descobriram independentemente o valor medicinal de um mesmo gênero vegetal."
+        }
+      ]
     },
     {
       "slug": "raiz-de-bugre",
