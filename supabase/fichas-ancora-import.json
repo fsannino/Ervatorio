@@ -17842,197 +17842,410 @@
     },
     {
       "slug": "acafroa",
-      "nome_popular": "Açafroa",
-      "nome_cientifico": "Carthamus tinctorius L.",
-      "tagline": "O pseudoaçafrão universal — especiaria floral que substituiu o açafrão verdadeiro em culinários por séculos, com óleo de alto valor nutricional e ação anti-inflamatória crescentemente documentada.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Carthamus tinctorius L.",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Especiaria aromática / óleo funcional / corante",
-        "parte_usada": "Flores (pétalas secas — corante e especiaria); sementes (óleo).",
-        "sinonimos": [
-          "Açafroa · cártamo · açafrão-bastardo · falso-açafrão",
-          "Safflower (inglês) · Carthame (francês) · Saflor (alemão)",
-          "Kusumbha (sânscrito)"
+        "nome_popular": "Açafroa",
+        "nome_cientifico": "Carthamus tinctorius",
+        "familia": "Asteraceae",
+        "outros_nomes": [
+          "cártamo",
+          "falso-açafrão",
+          "safflower (ing.)",
+          "carthame (fr.)"
+        ],
+        "origem": "Ásia Central, Mediterrâneo Oriental",
+        "partes_usadas": [
+          "flores (pétalas)",
+          "sementes (para óleo)",
+          "óleo de cártamo"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Floral-seco, feno, levemente aromático.",
-        "cor_da_infusao": "Amarelo intenso a laranja-avermelhado. #E89020 — corante natural intenso.",
-        "intensidade": "2/5 — corante mais que sabor.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Planta anual de 30–150 cm, erecta, muito ramificada, com espinhos nas margens das folhas (semelhante ao cardo). Folhas lanceoladas a ovadas, dentadas com espinhos terminais, coriáceas. Capítulos florais terminais de 2–4 cm com flores tubulosas amarelas a laranja-avermelhadas. Frutos (aquênios) brancos, lisos, oleaginosos. A cor das flores vai do amarelo-pálido ao laranja intenso, dependendo da variedade.",
+        "composicao_quimica": [
+          "Flores: cartamina (pigmento vermelho-laranja solúvel em álcool) e safflor amarelo (solúvel em água)",
+          "Flores: chalconas: carthamine, safflower yellow A e B",
+          "Flores: flavonoides: kaempferol, quercetina, luteolina",
+          "Flores: polissacarídeos imunomodeladores",
+          "Sementes: ácido linoleico (70–80%) — omega-6 predominante",
+          "Sementes: vitamina E (α-tocoferol): potente antioxidante",
+          "Sementes: proteínas (15–20%)",
+          "Óleo: ratio omega-6/omega-3 muito elevado (cautela)"
+        ],
+        "bioma": "Mediterrâneo, Ásia Central, regiões semiáridas",
+        "cultivo": "Pleno sol, solo bem drenado, tolerante à seca e ao calor. Multiplica por sementes. Colheita das flores antes da abertura completa (mais pigmento). Importante cultura oleaginosa em regiões semiáridas."
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "formas": [
+          {
+            "tipo": "Infusão das flores (uso interno)",
+            "descricao": "1–2 colheres de sopa de flores secas (2–4 g) em 200 mL a 90°C. Cobrir 10–15 min. Coar. 1–2 xícaras/dia.",
+            "indicacoes": [
+              "irregularidade menstrual",
+              "amenorréia",
+              "dismenorreia",
+              "circulação",
+              "tosse"
+            ]
+          },
+          {
+            "tipo": "Decocção das flores (medicina chinesa)",
+            "descricao": "3–5 g de flores em 200 mL. Ferver suavemente 10–15 min. Coar. 1–2 vezes/dia.",
+            "indicacoes": [
+              "dores articulares",
+              "circulação periférica",
+              "amenorréia (TCM)"
+            ]
+          },
+          {
+            "tipo": "Óleo de cártamo (uso alimentar e tópico)",
+            "descricao": "1–2 colheres de sopa/dia como parte da dieta (uso alimentar). Tópico: aplicar diretamente na pele.",
+            "indicacoes": [
+              "saúde cardiovascular (uso alimentar)",
+              "hidratação cutânea",
+              "massagem"
+            ]
+          },
+          {
+            "tipo": "Corante alimentar/cosmético",
+            "descricao": "Pétalas secas em pratos, arrozes, sopas. Infusão das flores como corante natural amarelo-laranja.",
+            "indicacoes": [
+              "coloração natural de alimentos",
+              "cosmética artesanal"
+            ]
+          }
+        ],
+        "dicas": "As flores de açafroa soltas em água quente liberam o pigmento amarelo (hidrossolúvel), diferente do pigmento vermelho que requer álcool. Como substituto do açafrão (Crocus sativus) na coloração de alimentos, é eficaz e muito mais barato — mas sem o aroma e os ativos do açafrão verdadeiro."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "aplicacoes": [
+          {
+            "forma": "Óleo de cártamo para pele e cabelo",
+            "preparo": "Óleo puro ou diluído em outros óleos. Aplicar em pele seca, cabelo ou cutículas.",
+            "indicacoes": [
+              "pele seca",
+              "eczema",
+              "hidratação capilar",
+              "antienvelhecimento"
+            ]
+          },
+          {
+            "forma": "Máscara capilar",
+            "preparo": "2–3 colheres de sopa de óleo de cártamo + vitamina E. Aplicar no cabelo, cobrir com touca por 30 min.",
+            "indicacoes": [
+              "cabelo seco",
+              "pontas duplas",
+              "brilho capilar"
+            ]
+          },
+          {
+            "forma": "Cataplasma de flores",
+            "preparo": "Flores amassadas com água quente formando pasta. Aplicar sobre área dolorida.",
+            "indicacoes": [
+              "dores articulares",
+              "contusões",
+              "inchaço"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Corante natural (cartamina — laranja; safraflor amarelo)",
-          "Anti-inflamatório (flores e óleo)",
-          "Cardioprotetor (óleo — ácido linoleico)",
-          "Hipoglicemiante (estudos com extrato)",
-          "Emenagogo (flores — uso tradicional)",
-          "Componentes ativos (flores):",
-          "Contraindicações: Gestação — emenagogo. Alergia à Asteraceae."
+        "acoes_farmacologicas": [
+          "Emmenagoga: chalconas estimulam contração uterina — uso tradicional para irregularidade menstrual",
+          "Anticoagulante: inibe agregação plaquetária (chalconas e flavonoides)",
+          "Anti-inflamatório: quercetina e luteolina inibem COX e mediadores inflamatórios",
+          "Antioxidante: vitamina E e flavonoides",
+          "Hipolipemiante: ácido linoleico reduz LDL quando substitui gordura saturada (efeito do óleo)",
+          "Imunomodulador: polissacarídeos das flores estimulam macrófagos",
+          "Corante/pigmentante: cartamina — uso histórico têxtil e alimentar"
         ],
-        "componentes_ativos": [],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "Gestação: CONTRAINDICADO — emmenagoga e potencialmente abortiva",
+          "Distúrbios de coagulação ou uso de anticoagulantes",
+          "Úlcera péptica ativa",
+          "Cirurgia iminente (2 semanas antes)"
+        ],
+        "efeitos_adversos": [
+          "Reação alérgica (Asteraceae — reação cruzada possível)",
+          "Sangramento aumentado em pacientes com distúrbios de coagulação",
+          "Cólica uterina em doses elevadas"
+        ],
+        "interacoes": [
+          "Anticoagulantes (varfarina, heparina, aspirina): potenciação do risco de sangramento",
+          "Anti-inflamatórios (AINEs): sinergia no risco de sangramento",
+          "Hipotensivos: possível potenciação (efeito vasodilatador das chalconas)"
+        ],
+        "dose_segura": "Flores secas: 3–6 g/dia em infusão. Óleo de cártamo alimentar: 1–2 colheres/dia. Monografias TCM (Hong Kong, China): doses de 3–9 g de flores/dia.",
+        "nivel_evidencia": "Medicina Tradicional Chinesa: uso bem documentado para distúrbios do 'xue' (sangue). Estudos clínicos modernos: óleo de cártamo mostra benefícios cardiovasculares em estudos de substituição de gorduras. Flores: estudos pré-clínicos sólidos; ensaios clínicos limitados na medicina ocidental."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Flores: leve, levemente floral-herbáceo, sem aroma pronunciado. Óleo: neutro, suave",
+        "sabor": "Flores: levemente amargo, suave, quase neutro; sem sabor marcante",
+        "cor_visual": "Flores laranja-avermelhadas ou amarelas intensas; infusão amarela brilhante; óleo dourado-pálido",
+        "textura": "Flores sedosas; infusão levíssima; óleo fluido e não-gorduroso ao toque",
+        "sensacao": "Neutra internamente; óleo deixa pele suave e levemente acetinada"
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A açafroa é a \"mentira nobre\" da culinária brasileira — o \"açafrão\" da paella nordestina, do arroz amarelo mineiro e das moquecas capixabas é quase sempre cártamo, não Crocus sativus. Essa substituição é praticada há séculos não por adulteração intencional, mas por adaptação culinária pragmática — o cártamo tem o visual do açafrão (cor amarela) por fração do custo. O Ervatório tem a missão de esclarecer, não condenar — o cártamo tem valor próprio que merece ser narrado honestamente.",
-        "curiosidade": ""
+        "historia": "Cultivada há mais de 4.000 anos no Egito — encontrada em tumbas do Egito Antigo (incluindo a de Tutancâmon, 1323 aC), usada para tingir tecidos de múmias. Na China, registrada há 2.000 anos como medicamento para distúrbios do sangue (Medicina Tradicional Chinesa). Na Europa medieval: substituto do açafrão para tingir tecidos e alimentos. A indústria moderna redescobriu como oleaginosa de alto valor.",
+        "uso_tradicional": "Egito Antigo: corante têxtil e pigmento para maquiagem. TCM: 'hong hua' (flor vermelha) — ativa a circulação, dissolve estase de sangue, trata amenorréia e dores articulares. Europa: colorante de tecidos e alimentos. Ayurveda: emmenagoga e anti-inflamatório.",
+        "simbolismo": "Prosperidade, vitalidade, cor (cultura da tinturaria natural). No Egito: vida após a morte (presente nas tumbas).",
+        "curiosidades": [
+          "Encontrada na tumba de Tutancâmon — usada para tingir as faixas das múmias há 3.300 anos",
+          "Confundida frequentemente com o açafrão verdadeiro (Crocus sativus) em mercados — mas sem nenhum dos ativos do açafrão (safranal, crocina)",
+          "O pigmento vermelho (cartamina) requer álcool para extração; o pigmento amarelo dissolve em água — os dois são usados separadamente na tinturaria natural",
+          "Variedades sem espinhos foram desenvolvidas para colheita mecanizada — antes, a colheita era um trabalho doloroso"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Alimento funcional / fitoterápico",
-        "status_anvisa": "Uso alimentar. Óleo: amplamente comercializado.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: verão"
+        "status_brasil": "ANVISA: sem registro específico como fitoterápico. Óleo de cártamo: alimento funcional/oleaginosa. Flores: comercializadas como erva.",
+        "status_europa": "EMA: sem monografia. Óleo de cártamo: autorizado como aditivo alimentar e cosmético (INCI: Carthamus tinctorius seed oil). TCM registrada em alguns países europeus.",
+        "farmacopeia": "Farmacopeia Chinesa (ChP): hong hua (Carthami Flos) — monografia completa. Não consta em farmacopeias europeias ou brasileira.",
+        "registro": "Óleo amplamente disponível como alimento funcional. Flores: suplemento/erva importada."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Flores secas a granel",
+          "Óleo de cártamo prensado a frio",
+          "Cápsulas de óleo de cártamo",
+          "Extrato de flores (suplemento)"
+        ],
+        "preco_estimado": "Flores secas: R$ 15–35/50 g. Óleo: R$ 25–60/500 mL. Cápsulas: R$ 30–70/frasco.",
+        "disponibilidade": "Moderada — lojas de produtos naturais, importadores, online. Óleo em supermercados especializados.",
+        "como_escolher": "Flores: cor laranja-avermelhada intensa; sem flores amarelas em excesso (menor teor de cartamina). Óleo: prensado a frio, cor dourada, sem odor rançoso. Certificação orgânica preferível.",
+        "armazenamento": "Flores secas: pote hermético, escuro, seco. Validade: 12 meses. Óleo: frasco escuro, refrigerado após aberto. Validade: 6–12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Irregularidade menstrual e dismenorreia (emmenagoga — uso interno das flores)",
+          "Dores articulares e circulação (TCM — uso bem estabelecido)",
+          "Hidratação cutânea e capilar (óleo de cártamo)",
+          "Corante natural alimentar e cosmético (substituto do açafrão na cor)"
+        ],
+        "diferenciais": [
+          "Planta encontrada em tumbas egípcias de 3.300 anos — uma das oleaginosas mais antigas cultivadas pelo ser humano",
+          "Dois pigmentos distintos em uma única planta: amarelo (hidrossolúvel) e vermelho (lipossolúvel) — versatilidade única",
+          "Óleo com maior teor de ácido linoleico do mundo (70–80%) — benchmark de omega-6",
+          "Substituto econômico do açafrão para coloração (sem ativos do açafrão, mas cor muito eficaz)"
+        ],
+        "sinergias": [
+          "Açafroa + dong quai: circulação e saúde menstrual (TCM)",
+          "Açafroa (óleo) + rosa-mosqueta (óleo): pele madura e antienvelhecimento",
+          "Açafroa + açafrão verdadeiro: sinergia na coloração e no suporte ao humor",
+          "Açafroa + calêndula: anti-inflamatório cutâneo (uso tópico)"
+        ],
+        "alertas": [
+          "GESTAÇÃO: CONTRAINDICADA — emmenagoga e potencialmente abortiva",
+          "Anticoagulantes: alto risco de sangramento — não combinar sem supervisão médica",
+          "NÃO confundir com açafrão verdadeiro (Crocus sativus) — composição e indicações totalmente diferentes",
+          "Óleo: alta proporção de omega-6 — não usar como única fonte de óleo (equilibrar com omega-3)"
+        ]
       }
     },
     {
       "slug": "flor-de-laranjeira",
-      "nome_popular": "Flor de Laranjeira",
-      "nome_cientifico": "Citrus aurantium L. (laranja-amarga)",
-      "tagline": "O neroli da farmácia popular — a flor branca da laranja-amarga com o mais elegante dos aromas florais-cítricos e ação ansiolítica e sedativa documentada em múltiplos sistemas.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Citrus aurantium L. (laranja-amarga)",
-        "familia_botanica": "Rutaceae (família dos cítricos)",
-        "tipo_botanico": "Fitoterápico ansiolítico / sedativo / aromático",
-        "parte_usada": "Flores secas (tília de laranjeira) — da laranja-amarga (C. aurantium), não da laranja-doce (C. sinensis).",
-        "sinonimos": [
-          "Flor de laranjeira · tília-de-laranjeira · água de flor de laranjeira",
-          "Orange blossom (inglês) · Fleur d'oranger (francês) · Orangenblüte (alemão)",
-          "Neroli (quando OE destilado por vapor) — nome vem da princesa italiana Anna Maria de La Trémoille, princesa de Nerola"
+        "nome_popular": "Flor-de-laranjeira",
+        "nome_cientifico": "Citrus aurantium (var. amara)",
+        "familia": "Rutaceae",
+        "outros_nomes": [
+          "laranja-amarga",
+          "neroli (óleo essencial)",
+          "água de flor de laranjeira",
+          "azahar (esp.)",
+          "fleur d'oranger (fr.)"
+        ],
+        "origem": "Sudeste Asiático; amplamente cultivada no Mediterrâneo",
+        "partes_usadas": [
+          "flores frescas",
+          "pétalas secas",
+          "óleo essencial (neroli)",
+          "hidrolato (água de laranjeira)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Floral-cítrico suave e elegante, levemente amargo-herbáceo, mel floral.",
-        "aroma": "Neroli — floral-cítrico-amadeirado, o mais elegante do catálogo floral. Limoneno + linalol + antranilato de metila = perfume de luxo em flor.",
-        "cor_da_infusao": "Amarelo-pálido a dourado discreto. #F0E890",
-        "intensidade": "2/5 — suave e elegante.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Árvore perenifólia de 3–10 m, com espinhos axilares. Folhas oval-elípticas, coriáceas, verde-brilhante, com peciolo alado característico. Flores brancas (2–4 cm), 5 pétalas cerosas, muito perfumadas, solitárias ou em pequenos grupos axilares. Frutos (laranjas amargas) de 6–8 cm, casca rugosa, laranja-dourada, muito ácidos e amargos.",
+        "composicao_quimica": [
+          "Óleo essencial das flores (neroli, 0,1–0,2%): linalol (30–40%), acetato de linalila (5–15%), α-terpineol, nerolidol, farnesol, nerol, geraniol",
+          "Hidrolato: linalol, acetato de linalila (em menores concentrações)",
+          "Flavonoides das flores: naringenina, hesperidina, nobiletina",
+          "Antranilato de metila (responsável por parte do aroma floral)",
+          "Benzoato de benzila (traços)",
+          "Sesquiterpenos: β-cariofileno, germacreno"
+        ],
+        "bioma": "Mediterrâneo, subtropical",
+        "cultivo": "Sol pleno, clima mediterrâneo ou subtropical, solo bem drenado, pH 6–7. Flores coletadas manualmente na primavera (curto período de 2–3 semanas). Produção de neroli: requer 1 tonelada de flores para ~1 kg de óleo — um dos OEs mais preciosos."
       },
       "preparo": {
-        "temperatura_ideal": "80–85 °C (linalol muito volátil).",
-        "tempo_de_infusao": "",
-        "quantidade": "2–4 g flores secas para 250 ml.",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "Noite (ansiolítico/sedativo) — ritual do sono.",
-        "combina_com": "Camomila · Melissa · Lavanda · Maracujá · Mel (blends florais do sono)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Ansiolítico suave (linalol — modulação GABAérgica)",
-          "Sedativo leve",
-          "Antiespasmódico",
-          "Cardioprotetor (redução de FC em estresse)",
-          "Antimicrobiano suave",
-          "Componentes ativos:",
-          "Contraindicações: Sem contraindicações relevantes em doses usuais. Gestação: uso moderado tolerado."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "LINALOL",
-            "texto": "Ansiolítico, sedativo (GABA), antimicrobiano"
+            "tipo": "Infusão das flores",
+            "descricao": "1–2 colheres de sopa de flores frescas ou 1 colher de secas (2–3 g) em 200 mL a 80–90°C. Cobrir 10 min. Coar. 1–2 xícaras/dia à noite.",
+            "indicacoes": [
+              "insônia",
+              "ansiedade",
+              "nervosismo",
+              "palpitações",
+              "digestão nervosa"
+            ]
           },
           {
-            "label": "ANTRANILATO DE METILA",
-            "texto": "Aromático floral — neroli"
+            "tipo": "Água de flor de laranjeira (hidrolato — uso interno)",
+            "descricao": "1–2 colheres de sopa (15–30 mL) diluídas em água ou leite. 1–2×/dia. Também usada culinariamente.",
+            "indicacoes": [
+              "ansiedade",
+              "insônia leve",
+              "digestão nervosa",
+              "uso culinário em sobremesas"
+            ]
           },
           {
-            "label": "LIMONENO",
-            "texto": "Antimicrobiano, antidepressivo leve"
+            "tipo": "Óleo essencial neroli (aromaterapia)",
+            "descricao": "2–3 gotas no difusor, 30–60 min. Ou 1–2 gotas em travesseiro.",
+            "indicacoes": [
+              "ansiedade",
+              "pânico",
+              "insônia",
+              "depressão leve",
+              "parto (alívio de ansiedade)"
+            ]
           },
           {
-            "label": "GERANIOL",
-            "texto": "Ansiolítico, antimicrobiano"
-          },
-          {
-            "label": "FLAVONÓIDES (naringenina, hesperidina)",
-            "texto": "Anti-inflamatório, cardioprotetor"
+            "tipo": "Banho relaxante",
+            "descricao": "5–8 gotas de neroli em sal grosso ou leite integral. Adicionar ao banho morno. 20–30 min.",
+            "indicacoes": [
+              "estresse",
+              "insônia",
+              "menopausa (calores e ansiedade)"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "A água de flor de laranjeira autêntica (hidrolato de destilação a vapor) é superior aos aromas sintéticos de laranjeira em eficácia. Culinariamente: usada em pastéis de nata, baklava, madeleine, rahat lokum. O óleo neroli é extremamente caro — verificar pureza antes de comprar."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Sérum facial com neroli",
+            "preparo": "2–3 gotas de OE neroli em 10 mL de óleo de jojoba ou rosa-mosqueta. Aplicar à noite.",
+            "indicacoes": [
+              "pele madura",
+              "rugas",
+              "ressecamento",
+              "cicatrizes",
+              "manchas pós-acne"
+            ]
+          },
+          {
+            "forma": "Tônico facial (hidrolato)",
+            "preparo": "Hidrolato puro ou diluído 50%. Pulverizar no rosto após limpeza.",
+            "indicacoes": [
+              "hidratação",
+              "equilíbrio do pH cutâneo",
+              "pele sensível",
+              "frescor"
+            ]
+          },
+          {
+            "forma": "Massagem relaxante",
+            "preparo": "3–5 gotas de neroli em 15 mL de óleo de amêndoas. Massagem nas costas, ombros ou solas dos pés antes de dormir.",
+            "indicacoes": [
+              "tensão muscular",
+              "ansiedade",
+              "insônia",
+              "menopausa"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Ansiolítico: linalol e acetato de linalila modulam receptores GABA-A (estudos clínicos em salas cirúrgicas e obstetrícia)",
+          "Sedativo leve: ação sobre SNC via inalação e uso interno",
+          "Antiespasmódico: relaxa músculo liso intestinal e uterino",
+          "Antidepressivo leve: inalação de neroli aumenta serotonina e dopamina em modelos animais",
+          "Antioxidante: flavonoides das flores",
+          "Antifúngico: linalol inibe Candida in vitro",
+          "Cicatrizante e regenerante cutâneo: estimula fibroblastos (neroli em cosméticos)"
+        ],
+        "contraindicacoes": [
+          "Alergia a Rutaceae ou limoneno (verificar patch test)",
+          "Uso interno do OE puro: não recomendado",
+          "Fotossensibilização: furanocumarinas presentes (principalmente na casca — as flores têm teor menor mas atenção no uso tópico + sol)"
+        ],
+        "efeitos_adversos": [
+          "Sonolência excessiva em doses altas (sedativo)",
+          "Dermatite de contato (rara)",
+          "Fotossensibilização em uso tópico + exposição solar"
+        ],
+        "interacoes": [
+          "Benzodiazepínicos e sedativos: potenciação",
+          "Anestésicos: possível interação (uso de neroli pré-cirúrgico — informar anestesista)"
+        ],
+        "dose_segura": "Flores secas: 2–4 g/dia em infusão. Hidrolato: 15–30 mL/dia. OE neroli tópico: 1–2% em base. Difusão: 5–10 gotas/30–60 min.",
+        "nivel_evidencia": "Estudos clínicos controlados (RCTs) confirmam eficácia de neroli em aromaterapia para ansiedade pré-operatória, ansiedade no parto, e menopausa. Linalol tem mecanismo ansiolítico bem elucidado in vitro e in vivo."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Floral intenso e profundo, com notas cítricas suaves; cálido, cremoso, exótico; persistente; considerado um dos aromas mais belos do mundo vegetal",
+        "sabor": "Floral delicado, levemente adocicado, com nota cítrica suave; água de laranjeira tem sabor mais concentrado",
+        "cor_visual": "Flores brancas cerosas; hidrolato incolor a levemente opalescente; OE: amarelo pálido a marrom-claro",
+        "textura": "Flores carnosas e cerosas; hidrolato fluido; infusão levíssima",
+        "sensacao": "Calmante imediata ao olfato; levemente sedativo; sensação de luxury e bem-estar"
       },
       "cultura": {
-        "historia": "A água de flor de laranjeira é o mais antigo perfume do mundo ocidental com uso medicinal documentado — produzida por destilação em países árabes desde o séc. X, usada em culinária, cosmética e medicina. No casamento europeu, a noiva usa flor de laranjeira como símbolo de pureza e fertilidade — tradição que remonta à Espanha moura.  Na culinária portuguesa e brasileira, a água de flor de laranjeira aromatiza rabanadas, biscoitos e licores — herança direta da influência árabe na culinária ibérica.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "O óleo neroli leva o nome da Princesa Anna Maria de Nerola (Itália, século XVII) que usava o óleo para perfumar suas luvas e banhos — tornando o aroma símbolo de aristocracia. Na tradição mediterrânea, flores de laranjeira adornam noivas desde a Idade Média (pureza e fertilidade). No norte da África (Marrocos, Tunísia), a destilação artesanal da água de laranjeira é tradição familiar de séculos. A 'água de azahar' (espanhol/árabe) é ingrediente culinário em toda a culinária árabe e mediterrânea.",
+        "uso_tradicional": "Mediterrâneo e Oriente Médio: infusão de flores para nervos, insônia e palpitações. Culinária: pastéis de nata (Portugal), baklava (Turquia), madeleine (França), rahat lokum, m'hencha. Perfumaria: base de grandes clássicos (Eau de Cologne original, 4711). Aromaterapia: ansiedade e menopausa. Cosméticos: antienvelhecimento e regeneração cutânea.",
+        "simbolismo": "Pureza, fertilidade, nobreza. Nas tradições mediterrâneas: buquê de noiva. No islã: 'flor do paraíso'. Na aromaterapia moderna: flor da paz interior.",
+        "curiosidades": [
+          "Para produzir 1 kg de óleo essencial neroli são necessárias aproximadamente 1.000 kg de flores — por isso é um dos OEs mais caros do mundo (R$ 300–800/10 mL)",
+          "A Eau de Cologne original (século XVIII, Colônia, Alemanha) era composta principalmente de neroli, bergamota e rosmarinho — o neroli deu ao perfume seu sucesso",
+          "A tradição de noivas usarem flores de laranjeira brancas remonta à China e chegou à Europa pelos mouros da Andaluzia medieval",
+          "Pastéis de nata e baklava usam água de flor de laranjeira como ingrediente 'secreto' de autenticidade"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido.",
-        "status_ema": "Monografia HMPC — traditional use para ansiedade e insônia.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: primavera (setembro–novembro no Brasil)"
+        "status_brasil": "Flores e hidrolato: sem registro ANVISA como fitoterápico. OE neroli: cosmético. Água de laranjeira: aditivo alimentar aprovado (ANVISA).",
+        "status_europa": "EMA: sem monografia específica para as flores. OE neroli: amplamente usado em cosméticos (INCI: Citrus aurantium amara flower oil). Hidrolato: aditivo alimentar (EFSA).",
+        "farmacopeia": "Não consta em monografias medicinais. OE listado em farmacopeias para uso cosmético.",
+        "registro": "Água de laranjeira (hidrolato): aprovada como aditivo alimentar. OE: cosmético. Flores: erva/chá."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Flores secas a granel",
+          "Água de flor de laranjeira (hidrolato para culinária e cosmética)",
+          "Óleo essencial neroli (premium)",
+          "Produtos cosméticos com neroli (cremes, séruns)",
+          "Sachês de flores para chá"
+        ],
+        "preco_estimado": "Flores secas: R$ 15–35/50 g. Água de laranjeira culinária: R$ 10–25/250 mL. OE neroli: R$ 150–500/5 mL. Cremes com neroli: R$ 60–200.",
+        "disponibilidade": "Flores: moderada — lojas de ervas e online. Água de laranjeira culinária: supermercados especializados e lojas árabes/portuguesas. OE: lojas premium de aromaterapia.",
+        "como_escolher": "OE neroli: GC/MS ou laudo de pureza; aroma floral intenso e persistente — adulterações com linalol sintético são comuns. Água de laranjeira: hidrolato de destilação (não extrato de aroma sintético). Flores: aroma suave mas perceptível.",
+        "armazenamento": "Flores secas: pote hermético, escuro. Validade: 12 meses. OE: frasco âmbar, refrigerado. Hidrolato: geladeira após aberto, 6–12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Ansiedade, insônia e nervosismo (infusão + aromaterapia com neroli — RCTs positivos)",
+          "Pré-operatório e parto (neroli: estudos clínicos controlados para ansiedade)",
+          "Pele madura e regeneração cutânea (sérum com neroli)",
+          "Culinária mediterrânea e árabe (água de laranjeira)"
+        ],
+        "diferenciais": [
+          "RCTs controlados confirmam eficácia de neroli para ansiedade — evidência diferenciada para aromaterapia",
+          "Planta com 3 produtos distintos de alto valor: OE neroli + hidrolato + flores secas",
+          "Um dos aromas mais complexos e valorizados da perfumaria mundial",
+          "Ponte entre saúde e gastronomia — ingrediente culinário de patrimônio cultural"
+        ],
+        "sinergias": [
+          "Flor-de-laranjeira + lavanda + ylang-ylang: blend ansiolítico clássico",
+          "Flor-de-laranjeira + camomila-romana: insônia profunda e nervosismo",
+          "Flor-de-laranjeira + melissa: ansiedade com palpitações e digestão nervosa",
+          "Neroli + rosa-mosqueta (óleo): regeneração cutânea premium pós-50"
+        ],
+        "alertas": [
+          "OE neroli autêntico é caríssimo — desconfiar de preços muito baixos (adulteração frequente)",
+          "Fotossensibilização: evitar exposição solar após aplicação tópica direta de OE",
+          "Sedativo: não combinar com benzodiazepínicos sem orientação médica",
+          "Diferença importante: água de laranjeira culinária (de supermercado) ≠ hidrolato medicinal — composição diferente"
+        ]
       }
     },
     {
