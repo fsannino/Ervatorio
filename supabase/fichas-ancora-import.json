@@ -11360,233 +11360,433 @@
     },
     {
       "slug": "calendula",
-      "nome_popular": "Calêndula",
-      "nome_cientifico": "Calendula officinalis L.",
-      "tagline": "A flor que cura feridas — cicatrizante e anti-inflamatória tópica com a melhor evidência do catálogo para uso dermatológico, reconhecida por todas as farmacopeias do mundo.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Calendula officinalis L.",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico cicatrizante tópico / anti-inflamatório",
-        "parte_usada": "Flores liguladas (pétalas) e flores tubulosas, secas.",
-        "sinonimos": [
-          "Calêndula · maravilha · bem-me-quer · marigold-de-pote",
-          "Calendula / Marigold (inglês) · Souci (francês) · Ringelblume (alemão)",
-          "ATENÇÃO: não confundir com Tagetes spp. (cravo-de-defunto) — frequentemente chamados de \"marigold\" em inglês."
+        "nome_popular": "Calêndula",
+        "nome_cientifico": "Calendula officinalis",
+        "familia": "Asteraceae",
+        "outros_nomes": [
+          "maravilha",
+          "flor-de-todos-os-meses",
+          "marigold (ing.)",
+          "souci (fr.)"
+        ],
+        "origem": "Sul da Europa e Mediterrâneo",
+        "partes_usadas": [
+          "flores (capítulos)",
+          "pétalas secas",
+          "flores frescas"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Levemente amargo-floral, adstringente suave, discretamente resinoso. Agradável.",
-        "aroma": "Floral-resinoso quente, levemente caramelado, herbáceo-amarelado.",
-        "cor_da_infusao": "Amarelo-ouro intenso a laranja. #E8A030 — segunda cor mais vibrante do catálogo, após o hibisco.",
-        "intensidade": "2/5 (interno) — uso principal tópico.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Planta herbácea anual ou bienal de 30–60 cm. Caules ramificados, levemente pegajosos (pelos glandulares). Folhas lanceoladas a espatuladas, alternas. Capítulos florais grandes (4–7 cm diâmetro), laranja-dourados a amarelos, com flores liguladas periféricas e tubulosas centrais. Floração prolífica durante todo o ano (daí o nome). Aroma herbáceo, levemente resinoso.",
+        "composicao_quimica": [
+          "Flavonoides (0,3–0,8%): isorhamnetina, quercetina, narcissina — anti-inflamatórios e antioxidantes",
+          "Triterpenos pentacíclicos (2–10%): α-amirina, β-amirina, oleanólico, ursólico — anti-inflamatórios e cicatrizantes",
+          "Carotenoides (pigmentos): β-caroteno, luteína, zeaxantina, licopeno — antioxidantes e colorantes",
+          "Polissacarídeos (2–5%): imunoestimuladores",
+          "Saponinas: calendulosídeos A, B, C, D",
+          "Óleos essenciais (traços): α-cadinol, T-muurolol",
+          "Resinas e mucilagens: propriedades demulcentes e protetoras da mucosa",
+          "Ácidos fenólicos: ácido clorogênico, ácido cafeico"
+        ],
+        "bioma": "Mediterrâneo, cosmopolita",
+        "cultivo": "Pleno sol a meia-sombra, solo mediano, boa drenagem. Multiplica por sementes. Floração em 60–70 dias após semeio. Colher capítulos completamente abertos, pela manhã (mais ricos em ativos). Planta de verão-outono; requer temperaturas amenas. Autossemeante."
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Camomila · Lavanda · Malva (blends cicatrizantes)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [
-          "Cicatrizante de feridas e queimaduras: Compressa de infusão forte ou aplicação de óleo/pomada — evidência clínica forte para aceleração de epitelização.",
-          "Dermatite atópica e eczema: Creme ou óleo de calêndula — redução de prurido e inflamação. Estudos compararam favoravelmente à hidrocortisona 0,5% para dermatite leve.",
-          "Mucosite oral por quimioterapia: Bochecho de infusão forte 3x/dia — ensaio clínico polonês mostrou superioridade à solução salina na redução de mucosite.",
-          "Fissura de mamilo (amamentação): Lanolina + calêndula vs lanolina pura — calêndula reduziu dor e curou mais rapidamente em ECR."
-        ],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Cicatrizante (aceleração de epitelização)",
-          "Anti-inflamatório tópico (inibição de COX e LOX)",
-          "Antimicrobiano tópico",
-          "Antifúngico",
-          "Antiedematoso",
-          "Imunomodulador (uso interno)",
-          "Antiespasmódico (dismenorreia — uso interno)",
-          "Componentes ativos:",
-          "Contraindicações: Alergia à família Asteraceae — reação cruzada documentada. Gravidez: uso tópico moderado seguro; uso interno — dados insuficientes."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "TRITERPENOS (alfa e beta-amirina, oleanolato, ursolato)",
-            "texto": "Cicatrizante, anti-inflamatório"
+            "tipo": "Infusão (uso interno)",
+            "descricao": "1–2 colheres de sopa de pétalas secas (2–4 g) em 200 mL de água a 90°C. Cobrir 10–15 min. Coar. 2–3 xícaras/dia, entre refeições.",
+            "indicacoes": [
+              "úlcera gástrica",
+              "gastrite",
+              "colite",
+              "inflamações digestivas",
+              "irregularidade menstrual"
+            ]
           },
           {
-            "label": "FLAVONÓIDES (isorhamnetina, narcissina)",
-            "texto": "Anti-inflamatório, antioxidante"
+            "tipo": "Infusão concentrada (uso tópico)",
+            "descricao": "4–6 g de flores em 200 mL. Infundir coberto 15 min. Usar fria/morna em compressas, lavagens ou gargarejos.",
+            "indicacoes": [
+              "feridas",
+              "queimaduras",
+              "dermatite",
+              "conjuntivite",
+              "aftas"
+            ]
           },
           {
-            "label": "CAROTENÓIDES (luteína, zeaxantina, beta-caroteno)",
-            "texto": "Antioxidante, cicatrizante, cor vibrante"
+            "tipo": "Tintura (1:5 em etanol 70%)",
+            "descricao": "Uso interno: 1–2 mL 3×/dia. Uso tópico: diluir 1:3 em água para compressas.",
+            "indicacoes": [
+              "inflamações internas e externas",
+              "irregularidade menstrual"
+            ]
           },
           {
-            "label": "POLISSACARÍDEOS",
-            "texto": "Imunomodulador"
-          },
-          {
-            "label": "SAPONINAS",
-            "texto": "Anti-inflamatório, antifúngico"
-          },
-          {
-            "label": "ÁCIDOS HIDROXICINÂMICOS",
-            "texto": "Antioxidante, antimicrobiano"
+            "tipo": "Óleo infusionado",
+            "descricao": "Pétalas secas maceradas em óleo de girassol/oliva por 3–6 semanas ao sol, ou aquecidas em banho-maria a 60°C por 2–3 h. Filtrar. Aplicação direta na pele.",
+            "indicacoes": [
+              "dermatite",
+              "eczema",
+              "pele seca",
+              "pós-sol",
+              "cicatrização"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "A qualidade da calêndula está na intensidade do pigmento laranja-dourado — flores muito amarelas ou pálidas têm menor concentração de triterpenos e carotenoides. Para uso tópico, o óleo infusionado é a forma mais eficaz."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Creme/pomada",
+            "preparo": "Óleo infusionado incorporado em base de cera de abelha (10–15% cera) ou creme O/A. Aplicar 2–3×/dia.",
+            "indicacoes": [
+              "dermatite atópica",
+              "queimaduras solares",
+              "rachadura nos pés",
+              "eczema seco",
+              "cicatrização"
+            ]
+          },
+          {
+            "forma": "Compressa",
+            "preparo": "Infusão concentrada fria. Gaze embebida, aplicar 15–20 min, 3×/dia.",
+            "indicacoes": [
+              "feridas abertas",
+              "furúnculos",
+              "úlceras de pressão"
+            ]
+          },
+          {
+            "forma": "Colírio natural",
+            "preparo": "Infusão muito fraca (1 g/200 mL), filtrada em algodão, temperatura ambiente. Lavagem ocular.",
+            "indicacoes": [
+              "conjuntivite",
+              "olho irritado"
+            ]
+          },
+          {
+            "forma": "Gargarejo",
+            "preparo": "Infusão 4 g/200 mL, morna. Gargarejar 30 seg, 3–4×/dia.",
+            "indicacoes": [
+              "faringite",
+              "aftas",
+              "gengivite"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Anti-inflamatório: triterpenos pentacíclicos inibem COX-1/2 e 5-LOX; reduzem IL-6 e TNF-α",
+          "Cicatrizante: estimula fibroblastos, aumenta síntese de colágeno e angiogênese",
+          "Antimicrobiano: flavonoides e triterpenos inibem S. aureus, E. coli, Candida albicans",
+          "Antioxidante: carotenoides e flavonoides — DPPH scavenging elevado",
+          "Antifúngico: eficácia contra dermatófitos in vitro",
+          "Protetor gástrico: mucilagens formam filme protetor na mucosa; reduz lesões por AINE",
+          "Imunomodulador: polissacarídeos ativam macrófagos e células NK",
+          "Emoliente: suaviza e hidrata a pele (mucilagens)"
+        ],
+        "contraindicacoes": [
+          "Alergia a Asteraceae (camomila, árnica, crisântemo) — reação cruzada possível",
+          "Gestação: uso interno em altas doses não recomendado (ação emmenagoga)",
+          "Lactação: dados insuficientes — preferir uso tópico"
+        ],
+        "efeitos_adversos": [
+          "Dermatite de contato alérgica (rara, mas descrita — testar antes de uso extenso)",
+          "Reação anafilática em alérgicos graves a Asteraceae (muito raro)",
+          "Náusea em doses muito elevadas (raro)"
+        ],
+        "interacoes": [
+          "Anticoagulantes: possível potenciação (flavonoides antiagregantes plaquetários)",
+          "Sedativos: possível adição de efeito",
+          "Anti-inflamatórios (AINE): sinergia terapêutica; monitorar"
+        ],
+        "dose_segura": "Flores secas: 2–4 g/dia em infusão (uso interno). Uso tópico: sem restrição de dose. Uso prolongado: sem preocupações documentadas em doses normais.",
+        "nivel_evidencia": "EMA/HMPC: uso medicinal tradicional bem estabelecido para uso tópico (pele lesionada, inflamação oral). Estudos clínicos fase II mostram equivalência a neomicina em cicatrização de episiotomia e superioridade a bepantol em dermatite por radiação (oncologia)."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Suave, herbáceo, levemente resinoso e melado; pétalas secas têm aroma mais concentrado",
+        "sabor": "Amargo-adstringente leve, floral, com notas de mel; infusão suave",
+        "cor_visual": "Pétalas laranja-douradas intensas; infusão amarelo-dourada a âmbar",
+        "textura": "Pétalas sedosas; infusão macia com leve corpo",
+        "sensacao": "Calmante na mucosa oral; óleo infusionado deixa pele suave e protegida"
       },
       "cultura": {
-        "historia": "A calêndula recebeu o nome Calendula por florescer ao início de cada mês (calendas romanas) — ou quase. Médicos romanos a usavam em quase toda ferida de guerra. Durante a Guerra Civil Americana e a Primeira Guerra Mundial, calêndula foi usada extensivamente em campos de batalha para tratar feridas — evidência empírica de cicatrização acelerada que médicos militares documentaram e a pesquisa moderna confirmou.  Na tradição da medicina popular europeia e brasileira, a calêndula é a erva da pele — sem concorrência para uso externo. Mães brasileiras aplicam \"pomatinha de calêndula\" em bebês há gerações.",
-        "cerimonial": "",
-        "brasil": "A calêndula é o fitoterápico tópico mais vendido em farmácias de manipulação do Brasil — pomadas, cremes, géis e óleos. A pomada de calêndula tem registro na ANVISA como produto fitoterápico — um dos poucos no catálogo com produto semi-industrializado regulamentado para uso externo. Paralelamente ao produto farmacêutico, a calêndula é cultivada em quintais de Norte a Sul para preparo caseiro de óleos e compressas.",
-        "curiosidade": ""
+        "historia": "Usada na medicina europeia desde o século XII. Hildegarda von Bingen a descreveu como 'ouro medicinal'. Durante a Guerra Civil Americana, médicos confederados usaram calêndula nas feridas de guerra. Na Primeira Guerra Mundial, o herbalista americano John Uri Lloyd a defendeu como cicatrizante de campo. Nome do gênero vem do latim 'calendae' (primeiro dia do mês) — pois florescia no começo de cada mês.",
+        "uso_tradicional": "Europa medieval: cicatrizante, anti-inflamatório, regulador menstrual. Tradição ayurvédica: uso dérmico e ocular. América latina: 'maravilha' usada popularmente para inflamações cutâneas e gastrite. Cosmética natural: base de cremes de bebê, pomadas dermatológicas.",
+        "simbolismo": "Alegria, calor, sol, cura. Usada em altares do Dia dos Mortos no México (junto ao cempasúchil — espécie distinta, Tagetes erecta). Nas tradições europeias: amor, fidelidade, proteção.",
+        "curiosidades": [
+          "Estudos em radioterapia mostram que calêndula é superior ao trolamine (bepantol) para dermatite por radiação em câncer de mama",
+          "Pétalas são comestíveis e usadas como corante alimentar natural ('açafrão dos pobres')",
+          "O pigmento laranja é a 'impressão digital' da qualidade: quanto mais intenso o laranja, mais carotenoides e triterpenos",
+          "Floresce praticamente o ano todo em climas amenos — daí 'flor-de-todos-os-meses'"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Produto tópico registrado. Indicação: cicatrizante, anti-inflamatório.",
-        "status_ema": "Monografia HMPC — well-established use para cicatrização.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: primavera-verão. No Brasil (RS/SC): setembro–março."
+        "status_brasil": "ANVISA RDC 26/2014: Calendula officinalis flor — notificada como fitoterápico isento de prescrição para uso tópico (anti-inflamatório, cicatrizante cutâneo).",
+        "status_europa": "EMA/HMPC: uso medicinal tradicional bem estabelecido — uso tópico em inflamações cutâneas menores e cicatrização. Monografia publicada.",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Calendulae flos. Farmacopeia Brasileira 6ª ed.",
+        "registro": "Amplamente usada em cosméticos certificados (INCI: Calendula officinalis flower extract). Pomadas registradas como fitoterápicos no Brasil e Europa."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Flores secas a granel",
+          "Pétalas secas",
+          "Tintura hidroalcoólica",
+          "Óleo infusionado",
+          "Creme/pomada (produto acabado)",
+          "Sabonete líquido e barra",
+          "Extrato glicólico (cosmética)"
+        ],
+        "preco_estimado": "Flores secas: R$ 10–25/50 g. Óleo infusionado: R$ 20–50/100 mL. Pomada: R$ 15–45/30 g. Extrato cosmético: R$ 30–80/100 mL.",
+        "disponibilidade": "Muito ampla — farmácias, ervanarias, supermercados (produtos cosméticos), lojas naturais, manipulação.",
+        "como_escolher": "Flores: pétalas laranja intenso; evitar material com flores amareladas (qualidade inferior). Para cosméticos: verificar posição do ingrediente na lista INCI (quanto mais no início, maior concentração).",
+        "armazenamento": "Flores secas: pote hermético, escuro, local seco. Validade: 12–18 meses. Óleo infusionado: frasco escuro, refrigerado; 6–12 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Cicatrização de feridas, queimaduras e episiotomia",
+          "Dermatite atópica, eczema, pele seca e irritada",
+          "Dermatite por radioterapia (evidência clínica)",
+          "Inflamações digestivas (gastrite, úlcera) — uso interno"
+        ],
+        "diferenciais": [
+          "Única planta com evidência clínica de superioridade ao bepantol em dermatite por radiação",
+          "Planta 'toda tópica': óleo, creme, compressa, colírio, gargarejo — versatilidade máxima",
+          "Cor laranja como marcador de qualidade — fácil avaliação visual do produto",
+          "Perfil de segurança excelente para uso tópico prolongado (bebês incluídos)"
+        ],
+        "sinergias": [
+          "Calêndula + própolis: cicatrização antibacteriana potente",
+          "Calêndula + camomila: anti-inflamatório suave para pele sensível e bebês",
+          "Calêndula + babosa (aloe vera): hidratação e cicatrização pós-solar",
+          "Calêndula + rosa-mosqueta (óleo): regeneração cutânea e antienvelhecimento"
+        ],
+        "alertas": [
+          "Testar patch test antes de uso extenso em alérgicos a Asteraceae",
+          "Uso interno em gestantes: evitar doses medicinais elevadas (emmenagoga)",
+          "Produto de baixa qualidade (flores amareladas) tem eficácia reduzida — escolher pelo pigmento",
+          "Colírio caseiro: filtrar muito bem para evitar partículas nos olhos"
+        ]
       }
     },
     {
       "slug": "malva",
-      "nome_popular": "Malva",
-      "nome_cientifico": "Malva sylvestris L.",
-      "tagline": "A demulcente universal — mucilaginosa de inflamações de mucosa com uma das distribuições geográficas mais amplas do catálogo, cultivada em quintais desde o Mediterrâneo até o Sul do Brasil.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Malva sylvestris L.",
-        "familia_botanica": "Malvaceae (família do hibisco, do algodão, do quiabo)",
-        "tipo_botanico": "Fitoterápico demulcente / anti-inflamatório de mucosas",
-        "parte_usada": "Flores e folhas, secas.",
-        "sinonimos": [
-          "Malva · malva-silvestre · malva-alta",
-          "Mallow (inglês) · Mauve (francês) · Malve (alemão)"
+        "nome_popular": "Malva",
+        "nome_cientifico": "Malva sylvestris",
+        "familia": "Malvaceae",
+        "outros_nomes": [
+          "malva-silvestre",
+          "malva-grande",
+          "malva-comum",
+          "mallow (ing.)",
+          "mauve (fr.)"
+        ],
+        "origem": "Europa, norte da África e Ásia",
+        "partes_usadas": [
+          "flores",
+          "folhas",
+          "raiz"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Mucilaginoso e levemente adocicado, herbáceo suave, neutro — a infusão mais suave e mais \"escorregadia\" do catálogo.",
-        "aroma": "Herbáceo neutro suave, floral discreto.",
-        "cor_da_infusao": "Verde-pálido a lilás discreto (flores). #D0C8E0",
-        "intensidade": "1/5 — a infusão mais suave do catálogo. Alta aceitação universal.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Planta herbácea bienal ou perene de 30–120 cm, erecta ou decumbente. Caules com pelos curtos. Folhas arredondadas a reniformes, palmatifendidas (5–7 lóbulos), dentadas, pecioladas. Flores rosas a violeta-púrpura com estrias mais escuras (5 pétalas, 2–4 cm). Fruto esquizocárpico ('queijinho'). Raiz pivotante, espessa e mucilaginosa.",
+        "composicao_quimica": [
+          "Mucilagens (15–20% nas flores e raízes): arabinogalactanas, ramnogalacturonanas — demulcentes e protetoras",
+          "Flavonoides: gossipetina, hibiscetina, malvina (antocianina responsável pela cor azul-violeta)",
+          "Antocianinas: malvina, cianidina-3-glicosídeo — antioxidantes",
+          "Taninos (folhas): ação adstringente",
+          "Polissacarídeos: propriedades imunomoduladoras",
+          "Vitaminas: C, E, pro-vitamina A",
+          "Minerais: cálcio, ferro, magnésio"
+        ],
+        "bioma": "Europeu/Mediterrâneo, cosmopolita",
+        "cultivo": "Pleno sol a meia-sombra, solo bem drenado mas úmido, pH 6–7,5. Multiplica por sementes. Floração do verão ao outono. Bianual: flores no 2° ano. Naturalizada como 'erva daninha' em muitas regiões do Brasil."
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C (mucilagens sensíveis ao calor excessivo).",
-        "tempo_de_infusao": "",
-        "quantidade": "2–4 g flores+folhas secas para 250 ml.",
-        "metodo": "Infusão coberta. Maceração a frio (12h): extrai mais mucilagem.",
-        "reinfusoes": "",
-        "melhor_momento": "Qualquer hora; especialmente para afecções agudas de mucosa.",
-        "combina_com": "Camomila · Calêndula · Alcaçuz · Funcho (blends mucosa)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [
-          "Bochecho para aftas, gengivite, mucosite: Infusão morna, bochecho 30 s, 3–4x ao dia. Demulcente que forma filme protetor sobre a mucosa irritada.",
-          "Compressa para furúnculos e pele irritada: Cataplasma de folhas maceradas aquecidas — anti-inflamatório e emoliente tópico.",
-          "Colírio leve (tradicional): Infusão muito fraca e filtrada, resfriada — uso popular para conjuntivite leve (cautela: contaminação)."
-        ],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Demulcente (forma filme protetor em mucosas irritadas)",
-          "Anti-inflamatório de mucosas (oral, respiratória, digestiva, urogenital)",
-          "Expectorante (mucilagens fluidificam muco)",
-          "Emoliente tópico",
-          "Laxativo leve (mucilagens)",
-          "Antitussígeno suave",
-          "Componentes ativos:",
-          "Contraindicações: Praticamente sem contraindicações em doses usuais. Laxativa em doses altas — cautela em intestino sensível."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "MUCILAGENS (polissacarídeos)",
-            "texto": "Demulcente, expectorante, laxativo leve"
+            "tipo": "Infusão de flores e folhas (uso interno)",
+            "descricao": "2–3 colheres de sopa de flores frescas ou 1–2 de secas (2–4 g) em 200 mL a 80°C (não ferver — preserva mucilagens). Infundir coberto 10–15 min. Coar. 2–3 xícaras/dia.",
+            "indicacoes": [
+              "tosse seca",
+              "bronquite",
+              "faringite",
+              "gastrite",
+              "constipação leve",
+              "cistite"
+            ]
           },
           {
-            "label": "ANTOCIANINAS (flores)",
-            "texto": "Antioxidante, anti-inflamatório"
+            "tipo": "Maceração a frio (mais mucilagem)",
+            "descricao": "4–6 g de flores/raiz em 200 mL de água fria. Macerar 6–8 horas (ou uma noite). Coar e beber o líquido viscoso.",
+            "indicacoes": [
+              "tosse seca irritativa",
+              "irritação urinária",
+              "proteção gástrica"
+            ]
           },
           {
-            "label": "ÁCIDOS FENÓLICOS (rosmarínico, clorogênico)",
-            "texto": "Antioxidante, anti-inflamatório"
+            "tipo": "Decocção da raiz",
+            "descricao": "10–15 g de raiz em 500 mL. Ferver suavemente 15 min, coar. 2–3 xícaras/dia.",
+            "indicacoes": [
+              "bronquite crônica",
+              "tosse persistente",
+              "inflamação renal leve"
+            ]
           },
           {
-            "label": "FLAVONÓIDES (hipolaetina-glicosídeo)",
-            "texto": "Anti-inflamatório"
-          },
-          {
-            "label": "TANINOS",
-            "texto": "Adstringente, antimicrobiano"
+            "tipo": "Uso culinário",
+            "descricao": "Folhas jovens cruas em saladas ou cozidas como espinafre. Flores decorando pratos e bebidas. No Oriente Médio, malva (khobbeiza) é vegetal culinário tradicional.",
+            "indicacoes": [
+              "alimento funcional",
+              "fonte de vitaminas e minerais"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "A maceração a frio é superior à infusão quente para extração de mucilagens — água quente pode degradar os polissacarídeos. Para tosse, o preparo frio noturno é o mais eficaz."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Compressa/cataplasma",
+            "preparo": "Maceração fria concentrada (6 g/200 mL). Compressa ou cataplasma de folhas levemente aquecidas. Aplicar por 20–30 min.",
+            "indicacoes": [
+              "furúnculos",
+              "abscessos",
+              "eczema",
+              "picadas de insetos",
+              "contusões"
+            ]
+          },
+          {
+            "forma": "Banho de assento",
+            "preparo": "200 g de flores + folhas frescas em 2 L de água quente. Infundir 20 min. Adicionar ao banho de assento morno.",
+            "indicacoes": [
+              "cistite",
+              "vulvovaginite",
+              "hemorroidas",
+              "pós-parto"
+            ]
+          },
+          {
+            "forma": "Gargarejo",
+            "preparo": "Infusão forte (5 g/200 mL) ou maceração fria. Gargarejar 30–60 seg, 3–4×/dia.",
+            "indicacoes": [
+              "faringite",
+              "amigdalite",
+              "aftas",
+              "xerostomia"
+            ]
+          },
+          {
+            "forma": "Lavagem ocular",
+            "preparo": "Maceração fria muito fraca (1 g/200 mL), filtrada em filtro de café.",
+            "indicacoes": [
+              "conjuntivite",
+              "olhos secos e irritados"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Demulcente: mucilagens formam gel protetor nas mucosas respiratória, digestiva e urinária",
+          "Emoliente: suaviza e hidrata tecidos inflamados",
+          "Anti-inflamatório: flavonoides e antocianinas inibem mediadores inflamatórios",
+          "Antioxidante: antocianinas e vitaminas C/E",
+          "Levemente laxante: mucilagens aumentam volume fecal e lubrificam o trânsito intestinal",
+          "Expectorante: fluidifica e facilita expectoração de mucosidades brônquicas",
+          "Antibacteriano leve: flavonoides inibem algumas bactérias gram-positivas"
+        ],
+        "contraindicacoes": [
+          "Alergia a plantas da família Malvaceae (hibisco, algodão)",
+          "Gestação: uso moderado aceitável; doses medicinais elevadas não estudadas",
+          "Obstrução intestinal ou fecaloma: laxante pode agravar"
+        ],
+        "efeitos_adversos": [
+          "Diarreia e cólica abdominal em doses excessivas",
+          "Reação alérgica cutânea (rara)",
+          "Interferência na absorção de medicamentos orais (mucilagens)"
+        ],
+        "interacoes": [
+          "Medicamentos orais: mucilagens podem reduzir absorção — espaçar 1–2 h do chá",
+          "Laxantes osmóticos: possível efeito aditivo",
+          "Hipoglicemiantes: possível potenciação leve (monitorar)"
+        ],
+        "dose_segura": "Flores/folhas secas: 5–10 g/dia em infusão ou maceração. Uso culinário: seguro. Raiz: 3–6 g/dia. Uso tópico: sem restrição de dose.",
+        "nivel_evidencia": "EMA/HMPC: uso medicinal tradicional para irritações da mucosa orofaríngea (tosse seca, inflamações orais). ESCOP monografia. Estudos pré-clínicos sólidos para atividade demulcente e anti-inflamatória."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Muito suave, levemente floral; quase sem aroma pronunciado",
+        "sabor": "Levemente mucilaginoso, suave, com notas florais delicadas; muito agradável",
+        "cor_visual": "Flores azul-violeta pálidas; infusão azul-esverdeada (vira rosa com limão — pH-indicador natural!); maceração fria: azul-violeta",
+        "textura": "Maceração tem consistência levemente viscosa (mucilaginosa); infusão quente é mais fluida",
+        "sensacao": "Extremamente suave na mucosa; sensação de proteção e revestimento na garganta; ausência de adstringência"
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A malva é a erva de quintal mais confiável para aftas e inflamações de garganta — \"chazinho de malva com mel\" é o primeiro recurso em qualquer casa brasileira para \"dor de garganta das crianças\". Sua suavidade e segurança tornam-na a erva anti-inflamatória de mucosa mais adequada para crianças e idosos. Para o Ervatório, a malva representa o princípio de que eficácia não precisa ser amarga, intensa ou dramática — às vezes a suavidade é a ação terapêutica.",
-        "curiosidade": ""
+        "historia": "Uma das plantas medicinais mais antigas da humanidade — encontrada em enterros neandertais de 60.000 anos atrás em Shanidar (Iraque), junto com outras plantas medicinais. Hipócrates usava para feridas e inflamações. Catão, o Velho (Roma, 2° séc aC) a cultivava em seu jardim. Na França medieval: 'omnimorbia' — remédio para todos os males. Thomas Jefferson cultivava malva em Monticello.",
+        "uso_tradicional": "Europa medieval: universal — tosse, inflamações, feridas, disenteria. Oriente Médio: khobbeiza (vegetal culinário básico no Líbano, Palestina, Marrocos). Medicina árabe: Ibn Sina descreveu como amolecedor, anti-inflamatório e nutriente. América Latina: uso tradicional para tosse, bronquite e 'friagem'.",
+        "simbolismo": "Proteção, delicadeza, cura suave. No folclore europeu: proteção contra feitiços e olho-mau. No islamismo: planta sagrada mencionada em poemas clássicos persas.",
+        "curiosidades": [
+          "A infusão azul muda de cor para rosa/roxo ao adicionar limão — efeito do pH nas antocianinas (excelente demonstração de química para crianças)",
+          "'Marshmallow' (Althaea officinalis, primo-irmão da malva) deu nome ao doce: originalmente feito com raiz de alteia",
+          "Possivelmente presente no enterro de Neandertal de Shanidar I (60.000 a.C.) — uma das primeiras evidências de uso medicinal de plantas pela humanidade",
+          "As folhas jovens são um vegetal nutritivo e saboroso — fonte gratuita e invasora em terrenos abandonados"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Indicações: anti-inflamatório de mucosas, expectorante.",
-        "status_ema": "Monografia HMPC — traditional use para inflamação de mucosa oral e tosse.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Flores e folhas no período de floração — primavera-verão"
+        "status_brasil": "ANVISA RDC 26/2014: Malva sylvestris folha e flor — notificada como fitoterápico isento de prescrição para afecções das vias aéreas superiores (tosse) e uso tópico em inflamações.",
+        "status_europa": "EMA/HMPC: uso medicinal tradicional bem estabelecido — irritações orais e faríngeas, tosse seca. Monografia publicada.",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Malvae sylvestris flos e folium. Farmacopeia Brasileira 6ª ed.",
+        "registro": "Produtos registrados como fitoterápicos no Brasil (xaropes, chás) e Europa."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Flores secas a granel",
+          "Folhas secas a granel",
+          "Chá em sachês",
+          "Xarope",
+          "Tintura hidroalcoólica",
+          "Cápsulas de extrato seco"
+        ],
+        "preco_estimado": "Flores secas: R$ 8–20/50 g. Chá em sachês: R$ 10–25/caixa. Xarope: R$ 25–60/150 mL.",
+        "disponibilidade": "Boa — ervanarias, farmácias naturais, supermercados (sachês). Flores frescas: jardins e terrenos abandonados (planta naturalizada no Brasil).",
+        "como_escolher": "Flores: cor azul-violeta preservada; evitar flores muito amareladas (degradadas). Folhas: verde uniforme, sem manchas. Para tosse: preferir maceração fria caseira com flores frescas colhidas fresquinhas.",
+        "armazenamento": "Flores secas: pote escuro, hermético, local fresco. Validade: 12 meses (antocianinas degradam rapidamente à luz)."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Tosse seca e irritativa (demulcente — reveste as mucosas)",
+          "Faringite, laringite e amigdalite (gargarejo e uso interno)",
+          "Gastrite e irritação digestiva (proteção mucosa gástrica)",
+          "Inflamações cutâneas, furúnculos e eczema (uso tópico)"
+        ],
+        "diferenciais": [
+          "A maceração fria produz muito mais mucilagem que a infusão quente — diferencial técnico importante",
+          "Indicador de pH natural: infusão azul que vira rosa com limão — uso educativo e culinário",
+          "Possivelmente a planta medicinal mais antiga usada pelo ser humano (Neandertal)",
+          "Vegetal culinário além de medicinal — 'comida-remédio' completa"
+        ],
+        "sinergias": [
+          "Malva + tomilho: tosse com componente infeccioso (demulcente + antimicrobiano)",
+          "Malva + funcho: cólica e espasmo digestivo com proteção mucosa",
+          "Malva + calêndula: inflamações mistas (pele + mucosa)",
+          "Malva + alcaçuz: proteção gástrica e anti-inflamatório digestivo potente"
+        ],
+        "alertas": [
+          "Tomar medicamentos orais 1–2 h longe do chá de malva (mucilagens interferem na absorção)",
+          "Maceração fria é muito mais eficaz que infusão quente para tosse seca",
+          "Flores perdem cor rapidamente — armazenar longe da luz para preservar antocianinas e qualidade",
+          "Uso excessivo pode causar diarreia — doses moderadas"
+        ]
       }
     },
     {
