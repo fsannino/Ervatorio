@@ -16565,239 +16565,386 @@
     },
     {
       "slug": "cravo-da-india",
-      "nome_popular": "Cravo-da-Índia",
-      "nome_cientifico": "Syzygium aromaticum (L.) Merr. & L.M.Perry (sin.: Eugenia caryophyllus)",
-      "tagline": "O dente sem dor — o botão floral que anestesiou dentes por séculos antes da lidocaína, com o mais alto ORAC de qualquer especiaria e eugenol como molécula de referência farmacológica.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Syzygium aromaticum (L.) Merr. & L.M.Perry (sin.: Eugenia caryophyllus)",
-        "familia_botanica": "Myrtaceae (família da goiaba, da pitanga, do eucalipto)",
-        "tipo_botanico": "Fitoterápico analgésico / antimicrobiano / antioxidante",
-        "parte_usada": "Botões florais secos (o \"cravo\" comercial) — colhidos antes da abertura; óleos essenciais.",
-        "sinonimos": [
-          "Cravo · cravo-da-índia · cravo-de-especiaria",
-          "Clove (inglês) · Clou de girofle (francês) · Gewürznelke (alemão)",
-          "Lavang (hindi) · Qaranful (árabe)"
+        "nome_popular": "Cravo-da-índia",
+        "nome_cientifico": "Syzygium aromaticum",
+        "familia": "Myrtaceae",
+        "outros_nomes": [
+          "cravinho",
+          "clove (ing.)",
+          "clou de girofle (fr.)",
+          "laung (hindi)"
+        ],
+        "origem": "Ilhas Molucas (Indonésia) — Ternate e Tidore",
+        "partes_usadas": [
+          "botões florais secos",
+          "folhas",
+          "caule",
+          "óleo essencial"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Eugenol puro — quente, apimentado-floral intenso, anestésico local leve (dormência da mucosa oral), amadeirado profundo. O sabor mais imediatamente intenso do catálogo.",
-        "aroma": "Eugenol dominante — floral-apimentado-madeira, cravado, baunilha aquecida. Aroma que define o Natal europeu e o Natal brasileiro.",
-        "cor_da_infusao": "Marrom-escuro a âmbar-avermelhado. #7A3820",
-        "intensidade": "5/5 — a presença mais assertiva do catálogo. Domina qualquer blend.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Árvore perene tropical de 10–20 m. Folhas elípticas a ovais (8–12 cm), verde-escuras, opostas, com glândulas oleosas transparentes visíveis contra a luz. Flores pequenas em panículas terminais — os 'cravos' são os botões florais colhidos antes de abrirem. Botão floral de 1–2 cm, com cálice de quatro sépalas projetadas e quatro pétalas fechadas (a 'cabeça do cravo'). Frutos (jambolão-de-cravo): 2–3 cm, vermelho-vinhoso.",
+        "composicao_quimica": [
+          "Óleo essencial (14–21% dos botões secos): eugenol (70–90%) — principal ativo e arma terapêutica",
+          "Acetato de eugenol (2–15%)",
+          "β-cariofileno (5–12%): potente anti-inflamatório",
+          "α-humuleno",
+          "Galotaninos: corilagina, ácido elágico",
+          "Flavonoides: quercetina, kaempferol",
+          "Ácido oleanólico e ácido ursólico"
+        ],
+        "bioma": "Tropical úmido — Ilhas Molucas, cultivado em toda a faixa equatorial",
+        "cultivo": "Pleno sol, clima tropical úmido, solo fértil, pH 4,5–6,5. Multiplica por sementes. Colheita dos botões florais antes de abrirem — manualmente, 2×/ano. Árvore longa-vida: produtiva por 50–100 anos."
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "2–3 botões para 250 ml (pouco — muito poderoso).",
-        "metodo": "Infusão simples.",
-        "reinfusoes": "",
-        "melhor_momento": "Pós-refeições (digestivo/antisséptico oral) ou quando necessário (dor dental emergencial).",
-        "combina_com": "Canela · Cardamomo · Gengibre · Pimenta · Laranja · Cacau · Mel (chai, blends especiados quentes)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [
-          "Analgésico dental emergencial: 1 gota de óleo essencial de cravo ou botão macerado aplicado diretamente na gengiva ao redor do dente com dor — anestesia local por eugenol. Evidência clínica forte — eugenol é ingrediente do cimento dental provisório da odontologia.",
-          "Antisséptico bucal: Infusão forte (3 botões/100 ml) como bochecho — antimicrobiano contra S. mutans, C. albicans, H. pylori oral.",
-          "Repelente de insetos tópico: Óleo essencial diluído (2% em óleo carreador) — proteção eficaz contra mosquitos."
-        ],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Analgésico tópico (eugenol — anestesia local)",
-          "Antimicrobiano potente (bactérias, fungos, vírus)",
-          "Antioxidante máximo (ORAC mais alto de qualquer especiaria)",
-          "Anti-inflamatório",
-          "Antiespasmódico digestivo",
-          "Antifúngico (eugenol contra Candida)",
-          "Antiparasitário",
-          "Componentes ativos:",
-          "ORAC: O cravo tem o ORAC mais alto registrado entre especiarias — 290.000 µmol TE/100g. Para referência: mirtilo selvagem tem ~9.500. O cravo é 30x mais antioxidante que o mirtilo por peso.",
-          "⚠️ EUGENOL — HEPATOTÓXICO EM DOSE ALTA:",
-          "Contraindicações:",
-          "Anticoagulados — eugenol antiagregante",
-          "Hepatopatias — hepatotóxico em doses altas",
-          "Gestação em doses medicinais altas",
-          "Crianças: OE contraindicado; infusão fraca: segura moderadamente"
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "EUGENOL",
-            "texto": "72–90% do OE — Analgésico local, antimicrobiano, anti-inflamatório, antioxidante"
+            "tipo": "Uso culinário",
+            "descricao": "Inteiros: em molhos, marinadas, vinhos quentes, caldos. Pó: em bolos, biscoitos, curry. Dose culinária normal — sempre segura.",
+            "indicacoes": [
+              "digestivo",
+              "antimicrobiano alimentar",
+              "anti-inflamatório alimentar"
+            ]
           },
           {
-            "label": "ACETATO DE EUGENILA",
-            "texto": "5–15% — Antimicrobiano, aromático"
+            "tipo": "Infusão / decocção",
+            "descricao": "3–5 cravos em 200 mL de água. Ferver 10 min. Coar. 2–3 xícaras/dia.",
+            "indicacoes": [
+              "dor de dente",
+              "digestão",
+              "náusea",
+              "flatulência",
+              "gripe",
+              "tosse"
+            ]
           },
           {
-            "label": "BETA-CARIOFILENO",
-            "texto": "5–12% — Anti-inflamatório, CB2"
+            "tipo": "OE diluído para dor de dente (uso tópico oral)",
+            "descricao": "1–2 gotas de OE em pequeno pedaço de algodão. Aplicar diretamente na gengiva ou no dente. Por 1–3 min, 3×/dia.",
+            "indicacoes": [
+              "dor de dente",
+              "gengivite",
+              "afta",
+              "abscesso dental (alívio temporário)"
+            ]
           },
           {
-            "label": "ALFA-HUMULENO",
-            "texto": "2% — Anti-inflamatório"
-          },
-          {
-            "label": "GALOIL-GLICOSES (taninos)",
-            "texto": "Presentes — Antioxidante máximo"
+            "tipo": "Óleo essencial (aromaterapia e tópico)",
+            "descricao": "Difusão: 3 gotas/30 min (mais que isso: irritante). Tópico: 0,5–1% em base — muito menos que outros OEs.",
+            "indicacoes": [
+              "fadiga",
+              "clareza mental",
+              "antiséptico ambiental"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [
-          "Anticoagulados — eugenol antiagregante",
-          "Hepatopatias — hepatotóxico em doses altas",
-          "Gestação em doses medicinais altas",
-          "Crianças: OE contraindicado; infusão fraca: segura moderadamente"
+        "dicas": "O eugenol é o anestésico local natural mais potente do reino vegetal — usado como base para o eugenol dentário clínico por décadas. Para dor de dente: OE aplicado com cotonete é eficaz como alívio temporário. Nunca aplicar OE puro direto em mucosas sensíveis — eugenol puro queima."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Anestésico dental tópico",
+            "preparo": "1 gota de OE em algodão ou aplicador. Contato direto na área dolorida por 1–2 min.",
+            "indicacoes": [
+              "dor de dente",
+              "afta",
+              "gengivite",
+              "pós-extração (alívio)"
+            ]
+          },
+          {
+            "forma": "Gargarejo antisséptico",
+            "preparo": "2–3 cravos em decocção (200 mL). Usar morno 3–4×/dia.",
+            "indicacoes": [
+              "faringite",
+              "amigdalite",
+              "halitose",
+              "gengivite"
+            ]
+          },
+          {
+            "forma": "Repelente de insetos",
+            "preparo": "5% de OE em álcool 70% ou óleo vegetal. Aplicar na pele.",
+            "indicacoes": [
+              "mosquitos",
+              "insetos gerais"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Anestésico local: eugenol bloqueia canais de sódio em neurônios sensoriais — ação local rápida e potente",
+          "Antimicrobiano: eugenol inibe S. mutans, P. gingivalis, H. pylori, S. aureus, Candida (CIM 0,01–0,5%)",
+          "Anti-inflamatório: eugenol inibe COX-2 e NF-κB; β-cariofileno inibe CB2",
+          "Antioxidante: capacidade ORAC muito elevada (entre as especiarias com maiores valores)",
+          "Antifúngico: amplo espectro contra dermatófitos e Candida",
+          "Antiparasitário: eugenol in vitro contra Giardia lamblia",
+          "Hipoglicemiante: estudos em modelos animais"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "Anticoagulados: eugenol antiagregante — monitorar RNI",
+          "Cirurgia iminente: suspender uso medicinal",
+          "Gestação em doses medicinais: evitar OE interno",
+          "Crianças < 2 anos: evitar OE — eugenol hepatotóxico em doses elevadas"
+        ],
+        "efeitos_adversos": [
+          "OE puro em mucosas: queimação e dano tecidual",
+          "Hepatotoxicidade em altas doses de OE (eugenol — metabolismo hepático)",
+          "Dermatite de contato (sensibilizante moderado — IFRA)",
+          "Hemorragia em anticoagulados"
+        ],
+        "interacoes": [
+          "Varfarina e antiagregantes: potenciação de sangramento",
+          "Paracetamol: eugenol pode competir pelo metabolismo hepático (CYP2E1)"
+        ],
+        "dose_segura": "Botões inteiros (culinário): seguro. Infusão: 3–5 cravos/chá, 2×/dia. OE tópico oral: 1–2 gotas em algodão, breve contato. OE tópico pele: 0,5–1% em base (muito diluído).",
+        "nivel_evidencia": "Eugenol: aprovado pelo FDA como agente dentário (GRAS). EMA: sem monografia formal. Estudos in vitro extensos para antimicrobiano. Estudos clínicos: principalmente em odontologia (anestesia e antisséptico oral). Uso culinário milenar bem estabelecido."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Quente, picante, intenso, doce-balsâmico; dominante e penetrante; ativa imediatamente receptores de calor na mucosa",
+        "sabor": "Picante intenso, quente, eugenol característico, levemente anestesiante; persistente e penetrante",
+        "cor_visual": "Botões: castanho-escuros a pretos; OE: incolor a amarelo-pálido",
+        "textura": "Botões duros e aromáticos; OE denso",
+        "sensacao": "Anestesia oral imediata (eugenol); calor intenso e duradouro; frescor paradoxal após"
       },
       "cultura": {
-        "historia": "O cravo causou a primeira globalização do mundo moderno. O arquipélago das Molucas (atual Indonésia) era o único lugar do mundo onde o cravo crescia — e o controle dessa produção foi o objetivo das primeiras expedições portuguesas, espanholas e holandesas ao Oriente. A VOC (Companhia das Índias Orientais Holandesa) manteve monopólio absoluto do cravo por um século, exterminando populações inteiras de ilhas que tentaram vender cravo a outros compradores.  O cheiro de cravo nos bairros de Valença (BA) durante a colheita é uma das experiências sensoriais mais marcantes do interior baiano — e lembra que o Brasil produz o mesmo cravo que moveu impérios no século XVI.",
-        "cerimonial": "",
-        "brasil": "A Bahia produz cravo desde o séc. XVIII — introduzido pelos portugueses que quebraram o monopólio holandês levando mudas do Oriente para o Brasil colonial. Hoje, Valença e municípios do sul da Bahia são os maiores produtores nacionais, com exportação para Europa e EUA.",
-        "curiosidade": ""
+        "historia": "As Ilhas Molucas (Ternate e Tidore, Indonésia) foram o único lugar do mundo onde o cravo crescia — por séculos, o povo de lá controlou o comércio mundial. Portugueses, holandeses e ingleses guerrearam pelo controle das Molucas por 200 anos (as 'Guerras das Especiarias', 1500–1700). O cravo valia mais que ouro por peso. Na China: exigiam que cortesãos mastigassem cravo antes de falar com o imperador (2200 aC). A chegada de especiarias asiáticas à Europa no séc XV foi o principal motor das Grandes Navegações — cravo, pimenta e canela mudaram o mundo.",
+        "uso_tradicional": "Toda a Ásia: digestivo, anestésico oral, antimicrobiano. Europa medieval: especiaria cara de prestígio em vinhos quentes e carnes. Odontologia: eugenol dentário como anestésico de emergência. Brasil: uso culinário e medicinal popular para dor de dente.",
+        "simbolismo": "Riqueza, poder, comércio global. As Ilhas Molucas foram o lugar mais valioso da Terra por dois séculos. Hoje: especiaria de conforto doméstico (vinho quente de Natal).",
+        "curiosidades": [
+          "A primeira globalização comercial foi pelas especiarias — cravo, pimenta e noz-moscada iniciaram as Grandes Navegações",
+          "Na China imperial, 2.200 aC: cortesãos mastigavam cravo antes de falar com o imperador para ter hálito puro — primeiro registro de uso de cravo para hálito",
+          "A árvore de cravo mais velha do mundo tem mais de 400 anos na ilha de Ternate, Indonésia — chamada de 'Afo' — ainda produz especiarias",
+          "Eugenol foi o primeiro composto usado em dentística moderna como anestésico local — base do 'cimento eugenolato' ainda usado hoje"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Indicações: antisséptico oral, analgésico.",
-        "status_ema": "Monografia HMPC — traditional use para dor dental e antisséptico oral.",
-        "status_fda": "GRAS para uso alimentar. OE: semi-regulado (potencialmente tóxico).",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita: agosto–novembro (BA)"
+        "status_brasil": "Sem registro ANVISA como fitoterápico. Amplamente disponível como condimento. OE: cosmético e odontológico.",
+        "status_europa": "EMA: sem monografia formal. EFSA: aprovado como aditivo aromatizante. OE: aprovado para uso cosmético com limites de eugenol.",
+        "farmacopeia": "Farmacopeia Europeia: Caryophylli flos mencionado. Farmacopeia Americana (USP): óleo de cravo — monografia.",
+        "registro": "OE: cosmético e odontológico. Sem medicamento registrado. Eugenol: ingrediente farmacêutico ativo em dentística."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Botões inteiros (mais aromáticos)",
+          "Pó de cravo",
+          "Óleo essencial",
+          "Produtos odontológicos com eugenol"
+        ],
+        "preco_estimado": "Botões: R$ 15–40/50 g. Pó: R$ 10–25/50 g. OE: R$ 20–50/10 mL.",
+        "disponibilidade": "Muito ampla — supermercados, feiras, ervanarias, farmácias.",
+        "como_escolher": "Botões inteiros: mais aromáticos que o pó. Aroma forte e quente ao cheirar. OE: verificar teor de eugenol (> 70% = qualidade). Evitar pó muito amarelado ou sem aroma.",
+        "armazenamento": "Botões inteiros: pote hermético, escuro. Validade: 24–36 meses. Pó: 6–12 meses. OE: frasco âmbar. Validade: 3–5 anos."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Dor de dente — anestésico oral imediato (OE em algodão ou botão mastigado)",
+          "Saúde oral — antimicrobiano de amplo espectro (gargarejo e mastigação)",
+          "Digestivo e carminativo em curries e chás medicinais",
+          "Antimicrobiano alimentar e culinário"
+        ],
+        "diferenciais": [
+          "Eugenol: único anestésico local natural aprovado pelo FDA e usado em odontologia clínica",
+          "Motor da primeira globalização — as Grandes Navegações foram pelo cravo, pimenta e canela",
+          "Maior concentração de eugenol de qualquer especiaria — benchmark de antimicrobiano oral",
+          "400 anos de história comercial documentada — especiaria com memória histórica única"
+        ],
+        "sinergias": [
+          "Cravo + canela + cardamomo + pimenta: chai masala e blends quentes",
+          "Cravo + própolis: anti-inflamatório oral e antisséptico potente",
+          "Cravo + gengibre + mel: gripe e tosse",
+          "Cravo (OE) + tea tree: antisséptico bucal de amplo espectro"
+        ],
+        "alertas": [
+          "OE puro em mucosas: NUNCA — eugenol puro queima e causa necrose tecidual",
+          "Anticoagulados: monitorar RNI",
+          "Crianças < 2 anos: evitar OE internamente",
+          "Hepatotóxico em doses muito elevadas de OE — doses culinárias são seguras"
+        ]
       }
     },
     {
       "slug": "pimenta-preta",
-      "nome_popular": "Pimenta-Preta",
-      "nome_cientifico": "Piper nigrum L.",
-      "tagline": "A especiaria que comprou civilizações — o potenciador universal que faz tudo melhor, com piperina aumentando a biodisponibilidade de outros princípios ativos em até 2.000%.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Piper nigrum L.",
-        "familia_botanica": "Piperaceae (família das pimentas)",
-        "tipo_botanico": "Especiaria / potenciador de biodisponibilidade / digestivo",
-        "parte_usada": "Frutos em diferentes estágios de maturação (pimenta-preta = verde colhido e seco; branca = madura sem casca; verde = fresca; vermelha = completamente madura).",
-        "sinonimos": [
-          "Pimenta-preta · pimenta-do-reino · pimenta-negra",
-          "Black pepper (inglês) · Poivre noir (francês) · Schwarzer Pfeffer (alemão)",
-          "Kali mirch (hindi) · Filfil aswad (árabe)"
+        "nome_popular": "Pimenta-preta",
+        "nome_cientifico": "Piper nigrum",
+        "familia": "Piperaceae",
+        "outros_nomes": [
+          "pimenta-do-reino",
+          "black pepper (ing.)",
+          "poivre noir (fr.)",
+          "kali mirch (hindi)"
+        ],
+        "origem": "Ghats Ocidentais (Kerala, Índia)",
+        "partes_usadas": [
+          "frutos (verdes/maduros/secos): pimenta-preta, branca, verde ou vermelha — todas da mesma planta"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Picante-quente penetrante (piperina — TRPV1), amadeirado-terroso profundo, levemente floral na pimenta fresca, notas de madeira defumada seca.",
-        "aroma": "Pimentado-amadeirado, pinho-resina, floral discreto (linalol), madeira tropical.",
-        "cor_da_infusao": "Âmbar-castanho. #9A7040",
-        "intensidade": "4/5 — picante dominante.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Trepadeira perene de 4–10 m. Caules articulados com raízes adventícias para fixação. Folhas ovais a elípticas (10–15 cm), verde-brilhante, alternas. Flores em espigas delgadas pendentes. Frutos em drupas pequenas (5–7 mm): colhidos verdes e secos (pimenta-preta), ou maduros e descascados (pimenta branca). Pimenta verde = imatura e fresca/conservada. Pimenta vermelha (rara) = madura e seca com casca.",
+        "composicao_quimica": [
+          "Piperina (5–9%): alcaloide principal — responsável pela pungência e pelos efeitos biológicos mais estudados",
+          "Piperetina, piperidina",
+          "Óleo essencial (1–3%): β-cariofileno, sabineno, α-pineno, limoneno — aroma",
+          "Cromanos: piperina-4",
+          "Lignanas: cubebina",
+          "Flavonoides: rhamnetina",
+          "Minerais: manganês, ferro, cálcio, vitamina K"
+        ],
+        "bioma": "Tropical úmido — Ghats Ocidentais da Índia, cultivada em toda a faixa tropical",
+        "cultivo": "Meia-sombra (com suporte), solo fértil e bem drenado, clima tropical úmido. Multiplica por estacas. Produtiva em 2–5 anos. Colheita das espigas quando 1–2 frutos ficam avermelhados. Secagem ao sol escurece (pimenta-preta)."
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Cúrcuma (obrigatório para eficácia) · Gengibre · Canela · Cardamomo · Mel (chai)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Potenciador de biodisponibilidade (piperina — inibe metabolização intestinal de outros compostos)",
-          "Termogênico (TRPV1 — gera calor)",
-          "Digestivo (estimula secreções gástricas)",
-          "Antimicrobiano",
-          "Antioxidante",
-          "Anti-inflamatório",
-          "Neuroprotetor (piperina — antidepressivo em modelos animais)",
-          "Componentes ativos:",
-          "PIPERINA E BIODISPONIBILIDADE:",
-          "Curcumina: +2.000% (estudo Shoba et al., 1998)",
-          "Coenzima Q10: +30%",
-          "Beta-caroteno: +60%",
-          "Vitamina B6: +20%",
-          "Selênio: +30%",
-          "Contraindicações: Gastrite ativa e úlcera péptica — irritante. Gestação em doses altas — emenagogo leve."
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "PIPERINA",
-            "texto": "Potenciador de biodisponibilidade (inibe CYP3A4, P-gp), termogênico, TRPV1"
+            "tipo": "Uso culinário (forma principal)",
+            "descricao": "Moída fresca sobre qualquer alimento. Grãos inteiros em caldos, marinadas, picles. Dose culinária habitual — segura e benéfica.",
+            "indicacoes": [
+              "potencializador de biodisponibilidade de cúrcuma (2000%)",
+              "digestivo",
+              "antimicrobiano alimentar",
+              "antioxidante"
+            ]
           },
           {
-            "label": "CHAVICINA",
-            "texto": "Isômero da piperina — picante"
+            "tipo": "Infusão (decocção de grãos)",
+            "descricao": "1 colher de chá de grãos amassados em 200 mL de água. Ferver 10 min. Coar. 1–2 xícaras/dia.",
+            "indicacoes": [
+              "digestão lenta",
+              "flatulência",
+              "resfriado",
+              "tosse",
+              "sinusite"
+            ]
           },
           {
-            "label": "ÓLEOS ESSENCIAIS (beta-cariofileno, limoneno, mirceno)",
-            "texto": "Antimicrobiano, anti-inflamatório"
-          },
-          {
-            "label": "PIPERIDINA",
-            "texto": "Alcaloide — estimulante SNC leve"
+            "tipo": "Cápsulas de extrato de piperina (BioPerine)",
+            "descricao": "5–10 mg de piperina pura com cada dose de suplemento que necessite biodisponibilidade aumentada.",
+            "indicacoes": [
+              "potencializador de curcumina",
+              "biodisponibilidade de suplementos",
+              "termogênese"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "dicas": "O principal papel medicinal da pimenta-preta na fitoterapia moderna é como POTENCIALIZADOR: piperina aumenta em 2000% a absorção de curcumina, 60% a de coenzima Q10 e melhora a biodisponibilidade de múltiplos nutrientes. Moer na hora preserva os aromas voláteis do OE."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Massagem descongestionante",
+            "preparo": "2–3% de OE de pimenta-preta em óleo de coco. Massagem em músculos tensionados.",
+            "indicacoes": [
+              "tensão muscular",
+              "circulação local",
+              "aquecimento pré-treino"
+            ]
+          },
+          {
+            "forma": "Inalação (sinusite)",
+            "preparo": "2 gotas de OE em bacia de vapor. Inalar por 5–8 min.",
+            "indicacoes": [
+              "congestão nasal",
+              "sinusite",
+              "tosse produtiva"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Potencializador de biodisponibilidade: piperina inibe CYP3A4 intestinal e P-glicoproteína — aumenta absorção de curcumina (2000%), coQ10, resveratrol, vitaminas lipossolúveis",
+          "Termogênico: estimula termogênese e metabolismo basal",
+          "Antimicrobiano: piperina inibe S. aureus, E. coli, Candida in vitro",
+          "Anti-inflamatório: piperina inibe NF-κB e COX-2",
+          "Antioxidante: alta capacidade ORAC",
+          "Expectorante: estimula secreções brônquicas",
+          "Neuroprotetor: piperina aumenta serotonina e dopamina no hipocampo (modelos animais de depressão)"
+        ],
+        "contraindicacoes": [
+          "Úlcera péptica ativa: irritante gástrico em doses elevadas",
+          "Síndrome do intestino irritável exacerbado: piperina pode irritar mucosa",
+          "Interações medicamentosas importantes (inibição CYP3A4)"
+        ],
+        "efeitos_adversos": [
+          "Irritação gástrica em doses muito elevadas",
+          "Ardência e irritação da mucosa em uso tópico oral concentrado",
+          "Epistaxe (rara) em predispostos"
+        ],
+        "interacoes": [
+          "MÚLTIPLOS MEDICAMENTOS via CYP3A4/P-gp: piperina em doses de extrato pode aumentar significativamente a biodisponibilidade de fenitoína, propranolol, teophilina, ciclosporina",
+          "Curcumina: potenciação desejada e estudada (2000% de aumento)",
+          "Antidepressivos (MAOIs, SSRIs): piperina aumenta serotonina — cautela"
+        ],
+        "dose_segura": "Culinária: ilimitada — seguro. Piperina pura (extrato BioPerine): 5–20 mg/dia (como potencializador). Não exceder 20 mg/dia de piperina pura.",
+        "nivel_evidencia": "Extrato de piperina (BioPerine): estudos clínicos confirmando aumento de biodisponibilidade de curcumina, vitaminas e outros compostos. FDA: piperina GRAS. EMA: sem monografia medicinal. Piperina como modulador de biodisponibilidade: mecanismo farmacocinético bem estabelecido."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Quente, picante, cítrico-terroso, madeiroso; moída fresca = aroma complexo e muito diferente do pó velho",
+        "sabor": "Picante imediato (piperina), cítrico, quente, levemente amadeirado; calor progressivo",
+        "cor_visual": "Grãos: preto-enrugado (preta), branco-liso (branca), verde (verde fresca); pó: cinza-preto",
+        "textura": "Grãos duros; pó fino",
+        "sensacao": "Calor oral imediato; estimulante digestivo; aquecedor sistêmico; estimula salivação"
       },
       "cultura": {
-        "historia": "A pimenta-do-reino foi moeda de troca na Europa medieval — \"pagar em espécie\" (in specie) referia-se literalmente a pagar em pimenta. Quando os visigodos sitiaram Roma em 408 d.C., exigiram 3.000 libras de pimenta como resgate. Rotas comerciais que garantiam acesso à pimenta definiram o mapa político do mundo mediterrâneo por séculos.  A busca por uma rota direta às especiarias (pimenta, cravo, noz-moscada) financiou Vasco da Gama, Colombo e Cabral — todas as grandes navegações do século XV e XVI foram em parte motivadas pela pimenta-do-reino. O Brasil foi \"descoberto\" em rota para as especiarias.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "A especiaria que mudou o mundo — a pimenta foi a principal motivação das Grandes Navegações europeias dos séculos XV–XVI. Roma pagava tributos em pimenta-preta. Alarico, rei dos Visigodos, exigiu 3.000 libras de pimenta como parte do resgate de Roma (410 dC). Na Índia: cultivada há mais de 4.000 anos. Hipócrates a usava como medicamento. Durante a Idade Média européia: a pimenta era tão valiosa que servia como moeda — contratos e salários eram pagos em pimenta.",
+        "uso_tradicional": "Ayurveda: trikatu (gengibre + pimenta-preta + pimenta-longa) — digestivo e potencializador de absorção. TCM: aquecedor e digestivo. Europa medieval: preservativo de alimentos, medicamento e moeda. Brasil: condimento onipresente; 'sal e pimenta' como base culinária universal.",
+        "simbolismo": "Riqueza, comércio, poder. A especiaria que financiou as Grandes Navegações e a colonização das Américas. Hoje: ubiquidade — de especiaria rara a condimento em toda mesa.",
+        "curiosidades": [
+          "Os Visigodos exigiram 3.000 libras de pimenta-preta como resgate de Roma em 410 dC — a especiaria valia mais que ouro por peso",
+          "Vasco da Gama chegou à Índia em 1498 especificamente em busca de pimenta — o 'tesouro das especiarias' que financiou Portugal",
+          "BioPerine® (extrato patenteado de piperina) é um dos suplementos mais estudados como potencializador de biodisponibilidade — aprovado em > 40 estudos clínicos",
+          "Pimenta-preta, pimenta-branca e pimenta-verde são exatamente a mesma planta colhida em fases diferentes de maturação e processamento diferente"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso alimentar. Piperina: pesquisada como potenciador farmacológico.",
-        "status_ema": "",
-        "status_fda": "GRAS",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita principal: abril–agosto (Espírito Santo — maior produtor nacional)"
+        "status_brasil": "Sem registro ANVISA como fitoterápico. Condimento universal. BioPerine (extrato): suplemento importado.",
+        "status_europa": "EMA: sem monografia medicinal. EFSA: aprovada como aditivo aromatizante (GRAS). Piperina: avaliada pela EFSA como constituinte de novo.",
+        "farmacopeia": "Farmacopeia Indiana: Piper nigrum fructus. Farmacopeia Americana: menção. Não consta em Ph.Eur. como monografia.",
+        "registro": "Condimento universal sem medicamento registrado. BioPerine: ingrediente suplementar patenteado."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Grãos inteiros (preto, branco, verde, vermelho)",
+          "Pó moído",
+          "Extrato de piperina (BioPerine) em cápsulas",
+          "Combinações com curcumina + piperina"
+        ],
+        "preco_estimado": "Grãos: R$ 10–30/100 g. BioPerine: R$ 30–80/frasco (como ingrediente individual). Combinações curcumina+piperina: R$ 50–150/frasco.",
+        "disponibilidade": "Ubíqua — supermercados, mercados, feiras. BioPerine: lojas de suplementos e online.",
+        "como_escolher": "Grãos: moinho fresco (aromas voláteis preservados vs. pó envelhecido). Pimenta Kerala ou Malabar = maior qualidade. BioPerine: marca registrada com estudos — não piperina genérica.",
+        "armazenamento": "Grãos inteiros: pote hermético, temperatura ambiente. Validade: 3–5 anos. Pó: 6–12 meses. Moer na hora para máxima potência."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Potencializador de biodisponibilidade de curcumina e outros compostos (OBRIGATÓRIO com cúrcuma)",
+          "Digestivo e carminativo culinário (uso diário)",
+          "Expectorante e descongestionante (inalação e chá)",
+          "Termogênico e estimulante metabólico"
+        ],
+        "diferenciais": [
+          "O mais importante potencializador de biodisponibilidade do reino vegetal — piperina viabiliza dezenas de outros compostos",
+          "A especiaria que financiou as Grandes Navegações — história comercial de impacto global único",
+          "Preta + branca + verde + vermelha = mesma planta, quatro produtos distintos — versatilidade culinária única",
+          "BioPerine: patenteado e com > 40 estudos clínicos — extrato herbáceo mais estudado como adjuvante"
+        ],
+        "sinergias": [
+          "Pimenta-preta + cúrcuma (INDISSOCIÁVEL): aumento de 2000% na biodisponibilidade da curcumina",
+          "Pimenta-preta + gengibre + canela: trio aquecedor e digestivo clássico ayurvédico",
+          "Pimenta-preta + resveratrol: aumento de biodisponibilidade do resveratrol",
+          "Pimenta-preta + coenzima Q10: aumento de 60% na absorção"
+        ],
+        "alertas": [
+          "Inibição de CYP3A4: piperina em altas doses interfere com múltiplos medicamentos — atenção em polifarmácia",
+          "Úlcera péptica ativa: evitar doses medicinais elevadas",
+          "MAOIs e SSRIs: cautela pela potenciação serotoninérgica da piperina",
+          "Dose culinária: sempre segura — preocupações são com extratos concentrados de piperina"
+        ]
       }
     },
     {
