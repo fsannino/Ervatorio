@@ -10837,119 +10837,206 @@
     },
     {
       "slug": "salvia",
-      "nome_popular": "Sálvia",
-      "nome_cientifico": "Salvia officinalis L.",
-      "tagline": "A sábia da Idade Média — a erva que curava tudo segundo os medievais, com ação antimicrobiana, menopausal e cognitiva entre as mais bem documentadas das Lamiaceae.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Salvia officinalis L.",
-        "familia_botanica": "Lamiaceae",
-        "tipo_botanico": "Fitoterápico antimicrobiano / antisuorífico / cognitivo",
-        "parte_usada": "Folhas frescas ou secas.",
-        "sinonimos": [
-          "Sálvia · sálvia-oficial · salva (Portugal)",
-          "Sage (inglês) · Sauge (francês) · Salbei (alemão)",
-          "Salvare (latim — \"salvar\") — origem do nome"
+        "nome_popular": "Sálvia",
+        "nome_cientifico": "Salvia officinalis",
+        "familia": "Lamiaceae",
+        "outros_nomes": [
+          "sálvia-das-boticas",
+          "salva",
+          "salva-officinal"
+        ],
+        "origem": "Mediterrâneo",
+        "partes_usadas": [
+          "folhas frescas",
+          "folhas secas",
+          "sumidades floridas"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Aromático-herbáceo quente e amargo, levemente mentolado, cânfora discreta, persistente e complexo.",
-        "aroma": "Cânfora-herbal quente, mediterrâneo profundo, levemente amadeirado, floresta seca.",
-        "cor_da_infusao": "Verde-cinza a âmbar. #A8A840",
-        "intensidade": "3/5 — aromático presente, palatável.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Subarbusto perene de 30–80 cm, caules quadrangulares lenhosos na base. Folhas opostas, oval-lanceoladas (4–8 cm), cinza-esverdeadas, densamente pubescentes com textura aveludada. Flores bilabiadas lilás-violeta em espigas verticiladas. Cheiro aromático intenso característico.",
+        "composicao_quimica": [
+          "Óleo essencial rico em α-tujona (25–50%), β-tujona, cânfora e 1,8-cineol",
+          "Ácido rosmarínico (potente antioxidante e anti-inflamatório)",
+          "Ácido carnósico e carnosol (diterpenos fenólicos)",
+          "Flavonoides: luteolina, apigenina, genkwanina",
+          "Taninos (até 6%): ação adstringente e antibacteriana",
+          "Diterpenos: picroslvina, salviol",
+          "Triterpenos: ácido ursólico, ácido oleanólico",
+          "Compostos estrogênicos: fitoestrógenos moderados"
+        ],
+        "bioma": "Mediterrâneo",
+        "cultivo": "Pleno sol, solo bem drenado, pH 6–7. Resistente à seca; sensível ao excesso de umidade. Colheita antes da floração para maior teor de princípios ativos. Perene; pode durar 3–5 anos."
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C (cânfora volátil).",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 g/250 ml",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã (cognitivo/antisséptico oral) ou tarde (antisuorífico para menopausa).",
-        "combina_com": "Alecrim · Tomilho · Limão · Mel (blends mediterrâneos)"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Antimicrobiano (boca, garganta — bochecho)",
-          "Antisuorífico (reduz sudorese excessiva — ação única documentada)",
-          "Cognitivo (inibição de AChE — melhora memória)",
-          "Anti-inflamatório",
-          "Estrogênico fraco (fogachos na menopausa)",
-          "Antioxidante (ácido carnósico)",
-          "Componentes ativos:",
-          "⚠️ CÂNFORA: Neurotóxica em doses altas de óleo essencial. Infusão em doses usuais: segura. Óleo essencial de sálvia: contraindicado para uso interno.",
-          "Contraindicações:",
-          "Gestação — cânfora, tujona (traços) — evitar doses elevadas; uso culinário seguro",
-          "Epilepsia — cânfora pró-convulsivante",
-          "Amamentação — reduz produção de leite (antisuorífico — útil no desmame)"
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "CÂNFORA",
-            "texto": "Antimicrobiano, estimulante — neurotóxico em dose alta"
+            "tipo": "Infusão (uso interno)",
+            "descricao": "1–2 colheres de chá de folhas secas (2–3 g) em 150 mL de água quente (90°C). Cobrir e infundir 10 min. Coar. 2–3 xícaras/dia, entre refeições.",
+            "indicacoes": [
+              "hipersudorese",
+              "suores noturnos menopausa",
+              "inflamações orais",
+              "dispepsia"
+            ]
           },
           {
-            "label": "ÁCIDO ROSMARÍNICO",
-            "texto": "Antioxidante, anti-inflamatório"
+            "tipo": "Gargarejo / bochecho",
+            "descricao": "Infusão forte: 4–6 g de folhas em 200 mL. Infundir 15 min, esfriar a morno. Gargarejar ou bochecho por 30–60 seg, 3–4×/dia.",
+            "indicacoes": [
+              "faringite",
+              "amigdalite",
+              "gengivite",
+              "estomatite",
+              "aftas"
+            ]
           },
           {
-            "label": "ÁCIDO URSÓLICO",
-            "texto": "Anti-inflamatório, antimicrobiano"
+            "tipo": "Tintura (1:5 em etanol 60%)",
+            "descricao": "2–4 mL, 3×/dia diluídos em água. Uso máximo 4 semanas sem interrupção.",
+            "indicacoes": [
+              "suores da menopausa",
+              "hipersudorese idiopática"
+            ]
           },
           {
-            "label": "DITERPENOS (carnosol, ácido carnósico)",
-            "texto": "Antioxidante, nootrópico"
-          },
-          {
-            "label": "FLAVONÓIDES (luteolina)",
-            "texto": "Anti-inflamatório"
+            "tipo": "Uso culinário",
+            "descricao": "Folhas frescas ou secas em carnes (suíno, frango), recheios, manteigas aromatizadas, molhos. Dose culinária é segura; evitar altas doses medicamentosas durante gestação.",
+            "indicacoes": [
+              "condimento",
+              "digestão",
+              "antisséptico alimentar"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [
-          "Gestação — cânfora, tujona (traços) — evitar doses elevadas; uso culinário seguro",
-          "Epilepsia — cânfora pró-convulsivante",
-          "Amamentação — reduz produção de leite (antisuorífico — útil no desmame)"
+        "dicas": "Cobertura do recipiente durante infusão é obrigatória para preservar o óleo essencial. Evitar fervura prolongada. Uso interno limitado a 4–6 semanas seguidas devido à tujona."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Gargarejo/bochecho",
+            "preparo": "Infusão forte (4–6 g/200 mL), morna. 3–4×/dia.",
+            "indicacoes": [
+              "faringite",
+              "amigdalite",
+              "aftas",
+              "gengivite"
+            ]
+          },
+          {
+            "forma": "Compressa",
+            "preparo": "Infusão concentrada, compressa morna sobre articulações doloridas ou pele inflamada.",
+            "indicacoes": [
+              "artralgia",
+              "foliculite",
+              "feridas superficiais"
+            ]
+          },
+          {
+            "forma": "Inalação de vapor",
+            "preparo": "Handful de folhas em bacia de água quente; inalar vapor por 5–10 min coberto com toalha.",
+            "indicacoes": [
+              "congestão nasal",
+              "rinofaringite",
+              "tosse"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Antissudorífico: tujona e cânfora modulam receptores colinérgicos muscarínicos nas glândulas sudoríparas",
+          "Antimicrobiano: óleo essencial inibe S. aureus, E. coli, Candida albicans (CIM 0,5–2 mg/mL)",
+          "Anti-inflamatório: ácido rosmarínico inibe COX-2 e 5-LOX",
+          "Antioxidante: capacidade DPPH elevada (ácido carnósico > BHT)",
+          "Estrogênico leve: fitoestrógenos modulam sintomas climatéricos",
+          "Carminativo e espasmolítico: relaxamento do músculo liso digestivo",
+          "Hipoglicemiante leve: evidências em modelos animais; estudos humanos limitados"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "Gestação e lactação: tujona uterotônica — CONTRAINDICADA em doses medicinais",
+          "Epilepsia: tujona é convulsivante em altas doses — evitar",
+          "Insuficiência renal severa",
+          "Crianças < 2 anos (internamente)"
+        ],
+        "efeitos_adversos": [
+          "Altas doses ou uso prolongado: convulsões, taquicardia, vertigem (tujonismo)",
+          "Reação alérgica (rara)",
+          "Hipoglicemia em diabéticos em uso de medicamentos hipoglicemiantes"
+        ],
+        "interacoes": [
+          "Anticonvulsivantes: antagonismo potencial",
+          "Hipoglicemiantes: potenciação (monitorar glicemia)",
+          "Sedativos/hipnóticos: potenciação possível",
+          "Medicamentos com metabolismo CYP2C19: possível interação"
+        ],
+        "dose_segura": "Folhas secas: 3–6 g/dia em infusão. Tintura (1:5): 6–12 mL/dia. Uso interno: máximo 4–6 semanas contínuas. Dose culinária habitual: segura indefinidamente.",
+        "nivel_evidencia": "EMA (HMPC): uso tradicional bem estabelecido para hipersudorese e inflamações orais. Ensaios clínicos fase II/III para suores da menopausa (extrato De-thujonizado) mostram redução de 50–65% em 8 semanas."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Forte, aromático, camphorado e levemente mentolado, com notas terrosas e resinosas",
+        "sabor": "Amargo, adstringente, aromático, quente; levemente picante",
+        "cor_visual": "Folhas cinza-esverdeadas aveludadas; infusão amarelo-esverdeada pálida",
+        "textura": "Folhas coriáceas, aveludadas; infusão leve",
+        "sensacao": "Refrescante e adstringente na mucosa oral; levemente aquecedor sistêmico"
       },
       "cultura": {
-        "historia": "\"Cur moriatur homo cui salvia crescit in horto?\" — \"Por que morreria um homem cujo jardim tem sálvia?\" — provérbio latino medieval que captura a reputação absoluta da sálvia na medicina europeia por séculos. A Escola Médica de Salerno (séc. XI) a listou como erva universal — cura de tudo. Shakespeare menciona sálvia. Hildegarda de Bingen dedica páginas extensas a ela.  A pesquisa moderna encontrou mecanismo nootrópico na sálvia (inibição de acetilcolinesterase) que está sendo avaliado para Alzheimer precoce — mais um caso em que a medicina medieval intuiu um mecanismo farmacológico que a ciência demoraria 800 anos para nomear.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Salvia do latim 'salvere' (salvar, curar) — nome que reflete sua reputação milenar. Usada na medicina árabe medieval por Ibn Sina (Avicena) para longevidade e fertilidade. Nas universidades europeias medievais, a sálvia era uma das plantas do 'Hortus Sanitatis'. Adágio medieval: 'Cur moriatur homo cui salvia crescit in horto?' (Por que morreria o homem que tem sálvia no jardim?).",
+        "uso_tradicional": "Medicina medieval europeia: elixir de longa vida, dente forte, memória. Tradição árabe: fertilidade e preservação da saúde. Uso culinário mediterrâneo: condimento de carnes, recheios, ravioli (burro e sálvia, clássico italiano). Na menopausa, uso folclórico amplamente disseminado na Europa para suores.",
+        "simbolismo": "Sabedoria, longevidade, purificação. Queima ritual em culturas indígenas americanas (sage branca — espécie distinta, Salvia apiana). Na Europa: proteção do lar e purificação.",
+        "curiosidades": [
+          "Adágio medieval: 'Cur moriatur homo cui salvia crescit in horto?' (Por que morreria um homem que tem sálvia no jardim?)",
+          "A sálvia-branca (Salvia apiana) usada em rituais de smudging é espécie diferente da sálvia-das-boticas",
+          "Ravioli com burro e sálvia (burro e salvia) é um dos pratos mais simples e refinados da culinária italiana",
+          "Contém tujona, o mesmo composto responsável pelos efeitos do absinto em altas doses"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido.",
-        "status_ema": "Monografia HMPC — well-established use para aftas, sudorese, boca seca.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas disponíveis o ano todo"
+        "status_brasil": "ANVISA RDC 26/2014: Salvia officinalis folha — notificada como fitoterápico isento de prescrição para uso oral em disfunções gástricas leves, e uso tópico em inflamações orais.",
+        "status_europa": "EMA/HMPC: uso tradicional bem estabelecido — hipersudorese (suores noturnos menopausa) e inflamações orofaríngeas. Monografia oficial publicada.",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia completa para Salviae officinalis folium. Farmacopeia Brasileira 6ª ed.",
+        "registro": "Produtos de sálvia com extrato padronizado (De-thujonizado) disponíveis na Europa como medicamentos registrados (ex: Sweatosan, Menosan Salvia)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Folhas secas a granel",
+          "Chá em sachês",
+          "Tintura hidroalcoólica",
+          "Cápsulas (extrato padronizado, de-thujonizado)",
+          "Óleo essencial (uso externo/aromaterapia)",
+          "Spray bucal com extrato"
+        ],
+        "preco_estimado": "Folhas secas: R$ 8–20/50 g. Cápsulas: R$ 35–90/frasco. Óleo essencial: R$ 25–60/10 mL.",
+        "disponibilidade": "Ampla — ervanarias, lojas de produtos naturais, farmácias de manipulação, supermercados (uso culinário).",
+        "como_escolher": "Folhas: aroma forte e característico; evitar material com cheiro fraco ou embolorado. Para uso medicinal: certificação orgânica e laudos de ausência de agrotóxicos. Cápsulas: preferir produtos com extrato de-thujonizado para uso prolongado na menopausa.",
+        "armazenamento": "Folhas secas: pote de vidro escuro, hermético, local fresco e seco. Validade: 12–18 meses. Óleo essencial: vidro âmbar, 2–3 anos."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Suores da menopausa e hipersudorese (uso interno, extrato de-thujonizado)",
+          "Inflamações orais: faringite, amigdalite, aftas, gengivite (gargarejo)",
+          "Dispepsia, flatulência, digestão lenta",
+          "Condimento culinário mediterrâneo de alto valor"
+        ],
+        "diferenciais": [
+          "Única planta com estudos clínicos controlados para suores da menopausa sem hormônios",
+          "Dupla via de uso: culinária diária + medicinal — baixíssima barreira de adoção",
+          "EMA uso bem estabelecido: uma das poucas ervas medicinais com esse status",
+          "Ação antimicrobiana comprovada in vitro contra patógenos orais comuns"
+        ],
+        "sinergias": [
+          "Sálvia + salsa-parrilha: suporte hormonal feminino",
+          "Sálvia + camomila: anti-inflamatório digestivo e bucal",
+          "Sálvia + gengibre: digestão e warmth interno",
+          "Sálvia + própolis: gargarejo potente para infecções orais"
+        ],
+        "alertas": [
+          "CONTRAINDICADA na gestação e lactação em doses medicinais (uterotônica)",
+          "Evitar na epilepsia — tujona pode ser convulsivante",
+          "Limitar uso interno a 4–6 semanas; preferir extrato de-thujonizado para uso prolongado",
+          "Não confundir com sálvia-branca (Salvia apiana) — espécie diferente"
+        ]
       }
     },
     {
@@ -11072,136 +11159,203 @@
     },
     {
       "slug": "funcho",
-      "nome_popular": "Funcho",
-      "nome_cientifico": "Foeniculum vulgare Mill.",
-      "tagline": "O digestivo de todos os continentes — antiespasmódico com uso medicinal em 6.000 anos de história, presente em todas as tradições culinárias e medicinais do mundo mediterrâneo e tropical.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Foeniculum vulgare Mill.",
-        "familia_botanica": "Apiaceae (família do coentro, da cenoura, do anis)",
-        "tipo_botanico": "Fitoterápico digestivo / carminativo / antiespasmódico",
-        "parte_usada": "Frutos (sementes) secos; folhas (uso culinário).",
-        "sinonimos": [
-          "Funcho · erva-doce · anis-falso (confusão)",
-          "Fennel (inglês) · Fenouil (francês) · Fenchel (alemão) · Hinojo (espanhol)",
-          "ATENÇÃO: \"erva-doce\" no Brasil refere-se tanto ao funcho (F. vulgare) quanto ao anis-estrelado (Illicium verum) — sabores similares, plantas distintas."
+        "nome_popular": "Funcho",
+        "nome_cientifico": "Foeniculum vulgare",
+        "familia": "Apiaceae",
+        "outros_nomes": [
+          "erva-doce",
+          "anis-doce",
+          "fennel (ing.)",
+          "finocchio (it.)"
+        ],
+        "origem": "Mediterrâneo e Ásia Menor",
+        "partes_usadas": [
+          "frutos (sementes)",
+          "folhas",
+          "raiz",
+          "caule"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Doce-anis intenso e redondo, levemente licoroso, fresco, aromático. Um dos sabores mais imediatamente agradáveis do catálogo digestivo.",
-        "aroma": "Anis-doce característico (trans-anetol), levemente mentolado-fresco, feno adocicado.",
-        "cor_da_infusao": "Amarelo-pálido a âmbar claro. #E8D878",
-        "intensidade": "3/5 — aromático presente e agradável.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Planta herbácea perene (ou bienal) de 1–2 m, caules cilíndricos glaucos (azul-esverdeados), ocos, muito ramificados. Folhas finamente pinadas em segmentos filiformes, dando aspecto plumoso. Flores amarelas em umbelas compostas (15–40 raios). Frutos oblongos (4–10 mm), verde-acinzentados — os chamados 'sementes'. Cheiro anisado característico.",
+        "composicao_quimica": [
+          "Óleo essencial (1,5–4%): trans-anetol (60–80%), fenchona (5–25%), estragol (limoneno menor)",
+          "Flavonoides: quercetina, rutina, kaempferol",
+          "Ácidos fenólicos: ácido clorogênico, ácido cafeico",
+          "Furanocumarinas (traços): bergapteno (fotossensibilizante em altas exposições)",
+          "Proteínas, fibras e minerais: cálcio, ferro, potássio (nas sementes)",
+          "Fitoestrogênios: anetol tem atividade estrogênica leve (controverso)"
+        ],
+        "bioma": "Mediterrâneo, cosmopolita",
+        "cultivo": "Pleno sol, solo profundo e fértil, boa drenagem, pH 6–7. Multiplica por sementes. Colheita dos frutos quando 50–70% estão amarelos/acastanhados (antes de debulharem). Planta rústica e invasora em algumas regiões."
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 colheres de chá (2–5 g) de sementes para 250 ml.",
-        "metodo": "Infusão de sementes levemente maceradas, coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "Pós-refeições (digestivo/carminativo). Ideal para bebês com cólica (dose muito diluída).",
-        "combina_com": "Camomila · Melissa · Anis · Alcaçuz · Gengibre (blends digestivos)"
+        "formas": [
+          {
+            "tipo": "Infusão de frutos (sementes)",
+            "descricao": "1–2 colheres de chá de frutos ligeiramente amassados (1,5–3 g) em 150 mL de água a 90°C. Cobrir e infundir 10–15 min. Coar. 2–3 xícaras/dia após refeições.",
+            "indicacoes": [
+              "cólica",
+              "flatulência",
+              "digestão",
+              "espasmos intestinais",
+              "cólica do lactente (mãe amamentando)"
+            ]
+          },
+          {
+            "tipo": "Decocção da raiz",
+            "descricao": "10–15 g de raiz em 500 mL de água. Ferver 15–20 min, coar. 2 xícaras/dia.",
+            "indicacoes": [
+              "diurético",
+              "cálculos renais leves",
+              "retenção hídrica"
+            ]
+          },
+          {
+            "tipo": "Uso culinário",
+            "descricao": "Sementes: pão, biscoitos, salames, curries. Folhas frescas: saladas, peixes, molhos. Bulbo (var. azoricum): assado, salada, refogado. Licor de funcho (França/Itália).",
+            "indicacoes": [
+              "saborizante",
+              "carminativo alimentar"
+            ]
+          },
+          {
+            "tipo": "Tintura (1:5 em etanol 60%)",
+            "descricao": "2–3 mL, 3×/dia diluídos em água.",
+            "indicacoes": [
+              "espasmos digestivos",
+              "flatulência crônica"
+            ]
+          }
+        ],
+        "dicas": "Amassar levemente os frutos antes da infusão potencializa a extração do óleo essencial. Cobrir o recipiente é essencial. Frutos inteiros (não moídos) preservam melhor o aroma no armazenamento."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "aplicacoes": [
+          {
+            "forma": "Colírio / compressa ocular",
+            "preparo": "Infusão fraca e filtrada (1 g/100 mL), temperatura ambiente. Compressa ocular por 10 min, 2×/dia.",
+            "indicacoes": [
+              "conjuntivite leve",
+              "cansaço visual",
+              "blefarite"
+            ]
+          },
+          {
+            "forma": "Massagem com óleo essencial diluído",
+            "preparo": "2–3 gotas de OE em 10 mL de óleo vegetal. Massagem circular no abdômen.",
+            "indicacoes": [
+              "cólicas abdominais",
+              "flatulência",
+              "espasmos"
+            ]
+          },
+          {
+            "forma": "Enxágue capilar",
+            "preparo": "Infusão concentrada de folhas/frutos (5 g/200 mL), fria, após shampooing.",
+            "indicacoes": [
+              "brilho capilar",
+              "couro cabeludo oleoso",
+              "caspa leve"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Carminativo (elimina gases intestinais — principal indicação)",
-          "Antiespasmódico intestinal",
-          "Expectorante (fluidifica muco brônquico)",
-          "Galactogogo (estimula produção de leite — uso tradicional; evidência fraca)",
-          "Antimicrobiano leve",
-          "Anti-inflamatório",
-          "Estrogênico fraco (anetol)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Alergia a Apiaceae (cenoura, aipo, coentro) — reação cruzada possível",
-          "Gestação em doses altas (OE) — estrogênico; infusão em dose culinária: segura",
-          "Câncer hormônio-dependente — cautela com estrogênio vegetal"
-        ],
-        "componentes_ativos": [
-          {
-            "label": "TRANS-ANETOL",
-            "texto": "60–75% do OE — Carminativo, antiespasmódico, estrogênico fraco"
-          },
-          {
-            "label": "FENCONA",
-            "texto": "12–22% do OE — Aromático, expectorante"
-          },
-          {
-            "label": "ESTRAGOL",
-            "texto": "2–5% — Aromático (potencialmente genotóxico em doses altas)"
-          },
-          {
-            "label": "ÁCIDO CLOROGÊNICO",
-            "texto": "Presente — Antioxidante"
-          },
-          {
-            "label": "FLAVONÓIDES (quercetina, kemferol)",
-            "texto": "Presentes — Anti-inflamatório"
-          }
-        ],
-        "evidencia": [
-          {
-            "indicacao": "Cólica infantil (lactentes)",
-            "evidencia": "Moderada",
-            "populacao": "Alexandrovich et al. (2003)"
-          },
-          {
-            "indicacao": "Flatulência e distensão abdominal",
-            "evidencia": "Forte",
-            "populacao": "EMA — well-established use"
-          },
-          {
-            "indicacao": "Síndrome do intestino irritável (adjuvante)",
-            "evidencia": "Moderada",
-            "populacao": "Múltiplos estudos"
-          }
+        "acoes_farmacologicas": [
+          "Carminativo: anetol e fenchona relaxam músculo liso intestinal, reduzindo espasmo e facilitando expulsão de gases",
+          "Espasmolítico: anetol bloqueia canais de cálcio no músculo liso (semelhante à papaverina)",
+          "Secretomotor brônquico: estimula clearance mucociliar — expectorante",
+          "Estrogênico leve: anetol mimetiza estrutura de estrogênios (efeito clínico controverso)",
+          "Antimicrobiano: OE inibe H. pylori, E. coli, Candida in vitro",
+          "Antioxidante: flavonoides e polifenóis capturam radicais livres",
+          "Galactagogo: uso tradicional para estimular lactação (evidência científica limitada)"
         ],
         "contraindicacoes": [
-          "Alergia a Apiaceae (cenoura, aipo, coentro) — reação cruzada possível",
-          "Gestação em doses altas (OE) — estrogênico; infusão em dose culinária: segura",
-          "Câncer hormônio-dependente — cautela com estrogênio vegetal"
+          "Alergia a plantas da família Apiaceae (cenoura, aipo, coentro, erva-doce)",
+          "Gestação em altas doses medicinais: estragol e estragol-epóxido — risco teórico",
+          "Distúrbios hormônio-dependentes (fibromas, câncer de mama ER+) — atividade estrogênica leve",
+          "Crianças < 1 ano internamente (colírio de funcho — não recomendado)"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "efeitos_adversos": [
+          "Altas doses: estimulação do SNC, possível convulsão (fenchona)",
+          "Dermatite de contato com óleo essencial puro",
+          "Reação alérgica cruzada (Apiaceae)",
+          "Fotossensibilização (furanocumarinas) em uso tópico + exposição solar"
+        ],
+        "interacoes": [
+          "Anticoagulantes: possível aumento de efeito (cumarinas presentes em pequena quantidade)",
+          "Ciprofloxacino: absorção pode ser reduzida (evitar coadministração)",
+          "Estrógenos/contraceptivos: interação teórica por atividade estrogênica"
+        ],
+        "dose_segura": "Frutos secos: 3–6 g/dia (infusão). Óleo essencial interno: 0,1–0,6 mL/dia (apenas sob supervisão). Uso culinário habitual: seguro. ESCOP/EMA: até 3 g de frutos/dia para uso oral.",
+        "nivel_evidencia": "EMA/HMPC: uso medicinal tradicional bem estabelecido para distúrbios gastrointestinais espásticos e expectorante. ESCOP monografia. Revisão Cochrane (2015): extratos de funcho reduzem cólica infantil vs. placebo."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Doce, anisado, fresco, levemente herbal; muito característico e persistente",
+        "sabor": "Adocicado, anisado, levemente amargo e picante no final; quente",
+        "cor_visual": "Frutos verde-acinzentados; infusão amarela pálida; bulbo branco-esverdeado",
+        "textura": "Sementes levemente crocantes; bulbo firme e fibroso",
+        "sensacao": "Levemente refrescante e aquecedor; relaxante digestivo perceptível após 10–15 min"
       },
       "cultura": {
-        "historia": "O funcho era a planta do herói grego — Prometeu, na mitologia, roubou o fogo dos deuses escondendo-o em um caule de funcho (pelo interior esponjoso e combustível lento). O festival de Maratona, onde Fídípides correu 42 km para anunciar a vitória grega, aconteceu num campo de funcho — \"marathon\" vem do grego para funcho (marathron).  Em Roma, os gladiadores comiam funcho antes dos combates — estamina e digestão. Na Índia, sementes de funcho são mastigadas após as refeições em restaurantes como digestivo e refrescante bucal — prática que persiste em restaurantes indianos no mundo inteiro.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Cultivado no Mediterrâneo há mais de 3.000 anos. Egípcios e gregos usavam como condimento e remédio. Hipócrates indicava para cólica e estimulo do leite materno. Plínio listava 22 usos. Na Idade Média, pendurava-se funcho nas portas para afastar espíritos malignos. Os romanos comiam o bulbo como legume e as folhas como erva aromática.",
+        "uso_tradicional": "Medicina ayurvédica: digestão, lactação, cólica infantil. Medicina europeia medieval: diurético, carminativo, estimulante do leite. Culinária italiana: finocchio (bulbo) em saladas e risotos; sementes em salames e pão. Medicina popular brasileira: chá de 'erva-doce' para cólica de bebê (mãe toma o chá).",
+        "simbolismo": "Força e coragem (Grécia antiga: maratona — palavra grega para funcho). Longevidade (Roma). Proteção contra o mal (Idade Média).",
+        "curiosidades": [
+          "Marathon (a cidade da batalha histórica) significa 'lugar onde cresce funcho' em grego",
+          "Finocchio em italiano é gíria para 'gay' — história ligada ao teatro medieval onde atores homossexuais usavam funcho como adorno",
+          "O licor sambuca italiano tem anetol de funcho como componente aromático principal",
+          "Anetol tem estrutura química semelhante à anfetamina e catecolaminas, o que explica parte do efeito estimulante digestivo"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Indicações: carminativo, antiespasmódico digestivo.",
-        "status_ema": "Monografia HMPC — well-established use para flatulência.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Sementes maduras: verão-outono"
+        "status_brasil": "ANVISA RDC 26/2014: Foeniculum vulgare fruto — notificado como fitoterápico isento de prescrição para distúrbios digestivos leves (flatulência, espasmo) e expectorante.",
+        "status_europa": "EMA/HMPC: uso medicinal tradicional bem estabelecido — distúrbios gastrointestinais espásticos leves, expectorante. Monografia publicada. ESCOP monografia.",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Foeniculi fructus. Farmacopeia Brasileira 6ª ed.",
+        "registro": "Amplamente disponível como fitoterápico registrado na Europa. Brasil: notificados pela ANVISA."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Frutos secos a granel",
+          "Chá em sachês",
+          "Tintura hidroalcoólica",
+          "Cápsulas de extrato seco",
+          "Óleo essencial (uso culinário e aromaterapia)",
+          "Bulbo fresco (supermercados especializados — uso culinário)"
+        ],
+        "preco_estimado": "Frutos secos: R$ 8–18/50 g. Cápsulas: R$ 25–60/frasco. Óleo essencial: R$ 20–45/10 mL. Bulbo fresco: R$ 8–18/unidade.",
+        "disponibilidade": "Ampla — ervanarias, lojas naturais, farmácias de manipulação. Bulbo fresco em supermercados especializados e feiras.",
+        "como_escolher": "Frutos: cor verde-acinzentada uniforme, aroma forte e doce ao amassar; evitar material embolorado ou com cheiro rançoso. Certificação orgânica preferível.",
+        "armazenamento": "Frutos inteiros (não moídos): pote hermético, local fresco e escuro. Validade: 18–24 meses. Moer apenas na hora do uso para preservar óleo essencial."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Cólica e flatulência (carminativo de alta eficácia)",
+          "Expectorante em bronquite e tosse produtiva",
+          "Cólica do lactente (chá para mãe que amamenta)",
+          "Condimento culinário mediterrâneo — bulbo, folhas e sementes"
+        ],
+        "diferenciais": [
+          "Planta 'toda útil': bulbo (legume), folhas (erva), sementes (condimento/remédio), óleo (aromaterapia)",
+          "Revisão Cochrane confirma eficácia para cólica infantil",
+          "EMA uso bem estabelecido — base científica sólida",
+          "Sabor adocicado agradável: alta aceitação em bebidas, maior adesão terapêutica"
+        ],
+        "sinergias": [
+          "Funcho + camomila + melissa: cólica e espasmo digestivo ('Gripe Water' clássico)",
+          "Funcho + gengibre: náusea e digestão",
+          "Funcho + alcaçuz: expectorante e anti-inflamatório brônquico",
+          "Funcho + hortelã: frescor digestivo e carminativo"
+        ],
+        "alertas": [
+          "Alergia cruzada com Apiaceae: atenção em alérgicos a cenoura, aipo, coentro",
+          "Evitar altas doses medicinais na gestação",
+          "Estragol: potencialmente genotóxico em altas doses — evitar óleo essencial interno sem supervisão",
+          "Não usar colírio de funcho em bebês < 1 ano"
+        ]
       }
     },
     {
