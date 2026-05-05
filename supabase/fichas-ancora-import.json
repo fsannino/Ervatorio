@@ -11791,119 +11791,205 @@
     },
     {
       "slug": "cavalinha",
-      "nome_popular": "Cavalinha",
-      "nome_cientifico": "Equisetum arvense L. / E. hyemale L. (Brasil)",
-      "tagline": "A planta do silício — o ser vivo mais antigo do catálogo (precursora dos dinossauros) com a maior concentração de silício orgânico do reino vegetal e ação diurética documentada.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Equisetum arvense L. / E. hyemale L. (Brasil)",
-        "familia_botanica": "Equisetaceae (família evolutivamente isolada — sem parentes próximos entre angiospermas)",
-        "tipo_botanico": "Fitoterápico diurético / remineralizante / fortalecedor do tecido conjuntivo",
-        "parte_usada": "Partes aéreas estéreis (caule verde articulado), secas.",
-        "sinonimos": [
-          "Cavalinha · erva-canudo · rabo-de-cavalo",
-          "Horsetail (inglês) · Prêle (francês) · Schachtelhalm (alemão)"
+        "nome_popular": "Cavalinha",
+        "nome_cientifico": "Equisetum arvense",
+        "familia": "Equisetaceae",
+        "outros_nomes": [
+          "cavalinha-dos-campos",
+          "erva-da-prata",
+          "rabo-de-cavalo",
+          "horsetail (ing.)",
+          "prêle (fr.)"
+        ],
+        "origem": "Hemisfério Norte (Europa, Ásia, América do Norte)",
+        "partes_usadas": [
+          "partes aéreas estéreis (hastes verdes)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Levemente amargo-herbáceo, mineral, grama seca, praticamente neutro. Muito palatável.",
-        "aroma": "Herbáceo simples e suave, levemente mineral.",
-        "cor_da_infusao": "Verde-amarelado pálido. #D4DC88",
-        "intensidade": "1/5 — a infusão mais neutra do catálogo. Zero resistência sensorial.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Planta vascular sem sementes (pteridófita), perene, com dimorfismo sazonal: hastes férteis castanhas aparecem na primavera (com esporos), seguidas pelas hastes estéreis verdes (medicinais) no verão. Hastes articuladas, estriadas, com verticilos de ramos secundários delgados. Sem folhas verdadeiras — folhas reduzidas a bainhas dentadas nos nós. Pode atingir 20–60 cm. Rizoma profundo e extenso.",
+        "composicao_quimica": [
+          "Ácido silícico e silicatos (5–8% da matéria seca): maior fonte vegetal de silício biodisponível",
+          "Flavonoides (0,6–0,9%): isoquercitrina, kaempferol-3-glicosídeo, apigenina",
+          "Saponinas: equisetonina (hemolítica em extrato bruto — inativada pela extração aquosa)",
+          "Alcaloides: nicotina (traços), palustrina (traços)",
+          "Ácidos fenólicos: ácido cafeico, ácido dicafeoiltartárico",
+          "Potássio (3–4%): contribui para efeito diurético",
+          "Vitamina C (traços)",
+          "Traços de tiaminase: enzima que degrada vitamina B1 (inativada pelo calor)"
+        ],
+        "bioma": "Temperado — Europa, Ásia, América do Norte. No Brasil: naturalizada em regiões Sul e Sudeste.",
+        "cultivo": "Planta de ambientes úmidos e encharcados — beiras de rios, campos e prados. Praticamente não se cultiva; colhida na natureza. Invasora difícil de erradicar em jardins por causa do rizoma profundo."
       },
       "preparo": {
-        "temperatura_ideal": "95 °C (sílica extrai melhor por decocção).",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g de partes aéreas secas para 500 ml.",
-        "metodo": "Decocção. Não infusão — sílica requer calor sustentado.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã e tarde (diurético).",
-        "combina_com": "Cavalinha + Solidago + Rompe-pedra = blend diurético clássico"
-      },
-      "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
-      },
-      "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Diurético (aumento de diurese)",
-          "Remineralizante (sílica orgânica — colágeno, osso, cabelo, unhas)",
-          "Hemostático leve (sílica + taninos)",
-          "Anti-inflamatório (saponinas)",
-          "Antirreumático (diurético)",
-          "Fortalecedor de tecido conjuntivo (colágeno)",
-          "Componentes ativos:",
-          "Contraindicações:",
-          "Edema cardíaco ou renal grave — diurético; cautela",
-          "Uso prolongado (>6 semanas): depleção de tiamina (vitamina B1) — suplementar",
-          "Gestação — evitar (diurético)",
-          "Espécie confusa: E. palustre (cavalinha-dos-pântanos) é tóxica — confirmar espécie"
-        ],
-        "componentes_ativos": [
+        "formas": [
           {
-            "label": "SÍLICA ORGÂNICA (ácido monosilícico, silicatos)",
-            "texto": "5–8% da matéria seca — Remineralizante, fortalecedor do tecido conjuntivo"
+            "tipo": "Decocção (preferencial para extrair silício)",
+            "descricao": "2–4 g de cavalinha seca em 200 mL de água. Ferver suavemente por 15–20 min (não apenas infundir — a decocção é essencial para solubilizar o ácido silícico). Coar. 2–3 xícaras/dia.",
+            "indicacoes": [
+              "diurético",
+              "infecções urinárias leves",
+              "remineralização",
+              "fortalecimento de unhas/cabelos"
+            ]
           },
           {
-            "label": "SAPONINAS (equisetonina)",
-            "texto": "Presente — Diurético, anti-inflamatório"
+            "tipo": "Infusão (menor extração de silício)",
+            "descricao": "2–3 g em 200 mL a 90°C por 10–15 min. Coar. 2–3 xícaras/dia.",
+            "indicacoes": [
+              "diurético leve",
+              "inflamação urinária leve"
+            ]
           },
           {
-            "label": "FLAVONÓIDES (isoquercetina, quercetina)",
-            "texto": "Presentes — Antioxidante, anti-inflamatório"
+            "tipo": "Cápsulas de extrato seco/padronizado",
+            "descricao": "300–600 mg de extrato padronizado em silício (7–8%), 2×/dia. Conforme produto.",
+            "indicacoes": [
+              "remineralização óssea",
+              "fortalecimento de tecido conjuntivo",
+              "cabelo e unhas frágeis"
+            ]
           },
           {
-            "label": "TANINOS",
-            "texto": "Presentes — Hemostático, antimicrobiano"
-          },
-          {
-            "label": "ÁCIDO CAFEICO",
-            "texto": "Presente — Antioxidante"
+            "tipo": "Uso tópico (banho/compressa)",
+            "descricao": "10–20 g de cavalinha em 1–2 L de água. Ferver 20 min. Usar em banho de assento, compressa ou adição ao banho completo.",
+            "indicacoes": [
+              "feridas lentas",
+              "eczema",
+              "inchaço",
+              "circulação periférica"
+            ]
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [
-          "Edema cardíaco ou renal grave — diurético; cautela",
-          "Uso prolongado (>6 semanas): depleção de tiamina (vitamina B1) — suplementar",
-          "Gestação — evitar (diurético)",
-          "Espécie confusa: E. palustre (cavalinha-dos-pântanos) é tóxica — confirmar espécie"
+        "dicas": "A decocção (fervura) é imprescindível para converter silicatos insolúveis em ácido silícico biodisponível — infusão fria extrai muito menos silício. Hastes jovens (início do verão) são mais ricas em compostos ativos."
+      },
+      "usos_topicos": {
+        "aplicacoes": [
+          {
+            "forma": "Banho de assento",
+            "preparo": "15–20 g em 1–2 L, fervidos 20 min. Adicionar a bacia com água morna. Sentar por 15–20 min.",
+            "indicacoes": [
+              "inflamação urogenital",
+              "cistite",
+              "hemorroidas",
+              "feridas perineais"
+            ]
+          },
+          {
+            "forma": "Compressa",
+            "preparo": "Decocção concentrada, morna. Gaze embebida aplicada por 20 min.",
+            "indicacoes": [
+              "edema nos pés e tornozelos",
+              "contusões",
+              "feridas de cicatrização lenta"
+            ]
+          },
+          {
+            "forma": "Loção/tônico capilar",
+            "preparo": "Decocção filtrada, fria. Aplicar no couro cabeludo e massagear, sem enxaguar, 3×/semana.",
+            "indicacoes": [
+              "queda de cabelo",
+              "couro cabeludo oleoso",
+              "fortalecimento dos fios"
+            ]
+          }
+        ]
+      },
+      "acoes_e_seguranca": {
+        "acoes_farmacologicas": [
+          "Diurético: potássio e flavonoides aumentam diurese sem perda excessiva de potássio",
+          "Remineralizante: silício biodisponível suporta síntese de colágeno, matriz óssea e elastina",
+          "Hemostático: uso tradicional para sangramento; mecanismo não completamente elucidado",
+          "Antioxidante: flavonoides kaempferol e isoquercitrina",
+          "Anti-inflamatório leve: ácidos fenólicos inibem vias inflamatórias",
+          "Adstringente: taninos e silicatos na mucosa urinária"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "Insuficiência cardíaca e edema cardíaco: diurético pode sobrecarregar o coração",
+          "Insuficiência renal grave: diurético e acúmulo de silicatos",
+          "Gestação e lactação: dados insuficientes — evitar uso medicinal",
+          "Crianças < 12 anos: não recomendado",
+          "Deficiência de vitamina B1 (tiamina): a tiaminase (inativada pelo calor) pode ser problema em uso de extrato a frio/fresco"
+        ],
+        "efeitos_adversos": [
+          "Uso prolongado (> 4–6 semanas): depleção de tiamina se consumido cru ou em extrato frio não-aquecido",
+          "Equisetonina (saponina bruta): hemolítica — inativada pela infusão/decocção aquosa correta",
+          "Irritação gástrica em estômago vazio",
+          "Hiponatremia em uso excessivo com diurético"
+        ],
+        "interacoes": [
+          "Diuréticos (tiazídicos, furosemida): efeito aditivo — monitorar potássio e pressão",
+          "Lítio: diurético pode aumentar excreção de lítio (monitorar níveis séricos)",
+          "Digoxina: interação com desequilíbrio eletrolítico",
+          "Álcool: aumenta desidratação e hipotensão"
+        ],
+        "dose_segura": "Partes aéreas secas: 6–9 g/dia (decocção). Extrato seco padronizado: 300–600 mg 2×/dia. Uso máximo contínuo: 4–6 semanas; repetir após pausa. EMA: não exceder doses terapêuticas por períodos prolongados.",
+        "nivel_evidencia": "EMA/HMPC: uso medicinal tradicional para aumento do volume urinário em infecções urinárias leves e cálculos renais. Evidência clínica para remineralização: estudos pilotos em osteoporose e saúde de unhas/cabelo com resultados promissores, mas ensaios clínicos amplos ainda insuficientes."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Leve, vegetal, levemente terroso e herbáceo; sem aroma pronunciado",
+        "sabor": "Levemente amargo, adstringente, sabor de 'erva' neutro; sem doçura ou picância",
+        "cor_visual": "Hastes verde-escuras; decocção amarelo-esverdeada a dourada",
+        "textura": "Hastes fibrosas articuladas; decocção com leve sensação de mineralidade",
+        "sensacao": "Neutra; leve adstringência; sem impacto organoléptico marcante"
       },
       "cultura": {
-        "historia": "A cavalinha é um fóssil vivo — os Equisetum do Carbonífero tinham 30 metros de altura e constituíam florestas que hoje são carvão mineral. A espécie atual é praticamente idêntica às que os dinossauros comiam. Essa continuidade evolutiva de 400 milhões de anos é a história mais longa do catálogo — e é contada pela própria planta em cada articulação de seu caule.  Os Romanos usavam o caule seco de cavalinha como lixa para polir metais — a sílica abrasiva do exoesqueleto da planta é a mesma que fortalece cabelos e unhas quando consumida como infusão.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Uma das plantas mais antigas do planeta — os ancestrais do Equisetum dominavam florestas da era Carbonífera (350 milhões de anos atrás), chegando a 30 m de altura. Hoje, as cavalinhas são 'fósseis vivos', únicas sobreviventes de sua classe. Dioscórides (séc I dC) usava como diurético e hemostático. Na China medieval: remineralização óssea e fortalecimento dos ossos.",
+        "uso_tradicional": "Europa medieval: hemostático para feridas e hemorragias internas. Tradição chinesa: remineralização, fortalecimento de ossos e ligamentos. Medicina popular sul-americana: diurético, 'limpeza dos rins', fortalecimento de cabelo e unhas. Cosmética indígena norte-americana: tintura natural para polir superfícies (alto teor de silicatos).",
+        "simbolismo": "Ancestralidade, resiliência, conexão com o tempo geológico. 'Fóssil vivo' — planta que atravessou extinções em massa. No Japão: símbolo de perseverança.",
+        "curiosidades": [
+          "Os ancestrais de Equisetum eram árvores de 30 m que formaram as florestas do Carbonífero — hoje, toda planta de cavalinha tem menos de 1 m",
+          "O silício da cavalinha é o mesmo elemento que compõe 90% da areia e 27% da crosta terrestre — mas em forma biodisponível única no reino vegetal",
+          "Os galhos articulados da cavalinha foram usados como 'lixa natural' por povos indígenas e colonos americanos para limpar panelas e polir superfícies de madeira",
+          "Cavalinha pode acumular metais pesados do solo — risco de contaminação em material silvestre coletado perto de rodovias ou solos contaminados"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Indicações: diurético, coadjuvante em cálculo renal.",
-        "status_ema": "Monografia HMPC — traditional use para diurético.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Partes aéreas: primavera-verão"
+        "status_brasil": "ANVISA RDC 26/2014: Equisetum arvense partes aéreas — notificada como fitoterápico isento de prescrição para infecções urinárias leves e como diurético.",
+        "status_europa": "EMA/HMPC: uso medicinal tradicional bem estabelecido — aumento de diurese em infecções urinárias leves e cálculos renais. Monografia publicada.",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Equiseti herba. Farmacopeia Brasileira 6ª ed.",
+        "registro": "Amplamente disponível como fitoterápico registrado no Brasil e Europa."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Partes aéreas secas a granel",
+          "Chá em sachês",
+          "Cápsulas de extrato seco padronizado (7% silício)",
+          "Tintura hidroalcoólica",
+          "Pó (suplemento)"
+        ],
+        "preco_estimado": "Planta seca: R$ 8–20/50 g. Cápsulas (extrato padronizado): R$ 35–90/frasco. Sachês: R$ 10–25/caixa.",
+        "disponibilidade": "Boa — ervanarias, lojas naturais, farmácias de manipulação.",
+        "como_escolher": "Hastes verdes (estéreis) de coloração uniforme, sem manchas escuras. Preferir extrato padronizado em cápsulas para uso como remineralizante (controle de dose de silício). Material silvestre: verificar origem (evitar áreas contaminadas).",
+        "armazenamento": "Planta seca: pote hermético, escuro, local seco. Validade: 12–18 meses. Evitar umidade (proliferação fúngica)."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Diurético em infecções urinárias leves e cálculos renais",
+          "Remineralização (silício biodisponível): ossos, cartilagens, tecido conjuntivo",
+          "Fortalecimento de cabelo, unhas e pele (via silício)",
+          "Uso tópico: edema, feridas e tônico capilar"
+        ],
+        "diferenciais": [
+          "Maior fonte vegetal de silício biodisponível do planeta",
+          "Fóssil vivo: planta de 350 milhões de anos — potência evolutiva traduzida em composição química única",
+          "Diurético que não depleta potássio (diferente de muitos diuréticos sintéticos)",
+          "EMA uso bem estabelecido — base regulatória sólida"
+        ],
+        "sinergias": [
+          "Cavalinha + uva-ursi: infecção urinária (diurético + antimicrobiano urinário)",
+          "Cavalinha + horsetail: uso combinado para mineralização óssea (osteoporose)",
+          "Cavalinha + bardana: depurativo e suporte renal",
+          "Cavalinha + ortosifão: diurético potenciado para retenção hídrica e hipertensão leve"
+        ],
+        "alertas": [
+          "Decocção (fervura) é obrigatória — não usar infusão a frio (silício não dissolve)",
+          "Tiaminase: risco de deficiência de B1 apenas com uso cru/frio prolongado — decocção inativa a enzima",
+          "Contaminação por metais pesados no material silvestre: verificar origem",
+          "Uso máximo 4–6 semanas; pausar antes de continuar"
+        ]
       }
     },
     {
