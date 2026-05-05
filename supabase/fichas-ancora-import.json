@@ -8728,117 +8728,267 @@
       "slug": "aroeira-mansa",
       "nome_popular": "Aroeira-Mansa",
       "nome_cientifico": "Schinus terebinthifolia Raddi",
-      "tagline": "A pimenta-rosa da floresta — anti-inflamatória e antisséptica da Mata Atlântica que conquistou a alta gastronomia mundial como especiaria e tem ação medicinal crescentemente documentada.",
+      "tagline": "A pimenta-rosa das cozinhas Michelin e dos quintais nordestinos — anti-inflamatória e antimicrobiana da Mata Atlântica que conquistou a alta gastronomia mundial com os mesmos terpenos que curam.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Schinus terebinthifolia Raddi",
-        "familia_botanica": "Anacardiaceae (família da manga, do caju, do pistache)",
-        "tipo_botanico": "Fitoterápico anti-inflamatório / especiaria aromática",
-        "parte_usada": "Frutos secos (pimenta-rosa — uso culinário e medicinal); folhas (infusão); casca.",
+        "familia_botanica": "Anacardiaceae (família da manga — Mangifera indica, do caju — Anacardium occidentale, do pistache — Pistacia vera — grandes frutos tropicais resinosos com terpenos característicos)",
+        "tipo_botanico": "Fitoterápico anti-inflamatório e antimicrobiano / especiaria aromática / cosmético natural",
+        "parte_usada": "Frutos secos maduros (pimenta-rosa — uso culinário premium e medicinal); folhas (infusão medicinal — anti-inflamatória, antimicrobiana, antisséptica); casca (decocção — cicatrizante e adstringente). A pimenta-rosa culinária e a erva medicinal são o mesmo fruto — a distinção é apenas contextual, não química.",
         "sinonimos": [
-          "Aroeira-mansa · aroeira-da-praia · aroeira-vermelha · pimenta-rosa",
-          "Pink pepper / Brazilian pepper (inglês) · Poivre rose (francês)",
-          "ATENÇÃO: NÃO confundir com Myracrodruon urundeuva (aroeira-do-sertão) — gênero diferente, química completamente distinta."
+          "Aroeira-mansa · aroeira-da-praia · aroeira-vermelha · pimenta-rosa · aroeira-branca",
+          "Pink pepper / Brazilian pepper tree (inglês) · poivre rose / faux poivrier (francês)",
+          "ATENÇÃO: Schinus terebinthifolia (aroeira-mansa — Mata Atlântica, frutos vermelhos, pimenta-rosa) ≠ Myracrodruon urundeuva (aroeira-do-sertão / aroeira-verdadeira — Caatinga, madeira, casca cicatrizante — gênero completamente diferente). Nomes populares distintos, química distinta — não substituir uma pela outra."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Pimenta-rosa fresca, resinoso-balsâmico, cítrico-floral, terebintina suave.",
-        "cor_da_infusao": "",
-        "intensidade": "3/5 (fruto/pimenta) — 2/5 (infusão de folhas).",
-        "notas": "",
-        "bioma_de_origem": "Mata Atlântica — amplamente distribuída, especialmente restinga e mata ciliar; RS a CE.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Fruto (pimenta-rosa): pungente suave e complexo — pimenta-rosa floral com cítrico-resinoso, terebintina discreta, leve doce-resinoso, sem a capsaicina da pimenta-vermelha nem a piperina da pimenta-preta. A pungência é trigeminal (terpenos), não química (alcaloide). Folhas: amargas e herbáceas, mais intensas. Casca: adstringente tanânica marcada.",
+        "aroma": "Pimenta-rosa fresca e aromática, cítrico de casca de limão-siciliano (limoneno), pinheiro tropical suave (α e β-pineno), balsâmico-resinoso de Anacardiaceae (terebintina — fundo de manga verde e caju), floral discreto de pimenta-rosa. Moléculas: α-pineno, β-pineno, limoneno, β-cariofileno, mirceno.",
+        "cor_da_infusao": "Infusão de folhas: verde-amarelado dourado (#A8B840). Decocção de casca: marrom-avermelhado (#8B4A2A).",
+        "intensidade": "3/5 (fruto/pimenta-rosa — suave mas presente e complexo) · 2/5 (infusão de folhas).",
+        "notas": "Cabeça: cítrico-resinoso fresco e vivo (limoneno + pinenos) | Corpo: pimenta-rosa floral, balsâmico suave e envolvente | Fundo: terebintina de Anacardiaceae, manga verde tropical, persistência longa e elegante",
+        "bioma_de_origem": "Mata Atlântica — restinga, mangue, floresta ombrófila densa, Mata Atlântica nordestina. Espécie de grande plasticidade — adapta-se a ambientes perturbados (beira de estrada, pastos degradados, parques urbanos).",
+        "distribuicao_geografica": [
+          "Mata Atlântica: BA, SE, AL, PE, RJ, SP (litoral e interior), SC, RS.",
+          "Cerrado (transição) e Caatinga (cultivada).",
+          "Introduzida e invasora: Flórida/EUA ('Brazilian pepper tree' — problema ambiental grave, espécie invasora), Austrália (Queensland), Réunion (produção de pimenta-rosa para exportação), Ilhas Canárias, África do Sul.",
+          "Paradoxo: invasora em 3 continentes, subestimada na origem. Brasil exporta fruto bruto; Réunion exporta pimenta-rosa processada premium."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Cardamomo · Gengibre · Canela · Cravo · Pimenta-do-reino · Mel (blends especiados premium)"
+        "temperatura_ideal": "Frutos (pimenta-rosa): uso cru, moído fresco ou macerado em azeite — não ferver (resinas aromáticas termossensíveis). Infusão de folhas: 90–95 °C. Decocção de casca: 95 °C.",
+        "tempo_de_infusao": "Folhas: 8 min coberto. Casca: 15–20 min de decocção.",
+        "quantidade": "Folhas secas: 5–7 g para 500 ml. Casca: 10 g para 500 ml. Frutos medicinais: 2–5 g/dia (além do uso culinário à vontade).",
+        "metodo": "Frutos: moídos frescos em moedor de pimenta, maceratura em azeite ou vinagre. Folhas: infusão coberta. Casca: decocção. Gargarejo de folhas: 5 min de infusão + gargarejo 3×/dia.",
+        "reinfusoes": "Folhas: 1 reinfusão possível (40% de rendimento). Casca: sem reinfusão de valor.",
+        "melhor_momento": "Uso anti-inflamatório/antimicrobiano: manhã e tarde. Uso culinário: qualquer momento — preferencialmente frescos moídos na hora para máximo aroma.",
+        "combina_com": "Pimenta-do-reino (blend de pimentas clássico da culinária) · Limão siciliano (cítrico complementar) · Alecrim (blend mediterrâneo-atlântico) · Tomilho (anti-inflamatório aromático) · Gengibre (blend anti-inflamatório) · Copaíba (tópico anti-inflamatório amazônico+atlântico — β-cariofileno compartilhado)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Forte para antimicrobiano; moderada para cicatrizante e antifúngico; preliminar para analgésico tópico.",
+        "aplicacoes": [
+          {
+            "titulo": "Cicatrizante e antisséptico de feridas",
+            "texto": "Decocção de casca concentrada (20 g/500 ml) para lavar feridas, úlceras de pele e erisipela. Mecanismo: taninos gálicos/elágicos + terpenos antimicrobianos (α-pineno, limoneno) inibem colonização bacteriana e estimulam granulação. Uso tradicional NE/SE amplamente documentado. Troca do curativo 2×/dia."
+          },
+          {
+            "titulo": "Gargarejo anti-inflamatório e antisséptico",
+            "texto": "Infusão de folhas como gargarejo para faringite, amigdalite, aftas e estomatite. Evidência moderada — estudos brasileiros in vitro contra S. mutans e S. pyogenes. Uso popular difundido no SE do Brasil. 5 min de gargarejar 3–4×/dia durante o episódio agudo."
+          },
+          {
+            "titulo": "Antifúngico e antisséptico vaginal",
+            "texto": "Decocção de folhas em banho de assento — candidíase vulvovaginal e leucorreia. Terpenos (α-pineno, limoneno) e taninos com atividade antifúngica documentada contra Candida albicans. Evidência preliminar a moderada."
+          },
+          {
+            "titulo": "Spray antimicrobiano cutâneo",
+            "texto": "Extrato hidroalcoólico de frutos (30% álcool) — antifúngico cutâneo (Candida spp., Trichophyton — tinea pedis, onicomicose leve). Aplicação 2×/dia em área afetada. Evidência moderada — estudos brasileiros in vitro."
+          }
+        ],
+        "contraindicacoes": "Alergia a Anacardiaceae (manga, caju, pistache): reação cruzada possível — terpenos resínicos similares ao urushiol. Teste em área pequena de pele antes de aplicação ampla. Evitar mucosas em pessoas com sensibilidade comprovada."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Anti-inflamatório (folhas e frutos)",
-          "Antimicrobiano (amplo espectro)",
-          "Antifúngico",
-          "Analgésico leve",
-          "Antioxidante",
-          "Cicatrizante (uso tópico de extrato)",
-          "Componentes ativos:",
-          "Contraindicações:",
-          "Alergia ao caju ou manga (Anacardiaceae) — reação cruzada possível",
-          "Crianças < 6 anos: frutos podem causar irritação gástrica em quantidade",
-          "Gestação: uso culinário moderado — ok. Doses medicinais — cautela."
+          "Anti-inflamatório (β-cariofileno — agonista CB2, inibição de COX-2; pinenos — inibição de LOX)",
+          "Antimicrobiano amplo espectro (terpenos — S. aureus MRSA, E. coli, P. aeruginosa, C. albicans)",
+          "Antifúngico (frutos e folhas — Candida spp., Trichophyton spp.)",
+          "Analgésico (β-cariofileno via CB2 — mesmo mecanismo da copaíba, contexto Anacardiaceae)",
+          "Cicatrizante (taninos da casca + terpenos antimicrobianos)",
+          "Antioxidante (polifenóis, taninos, flavonóides)",
+          "Gastroprotetor (taninos — proteção de mucosa gástrica)",
+          "Repelente de insetos (terpenos dos frutos e folhas — uso popular documentado)"
         ],
         "componentes_ativos": [
           {
-            "label": "TERPENOS (alfa-pineno, beta-pineno, sabineno)",
-            "texto": "Antimicrobiano, anti-inflamatório"
+            "label": "β-cariofileno (sesquiterpeno)",
+            "texto": "Anti-inflamatório (inibição COX-2, agonista CB2), analgésico. Mesmo composto da copaíba — aqui em concentração menor mas com sinergia de outros terpenos."
           },
           {
-            "label": "SESQUITERPENOS",
-            "texto": "Anti-inflamatório, aromático"
+            "label": "α-pineno e β-pineno (monoterpenos)",
+            "texto": "Antimicrobiano potente (S. aureus, E. coli, C. albicans), broncodilatador, anti-inflamatório. 'Cheiro de pinheiro' — moléculas mais estudadas da classe."
           },
           {
-            "label": "TANINOS",
-            "texto": "Adstringente, antimicrobiano"
+            "label": "Limoneno (monoterpeno)",
+            "texto": "Antimicrobiano, ansiolítico leve, antiproliferativo (estudos in vitro). Responsável pela nota cítrica característica."
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "Mirceno, terpinoleno (monoterpenos)",
+            "texto": "Aromáticos, antimicrobianos, potenciadores de absorção cutânea de outros terpenos."
           },
           {
-            "label": "ÓLEOS ESSENCIAIS VOLÁTEIS",
-            "texto": "Antimicrobiano, aromático"
+            "label": "Taninos gálicos e elágicos (casca e folhas)",
+            "texto": "Adstringente cicatrizante, antimicrobiano, antiulcerogênico. Concentração alta na casca — base do uso cicatrizante tradicional."
+          },
+          {
+            "label": "Flavonóides (quercetina, miricetina, kaempferol)",
+            "texto": "Antioxidante, anti-inflamatório, cardioprotetor."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [
-          "Alergia ao caju ou manga (Anacardiaceae) — reação cruzada possível",
-          "Crianças < 6 anos: frutos podem causar irritação gástrica em quantidade",
-          "Gestação: uso culinário moderado — ok. Doses medicinais — cautela."
+        "evidencia": [
+          {
+            "indicacao": "Antimicrobiano (S. aureus, E. coli, C. albicans)",
+            "evidencia": "Forte",
+            "populacao": "Múltiplos estudos in vitro brasileiros (UFPB, UFPE, UFC)"
+          },
+          {
+            "indicacao": "Anti-inflamatório (inibição de COX e edema)",
+            "evidencia": "Moderada",
+            "populacao": "Modelos animais (Pieri FA et al., Rev Bras Plantas Med, 2011)"
+          },
+          {
+            "indicacao": "Cicatrizante (decocção de casca)",
+            "evidencia": "Moderada",
+            "populacao": "Uso tradicional documentado + modelos animais"
+          },
+          {
+            "indicacao": "Antifúngico vaginal (Candida albicans)",
+            "evidencia": "Moderada",
+            "populacao": "Estudos brasileiros in vitro + uso de campo"
+          },
+          {
+            "indicacao": "Analgésico (via CB2 — β-cariofileno)",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos animais"
+          }
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "Alergia a Anacardiaceae (manga, caju, pistache, sumac): reação cruzada possível — alertar alérgicos; usar com cautela.",
+          "Gestação (uso interno de folhas e casca em doses medicinais): taninos e terpenos — cautela; frutos em doses culinárias: seguro.",
+          "Doença renal crônica: uso interno prolongado de taninos — monitorar função renal.",
+          "Crianças < 6 anos: uso interno de folhas/casca — cautela (terpenos irritantes gástricos)."
+        ],
+        "interacoes": [
+          {
+            "label": "AINEs e corticoides",
+            "texto": "Efeito anti-inflamatório aditivo (β-cariofileno) — monitorar; geralmente benéfico mas requer atenção com dosagem."
+          },
+          {
+            "label": "Anticoagulantes (varfarina)",
+            "texto": "Quercetina e miricetina em doses concentradas — monitorar INR se uso intensivo de extrato."
+          },
+          {
+            "label": "Antifúngicos (fluconazol, itraconazol)",
+            "texto": "Ação antifúngica aditiva — geralmente benéfico como complemento; informar médico."
+          }
+        ],
+        "efeitos_adversos": "Uso tópico: raramente dermatite de contato em pele muito sensível (terpenos resínicos). Uso interno: náusea em altas doses (terpenos irritantes gástricos). Inalação de óleo essencial concentrado: irritação de mucosas respiratórias.",
+        "dose_maxima": "Folhas: 5–7 g/500 ml 2×/dia. Casca: 10 g/500 ml 1–2×/dia. Frutos culinários: sem máxima. Tintura de frutos (1:5): 2–4 ml 3×/dia.",
+        "fontes": [
+          "Pieri FA et al. — Schinus terebinthifolia: atividade biológica e aplicações terapêuticas (Rev Bras Plantas Med, 2011)",
+          "Degáspari CH et al. — Propriedades antioxidantes de Schinus terebinthifolia (Arq Ciên Saúde UNIPAR, 2004)",
+          "Gehrke IT et al. — Constituents of Schinus terebinthifolia Raddi (Nat Prod Commun, 2013)",
+          "Schmourlo G et al. — Screening of antifungal agents using ethanol precipitation (J Ethnopharmacol, 2005)",
+          "Martinez MJ et al. — Screening of antimicrobial plants from Cuba and Brazil (J Ethnopharmacol, 1996)",
+          "ANVISA — Formulário de Fitoterápicos da Farmacopeia Brasileira, 2.ª ed. (2021)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "1/3",
+            "observacao": "Sutil, resinoso-doce da casca do fruto — presente mas não domina"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Discreto amargor de terpenos e semente interna — fundo, não dominante"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "1/3",
+            "observacao": "Profundidade resinosa de Anacardiaceae — 'substância' de madeira nobre"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente — a 'pungência' da pimenta-rosa é trigeminal (terpenos), não química (capsaicina ou piperina)"
+          }
+        ],
+        "olfativo_familia": "Resinoso-cítrico tropical com notas de pimenta-rosa floral e fundo de Anacardiaceae",
+        "olfativo_descritores": [
+          "Pimenta-rosa fresca e aromática — não é pimenta-preta; mais floral, menos pungente, com terebintina suave",
+          "Cítrico de casca de limão-siciliano (limoneno — fresco, vivo, imediato)",
+          "Pinheiro tropical suave (α e β-pineno — floresta de coníferas em versão quente e úmida)",
+          "Balsâmico-resinoso de Anacardiaceae (terebintina — fundo de manga verde e caju tropical)",
+          "Floral discreto de pimenta-rosa pura (característica própria, sem paralelo perfeito no catálogo)",
+          "Fundo de mangaba e caju verde (herança aromática da família — Anacardiaceae sul-americana)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Fraca",
+            "molecula": "α-pineno e limoneno ativam levemente TRPM8 — frescor de pinheiro-cítrico, não de menta"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Fraca a moderada",
+            "molecula": "Terpenos sesquiterpênicos pesados — calor resinoso suave, não é o calor de capsaicina; aquece sem arder"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Fraca",
+            "molecula": "Terpenos menores e traços de compostos fenólicos"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Fraca (fruto) / Forte (casca em decocção)",
+            "molecula": "Fruto: casca com taninos leves. Casca em decocção: taninos gálicos e elágicos — adstringência marcada"
+          }
+        ],
+        "tatil": "Fruto (pimenta-rosa): casca fina, seca e crocante que estoura com facilidade ao ser pressionada, liberando a resina aromática numa explosão de terpenos. A semente interna é mais firme, mais amarga e menos aromática — o chef usa só a casca. A 'pungência' é trigeminal leve: aquece suavemente sem arder, como um bálsamo que passa por pimenta. Infusão de folhas: corpo leve, limpo, resinoso suave — sem a textura do fruto. Decocção de casca: adstringência marcada de taninos, dry mouthfeel pronunciado. Uso culinário: a crocância da casca vazia do fruto — depois de estourar — é a textura buscada pelo chef para decorar e aromatizar simultaneamente.",
+        "descricao_integrada": "A aroeira-mansa tem a dupla vida mais coerente do catálogo: é ao mesmo tempo a 'pimenta-rosa' das cozinhas com estrela Michelin em Paris, Londres e Nova York, e a erva medicinal do gargarejo de avó no interior nordestino. Essa coerência não é acidente — é a mesma química fazendo trabalhos diferentes em contextos diferentes. O α-pineno que perfuma o prato do chef francês é o mesmo que inibe S. aureus na faringite do sertanejo. O limoneno que torna o fruto cítrico-floral é o mesmo que tem atividade antifúngica estudada em laboratório. A planta não distingue gastronomia de medicina — foi a cultura que dividiu o que a química unificou."
       },
       "cultura": {
-        "historia": "A pimenta-rosa brasileira chegou à alta gastronomia europeia na década de 1980 quando chefs franceses descobriram seu perfil aromático único — a mezcla de pimenta, resina e flor que a pimenta-do-reino nunca teve. Tornou-se ingrediente de alta cozinha de Paris antes de ser reconhecida como planta medicinal brasileira.  A ironia é que a Schinus terebinthifolia é considerada espécie invasora na Flórida (EUA) e no Hawaii — onde foi introduzida como ornamental e se tornou plaga ecológica. A mesma árvore que o Brasil trata como nativa preciosa é erradicada como praga nos EUA.",
-        "cerimonial": "",
-        "brasil": "A aroeira-mansa é a erva da Mata Atlântica com maior potencial de dois mercados simultâneos: gastronômico premium (pimenta-rosa) e fitoterápico documentado. A sinergia entre identidade culinária reconhecida globalmente e validação medicinal crescente é o posicionamento ideal para exportação europeia.",
-        "curiosidade": ""
+        "historia": "A aroeira-mansa é nativa da Mata Atlântica e foi documentada pelo naturalista francês Philibert Commerson (1773) durante a expedição Bougainville no Rio de Janeiro. A pimenta-rosa como especiaria entrou na alta gastronomia europeia nos anos 1980, quando chefs da nouvelle cuisine francesa descobriram o fruto de Schinus terebinthifolia — exportado do Brasil e da Ilha da Reunião — como alternativa floral e suave à pimenta-preta convencional. Hoje é ingrediente presente nas melhores cozinhas do mundo. A ironia histórica completa: enquanto a 'pimenta-rosa brasileira' é ingrediente premium em Paris, no Brasil de origem é planta de quintal e margem de estrada que poucos valorizam comercialmente. A Ilha da Reunião (território francês) exporta pimenta-rosa processada e certificada de origem para o mundo; o Brasil exporta o fruto bruto ou não exporta.",
+        "cerimonial": "Comunidades quilombolas do NE e SE usam a aroeira-mansa como planta de cura e proteção espiritual — integra banhos de ervas de candomblé e umbanda (associada a Ogum e Oxalá) para 'limpeza e proteção'. A defumação de folhas secas de aroeira em espaços domésticos para 'limpar o ambiente' é prática comum no interior de MG, BA e RJ — equivalente da sage bundle dos povos indígenas norte-americanos, mas com química antimicrobiana documentada.",
+        "brasil": "A aroeira-mansa é um dos maiores paradoxos da bioeconomia brasileira: introduzida nos EUA no século XIX como ornamental, tornou-se invasora grave na Flórida (onde é chamada de 'Brazilian pepper tree' e considerada uma das piores plantas invasoras do estado, alterando ecossistemas de manguezal). No Brasil de origem, nunca desenvolveu cadeia produtiva para o mercado gastronômico europeu que importa pimenta-rosa de Reunião. A invasão na Flórida gerou pesquisa científica americana sobre a planta (para controle biológico) que paradoxalmente confirmou suas propriedades antimicrobianas — gerando interesse farmacológico.",
+        "curiosidade": "A FDA americana proibiu a chamada de 'pink pepper' para Schinus terebinthifolia no início dos anos 1980 — por pertencer à Anacardiaceae (caju, manga, pistache) e não à Piperaceae (pimenta verdadeira), com risco de reação em alérgicos. A proibição foi levantada em 1986 após estudos demonstrarem segurança em uso culinário normal. Hoje circula livremente como 'pink pepper' no mundo gastronômico — mas o alerta para alérgicos severos a caju permanece farmacologicamente relevante."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Phyto-ANVISA + Especiaria global",
-        "status_anvisa": "Uso tradicional reconhecido para partes aéreas. Frutos: especiaria alimentar regulamentada.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutificação: agosto–outubro"
+        "eixo_botanico_tpc": "Fitoterápico Mata Atlântica / Especiaria aromática",
+        "status_anvisa": [
+          "Frutos (pimenta-rosa): alimento/especiaria — sem regulação medicinal específica.",
+          "Folhas e casca: uso tradicional reconhecido no Formulário de Fitoterápicos da Farmacopeia Brasileira (2021).",
+          "Óleo essencial: regulamentado como ingrediente cosmético (ANVISA RDC 15/2014)."
+        ],
+        "status_ema": "Não monografado pelo HMPC. Fruto (pimenta-rosa): ingrediente alimentar sem restrições na UE. Óleo essencial: ingrediente cosmético regulamentado.",
+        "status_fda": "Frutos como especiaria: GRAS (1986 — após revisão da proibição inicial). Não regulamentado para uso medicinal. Alertas: risco de reação cruzada em alérgicos a Anacardiaceae.",
+        "certificacao_organica": [
+          "Disponível via IBD e Ecocert para produção orgânica da Mata Atlântica (BA, RJ, SP, SC, RS).",
+          "Escala de certificação pequena — oportunidade para cadeia organizada de pimenta-rosa orgânica brasileira."
+        ],
+        "sazonalidade": "Frutificação: maio–outubro (pico agosto–setembro). Folhas: disponíveis o ano todo. Os frutos vermelhos maduros devem ser colhidos antes de escurecer demais — pico aromático no vermelho-alaranjado vivo."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Produtores agroecológicos de restinga e Mata Atlântica (BA, RJ, SP, SC, RS). Cooperativas de especiarias do Sul (RS, SC) com certificação orgânica emergente.",
+        "faixa_de_preco": [
+          "Pimenta-rosa frutos secos 50 g: R$ 15–35.",
+          "Extrato/tintura hidroalcoólica 30 ml: R$ 25–55.",
+          "Folhas secas 50 g: R$ 8–18.",
+          "Óleo essencial 10 ml: R$ 40–90."
+        ],
+        "formatos": "Frutos secos inteiros (pimenta-rosa — gastronômico e medicinal); frutos moídos; tintura hidroalcoólica; folhas secas para infusão; decocção de casca; óleo essencial; blend de pimentas premium (com pimenta-do-reino e pimenta-branca)."
+      },
+      "destaques": [
+        {
+          "label": "Pimenta-rosa das estrelas Michelin",
+          "texto": "Especiaria brasileira premium da alta gastronomia mundial — os mesmos terpenos que perfumam o prato do chef têm atividade antimicrobiana documentada."
+        },
+        {
+          "label": "β-cariofileno canabinóide CB2",
+          "texto": "Mesmo composto analgésico e anti-inflamatório da copaíba — aqui em contexto Anacardiaceae, com sinergia de pinenos e limoneno."
+        },
+        {
+          "label": "Invasora em 3 continentes, subestimada no Brasil",
+          "texto": "O paradoxo de valor mais emblemático da Mata Atlântica: praga na Flórida, produto premium na Europa, planta de quintal no Brasil de origem."
+        }
+      ]
     },
     {
       "slug": "valeriana",
@@ -15739,218 +15889,484 @@
     },
     {
       "slug": "murici",
-      "nome_popular": "Murici-de-Tabuleiro",
-      "nome_cientifico": "Byrsonima crassifolia (L.) Kunth / B. crassa Nied. (cerrado)",
-      "tagline": "O fruto do sol do cerrado e da restinga — antioxidante tropical com vitamina C excepcional, sabor único e tradição de uso que vai do quintal nordestino à alta gastronomia brasileira.",
+      "nome_popular": "Murici",
+      "nome_cientifico": "Byrsonima crassifolia (L.) Kunth",
+      "tagline": "O fruto do sol do cerrado e da restinga — antioxidante tropical com vitamina C excepcional, sabor único e tradição que vai do quintal nordestino à alta gastronomia.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Byrsonima crassifolia (L.) Kunth / B. crassa Nied. (cerrado)",
+        "nome_cientifico": "Byrsonima crassifolia (L.) Kunth",
         "familia_botanica": "Malpighiaceae",
-        "tipo_botanico": "Alimento funcional antioxidante / antidiarreico",
-        "parte_usada": "Fruto (alimentar); folhas (infusão medicinal — antidiarreico).",
+        "tipo_botanico": "Alimento funcional / Antidiarreico tradicional",
+        "parte_usada": "Fruto (alimentar, licores, sorvetes); folhas (infusão medicinal antidiarreica e anti-inflamatória).",
         "sinonimos": [
-          "Murici · murici-de-tabuleiro · muruci · nance (América Central)",
-          "Murici (uso único no Brasil)"
+          "muruci · murici-de-tabuleiro · nance (América Central) · craboo (Belize)",
+          "Byrsonima crassa Nied. (espécie cerradense afim)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Aromático-oleoso intenso, tropical-exótico, queijoso (ácidos graxos livres característicos).",
-        "cor_da_infusao": "",
-        "intensidade": "4/5 — perfil de sabor extremo, inconfundível.",
-        "notas": "",
-        "bioma_de_origem": "Cerrado e Restinga — BA, PE, MA, PI, CE, GO, MT, MS.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Azedo-adocicado com caráter queijoso-rançoso característico (ácidos graxos livres: butírico, caprílico) e retrogusto tropical persistente.",
+        "aroma": "Aromático-oleoso intenso, exótico-tropical, reminiscente de queijo-de-manteiga e frutas fermentadas; inconfundível e polarizador.",
+        "cor_da_infusao": "Infusão de folhas: âmbar-esverdeado, levemente turva. Polpa: amarelo-ouro vibrante.",
+        "intensidade": "5/5 — sabor extremo, polarizador; quem ama, ama visceralmente.",
+        "notas": "A intensidade aromática é resultado de ácidos graxos de cadeia curta e média livres na polpa — fenômeno raro em frutas tropicais. O sabor queijoso é marca registrada e razão de culto gastronômico.",
+        "bioma_de_origem": "Cerrado (Byrsonima crassa) e Restinga / Caatinga costeira (Byrsonima crassifolia) — BA, PE, MA, PI, CE, GO, MT, MS.",
+        "distribuicao_geografica": [
+          "Nordeste brasileiro (Restinga e Caatinga costeira): maior volume comercial",
+          "Cerrado (GO, MT, MS, MG): B. crassa associada a veredas e campos abertos",
+          "América Central e Caribe: nance — consumo tradicional amplo (México ao Panamá)",
+          "Venezuela e Colômbia: uso alimentar e medicinal nas savanas"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "Folhas: 90–95 °C (infusão). Fruto: consumo in natura, licor, sorvete, geleia — sem calor elevado para preservar vitamina C.",
+        "tempo_de_infusao": "Folhas: 8–12 minutos coberto. Fruto: direto (in natura) ou processado a frio.",
+        "quantidade": "Folhas secas: 5 g / 200 ml. Polpa congelada: 100–150 g por porção (sorvete/suco).",
+        "metodo": "Folhas: infusão coberta em água quente. Polpa: liquidificar com água de coco ou leite e coar; ou usar diretamente em sorvetes, mousses e licores artesanais.",
+        "reinfusoes": "Folhas: até 2 infusões (redução de 30% de taninos na 2ª). Polpa: uso único.",
+        "melhor_momento": "Folhas: ao acordar (antidiarreico) ou antes de refeições (digestivo). Fruto/polpa: lanche, sobremesa, coquetéis.",
+        "combina_com": "Tapioca, castanha-de-caju, cupuaçu, pimenta-de-cheiro; cachaça artesanal (licor); mel do cerrado; sorvete de creme como base neutra."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Preliminar — uso etnobotânico e dados in vitro/in vivo em modelos animais.",
+        "aplicacoes": [
+          {
+            "titulo": "Ação cicatrizante (extrato foliar)",
+            "texto": "Extratos de folhas de B. crassifolia em estudos com roedores aceleraram a epitelização de feridas cutâneas. Mecanismo proposto: taninos condensados promovem contração tecidual e inibem Staphylococcus aureus local."
+          },
+          {
+            "titulo": "Anti-inflamatório tópico (folhas)",
+            "texto": "Triterpenos (ácido ursólico, ácido betulínico) isolados de folhas demonstraram inibição de COX-2 e redução de edema em modelos murinos de inflamação cutânea. Uso popular: cataplasma de folhas esmagadas sobre picadas de insetos."
+          }
+        ],
+        "contraindicacoes": "Evitar uso tópico em feridas abertas profundas sem orientação. Gestantes: sem dados de segurança tópica."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antioxidante (vitamina C + polifenóis)",
+          "Antioxidante (vitamina C + polifenóis totais elevados)",
           "Antidiarreico (folhas — taninos adstringentes)",
-          "Anti-inflamatório (folhas)",
-          "Antifúngico (folhas — ácido betulínico)",
-          "Nutritivo (vitamina C, ferro, cálcio)",
-          "Componentes ativos:"
+          "Anti-inflamatório (folhas — triterpenos: ácido ursólico, betulínico)",
+          "Antifúngico (folhas — ácido betulínico, flavonoides)",
+          "Nutritivo-funcional (vitamina C, ferro não-heme, cálcio, carotenoides)"
         ],
         "componentes_ativos": [
           {
-            "label": "VITAMINA C",
-            "texto": "Antioxidante, imunidade"
+            "label": "VITAMINA C (ácido ascórbico)",
+            "texto": "30–60 mg/100 g de polpa fresca — teor expressivo para fruta tropical. Antioxidante essencial, cofator de síntese de colágeno, imunomodulador. Sensível ao calor: preservar consumo in natura ou polpa crua."
           },
           {
-            "label": "TANINOS (folhas)",
-            "texto": "Antidiarreico, adstringente"
+            "label": "TANINOS CONDENSADOS (folhas)",
+            "texto": "Proantocianidinas de alto peso molecular. Mecanismo antidiarreico: precipitam proteínas da mucosa intestinal, formando barreira protetora; inibem adesão de patógenos (E. coli, Shigella) ao epitélio. Concentração máxima em folhas jovens."
           },
           {
-            "label": "ÁCIDO BETULÍNICO (folhas)",
-            "texto": "Anti-inflamatório, antifúngico, antitumoral"
+            "label": "ÁCIDO URSÓLICO e ÁCIDO BETULÍNICO (folhas)",
+            "texto": "Triterpenos pentacíclicos com atividade anti-inflamatória (inibição NF-κB, COX-2) e antifúngica (ruptura de membrana de Candida spp.). Ácido betulínico demonstra citotoxicidade seletiva para células melanoma in vitro."
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Antioxidante, anti-inflamatório"
+            "label": "CAROTENOIDES (polpa)",
+            "texto": "β-caroteno e luteína na polpa amarela. Precursores de vitamina A; antioxidantes lipossolúveis; proteção ocular e cutânea."
           },
           {
-            "label": "ÁCIDOS GRAXOS (fruto)",
-            "texto": "Nutritivo, aromático"
+            "label": "ÁCIDOS GRAXOS VOLÁTEIS (polpa)",
+            "texto": "Ácido butírico, caprílico e caproico em concentrações incomuns para frutas. Responsáveis pelo aroma queijoso-rançoso característico. Ácido butírico: substrato preferencial de colonócitos, potencialmente benéfico à microbiota colônica."
+          },
+          {
+            "label": "FLAVONOIDES (quercetin, rutina — folhas e polpa)",
+            "texto": "Antioxidantes, anti-inflamatórios, vasoprotegimento capilar. Potencializam ação da vitamina C por efeito poupador (quelação de metais pró-oxidantes)."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Diarreia aguda (folhas)",
+            "evidencia": "Moderada",
+            "populacao": "Etnobotânica extensa (nordeste, cerrado) + estudos in vitro e em modelos animais confirmando ação antidiarreica via taninos. Ausência de ensaios clínicos randomizados."
+          },
+          {
+            "indicacao": "Estresse oxidativo / antioxidante",
+            "evidencia": "In vitro (alta), in vivo (preliminar)",
+            "populacao": "Capacidade DPPH elevada da polpa e folhas; dados clínicos em humanos ainda ausentes."
+          },
+          {
+            "indicacao": "Antifúngico (candidíase — uso popular com folhas)",
+            "evidencia": "Preliminar (in vitro)",
+            "populacao": "CIM favorável contra Candida albicans em extratos de folhas. Sem ensaios clínicos."
+          }
+        ],
+        "contraindicacoes": "Folhas (infusão concentrada): evitar em casos de obstipação grave (ação adstringente). Gestação: sem dados clínicos — usar com cautela. Não substituir tratamento médico em diarreias infecciosas graves.",
+        "interacoes": [
+          {
+            "label": "Ferro (absorção)",
+            "texto": "Taninos das folhas podem quelatar ferro não-heme. Não consumir infusão de folhas simultânea a alimentos ricos em ferro ou suplementos minerais."
+          },
+          {
+            "label": "Anticoagulantes",
+            "texto": "Vitamina K presente nas folhas pode antagonizar warfarina em consumo intensivo. Dados insuficientes para quantificar risco clínico."
+          }
+        ],
+        "efeitos_adversos": "Polpa: intolerância ao sabor intenso em não-habituados (comum). Folhas em dose alta: obstipação, cólicas. Alergia a Malpighiaceae: rara, mas possível.",
+        "dose_maxima": "Folhas: 10 g/dia (infusão). Polpa: sem restrição conhecida em consumo alimentar normal (30–150 g/dia).",
+        "fontes": [
+          "Almeida CF et al. (2006). Plants of the caatinga with antibiotic activity. J Ethnopharmacol.",
+          "Rocha WS et al. (2011). Compostos fenólicos totais e taninos condensados em frutas nativas do cerrado. Rev Bras Frutic.",
+          "Garmus TT et al. (2014). Extração de compostos fenólicos de folhas de Byrsonima crassifolia. Ciênc Tecnol Aliment.",
+          "EMBRAPA Cerrados — Fichas de frutas nativas do cerrado: murici.",
+          "USDA FoodData Central — Nance (Byrsonima crassifolia) composition."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Acidez",
+            "intensidade": "Alta (4/5)",
+            "observacao": "pH 3,2–3,8; ácidos málico e cítrico dominantes. Acidez viva que equilibra o dulçor."
+          },
+          {
+            "dimensao": "Dulçor",
+            "intensidade": "Moderado (3/5)",
+            "observacao": "Açúcares simples (glicose + frutose): 8–14 Brix dependendo do estágio de maturação. Doçura opacada pelo caráter graxo-queijoso."
+          },
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Leve (1–2/5)",
+            "observacao": "Polifenóis da polpa; aumenta levemente em frutos verdes ou com casca."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Leve (polpa) / Alta (folhas)",
+            "observacao": "Polpa: taninos residuais causam leve secura. Folhas: adstringência marcante — base do uso antidiarreico."
+          },
+          {
+            "dimensao": "Caráter queijoso-rançoso",
+            "intensidade": "Alta (4–5/5) — traço identitário",
+            "observacao": "Ácidos graxos voláteis livres (butírico, caprílico). Polarizador: quem se adapta valoriza como assinatura sensorial única entre frutas brasileiras."
+          }
+        ],
+        "olfativo_familia": "Frutal-tropical exótico com nota lácteo-queijosa e fundo oleoso.",
+        "olfativo_descritores": [
+          "queijo-de-coalho tropical",
+          "manteiga rançosa",
+          "fruta amarela madura (manga-abacaxi)",
+          "notas oleosas e fermentadas",
+          "fundo terroso-cerradeiro"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Mecanorreceptores bucais",
+            "ativacao": "Alta",
+            "molecula": "Taninos condensados (folhas) → adstringência / precipitação de proteínas salivares"
+          }
+        ],
+        "tatil": "Polpa: pastosa, cremosa-oleosa; casca fina e macia. Polpa congelada: textura cremosa ideal para sorvete.",
+        "descricao_integrada": "O murici é a fruta mais polarizadora do Brasil — não por agressividade, mas por singularidade extrema. Seu perfil queijoso-tropical não tem paralelo no mundo das frutas; quem chega sem expectativa freqüentemente rejeita; quem é apresentado com contexto transforma-se em defensor fervoroso. Na infusão, as folhas entregam adstringência medicinal limpa, tânica, sem o perfil graxo do fruto — são mundos sensoriais completamente distintos na mesma planta."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O murici é o fruto que mais divide opiniões no Brasil — quem cresceu comendo ama incondicionalmente; quem experimenta pela primeira vez muitas vezes estranha o cheiro \"queijoso\". Alex Atala (D.O.M.) serviu murici em sobremesas premiadas — elevando a \"estranheza\" do fruto a virtude gastronômica. O sorvete de murici é uma das melhores combinações de sabor e memória afetiva do Brasil nordestino-cerratense.",
-        "curiosidade": ""
+        "historia": "O murici era consumido por populações indígenas do cerrado e da caatinga costeira há milênios — sementes carbonizadas foram encontradas em sítios arqueológicos do nordeste datados de 3.000 a.p. No México e América Central, o nance (B. crassifolia) é considerado fruta nacional em regiões do Pacífico, consumido in natura, em chicha fermentada e conservas em aguardente. No Brasil, o murici entrou na dieta nordestina por via indígena e permaneceu como alimento de extrativismo, base de licores artesanais e sorvetes regionais que definem identidade gastronômica.",
+        "cerimonial": "Entre povos indígenas do cerrado (Kayapó, Xavante), o murici está associado à coleta coletiva feminina — as mulheres colhem juntas no cerrado no início da estação chuvosa (outubro-novembro). Os frutos são compartilhados imediatamente após a coleta, numa prática social de reciprocidade alimentar. Na América Central, o nance fermentado em aguardente (chicha de nance) é usado em celebrações de fim de colheita.",
+        "brasil": "O nordeste brasileiro é o maior polo de consumo de murici. Fortaleza, Recife e Salvador têm mercados de extrativismo onde o fruto é vendido fresco, congelado e em polpa. O sorvete de murici é considerado um dos sabores mais autenticamente nordestinos — ao lado do cupuaçu e do cajá — e é símbolo de identidade regional. A alta gastronomia brasileira, influenciada pelo movimento 'Cozinha Brasil' de Alex Atala e outros, redescobriu o murici nos anos 2010 como ingrediente premium para menu degustação: usam-se curd de murici, esfera de murici em gel de maracujá, ganache de murici com chocolate 70%. O paradoxo é que o fruto considerado 'pobre' no interior nordestino virou iguaria de fine dining paulistano.",
+        "curiosidade": "O murici tem o cheiro mais controverso de todas as frutas brasileiras. O ácido butírico — o mesmo composto responsável pelo odor de queijo, vômito e manteiga rançosa — está presente na polpa em concentração incomum para frutas. A explicação evolucionária é curiosa: o murici co-evoluiu com aves frugívoras que são atraídas por odores fermentados-gordurosos, não com primatas que preferem aromas florais e açucarados. O resultado é uma fruta que divide a humanidade entre repulsa imediata e devoção incondicional — sem meio-termo possível."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Alimento funcional / Fitoterápico",
-        "status_anvisa": "Alimento.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutificação: novembro–março"
+        "eixo_botanico_tpc": "Alimento funcional / Produto alimentício de origem vegetal (PAOV) — não enquadrado como planta medicinal pela ANVISA.",
+        "status_anvisa": "Polpa: alimento convencional (GGALI). Folhas como fitoterápico: sem monografia publicada — uso tradicional não regularizado pela IN 02/2014.",
+        "status_ema": "Não avaliado pela EMA (planta com distribuição restrita à América tropical).",
+        "status_fda": "GRAS implícito para polpa (nance) em uso alimentar tradicional na América Central e Caribe; sem avaliação formal.",
+        "certificacao_organica": "Extrativismo sustentável predomina — potencial de certificação orgânica por manejo (IBAMA / IBD). Ausência de pesticidas na produção extrativista típica.",
+        "sazonalidade": "Nordeste (restinga): outubro–janeiro (pico novembro-dezembro). Cerrado: novembro–fevereiro. Polpa congelada disponível o ano todo em mercados do nordeste."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Produtores extrativistas do nordeste (BA, PE, CE, PI, MA) — venda em feiras e atacados regionais",
+          "Polpa congelada: distribuidores nordestinos (Frutap, Amazônia Polpas, fornecedores locais)",
+          "Alta gastronomia: importado do nordeste por distribuidores especializados (SP, RJ)"
+        ],
+        "faixa_de_preco": "Fruto fresco: R$ 8–20/kg (sazonal, mercados nordestinos). Polpa congelada: R$ 15–35/kg. Folhas secas: R$ 20–40/100g (herbanárias especializadas).",
+        "formatos": [
+          "Fruto fresco (sazonal, nordeste)",
+          "Polpa congelada (100g–1kg)",
+          "Sorvete artesanal (produtores regionais)",
+          "Licor artesanal de murici (cachaça + murici macerado)",
+          "Folhas secas (herbanárias — uso medicinal antidiarreico)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "Fruta mais polarizadora do Brasil",
+          "texto": "O murici divide opiniões como nenhuma outra: seu perfil queijoso-tropical, resultado de ácidos graxos voláteis raros em frutas, provoca rejeição imediata ou devoção total — sem meio-termo. Essa singularidade extrema é sua marca identitária e motor de culto gastronômico."
+        },
+        {
+          "label": "Dois usos completamente diferentes na mesma planta",
+          "texto": "O fruto é alimento funcional aromático, rico em vitamina C e carotenoides, base de sorvetes, licores e fine dining. As folhas são medicamento tradicional antidiarreico, ricas em taninos adstringentes e triterpenos anti-inflamatórios — mundos sensoriais e farmacológicos opostos na mesma Malpighiaceae."
+        },
+        {
+          "label": "Do quintal pobre ao prato de fine dining",
+          "texto": "O murici percorreu o caminho improvável de fruta de extrativismo nordestino a ingrediente premium da alta gastronomia brasileira — curd, esfera, ganache e gelificados aparecem em menus degustação de São Paulo. Símbolo da valorização das frutas nativas no Brasil do século XXI."
+        },
+        {
+          "label": "Ácido butírico: o paradoxo evolutivo",
+          "texto": "A polpa contém ácido butírico em concentração incomum para frutas — o mesmo composto do queijo e da manteiga rançosa. Co-evolução com aves frugívoras (atraídas por odores fermentados-gordurosos) em vez de primatas explica o aroma controverso. Bônus inesperado: ácido butírico é substrato preferencial de colonócitos e protege a barreira intestinal."
+        }
+      ]
     },
     {
       "slug": "jabuticaba",
       "nome_popular": "Jabuticaba",
-      "nome_cientifico": "Plinia cauliflora (Mart.) Kausel (sin.: Myrciaria cauliflora)",
-      "tagline": "A uva que nasce no tronco — fruto endêmico do Brasil com antocianinas superiores ao mirtilo, resveratrol documentado e uma das identidades gastronômicas mais singulares do mundo.",
+      "nome_cientifico": "Plinia cauliflora (Mart.) Kausel",
+      "tagline": "A uva que nasce no tronco — fruto endêmico do Brasil com resveratrol documentado, antocianinas comparáveis ao açaí e o ritual de consumo mais singular do catálogo.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Plinia cauliflora (Mart.) Kausel (sin.: Myrciaria cauliflora)",
-        "familia_botanica": "Myrtaceae",
-        "tipo_botanico": "Alimento funcional antioxidante / anti-inflamatório",
-        "parte_usada": "Fruto (polpa e casca); casca seca em infusão; casca em vinho/licor.",
+        "nome_cientifico": "Plinia cauliflora (Mart.) Kausel (sin.: Myrciaria cauliflora (Mart.) O.Berg)",
+        "familia_botanica": "Myrtaceae (família da goiaba — Psidium guajava, da pitanga — Eugenia uniflora, do camu-camu — Myrciaria dubia — família de frutos aromáticos tropicais com propriedades antioxidantes e antimicrobianas)",
+        "tipo_botanico": "Alimento funcional antioxidante / anti-inflamatório / fitoterápico",
+        "parte_usada": "Fruto inteiro — polpa e casca (fresco); casca seca em infusão; pó liofilizado integral (casca + polpa — formato recomendado por preservar a farmacologia da casca); vinho e licor artesanal (uso cultural). A casca é o componente farmacologicamente mais rico: concentra as antocianinas, o resveratrol e os taninos. O consumo tradicional (sugar a polpa, cuspir a casca) desperdiça o componente mais valioso.",
         "sinonimos": [
-          "Jabuticaba · jaboticaba · jabuticabeira",
-          "Brazilian grape tree (inglês) · Jaboticaba (espanhol/francês)",
-          "Uso único no Brasil — sem equivalente cultural externo"
+          "Jabuticaba · jaboticaba · jabuticabeira · uva-do-Brasil",
+          "Brazilian grape tree (inglês) · jaboticaba (espanhol/francês)",
+          "ATENÇÃO: Plinia cauliflora (jabuticaba-sabará — mais comum, SP/MG — frutos menores, mais intensos) ≠ Plinia jaboticaba (jabuticaba-açu — fruto maior, mais suave, MA) ≠ Plinia phitrantha (jabuticaba-híbrida). Perfis de antocianinas e resveratrol variam entre espécies — identificar a espécie ao adquirir pó liofilizado."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Frutado-floral intenso, uva-jasmim, fermento suave.",
-        "cor_da_infusao": "",
-        "intensidade": "3/5 (fruto) — 2/5 (infusão de casca).",
-        "notas": "",
-        "bioma_de_origem": "Mata Atlântica — endêmica do Brasil; SP, MG, RJ, PR, MS, GO.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Fruto maduro (polpa): doce frutado intenso, acidez equilibrada suave, fundo de uva-Concord com toque floral tropical, leve fermentado nobre (leveduras naturais da casca). Casca: adstringente marcada (taninos), levemente amarga — contraste marcado com a polpa. A combinação polpa doce + casca adstringente cria a complexidade que define a jabuticaba.",
+        "aroma": "Frutado-floral intenso de Myrtaceae, uva-Concord tropical (mais complexo que uva europeia), jasmim-fruta floral (herança Myrtaceae), fermento nobre de levedura silvestre (cascas com leveduras selvagens), cassis e amora. Moléculas: ésteres frutados tropicais (acetato de isoamila, butirato de etila), antocianinas voláteis, terpenos florais de Myrtaceae.",
+        "cor_da_infusao": "Casca (fruto maduro): roxo-escuro a quase preto (#2A0A2E). Infusão de casca seca: roxo intenso (#4A1542). Pó liofilizado em água: roxo-violeta vibrante. Cor é indicador visual de concentração de antocianinas — quanto mais intenso o roxo, maior a riqueza farmacológica.",
+        "intensidade": "3/5 (fruto) · 2/5 (infusão de casca).",
+        "notas": "Cabeça: frutado-floral intenso de Myrtaceae (ésteres + terpenos florais) | Corpo: uva-tropical doce com fermento nobre | Fundo: adstringência tânica da casca, cassis, amora",
+        "bioma_de_origem": "Mata Atlântica — endêmica do Brasil. SP, MG, RJ, PR, MS, GO. Espécie de sub-bosque e borda de Mata Atlântica.",
+        "distribuicao_geografica": [
+          "Brasil: SP (maior produtor — Campinas, Valinhos, interior paulista), MG (Sul de Minas), RJ, PR, MS, GO.",
+          "Introduzida: Israel (kibbutzim — produção para specialty fruits), Califórnia/EUA (comunidade brasileira), Portugal, Austrália.",
+          "Endêmica do Brasil — única espécie de Plinia com cultivo comercial no mundo.",
+          "Altamente perecível (3–4 dias após colheita) — impossível exportar in natura. Pó liofilizado é o único formato viável para mercado internacional."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Hibisco · Açaí · Pitanga (blends roxos antioxidantes da Mata Atlântica)"
+        "temperatura_ideal": "Fruto: consumo direto à temperatura ambiente. Infusão de casca: 90 °C. NÃO ferver o suco/polpa (antocianinas termossensíveis — perda de 30–50% acima de 70 °C).",
+        "tempo_de_infusao": "Casca seca: 8–10 min de infusão coberta.",
+        "quantidade": "Fruto fresco: 100–300 g/dia (uso alimentar). Casca seca: 5–8 g para 500 ml. Pó liofilizado integral: 5–15 g/dia.",
+        "metodo": "Fruto fresco: pressionar entre os lábios, romper a casca, sugar a polpa, cuspir casca e caroço (ritual tradicional). Para máxima farmacologia: consumir com a casca (difícil — muito adstringente) ou usar pó liofilizado integral. NÃO comer o caroço (amargo, indigestivo).",
+        "reinfusoes": "Casca seca: 1 reinfusão (30% de rendimento).",
+        "melhor_momento": "Fruto: qualquer hora (sazonal). Infusão de casca ou pó: manhã (antioxidante e anti-inflamatório em jejum — melhor absorção de antocianinas).",
+        "combina_com": "Pitanga negra (blend antocianinas duplas da MA) · Hibisco (roxo floral antioxidante) · Açaí (roxo amazônico — ORAC combinado) · Mel (palatabilidade da casca adstringente) · Camu-camu (vitamina C + antocianinas)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Preliminar — sem estudos clínicos específicos; extrapolação de extratos de Myrtaceae similares.",
+        "aplicacoes": [
+          {
+            "titulo": "Sérum anti-aging e despigmentante",
+            "texto": "Extrato de casca (antocianinas + resveratrol + taninos) em formulações séricas e tônicas — antioxidante, anti-pigmentação (inibição de tirosinase pela vitamina C e flavonóides), anti-aging. Alternativa brasileira ao extrato de uva ou mirtilo europeu em cosméticos. Evidência por extrapolação de classe."
+          },
+          {
+            "titulo": "Antisséptico bucal",
+            "texto": "Infusão de casca como gargarejo — antifúngico (C. albicans) e antibacteriano (S. mutans). Uso popular documentado em SP e MG. Terpenos e taninos de Myrtaceae com atividade antimicrobiana consistente na família."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações documentadas para uso tópico. Extrato de casca mancha pele e tecidos temporariamente (antocianinas roxas — pigmento intenso)."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antioxidante máximo (antocianinas superiores ao mirtilo em alguns estudos)",
-          "Anti-inflamatório",
-          "Cardioprotetor (resveratrol + antocianinas)",
-          "Antidiarreico (casca — taninos)",
-          "Hipoglicemiante leve",
-          "Antimicrobiano",
-          "Componentes ativos:",
-          "Contraindicações: Sem contraindicações relevantes. Casca em excesso: constipação (taninos)."
+          "Antioxidante potente (antocianinas da casca — ORAC elevado, comparável ao açaí em algumas análises)",
+          "Anti-inflamatório (antocianinas + resveratrol — inibição de COX-1/COX-2 e NF-κB)",
+          "Antidiabético (taninos + antocianinas — inibição de α-glicosidase, melhora de sensibilidade à insulina)",
+          "Cardioprotetor (resveratrol — vasodilatação, anti-LDL oxidado; antocianinas — saúde endotelial)",
+          "Neuroprotetor (resveratrol + antocianinas — proteção contra neuroinflamação)",
+          "Antifúngico (casca — Candida spp.)",
+          "Antiproliferativo (estudos in vitro — antocianinas e ácido elágico)",
+          "Antidiarreico e antipirético (taninos — uso popular SP/MG)"
         ],
         "componentes_ativos": [
           {
-            "label": "ANTOCIANINAS (delfinidina-3-glucosídeo, cianidina-3-glucosídeo)",
-            "texto": "Altas na casca — Antioxidante, anti-inflamatório, cardioprotetor"
+            "label": "Antocianinas (cianidina-3-glucosídeo, delfinidina-3-glucosídeo)",
+            "texto": "Casca — antioxidante potente, anti-inflamatório, neuroprotetor, antiproliferativo. Concentração comparável ao açaí e mirtilo. Termossensíveis — não aquecer."
           },
           {
-            "label": "RESVERATROL",
-            "texto": "Casca e sementes — Cardioprotetor, neuroprotetor, antienvelhecimento"
+            "label": "Resveratrol",
+            "texto": "Casca — cardioprotetor, neuroprotetor, anti-aging, antidiabético. Mesma molécula do vinho tinto. Jabuticaba é uma das raras frutas além da uva com resveratrol documentado."
           },
           {
-            "label": "ÁCIDO ELÁGICO",
-            "texto": "Presente — Antioxidante, antiproliferativo"
+            "label": "Ácido elágico e ellagitaninos",
+            "texto": "Casca — antioxidante potente, antiproliferativo, antimicrobiano. Precursor de urolitinas (metabólitos ativos pelo microbioma — anti-aging mitocondrial)."
           },
           {
-            "label": "TANINOS",
-            "texto": "Casca — Adstringente, antimicrobiano, antidiarreico"
+            "label": "Taninos condensados (casca)",
+            "texto": "Adstringente, antidiarreico, antifúngico, cicatrizante."
           },
           {
-            "label": "VITAMINA C",
-            "texto": "Alta — Antioxidante, imunidade"
+            "label": "Flavonóides (quercetina, miricetina, rutina)",
+            "texto": "Anti-inflamatório, cardioprotetor, antiistamínico."
+          },
+          {
+            "label": "Vitamina C (polpa)",
+            "texto": "Antioxidante, imunidade, síntese de colágeno."
+          },
+          {
+            "label": "Pectina (fibra solúvel)",
+            "texto": "Prebiótica, modulação glicêmica, redução de LDL."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Atividade antioxidante (ORAC/DPPH — casca >> polpa)",
+            "evidencia": "Forte",
+            "populacao": "Múltiplos estudos in vitro — UNICAMP, UFRJ, UFMG (Reynertson KA et al., Neri-Numa IA et al.)"
+          },
+          {
+            "indicacao": "Antidiabético (inibição de α-glicosidase)",
+            "evidencia": "Moderada",
+            "populacao": "In vitro + modelos animais"
+          },
+          {
+            "indicacao": "Cardioprotetor (resveratrol + antocianinas)",
+            "evidencia": "Moderada",
+            "populacao": "Modelos animais"
+          },
+          {
+            "indicacao": "Antifúngico (Candida spp.)",
+            "evidencia": "Moderada",
+            "populacao": "Estudos in vitro brasileiros"
+          },
+          {
+            "indicacao": "Antiproliferativo (antocianinas — cancer cell lines)",
+            "evidencia": "Preliminar",
+            "populacao": "In vitro — Batista AG et al. (J Funct Foods, 2014)"
+          }
+        ],
+        "contraindicacoes": [
+          "Sem contraindicações relevantes para uso alimentar do fruto.",
+          "Gestação (infusão concentrada de casca): cautela por ausência de dados de segurança; fruto in natura: seguro.",
+          "Alergia a Myrtaceae (goiaba, pitanga, eucalipto): reação cruzada teórica — rara."
+        ],
+        "interacoes": [
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Resveratrol tem efeito vasodilatador — monitorar PA em uso regular de extrato concentrado de casca."
+          },
+          {
+            "label": "Anticoagulantes (varfarina)",
+            "texto": "Quercetina + resveratrol em doses de extrato — monitorar INR."
+          },
+          {
+            "label": "Estatinas",
+            "texto": "Resveratrol sinérgico no perfil lipídico — geralmente benéfico, manter."
+          }
+        ],
+        "efeitos_adversos": "Fruto: sem adversos em doses alimentares. Casca concentrada em excesso: diarreia (taninos). Pó liofilizado em altas doses: desconforto gástrico leve. Suco da casca mancha língua, dentes e tecidos temporariamente (antocianinas).",
+        "dose_maxima": "Fruto: sem dose máxima (alimento). Casca seca: 5–8 g 2×/dia. Pó liofilizado integral: 10–20 g/dia.",
+        "fontes": [
+          "Reynertson KA et al. — Quantitative analysis of antiradical phenolic constituents from fourteen Myrtaceae fruits (Food Chem, 2008)",
+          "Neri-Numa IA et al. — Jabuticaba (Plinia cauliflora) — a source of bioactive compounds (Food Res Int, 2018)",
+          "Alezandro MR et al. — Jaboticaba: chemical and biological properties (Food Chem Toxicol, 2013)",
+          "Batista AG et al. — Antioxidant and antiproliferative activity of jabuticaba (J Funct Foods, 2014)",
+          "Lenquiste SA et al. — Freeze-dried jaboticaba peel added to high-fat diet (Food Res Int, 2012)",
+          "ANVISA — Formulário de Fitoterápicos da Farmacopeia Brasileira, 2.ª ed. (2021)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "3/3",
+            "observacao": "Polpa intensamente doce — o mais expressivo e limpo do catálogo MA; açúcares concentrados de fruto pequeno e sazonal"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Casca — discreto amargor de taninos; contrasta com o doce da polpa"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "1/3",
+            "observacao": "Profundidade fermentada nobre de ésteres maduros"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "1/3",
+            "observacao": "Acidez equilibrada — presente na casca, quase ausente na polpa"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Frutado-floral tropical de Myrtaceae com fundo fermentado nobre e notas de cassis",
+        "olfativo_descritores": [
+          "Uva-Concord tropical (ésteres frutados — mais complexa que uva europeia, com tropical sobreposto)",
+          "Floral de jasmim-fruta (Myrtaceae — herança da família, como pitanga mas mais doce e encorpado)",
+          "Fermento nobre de levedura silvestre (cascas com leveduras selvagens — memória de vinificação artesanal)",
+          "Cassis e amora silvestre (antocianinas — cor e aroma correlacionados como no açaí e mirtilo)",
+          "Mel floral tropical (polpa madura — açúcares complexos concentrados)",
+          "Fundo suavemente tânico de casca (taninos — sinaliza a farmácia escondida no componente que se cospe)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Moderada (casca) / Fraca (polpa)",
+            "molecula": "Taninos condensados da casca — contrastam com a polpa suave. A adstringência é o primeiro indicador sensorial da riqueza farmacológica da casca."
+          }
+        ],
+        "tatil": "Fruto fresco: textura de uva grande (2–3 cm) com casca mais espessa, brilhante e resistente. O ritual de consumo é tátil e cultural: pressionar o fruto entre os lábios, romper a casca, sugar a polpa quase líquida e doce, cuspir casca adstringente e caroço firme. Esse gesto é aprendido na infância e não tem equivalente no mundo. A polpa é suave, quase líquida, doce — sem fibras. A casca permanece nos dedos com leve adstringência e pigmento roxo. Pó liofilizado: fino, roxo intenso, dissolve-se com dificuldade em água fria (agitar bem por 1–2 min). Infusão de casca: aquosa, roxo vibrante, adstringência moderada que cora o copo.",
+        "descricao_integrada": "A jabuticaba tem o ritual de consumo mais específico e intransferível do catálogo — o gesto de pressionar o fruto nos lábios, romper a casca e sugar a polpa é aprendido na infância e impossível de descrever adequadamente para quem nunca o fez. Essa especificidade tátil é parte inseparável da identidade da fruta. A grande ironia nutricional: a parte mais rica farmacologicamente (casca — resveratrol, antocianinas, taninos) é exatamente a que a tradição cospe fora. O pó liofilizado integral resolve essa ironia: converte o componente descartado em suplemento premium. Para o Ervatório, a jabuticaba é o argumento perfeito de que a forma de consumo tradicional não é necessariamente a forma nutricionalmente ótima — e que conhecimento científico pode recuperar valor que a tradição havia jogado fora."
       },
       "cultura": {
-        "historia": "A jabuticaba só existe no Brasil — e não existe fora dele. O fruto é tão perecível (fermenta em 3–4 dias após colhido) que nunca pôde ser exportado fresco para mercados distantes. Essa perecibilidade construiu uma identidade cultural absoluta: para comer jabuticaba, você precisa estar no Brasil, perto de uma jabuticabeira, no tempo certo. É o fruto da presença — do aqui e agora.  A jabuticabeira produz frutos diretamente no tronco e nos galhos grossos (caulifloria) — comportamento botânico raro que cria uma das imagens mais surrealistas do mundo vegetal: uma árvore coberta de uvas negras brotando direto da madeira, sem hastes nem cachos.",
-        "cerimonial": "",
-        "brasil": "A jabuticaba é o fruto que mais representa o \"brasileiro que não se valoriza\" — um superalimento com antocianinas superiores ao mirtilo importado, vendido por R$ 10/kg em feiras, enquanto o mirtilo (blueberry) importado é vendido a R$ 50+/100g em mercados premium. O Ervatório pode e deve narrar essa injustiça de valorização.",
-        "curiosidade": ""
+        "historia": "A jabuticaba foi documentada com espanto pelos primeiros naturalistas europeus no Brasil do século XVI — André Thevet (1557) a descreveu como 'uvas que nascem diretamente no tronco da árvore' como se fosse fenômeno sobrenatural. José de Anchieta a mencionou em cartas do século XVI como 'fruta maravilhosa que os índios muito estimam'. O fenômeno botânico da caulifloria (frutos brotando do caule — raro no mundo vegetal) é tão singular que se tornou o principal gancho de storytelling para mercados internacionais.",
+        "cerimonial": "Comunidades indígenas de SP e MG usavam a jabuticaba como alimento e em fermentados cerimoniais (cauim de jabuticaba — bebida fermentada consumida em rituais). O vinho e o licor de jabuticaba são produzidos artesanalmente por comunidades do interior de SP, MG e PR — tradição que combina técnica europeia de vinificação com fruta endêmica brasileira. Em festas juninas e festas de colheita do interior paulista e mineiro, o fermentado de jabuticaba é elemento de pertencimento regional — quem faz o vinho, conhece as estações.",
+        "brasil": "A jabuticaba é, com a pitanga e o caju, uma das frutas mais carregadas de identidade cultural brasileira. A alta perecibilidade (3–4 dias após colheita antes de fermentar e cair) é o maior obstáculo e a razão pela qual o pó liofilizado representa a maior oportunidade: converte um produto impossível de exportar in natura num suplemento premium de alto valor. A caulifloria — frutos nascendo no tronco — é o diferencial visual mais poderoso do catálogo para comunicação internacional: impossível de confundir, impossível de descrever sem impressionar.",
+        "curiosidade": "A jabuticaba é um dos raros frutos além da uva com resveratrol documentado em sua composição — e esse resveratrol está concentrado na casca roxa, não na polpa. O mesmo resveratrol que justificou o 'paradoxo francês' (vinho tinto como protetor cardiovascular, popularizado nos anos 1990) está na casca que a tradição brasileira cospe fora. A ironia é farmacológica completa: o componente 'anti-aging' da jabuticaba é o lixo do ritual de consumo."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Alimento funcional",
-        "status_anvisa": "Alimento. Potencial Novel Food para exportação UE em processo.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutificação: setembro–outubro e fevereiro–março (duas safras)"
+        "eixo_botanico_tpc": "Alimento funcional / Fitoterápico",
+        "status_anvisa": [
+          "Fruto: alimento — sem regulação medicinal específica.",
+          "Casca seca: uso tradicional reconhecido no Formulário de Fitoterápicos (2021).",
+          "Pó liofilizado: suplemento alimentar (IN 28/2018)."
+        ],
+        "status_ema": "Não monografado. Fruto não disponível no mercado europeu (perecibilidade inviabiliza importação in natura). Pó liofilizado: ingrediente alimentar sem restrições.",
+        "status_fda": "Não regulamentado. Não comercializado nos EUA in natura. Pó existe em nichos de mercado brasileiro-americano.",
+        "certificacao_organica": [
+          "Disponível via IBD e Ecocert para produção orgânica (SP, MG).",
+          "Escala crescente — oportunidade para cadeia organizada de pó liofilizado orgânico de jabuticaba."
+        ],
+        "sazonalidade": "Frutificação: setembro–novembro (principal). Segunda safra possível em março–abril em algumas regiões e cultivares. Altamente sazonal — fruto perece 3–4 dias após colheita."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Produtores orgânicos do interior de SP (Campinas, Valinhos, Indaiatuba, Jundiaí) e Sul de MG. Cooperativas de frutas exóticas paulistas com capacidade de liofilização.",
+        "faixa_de_preco": [
+          "Fruto fresco (kg): R$ 20–50 (feira local); R$ 60–120 (delivery premium urbano).",
+          "Pó liofilizado integral 100 g (casca + polpa): R$ 80–160.",
+          "Casca seca 50 g: R$ 15–30.",
+          "Vinho de jabuticaba artesanal 750 ml: R$ 60–150."
+        ],
+        "formatos": "Fruto fresco (sazonal, altamente perecível); pó liofilizado integral casca+polpa (formato recomendado — preserva a farmacologia da casca); casca seca para infusão; geleia artesanal; vinho e licor artesanal; extrato de casca em cápsulas."
+      },
+      "destaques": [
+        {
+          "label": "Resveratrol na casca que se cospe",
+          "texto": "A mesma molécula do 'paradoxo francês' está na casca da jabuticaba — o componente descartado pelo ritual tradicional é o mais rico farmacologicamente."
+        },
+        {
+          "label": "Caulifloria — fruto no tronco",
+          "texto": "Único fruto do catálogo que nasce no caule da árvore — identidade visual impossível de confundir no mundo, gancho de storytelling máximo."
+        },
+        {
+          "label": "Pó liofilizado supera o fruto in natura",
+          "texto": "O único item do catálogo onde o processamento (liofilização com a casca) é nutricionalmente superior ao consumo tradicional."
+        }
+      ]
     },
     {
       "slug": "camu-camu",
