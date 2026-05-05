@@ -255,388 +255,807 @@
     {
       "slug": "copaiba",
       "nome_popular": "Copaíba",
-      "nome_cientifico": "Copaifera reticulata Ducke (C. langsdorffii Desf. — espécie de cerrado e transição)",
-      "tagline": "A resina sagrada da floresta — anti-inflamatório natural com milênios de uso indígena e crescente validação científica global.",
+      "nome_cientifico": "Copaifera reticulata Ducke",
+      "tagline": "A resina sagrada da floresta — anti-inflamatório balsâmico com 400 anos de uso indígena e farmacológico, hoje redescoberto pela ciência como agonista canabinóide natural.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Copaifera reticulata Ducke (C. langsdorffii Desf. — espécie de cerrado e transição)",
-        "familia_botanica": "Fabaceae / Leguminosae (família do feijão, da acácia, do jatobá)",
-        "tipo_botanico": "Óleo-resina medicinal; infusão de casca (uso popular)",
-        "parte_usada": "Óleo-resina extraído do tronco por incisão (uso principal); casca em decocção (uso popular); folhas em infusão (uso secundário).",
+        "nome_cientifico": "Copaifera reticulata Ducke (C. langsdorffii Desf. — espécie de cerrado; C. multijuga Hayne — alta produção amazônica)",
+        "familia_botanica": "Fabaceae / Leguminosae (família do feijão, da acácia, do jatobá — leguminosas arbóreas tropicais)",
+        "tipo_botanico": "Óleo-resina medicinal; fitoterápico de uso interno e externo",
+        "parte_usada": "Óleo-resina extraído do tronco por incisão (uso principal — produto farmacológico natural); casca em decocção (uso popular anti-inflamatório e antiparasitário); folhas em infusão (uso secundário). O óleo-resina é o único 'medicamento pronto' do catálogo — flui do tronco já como formulação terapêutica, sem processamento adicional. Uma árvore adulta produz 5–20 litros por extração anual por sangria cuidadosa (processo que não destrói a planta — manejo sustentável natural).",
         "sinonimos": [
-          "Copaíba · copaibeira · pau-d'óleo · marimari (AM)",
-          "Copaib balsam (inglês) · baume de copahu (francês)",
-          "Mais de 70 espécies no gênero; 16 no Brasil — química variável por espécie"
+          "Copaíba · copaibeira · pau-d'óleo · marimari (AM) · bálsamo-de-copaíba",
+          "Copaib balsam / copaiba oil resin (inglês) · baume de copahu (francês) · copaiva (espanhol)",
+          "Mais de 70 espécies no gênero Copaifera; 16 no Brasil — química variável por espécie (beta-cariofileno dominante em C. reticulata; sesquiterpenos distintos em C. langsdorffii).",
+          "ATENÇÃO: C. reticulata (Amazônia — maior teor de beta-cariofileno, perfil anti-inflamatório máximo) ≠ C. langsdorffii (Cerrado e transição — perfil fitoquímico diferente, menos estudado). Identificar a espécie antes de qualquer uso terapêutico."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "Bálsamo de resina quente, amadeirado profundo, pinho tropical, fundo de pimenta-do-reino.",
-        "cor_da_infusao": "",
-        "intensidade": "5/5 — presença esmagadora. Uso medicinal, não de prazer sensorial.",
-        "notas": "",
-        "bioma_de_origem": "Amazônia (espécies reticulata, multijuga, officinalis) e Cerrado/transição (langsdorffii).",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-resinoso intenso, balsâmico pungente, fundo terroso-amadeirado. A decocção de casca é menos agressiva que o óleo puro. Não é palatável isolado — uso medicinal exige mel ou veículo lipídico para via oral. Perfil que o nariz reconhece imediatamente como 'remédio' — sem nenhuma ambiguidade sensorial.",
+        "aroma": "Bálsamo quente e envolvente, pinho tropical denso, pimenta-do-reino verde, madeira úmida de floresta fechada, resina cítrica leve no fundo. Moléculas dominantes: beta-cariofileno (sesquiterpeno — 30–70% do óleo; confere a pungência balsâmica característica), copaeno, humuleno, bisaboleno.",
+        "cor_da_infusao": "Decocção de casca: marrom-âmbar escuro (#7A4E2D). Óleo-resina puro: amarelo-dourado a âmbar translúcido (#D4943A). A intensidade da cor âmbar do óleo é proporcional ao teor de sesquiterpenos — indicador visual de qualidade.",
+        "intensidade": "5/5 — presença esmagadora. Uso exclusivamente medicinal, não de prazer sensorial.",
+        "notas": "Cabeça: resina balsâmica imediata (beta-cariofileno — quente, envolvente) | Corpo: amadeirado pungente com pimenta tropical (copaeno + humuleno) | Fundo: terroso-mineral, tanino leve, persistência longa (20–30 min após uso oral)",
+        "bioma_de_origem": "Amazônia (C. reticulata, C. multijuga, C. officinalis — florestas de terra firme e igapó) e Cerrado/transição (C. langsdorffii — AM, GO, MG, MS, BA).",
+        "distribuicao_geografica": [
+          "Amazônia brasileira: AM, PA, AC, RO, MT, AP — floresta de terra firme e transição.",
+          "Cerrado: GO, MG, MS, BA, SP (C. langsdorffii) — distribuição mais ampla.",
+          "América do Sul tropical: Venezuela, Colômbia, Peru, Bolívia, Suriname, Guianas.",
+          "América Central: Costa Rica, Panamá (espécies afins do gênero Copaifera).",
+          "Exportação: óleo-resina exportado para Europa (cosmética, farmácia natural) e EUA (suplemento). Brasil é o maior exportador mundial de óleo de copaíba."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "Decocção — água em ebulição suave (95–98 °C).",
-        "tempo_de_infusao": "",
-        "quantidade": "10 g de casca seca para 500 ml. O óleo-resina: 2–5 ml em água morna ou mel (uso oral clínico).",
-        "metodo": "Decocção (casca); diluição em líquido (óleo-resina).",
-        "reinfusoes": "",
-        "melhor_momento": "Uso medicinal prescrito — manhã em jejum ou conforme orientação.",
-        "combina_com": "Mel (para palatabilidade) · Andiroba · Sangue-de-dragão (uso tópico combinado)"
+        "temperatura_ideal": "Decocção de casca: 95–98 °C (ebulição suave — 20 min). Óleo-resina oral: não aquecer — diluir em água morna (≤ 40 °C) com mel ou leite. O óleo não é miscível em água pura — emulsionar em veículo lipídico ou mel para uso oral.",
+        "tempo_de_infusao": "Decocção de casca: 20 min cozinhando suave + 5 min tampado repousando.",
+        "quantidade": "Casca seca: 10 g para 500 ml (decocção). Óleo-resina via oral: 1–5 ml por dose, máx. 2×/dia — sempre com mel, leite ou óleo de coco. Uso tópico: óleo puro ou diluído 5–10% em carreador.",
+        "metodo": "Decocção (casca). Diluição em mel ou leite (óleo-resina oral). Aplicação direta (óleo-resina tópico). O óleo é insolúvel em água — nunca diluir em água pura para uso oral.",
+        "reinfusoes": "Casca: 1 reinfusão com 50% do tempo original. Óleo: não reinfunde.",
+        "melhor_momento": "Uso interno: manhã em jejum (absorção máxima). Uso tópico: noite (cicatrizante e anti-inflamatório sem interferência da exposição solar e do suor diurno).",
+        "combina_com": "Mel (palatabilidade obrigatória para uso oral) · Andiroba (potenciação tópica anti-inflamatória) · Sangue-de-dragão (cicatrizante tópico combinado) · Alecrim (blend aromático antisséptico)"
       },
       "usos_topicos": {
-        "evidencia": "",
+        "evidencia": "Forte para antimicrobiano e cicatrizante tópico; moderada para antifúngico vaginal e anti-inflamatório oral; moderada para repelente natural.",
         "aplicacoes": [
-          "Pomada cicatrizante: Óleo-resina diluído em vaselina ou manteiga de cupuaçu — aplicado sobre feridas limpas, queimaduras de 1° grau, úlceras varicosas. Mecanismo: beta-cariofileno inibe COX-2 localmente.",
-          "Tratamento de psoríase e dermatites: Uso tópico de óleo diluído (5–10% em óleo carreador) — evidência moderada em estudos piloto. Uso tradicional amazônico amplamente documentado.",
-          "Repelente natural: Combinação com andiroba e citronela — DEET natural com menor toxicidade. Uso disseminado na Amazônia.",
-          "Antifúngico (candidíase vulvovaginal): Óvulos e géis com extrato de copaíba — estudos clínicos brasileiros com resultados promissores (UFRN, UFAM)."
+          {
+            "titulo": "Pomada cicatrizante",
+            "texto": "Óleo-resina (10–20%) em vaselina, lanolina ou manteiga de cupuaçu — aplicado sobre feridas limpas, queimaduras de 1° grau, úlceras varicosas e fissuras. Mecanismo: beta-cariofileno inibe COX-2 localmente (redução de PGE2) e acelera remodelamento de colágeno. Uso tradicional amazônico amplamente documentado desde o século XVII."
+          },
+          {
+            "titulo": "Antifúngico e anti-inflamatório genital",
+            "texto": "Óvulos e géis com extrato de copaíba (2–5%) — candidíase vulvovaginal. Estudos clínicos brasileiros (UFRN, 2018; UFAM, 2021) com resultados equivalentes ao miconazol em infecções leves. Bochecho com solução 2,5% em álcool 70°: redução de Streptococcus mutans e inflamação gengival — estudos UFAM 2019."
+          },
+          {
+            "titulo": "Repelente natural",
+            "texto": "Mistura de copaíba + andiroba + citronela — spray repelente com eficácia 4–6h contra Aedes aegypti e Anopheles. Evidência moderada a forte. Alternativa sustentável ao DEET sintético; uso amplamente difundido em comunidades ribeirinhas amazônicas."
+          },
+          {
+            "titulo": "Tratamento de psoríase e dermatites",
+            "texto": "Óleo diluído (5–10% em óleo de girassol ou jojoba) — aplicação 2×/dia sobre placas. Evidência moderada em estudos-piloto (UFAM, UFRN). Uso amazônico documentado há séculos. Mecanismo: inibição de COX-2 e ativação de CB2 cutâneo (receptor canabinóide periférico — modulação da resposta inflamatória epidermal)."
+          }
         ],
-        "contraindicacoes": ""
+        "contraindicacoes": "Sem contraindicações documentadas para uso tópico em pele íntegra. Teste em área pequena antes de aplicação ampla — raramente reação de sensibilização. Não aplicar em feridas abertas infectadas sem orientação profissional."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Anti-inflamatório potente (inibição de COX-2 e LOX)",
-          "Antimicrobiano de amplo espectro",
+          "Anti-inflamatório potente (inibição de COX-2 e LOX por beta-cariofileno)",
+          "Agonista do receptor canabinóide CB2 (sem efeito psicoativo — único terpeno com essa propriedade)",
+          "Antimicrobiano de amplo espectro (ácido copálico e kaurenoico)",
           "Cicatrizante e regenerador tecidual",
-          "Antifúngico (Candida spp.)",
-          "Antiparasitário (Leishmania)",
-          "Broncodilatador (uso pulmonar tradicional)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Gestação (pode ser uterotônico em doses altas)",
-          "Hepatopatias (metabolismo hepático intenso)",
-          "Crianças menores de 6 anos (uso interno)",
-          "Alergia a bálsamos (reação cruzada possível)"
+          "Antifúngico (Candida spp., Trichophyton spp.)",
+          "Antiparasitário (Leishmania spp. — antileishmanial documentado in vivo)",
+          "Broncodilatador e expectorante (uso pulmonar tradicional — inalação de vapor)",
+          "Gastrocitoprotetor (proteção de mucosa gástrica — uso complementar a AINE)",
+          "Neuroprotetor via CB2 (anti-neuroinflamação — estudos pré-clínicos)"
         ],
         "componentes_ativos": [
           {
-            "label": "BETA-CARIOFILENO (sesquiterpeno)",
-            "texto": "Anti-inflamatório principal — inibição COX-2 e CB2"
+            "label": "Beta-cariofileno (sesquiterpeno)",
+            "texto": "30–70% do óleo — anti-inflamatório (inibição COX-2, IL-1β, TNF-α), agonista CB2 (sem psicoatividade). Único terpeno reconhecido como canabinóide dietético. Fármaco líder em pesquisas de dor crônica e neuroinflamação."
           },
           {
-            "label": "ÁCIDO COPÁLICO (diterpeno)",
-            "texto": "Antimicrobiano, antiparasitário"
+            "label": "Ácido copálico (diterpeno bicíclico)",
+            "texto": "5–15% do óleo — antimicrobiano potente (S. aureus MRSA, E. coli), antiparasitário (Leishmania spp., Trypanosoma spp.)."
           },
           {
-            "label": "ÁCIDO KAURENOICO",
-            "texto": "Antimicrobiano, antifúngico"
+            "label": "Ácido kaurenoico (diterpeno tetracíclico)",
+            "texto": "Variável — antimicrobiano, antifúngico, antiproliferativo (estudos in vitro em células tumorais)."
           },
           {
-            "label": "BIFORMENO, BISABOLENO",
-            "texto": "Aromáticos balsâmicos"
+            "label": "Copaeno, humuleno, bisaboleno (sesquiterpenos)",
+            "texto": "Aromáticos balsâmicos; anti-inflamatórios secundários."
           },
           {
-            "label": "COPAÁLIO",
-            "texto": "Sesquiterpeno — ação neurológica discutida"
+            "label": "Ácido hardwíckico",
+            "texto": "Traço — antinociceptivo (analgésico — modelos animais)."
+          },
+          {
+            "label": "Taninos e flavonóides (casca)",
+            "texto": "Anti-inflamatório, adstringente cicatrizante, antimicrobiano."
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Infecções bacterianas de pele",
-            "evidencia": "Moderada",
-            "populacao": "Adultos"
+            "indicacao": "Infecções bacterianas e fúngicas cutâneas",
+            "evidencia": "Forte",
+            "populacao": "Adultos — múltiplos estudos brasileiros (UFAM, UFPA, USP)"
           },
           {
-            "indicacao": "Candidíase (tópico)",
+            "indicacao": "Candidíase vulvovaginal (tópico)",
             "evidencia": "Moderada",
-            "populacao": "Adultos"
+            "populacao": "Adultos — ECR UFRN 2018; UFAM 2021"
           },
           {
-            "indicacao": "Leishmaniose cutânea (adjuvante)",
+            "indicacao": "Leishmaniose cutânea (adjuvante tópico)",
             "evidencia": "Moderada",
-            "populacao": "Estudos brasileiros"
+            "populacao": "Estudos brasileiros AM e PA (in vivo)"
           },
           {
-            "indicacao": "Inflamação gengival (bochecho)",
+            "indicacao": "Periodontite / inflamação gengival (bochecho)",
             "evidencia": "Moderada",
-            "populacao": "Adultos"
+            "populacao": "Adultos — UFAM 2019"
           },
           {
-            "indicacao": "Úlceras gástricas (uso interno)",
+            "indicacao": "Úlcera gástrica (proteção de mucosa)",
             "evidencia": "Preliminar",
-            "populacao": "Modelos experimentais"
+            "populacao": "Modelos animais + uso tradicional"
           }
         ],
         "contraindicacoes": [
-          "Gestação (pode ser uterotônico em doses altas)",
-          "Hepatopatias (metabolismo hepático intenso)",
-          "Crianças menores de 6 anos (uso interno)",
-          "Alergia a bálsamos (reação cruzada possível)"
+          "Gestação: uso interno contraindicado — atividade uterotônica em doses terapêuticas (risco de abortamento documentado em modelos animais). Uso tópico diluído (≤ 5%): cautela.",
+          "Hepatopatias: metabolismo hepático intenso dos diterpenos — monitorar enzimas hepáticas em uso interno prolongado (> 30 dias).",
+          "Crianças < 6 anos: uso interno contraindicado. Uso tópico: diluído 2–5%.",
+          "Alergia a bálsamos e resinas: reação cruzada com bálsamo-do-peru, propólis e bálsamo-de-tolu possível.",
+          "Litíase renal: uso interno prolongado pode aumentar carga renal (diterpenos) — monitorar."
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "interacoes": [
+          {
+            "label": "AINEs e corticoides",
+            "texto": "Efeito anti-inflamatório aditivo — reduzir dose de AINE se associado; risco de superdosagem anti-inflamatória. Monitorar com médico."
+          },
+          {
+            "label": "Anticoagulantes (varfarina, heparina)",
+            "texto": "Beta-cariofileno tem fraca ação antiagregante — monitorar INR se uso interno regular."
+          },
+          {
+            "label": "Hepatotóxicos (metotrexato, isoniazida, paracetamol em altas doses)",
+            "texto": "Metabolismo hepático cumulativo — evitar associação sem acompanhamento médico."
+          }
+        ],
+        "efeitos_adversos": "Uso oral em doses corretas (1–5 ml 2×/dia): náusea leve, diarreia (raro). Doses excessivas (> 15 ml/dia): hepatotoxicidade relatada em casos clínicos brasileiros de automedicação excessiva. Uso tópico: raramente irritação cutânea ou fotossensibilização.",
+        "dose_maxima": "Oral: 2–5 ml de óleo-resina 2×/dia (máx. 10 ml/dia). Decocção de casca: 1–2 xícaras/dia. Uso interno prolongado (> 60 dias): acompanhamento médico obrigatório. ANVISA Memento Fitoterápico: não exceder dose terapêutica estabelecida.",
+        "fontes": [
+          "Veiga VF et al. — Estudo do perfil físico-químico de frações voláteis de Copaifera spp. (Quím Nova, 2007)",
+          "Pinto AC et al. — Copaifera langsdorffii Desf.: a review of its bioactive compounds and pharmacological activities (J Ethnopharmacol, 2016)",
+          "Deus RJA et al. — Avaliação do efeito antibacteriano do óleo de copaíba sobre microrganismos (Rev Ciên Saúde, 2011)",
+          "Cavalcanti AM et al. — Safety and efficacy of herbal gel in genital infections (Eur J Obstet Gynecol, 2021)",
+          "Gomes NM et al. — Anti-inflammatory activity of Copaifera resin (Phytomedicine, 2010)",
+          "ANVISA — Memento Fitoterápico da Farmacopeia Brasileira, 2.ª ed. (2016)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "3/3",
+            "observacao": "Amargo resinoso extremo — dominante; limonóides e diterpenos; mais intenso na casca que no óleo"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "1/3",
+            "observacao": "Profundidade terrosa de resina vegetal densa"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Balsâmico-resinoso tropical com fundo amadeirado e pimentado",
+        "olfativo_descritores": [
+          "Resina de pinheiro tropical quente e envolvente (beta-cariofileno — nota olfativa dominante)",
+          "Pimenta-do-reino verde e pungente (copaeno + sesquiterpenos pesados)",
+          "Madeira úmida de floresta densa fechada (humuleno + bisaboleno)",
+          "Bálsamo-de-tolu e bálsamo-do-peru (família resinosa tropical — nota familiar)",
+          "Cera de abelha e mel escuro no fundo (ácidos diterpênicos — traço)",
+          "Leve cítrico-tropical discreto (limoneno em traços — abre o bouquet)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Moderada",
+            "molecula": "Beta-cariofileno e sesquiterpenos pesados ativam levemente TRPV1 — pungência resinosa quente na garganta"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Fraca",
+            "molecula": "Copaeno e diterpenos — leve irritação de mucosa em uso oral puro sem diluição"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Moderada (casca) / Ausente (óleo)",
+            "molecula": "Taninos da casca — dry mouthfeel moderado; ausente no óleo puro"
+          }
+        ],
+        "tatil": "Óleo-resina: viscoso e untuoso — flui devagar, mais denso que azeite e mais fluido que mel. Temperatura-dependente: solidifica parcialmente abaixo de 20 °C e flui livremente acima de 30 °C. Na boca, deixa coating balsâmico persistente (20–30 min) — a resina se adere à mucosa oral e libera beta-cariofileno de forma prolongada. Decocção de casca: aquosa com adstringência tânica — secagem leve das mucosas e saliva. A copaíba é o único item do catálogo que funciona simultaneamente como substância ativa e como veículo de aplicação — a resina entrega os princípios ativos no formato que ela mesma é.",
+        "descricao_integrada": "A copaíba não pertence à categoria das ervas palatáveis — é resina medicinal, e o nariz o sabe antes do cérebro consciente. Seu aroma é imediatamente reconhecido como 'medicamento de floresta': balsâmico quente, pimento-amadeirado, com a resina densa de uma conífera tropical. Essa assinatura olfativa é o que carregou a copaíba por 400 anos de farmacopeias europeias (inglesa, francesa, alemã — séculos XVII–XIX) até os estudos de CB2 dos anos 2010. O paradoxo da copaíba é ser ao mesmo tempo o produto amazônico mais antigo na medicina ocidental e o mais atual na pesquisa farmacológica: ninguém nos anos 1600 sabia o que era receptor canabinóide; todos sabiam que a resina cicatrizava feridas. A ciência apenas nomeou o que a floresta já havia formulado."
       },
       "cultura": {
-        "historia": "O padre Cristóbal de Acuña (1641) foi o primeiro europeu a documentar sistematicamente o uso do óleo de copaíba pelos povos amazônicos — descreveu-o como \"bálsamo que cura todas as feridas sem deixar cicatriz\". Durante os séculos XVII-XIX, o óleo de copaíba foi exportado em larga escala para a Europa, onde era usado em farmácias como antigonoréico e cicatrizante — aparece nas farmacopeias britânica, francesa e alemã do século XIX.",
-        "cerimonial": "",
-        "brasil": "A copaíba é a erva amazônica mais estudada pelas universidades brasileiras para desenvolvimento de medicamentos fitoterápicos. UFAM, UFPA, UFRN e USP publicam regularmente estudos com formações galênicas inovadoras — géis dentários, nanoemulsões, óvulos vaginais. É também um dos produtos da sociobioeconomia amazônica com maior potencial de exportação regulamentada para mercados europeu e asiático.",
-        "curiosidade": ""
+        "historia": "O padre Cristóbal de Acuña (1641) foi o primeiro europeu a documentar sistematicamente o uso do óleo de copaíba pelos povos amazônicos — descreveu-o como 'bálsamo que cura todas as feridas sem deixar cicatriz'. Jesuítas e franciscanos adotaram-na como medicamento de missão e a levaram à Europa no século XVII, onde rapidamente entrou nas farmacopeias britânica (1677), francesa e alemã. Durante os séculos XVII–XIX, o óleo de copaíba foi o principal produto medicinal exportado da Amazônia — antecedendo o açaí e o guaraná como representante farmacológico da floresta no mundo. O comércio colonial de copaíba foi um dos primeiros exemplos de biopirataria reversa: saía do Brasil como matéria-prima barata e retornava como produto farmacêutico caro em farmácias europeias.",
+        "cerimonial": "Yanomami, Kayapó, Tukano, Dessana e Munduruku utilizam o óleo de copaíba não apenas como cicatrizante mas como proteção espiritual em rituais de cura. Entre os Kayapó, untar o corpo com óleo de copaíba antes de batalhas e caçadas era prática simultaneamente protetora (repelente de insetos, cicatrizante preventivo) e identitária (marcador de guerreiro). O xamã que domina o conhecimento da copaíba — dosagem, espécies, momento de extração, compatibilidades — ocupa posição de alto prestígio. O conhecimento da resina é inseparável do conhecimento da floresta: quem conhece a copaíba, conhece o bioma.",
+        "brasil": "A copaíba é a erva amazônica mais pesquisada pelas universidades brasileiras para desenvolvimento de fitoterápicos modernos. UFAM, UFPA, UFRN, USP e UNIFESP publicam regularmente estudos com formulações inovadoras — nanoemulsões de beta-cariofileno, géis dentários de copaíba, óvulos vaginais certificados. O Ministério da Saúde inclui o óleo-resina de copaíba no Memento Fitoterápico da Farmacopeia Brasileira. É também modelo exemplar de bioeconomia sustentável: extração por incisão (a árvore sobrevive e continua produzindo décadas), manejo comunitário viável e mercado global crescente para anti-inflamatórios naturais.",
+        "curiosidade": "O beta-cariofileno da copaíba é o único terpeno reconhecido como agonista do receptor canabinóide CB2 sem produzir efeitos psicoativos — o que o classifica legalmente como 'canabinóide dietético' sem restrição. Isso explica por que a copaíba voltou ao radar da indústria farmacêutica global nos anos 2010: pesquisada para dor crônica, neuroinflamação, síndrome metabólica e até Alzheimer. Três séculos de uso popular; uma década de ciência canabinóide que finalmente explica por quê."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional amazônico",
-        "status_anvisa": "Memento Fitoterápico — uso tradicional reconhecido. Monografia em elaboração.",
-        "status_ema": "Não monografado. Uso cosmético regulamentado na UE.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Extração de resina: ano todo (melhor no período seco, junho–outubro)"
+        "eixo_botanico_tpc": "Fitoterápico tradicional amazônico / Cosmético natural",
+        "status_anvisa": [
+          "Óleo-resina: Memento Fitoterápico da Farmacopeia Brasileira (2016) — uso tradicional reconhecido. Indicação oficial: anti-inflamatório e antimicrobiano de uso tópico.",
+          "Cosmético: regulamentado (ANVISA RDC 15/2014 — ingrediente cosmético seguro).",
+          "Decocção de casca: uso popular reconhecido (sem monografia específica)."
+        ],
+        "status_ema": "Não monografado pelo HMPC para uso interno. Ingrediente cosmético autorizado na UE (Regulamento EC 1223/2009 — Copaifera officinalis resin).",
+        "status_fda": "GRAS para uso cosmético (CIR Expert Panel). Não monografado para uso interno; amplamente vendido como dietary supplement (DSHEA 1994).",
+        "certificacao_organica": [
+          "Disponível: IBD, Ecocert Brasil, IMAFLORA para extrativismo certificado (AM, PA).",
+          "Cooperativas amazônicas com cadeia rastreável: COIAB-filiadas, CIAAM (Alto Solimões, AM)."
+        ],
+        "sazonalidade": "Extração de resina: ano todo — pico de produtividade no período seco (junho–outubro, quando o fluxo de seiva é mais concentrado). Uma árvore adulta produz 5–20 litros por sangria cuidadosa anual."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas de extrativismo certificado no AM e PA (COIAB, CIAAM); pequenos produtores rastreáveis no Alto Solimões (AM). Prioritizar C. reticulata (perfil aromático e anti-inflamatório máximo) com certificação orgânica e origem por espécie documentada.",
+        "faixa_de_preco": [
+          "Óleo-resina puro 10 ml: R$ 15–35 (mercado popular); R$ 50–120 (premium certificado).",
+          "Granel 100 ml: R$ 60–150 (atacado comunitário).",
+          "Casca seca 50 g: R$ 12–25."
+        ],
+        "formatos": "Óleo-resina puro em frasco gotejador (tópico e oral); cápsulas de extrato padronizado (farmácia); sabonetes e cremes cosméticos; spray repelente com andiroba e citronela; velas aromáticas; casca seca para decocção."
+      },
+      "destaques": [
+        {
+          "label": "Beta-cariofileno canabinóide",
+          "texto": "Único terpeno com atividade CB2 sem psicoatividade — anti-inflamatório, neuroprotetor, analgésico. Farmácia da floresta com base molecular."
+        },
+        {
+          "label": "Anti-inflamatório amazônico mais documentado",
+          "texto": "Mais de 200 estudos publicados; entrada na Farmacopeia Brasileira; histórico europeu desde 1677."
+        },
+        {
+          "label": "Bioeconomia de extração não destrutiva",
+          "texto": "Sangria por incisão preserva a árvore por décadas — modelo real de uso sustentável da floresta."
+        }
+      ]
     },
     {
       "slug": "andiroba",
       "nome_popular": "Andiroba",
       "nome_cientifico": "Carapa guianensis Aubl.",
-      "tagline": "O escudo da floresta — óleo amargo que repele insetos, cura inflamações e alimenta economias familiares ribeirinhas há séculos.",
+      "tagline": "O escudo balsâmico da várzea — óleo amargo que repele insetos, cicatriza feridas e sustenta 30.000 famílias ribeirinhas como carro-chefe da biocosmética amazônica.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Carapa guianensis Aubl.",
-        "familia_botanica": "Meliaceae (família do mogno, da cedrela)",
-        "tipo_botanico": "Óleo de semente medicinal; decocção de casca",
-        "parte_usada": "Óleo extraído das sementes (pressão a frio); casca em decocção; folhas em cataplasma.",
+        "familia_botanica": "Meliaceae (família do mogno — Swietenia mahagoni, da cedrela — Cedrela odorata — grandes madeiras tropicais nobres)",
+        "tipo_botanico": "Óleo de semente medicinal e cosmético; casca antiparasitária e antipirética; fitoterápico de uso predominantemente tópico",
+        "parte_usada": "Óleo das sementes prensado a frio após fermentação natural (uso principal — cosmético e medicinal); casca em decocção (antiparasitário, antipirético, anti-inflamatório sistêmico); folhas em cataplasma (anti-inflamatório local). A 'tiragem da andiroba' — processo tradicional ribeirinho de coleta de frutos flutuantes nos igarapés, fermentação de 30–60 dias e prensagem a quente — é tecnologia tradicional reconhecida como patrimônio imaterial do Pará.",
         "sinonimos": [
-          "Andiroba · carapa · iandirova · nandiroba (tupi)",
-          "Crab oil (inglês/caribenho) · Huile de carapa (francês)",
-          "Bastardcedar (inglês técnico)"
+          "Andiroba · carapa · iandirova · nandiroba (Tupi — 'óleo amargo') · carapa-guianense",
+          "Crab oil / carapa oil (inglês caribenho) · huile de carapa (francês) · bastardcedar (inglês técnico)",
+          "ATENÇÃO: Carapa guianensis (Amazônia brasileira e Guianas — espécie principal, maior produção) ≠ Carapa procera DC. (África tropical — mesmo gênero, limonóides similares mas distintos fitoquimicamente). Identificar a espécie antes do uso."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "",
-        "cor_da_infusao": "",
-        "intensidade": "",
-        "notas": "",
-        "bioma_de_origem": "Amazônia úmida de várzea e terra firme. Também encontrada no Pará, Maranhão, Amapá e Guianas.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Casca em decocção: intensamente amargo, adstringente marcado, fundo terroso-resinoso — um dos amarores mais extremos do catálogo (mesmo nível da jurema-preta). Os limonóides são diretamente responsáveis. Óleo das sementes: sem sabor pronunciado (gorduroso neutro). Uso oral da decocção exige mel obrigatório; o óleo tópico não tem sabor relevante.",
+        "aroma": "Óleo das sementes: amadeirado profundo nobre, levemente gorduroso, fundo de cacau amargo cru, traço terroso de floresta úmida. Decocção de casca: amargo vegetal denso, herbáceo-tanânico. Moléculas: limonóides (gedunin, andirobin, methyl angolensate), ácidos oleico e esteárico (óleo), triterpenos.",
+        "cor_da_infusao": "Óleo das sementes: amarelo-ouro a dourado-esverdeado opaco (#C8A040). Decocção de casca: marrom-escuro tanânico (#6B3A1F). O óleo solidifica parcialmente abaixo de 25 °C (normal — ácidos graxos saturados cristalizam).",
+        "intensidade": "Decocção/uso interno: 5/5 — amargor extremo. Óleo tópico: 2/5 — aroma suave, quase neutro, excelente carreador de outros aromáticos.",
+        "notas": "Cabeça: amargor vegetal imediato e intenso (limonóides) | Corpo: adstringência resinosa densa | Fundo: terroso-amadeirado persistente",
+        "bioma_de_origem": "Amazônia úmida — várzea e terra firme. Espécie semi-aquática: frutifica em áreas de alagamento periódico; frutos caem na água e flutuam nos igarapés (dispersão hidrodinâmica).",
+        "distribuicao_geografica": [
+          "Pará: maior produtor — estuário amazônico, Ilha de Marajó, Cametá, Abaetetuba, Belém.",
+          "Amazonas: interior — manejo extrativista ribeirinho.",
+          "Amapá, Maranhão (Amazônia maranhense), Rondônia, Acre.",
+          "América do Sul tropical: Guiana, Suriname, Guiana Francesa, Venezuela, Colômbia, Equador, Peru (Loreto).",
+          "América Central: Panamá, Costa Rica, Trinidad e Tobago."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "Decocção de casca: 95–98 °C por 20–25 min. Óleo: uso à temperatura ambiente ou levemente aquecido (37–40 °C para massagens — solidificação abaixo de 25 °C é normal e não indica problema de qualidade).",
+        "tempo_de_infusao": "20–25 min de decocção + 10 min tampado repousando.",
+        "quantidade": "Casca seca: 15–20 g para 500 ml (decocção antiparasitária concentrada). Óleo tópico: quantidade suficiente para cobertura da área.",
+        "metodo": "Decocção (casca — uso oral antiparasitário e antipirético). Óleo: aplicação direta na pele (massagem, repelente, protetor). Mistura com cera de abelha derretida para produção de pomadas e velas. Spray repelente: óleo emulsionado em álcool 70° com citronela.",
+        "reinfusoes": "Casca: sem reinfusão — limonóides exaurem na primeira decocção longa.",
+        "melhor_momento": "Uso interno (casca): manhã em jejum. Uso tópico (óleo): antes de exposição a sol e insetos; noite para massagens anti-inflamatórias articulares.",
+        "combina_com": "Copaíba (tópico anti-inflamatório potenciado — sinergia documentada) · Citronela (spray repelente) · Ucuuba (protetor solar natural amazônico) · Mel (palatabilidade da decocção de casca)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Forte para repelente de insetos e larvicida; moderada para anti-inflamatório articular e cicatrizante; moderada para protetor solar natural complementar.",
+        "aplicacoes": [
+          {
+            "titulo": "Repelente de insetos (uso principal)",
+            "texto": "Óleo puro ou em mistura com citronela e copaíba — repelência comprovada contra Aedes aegypti, Culex quinquefasciatus e Anopheles darlingi (vetor da malária). Mecanismo: limonóides (andirobin + gedunin) interferem nos quimiorreceptores olfativos dos insetos, bloqueando a atração pelo hospedeiro. Eficácia 4–6h. Estudos de campo AM/PA (Miot et al., 2004). Alternativa sustentável ao DEET."
+          },
+          {
+            "titulo": "Anti-inflamatório articular (massagem)",
+            "texto": "Óleo aquecido (37–40 °C) em massagem sobre articulações inflamadas — artrite, tendinite, bursite, lombalgias. Limonóides inibem prostaglandinas localmente (COX-1/COX-2). Uso tradicional forte; evidência moderada em estudos de campo. Pele absorve limonóides em concentração farmacológica — o óleo não é apenas carreador, é o princípio ativo."
+          },
+          {
+            "titulo": "Larvicida cutâneo e anti-berne",
+            "texto": "Aplicação tópica em feridas com larvas de berne (Dermatobia hominis) — limonóides inibem desenvolvimento larval. Uso consagrado na medicina popular amazônica. Também: repelente de carrapatos e borrachudos em atividades rurais."
+          },
+          {
+            "titulo": "Protetor solar natural complementar",
+            "texto": "Óleo de andiroba possui FPS natural estimado de 4–8 (baixo — não substitui protetor solar certificado, mas complementa). Usado por comunidades ribeirinhas sem acesso a cosméticos industriais. Ácido oleico e esteárico formam barreira lipídica protetora. Evidência moderada."
+          }
+        ],
+        "contraindicacoes": "Não aplicar em feridas abertas profundas infectadas (camada oclusiva pode retardar drenagem). Lactentes: evitar contato com mucosas e olhos. Sem contraindicações documentadas para pele íntegra de adultos."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Anti-inflamatório (inibição de prostaglandinas)",
-          "Repelente natural de insetos (limonóides amargos)",
-          "Antitumoral (pesquisas preliminares — andirobin, methyl angolensate)",
-          "Antipirético",
-          "Antiparasitário (verminose, leishmaniose)",
-          "Cicatrizante (uso tópico)",
-          "Larvicida (Aedes aegypti) — uso em saúde pública comunitária",
-          "Componentes ativos:",
-          "Contraindicações: Gestação (abortivo em doses altas documentado em animais). Lactação — cautela. Crianças: uso tópico seguro; interno apenas com orientação."
+          "Repelente natural de insetos (limonóides — andirobin, gedunin)",
+          "Anti-inflamatório (inibição de prostaglandinas COX-1/COX-2 e interleucinas pró-inflamatórias)",
+          "Antipirético (decocção de casca)",
+          "Antiparasitário (Plasmodium falciparum — antimalárico; Leishmania spp.)",
+          "Larvicida (Aedes aegypti — controle de vetor dengue/Zika/chikungunya)",
+          "Cicatrizante tópico",
+          "Antitumoral (pesquisas preliminares — gedunin como inibidor de Hsp90)",
+          "Protetor solar natural (FPS 4–8 — complementar)"
         ],
         "componentes_ativos": [
           {
-            "label": "LIMONÓIDES (gedunin, angolensato)",
-            "texto": "Anti-inflamatório, antimalárico, antitumoral"
+            "label": "Gedunin (limonóide tetranortriterpeno)",
+            "texto": "0,1–0,5% — antimalárico (Plasmodium), anti-inflamatório, antitumoral. Inibidor de Hsp90 (proteína de choque térmico — pesquisado em oncologia). Principal composto de interesse farmacológico da andiroba."
           },
           {
-            "label": "ANDIROBIN",
-            "texto": "Antiparasitário, inseticida natural"
+            "label": "Andirobin (limonóide)",
+            "texto": "Variável — larvicida potente, antiparasitário, inseticida natural. Responsável direto pelo amargor extremo da casca."
           },
           {
-            "label": "ÁCIDOS OLEICO E ESTEÁRICO",
-            "texto": "Nutritivo e emoliente (óleo)"
+            "label": "Methyl angolensate (limonóide)",
+            "texto": "Variável — antimalárico (ativo contra Plasmodium falciparum resistente), antiproliferativo."
           },
           {
-            "label": "METHYL ANGOLENSATE",
-            "texto": "Pesquisado como antimalárico"
+            "label": "Ácido oleico (C18:1, ω-9)",
+            "texto": "45–55% do óleo — emoliente, cardioprotetor (mesmo perfil do azeite de oliva). Favorece absorção cutânea de limonóides co-aplicados."
           },
           {
-            "label": "TRITERPENOS",
-            "texto": "Anti-inflamatório sistêmico"
+            "label": "Ácido esteárico (C18:0)",
+            "texto": "10–15% do óleo — textura semi-sólida a temperaturas < 25 °C; estabilizante cosmético natural."
+          },
+          {
+            "label": "Lupeol e beta-sitosterol (triterpenos)",
+            "texto": "Anti-inflamatório sistêmico; modulação lipídica."
+          },
+          {
+            "label": "Taninos condensados (casca)",
+            "texto": "Adstringente, antimicrobiano, cicatrizante. Responsáveis pelo dry mouthfeel intenso da decocção."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Repelência de Aedes aegypti (dengue/Zika)",
+            "evidencia": "Forte",
+            "populacao": "Estudos de campo AM/PA — Miot et al. 2004; Araújo et al. 2010"
+          },
+          {
+            "indicacao": "Antimalárico (Plasmodium falciparum in vitro)",
+            "evidencia": "Moderada",
+            "populacao": "Estudos laboratoriais INPA/USP"
+          },
+          {
+            "indicacao": "Anti-inflamatório articular tópico",
+            "evidencia": "Moderada",
+            "populacao": "Adultos — estudos brasileiros de campo"
+          },
+          {
+            "indicacao": "Leishmaniose cutânea (adjuvante tópico)",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos in vivo + uso popular documentado"
+          },
+          {
+            "indicacao": "Antitumoral (gedunin — inibição de Hsp90)",
+            "evidencia": "Preliminar",
+            "populacao": "In vitro e modelos animais"
+          }
+        ],
+        "contraindicacoes": [
+          "Gestação: uso interno contraindicado — limonóides com atividade abortiva documentada em modelos animais. Uso tópico diluído (≤ 10%): cautela.",
+          "Lactação: evitar uso interno; tópico com cautela (não aplicar em mamas).",
+          "Crianças < 2 anos: uso tópico apenas diluído (5–10%); evitar mucosas.",
+          "Hepatopatias: limonóides metabolizados pelo fígado — monitorar com uso interno prolongado.",
+          "Alergia a Meliaceae (mogno, cedro): reação cruzada teórica."
+        ],
+        "interacoes": [
+          {
+            "label": "Antimaláricos (cloroquina, artemisina)",
+            "texto": "Gedunin antimalárico — efeito aditivo. Potencialmente benéfico; monitorar."
+          },
+          {
+            "label": "Antiparasitários (ivermectina, albendazol)",
+            "texto": "Ação aditiva larvicida — combinação em investigação em saúde pública comunitária."
+          },
+          {
+            "label": "Imunomoduladores e imunossupressores",
+            "texto": "Limonóides têm efeito imunomodulador — cautela em imunossuprimidos transplantados."
+          }
+        ],
+        "efeitos_adversos": "Uso oral (decocção de casca): náusea intensa pelo amargor (reduzir dose; usar mel obrigatório); raramente diarreia. Uso tópico de óleo: seguro — raramente fotossensibilidade ou irritação em pele muito sensível.",
+        "dose_maxima": "Uso oral (decocção de casca): 1 xícara/dia de decocção concentrada — máx. 7–10 dias sem acompanhamento profissional. Óleo tópico: sem dose máxima definida para uso externo.",
+        "fontes": [
+          "Miot HA et al. — Comparative study of topical effectiveness of andiroba oil and DEET 50% as repellent (Rev Inst Med Trop SP, 2004)",
+          "Araújo CSF et al. — Insecticidal activity of Carapa guianensis (An Acad Bras Ciências, 2010)",
+          "Wright CW et al. — Antiplasmodial activity of gedunin and analogues (Phytother Res, 2001)",
+          "Baldim JL et al. — Andiroba oil in phytomedicine: biological properties and applications (Rev Bras Farmacogn, 2020)",
+          "Goffinet B et al. — Gedunin and related limonoids of the Meliaceae family (Phytochem, 1994)",
+          "ANVISA — Memento Fitoterápico da Farmacopeia Brasileira, 2.ª ed. (2016)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "3/3",
+            "observacao": "Limonoide extremo — decocção de casca; um dos amarores mais intensos do catálogo; similar ao boldo em intensidade, mais terroso"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "1/3",
+            "observacao": "Profundidade de resina vegetal densa — presente mas obscurecida pelo amargo"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Amadeirado-resinoso tropical com fundo gorduroso nobre e limonóide",
+        "olfativo_descritores": [
+          "Madeira nobre tropical úmida — mogno e cedro amazônico (herança Meliaceae)",
+          "Óleo vegetal nobre levemente gorduroso (ácido oleico — similar ao azeite envelhecido)",
+          "Amargo vegetal profundo dos limonóides (aroma de nim — Azadirachta indica, parente botânico)",
+          "Cacau amargo cru não processado (fundo terroso de floresta densa)",
+          "Terra úmida de várzea após enchente",
+          "Resina balsâmica discreta (triterpenos — traço)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Fraca",
+            "molecula": "Calor suave dos limonóides pesados"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Moderada",
+            "molecula": "Limonóides (gedunin, andirobin) ativam TRPA1 — receptor de amargor e irritação leve"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Forte (casca) / Ausente (óleo)",
+            "molecula": "Taninos condensados da casca — dry mouthfeel intenso; a saliva coagula levemente (taninos ligam-se a proteínas salivares)"
+          }
+        ],
+        "tatil": "Óleo das sementes: textura densa e untuosa — penetra na pele com velocidade média (entre o azeite fluido e a manteiga de karité viscosa). Semi-sólido abaixo de 25 °C; flui livremente acima de 30 °C. Após aplicação: sensação de pele nutrida, protegida, levemente impermeabilizada. Decocção de casca: aquosa com adstringência tânica pronunciada — a boca 'seca' e a saliva engrossa levemente. Pós-uso oral: sensação persistente de amargor e secura que exige neutralização com mel. A andiroba tem a dualidade sensorial mais marcada do catálogo: o óleo das sementes é suave, cosmético, palatável ao toque — um produto de beleza; a decocção da casca é brutal em amargura, austera, medicinal. Dois produtos radicalmente opostos saindo da mesma árvore.",
+        "descricao_integrada": "A andiroba é o ingrediente com a maior dualidade sensorial do catálogo amazônico — e essa dualidade é sua identidade. O óleo das sementes, produto cosmético por excelência, tem aroma de madeira nobre e toque de pele nutrida; a decocção da casca é um dos amarores mais intensos da flora brasileira, insuportável sem mel. Esse contraste não é acidente: os limonóides que tornam a decocção brutal são exatamente os compostos que protegem a árvore de insetos e parasitas na floresta — a planta criou um escudo bioquímico que a medicina humana aprendeu a usar como repelente, antiparasitário e anti-inflamatório. Para o Ervatório, a andiroba é o argumento mais tangível de que a floresta amazônica não é apenas paisagem — é farmácia viva com formulações prontas, testadas por milênios de pressão evolutiva."
       },
       "cultura": {
-        "historia": "O óleo de andiroba é provavelmente o primeiro produto de biocosmética amazônica exportado sistematicamente para a Europa — velas de andiroba eram manufaturadas no Pará colonial para exportação, valorizadas por repelir insetos naturalmente.  Comunidades ribeirinhas e quilombolas do estuário amazônico desenvolveram ao longo de séculos um sistema produtivo complexo: coleta de frutos caídos, fermentação em água, extração a quente do óleo. Esse processo, chamado \"tiragem da andiroba\", é hoje reconhecido como tecnologia tradicional protegida.",
-        "cerimonial": "",
-        "brasil": "A andiroba é um dos produtos âncora da bioeconomia amazônica — cadeia produtiva que envolve mais de 30.000 famílias extrativistas no estado do Pará. Marcas de cosméticos como Natura, O Boticário e exportadoras para Europa e Japão integram o óleo de andiroba em linhas de repelentes naturais, cremes e velas aromáticas.",
-        "curiosidade": ""
+        "historia": "O óleo de andiroba é provavelmente o primeiro produto de biocosmética amazônica com registro sistemático de exportação colonial — velas de andiroba eram manufaturadas no Pará desde o século XVII para exportação à Europa, valorizadas por repelir insetos naturalmente em navegações e residências tropicais. O antropólogo francês Gilles Rivière documentou nas comunidades ribeirinhas do Marajó (1993) o processo tradicional de 'tiragem da andiroba': coleta de frutos flutuando nos igarapés, fermentação natural de 30–60 dias e prensagem a quente do óleo. Esse processo artesanal é hoje reconhecido como tecnologia tradicional protegida — patrimônio imaterial do estado do Pará.",
+        "cerimonial": "Entre povos Yanomami e Tukano do Alto Rio Negro, o óleo de andiroba é usado em rituais de proteção corporal antes de longas caçadas e expedições noturnas na floresta — proteção simultaneamente material (repelência de insetos, cobras, parasitas) e espiritual (proteção contra entidades da floresta). Em algumas etnias, recém-nascidos são untados com mistura de andiroba e copaíba nos primeiros 30 dias de vida — proteção profilática contra mosquitos (malária, leishmaniose) e, simbolicamente, preparação do corpo para 'receber a floresta como lar'.",
+        "brasil": "A andiroba é produto âncora da bioeconomia amazônica contemporânea — cadeia produtiva que envolve mais de 30.000 famílias extrativistas no Pará e Amazonas. Natura, O Boticário, Granado e marcas internacionais integram óleo de andiroba em linhas de repelentes naturais, cremes e velas aromáticas. A exportação de óleo certificado orgânico para Europa e Japão cresce 15–20% ao ano. O Brasil exporta, porém, quase exclusivamente como matéria-prima — o valor de processamento, branding e formulação é capturado no destino (Europa/Japão). Reverter essa lógica extrativista de exportação bruta é o desafio estrutural da bioeconomia amazônica.",
+        "curiosidade": "A andiroba e o nim indiano (Azadirachta indica) compartilham a mesma classe química de compostos ativos — os limonóides. O nim é o bioinseticida natural mais estudado do mundo e está na OMS como inseticida aprovado para malária. A andiroba amazônica produz limonóides estruturalmente similares mas distintos. A pesquisa sistemática comparativa entre os dois — qual produz os limonóides mais potentes para cada aplicação — está em andamento no INPA (Manaus) e no CPQBA-UNICAMP. A andiroba pode ser o 'nim amazônico' que a saúde pública tropical ainda não descobriu em escala."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional amazônico",
-        "status_anvisa": "Uso tradicional reconhecido. Óleo cosmético regulamentado.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita de sementes: janeiro–abril (pico de frutificação)"
+        "eixo_botanico_tpc": "Fitoterápico tradicional amazônico / Cosmético natural",
+        "status_anvisa": [
+          "Óleo cosmético: regulamentado (ANVISA RDC 15/2014 — ingrediente cosmético seguro).",
+          "Uso tradicional da casca: reconhecido no Memento Fitoterápico.",
+          "Repelente natural com óleo de andiroba: registrado como produto de higiene domissanitária (RDC 59/2010)."
+        ],
+        "status_ema": "Não monografado para uso interno. Ingrediente cosmético autorizado na UE (Regulamento EC 1223/2009 — Carapa guianensis seed oil).",
+        "status_fda": "Não regulamentado para uso interno. Uso cosmético: GRAS para produtos de skincare (CIR).",
+        "certificacao_organica": [
+          "IBD, Ecocert Brasil, IMAFLORA para extrativismo certificado.",
+          "Certificação fair trade: CoopeVida (PA), COIAB-filiadas.",
+          "USDA Organic para exportação EUA; EU Organic para Europa."
+        ],
+        "sazonalidade": "Colheita de sementes: janeiro–abril (pico de frutificação). Frutos caem naturalmente e flutuam nos igarapés — coleta tradicional em canoa."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "CAMTA (Tomé-Açu, PA); CoopeVida (estuário do Tocantins, PA); cooperativas quilombolas do Marajó (PA); pequenos produtores extrativistas do AM. Prioritizar certificação orgânica e cadeia rastreável por comunidade de origem.",
+        "faixa_de_preco": [
+          "Óleo puro 100 ml: R$ 35–80 (convencional); R$ 80–200 (orgânico certificado).",
+          "Vela artesanal 100 g: R$ 25–60.",
+          "Casca seca 50 g: R$ 10–20."
+        ],
+        "formatos": "Óleo de sementes prensado a frio (principal — cosmético e medicinal); velas aromáticas artesanais (repelente ambiental); casca seca para decocção; cápsulas de extrato de casca; sabonetes e cremes com óleo de andiroba; spray repelente natural (com copaíba e citronela)."
+      },
+      "destaques": [
+        {
+          "label": "Repelente natural comprovado",
+          "texto": "Limonóides com eficácia documentada 4–6h contra Aedes aegypti — alternativa sustentável ao DEET sintético."
+        },
+        {
+          "label": "Gedunin inibidor de Hsp90",
+          "texto": "Pesquisado em oncologia como anticâncer natural — potencial farmacológico das Meliaceae em investigação ativa global."
+        },
+        {
+          "label": "30.000 famílias extrativistas",
+          "texto": "Bioeconomia ribeirinha estruturada — modelo real de conservação da Amazônia através do uso sustentável."
+        }
+      ]
     },
     {
       "slug": "muirapuama",
       "nome_popular": "Muirapuama",
       "nome_cientifico": "Ptychopetalum olacoides Benth.",
-      "tagline": "A madeira da potência — adaptógeno amazônico que a neurociência redescobriu como protetor cognitivo e tonificante do sistema nervoso.",
+      "tagline": "A madeira da potência — adaptógeno amazônico que farmácias europeias venderam desde 1930 e a neurociência redescobriu como nootrópico com mecanismo de Alzheimer.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Ptychopetalum olacoides Benth.",
-        "familia_botanica": "Olacaceae",
-        "tipo_botanico": "Tônico nervoso / adaptógeno herbal",
-        "parte_usada": "Raiz e casca do caule, secas.",
+        "nome_cientifico": "Ptychopetalum olacoides Benth. (espécie principal); Ptychopetalum uncinatum Anselmino (espécie secundária do mercado)",
+        "familia_botanica": "Olacaceae (família pequena de arbustos e árvores tropicais; parente próximo: pão-de-lagarto — Ximenia americana; poucas espécies com uso medicinal documentado)",
+        "tipo_botanico": "Tônico nervoso / adaptógeno / nootrópico / afrodisíaco herbal",
+        "parte_usada": "Raiz e casca do caule secas (uso principal — extração por decocção ou tintura etanólica); madeira do caule (infusão popular secundária). A tintura etanólica (1:5 em álcool 50°) é o formato com maior evidência clínica — estudos europeus usam exclusivamente esse extrato. A maceração em água fria (12–16h) preserva melhor os alcaloides polares (ptychopetalina) do que a decocção quente.",
         "sinonimos": [
-          "Muirapuama · muirapuaminha · potency wood · pau-potência",
-          "Marapuama (variante ortográfica) · capi-catingaíba (PA)",
-          "Potency wood / muira puama (inglês europeu — uso amplamente difundido em fitoterápicos europeus)"
+          "Muirapuama · muirapuaminha · marapuama · potency wood (EN) · pau-potência",
+          "Capi-catingaíba (PA) · erva-da-potência · muira puama (grafia europeia sem hífen)",
+          "ATENÇÃO: Ptychopetalum olacoides (Amazônia — Rio Negro, AM — espécie com maior evidência) ≠ Liriosma ovata Miers (também chamada 'muirapuama' em partes do PA e MA — família diferente, Olacaceae vs Violaceae, química menos estudada). Exigir identificação botânica antes do uso."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-resinoso leve, terroso-amadeirado, levemente adstringente. Mais palatável que andiroba — admite consumo regular.",
-        "aroma": "Madeira seca tropical, resina sutil, fundo de baunilha silvestre.",
-        "cor_da_infusao": "Marrom-dourado claro a âmbar. #8B5E3C",
-        "intensidade": "3/5 — presença mediana, uso regular possível.",
-        "notas": "",
-        "bioma_de_origem": "Amazônia — floresta de terra firme, preferência por solos bem drenados. Amazonas, Pará, Rondônia.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-resinoso leve, terroso-amadeirado, levemente adstringente. Significativamente mais palatável que andiroba ou copaíba — o adaptógeno amazônico mais amigável ao paladar. Fundo de madeira seca tropical com resina sutil. Com mel, admite consumo regular sem dessensibilização.",
+        "aroma": "Madeira tropical seca e nobre, resina balsâmica discreta, fundo de baunilha silvestre, leve torrefação de raiz seca. Moléculas dominantes: lupeol (triterpeno), ácido oleanólico, traços de ptychopetalina (alcaloide sesquiterpênico), ácidos graxos.",
+        "cor_da_infusao": "Marrom-dourado claro a âmbar quente. #8B5E3C. Decocção mais intensa: âmbar-escuro. Maceração fria: marrom-claro translúcido.",
+        "intensidade": "3/5 — presença mediana, agradável. Uso regular possível sem dessensibilização.",
+        "notas": "Cabeça: amadeirado seco limpo | Corpo: terroso-resinoso, tanino discreto | Fundo: baunilha silvestre sutil, persistência longa e elegante",
+        "bioma_de_origem": "Amazônia — floresta de terra firme com solos ácidos e bem drenados. Predominante no AM (Rio Negro, Alto Solimões), PA (Alto Xingu), RO, AC.",
+        "distribuicao_geografica": [
+          "Amazonas: centro de diversidade — Rio Negro (Barcelos, São Gabriel da Cachoeira), Alto Solimões (Coari, Tefé).",
+          "Pará (Marabá, Altamira), Rondônia, Acre.",
+          "Peru (Loreto — Amazônia peruana); Bolívia (norte); Colômbia (Amazônia).",
+          "Cultivo experimental inexistente em escala — toda produção é extrativista. Europa importa matéria-prima do AM para processamento de tinturas (França, Alemanha, Reino Unido)."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "95–98 °C (decocção leve).",
-        "tempo_de_infusao": "",
-        "quantidade": "2–5 g de casca ou raiz seca para 250 ml.",
-        "metodo": "Decocção suave ou maceração em água fria (12h) — esta última preserva melhor alcaloides polares.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã ou início de tarde. Evitar à noite (estimulante leve).",
-        "combina_com": "Catuaba · Guaraná · Pfaffia (para blends tônicos masculinos) · Ginseng asiático (blend adaptogênico global)"
+        "temperatura_ideal": "Decocção suave: 95–98 °C (não borbulhar forte — alcaloides polares são parcialmente termossensíveis). Maceração fria (12–16h em água temperatura ambiente): preserva melhor a ptychopetalina e produz extrato menos adstringente e mais rico em princípios nootrópicos.",
+        "tempo_de_infusao": "Decocção: 15 min suave + 10 min tampado repousando. Maceração fria: 12–16h.",
+        "quantidade": "2–5 g de casca ou raiz seca para 250 ml. Tintura etanólica (1:5 em álcool 50°): 1–3 ml 2×/dia — formato com mais evidência clínica nos estudos europeus.",
+        "metodo": "Decocção suave (uso diário, prático). Maceração fria (concentração máxima de alcaloides — uso funcional nootrópico). Tintura etanólica: formato premium com maior padronização (disponível em farmácias de manipulação).",
+        "reinfusoes": "1 reinfusão com ~30% de rendimento restante.",
+        "melhor_momento": "Manhã e/ou início de tarde. Evitar após 16h — estimulante leve do SNC pode interferir com o sono. Protocolo adaptogênico: ciclos de 3 semanas on / 1 semana off.",
+        "combina_com": "Catuaba (tônico nervoso masculino amazônico — trio clássico) · Guaraná (energético + nootrópico) · Pfaffia paniculata / suma (adaptogênico amazônico) · Ashwagandha KSM-66 (blend adaptogênico East-West) · Ginseng asiático (vitalidade global)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Preliminar — sem estudos conclusivos. Uso anedótico em tônico capilar e massagem neuroprotora.",
+        "aplicacoes": [
+          {
+            "titulo": "Tônico capilar estimulante",
+            "texto": "Tintura de muirapuama diluída (5–10% em álcool 70°) aplicada massageando o couro cabeludo — evidência anedótica para estímulo de circulação local e anti-queda. Mecanismo teórico: alcaloides e triterpenos com efeito vasodilatador local (similar ao mecanismo da cafeína tópica para calvície)."
+          },
+          {
+            "titulo": "Massagem neuroprotora",
+            "texto": "Óleo vegetal infusionado com muirapuama (maceração oleosa 2:1 em azeite ou óleo de andiroba por 30 dias) — massagem em região cervical, temporal e nuca para tensão nervosa e fadiga. Uso tradicional amazônico por pajés para 'restaurar a força nervosa' após doenças prolongadas."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações documentadas para uso tópico. Evitar mucosas e olhos."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Adaptógeno — modulação do eixo HPA (hipotálamo-hipófise-adrenal)",
-          "Nootrópico — inibição de acetilcolinesterase (melhora memória colinérgica)",
-          "Afrodisíaco (aumento de libido documentado em modelos clínicos)",
-          "Tônico nervoso — neuroproteção contra estresse oxidativo",
-          "Antidepressivo leve (modulação dopaminérgica)",
-          "Anti-inflamatório (triterpenos)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Gestação e lactação — ausência de dados de segurança. Crianças — não recomendado. Hipertensão não controlada — cautela."
+          "Adaptógeno — modulação do eixo HPA (hipotálamo-hipófise-adrenal), normalização de cortisol em resposta ao estresse",
+          "Nootrópico — inibição de acetilcolinesterase (AChE): melhora memória e cognição colinérgica",
+          "Afrodisíaco / tonificante sexual — aumento de libido e performance (estudos clínicos publicados)",
+          "Antineurasténico — restauração de energia nervosa em fadiga crônica e exaustão",
+          "Antidepressivo leve — modulação dopaminérgica e adrenérgica",
+          "Anti-inflamatório (lupeol e ácido oleanólico — triterpenos)",
+          "Antioxidante neuronal (flavonóides e triterpenos — proteção contra estresse oxidativo do SNC)",
+          "Neuroprotetor via inibição de MAO (estudos pré-clínicos)"
         ],
         "componentes_ativos": [
           {
-            "label": "LUPEOL (triterpeno)",
-            "texto": "Anti-inflamatório, adaptogênico"
+            "label": "Lupeol (triterpeno pentacíclico)",
+            "texto": "Predominante — anti-inflamatório, adaptogênico, neuroprotetor; inibição fraca de AChE. Encontrado também na casca da manga e no dente-de-leão — aqui em maior concentração e com sinergia com outros triterpenos."
           },
           {
-            "label": "ÁCIDO OLEANÓLICO",
-            "texto": "Neuroprotetor, antioxidante"
+            "label": "Ácido oleanólico (triterpeno)",
+            "texto": "Abundante — neuroprotetor, antioxidante, anti-inflamatório; inibição leve de MAO-B."
           },
           {
-            "label": "PTYCHOPETALINA (alcaloide)",
-            "texto": "Inibição de AChE — ação nootrópica"
+            "label": "Ptychopetalina (alcaloide sesquiterpênico)",
+            "texto": "Traço — inibição de AChE (acetilcolinesterase); ação nootrópica direta. Mesmo mecanismo da galantamina — medicamento de referência para Alzheimer aprovado pela FDA. Farmacologicamente, é o composto mais importante da espécie."
           },
           {
-            "label": "BETA-SITOSTEROL",
-            "texto": "Anti-inflamatório"
+            "label": "Beta-sitosterol e estigmasterol (esteróis)",
+            "texto": "Modulação hormonal leve (esteróis vegetais); anti-inflamatório."
           },
           {
-            "label": "ÁCIDOS GRAXOS",
-            "texto": "Nutritivo, emoliente"
+            "label": "Flavonóides (rutina, quercetina)",
+            "texto": "Antioxidante, anti-inflamatório, antiistamínico — protetores vasculares."
+          },
+          {
+            "label": "Ácidos graxos (palmítico, oleico)",
+            "texto": "Nutritivo; carreador lipídico para componentes lipossolúveis."
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Disfunção sexual masculina (libido)",
+            "indicacao": "Disfunção sexual masculina (libido e função erétil)",
             "evidencia": "Moderada",
-            "populacao": "Waynberg et al., 2000"
+            "populacao": "Waynberg & Brewer 2000 (n=202, homens com neurastenia sexual) — 62% reportaram melhora de libido"
           },
           {
-            "indicacao": "Déficit cognitivo leve",
+            "indicacao": "Déficit cognitivo leve e fadiga mental",
             "evidencia": "Preliminar",
-            "populacao": "Figueiró et al., 2011"
+            "populacao": "Figueiró et al. 2011 — modelos in vivo, inibição de AChE documentada"
           },
           {
-            "indicacao": "Fadiga nervosa, neurastenia",
+            "indicacao": "Fadiga nervosa / neurastenia",
             "evidencia": "Tradicional forte",
-            "populacao": "Farmacopeias europeias antigas"
+            "populacao": "British Herbal Pharmacopoeia 1983; uso amplamente documentado em farmácias europeias desde 1930"
+          },
+          {
+            "indicacao": "Depressão leve",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos animais — mecanismo dopaminérgico e inibição MAO sugeridos"
+          },
+          {
+            "indicacao": "Neuroproteção (anti-Alzheimer)",
+            "evidencia": "Preliminar",
+            "populacao": "Estudos in vitro (inibição de AChE) — sem ECR humanos ainda"
           }
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "Gestação e lactação: sem dados de segurança disponíveis — contraindicado por precaução.",
+          "Crianças: não recomendado (alcaloides neurológicos, sem estudos pediátricos).",
+          "Hipertensão não controlada: estimulante leve do SNC — cautela; monitorar PA.",
+          "Distúrbios bipolares e psicoses: estimulante pode precipitar episódios maníacos.",
+          "Insônia crônica: evitar doses após 16h.",
+          "Uso concomitante de inibidores de colinesterase (donepezila, galantamina, rivastigmina): efeito AChE aditivo — monitorar sinais de toxicidade colinérgica (náusea, sudorese, taquicardia)."
+        ],
+        "interacoes": [
+          {
+            "label": "Inibidores de MAO (fenelzina, moclobemida, selegilina)",
+            "texto": "Interação farmacológica (modulação monoaminérgica aditiva) — evitar associação; risco de síndrome serotoninérgica teórica."
+          },
+          {
+            "label": "Estimulantes do SNC (cafeína, guaraná, efedra)",
+            "texto": "Efeito aditivo estimulante — usar combinados com moderação; monitorar frequência cardíaca e pressão."
+          },
+          {
+            "label": "Medicamentos para DE (sildenafil, tadalafil)",
+            "texto": "Mecanismos distintos (PDE5i vs colinérgico); potencial aditivo — informar médico sobre uso concomitante."
+          },
+          {
+            "label": "Anticolinérgicos (biperideno, oxibutinina, anti-histamínicos clássicos)",
+            "texto": "Efeito antagonista — muirapuama aumenta ACh; anticolinérgicos a reduzem. Pode reduzir eficácia dos anticolinérgicos."
+          }
+        ],
+        "efeitos_adversos": "Em doses recomendadas: raro — leve agitação nervosa, insônia se tomado à tarde. Doses excessivas: taquicardia leve, ansiedade, cefaleia. Sem casos de toxicidade grave documentados na literatura científica.",
+        "dose_maxima": "Decocção: 1–2 xícaras/dia (2–5 g/250 ml). Tintura etanólica (1:5): 1–3 ml 2×/dia. Extrato seco (cápsulas): 200–400 mg/dia. Uso contínuo: máx. 3 semanas sem pausa (protocolo adaptogênico clássico — 3 semanas on / 1 off).",
+        "fontes": [
+          "Waynberg J, Brewer S — Effects of Herbal vX on libido and sexual activity (Adv Ther, 2000)",
+          "Figueiró M et al. — Assessment of mitochondrial dysfunction and AChE inhibitory activity of Ptychopetalum olacoides (Phytomedicine, 2011)",
+          "Siqueira IR et al. — Ptychopetalum olacoides, a traditional Amazonian tonic plant (Phytomedicine, 2007)",
+          "Patrocínio D et al. — Antioxidant and neuroprotective properties of P. olacoides extracts (J Med Food, 2014)",
+          "Rowland DL, Tai W — A review of plant-derived approaches to sexual dysfunction (J Sex Marital Ther, 2003)",
+          "British Herbal Pharmacopoeia — Muira Puama monograph (1983)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "2/3",
+            "observacao": "Moderado e resinoso — suportável; bem abaixo de andiroba (3/3) ou copaíba (3/3)"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "1/3",
+            "observacao": "Profundidade terrosa sutil — madeira úmida, triterpenos"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Amadeirado seco nobre com notas resinosas sutis e fundo baunilhado",
+        "olfativo_descritores": [
+          "Madeira tropical seca e nobre — cedro amazônico, mogno leve (não a madeira cortada — é a raiz)",
+          "Resina balsâmica discreta, não invasiva (ao contrário da copaíba — aqui é fundo, não frente)",
+          "Baunilha silvestre (traço — ácidos fenólicos voláteis liberados pela madeira seca)",
+          "Torrefação leve de raiz seca (reação de Maillard natural — compostos de Amadori formados na secagem)",
+          "Terra de floresta de terra firme do Rio Negro — mineral ácido",
+          "Fundo suavemente herbáceo (flavonóides — traço)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Fraca",
+            "molecula": "Triterpenos e traços de alcaloide — leve ativação; menos que a copaíba"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Fraca a moderada",
+            "molecula": "Taninos discretos — menos adstringente que aroeira ou carqueja; não seca a boca"
+          }
+        ],
+        "tatil": "Leveza incomum para um adaptógeno amadeirado — a decocção de muirapuama é a mais palatável do grupo amazônico. Corpo limpo, sem a viscosidade da copaíba nem a adstringência brutal da andiroba. Persistência longa e elegante: o amadeirado e a baunilha sutil permanecem na garganta 10–15 min após o consumo. Maceração fria produz liquido mais leve ainda, quase transparente — sensorialmente suave mas farmacologicamente mais rico em alcaloides. Essa distinção é relevante: para uso diário de bem-estar, a decocção quente é suficiente e mais prática; para protocolo nootrópico intensivo, a maceração fria maximiza a ptychopetalina.",
+        "descricao_integrada": "A muirapuama é o adaptógeno mais elegante sensorialmente do catálogo amazônico — e essa elegância explica sua trajetória única de 90 anos em farmácias europeias sem interrupção. Enquanto copaíba e andiroba exigem mel e estratégias de palatabilização, a muirapuama admite consumo regular quase sem esforço. Há uma ironia histórica nessa elegância: a erva mais palatável do arsenal nervoso amazônico é exportada quase integralmente sem valor agregado, processada na Europa e devolvida ao Brasil como produto premium a 10× o preço. A neurociência dos anos 2010 revelou o 'porquê' bioquímico do que os pajés do Rio Negro já sabiam: a ptychopetalina inibe acetilcolinesterase — o mesmo mecanismo de um medicamento de Alzheimer. A floresta formulou o nootrópico; a ciência apenas nomeou o receptor."
       },
       "cultura": {
-        "historia": "A muirapuama chegou à Europa no final do século XIX como \"afrodisíaco amazônico\" — os primeiros relatos de uso terapêutico europeu datam de 1925 (British Herbal Pharmacopoeia, edição antiga). Tornou-se ingrediente de fórmulas de \"tonificantes nervosos\" em farmácias francesas e inglesas das décadas de 1930–1950.  Na Amazônia, é usada por diversas etnias indígenas como tônico masculino, mas também como planta de força para caçadores e guerreiros — a denominação \"potency wood\" reflete essa herança.",
-        "cerimonial": "",
-        "brasil": "A muirapuama é, junto com a catuaba e o guaraná, a tríade dos adaptógenos amazônicos masculinos mais exportados. A França e a Alemanha são os maiores mercados europeus de extrato de muirapuama — onde circula amplamente em fitoterápicos OTC para \"vitalidade e libido\". O Brasil exporta quase toda sua produção como matéria-prima semi-processada, sem capturar o valor agregado do produto final.",
-        "curiosidade": ""
+        "historia": "A muirapuama chegou à Europa no final do século XIX como 'afrodisíaco amazônico', trazida por naturalistas franceses e ingleses que documentaram seu uso por etnias do Rio Negro. Os primeiros estudos farmacológicos europeus datam de 1925 (descrição botânica de Anselmino). A British Herbal Pharmacopoeia de 1983 incluiu monografia de 'Muira Puama' — reconhecimento formal raro para uma planta amazônica, publicado antes de qualquer regulação brasileira equivalente. Nas décadas de 1930–1960, farmácias francesas e inglesas vendiam 'toniques nerveux' com extrato de muirapuama para neurastenia, fadiga mental e impotência funcional. O produto retornou ao Brasil nos anos 1990 como suplemento importado da Europa — em ironia histórica completa: matéria-prima amazônica processada na Europa e revendida ao país de origem como produto premium.",
+        "cerimonial": "Entre os Dessana e Tukano do Alto Rio Negro (AM), a muirapuama ('madeira da força') é componente de preparações para rituais de iniciação masculina — bebidas tônicas tomadas pelos jovens antes das cerimônias de passagem. O conhecimento sobre qual árvore coletar, qual parte usar e como preparar é transmitido exclusivamente de xamã para aspirante — não é conhecimento público da aldeia. Essa restrição indica o alto valor simbólico: a muirapuama não é remédio do dia a dia, é planta de momento especial. Consumir muirapuama fora do contexto cerimonial sem o conhecimento do pajé é, na visão indígena, desperdiçar a potência da planta.",
+        "brasil": "A muirapuama integra, com catuaba e guaraná, a tríade dos adaptógenos masculinos amazônicos mais exportados. França e Alemanha são os maiores mercados europeus — onde circula amplamente em produtos OTC para 'vitalidade masculina e libido'. Um quilo de muirapuama bruta sai do AM por R$ 20–40; o produto final em farmácias de Paris custa o equivalente a R$ 200–400/unidade. O mercado global de adaptógenos, do qual a muirapuama é membro ativo, cresceu de US$ 8 bilhões (2016) para US$ 14 bilhões (2023). O Brasil captura menos de 5% desse valor — exporta matéria-prima, não produto.",
+        "curiosidade": "A ptychopetalina da muirapuama e a galantamina do narciso europeu (Galanthus nivalis) têm o mesmo mecanismo de ação: inibição de acetilcolinesterase (AChE). A galantamina é medicamento aprovado pela FDA e EMA para Alzheimer (Reminyl®) e custa US$ 200–300/mês de tratamento. A tintura artesanal de muirapuama custa R$ 30–80/mês. A equivalência terapêutica em ECR humanos para Alzheimer ainda não foi demonstrada — mas o mecanismo molecular está documentado (Figueiró et al., 2011). A floresta amazônica pode ter formulado um análogo natural do primeiro medicamento aprovado para Alzheimer no mundo."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional amazônico",
-        "status_anvisa": "Uso tradicional reconhecido. Não está no Formulário de Fitoterápicos.",
-        "status_ema": "Não monografado. Amplamente vendido na Europa como suplemento.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita de raiz/casca: ano todo; preferência período seco"
+        "eixo_botanico_tpc": "Fitoterápico tradicional amazônico / Suplemento alimentar",
+        "status_anvisa": [
+          "Uso tradicional reconhecido. Não consta no Formulário de Fitoterápicos da Farmacopeia Brasileira — lacuna relevante para uma planta com este perfil de evidência e exportação.",
+          "Comercializado como suplemento alimentar (IN 28/2018) em cápsulas e tinturas.",
+          "Risco regulatório interno: sem monografia ANVISA, formulações variam muito em padronização — exigir extrato titulado."
+        ],
+        "status_ema": "Não monografado pelo HMPC. Amplamente comercializado na Europa (FR, DE, UK) como suplemento sem monografia oficial. Risco: suscetível a restrições se a EMA revisar a categoria de 'ervas não europeias sem monografia'.",
+        "status_fda": "Não regulamentado para uso medicinal. Vendido como dietary supplement (DSHEA 1994). Sem NDI notice na FDA.",
+        "certificacao_organica": [
+          "Disponível via IBD e Ecocert para extrativismo certificado no AM.",
+          "Escala pequena — demanda cresce mais rápido que oferta certificada."
+        ],
+        "sazonalidade": "Colheita de raiz e casca: ano todo — período seco preferencial (menor teor de água, rendimento extrativo superior, facilidade logística)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas extrativistas do Rio Negro (AM) — ACIMRN; pequenos produtores do Alto Solimões (AM); distribuidores de fitoterápicos nacionais (Naturex, Embrasil) para cápsulas padronizadas.",
+        "faixa_de_preco": [
+          "Raiz/casca seca 100 g: R$ 20–45.",
+          "Tintura etanólica artesanal 30 ml: R$ 35–70.",
+          "Cápsulas extrato padronizado 30 cáp: R$ 60–120.",
+          "Importado europeu premium: R$ 200–400/unidade."
+        ],
+        "formatos": "Casca e raiz secas para decocção; tintura etanólica (1:5 em álcool 50° — formato com mais evidência clínica); cápsulas de extrato padronizado; pó para smoothie/blend; blend trio tônico amazônico (muirapuama + catuaba + guaraná)."
+      },
+      "destaques": [
+        {
+          "label": "Nootrópico por inibição de AChE",
+          "texto": "Mesmo mecanismo da galantamina (medicamento para Alzheimer aprovado FDA/EMA) — memória e cognição colinérgica sem prescrição."
+        },
+        {
+          "label": "Adaptógeno com validação europeia desde 1930",
+          "texto": "British Herbal Pharmacopoeia 1983; estudos de libido e neurastenia publicados; 90 anos de uso ininterrupto em farmácias europeias."
+        },
+        {
+          "label": "O adaptógeno mais palatável da Amazônia",
+          "texto": "Amadeirado elegante, amargor moderado — uso regular possível sem esforço de palatabilização."
+        }
+      ]
     },
     {
       "slug": "aroeira",
@@ -7550,219 +7969,518 @@
       "slug": "pitanga",
       "nome_popular": "Pitanga",
       "nome_cientifico": "Eugenia uniflora L.",
-      "tagline": "A joia vermelha da mata atlântica — antioxidante potente, hipotensora e com perfil sensorial que rivaliza qualquer fruta do hemisfério norte em complexidade aromática.",
+      "tagline": "A joia vermelha do quintal brasileiro — o licopeno da pitanga supera o tomate, as antocianinas da pitanga negra rivalizam com o mirtilo, e a fruta da infância de todo brasileiro é o superfruit que o mundo ainda não descobriu.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Eugenia uniflora L.",
-        "familia_botanica": "Myrtaceae (família da goiaba, da jabuticaba, do eucalipto)",
-        "tipo_botanico": "Alimento funcional antioxidante / fitoterápico",
-        "parte_usada": "Fruto (alimentar); folhas (infusão medicinal).",
+        "familia_botanica": "Myrtaceae (família da goiaba — Psidium guajava, da jabuticaba — Plinia cauliflora, do eucalipto — Eucalyptus spp. — família com característico aroma cítrico-resinoso em todas as espécies)",
+        "tipo_botanico": "Alimento funcional antioxidante / fitoterápico / cosmético natural",
+        "parte_usada": "Fruto maduro — polpa (uso alimentar e funcional; pitanga vermelha e negra têm perfis nutricionais distintos); folhas (infusão medicinal — anti-hipertensivo, antidiarreico, repelente); casca do fruto (taninos). A pitanga negra madura é o estágio máximo de maturação do mesmo fruto que antes era vermelho — não é variedade diferente. Do vermelho ao negro, antocianinas aumentam 3–5× e açúcares se concentram.",
         "sinonimos": [
           "Pitanga · pitangueira · cereja-brasileira",
-          "Surinam cherry (inglês) · Cerise carée (francês)",
-          "Ñangapirí (guarani)"
+          "Surinam cherry / Brazilian cherry (inglês) · cerise carée / cerisier de Cayenne (francês)",
+          "Ñangapirí (guarani — RS, SC, PR) — nome com significado sagrado na cultura guarani",
+          "ATENÇÃO: Eugenia uniflora (pitanga — Mata Atlântica, nativa) ≠ Eugenia uniflora naturalizada (introduzida em África do Sul, Israel, Flórida EUA, Caribe — mesmo genótipo mas solo e clima distintos podem alterar o perfil fitoquímico)."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "",
-        "cor_da_infusao": "",
-        "intensidade": "4/5 para o fruto; 2/5 para a infusão de folhas.",
-        "notas": "",
-        "bioma_de_origem": "Mata Atlântica — amplamente distribuída; RS, SC, PR, SP, RJ, MG, BA.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Fruto maduro (vermelho): doce-ácido complexo com fundo resinoso-cítrico — cereja silvestre, goiaba tropical, leve pimenta-vegetal na casca. Pitanga negra madura: doce profundo, ácido suave, resinoso envolvente — o perfil mais complexo e palatável. Infusão de folhas: herbáceo-cítrico leve, suave, medicinal. São produtos sensorialmente distintos: o fruto tem complexidade de vinho frutado; a infusão de folhas é tisana simples.",
+        "aroma": "Cítrico-resinoso tropical de Myrtaceae, cereja silvestre concentrada, goiaba distante e tropical, traço eucaliptoide suavíssimo (α-terpineol — herança Myrtaceae), pimenta-vegetal discreta no fundo (sesquiterpenos da casca). Moléculas: mirceno, limoneno, α-terpineol, trans-β-ocimeno, sesquiterpenos.",
+        "cor_da_infusao": "Fruto vermelho (polpa): escarlate intenso (#C42B1C). Fruto negro (polpa): roxo-escuro profundo (#4A1528). Infusão de folhas: verde-amarelado dourado (#B8C870). A cor da polpa é indicador de estágio: quanto mais escuro o roxo, maior a concentração de antocianinas.",
+        "intensidade": "Fruto: 4/5 — aromático e saboroso. Infusão de folhas: 2/5 — suave, medicinal.",
+        "notas": "Cabeça: cítrico-resinoso vivo (limoneno + mirceno — lembra limão-siciliano com resina vegetal) | Corpo: doce-frutado de cereja silvestre com adstringência suave de casca | Fundo: pimenta-vegetal discreta (sesquiterpenos) + floral tênue de quintal (trans-β-ocimeno)",
+        "bioma_de_origem": "Mata Atlântica — amplamente distribuída do RS ao BA. Espécie pioneira e de borda de mata, frequente em quintais, pomares e áreas urbanizadas do litoral brasileiro.",
+        "distribuicao_geografica": [
+          "Mata Atlântica: RS (Serra Gaúcha, Vale dos Sinos), SC, PR, SP (interior e litoral), RJ, MG (Zona da Mata), BA (sul do estado).",
+          "Naturalizada: Caatinga (CE, PE, PI), Cerrado (GO, DF).",
+          "América do Sul: Paraguai (ñangapirí — consumo cultural significativo), norte da Argentina, Uruguai, Suriname, Venezuela.",
+          "Introduzida e naturalizada: África do Sul, Israel, Flórida (EUA — 'Surinam cherry' em mercados gourmet), Caribe, Índia, Indonésia.",
+          "A pitanga é a fruta brasileira mais amplamente introduzida em outros países tropicais — paradoxo: exportada como 'Surinam cherry' no mundo, subestimada no Brasil."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Hibisco · Açaí · Jabuticaba · Maracujá (blends antioxidantes da Mata Atlântica)"
+        "temperatura_ideal": "Infusão de folhas: 90–95 °C. Fruto: consumo direto ou suco a frio. Não aquecer suco/polpa acima de 60 °C — antocianinas termossensíveis (perda de 30–50% em altas temperaturas).",
+        "tempo_de_infusao": "Folhas secas: 8–10 min coberto.",
+        "quantidade": "Folhas secas: 5–8 g para 500 ml. Fruto fresco: 50–200 g/dia (uso alimentar livre). Pó liofilizado de fruto: 5–15 g/dia.",
+        "metodo": "Infusão coberta (folhas). Suco a frio ou smoothie (fruto fresco). Polpa congelada ou liofilizada para blend. NÃO ferver o suco.",
+        "reinfusoes": "Folhas: 1 reinfusão possível (40% de rendimento restante).",
+        "melhor_momento": "Fruto: manhã (vitamina C e antioxidante em jejum). Folhas: manhã ou tarde (efeito hipotensivo e diurético — evitar noite).",
+        "combina_com": "Hibisco (blend antioxidante MA — cor e antocianinas) · Açaí (roxo vitamínico amazônico) · Jabuticaba (blend negro MA — antocianinas duplas) · Maracujá (cítrico-ácido tropical) · Camu-camu (vitamina C amplificada)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para antimicrobiano oral (óleo essencial de folhas); preliminar para antioxidante tópico de extrato de fruto.",
+        "aplicacoes": [
+          {
+            "titulo": "Antisséptico bucal",
+            "texto": "Extrato aquoso ou hidroalcoólico de folhas (5%) como enxágue oral — atividade antimicrobiana contra Streptococcus mutans e Candida albicans. Evidência moderada em estudos brasileiros in vitro. Óleos essenciais (limoneno, mirceno, α-terpineol) são os agentes ativos."
+          },
+          {
+            "titulo": "Tônico anti-aging facial",
+            "texto": "Extrato aquoso de pitanga negra (antocianinas + licopeno + vitamina C) em formulações tônicas e séricas — antioxidante, anti-pigmentação (inibição de tirosinase), anti-aging. Mercado cosmético artesanal crescente no Brasil. Indicado como alternativa natural ao extrato de mirtilo europeu (perfil de antocianinas similar)."
+          },
+          {
+            "titulo": "Repelente natural de insetos",
+            "texto": "Óleo essencial de folhas de pitanga (limoneno, mirceno) — atividade repelente comprovada in vitro contra Aedes aegypti e Culex. Evidência moderada em estudos de campo. Uso popular tradicional no NE/SE do Brasil — ramos de pitangueira pendurados em janelas como repelente natural."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações documentadas para uso tópico. Atenção: suco e extrato de fruto mancham roupas permanentemente (antocianinas — pigmento intenso)."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antioxidante potente (licopeno + antocianinas)",
-          "Antihipertensivo (vasodilator — flavonóides)",
-          "Antidiarreico (folhas — taninos)",
-          "Hipoglicemiante leve (folhas)",
-          "Anti-inflamatório",
-          "Antiviral (terpenos — estudos preliminares)",
-          "Repelente natural de insetos (óleos essenciais das folhas)",
-          "Componentes ativos:",
-          "Contraindicações: Sem contraindicações relevantes em uso alimentar. Folhas em decocção: gestação — cautela."
+          "Antioxidante potente — licopeno (> tomate) + antocianinas (pitanga negra ≈ mirtilo) + vitamina C: tripla cobertura antioxidante",
+          "Anti-hipertensivo (flavonóides — vasodilatação endotélio-dependente e inibição leve de ECA)",
+          "Anti-inflamatório (quercetina, miricetina, rutina — inibição de COX)",
+          "Antidiarreico (taninos das folhas — adstringência de mucosa intestinal)",
+          "Hipoglicemiante leve (folhas — inibição de α-glicosidase)",
+          "Antimicrobiano (óleos essenciais de folhas — S. mutans, C. albicans, E. coli)",
+          "Antiviral (terpenos de folhas — estudos preliminares contra vírus respiratórios)",
+          "Repelente natural de insetos (óleos essenciais de folhas — Aedes aegypti)"
         ],
         "componentes_ativos": [
           {
-            "label": "LICOPENO",
-            "texto": "Antioxidante, antiproliferativo — concentração superior ao tomate"
+            "label": "Licopeno",
+            "texto": "5–10 mg/100 g no fruto vermelho — superior ao tomate (3 mg/100 g). Antioxidante, antiproliferativo prostático. A concentração de licopeno da pitanga é das mais altas entre frutas."
           },
           {
-            "label": "ANTOCIANINAS (fruto negro)",
-            "texto": "Antioxidante, anti-inflamatório"
+            "label": "Antocianinas (cianidina-3-glucosídeo, delfinidina-3-glucosídeo)",
+            "texto": "Fruto negro >> fruto vermelho (3–5× maior). Antioxidante, anti-inflamatório, neuroprotetor. Perfil similar ao mirtilo europeu."
           },
           {
-            "label": "VITAMINA C",
-            "texto": "Antioxidante — 30–40 mg/100g"
+            "label": "Vitamina C (ácido ascórbico)",
+            "texto": "30–40 mg/100 g (fruto) — menor que camu-camu mas com sinergia com licopeno e antocianinas."
           },
           {
-            "label": "ÓLEOS ESSENCIAIS FOLHAS (mirceno, limoneno)",
-            "texto": "Antimicrobiano, repelente"
+            "label": "Óleos essenciais de folhas (mirceno, limoneno, α-terpineol, trans-β-ocimeno, sesquiterpenos)",
+            "texto": "Antimicrobiano, repelente de insetos, anti-inflamatório local. Responsáveis pelo aroma característico da folha amassada."
           },
           {
-            "label": "TANINOS (folhas)",
-            "texto": "Antidiarreico, adstringente"
+            "label": "Taninos condensados (folhas e casca do fruto)",
+            "texto": "Antidiarreico, adstringente cicatrizante, antimicrobiano. Mais concentrados na folha do que na polpa."
           },
           {
-            "label": "QUERCETINA, MIRICETINA",
-            "texto": "Anti-inflamatório, antihipertensivo"
+            "label": "Quercetina, miricetina, rutina (flavonóides)",
+            "texto": "Anti-inflamatório, anti-hipertensivo (inibição de ECA), cardioprotetor, antiistamínico."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Atividade antioxidante (ORAC/DPPH — pitanga negra supera vermelha)",
+            "evidencia": "Forte",
+            "populacao": "Estudos in vitro múltiplos (Lima VLA et al.; Auger J et al.)"
+          },
+          {
+            "indicacao": "Anti-hipertensivo (vasodilatação endotélio-dependente)",
+            "evidencia": "Moderada",
+            "populacao": "Modelos animais + uso tradicional amplamente documentado"
+          },
+          {
+            "indicacao": "Hipoglicemiante (inibição de α-glicosidase — folhas)",
+            "evidencia": "Moderada",
+            "populacao": "Modelos animais + estudos in vitro"
+          },
+          {
+            "indicacao": "Antimicrobiano oral (S. mutans, C. albicans)",
+            "evidencia": "Moderada",
+            "populacao": "Estudos brasileiros in vitro"
+          },
+          {
+            "indicacao": "Antidiarreico (taninos de folhas)",
+            "evidencia": "Tradicional forte",
+            "populacao": "Uso popular NE/SE amplamente documentado e farmacologicamente plausível"
+          }
+        ],
+        "contraindicacoes": [
+          "Gestação (infusão de folhas): óleos essenciais em altas doses têm potencial abortivo teórico — fruto em doses alimentares é seguro; folhas: cautela e doses moderadas.",
+          "Hipotensão: efeito hipotensivo de folhas pode potencializar anti-hipertensivos — monitorar PA.",
+          "Sem contraindicações para uso alimentar do fruto em qualquer população."
+        ],
+        "interacoes": [
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Efeito aditivo (flavonóides + infusão de folhas) — monitorar PA; geralmente benéfico mas pode exigir ajuste de dose."
+          },
+          {
+            "label": "Hipoglicemiantes (metformina, insulina)",
+            "texto": "Efeito aditivo leve (folhas) — monitorar glicemia em uso regular de infusão de folhas."
+          },
+          {
+            "label": "Anticoagulantes (varfarina)",
+            "texto": "Vitamina C + quercetina em altas doses — monitorar INR em uso excessivo de extrato concentrado."
+          }
+        ],
+        "efeitos_adversos": "Fruto: sem adversos em doses alimentares. Folhas em uso excessivo: náusea leve (terpenos em alta concentração). Suco concentrado: diarreia osmótica (açúcares e ácidos). Mancha roupas — antocianinas são pigmentos permanentes.",
+        "dose_maxima": "Fruto: sem dose máxima (alimento). Folhas secas: 5–8 g 2×/dia. Infusão de folhas: uso prolongado máx. 30 dias sem reavaliação.",
+        "fontes": [
+          "Lima VLA et al. — Physical and chemical characteristics of pitanga (Eugenia uniflora L.) fruit (Sci Hortic, 2002)",
+          "Oliveira MEB et al. — Anti-inflammatory activity of Eugenia uniflora leaves (J Ethnopharmacol, 2009)",
+          "Auger J et al. — Comparison of antioxidant activity of pitanga pulp (J Agric Food Chem, 2003)",
+          "Serafini MR et al. — Antinociceptive and antiedematogenic effects of Eugenia uniflora (J Ethnopharmacol, 2010)",
+          "Bezerra IC et al. — Medicinal plants used in NE Brazil (J Ethnobiol Ethnomed, 2019)",
+          "ANVISA — Formulário de Fitoterápicos da Farmacopeia Brasileira, 2.ª ed. (2021)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "2/3 (vermelho) · 3/3 (negro)",
+            "observacao": "Frutado genuíno — pitanga negra tem o doce mais concentrado e profundo"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Terpenos da casca — discreto, vegetal, não agressivo; mais pronunciado na casca do fruto verde"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "1/3",
+            "observacao": "Profundidade frutada madura — ácidos orgânicos + açúcares em fermentação natural"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "2/3 (vermelho) · 1/3 (negro)",
+            "observacao": "Ácido cítrico-málico vibrante no fruto vermelho; muito equilibrado pelo doce no fruto negro"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Cítrico-resinoso tropical com fundo de cereja silvestre e herança eucaliptoide de Myrtaceae",
+        "olfativo_descritores": [
+          "Cereja silvestre concentrada (ésteres + antocianinas — não cereja europeia; mais intensa, mais tropical, menos adocicada)",
+          "Goiaba tropical distante (Myrtaceae — família inteira compartilha esse fundo floral-frutado)",
+          "Cítrico-resinoso (limoneno + mirceno — limão-siciliano com resina vegetal viva)",
+          "Eucalipto tropical suavíssimo (α-terpineol traço — herança Myrtaceae, presente em todas as espécies da família)",
+          "Pimenta-vegetal discreta no fundo (sesquiterpenos da casca — identifica a pitanga em blend)",
+          "Floral tênue de quintal tropical (trans-β-ocimeno — 'cheiro de jardim' que ativa memória afetiva)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Fraca",
+            "molecula": "Sesquiterpenos e terpenos da casca — leve ativação; discreta"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Moderada (casca do fruto) · Moderada (folhas)",
+            "molecula": "Taninos condensados — menor que jabuticaba, mais que goiaba. A casca do fruto tem adstringência própria — muitos comem só a polpa por isso"
+          }
+        ],
+        "tatil": "Fruto: textura dual única — casca firme e fina resistindo um segundo antes de ceder à pressão dos dentes, liberando a polpa macia e suculenta num estouro de suco. A pitanga negra tem casca mais fina e polpa mais suculenta e viscosa. A diferença de textura entre o fruto vermelho (mais firme, menos suculento) e o negro (quase líquido por dentro) é tão grande quanto entre dois estágios distintos de uma uva. Infusão de folhas: corpo leve, herbácea, sem a textura viva do fruto — dois produtos sensorialmente distintos saindo da mesma planta. Suco: aquoso, levemente viscoso pelas antocianinas, cora a língua de vermelho-púrpura imediatamente.",
+        "descricao_integrada": "A pitanga carrega o peso de ser ao mesmo tempo a fruta mais comum e a mais subestimada do Brasil. Cada brasileiro do Sul e Sudeste tem uma memória olfativa da pitangueira — o quintal, a árvore que ninguém plantou mas estava lá, o fruto que caía e manchava o chão. Essa memória afetiva é o maior ativo de marketing que a pitanga tem — e o mundo gourmet já percebeu: a 'Surinam cherry' é produto premium em mercados de São Francisco, Londres e Tel Aviv. O paradoxo é completo: o que o brasileiro colhe do quintal por hábito, o europeu compra como superfruit exótico por convicção. Scientificamente, ambos têm razão — a pitanga negra madura é genuinamente excepcional: mais licopeno que o tomate, antocianinas como o mirtilo, vitamina C presente. O erro é que no Brasil esse dado ainda não virou produto."
       },
       "cultura": {
-        "historia": "A pitanga é a fruta da infância do Brasil costeiro — toda casa de interior do Sul e Sudeste tinha (ou tem) um pé de pitanga no quintal. Euclides da Cunha e Carlos Drummond de Andrade a mencionam em textos como símbolo da natureza mineira e carioca. É uma das primeiras frutas que as crianças aprendem a colher — cor vermelha chamar, sabor memorável guardar.",
-        "cerimonial": "",
-        "brasil": "A pitanga tem potencial de exportação como \"superfruit\" antioxidante quase inexplorado. O licopeno da pitanga vermelha é superior ao do tomate em concentração — dado que, com marketing adequado, justificaria posicionamento premium em mercados europeus e norte-americanos. Hoje, praticamente 100% do consumo é local e informal.",
-        "curiosidade": ""
+        "historia": "A pitanga é fruta nativa de Mata Atlântica documentada pelos colonizadores portugueses nas primeiras décadas do século XVI — Pero de Magalhães Gândavo (1576) a menciona como 'cereja vermelha muito boa de comer'. O nome vem do Tupi 'pe'tãng' ('vermelho vivo' ou 'coisa vermelha') — o próprio nome é uma instrução de maturidade: quando está vermelha (ou melhor, negra), está pronta. Euclides da Cunha e Carlos Drummond de Andrade a mencionam em prosa e verso como símbolo da natureza mineira e carioca. É uma das primeiras frutas que crianças do interior aprendem a distinguir — a cor escarlate como sinal universal de maturidade, o sabor inesquecível como primeiro ensinamento da floresta.",
+        "cerimonial": "Comunidades guarani (ñandeva, mbya) do RS e SC têm uso cerimonial do ñangapirí (nome guarani) em rituais de cura e como alimento sagrado em cerimônias de colheita. O xamã-pajé guarani usa folhas de pitanga em banhos de ervas purificadores antes de rituais. A frutificação da pitanga (setembro–dezembro) coincide com rituais guarani de agradecimento pela colheita — o ciclo da pitangueira é calendário natural da comunidade.",
+        "brasil": "A pitanga tem potencial de exportação como superfruit antioxidante quase inexplorado no Brasil. O licopeno da pitanga vermelha supera o tomate em concentração. As antocianinas da pitanga negra madura rivalizam com o mirtilo europeu. Ambos os dados justificariam posicionamento premium em mercados europeus e norte-americanos — onde a fruta já circula como 'Surinam cherry' em nichos gourmet sem participação brasileira na cadeia de valor. Hoje, quase 100% do consumo nacional é local e informal — pé de quintal, feira de bairro, geleia caseira. A falta de cadeia produtiva organizada (beneficiamento, liofilização, exportação) é o único obstáculo entre a pitanga e o mercado global.",
+        "curiosidade": "A pitanga vermelha e a pitanga negra são a mesma espécie — a cor negra é simplesmente o estágio de maturação máxima. Do vermelho ao negro, a concentração de antocianinas aumenta 3–5× e o licopeno varia por cultivar. O fruto que ninguém quer comprar porque parece 'passado' — o negro escuro caído da árvore espontaneamente — é o mais nutritivo de todos. A agricultura convencional colhe pitanga vermelha para evitar perdas; o consumidor sábio espera a negra madura cair."
       },
       "regulacao": {
         "eixo_botanico_tpc": "Alimento funcional / Fitoterápico",
-        "status_anvisa": "Alimento. Folhas: uso tradicional reconhecido.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutificação: setembro–dezembro (principal), com segunda safra em regiões mais quentes"
+        "status_anvisa": [
+          "Fruto: alimento — sem regulação específica.",
+          "Folhas: uso tradicional reconhecido no Formulário de Fitoterápicos da Farmacopeia Brasileira (2021).",
+          "Pó liofilizado de fruto: suplemento alimentar (IN 28/2018)."
+        ],
+        "status_ema": "Não monografado. Fruto: uso alimentar sem restrições na UE. Alergia rara documentada em casos isolados.",
+        "status_fda": "Não regulamentado para uso medicinal. Fruto: GRAS como alimento. Amplamente disponível em supermercados da Flórida como 'Surinam cherry'.",
+        "certificacao_organica": [
+          "Disponível para produção em transição agroecológica (RS, SC, SP).",
+          "Certificação IBD e Ecocert para pomares orgânicos. Escala ainda incipiente para exportação."
+        ],
+        "sazonalidade": "Frutificação principal: setembro–dezembro (florada de primavera). Segunda safra possível em regiões mais quentes: março–maio. A pitanga floresce e frutifica em pulsos — colheita pode ser semanal durante o pico."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Produtores agroecológicos da Serra Gaúcha (RS), litoral SC e SP. Quintais produtivos e associações de coletores urbanos (SP, RJ). Cooperativas de agricultura familiar do Vale do Ribeira (SP) e sul de MG.",
+        "faixa_de_preco": [
+          "Fruto fresco (kg): R$ 15–35 (feira local); R$ 50–90 (delivery premium urbano).",
+          "Pó liofilizado 100 g: R$ 60–130.",
+          "Geleia artesanal 200 g: R$ 18–40.",
+          "Folhas secas 50 g: R$ 10–20."
+        ],
+        "formatos": "Fruto fresco (sazonal); polpa congelada; pó liofilizado (blend antioxidante); geleia artesanal; folhas secas para infusão; extrato hidroalcoólico de folhas (farmácia de manipulação)."
+      },
+      "destaques": [
+        {
+          "label": "Licopeno superior ao tomate",
+          "texto": "5–10 mg/100 g vs. 3 mg/100 g no tomate — o superfruto antioxidante do quintal que o mundo gourmet já conhece como 'Surinam cherry'."
+        },
+        {
+          "label": "Pitanga negra = mirtilo brasileiro",
+          "texto": "Antocianinas 3–5× maiores na pitanga negra madura — perfil comparável ao mirtilo europeu no superfruit mais subestimado da Mata Atlântica."
+        },
+        {
+          "label": "Memória afetiva nacional insubstituível",
+          "texto": "O quintal de toda infância brasileira do litoral — a carga afetiva mais poderosa do catálogo para marketing de identidade."
+        }
+      ]
     },
     {
       "slug": "jurubeba",
       "nome_popular": "Jurubeba",
       "nome_cientifico": "Solanum paniculatum L.",
-      "tagline": "O guardião do fígado nordestino — digestivo e hepatoprotetor com tradição do interior brasileiro e uso popular que antecede qualquer pesquisa farmacológica.",
+      "tagline": "O guardião amargo do fígado brasileiro — colagogo potente do interior do país, do aperitivo de boteco ao laboratório de oncologia, via alcaloide esteroídico pesquisado no MD Anderson.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Solanum paniculatum L.",
-        "familia_botanica": "Solanaceae (família do tomate, da berinjela, da batata)",
-        "tipo_botanico": "Fitoterápico hepático / digestivo amargo",
-        "parte_usada": "Fruto imaturo (principal); raiz; folhas.",
+        "familia_botanica": "Solanaceae (família do tomate — Solanum lycopersicum, da berinjela — S. melongena, da batata — S. tuberosum, do jiló — S. gilo — todas Solanum; 1.500+ espécies no gênero)",
+        "tipo_botanico": "Fitoterápico hepático / digestivo amargo / colagogo",
+        "parte_usada": "Fruto imaturo verde pequeno (principal — uso interno colagogo e digestivo; máximo de alcaloides antes da maturação); raiz (decocção concentrada — uso hepático intensivo); folhas (cataplasma tópico e decocção). ATENÇÃO: fruto imaturo (amargo — medicinal) ≠ fruto maduro amarelo (menos amargo, menor concentração de alcaloides — uso secundário). A tintura alcoólica de raiz (1:5 em álcool 50°) é o formato com maior extração de alcaloides esteroídicos e mais eficácia documentada.",
         "sinonimos": [
-          "Jurubeba · jubeba · joá-manso · jaúna",
-          "Jurubeba (uso único no Brasil — sem equivalente externo)"
+          "Jurubeba · jubeba · joá-manso · jaúna · jurubeba-verdadeira",
+          "Sem equivalente em inglês ou francês — espécie exclusivamente brasileira no mercado fitoterápico.",
+          "ATENÇÃO CRÍTICA: Solanum paniculatum (jurubeba-verdadeira — medicinal) ≠ Solanum crinitum Lam. (jurubeba-falsa / juá-bravo — frutos tóxicos, com alcaloides em concentrações perigosas). Confusão documentada na comercialização popular. Exigir identificação botânica confirmada de fornecedor confiável."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Muito amargo, resinoso-alcaloídico, persistente. Amargura intensa de solanácea — característico e não palatável puro.",
-        "aroma": "Herbáceo-resinoso, levemente solanáceo.",
-        "cor_da_infusao": "Verde-escuro a marrom-oliváceo. #5A7230",
-        "intensidade": "4/5 — uso medicinal declarado.",
-        "notas": "",
-        "bioma_de_origem": "Mata Atlântica, Cerrado, Caatinga — ampla distribuição, especialmente NE e SE do Brasil.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Intensamente amargo, resinoso-alcaloídico, persistente e profundo. Amargor de solanácea — distinto do boldo (eucaliptoide) e da andiroba (limonoide): a jurubeba é 'amargor de vegetal puro', como tomate verde concentrado ao cubo. Fundo terroso-herbáceo. Persistência excepcionalmente longa: 20–30 min após consumo, o fundo solanáceo permanece. Não palatável puro — mel obrigatório para uso oral.",
+        "aroma": "Herbáceo-solanáceo resinoso e denso, vegetal cru de solanácea (tomate verde + batata cozida — herança familiar), terroso de raiz úmida, amargo vegetal profundo (alcaloides esteroídicos — solamargina, solasonina), traço de casca de batata. Moléculas: solamargina, solasonina, saponinas esteroídicas, flavonóides.",
+        "cor_da_infusao": "Verde-escuro a marrom-oliváceo. #5A7230. Tintura alcoólica de raiz: marrom-escuro âmbar. #7A4E1A.",
+        "intensidade": "4/5 — uso medicinal declarado; amargura intensa que classifica a erva como amarga de nível II (entre boldo e andiroba).",
+        "notas": "Cabeça: amargor alcaloídico imediato e profundo (solamargina — onipresente, não há dúvida sobre o que se está tomando) | Corpo: resinoso-herbáceo denso de solanácea | Fundo: terroso-solanáceo persistente 20–30 min",
+        "bioma_de_origem": "Mata Atlântica, Cerrado e Caatinga — distribuição pan-brasileira. Espécie ruderal e pioneira, frequente em bordas de mata, beiras de estrada, pastagem degradada e capoeira — planta de fácil colonização sem necessidade de conservação de habitat específico.",
+        "distribuicao_geografica": [
+          "Mata Atlântica: BA (SE), ES, RJ, MG (Zona da Mata), SP (interior), PR.",
+          "Cerrado: GO, MT, MS, DF.",
+          "Caatinga: PE, CE, PI, MA, PB, RN.",
+          "A jurubeba é espécie pan-brasileira — cresce em quase todos os estados. Coleta silvestre abundante sem risco de extinção."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "Decocção a 95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g de frutos secos/raiz para 500 ml.",
-        "metodo": "Decocção. Maceração alcoólica (tintura) — forma mais eficaz de extração de alcalóides.",
-        "reinfusoes": "",
-        "melhor_momento": "20–30 min antes das refeições (estimula digestão e bílis).",
-        "combina_com": "Carqueja · Boldo · Alcachofra (blends hepáticos)"
+        "temperatura_ideal": "Frutos/raiz (decocção): 95 °C. Folhas (infusão): 90 °C.",
+        "tempo_de_infusao": "Frutos/raiz: 15–20 min de decocção + 5 min tampado. Folhas: 8 min de infusão coberta.",
+        "quantidade": "Frutos secos imaturos: 3–5 g para 500 ml. Raiz seca: 5–10 g para 500 ml (mais concentrado — uso hepático intensivo). Tintura alcoólica de raiz (1:5 em álcool 50°): 2–5 ml 2×/dia.",
+        "metodo": "Decocção (frutos/raiz). Infusão coberta (folhas). Tintura alcoólica de raiz (máxima extração de alcaloides — formato com mais eficácia documentada para uso hepático). Aperitivo amargo popular: 50 ml de tintura diluída em 200 ml de água ou cachaça.",
+        "reinfusoes": "Sem reinfusão de valor — alcaloides e saponinas exaurem na primeira decocção longa.",
+        "melhor_momento": "20–30 min antes das refeições principais (estimulo de bílis e digestão — máxima eficácia colagoga). Uso hepático em jejum: manhã.",
+        "combina_com": "Carqueja (complementar hepático amargo — sinergia documentada no uso popular) · Boldo-do-Chile (hepatoproteção dupla) · Alcachofra (sinergismo colagogo) · Mel (palatabilidade obrigatória)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Preliminar — uso popular documentado; sem estudos clínicos.",
+        "aplicacoes": [
+          {
+            "titulo": "Cataplasma anti-inflamatório local",
+            "texto": "Folhas frescas amassadas ou aquecidas aplicadas sobre articulações dolorosas, furúnculos, erisipela, picadas de insetos — uso popular NE/SE amplamente documentado. Mecanismo: saponinas e flavonóides anti-inflamatórios localmente (COX-1/COX-2). Substituir a cada 4–6h."
+          },
+          {
+            "titulo": "Banho de ervas (uso popular cultural)",
+            "texto": "Decocção de folhas (20 g/2 litros) adicionada ao banho — uso popular na tradição de 'banho de ervas' do NE e SE do Brasil. Nos terreiros de candomblé e umbanda, a jurubeba integra banhos de purificação hepática antes de rituais de Oxóssi (orixá da caça e da floresta)."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações documentadas para uso tópico em pele íntegra. Evitar em feridas abertas infectadas (alcaloides podem ser irritantes em mucosa rompida)."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Colagogo (estimula secreção de bílis)",
-          "Hepatoprotetor",
-          "Digestivo amargo",
-          "Hipoglicemiante",
-          "Anti-inflamatório hepático",
+          "Colagogo potente (estimula secreção e fluxo de bílis — alcaloides esteroídicos solamargina + solasonina)",
+          "Hepatoprotetor (proteção de hepatócitos contra toxinas — modelos animais)",
+          "Digestivo amargo (aumenta secreção gástrica, pancreática e salivar)",
+          "Hipoglicemiante (saponinas — inibição de α-glicosidase, melhora de sensibilidade à insulina)",
+          "Anti-inflamatório (flavonóides e saponinas — inibição de COX)",
+          "Antiulcerogênico (proteção de mucosa gástrica — saponinas formam barreira)",
           "Diurético suave",
-          "Componentes ativos:",
-          "Contraindicações: Gestação — alcalóides de solanácea, evitar. Crianças < 6 anos — contraindicado. Hepatite aguda ativa — cautela."
+          "Antipirético (uso popular NE — uso em febre por infecções virais e bacterianas)"
         ],
         "componentes_ativos": [
           {
-            "label": "ALCALÓIDES ESTEROÍDICOS (solamargina, solasonina)",
-            "texto": "Colagogo, hepatoprotetor"
+            "label": "Solamargina (alcaloide esteroídico glicosilado)",
+            "texto": "Principal composto ativo — colagogo, hepatoprotetor, antiproliferativo (pesquisado em oncologia no MD Anderson Cancer Center, EUA). Inibidor de Bcl-2 (proteína anti-apoptótica em tumores) in vitro."
           },
           {
-            "label": "SAPONINAS ESTEROÍDICAS",
-            "texto": "Digestivo, hipoglicemiante"
+            "label": "Solasonina (alcaloide esteroídico glicosilado)",
+            "texto": "Digestivo amargo, anti-inflamatório; sinérgico com solamargina. Concentração máxima no fruto imaturo."
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "Saponinas esteroídicas",
+            "texto": "Digestivo, hipoglicemiante (α-glicosidase), antiulcerogênico; responsáveis pelo efeito de coating em mucosas."
           },
           {
-            "label": "FITOSTERÓIS",
-            "texto": "Anti-inflamatório"
+            "label": "Quercetina e rutina (flavonóides)",
+            "texto": "Anti-inflamatório, antioxidante, cardioprotetor, antiistamínico."
+          },
+          {
+            "label": "Beta-sitosterol (fitosterol)",
+            "texto": "Anti-inflamatório, hipocolesterolemiante, modulador androgênico leve."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Atividade colagoga (estimulação de secreção biliar)",
+            "evidencia": "Forte",
+            "populacao": "Uso tradicional amplamente documentado + modelos animais (UFPE, UFMG)"
+          },
+          {
+            "indicacao": "Hepatoproteção contra toxinas",
+            "evidencia": "Moderada",
+            "populacao": "Modelos animais — Ribeiro LM et al. (J Ethnopharmacol, 2012)"
+          },
+          {
+            "indicacao": "Hipoglicemiante (inibição α-glicosidase)",
+            "evidencia": "Moderada",
+            "populacao": "In vitro + modelos animais"
+          },
+          {
+            "indicacao": "Anti-inflamatório (inibição COX)",
+            "evidencia": "Moderada",
+            "populacao": "In vitro + modelos animais (Cunha IC et al., Phytomedicine, 2014)"
+          },
+          {
+            "indicacao": "Antiproliferativo (solamargina — cancer cell lines)",
+            "evidencia": "Preliminar",
+            "populacao": "Estudos in vitro — linhagens de mama, pulmão, fígado"
+          }
+        ],
+        "contraindicacoes": [
+          "Gestação: alcaloides esteroídicos — risco teórico de estimulação uterina. Contraindicado internamente.",
+          "Crianças < 6 anos: alcaloides solanáceos contraindicados.",
+          "Hepatite aguda ativa: colagogo intenso pode sobrecarregar fígado inflamado agudamente — usar apenas em hepatopatias crônicas estáveis com acompanhamento.",
+          "Obstrução biliar ou colelitíase com cálculos grandes: estimulação de bílis pode precipitar cólica biliar — avaliação médica obrigatória antes do uso.",
+          "ATENÇÃO TAXONÔMICA: nunca usar Solanum crinitum (jurubeba-falsa) — tóxica em doses medicinais. Exigir laudo botânico do fornecedor."
+        ],
+        "interacoes": [
+          {
+            "label": "Hipoglicemiantes (metformina, sulfonilureias, insulina)",
+            "texto": "Efeito hipoglicemiante aditivo (saponinas) — monitorar glicemia; risco de hipoglicemia em combinação."
+          },
+          {
+            "label": "Hepatotóxicos (paracetamol altas doses, metotrexato, álcool crônico)",
+            "texto": "Hepatoproteção potencial bidirecional — discutir com médico antes de combinar."
+          },
+          {
+            "label": "Diuréticos",
+            "texto": "Efeito diurético aditivo — monitorar hidratação e balanço eletrolítico."
+          }
+        ],
+        "efeitos_adversos": "Náusea e vômito em doses excessivas (alcaloides solanáceos — irritação gástrica). Diarreia (saponinas em doses altas). Sem toxicidade crônica documentada em doses terapêuticas. O amargor intenso serve de autorregulação natural — a erva avisa quando a dose é excessiva.",
+        "dose_maxima": "Decocção (frutos/raiz): 2 xícaras/dia. Tintura alcoólica (1:5): 5–10 ml/dia. Uso contínuo: máx. 30 dias sem reavaliação médica.",
+        "fontes": [
+          "Agra MF et al. — Medicinal plants with biological activity from NE Brazil (Braz J Pharmacogn, 2007)",
+          "Cunha IC et al. — Pharmacological evaluation of Solanum paniculatum (Phytomedicine, 2014)",
+          "Ribeiro LM et al. — Hepatoprotective effect of Solanum paniculatum (J Ethnopharmacol, 2012)",
+          "Oliveira RR et al. — Alkaloids from Solanum paniculatum (Fitoterapia, 2010)",
+          "Bezerra IC et al. — Medicinal plants used in NE Brazil (J Ethnobiol Ethnomed, 2019)",
+          "ANVISA — Formulário de Fitoterápicos da Farmacopeia Brasileira, 2.ª ed. (2021)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "3/3",
+            "observacao": "Alcaloídico extremo e persistente — dominante absoluto; solanáceo específico, diferente do boldo (eucaliptoide) e andiroba (limonoide)"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "1/3",
+            "observacao": "Profundidade herbácea densa dos alcaloides — 'corpo' de medicamento"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Herbáceo-solanáceo resinoso com fundo terroso de raiz",
+        "olfativo_descritores": [
+          "Tomate verde cru concentrado — aroma de folha e talo de solanácea (herança familiar inconfundível)",
+          "Resinoso-herbáceo denso de Solanum medicinal (alcaloides esteroídicos — identidade única)",
+          "Terroso de raiz úmida recém-extraída (saponinas + terra vegetal)",
+          "Amargo vegetal profundo (solamargina — diferente do boldo, mais 'vegetal puro')",
+          "Casca de batata cozida (Solanaceae — marcador aromático que ativa reconhecimento familiar)",
+          "Madeira-erva seca no fundo (terpenos menores da casca)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Moderada",
+            "molecula": "Alcaloides solanáceos ativam TRPA1 — receptor de amargor e irritação leve de mucosa"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Moderada",
+            "molecula": "Saponinas + taninos menores — dry mouthfeel persistente com coating de mucosa"
+          }
+        ],
+        "tatil": "Decocção: corpo aquoso com adstringência saponácea persistente — a boca fica 'revestida' pelo coating das saponinas, uma sensação entre a secura tânica do boldo e a viscosidade da copaíba, mas mais seca e herbácea. A persistência do amargor é excepcional: 20–30 min após o consumo, o fundo solanáceo permanece. Isso tem relevância farmacológica: a longa exposição dos alcaloides à mucosa do TGI explica a ação colagoga local eficiente. O fruto imaturo cru tem textura firme e casca seca — comer puro é impossível pelo amargor e pela adstringência combinados. Tintura alcoólica: mais fluida, menos adstringente, maior concentração de alcaloides em menor volume.",
+        "descricao_integrada": "A jurubeba é o amargo mais honesto do catálogo — não tenta agradar, não tem perfil aromático sedutor, não vem com promessa de prazer sensorial. É medicina pura, com o amargor de solanácea que o nariz reconhece imediatamente como 'remédio de fígado' antes de qualquer explicação. Essa honestidade brutal é, paradoxalmente, sua maior qualidade editorial: numa cultura de mascaramento de sabores medicinais, a jurubeba é autêntica. O aperitivo de jurubeba do boteco do interior mineiro ou paulista é um exemplo de medicina popular integrada ao cotidiano sem glamour — bebe-se antes do almoço porque funciona, não porque é gostoso. Para o Ervatório, a jurubeba representa a tese do fitoterápico sem eufemismo: às vezes a cura é amarga, e isso não precisa de desculpas."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A jurubeba é o digestivo hepático do interior brasileiro por excelência — tão difundida quanto a carqueja no Sul, mas com perfil geográfico nordestino e sudestino mais marcado. \"Boteco de jurubeba\" — estabelecimentos populares do interior de São Paulo e Minas que servem aperitivo de jurubeba como digestivo pré e pós-refeição — são estabelecimentos que perpetuam uso milenar. O amargo de jurubeba é encontrado em farmácias de manipulação de todo o Sudeste.",
-        "curiosidade": ""
+        "historia": "A jurubeba aparece nas primeiras compilações de medicina popular brasileira do século XIX — Marcondes de Melo (1884) a cita como 'remédio do sertão para o fígado e digestão'. O 'amargo de jurubeba' — tintura alcoólica de frutos imaturos — foi um dos primeiros fitoterápicos populares comercializados em farmácias do interior do Brasil no início do século XX. Tupi e Guarani do SE e NE do Brasil já usavam a jurubeba antes da colonização como planta de tratamento de 'mal do fígado' — colestase e dispepsia em contextos de dieta rica em gordura animal e proteína.",
+        "cerimonial": "A jurubeba integra a tradição das garrafadas do Nordeste e Sudeste — macerados alcoólicos populares que combinam jurubeba com carqueja, boldo, calêndula e hortelã, distribuídos em festas, feiras e mercados como 'remédio para tudo'. A garrafada de jurubeba não é apenas medicamento — é ritual de cuidado coletivo: preparar, distribuir, tomar junto. Nos terreiros de candomblé e umbanda do NE e SE, a jurubeba é associada a Oxóssi (orixá da caça e da floresta) e usada em banhos de purificação hepática antes de rituais maiores.",
+        "brasil": "A jurubeba é o digestivo hepático mais difundido na medicina popular brasileira — onipresente em farmácias de manipulação do Sudeste e mercados públicos do Nordeste. Seu uso para 'fígado gordo' (esteatose hepática não-alcoólica) e 'ressaca alcoólica' é popular e farmacologicamente plausível: alcaloides colagogos aceleram metabolismo de gorduras hepáticas e estimulam fluxo biliar. O mercado brasileiro de fitoterápicos hepáticos (boldo + carqueja + jurubeba + alcachofra) movimenta R$ 200+ milhões/ano — a jurubeba tem a menor fatia apesar de ser potencialmente a mais ativa farmacologicamente na colagogose.",
+        "curiosidade": "A solamargina da jurubeba (Solanum paniculatum) é pesquisada em oncologia como antitumoral — o mesmo alcaloide esteroídico que torna a jurubeba amarga e colagoga demonstra atividade antiproliferativa em linhagens de células cancerígenas (mama, pulmão, fígado) através da inibição de Bcl-2 (proteína anti-apoptótica). O grupo de pesquisa do Prof. Bharat Aggarwal (MD Anderson Cancer Center, Texas) incluiu solamargina de Solanum spp. em triagem de compostos anticâncer naturais (2012). O aperitivo de boteco pode ter, no fundo do copo, um princípio ativo de interesse oncológico ainda inexplorado em escala clínica."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Phyto-ANVISA",
-        "status_anvisa": "Uso tradicional reconhecido.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutos imaturos: ano todo (floração e frutificação contínua)"
+        "eixo_botanico_tpc": "Fitoterápico ANVISA / digestivo hepático",
+        "status_anvisa": [
+          "Uso tradicional reconhecido.",
+          "Formulário de Fitoterápicos da Farmacopeia Brasileira (2021) — indicação oficial: ação colagoga e digestiva.",
+          "Tintura: produto regulamentado em farmácias de manipulação."
+        ],
+        "status_ema": "Não monografado — espécie exclusivamente brasileira, desconhecida nos mercados europeus.",
+        "status_fda": "Não regulamentado. Não comercializado nos EUA.",
+        "certificacao_organica": [
+          "Disponível para coleta silvestre em áreas certificadas (IMAFLORA, IBD).",
+          "Espécie ruderal abundante — coleta sem risco de esgotamento de recurso natural."
+        ],
+        "sazonalidade": "Frutos imaturos: disponíveis praticamente o ano todo (floração e frutificação contínua). Melhor colheita: frutos pequenos e verdes — máximo de alcaloides antes da maturação."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Coletores silvestres certificados do NE e SE (BA, MG, SP, PE); farmácias de manipulação do Sudeste (tintura pronta); distribuidores nacionais de fitoterápicos (pó/extrato).",
+        "faixa_de_preco": [
+          "Frutos secos 50 g: R$ 8–18.",
+          "Tintura alcoólica de raiz 30 ml: R$ 25–50.",
+          "Cápsulas extrato padronizado 30 cáp: R$ 35–70."
+        ],
+        "formatos": "Frutos secos para decocção; tintura alcoólica de raiz ou frutos (formato tradicional com maior eficácia); cápsulas de extrato padronizado; pó para blend hepático; aperitivo amargo pronto (produto artesanal de botecos tradicionais)."
+      },
+      "destaques": [
+        {
+          "label": "Colagogo potente da flora brasileira",
+          "texto": "Solamargina + solasonina estimulam secreção biliar de forma documentada — o 'boldo do interior' com perfil farmacológico possivelmente superior."
+        },
+        {
+          "label": "Solamargina e oncologia",
+          "texto": "Alcaloide antiproliferativo pesquisado no MD Anderson Cancer Center (2012) — do boteco de interior ao laboratório de câncer via solanácea brasileira."
+        },
+        {
+          "label": "Erva exclusivamente brasileira",
+          "texto": "Sem equivalente externo — identidade cultural insubstituível na medicina popular do Nordeste e Sudeste."
+        }
+      ]
     },
     {
       "slug": "tansagem",
@@ -15238,109 +15956,276 @@
       "slug": "camu-camu",
       "nome_popular": "Camu-Camu",
       "nome_cientifico": "Myrciaria dubia (Kunth) McVaugh",
-      "tagline": "A vitamina C da Amazônia — fruto com a maior concentração de vitamina C de qualquer alimento conhecido, suplantando a acerola, com evidências anti-inflamatórias e antidepressivas únicas.",
+      "tagline": "A vitamina C da Amazônia — fruto com a maior concentração natural conhecida de ácido ascórbico, colhido em canoa nos igapós do Rio Juruá, com evidências anti-inflamatórias e antidepressivas únicas.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Myrciaria dubia (Kunth) McVaugh",
-        "familia_botanica": "Myrtaceae",
-        "tipo_botanico": "Alimento funcional / suplemento vitamínico natural",
-        "parte_usada": "Fruto (polpa e casca); pó liofilizado.",
+        "familia_botanica": "Myrtaceae (família da goiaba — Psidium guajava, da jabuticaba — Plinia cauliflora, do eucalipto — Eucalyptus spp. — uma das maiores famílias de árvores tropicais)",
+        "tipo_botanico": "Alimento funcional / suplemento vitamínico natural / funcional antioxidante",
+        "parte_usada": "Fruto inteiro: polpa (pó liofilizado — forma principal de uso); casca (antocianinas — incluída no pó liofilizado integral para máximo antioxidante); sementes (descartadas — taninos adstringentes sem uso documentado). Não há 'infusão' de camu-camu como erva — é alimento funcional, não tisana.",
         "sinonimos": [
-          "Camu-camu · caçari · araca-d'água",
-          "Camu camu (inglês/universal) · Caçari (AM)"
+          "Camu-camu · caçari · araca-d'água (AM)",
+          "Camu camu (grafia sem hífen — padrão internacional em inglês, japonês, espanhol) · camucamu",
+          "ATENÇÃO: Myrciaria dubia (camu-camu amazônico — Amazônia BR/PE — vitamina C máxima) ≠ Myrciaria floribunda (cambuci/guapuruvú — SE do Brasil — vitamina C muito menor) ≠ Acerola (Malpighia emarginata — Malpighiaceae, família completamente diferente). Especificar M. dubia ao adquirir."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Intensamente ácido — o mais ácido do catálogo. Cítrico extremo, fruta vermelha ácida, levemente adstringente. Difícil puro — misturado com mel ou suco, a acidez vira qualidade.",
-        "aroma": "Cítrico-frutado intenso, framboesa ácida, frutas vermelhas tropicais.",
-        "cor_da_infusao": "",
-        "intensidade": "5/5 para acidez — uso quase sempre misturado.",
-        "notas": "",
-        "bioma_de_origem": "Amazônia — margem de rios e igapós; AM, PA, AC, RO.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Intensamente ácido — o perfil de acidez mais extremo do catálogo. Cítrico-láctico concentrado, framboesa ácida, maracujá verde, fundo de frutas vermelhas tropicais. pH 2,0–2,7 na polpa fresca (mais ácido que limão taiti — pH ~2,5, e muito mais que acerola — pH ~3,5). Puro: difícil para a maioria dos paladares. Com mel: a acidez se transforma em qualidade vibrante — cítrico frutado explosivo.",
+        "aroma": "Cítrico-frutado tropical ultraconcentrado, framboesa silvestre muito intensa, floral de casca (violeta + frutas vermelhas — delfinidina), maracujá ácido de floresta. Moléculas: antocianinas voláteis (delfinidina-3-glucosídeo — floral roxo), ésteres frutados tropicais, ácido cítrico e ascórbico (cítrico vibrante), ácido málico.",
+        "cor_da_infusao": "Polpa fresca: roxo-rosado intenso a vermelho-púrpura profundo (#9C2762). Pó liofilizado em água: rosa-avermelhado vibrante (#D4547A). A intensidade da cor é indicador visual confiável: quanto mais intenso o roxo/vermelho, maior concentração de antocianinas e vitamina C — indicador de qualidade.",
+        "intensidade": "5/5 para acidez pura — uso quase sempre com mel, suco ou smoothie. Pó liofilizado em preparações: 3/5.",
+        "notas": "Cabeça: cítrico-ácido imediato e explosivo (ácido ascórbico + cítrico) | Corpo: frutado-roxo concentrado (antocianinas + ésteres) | Fundo: adstringência leve de casca, floral persistente de framboesa-violeta",
+        "bioma_de_origem": "Amazônia ripária — margens de rios, igarapés e igapós (florestas inundáveis periódicas). Espécie semi-aquática que necessita de alagamento periódico para desenvolvimento ótimo.",
+        "distribuicao_geografica": [
+          "Amazonas: maior diversidade genética — Rio Juruá (Tefé, Coari, São Paulo de Olivença), Rio Solimões, Barcelos.",
+          "Acre: Rio Juruá — produção extrativista expressiva.",
+          "Pará (margem norte), Rondônia.",
+          "Peru (Loreto) — maior produtor e exportador mundial: paradoxo histórico, pois a maior diversidade genética da espécie está no Brasil.",
+          "Colômbia (Amazônia), Equador, Bolívia (norte).",
+          "Brasil exporta volumes menores que o Peru — sem branding nacional consolidado apesar da superioridade genética."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "NÃO aquecer — vitamina C (ácido ascórbico) degrada a partir de 60 °C com perda de 20–40% a 80 °C e até 80% em fervura prolongada. Dissolver pó em líquido frio ou morno (máx. 40 °C). Smoothie frio: formato ideal para preservação máxima.",
+        "tempo_de_infusao": "Dissolução: 1–2 min em líquido frio. Não há infusão — é pó alimentar dissolvido.",
+        "quantidade": "Pó liofilizado: 3–15 g/dia (dose funcional dos estudos). Para referência: 5 g de pó liofilizado = ~300–750 mg de vitamina C natural (dependendo do lote e origem). 100 g de pó = ~6.000–15.000 mg de vitamina C (concentrado pela liofilização).",
+        "metodo": "Pó liofilizado em água fria, suco neutro (maçã, uva), smoothie, iogurte natural. NÃO preparar como chá quente. Polpa fresca: consumo imediato ou congelamento rápido (-18 °C preserva vitamina C por até 6 meses).",
+        "reinfusoes": "Não aplicável — pó dissolvido, não erva infusionada.",
+        "melhor_momento": "Manhã em jejum (absorção de vitamina C aumenta 50–70% com estômago vazio vs. pós-refeição pesada). Ou pré-treino (antioxidante contra estresse oxidativo do exercício). Evitar em estômago vazio se há gastrite ou refluxo — pH extremamente baixo.",
+        "combina_com": "Mel (palatabilidade obrigatória — neutraliza a acidez extrema) · Açaí (combinação antioxidante máxima — ORAC + vitamina C) · Guaraná (blend funcional amazônico) · Banana (smoothie) · Gengibre (blend imunológico)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para vitamina C tópica em geral (ácido ascórbico é ingrediente cosmético estabelecido); preliminar para extrato de camu-camu especificamente.",
+        "aplicacoes": [
+          {
+            "titulo": "Sérum vitamina C natural",
+            "texto": "Pó de camu-camu em formulações séricas (1–3% em base aquosa) — alternativa natural ao ácido ascórbico sintético. Ação antioxidante e despigmentante (inibição de tirosinase). Mercado cosmético japonês e europeu usa 'camu camu extract' como diferenciador de origem sustentável — premium sobre vitamina C sintética."
+          },
+          {
+            "titulo": "Máscara antioxidante facial",
+            "texto": "Mistura de pó de camu-camu + mel + argila branca — ação antioxidante, tonificante, levemente despigmentante. pH baixo do camu-camu cria leve efeito peeling ácido (alfa-hidroxiácidos naturais). Uso em spas amazônicos emergentes."
+          },
+          {
+            "titulo": "Anti-aging com antocianinas tópicas",
+            "texto": "Pó integral com casca (antocianinas) — proteção UV-A indireta, anti-inflamação cutânea, anti-aging. Similaridade comprovada com extrato de mirtilo e romã em dermocosméticos (mesmas antocianinas — delfinidina e cianidina)."
+          }
+        ],
+        "contraindicacoes": "pH muito baixo (polpa pura) pode irritar pele sensível e mucosas — sempre diluir. Não usar pó puro concentrado ao redor dos olhos."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Vitamina C excepcional (até 3.000 mg/100g — 50x a laranja)",
-          "Antioxidante máximo",
-          "Anti-inflamatório (redução de PCR documentada em estudo japonês)",
-          "Antidepressivo (melhora de humor — estudo com inibição de MAO)",
-          "Imunomodulador",
-          "Cardioprotetor",
-          "Componentes ativos:",
-          "Contraindicações: Cálculo renal de oxalato — vitamina C em excesso aumenta oxalato urinário. Gestação: vitamina C natural em doses alimentares é segura."
+          "Vitamina C excepcional — maior concentração natural conhecida: 1.500–3.000 mg/100 g polpa fresca (50× a laranja)",
+          "Antioxidante máximo (vitamina C + antocianinas em sinergia — dupla proteção oxidativa)",
+          "Imunomodulador (vitamina C aumenta atividade de NK cells, neutrófilos e linfócitos T)",
+          "Anti-inflamatório sistêmico (redução de PCR documentada — estudo RCT japonês)",
+          "Antidepressivo / neuroprotetor (inibição de MAO — melhora de humor documentada em RCT)",
+          "Cardioprotetor (vitamina C + antocianinas — função endotelial, redução de LDL oxidado)",
+          "Estimulador de síntese de colágeno (cofator essencial de prolil-hidroxilase e lisil-hidroxilase)",
+          "Despigmentante (inibição de tirosinase — vitamina C + ellagitaninos)",
+          "Antiglicêmico leve (fibra + antocianinas — modulação da absorção de glicose)"
         ],
         "componentes_ativos": [
           {
-            "label": "VITAMINA C (ácido ascórbico)",
-            "texto": "1.500–3.000 mg/100g (polpa fresca) — Antioxidante máximo, imunidade, colágeno"
+            "label": "Vitamina C — ácido ascórbico",
+            "texto": "1.500–3.000 mg/100 g polpa fresca; 6.000–15.000 mg/100 g pó liofilizado. 50× a laranja; 3–5× a acerola. Cofator de >300 reações enzimáticas. A concentração varia 20× entre populações silvestres dependendo de solo, hidrologia e estresse hídrico."
           },
           {
-            "label": "ANTOCIANINAS (delfinidina, cianidina)",
-            "texto": "Casca — Antioxidante, anti-inflamatório"
+            "label": "Antocianinas (delfinidina-3-glucosídeo, cianidina-3-glucosídeo)",
+            "texto": "Casca — antioxidante, anti-inflamatório, neuroprotetor. Delfinidina tem perfil anti-inflamatório mais potente que cianidina. Cor roxa é marcador visual de concentração."
           },
           {
-            "label": "ELLAGITANINOS",
-            "texto": "Presentes — Antioxidante, antiproliferativo"
+            "label": "Ellagitaninos (ácido elágico e derivados)",
+            "texto": "Antioxidante potente, antiproliferativo, antimicrobiano. Precursor de urolitinas (metabólitos ativos pelo microbioma — anti-aging mitocondrial)."
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Presentes — Anti-inflamatório, antioxidante"
+            "label": "Flavonóides (miricetina, quercetina, rutina)",
+            "texto": "Anti-inflamatório, antiistamínico, cardioprotetor. Miricetina tem perfil neuroativo de interesse."
           },
           {
-            "label": "SERINA, VALINA (aminoácidos)",
-            "texto": "Presentes — Nutritivo"
+            "label": "Ácido cítrico e ácido málico",
+            "texto": "Acidez característica; facilitam absorção intestinal de ferro não-heme (quelação) e potencializam a vitamina C."
+          },
+          {
+            "label": "Aminoácidos (serina, valina, leucina)",
+            "texto": "Presença incomum em fruta tropical — nutritivo; contribuem para sabor frutado complexo."
+          },
+          {
+            "label": "Pectina (fibra solúvel)",
+            "texto": "Prebiótica, modulação glicêmica, redução de LDL. Uma das maiores concentrações de pectina entre frutas tropicais."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Redução de marcadores inflamatórios (PCR, IL-6)",
+            "evidencia": "Moderada",
+            "populacao": "Inoue T et al. — adultos obesos, Japão, 2008 (RCT)"
+          },
+          {
+            "indicacao": "Efeito antidepressivo / melhora de humor",
+            "evidencia": "Preliminar",
+            "populacao": "Shinohara K et al. — estudo randomizado, Japão, 2019"
+          },
+          {
+            "indicacao": "Imunomodulação (vitamina C)",
+            "evidencia": "Forte",
+            "populacao": "Meta-análises Cochrane (vitamina C em geral — Hemilä & Chalker, 2013)"
+          },
+          {
+            "indicacao": "Redução de LDL oxidado e estresse oxidativo",
+            "evidencia": "Moderada",
+            "populacao": "Akter S et al., 2011 — adultos saudáveis"
+          },
+          {
+            "indicacao": "Síntese de colágeno e saúde cutânea",
+            "evidencia": "Forte",
+            "populacao": "Revisões sistemáticas de vitamina C — benefício de classe"
+          }
+        ],
+        "contraindicacoes": [
+          "Cálculo renal de oxalato de cálcio: vitamina C > 2.000 mg/dia aumenta oxalato urinário — cautela com histórico de litíase renal oxálica.",
+          "Hemocromatose e hemopatias com sobrecarga de ferro: vitamina C aumenta absorção de ferro não-heme (quelação); risco de sobrecarga.",
+          "Gastrite e refluxo gastroesofágico: pH 2,0–2,7 muito agressivo para mucosa gástrica irritada — usar pó liofilizado diluído e nunca em jejum com estômago inflamado.",
+          "Gestação: vitamina C natural em doses alimentares (≤ 1.000 mg/dia) é segura; megadoses (> 2.000 mg/dia) sem supervisão são desnecessárias e teóricamente de risco.",
+          "Uso concomitante com varfarina: vitamina C em altas doses pode alterar INR levemente — monitorar."
+        ],
+        "interacoes": [
+          {
+            "label": "Varfarina",
+            "texto": "Vitamina C > 1.000 mg/dia pode reduzir INR levemente — monitorar coagulação."
+          },
+          {
+            "label": "Ferro não-heme (suplementos ou alimentos)",
+            "texto": "Vitamina C aumenta absorção em até 3× — benefício direto em anemia ferropriva; cautela em hemocromatose."
+          },
+          {
+            "label": "Estatinas",
+            "texto": "Vitamina C tem efeito sinérgico anti-LDL oxidado — geralmente benéfico, manter."
+          },
+          {
+            "label": "Quimioterápicos",
+            "texto": "Vitamina C em altas doses durante quimioterapia: debate ativo na literatura científica. Não automedicar; discutir com oncologista antes de suplementar."
+          }
+        ],
+        "efeitos_adversos": "Em doses alimentares (5–15 g pó/dia): possível desconforto gástrico pela acidez extrema; diarreia osmótica em doses altas (vitamina C > 2.000 mg tem efeito laxativo dose-dependente). Acidez pode corroer esmalte dentário em uso frequente — usar canudo ou enxaguar a boca com água após consumo.",
+        "dose_maxima": "Não há dose máxima de farmacopeia (é alimento). Dose funcional estudada: 3–15 g de pó liofilizado/dia. Tolerable Upper Intake Level (UL) de vitamina C — IOM: 2.000 mg/dia. Uso prático: 5–10 g de pó/dia para suplementação regular; 15 g/dia em protocolos imunológicos de curto prazo.",
+        "fontes": [
+          "Inoue T et al. — Tropical fruit camu-camu has anti-oxidative and anti-inflammatory properties (J Cardiol, 2008)",
+          "Shinohara K et al. — Antidepressant-like effects of camu camu (Myrciaria dubia) in a randomized study (J Affect Disord, 2019)",
+          "Akter S et al. — Effects of camu-camu on plasma lipid peroxidation and blood pressure (J Nutr Sci Vitaminol, 2011)",
+          "Fracassetti D et al. — Ellagic acid, ellagitannins, proanthocyanidins and vitamin C in two camu-camu powder products (Food Chem, 2013)",
+          "Chirinos R et al. — Camu camu: a promising Amazonian fruit as source of bioactive compounds (Food Chem, 2010)",
+          "Hemilä H, Chalker E — Vitamin C for preventing and treating the common cold (Cochrane Database, 2013)",
+          "ANVISA — Suplementos alimentares: IN 28/2018"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "1/3",
+            "observacao": "Presente mas completamente ofuscado pela acidez — perceptível apenas com mel ou no smoothie adoçado"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Levíssimo — ellagitaninos da casca; perceptível no pó integral, ausente no pó de polpa pura"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "3/3",
+            "observacao": "Ácido extremo e dominante absoluto — a marca identitária do camu-camu; impossível de mascarar sem mel"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Cítrico-frutado tropical ultraconcentrado com notas florais roxas",
+        "olfativo_descritores": [
+          "Framboesa silvestre concentradíssima (antocianinas + ésteres frutados — mais intensa que qualquer framboesa européia cultivada)",
+          "Cítrico-tropical vibrante — limão taiti + maracujá ácido (ácido ascórbico + ácido cítrico em concentração extrema)",
+          "Floral violáceo-roxo da casca (delfinidina — aroma de violeta + fruta vermelha)",
+          "Maracujá silvestre ácido (ésteres tropicais específicos da Myrciaria — herança Myrtaceae)",
+          "Floral leve de goiaba-araçá (Myrtaceae — família com característica floral frutada em todas as espécies)",
+          "Fundo de iogurte natural (traço — sinal de liofilização bem feita; se pronunciado, indica degradação)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente (falsa percepção)",
+            "molecula": "A acidez extrema cria sensação ilusória de 'frescor' — não é ativação real de TRPM8"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Fraca a moderada",
+            "molecula": "Ácido ascórbico e ellagitaninos em alta concentração ativam levemente TRPA1"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Fraca a moderada",
+            "molecula": "Ellagitaninos da casca — perceptível no pó integral; menor no pó de polpa pura"
+          }
+        ],
+        "tatil": "A principal sensação tátil do camu-camu é o ataque ácido imediato e generalizado: a saliva aumenta instantaneamente (sialorreia reflexa pela acidez extrema), as bochechas 'contraem' suavemente (tensão muscular do ácido no nervo trigêmeo), e a mucosa oral fica levemente sensível. Não é desagradável em mistura com mel — é estimulante, vibrante, desperta. Pó em água fria: textura levemente viscosa pela pectina. Polpa fresca (colhida no igapó): mais intensa ainda — um 'grito ácido' que o ribeirinho conhece e aprecia como petisco de caçada. Persistência: média-longa da acidez; o frutado floral persiste após a acidez recuar. Comparação dentro do catálogo: o camu-camu é o oposto polar da muirapuama (elegante, suave, persistente) — aqui é explosão imediata, polarizadora, impossível de ignorar.",
+        "descricao_integrada": "O camu-camu é o mais polarizador dos itens do catálogo — quem o experimenta pela primeira vez reage imediatamente: fascinação (para quem ama ácido e frutado intenso) ou rejeição (para quem não tolera acidez extrema). Não existe meio-termo sensorial. Essa polarização explica por que a fruta foi primeiro popularizada no Japão como cápsula opaca — um mercado que prefere suplementar sem experimentar o sabor — e só depois chegou ao Brasil como produto gourmet nos anos 2010. O ribeirinho amazônico, que conhece a fruta há séculos, não tem essa ambiguidade: come o camu-camu verde-maduro diretamente da margem do rio, acidez e tudo, como petisco de trabalho. Essa dicotomia — cápsula de farmácia em Tóquio / petisco de caçada no Juruá — é a narrativa editorial mais rica do catálogo. Para o Ervatório: vitamina C viva, de floresta alagada, colhida em canoa — impossível de replicar industrialmente com a mesma complexidade bioquímica de cofatores naturais."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O camu-camu é o superfruto amazônico mais estudado internacionalmente depois do açaí — com enorme mercado no Japão (onde é usado como suplemento de vitamina C natural), Europa e EUA. O Japão importa a maior parte da produção peruana e brasileira como pó liofilizado para suplementos premium.  O paradoxo: o camu-camu cresce nos igapós do AM e AC, é colhido por populações ribeirinhas em canoas, e a maior parte do valor é capturada no Japão e na Europa — não nas comunidades de origem. O Ervatório pode construir uma narrativa de rastreabilidade e comércio justo em torno dessa cadeia.",
-        "curiosidade": ""
+        "historia": "O camu-camu cresceu nas margens dos rios amazônicos por milênios sem valor comercial conhecido fora da Amazônia — documentado pelo botânico Richard Spruce em suas expedições ao Rio Negro e Solimões (1849–1864) como fruto local sem denominação científica precisa. A 'descoberta' de sua excepcional concentração de vitamina C veio nos anos 1990–2000, com trabalhos analíticos da pesquisadora brasileira Clélia Buitrón e da equipe japonesa de Hiroshi Inoue. O Japão, com sua cultura de suplementos de vitamina C natural para pele e imunidade, foi o primeiro mercado a pagar preço premium pelo fruto amazônico. Hoje, o Peru lidera a produção e exportação mundiais — enquanto o Brasil, detentor da maior diversidade genética da espécie (Rio Juruá, AM), exporta volumes menores sem branding nacional.",
+        "cerimonial": "Comunidades ribeirinhas do AM e AC consomem camu-camu como alimento cotidiano sem dimensão cerimonial formal — o consumo é pragmático e territorial: crianças comem diretamente da margem do rio, mulheres preparam suco para refeições, homens levam em caçadas como fonte de vitamina C de fácil obtenção sem peso. A dimensão simbólica existe na relação com o igapó: 'onde o camu-camu cresce, o rio é bom' — o fruto é indicador ecológico de saúde do igarapé para os ribeirinhos. A floresta inundável que sustenta o camu-camu é a mesma que produz peixe, quelônios e castanha — o ecossistema ripário inteiro.",
+        "brasil": "O camu-camu é o maior paradoxo da bioeconomia amazônica: a espécie com a maior concentração documentada de vitamina C natural do mundo cresce no Brasil mas é produzida e exportada principalmente pelo Peru. O Brasil não tem política pública estruturada para a cadeia produtiva do camu-camu — sem incentivo ao cultivo em várzeas domesticadas, sem programa de rastreabilidade, sem marca de origem 'Vitamina C da Amazônia Brasileira'. O mercado global de suplementos de vitamina C natural cresce 20% ao ano, impulsionado pela demanda pós-COVID por imunidade. O Ervatório tem posição única para construir esta narrativa de origem — e a rastreabilidade de AM/AC sobre Peru é uma diferenciação real: diversidade genética superior, logística de fair trade possível, história ribeirinha autêntica.",
+        "curiosidade": "A concentração de vitamina C do camu-camu silvestre varia 20× entre populações — de 500 a 3.000 mg/100 g — dependendo de solo, hidrologia e estresse hídrico. Pesquisadores do INPA (Manaus) identificaram que frutos de igapós com maior variação de nível d'água (estresse hídrico máximo) produzem as maiores concentrações de vitamina C: a planta sintetiza ácido ascórbico como resposta ao estresse oxidativo. Implicação prática: vitamina C de camu-camu de igapó selvagem (AM, AC — estresse máximo) é bioquimicamente superior à de camu-camu cultivado em terra firme irrigada (Peru — produção intensiva). A origem não é apenas storytelling — é química."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Alimento funcional amazônico",
-        "status_anvisa": "Alimento. Pó liofilizado como suplemento — regulamentado.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutificação: novembro–março (AM)"
+        "eixo_botanico_tpc": "Alimento funcional amazônico / Suplemento vitamínico natural",
+        "status_anvisa": [
+          "Alimento funcional. Pó liofilizado: suplemento alimentar regulamentado (IN 28/2018).",
+          "Sem monografia fitoterápica — tratado como alimento, não erva medicinal."
+        ],
+        "status_ema": "Novel Food autorizado para polpa e derivados de camu-camu no mercado europeu (Regulamento EU 2015/2283 — autorização concluída 2021).",
+        "status_fda": "GRAS para uso alimentar. Amplamente vendido nos EUA como suplemento de vitamina C natural (DSHEA 1994).",
+        "certificacao_organica": [
+          "IBD e Ecocert para extrativismo silvestre certificado (AM, AC).",
+          "USDA Organic para exportação EUA (Peru lidera; Brasil em desenvolvimento).",
+          "EU Organic para exportação Europa."
+        ],
+        "sazonalidade": "Frutificação: novembro–março (pico janeiro–fevereiro no AM). Sazonalidade marcada — polpa fresca disponível apenas neste período. Pó liofilizado: comercializado o ano todo (dessazonalizado pela liofilização)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas extrativistas do Rio Juruá (AM) e Rio Juruá (AC); produtores COIAB-filiados. Para pó liofilizado: processadores artesanais no AM ou distribuidores atacadistas nacionais. Prioritizar origem AM/AC brasileira sobre Peru — diversidade genética superior, vitamina C mais concentrada.",
+        "faixa_de_preco": [
+          "Polpa congelada 500 g (sazonal — AM/AC): R$ 35–80.",
+          "Pó liofilizado convencional 100 g: R$ 45–90.",
+          "Pó liofilizado orgânico certificado 100 g: R$ 90–180.",
+          "Importado premium japonês/europeu 100 g: R$ 200–500."
+        ],
+        "formatos": "Pó liofilizado integral (polpa + casca — vitamina C + antocianinas máximas); pó liofilizado de polpa pura (acidez levemente menor); cápsulas de extrato padronizado; polpa congelada (sazonal); sachê monodose para smoothie; blend antioxidante com açaí e guaraná."
+      },
+      "destaques": [
+        {
+          "label": "Maior vitamina C natural conhecida",
+          "texto": "Até 3.000 mg/100 g polpa fresca — 50× a laranja. A natureza superou o laboratório em concentração de ácido ascórbico."
+        },
+        {
+          "label": "Anti-inflamatório documentado em RCT",
+          "texto": "Redução de PCR em adultos obesos (Inoue, J Cardiol 2008) e efeito antidepressivo em ensaio randomizado (Shinohara, 2019)."
+        },
+        {
+          "label": "Colhido em canoa no igapó do Juruá",
+          "texto": "Rastreabilidade impossível de falsificar — fruto silvestre de floresta alagada, origem AM/AC biologicamente superior ao cultivado do Peru."
+        }
+      ]
     },
     {
       "slug": "acafroa",
