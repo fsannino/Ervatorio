@@ -1,15 +1,42 @@
 {
-  "name": "ervatorio",
-  "version": "0.2.0",
-  "description": "Ervatório — plataforma de chás e infusões (PWA + Supabase)",
+  "name": "sannino-com-br",
+  "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
     "images:optimize": "node scripts/optimize-images.mjs",
     "images:dry-run": "node scripts/optimize-images.mjs --dry-run",
     "images:manifest": "node scripts/optimize-images.mjs --manifest-only"
   },
-  "devDependencies": {
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.4.0",
+    "lucide-react": "^0.400.0",
+    "framer-motion": "^11.3.0",
+    "react-hook-form": "^7.52.0",
+    "@hookform/resolvers": "^3.9.0",
+    "zod": "^3.23.0",
+    "zustand": "^4.5.0",
     "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0"
   }
 }
