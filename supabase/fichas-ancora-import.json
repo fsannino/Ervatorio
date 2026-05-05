@@ -13011,204 +13011,414 @@
       "slug": "raiz-de-bugre",
       "nome_popular": "Raiz-de-Bugre",
       "nome_cientifico": "Cordia ecalyculata Vell.",
-      "tagline": "O diurético-emagrecedor do pantanal — termogênico natural com tradição popular para controle de peso e ação diurética documentada.",
+      "tagline": "O diurético emagrecedor da medicina popular sul-americana — cafestol, ácido rosmarínico e alantoína fundamentam o uso secular para retenção de líquidos, celulite e 'limpeza do sangue' nas tradições indígenas e caipiras do Brasil central.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Cordia ecalyculata Vell.",
-        "familia_botanica": "Boraginaceae (família da borragem, do confrei)",
-        "tipo_botanico": "Fitoterápico diurético / coadjuvante de emagrecimento",
-        "parte_usada": "Folhas secas.",
+        "familia_botanica": "Boraginaceae",
+        "tipo_botanico": "Planta medicinal diurética / depurativa",
+        "parte_usada": "Folhas (infusão — uso principal); cascas (decocção — uso popular secundário).",
         "sinonimos": [
-          "Raiz-de-bugre · café-do-mato · louro-mole",
-          "Chá-de-bugre (nome comercial difundido)"
+          "raiz-de-bugre · café-do-mato · louro-mole · chá-de-bugre · porangaba",
+          "Cordia salicifolia Cham. (sinônimo botânico usado em algumas referências)",
+          "Nota: 'chá-de-bugre' é o nome comercial mais usado em suplementos para emagrecimento"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Levemente amargo-herbáceo, discreto, vegetal. Bastante palatável — lembra levemente o café muito fraco.",
-        "aroma": "Herbáceo suave, levemente tostado, feno.",
-        "cor_da_infusao": "Marrom-claro a âmbar. #C09050",
-        "intensidade": "2/5 — suave, uso cotidiano fácil.",
-        "notas": "",
-        "bioma_de_origem": "Pantanal, Cerrado, Mata Atlântica — MT, MS, GO, MG, SP, PR.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Levemente amargo com notas que lembram café fraco — herança do alcaloide cafeína e dos diterpenos cafestol e caveol. Retrogusto herbáceo discreto.",
+        "aroma": "Herbáceo suave com nota levemente torrada, lembrando café diluído; sem componente aromático marcante ou polarizador.",
+        "cor_da_infusao": "Castanho-claro a âmbar dourado; limpa, semelhante a um chá preto fraco.",
+        "intensidade": "2/5 — perfil discreto, fácil de beber, sem amargor pronunciado; ideal para consumo regular.",
+        "notas": "A popularidade da raiz-de-bugre no mercado de emagrecimento se deve à combinação de efeito diurético real, discreta atividade estimulante (cafeína em pequena quantidade) e a narrativa de 'queima gordura' — esta última sem sustentação científica robusta. O emagrecimento observado em usuários é majoritariamente resultado de perda hídrica, não de queima de gordura.",
+        "bioma_de_origem": "Mata Atlântica, Cerrado e Pantanal — RS, SC, PR, SP, MG, MT, MS; bordas de mata, capoeiras e matas secundárias.",
+        "distribuicao_geografica": [
+          "Sul do Brasil (RS, SC, PR): uso medicinal intensivo — mercado de emagrecimento popular",
+          "São Paulo e Minas Gerais: capoeiras e bordas de Mata Atlântica",
+          "Mato Grosso do Sul e Pantanal: ocorrência e uso medicinal documentados",
+          "Paraguai e Argentina (nordeste): uso medicinal paralelo"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90 °C | Tempo: 8 min | Quantidade: 3–5 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g/250 ml",
-        "metodo": "Infusão simples.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã e tarde (diurético/termogênico — evitar à noite).",
-        "combina_com": "Guaraná · Chá-verde · Hibisco (blends termogênicos/emagrecedores)"
+        "temperatura_ideal": "90–95 °C. Infusão ou decocção — ambas eficazes para extração de compostos ativos.",
+        "tempo_de_infusao": "8–10 minutos coberto (infusão). Decocção de casca: 10 min de fervura leve.",
+        "quantidade": "Folhas secas: 4–6 g / 200 ml. Folhas frescas: 8–12 g / 200 ml.",
+        "metodo": "Infusão coberta em água quente. Coar e beber quente ou frio. Bebida agradável mesmo sem adoçante por ser pouco amarga.",
+        "reinfusoes": "1 reinfusão aceitável — perda de 30% de ativos.",
+        "melhor_momento": "Manhã em jejum e antes do almoço (efeito diurético e leve supressor de apetite). Evitar após as 17h (cafeína residual pode interferir no sono).",
+        "combina_com": "Hibisco (sinergia diurética e antioxidante), cavalinha (sinergia depurativa), limão (potencializa diurese), gengibre (termogênico)."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Etnobotânico — uso popular em compressas; dados in vitro preliminares.",
+        "aplicacoes": [
+          {
+            "titulo": "Compressas anti-celulite (uso popular)",
+            "texto": "Decocção concentrada de folhas em compressas sobre regiões com celulite e retenção localizada. Uso popular documentado no sul do Brasil. Alantoína pode ter ação cicatrizante e anti-inflamatória local; sem dados clínicos de eficácia para celulite."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações tópicas específicas. Alergia a Boraginaceae: rara mas possível."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Diurético",
-          "Termogênico leve (allanthoína + metilxantinas traços)",
-          "Supressor de apetite leve (anedótico — mecanismo não elucidado)",
-          "Anti-inflamatório",
-          "Antioxidante",
-          "Componentes ativos:",
-          "Contraindicações: Edema cardíaco ou renal — cautela. Gestação — diurético, evitar. Hipertensão — monitorar."
+          "Diurético (aumento de diurese — mecanismo não totalmente elucidado; possivelmente flavonoides + saponinas)",
+          "Depurativo / 'limpeza do sangue' (uso popular — mecanismo: aumento de filtração renal)",
+          "Supressor discreto de apetite (cafeína em pequena quantidade + efeito diurético)",
+          "Anti-inflamatório (ácido rosmarínico, compostos fenólicos)",
+          "Cicatrizante (alantoína — estimula proliferação celular)",
+          "Antioxidante (ácido rosmarínico, ácido clorogênico)"
         ],
         "componentes_ativos": [
           {
+            "label": "CAFESTOL e CAVEOL (diterpenos)",
+            "texto": "Diterpenos do café presentes em Cordia ecalyculata — base da analogia sensorial com café do mato. Cafestol: estimulante discreto, anticarcinogênico in vitro (indução de enzimas de detoxificação fase II). Em doses altas (café coado sem filtro de papel), cafestol eleva LDL-colesterol; nas concentrações do chá de bugre, efeito lipídico provavelmente insignificante."
+          },
+          {
+            "label": "CAFEÍNA (traços)",
+            "texto": "Presente em pequena quantidade — menos que uma xícara de café. Estimulante, supressor leve de apetite, sinergiza com diurese. Responsável pelo efeito 'energia' que usuários reportam. Não é suficiente para causar dependência de cafeína, mas pode somar com outras fontes."
+          },
+          {
+            "label": "ÁCIDO ROSMARÍNICO",
+            "texto": "Antioxidante potente, anti-inflamatório (inibição NF-κB, COX-2), antiviral. Encontrado em Boraginaceae e Lamiaceae. Contribui ao perfil depurativo e anti-inflamatório da planta."
+          },
+          {
             "label": "ALANTOÍNA",
-            "texto": "Cicatrizante, diurético leve"
+            "texto": "Derivado do ácido úrico; cicatrizante clássico — estimula proliferação de fibroblastos e queratinócitos, acelera epitelização. Comum em Boraginaceae (sínfito, borragem). Relevante para o uso tópico popular."
           },
           {
-            "label": "METILXANTINAS (traços)",
-            "texto": "Termogênico, diurético"
-          },
-          {
-            "label": "TANINOS",
-            "texto": "Adstringente, antioxidante"
-          },
-          {
-            "label": "FLAVONÓIDES",
-            "texto": "Anti-inflamatório"
+            "label": "ÁCIDO CLOROGÊNICO e FLAVONOIDES (rutina, quercetina)",
+            "texto": "Antioxidantes, anti-inflamatórios, vasoprotegentes. Ácido clorogênico: inibição de absorção de glicose, anti-hipertensivo discreto. Rutina: fortalecimento capilar — relevante para celulite (fragilidade capilar)."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Diurese / retenção de líquidos",
+            "evidencia": "Moderada por uso tradicional; estudos em modelos animais confirmam aumento de diurese com extratos de C. ecalyculata",
+            "populacao": "Adultos; amplo uso popular documentado no Sul e Sudeste do Brasil."
+          },
+          {
+            "indicacao": "Emagrecimento / queima de gordura",
+            "evidencia": "Fraca — sem evidência clínica robusta de efeito lipolítico; emagrecimento observado é principalmente perda hídrica",
+            "populacao": "Adultos; narrativa de mercado não sustentada por ensaios clínicos de alta qualidade."
+          },
+          {
+            "indicacao": "Anti-inflamatório / depurativo",
+            "evidencia": "Preliminar (in vitro + uso tradicional)",
+            "populacao": "Sem ensaios clínicos específicos."
+          }
+        ],
+        "contraindicacoes": "Insuficiência renal: contraindicada (diurético potente). Gestação: sem dados adequados — evitar. Hipertensão: monitorar (cafeína + efeito diurético). Cardiopatias: cafeína pode exacerbar arritmias em predispostos.",
+        "interacoes": [
+          {
+            "label": "Diuréticos (tiazídicos, de alça)",
+            "texto": "Potencialização do efeito diurético — risco de depleção eletrolítica. Evitar combinação sem supervisão."
+          },
+          {
+            "label": "Estimulantes do SNC (cafeína, efedrina, metilfenidato)",
+            "texto": "Soma do efeito estimulante — risco de taquicardia, ansiedade, insônia. Não combinar com suplementos termogênicos ricos em cafeína."
+          },
+          {
+            "label": "Anticoagulantes",
+            "texto": "Ácido rosmarínico pode interferir na agregação plaquetária in vitro. Monitorar com uso concomitante de varfarina."
+          }
+        ],
+        "efeitos_adversos": "Doses usuais: bem tolerada. Doses altas ou uso prolongado: insônia (cafeína), poliúria excessiva, depleção eletrolítica. Raro: taquicardia, ansiedade em sensíveis à cafeína.",
+        "dose_maxima": "Folhas secas: 15 g/dia (3 xícaras × 5 g). Não usar por mais de 4 semanas sem pausa e avaliação.",
+        "fontes": [
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum.",
+          "Pizzardo RMF et al. (2010). Phytochemical investigation of Cordia ecalyculata. Rev Bras Farmacogn.",
+          "Carvalho JLS et al. (2009). Contribuição ao estudo fitoquímico e farmacológico de Cordia ecalyculata. Infarma.",
+          "Simões CMO et al. (2017). Farmacognosia: do produto natural ao medicamento. Artmed.",
+          "ANVISA. (2010). Formulário de Fitoterápicos da Farmacopeia Brasileira."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Leve (1–2/5)",
+            "observacao": "Diterpenos (cafestol) e flavonoides. Amargor muito suave — similar a café muito fraco."
+          },
+          {
+            "dimensao": "Nota de café",
+            "intensidade": "Leve a moderada (2/5) — traço identitário",
+            "observacao": "Cafestol, caveol e cafeína em traços criam reminiscência inconfundível de café diluído. O nome 'café-do-mato' é sensorialmente justificado."
+          },
+          {
+            "dimensao": "Herbáceo-neutro",
+            "intensidade": "Moderado (2/5)",
+            "observacao": "Nota verde discreta sem dominância — perfil fácil e palatável."
+          },
+          {
+            "dimensao": "Acidez",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Ácido clorogênico e orgânicos em baixa concentração. Ilumina o perfil sem acidez intrusiva."
+          }
+        ],
+        "olfativo_familia": "Herbáceo discreto com nota levemente torrada — família café-chá sem dominância de nenhuma das duas.",
+        "olfativo_descritores": [
+          "café diluído",
+          "erva seca neutra",
+          "notas de feno leve",
+          "leve torrado distante"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Termorreceptores",
+            "ativacao": "Mínima",
+            "molecula": "Cafeína — discreta ativação termogênica sistêmica, não sensação tópica"
+          }
+        ],
+        "tatil": "Corpo leve e limpo; infusão âmbar sem viscosidade. Finalização limpa, levemente seca.",
+        "descricao_integrada": "A raiz-de-bugre é o chá mais fácil de beber do arsenal medicinal brasileiro para diurese — sem o amargor da canela-de-ema, sem o terroso do solidago, sem a intensidade do assa-peixe. O leve fantasma de café no fundo do copo cria uma familiaridade que facilita a adesão ao uso regular. É um chá que não precisa de convencimento sensorial — simplesmente funciona e se deixa beber sem cerimônia."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A raiz-de-bugre (mais conhecida pelo nome comercial \"chá-de-bugre\") é um dos fitoterápicos emagrecedores mais vendidos em farmácias de manipulação e ervanários brasileiros — produto que navega entre a tradição popular do pantanal e a indústria de suplementos para perda de peso. Sua eficácia emagrecedora direta é controversa; a ação diurética é confirmada. O marketing de \"queimador de gordura natural\" extrapola a evidência disponível.",
-        "curiosidade": ""
+        "historia": "O nome 'bugre' tem origem colonial — bugre era o termo pejorativo usado pelos colonizadores portugueses para designar indígenas que não aceitavam a catequização. A planta 'raiz-de-bugre' foi assim chamada por ser remédio dos indígenas do sul do Brasil, especialmente dos Kaingang e Guarani. O uso passou para as comunidades caboclas e caipiras do sul e sudeste, onde tornou-se remédio doméstico para 'inchaço', 'retenção de água' e 'limpeza do sangue'. No século XX, o mercado de emagrecimento se apoderou da planta e transformou o chá-de-bugre em produto de massas — com marketing agressivo e claims de queima de gordura que a ciência não sustenta.",
+        "cerimonial": "Entre os Kaingang (RS, SC, PR), a planta foi usada em práticas de purificação — banhos com decocção de folhas para 'limpar o corpo' antes de rituais. Sem registro de uso exclusivamente cerimonial.",
+        "brasil": "A raiz-de-bugre é um dos produtos de fitoterapia popular com maior volume de mercado no Brasil — vendida em cápsulas, sachês e a granel em toda a rede de farmácias e lojas de produtos naturais. O marketing de emagrecimento criou uma demanda massiva que o uso tradicional nunca justificou sozinho. A Anvisa já notificou fabricantes que atribuíam ao produto propriedades de queima de gordura sem evidência clínica. Ironicamente, a planta tem atividade diurética real e comprovada — que é modestamente útil mas foi inflada como solução mágica para obesidade.",
+        "curiosidade": "A raiz-de-bugre contém cafestol — o mesmo diterpeno do café que preocupa cardiologistas quando o café é preparado sem filtro de papel (cafeteira italiana, café turco). Sem o filtro, cafestol e caveol passam para a bebida e podem elevar o LDL-colesterol. Com filtro de papel, ficam retidos. No chá de bugre, a concentração de cafestol é muito menor que no café não filtrado — provavelmente sem impacto lipídico relevante nas doses populares. Mas a conexão bioquímica entre a 'erva do interior' e o debate sobre café filtrado vs. não filtrado é um exemplo fascinante de como a fitoquímica conecta mundos aparentemente distantes."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional",
-        "status_anvisa": "Uso tradicional reconhecido. Atenção para claims de emagrecimento não validados.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas disponíveis o ano todo"
+        "eixo_botanico_tpc": "Planta medicinal tradicional — presente na RENISUS (2009). Comercializada amplamente como suplemento de emagrecimento — categoria regulatória distinta de fitoterápico.",
+        "status_anvisa": "RENISUS: listada. Sem monografia de fitoterápico publicada na IN 02/2014. Cápsulas e produtos para emagrecimento: regulados como suplementos alimentares (RDC 240/2018). ANVISA já emitiu alertas contra claims de 'queima de gordura' não comprovados.",
+        "status_ema": "Não avaliada.",
+        "status_fda": "Não avaliada especificamente como Cordia ecalyculata.",
+        "certificacao_organica": "Extrativismo e cultivo em propriedades rurais — certificação orgânica possível. Produto amplamente disponível no mercado convencional.",
+        "sazonalidade": "Folhas disponíveis o ano todo (planta perene). Concentração de ativos: levemente maior em folhas jovens da primavera."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Farmácias e drogarias (cápsulas) — ampla distribuição nacional",
+          "Herbanárias — folhas secas a granel",
+          "Lojas de produtos naturais — sachês e cápsulas",
+          "Supermercados com seção de produtos naturais (marcas como Ervativa, Mundo Verde)"
+        ],
+        "faixa_de_preco": "Folhas secas: R$ 8–15/50g. Cápsulas 500mg (60 caps): R$ 25–60. Sachês: R$ 15–30/caixa 20 sachês.",
+        "formatos": [
+          "Folhas secas a granel (infusão)",
+          "Cápsulas de extrato seco (500mg)",
+          "Sachês de chá",
+          "Tintura hidroalcoólica",
+          "Combinações com outros diuréticos (cavalinha, hibisco)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "Diurético real, emagrecedor questionável",
+          "texto": "A raiz-de-bugre tem atividade diurética comprovada — real, moderada e útil para retenção de líquidos. O que o mercado de emagrecimento vendeu como 'queima de gordura' é majoritariamente perda hídrica. Distinguir os dois é respeitar o usuário: a planta tem valor medicinal genuíno que não precisa de exagero publicitário para ser relevante."
+        },
+        {
+          "label": "Café-do-mato: a conexão bioquímica com o cafezinho",
+          "texto": "Cafestol e caveol — os mesmos diterpenos do café não filtrado — estão presentes na raiz-de-bugre e são parcialmente responsáveis pela nota de café do chá. A mesma família química que preocupa cardiologistas em cafés de coador e cafeteiras italianas reaparece na erva do interior. A concentração no chá é muito menor e provavelmente sem impacto lipídico, mas a conexão fitoquímica é fascinante."
+        },
+        {
+          "label": "Do remédio indígena ao produto de farmácia",
+          "texto": "A raiz-de-bugre percorreu o caminho mais longo da fitoterapia brasileira: de remédio kaingang e guarani para inchaço, passou pelo receituário caipira do interior paulista e gaúcho, chegou ao mercado popular do século XX e hoje é um dos fitoterápicos com maior volume de venda no Brasil. O percurso revela como o conhecimento indígena foi capturado, transformado e comercializado — nem sempre com fidelidade ao uso original."
+        }
+      ]
     },
     {
       "slug": "erva-de-lagarto",
       "nome_popular": "Erva-de-Lagarto",
       "nome_cientifico": "Cissampelos ovalifolia DC.",
-      "tagline": "O analgésico esquecido do pantanal — planta trepadeira de uso popular difundido entre comunidades ribeirinhas para dores musculares e articulares, com alcalóides de ação confirmada.",
+      "tagline": "A antiveneno dos campos do sul e Pantanal — alcaloides bisbenzilisoquinolínicos com ação curarimimética e anti-inflamatória que justificam o uso ancestral como antídoto a picadas de cobra e remédio para dores reumáticas.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Cissampelos ovalifolia DC.",
-        "familia_botanica": "Menispermaceae (família do curare)",
-        "tipo_botanico": "Fitoterápico analgésico / anti-inflamatório / antiespasmódico",
-        "parte_usada": "Folhas e raiz, secas.",
+        "familia_botanica": "Menispermaceae",
+        "tipo_botanico": "Planta medicinal anti-inflamatória / antiespasmódica / antiofídica tradicional",
+        "parte_usada": "Folhas e raízes (infusão e decocção); uso interno e externo (cataplasma).",
         "sinonimos": [
-          "Erva-de-lagarto · buta-branca · orelha-de-onça (regional)",
-          "Relacionada ao gênero que inclui Cissampelos pareira — planta de uso medicinal amplamente distribuída nas Américas tropicais"
+          "erva-de-lagarto · caapeba-do-campo · butiá-de-lagarto · abutua-do-campo",
+          "Cissampelos pareira L. (espécie tropical afim com alcaloides similares — velame, abutua)",
+          "Nota: o nome 'lagarto' refere-se ao uso popular como antiveneno contra picadas de cobra e lagartos peçonhentos"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-alcaloídico moderado, resinoso, persistente. Medicinal declarado.",
-        "aroma": "Herbáceo-resinoso, amadeirado suave.",
-        "cor_da_infusao": "Marrom-amarelado a âmbar. #A88840",
-        "intensidade": "3/5 — medicinal, uso regular possível com orientação.",
-        "notas": "",
-        "bioma_de_origem": "Pantanal e Cerrado — MT, MS, GO; também presente na Mata Atlântica.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-adstringente pronunciado com notas terrosas; alcaloides bisbenzilisoquinolínicos conferem amargor de qualidade farmacológica clara.",
+        "aroma": "Herbáceo-terroso, levemente pungente; notas de raiz fresca e folha verde amassada.",
+        "cor_da_infusao": "Castanho-esverdeado a castanho médio; levemente turva.",
+        "intensidade": "3–4/5 — amargor farmacológico pronunciado; planta de uso exclusivamente medicinal.",
+        "notas": "A família Menispermaceae é a mesma do curare sul-americano — os alcaloides curarimiméticos que relaxam musculatura esquelética foram extraídos de espécies afins (Chondrodendron tomentosum). Cissampelos ovalifolia tem alcaloides da mesma classe química em concentração muito menor, sem o potencial de paralisia do curare, mas com atividade miorrelaxante e anti-inflamatória documentada.",
+        "bioma_de_origem": "Campos sulinos, Pampa e Pantanal — RS, SC, PR, MT, MS; bordas de mata, campos úmidos.",
+        "distribuicao_geografica": [
+          "Rio Grande do Sul e Santa Catarina: uso mais documentado na medicina popular sul-brasileira",
+          "Paraná e São Paulo: campos de cerrado e transição",
+          "Mato Grosso do Sul (Pantanal): uso como antiofídico em comunidades rurais",
+          "Uruguai e Argentina: espécies afins de Cissampelos com usos similares"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "Decocção a 95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "2–4 g de folhas/raiz secas para 250 ml.",
-        "metodo": "Decocção (alcalóides extraídos melhor por calor).",
-        "reinfusoes": "",
-        "melhor_momento": "2–3x ao dia em uso terapêutico de dor.",
-        "combina_com": "Sucupira · Gengibre · Cúrcuma (blends anti-inflamatórios)"
+        "temperatura_ideal": "Raízes: decocção a 95–100 °C (10 min fervura). Folhas: infusão a 90 °C.",
+        "tempo_de_infusao": "Raízes: decocção 10 min + repouso 10 min coberto. Folhas: 8–12 min infusão coberta.",
+        "quantidade": "Raízes secas: 3–5 g / 200 ml. Folhas secas: 4–6 g / 200 ml.",
+        "metodo": "Raízes: decocção. Folhas: infusão coberta. Para uso antiofídico popular: cataplasma de folhas frescas amassadas sobre a picada (uso externo, enquanto busca atendimento médico — NÃO substitui soro antiofídico).",
+        "reinfusoes": "Raízes: 1 decocção adicional (menor concentração de alcaloides). Folhas: sem reinfusão.",
+        "melhor_momento": "Anti-inflamatório: 2–3 vezes/dia com refeições. Antiespasmódico: conforme necessidade. Uso antiofídico: EMERGÊNCIA — buscar imediatamente atendimento médico e soro antiofídico.",
+        "combina_com": "Arnica-da-terra (sinergia anti-inflamatória articular), erva-baleeira, gengibre. Evitar combinar com curare ou bloqueadores neuromusculares."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Etnobotânico — uso popular extenso como cataplasma; dados in vitro confirmam atividade anti-inflamatória local.",
+        "aplicacoes": [
+          {
+            "titulo": "Cataplasma antiofídico (uso popular — NÃO substitui soro)",
+            "texto": "Folhas frescas amassadas aplicadas sobre o local da picada de cobra ou inseto peçonhento. Uso popular documentado extensamente no sul do Brasil e Pantanal. Mecanismo proposto: alcaloides com atividade anti-inflamatória local e possível quelação parcial de componentes do veneno. IMPORTANTE: é medida de primeiros socorros popular — o paciente DEVE receber soro antiofídico em serviço médico."
+          },
+          {
+            "titulo": "Anti-inflamatório articular (compressas)",
+            "texto": "Decocção de raízes em compressas quentes sobre articulações com artrite e reumatismo. Uso popular registrado no RS e SC. Alcaloides e compostos fenólicos com atividade anti-inflamatória local."
+          }
+        ],
+        "contraindicacoes": "Não aplicar cataplasma por tempo prolongado em feridas abertas. Alcaloides podem ser absorvidos cutaneamente em concentrações significativas — monitorar sintomas sistêmicos (fraqueza muscular, sonolência)."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Analgésico (alcalóides isoquinolínicos)",
-          "Anti-inflamatório",
-          "Antiespasmódico muscular",
-          "Diurético leve",
-          "Antipirético",
-          "Componentes ativos:",
-          "⚠️ ATENÇÃO: A família Menispermaceae inclui espécies produtoras de curare (veneno de flecha). C. ovalifolia em doses medicinas usuais é segura, mas doses altas de alcalóides isoquinolínicos podem ter ação curare-like (bloqueio neuromuscular). Uso interno apenas em infusão fraca e doses controladas.",
-          "Contraindicações: Gestação — alcalóides isoquinolínicos, evitar. Miastenia gravis — contraindicado. Uso de relaxantes musculares farmacológicos — cautela."
+          "Anti-inflamatório (alcaloides bisbenzilisoquinolínicos — inibição COX, NF-κB)",
+          "Miorrelaxante discreto (alcaloides curarimiméticos em baixa concentração)",
+          "Antiespasmódico (relaxamento de músculo liso — útil em cólicas)",
+          "Analgésico (mecanismo central e periférico — alcaloides)",
+          "Antiofídico popular (atividade anti-inflamatória local; sem ação neutralizante de veneno documentada clinicamente)"
         ],
         "componentes_ativos": [
           {
-            "label": "ALCALÓIDES ISOQUINOLÍNICOS (hayatina, hayatinina)",
-            "texto": "Analgésico, antiespasmódico, relaxante muscular"
+            "label": "ALCALOIDES BISBENZILISOQUINOLÍNICOS (cissampelina, hayatidina, curina)",
+            "texto": "Fração ativa principal. Cissampelina: miorrelaxante (bloqueio nicotínico em concentrações altas — curarimimético); anti-inflamatório (inibição de fosfolipase A2, cicloxigenases). Hayatidina e curina: anti-inflamatórios, antiespasmódicos. Os mesmos alcaloides de C. pareira — a 'velame' tropical — com rica literatura farmacológica. Nota de segurança: alcaloides curarimiméticos podem causar relaxamento muscular excessivo em doses altas."
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "APORFINA ALCALOIDES (reticulina, norcuclaurina)",
+            "texto": "Precursores biossintéticos dos alcaloides bisbenzilisoquinolínicos. Atividade antidopaminérgica discreta, analgésica central (receptores opioides) e anti-inflamatória."
           },
           {
-            "label": "TANINOS",
-            "texto": "Adstringente"
+            "label": "FLAVONOIDES (quercetina, campferol, miricetina)",
+            "texto": "Anti-inflamatórios e antioxidantes. Sinergizam com alcaloides na atividade anti-inflamatória articular — mecanismos complementares (COX vs. NF-κB)."
+          },
+          {
+            "label": "ESTEROIDES (β-sitosterol, estigmasterol)",
+            "texto": "Anti-inflamatórios, moduladores do metabolismo lipídico. β-sitosterol: inibição de 5α-redutase e COX-2."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Anti-inflamatório / reumatismo / artrite",
+            "evidencia": "Moderada — uso etnobotânico extenso + dados in vitro e em modelos animais confirmando atividade de alcaloides de Cissampelos spp.",
+            "populacao": "Adultos com quadros articulares inflamatórios. Ensaios clínicos humanos ausentes para C. ovalifolia especificamente."
+          },
+          {
+            "indicacao": "Antiespasmódico (cólicas)",
+            "evidencia": "Preliminar — mecanismo de relaxamento de músculo liso plausível pelos alcaloides",
+            "populacao": "Uso popular — sem ensaios clínicos."
+          },
+          {
+            "indicacao": "Antiofídico",
+            "evidencia": "Fraca (uso etnobotânico sem dados clínicos controlados) — NÃO usar como substituto de soro antiofídico",
+            "populacao": "Uso popular de emergência — deve ser complementado por soro antiofídico imediatamente."
+          }
+        ],
+        "contraindicacoes": "Gestação: CONTRAINDICADA — alcaloides curarimiméticos e aporfinas têm potencial uterotônico e risco fetal. Lactação: evitar. Miastenia gravis: contraindicada (miorrelaxante pode exacerbar fraqueza muscular). Crianças: sem dados de segurança. Doses altas: risco de miorrelaxamento excessivo.",
+        "interacoes": [
+          {
+            "label": "Bloqueadores neuromusculares (pancurônio, vecurônio, succinilcolina)",
+            "texto": "CONTRAINDICADA combinação — potencialização do bloqueio neuromuscular. Comunicar uso ao anestesista antes de cirurgias."
+          },
+          {
+            "label": "Sedativos e depressores do SNC",
+            "texto": "Alcaloides com atividade central podem potencializar sedação. Evitar com benzodiazepínicos, opioides, álcool."
+          }
+        ],
+        "efeitos_adversos": "Doses usuais: bem tolerada na maioria dos usuários. Doses altas: sonolência, fraqueza muscular, hipotensão. Raro: reação alérgica dermatológica. Toxicidade potencial: alcaloides curarimiméticos — respeitar doses populares.",
+        "dose_maxima": "Folhas secas: 10 g/dia. Raízes: 6 g/dia. Uso máximo contínuo: 2 semanas. Consultar profissional de saúde para uso além disso.",
+        "fontes": [
+          "Barros LM et al. (2010). Medicinal use of the fauna and flora in Northeastern Brazil. J Ethnobiol Ethnomed.",
+          "Freitas CS et al. (2009). Antiulcerogenic activity of Cissampelos ovalifolia. J Ethnopharmacol.",
+          "Simões CMO et al. (2017). Farmacognosia: do produto natural ao medicamento. Artmed.",
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum.",
+          "Bruneton J. (1999). Pharmacognosy, Phytochemistry, Medicinal Plants. Lavoisier."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Alto (4/5)",
+            "observacao": "Alcaloides bisbenzilisoquinolínicos. Amargor farmacológico intenso e limpo — comunica potência ao bebedor experiente."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Moderada (2–3/5)",
+            "observacao": "Taninos e flavonoides. Sensação seca persistente que complementa o amargor."
+          },
+          {
+            "dimensao": "Terroso-herbáceo",
+            "intensidade": "Moderado (2–3/5)",
+            "observacao": "Raízes especialmente: nota de terra úmida intensa, evocando campos do sul após chuva."
+          },
+          {
+            "dimensao": "Pungência leve",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Componentes voláteis das folhas frescas — discreta sensação de frescor-irritativo que distingue infusão de folha da decocção de raiz."
+          }
+        ],
+        "olfativo_familia": "Herbáceo-terroso, notas de raiz fresca; família das ervas medicinais de campo úmido.",
+        "olfativo_descritores": [
+          "raiz fresca de campo",
+          "terra úmida",
+          "folha verde amassada",
+          "notas amargas de alcaloide",
+          "fundo de musgo"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "nAChR (receptor nicotínico — efeito sistêmico, não sensação tópica)",
+            "ativacao": "Indireta — alcaloides curarimiméticos",
+            "molecula": "Cissampelina — miorrelaxamento sistêmico discreto em doses altas"
+          }
+        ],
+        "tatil": "Corpo médio; infusão castanho com leve turbidez. Finalização amarga e seca prolongada.",
+        "descricao_integrada": "A erva-de-lagarto é a medicina do campo em sua forma mais ancestral: amarga, terrosa, sem concessão estética. O cheiro de raiz fresca e terra úmida evoca o momento da coleta — no campo, depois da chuva, encontrando a planta rasteira nos campos do RS ou nas bordas pantaneiras. Quem bebe sabe que está tomando algo com história e com farmacologia real. Não é uma erva para quem busca conforto sensorial — é para quem busca eficácia."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A erva-de-lagarto é um dos exemplos mais claros de conhecimento fitoterápico pantaneiro que permanece quase inteiramente fora dos circuitos acadêmicos e comerciais. Usada por pescadores, peões de fazenda e ribeirinhos do Pantanal para \"dor nas costas\", \"puxado\" (lesão muscular) e \"febre\" — com alcalóides que justificam farmacologicamente esses usos. A ausência de pesquisa universitária não é ausência de evidência — é ausência de pesquisadores nesse território.",
-        "curiosidade": ""
+        "historia": "O uso de espécies de Cissampelos como antiveneno remonta às culturas indígenas pré-colombianas de toda a América do Sul. Os Guarani e Kaingang do sul do Brasil usavam C. ovalifolia como 'remédio de cobra' — cataplasma de folhas sobre a picada e chá das raízes como antídoto interno. Os naturalistas europeus do século XVIII documentaram extensamente o uso das 'velames' (Cissampelos spp.) como antiofídicos — e a planta deu origem ao nome da região 'velame-branco' em várias partes do Brasil. A descoberta científica dos alcaloides curarimiméticos na família Menispermaceae (incluindo o curare de C. tomentosum) no século XIX e XX retroiluminou o uso indígena ancestral: havia lógica farmacológica no antiveneno.",
+        "cerimonial": "Entre os Guarani, o uso de plantas antiofídicas tinha dimensão cerimonial — o curandeiro (pajé) preparava o remédio com cantos e invocações, e a planta era parte de um sistema de cura que integrava o físico e o espiritual. A erva-de-lagarto, especificamente, era associada a rituais de proteção contra cobras antes de expedições ao mato.",
+        "brasil": "A erva-de-lagarto permanece em uso ativo nas comunidades rurais do RS, SC e Pantanal — especialmente em regiões onde o acesso a serviços médicos é limitado e a picada de cobra é risco cotidiano real. Trabalhadores rurais e peões de fazenda pantaneiros conhecem a planta e a mantêm no repertório de primeiros socorros. A pesquisa acadêmica (UFRGS, UFMS) tem documentado o uso e a fitoquímica, confirmando parcialmente o que a tradição indígena descobriu empiricamente.",
+        "curiosidade": "A família Menispermaceae tem um dos capítulos mais dramáticos da história da farmacologia: o curare — extraído de Chondrodendron tomentosum e Strychnos toxifera, parentes de Cissampelos — foi a primeira droga bloqueadora neuromuscular da medicina moderna. Usado por indígenas amazônicos em pontas de flecha para caçar, o curare foi estudado por Claude Bernard no século XIX, que descobriu seu mecanismo de bloqueio nicotínico. Derivados sintéticos do curare (tubocurarina, pancurônio) são essenciais na anestesia cirúrgica até hoje. A erva-de-lagarto carrega, em doses moderadas e nas suas raízes, alcaloides da mesma família química que tornaram a cirurgia moderna possível."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional regional",
-        "status_anvisa": "Uso popular reconhecido",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas disponíveis o ano todo; raiz coletada no período seco"
+        "eixo_botanico_tpc": "Planta medicinal de uso tradicional — sem listagem específica na RENISUS. Uso popular documentado, regulação formal ausente.",
+        "status_anvisa": "Sem monografia. Comercialização como droga vegetal (folhas e raízes secas) permitida com nomenclatura correta. Não há produto fitoterápico registrado com C. ovalifolia como princípio ativo.",
+        "status_ema": "Não avaliada. Cissampelos pareira (afim tropical): mencionada em literatura europeia histórica, sem monografia EMA.",
+        "status_fda": "Não avaliada.",
+        "certificacao_organica": "Extrativismo em campos sulinos e pantaneiros — potencial de certificação por manejo sustentável. Cultivo artesanal possível.",
+        "sazonalidade": "Folhas e raízes disponíveis o ano todo. Concentração de alcaloides: ligeiramente maior nas raízes coletadas no inverno (planta em dormência parcial)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Herbanárias do Sul (RS, SC, PR) — produto de nicho, disponibilidade variável",
+          "Feiras de plantas medicinais de Porto Alegre e Florianópolis",
+          "Comunidades de medicina popular e quintais medicinais (venda direta)",
+          "Raro em grandes redes — produto de mercado local e regional"
+        ],
+        "faixa_de_preco": "Folhas/raízes secas: R$ 15–35/50g. Produto de nicho com disponibilidade limitada fora do Sul.",
+        "formatos": [
+          "Folhas secas (infusão)",
+          "Raízes secas (decocção)",
+          "Tintura alcoólica (farmácias de manipulação especializadas)",
+          "Planta fresca (feiras locais — venda sazonal)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O curare em dose segura",
+          "texto": "Cissampelos ovalifolia pertence à família Menispermaceae — a mesma do curare amazônico. Seus alcaloides bisbenzilisoquinolínicos (cissampelina, curina) têm o mesmo mecanismo de bloqueio nicotínico que o curare, mas em concentrações muito menores. O uso ancestral como antiveneno tem lógica farmacológica real: miorrelaxamento local e anti-inflamatório que mitiga os efeitos inflamatórios da picada enquanto aguarda soro antiofídico."
+        },
+        {
+          "label": "Do antiveneno indígena à anestesia cirúrgica",
+          "texto": "O curare — parente bioquímico da erva-de-lagarto — foi o primeiro bloqueador neuromuscular da medicina moderna. Descoberto pelos indígenas amazônicos, estudado por Claude Bernard no século XIX, transformado em tubocurarina e pancurônio pela farmacologia do século XX. A erva-de-lagarto carrega na raiz, em dose segura, a mesma classe de moléculas que tornaram a cirurgia abdominal profunda possível."
+        },
+        {
+          "label": "Comunicar uso ao anestesista — obrigatório",
+          "texto": "Alcaloides curarimiméticos de C. ovalifolia podem potencializar bloqueadores neuromusculares usados em anestesia cirúrgica — com risco de apneia prolongada. Usuários que farão cirurgia devem informar o anestesista sobre uso de erva-de-lagarto. Não é alarmismo: é farmacologia aplicada ao cuidado seguro do paciente."
+        }
+      ]
     },
     {
       "slug": "velame-pantaneiro",
