@@ -11566,216 +11566,424 @@
     },
     {
       "slug": "canela-de-ema",
-      "nome_popular": "Canela-de-Emã",
-      "nome_cientifico": "Eryngium ebracteatum Lam. / Eryngium paniculatum Cav. & Dombey ex F.Delaroche",
-      "tagline": "O diurético dos campos — herbácea espinhosa dos pampas sulinos com tradição gaúcha de depuração renal e sanguínea que a ciência começa a confirmar.",
+      "nome_popular": "Canela-de-Ema",
+      "nome_cientifico": "Eryngium ebracteatum Lam.",
+      "tagline": "O cardão prata dos pampas — diurético e anti-hipertensivo dos campos sulinos, com raízes utilizadas desde os gaúchos do século XIX até formulações fitoterápicas modernas.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Eryngium ebracteatum Lam. / Eryngium paniculatum Cav. & Dombey ex F.Delaroche",
-        "familia_botanica": "Apiaceae (família da cenoura, do funcho, do coentro)",
-        "tipo_botanico": "Fitoterápico diurético / depurativo",
-        "parte_usada": "Partes aéreas secas; raiz (uso mais concentrado).",
+        "nome_cientifico": "Eryngium ebracteatum Lam.",
+        "familia_botanica": "Apiaceae (Umbelliferae)",
+        "tipo_botanico": "Planta medicinal diurética / anti-hipertensiva tradicional",
+        "parte_usada": "Raiz (principal — infusão e decocção); partes aéreas (uso secundário popular).",
         "sinonimos": [
-          "Canela-de-ema · caraguatá-miúdo · congonha-do-campo",
-          "Eryngo (inglês — gênero) · cardo corredor (espanhol)",
-          "ATENÇÃO: \"canela-de-ema\" pode designar diversas espécies de Eryngium no Brasil — confirmar espécie por região."
+          "canela-de-ema · eryngio · gravatá-do-brejo (uso regional)",
+          "Eryngium paniculatum Cav. & Dombey ex F.Delaroche (espécie afim do sul do Brasil)",
+          "Eryngium ebracteatum var. pectinatum (DC.) Urb."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Levemente amargo-herbáceo, levemente adstringente, terroso sutil.",
-        "aroma": "Campo seco do pampa, herbáceo suave, leve resinoso.",
-        "cor_da_infusao": "Verde-amarelado a âmbar claro. #C0B84A",
-        "intensidade": "2/5 — suave, de uso cotidiano possível.",
-        "notas": "",
-        "bioma_de_origem": "Pampas — campos sulinos do RS, SC, PR; também campos da Argentina e Uruguai.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-terroso com notas resinosas e leve adstringência; retrogusto herbáceo persistente.",
+        "aroma": "Herbáceo-resinoso, campestre, levemente picante — reminiscente de aipo silvestre com fundo terroso-úmido de brejo.",
+        "cor_da_infusao": "Castanho-âmbar a castanho-escuro, dependendo da concentração e do tempo de infusão.",
+        "intensidade": "3/5 — presença marcante, não agressiva; amargor e terroso equilibrados.",
+        "notas": "A planta é esteticamente marcante — hastes prateadas, folhas espinhosas, inflorescência globosa metálica. Seu aspecto ornamental contrasta com o uso medicinal robusto.",
+        "bioma_de_origem": "Pampas e campos sulinos (RS, SC, PR) — campos úmidos, margens de banhados e coxilhas.",
+        "distribuicao_geografica": [
+          "Rio Grande do Sul: banhados, campos da Serra e campanha gaúcha",
+          "Santa Catarina e Paraná: campos de altitude e transição Pampa-Mata Atlântica",
+          "Uruguai e Argentina (Pampa platino): uso medicinal paralelo ao brasileiro",
+          "Andes peruanos e bolivianos: espécies afins do gênero Eryngium com usos similares"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g de partes aéreas secas para 250 ml.",
-        "metodo": "Infusão simples coberta. Decocção de raiz para uso mais concentrado.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã e tarde (diurético — evitar à noite).",
-        "combina_com": "Cavalinha · Solidago · Rompe-pedra (blends diuréticos)"
+        "temperatura_ideal": "Raiz: decocção a 95–100 °C (fervura leve por 10 min). Partes aéreas: infusão a 90 °C.",
+        "tempo_de_infusao": "Raiz (decocção): 10 minutos de fervura + 10 minutos coberto. Partes aéreas: 8–10 minutos.",
+        "quantidade": "Raiz seca: 5–8 g / 200 ml. Partes aéreas secas: 5 g / 200 ml.",
+        "metodo": "Raiz: decocção — colocar em água fria, levar à fervura suave, manter 10 min, coar quente. Partes aéreas: infusão coberta em água quente.",
+        "reinfusoes": "Raiz: até 2 decocções (perda de 40% de ativos na 2ª). Partes aéreas: sem reinfusão recomendada.",
+        "melhor_momento": "Manhã em jejum (efeito diurético pronunciado). Evitar após as 18h para não interromper o sono.",
+        "combina_com": "Erva-mate chimarrão (tradição gaúcha — mistura clássica para hipertensão), carqueja, cavalinha (sinergia diurética)."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Etnobotânico — uso popular em cataplasmas; sem estudos clínicos tópicos formais.",
+        "aplicacoes": [
+          {
+            "titulo": "Cataplasma de folhas (uso popular — anti-inflamatório local)",
+            "texto": "Folhas frescas amassadas aplicadas sobre articulações doloridas e picadas de insetos. Uso registrado em comunidades rurais do RS. Mecanismo provável: saponinas e compostos fenólicos com ação anti-inflamatória local."
+          }
+        ],
+        "contraindicacoes": "Evitar em pele lesionada. Folhas com espinhos: manipular com cuidado para evitar trauma mecânico."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Diurético",
-          "Depurativo (estimula eliminação de toxinas via renal)",
-          "Anti-inflamatório leve",
-          "Antirreumático (associado ao diurético)",
-          "Expectorante leve",
-          "Componentes ativos:",
-          "Contraindicações: Edema cardíaco ou renal grave — cautela. Gestação — dados insuficientes."
+          "Diurético (raiz — saponinas + flavonoides)",
+          "Anti-hipertensivo (mecanismo diurético + vasodilatação discreta)",
+          "Anti-inflamatório (compostos fenólicos, ácido cafeico)",
+          "Antioxidante (polifenóis totais)",
+          "Antimicrobiano leve (óleos essenciais — falcarinol, derivados)"
         ],
         "componentes_ativos": [
           {
-            "label": "SAPONINAS",
-            "texto": "Diurético, expectorante"
+            "label": "SAPONINAS TRITERPÊNICAS",
+            "texto": "Principal fração ativa da raiz. Mecanismo diurético: aumento da filtração glomerular e inibição da reabsorção tubular de sódio. Concentração maior nas raízes do que nas partes aéreas — justifica a preferência popular pela raiz."
           },
           {
-            "label": "FLAVONÓIDES (luteolina, apigenina)",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "FLAVONOIDES (luteolina, apigenina, quercetina)",
+            "texto": "Anti-inflamatórios via inibição de COX-1/COX-2 e NF-κB. Luteolina demonstra efeito hipotensor em modelos animais por relaxamento vascular mediado por óxido nítrico (NO)."
           },
           {
-            "label": "FENILPROPANÓIDES",
-            "texto": "Anti-inflamatório"
+            "label": "ÁCIDO CAFEICO e DERIVADOS (rosmarínico, clorogênico)",
+            "texto": "Antioxidantes potentes; anti-inflamatórios; inibidores de hialuronidase. Comuns na família Apiaceae. Contribuem para ação vasoprotegente."
           },
           {
-            "label": "ÓLEOS ESSENCIAIS",
-            "texto": "Aromático, diurético"
+            "label": "POLIACETILENOS (falcarinol, falcarindiol)",
+            "texto": "Característicos das Apiaceae. Atividade antimicrobiana e antifúngica em estudos in vitro. Citotóxicos em concentrações elevadas — razão para respeitar doses populares."
+          },
+          {
+            "label": "ÓLEOS ESSENCIAIS (β-pineno, sabineno, limoneno)",
+            "texto": "Presentes nas partes aéreas. Contribuem ao aroma campestre-resinoso. Propriedades antimicrobianas e espasmolíticas discretas."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Diurese / hipertensão arterial leve",
+            "evidencia": "Moderada (etnobotânica + modelos animais confirmam ação diurética das saponinas)",
+            "populacao": "Adultos com hipertensão leve; tradição de uso no sul do Brasil e cone sul da América do Sul. Ensaios clínicos humanos ausentes."
+          },
+          {
+            "indicacao": "Anti-inflamatório sistêmico",
+            "evidencia": "Preliminar (in vitro + in vivo animal)",
+            "populacao": "Sem dados clínicos humanos para esta indicação específica."
+          }
+        ],
+        "contraindicacoes": "Insuficiência renal (diurético potente — monitorar função renal). Gestação e lactação: sem dados de segurança. Crianças menores de 12 anos: evitar. Hipotensão: monitorar pressão arterial com uso continuado.",
+        "interacoes": [
+          {
+            "label": "Anti-hipertensivos",
+            "texto": "Potencialização do efeito hipotensor — risco de hipotensão sintomática. Monitorar pressão arterial e ajustar medicação com médico."
+          },
+          {
+            "label": "Diuréticos (tiazídicos, de alça)",
+            "texto": "Risco de depleção eletrolítica (hipocalemia, hiponatremia) com uso simultâneo. Evitar combinação sem supervisão médica."
+          },
+          {
+            "label": "Lítio",
+            "texto": "Diuréticos podem elevar níveis séricos de lítio — risco de toxicidade. Evitar uso concomitante."
+          }
+        ],
+        "efeitos_adversos": "Doses altas: náusea, cólicas, poliúria excessiva. Uso prolongado sem supervisão: depleção de eletrólitos. Raro: reação alérgica (família Apiaceae — cruzamento com aipo, cenoura, anis).",
+        "dose_maxima": "Raiz seca: 15 g/dia (3 xícaras × 5 g). Não usar continuamente por mais de 4 semanas sem avaliação médica.",
+        "fontes": [
+          "Baggio CH et al. (2009). Antinociceptive and anti-inflammatory effects of Eryngium ebracteatum. J Ethnopharmacol.",
+          "Coimbra R. (1994). Manual de Fitoterapia. CEJUP, Belém.",
+          "Simões CMO et al. (Org.). (2017). Farmacognosia: do produto natural ao medicamento. Artmed, Porto Alegre.",
+          "EMBRAPA Clima Temperado — Plantas medicinais dos pampas gaúchos.",
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Moderado-alto (3–4/5)",
+            "observacao": "Saponinas e flavonoides. Amargor limpo, não prolongado; integra bem com dulçor do mel."
+          },
+          {
+            "dimensao": "Acidez",
+            "intensidade": "Leve (1–2/5)",
+            "observacao": "Ácidos fenólicos (cafeico, clorogênico) contribuem com acidez discreta que ilumina o perfil."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Leve a moderada (2/5)",
+            "observacao": "Taninos em concentração baixa. Mais presente nas partes aéreas do que na raiz."
+          },
+          {
+            "dimensao": "Terroso-resinoso",
+            "intensidade": "Moderado (3/5)",
+            "observacao": "Traço identitário dos campos sulinos — nota úmida-campestre que evoca banhados e coxilhas do Pampa."
+          }
+        ],
+        "olfativo_familia": "Herbáceo-resinoso campestre com nota apiácea (aipo silvestre) e fundo terroso-úmido.",
+        "olfativo_descritores": [
+          "aipo silvestre",
+          "terra úmida pós-chuva",
+          "resina herbácea",
+          "feno seco",
+          "notas de pinha verde"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Baixa",
+            "molecula": "Poliacetilenos (falcarinol) — leve sensação de frescor-picante"
+          }
+        ],
+        "tatil": "Decocção de raiz: corpo médio, levemente viscosa (saponinas). Partes aéreas: corpo leve, aquosa.",
+        "descricao_integrada": "A canela-de-ema entrega um chá de caráter inconfundivelmente campeiro — terroso, resinoso, com a tipicidade dos campos sulinos. Não é uma erva de perfil florido ou docinho; é medicinal no sentido mais ancestral: comunicada ao bebedor que há algo ativo naquele líquido. O amargor limpo das saponinas e o terroso dos poliacetilenos constroem uma bebida que pede chimarrão e fogão a lenha, não mesa de café."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "A canela-de-ema é uma das ervas dos campos sulinos que encarna a farmácia viva dos pampas gaúchos — junto com a macela, o alecrim-de-campanha e a carqueja, forma o núcleo da fitoterapia popular dos campos abertos do Rio Grande do Sul. Usada por curandeiros gaúchos e uruguaios para \"limpar o sangue\" e tratar \"pedra no rim\" — usos que refletem o mecanismo diurético-depurativo documentado.",
-        "curiosidade": ""
+        "historia": "O gênero Eryngium é amplamente utilizado pela medicina tradicional sul-americana desde registros coloniais do século XVIII. No Rio Grande do Sul, a canela-de-ema é registrada nos tratados de medicina popular gaúcha do século XIX como 'remédio do campo' para hipertensão, edemas e problemas urinários. Benzedeiras e curandeiras dos pampas transmitiam o uso da raiz em decocção de geração em geração. O nome 'canela-de-ema' refere-se à haste prateada e tubular da planta, que lembra a tíbia fina e acinzentada da ema (Rhea americana) — ave símbolo dos campos sulinos.",
+        "cerimonial": "Integrada à medicina tradicional gaúcha de forma funcional e não cerimonial. O chimarrão de canela-de-ema — mistura de erva-mate com raiz seca — era preparado nas estâncias gaúchas como remédio cotidiano para trabalhadores rurais com hipertensão. A prática não tem dimensão ritual, mas tem profundo peso cultural identitário para comunidades campeiras do sul.",
+        "brasil": "No Rio Grande do Sul, a canela-de-ema integra a lista de plantas do Programa de Plantas Medicinais da SES-RS. Herbanárias de Porto Alegre, Pelotas e Caxias do Sul comercializam raiz seca há décadas. A Farmacognosia gaúcha, especialmente o grupo de pesquisa da UFRGS liderado por Cláudia Simões, publicou trabalhos fundamentais sobre a composição química e atividade biológica do gênero Eryngium, consolidando a credibilidade científica do uso popular.",
+        "curiosidade": "A canela-de-ema é uma das raras plantas medicinais dos pampas que sobreviveu ao desmatamento e à monocultura de soja — ela cresce em banhados e margens de arroios que os tratores não alcançam. Seus espinhos plateados são visíveis mesmo no inverno após as geadas, e os coletores experientes reconhecem a planta de longe pela cor metálica característica. Paradoxalmente, é mais fácil encontrá-la em herbanárias de Porto Alegre do que de comprar online — o mercado ainda é predominantemente local e informal."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional",
-        "status_anvisa": "Uso popular reconhecido",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: outubro–fevereiro"
+        "eixo_botanico_tpc": "Planta medicinal de uso tradicional — presente na Relação Nacional de Plantas de Interesse do SUS (RENISUS).",
+        "status_anvisa": "Consta na RENISUS (2009). Sem monografia de fitoterápico publicada na RDC 26/2014 ou IN 02/2014. Comercialização como droga vegetal (raiz seca) permitida. Extratos em produtos fitoterápicos requerem registro.",
+        "status_ema": "Não avaliado pela EMA (planta americana sem tradição europeia).",
+        "status_fda": "Não avaliado. Sem status GRAS.",
+        "certificacao_organica": "Extrativismo em áreas de banhados e campos preservados — potencial para certificação por manejo sustentável (IBD, Ecocert). Cultivo ainda incipiente.",
+        "sazonalidade": "Raiz: coleta no inverno (maio–agosto) — maior concentração de saponinas no período de dormência. Partes aéreas: primavera-verão (setembro–fevereiro)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Herbanárias do Sul (RS, SC, PR) — raiz seca principal formato comercial",
+          "Feiras de ervas de Porto Alegre, Pelotas, Santa Maria",
+          "Lojas de produtos naturais regionais do sul do Brasil",
+          "Atacados de plantas medicinais (SP): disponibilidade variável"
+        ],
+        "faixa_de_preco": "Raiz seca: R$ 15–35/100g. Produto de nicho regional — preços variam conforme sazonalidade e coleta.",
+        "formatos": [
+          "Raiz seca inteira ou em pedaços (decocção)",
+          "Raiz seca triturada / moída",
+          "Cápsulas de extrato seco (produtores regionais)",
+          "Tintura alcoólica (farmácias de manipulação do sul)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O anti-hipertensivo dos pampas",
+          "texto": "A canela-de-ema é a planta medicinal mais característica da medicina tradicional gaúcha para hipertensão e retenção de líquidos. Saponinas triterpênicas e flavonoides (luteolina) fundamentam farmacologicamente o uso secular — diurese aumentada e relaxamento vascular discreto compõem um mecanismo duplo de ação anti-hipertensiva."
+        },
+        {
+          "label": "Planta de banhado que sobreviveu à soja",
+          "texto": "Cresce em margens de arroios e banhados que a monocultura não alcança. Sua cor prateada metálica no inverno é um dos poucos vestígios da flora original dos pampas em paisagens transformadas pela agropecuária — e o coletor experiente reconhece de longe pelo brilho característico das hastes."
+        },
+        {
+          "label": "Família Apiaceae: atividade real com risco real",
+          "texto": "Poliacetilenos (falcarinol, falcarindiol) têm atividade antimicrobiana e antifúngica confirmada in vitro — mas são citotóxicos em concentrações elevadas. A mesma família química da cenoura, aipo e angélica. Respeitar doses populares tradicionais não é conservadorismo: é farmacologia aplicada."
+        },
+        {
+          "label": "Chimarrão medicinal — a fusão mais gaúcha possível",
+          "texto": "A mistura de raiz de canela-de-ema com erva-mate no chimarrão é uma das combinações mais autenticamente gaúchas da fitoterapia brasileira — une a bebida identitária da cultura sulina com a medicina campeira das estâncias. Sinergia diurética e anti-hipertensiva potencializada pela cafeína e methylxantinas da erva-mate."
+        }
+      ]
     },
     {
       "slug": "alecrim-de-campanha",
       "nome_popular": "Alecrim-de-Campanha",
       "nome_cientifico": "Baccharis dracunculifolia DC.",
-      "tagline": "O alecrim do cerrado e dos pampas — fonte das própolis verde brasileira, antioxidante e anti-inflamatório com uma das histórias de sinergia abelha-planta mais fascinantes da botânica brasileira.",
+      "tagline": "A planta que alimenta as abelhas do mel mais valorizado do mundo — precursora botânica da própolis verde brasileira e repositório de artepilina C, o marcador anticancerígeno mais estudado da fitoterapia apícola.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Baccharis dracunculifolia DC.",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico anti-inflamatório / antioxidante / matéria-prima de própolis verde",
-        "parte_usada": "Partes aéreas (folhas e ramos finos), secas.",
+        "familia_botanica": "Asteraceae (Compositae)",
+        "tipo_botanico": "Planta melífera medicinal / precursora de própolis verde",
+        "parte_usada": "Partes aéreas (infusão/decocção — uso direto); resina foliar coletada por Apis mellifera (própolis verde — uso apícola indireto).",
         "sinonimos": [
-          "Alecrim-de-campanha · alecrim-do-campo · vassoura-de-botão · carquejinha (confusão)",
-          "Rosemary bush (inglês informal) — pelo aroma similar ao alecrim europeu"
+          "alecrim-do-campo · vassourinha-de-botão · alecrim-de-vassoura · alecrim-bravo",
+          "Baccharis dracunculifolia var. dracunculifolia",
+          "Nota: não confundir com Rosmarinus officinalis (alecrim-verdadeiro) — sem relação taxonômica"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Levemente amargo-resinoso, aromático-herbáceo, com nota de própolis verde. Diferente do alecrim europeu mas evocativo.",
-        "aroma": "Própolis verde, resinoso-balsâmico intenso, herbáceo quente, leve eucalipto. Aroma extraordinariamente próximo da própolis verde brasileira — porque é sua fonte.",
-        "cor_da_infusao": "Verde-dourado a âmbar-esverdeado. #A0A830",
-        "intensidade": "3/5 — aromático intenso.",
-        "notas": "",
-        "bioma_de_origem": "Pampas, Cerrado, Mata Atlântica — amplamente distribuído; RS, SC, PR, SP, MG, GO.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-resinoso com notas balsâmicas e leve toque mentolado-cítrico; retrogusto herbáceo persistente.",
+        "aroma": "Balsâmico-resinoso intenso, reminiscente de própolis verde com toques de eucalipto e erva-limão; caráter campeiro inconfundível.",
+        "cor_da_infusao": "Amarelo-esverdeado a dourado-âmbar; levemente turva por resinas.",
+        "intensidade": "4/5 — perfil balsâmico marcante, resinoso, não para iniciantes; característica dominante.",
+        "notas": "A principal relevância medicinal da planta não é o chá direto, mas a própolis verde que as abelhas produzem a partir de sua resina foliar. Conhecer B. dracunculifolia é entender a origem botânica do marcador artepilina C.",
+        "bioma_de_origem": "Cerrado, campo rupestre e transição Mata Atlântica-Pampa (MG, SP, PR, SC, RS, GO).",
+        "distribuicao_geografica": [
+          "Minas Gerais (Serra da Mantiqueira, região de Minas Novas): epicentro da produção de própolis verde",
+          "São Paulo (campos de altitude): apicultura de própolis verde",
+          "Paraná e Santa Catarina: campos gerais e transição cerrado-pampa",
+          "Rio Grande do Sul: campos de coxilha — uso medicinal direto mais comum que produção de própolis"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C (resinas voláteis — não ferver).",
-        "tempo_de_infusao": "",
-        "quantidade": "2–3 g de ramos finos secos para 250 ml.",
-        "metodo": "Infusão coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã (antioxidante/imunidade) ou qualquer hora.",
-        "combina_com": "Própolis (amplifica) · Mel · Tomilho · Gengibre (blends imunidade)"
+        "temperatura_ideal": "85–90 °C — temperatura abaixo do ponto de ebulição preserva compostos fenólicos voláteis e artepilina C das partes aéreas.",
+        "tempo_de_infusao": "5–8 minutos coberto. Decocção breve (5 min fervura) extrai mais resinas mas altera perfil aromático.",
+        "quantidade": "Partes aéreas secas: 3–5 g / 200 ml. Própolis verde (extrato alcoólico): 5–10 gotas / 200 ml água — uso diferente do chá direto.",
+        "metodo": "Infusão coberta em água quente. Para extração máxima de resinas: decocção suave 5 min + repouso 10 min coberto.",
+        "reinfusoes": "Até 1 reinfusão (redução de 50% de resinas solúveis).",
+        "melhor_momento": "Início de quadros gripais, antes de dormir (imunomodulador). Manhã: uso tônico adaptogênico leve.",
+        "combina_com": "Mel de abelha (sinergia óbvia e botanicamente coerente), limão-cravo, gengibre, própolis verde em gotas (potencialização)."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada — extrato de própolis verde (derivado de B. dracunculifolia) amplamente estudado para uso tópico.",
+        "aplicacoes": [
+          {
+            "titulo": "Cicatrizante e antimicrobiano (extrato de própolis verde)",
+            "texto": "Extrato etanólico de própolis verde, cujo marcador principal é artepilina C derivada de B. dracunculifolia, demonstrou aceleração de cicatrização em feridas cutâneas em estudos clínicos (queimaduras superficiais, úlceras). Mecanismo: inibição de Staphylococcus aureus, Streptococcus pyogenes + estímulo à proliferação de fibroblastos."
+          },
+          {
+            "titulo": "Anti-inflamatório tópico (partes aéreas frescas)",
+            "texto": "Uso popular: compressa de decocção concentrada sobre articulações inflamadas e picadas de insetos. Resinas de artepilina C e baccharin com atividade anti-inflamatória local in vitro."
+          }
+        ],
+        "contraindicacoes": "Alergia a própolis (10–15% dos apícolas desenvolvem sensibilização — cruzamento possível com compostos de B. dracunculifolia). Gestantes: evitar uso tópico extenso de própolis sem orientação."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Anti-inflamatório potente (artepilina C)",
-          "Antioxidante de alta capacidade",
-          "Antimicrobiano",
-          "Imunomodulador",
-          "Antitumoral (artepilina C — pesquisa extensiva japonesa)",
-          "Antifúngico",
-          "Componentes ativos:",
-          "CONEXÃO PRÓPOLIS VERDE:",
-          "Contraindicações: Alergia à própolis ou ao gênero Baccharis. Alergia à família Asteraceae."
+          "Antimicrobiano (artepilina C, baccharin — própolis verde e extratos diretos)",
+          "Imunomodulador (artepilina C — ativação de macrófagos, NK cells)",
+          "Anti-inflamatório (artepilina C, drupanina — inibição COX-2, NF-κB)",
+          "Antioxidante (polifenóis totais elevados)",
+          "Anticancerígeno (artepilina C — apoptose seletiva, estudos in vitro/in vivo — PRELIMINAR)",
+          "Antifúngico (kaurenoic acid, derivados diterpenoides)"
         ],
         "componentes_ativos": [
           {
-            "label": "ARTEPILINA C (ácido 3,5-diprenyl-4-hydroxycinnamic)",
-            "texto": "Anti-inflamatório, antitumoral, imunomodulador — composto-chave da própolis verde"
+            "label": "ARTEPILINA C (ácido 3,5-diprenyl-4-hydroxycinnâmico)",
+            "texto": "Marcador químico da própolis verde brasileira; derivado especificamente de B. dracunculifolia. Atividade antimicrobiana ampla, imunomodulação via ativação de macrófagos M1 e células NK. Estudos in vitro e em camundongos: inibição de células de melanoma (B16F10), leucemia (HL60) e câncer de mama por apoptose via caspase-3. Dados clínicos humanos ainda ausentes para indicação anticancerígena — não extrapolar."
           },
           {
-            "label": "ÁCIDO P-CUMÁRICO",
-            "texto": "Antioxidante, antimicrobiano"
+            "label": "DRUPANINA e BACCHARIN",
+            "texto": "Derivados do ácido cinâmico prenilado. Co-marcadores da própolis verde junto à artepilina C. Atividade anti-inflamatória (inibição PGE2, IL-6) e antimicrobiana sinérgica com artepilina C."
           },
           {
-            "label": "DITERPENOS (clerodanos)",
-            "texto": "Anti-inflamatório"
+            "label": "ÁCIDO KAURENOICO (diterpeno)",
+            "texto": "Diterpeno com atividade antifúngica (Candida albicans, C. tropicalis), antibacteriana e inibição de biofilme bacteriano. Presente nas partes aéreas de B. dracunculifolia."
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Antioxidante"
+            "label": "FLAVONOIDES (crisina, campferol, quercetina)",
+            "texto": "Crisina: ansiolítico leve (modulação GABA-A in vitro), anti-inflamatório. Campferol: antioxidante, antiproliferativo em células tumorais. Quercetina: vasoprotegente, anti-inflamatório clássico."
           },
           {
-            "label": "RESINAS TERPÊNICAS",
-            "texto": "Antimicrobiano (coletadas pelas abelhas)"
+            "label": "ÓLEOS ESSENCIAIS (α-pineno, β-pineno, limoneno, espatulenol)",
+            "texto": "Responsáveis pelo aroma balsâmico-resinoso. Atividade antimicrobiana de superfície e expectorante discreta. Espatulenol: anti-inflamatório, antifúngico."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Antimicrobiano (infecções respiratórias leves, candidíase oral)",
+            "evidencia": "Moderada (extratos e própolis verde com CIM documentada contra S. aureus MRSA, Candida spp., Streptococcus mutans)",
+            "populacao": "Adultos; ensaios clínicos com própolis verde em odontologia (cárie, periodontite) com resultados positivos."
+          },
+          {
+            "indicacao": "Imunomodulação (prevenção de infecções respiratórias recorrentes)",
+            "evidencia": "Preliminar a moderada (ensaios com extrato de própolis verde em crianças e adultos com infecções respiratórias recorrentes)",
+            "populacao": "Crianças e adultos; alguns ensaios clínicos randos com própolis verde brasileira."
+          },
+          {
+            "indicacao": "Anticancerígeno (adjuvante oncológico)",
+            "evidencia": "Preliminar — in vitro e animais apenas",
+            "populacao": "Sem ensaios clínicos humanos para indicação anticancerígena. Não utilizar como tratamento oncológico."
+          }
+        ],
+        "contraindicacoes": "Alergia a própolis ou a plantas da família Asteraceae (cruzamento possível). Gestação: sem dados adequados — evitar uso medicinal intensivo. Crianças menores de 1 ano: própolis contraindicada (risco de botulismo e reações alérgicas); chá direto de B. dracunculifolia: sem dados.",
+        "interacoes": [
+          {
+            "label": "Anticoagulantes (varfarina, heparina)",
+            "texto": "Artepilina C demonstrou inibição de agregação plaquetária in vitro. Risco teórico de potencialização de anticoagulantes. Monitorar INR com uso de própolis verde concomitante."
+          },
+          {
+            "label": "Imunossupressores (ciclosporina, tacrolimus)",
+            "texto": "Efeito imunomodulador de artepilina C pode antagonizar imunossupressão. Contraindicado em pacientes transplantados sem orientação médica."
+          }
+        ],
+        "efeitos_adversos": "Reação alérgica (2–5% da população, principalmente apícolas e sensíveis a própolis). Doses elevadas de extrato concentrado: náusea, diarreia. Raro: hepatotoxicidade com extrato de própolis em doses muito altas (casos isolados relatados).",
+        "dose_maxima": "Chá direto de partes aéreas: 10 g/dia. Própolis verde extrato alcoólico (30% própolis): 20–30 gotas/dia. Não usar por mais de 8 semanas sem pausa.",
+        "fontes": [
+          "Sforcin JM & Bankova V. (2011). Propolis: is there a potential for the development of new drugs? J Ethnopharmacol.",
+          "Nakamura Y et al. (2004). Artepillin C in Brazilian propolis induces G0/G1 arrest via stimulation of Cip1/p21 expression in tumor cells. Mol Carcinog.",
+          "Machado JL et al. (2012). Brazilian green propolis: anti-inflammatory property by an immunomodulatory activity. Evid Based Complement Alternat Med.",
+          "Búfalo MC et al. (2014). Anti-Candida properties of propolis and its constituent compounds: a review. Nat Prod Commun.",
+          "Teixeira EW et al. (2010). Própolis: Aspectos Químicos e Biológicos. UNESP."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Alto (4/5)",
+            "observacao": "Artepilina C, baccharin e flavonoides contribuem com amargor resinoso intenso — diferente do amargor aquoso de camomila ou hortelã."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Moderada (3/5)",
+            "observacao": "Taninos e resinas preniladas. Sensação seca prolongada no palato — característica das Asteraceae resinosas."
+          },
+          {
+            "dimensao": "Balsâmico-resinoso",
+            "intensidade": "Alto (4–5/5) — traço dominante",
+            "observacao": "Artepilina C e resinas preniladas criam uma sensação gustativa única, próxima ao sabor de própolis verde — quem conhece, reconhece imediatamente."
+          },
+          {
+            "dimensao": "Acidez",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Ácidos cinâmicos prenilados contribuem com acidez discreta que equilibra o amargor."
+          }
+        ],
+        "olfativo_familia": "Balsâmico-resinoso intenso com notas campeiras e toque de pinho-eucalipto.",
+        "olfativo_descritores": [
+          "própolis verde fresca",
+          "resina de pinheiro",
+          "eucalipto balsâmico",
+          "erva-campeira seca ao sol",
+          "notas de limão-cravo e cânfora"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (menthol receptor)",
+            "ativacao": "Baixa-moderada",
+            "molecula": "α-pineno e espatulenol — frescor balsâmico discreto"
+          }
+        ],
+        "tatil": "Corpo médio-alto, levemente viscoso por resinas em suspensão; finalização levemente pegajosa no palato — assinatura resinosa inconfundível.",
+        "descricao_integrada": "O chá de alecrim-de-campanha é a versão líquida da própolis verde: resinoso, balsâmico, amargo-campeiro, com aquele frescor peculiar dos compostos prenilados. Para quem conhece própolis verde, a experiência é de reconhecimento imediato — 'ah, é daí que vem'. É um chá medicinal no sentido mais direto: não é agradável por prazer hedonístico, mas é memorizável e gratificante por eficácia percebida."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O alecrim-de-campanha é a planta brasileira que mais claramente ilustra a sinergia entre fitoterapia e apiterapia — a erva e a própolis são o mesmo produto em formas diferentes, mediadas pela abelha. Essa história de co-evolução entre planta, inseto e medicina humana é uma das mais belas do catálogo.  O Japão é o maior comprador de própolis verde brasileira do mundo — e grande parte da pesquisa sobre artepilina C e Baccharis dracunculifolia foi publicada por universidades japonesas (Univ. Gifu, Meijo) que identificaram o potencial imunomodulador. Brasil produziu, Japão pesquisou, Europa comprou. Ciclo clássico de conhecimento botânico brasileiro.",
-        "curiosidade": ""
+        "historia": "Baccharis dracunculifolia domina campos e margens de estrada em todo o centro-sul do Brasil — é considerada planta invasora em pastagens e perturbadora de monoculturas. Por séculos foi tratada como 'vassourinha', planta sem valor. A reviravolta começa nos anos 1970 quando pesquisadores japoneses da Universidade de Gifu investigam a própolis verde exportada do Brasil, identificam artepilina C como princípio ativo e provam que ela vem de B. dracunculifolia. Em menos de 20 anos, a 'vassourinha indesejada' se torna a planta mais valiosa da apicultura brasileira — o Japão importa toneladas de própolis verde brasileira anualmente, pagando preços premium.",
+        "cerimonial": "Sem uso cerimonial documentado no Brasil. No Japão, a própolis verde brasileira tem conotação quase ritualística de saúde preventiva — suplemento de elite consumido em cápsulas e extratos. A ascensão japonesa da própolis verde gerou um fenômeno cultural curioso: o produto é mais conhecido e valorizado no Japão do que no próprio Brasil, onde ainda é sub-utilizado medicinalmente.",
+        "brasil": "O Brasil é o maior produtor mundial de própolis verde, e Minas Gerais é o epicentro — especialmente a região de Minas Novas, no Vale do Jequitinhonha, onde B. dracunculifolia domina as chapadas. A apicultura mineira de própolis verde movimenta dezenas de milhões de reais em exportação, principalmente para o Japão, EUA e Europa. O paradoxo: a 'vassourinha' que invade pastos é a mesma que sustenta a economia apícola de centenas de famílias rurais. No contexto de saúde popular brasileira, o alecrim-de-campanha como chá direto é uso secundário — a própolis verde é o produto medicinal de referência.",
+        "curiosidade": "A relação entre Apis mellifera e Baccharis dracunculifolia é uma das associações planta-polinizador mais economicamente relevantes do Brasil. As abelhas coletam a resina pegajosa das folhas jovens de B. dracunculifolia para produzir própolis verde — um processo de co-evolução fascinante onde a planta 'se beneficia' da atenção das abelhas (que ao coletar resina inadvertidamente polinizam flores próximas) e as abelhas ganham matéria-prima antimicrobiana para proteger a colmeia. A artepilina C, molécula que protege a planta de fungos e bactérias, é exatamente o mesmo composto que protege a colmeia e potencialmente beneficia quem consome própolis verde."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Phyto-ANVISA + Funcional global",
-        "status_anvisa": "Uso tradicional reconhecido. Própolis verde: regulada como produto apícola.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: outubro–fevereiro (pico de coleta pelas abelhas)"
+        "eixo_botanico_tpc": "Planta melífera de interesse medicinal indireto (via própolis). Própolis verde: produto de origem animal (abelha) com regulação própria pela ANVISA.",
+        "status_anvisa": "B. dracunculifolia como planta: sem monografia. Própolis verde: regulada como produto apícola (RDC 272/2019 — compostos bioativos de origem vegetal) e como insumo farmacêutico. Extratos de própolis verde registrados como suplementos alimentares e fitoterápicos.",
+        "status_ema": "Própolis não tem monografia EMA específica para B. dracunculifolia. Própolis em geral: uso como suplemento alimentar permitido na UE.",
+        "status_fda": "Própolis: GRAS (Generally Recognized as Safe) para uso alimentar nos EUA. Artepilina C: sem classificação específica.",
+        "certificacao_organica": "Própolis verde de apicultura orgânica: certificação possível (IBD, USDA Organic). Produtores mineiros com certificação para exportação para o Japão.",
+        "sazonalidade": "Floração de B. dracunculifolia: agosto–novembro (primavera). Coleta de resina pelas abelhas: mais intensa em setembro–dezembro. Própolis verde: coleta ao longo do ano com pico na primavera."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Herbanárias do sul e sudeste — partes aéreas secas (uso direto como chá)",
+          "Produtores apícolas de MG (Vale do Jequitinhonha, Serra da Mantiqueira) — própolis verde bruta",
+          "Marcas de suplementos (Apis Flora, Uniflora, NaturalBee) — extrato de própolis verde 30%",
+          "Exportadores para Japão e EUA: Apis Flora (principal), Comapi, cooperativas apícolas mineiras"
+        ],
+        "faixa_de_preco": "Partes aéreas secas: R$ 15–30/50g. Própolis verde extrato 30% (30ml): R$ 30–80. Própolis bruta: R$ 80–200/100g (produto para exportação).",
+        "formatos": [
+          "Partes aéreas secas (chá direto)",
+          "Extrato alcoólico de própolis verde 30% (gotas)",
+          "Cápsulas de própolis verde",
+          "Spray bucal de própolis verde",
+          "Própolis bruta (apicultores diretos)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "A planta por trás do mel mais valorizado do mundo",
+          "texto": "Baccharis dracunculifolia é a fonte botânica da artepilina C — o marcador químico exclusivo da própolis verde brasileira, o tipo de própolis mais estudado e caro do planeta. O Japão importa toneladas por ano. A 'vassourinha invasora' dos pastos é simultaneamente a planta mais economicamente estratégica da apicultura brasileira."
+        },
+        {
+          "label": "Artepilina C: o composto mais estudado da fitoterapia apícola",
+          "texto": "Artepilina C ativou macrófagos, cells NK, induziu apoptose seletiva em células de melanoma e leucemia in vitro e em modelos murinos. Não é cura do câncer — mas é um dos compostos naturais com mais publicações oncológicas na literatura. A planta que virou 'vassourinha desprezada' nos pastos tem moléculas que pesquisadores japoneses e brasileiros estudam há 50 anos."
+        },
+        {
+          "label": "Co-evolução fascinante: planta protege colmeia",
+          "texto": "A artepilina C protege B. dracunculifolia de fungos e bactérias. As abelhas coletam essa resina antimicrobiana para proteger a própria colmeia. Quem consome própolis verde obtém o mesmo composto em forma concentrada. Três sistemas de defesa — planta, colmeia, corpo humano — compartilhando a mesma molécula."
+        },
+        {
+          "label": "Mais valorizada no Japão do que no Brasil",
+          "texto": "O paradoxo cultural da própolis verde: o produto de B. dracunculifolia é consumido como suplemento de elite no Japão, com pesquisa intensa e mercado premium consolidado, enquanto no Brasil a planta ainda é tratada como invasora em muitas propriedades rurais. A bioeconomia global valoriza o que a cultura local ainda não reconheceu."
+        }
+      ]
     },
     {
       "slug": "poejo",
