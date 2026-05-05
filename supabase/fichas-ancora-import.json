@@ -11267,295 +11267,389 @@
     },
     {
       "slug": "ashwagandha",
-      "nome_popular": "Ashwagandha",
-      "nome_cientifico": "Withania somnifera (L.) Dunal",
-      "tagline": "O ginseng indiano — adaptógeno ayurvédico com o maior portfólio de ensaios clínicos modernos entre todos os adaptógenos do catálogo, de cortisol à testosterona.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Withania somnifera (L.) Dunal",
-        "familia_botanica": "Solanaceae (família do tomate, da berinjela)",
-        "tipo_botanico": "Adaptógeno / tônico / nootrópico",
-        "parte_usada": "Raiz seca (principal); folhas (uso secundário).",
-        "sinonimos": [
-          "Ashwagandha · ginseng-indiano · cereja-de-inverno",
-          "Ashwagandha (inglês/português) · Indian ginseng · Wintercherry",
-          "Withania (farmacológico)",
-          "\"Ashwa\" = cavalo, \"gandha\" = cheiro (sânscrito) — \"cheiro de cavalo\""
+        "nome_popular": "Ashwagandha",
+        "nome_cientifico": "Withania somnifera",
+        "familia": "Solanaceae",
+        "outros_nomes": [
+          "ginseng-indiano",
+          "cereja-de-inverno",
+          "Indian ginseng (ing.)",
+          "Withania"
+        ],
+        "origem": "Índia, norte da África, Mediterrâneo",
+        "partes_usadas": [
+          "raiz seca (principal)",
+          "raiz em pó",
+          "folhas (secundário)",
+          "frutos (secundário)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-terroso moderado, levemente leitoso e adocicado ao fundo, resinoso. Único no catálogo — inconfundível.",
-        "aroma": "Terroso-leitoso, levemente solanáceo, amadeirado.",
-        "cor_da_infusao": "Marrom-amarelado a âmbar. #C0902A",
-        "intensidade": "3/5 — medicinal, palatável.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Arbusto perene de 30–150 cm, adaptado a climas áridos e semi-áridos. Caules lenhosos, ramificados, com tomentosidade (pelos). Folhas ovais a elípticas (5–12 cm), tomentosas. Flores pequenas, esverdeadas, em cimeiras axilares. Frutos carnosos (bagas) avermelhados quando maduros, envoltos no cálice persistente (como pequenos lanternes). Raiz pivotante longa e carnosa, branca a cinza — a parte medicinal principal.",
+        "composicao_quimica": [
+          "Withanolídeos (1–4% na raiz): withanolide A, withaferin A, withanolide D — os principais ativos adaptogênicos",
+          "Alcaloides: somniferin, withanine, anaferina — efeito sedativo leve",
+          "Sitoindosídeos (VII–X): imunomoduladores e neuroprotetores",
+          "Withanamides: neuroprotetores específicos para doença de Alzheimer (pré-clínico)",
+          "Polifenóis: ácido clorogênico, flavonoides",
+          "Ferro, zinco, cálcio, magnésio"
+        ],
+        "bioma": "Árido e semi-árido — Índia, África do Norte, Mediterrâneo",
+        "cultivo": "Pleno sol, solo bem drenado e pobre (tolera solos áridos), pH 7,5–8. Multiplica por sementes. Raiz colhida após 150–180 dias. Cultivada em larga escala no Rajastão (Índia)."
       },
       "preparo": {
-        "temperatura_ideal": "90 °C | Tempo: 10–15 min | Quantidade: 3–5 g de pó de raiz seca para 250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "3–5 g de pó de raiz seca para 250 ml",
-        "metodo": "Decocção suave. Tradição ayurvédica: \"Ashwagandha milk\" — pó + leite quente + mel + ghee.",
-        "reinfusoes": "",
-        "melhor_momento": "Noite (adaptogênico-relaxante; somnifera = \"que induz sono\").",
-        "combina_com": "Leite/leite vegetal · Mel · Cúrcuma · Canela · Tulsi (blends adaptogênicos)"
+        "formas": [
+          {
+            "tipo": "Pó de raiz em leite (modo ayurvédico clássico)",
+            "descricao": "1–2 colheres de chá de pó (3–6 g) em 200 mL de leite quente (vegetal ou bovino). Adicionar mel e cardamomo. 1×/dia à noite.",
+            "indicacoes": [
+              "estresse crônico",
+              "insônia",
+              "fadiga adrenal",
+              "ansiedade",
+              "fortalecimento geral"
+            ]
+          },
+          {
+            "tipo": "Cápsulas de extrato padronizado",
+            "descricao": "300–600 mg de extrato (padronizado em 2,5–5% withanolídeos), 1–2×/dia. Com refeição.",
+            "indicacoes": [
+              "estresse",
+              "ansiedade",
+              "cognição",
+              "performance atlética",
+              "hormônios masculinos"
+            ]
+          },
+          {
+            "tipo": "Decocção da raiz",
+            "descricao": "5–10 g de raiz seca em 300 mL. Ferver 15–20 min. Coar. 1–2 xícaras/dia.",
+            "indicacoes": [
+              "fortalecimento geral",
+              "imunidade",
+              "adaptogênico"
+            ]
+          }
+        ],
+        "dicas": "O pó de raiz tem odor forte e terroso — o leite com mel mascarou o sabor na tradição ayurvédica por milênios. Extratos padronizados em withanolídeos (KSM-66, Sensoril) têm evidência clínica melhor que o pó bruto. Efeito máximo após 4–8 semanas de uso contínuo."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "aplicacoes": [
+          {
+            "forma": "Pasta para articulações",
+            "preparo": "Pó de raiz misturado com óleo de gergelim aquecido. Aplicar nas articulações doloridas por 20–30 min.",
+            "indicacoes": [
+              "artrite",
+              "dores musculares",
+              "dores articulares crônicas"
+            ]
+          },
+          {
+            "forma": "Máscara facial (pó)",
+            "preparo": "Pó de raiz + mel + iogurte. Aplicar 15 min, enxaguar.",
+            "indicacoes": [
+              "pele seca",
+              "envelhecimento",
+              "acne"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Adaptógeno (redução de cortisol, modulação HPA)",
-          "Ansiolítico / sedativo leve (somnifera — indutor de sono)",
-          "Tônico muscular (aumento de força e massa magra — estudos atletas)",
-          "Imunomodulador",
-          "Neuroprotetor (witaferinas — proteção contra neurodegenarção)",
-          "Anabolizante leve (aumento de testosterona — estudos masculinos)",
-          "Antidiabético (sensibilizador de insulina)",
-          "Cardioprotetor (redução de LDL)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Doenças autoimunes — imunomodulador",
-          "Hipertireoidismo — estimula tireóide",
-          "Gestação — alcalóides, evitar",
-          "Transplantados — imunomodulação"
-        ],
-        "componentes_ativos": [
-          {
-            "label": "WITANOLÍDEOS (witaferina A, witanolido D)",
-            "texto": "Adaptogênico, imunomodulador, anti-inflamatório, antitumoral"
-          },
-          {
-            "label": "ALCALÓIDES (somnifério, anaferina)",
-            "texto": "Sedativo, ansiolítico"
-          },
-          {
-            "label": "SAPONINAS ESTEROÍDICAS",
-            "texto": "Anabolizante, adaptogênico"
-          },
-          {
-            "label": "WITANOLÍDEOS GLICOSILADOS",
-            "texto": "Imunomodulador, neuroprotetor"
-          },
-          {
-            "label": "POLISSACARÍDEOS",
-            "texto": "Imunomodulador"
-          }
-        ],
-        "evidencia": [
-          {
-            "indicacao": "Estresse e ansiedade",
-            "evidencia": "Forte",
-            "populacao": "Chandrasekhar et al. (2012)"
-          },
-          {
-            "indicacao": "Insônia",
-            "evidencia": "Moderada",
-            "populacao": "Langade et al. (2019)"
-          },
-          {
-            "indicacao": "Força muscular e recuperação",
-            "evidencia": "Moderada",
-            "populacao": "Wankhede et al. (2015)"
-          },
-          {
-            "indicacao": "Testosterona masculina",
-            "evidencia": "Moderada",
-            "populacao": "Ambiye et al. (2013)"
-          },
-          {
-            "indicacao": "Função tireoidiana (hipotireoidismo)",
-            "evidencia": "Preliminar",
-            "populacao": "Sharma et al. (2018)"
-          }
+        "acoes_farmacologicas": [
+          "Adaptogênico: withanolídeos normalizam cortisol e modulam eixo HPA (ação hipocortisólica em estados de hiperestresse)",
+          "Ansiolítico: sitoindosídeos e withanolídeos atuam em receptores GABA-A; RCTs mostram redução de ansiedade comparável ao lorazepam em alguns estudos",
+          "Neuroprotetor: withanamides protegem neurônios contra β-amiloide (modelos de Alzheimer)",
+          "Anti-inflamatório: withaferin A inibe NF-κB e IκB kinase — um dos anti-inflamatórios mais potentes de origem vegetal",
+          "Imunomodulador: aumenta NK cells, linfócitos T e produção de IgG",
+          "Anabólico leve: aumenta testosterona e DHEA em homens (RCTs) — útil em andropenia e fadiga adrenal",
+          "Hipoglicemiante: estudos clínicos em DM2 com redução de glicemia de jejum",
+          "Tireoestimulante: aumenta T3 e T4 em estudos clínicos (hipotireoidismo)"
         ],
         "contraindicacoes": [
-          "Doenças autoimunes — imunomodulador",
-          "Hipertireoidismo — estimula tireóide",
-          "Gestação — alcalóides, evitar",
-          "Transplantados — imunomodulação"
+          "Hipertireoidismo: pode exacerbar (estimula produção hormonal tireoidiana)",
+          "Doenças autoimunes ativas: imunomodulador pode exacerbar lúpus, artrite reumatoide, EM",
+          "Gestação: contraindicado — withanolídeos podem estimular contrações uterinas",
+          "Solanaceae: alergia cruzada com tomate, pimentão, batata"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "efeitos_adversos": [
+          "Distúrbios gastrointestinais em doses elevadas",
+          "Sonolência (especialmente em altas doses à noite)",
+          "Raramente: hepatotoxicidade em doses muito elevadas (casos isolados relatados)"
+        ],
+        "interacoes": [
+          "Sedativos/hipnóticos: potenciação",
+          "Imunossupressores: pode antagonizar (imunoestimulante)",
+          "Tireoidianos: pode alterar necessidade de dose (aumenta T3/T4)",
+          "Hipoglicemiantes: potenciação"
+        ],
+        "dose_segura": "Extrato padronizado (2,5–5% withanolídeos): 300–600 mg/dia. Pó de raiz: 3–6 g/dia. Uso seguro documentado por 8–12 semanas em estudos. Uso tradicional: sem limitação de tempo.",
+        "nivel_evidencia": "Metanálise (2021, 5 RCTs, n=400+): redução significativa de cortisol e escores de estresse vs. placebo. RCTs para ansiedade (6 estudos), cognição (3 estudos), testosterona (2 estudos), DM2 (3 estudos), hipotireoidismo (2 estudos). Uma das plantas adaptogênicas mais bem estudadas do mundo."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Forte, terroso, levemente amargo e amónico (cavalo — 'ashva' em sânscrito); característico e persistente",
+        "sabor": "Amargo-terroso marcado, levemente adstringente; sabor medicinal forte que pede máscara (leite, mel)",
+        "cor_visual": "Pó bege-acinzentado a marrom-claro; decocção castanho-amarelada",
+        "textura": "Pó fino; decocção levemente espessa",
+        "sensacao": "Aquecedor e tonificante profundo; efeito adaptogênico perceptível após 2–4 semanas"
       },
       "cultura": {
-        "historia": "O ashwagandha é descrito nos textos ayurvédicos Charaka Samhita (séc. I–II d.C.) como rasayana — erva de rejuvenescimento. A palavra rasayana significa \"caminho da essência\" — ervas que restauram a vitalidade fundamental. O Charaka Samhita descreve o ashwagandha como dando força de cavalo — consistente com o nome (\"cheiro de cavalo\").  O paradoxo do ashwagandha é ser simultaneamente energizante (tônico muscular, testosterona) e sedativo (somnifera — induz sono). A resolução farmacológica: é adaptogênico — normaliza o que está desequilibrado. Em estressado e exausto, acalma. Em sedentário e depletado, tonifica.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "Uma das plantas mais importantes do Ayurveda — descrita no Charaka Samhita (séc II aC) como 'rasayana' (rejuvenescedor). O nome sânscrito significa 'cheiro de cavalo' (ashva = cavalo, gandha = cheiro) — referência tanto ao odor forte da raiz quanto à força que confere ao usuário. Por 3.000 anos, usada como tonificante geral para guerreiros, idosos e convalescentes. Na era moderna: planta que mais cresceu em pesquisa clínica nos últimos 20 anos.",
+        "uso_tradicional": "Ayurveda: rasayana — adaptogênico e rejuvenescedor de máxima categoria. Uso para guerreiros e atletas. Medicina Unani (islâmica): tonificante e afrodisíaco. África do Norte: doenças debilitantes. Brasil: introduzida recentemente como suplemento adaptogênico premium.",
+        "simbolismo": "Força do cavalo, longevidade, vitalidade. No Ayurveda: planta da 'segunda juventude'. Símbolo do adaptogênese — a capacidade de equilibrar, não de estimular.",
+        "curiosidades": [
+          "KSM-66 e Sensoril são os dois extratos de ashwagandha mais estudados do mundo — cada um com dezenas de RCTs exclusivos",
+          "'Ashwa' (cavalo) no nome reflete tanto o odor equino da raiz quanto a crença de que confere a força e a resistência de um cavalo ao usuário",
+          "Withaferin A (ativo da ashwagandha) está sendo pesquisado como agente anticancerígeno em ensaios clínicos fase I/II para câncer de mama e pulmão",
+          "É a única planta adaptogênica documentada para aumentar T3 e T4 em hipotireoidismo subclínico — potencial disruptivo na medicina convencional"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global / Ayurveda",
-        "status_anvisa": "Suplemento alimentar. Extratos padronizados amplamente vendidos.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Raiz colhida 8–12 meses após plantio"
+        "status_brasil": "Sem registro ANVISA como fitoterápico. Amplamente comercializada como suplemento alimentar importado. Crescimento explosivo no mercado.",
+        "status_europa": "EMA: sem monografia formal. Comercializada como suplemento. Crescente regulamentação em alguns países.",
+        "farmacopeia": "Ayurvedic Pharmacopoeia of India: Ashwagandha — monografia completa. Não consta em farmacopeias europeias.",
+        "registro": "Suplemento amplamente disponível. Sem medicamento registrado na UE ou Brasil."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Pó de raiz a granel",
+          "Cápsulas de extrato padronizado (KSM-66, Sensoril)",
+          "Tintura",
+          "Pó para smoothies",
+          "Fórmulas combinadas adaptogênicas"
+        ],
+        "preco_estimado": "Pó: R$ 30–70/100 g. Cápsulas (KSM-66): R$ 60–200/frasco. Tintura: R$ 40–90/50 mL.",
+        "disponibilidade": "Boa e crescendo — lojas de suplementos, farmácias naturais, online. Mercado em expansão no Brasil.",
+        "como_escolher": "Extratos padronizados em withanolídeos (2,5–5%) com marcas KSM-66 ou Sensoril têm maior evidência clínica. Pó a granel: verificar origem (Rajastão, Índia) e laudo de metais pesados.",
+        "armazenamento": "Pó e cápsulas: local fresco, seco, escuro. Validade: 18–24 meses."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Estresse crônico e ansiedade — redução de cortisol documentada em metanálise",
+          "Fadiga adrenal e burnout — restauração do eixo HPA",
+          "Performance cognitiva e memória (estudos clínicos)",
+          "Suporte hormonal masculino (testosterona/DHEA em andropenia)"
+        ],
+        "diferenciais": [
+          "Maior número de RCTs entre plantas adaptogênicas — evidência clínica superior",
+          "Única planta documentada para aumentar T3/T4 em hipotireoidismo subclínico",
+          "Withaferin A: promissor como agente anticancerígeno (fase I/II em andamento)",
+          "3.000 anos de tradição ayurvédica validada por ciência moderna — convergência histórica rara"
+        ],
+        "sinergias": [
+          "Ashwagandha + tulsi: adaptogênico duplo ayurvédico para estresse e imunidade",
+          "Ashwagandha + rhodiola: fadiga adrenal e performance cognitiva",
+          "Ashwagandha + magnésio: insônia e ansiedade noturna",
+          "Ashwagandha + cúrcuma: anti-inflamatório e adaptogênico sistêmico"
+        ],
+        "alertas": [
+          "HIPERTIREOIDISMO: contraindicado — pode aumentar T3/T4",
+          "DOENÇAS AUTOIMUNES ATIVAS: evitar — imunoestimulante pode exacerbar",
+          "GESTAÇÃO: contraindicado",
+          "Casos raros de hepatotoxicidade relatados — monitorar enzimas hepáticas em uso prolongado"
+        ]
       }
     },
     {
       "slug": "ginseng-asiatico",
-      "nome_popular": "Ginseng-Asiático",
-      "nome_cientifico": "Panax ginseng C.A.Mey.",
-      "tagline": "A raiz da imortalidade — o adaptógeno mais famoso do mundo, com 5.000 anos de uso documentado na medicina chinesa e coreana e o maior volume de pesquisas clínicas entre todas as plantas do catálogo.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Panax ginseng C.A.Mey.",
-        "familia_botanica": "Araliaceae",
-        "tipo_botanico": "Adaptógeno / tônico geral / nootrópico",
-        "parte_usada": "Raiz (6+ anos de cultivo para uso medicinal premium).",
-        "sinonimos": [
-          "Ginseng · ginseng-asiático · ginseng-coreano · ginseng-chinês",
-          "Asian ginseng (inglês) · Ginseng (universal — emprestado do chinês)",
-          "Renshen (chinês — \"raiz de homem\" — pela forma antropomórfica)",
-          "DISTINÇÃO: Panax ginseng (asiático) ≠ Panax quinquefolius (americano) ≠ Eleutherococcus senticosus (ginseng-siberiano — não é Panax)"
+        "nome_popular": "Ginseng-asiático",
+        "nome_cientifico": "Panax ginseng",
+        "familia": "Araliaceae",
+        "outros_nomes": [
+          "ginseng-coreano",
+          "ginseng-vermelho",
+          "ginseng-chinês",
+          "Korean red ginseng (ing.)",
+          "人参 (renshen)"
+        ],
+        "origem": "Manchúria (China nordeste), Coreia, Sibéria",
+        "partes_usadas": [
+          "raiz seca (4–6 anos de cultivo)",
+          "raiz vermelha (processada a vapor)",
+          "raiz branca (seca ao sol)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-adocicado complexo, levemente terroso, resinoso suave, amadeirado. O amargo do ginseng é diferente de todos os outros — tem dulçor intrínseco que equilibra.",
-        "aroma": "Terroso-amadeirado, levemente resinoso, raiz seca com fundo de caramelo suave.",
-        "cor_da_infusao": "Amarelo-ouro pálido a âmbar. #D4B848",
-        "intensidade": "3/5 — complexidade elegante.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "descricao_botanica": "Planta herbácea perene de 30–60 cm, extremamente lenta (4–6 anos para raiz comercial). Folhas palmadas compostas (5 folíolos) em verticilo único. Flores brancas em umbela simples. Frutos vermelhos vistosos. A raiz (a parte medicinal) é fusiforme, ramificada, frequentemente com forma humanoide — daí o nome 'Panax' (grego: pan=todos + akos=remédio = remédio para tudo) e o valor mítico.",
+        "composicao_quimica": [
+          "Ginsenosídeos (saponinas triterpenóides, 2–3%): Rb1, Rb2, Rc, Rd (grupo Rb), Rg1, Re, Rf (grupo Rg) — 40+ ginsenosídeos identificados",
+          "Polissacarídeos: ginsenan S-IIA, pancalyx — imunomoduladores",
+          "Poliinos: panaxinol, panaxidol",
+          "Peptídeos ricos em arginina",
+          "Vitaminas B1, B2, B12; minerais: Fe, Mn, Co, Ge",
+          "Ginsenosídeo Rg3 (ginseng vermelho): anticancerígeno — formado pela esterilização a vapor"
+        ],
+        "bioma": "Temperado frio — florestas mistas da Manchúria e Coreia, sombra parcial",
+        "cultivo": "Sombra parcial (30–35% de luz), solo rico e fértil, pH 5,5–6,5, temperaturas frias. Crescimento muito lento: 4–6 anos para raízes medicinais, 6–12 anos para raízes premium. Cultivo altamente especializado e caro. Coreia do Sul: principal produtor mundial de ginseng vermelho."
       },
       "preparo": {
-        "temperatura_ideal": "90 °C | Tempo: 15–20 min (raiz dura — decocção) | Quantidade: 2–3 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "2–3 g/250 ml",
-        "metodo": "Decocção suave.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã (tônico/energético). Evitar à noite.",
-        "combina_com": "Ginkgo · Schisandra · Ashwagandha · Mel · Canela (blends adaptogênicos premium)"
+        "formas": [
+          {
+            "tipo": "Decocção da raiz (uso tradicional)",
+            "descricao": "3–9 g de raiz seca em 300 mL. Ferver 30–45 min em recipiente de barro ou inox (nunca alumínio). Coar. Dividir em 2–3 tomadas ao longo do dia.",
+            "indicacoes": [
+              "fadiga profunda",
+              "imunidade",
+              "cognição",
+              "vitalidade geral",
+              "adaptogênico"
+            ]
+          },
+          {
+            "tipo": "Extrato padronizado (cápsulas/comprimidos)",
+            "descricao": "200–400 mg de extrato padronizado (G115 — 4% ginsenosídeos), 1–2×/dia. Com refeição.",
+            "indicacoes": [
+              "estresse",
+              "cognição",
+              "imunidade",
+              "disfunção erétil",
+              "menopausa"
+            ]
+          },
+          {
+            "tipo": "Ginseng vermelho em sachê/bebida",
+            "descricao": "Extratos líquidos de ginseng vermelho coreano (3.000–6.000 mg/sachê). 1 sachê/dia.",
+            "indicacoes": [
+              "energia",
+              "vitalidade",
+              "imunidade",
+              "performance"
+            ]
+          },
+          {
+            "tipo": "Pó de raiz",
+            "descricao": "1–2 g de pó em chá, suco ou smoothie. 1×/dia.",
+            "indicacoes": [
+              "suplementação geral",
+              "adaptogênico"
+            ]
+          }
+        ],
+        "dicas": "Ginseng vermelho (cozido a vapor) tem ginsenosídeos diferentes do branco (seco ao sol) — mais estimulante e com Rg3 anticancerígeno. G115 (extrato padronizado por Pharmaton) tem o maior número de ECRs publicados. Ciclo de uso: 3 meses ON, 1 mês OFF é recomendado na tradição."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "aplicacoes": [
+          {
+            "forma": "Creme/sérum de ginseng",
+            "preparo": "Extrato de ginseng em bases cosméticas. Produtos prontos disponíveis.",
+            "indicacoes": [
+              "antienvelhecimento",
+              "firmeza da pele",
+              "brilho",
+              "círculos escuros"
+            ]
+          },
+          {
+            "forma": "Tônico capilar",
+            "preparo": "Extrato de ginseng diluído em água (1:10). Aplicar no couro cabeludo, massagear.",
+            "indicacoes": [
+              "queda de cabelo",
+              "circulação capilar",
+              "crescimento"
+            ]
+          }
+        ]
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [
-          "Adaptógeno (modulação HPA, HPTA)",
-          "Nootrópico (melhora memória, concentração, velocidade de processamento)",
-          "Tônico sexual (disfunção erétil — evidência moderada-forte)",
-          "Imunomodulador",
-          "Cardioprotetor",
-          "Antidiabético",
-          "Anticancerígeno (pesquisa extensiva — ginsenóides)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Hipertensão — estimulante cardiovascular",
-          "Doenças autoimunes — imunomodulador",
-          "Gestação — dados insuficientes",
-          "Insônia — estimulante",
-          "Uso concomitante com warfarina — reduz eficácia anticoagulante"
-        ],
-        "componentes_ativos": [
-          {
-            "label": "GINSENÓIDES (Rb1, Rg1, Rg3, Re...)",
-            "texto": "Adaptogênico, nootrópico, imunomodulador — família exclusiva do gênero Panax"
-          },
-          {
-            "label": "POLISSACARÍDEOS (ginsanas)",
-            "texto": "Imunomodulador, hipoglicemiante"
-          },
-          {
-            "label": "PEPTÍDEOS",
-            "texto": "Imunomodulador"
-          },
-          {
-            "label": "ÁCIDO PANTOTENOICO",
-            "texto": "Nutritivo, energético"
-          }
-        ],
-        "evidencia": [
-          {
-            "indicacao": "Fadiga física e mental",
-            "evidencia": "Moderada-forte",
-            "populacao": "Reay et al. (2005, 2006)"
-          },
-          {
-            "indicacao": "Disfunção erétil",
-            "evidencia": "Moderada",
-            "populacao": "Jang et al. (2008) meta-análise"
-          },
-          {
-            "indicacao": "Memória e cognição",
-            "evidencia": "Moderada",
-            "populacao": "Geng et al. (2010)"
-          },
-          {
-            "indicacao": "Imunidade (gripes)",
-            "evidencia": "Moderada",
-            "populacao": "McElhaney et al. (2006)"
-          },
-          {
-            "indicacao": "Diabetes tipo 2 (adjuvante)",
-            "evidencia": "Moderada",
-            "populacao": "Vuksan et al. (2000)"
-          }
+        "acoes_farmacologicas": [
+          "Adaptogênico: ginsenosídeos normalizam eixo HPA e modulam resposta ao estresse",
+          "Imunomodulador: polissacarídeos e ginsenosídeos ativam NK cells, macrófagos, linfócitos T",
+          "Nootropico: Rg1 melhora LTP (potenciação de longa duração) e síntese de acetilcolina — cognição e memória",
+          "Energizante: aumenta síntese de ATP mitocondrial (ginsenosídeos Rb1 e Rg1)",
+          "Vasodilatador: Rg1 aumenta síntese de NO endotelial — útil em disfunção erétil e circulação",
+          "Hipoglicemiante: estudos clínicos em DM2 e pré-diabetes",
+          "Anticancerígeno (pré-clínico/clínico): Rg3 (ginseng vermelho) — estudos phase II para quimioprevenção"
         ],
         "contraindicacoes": [
-          "Hipertensão — estimulante cardiovascular",
-          "Doenças autoimunes — imunomodulador",
-          "Gestação — dados insuficientes",
-          "Insônia — estimulante",
-          "Uso concomitante com warfarina — reduz eficácia anticoagulante"
+          "Hipertensão não controlada: ginsenosídeos podem aumentar PA em alguns indivíduos",
+          "Doenças hemorrágicas ou uso de anticoagulantes (risco de sangramento)",
+          "Insônia: estimulante — evitar à noite",
+          "Gestação: contraindicado em doses medicinais",
+          "Doenças hormonais sensíveis a estrógeno: ginsenosídeos têm atividade estrogênica leve"
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "efeitos_adversos": [
+          "Insônia, palpitações, hipertensão (síndrome do abuso do ginseng em doses excessivas)",
+          "Cefaleia, irritabilidade",
+          "Sangramento vaginal em mulheres pós-menopausa (atividade estrogênica)",
+          "Hipoglicemia em diabéticos medicados"
+        ],
+        "interacoes": [
+          "Varfarina: aumenta risco de sangramento — monitorar RNI",
+          "Digoxina: aumenta níveis séricos da digoxina",
+          "MAOIs: possível interação grave (tremores, irritabilidade)",
+          "Hipoglicemiantes: potenciação — monitorar glicemia",
+          "Cafeína: efeito estimulante aditivo"
+        ],
+        "dose_segura": "Raiz seca: 1–3 g/dia (decocção). Extrato G115 (4% ginsenosídeos): 200–400 mg/dia. Uso cíclico: 3 meses ON, 1 mês OFF. EMA/ESCOP: uso tradicional bem estabelecido.",
+        "nivel_evidencia": "EMA/HMPC: uso medicinal tradicional bem estabelecido para fadiga mental, melhora cognitiva. Extrato G115: > 30 RCTs publicados. Metanálises confirmam eficácia para cognição, imunidade e DM2. Uma das plantas mais estudadas da história da farmacognosia."
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "aroma": "Terroso, suave, levemente adocicado e herbáceo; ginseng vermelho tem notas mais tostadas",
+        "sabor": "Amargo-adocicado, terroso, levemente picante; ginseng vermelho: mais doce-amargo-tostado",
+        "cor_visual": "Raiz branca: bege-claro; raiz vermelha: castanho-avermelhada translúcida; extrato: amarelo a laranja",
+        "textura": "Raiz seca: dura e lenhosa; pó fino; decocção levíssima",
+        "sensacao": "Energizante e tonificante gradual; calor interno sutil; sem estimulação brusca como cafeína"
       },
       "cultura": {
-        "historia": "O ginseng é a planta mais cara da história medicinal — raízes com mais de 100 anos de cultivo selvagem atingem dezenas de milhares de dólares em leilões coreanos. A China imperial criou rotas comerciais exclusivas de ginseng; guerras foram travadas por territórios onde crescia Panax ginseng selvagem.  O nome \"ginseng\" vem do mandarim rén shēn — \"raiz de homem\" — pela forma anthropomórfica característica das raízes mais velhas, que parecem figuras humanas com braços e pernas. Essa similaridade visual entre a raiz e o corpo humano foi interpretada como signo de que a planta curava o ser humano inteiro — Panax vem do grego \"tudo-cura\" (pan = tudo, akos = remédio). É a única planta cujo nome botânico afirma explicitamente curar tudo.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "A planta mais venerada da medicina asiática por mais de 5.000 anos. Mencionada no Shennong Bencao Jing (séc I aC — a mais antiga farmacopeia chinesa) como 'remédio superior' para longevidade. Na Coreia, raízes silvestres centenárias valiam fortunas — batalhas eram travadas por territórios com ginseng selvagem. O ginseng vermelho coreano (Jeong Kwan Jang, desde 1899) é hoje uma indústria de bilhões de dólares. No século XX, pesquisadores soviéticos o estudaram intensamente para preparar atletas e militares (criando o conceito moderno de 'adaptogênico').",
+        "uso_tradicional": "TCM: 'grande tônico' do Qi — repõe energia vital, fortalece Qi de Pulmão, Baço e Coração. Coreia: ginseng vermelho para longevidade, virilidade, imunidade. Japão: energia e cognição. Rússia soviética: adaptogênico para astronautas e atletas olímpicos. Brasil: chegou no séc XX com imigrantes coreanos — hoje amplamente consumido.",
+        "simbolismo": "Longevidade suprema, vitalidade, sabedoria. A forma humanoide da raiz (Ginseng Man) é símbolo de perfeição e cura total. Na cultura coreana: presente mais valioso que se pode oferecer.",
+        "curiosidades": [
+          "Uma raiz de ginseng selvagem de 100 anos pode ser vendida por mais de US$ 1 milhão em leilões coreanos",
+          "O conceito científico de 'adaptogênico' foi criado pelo farmacologista soviético Nikolai Lazarev em 1947 estudando o ginseng",
+          "O ginseng vermelho coreano (vapor-cozido) tem ginsenosídeo Rg3 — não presente no ginseng branco; formado apenas pela esterilização",
+          "Panax = 'panacea' grego — os chineses acreditavam que curava literalmente todas as doenças, um dos poucos casos de unanimidade cultural"
+        ]
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Indicações: tônico geral, adaptógeno, coadjuvante em fadiga.",
-        "status_ema": "Monografia HMPC — well-established use para fadiga.",
-        "status_fda": "GRAS para uso alimentar. Suplemento amplamente vendido.",
-        "certificacao_organica": "",
-        "sazonalidade": "Raiz colhida após mínimo 4–6 anos (comercial); 10+ anos (premium)"
+        "status_brasil": "ANVISA: sem registro específico como fitoterápico. Amplamente disponível como suplemento alimentar importado.",
+        "status_europa": "EMA/HMPC: uso medicinal tradicional bem estabelecido para fadiga mental e física, concentração. Monografia publicada. ESCOP monografia.",
+        "farmacopeia": "Farmacopeia Europeia (Ph.Eur.) — monografia Ginseng radix. Farmacopeia Chinesa. Farmacopeia Coreana.",
+        "registro": "EMA: produto medicinal tradicional registrado em vários países europeus. Brasil: suplemento. Extrato G115 (Ginsana): produto registrado em múltiplos países."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
+        "formas_disponiveis": [
+          "Raiz seca inteira ou em fatias (ginseng branco)",
+          "Raiz vermelha seca",
+          "Extrato padronizado em cápsulas (G115, KRG)",
+          "Extratos líquidos de ginseng vermelho (sachês coreanos)",
+          "Pó de raiz",
+          "Cosméticos com ginseng"
+        ],
+        "preco_estimado": "Raiz branca: R$ 50–200/50 g (grau comercial). Cápsulas G115: R$ 80–200/frasco. Sachês ginseng vermelho: R$ 150–400/caixa.",
+        "disponibilidade": "Boa — lojas coreanas, farmácias, online, lojas de suplementos. Ginseng vermelho em lojas especializadas coreanas.",
+        "como_escolher": "Raiz: prefiro marcas coreanas certificadas (KGC — Korea Ginseng Corp). Cápsulas: extrato G115 tem maior evidência clínica. Verificar raízes com pelo menos 4–6 anos de cultivo. Cuidado com adulterações em produtos baratos.",
+        "armazenamento": "Raiz seca: local fresco, seco, hermético. Validade: 2–3 anos. Cápsulas: local fresco, seco. Validade: conforme fabricante."
+      },
+      "destaques": {
+        "principais_usos": [
+          "Fadiga mental e física crônica (adaptogênico — EMA bem estabelecido)",
+          "Cognição e memória (nootropico — múltiplos RCTs)",
+          "Disfunção erétil e vitalidade masculina (vasodilatação por NO)",
+          "Imunidade — prevenção de gripes e infecções (estudos clínicos)"
+        ],
+        "diferenciais": [
+          "5.000 anos de uso documentado — a planta medicinal mais bem documentada da história asiática",
+          "Extrato G115: > 30 RCTs — maior número para qualquer extrato herbáceo padronizado",
+          "Conceito de 'adaptogênico' foi criado estudando o ginseng — a planta que definiu a categoria",
+          "Ginseng vermelho vs. branco: dois produtos distintos com ginsenosídeos diferentes"
+        ],
+        "sinergias": [
+          "Ginseng + ashwagandha: adaptogênico total (Oriente + Ocidente)",
+          "Ginseng + ginkgo: cognição e circulação cerebral",
+          "Ginseng + vitamina C: imunidade potenciada",
+          "Ginseng + maca: energia e performance (cautela com estimulação excessiva)"
+        ],
+        "alertas": [
+          "Síndrome do abuso: insônia, hipertensão, palpitações em doses excessivas ou uso contínuo sem pausa",
+          "MAOIs: interação grave — não combinar",
+          "Varfarina: monitorar RNI (risco de sangramento)",
+          "Uso cíclico 3:1 (3 meses ON, 1 OFF) — evitar tolerância e efeitos adversos"
+        ]
       }
     },
     {
