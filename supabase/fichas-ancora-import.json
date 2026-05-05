@@ -10002,268 +10002,425 @@
       "slug": "tomilho",
       "nome_popular": "Tomilho",
       "nome_cientifico": "Thymus vulgaris L.",
-      "tagline": "O antisséptico aromático do mediterrâneo — expectorante e antimicrobiano de primeira linha com evidência clínica para bronquite aguda superior a muitos fármacos convencionais.",
+      "tagline": "A especiaria que é antibiótico — timol e carvacrol com atividade antibacteriana documentada contra patógenos respiratórios, expectorante por mecanismo colinérgico e antiespasmódico brônquico com monografia EMA para bronquite.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Thymus vulgaris L.",
-        "familia_botanica": "Lamiaceae",
-        "tipo_botanico": "Fitoterápico expectorante / antimicrobiano / antisséptico",
-        "parte_usada": "Partes aéreas (folhas e flores), frescas ou secas.",
+        "familia_botanica": "Lamiaceae (Labiatae)",
+        "tipo_botanico": "Planta medicinal expectorante / antibacteriana / antiespasmódica brônquica",
+        "parte_usada": "Partes aéreas (folhas + ramos finos com flores — infusão, xarope, tintura); óleo essencial (uso externo — inalação, não ingestão direta).",
         "sinonimos": [
-          "Tomilho · tomilho-comum · tomilho-vulgar",
-          "Thyme (inglês) · Thym (francês) · Thymian (alemão)",
-          "Timo (italiano/espanhol)"
+          "tomilho · timo · timão · garden thyme",
+          "Thymus zygis L. (tomilho-espanhol — composição similar)",
+          "Thymus serpyllum L. (tomilho-rasteiro — uso medicinal paralelo)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Aromático-herbáceo quente, levemente picante, timol característico, levemente amargo, persistente e aquecedor.",
-        "aroma": "Timol pungente e quente, herbal-mediterrâneo intenso, carvacrol, leve floral.",
-        "cor_da_infusao": "Verde-amarelado a âmbar. #C8B04A",
-        "intensidade": "3–4/5 — aromático dominante.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Aromático-fenólico intenso com notas quentes de timol e carvacrol — picante-herbáceo, levemente amargo, com retrogusto resinoso aquecedor persistente.",
+        "aroma": "Aromático intenso e inconfundível — timol e carvacrol dominam com notas de pinheiro, especiaria quente e fundo terroso. Um dos aromas mais reconhecíveis da culinária mediterrânea.",
+        "cor_da_infusao": "Amarelo-esverdeado a âmbar claro; levemente turva por óleos essenciais emulsionados.",
+        "intensidade": "4/5 — aromático muito marcante, quente, picante-resinoso; perfil que domina misturas.",
+        "notas": "O timol do tomilho é o mesmo composto ativo do Listerine — o antisséptico bucal mais vendido do mundo usa timol sintético baseado no modelo do tomilho. A planta entrega o mesmo composto em forma natural, integrado em uma matriz de mais de 40 constituintes sinérgicos.",
+        "bioma_de_origem": "Mediterrâneo ocidental (Espanha, sul da França, Itália). Cultivado amplamente em todo o mundo temperado e tropical.",
+        "distribuicao_geografica": [
+          "Mediterrâneo (origem): maior diversidade e qualidade de óleos essenciais",
+          "Europa temperada: cultivo extensivo — principal especiaria da culinária francesa e italiana",
+          "Brasil: cultivo em RS, SC, SP, MG — adaptado a climas temperados e de altitude"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "85–90 °C (timol volátil — não ferver).",
-        "tempo_de_infusao": "",
-        "quantidade": "1–2 g de partes aéreas secas para 250 ml.",
-        "metodo": "Infusão coberta.",
-        "reinfusoes": "",
-        "melhor_momento": "3x ao dia em episódios respiratórios agudos.",
-        "combina_com": "Mel · Limão · Gengibre · Sabugueiro · Guaco · Eucalipto (blends respiratórios)"
+        "temperatura_ideal": "85–90 °C — preservar óleos essenciais (timol, carvacrol termossensíveis em ebulição prolongada). COBRIR obrigatoriamente.",
+        "tempo_de_infusao": "5–8 minutos coberto. Descobrir apenas para servir — perda de óleos essenciais por volatilização sem tampa.",
+        "quantidade": "Partes aéreas secas: 2–4 g / 200 ml. Frescas: 4–8 g / 200 ml.",
+        "metodo": "Infusão coberta — obrigatório. Para xarope expectorante: decocção de 5 g em 250 ml por 5 min + 150 g mel = xarope caseiro para tosse. Inalação: 2–3 gotas de óleo essencial em bowl de água quente (não ingerir óleo essencial puro).",
+        "reinfusoes": "Não recomendada — perda de > 60% de óleos essenciais.",
+        "melhor_momento": "Expectorante: manhã e tarde durante episódios respiratórios (3×/dia). Digestivo: após refeições. Noite: com mel para tosse noturna.",
+        "combina_com": "Mel (sinergia antibacteriana e expectorante), limão, gengibre, própolis verde, sabugueiro (gripe), alcaçuz (sinergia expectorante), tansagem."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada a boa — óleo essencial e extratos com ampla documentação antimicrobiana tópica.",
+        "aplicacoes": [
+          {
+            "titulo": "Inalação (congestão nasal e bronquite)",
+            "texto": "2–3 gotas de óleo essencial de tomilho em bowl de água quente a 60 °C — inalação do vapor por 10 min com toalha cobrindo a cabeça. Timol e carvacrol em vapor: descongestionantes (inibição de reflexo de espasmo brônquico, estimulação de secreção mucociliar). Não usar em crianças < 6 anos (risco de broncoespasmo paradoxal)."
+          },
+          {
+            "titulo": "Antisséptico bucal e gengival",
+            "texto": "Infusão concentrada como bochecho para gengivite, aftas e faringite. Timol: inibe S. mutans, S. salivarius, Porphyromonas gingivalis in vitro com CIM muito favorável. Base do Listerine."
+          },
+          {
+            "titulo": "Antifúngico tópico (óleo essencial diluído)",
+            "texto": "Óleo essencial de tomilho diluído em óleo carreador (1–2%) para candidíase cutânea, tinha e onicomicose. Atividade antifúngica de timol e carvacrol contra Candida albicans e dermatófitos documentada in vitro. Carvacrol 0,05%: CIM comparável a fluconazol contra C. albicans."
+          }
+        ],
+        "contraindicacoes": "Óleo essencial puro: NUNCA ingerir — timol puro é hepatotóxico e convulsivante em concentrações elevadas. Não aplicar óleo essencial puro na pele (queimadura química). Crianças < 6 anos: inalação com óleo essencial contraindicada. Gestantes: óleo essencial contraindic.; chá culinárico em doses normais seguro."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Expectorante (fluidifica muco brônquico)",
-          "Antisséptico respiratório (timol — antimicrobiano de mucosas)",
-          "Antitussígeno",
-          "Broncodilatador leve",
-          "Antimicrobiano potente (timol — bactérias e fungos)",
-          "Anti-inflamatório",
-          "Antioxidante",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Alergia às Lamiaceae",
-          "Gestação em doses de OE — timol emenagogo; infusão segura moderadamente",
-          "Hipotireoidismo — cautela em uso regular intenso"
+          "Expectorante / mucolítico (timol + carvacrol — estimulação de atividade mucociliar e secreção brônquica fluida)",
+          "Antiespasmódico brônquico (flavonoides — relaxamento de músculo liso brônquico)",
+          "Antibacteriano (timol, carvacrol — amplo espectro, especialmente patógenos respiratórios)",
+          "Antifúngico (timol, carvacrol — Candida spp., dermatófitos)",
+          "Anti-inflamatório (ácido rosmarínico, flavonoides — COX-2)",
+          "Antioxidante (ácido rosmarínico — ORAC excepcional)"
         ],
         "componentes_ativos": [
           {
-            "label": "TIMOL",
-            "texto": "20–54% do OE — Antimicrobiano potente, expectorante, antisséptico"
+            "label": "TIMOL (5-metil-2-isopropil fenol) — 20–54% do óleo essencial",
+            "texto": "Principal marcador ativo. Antibacteriano de amplo espectro: mecanismo de disrupção da membrana bacteriana (despolarização, aumento de permeabilidade, lise). Especialmente ativo contra Streptococcus pneumoniae, S. pyogenes, Haemophilus influenzae (patógenos respiratórios). Expectorante: estimula receptores colinérgicos brônquicos — aumenta atividade mucociliar e secreção de muco fluido. Antifúngico. Base ativa do Listerine e de produtos antissépticos industriais."
           },
           {
-            "label": "CARVACROL",
-            "texto": "1–10% do OE — Antimicrobiano, anti-inflamatório"
-          },
-          {
-            "label": "P-CIMENO",
-            "texto": "Presente — Antimicrobiano"
+            "label": "CARVACROL (2-metil-5-isopropil fenol) — 1–35% do óleo essencial",
+            "texto": "Isômero de posição do timol com atividade antibacteriana e antifúngica complementar. Antibacteriano de amplo espectro (mesmo mecanismo do timol + inibição de ATPases bacterianas). Anti-inflamatório via inibição de NF-κB. Sinérgico com timol — combinação tem atividade maior que a soma das partes individualmente."
           },
           {
             "label": "ÁCIDO ROSMARÍNICO",
-            "texto": "Presente — Antioxidante, anti-inflamatório"
+            "texto": "Antioxidante potentíssimo (ORAC superior à vitamina E em base de peso). Anti-inflamatório (inibição COX-2, NF-κB). Antiviral (inibição de protease de influenza in vitro). Anti-alergênico (inibição de IgE e histamina). Tomilho tem uma das concentrações mais altas de ácido rosmarínico entre as Lamiaceae."
           },
           {
-            "label": "TIMOSINA",
-            "texto": "Flavonoide — presente — Anti-inflamatório"
+            "label": "FLAVONOIDES (luteolina, apigenina, naringenina)",
+            "texto": "Antiespasmódicos brônquicos (luteolina via inibição de fosfodiesterase — relaxamento de músculo liso). Antiasmáticos (apigenina: inibição de liberação de histamina). Anti-inflamatórios. Complementam a ação expectorante com broncodilatação discreta."
+          },
+          {
+            "label": "p-CIMENO e γ-TERPINENO (hidrocarbonetos terpênicos)",
+            "texto": "Precursores biossintéticos de timol e carvacrol. p-Cimeno: anti-inflamatório (inibição de leucotrienos), analgésico discreto. γ-Terpineno: antioxidante. Contribuem ao aroma característico do tomilho."
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Bronquite aguda",
-            "evidencia": "Forte",
-            "populacao": "ECR alemão: não-inferior a ambroxol"
+            "indicacao": "Bronquite aguda (expectorante / antiespasmódico)",
+            "evidencia": "Boa — EMA reconhece T. vulgaris para bronquite aguda; combinação timol+carvacrol: estudos clínicos confirmam eficácia em bronquite e tosse produtiva; Bronchipret® (tomilho+hera) aprovado na Alemanha",
+            "populacao": "Adultos e crianças > 1 ano. Bronchipret® é o fitoterápico expectorante mais vendido da Europa."
           },
           {
-            "indicacao": "Tosse produtiva",
-            "evidencia": "Forte",
-            "populacao": "EMA — well-established use"
+            "indicacao": "Antisséptico bucal (gengivite, halitose)",
+            "evidencia": "Boa — timol é componente ativo do Listerine aprovado pela FDA; estudos clínicos confirmam eficácia para redução de placa e gengivite",
+            "populacao": "Adultos; uso diário como bochecho."
           },
           {
-            "indicacao": "Infecções respiratórias altas",
-            "evidencia": "Moderada",
-            "populacao": "Studiengruppe Thymiantropfen"
+            "indicacao": "Antifúngico (candidíase — uso tópico)",
+            "evidencia": "Moderada (in vitro + modelos animais; dados clínicos limitados para uso tópico autônomo)",
+            "populacao": "Adultos com candidíase cutânea e oral leve."
           }
         ],
-        "contraindicacoes": [
-          "Alergia às Lamiaceae",
-          "Gestação em doses de OE — timol emenagogo; infusão segura moderadamente",
-          "Hipotireoidismo — cautela em uso regular intenso"
+        "contraindicacoes": "Óleo essencial: NUNCA ingerir puro (hepatotóxico, convulsivante em doses elevadas). Chá de folhas: seguro nas doses populares. Alergia a Lamiaceae: possível (hortelã, orégano, manjericão — mesma família). Gestação: chá culinário seguro; extrato concentrado e óleo essencial — cautela.",
+        "interacoes": [
+          {
+            "label": "Anticoagulantes",
+            "texto": "Ácido rosmarínico pode ter efeito antiagregante plaquetário em doses altas. Doses culinárias: sem relevância clínica."
+          },
+          {
+            "label": "Hormônios tireoidianos",
+            "texto": "Timol em doses farmacológicas muito elevadas pode interferir no metabolismo da tireoide. Doses culinárias e fitoterápicas: sem relevância clínica documentada."
+          }
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "efeitos_adversos": "Chá nas doses populares: muito seguro. Óleo essencial ingerido: náusea, vômito, convulsões, hepatotoxicidade (NUNCA ingerir puro). Raro: alergia de contato por timol. Bochecho prolongado com infusão concentrada: leve anestesia local (timol).",
+        "dose_maxima": "Partes aéreas secas: 10 g/dia (3 xícaras × 3 g). Xarope caseiro (1 g equivalente/dose): 3–5 doses/dia. Uso contínuo: sem restrição estabelecida para uso culinário; uso medicinal intensivo: 6 semanas.",
+        "fontes": [
+          "EMA/HMPC (2013). Community Herbal Monograph on Thymus vulgaris L. and Thymus zygis L., herba. EMA/HMPC/342332/2012.",
+          "Gruenwald J et al. (2006). Cough suppressant herbal drugs with a TRPM8 receptor agonist. Adv Ther.",
+          "Kemmerich B et al. (2006). Efficacy and tolerability of a fluid extract combination of thyme herb and ivy leaves. Arzneimittelforschung.",
+          "Dorman HJD & Deans SG. (2000). Antimicrobial agents from plants: antibacterial activity of essential oils. J Appl Microbiol.",
+          "Roesler S et al. (2011). Effect of thymol and carvacrol on Staphylococcus aureus and Candida albicans biofilms. Phytomedicine."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Aromático-fenólico quente",
+            "intensidade": "Alto (4/5) — traço dominante",
+            "observacao": "Timol e carvacrol. Nota quente-picante que aquece a boca e a garganta — sensorialmente 'medicinal' de forma imediata e clara."
+          },
+          {
+            "dimensao": "Amargor",
+            "intensidade": "Leve a moderado (2/5)",
+            "observacao": "Flavonoides e compostos fenólicos. Integrado ao aromático — não se destaca isoladamente."
+          },
+          {
+            "dimensao": "Resinoso-terroso",
+            "intensidade": "Moderado (2–3/5)",
+            "observacao": "Fundo de erva mediterrânea — pinheiro, terra seca, especiaria. Evoca o maquis provençal."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Taninos residuais. Discreta, não intrusiva."
+          }
+        ],
+        "olfativo_familia": "Aromático-fenólico intenso; família das especiarias Lamiaceae mediterrâneas (orégano, manjerona, segurelha).",
+        "olfativo_descritores": [
+          "timol puro — nota antiséptica-farmacológica",
+          "pinheiro mediterrâneo",
+          "especiaria quente de cozinha italiana",
+          "terra seca de garrigue provençal",
+          "notas de cânfora distante"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPV1 e TRPM8",
+            "ativacao": "Moderada",
+            "molecula": "Timol (TRPV1 — calor/picância) + p-cimeno (TRPM8 discreto — frescor leve)"
+          }
+        ],
+        "tatil": "Corpo médio; leve viscosidade por resinas. Sensação aquecedora persistente na garganta — 'garganta aquecida' por 5–10 minutos após ingestão.",
+        "descricao_integrada": "O tomilho não é um chá de conforto hedônico — é um chá de eficácia explícita. Quem bebe sente imediatamente a ação: calor na garganta, abertura das vias respiratórias, sensação de 'limpeza' brônquica. O timol comunica seu mecanismo através do paladar de forma direta e convincente. Com mel, o amargor fenólico é coberto e a bebida se torna agradável sem perder identidade medicinal. É o remédio que sabe que é remédio — e o diz claramente."
       },
       "cultura": {
-        "historia": "O timol do tomilho foi o principal antisséptico clínico antes da era dos antibióticos — o Listerine original continha timol como princípio ativo (ainda contém). Hospitais europeus do século XIX usavam vapores de tomilho para \"purificar o ar\" das enfermarias — empirismo que a farmacologia confirmou: timol é bactericida de amplo espectro. Os egípcios usavam timol no processo de mumificação — preservativo antimicrobiano natural.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "O tomilho acompanha a medicina ocidental desde as suas origens escritas. Dioscórides (século I d.C.) recomendava timol para tosse e parasitas intestinais. Os egípcios antigos usavam o tomilho no embalsamamento (atividade antimicrobiana do timol). Na Grécia antiga, thymos significava ao mesmo tempo 'tomilho' e 'alma/coragem' — queimar tomilho era ato de coragem antes de batalha. Na Idade Média, damas inglesas bordavam ramos de tomilho nas capas de cavaleiros como símbolo de valentia. Os monges beneditinos cultivavam tomilho nos jardins medicinais dos mosteiros junto com hortelã e sálvia — a trilogia da saúde respiratória medieval.",
+        "cerimonial": "Na Grécia antiga, o tomilho era queimado nos templos de Afrodite e Apolo — seu aroma era considerado sagrado e purificador. Em tradições mediterrâneas, ramos de tomilho eram colocados nos caixões como símbolo de passagem para o mundo seguinte — o aroma, associado à coragem e ao thymós (alma), acompanharia o morto.",
+        "brasil": "O tomilho foi introduzido no Brasil pelos colonizadores europeus — especialmente portugueses e italianos — e é cultivado extensivamente no sul e sudeste como erva culinária. Seu uso medicinal é bem estabelecido na medicina popular italiana e portuguesa que se instalou no RS, SC e SP. É ingrediente frequente em xaropes caseiros para tosse em famílias de origem europeia. O mercado de óleos essenciais brasileiros inclui tomilho produzido no RS com qualidade comparável ao europeu.",
+        "curiosidade": "O timol — extraído do tomilho pela primeira vez em 1719 pelo químico alemão Caspar Neumann — tornou-se o componente ativo do Listerine em 1879, quando Joseph Lawrence desenvolveu o primeiro antisséptico cirúrgico comercial baseado na observação de que o tomilho matava bactérias. O Listerine original continha 4 compostos: timol (de T. vulgaris), eucaliptol (de Eucalyptus), mentol (de Mentha) e salicilato de metila (do wintergreen). Em 2025, o Listerine ainda contém timol como componente ativo principal — 146 anos de continuidade farmacológica entre a planta mediterrânea e o frasco na prateleira do banheiro."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Indicações: expectorante, antisséptico respiratório.",
-        "status_ema": "Monografia HMPC — well-established use para bronquite e tosse.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Folhas disponíveis o ano todo (cultivo perene)"
+        "eixo_botanico_tpc": "Planta medicinal tradicional com monografia EMA/HMPC para bronquite. Timol: ingrediente ativo farmacêutico (IFA) aprovado em antissépticos.",
+        "status_anvisa": "Thymus vulgaris: sem monografia publicada na IN 02/2014. Timol: IFA aprovado para uso em produtos antissépticos bucais. Plantas secas e extratos: comercialização como droga vegetal permitida.",
+        "status_ema": "EMA/HMPC (2013): monografia publicada para T. vulgaris e T. zygis — uso tradicional e well-established use reconhecidos para bronquite aguda, catarro e tosse.",
+        "status_fda": "Timol: aprovado como agente ativo em antissépticos OTC (monografia FDA). T. vulgaris como erva culinária: GRAS.",
+        "certificacao_organica": "Cultivo orgânico amplamente certificado na Europa (França, Espanha) e crescente no RS/SC. IBD, USDA Organic e EU Organic disponíveis.",
+        "sazonalidade": "Folhas disponíveis o ano todo (planta perene). Floração: maio–julho (hemisfério norte); outubro–dezembro (Brasil). Maior concentração de timol: folhas jovens antes/durante floração."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Supermercados e empórios: folhas secas (especiaria culinária) — disponibilidade nacional",
+          "Herbanárias e lojas de produtos naturais: partes aéreas medicinais",
+          "Farmácias de manipulação: extrato seco e tintura",
+          "Produtores artesanais do Sul: tomilho orgânico fresco e seco"
+        ],
+        "faixa_de_preco": "Folhas secas (culinário): R$ 5–15/20g. Partes aéreas medicinais: R$ 15–30/50g. Óleo essencial: R$ 30–80/10ml.",
+        "formatos": [
+          "Folhas e ramos secos (infusão/xarope)",
+          "Folhas frescas (uso culinário e medicinal imediato)",
+          "Óleo essencial (inalação, uso tópico diluído — NUNCA ingerir puro)",
+          "Extrato seco em cápsulas",
+          "Xaropes compostos (tomilho+hera, tomilho+própolis)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O Listerine tem 146 anos de timol",
+          "texto": "Joseph Lawrence criou o Listerine em 1879 com timol de T. vulgaris como componente ativo. Em 2025, o frasco ainda tem timol. 146 anos de farmacologia contínua entre a planta mediterrânea e o antisséptico bucal mais vendido do mundo — raramente uma conexão botânica-farmacêutica é tão direta, tão duradoura e tão reconhecível."
+        },
+        {
+          "label": "EMA reconhece: expectorante aprovado para bronquite",
+          "texto": "Monografia EMA/HMPC 2013: T. vulgaris com well-established use para bronquite aguda. O Bronchipret® (tomilho+hera) é o fitoterápico expectorante mais vendido da Europa. Mecanismo: timol estimula receptores colinérgicos brônquicos, aumenta atividade mucociliar e fluidifica muco — ação expectorante farmacologicamente precisa."
+        },
+        {
+          "label": "NUNCA ingerir o óleo essencial puro",
+          "texto": "Timol puro é hepatotóxico e convulsivante em concentrações farmacológicas. O óleo essencial de tomilho, com 20–54% de timol, é seguro para inalação e uso tópico diluído — não para ingestão direta. O chá de folhas é completamente diferente: a matriz da planta dilui o timol em dezenas de outros constituintes, com concentrações seguras."
+        },
+        {
+          "label": "Thymós — coragem e alma na mesma planta",
+          "texto": "A palavra grega thymos significa simultaneamente 'tomilho' e 'alma/coragem/energia vital'. Queimar tomilho antes de batalha, bordar ramos nas capas de cavaleiros medievais, colocar nos caixões como passagem — a planta aromática mediterrânea acumulou significados culturais de vitalidade e transcendência que sua farmacologia justifica: o composto ativo que protege brônquios e mata bactérias também 'aquece a alma' sensorialmente."
+        }
+      ]
     },
     {
       "slug": "erva-de-sao-joao",
       "nome_popular": "Erva-de-São-João",
       "nome_cientifico": "Hypericum perforatum L.",
-      "tagline": "O antidepressivo herbal da Europa — o único fitoterápico com eficácia demonstrada em depressão leve a moderada comparável à dos fármacos convencionais, e o exemplo mais citado de interações medicamentosas entre plantas e fármacos.",
+      "tagline": "O antidepressivo vegetal mais estudado do mundo — hipericina, hiperforina e flavonoides que inibem a recaptação de serotonina, dopamina e noradrenalina com eficácia clínica comparável a antidepressivos sintéticos em depressão leve a moderada.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Hypericum perforatum L.",
-        "familia_botanica": "Hypericaceae (antes Clusiaceae)",
-        "tipo_botanico": "Fitoterápico antidepressivo / ansiolítico / antiviral",
-        "parte_usada": "Sumidades floridas (planta em flor), secas — parte aérea com flores amarelas.",
+        "familia_botanica": "Hypericaceae (anteriormente Guttiferae / Clusiaceae)",
+        "tipo_botanico": "Planta medicinal antidepressiva / ansiolítica / antiinflamatória",
+        "parte_usada": "Partes aéreas floridas (flores + folhas + ramos em flor — infusão, extrato, tintura); óleo de hipérico (flores em azeite — uso tópico).",
         "sinonimos": [
-          "Erva-de-são-joão · hipérico · erva-furada · hipericão",
-          "St. John's wort (inglês) · Millepertuis (francês) · Johanniskraut (alemão)"
+          "erva-de-são-joão · hipérico · milfurada · St. John's wort · Johanniskraut",
+          "Hypericum perforatum var. perforatum; var. angustifolium DC."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Levemente amargo-adstringente, resinoso, herbáceo suave, levemente balsâmico. Palatável.",
-        "aroma": "Herbáceo suave, levemente resinoso-balsâmico, feno florido.",
-        "cor_da_infusao": "Amarelo-ouro a avermelhado (hipericina cora levemente). #D4A040",
-        "intensidade": "2/5 — suave, uso cotidiano possível.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-resinoso com notas adstringentes e leve toque balsâmico; retrogusto resinoso persistente.",
+        "aroma": "Balsâmico-resinoso intenso com notas florais amarelas e fundo herbáceo-terroso. Flores frescas esmagadas: odor peculiar de terebintina-menta.",
+        "cor_da_infusao": "Castanho-avermelhado a vinho suave — resultado das naftodianthronas (hipericina) que tingem a água. Óleo de hipérico: vermelho-rubi intenso (diagnóstico visual de qualidade).",
+        "intensidade": "3/5 — amargo-resinoso moderado; mais característico do que intenso.",
+        "notas": "A identificação da planta genuína é simples: esmagando uma folha entre os dedos aparecem pontos translúcidos (glândulas de óleo essencial — 'perforatum' = perfurado) e manchas vermelhas nas margens (glândulas de hipericina). Produto sem essa coloração vermelha nos dedos pode ter sido mal processado.",
+        "bioma_de_origem": "Europa e Ásia temperada. Naturalizada na América do Norte, Austrália e sul do Brasil (RS, SC).",
+        "distribuicao_geografica": [
+          "Europa (origem): maior produção e pesquisa — Alemanha, Polônia, Hungria, Bulgária",
+          "América do Norte: naturalizada — uso crescente após popularização nos EUA nos anos 1990",
+          "Brasil: naturalizada no Sul (RS, SC) — considerada invasora em algumas regiões"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90 °C | Tempo: 8–10 min coberto | Quantidade: 2–4 g/250 ml",
-        "tempo_de_infusao": "",
-        "quantidade": "2–4 g/250 ml",
-        "metodo": "Infusão coberta (hipericina levemente fotossensível — não expor ao sol direto após preparo).",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã e tarde — uso regular por 4–6 semanas para efeito antidepressivo.",
-        "combina_com": "Melissa · Lavanda · Camomila (blends de equilíbrio emocional)"
+        "temperatura_ideal": "85–90 °C. Hipericina e hiperforina são relativamente estáveis ao calor, mas óleos essenciais são voláteis — cobrir obrigatório.",
+        "tempo_de_infusao": "10–15 minutos coberto. Mais tempo extrai mais hiperforina (lipofílica, extração lenta em água).",
+        "quantidade": "Partes aéreas secas: 2–4 g / 200 ml (equivalente a ~300 μg hipericina). Extrato padronizado (0,3% hipericina): 300 mg/dose, 3×/dia — forma clínica mais estudada.",
+        "metodo": "Infusão coberta. Para uso antidepressivo: extrato seco padronizado (cápsulas) é mais confiável que chá — concentração de hipericina/hiperforina variável no chá caseiro. Óleo de hipérico: flores frescas imersas em azeite de oliva por 4–6 semanas ao sol (óleo vermelho para uso tópico).",
+        "reinfusoes": "1 reinfusão com perda de 30% de ativos.",
+        "melhor_momento": "Antidepressivo/ansiolítico: uso regular diário (efeito começa em 2–4 semanas de uso contínuo — não é de ação imediata). Evitar sol imediatamente após uso (fotossensibilidade).",
+        "combina_com": "Valeriana (sinergia ansiolítica/sedativa), melissa (sinergia ansiolítica), passiflora (sinergia GABAérgica). ATENÇÃO: interações medicamentosas graves — ver seção abaixo."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Boa — óleo de hipérico com ampla documentação clínica e tradicional para uso tópico.",
+        "aplicacoes": [
+          {
+            "titulo": "Óleo de hipérico — cicatrizante e anti-inflamatório",
+            "texto": "Óleo vermelho-rubi preparado com flores frescas em azeite: anti-inflamatório e cicatrizante de primeira linha na fitoterapia europeia. Estudos clínicos confirmam eficácia em queimaduras de 1° grau, dermatites, neuralgia, contusões e úlceras de pressão. Hipericina e hiperforina: anti-inflamatórios; óleos essenciais: antimicrobianos."
+          },
+          {
+            "titulo": "Neuralgia e dores neuropáticas (uso tópico)",
+            "texto": "Massagem com óleo de hipérico sobre áreas de neuralgia (intercostal, pós-herpética, ciática). Hiperforina inibe recaptação de serotonina localmente — ação analgésica neuropática. Uso popular europeu bem documentado para 'névrite' e dores irradiadas."
+          }
+        ],
+        "contraindicacoes": "FOTOSSENSIBILIDADE TÓPICA: evitar exposição solar após aplicação do óleo em pele — hipericina é fotossensibilizante potente. Aplicar à noite ou em áreas cobertas."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Antidepressivo (inibição recaptação serotonina, dopamina, norepinefrina)",
-          "Ansiolítico",
-          "Antiviral (hipericina — especialmente HIV e herpes in vitro)",
-          "Anti-inflamatório",
-          "Neuroprotetor",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "⚠️ INTERAÇÕES CRÍTICAS — HIPERFORINA:",
-          "Anticoncepcionais orais — reduz eficácia (gravidez não planejada documentada)",
-          "Antiretrovirais (HIV) — reduz nível sérico drasticamente",
-          "Ciclosporina (transplantes) — rejeição de órgão documentada",
-          "Varfarina — reduz anticoagulação",
-          "Digoxina — reduz nível sérico",
-          "Antidepressivos ISRS — síndrome serotoninérgica",
-          "Contraindicações:",
-          "Depressão severa — eficácia insuficiente; risco de suicídio",
-          "Qualquer medicamento metabolizado pelo CYP3A4 — interação provável",
-          "Fototoxicidade — hipericina aumenta sensibilidade ao UV (evitar sol intenso)"
+          "Antidepressivo (hiperforina — inibição da recaptação de serotonina, dopamina, noradrenalina, GABA e glutamato)",
+          "Ansiolítico (hipericina + hiperforina — mecanismos múltiplos)",
+          "Anti-inflamatório (hipericina — inibição de IL-6, NF-κB; hiperforina — inibição de COX-1/2, 5-LOX)",
+          "Antiviral (hipericina — atividade contra vírus encapsulados in vitro)",
+          "Cicatrizante (tópico — flavonoides, hiperforina)"
         ],
         "componentes_ativos": [
           {
-            "label": "HIPERICINA, PSEUDOHIPERICINA",
-            "texto": "Antidepressivo (mecanismo discutido), antiviral"
+            "label": "HIPERFORINA (floroglucinol prenilado — 2–4% da planta seca)",
+            "texto": "Principal responsável pelo efeito antidepressivo. Mecanismo único: inibição da recaptação de serotonina, dopamina, noradrenalina, GABA e glutamato por mecanismo sódio-dependente (diferente dos antidepressivos sintéticos). Potente indutor de CYP3A4 e P-glicoproteína hepática — base das interações medicamentosas graves com anticontraceptivos, antirretrovirais, varfarina, etc. Instável — se oxida rapidamente em extratos mal armazenados."
           },
           {
-            "label": "HIPERFORINA",
-            "texto": "Principal antidepressivo — inibição recaptação de monoaminas; indutor potente de CYP3A4"
+            "label": "HIPERICINA e PSEUDOHIPERICINA (naftodianthronas — 0,1–0,3%)",
+            "texto": "Pigmentos vermelhos característicos — marcadores de qualidade. Anti-inflamatórios (inibição NF-κB). Antivirais contra vírus encapsulados in vitro (HIV, herpes — sem eficácia clínica confirmada). FOTOSSENSIBILIZANTES POTENTES: absorvem UV e geram radicais livres na pele exposta ao sol — causam queimaduras severas em doses elevadas. Nas doses fitoterápicas normais: fotossensibilidade leve que pode ser evitada."
           },
           {
-            "label": "AMENTOFLAVONA",
-            "texto": "Anti-inflamatório, ansiolítico"
+            "label": "FLAVONOIDES (rutina, quercetina, I3,II8-biapigenina, amentoflavona)",
+            "texto": "Biapigenina e amentoflavona: inibem MAO-A e MAO-B (monoamina oxidase) — contribuem ao efeito antidepressivo por mecanismo de inibição da degradação de monoaminas. Quercetina, rutina: antioxidantes, anti-inflamatórios, vasoprotegentes."
           },
           {
-            "label": "QUERCETINA, RUTINA",
-            "texto": "Antioxidante, anti-inflamatório"
-          },
-          {
-            "label": "XANTONA",
-            "texto": "Inibição de MAO-A e MAO-B (fraca)"
+            "label": "XANTONAS (1,3,6,7-tetraidroxixantona)",
+            "texto": "Inibidores de MAO — atividade antidepressiva aditiva com flavonoides e hiperforina. Contribuem ao mecanismo antidepressivo multialvo que diferencia H. perforatum de antidepressivos de mecanismo único."
           }
         ],
         "evidencia": [
           {
             "indicacao": "Depressão leve a moderada",
-            "evidencia": "Forte",
-            "populacao": "Linde et al. (2008) Cochrane"
+            "evidencia": "Excelente — meta-análises Cochrane (2008, 2016) com > 5.500 pacientes: eficácia comparável a antidepressivos sintéticos (ISRS, tricíclicos) com menos efeitos adversos; superior a placebo com significância estatística robusta",
+            "populacao": "Adultos com episódio depressivo leve a moderado. NÃO indicado para depressão grave ou com ideação suicida."
           },
           {
-            "indicacao": "Ansiedade generalizada leve",
-            "evidencia": "Moderada",
-            "populacao": "Volz et al. (2002)"
+            "indicacao": "Ansiedade leve e transtorno de ansiedade somatoforme",
+            "evidencia": "Moderada — estudos controlados com resultados positivos; meta-análise com evidência menor que para depressão",
+            "populacao": "Adultos com ansiedade funcional e somatização."
+          },
+          {
+            "indicacao": "Sintomas do climatério (humor, ansiedade)",
+            "evidencia": "Moderada — estudos clínicos com melhora de humor e ansiedade na perimenopausa",
+            "populacao": "Mulheres na perimenopausa/menopausa."
           }
         ],
-        "contraindicacoes": [
-          "Depressão severa — eficácia insuficiente; risco de suicídio",
-          "Qualquer medicamento metabolizado pelo CYP3A4 — interação provável",
-          "Fototoxicidade — hipericina aumenta sensibilidade ao UV (evitar sol intenso)"
+        "contraindicacoes": "Depressão grave com ideação suicida: CONTRAINDICADO — consultar psiquiatra. Gravidez e lactação: sem dados suficientes — contraindicado. Fotossensibilidade: evitar exposição solar intensa durante uso. Transtorno bipolar: contraindicado (pode precipitar mania).",
+        "interacoes": [
+          {
+            "label": "INTERAÇÕES GRAVES (indução de CYP3A4 e P-gp por hiperforina)",
+            "texto": "ANTICONTRACEPTIVOS ORAIS: redução de eficácia (falha contraceptiva documentada). ANTIRRETROVIRAIS (indinavir, nevirapina): redução de níveis plasmáticos de 50–70% — falha terapêutica em HIV. VARFARINA: redução de anticoagulação — risco de trombose. CICLOSPORINA: redução de nível sérico — rejeição de transplante documentada. DIGOXINA: redução de absorção. ANTIDEPRESSIVOS ISRS: risco de síndrome serotoninérgica."
+          },
+          {
+            "label": "Antidepressivos (ISRS, IMAO, tricíclicos)",
+            "texto": "Síndrome serotoninérgica (hipertermia, agitação, clonus) por somação de efeitos serotoninérgicos. CONTRAINDICADO com IMAO. Cautela máxima com ISRS."
+          }
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "efeitos_adversos": "Fotossensibilidade (principal — evitar exposição solar, especialmente em pele clara). Sintomas GI (náusea, diarreia) leves. Fadiga, boca seca (raros). Síndrome serotoninérgica (com outros serotoninérgicos). Manía em pacientes bipolares.",
+        "dose_maxima": "Extrato padronizado (0,3% hipericina, 3–5% hiperforina): 900 mg/dia (3 × 300 mg). Partes aéreas secas: 12 g/dia em infusão (equivalência menos precisa). Uso contínuo: seguro por 6–12 semanas; com supervisão médica para uso mais longo.",
+        "fontes": [
+          "Linde K et al. (2008). St John's wort for major depression. Cochrane Database Syst Rev.",
+          "EMA/HMPC (2009). Community Herbal Monograph on Hypericum perforatum L., herba. EMA/HMPC/745582/2009.",
+          "Müller WE. (2003). Current St. John's wort research from mode of action to clinical efficacy. Pharmacol Res.",
+          "Piscitelli SC et al. (2000). Indinavir concentrations and St John's wort. Lancet.",
+          "Bilia AR et al. (2002). Analysis of plant complex matrices by use of high-performance liquid chromatography. J Chromatogr A."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Amargo-resinoso",
+            "intensidade": "Moderado (3/5)",
+            "observacao": "Hiperforina e flavonoides. Amargor de qualidade — farmacológico e complexo, com dimensão resinosa."
+          },
+          {
+            "dimensao": "Adstringência",
+            "intensidade": "Moderada (2/5)",
+            "observacao": "Taninos e flavonoides. Finalização seca que complementa o amargor."
+          },
+          {
+            "dimensao": "Balsâmico-floral",
+            "intensidade": "Leve a moderado (2/5)",
+            "observacao": "Óleos essenciais e resinas. Nota floral amarela característica, discreta."
+          },
+          {
+            "dimensao": "Terroso-herbáceo",
+            "intensidade": "Moderado (2/5)",
+            "observacao": "Fundo de erva mediterrânea seca — notas que evocam campos de montanha europeus."
+          }
+        ],
+        "olfativo_familia": "Balsâmico-resinoso herbáceo com nota floral amarela; família das ervas medicinais de campo europeu.",
+        "olfativo_descritores": [
+          "resina-bálsamo floral",
+          "flores amarelas de campo",
+          "nota de terebintina suave",
+          "erva seca de montanha",
+          "fundo de mel-cera"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPA1 (leve)",
+            "ativacao": "Baixa",
+            "molecula": "Hiperforina — leve sensação de frescor-resinoso discreta"
+          }
+        ],
+        "tatil": "Corpo médio-baixo; levemente viscoso por resinas. Finalização amarga-seca persistente.",
+        "descricao_integrada": "A erva-de-são-joão é um chá que o humor percebe antes que o paladar descreva. Não é imediatamente agradável — o amargo-resinoso é austero. Mas quem o usa regularmente por semanas começa a associar o amargor característico a uma sensação de estabilidade emocional que os ensaios clínicos confirmam. É o chá mais paradoxal da fitoterapia: sabor austero, efeito suave — e interações medicamentosas que podem ser devastadoras. Toda a complexidade da medicina em uma infusão vermelho-âmbar."
       },
       "cultura": {
-        "historia": "A erva-de-são-joão floresce exatamente em torno do solstício de verão do hemisfério norte — 24 de junho, Dia de São João. Essa coincidência fenológica foi interpretada por todas as culturas europeias como signo sagrado: a planta que floresce no dia mais longo do ano traz a luz para a escuridão interior. O simbolismo antidepressivo estava incorporado ao nome antes que qualquer farmacologista identificasse a hiperforina.  A Alemanha tem os ensaios clínicos mais rigorosos com hipérico do mundo — e é o país onde o produto é prescrito como antidepressivo de primeira linha em depressão leve. A Deutsche Gesellschaft für Psychiatrie recomenda hipérico como alternativa aos ISRS para depressão leve-moderada com perfil de segurança favorável — desde que excluídas as interações medicamentosas.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "O nome 'erva-de-são-joão' reflete a floração na época de São João (junho no hemisfério norte — próximo ao solstício de verão, 24 de junho). A planta era colhida nesse dia em toda a Europa cristã medieval como proteção contra espíritos malignos — pendurada em janelas e portas. No pré-cristão, o solstício já era festa de Beltane/Litha, e o hypericão era planta solar: flores amarelas como o sol, florescendo no dia mais longo do ano. A medicina medieval usava a planta para 'melancolia' — a depressão da época —, e a tradição foi confirmada pela farmacologia do século XX: hiperforina inibe a recaptação de serotonina exatamente como os antidepressivos modernos.",
+        "cerimonial": "Queima ritualística na noite de São João (Solstício de Verão) em toda a Europa. O hipérico era considerado capaz de repelir demônios, feitiços e doenças — por isso chamado também de 'fuga demonum' (fuga dos demônios). Na medicina popular, a planta era usada literalmente para 'melancolia e tristeza' — uso que hoje sabemos ter base farmacológica real.",
+        "brasil": "A erva-de-são-joão foi amplamente prescrita no Brasil por psiquiatras e clínicos gerais nos anos 1990–2000, após a publicação dos estudos alemães. Tornou-se o antidepressivo mais vendido em farmácias naturais durante esse período. As interações medicamentosas graves (com anticontraceptivos orais especialmente) causaram repercussão internacional — gravidez não planejada documentada em mulheres que combinaram as duas — e a ANVISA passou a exigir advertências explícitas nos rótulos. Hoje é vendida com cautela e uso informado crescente.",
+        "curiosidade": "A hiperforina é estruturalmente única — um floroglucinol prenilado com estrutura polimérica complexa que nenhum laboratório conseguiu sintetizar de forma economicamente viável. Toda a hiperforina usada em pesquisa e medicamentos fitoterápicos vem da planta. O mecanismo de ação é também único: é o único antidepressivo conhecido que inibe a recaptação de CINCO neurotransmissores simultaneamente (serotonina, dopamina, noradrenalina, GABA, glutamato) por um mecanismo sódio-dependente completamente diferente dos ISRS. A natureza criou, por evolução, um antidepressivo que os humanos ainda não conseguem replicar quimicamente."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Interações listadas obrigatoriamente na bula.",
-        "status_ema": "Monografia HMPC — well-established use para depressão leve.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Floração: junho–julho (Europa) — colheita em floração plena"
+        "eixo_botanico_tpc": "Planta medicinal com monografia EMA/HMPC — antidepressivo de uso well-established; fitoterápico com status de medicamento em vários países europeus.",
+        "status_anvisa": "H. perforatum: sem monografia publicada na IN 02/2014. Produtos com extrato seco padronizado: registrados como fitoterápicos com dossiê (ex.: Hipérico cápsulas — vários fabricantes). ANVISA exige advertência de interações medicamentosas no rótulo.",
+        "status_ema": "EMA/HMPC (2009): monografia publicada — well-established use reconhecido para episódios depressivos leves a moderados. Medicamento em vários estados-membros da UE (Alemanha, Suíça, Áustria).",
+        "status_fda": "Dietary supplement (DSHEA) nos EUA — não aprovado como antidepressivo, mas amplamente comercializado. FDA emitiu alertas sobre interações com antirretrovirais (2000).",
+        "certificacao_organica": "Cultivo orgânico amplamente certificado na Europa (Alemanha, Polônia, Bulgária). No Brasil: produção artesanal no Sul com potencial de certificação.",
+        "sazonalidade": "Floração: junho–agosto (hemisfério norte) — coleta tradicional em São João (24 jun). Brasil: novembro–janeiro. Partes aéreas floridas no pico da floração têm maior concentração de hiperforina."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Farmácias: cápsulas de extrato seco padronizado (marcas nacionais e importadas)",
+          "Lojas de produtos naturais: tintura e partes aéreas secas",
+          "Farmácias de manipulação: extrato seco padronizado (0,3% hipericina)",
+          "Produtores artesanais do Sul: planta seca e tintura"
+        ],
+        "faixa_de_preco": "Partes aéreas secas: R$ 20–45/50g. Tintura (50ml): R$ 25–60. Cápsulas extrato seco padronizado (60 caps): R$ 35–90.",
+        "formatos": [
+          "Partes aéreas secas (infusão)",
+          "Extrato seco padronizado em cápsulas (0,3% hipericina — forma clínica)",
+          "Tintura alcoólica",
+          "Óleo de hipérico (flores em azeite — uso tópico)",
+          "Comprimidos revestidos (produtos registrados como fitoterápicos)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "Cochrane confirma: comparável a antidepressivos sintéticos",
+          "texto": "Meta-análise Cochrane 2016 com > 5.500 pacientes: H. perforatum comparável a ISRS e tricíclicos em eficácia para depressão leve a moderada, com significativamente menos efeitos adversos. É o fitoterápico com maior nível de evidência clínica em psiquiatria — o antidepressivo vegetal que a medicina baseada em evidência não pode ignorar."
+        },
+        {
+          "label": "Hiperforina: o antidepressivo irreproduzível",
+          "texto": "Hiperforina inibe recaptação de 5 neurotransmissores simultaneamente — nenhum sintético faz isso. E nenhum laboratório conseguiu sintetizá-la de forma economicamente viável. Toda a hiperforina usada em medicina vem da planta. A natureza criou um antidepressivo que a química ainda não consegue replicar."
+        },
+        {
+          "label": "Interações graves: informar sempre o médico",
+          "texto": "Hiperforina induz CYP3A4 e P-glicoproteína — as principais vias de metabolismo de medicamentos. Anticontraceptivos orais perdem eficácia (gravidez documentada). Antirretrovirais reduzem 50–70% de nível sérico. Varfarina: risco de trombose. Ciclosporina: rejeição de transplante. É a planta medicinal com o perfil de interações mais clinicamente significativo do mundo. Nunca usar com medicação crônica sem informar o médico."
+        },
+        {
+          "label": "Da 'fuga demonum' medieval ao ISRS vegetal",
+          "texto": "Pendurado em janelas medievais para afastar demônios, prescrito por boticários para melancolia, e confirmado em 2016 como comparável a Prozac pela Cochrane. O hipérico percorreu um dos caminhos mais completos da medicina: de planta do solstício a antidepressivo clínico — sem perder, ao longo de 2.000 anos, a mesma indicação essencial que o primeiro herbalista anotou."
+        }
+      ]
     },
     {
       "slug": "dente-de-leao",
