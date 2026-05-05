@@ -9577,260 +9577,426 @@
     {
       "slug": "equinacea",
       "nome_popular": "Equinácea",
-      "nome_cientifico": "Echinacea purpurea (L.) Moench / E. angustifolia DC. / E. pallida Nutt.",
-      "tagline": "O escudo imune da América do Norte — imunoestimulante com o maior número de ensaios clínicos entre todas as ervas do catálogo para prevenção de resfriados, amplamente usado nos hemisférios norte e sul.",
+      "nome_cientifico": "Echinacea purpurea (L.) Moench",
+      "tagline": "O imunomodulador mais vendido do mundo — alquilamidas, polissacarídeos e glicoproteínas que ativam macrófagos, estimulam NK cells e reduzem a duração do resfriado comum em meta-análises de alta qualidade.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Echinacea purpurea (L.) Moench / E. angustifolia DC. / E. pallida Nutt.",
-        "familia_botanica": "Asteraceae",
-        "tipo_botanico": "Fitoterápico imunoestimulante / imunomodulador",
-        "parte_usada": "Partes aéreas (E. purpurea — mais estudada); raiz (E. angustifolia — mais tradicional indígena norte-americana).",
+        "nome_cientifico": "Echinacea purpurea (L.) Moench",
+        "familia_botanica": "Asteraceae (Compositae)",
+        "tipo_botanico": "Planta medicinal imunomoduladora / imunoestimulante",
+        "parte_usada": "Partes aéreas floridas (E. purpurea — principal); raízes (E. angustifolia, E. pallida — uso tradicional norte-americano); todas as partes (produtos comerciais).",
         "sinonimos": [
-          "Equinácea · equinácea-roxa · flor-de-cone-púrpura",
-          "Echinacea / Purple coneflower (inglês) · Échinacée (francês)",
-          "Sonnenhut (alemão — \"chapéu de sol\")"
+          "equinácea · echinacea · cone-flower · rudbéquia-roxa",
+          "Echinacea angustifolia DC. (espécie de raiz — uso indígena original)",
+          "Echinacea pallida Nutt. (espécie de raiz pálida)",
+          "Nota: E. purpurea é a mais cultivada e estudada; E. angustifolia tem uso tradicional mais antigo mas menor evidência clínica relativa"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Levemente amargo-herbáceo, picante-formigante peculiar na língua (alquilamidas — sensação de formigamento é marcador de qualidade), terroso suave.",
-        "aroma": "Herbáceo floral suave, levemente resinoso, feno florido.",
-        "cor_da_infusao": "Âmbar-rosado a amarelo-dourado. #D4A860",
-        "intensidade": "2/5 — sabor suave, a sensação de formigamento é o marcador sensorial característico.",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Herbáceo-picante com formigamento característico na língua (parestesia pela alquilamida N-isobutilamida) — sensação absolutamente inconfundível que identifica produto autêntico e de qualidade.",
+        "aroma": "Herbáceo-floral levemente resinoso; notas de pétala fresca de margarida com fundo terroso suave.",
+        "cor_da_infusao": "Amarelo-palha a âmbar claro; levemente turva por polissacarídeos.",
+        "intensidade": "3/5 — presença herbácea moderada dominada pelo formigamento característico (parestesia lingual).",
+        "notas": "O formigamento na língua ao beber equinácea ou mastigar a raiz fresca é marcador de qualidade e autenticidade — causado por alquilamidas (N-isobutilamidas) que ativam receptores TRPV1. Produto sem esse formigamento pode ter perdido atividade ou ser adulterado.",
+        "bioma_de_origem": "Pradarias do centro-norte dos EUA e Canadá (planícies das Grandes Planícies). Cultivada amplamente na Europa e Brasil.",
+        "distribuicao_geografica": [
+          "América do Norte (origem): Grandes Planícies — Dakota, Nebraska, Kansas, Manitoba",
+          "Europa (maior mercado mundial): Alemanha líder em consumo e pesquisa",
+          "Brasil: cultivo em RS, SC, PR — expansão em propriedades de plantas medicinais",
+          "Cultivada globalmente como ornamental e medicinal"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "90–95 °C.",
-        "tempo_de_infusao": "",
-        "quantidade": "2–4 g de partes aéreas secas para 250 ml.",
-        "metodo": "Infusão coberta ou decocção suave.",
-        "reinfusoes": "",
-        "melhor_momento": "Início de sintomas de resfriado/gripe — 3–4x ao dia por 7–10 dias. Uso preventivo: 3x/semana.",
-        "combina_com": "Sabugueiro · Gengibre · Própolis · Mel · Limão (blends imunidade)"
+        "temperatura_ideal": "85–90 °C para partes aéreas. Raízes: decocção 95 °C (10 min).",
+        "tempo_de_infusao": "Partes aéreas: 8–10 minutos coberto. O formigamento lingual aparece rapidamente — é sinal de infusão com ativos.",
+        "quantidade": "Partes aéreas secas: 3–5 g / 200 ml. Raízes secas: 3–4 g / 200 ml (decocção).",
+        "metodo": "Infusão coberta (partes aéreas) ou decocção (raízes). Tintura (1:5 em álcool 45–60%) é o formato mais eficaz para alquilamidas — maior biodisponibilidade que chá.",
+        "reinfusoes": "1 reinfusão com perda de 50% de alquilamidas.",
+        "melhor_momento": "Ao primeiro sinal de resfriado — início imediato maximiza eficácia. Uso preventivo: ciclos de 8–10 dias de uso + pausa (não uso contínuo). NÃO usar para mais de 8 semanas seguidas.",
+        "combina_com": "Sabugueiro (sinergia antiviral), própolis verde (sinergia antimicrobiana), zinco (sinergia imunológica), gengibre (sinergia anti-inflamatória), tomilho (sinergia respiratória)."
       },
       "usos_topicos": {
-        "evidencia": "",
+        "evidencia": "Moderada — uso tópico documentado em formulações dermatológicas; estudos clínicos de cicatrização.",
         "aplicacoes": [
-          "Compressa antisséptica (feridas superficiais): Infusão forte resfriada em compressa — antimicrobiano e anti-inflamatório tópico."
+          {
+            "titulo": "Cicatrizante e anti-inflamatório cutâneo",
+            "texto": "Extratos de E. purpurea em cremes e géis demonstraram aceleração de cicatrização de feridas em estudos clínicos (úlceras crônicas, feridas cirúrgicas). Mecanismo: polissacarídeos estimulam proliferação de fibroblastos; alquilamidas inibem COX-2 local. Produto tópico aprovado na Alemanha para uso em feridas e eczemas."
+          },
+          {
+            "titulo": "Anti-herpes labial (uso tópico)",
+            "texto": "Preparações tópicas de E. purpurea para herpes labial demonstraram redução de duração e severidade em estudos controlados. Inibição de ligação viral a células epiteliais e estimulação de imunidade local (IFN)."
+          }
         ],
-        "contraindicacoes": ""
+        "contraindicacoes": "Alergia a Asteraceae: risco de reação cruzada (especialmente com ambrosia, crisântemo — importante avaliar). Não aplicar em feridas profundas infectadas sem avaliação médica."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Imunoestimulante (ativa macrófagos, NK cells, neutrófilos)",
-          "Antiviral (influenza, rinovírus, coronavírus — estudos in vitro)",
-          "Antibacteriano",
-          "Anti-inflamatório",
-          "Cicatrizante (uso tópico)",
-          "Adaptógeno leve",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações:",
-          "Doenças autoimunes — imunoestimulante; contraindica em lúpus, AR, EM",
-          "Transplantados — imunomodulação conflita com imunossupressão",
-          "Alergia à família Asteraceae (5–10% risco de reação cruzada)",
-          "Uso prolongado contínuo (>8 semanas): taquifilaxia — fazer pausas"
+          "Imunoestimulante / imunomodulador (polissacarídeos, glicoproteínas — ativação de macrófagos, NK cells, linfócitos T)",
+          "Antiviral (alquilamidas + cafeoilalquilamidas — inibição de replicação viral; interferona endógena)",
+          "Anti-inflamatório (alquilamidas — inibição COX-2, NF-κB)",
+          "Antibacteriano leve (ácido chicórico, derivados cafeicos)",
+          "Cicatrizante (polissacarídeos — estimulação de fibroblastos)"
         ],
         "componentes_ativos": [
           {
-            "label": "ALQUILAMIDAS",
-            "texto": "Imunomodulação — CB2, COX-2, NF-κB; responsáveis pelo formigamento"
+            "label": "ALQUILAMIDAS (N-alquilamidas isobutilamídicas)",
+            "texto": "Marcadores químicos de E. purpurea e E. angustifolia. Responsáveis pelo formigamento lingual (ativação TRPV1). Imunomoduladores via receptores canabinoides CB2 (mesma classe de receptores do β-cariofileno) — modulam citocinas (TNF-α, IL-6, IL-10). Anti-inflamatórios (COX-2, 5-LOX). Biodisponibilidade oral elevada — passam para a circulação sistêmica. Principal fração ativa para uso interno."
           },
           {
-            "label": "ÁCIDO CHICÓRICO (ácido dicafeoiltartárico)",
-            "texto": "Imunoestimulante, antiviral"
+            "label": "POLISSACARÍDEOS (arabinogalactana, heteroxilana)",
+            "texto": "Imunoestimulantes — ativam macrófagos aumentando fagocitose e produção de interferon-α/β. Estimulam NK cells (natural killer). Importantes para uso tópico (cicatrização). Não são absorvidos sistemicamente por via oral em concentração significativa — ação imunoestimulante intestinal (GALT — gut-associated lymphoid tissue)."
           },
           {
-            "label": "POLISSACARÍDEOS (arabinogalactanas)",
-            "texto": "Ativação de macrófagos"
+            "label": "ÁCIDO CHICÓRICO e DERIVADOS CAFEICOS (echinacoside — E. angustifolia/pallida)",
+            "texto": "Antioxidantes potentes, antivirais (inibição de integrase do HIV in vitro — sem significância clínica), anti-inflamatórios. Echinacoside: marcador de E. angustifolia/pallida (raízes). Ácido chicórico: marcador de E. purpurea (partes aéreas). Diferença química importante para padronização de produto."
           },
           {
-            "label": "EQUINACOSÍDEO (glicosídeo)",
-            "texto": "Antimicrobiano, anti-inflamatório"
-          },
-          {
-            "label": "GLICOPROTEÍNAS",
-            "texto": "Imunoestimulantes"
+            "label": "GLICOPROTEÍNAS e GLICOSÍDEOS",
+            "texto": "Estimulam produção de interferon, ativam macrófagos e aumentam quimiotaxia de neutrófilos. Complementam a ação imunomoduladora das alquilamidas por mecanismos distintos — base da sinergia entre componentes."
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Prevenção de resfriados",
-            "evidencia": "Moderada",
-            "populacao": "Shah et al. (2007) meta-análise"
+            "indicacao": "Prevenção e tratamento do resfriado comum",
+            "evidencia": "Boa — meta-análises (Cochrane 2015, 2019) mostram redução de 10–35% na duração do resfriado e redução de risco de infecção respiratória com uso precoce; heterogeneidade dos estudos é limitante",
+            "populacao": "Adultos e crianças > 12 anos. Eficácia maior quando iniciado ao primeiro sinal de resfriado."
           },
           {
-            "indicacao": "Redução de duração do resfriado",
-            "evidencia": "Moderada",
-            "populacao": "Linde et al. (2015) Cochrane"
+            "indicacao": "Imunomodulação em infecções respiratórias recorrentes",
+            "evidencia": "Moderada — estudos em crianças e adultos com redução de frequência de infecções com uso preventivo cíclico",
+            "populacao": "Adultos e crianças com infecções respiratórias recorrentes."
           },
           {
-            "indicacao": "Infecções respiratórias altas recorrentes",
-            "evidencia": "Moderada",
-            "populacao": "Múltiplos ECR europeus"
+            "indicacao": "Herpes labial (tópico)",
+            "evidencia": "Moderada — ensaios clínicos com preparação tópica de E. purpurea demonstrando eficácia",
+            "populacao": "Adultos com herpes labial recorrente."
           }
         ],
-        "contraindicacoes": [
-          "Doenças autoimunes — imunoestimulante; contraindica em lúpus, AR, EM",
-          "Transplantados — imunomodulação conflita com imunossupressão",
-          "Alergia à família Asteraceae (5–10% risco de reação cruzada)",
-          "Uso prolongado contínuo (>8 semanas): taquifilaxia — fazer pausas"
+        "contraindicacoes": "Doenças autoimunes (lúpus, esclerose múltipla, artrite reumatoide, psoríase): CONTRAINDICADA — estimulação imune pode agravar. HIV/AIDS em uso de antirretrovirais: cautela (interação CYP3A4 possível). Alergia a Asteraceae: contraindicada em sensibilizados. Transplantados: contraindicada (estimulação imune contraproducente). Gestação: sem dados suficientes — cautela.",
+        "interacoes": [
+          {
+            "label": "Imunossupressores (ciclosporina, tacrolimus, corticosteroides)",
+            "texto": "CONTRAINDICADA — antagonismo farmacológico direto. Estimulação imune de equinácea contraproducente em pacientes imunossuprimidos por razão clínica."
+          },
+          {
+            "label": "Antirretrovirais (indinavir, saquinavir — inibidores de protease)",
+            "texto": "Equinácea induz CYP3A4 hepático — pode reduzir níveis plasmáticos de ARVs metabolizados por essa via. Monitorar com uso concomitante."
+          },
+          {
+            "label": "Metotreoxato e outros imunossupressores",
+            "texto": "Mesma contraindicação dos imunossupressores — antagonismo de mecanismo."
+          }
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "efeitos_adversos": "Doses usuais: muito bem tolerada. Alergia (2–3%): urticária, angioedema — especialmente em alérgicos a Asteraceae (ambrosia, crisântemo). Raro: anafilaxia. Uso prolongado contínuo (> 8 semanas): possível dessensibilização — fazer pausas.",
+        "dose_maxima": "Partes aéreas secas: 9 g/dia (3 × 3 g). Extrato padronizado: conforme produto. Uso contínuo máximo: 8 semanas, seguidas de 2 semanas de pausa.",
+        "fontes": [
+          "Karsch-Völk M et al. (2015). Echinacea for preventing and treating the common cold. Cochrane Database Syst Rev.",
+          "EMA/HMPC (2015). Community Herbal Monograph on Echinacea purpurea. EMA/HMPC/577195/2013.",
+          "Woelkart K & Bauer R. (2007). The role of alkamides as an active principle of Echinacea. Planta Med.",
+          "Gertsch J et al. (2004). Echinacea alkylamides modulate TNF-α gene expression via cannabinoid receptor CB2. FEBS Lett.",
+          "Shah SA et al. (2007). Evaluation of Echinacea for the prevention and treatment of the common cold. Lancet Infect Dis."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Formigamento / parestesia lingual",
+            "intensidade": "Moderado-alto (3–4/5) — traço identitário absoluto",
+            "observacao": "Alquilamidas ativam TRPV1 — sensação de formigamento elétrico suave na língua e lábios. Marcador de autenticidade e qualidade. Sem esse formigamento: produto possivelmente inativo."
+          },
+          {
+            "dimensao": "Herbáceo-floral",
+            "intensidade": "Moderado (2–3/5)",
+            "observacao": "Nota de pétala fresca e erva herbácea. Agradável e discreto."
+          },
+          {
+            "dimensao": "Amargor leve",
+            "intensidade": "Leve (1–2/5)",
+            "observacao": "Iridoides e flavonoides. Amargor suave que não interfere na palatabilidade."
+          },
+          {
+            "dimensao": "Terroso discreto",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Fundo terroso de raiz — mais presente em preparações com raízes."
+          }
+        ],
+        "olfativo_familia": "Floral-herbáceo; família das flores compostas (Asteraceae) — reminiscente de margarida e camomila com notas mais herbáceas.",
+        "olfativo_descritores": [
+          "pétala de margarida fresca",
+          "erva verde de pradaria",
+          "notas de camomila distante",
+          "fundo terroso suave"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPV1",
+            "ativacao": "Moderada",
+            "molecula": "N-isobutilamida (alquilamida) — formigamento / parestesia elétrica característica"
+          }
+        ],
+        "tatil": "Corpo leve-médio; finalização com leve persistência do formigamento lingual por 5–10 minutos.",
+        "descricao_integrada": "A equinácea é o único chá medicinal que literalmente faz a língua formigar — uma assinatura sensorial inconfundível e deliciosa que transforma o ato de beber em confirmação de autenticidade. Quem não conhece a planta se surpreende; quem conhece, busca esse formigamento como garantia de qualidade. É um chá agradável, floral-herbáceo, com amargor suave — mas o que o define não é o sabor, é a sensação elétrica que as alquilamidas produzem nos lábios e na língua por minutos depois do gole."
       },
       "cultura": {
-        "historia": "A equinácea é a planta medicinal das Grandes Planícies norte-americanas — usada por mais de 14 povos indígenas dos EUA para tratar infecções, venenos de animais e dores de dente. Foi o remédio mais vendido nos EUA no final do século XIX e início do XX antes de ser suplantado pelos antibióticos. Nos anos 1990, ressurgiu como o suplemento mais vendido do mundo — um retorno notável de uma planta relegada pela medicina convencional.  A pesquisa farmacológica moderna confirmou parcialmente o que os Sioux, Cheyenne e Comanche sabiam empiricamente: a equinácea ativa o sistema imune. O mecanismo é diferente do que os ervanários do século XIX imaginavam — mas o resultado prático é similar.",
-        "cerimonial": "",
-        "brasil": "",
-        "curiosidade": ""
+        "historia": "A equinácea foi a planta medicinal mais importante dos povos indígenas das Grandes Planícies norte-americanas — Lakota, Cheyenne, Comanche e mais de 60 tribos documentaram uso para feridas, picadas de cobra, dor de garganta e febre. Os colonizadores europeus aprenderam o uso com os nativos no século XVIII–XIX, e o Dr. H.C.F. Meyer começou a vender 'Meyer's Blood Purifier' à base de equinácea nos anos 1870. O Dr. John Uri Lloyd e o eclectic physician Finley Ellingwood popularizaram o uso médico nos EUA no final do século XIX — a equinácea era o medicamento mais prescrito pelos médicos eclético-botânicos americanos. O interesse europeu — especialmente alemão — cresceu no século XX, e hoje a equinácea é o fitoterápico imunomodulador mais vendido do mundo.",
+        "cerimonial": "Entre os Lakota (Sioux), a equinácea (E. angustifolia) estava entre as plantas mais sagradas — usada em cerimônias de cura pelo pejuta wicasa (médico-homem), mastigada como preparação para rituais de dança do sol (resistência à dor e ao calor), e usada em fumigações purificadoras. O uso era ao mesmo tempo prático e sagrado — a distinção entre medicina e espiritualidade inexistia.",
+        "brasil": "A equinácea não tem uso medicinal tradicional no Brasil — chegou como produto importado no boom de fitoterapia europeia dos anos 1990–2000. É cultivada em pequena escala no sul do Brasil (RS, SC) por produtores de plantas medicinais, mas a maior parte do mercado é de extrato seco importado da Alemanha e EUA. É o suplemento imunomodulador mais vendido no Brasil em farmácias e lojas de produtos naturais — especialmente no outono e inverno, quando as infecções respiratórias aumentam.",
+        "curiosidade": "A descoberta de que as alquilamidas da equinácea modulam receptores canabinoides CB2 foi publicada em 2004 (Gertsch et al., FEBS Letters) e causou grande impacto — pela primeira vez, a equinácea tinha um mecanismo molecular de ação específico. CB2 é o receptor canabinoide periférico (expresso principalmente em células imunes), sem os efeitos psicoativos do CB1 (que o THC ativa no cérebro). Em outras palavras: a equinácea modula o sistema endocanabinoide imunológico sem nenhum efeito psicoativo. A planta da pradaria lakota e a farmacologia canabinoide se encontraram de forma completamente inesperada."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Monografia oficial. Indicações: imunoestimulante, coadjuvante em infecções respiratórias.",
-        "status_ema": "Monografia HMPC — well-established use para gripes e resfriados.",
-        "status_fda": "Suplemento amplamente vendido; sem status medicamentoso.",
-        "certificacao_organica": "",
-        "sazonalidade": "Partes aéreas: floração (verão no hemisfério norte)"
+        "eixo_botanico_tpc": "Planta medicinal tradicional com monografia EMA/HMPC — imunomodulador de uso tradicional e well-established use reconhecidos.",
+        "status_anvisa": "Echinacea purpurea: sem monografia publicada na IN 02/2014. Produtos com extrato seco: registrados como suplementos alimentares ou fitoterápicos com dossiê individual. Amplamente comercializado no Brasil.",
+        "status_ema": "EMA/HMPC (2015): monografia publicada para E. purpurea herba — uso tradicional reconhecido para prevenção e tratamento de resfriado comum. Well-established use para preparações padronizadas.",
+        "status_fda": "Dietary supplement (DSHEA) — comercializado como suplemento nos EUA sem aprovação como medicamento. Amplamente disponível.",
+        "certificacao_organica": "Certificação orgânica disponível para cultivo de E. purpurea (USDA Organic, EU Organic, IBD). Produtores especializados no RS e SC com certificação crescente.",
+        "sazonalidade": "Floração: verão (junho–agosto no hemisfério norte; dezembro–fevereiro no Brasil). Partes aéreas floridas: coleta durante a floração. Raízes: outono-inverno. Produto seco disponível o ano todo."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Farmácias e drogarias: cápsulas de extrato seco (Natucaps, Herbarium, importados)",
+          "Lojas de produtos naturais: tinturas, cápsulas, partes aéreas secas",
+          "Farmácias de manipulação: extrato seco padronizado em cápsulas",
+          "Produtores artesanais (RS, SC): partes aéreas secas e tintura"
+        ],
+        "faixa_de_preco": "Partes aéreas secas: R$ 20–45/50g. Tintura (50ml): R$ 25–60. Cápsulas extrato seco (60 caps): R$ 35–90.",
+        "formatos": [
+          "Partes aéreas secas (infusão)",
+          "Tintura alcoólica (1:5 em 45–60% álcool) — formato mais ativo para alquilamidas",
+          "Extrato seco em cápsulas (padronizado em alquilamidas ou ácido chicórico)",
+          "Comprimidos mastigáveis",
+          "Xarope (combinado com sabugueiro, zinco, própolis)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O formigamento que garante qualidade",
+          "texto": "A parestesia lingual da equinácea — causada pelas alquilamidas ativando TRPV1 — é o único marcador organoléptico de qualidade entre fitoterápicos: sem o formigamento, o produto perdeu atividade. É uma forma elegante de controle de qualidade acessível ao consumidor sem laboratório."
+        },
+        {
+          "label": "CB2: a equinácea e o sistema endocanabinoide",
+          "texto": "As alquilamidas modulam receptores CB2 — os canabinoides periféricos das células imunes. A equinácea da pradaria lakota e a farmacologia canabinoide se encontraram em 2004. CB2, sem os efeitos psicoativos do CB1, é o receptor que modula inflamação e imunidade — exatamente o que milênios de uso empírico da planta sugeriam."
+        },
+        {
+          "label": "Cochrane confirma: reduz resfriado em 10–35%",
+          "texto": "Meta-análises Cochrane (2015, 2019) confirmam redução de duração do resfriado e risco de infecção respiratória com equinácea usada precocemente. Não é placebo, não é mito — é fitoterapia com o nível de evidência que a medicina baseada em evidência exige. O imunomodulador mais vendido do mundo tem dados para sustentar a venda."
+        },
+        {
+          "label": "Doenças autoimunes: contraindicação absoluta",
+          "texto": "A mesma estimulação imune que reduz resfriados agrava doenças autoimunes — onde o problema é excesso, não falta de resposta imune. Lúpus, esclerose múltipla, artrite reumatoide: contraindicação absoluta. É a equinácea em seu paradoxo terapêutico mais importante: o remédio do sistema imune pode ser veneno para quem já tem sistema imune demais."
+        }
+      ]
     },
     {
       "slug": "sabugueiro",
       "nome_popular": "Sabugueiro",
       "nome_cientifico": "Sambucus nigra L.",
-      "tagline": "A farmácia da floresta europeia — antiviral de frutas escuras com ação confirmada contra influenza, imunidade robusta e história que atravessa da Europa pré-cristã ao laboratório de Harvard.",
+      "tagline": "A baga preta da Europa — antiviral com antocianinas que inibem hemaglutininas do vírus influenza, diaforéticas e expectorantes que tornaram o sabugueiro o fitoterápico antiviral mais estudado do mundo para gripe e resfriado.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Sambucus nigra L.",
-        "familia_botanica": "Adoxaceae (antes Caprifoliaceae)",
-        "tipo_botanico": "Fitoterápico antiviral / imunomodulador / antioxidante",
-        "parte_usada": "Flores secas (anti-inflamatório, diaforético); frutos maduros secos (antiviral, antioxidante).",
+        "familia_botanica": "Adoxaceae (anteriormente Caprifoliaceae)",
+        "tipo_botanico": "Planta medicinal antiviral / imunoestimulante / diaforética",
+        "parte_usada": "Flores (infusão — diaforético, expectorante, anti-inflamatório); frutos maduros/bagas (extrato — antiviral, imunomodulador); raízes (uso tradicional purgativo — USO CUIDADOSO).",
         "sinonimos": [
-          "Sabugueiro · saúco · sanguinho-de-água (confusão)",
-          "Elder / Elderberry / Elderflower (inglês) · Sureau (francês) · Holunder (alemão)",
-          "Bozur (esloveno — planta mais importante do folclore esloveno)",
-          "ATENÇÃO: frutos crus contêm sambunigrina (cianogênico) — sempre cozinhar ou secar antes de consumir."
+          "sabugueiro · sabugueirinho · elderberry · elderflower · holunder (alemão)",
+          "Nota: frutos CRUS são tóxicos (sambunigrina — cianogênico) — usar apenas cozidos ou em extrato aquoso tratado",
+          "Sambucus canadensis L. (afim norte-americano com propriedades similares)"
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "",
-        "aroma": "",
-        "cor_da_infusao": "",
-        "intensidade": "2/5 (flores) — 3/5 (frutos).",
-        "notas": "",
-        "bioma_de_origem": "",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Flores: floral-muscat delicado com dulçor mel-floral e notas de limão. Bagas (extrato): azedo-adocicado intenso com notas de fruta preta e toque terroso.",
+        "aroma": "Flores: floral suave extraordinário — muscat, mel, pétala branca fresca. Bagas: frutado-azedo de fruta do bosque europeu.",
+        "cor_da_infusao": "Flores: amarelo-palha cristalino e luminoso. Bagas (suco/extrato): violeta-roxo profundo a preto — cor de antocianinas intensas.",
+        "intensidade": "Flores: 2/5 — delicado, nuançado. Bagas: 3–4/5 — azedo-adocicado intenso, frutado.",
+        "notas": "Flores e bagas são dois produtos medicinais completamente diferentes da mesma planta: flores são diaforéticas/expectorantes usadas quentes para resfriado com febre; bagas são antivirais/imunomoduladores usados como xarope ou suco para gripe. Não confundir os usos.",
+        "bioma_de_origem": "Europa temperada e Ásia ocidental. Naturalizado em partes das Américas. No Brasil: cultivado no sul (RS, SC).",
+        "distribuicao_geografica": [
+          "Europa (origem e uso tradicional mais documentado): Reino Unido, Alemanha, Áustria, países escandinavos",
+          "Balcãs e Europa do Leste: uso culinário intenso (flores em cordial, bagas em geleias)",
+          "América do Norte: S. canadensis afim — uso indígena documentado",
+          "Brasil: cultivo experimental no Sul — crescimento de mercado de xarope de sabugueiro"
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": "Equinácea · Gengibre · Canela · Mel · Própolis · Hibisco"
+        "temperatura_ideal": "Flores: 85–90 °C (infusão — preservar compostos aromáticos voláteis). Bagas: cozimento (100 °C) para destruição de sambunigrina (cianogênico) antes de consumo.",
+        "tempo_de_infusao": "Flores: 5–7 minutos coberto. Bagas: cozimento 10–15 min (destruição de glicosídeos cianogênicos) + preparo de xarope.",
+        "quantidade": "Flores secas: 3–5 g / 200 ml. Xarope de bagas: 15–30 ml (1 colher de sopa) / dose (conforme produto).",
+        "metodo": "Flores: infusão coberta em água quente — beber quente para efeito diaforético máximo. Bagas: NUNCA consumir cruas — sempre cozidas ou como extrato/xarope industrializado que passou por tratamento térmico.",
+        "reinfusoes": "Flores: 1 reinfusão. Bagas: não se aplica para xarope.",
+        "melhor_momento": "Flores (diaforético): à noite, com resfriado febril — deitar coberto após beber para estimular sudorese. Bagas (antiviral): ao primeiro sinal de gripe, 4×/dia por 5 dias.",
+        "combina_com": "Equinácea (sinergia antiviral-imunomoduladora), gengibre (sinergia diaforética e anti-inflamatória), mel, limão, própolis verde. Flores: hortelã, urtiga."
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Etnobotânico — uso cosmético de flores documentado; sem ensaios clínicos tópicos formais.",
+        "aplicacoes": [
+          {
+            "titulo": "Tônico facial com flores (uso cosmético)",
+            "texto": "Infusão de flores como tônico facial para pele sensível e irritada. Flavonoides e ácidos fenólicos com atividade anti-inflamatória e levemente clareadora (inibição de melanogênese in vitro). Uso popular na Europa — 'elderflower water' como tônico facial tem tradição britânica secular."
+          },
+          {
+            "titulo": "Compressa ocular (olhos cansados)",
+            "texto": "Compressa morna de infusão de flores para olhos cansados e conjuntivite leve. Ação anti-inflamatória e calmante local."
+          }
+        ],
+        "contraindicacoes": "Não usar bagas cruas topicamente em mucosas. Flores: sem contraindicações tópicas documentadas."
       },
       "acoes_e_seguranca": {
-        "acoes_principais": [],
+        "acoes_principais": [
+          "Antiviral (antocianinas das bagas — inibição de hemaglutininas influenza A e B)",
+          "Imunoestimulante (polissacarídeos, lectinas — ativação de macrófagos e NK cells)",
+          "Diaforético / diaforético (flores — estimulação de sudorese — antipirético indireto)",
+          "Expectorante (flores + mucilagem — estimulação de secreção brônquica)",
+          "Anti-inflamatório (flavonoides, ácido clorogênico)",
+          "Antioxidante (antocianinas — ORAC excepcional das bagas)"
+        ],
         "componentes_ativos": [
           {
-            "label": "ANTOCIANINAS (cianidina-3-glucosídeo, cianidina-3-sambubiosídeo)",
-            "texto": "Antiviral, antioxidante"
+            "label": "ANTOCIANINAS DAS BAGAS (cianidina-3-glucosídeo, cianidina-3-sambubiosídeo)",
+            "texto": "Principal fração antiviral. Inibem a ligação de hemaglutininas do vírus influenza A (H1N1, H3N2) e B às células epiteliais respiratórias — impedindo a entrada viral. Estudos in vitro: concentração inibitória (CI50) de 0,1–1 μg/ml. Ensaio clínico (Zakay-Rones, 2004): extrato de bagas reduziu duração da gripe em 4 dias vs. placebo. Antioxidantes excepcionais — ORAC das bagas entre os mais altos de frutas europeias."
           },
           {
-            "label": "SAMBUCOL (fração polissacarídica padronizada)",
-            "texto": "Inibição de neuraminidase viral"
+            "label": "FLAVONOIDES (rutina, quercetina, kampferol — flores e bagas)",
+            "texto": "Anti-inflamatórios (COX-2, NF-κB), antioxidantes, vasoprotegentes. Rutina: fortalecimento de capilares — relevante para congestão nasal da gripe. Quercetina: antiviral (inibição de protease de flavivírus e influenza in vitro)."
           },
           {
-            "label": "ÁCIDO CLOROGÊNICO",
-            "texto": "Antiviral, antioxidante"
+            "label": "LECTINAS (sambucina, SNA-I, SNA-II)",
+            "texto": "Glicoproteínas imunoestimulantes: ativam macrófagos e estimulam produção de citocinas pró-inflamatórias e interferon-α. Contribuem à ação antiviral por mecanismo imunológico (complementar ao direto das antocianinas). Sambucina inibe replicação de vírus influenza in vitro."
           },
           {
-            "label": "RUTINA, ISOQUERCETINA",
-            "texto": "Anti-inflamatório, antioxidante"
+            "label": "ÁCIDO CLOROGÊNICO e ÁCIDO CAFEICO (flores e bagas)",
+            "texto": "Antivirais (inibição de enzimas virais), anti-inflamatórios, antioxidantes. Ácido clorogênico: antiviral contra HIV, influenza e herpes in vitro."
           },
           {
-            "label": "LECTINAS (flores)",
-            "texto": "Imunomodulador"
+            "label": "SAMBUNIGRINA (glicosídeo cianogênico — bagas CRUAS)",
+            "texto": "TOXINA presente em bagas cruas, sementes e folhas. Libera ácido cianídrico por hidrólise enzimática. Cozimento (> 60 °C por 10 min) destrói a enzima β-glicosidase responsável pela hidrólise, eliminando o risco. Nunca consumir bagas cruas em quantidade. Flores têm concentração de sambunigrina baixíssima — seguras para infusão."
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Influenza (redução duração e gravidade)",
-            "evidencia": "Moderada-forte",
-            "populacao": "Zakay-Rones et al. (2004)"
+            "indicacao": "Gripe (influenza) — redução de duração e severidade",
+            "evidencia": "Boa — múltiplos ensaios clínicos randomizados com extrato de bagas; meta-análise (Hawkins, 2019) confirma redução de sintomas em média 2–4 dias; mecanismo antiviral direto documentado",
+            "populacao": "Adultos com gripe confirmada ou suspeita. Maior eficácia quando iniciado em 48h do início dos sintomas."
           },
           {
-            "indicacao": "Resfriado comum (duração)",
-            "evidencia": "Moderada",
-            "populacao": "Tiralongo et al. (2016)"
+            "indicacao": "Resfriado comum — diaforético/expectorante (flores)",
+            "evidencia": "Moderada — EMA reconhece uso tradicional de flores como diaforético e expectorante; evidência menor que para bagas em gripe",
+            "populacao": "Adultos e crianças > 6 anos com resfriado febril."
           },
           {
-            "indicacao": "Imunidade geral",
-            "evidencia": "Moderada",
-            "populacao": "Kong (2009)"
+            "indicacao": "Prevenção de infecções respiratórias (viagem aérea)",
+            "evidencia": "Moderada — estudo controlado em passageiros de voo longo: extrato de bagas reduziu frequência e duração de resfriado pós-viagem",
+            "populacao": "Adultos; uso preventivo durante e após voos longos."
           }
         ],
-        "contraindicacoes": [
-          "Frutos crus — sambunigrina (cianogênico): sempre cozinhar ou usar secos certificados",
-          "Doenças autoimunes — imunomodulador; cautela",
-          "Gestação — dados insuficientes para doses terapêuticas"
+        "contraindicacoes": "Bagas cruas: TÓXICAS (sambunigrina — usar apenas cozidas/extrato tratado). Doenças autoimunes: cautela com uso prolongado (imunoestimulante pode agravar). Gestação: flores em uso culinário provavelmente seguras; extrato concentrado de bagas — sem dados suficientes. Crianças < 2 anos: sem dados de segurança para extrato de bagas.",
+        "interacoes": [
+          {
+            "label": "Imunossupressores",
+            "texto": "Imunoestimulação das lectinas e polissacarídeos pode antagonizar imunossupressão. Cautela em transplantados e pacientes com doenças autoimunes em imunossupressão."
+          },
+          {
+            "label": "Diuréticos",
+            "texto": "Flores têm leve efeito diurético — potencialização discreta com diuréticos farmacológicos."
+          }
         ],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "efeitos_adversos": "Bagas cozidas/extrato: muito bem tolerados. Bagas cruas: náusea, vômito, diarreia (sambunigrina). Raro: alergia a flores (pólens de Adoxaceae). Extrato em doses excessivas: diarreia leve por antocianinas.",
+        "dose_maxima": "Flores secas: 10–15 g/dia. Xarope de bagas: 4 × 15 ml/dia (uso agudo para gripe — máximo 5 dias). Extrato padronizado: conforme produto.",
+        "fontes": [
+          "Zakay-Rones Z et al. (2004). Randomized study of the efficacy and safety of oral elderberry extract in the treatment of influenza A and B. J Int Med Res.",
+          "Hawkins J et al. (2019). Black elderberry (Sambucus nigra) supplementation effectively treats upper respiratory symptoms. Complement Ther Med.",
+          "EMA/HMPC (2018). Community Herbal Monograph on Sambucus nigra L., flos. EMA/HMPC/611512/2017.",
+          "Roschek B et al. (2009). Elderberry flavonoids bind to and prevent H1N1 infection in vitro. Phytochemistry.",
+          "Lorenzi H & Matos FJA. (2008). Plantas Medicinais no Brasil. Instituto Plantarum."
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Flores — dulçor floral-muscat",
+            "intensidade": "Moderado (2–3/5)",
+            "observacao": "Glicosídeos florais e compostos muscat. Um dos perfis mais elegantes entre ervas medicinais — floral sem ser enjoativo."
+          },
+          {
+            "dimensao": "Bagas — azedo-adocicado de fruta preta",
+            "intensidade": "Alto (4/5)",
+            "observacao": "Antocianinas e ácidos orgânicos. Sabor intenso de fruta silvestre europeia — entre o groselha e a amora, com acidez vibrante."
+          },
+          {
+            "dimensao": "Flores — floral-mel",
+            "intensidade": "Leve-moderado (2/5)",
+            "observacao": "Notas nectáricas características. Lembrança de mel de flores brancas."
+          },
+          {
+            "dimensao": "Bagas — terroso-mineral",
+            "intensidade": "Leve (1/5)",
+            "observacao": "Fundo de fruta de floresta europeia — nota terrosa que distingue do groselha cultivado."
+          }
+        ],
+        "olfativo_familia": "Flores: floral branco suave e muscat. Bagas: frutado de fruta preta silvestre.",
+        "olfativo_descritores": [
+          "Flores: muscat-baunilha delicado, mel floral, pétala branca fresca",
+          "Bagas: groselha preta, amora silvestre, notas de eucalipto distante"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "Mecanorreceptores",
+            "ativacao": "Baixíssima (flores) / Baixa (bagas — acidez)",
+            "molecula": "Ácidos orgânicos das bagas — leve sensação ácida na mucosa bucal"
+          }
+        ],
+        "tatil": "Flores: corpo leve e limpo, infusão sedosa. Bagas (xarope/suco): encorpado, viscoso por pectinas e antocianinas.",
+        "descricao_integrada": "O sabugueiro entrega dois mundos sensoriais opostos: a infusão de flores é delicadeza em estado puro — floral-muscat, mel, leveza cristalina — enquanto o extrato de bagas é força e cor — roxo profundo, azedo-adocicado de fruta silvestre, com aquela nota mineral de floresta europeia outonal. Poucas plantas oferecem tamanha versatilidade sensorial. A infusão de flores é um dos chás mais sensorialmente agradáveis da fitoterapia; o xarope de bagas é medicina funcional que a maioria das crianças aceita de bom grado pela doçura frutada."
       },
       "cultura": {
-        "historia": "O sabugueiro é a árvore-farmácia do folclore europeu pré-cristão — em toda a Europa há tradição de que ao pé do sabugueiro habitam espíritos protetores. Cortar um sabugueiro sem pedir permissão era tabu em toda a Europa setentrional e central. Hipócrates chamava-o de \"farmácia do médico da aldeia\". John Evelyn (séc. XVII) escreveu que se todos os usos medicinais do sabugueiro fossem enumerados, precisaria-se de um livro.  O xarope de sabugueiro (elderberry syrup) é o remédio de inverno mais tradicional da Europa — de Portugal à Noruega. O registro arqueológico mais antigo de uso de sabugueiro como alimento data de 5.000 a.C. (Itália, pré-histórico).",
-        "cerimonial": "",
-        "brasil": "Praticamente desconhecido na medicina popular brasileira — chegou como suplemento importado nos anos 2010 com o boom das \"imunidades naturais\" durante e após a pandemia de COVID-19. O Ervatório tem oportunidade de contextualizar o sabugueiro dentro de sua narrativa europeia genuína, diferenciando-o do marketing pandêmico oportunista.",
-        "curiosidade": ""
+        "historia": "O sabugueiro é a farmácia e a despensa da Europa rural — conhecido como 'Árvore dos Pobres' por ter sido remédio, alimento e material para populações campesinas por milênios. Hipócrates (460–370 a.C.) chamava o sabugueiro de 'caixa de medicamentos da natureza'. Na Escandinávia medieval, acreditava-se que o espírito Hyldemoer (Mãe-Sabugueiro) habitava a árvore — cortar um sabugueiro sem pedir licença trazia azar. As flores eram usadas em cordiais e vinhos; as bagas em geleias, licores e xaropes; a madeira em flautas; as folhas como repelente. O Elderflower Cordial britânico e o Elderberry Wine são sobreviventes culinários dessa tradição milenar.",
+        "cerimonial": "Em culturas célticas e germânicas, o sabugueiro estava entre as árvores mais sagradas — associado a rituais de Beltane e Samhain (festas do ciclo anual). Ramos de sabugueiro eram plantados sobre túmulos para proteger os mortos. Flores de sabugueiro eram usadas em rituais de fertilidade. A planta marcava a fronteira entre o mundo dos vivos e o mundo dos espíritos em algumas tradições.",
+        "brasil": "O sabugueiro é cultivado em pequena escala no Sul do Brasil (RS, SC, PR) por produtores de plantas medicinais — introduzido pelos imigrantes europeus do século XIX que trouxeram a planta de suas regiões de origem. O mercado brasileiro de xarope de sabugueiro cresceu rapidamente nos anos 2010 após estudos clínicos publicados ganharem repercussão. Hoje é vendido em farmácias e lojas de produtos naturais como produto premium para gripe e reforço imunológico, frequentemente combinado com equinácea e própolis verde.",
+        "curiosidade": "O estudo de Zakay-Rones (2004) demonstrou que extrato padronizado de bagas de sabugueiro reduziu a duração da gripe de 7,1 para 2,5 dias em pacientes tratados — uma redução de 65% comparada ao placebo. A meta-análise de 2019 (Hawkins) com dados de múltiplos ensaios confirmou redução média de 2–4 dias. Esses dados tornaram o sabugueiro o fitoterápico antiviral com maior suporte clínico disponível — e o mecanismo molecular é elegante: antocianinas se ligam às hemaglutininas (proteínas de superfície do vírus) impedindo a entrada nas células. É a mesma estratégia das vacinas — bloqueio de entrada — mas por via fitoquímica."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Funcional global",
-        "status_anvisa": "Uso reconhecido. Suplemento amplamente comercializado.",
-        "status_ema": "Monografia HMPC — traditional use para gripes e resfriados.",
-        "status_fda": "GRAS para uso alimentar (frutos cozidos).",
-        "certificacao_organica": "",
-        "sazonalidade": "Flores: maio–junho. Frutos: agosto–setembro (Europa)."
+        "eixo_botanico_tpc": "Planta medicinal tradicional com monografia EMA/HMPC (flores). Bagas: alimento funcional com evidência clínica crescente.",
+        "status_anvisa": "Sambucus nigra: sem monografia publicada na IN 02/2014. Produtos com extrato de bagas: registrados como suplementos alimentares. Flores: comercialização como droga vegetal permitida.",
+        "status_ema": "EMA/HMPC (2018): monografia de flores (Sambuci flos) — uso tradicional reconhecido como diaforético/expectorante. Bagas: sem monografia específica mas uso alimentar amplamente reconhecido na UE.",
+        "status_fda": "GRAS para uso alimentar de flores e bagas maduras cozidas. Sem aprovação como medicamento.",
+        "certificacao_organica": "Cultivo orgânico bem estabelecido na Europa (Áustria, Alemanha, Reino Unido). No Brasil: produtores orgânicos no Sul com certificação IBD.",
+        "sazonalidade": "Flores: maio–junho (hemisfério norte); novembro–dezembro (hemisfério sul / Brasil). Bagas: agosto–setembro (hemisfério norte); fevereiro–março (Brasil). Produtos processados (xaropes, extratos): disponíveis o ano todo."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": true,
+        "fornecedores": [
+          "Farmácias e lojas de produtos naturais: xarope de bagas (marcas importadas e nacionais)",
+          "Produtores artesanais do Sul: flores secas, bagas, xaropes caseiros",
+          "Importadores europeus: extrato padronizado em cápsulas",
+          "Marcas nacionais: Cura Vitis, Flora Nativa (RS), produtores artesanais"
+        ],
+        "faixa_de_preco": "Flores secas: R$ 20–45/50g. Xarope de bagas (120ml): R$ 40–100. Extrato padronizado em cápsulas: R$ 50–120.",
+        "formatos": [
+          "Flores secas (infusão diaforética/expectorante)",
+          "Xarope de bagas (antiviral — uso agudo na gripe)",
+          "Extrato seco de bagas em cápsulas",
+          "Tintura de bagas (uso imunomodulador)",
+          "Cordial de flores (uso culinário e medicinal suave)"
+        ]
+      },
+      "destaques": [
+        {
+          "label": "O antiviral mais estudado da fitoterapia",
+          "texto": "Antocianinas de S. nigra inibem hemaglutininas do vírus influenza A e B — impedindo entrada viral nas células. Meta-análise 2019 confirma redução de 2–4 dias na duração da gripe. É o fitoterápico antiviral com maior nível de evidência clínica disponível — e o mecanismo molecular está descrito em detalhe atômico."
+        },
+        {
+          "label": "Dois produtos radicalmente diferentes na mesma planta",
+          "texto": "Flores: diaforético e expectorante delicado, bebido quente na febre para estimular sudorese e desobstruir brônquios. Bagas: antiviral concentrado, tomado em xarope 4×/dia nos primeiros dias de gripe. A farmacologia de flores e bagas é tão diferente quanto os perfis sensoriais — mas vêm da mesma árvore, da mesma família, do mesmo jardim europeu."
+        },
+        {
+          "label": "Atenção: bagas cruas são tóxicas",
+          "texto": "Sambunigrina — glicosídeo cianogênico presente nas bagas cruas, sementes e folhas — libera ácido cianídrico por hidrólise. Cozimento destrói a enzima responsável. Nunca consumir bagas de sabugueiro cruas. Todo produto comercial de qualidade já passou por tratamento térmico — mas o aviso é importante para quem coleta a planta diretamente."
+        },
+        {
+          "label": "Da Árvore dos Pobres ao produto premium",
+          "texto": "Hipócrates chamava o sabugueiro de 'caixa de medicamentos da natureza'. Campesinos europeus medievais chamavam de 'Árvore dos Pobres' — farmácia, cozinha e material ao mesmo tempo. Hoje o xarope de bagas é produto premium de R$ 100 em farmácias. O caminho de milênios de sabedoria popular à validação clínica do século XXI tem o sabugueiro como um de seus exemplos mais completos."
+        }
+      ]
     },
     {
       "slug": "tomilho",
