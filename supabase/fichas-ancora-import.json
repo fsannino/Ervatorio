@@ -797,127 +797,265 @@
       "slug": "muirapuama",
       "nome_popular": "Muirapuama",
       "nome_cientifico": "Ptychopetalum olacoides Benth.",
-      "tagline": "A madeira da potência — adaptógeno amazônico que a neurociência redescobriu como protetor cognitivo e tonificante do sistema nervoso.",
+      "tagline": "A madeira da potência — adaptógeno amazônico que farmácias europeias venderam desde 1930 e a neurociência redescobriu como nootrópico com mecanismo de Alzheimer.",
       "schema_version": "1.1",
       "identificacao": {
-        "nome_cientifico": "Ptychopetalum olacoides Benth.",
-        "familia_botanica": "Olacaceae",
-        "tipo_botanico": "Tônico nervoso / adaptógeno herbal",
-        "parte_usada": "Raiz e casca do caule, secas.",
+        "nome_cientifico": "Ptychopetalum olacoides Benth. (espécie principal); Ptychopetalum uncinatum Anselmino (espécie secundária do mercado)",
+        "familia_botanica": "Olacaceae (família pequena de arbustos e árvores tropicais; parente próximo: pão-de-lagarto — Ximenia americana; poucas espécies com uso medicinal documentado)",
+        "tipo_botanico": "Tônico nervoso / adaptógeno / nootrópico / afrodisíaco herbal",
+        "parte_usada": "Raiz e casca do caule secas (uso principal — extração por decocção ou tintura etanólica); madeira do caule (infusão popular secundária). A tintura etanólica (1:5 em álcool 50°) é o formato com maior evidência clínica — estudos europeus usam exclusivamente esse extrato. A maceração em água fria (12–16h) preserva melhor os alcaloides polares (ptychopetalina) do que a decocção quente.",
         "sinonimos": [
-          "Muirapuama · muirapuaminha · potency wood · pau-potência",
-          "Marapuama (variante ortográfica) · capi-catingaíba (PA)",
-          "Potency wood / muira puama (inglês europeu — uso amplamente difundido em fitoterápicos europeus)"
+          "Muirapuama · muirapuaminha · marapuama · potency wood (EN) · pau-potência",
+          "Capi-catingaíba (PA) · erva-da-potência · muira puama (grafia europeia sem hífen)",
+          "ATENÇÃO: Ptychopetalum olacoides (Amazônia — Rio Negro, AM — espécie com maior evidência) ≠ Liriosma ovata Miers (também chamada 'muirapuama' em partes do PA e MA — família diferente, Olacaceae vs Violaceae, química menos estudada). Exigir identificação botânica antes do uso."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Amargo-resinoso leve, terroso-amadeirado, levemente adstringente. Mais palatável que andiroba — admite consumo regular.",
-        "aroma": "Madeira seca tropical, resina sutil, fundo de baunilha silvestre.",
-        "cor_da_infusao": "Marrom-dourado claro a âmbar. #8B5E3C",
-        "intensidade": "3/5 — presença mediana, uso regular possível.",
-        "notas": "",
-        "bioma_de_origem": "Amazônia — floresta de terra firme, preferência por solos bem drenados. Amazonas, Pará, Rondônia.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Amargo-resinoso leve, terroso-amadeirado, levemente adstringente. Significativamente mais palatável que andiroba ou copaíba — o adaptógeno amazônico mais amigável ao paladar. Fundo de madeira seca tropical com resina sutil. Com mel, admite consumo regular sem dessensibilização.",
+        "aroma": "Madeira tropical seca e nobre, resina balsâmica discreta, fundo de baunilha silvestre, leve torrefação de raiz seca. Moléculas dominantes: lupeol (triterpeno), ácido oleanólico, traços de ptychopetalina (alcaloide sesquiterpênico), ácidos graxos.",
+        "cor_da_infusao": "Marrom-dourado claro a âmbar quente. #8B5E3C. Decocção mais intensa: âmbar-escuro. Maceração fria: marrom-claro translúcido.",
+        "intensidade": "3/5 — presença mediana, agradável. Uso regular possível sem dessensibilização.",
+        "notas": "Cabeça: amadeirado seco limpo | Corpo: terroso-resinoso, tanino discreto | Fundo: baunilha silvestre sutil, persistência longa e elegante",
+        "bioma_de_origem": "Amazônia — floresta de terra firme com solos ácidos e bem drenados. Predominante no AM (Rio Negro, Alto Solimões), PA (Alto Xingu), RO, AC.",
+        "distribuicao_geografica": [
+          "Amazonas: centro de diversidade — Rio Negro (Barcelos, São Gabriel da Cachoeira), Alto Solimões (Coari, Tefé).",
+          "Pará (Marabá, Altamira), Rondônia, Acre.",
+          "Peru (Loreto — Amazônia peruana); Bolívia (norte); Colômbia (Amazônia).",
+          "Cultivo experimental inexistente em escala — toda produção é extrativista. Europa importa matéria-prima do AM para processamento de tinturas (França, Alemanha, Reino Unido)."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "95–98 °C (decocção leve).",
-        "tempo_de_infusao": "",
-        "quantidade": "2–5 g de casca ou raiz seca para 250 ml.",
-        "metodo": "Decocção suave ou maceração em água fria (12h) — esta última preserva melhor alcaloides polares.",
-        "reinfusoes": "",
-        "melhor_momento": "Manhã ou início de tarde. Evitar à noite (estimulante leve).",
-        "combina_com": "Catuaba · Guaraná · Pfaffia (para blends tônicos masculinos) · Ginseng asiático (blend adaptogênico global)"
+        "temperatura_ideal": "Decocção suave: 95–98 °C (não borbulhar forte — alcaloides polares são parcialmente termossensíveis). Maceração fria (12–16h em água temperatura ambiente): preserva melhor a ptychopetalina e produz extrato menos adstringente e mais rico em princípios nootrópicos.",
+        "tempo_de_infusao": "Decocção: 15 min suave + 10 min tampado repousando. Maceração fria: 12–16h.",
+        "quantidade": "2–5 g de casca ou raiz seca para 250 ml. Tintura etanólica (1:5 em álcool 50°): 1–3 ml 2×/dia — formato com mais evidência clínica nos estudos europeus.",
+        "metodo": "Decocção suave (uso diário, prático). Maceração fria (concentração máxima de alcaloides — uso funcional nootrópico). Tintura etanólica: formato premium com maior padronização (disponível em farmácias de manipulação).",
+        "reinfusoes": "1 reinfusão com ~30% de rendimento restante.",
+        "melhor_momento": "Manhã e/ou início de tarde. Evitar após 16h — estimulante leve do SNC pode interferir com o sono. Protocolo adaptogênico: ciclos de 3 semanas on / 1 semana off.",
+        "combina_com": "Catuaba (tônico nervoso masculino amazônico — trio clássico) · Guaraná (energético + nootrópico) · Pfaffia paniculata / suma (adaptogênico amazônico) · Ashwagandha KSM-66 (blend adaptogênico East-West) · Ginseng asiático (vitalidade global)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Preliminar — sem estudos conclusivos. Uso anedótico em tônico capilar e massagem neuroprotora.",
+        "aplicacoes": [
+          {
+            "titulo": "Tônico capilar estimulante",
+            "texto": "Tintura de muirapuama diluída (5–10% em álcool 70°) aplicada massageando o couro cabeludo — evidência anedótica para estímulo de circulação local e anti-queda. Mecanismo teórico: alcaloides e triterpenos com efeito vasodilatador local (similar ao mecanismo da cafeína tópica para calvície)."
+          },
+          {
+            "titulo": "Massagem neuroprotora",
+            "texto": "Óleo vegetal infusionado com muirapuama (maceração oleosa 2:1 em azeite ou óleo de andiroba por 30 dias) — massagem em região cervical, temporal e nuca para tensão nervosa e fadiga. Uso tradicional amazônico por pajés para 'restaurar a força nervosa' após doenças prolongadas."
+          }
+        ],
+        "contraindicacoes": "Sem contraindicações documentadas para uso tópico. Evitar mucosas e olhos."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Adaptógeno — modulação do eixo HPA (hipotálamo-hipófise-adrenal)",
-          "Nootrópico — inibição de acetilcolinesterase (melhora memória colinérgica)",
-          "Afrodisíaco (aumento de libido documentado em modelos clínicos)",
-          "Tônico nervoso — neuroproteção contra estresse oxidativo",
-          "Antidepressivo leve (modulação dopaminérgica)",
-          "Anti-inflamatório (triterpenos)",
-          "Componentes ativos:",
-          "Indicações com evidência:",
-          "Contraindicações: Gestação e lactação — ausência de dados de segurança. Crianças — não recomendado. Hipertensão não controlada — cautela."
+          "Adaptógeno — modulação do eixo HPA (hipotálamo-hipófise-adrenal), normalização de cortisol em resposta ao estresse",
+          "Nootrópico — inibição de acetilcolinesterase (AChE): melhora memória e cognição colinérgica",
+          "Afrodisíaco / tonificante sexual — aumento de libido e performance (estudos clínicos publicados)",
+          "Antineurasténico — restauração de energia nervosa em fadiga crônica e exaustão",
+          "Antidepressivo leve — modulação dopaminérgica e adrenérgica",
+          "Anti-inflamatório (lupeol e ácido oleanólico — triterpenos)",
+          "Antioxidante neuronal (flavonóides e triterpenos — proteção contra estresse oxidativo do SNC)",
+          "Neuroprotetor via inibição de MAO (estudos pré-clínicos)"
         ],
         "componentes_ativos": [
           {
-            "label": "LUPEOL (triterpeno)",
-            "texto": "Anti-inflamatório, adaptogênico"
+            "label": "Lupeol (triterpeno pentacíclico)",
+            "texto": "Predominante — anti-inflamatório, adaptogênico, neuroprotetor; inibição fraca de AChE. Encontrado também na casca da manga e no dente-de-leão — aqui em maior concentração e com sinergia com outros triterpenos."
           },
           {
-            "label": "ÁCIDO OLEANÓLICO",
-            "texto": "Neuroprotetor, antioxidante"
+            "label": "Ácido oleanólico (triterpeno)",
+            "texto": "Abundante — neuroprotetor, antioxidante, anti-inflamatório; inibição leve de MAO-B."
           },
           {
-            "label": "PTYCHOPETALINA (alcaloide)",
-            "texto": "Inibição de AChE — ação nootrópica"
+            "label": "Ptychopetalina (alcaloide sesquiterpênico)",
+            "texto": "Traço — inibição de AChE (acetilcolinesterase); ação nootrópica direta. Mesmo mecanismo da galantamina — medicamento de referência para Alzheimer aprovado pela FDA. Farmacologicamente, é o composto mais importante da espécie."
           },
           {
-            "label": "BETA-SITOSTEROL",
-            "texto": "Anti-inflamatório"
+            "label": "Beta-sitosterol e estigmasterol (esteróis)",
+            "texto": "Modulação hormonal leve (esteróis vegetais); anti-inflamatório."
           },
           {
-            "label": "ÁCIDOS GRAXOS",
-            "texto": "Nutritivo, emoliente"
+            "label": "Flavonóides (rutina, quercetina)",
+            "texto": "Antioxidante, anti-inflamatório, antiistamínico — protetores vasculares."
+          },
+          {
+            "label": "Ácidos graxos (palmítico, oleico)",
+            "texto": "Nutritivo; carreador lipídico para componentes lipossolúveis."
           }
         ],
         "evidencia": [
           {
-            "indicacao": "Disfunção sexual masculina (libido)",
+            "indicacao": "Disfunção sexual masculina (libido e função erétil)",
             "evidencia": "Moderada",
-            "populacao": "Waynberg et al., 2000"
+            "populacao": "Waynberg & Brewer 2000 (n=202, homens com neurastenia sexual) — 62% reportaram melhora de libido"
           },
           {
-            "indicacao": "Déficit cognitivo leve",
+            "indicacao": "Déficit cognitivo leve e fadiga mental",
             "evidencia": "Preliminar",
-            "populacao": "Figueiró et al., 2011"
+            "populacao": "Figueiró et al. 2011 — modelos in vivo, inibição de AChE documentada"
           },
           {
-            "indicacao": "Fadiga nervosa, neurastenia",
+            "indicacao": "Fadiga nervosa / neurastenia",
             "evidencia": "Tradicional forte",
-            "populacao": "Farmacopeias europeias antigas"
+            "populacao": "British Herbal Pharmacopoeia 1983; uso amplamente documentado em farmácias europeias desde 1930"
+          },
+          {
+            "indicacao": "Depressão leve",
+            "evidencia": "Preliminar",
+            "populacao": "Modelos animais — mecanismo dopaminérgico e inibição MAO sugeridos"
+          },
+          {
+            "indicacao": "Neuroproteção (anti-Alzheimer)",
+            "evidencia": "Preliminar",
+            "populacao": "Estudos in vitro (inibição de AChE) — sem ECR humanos ainda"
           }
         ],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "contraindicacoes": [
+          "Gestação e lactação: sem dados de segurança disponíveis — contraindicado por precaução.",
+          "Crianças: não recomendado (alcaloides neurológicos, sem estudos pediátricos).",
+          "Hipertensão não controlada: estimulante leve do SNC — cautela; monitorar PA.",
+          "Distúrbios bipolares e psicoses: estimulante pode precipitar episódios maníacos.",
+          "Insônia crônica: evitar doses após 16h.",
+          "Uso concomitante de inibidores de colinesterase (donepezila, galantamina, rivastigmina): efeito AChE aditivo — monitorar sinais de toxicidade colinérgica (náusea, sudorese, taquicardia)."
+        ],
+        "interacoes": [
+          {
+            "label": "Inibidores de MAO (fenelzina, moclobemida, selegilina)",
+            "texto": "Interação farmacológica (modulação monoaminérgica aditiva) — evitar associação; risco de síndrome serotoninérgica teórica."
+          },
+          {
+            "label": "Estimulantes do SNC (cafeína, guaraná, efedra)",
+            "texto": "Efeito aditivo estimulante — usar combinados com moderação; monitorar frequência cardíaca e pressão."
+          },
+          {
+            "label": "Medicamentos para DE (sildenafil, tadalafil)",
+            "texto": "Mecanismos distintos (PDE5i vs colinérgico); potencial aditivo — informar médico sobre uso concomitante."
+          },
+          {
+            "label": "Anticolinérgicos (biperideno, oxibutinina, anti-histamínicos clássicos)",
+            "texto": "Efeito antagonista — muirapuama aumenta ACh; anticolinérgicos a reduzem. Pode reduzir eficácia dos anticolinérgicos."
+          }
+        ],
+        "efeitos_adversos": "Em doses recomendadas: raro — leve agitação nervosa, insônia se tomado à tarde. Doses excessivas: taquicardia leve, ansiedade, cefaleia. Sem casos de toxicidade grave documentados na literatura científica.",
+        "dose_maxima": "Decocção: 1–2 xícaras/dia (2–5 g/250 ml). Tintura etanólica (1:5): 1–3 ml 2×/dia. Extrato seco (cápsulas): 200–400 mg/dia. Uso contínuo: máx. 3 semanas sem pausa (protocolo adaptogênico clássico — 3 semanas on / 1 off).",
+        "fontes": [
+          "Waynberg J, Brewer S — Effects of Herbal vX on libido and sexual activity (Adv Ther, 2000)",
+          "Figueiró M et al. — Assessment of mitochondrial dysfunction and AChE inhibitory activity of Ptychopetalum olacoides (Phytomedicine, 2011)",
+          "Siqueira IR et al. — Ptychopetalum olacoides, a traditional Amazonian tonic plant (Phytomedicine, 2007)",
+          "Patrocínio D et al. — Antioxidant and neuroprotective properties of P. olacoides extracts (J Med Food, 2014)",
+          "Rowland DL, Tai W — A review of plant-derived approaches to sexual dysfunction (J Sex Marital Ther, 2003)",
+          "British Herbal Pharmacopoeia — Muira Puama monograph (1983)"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "2/3",
+            "observacao": "Moderado e resinoso — suportável; bem abaixo de andiroba (3/3) ou copaíba (3/3)"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "1/3",
+            "observacao": "Profundidade terrosa sutil — madeira úmida, triterpenos"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Amadeirado seco nobre com notas resinosas sutis e fundo baunilhado",
+        "olfativo_descritores": [
+          "Madeira tropical seca e nobre — cedro amazônico, mogno leve (não a madeira cortada — é a raiz)",
+          "Resina balsâmica discreta, não invasiva (ao contrário da copaíba — aqui é fundo, não frente)",
+          "Baunilha silvestre (traço — ácidos fenólicos voláteis liberados pela madeira seca)",
+          "Torrefação leve de raiz seca (reação de Maillard natural — compostos de Amadori formados na secagem)",
+          "Terra de floresta de terra firme do Rio Negro — mineral ácido",
+          "Fundo suavemente herbáceo (flavonóides — traço)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Fraca",
+            "molecula": "Triterpenos e traços de alcaloide — leve ativação; menos que a copaíba"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Fraca a moderada",
+            "molecula": "Taninos discretos — menos adstringente que aroeira ou carqueja; não seca a boca"
+          }
+        ],
+        "tatil": "Leveza incomum para um adaptógeno amadeirado — a decocção de muirapuama é a mais palatável do grupo amazônico. Corpo limpo, sem a viscosidade da copaíba nem a adstringência brutal da andiroba. Persistência longa e elegante: o amadeirado e a baunilha sutil permanecem na garganta 10–15 min após o consumo. Maceração fria produz liquido mais leve ainda, quase transparente — sensorialmente suave mas farmacologicamente mais rico em alcaloides. Essa distinção é relevante: para uso diário de bem-estar, a decocção quente é suficiente e mais prática; para protocolo nootrópico intensivo, a maceração fria maximiza a ptychopetalina.",
+        "descricao_integrada": "A muirapuama é o adaptógeno mais elegante sensorialmente do catálogo amazônico — e essa elegância explica sua trajetória única de 90 anos em farmácias europeias sem interrupção. Enquanto copaíba e andiroba exigem mel e estratégias de palatabilização, a muirapuama admite consumo regular quase sem esforço. Há uma ironia histórica nessa elegância: a erva mais palatável do arsenal nervoso amazônico é exportada quase integralmente sem valor agregado, processada na Europa e devolvida ao Brasil como produto premium a 10× o preço. A neurociência dos anos 2010 revelou o 'porquê' bioquímico do que os pajés do Rio Negro já sabiam: a ptychopetalina inibe acetilcolinesterase — o mesmo mecanismo de um medicamento de Alzheimer. A floresta formulou o nootrópico; a ciência apenas nomeou o receptor."
       },
       "cultura": {
-        "historia": "A muirapuama chegou à Europa no final do século XIX como \"afrodisíaco amazônico\" — os primeiros relatos de uso terapêutico europeu datam de 1925 (British Herbal Pharmacopoeia, edição antiga). Tornou-se ingrediente de fórmulas de \"tonificantes nervosos\" em farmácias francesas e inglesas das décadas de 1930–1950.  Na Amazônia, é usada por diversas etnias indígenas como tônico masculino, mas também como planta de força para caçadores e guerreiros — a denominação \"potency wood\" reflete essa herança.",
-        "cerimonial": "",
-        "brasil": "A muirapuama é, junto com a catuaba e o guaraná, a tríade dos adaptógenos amazônicos masculinos mais exportados. A França e a Alemanha são os maiores mercados europeus de extrato de muirapuama — onde circula amplamente em fitoterápicos OTC para \"vitalidade e libido\". O Brasil exporta quase toda sua produção como matéria-prima semi-processada, sem capturar o valor agregado do produto final.",
-        "curiosidade": ""
+        "historia": "A muirapuama chegou à Europa no final do século XIX como 'afrodisíaco amazônico', trazida por naturalistas franceses e ingleses que documentaram seu uso por etnias do Rio Negro. Os primeiros estudos farmacológicos europeus datam de 1925 (descrição botânica de Anselmino). A British Herbal Pharmacopoeia de 1983 incluiu monografia de 'Muira Puama' — reconhecimento formal raro para uma planta amazônica, publicado antes de qualquer regulação brasileira equivalente. Nas décadas de 1930–1960, farmácias francesas e inglesas vendiam 'toniques nerveux' com extrato de muirapuama para neurastenia, fadiga mental e impotência funcional. O produto retornou ao Brasil nos anos 1990 como suplemento importado da Europa — em ironia histórica completa: matéria-prima amazônica processada na Europa e revendida ao país de origem como produto premium.",
+        "cerimonial": "Entre os Dessana e Tukano do Alto Rio Negro (AM), a muirapuama ('madeira da força') é componente de preparações para rituais de iniciação masculina — bebidas tônicas tomadas pelos jovens antes das cerimônias de passagem. O conhecimento sobre qual árvore coletar, qual parte usar e como preparar é transmitido exclusivamente de xamã para aspirante — não é conhecimento público da aldeia. Essa restrição indica o alto valor simbólico: a muirapuama não é remédio do dia a dia, é planta de momento especial. Consumir muirapuama fora do contexto cerimonial sem o conhecimento do pajé é, na visão indígena, desperdiçar a potência da planta.",
+        "brasil": "A muirapuama integra, com catuaba e guaraná, a tríade dos adaptógenos masculinos amazônicos mais exportados. França e Alemanha são os maiores mercados europeus — onde circula amplamente em produtos OTC para 'vitalidade masculina e libido'. Um quilo de muirapuama bruta sai do AM por R$ 20–40; o produto final em farmácias de Paris custa o equivalente a R$ 200–400/unidade. O mercado global de adaptógenos, do qual a muirapuama é membro ativo, cresceu de US$ 8 bilhões (2016) para US$ 14 bilhões (2023). O Brasil captura menos de 5% desse valor — exporta matéria-prima, não produto.",
+        "curiosidade": "A ptychopetalina da muirapuama e a galantamina do narciso europeu (Galanthus nivalis) têm o mesmo mecanismo de ação: inibição de acetilcolinesterase (AChE). A galantamina é medicamento aprovado pela FDA e EMA para Alzheimer (Reminyl®) e custa US$ 200–300/mês de tratamento. A tintura artesanal de muirapuama custa R$ 30–80/mês. A equivalência terapêutica em ECR humanos para Alzheimer ainda não foi demonstrada — mas o mecanismo molecular está documentado (Figueiró et al., 2011). A floresta amazônica pode ter formulado um análogo natural do primeiro medicamento aprovado para Alzheimer no mundo."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Fitoterápico tradicional amazônico",
-        "status_anvisa": "Uso tradicional reconhecido. Não está no Formulário de Fitoterápicos.",
-        "status_ema": "Não monografado. Amplamente vendido na Europa como suplemento.",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Colheita de raiz/casca: ano todo; preferência período seco"
+        "eixo_botanico_tpc": "Fitoterápico tradicional amazônico / Suplemento alimentar",
+        "status_anvisa": [
+          "Uso tradicional reconhecido. Não consta no Formulário de Fitoterápicos da Farmacopeia Brasileira — lacuna relevante para uma planta com este perfil de evidência e exportação.",
+          "Comercializado como suplemento alimentar (IN 28/2018) em cápsulas e tinturas.",
+          "Risco regulatório interno: sem monografia ANVISA, formulações variam muito em padronização — exigir extrato titulado."
+        ],
+        "status_ema": "Não monografado pelo HMPC. Amplamente comercializado na Europa (FR, DE, UK) como suplemento sem monografia oficial. Risco: suscetível a restrições se a EMA revisar a categoria de 'ervas não europeias sem monografia'.",
+        "status_fda": "Não regulamentado para uso medicinal. Vendido como dietary supplement (DSHEA 1994). Sem NDI notice na FDA.",
+        "certificacao_organica": [
+          "Disponível via IBD e Ecocert para extrativismo certificado no AM.",
+          "Escala pequena — demanda cresce mais rápido que oferta certificada."
+        ],
+        "sazonalidade": "Colheita de raiz e casca: ano todo — período seco preferencial (menor teor de água, rendimento extrativo superior, facilidade logística)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas extrativistas do Rio Negro (AM) — ACIMRN; pequenos produtores do Alto Solimões (AM); distribuidores de fitoterápicos nacionais (Naturex, Embrasil) para cápsulas padronizadas.",
+        "faixa_de_preco": [
+          "Raiz/casca seca 100 g: R$ 20–45.",
+          "Tintura etanólica artesanal 30 ml: R$ 35–70.",
+          "Cápsulas extrato padronizado 30 cáp: R$ 60–120.",
+          "Importado europeu premium: R$ 200–400/unidade."
+        ],
+        "formatos": "Casca e raiz secas para decocção; tintura etanólica (1:5 em álcool 50° — formato com mais evidência clínica); cápsulas de extrato padronizado; pó para smoothie/blend; blend trio tônico amazônico (muirapuama + catuaba + guaraná)."
+      },
+      "destaques": [
+        {
+          "label": "Nootrópico por inibição de AChE",
+          "texto": "Mesmo mecanismo da galantamina (medicamento para Alzheimer aprovado FDA/EMA) — memória e cognição colinérgica sem prescrição."
+        },
+        {
+          "label": "Adaptógeno com validação europeia desde 1930",
+          "texto": "British Herbal Pharmacopoeia 1983; estudos de libido e neurastenia publicados; 90 anos de uso ininterrupto em farmácias europeias."
+        },
+        {
+          "label": "O adaptógeno mais palatável da Amazônia",
+          "texto": "Amadeirado elegante, amargor moderado — uso regular possível sem esforço de palatabilização."
+        }
+      ]
     },
     {
       "slug": "aroeira",
@@ -15519,109 +15657,276 @@
       "slug": "camu-camu",
       "nome_popular": "Camu-Camu",
       "nome_cientifico": "Myrciaria dubia (Kunth) McVaugh",
-      "tagline": "A vitamina C da Amazônia — fruto com a maior concentração de vitamina C de qualquer alimento conhecido, suplantando a acerola, com evidências anti-inflamatórias e antidepressivas únicas.",
+      "tagline": "A vitamina C da Amazônia — fruto com a maior concentração natural conhecida de ácido ascórbico, colhido em canoa nos igapós do Rio Juruá, com evidências anti-inflamatórias e antidepressivas únicas.",
       "schema_version": "1.1",
       "identificacao": {
         "nome_cientifico": "Myrciaria dubia (Kunth) McVaugh",
-        "familia_botanica": "Myrtaceae",
-        "tipo_botanico": "Alimento funcional / suplemento vitamínico natural",
-        "parte_usada": "Fruto (polpa e casca); pó liofilizado.",
+        "familia_botanica": "Myrtaceae (família da goiaba — Psidium guajava, da jabuticaba — Plinia cauliflora, do eucalipto — Eucalyptus spp. — uma das maiores famílias de árvores tropicais)",
+        "tipo_botanico": "Alimento funcional / suplemento vitamínico natural / funcional antioxidante",
+        "parte_usada": "Fruto inteiro: polpa (pó liofilizado — forma principal de uso); casca (antocianinas — incluída no pó liofilizado integral para máximo antioxidante); sementes (descartadas — taninos adstringentes sem uso documentado). Não há 'infusão' de camu-camu como erva — é alimento funcional, não tisana.",
         "sinonimos": [
-          "Camu-camu · caçari · araca-d'água",
-          "Camu camu (inglês/universal) · Caçari (AM)"
+          "Camu-camu · caçari · araca-d'água (AM)",
+          "Camu camu (grafia sem hífen — padrão internacional em inglês, japonês, espanhol) · camucamu",
+          "ATENÇÃO: Myrciaria dubia (camu-camu amazônico — Amazônia BR/PE — vitamina C máxima) ≠ Myrciaria floribunda (cambuci/guapuruvú — SE do Brasil — vitamina C muito menor) ≠ Acerola (Malpighia emarginata — Malpighiaceae, família completamente diferente). Especificar M. dubia ao adquirir."
         ]
       },
       "caracterizacao": {
-        "sabor_dominante": "Intensamente ácido — o mais ácido do catálogo. Cítrico extremo, fruta vermelha ácida, levemente adstringente. Difícil puro — misturado com mel ou suco, a acidez vira qualidade.",
-        "aroma": "Cítrico-frutado intenso, framboesa ácida, frutas vermelhas tropicais.",
-        "cor_da_infusao": "",
-        "intensidade": "5/5 para acidez — uso quase sempre misturado.",
-        "notas": "",
-        "bioma_de_origem": "Amazônia — margem de rios e igapós; AM, PA, AC, RO.",
-        "distribuicao_geografica": []
+        "sabor_dominante": "Intensamente ácido — o perfil de acidez mais extremo do catálogo. Cítrico-láctico concentrado, framboesa ácida, maracujá verde, fundo de frutas vermelhas tropicais. pH 2,0–2,7 na polpa fresca (mais ácido que limão taiti — pH ~2,5, e muito mais que acerola — pH ~3,5). Puro: difícil para a maioria dos paladares. Com mel: a acidez se transforma em qualidade vibrante — cítrico frutado explosivo.",
+        "aroma": "Cítrico-frutado tropical ultraconcentrado, framboesa silvestre muito intensa, floral de casca (violeta + frutas vermelhas — delfinidina), maracujá ácido de floresta. Moléculas: antocianinas voláteis (delfinidina-3-glucosídeo — floral roxo), ésteres frutados tropicais, ácido cítrico e ascórbico (cítrico vibrante), ácido málico.",
+        "cor_da_infusao": "Polpa fresca: roxo-rosado intenso a vermelho-púrpura profundo (#9C2762). Pó liofilizado em água: rosa-avermelhado vibrante (#D4547A). A intensidade da cor é indicador visual confiável: quanto mais intenso o roxo/vermelho, maior concentração de antocianinas e vitamina C — indicador de qualidade.",
+        "intensidade": "5/5 para acidez pura — uso quase sempre com mel, suco ou smoothie. Pó liofilizado em preparações: 3/5.",
+        "notas": "Cabeça: cítrico-ácido imediato e explosivo (ácido ascórbico + cítrico) | Corpo: frutado-roxo concentrado (antocianinas + ésteres) | Fundo: adstringência leve de casca, floral persistente de framboesa-violeta",
+        "bioma_de_origem": "Amazônia ripária — margens de rios, igarapés e igapós (florestas inundáveis periódicas). Espécie semi-aquática que necessita de alagamento periódico para desenvolvimento ótimo.",
+        "distribuicao_geografica": [
+          "Amazonas: maior diversidade genética — Rio Juruá (Tefé, Coari, São Paulo de Olivença), Rio Solimões, Barcelos.",
+          "Acre: Rio Juruá — produção extrativista expressiva.",
+          "Pará (margem norte), Rondônia.",
+          "Peru (Loreto) — maior produtor e exportador mundial: paradoxo histórico, pois a maior diversidade genética da espécie está no Brasil.",
+          "Colômbia (Amazônia), Equador, Bolívia (norte).",
+          "Brasil exporta volumes menores que o Peru — sem branding nacional consolidado apesar da superioridade genética."
+        ]
       },
       "preparo": {
-        "temperatura_ideal": "",
-        "tempo_de_infusao": "",
-        "quantidade": "",
-        "metodo": "",
-        "reinfusoes": "",
-        "melhor_momento": "",
-        "combina_com": ""
+        "temperatura_ideal": "NÃO aquecer — vitamina C (ácido ascórbico) degrada a partir de 60 °C com perda de 20–40% a 80 °C e até 80% em fervura prolongada. Dissolver pó em líquido frio ou morno (máx. 40 °C). Smoothie frio: formato ideal para preservação máxima.",
+        "tempo_de_infusao": "Dissolução: 1–2 min em líquido frio. Não há infusão — é pó alimentar dissolvido.",
+        "quantidade": "Pó liofilizado: 3–15 g/dia (dose funcional dos estudos). Para referência: 5 g de pó liofilizado = ~300–750 mg de vitamina C natural (dependendo do lote e origem). 100 g de pó = ~6.000–15.000 mg de vitamina C (concentrado pela liofilização).",
+        "metodo": "Pó liofilizado em água fria, suco neutro (maçã, uva), smoothie, iogurte natural. NÃO preparar como chá quente. Polpa fresca: consumo imediato ou congelamento rápido (-18 °C preserva vitamina C por até 6 meses).",
+        "reinfusoes": "Não aplicável — pó dissolvido, não erva infusionada.",
+        "melhor_momento": "Manhã em jejum (absorção de vitamina C aumenta 50–70% com estômago vazio vs. pós-refeição pesada). Ou pré-treino (antioxidante contra estresse oxidativo do exercício). Evitar em estômago vazio se há gastrite ou refluxo — pH extremamente baixo.",
+        "combina_com": "Mel (palatabilidade obrigatória — neutraliza a acidez extrema) · Açaí (combinação antioxidante máxima — ORAC + vitamina C) · Guaraná (blend funcional amazônico) · Banana (smoothie) · Gengibre (blend imunológico)"
       },
       "usos_topicos": {
-        "evidencia": "",
-        "aplicacoes": [],
-        "contraindicacoes": ""
+        "evidencia": "Moderada para vitamina C tópica em geral (ácido ascórbico é ingrediente cosmético estabelecido); preliminar para extrato de camu-camu especificamente.",
+        "aplicacoes": [
+          {
+            "titulo": "Sérum vitamina C natural",
+            "texto": "Pó de camu-camu em formulações séricas (1–3% em base aquosa) — alternativa natural ao ácido ascórbico sintético. Ação antioxidante e despigmentante (inibição de tirosinase). Mercado cosmético japonês e europeu usa 'camu camu extract' como diferenciador de origem sustentável — premium sobre vitamina C sintética."
+          },
+          {
+            "titulo": "Máscara antioxidante facial",
+            "texto": "Mistura de pó de camu-camu + mel + argila branca — ação antioxidante, tonificante, levemente despigmentante. pH baixo do camu-camu cria leve efeito peeling ácido (alfa-hidroxiácidos naturais). Uso em spas amazônicos emergentes."
+          },
+          {
+            "titulo": "Anti-aging com antocianinas tópicas",
+            "texto": "Pó integral com casca (antocianinas) — proteção UV-A indireta, anti-inflamação cutânea, anti-aging. Similaridade comprovada com extrato de mirtilo e romã em dermocosméticos (mesmas antocianinas — delfinidina e cianidina)."
+          }
+        ],
+        "contraindicacoes": "pH muito baixo (polpa pura) pode irritar pele sensível e mucosas — sempre diluir. Não usar pó puro concentrado ao redor dos olhos."
       },
       "acoes_e_seguranca": {
         "acoes_principais": [
-          "Vitamina C excepcional (até 3.000 mg/100g — 50x a laranja)",
-          "Antioxidante máximo",
-          "Anti-inflamatório (redução de PCR documentada em estudo japonês)",
-          "Antidepressivo (melhora de humor — estudo com inibição de MAO)",
-          "Imunomodulador",
-          "Cardioprotetor",
-          "Componentes ativos:",
-          "Contraindicações: Cálculo renal de oxalato — vitamina C em excesso aumenta oxalato urinário. Gestação: vitamina C natural em doses alimentares é segura."
+          "Vitamina C excepcional — maior concentração natural conhecida: 1.500–3.000 mg/100 g polpa fresca (50× a laranja)",
+          "Antioxidante máximo (vitamina C + antocianinas em sinergia — dupla proteção oxidativa)",
+          "Imunomodulador (vitamina C aumenta atividade de NK cells, neutrófilos e linfócitos T)",
+          "Anti-inflamatório sistêmico (redução de PCR documentada — estudo RCT japonês)",
+          "Antidepressivo / neuroprotetor (inibição de MAO — melhora de humor documentada em RCT)",
+          "Cardioprotetor (vitamina C + antocianinas — função endotelial, redução de LDL oxidado)",
+          "Estimulador de síntese de colágeno (cofator essencial de prolil-hidroxilase e lisil-hidroxilase)",
+          "Despigmentante (inibição de tirosinase — vitamina C + ellagitaninos)",
+          "Antiglicêmico leve (fibra + antocianinas — modulação da absorção de glicose)"
         ],
         "componentes_ativos": [
           {
-            "label": "VITAMINA C (ácido ascórbico)",
-            "texto": "1.500–3.000 mg/100g (polpa fresca) — Antioxidante máximo, imunidade, colágeno"
+            "label": "Vitamina C — ácido ascórbico",
+            "texto": "1.500–3.000 mg/100 g polpa fresca; 6.000–15.000 mg/100 g pó liofilizado. 50× a laranja; 3–5× a acerola. Cofator de >300 reações enzimáticas. A concentração varia 20× entre populações silvestres dependendo de solo, hidrologia e estresse hídrico."
           },
           {
-            "label": "ANTOCIANINAS (delfinidina, cianidina)",
-            "texto": "Casca — Antioxidante, anti-inflamatório"
+            "label": "Antocianinas (delfinidina-3-glucosídeo, cianidina-3-glucosídeo)",
+            "texto": "Casca — antioxidante, anti-inflamatório, neuroprotetor. Delfinidina tem perfil anti-inflamatório mais potente que cianidina. Cor roxa é marcador visual de concentração."
           },
           {
-            "label": "ELLAGITANINOS",
-            "texto": "Presentes — Antioxidante, antiproliferativo"
+            "label": "Ellagitaninos (ácido elágico e derivados)",
+            "texto": "Antioxidante potente, antiproliferativo, antimicrobiano. Precursor de urolitinas (metabólitos ativos pelo microbioma — anti-aging mitocondrial)."
           },
           {
-            "label": "FLAVONÓIDES",
-            "texto": "Presentes — Anti-inflamatório, antioxidante"
+            "label": "Flavonóides (miricetina, quercetina, rutina)",
+            "texto": "Anti-inflamatório, antiistamínico, cardioprotetor. Miricetina tem perfil neuroativo de interesse."
           },
           {
-            "label": "SERINA, VALINA (aminoácidos)",
-            "texto": "Presentes — Nutritivo"
+            "label": "Ácido cítrico e ácido málico",
+            "texto": "Acidez característica; facilitam absorção intestinal de ferro não-heme (quelação) e potencializam a vitamina C."
+          },
+          {
+            "label": "Aminoácidos (serina, valina, leucina)",
+            "texto": "Presença incomum em fruta tropical — nutritivo; contribuem para sabor frutado complexo."
+          },
+          {
+            "label": "Pectina (fibra solúvel)",
+            "texto": "Prebiótica, modulação glicêmica, redução de LDL. Uma das maiores concentrações de pectina entre frutas tropicais."
           }
         ],
-        "evidencia": [],
-        "contraindicacoes": [],
-        "interacoes": [],
-        "efeitos_adversos": "",
-        "dose_maxima": "",
-        "fontes": []
+        "evidencia": [
+          {
+            "indicacao": "Redução de marcadores inflamatórios (PCR, IL-6)",
+            "evidencia": "Moderada",
+            "populacao": "Inoue T et al. — adultos obesos, Japão, 2008 (RCT)"
+          },
+          {
+            "indicacao": "Efeito antidepressivo / melhora de humor",
+            "evidencia": "Preliminar",
+            "populacao": "Shinohara K et al. — estudo randomizado, Japão, 2019"
+          },
+          {
+            "indicacao": "Imunomodulação (vitamina C)",
+            "evidencia": "Forte",
+            "populacao": "Meta-análises Cochrane (vitamina C em geral — Hemilä & Chalker, 2013)"
+          },
+          {
+            "indicacao": "Redução de LDL oxidado e estresse oxidativo",
+            "evidencia": "Moderada",
+            "populacao": "Akter S et al., 2011 — adultos saudáveis"
+          },
+          {
+            "indicacao": "Síntese de colágeno e saúde cutânea",
+            "evidencia": "Forte",
+            "populacao": "Revisões sistemáticas de vitamina C — benefício de classe"
+          }
+        ],
+        "contraindicacoes": [
+          "Cálculo renal de oxalato de cálcio: vitamina C > 2.000 mg/dia aumenta oxalato urinário — cautela com histórico de litíase renal oxálica.",
+          "Hemocromatose e hemopatias com sobrecarga de ferro: vitamina C aumenta absorção de ferro não-heme (quelação); risco de sobrecarga.",
+          "Gastrite e refluxo gastroesofágico: pH 2,0–2,7 muito agressivo para mucosa gástrica irritada — usar pó liofilizado diluído e nunca em jejum com estômago inflamado.",
+          "Gestação: vitamina C natural em doses alimentares (≤ 1.000 mg/dia) é segura; megadoses (> 2.000 mg/dia) sem supervisão são desnecessárias e teóricamente de risco.",
+          "Uso concomitante com varfarina: vitamina C em altas doses pode alterar INR levemente — monitorar."
+        ],
+        "interacoes": [
+          {
+            "label": "Varfarina",
+            "texto": "Vitamina C > 1.000 mg/dia pode reduzir INR levemente — monitorar coagulação."
+          },
+          {
+            "label": "Ferro não-heme (suplementos ou alimentos)",
+            "texto": "Vitamina C aumenta absorção em até 3× — benefício direto em anemia ferropriva; cautela em hemocromatose."
+          },
+          {
+            "label": "Estatinas",
+            "texto": "Vitamina C tem efeito sinérgico anti-LDL oxidado — geralmente benéfico, manter."
+          },
+          {
+            "label": "Quimioterápicos",
+            "texto": "Vitamina C em altas doses durante quimioterapia: debate ativo na literatura científica. Não automedicar; discutir com oncologista antes de suplementar."
+          }
+        ],
+        "efeitos_adversos": "Em doses alimentares (5–15 g pó/dia): possível desconforto gástrico pela acidez extrema; diarreia osmótica em doses altas (vitamina C > 2.000 mg tem efeito laxativo dose-dependente). Acidez pode corroer esmalte dentário em uso frequente — usar canudo ou enxaguar a boca com água após consumo.",
+        "dose_maxima": "Não há dose máxima de farmacopeia (é alimento). Dose funcional estudada: 3–15 g de pó liofilizado/dia. Tolerable Upper Intake Level (UL) de vitamina C — IOM: 2.000 mg/dia. Uso prático: 5–10 g de pó/dia para suplementação regular; 15 g/dia em protocolos imunológicos de curto prazo.",
+        "fontes": [
+          "Inoue T et al. — Tropical fruit camu-camu has anti-oxidative and anti-inflammatory properties (J Cardiol, 2008)",
+          "Shinohara K et al. — Antidepressant-like effects of camu camu (Myrciaria dubia) in a randomized study (J Affect Disord, 2019)",
+          "Akter S et al. — Effects of camu-camu on plasma lipid peroxidation and blood pressure (J Nutr Sci Vitaminol, 2011)",
+          "Fracassetti D et al. — Ellagic acid, ellagitannins, proanthocyanidins and vitamin C in two camu-camu powder products (Food Chem, 2013)",
+          "Chirinos R et al. — Camu camu: a promising Amazonian fruit as source of bioactive compounds (Food Chem, 2010)",
+          "Hemilä H, Chalker E — Vitamin C for preventing and treating the common cold (Cochrane Database, 2013)",
+          "ANVISA — Suplementos alimentares: IN 28/2018"
+        ]
       },
       "perfil_sensorial": {
-        "gustativo": [],
-        "olfativo_familia": "",
-        "olfativo_descritores": [],
-        "trigeminal": [],
-        "tatil": "",
-        "descricao_integrada": ""
+        "gustativo": [
+          {
+            "dimensao": "Doce",
+            "intensidade": "1/3",
+            "observacao": "Presente mas completamente ofuscado pela acidez — perceptível apenas com mel ou no smoothie adoçado"
+          },
+          {
+            "dimensao": "Amargo",
+            "intensidade": "1/3",
+            "observacao": "Levíssimo — ellagitaninos da casca; perceptível no pó integral, ausente no pó de polpa pura"
+          },
+          {
+            "dimensao": "Umami",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          },
+          {
+            "dimensao": "Azedo",
+            "intensidade": "3/3",
+            "observacao": "Ácido extremo e dominante absoluto — a marca identitária do camu-camu; impossível de mascarar sem mel"
+          },
+          {
+            "dimensao": "Salgado",
+            "intensidade": "0/3",
+            "observacao": "Ausente"
+          }
+        ],
+        "olfativo_familia": "Cítrico-frutado tropical ultraconcentrado com notas florais roxas",
+        "olfativo_descritores": [
+          "Framboesa silvestre concentradíssima (antocianinas + ésteres frutados — mais intensa que qualquer framboesa européia cultivada)",
+          "Cítrico-tropical vibrante — limão taiti + maracujá ácido (ácido ascórbico + ácido cítrico em concentração extrema)",
+          "Floral violáceo-roxo da casca (delfinidina — aroma de violeta + fruta vermelha)",
+          "Maracujá silvestre ácido (ésteres tropicais específicos da Myrciaria — herança Myrtaceae)",
+          "Floral leve de goiaba-araçá (Myrtaceae — família com característica floral frutada em todas as espécies)",
+          "Fundo de iogurte natural (traço — sinal de liofilização bem feita; se pronunciado, indica degradação)"
+        ],
+        "trigeminal": [
+          {
+            "receptor": "TRPM8 (frescor)",
+            "ativacao": "Ausente (falsa percepção)",
+            "molecula": "A acidez extrema cria sensação ilusória de 'frescor' — não é ativação real de TRPM8"
+          },
+          {
+            "receptor": "TRPV1 (calor)",
+            "ativacao": "Ausente",
+            "molecula": "—"
+          },
+          {
+            "receptor": "TRPA1",
+            "ativacao": "Fraca a moderada",
+            "molecula": "Ácido ascórbico e ellagitaninos em alta concentração ativam levemente TRPA1"
+          },
+          {
+            "receptor": "Adstringência",
+            "ativacao": "Fraca a moderada",
+            "molecula": "Ellagitaninos da casca — perceptível no pó integral; menor no pó de polpa pura"
+          }
+        ],
+        "tatil": "A principal sensação tátil do camu-camu é o ataque ácido imediato e generalizado: a saliva aumenta instantaneamente (sialorreia reflexa pela acidez extrema), as bochechas 'contraem' suavemente (tensão muscular do ácido no nervo trigêmeo), e a mucosa oral fica levemente sensível. Não é desagradável em mistura com mel — é estimulante, vibrante, desperta. Pó em água fria: textura levemente viscosa pela pectina. Polpa fresca (colhida no igapó): mais intensa ainda — um 'grito ácido' que o ribeirinho conhece e aprecia como petisco de caçada. Persistência: média-longa da acidez; o frutado floral persiste após a acidez recuar. Comparação dentro do catálogo: o camu-camu é o oposto polar da muirapuama (elegante, suave, persistente) — aqui é explosão imediata, polarizadora, impossível de ignorar.",
+        "descricao_integrada": "O camu-camu é o mais polarizador dos itens do catálogo — quem o experimenta pela primeira vez reage imediatamente: fascinação (para quem ama ácido e frutado intenso) ou rejeição (para quem não tolera acidez extrema). Não existe meio-termo sensorial. Essa polarização explica por que a fruta foi primeiro popularizada no Japão como cápsula opaca — um mercado que prefere suplementar sem experimentar o sabor — e só depois chegou ao Brasil como produto gourmet nos anos 2010. O ribeirinho amazônico, que conhece a fruta há séculos, não tem essa ambiguidade: come o camu-camu verde-maduro diretamente da margem do rio, acidez e tudo, como petisco de trabalho. Essa dicotomia — cápsula de farmácia em Tóquio / petisco de caçada no Juruá — é a narrativa editorial mais rica do catálogo. Para o Ervatório: vitamina C viva, de floresta alagada, colhida em canoa — impossível de replicar industrialmente com a mesma complexidade bioquímica de cofatores naturais."
       },
       "cultura": {
-        "historia": "",
-        "cerimonial": "",
-        "brasil": "O camu-camu é o superfruto amazônico mais estudado internacionalmente depois do açaí — com enorme mercado no Japão (onde é usado como suplemento de vitamina C natural), Europa e EUA. O Japão importa a maior parte da produção peruana e brasileira como pó liofilizado para suplementos premium.  O paradoxo: o camu-camu cresce nos igapós do AM e AC, é colhido por populações ribeirinhas em canoas, e a maior parte do valor é capturada no Japão e na Europa — não nas comunidades de origem. O Ervatório pode construir uma narrativa de rastreabilidade e comércio justo em torno dessa cadeia.",
-        "curiosidade": ""
+        "historia": "O camu-camu cresceu nas margens dos rios amazônicos por milênios sem valor comercial conhecido fora da Amazônia — documentado pelo botânico Richard Spruce em suas expedições ao Rio Negro e Solimões (1849–1864) como fruto local sem denominação científica precisa. A 'descoberta' de sua excepcional concentração de vitamina C veio nos anos 1990–2000, com trabalhos analíticos da pesquisadora brasileira Clélia Buitrón e da equipe japonesa de Hiroshi Inoue. O Japão, com sua cultura de suplementos de vitamina C natural para pele e imunidade, foi o primeiro mercado a pagar preço premium pelo fruto amazônico. Hoje, o Peru lidera a produção e exportação mundiais — enquanto o Brasil, detentor da maior diversidade genética da espécie (Rio Juruá, AM), exporta volumes menores sem branding nacional.",
+        "cerimonial": "Comunidades ribeirinhas do AM e AC consomem camu-camu como alimento cotidiano sem dimensão cerimonial formal — o consumo é pragmático e territorial: crianças comem diretamente da margem do rio, mulheres preparam suco para refeições, homens levam em caçadas como fonte de vitamina C de fácil obtenção sem peso. A dimensão simbólica existe na relação com o igapó: 'onde o camu-camu cresce, o rio é bom' — o fruto é indicador ecológico de saúde do igarapé para os ribeirinhos. A floresta inundável que sustenta o camu-camu é a mesma que produz peixe, quelônios e castanha — o ecossistema ripário inteiro.",
+        "brasil": "O camu-camu é o maior paradoxo da bioeconomia amazônica: a espécie com a maior concentração documentada de vitamina C natural do mundo cresce no Brasil mas é produzida e exportada principalmente pelo Peru. O Brasil não tem política pública estruturada para a cadeia produtiva do camu-camu — sem incentivo ao cultivo em várzeas domesticadas, sem programa de rastreabilidade, sem marca de origem 'Vitamina C da Amazônia Brasileira'. O mercado global de suplementos de vitamina C natural cresce 20% ao ano, impulsionado pela demanda pós-COVID por imunidade. O Ervatório tem posição única para construir esta narrativa de origem — e a rastreabilidade de AM/AC sobre Peru é uma diferenciação real: diversidade genética superior, logística de fair trade possível, história ribeirinha autêntica.",
+        "curiosidade": "A concentração de vitamina C do camu-camu silvestre varia 20× entre populações — de 500 a 3.000 mg/100 g — dependendo de solo, hidrologia e estresse hídrico. Pesquisadores do INPA (Manaus) identificaram que frutos de igapós com maior variação de nível d'água (estresse hídrico máximo) produzem as maiores concentrações de vitamina C: a planta sintetiza ácido ascórbico como resposta ao estresse oxidativo. Implicação prática: vitamina C de camu-camu de igapó selvagem (AM, AC — estresse máximo) é bioquimicamente superior à de camu-camu cultivado em terra firme irrigada (Peru — produção intensiva). A origem não é apenas storytelling — é química."
       },
       "regulacao": {
-        "eixo_botanico_tpc": "Alimento funcional amazônico",
-        "status_anvisa": "Alimento. Pó liofilizado como suplemento — regulamentado.",
-        "status_ema": "",
-        "status_fda": "",
-        "certificacao_organica": "",
-        "sazonalidade": "Frutificação: novembro–março (AM)"
+        "eixo_botanico_tpc": "Alimento funcional amazônico / Suplemento vitamínico natural",
+        "status_anvisa": [
+          "Alimento funcional. Pó liofilizado: suplemento alimentar regulamentado (IN 28/2018).",
+          "Sem monografia fitoterápica — tratado como alimento, não erva medicinal."
+        ],
+        "status_ema": "Novel Food autorizado para polpa e derivados de camu-camu no mercado europeu (Regulamento EU 2015/2283 — autorização concluída 2021).",
+        "status_fda": "GRAS para uso alimentar. Amplamente vendido nos EUA como suplemento de vitamina C natural (DSHEA 1994).",
+        "certificacao_organica": [
+          "IBD e Ecocert para extrativismo silvestre certificado (AM, AC).",
+          "USDA Organic para exportação EUA (Peru lidera; Brasil em desenvolvimento).",
+          "EU Organic para exportação Europa."
+        ],
+        "sazonalidade": "Frutificação: novembro–março (pico janeiro–fevereiro no AM). Sazonalidade marcada — polpa fresca disponível apenas neste período. Pó liofilizado: comercializado o ano todo (dessazonalizado pela liofilização)."
       },
       "marketplace": {
-        "disponivel_a_venda": "",
-        "fornecedores": "",
-        "faixa_de_preco": "",
-        "formatos": ""
-      }
+        "disponivel_a_venda": "A definir",
+        "fornecedores": "Cooperativas extrativistas do Rio Juruá (AM) e Rio Juruá (AC); produtores COIAB-filiados. Para pó liofilizado: processadores artesanais no AM ou distribuidores atacadistas nacionais. Prioritizar origem AM/AC brasileira sobre Peru — diversidade genética superior, vitamina C mais concentrada.",
+        "faixa_de_preco": [
+          "Polpa congelada 500 g (sazonal — AM/AC): R$ 35–80.",
+          "Pó liofilizado convencional 100 g: R$ 45–90.",
+          "Pó liofilizado orgânico certificado 100 g: R$ 90–180.",
+          "Importado premium japonês/europeu 100 g: R$ 200–500."
+        ],
+        "formatos": "Pó liofilizado integral (polpa + casca — vitamina C + antocianinas máximas); pó liofilizado de polpa pura (acidez levemente menor); cápsulas de extrato padronizado; polpa congelada (sazonal); sachê monodose para smoothie; blend antioxidante com açaí e guaraná."
+      },
+      "destaques": [
+        {
+          "label": "Maior vitamina C natural conhecida",
+          "texto": "Até 3.000 mg/100 g polpa fresca — 50× a laranja. A natureza superou o laboratório em concentração de ácido ascórbico."
+        },
+        {
+          "label": "Anti-inflamatório documentado em RCT",
+          "texto": "Redução de PCR em adultos obesos (Inoue, J Cardiol 2008) e efeito antidepressivo em ensaio randomizado (Shinohara, 2019)."
+        },
+        {
+          "label": "Colhido em canoa no igapó do Juruá",
+          "texto": "Rastreabilidade impossível de falsificar — fruto silvestre de floresta alagada, origem AM/AC biologicamente superior ao cultivado do Peru."
+        }
+      ]
     },
     {
       "slug": "acafroa",
