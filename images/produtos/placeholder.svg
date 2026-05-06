@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f7f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e4f0e4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7ab87a;stop-opacity:0.35" />
+      <stop offset="100%" style="stop-color:#4a8c4a;stop-opacity:0.25" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg)" rx="8"/>
+
+  <!-- Decorative border -->
+  <rect x="12" y="12" width="376" height="276" fill="none" stroke="#7ab87a" stroke-width="1" stroke-opacity="0.3" rx="6" stroke-dasharray="6 4"/>
+
+  <!-- Large leaf shape (background) -->
+  <path d="M200 240 C120 200 80 150 100 80 C120 30 180 20 200 60 C220 20 280 30 300 80 C320 150 280 200 200 240Z"
+        fill="url(#leaf)" />
+
+  <!-- Leaf midrib -->
+  <path d="M200 240 C200 200 200 140 200 60"
+        stroke="#4a8c4a" stroke-width="1.5" stroke-opacity="0.3" fill="none"/>
+
+  <!-- Leaf veins left -->
+  <path d="M200 180 C175 170 155 160 140 145"
+        stroke="#4a8c4a" stroke-width="1" stroke-opacity="0.2" fill="none"/>
+  <path d="M200 150 C172 138 150 128 132 112"
+        stroke="#4a8c4a" stroke-width="1" stroke-opacity="0.2" fill="none"/>
+  <path d="M200 120 C176 108 158 96 142 78"
+        stroke="#4a8c4a" stroke-width="1" stroke-opacity="0.2" fill="none"/>
+
+  <!-- Leaf veins right -->
+  <path d="M200 180 C225 170 245 160 260 145"
+        stroke="#4a8c4a" stroke-width="1" stroke-opacity="0.2" fill="none"/>
+  <path d="M200 150 C228 138 250 128 268 112"
+        stroke="#4a8c4a" stroke-width="1" stroke-opacity="0.2" fill="none"/>
+  <path d="M200 120 C224 108 242 96 258 78"
+        stroke="#4a8c4a" stroke-width="1" stroke-opacity="0.2" fill="none"/>
+
+  <!-- Small decorative dots -->
+  <circle cx="80" cy="50" r="3" fill="#7ab87a" fill-opacity="0.25"/>
+  <circle cx="320" cy="50" r="3" fill="#7ab87a" fill-opacity="0.25"/>
+  <circle cx="60" cy="250" r="2" fill="#7ab87a" fill-opacity="0.25"/>
+  <circle cx="340" cy="250" r="2" fill="#7ab87a" fill-opacity="0.25"/>
+
+  <!-- Text -->
+  <text x="200" y="268" text-anchor="middle" font-family="Georgia, serif"
+        font-size="12" fill="#4a7c4a" fill-opacity="0.7" letter-spacing="1">
+    imagem em breve
+  </text>
+</svg>

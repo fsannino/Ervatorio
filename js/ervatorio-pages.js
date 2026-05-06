@@ -580,10 +580,11 @@
     var cientifico = f.nome_cientifico || row.herb_latin_name || '';
     var tagline = f.tagline || '';
     var eixo = (f.regulacao && f.regulacao.eixo_botanico_tpc) || '';
-    var img = resolveErvaImg(nome, cientifico);
-    var visual = img
-      ? '<div class="ev-card-img-wrap"><img class="ev-card-img" src="' + safeEsc(img) + '" alt="' + safeEsc(nome) + '" loading="lazy" onerror="this.parentElement.style.display=\'none\'"></div>'
-      : '';
+    var herbImg = resolveErvaImg(nome, cientifico);
+    var imgSrc = safeEsc(herbImg || ('images/produtos/' + slug + '.jpg'));
+    var pngFb  = safeEsc('images/produtos/' + slug + '.png');
+    var ph     = 'images/produtos/placeholder.svg';
+    var visual = '<div class="ev-card-img-wrap"><img class="ev-card-img" src="' + imgSrc + '" alt="' + safeEsc(nome) + '" loading="lazy" onerror="if(!this._fb){this._fb=1;this.src=\'' + pngFb + '\';}else{this.src=\'' + ph + '\';this.onerror=null;}"></div>';
     return '<div class="herb-card ev-ficha-card" onclick="goPage(\'ficha\',null,\'' + safeEsc(slug) + '\')">' +
       visual +
       '<div class="ev-card-nome">' + safeEsc(nome) + '</div>' +
@@ -704,14 +705,15 @@
     var html = '<article class="ficha-page-article">';
 
     // Header
-    var heroImg = resolveErvaImg(f.nome_popular, f.nome_cientifico);
-    html += '<header class="ficha-hero' + (heroImg ? ' ficha-hero--with-img' : '') + '">' +
-      (heroImg
-        ? '<figure class="ficha-hero-img">' +
-            '<img src="' + safeEsc(heroImg) + '" alt="' + safeEsc(f.nome_popular || '') + '" loading="lazy" onerror="this.parentElement.style.display=\'none\'">' +
-            '<figcaption class="ficha-hero-caption">Imagem meramente ilustrativa</figcaption>' +
-          '</figure>'
-        : '') +
+    var heroImg  = resolveErvaImg(f.nome_popular, f.nome_cientifico) || ('images/produtos/' + slug + '.jpg');
+    var heroPng  = safeEsc('images/produtos/' + slug + '.png');
+    var heroPh   = 'images/produtos/placeholder.svg';
+    var heroOerr = "if(!this._fb){this._fb=1;this.src='" + heroPng + "';}else{this.src='" + heroPh + "';this.onerror=null;}";
+    html += '<header class="ficha-hero ficha-hero--with-img">' +
+      '<figure class="ficha-hero-img">' +
+        '<img src="' + safeEsc(heroImg) + '" alt="' + safeEsc(f.nome_popular || '') + '" loading="lazy" onerror="' + heroOerr + '">' +
+        '<figcaption class="ficha-hero-caption">Imagem meramente ilustrativa</figcaption>' +
+      '</figure>' +
       '<div class="ficha-hero-text">' +
         '<h1 class="ficha-title">' + safeEsc(f.nome_popular || '') + '</h1>' +
         '<div class="ficha-latin">' + safeEsc(f.nome_cientifico || '') + '</div>' +
