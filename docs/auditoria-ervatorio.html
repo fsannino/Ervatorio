@@ -1,0 +1,1246 @@
+<title>Auditoria Enterprise — Ervatório Marketplace</title>
+<style>
+/* ============================================================
+   ERVATÓRIO — Relatório de Auditoria Enterprise
+   Identidade herdada da marca: verde-profundo + ouro + pergaminho
+   ============================================================ */
+:root{
+  --ground:#f3ecdd; --panel:#fbf6ea; --panel-2:#f6efe0; --ink:#1c1b16; --ink-soft:#4a463b;
+  --line:#e0d5bd; --line-strong:#cdbf9f;
+  --forest:#183527; --forest-2:#2d5440; --moss:#3d6b4f;
+  --gold:#9a7a2e; --gold-bright:#b8965a; --gold-soft:#e7d9b6;
+  --terra:#5c3d2e;
+  --crit:#a3241c; --crit-bg:#f7e2df;
+  --high:#b5661a; --high-bg:#f8e8d6;
+  --med:#8a6d1f; --med-bg:#f4eccf;
+  --low:#3f7a55; --low-bg:#e2eede;
+  --pos:#256d46; --pos-bg:#dcebe0;
+  --shadow:0 1px 2px rgba(24,53,39,.06),0 6px 24px rgba(24,53,39,.07);
+  --maxw:1100px;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --ground:#0f1512; --panel:#161d18; --panel-2:#131a16; --ink:#ece4d2; --ink-soft:#a9a693;
+    --line:#26302a; --line-strong:#354036;
+    --forest:#0c1712; --forest-2:#1c3327; --moss:#c8b89a;
+    --gold:#d4af7a; --gold-bright:#e8c9a0; --gold-soft:#3a3320; --terra:#c8a070;
+    --crit:#f08a80; --crit-bg:#2c1917; --high:#e6a765; --high-bg:#2a2013;
+    --med:#d8c06a; --med-bg:#25220f; --low:#7fc79a; --low-bg:#132018;
+    --pos:#84cfa2; --pos-bg:#122018;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 30px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0f1512; --panel:#161d18; --panel-2:#131a16; --ink:#ece4d2; --ink-soft:#a9a693;
+  --line:#26302a; --line-strong:#354036; --forest:#0c1712; --forest-2:#1c3327; --moss:#c8b89a;
+  --gold:#d4af7a; --gold-bright:#e8c9a0; --gold-soft:#3a3320; --terra:#c8a070;
+  --crit:#f08a80; --crit-bg:#2c1917; --high:#e6a765; --high-bg:#2a2013;
+  --med:#d8c06a; --med-bg:#25220f; --low:#7fc79a; --low-bg:#132018; --pos:#84cfa2; --pos-bg:#122018;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 30px rgba(0,0,0,.35);
+}
+:root[data-theme="light"]{
+  --ground:#f3ecdd; --panel:#fbf6ea; --panel-2:#f6efe0; --ink:#1c1b16; --ink-soft:#4a463b;
+  --line:#e0d5bd; --line-strong:#cdbf9f; --forest:#183527; --forest-2:#2d5440; --moss:#3d6b4f;
+  --gold:#9a7a2e; --gold-bright:#b8965a; --gold-soft:#e7d9b6; --terra:#5c3d2e;
+  --crit:#a3241c; --crit-bg:#f7e2df; --high:#b5661a; --high-bg:#f8e8d6;
+  --med:#8a6d1f; --med-bg:#f4eccf; --low:#3f7a55; --low-bg:#e2eede; --pos:#256d46; --pos-bg:#dcebe0;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.15;text-wrap:balance;margin:0}
+p{margin:0 0 .8em}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+code,.mono{font-family:var(--mono);font-size:.86em;background:var(--panel-2);padding:.08em .35em;
+  border-radius:4px;border:1px solid var(--line)}
+.small{font-size:.82rem;color:var(--ink-soft)}
+.eyebrow{font-family:var(--sans);text-transform:uppercase;letter-spacing:.16em;font-size:.7rem;
+  font-weight:700;color:var(--gold)}
+
+/* ---- HERO ---- */
+.hero{background:linear-gradient(160deg,var(--forest) 0%,var(--forest-2) 100%);color:#ece4d2;
+  padding:64px 0 52px;border-bottom:3px solid var(--gold-bright);position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:2}
+.hero .leaf{position:absolute;inset:0;opacity:.10;z-index:1;
+  background-image:radial-gradient(circle at 85% 15%,#b8965a 0,transparent 42%),
+  radial-gradient(circle at 12% 90%,#3d6b4f 0,transparent 40%)}
+.hero .eyebrow{color:var(--gold-bright)}
+.hero h1{font-size:clamp(2.1rem,5vw,3.4rem);color:#f6efe0;margin:.3em 0 .35em;letter-spacing:-.01em}
+.hero .lede{font-size:clamp(1.02rem,2vw,1.2rem);max-width:64ch;color:#d9cfba}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:.85rem;color:#c3b89e}
+.hero .meta b{color:#ece4d2;font-weight:600}
+.verdict{display:flex;flex-wrap:wrap;gap:20px;margin-top:34px}
+.vcard{background:rgba(255,255,255,.05);border:1px solid rgba(232,201,160,.25);border-radius:14px;
+  padding:16px 20px;min-width:150px;backdrop-filter:blur(4px)}
+.vcard .n{font-family:var(--serif);font-size:2.4rem;font-weight:700;color:#f6efe0;line-height:1}
+.vcard .l{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#c3b89e;margin-top:6px}
+.vcard .s{font-size:.8rem;color:#e8c9a0;margin-top:2px}
+
+/* ---- NAV ---- */
+nav.toc{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:9px 0}
+nav.toc .row{display:flex;gap:5px;overflow-x:auto;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+nav.toc a{white-space:nowrap;font-size:.76rem;color:var(--ink-soft);padding:5px 10px;border-radius:7px;
+  font-weight:600}
+nav.toc a:hover{background:var(--panel-2);color:var(--ink);text-decoration:none}
+
+/* ---- SECTION ---- */
+section{padding:46px 0 8px;border-top:1px solid var(--line)}
+section:first-of-type{border-top:none}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:8px}
+.sec-num{font-family:var(--serif);font-size:1.05rem;color:var(--gold);font-weight:700;
+  border:1.5px solid var(--gold-soft);border-radius:8px;padding:2px 9px;flex:none}
+h2.sec-title{font-size:clamp(1.5rem,3vw,2rem)}
+.sec-sub{color:var(--ink-soft);max-width:72ch;margin:4px 0 22px}
+
+/* ---- CHIPS / BADGES ---- */
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:.68rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.04em;padding:3px 9px;border-radius:999px;border:1px solid}
+.chip.crit{color:var(--crit);background:var(--crit-bg);border-color:color-mix(in srgb,var(--crit) 40%,transparent)}
+.chip.high{color:var(--high);background:var(--high-bg);border-color:color-mix(in srgb,var(--high) 40%,transparent)}
+.chip.med{color:var(--med);background:var(--med-bg);border-color:color-mix(in srgb,var(--med) 40%,transparent)}
+.chip.low{color:var(--low);background:var(--low-bg);border-color:color-mix(in srgb,var(--low) 40%,transparent)}
+.chip.pos{color:var(--pos);background:var(--pos-bg);border-color:color-mix(in srgb,var(--pos) 40%,transparent)}
+
+/* ---- FINDING CARD ---- */
+.finding{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--line-strong);
+  border-radius:12px;padding:18px 20px;margin:14px 0;box-shadow:var(--shadow)}
+.finding.crit{border-left-color:var(--crit)}
+.finding.high{border-left-color:var(--high)}
+.finding.med{border-left-color:var(--med)}
+.finding.low{border-left-color:var(--low)}
+.finding.pos{border-left-color:var(--pos)}
+.finding .fh{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:8px}
+.finding h4{font-size:1.08rem;flex:1 1 60%}
+.finding .code-ref{font-family:var(--mono);font-size:.74rem;color:var(--ink-soft)}
+.grid9{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2px 18px;margin-top:10px}
+.grid9 .cell{padding:7px 0;border-top:1px dashed var(--line)}
+.grid9 .k{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);font-weight:700}
+.grid9 .v{font-size:.92rem}
+.rec{margin-top:10px;padding:10px 12px;background:var(--panel-2);border-radius:8px;font-size:.92rem}
+.rec b{color:var(--moss)}
+
+/* ---- METERS ---- */
+.meter{display:flex;align-items:center;gap:12px;margin:7px 0}
+.meter .lab{flex:0 0 200px;font-size:.86rem}
+.meter .track{flex:1;height:11px;background:var(--panel-2);border-radius:99px;overflow:hidden;border:1px solid var(--line)}
+.meter .fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--moss),var(--gold-bright))}
+.meter .pct{flex:0 0 52px;text-align:right;font-variant-numeric:tabular-nums;font-weight:700;font-size:.88rem}
+
+/* ---- TABLES ---- */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:14px 0;box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:.85rem;background:var(--panel)}
+th,td{padding:8px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:var(--forest);color:#ece4d2;font-family:var(--sans);font-weight:600;
+  font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;position:sticky;top:0}
+:root[data-theme="light"] thead th{background:var(--forest)}
+tbody tr:nth-child(even){background:var(--panel-2)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.stars{color:var(--gold-bright);letter-spacing:1px;font-size:.8rem}
+
+/* ---- CALLOUT ---- */
+.callout{border-radius:12px;padding:16px 20px;margin:16px 0;border:1px solid;display:flex;gap:14px}
+.callout .ic{font-size:1.4rem;flex:none}
+.callout.danger{background:var(--crit-bg);border-color:color-mix(in srgb,var(--crit) 35%,transparent)}
+.callout.win{background:var(--pos-bg);border-color:color-mix(in srgb,var(--pos) 35%,transparent)}
+.callout h4{margin-bottom:4px;font-size:1.05rem}
+
+/* ---- SWOT ---- */
+.swot{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.swot .q{border-radius:12px;padding:16px 18px;border:1px solid var(--line)}
+.swot .q h4{font-size:1rem;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.swot .S{background:var(--pos-bg)} .swot .W{background:var(--crit-bg)}
+.swot .O{background:var(--med-bg)} .swot .T{background:var(--high-bg)}
+.swot ul{margin:0;padding-left:18px;font-size:.86rem}
+.swot li{margin:4px 0}
+
+/* ---- ROADMAP ---- */
+.phase{border:1px solid var(--line);border-radius:12px;margin:12px 0;overflow:hidden;background:var(--panel)}
+.phase>.ph-head{background:var(--forest);color:#ece4d2;padding:10px 16px;font-weight:600;
+  display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.phase>.ph-head .t{font-family:var(--serif);font-size:1.1rem}
+.phase ul{margin:0;padding:12px 16px 14px 34px;font-size:.9rem;columns:2;column-gap:26px}
+.phase li{margin:5px 0;break-inside:avoid}
+@media(max-width:640px){.phase ul{columns:1}.swot{grid-template-columns:1fr}.grid9{grid-template-columns:1fr 1fr}}
+
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:16px 0}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+.kpi .n{font-family:var(--serif);font-size:1.9rem;font-weight:700;color:var(--forest-2);line-height:1}
+:root[data-theme="dark"] .kpi .n{color:var(--gold-bright)}
+.kpi .l{font-size:.74rem;color:var(--ink-soft);margin-top:5px;line-height:1.3}
+
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+footer{background:var(--forest);color:#c3b89e;padding:30px 0;margin-top:40px;font-size:.82rem;
+  border-top:3px solid var(--gold-bright)}
+footer b{color:#ece4d2}
+.theme-btn{position:fixed;right:16px;bottom:16px;z-index:50;background:var(--forest);color:#ece4d2;
+  border:1px solid var(--gold-bright);border-radius:99px;padding:9px 14px;cursor:pointer;font-size:.8rem;
+  box-shadow:var(--shadow)}
+.toc-hidden{display:none}
+hr.soft{border:none;border-top:1px solid var(--line);margin:26px 0}
+.note{font-size:.8rem;color:var(--ink-soft);font-style:italic}
+</style>
+
+<button class="theme-btn" onclick="(function(){var r=document.documentElement;var d=(r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'))==='dark';r.setAttribute('data-theme',d?'light':'dark');})()">☀ / ☾ Tema</button>
+
+<header class="hero">
+  <div class="leaf"></div>
+  <div class="wrap">
+    <div class="eyebrow">Auditoria Enterprise · Due Diligence Pré-Investimento</div>
+    <h1>Ervatório — Marketplace Botânico</h1>
+    <p class="lede">Avaliação técnica, comercial, de UX, SEO, performance, segurança e compliance de <b>ervatorio.com.br</b>, conduzida sobre o código-fonte de produção (SPA/PWA + Supabase + Mercado Pago). Nível de rigor: due diligence anterior a um aporte de milhões de reais.</p>
+    <div class="meta">
+      <span>Data: <b>16/07/2026</b></span>
+      <span>Base de evidência: <b>código-fonte de produção</b> (o site responde 403 a crawlers)</span>
+      <span>Stack: <b>HTML/JS estático · Supabase · Mercado Pago Checkout Pro</b></span>
+      <span>Versão app: <b>0.2.0</b></span>
+    </div>
+    <div class="verdict">
+      <div class="vcard"><div class="n">5.0</div><div class="l">Nota Geral</div><div class="s">/ 10 — Piloto promissor</div></div>
+      <div class="vcard"><div class="n">42%</div><div class="l">Maturidade Digital</div><div class="s">Estágio inicial</div></div>
+      <div class="vcard"><div class="n">2</div><div class="l">Falhas Críticas de Segurança</div><div class="s">Escalonamento + vazamento de PII</div></div>
+      <div class="vcard"><div class="n">R$ 0</div><div class="l">Receita Transacionável Hoje</div><div class="s">Pagamentos desligados</div></div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" id="toc">
+  <div class="wrap"><div class="row">
+    <a href="#resumo">Resumo</a>
+    <a href="#e1">1·Visão</a><a href="#e2">2·Arquitetura</a><a href="#e3">3·Design</a>
+    <a href="#e4">4·UX</a><a href="#e5">5·Catálogo</a><a href="#e6">6·Produto</a>
+    <a href="#e7">7·Imagens</a><a href="#e8">8·Busca</a><a href="#e9">9·Checkout</a>
+    <a href="#e10">10·Cliente</a><a href="#e11">11·Vendedor</a><a href="#e12">12·SEO</a>
+    <a href="#e13">13·Marketing</a><a href="#e14">14·Performance</a><a href="#e15">15·Tecnologia</a>
+    <a href="#e16">16·Segurança</a><a href="#e17">17·Compliance</a><a href="#e18">18·Analytics</a>
+    <a href="#e19">19·IA</a><a href="#e20">20·Benchmark</a><a href="#e21">21·Roadmap</a>
+    <a href="#e22">22·Priorização</a><a href="#e23">23·Score</a><a href="#e24">24·Executivo</a>
+    <a href="#backlog">Backlog 100</a>
+  </div></div>
+</nav>
+
+<main class="wrap">
+
+<!-- ============ RESUMO EXECUTIVO CURTO ============ -->
+<section id="resumo" style="border-top:none">
+  <div class="sec-head"><h2 class="sec-title">Diagnóstico em uma página</h2></div>
+  <p class="sec-sub">Ervatório é um <b>projeto de conteúdo botânico de qualidade excepcional</b> montado sobre uma <b>camada de e-commerce ainda embrionária e atualmente inoperante</b>. O ativo real hoje é editorial — uma enciclopédia de 96–97 fichas de ervas com profundidade científica e regulatória rara no mercado. A camada comercial, porém, não vende: os pagamentos estão desligados por flag, o catálogo vendável é um array fixo de ~44 itens desconectado das fichas, e o fluxo de compra carece de quase toda a infraestrutura de conversão e confiança padrão do varejo.</p>
+
+  <div class="callout danger"><div class="ic">⛔</div><div>
+    <h4>Cinco bloqueadores antes de qualquer aporte</h4>
+    <ol style="margin:6px 0 0;padding-left:20px;font-size:.92rem">
+      <li><b>Segurança crítica (C-1):</b> qualquer usuário logado pode se auto-promover a administrador — a policy de UPDATE de <code>user_profiles</code> não tem <code>WITH CHECK</code> sobre a coluna <code>is_admin</code>. Compromisso total do painel.</li>
+      <li><b>Segurança crítica (C-2):</b> a view <code>orders_with_items</code> ignora o RLS e expõe <b>todos os pedidos, endereços e e-mails de todos os clientes</b> a qualquer usuário autenticado. Incidente de LGPD esperando para acontecer.</li>
+      <li><b>Comercial:</b> <code>PAYMENTS_ENABLED:false</code> — a loja não processa um único pedido no momento.</li>
+      <li><b>SEO:</b> roteamento por <code>#fragmento</code> + renderização client-side = <b>nenhum produto ou erva tem URL indexável</b>. O Google vê uma única página.</li>
+      <li><b>Mensuração:</b> <b>zero analytics</b> (sem GA4, GTM ou Pixel). Todo real investido em mídia hoje é imensurável.</li>
+    </ol>
+  </div></div>
+
+  <div class="callout win"><div class="ic">🌿</div><div>
+    <h4>O que já é um ativo valioso</h4>
+    <p style="margin:6px 0 0;font-size:.92rem">Conteúdo botânico com E-E-A-T de referência (fontes acadêmicas, componentes ativos, contraindicações, status ANVISA/EMA/FDA por erva); arquitetura de pagamento correta e enxuta (Checkout Pro → PCI SAQ-A, recálculo de preço no servidor); PWA instalável completo; pipeline de otimização de imagem bem projetado (embora desligado); e um modelo de segurança documentado com RLS na maioria das tabelas. A fundação é sólida — o problema é execução comercial e três ou quatro brechas pontuais graves.</p>
+  </div></div>
+
+  <div class="legend">
+    <span class="chip crit">Crítico</span><span class="chip high">Alto</span>
+    <span class="chip med">Médio</span><span class="chip low">Baixo</span><span class="chip pos">Ponto forte</span>
+  </div>
+</section>
+
+<!-- ============ ETAPA 1 — VISÃO GERAL ============ -->
+<section id="e1">
+  <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title">Visão Geral</h2></div>
+  <p class="sec-sub">Proposta de valor, posicionamento, credibilidade e primeira impressão.</p>
+
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Critério</th><th class="num">Nota</th><th>Leitura</th></tr></thead>
+    <tbody>
+      <tr><td>Proposta de valor</td><td class="num">7.5</td><td>“Curadoria botânica do Brasil e do mundo” é clara, diferenciada e emocionalmente rica. Mas mistura três negócios (enciclopédia, ferramentas lúdicas, loja) sem hierarquizar qual é o principal.</td></tr>
+      <tr><td>Posicionamento</td><td class="num">7.0</td><td>Premium/curatorial, artesanal, científico. Coerente com a paleta e a tipografia. Foge do clichê “loja de chá” — vantagem real.</td></tr>
+      <tr><td>Público-alvo</td><td class="num">5.5</td><td>Não explicitado. O conteúdo fala com um público culto e curioso; a loja precifica de R$12 a R$12.500 — dois públicos muito distintos sem segmentação.</td></tr>
+      <tr><td>Clareza do negócio</td><td class="num">4.0</td><td>Um visitante não entende em 5s se pode comprar. Conteúdo domina; comprar é secundário e hoje impossível.</td></tr>
+      <tr><td>Credibilidade / profissionalismo</td><td class="num">6.5</td><td>Alta no conteúdo; corroída na loja por produtos com badge <b>“TESTE”</b> visível e imagens “meramente ilustrativas”.</td></tr>
+      <tr><td>Percepção de qualidade / confiança</td><td class="num">6.0</td><td>Visual sofisticado gera confiança; ausência de avaliações, políticas e selos a limita no momento da compra.</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="finding high">
+    <div class="fh"><span class="chip high">Alto</span><h4>Conflito de identidade: enciclopédia vs. marketplace</h4></div>
+    <p>O produto tenta ser três coisas — Ervopédia (conteúdo), parque de ferramentas (Roda dos Chás, quiz, jogo, blends) e loja — sem decidir qual converte. A jornada mais rica (a ficha da erva) termina sem botão de compra.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Impacto no negócio</div><div class="v">Diluição de foco; visitante engaja mas não transaciona.</div></div>
+      <div class="cell"><div class="k">Impacto na conversão</div><div class="v">Alto — intenção gerada no conteúdo não é capturada.</div></div>
+      <div class="cell"><div class="k">Impacto financeiro</div><div class="v">Perda direta da receita da audiência de conteúdo (o tráfego mais qualificado).</div></div>
+      <div class="cell"><div class="k">Risco</div><div class="v">Médio — estratégico, não técnico.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Alta</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Médio (produto + dados)</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> definir a loja como destino primário e usar o conteúdo como funil (padrão iHerb/Natura: cada página educativa termina em produto comprável). Conectar cada ficha a um SKU vendável com CTA “Comprar esta erva”.</div>
+  </div>
+
+  <p><b>Nota consolidada da Etapa 1: <span class="stars">★★★★★★☆☆☆☆</span> 6.1 / 10</b> — primeira impressão forte no conteúdo, fraca na clareza comercial.</p>
+</section>
+
+<!-- ============ ETAPA 2 — ARQUITETURA ============ -->
+<section id="e2">
+  <div class="sec-head"><span class="sec-num">02</span><h2 class="sec-title">Arquitetura do Site &amp; Informação</h2></div>
+  <p class="sec-sub">Estrutura, navegação, hierarquia, URLs, categorias.</p>
+
+  <div class="finding crit">
+    <div class="fh"><span class="chip crit">Crítico</span><h4>Roteamento por hash-fragment: nenhuma URL real de produto ou erva</h4><span class="code-ref">js/app.js:2168–2194</span></div>
+    <p>A navegação escreve URLs como <code>#ficha/camomila</code>, <code>#blend/…</code>, <code>?page=search</code>. O History API é usado só para o botão “voltar”, não para caminhos reais. Toda a informação — 96 fichas, ~44 produtos, 6 idiomas — colapsa para <code>ervatorio.com.br/</code>.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Impacto negócio</div><div class="v">O ativo de conteúdo não gera tráfego orgânico — invisível ao Google.</div></div>
+      <div class="cell"><div class="k">Conversão</div><div class="v">Sem porta de entrada orgânica por produto, o topo de funil depende só de mídia paga.</div></div>
+      <div class="cell"><div class="k">Financeiro</div><div class="v">Perda do canal de aquisição mais barato (SEO). Para um site de conteúdo denso, é a maior perda de ROI.</div></div>
+      <div class="cell"><div class="k">Risco</div><div class="v">Alto</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Crítica</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Alto (migração de routing + pré-render)</div></div>
+      <div class="cell"><div class="k">Ganho esperado</div><div class="v">Destrava indexação de 140+ páginas; base para todo o SEO.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> migrar para History API com caminhos reais (<code>/erva/camomila</code>, <code>/produto/…</code>, <code>/en/…</code>) + rewrite servidor→<code>index.html</code>, e pré-renderizar cada entidade (SSG/prerender). Referência: qualquer marketplace tem URL canônica por SKU.</div>
+  </div>
+
+  <div class="finding high">
+    <div class="fh"><span class="chip high">Alto</span><h4>Dois catálogos paralelos e mal conectados</h4><span class="code-ref">fichas-data.js / app.js:2665</span></div>
+    <p>Existem dois “mundos” de produto: 97 fichas editoriais ricas (não vendáveis — 96/97 com preço vazio) e um array fixo <code>MKT_PRODUCTS</code> de ~44 itens vendáveis, ligados por <b>correspondência de nome</b> (<code>ervaria.js:458</code>) — frágil: um nome que não bate torna o produto silenciosamente não-comprável.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Impacto negócio</div><div class="v">Arquitetura de dados não escala; conteúdo e comércio vivem separados.</div></div>
+      <div class="cell"><div class="k">Conversão</div><div class="v">A melhor página (ficha) é beco sem saída de compra.</div></div>
+      <div class="cell"><div class="k">Financeiro</div><div class="v">AOV e taxa de conversão presos ao catálogo raso.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Alta</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Médio–Alto</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">Unificação transforma 96 fichas em 96 PDPs comercializáveis.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> modelo único de produto no Supabase (SKU, preço, estoque, variações, mídia) com a ficha como conteúdo anexo à mesma entidade. Chave por UUID/slug, nunca por nome.</div>
+  </div>
+
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Elemento</th><th>Estado</th><th>Observação</th></tr></thead>
+    <tbody>
+      <tr><td>Breadcrumbs</td><td><span class="chip high">Ausentes</span></td><td>Sem trilha visível nem <code>BreadcrumbList</code> schema, apesar de hierarquia catálogo→família→ficha.</td></tr>
+      <tr><td>Filtros de conteúdo (fichas)</td><td><span class="chip pos">Bom</span></td><td>Navegador facetado real (Tipo, Bioma, Sensorial, Coloração, Sabor, Parte usada) — <code>ervatorio-pages.js:453</code>.</td></tr>
+      <tr><td>Filtros da loja</td><td><span class="chip med">Raso</span></td><td>Categoria + busca textual; na visão “Todos” cada categoria é cortada em 4 itens (<code>app.js:2752</code>).</td></tr>
+      <tr><td>Profundidade de cliques</td><td><span class="chip med">Média</span></td><td>Navegação por overlays/bottom-sheets; funciona mas sem deep-link compartilhável.</td></tr>
+      <tr><td>URLs / canônicas</td><td><span class="chip crit">Inexistentes</span></td><td>Ver C-2.1; nenhuma canônica no documento.</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Nota Etapa 2: 3.8 / 10.</b></p>
+</section>
+
+<!-- ============ ETAPA 3 — DESIGN ============ -->
+<section id="e3">
+  <div class="sec-head"><span class="sec-num">03</span><h2 class="sec-title">Design &amp; Identidade Visual</h2></div>
+  <p class="sec-sub">Cores, tipografia, grid, cards, consistência, responsividade, dark mode.</p>
+
+  <div class="finding pos">
+    <div class="fh"><span class="chip pos">Ponto forte</span><h4>Sistema visual coeso e diferenciado</h4><span class="code-ref">index.html :46+ · css/main.css</span></div>
+    <p>Paleta botânica bem construída — verde-profundo <code>#1a3a2a</code>, ouro <code>#b8965a</code>, cremes e terra — com tokens CSS nomeados e inversão consistente para <b>dark mode</b> (a landing tem tema escuro próprio, mantendo o ouro como acento legível nos dois modos). Tipografia editorial (Cormorant/EB Garamond + Inter + Jost). Foge do template genérico de e-commerce.</p>
+    <div class="rec"><b>Preservar.</b> É um dos maiores ativos de marca. Formalizar como Design System (tokens, componentes, documentação) antes de escalar o time.</div>
+  </div>
+
+  <div class="finding med">
+    <div class="fh"><span class="chip med">Médio</span><h4>Fontes render-blocking e CSS monolítico</h4><span class="code-ref">index.html:43–44</span></div>
+    <p>4 famílias com muitos pesos via Google Fonts (bloqueia render), <code>main.css</code> de 137 KB não dividido. <code>display=swap</code> presente (bom), mas a requisição bloqueia o primeiro paint.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Conversão</div><div class="v">Atraso de paint no mobile eleva rejeição.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Média</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Baixo</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">−300–600 ms no FCP.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> auto-hospedar as fontes (WOFF2 subsetado) com <code>font-display:swap</code> e <code>preload</code> apenas dos pesos do above-the-fold; reduzir de 4 para 2 famílias.</div>
+  </div>
+
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Dimensão</th><th class="num">Nota</th><th>Comentário</th></tr></thead>
+    <tbody>
+      <tr><td>Paleta / contraste</td><td class="num">7.5</td><td>Rica; atenção a textos <code>--muted</code> ouro-sobre-escuro em 0.68rem (provável &lt; AA).</td></tr>
+      <tr><td>Tipografia</td><td class="num">8.0</td><td>Melhor do que a média do setor; hierarquia clara.</td></tr>
+      <tr><td>Grid / espaçamento / cards</td><td class="num">7.0</td><td>Consistente; cards de ficha bem resolvidos.</td></tr>
+      <tr><td>Ícones</td><td class="num">5.5</td><td>Muito emoji como ícone funcional (botões) — frágil e inacessível.</td></tr>
+      <tr><td>Modernidade / branding</td><td class="num">8.0</td><td>Identidade autoral forte.</td></tr>
+      <tr><td>Responsividade</td><td class="num">6.5</td><td><code>maximum-scale=1.0</code> trava zoom do usuário — problema de acessibilidade.</td></tr>
+      <tr><td>Dark mode</td><td class="num">7.5</td><td>Implementado e coerente.</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Nota Etapa 3: 7.2 / 10</b> — a área mais forte do produto.</p>
+</section>
+
+<!-- ============ ETAPA 4 — UX ============ -->
+<section id="e4">
+  <div class="sec-head"><span class="sec-num">04</span><h2 class="sec-title">Experiência do Usuário (UX)</h2></div>
+  <p class="sec-sub">Facilidade, feedback, microinterações, acessibilidade, WCAG.</p>
+
+  <div class="finding high">
+    <div class="fh"><span class="chip high">Alto</span><h4>Acessibilidade abaixo do mínimo WCAG</h4><span class="code-ref">app.js · checkout.js · pedidos.js</span></div>
+    <p>Contagem baixíssima de <code>aria/role/alt</code> (12 em app.js, 0 em pedidos.js). Cards e itens são <code>&lt;div onclick&gt;</code> sem <code>role</code>/<code>tabindex</code>/teclado; modais (produto, checkout) sem focus-trap, <code>aria-modal</code>, ESC ou restauração de foco; botões só com emoji. <code>maximum-scale=1.0</code> impede zoom.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Impacto negócio</div><div class="v">Exclui usuários de teclado/leitor de tela; risco jurídico (Lei Brasileira de Inclusão, WCAG 2.1 AA).</div></div>
+      <div class="cell"><div class="k">Conversão</div><div class="v">Parcela de usuários simplesmente não consegue comprar.</div></div>
+      <div class="cell"><div class="k">Risco</div><div class="v">Médio–Alto (legal + reputacional)</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Alta</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Médio</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">Conformidade + SEO (semântica) + alcance.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> converter cards/botões em <code>&lt;button&gt;</code>/<code>&lt;a&gt;</code> reais; adicionar focus-trap + ESC + <code>aria-modal</code> nos overlays; remover <code>maximum-scale</code>; auditar contraste. Meta: WCAG 2.1 AA.</p></div>
+  </div>
+
+  <div class="finding high">
+    <div class="fh"><span class="chip high">Alto</span><h4>Falha tardia: itens removidos silenciosamente no último passo</h4><span class="code-ref">checkout.js:255–258</span></div>
+    <p>Produtos sem <code>dbId</code> (UUID) são filtrados antes de criar o pedido; se sobrar zero, o usuário só descobre no fim, após preencher todo o endereço. Feedback ausente é a pior forma de erro de UX.</p>
+    <div class="rec"><b>Recomendação:</b> validar disponibilidade na adição ao carrinho, não no submit; mostrar estado “indisponível” no card.</div>
+  </div>
+
+  <p><b>Nota Etapa 4: 5.0 / 10</b> — fundamentos visuais bons, engenharia de interação e acessibilidade fracas.</p>
+</section>
+
+<!-- ============ ETAPA 5 — CATÁLOGO ============ -->
+<section id="e5">
+  <div class="sec-head"><span class="sec-num">05</span><h2 class="sec-title">Catálogo</h2></div>
+  <p class="sec-sub">Organização, filtros, atributos, upsell, cross-sell, SEO de produto.</p>
+
+  <div class="finding crit">
+    <div class="fh"><span class="chip crit">Crítico</span><h4>Produtos de teste expostos ao cliente com selo “TESTE”</h4><span class="code-ref">app.js:2762 · ervaria-mkt-products-migration.sql</span></div>
+    <p>Todos os ~30 produtos premium entram no banco com <code>is_test:true</code> e renderizam um badge “TESTE” visível ao comprador. A vitrine anuncia dados de teste.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Impacto negócio</div><div class="v">Destrói credibilidade instantaneamente; sinaliza loja inacabada.</div></div>
+      <div class="cell"><div class="k">Conversão</div><div class="v">Muito alto — ninguém paga R$12.500 num item marcado “teste”.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Crítica (quick win)</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Muito baixo</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">Restaura confiança imediatamente.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> filtrar <code>is_test</code> da vitrine (mostrar só em ambiente admin/staging). Correção de minutos.</div>
+  </div>
+
+  <div class="finding high">
+    <div class="fh"><span class="chip high">Alto</span><h4>Sem upsell, cross-sell ou “produtos relacionados”</h4></div>
+    <p>Nenhum “compre junto”, “complete o ritual” ou “quem viu também viu”. A única adjacência é editorial (ficha → receitas).</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Impacto financeiro</div><div class="v">AOV estagnado — a alavanca de receita mais barata do e-commerce está ausente.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Alta</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Médio</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">+8–15% de ticket médio (benchmark Amazon: ~35% da receita vem de recomendação).</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> “compre junto” manual por afinidade (erva + acessório + blend) já no MVP; recomendação por IA depois (Etapa 19).</div>
+  </div>
+
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Item</th><th>Estado</th></tr></thead>
+    <tbody>
+      <tr><td>Variações (tamanho/formato: 50g vs 100g)</td><td><span class="chip high">Ausentes</span> — schema plano de MKT_PRODUCTS.</td></tr>
+      <tr><td>Estoque numérico</td><td><span class="chip med">Só enum textual</span> (<code>in</code>/<code>low</code>), nunca exibido.</td></tr>
+      <tr><td>Ficha técnica / atributos estruturados</td><td><span class="chip pos">Excelente</span> — mas presa às fichas, não aos SKUs vendáveis.</td></tr>
+      <tr><td>SEO de produto</td><td><span class="chip crit">Inexistente</span> — sem URL, sem schema Product.</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Nota Etapa 5: 4.5 / 10</b> — conteúdo 9, comércio 3.</p>
+</section>
+
+<!-- ============ ETAPA 6 — PÁGINA DE PRODUTO ============ -->
+<section id="e6">
+  <div class="sec-head"><span class="sec-num">06</span><h2 class="sec-title">Página do Produto (PDP)</h2></div>
+  <p class="sec-sub">Imagens, zoom, vídeo, copy, CTA, frete, estoque, prazo, avaliações, FAQ.</p>
+
+  <div class="finding high">
+    <div class="fh"><span class="chip high">Alto</span><h4>A ficha (maior intenção de compra) não tem “adicionar ao carrinho”</h4><span class="code-ref">ervatorio-pages.js:742, :859</span></div>
+    <p>A página mais persuasiva do app oferece apenas <code>♡ Favoritar</code> e <code>＋ Selecionar para blend</code>. A seção “Onde comprar” lista preço mas <b>sem botão de compra</b>.</p>
+    <div class="rec"><b>Recomendação:</b> CTA de compra primário na ficha; é onde a decisão acontece.</div>
+  </div>
+
+  <div class="finding high">
+    <div class="fh"><span class="chip high">Alto</span><h4>Modal de produto sem os alavancadores clássicos de conversão</h4><span class="code-ref">app.js:2798–2838</span></div>
+    <p>Bottom-sheet com uma imagem pequena (troca por “dots”, <b>sem zoom, sem galeria, sem vídeo</b>), nome, preço e dois CTAs. Faltam: estimativa de <b>frete</b>, prazo de entrega, indicador de <b>estoque</b>, <b>avaliações</b>, <b>FAQ/Q&amp;A</b>, selos, origem/ingredientes, parcelamento/Pix. Grave para um item de R$12.500.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Conversão</div><div class="v">Cada elemento ausente é um motivo a mais para não comprar.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Alta</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Médio–Alto</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">PDP completa costuma elevar conversão 20–40%.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> PDP dedicada (não modal) com galeria+zoom, frete por CEP, estoque/escassez, prova social, FAQ, e o E-E-A-T das fichas embutido (o maior diferencial não aproveitado).</div>
+  </div>
+  <p><b>Nota Etapa 6: 3.8 / 10.</b></p>
+</section>
+
+<!-- ============ ETAPA 7 — IMAGENS ============ -->
+<section id="e7">
+  <div class="sec-head"><span class="sec-num">07</span><h2 class="sec-title">Imagens</h2></div>
+  <p class="sec-sub">Compressão, WebP/AVIF, lazy-load, CDN, alt, padronização.</p>
+
+  <div class="finding crit">
+    <div class="fh"><span class="chip crit">Crítico</span><h4>O pipeline de WebP responsivo está completamente morto</h4><span class="code-ref">responsive-img.js:17 · scripts/optimize-images.mjs</span></div>
+    <p>Falha em três camadas: (1) <code>responsive-img.js</code> (o upgrader <code>&lt;img&gt;→&lt;picture&gt;/WebP</code>) <b>nunca é carregado</b> no HTML; (2) ele busca <code>/images/manifest.json</code> que <b>não existe</b>; (3) o diretório <code>images/optimized/</code> <b>não existe</b> — o otimizador nunca rodou. Resultado: heróis servidos como PNG cru — <code>ervas-colecao.png</code> <b>4,2 MB</b>, <code>hero-bule.png</code> <b>2,1 MB</b>, <code>hero-maos.png</code> <b>2,1 MB</b> (8,4 MB só de heróis), sobre 102 arquivos em <code>images/produtos/</code>.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Impacto negócio</div><div class="v">LCP mobile de vários segundos → rejeição + penalização de ranking (Core Web Vitals).</div></div>
+      <div class="cell"><div class="k">Conversão</div><div class="v">Alto — cada 1s extra de LCP reduz conversão ~7% (benchmark).</div></div>
+      <div class="cell"><div class="k">Financeiro</div><div class="v">Custo de banda + perda de sessões mobile lentas.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Crítica (quick win — a ferramenta já existe)</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Baixo — rodar <code>npm run images:optimize</code> e ligar o script.</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">Heróis de 2–4 MB → 150–300 KB; LCP possivelmente −60%.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> rodar o otimizador, commitar <code>images/optimized/</code>+<code>manifest.json</code>, adicionar <code>&lt;script defer src="/js/responsive-img.js"&gt;</code>, servir via CDN com <code>fetchpriority=high</code>+<code>preload</code> no herói LCP. A arquitetura já está pronta — só falta executar.</div>
+  </div>
+  <p class="note">Positivo: o próprio <code>optimize-images.mjs</code> gera 320/640/1024/1600w em WebP q80 e o runtime monta <code>&lt;picture&gt;</code> com <code>srcset/sizes</code>+lazy — engenharia correta, apenas desligada.</p>
+  <p><b>Nota Etapa 7: 3.0 / 10</b> (seria 8+ com o pipeline ligado).</p>
+</section>
+
+<!-- ============ ETAPA 8 — BUSCA ============ -->
+<section id="e8">
+  <div class="sec-head"><span class="sec-num">08</span><h2 class="sec-title">Pesquisa</h2></div>
+  <p class="sec-sub">Busca, autocomplete, correção, relevância, IA.</p>
+  <div class="finding med">
+    <div class="fh"><span class="chip med">Médio</span><h4>Busca textual básica, sem autocomplete nem tolerância a erro</h4><span class="code-ref">app.js:2737 (renderMkt)</span></div>
+    <p>Filtro por <code>includes()</code> sobre <code>name+desc+seller+type</code>. Sem autocomplete, sem correção ortográfica (“camomila” vs “camomilla”), sem sinônimos, sem busca semântica, sem ranking de relevância. Para um catálogo com nomenclatura botânica (nomes científicos, sinônimos regionais), isso é limitante.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Conversão</div><div class="v">Buscas sem resultado = saída. Usuários que buscam convertem 2–3× mais.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Média (alta quando o catálogo crescer)</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Médio</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">Autocomplete+sinônimos elevam conversão de busca 10–20%.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> indexar em busca dedicada (Meilisearch/Typesense/Algolia) com autocomplete, tolerância a erro, sinônimos botânicos e busca vetorial (pgvector já disponível no Supabase) para “erva para dormir” → Valeriana/Camomila.</div>
+  </div>
+  <p><b>Nota Etapa 8: 4.0 / 10.</b></p>
+</section>
+
+<!-- ============ ETAPA 9 — CHECKOUT ============ -->
+<section id="e9">
+  <div class="sec-head"><span class="sec-num">09</span><h2 class="sec-title">Carrinho &amp; Checkout</h2></div>
+  <p class="sec-sub">Guest checkout, Pix/cartão/boleto, frete, cupons, abandono.</p>
+
+  <div class="callout danger"><div class="ic">⚙️</div><div>
+    <h4>Estado atual: checkout desligado</h4>
+    <p style="margin:6px 0 0"><code>PAYMENTS_ENABLED:false</code> substitui o botão por aviso de manutenção. A loja não fecha pedidos. Tudo abaixo aplica-se ao fluxo que <i>existe no código</i> e será exposto quando os pagamentos forem ligados.</p>
+  </div></div>
+
+  <div class="finding high">
+    <div class="fh"><span class="chip high">Alto</span><h4>Login obrigatório — sem guest checkout</h4><span class="code-ref">checkout.js:141–145</span></div>
+    <p>Sem sessão Supabase, o checkout aborta para o modal de login. No Brasil, exigir conta antes de comprar é uma das maiores causas de abandono.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Conversão</div><div class="v">Guest checkout costuma recuperar 20–30% de carrinhos.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Alta</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Médio</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">Redução direta de abandono; +receita sem +tráfego.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> checkout como convidado com criação de conta opcional pós-compra (padrão Shopify/Magalu).</div>
+  </div>
+
+  <div class="finding high">
+    <div class="fh"><span class="chip high">Alto</span><h4>Frete não é calculado — placeholder “grátis no piloto”</h4><span class="code-ref">checkout.js:191 · app.js:1295</span></div>
+    <p>CEP via ViaCEP só preenche endereço; o resumo diz “Frete calculado depois (atualmente grátis)”. Carrinho usa frete fixo R$15,90 (grátis &gt; R$150). Sem Correios/transportadora. <code>shipping_cents = 0</code> no servidor.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Impacto negócio</div><div class="v">Margem corroída (frete não repassado) ou surpresa de preço; não escala.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Alta</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Médio</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">Frete correto = margem + confiança + prazos reais.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> integrar Melhor Envio ou Correios (Edge Function <code>calculate-shipping</code> já prevista) com cálculo por CEP no carrinho e na PDP.</div>
+  </div>
+
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Elemento de checkout</th><th>Estado</th></tr></thead>
+    <tbody>
+      <tr><td>Meios de pagamento</td><td><span class="chip pos">Pix, cartão, boleto, saldo MP</span> via Checkout Pro (bom leque).</td></tr>
+      <tr><td>Parcelamento / Pix visível pré-redirect</td><td><span class="chip med">Não</span> — cliente BR espera ver “12x” antes.</td></tr>
+      <tr><td>Cupons / vouchers / order bump</td><td><span class="chip high">Ausentes</span></td></tr>
+      <tr><td>Wishlist de produtos</td><td><span class="chip med">Só para fichas</span> (não para SKUs).</td></tr>
+      <tr><td>Comparador</td><td><span class="chip low">Ausente</span></td></tr>
+      <tr><td>Recálculo de preço no servidor</td><td><span class="chip pos">Correto</span> — anti-fraude de preço (<code>create-order</code>).</td></tr>
+      <tr><td>Passos até comprar</td><td>~5 in-app + redirect externo + conta obrigatória.</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Nota Etapa 9: 4.2 / 10</b> (fundação de pagamento correta; jornada e alavancas de conversão incompletas).</p>
+</section>
+
+<!-- ============ ETAPA 10 — ÁREA DO CLIENTE ============ -->
+<section id="e10">
+  <div class="sec-head"><span class="sec-num">10</span><h2 class="sec-title">Área do Cliente</h2></div>
+  <p class="sec-sub">Pedidos, rastreamento, troca, devolução, nota fiscal.</p>
+  <div class="finding high">
+    <div class="fh"><span class="chip high">Alto</span><h4>Pós-venda incompleto — falta o que o CDC exige</h4><span class="code-ref">js/pedidos.js</span></div>
+    <p>Há histórico de pedidos com RLS correto e taxonomia de status rica. <b>Faltam:</b> nota fiscal/NF-e, fluxo de troca/devolução, rastreamento é só texto estático (sem link/rastreio ao vivo), sem recompra, sem cancelamento, sem gestão de endereços.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Risco</div><div class="v">Legal — CDC obriga canal de troca/devolução; NF-e é fiscal.</div></div>
+      <div class="cell"><div class="k">Conversão/retenção</div><div class="v">Chá é consumível — “comprar de novo” é receita recorrente perdida.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Alta</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Médio–Alto</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> emissão de NF-e (ex.: Bling/Tiny/eNotas), fluxo de devolução dentro do prazo legal, rastreio linkado, botão “recomprar”.</div>
+  </div>
+  <p><b>Nota Etapa 10: 4.0 / 10.</b></p>
+</section>
+
+<!-- ============ ETAPA 11 — ÁREA DO VENDEDOR ============ -->
+<section id="e11">
+  <div class="sec-head"><span class="sec-num">11</span><h2 class="sec-title">Área do Vendedor / “Marketplace”</h2></div>
+  <p class="sec-sub">É um marketplace de verdade?</p>
+  <div class="callout danger"><div class="ic">🏷️</div><div>
+    <h4>“Marketplace” é branding, não arquitetura</h4>
+    <p style="margin:6px 0 0">É uma <b>loja única com um diretório de fornecedores</b>. O campo <code>seller</code> é rótulo textual, não um lojista. Não há dashboard de vendedor, comissão, split de pagamento, onboarding de seller nem catálogo/estoque por vendedor. O <code>admin.js</code> é um back-office único do dono. Tornar-se marketplace real exige identidade de seller, catálogo por lojista, split de liquidação e comissão — nada disso existe.</p>
+  </div></div>
+  <div class="finding med">
+    <div class="fh"><span class="chip med">Médio (estratégico)</span><h4>Definir a tese: loja curada vs. marketplace multi-seller</h4></div>
+    <div class="rec"><b>Recomendação:</b> se a tese de investimento é marketplace, planejar migração para Mercado Pago <b>Marketplace</b> (split) — já citado como passo pós-MVP. Se é loja curada premium, remover a palavra “marketplace” do posicionamento para não criar expectativa falsa.</div>
+  </div>
+  <p><b>Nota Etapa 11: 3.0 / 10</b> como marketplace; <b>6.0</b> como loja curada.</p>
+</section>
+
+<!-- ============ ETAPA 12 — SEO ============ -->
+<section id="e12">
+  <div class="sec-head"><span class="sec-num">12</span><h2 class="sec-title">SEO Técnico</h2></div>
+  <p class="sec-sub">Indexação, schema, canônicas, hreflang, sitemap.</p>
+
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Item</th><th>Estado</th><th>Nota</th></tr></thead>
+    <tbody>
+      <tr><td>URLs indexáveis por entidade</td><td><span class="chip crit">Inexistentes (hash routing)</span></td><td class="num">1</td></tr>
+      <tr><td>Conteúdo no HTML (vs. injetado por JS)</td><td><span class="chip crit">Injeção client-side; HTML raso</span></td><td class="num">2</td></tr>
+      <tr><td>robots.txt / sitemap.xml</td><td><span class="chip high">Ausentes</span></td><td class="num">1</td></tr>
+      <tr><td>Canonical</td><td><span class="chip high">Nenhuma tag</span></td><td class="num">1</td></tr>
+      <tr><td>hreflang (6 idiomas declarados)</td><td><span class="chip high">Ausente</span></td><td class="num">1</td></tr>
+      <tr><td>Meta title/description por página × idioma</td><td><span class="chip pos">Excelente (seo.js)</span></td><td class="num">8</td></tr>
+      <tr><td>Open Graph / Twitter</td><td><span class="chip pos">Presentes</span> (card <code>summary</code> → subir p/ large_image)</td><td class="num">7</td></tr>
+      <tr><td>Schema.org</td><td><span class="chip high">Só WebApplication</span> — falta Product, Offer, Recipe, FAQ, Breadcrumb, Organization</td><td class="num">2</td></tr>
+      <tr><td>H1 único / hierarquia</td><td><span class="chip med">Dois H1 no DOM</span></td><td class="num">5</td></tr>
+      <tr><td>Core Web Vitals</td><td><span class="chip crit">Alto risco (ver Etapa 14)</span></td><td class="num">3</td></tr>
+      <tr><td>SEO Local</td><td><span class="chip low">N/A / ausente</span> (sem GBP, endereço, LocalBusiness)</td><td class="num">2</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout danger"><div class="ic">🔎</div><div>
+    <h4>A linha-mestra do SEO</h4>
+    <p style="margin:6px 0 0">O trabalho de meta em 6 idiomas é bom, mas <b>inútil enquanto o conteúdo não tiver URL própria e HTML servível</b>. Corrigir roteamento (Etapa 2) + pré-render + schema por entidade é o pré-requisito que destrava todo o valor orgânico de 140+ páginas. Este é o maior ROI de médio prazo do projeto.</p>
+  </div></div>
+  <p><b>Nota Etapa 12: 2.9 / 10.</b></p>
+</section>
+
+<!-- ============ ETAPA 13 — MARKETING ============ -->
+<section id="e13">
+  <div class="sec-head"><span class="sec-num">13</span><h2 class="sec-title">Marketing &amp; Aquisição</h2></div>
+  <p class="sec-sub">Ads, pixels, remarketing, CRM, WhatsApp, fidelidade, cashback.</p>
+  <div class="callout danger"><div class="ic">📉</div><div>
+    <h4>Marketing “no escuro”: nenhuma infraestrutura de mensuração ou captura</h4>
+    <p style="margin:6px 0 0">Não há <b>GA4, Google Tag Manager, Meta Pixel, TikTok Pixel, Pinterest Tag, Clarity ou Hotjar</b> — confirmado por varredura no código. Sem pixel não há remarketing, sem GTM não há tagueamento, sem analytics não há funil. Também não há newsletter funcional (referência a “newsletter” existe no código mas sem provedor/coleta), CRM, push, programa de fidelidade, cashback ou gamificação comercial (a gamificação existente é lúdica/conteúdo, não de compra).</p>
+  </div></div>
+  <div class="finding crit">
+    <div class="fh"><span class="chip crit">Crítico</span><h4>Impossível investir em mídia paga com ROI</h4></div>
+    <div class="grid9">
+      <div class="cell"><div class="k">Impacto negócio</div><div class="v">Todo real em Ads é imensurável; não há como otimizar CAC.</div></div>
+      <div class="cell"><div class="k">Conversão</div><div class="v">Sem remarketing, perde-se 70–95% dos visitantes que não compram na 1ª visita.</div></div>
+      <div class="cell"><div class="k">Financeiro</div><div class="v">Direto — capital de mídia queimado sem atribuição.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Crítica (quick win)</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Baixo</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">Base para toda aquisição paga e remarketing.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> instalar GTM + GA4 + Meta Pixel + CAPI (server-side via Edge Function, contornando bloqueio de cookies), com eventos de e-commerce (view_item, add_to_cart, begin_checkout, purchase). Ligar antes de qualquer verba de mídia. Adicionar captura de e-mail (newsletter real) e canal WhatsApp Business.</div>
+  </div>
+  <p><b>Nota Etapa 13: 1.5 / 10</b> — a maior lacuna operacional depois de segurança.</p>
+</section>
+
+<!-- ============ ETAPA 14 — PERFORMANCE ============ -->
+<section id="e14">
+  <div class="sec-head"><span class="sec-num">14</span><h2 class="sec-title">Performance Web</h2></div>
+  <p class="sec-sub">LCP, TBT/INP, CLS, JS, CSS, imagens, cache.</p>
+  <div class="finding crit">
+    <div class="fh"><span class="chip crit">Crítico</span><h4>~1,1 MB de JavaScript render-blocking, sem defer/async</h4><span class="code-ref">index.html:2444–2646</span></div>
+    <p>19 <code>&lt;script src&gt;</code> síncronos, <b>nenhum</b> com <code>defer</code>/<code>async</code>/<code>module</code>. Locais: <code>app.js</code> 256 KB + <code>fichas-data.js</code> 408 KB + <code>i18n.js</code> 84 KB + 15 outros, mais o bundle Supabase via jsDelivr (terceiro, bloqueante). O blob de 408 KB de dados é parseado em toda carga, mesmo para quem nunca abre uma ficha.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Métrica em risco</div><div class="v">TBT provavelmente &gt;600 ms; INP ruim no mobile.</div></div>
+      <div class="cell"><div class="k">Conversão</div><div class="v">Alto — CWV ruim penaliza ranking e rejeição.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Crítica</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Baixo (defer) → Médio (code-split)</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">Interatividade muito mais rápida; melhor CWV.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> <code>defer</code> em todos os scripts (quick win); code-split e lazy-load de <code>fichas-data.js</code>, <code>quiz.js</code>, <code>jogo.js</code>, <code>checkout.js</code> sob demanda; auto-hospedar/deferir o Supabase; adotar um bundler (esbuild/Vite) com tree-shaking e hashing.</div>
+  </div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Métrica</th><th>Risco estimado</th><th>Causa raiz</th></tr></thead>
+    <tbody>
+      <tr><td>LCP</td><td><span class="chip crit">Ruim</span></td><td>Herói PNG 2–4 MB + fontes bloqueantes (Etapa 7)</td></tr>
+      <tr><td>TBT / INP</td><td><span class="chip crit">Ruim</span></td><td>1,1 MB de JS síncrono</td></tr>
+      <tr><td>CLS</td><td><span class="chip med">Médio</span></td><td>67 injeções <code>innerHTML</code>; imagens sem width/height; fontes tardias</td></tr>
+      <tr><td>Cache / versionamento</td><td><span class="chip med">Médio</span></td><td>Só CSS versionado (<code>?v=14</code>); 18 JS sem versão</td></tr>
+      <tr><td>Service Worker</td><td><span class="chip pos">Bom</span></td><td>Network-first + SWR para fontes; mas pré-cacheia ~9 MB de PNG</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Nota Etapa 14: 3.2 / 10.</b></p>
+</section>
+
+<!-- ============ ETAPA 15 — TECNOLOGIA ============ -->
+<section id="e15">
+  <div class="sec-head"><span class="sec-num">15</span><h2 class="sec-title">Tecnologia &amp; Arquitetura</h2></div>
+  <p class="sec-sub">Framework, backend, banco, escalabilidade.</p>
+  <div class="kpi-row">
+    <div class="kpi"><div class="n">Vanilla JS</div><div class="l">Sem framework nem build — HTML/CSS/JS estático servido direto</div></div>
+    <div class="kpi"><div class="n">Supabase</div><div class="l">Postgres + Auth + Edge Functions (Deno/TS) + Storage</div></div>
+    <div class="kpi"><div class="n">Mercado Pago</div><div class="l">Checkout Pro (redirect) + webhook</div></div>
+    <div class="kpi"><div class="n">PWA</div><div class="l">Service Worker + manifest completo, instalável</div></div>
+  </div>
+  <div class="finding med">
+    <div class="fh"><span class="chip med">Médio</span><h4>Ausência de processo de build é dívida arquitetural</h4></div>
+    <p>Servir JS não-minificado, não-versionado, não-tree-shaken é sustentável para um piloto de 1 pessoa, mas trava escala: sem bundler não há code-splitting, hashing de cache, TypeScript no front nem testes de integração. <code>index.html</code> de 1,5 MB e <code>ervaria-app.html</code> de 1,7 MB indicam duplicação/monólito.</p>
+    <div class="rec"><b>Recomendação:</b> introduzir Vite/esbuild + deploy em CDN de borda (Vercel/Cloudflare Pages/Netlify) — o que também habilita rewrites de URL (Etapa 2), headers de segurança (Etapa 16) e pré-render (Etapa 12) numa só mudança.</div>
+  </div>
+  <p class="note">Escalabilidade do backend: Supabase escala bem para o estágio; o gargalo é arquitetura de front e ausência de CDN de imagem, não o banco.</p>
+  <p><b>Nota Etapa 15: 5.5 / 10</b> — escolhas pragmáticas e corretas para MVP; falta engenharia de escala.</p>
+</section>
+
+<!-- ============ ETAPA 16 — SEGURANÇA ============ -->
+<section id="e16">
+  <div class="sec-head"><span class="sec-num">16</span><h2 class="sec-title">Segurança da Informação</h2></div>
+  <p class="sec-sub">OWASP, RLS, autenticação, webhook, PCI, CORS, rate limit.</p>
+
+  <div class="finding crit">
+    <div class="fh"><span class="chip crit">Crítico · A01</span><h4>C-1 · Escalonamento de privilégio: usuário se auto-promove a admin</h4><span class="code-ref">ervaria-supabase-migration.sql:98 · ervaria-admin-migration.sql:10</span></div>
+    <p>A policy <code>UPDATE</code> de <code>user_profiles</code> usa <code>USING (auth.uid()=id)</code> <b>sem <code>WITH CHECK</code> e sem restrição de coluna</b>. Como a coluna <code>is_admin</code> vive nessa tabela, qualquer usuário logado, usando a chave publicável do front, executa via PostgREST: <code>update user_profiles set is_admin=true where id=auth.uid()</code>. Todos os portões admin (métricas de todos os usuários, deletar qualquer conta, reescrever preços/estoque, ler todos os pedidos) passam a liberar.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Impacto negócio</div><div class="v">Comprometimento total do painel e dos dados.</div></div>
+      <div class="cell"><div class="k">Risco</div><div class="v">Crítico — explorável por qualquer conta.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Crítica (corrigir antes de qualquer coisa)</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Baixo</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">Fecha o vetor de compromisso mais grave.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> adicionar <code>WITH CHECK</code> impedindo alteração de <code>is_admin</code>/<code>role</code>, ou revogar UPDATE dessas colunas por <code>GRANT UPDATE (colunas_seguras)</code>, gerenciando privilégio só via <code>service_role</code>.</div>
+  </div>
+
+  <div class="finding crit">
+    <div class="fh"><span class="chip crit">Crítico · A01</span><h4>C-2 · View <code>orders_with_items</code> ignora RLS e vaza PII de todos os clientes</h4><span class="code-ref">ervaria-orders-migration.sql:258–278 · js/admin-orders.js:17</span></div>
+    <p>View comum (não <code>security_invoker</code>) roda com privilégio do dono e <b>não aplica RLS</b>. Exposta ao papel <code>authenticated</code> via PostgREST. Qualquer usuário logado pode ler <b>todos os pedidos, totais, endereços de entrega, nomes e e-mails</b> de todos os clientes. O portão “admin” é só JavaScript no cliente, trivialmente contornável.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Risco</div><div class="v">Crítico — vazamento massivo de dados pessoais.</div></div>
+      <div class="cell"><div class="k">Compliance</div><div class="v">Incidente de LGPD (art. 46) com dever de notificação à ANPD.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Crítica</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Baixo</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> recriar com <code>WITH (security_invoker=true)</code> ou <code>REVOKE SELECT ... FROM authenticated, anon</code> e servir a listagem admin só por Edge Function <code>service_role</code> (como já é feito em <code>admin-metrics</code>).</div>
+  </div>
+
+  <div class="finding high">
+    <div class="fh"><span class="chip high">Alto · A02/A05</span><h4>H-1 · Assinatura HMAC do webhook Mercado Pago não é validada</h4><span class="code-ref">_shared/mercadopago.ts · WEBHOOK_SIGNATURE_DEBT.md</span></div>
+    <p>Documentado como dívida: o HMAC computado nunca bate com o <code>v1</code> do MP; em <code>MP_MODE=test</code> a assinatura inválida é ignorada (modo relaxado); com secret ausente, retorna “válido”. Endpoint é público (<code>verify_jwt=false</code>).</p>
+    <p class="note">Mitigações reais e eficazes: o handler não confia no payload — re-busca o pagamento na API do MP com o access token; exige <code>external_reference</code> = UUID de pedido real; e valida o valor (<code>|valor − total| ≤ R$0,01</code>) antes de marcar “pago”, com idempotência. Isso torna a <i>fraude de pagamento</i> difícil mesmo sem assinatura. O risco residual é abuso volumétrico e, se virar produção com o HMAC quebrado, todos os webhooks legítimos passariam a 401 (pedidos travados em <code>pending</code>).</p>
+    <div class="rec"><b>Recomendação:</b> resolver a assinatura (logar <code>body_raw</code> e reproduzir o HMAC byte-a-byte) antes de ir a produção; remover a tabela de debug <code>mp_webhook_log</code> (H-2 — grava headers/body de requisições não autenticadas, permitindo write-amplification/log-poisoning).</div>
+  </div>
+
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Controle</th><th>Estado</th><th>Nota</th></tr></thead>
+    <tbody>
+      <tr><td>HTTPS / TLS</td><td><span class="chip low">Presumido OK</span> (hospedagem gerida; site responde 403 a fetch externo)</td><td class="num">7</td></tr>
+      <tr><td>Security Headers (CSP, HSTS, X-Frame-Options)</td><td><span class="chip high">Nenhum no repo</span> — sem <code>_headers</code>/<code>vercel.json</code></td><td class="num">2</td></tr>
+      <tr><td>PCI-DSS</td><td><span class="chip pos">SAQ-A</span> — Checkout Pro; nenhum dado de cartão tocado</td><td class="num">9</td></tr>
+      <tr><td>RLS nas tabelas de dados</td><td><span class="chip pos">Habilitado em quase tudo</span> (falhas em C-1/C-2)</td><td class="num">6</td></tr>
+      <tr><td>AuthZ nas Edge Functions</td><td><span class="chip pos">Correto no nível da função</span> (getUserFromRequest, checagem admin)</td><td class="num">7</td></tr>
+      <tr><td>CORS</td><td><span class="chip med">Wildcard <code>*</code></span> (mitigado: sem cookies/credenciais)</td><td class="num">5</td></tr>
+      <tr><td>Rate limit / anti-bot / captcha</td><td><span class="chip high">Ausentes</span> em todas as functions</td><td class="num">2</td></tr>
+      <tr><td>Segredos no repo</td><td><span class="chip pos">Nenhum</span> — só a chave publicável (esperada)</td><td class="num">9</td></tr>
+      <tr><td>SQL Injection / XSS</td><td><span class="chip pos">Não observados</span> — queries parametrizadas; e-mail com escape</td><td class="num">8</td></tr>
+      <tr><td>Logs / auditoria / backup / monitoramento</td><td><span class="chip med">Básico</span> (logs de function; sem monitoração/alerta formal)</td><td class="num">4</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Nota Etapa 16: 4.5 / 10</b> — bom desenho de base (PCI, RLS, sem segredos) manchado por 2 falhas críticas de controle de acesso.</p>
+</section>
+
+<!-- ============ ETAPA 17 — COMPLIANCE ============ -->
+<section id="e17">
+  <div class="sec-head"><span class="sec-num">17</span><h2 class="sec-title">Compliance &amp; LGPD</h2></div>
+  <p class="sec-sub">Privacidade, cookies, termos, consentimento, direitos do titular.</p>
+  <div class="finding high">
+    <div class="fh"><span class="chip high">Alto</span><h4>LGPD é apenas um checkbox — falta todo o arcabouço</h4></div>
+    <p>Não há <b>página de Política de Privacidade, Termos de Uso, banner de consentimento de cookies</b> nem rota para eles. O único artefato é um checkbox “aceitar LGPD” no cadastro (<code>ervaria.js:815</code>). Não há mecanismo de direitos do titular (acesso, correção, exclusão, portabilidade), política de retenção nem base legal declarada. Combinado com C-2, há risco concreto de incidente reportável.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Risco</div><div class="v">Legal/regulatório — LGPD prevê sanções da ANPD (até 2% do faturamento).</div></div>
+      <div class="cell"><div class="k">Impacto negócio</div><div class="v">Bloqueador de due diligence — investidor sério exige conformidade.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Alta</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Baixo–Médio</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> publicar Política de Privacidade + Termos + banner de cookies (Consent Mode v2, necessário para o pixel funcionar legalmente); implementar fluxo de direitos do titular (a Edge Function <code>admin-delete-user</code> já é base para exclusão); definir retenção. Nomear encarregado (DPO).</div>
+  </div>
+  <p><b>Nota Etapa 17: 2.5 / 10.</b></p>
+</section>
+
+<!-- ============ ETAPA 18 — ANALYTICS ============ -->
+<section id="e18">
+  <div class="sec-head"><span class="sec-num">18</span><h2 class="sec-title">Analytics &amp; Dados</h2></div>
+  <p class="sec-sub">KPIs, funil, eventos, heatmaps, atribuição.</p>
+  <div class="finding crit">
+    <div class="fh"><span class="chip crit">Crítico</span><h4>Zero telemetria: o negócio voa sem instrumentos</h4></div>
+    <p>Sem GA4, sem eventos de e-commerce, sem heatmap (Clarity/Hotjar), sem funil, sem definição de KPI, CAC ou LTV. A única fonte de verdade é a tabela <code>orders</code> — que hoje está vazia (pagamentos off). Impossível responder “de onde vem a conversão?”, “onde abandonam?”, “quanto custa um cliente?”.</p>
+    <div class="grid9">
+      <div class="cell"><div class="k">Impacto negócio</div><div class="v">Nenhuma decisão data-driven; otimização às cegas.</div></div>
+      <div class="cell"><div class="k">Prioridade</div><div class="v">Crítica</div></div>
+      <div class="cell"><div class="k">Esforço</div><div class="v">Baixo–Médio</div></div>
+      <div class="cell"><div class="k">Ganho</div><div class="v">Base para CRO, mídia e produto.</div></div>
+    </div>
+    <div class="rec"><b>Recomendação:</b> GA4 + GTM + Clarity (heatmap grátis) + funil de e-commerce; dashboard de KPIs (conversão, AOV, CAC, LTV, abandono); atribuição server-side. Definir a “estrela-norte” (ex.: pedidos pagos/semana).</div>
+  </div>
+  <p><b>Nota Etapa 18: 1.5 / 10.</b></p>
+</section>
+
+<!-- ============ ETAPA 19 — IA ============ -->
+<section id="e19">
+  <div class="sec-head"><span class="sec-num">19</span><h2 class="sec-title">Inteligência Artificial — Oportunidades</h2></div>
+  <p class="sec-sub">Onde a IA gera valor real neste contexto.</p>
+  <p class="sec-sub">O ativo de conteúdo (fichas estruturadas com componentes ativos, efeitos, contraindicações, perfil sensorial) é um <b>corpus ideal para IA</b> — vantagem competitiva rara. Priorização:</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Aplicação</th><th>Valor</th><th>Viabilidade</th><th>Como</th></tr></thead>
+    <tbody>
+      <tr><td>Busca semântica / “erva para X”</td><td class="stars">★★★★★</td><td>Alta</td><td>Embeddings das fichas em <code>pgvector</code> (Supabase nativo) → “algo para ansiedade” retorna Valeriana/Melissa com base científica.</td></tr>
+      <tr><td>Recomendação de produto</td><td class="stars">★★★★★</td><td>Média</td><td>Cross-sell por afinidade sensorial/terapêutica + histórico; eleva AOV.</td></tr>
+      <tr><td>Assistente/chatbot botânico</td><td class="stars">★★★★☆</td><td>Alta</td><td>RAG sobre as fichas — atendimento 24/7 com E-E-A-T e disclaimers; reduz custo de suporte.</td></tr>
+      <tr><td>Construtor de blends por IA (já existe base)</td><td class="stars">★★★★☆</td><td>Alta</td><td>Evoluir o “Blend com IA” para sugerir + vender o blend montado (fecha o loop conteúdo→compra).</td></tr>
+      <tr><td>Personalização de vitrine</td><td class="stars">★★★☆☆</td><td>Média</td><td>Requer analytics primeiro (Etapa 18).</td></tr>
+      <tr><td>Antifraude / precificação dinâmica</td><td class="stars">★★☆☆☆</td><td>Baixa (prematuro)</td><td>MP já cobre antifraude base; adiar até volume.</td></tr>
+      <tr><td>Geração de conteúdo/tradução (6 idiomas)</td><td class="stars">★★★★☆</td><td>Alta</td><td>Acelerar as 100 fichas (roadmap de conteúdo estima ~75h) e localização.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Alerta: qualquer IA que dê orientação sobre uso de ervas medicinais precisa de guard-rails e disclaimers (risco regulatório ANVISA/saúde). O conteúdo atual já modela isso bem.</p>
+  <p><b>Maturidade de IA hoje: 3.0 / 10 — potencial 9.</b></p>
+</section>
+
+<!-- ============ ETAPA 20 — BENCHMARK ============ -->
+<section id="e20">
+  <div class="sec-head"><span class="sec-num">20</span><h2 class="sec-title">Benchmark Comparativo</h2></div>
+  <p class="sec-sub">Ervatório vs. referências (escala 0–10).</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Critério</th><th class="num">Ervatório</th><th class="num">Amazon</th><th class="num">Mercado&nbsp;Livre</th><th class="num">Magalu</th><th class="num">iHerb</th><th class="num">Natura</th><th class="num">Shopee</th></tr></thead>
+    <tbody>
+      <tr><td>Conteúdo / E-E-A-T de produto</td><td class="num"><b>9</b></td><td class="num">6</td><td class="num">5</td><td class="num">5</td><td class="num">8</td><td class="num">7</td><td class="num">4</td></tr>
+      <tr><td>Identidade / branding</td><td class="num"><b>8</b></td><td class="num">6</td><td class="num">6</td><td class="num">7</td><td class="num">6</td><td class="num">9</td><td class="num">5</td></tr>
+      <tr><td>SEO técnico</td><td class="num"><b>2</b></td><td class="num">10</td><td class="num">9</td><td class="num">9</td><td class="num">9</td><td class="num">8</td><td class="num">8</td></tr>
+      <tr><td>Performance / CWV</td><td class="num"><b>3</b></td><td class="num">8</td><td class="num">8</td><td class="num">7</td><td class="num">8</td><td class="num">7</td><td class="num">7</td></tr>
+      <tr><td>PDP / conversão</td><td class="num"><b>4</b></td><td class="num">10</td><td class="num">9</td><td class="num">8</td><td class="num">9</td><td class="num">8</td><td class="num">8</td></tr>
+      <tr><td>Checkout / pagamento</td><td class="num"><b>4</b></td><td class="num">10</td><td class="num">9</td><td class="num">9</td><td class="num">8</td><td class="num">8</td><td class="num">9</td></tr>
+      <tr><td>Prova social / avaliações</td><td class="num"><b>1</b></td><td class="num">10</td><td class="num">9</td><td class="num">8</td><td class="num">10</td><td class="num">7</td><td class="num">9</td></tr>
+      <tr><td>Analytics / dados</td><td class="num"><b>1</b></td><td class="num">10</td><td class="num">9</td><td class="num">9</td><td class="num">9</td><td class="num">9</td><td class="num">9</td></tr>
+      <tr><td>Segurança / compliance</td><td class="num"><b>4</b></td><td class="num">10</td><td class="num">9</td><td class="num">9</td><td class="num">9</td><td class="num">9</td><td class="num">8</td></tr>
+      <tr><td>IA / personalização</td><td class="num"><b>3</b></td><td class="num">10</td><td class="num">8</td><td class="num">7</td><td class="num">7</td><td class="num">7</td><td class="num">8</td></tr>
+    </tbody>
+  </table></div>
+  <p>Ervatório <b>lidera em conteúdo e branding</b> — supera até gigantes nesses eixos — mas fica muito atrás em toda a maquinaria transacional (SEO, performance, PDP, checkout, prova social, dados). A tese de valor é clara: <b>transformar liderança editorial em máquina de conversão</b>.</p>
+</section>
+
+<!-- ============ ETAPA 21 — ROADMAP ============ -->
+<section id="e21">
+  <div class="sec-head"><span class="sec-num">21</span><h2 class="sec-title">Roadmap</h2></div>
+  <p class="sec-sub">Sequenciado por dependência e ROI.</p>
+
+  <div class="phase">
+    <div class="ph-head"><span class="t">Quick Wins</span><span>até 30 dias · esforço baixo · impacto alto</span></div>
+    <ul>
+      <li><b>Corrigir C-1</b> (WITH CHECK em is_admin)</li>
+      <li><b>Corrigir C-2</b> (security_invoker na view)</li>
+      <li>Remover produtos <code>is_test</code> da vitrine</li>
+      <li>Rodar o otimizador de imagens + ligar responsive-img</li>
+      <li><code>defer</code> em todos os scripts</li>
+      <li>Instalar GTM + GA4 + Meta Pixel + Clarity</li>
+      <li>Publicar Política de Privacidade + Termos + banner de cookies</li>
+      <li>Auto-hospedar fontes; subir Twitter card p/ large_image</li>
+      <li>Remover <code>maximum-scale</code>; corrigir contrastes AA</li>
+      <li>Remover tabela de debug <code>mp_webhook_log</code></li>
+    </ul>
+  </div>
+  <div class="phase">
+    <div class="ph-head"><span class="t">Curto Prazo</span><span>90 dias · fundação transacional</span></div>
+    <ul>
+      <li>Ligar pagamentos (resolver assinatura do webhook antes)</li>
+      <li>Guest checkout</li>
+      <li>Frete real por CEP (Melhor Envio/Correios)</li>
+      <li>Reviews/avaliações + prova social</li>
+      <li>Migrar routing p/ URLs reais + pré-render</li>
+      <li>Schema Product/Offer/Breadcrumb/FAQ/Recipe</li>
+      <li>robots.txt + sitemap.xml + canônicas + hreflang</li>
+      <li>Unificar ficha ↔ SKU (CTA de compra na ficha)</li>
+      <li>NF-e + fluxo de troca/devolução</li>
+      <li>Rate limiting + headers de segurança (CSP/HSTS)</li>
+    </ul>
+  </div>
+  <div class="phase">
+    <div class="ph-head"><span class="t">Médio Prazo</span><span>6 meses · conversão &amp; escala</span></div>
+    <ul>
+      <li>PDP completa (galeria/zoom, estoque, parcelamento, cross-sell)</li>
+      <li>Bundler (Vite) + deploy edge + code-splitting</li>
+      <li>Busca dedicada (Typesense/Algolia) + autocomplete</li>
+      <li>Busca semântica com pgvector</li>
+      <li>CRM + e-mail marketing + automações de carrinho</li>
+      <li>WhatsApp Business + push</li>
+      <li>Acessibilidade WCAG 2.1 AA completa</li>
+      <li>Programa de fidelidade/recompra (chá é recorrente)</li>
+      <li>Dashboard de KPIs (CAC/LTV/funil)</li>
+    </ul>
+  </div>
+  <div class="phase">
+    <div class="ph-head"><span class="t">Longo Prazo</span><span>12 meses · diferenciação</span></div>
+    <ul>
+      <li>Chatbot/assistente botânico (RAG sobre as fichas)</li>
+      <li>Recomendação e personalização por IA</li>
+      <li>Blend-com-IA vendável (loop conteúdo→compra)</li>
+      <li>Decisão estratégica: marketplace multi-seller (MP split) vs. loja curada</li>
+      <li>Internacionalização real (URLs por idioma, moeda, frete internacional)</li>
+      <li>App mobile / PWA avançado</li>
+      <li>Certificações (ISO 27001, selo de segurança)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ ETAPA 22 — PRIORIZAÇÃO ============ -->
+<section id="e22">
+  <div class="sec-head"><span class="sec-num">22</span><h2 class="sec-title">Matriz Impacto × Esforço</h2></div>
+  <p class="sec-sub">★ = 1 a 5. ROI combina impacto, custo evitado e facilidade.</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Iniciativa</th><th>Impacto</th><th>Facilidade</th><th>ROI</th><th>Quadrante</th></tr></thead>
+    <tbody>
+      <tr><td>Corrigir C-1 / C-2 (segurança)</td><td class="stars">★★★★★</td><td class="stars">★★★★★</td><td class="stars">★★★★★</td><td>Fazer já</td></tr>
+      <tr><td>Instalar analytics + pixel</td><td class="stars">★★★★★</td><td class="stars">★★★★★</td><td class="stars">★★★★★</td><td>Fazer já</td></tr>
+      <tr><td>Ligar pipeline de imagens</td><td class="stars">★★★★☆</td><td class="stars">★★★★★</td><td class="stars">★★★★★</td><td>Fazer já</td></tr>
+      <tr><td>Remover produtos de teste</td><td class="stars">★★★★☆</td><td class="stars">★★★★★</td><td class="stars">★★★★★</td><td>Fazer já</td></tr>
+      <tr><td><code>defer</code> nos scripts</td><td class="stars">★★★☆☆</td><td class="stars">★★★★★</td><td class="stars">★★★★☆</td><td>Fazer já</td></tr>
+      <tr><td>Políticas LGPD + cookies</td><td class="stars">★★★★☆</td><td class="stars">★★★★☆</td><td class="stars">★★★★☆</td><td>Fazer já</td></tr>
+      <tr><td>Ligar pagamentos + guest checkout</td><td class="stars">★★★★★</td><td class="stars">★★★☆☆</td><td class="stars">★★★★★</td><td>Projeto prioritário</td></tr>
+      <tr><td>URLs reais + pré-render + schema</td><td class="stars">★★★★★</td><td class="stars">★★☆☆☆</td><td class="stars">★★★★☆</td><td>Projeto prioritário</td></tr>
+      <tr><td>Reviews / prova social</td><td class="stars">★★★★☆</td><td class="stars">★★★☆☆</td><td class="stars">★★★★☆</td><td>Projeto prioritário</td></tr>
+      <tr><td>Frete real por CEP</td><td class="stars">★★★★☆</td><td class="stars">★★★☆☆</td><td class="stars">★★★★☆</td><td>Projeto prioritário</td></tr>
+      <tr><td>Unificar ficha ↔ SKU</td><td class="stars">★★★★★</td><td class="stars">★★☆☆☆</td><td class="stars">★★★★☆</td><td>Projeto prioritário</td></tr>
+      <tr><td>PDP completa</td><td class="stars">★★★★☆</td><td class="stars">★★☆☆☆</td><td class="stars">★★★☆☆</td><td>Planejar</td></tr>
+      <tr><td>Bundler + edge deploy</td><td class="stars">★★★☆☆</td><td class="stars">★★☆☆☆</td><td class="stars">★★★☆☆</td><td>Planejar</td></tr>
+      <tr><td>IA (busca semântica, chatbot)</td><td class="stars">★★★★☆</td><td class="stars">★★☆☆☆</td><td class="stars">★★★☆☆</td><td>Diferenciação</td></tr>
+      <tr><td>Marketplace multi-seller</td><td class="stars">★★★☆☆</td><td class="stars">★☆☆☆☆</td><td class="stars">★★☆☆☆</td><td>Avaliar tese</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ============ ETAPA 23 — SCORE (100 critérios) ============ -->
+<section id="e23">
+  <div class="sec-head"><span class="sec-num">23</span><h2 class="sec-title">Scorecard — 100 Critérios Ponderados</h2></div>
+  <p class="sec-sub">Nota 0–10 · Peso 1–5 · Ponderada = Nota×Peso. Subtotais por domínio ao fim de cada bloco.</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>#</th><th>Critério</th><th class="num">Nota</th><th class="num">Peso</th><th class="num">Pond.</th><th>Comentário</th></tr></thead>
+    <tbody>
+      <tr><td colspan="6" style="background:var(--forest);color:#e8c9a0;font-weight:700">A · VISÃO &amp; POSICIONAMENTO</td></tr>
+      <tr><td>1</td><td>Proposta de valor</td><td class="num">7.5</td><td class="num">4</td><td class="num">30</td><td>Clara e diferenciada</td></tr>
+      <tr><td>2</td><td>Posicionamento premium</td><td class="num">7.0</td><td class="num">3</td><td class="num">21</td><td>Coerente</td></tr>
+      <tr><td>3</td><td>Definição de público-alvo</td><td class="num">5.5</td><td class="num">3</td><td class="num">16.5</td><td>Implícito</td></tr>
+      <tr><td>4</td><td>Clareza do negócio (comprar?)</td><td class="num">4.0</td><td class="num">4</td><td class="num">16</td><td>Ambíguo</td></tr>
+      <tr><td>5</td><td>Diferenciais competitivos</td><td class="num">8.0</td><td class="num">4</td><td class="num">32</td><td>Conteúdo E-E-A-T</td></tr>
+      <tr><td>6</td><td>Primeira impressão</td><td class="num">7.0</td><td class="num">3</td><td class="num">21</td><td>Sofisticada</td></tr>
+      <tr><td>7</td><td>Credibilidade</td><td class="num">6.0</td><td class="num">4</td><td class="num">24</td><td>Manchada por “TESTE”</td></tr>
+      <tr><td>8</td><td>Consistência de marca</td><td class="num">8.0</td><td class="num">3</td><td class="num">24</td><td>Forte</td></tr>
+      <tr><td colspan="4" style="text-align:right"><b>Subtotal A</b></td><td class="num"><b>184.5</b></td><td>/ 280 · <b>65,9%</b></td></tr>
+
+      <tr><td colspan="6" style="background:var(--forest);color:#e8c9a0;font-weight:700">B · ARQUITETURA &amp; UX</td></tr>
+      <tr><td>9</td><td>Arquitetura da informação</td><td class="num">5.0</td><td class="num">4</td><td class="num">20</td><td>Dois catálogos</td></tr>
+      <tr><td>10</td><td>Navegação / menus</td><td class="num">5.5</td><td class="num">3</td><td class="num">16.5</td><td>Overlays sem deep-link</td></tr>
+      <tr><td>11</td><td>Breadcrumbs</td><td class="num">1.0</td><td class="num">2</td><td class="num">2</td><td>Ausentes</td></tr>
+      <tr><td>12</td><td>Estrutura de URLs</td><td class="num">1.0</td><td class="num">5</td><td class="num">5</td><td>Hash routing</td></tr>
+      <tr><td>13</td><td>Filtros (conteúdo)</td><td class="num">8.0</td><td class="num">3</td><td class="num">24</td><td>Facetado bom</td></tr>
+      <tr><td>14</td><td>Filtros (loja)</td><td class="num">4.0</td><td class="num">3</td><td class="num">12</td><td>Raso; corta em 4</td></tr>
+      <tr><td>15</td><td>Facilidade de uso</td><td class="num">6.0</td><td class="num">4</td><td class="num">24</td><td>Boa no conteúdo</td></tr>
+      <tr><td>16</td><td>Feedback visual / microinterações</td><td class="num">6.0</td><td class="num">2</td><td class="num">12</td><td>Presente</td></tr>
+      <tr><td>17</td><td>Tratamento de erros</td><td class="num">4.0</td><td class="num">3</td><td class="num">12</td><td>Falha tardia no checkout</td></tr>
+      <tr><td>18</td><td>Acessibilidade / WCAG</td><td class="num">3.0</td><td class="num">4</td><td class="num">12</td><td>Abaixo do mínimo</td></tr>
+      <tr><td>19</td><td>Responsividade</td><td class="num">6.5</td><td class="num">4</td><td class="num">26</td><td>Boa; trava zoom</td></tr>
+      <tr><td>20</td><td>Tempo até localizar produto</td><td class="num">5.0</td><td class="num">3</td><td class="num">15</td><td>Sem busca robusta</td></tr>
+      <tr><td colspan="4" style="text-align:right"><b>Subtotal B</b></td><td class="num"><b>180.5</b></td><td>/ 400 · <b>45,1%</b></td></tr>
+
+      <tr><td colspan="6" style="background:var(--forest);color:#e8c9a0;font-weight:700">C · DESIGN</td></tr>
+      <tr><td>21</td><td>Paleta / cores</td><td class="num">7.5</td><td class="num">3</td><td class="num">22.5</td><td>Botânica coesa</td></tr>
+      <tr><td>22</td><td>Tipografia</td><td class="num">8.0</td><td class="num">3</td><td class="num">24</td><td>Editorial</td></tr>
+      <tr><td>23</td><td>Grid / espaçamento</td><td class="num">7.0</td><td class="num">2</td><td class="num">14</td><td>Consistente</td></tr>
+      <tr><td>24</td><td>Cards / componentes</td><td class="num">7.0</td><td class="num">2</td><td class="num">14</td><td>Bem resolvidos</td></tr>
+      <tr><td>25</td><td>Ícones</td><td class="num">5.0</td><td class="num">2</td><td class="num">10</td><td>Emoji funcional</td></tr>
+      <tr><td>26</td><td>Contraste (AA)</td><td class="num">5.5</td><td class="num">3</td><td class="num">16.5</td><td>Muted duvidoso</td></tr>
+      <tr><td>27</td><td>Dark mode</td><td class="num">7.5</td><td class="num">2</td><td class="num">15</td><td>Coerente</td></tr>
+      <tr><td>28</td><td>Identidade / branding</td><td class="num">8.0</td><td class="num">3</td><td class="num">24</td><td>Autoral</td></tr>
+      <tr><td colspan="4" style="text-align:right"><b>Subtotal C</b></td><td class="num"><b>140.0</b></td><td>/ 200 · <b>70,0%</b></td></tr>
+
+      <tr><td colspan="6" style="background:var(--forest);color:#e8c9a0;font-weight:700">D · CATÁLOGO &amp; PRODUTO</td></tr>
+      <tr><td>29</td><td>Organização do catálogo</td><td class="num">4.5</td><td class="num">4</td><td class="num">18</td><td>Fragmentado</td></tr>
+      <tr><td>30</td><td>Ficha técnica / atributos</td><td class="num">9.0</td><td class="num">4</td><td class="num">36</td><td>Excepcional</td></tr>
+      <tr><td>31</td><td>Descrições / copywriting</td><td class="num">8.0</td><td class="num">3</td><td class="num">24</td><td>Rico</td></tr>
+      <tr><td>32</td><td>Variações / atributos vendáveis</td><td class="num">2.0</td><td class="num">3</td><td class="num">6</td><td>Ausentes</td></tr>
+      <tr><td>33</td><td>Imagens de produto (galeria/zoom)</td><td class="num">3.0</td><td class="num">4</td><td class="num">12</td><td>Uma imagem, sem zoom</td></tr>
+      <tr><td>34</td><td>Vídeo / 360°</td><td class="num">1.0</td><td class="num">2</td><td class="num">2</td><td>Ausentes</td></tr>
+      <tr><td>35</td><td>CTA de compra na ficha</td><td class="num">1.0</td><td class="num">5</td><td class="num">5</td><td>Inexistente</td></tr>
+      <tr><td>36</td><td>Estoque exibido</td><td class="num">2.0</td><td class="num">3</td><td class="num">6</td><td>Nunca mostrado</td></tr>
+      <tr><td>37</td><td>Prazo / frete na PDP</td><td class="num">1.0</td><td class="num">4</td><td class="num">4</td><td>Ausente</td></tr>
+      <tr><td>38</td><td>Upsell / cross-sell / relacionados</td><td class="num">1.0</td><td class="num">4</td><td class="num">4</td><td>Ausentes</td></tr>
+      <tr><td>39</td><td>Avaliações / FAQ na PDP</td><td class="num">1.0</td><td class="num">4</td><td class="num">4</td><td>Ausentes</td></tr>
+      <tr><td colspan="4" style="text-align:right"><b>Subtotal D</b></td><td class="num"><b>125.0</b></td><td>/ 400 · <b>31,3%</b></td></tr>
+
+      <tr><td colspan="6" style="background:var(--forest);color:#e8c9a0;font-weight:700">E · CHECKOUT &amp; PÓS-VENDA</td></tr>
+      <tr><td>40</td><td>Carrinho</td><td class="num">6.0</td><td class="num">4</td><td class="num">24</td><td>Funcional</td></tr>
+      <tr><td>41</td><td>Guest checkout</td><td class="num">1.0</td><td class="num">4</td><td class="num">4</td><td>Login obrigatório</td></tr>
+      <tr><td>42</td><td>Meios de pagamento</td><td class="num">7.0</td><td class="num">4</td><td class="num">28</td><td>Pix/cartão/boleto (MP)</td></tr>
+      <tr><td>43</td><td>Pagamentos operantes</td><td class="num">1.0</td><td class="num">5</td><td class="num">5</td><td>Desligados</td></tr>
+      <tr><td>44</td><td>Frete calculado</td><td class="num">1.5</td><td class="num">4</td><td class="num">6</td><td>Placeholder</td></tr>
+      <tr><td>45</td><td>Cupons / promoções</td><td class="num">1.0</td><td class="num">2</td><td class="num">2</td><td>Ausentes</td></tr>
+      <tr><td>46</td><td>Recálculo de preço no servidor</td><td class="num">9.0</td><td class="num">3</td><td class="num">27</td><td>Correto</td></tr>
+      <tr><td>47</td><td>Nº de passos / fricção</td><td class="num">4.5</td><td class="num">3</td><td class="num">13.5</td><td>Conta obrigatória</td></tr>
+      <tr><td>48</td><td>Histórico de pedidos</td><td class="num">6.5</td><td class="num">3</td><td class="num">19.5</td><td>Bom, RLS ok</td></tr>
+      <tr><td>49</td><td>Rastreamento</td><td class="num">3.0</td><td class="num">3</td><td class="num">9</td><td>Texto estático</td></tr>
+      <tr><td>50</td><td>Troca / devolução (CDC)</td><td class="num">1.0</td><td class="num">4</td><td class="num">4</td><td>Ausente</td></tr>
+      <tr><td>51</td><td>Nota fiscal / NF-e</td><td class="num">1.0</td><td class="num">4</td><td class="num">4</td><td>Ausente</td></tr>
+      <tr><td>52</td><td>Recompra / recorrência</td><td class="num">2.0</td><td class="num">3</td><td class="num">6</td><td>Ausente</td></tr>
+      <tr><td colspan="4" style="text-align:right"><b>Subtotal E</b></td><td class="num"><b>151.5</b></td><td>/ 460 · <b>32,9%</b></td></tr>
+
+      <tr><td colspan="6" style="background:var(--forest);color:#e8c9a0;font-weight:700">F · SEO &amp; CONTEÚDO</td></tr>
+      <tr><td>53</td><td>Indexabilidade (URLs)</td><td class="num">1.0</td><td class="num">5</td><td class="num">5</td><td>Hash routing</td></tr>
+      <tr><td>54</td><td>Conteúdo no HTML</td><td class="num">2.0</td><td class="num">5</td><td class="num">10</td><td>Injetado por JS</td></tr>
+      <tr><td>55</td><td>Meta title/description</td><td class="num">8.0</td><td class="num">3</td><td class="num">24</td><td>Excelente</td></tr>
+      <tr><td>56</td><td>Schema.org estruturado</td><td class="num">2.0</td><td class="num">4</td><td class="num">8</td><td>Só WebApplication</td></tr>
+      <tr><td>57</td><td>Canonical</td><td class="num">1.0</td><td class="num">3</td><td class="num">3</td><td>Ausente</td></tr>
+      <tr><td>58</td><td>hreflang (6 idiomas)</td><td class="num">1.0</td><td class="num">3</td><td class="num">3</td><td>Ausente</td></tr>
+      <tr><td>59</td><td>robots.txt / sitemap</td><td class="num">1.0</td><td class="num">3</td><td class="num">3</td><td>Ausentes</td></tr>
+      <tr><td>60</td><td>Open Graph / Twitter</td><td class="num">7.0</td><td class="num">2</td><td class="num">14</td><td>Presentes</td></tr>
+      <tr><td>61</td><td>Hierarquia de headings</td><td class="num">5.0</td><td class="num">2</td><td class="num">10</td><td>Dois H1</td></tr>
+      <tr><td>62</td><td>Qualidade do conteúdo</td><td class="num">9.0</td><td class="num">3</td><td class="num">27</td><td>Referência</td></tr>
+      <tr><td>63</td><td>SEO Local</td><td class="num">2.0</td><td class="num">1</td><td class="num">2</td><td>Ausente</td></tr>
+      <tr><td colspan="4" style="text-align:right"><b>Subtotal F</b></td><td class="num"><b>109.0</b></td><td>/ 340 · <b>32,1%</b></td></tr>
+
+      <tr><td colspan="6" style="background:var(--forest);color:#e8c9a0;font-weight:700">G · PERFORMANCE &amp; TECNOLOGIA</td></tr>
+      <tr><td>64</td><td>LCP</td><td class="num">3.0</td><td class="num">4</td><td class="num">12</td><td>Herói PNG 2–4 MB</td></tr>
+      <tr><td>65</td><td>TBT / INP</td><td class="num">3.0</td><td class="num">4</td><td class="num">12</td><td>1,1 MB JS bloqueante</td></tr>
+      <tr><td>66</td><td>CLS</td><td class="num">5.0</td><td class="num">3</td><td class="num">15</td><td>Injeções sem dimensão</td></tr>
+      <tr><td>67</td><td>Imagens (WebP/AVIF/CDN)</td><td class="num">2.0</td><td class="num">4</td><td class="num">8</td><td>Pipeline morto</td></tr>
+      <tr><td>68</td><td>Minificação / bundling</td><td class="num">2.0</td><td class="num">3</td><td class="num">6</td><td>Sem build</td></tr>
+      <tr><td>69</td><td>Cache / versionamento</td><td class="num">4.0</td><td class="num">2</td><td class="num">8</td><td>Inconsistente</td></tr>
+      <tr><td>70</td><td>Service Worker / PWA</td><td class="num">7.5</td><td class="num">2</td><td class="num">15</td><td>Completo</td></tr>
+      <tr><td>71</td><td>Escolha de stack</td><td class="num">6.5</td><td class="num">3</td><td class="num">19.5</td><td>Pragmática p/ MVP</td></tr>
+      <tr><td>72</td><td>Escalabilidade backend</td><td class="num">6.5</td><td class="num">3</td><td class="num">19.5</td><td>Supabase ok</td></tr>
+      <tr><td>73</td><td>Escalabilidade frontend</td><td class="num">4.0</td><td class="num">3</td><td class="num">12</td><td>Monólito sem build</td></tr>
+      <tr><td colspan="4" style="text-align:right"><b>Subtotal G</b></td><td class="num"><b>127.5</b></td><td>/ 310 · <b>41,1%</b></td></tr>
+
+      <tr><td colspan="6" style="background:var(--forest);color:#e8c9a0;font-weight:700">H · SEGURANÇA &amp; COMPLIANCE</td></tr>
+      <tr><td>74</td><td>Controle de acesso (RLS/AuthZ)</td><td class="num">4.0</td><td class="num">5</td><td class="num">20</td><td>2 falhas críticas</td></tr>
+      <tr><td>75</td><td>Autenticação</td><td class="num">6.5</td><td class="num">4</td><td class="num">26</td><td>Supabase Auth ok</td></tr>
+      <tr><td>76</td><td>MFA</td><td class="num">3.0</td><td class="num">2</td><td class="num">6</td><td>Não evidenciado</td></tr>
+      <tr><td>77</td><td>PCI-DSS</td><td class="num">9.0</td><td class="num">4</td><td class="num">36</td><td>SAQ-A</td></tr>
+      <tr><td>78</td><td>Webhook / integridade pagamento</td><td class="num">5.5</td><td class="num">4</td><td class="num">22</td><td>HMAC quebrado, mitigado</td></tr>
+      <tr><td>79</td><td>Security headers (CSP/HSTS)</td><td class="num">2.0</td><td class="num">3</td><td class="num">6</td><td>Ausentes no repo</td></tr>
+      <tr><td>80</td><td>CORS</td><td class="num">5.0</td><td class="num">2</td><td class="num">10</td><td>Wildcard (mitigado)</td></tr>
+      <tr><td>81</td><td>Rate limit / anti-bot</td><td class="num">2.0</td><td class="num">3</td><td class="num">6</td><td>Ausentes</td></tr>
+      <tr><td>82</td><td>Gestão de segredos</td><td class="num">9.0</td><td class="num">3</td><td class="num">27</td><td>Nenhum no repo</td></tr>
+      <tr><td>83</td><td>Injeção (SQL/XSS)</td><td class="num">8.0</td><td class="num">4</td><td class="num">32</td><td>Parametrizado/escapado</td></tr>
+      <tr><td>84</td><td>LGPD — políticas/consentimento</td><td class="num">2.0</td><td class="num">5</td><td class="num">10</td><td>Só checkbox</td></tr>
+      <tr><td>85</td><td>Direitos do titular / retenção</td><td class="num">2.5</td><td class="num">3</td><td class="num">7.5</td><td>Ausentes</td></tr>
+      <tr><td>86</td><td>Logs / monitoramento / backup</td><td class="num">4.0</td><td class="num">3</td><td class="num">12</td><td>Básico</td></tr>
+      <tr><td colspan="4" style="text-align:right"><b>Subtotal H</b></td><td class="num"><b>230.5</b></td><td>/ 450 · <b>51,2%</b></td></tr>
+
+      <tr><td colspan="6" style="background:var(--forest);color:#e8c9a0;font-weight:700">I · MARKETING, ANALYTICS &amp; IA</td></tr>
+      <tr><td>87</td><td>Analytics / GA4</td><td class="num">1.0</td><td class="num">5</td><td class="num">5</td><td>Inexistente</td></tr>
+      <tr><td>88</td><td>Tag Manager / tagueamento</td><td class="num">1.0</td><td class="num">4</td><td class="num">4</td><td>Inexistente</td></tr>
+      <tr><td>89</td><td>Pixels / remarketing</td><td class="num">1.0</td><td class="num">4</td><td class="num">4</td><td>Inexistente</td></tr>
+      <tr><td>90</td><td>Funil / eventos e-commerce</td><td class="num">1.0</td><td class="num">4</td><td class="num">4</td><td>Inexistente</td></tr>
+      <tr><td>91</td><td>Heatmaps</td><td class="num">1.0</td><td class="num">2</td><td class="num">2</td><td>Inexistente</td></tr>
+      <tr><td>92</td><td>CRM / e-mail marketing</td><td class="num">1.5</td><td class="num">3</td><td class="num">4.5</td><td>Só e-mail transacional</td></tr>
+      <tr><td>93</td><td>WhatsApp / suporte</td><td class="num">1.0</td><td class="num">3</td><td class="num">3</td><td>Ausente</td></tr>
+      <tr><td>94</td><td>Fidelidade / cashback</td><td class="num">1.0</td><td class="num">2</td><td class="num">2</td><td>Ausente</td></tr>
+      <tr><td>95</td><td>Prova social / avaliações</td><td class="num">1.0</td><td class="num">4</td><td class="num">4</td><td>Ausente</td></tr>
+      <tr><td>96</td><td>Newsletter / captura de e-mail</td><td class="num">2.0</td><td class="num">3</td><td class="num">6</td><td>Referência sem provedor</td></tr>
+      <tr><td>97</td><td>Prontidão de dados p/ IA</td><td class="num">8.0</td><td class="num">2</td><td class="num">16</td><td>Corpus ideal</td></tr>
+      <tr><td>98</td><td>Busca semântica / recomendação</td><td class="num">3.0</td><td class="num">3</td><td class="num">9</td><td>Potencial alto</td></tr>
+      <tr><td>99</td><td>Chatbot / assistente</td><td class="num">2.0</td><td class="num">2</td><td class="num">4</td><td>Oportunidade</td></tr>
+      <tr><td>100</td><td>Personalização</td><td class="num">2.0</td><td class="num">3</td><td class="num">6</td><td>Depende de analytics</td></tr>
+      <tr><td colspan="4" style="text-align:right"><b>Subtotal I</b></td><td class="num"><b>83.5</b></td><td>/ 440 · <b>19,0%</b></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="kpi-row">
+    <div class="kpi"><div class="n">1.331,5</div><div class="l">Soma ponderada obtida</div></div>
+    <div class="kpi"><div class="n">3.280</div><div class="l">Máximo ponderado possível</div></div>
+    <div class="kpi"><div class="n">40,6%</div><div class="l">Índice ponderado global</div></div>
+    <div class="kpi"><div class="n">5.0<span style="font-size:1rem">/10</span></div><div class="l">Nota geral equivalente</div></div>
+  </div>
+  <p class="note">Metodologia: 100 critérios, cada um nota 0–10 × peso 1–5. O índice global (40,6%) pondera pela relevância comercial — por isso fica abaixo da média simples das notas, já que os itens de maior peso (URLs, pagamentos, segurança, analytics) são os mais fracos.</p>
+</section>
+
+<!-- ============ ETAPA 24 — RELATÓRIO EXECUTIVO ============ -->
+<section id="e24">
+  <div class="sec-head"><span class="sec-num">24</span><h2 class="sec-title">Relatório Executivo</h2></div>
+
+  <h3 style="margin:10px 0 6px">Resumo</h3>
+  <p>Ervatório é uma <b>marca de conteúdo botânico de classe mundial embrionariamente acoplada a um e-commerce</b>. Seu diferencial — uma enciclopédia científica de ervas com autoridade editorial que supera até grandes players — é um ativo defensável e caro de replicar. Porém, a camada transacional está incompleta e, em pontos-chave, quebrada: os pagamentos estão desligados, não há como o Google indexar os produtos, não há mensuração de nenhum tipo, e duas falhas críticas de controle de acesso expõem o painel e os dados de clientes. O projeto está no estágio de <b>piloto avançado</b>, não de operação pronta para escala. A boa notícia: a maior parte das lacunas são de <b>execução</b>, não de concepção — a fundação (stack, PCI, RLS, conteúdo, design) é correta.</p>
+
+  <div class="callout danger"><div class="ic">⚠️</div><div><h4>Principais riscos</h4>
+    <ul style="margin:6px 0 0;padding-left:18px;font-size:.92rem">
+      <li><b>Segurança:</b> escalonamento a admin (C-1) e vazamento de PII de todos os clientes (C-2) — exploráveis por qualquer conta.</li>
+      <li><b>Legal:</b> LGPD sem políticas/consentimento; pós-venda sem troca/devolução (CDC) nem NF-e.</li>
+      <li><b>Comercial:</b> receita zero hoje; sem analytics, qualquer verba de mídia é desperdiçada.</li>
+      <li><b>Operacional:</b> HMAC do webhook quebrado bloqueia a virada segura para produção.</li>
+    </ul>
+  </div></div>
+
+  <div class="swot">
+    <div class="q S"><h4>🌿 Forças</h4><ul>
+      <li>Conteúdo E-E-A-T de referência (96–97 fichas científicas)</li>
+      <li>Identidade e design autorais e coesos</li>
+      <li>Arquitetura de pagamento correta (PCI SAQ-A, preço no servidor)</li>
+      <li>PWA completo; RLS na maioria das tabelas; sem segredos no repo</li>
+      <li>Multilíngue (6 idiomas) no meta</li>
+    </ul></div>
+    <div class="q W"><h4>🥀 Fraquezas</h4><ul>
+      <li>Pagamentos desligados; jornada de compra incompleta</li>
+      <li>SEO inviável (hash routing, sem schema/sitemap)</li>
+      <li>Performance ruim (imagens e JS)</li>
+      <li>Zero analytics/marketing/prova social</li>
+      <li>2 falhas críticas de segurança + LGPD frágil</li>
+    </ul></div>
+    <div class="q O"><h4>🌱 Oportunidades</h4><ul>
+      <li>Converter audiência editorial em vendas (funil conteúdo→compra)</li>
+      <li>SEO orgânico de 140+ páginas ricas</li>
+      <li>IA sobre corpus botânico único (busca semântica, chatbot)</li>
+      <li>Recorrência (chá é consumível) + fidelidade</li>
+      <li>Expansão internacional (base multilíngue pronta)</li>
+    </ul></div>
+    <div class="q T"><h4>⛈️ Ameaças</h4><ul>
+      <li>Incidente de LGPD (C-2) com dano reputacional/sanção</li>
+      <li>Concorrência estabelecida (iHerb, Natura, ML) na execução transacional</li>
+      <li>Regulação ANVISA sobre alegações de ervas medicinais</li>
+      <li>Queima de capital em mídia sem mensuração</li>
+      <li>Dívida técnica de front trava velocidade do time ao escalar</li>
+    </ul></div>
+  </div>
+
+  <h3 style="margin:22px 0 8px">Maturidade por dimensão</h3>
+  <div class="meter"><span class="lab">Digital (global)</span><div class="track"><div class="fill" style="width:42%"></div></div><span class="pct">42%</span></div>
+  <div class="meter"><span class="lab">UX</span><div class="track"><div class="fill" style="width:50%"></div></div><span class="pct">50%</span></div>
+  <div class="meter"><span class="lab">Comercial</span><div class="track"><div class="fill" style="width:30%"></div></div><span class="pct">30%</span></div>
+  <div class="meter"><span class="lab">Tecnológica</span><div class="track"><div class="fill" style="width:52%"></div></div><span class="pct">52%</span></div>
+  <div class="meter"><span class="lab">Segurança</span><div class="track"><div class="fill" style="width:45%"></div></div><span class="pct">45%</span></div>
+  <div class="meter"><span class="lab">SEO</span><div class="track"><div class="fill" style="width:33%"></div></div><span class="pct">33%</span></div>
+  <div class="meter"><span class="lab">Marketing</span><div class="track"><div class="fill" style="width:15%"></div></div><span class="pct">15%</span></div>
+  <div class="meter"><span class="lab">Operacional</span><div class="track"><div class="fill" style="width:35%"></div></div><span class="pct">35%</span></div>
+
+  <div class="kpi-row" style="margin-top:22px">
+    <div class="kpi"><div class="n">5.0<span style="font-size:1rem">/10</span></div><div class="l">Nota geral do marketplace</div></div>
+    <div class="kpi"><div class="n">3–5×</div><div class="l">Potencial de crescimento de conversão com o roadmap implementado</div></div>
+    <div class="kpi"><div class="n">30–90d</div><div class="l">Para sair de “não vende” para “vende com mensuração”</div></div>
+  </div>
+
+  <h3 style="margin:22px 0 8px">Potencial de crescimento</h3>
+  <p>Com as correções críticas (segurança + LGPD), a ativação transacional (pagamentos, guest checkout, frete, reviews) e a destrava de SEO (URLs + schema + performance), o Ervatório sai de <b>uma vitrine que não vende e não é encontrada</b> para <b>um comércio mensurável com aquisição orgânica</b>. Dado o diferencial de conteúdo — que a maioria dos concorrentes não tem —, o teto é alto: estimamos um <b>potencial de 3–5× em conversão</b> e um canal orgânico capaz de reduzir o CAC estruturalmente. O gargalo não é a ideia nem a fundação; é <b>terminar de construir a máquina comercial e ligar os instrumentos</b>.</p>
+</section>
+
+<!-- ============ BACKLOG 100 ============ -->
+<section id="backlog">
+  <div class="sec-head"><span class="sec-num">✦</span><h2 class="sec-title">Backlog Consolidado — 100 Melhorias Priorizadas</h2></div>
+  <p class="sec-sub">Ordenado por prioridade e impacto esperado. P0 = bloqueador · P1 = alto · P2 = médio · P3 = evolução. Esf = esforço (B/M/A).</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th class="num">#</th><th>Melhoria</th><th>Área</th><th>Prio</th><th>Esf</th><th>Ganho esperado</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td>Corrigir policy is_admin (C-1) com WITH CHECK/coluna</td><td>Segurança</td><td>P0</td><td>B</td><td>Fecha escalonamento total</td></tr>
+      <tr><td class="num">2</td><td>Tornar view orders_with_items security_invoker (C-2)</td><td>Segurança</td><td>P0</td><td>B</td><td>Elimina vazamento de PII</td></tr>
+      <tr><td class="num">3</td><td>Remover produtos is_test da vitrine</td><td>Catálogo</td><td>P0</td><td>B</td><td>Restaura credibilidade</td></tr>
+      <tr><td class="num">4</td><td>Publicar Política de Privacidade</td><td>Compliance</td><td>P0</td><td>B</td><td>Conformidade LGPD</td></tr>
+      <tr><td class="num">5</td><td>Publicar Termos de Uso</td><td>Compliance</td><td>P0</td><td>B</td><td>Base legal de venda</td></tr>
+      <tr><td class="num">6</td><td>Banner de consentimento de cookies (Consent Mode v2)</td><td>Compliance</td><td>P0</td><td>M</td><td>Habilita pixel legal</td></tr>
+      <tr><td class="num">7</td><td>Instalar GTM + GA4</td><td>Analytics</td><td>P0</td><td>B</td><td>Mensuração de funil</td></tr>
+      <tr><td class="num">8</td><td>Instalar Meta Pixel + CAPI server-side</td><td>Marketing</td><td>P0</td><td>M</td><td>Remarketing + atribuição</td></tr>
+      <tr><td class="num">9</td><td>Microsoft Clarity (heatmap grátis)</td><td>Analytics</td><td>P1</td><td>B</td><td>Insight qualitativo</td></tr>
+      <tr><td class="num">10</td><td>Rodar otimizador de imagens (WebP)</td><td>Performance</td><td>P0</td><td>B</td><td>Heróis 2–4MB→200KB</td></tr>
+      <tr><td class="num">11</td><td>Carregar responsive-img.js + manifest</td><td>Performance</td><td>P0</td><td>B</td><td>Ativa &lt;picture&gt;/lazy</td></tr>
+      <tr><td class="num">12</td><td>defer em todos os scripts</td><td>Performance</td><td>P0</td><td>B</td><td>Reduz TBT</td></tr>
+      <tr><td class="num">13</td><td>fetchpriority+preload no herói LCP</td><td>Performance</td><td>P1</td><td>B</td><td>Melhora LCP</td></tr>
+      <tr><td class="num">14</td><td>Auto-hospedar fontes subsetadas</td><td>Performance</td><td>P1</td><td>M</td><td>−FCP; remove 3º</td></tr>
+      <tr><td class="num">15</td><td>Reduzir de 4 para 2 famílias tipográficas</td><td>Performance</td><td>P2</td><td>B</td><td>−peso de fontes</td></tr>
+      <tr><td class="num">16</td><td>Ligar pagamentos após corrigir webhook</td><td>Comercial</td><td>P0</td><td>M</td><td>Habilita receita</td></tr>
+      <tr><td class="num">17</td><td>Resolver assinatura HMAC do webhook (body_raw)</td><td>Segurança</td><td>P0</td><td>M</td><td>Virada segura p/ prod</td></tr>
+      <tr><td class="num">18</td><td>Remover tabela de debug mp_webhook_log</td><td>Segurança</td><td>P1</td><td>B</td><td>Fecha write-amplification</td></tr>
+      <tr><td class="num">19</td><td>Guest checkout</td><td>Checkout</td><td>P1</td><td>M</td><td>−20–30% abandono</td></tr>
+      <tr><td class="num">20</td><td>Frete real por CEP (Melhor Envio/Correios)</td><td>Checkout</td><td>P1</td><td>M</td><td>Margem + confiança</td></tr>
+      <tr><td class="num">21</td><td>Validar disponibilidade na adição ao carrinho</td><td>UX</td><td>P1</td><td>B</td><td>Elimina falha tardia</td></tr>
+      <tr><td class="num">22</td><td>Exibir parcelamento/Pix antes do redirect</td><td>Checkout</td><td>P2</td><td>M</td><td>+conversão BR</td></tr>
+      <tr><td class="num">23</td><td>Sistema de cupons</td><td>Checkout</td><td>P2</td><td>M</td><td>Alavanca promocional</td></tr>
+      <tr><td class="num">24</td><td>Order bump / cross-sell no carrinho</td><td>CRO</td><td>P2</td><td>M</td><td>+AOV</td></tr>
+      <tr><td class="num">25</td><td>Migrar routing p/ History API (URLs reais)</td><td>SEO</td><td>P1</td><td>A</td><td>Destrava indexação</td></tr>
+      <tr><td class="num">26</td><td>Pré-render/SSG de fichas e produtos</td><td>SEO</td><td>P1</td><td>A</td><td>HTML servível ao Google</td></tr>
+      <tr><td class="num">27</td><td>robots.txt</td><td>SEO</td><td>P1</td><td>B</td><td>Diretivas de crawl</td></tr>
+      <tr><td class="num">28</td><td>sitemap.xml por entidade</td><td>SEO</td><td>P1</td><td>M</td><td>Submissão de URLs</td></tr>
+      <tr><td class="num">29</td><td>Tag canonical por página</td><td>SEO</td><td>P1</td><td>B</td><td>Consolidação de sinal</td></tr>
+      <tr><td class="num">30</td><td>hreflang + x-default (6 idiomas)</td><td>SEO</td><td>P2</td><td>M</td><td>SEO internacional</td></tr>
+      <tr><td class="num">31</td><td>Schema Product + Offer</td><td>SEO</td><td>P1</td><td>M</td><td>Rich results de produto</td></tr>
+      <tr><td class="num">32</td><td>Schema BreadcrumbList</td><td>SEO</td><td>P2</td><td>B</td><td>Breadcrumb no SERP</td></tr>
+      <tr><td class="num">33</td><td>Schema Recipe (receitas)</td><td>SEO</td><td>P2</td><td>M</td><td>Rich results de receita</td></tr>
+      <tr><td class="num">34</td><td>Schema FAQPage / HowTo (preparo)</td><td>SEO</td><td>P2</td><td>M</td><td>Rich results FAQ</td></tr>
+      <tr><td class="num">35</td><td>Organization completo (logo/sameAs)</td><td>SEO</td><td>P2</td><td>B</td><td>Knowledge panel</td></tr>
+      <tr><td class="num">36</td><td>Corrigir dois H1 no DOM</td><td>SEO</td><td>P2</td><td>B</td><td>Hierarquia limpa</td></tr>
+      <tr><td class="num">37</td><td>Twitter card → summary_large_image</td><td>SEO</td><td>P3</td><td>B</td><td>+CTR social</td></tr>
+      <tr><td class="num">38</td><td>Adicionar &lt;noscript&gt; com conteúdo/links</td><td>SEO</td><td>P2</td><td>B</td><td>Fallback de crawl</td></tr>
+      <tr><td class="num">39</td><td>Unificar modelo ficha ↔ SKU vendável</td><td>Catálogo</td><td>P1</td><td>A</td><td>96 fichas comercializáveis</td></tr>
+      <tr><td class="num">40</td><td>CTA “Comprar” na ficha</td><td>CRO</td><td>P1</td><td>M</td><td>Captura intenção</td></tr>
+      <tr><td class="num">41</td><td>PDP dedicada (não modal)</td><td>Produto</td><td>P2</td><td>A</td><td>Base p/ conversão</td></tr>
+      <tr><td class="num">42</td><td>Galeria + zoom de imagem</td><td>Produto</td><td>P2</td><td>M</td><td>+confiança visual</td></tr>
+      <tr><td class="num">43</td><td>Vídeo de produto</td><td>Produto</td><td>P3</td><td>M</td><td>+engajamento</td></tr>
+      <tr><td class="num">44</td><td>Variações (tamanho/formato)</td><td>Catálogo</td><td>P2</td><td>M</td><td>Merchandising</td></tr>
+      <tr><td class="num">45</td><td>Estoque numérico + escassez exibida</td><td>Catálogo</td><td>P2</td><td>M</td><td>Urgência; anti-oversell</td></tr>
+      <tr><td class="num">46</td><td>Prazo de entrega na PDP</td><td>Produto</td><td>P2</td><td>M</td><td>−ansiedade de compra</td></tr>
+      <tr><td class="num">47</td><td>Sistema de avaliações/reviews</td><td>CRO</td><td>P1</td><td>A</td><td>#1 alavanca de confiança</td></tr>
+      <tr><td class="num">48</td><td>Prova social (best-sellers, “X compraram”)</td><td>CRO</td><td>P2</td><td>M</td><td>+conversão</td></tr>
+      <tr><td class="num">49</td><td>Q&amp;A / FAQ por produto</td><td>Produto</td><td>P2</td><td>M</td><td>−dúvidas/suporte</td></tr>
+      <tr><td class="num">50</td><td>Selos de segurança/garantia na PDP</td><td>CRO</td><td>P2</td><td>B</td><td>+confiança</td></tr>
+      <tr><td class="num">51</td><td>Upsell / “compre junto” manual</td><td>CRO</td><td>P2</td><td>M</td><td>+8–15% AOV</td></tr>
+      <tr><td class="num">52</td><td>Produtos relacionados</td><td>CRO</td><td>P2</td><td>M</td><td>+descoberta</td></tr>
+      <tr><td class="num">53</td><td>Wishlist de produtos (não só fichas)</td><td>UX</td><td>P3</td><td>M</td><td>Retorno/retenção</td></tr>
+      <tr><td class="num">54</td><td>Comparador de produtos</td><td>UX</td><td>P3</td><td>M</td><td>Decisão facilitada</td></tr>
+      <tr><td class="num">55</td><td>Emissão de NF-e (Bling/Tiny/eNotas)</td><td>Pós-venda</td><td>P1</td><td>M</td><td>Obrigação fiscal</td></tr>
+      <tr><td class="num">56</td><td>Fluxo de troca/devolução (CDC)</td><td>Pós-venda</td><td>P1</td><td>M</td><td>Conformidade legal</td></tr>
+      <tr><td class="num">57</td><td>Rastreamento linkado/ao vivo</td><td>Pós-venda</td><td>P2</td><td>M</td><td>−suporte pós-compra</td></tr>
+      <tr><td class="num">58</td><td>Botão “comprar de novo”</td><td>Retenção</td><td>P2</td><td>B</td><td>Receita recorrente</td></tr>
+      <tr><td class="num">59</td><td>Cancelamento de pedido pelo cliente</td><td>Pós-venda</td><td>P3</td><td>M</td><td>Autoatendimento</td></tr>
+      <tr><td class="num">60</td><td>Gestão de endereços salvos</td><td>UX</td><td>P3</td><td>B</td><td>Checkout mais rápido</td></tr>
+      <tr><td class="num">61</td><td>Cards/botões como &lt;button&gt;/&lt;a&gt; reais</td><td>Acessibilidade</td><td>P1</td><td>M</td><td>Operável por teclado</td></tr>
+      <tr><td class="num">62</td><td>Focus-trap + ESC + aria-modal nos overlays</td><td>Acessibilidade</td><td>P1</td><td>M</td><td>AT navegável</td></tr>
+      <tr><td class="num">63</td><td>Remover maximum-scale=1.0</td><td>Acessibilidade</td><td>P1</td><td>B</td><td>Permite zoom</td></tr>
+      <tr><td class="num">64</td><td>Corrigir contrastes para AA</td><td>Acessibilidade</td><td>P2</td><td>M</td><td>Legibilidade/legal</td></tr>
+      <tr><td class="num">65</td><td>alt descritivo em imagens injetadas</td><td>Acessibilidade</td><td>P2</td><td>M</td><td>SEO + AT</td></tr>
+      <tr><td class="num">66</td><td>Rótulos aria em botões de ícone</td><td>Acessibilidade</td><td>P2</td><td>B</td><td>Clareza p/ leitor de tela</td></tr>
+      <tr><td class="num">67</td><td>Headers de segurança (CSP, HSTS, X-Frame)</td><td>Segurança</td><td>P1</td><td>M</td><td>Defesa em profundidade</td></tr>
+      <tr><td class="num">68</td><td>Restringir CORS à origem do app</td><td>Segurança</td><td>P2</td><td>B</td><td>Reduz superfície</td></tr>
+      <tr><td class="num">69</td><td>Rate limiting nas Edge Functions</td><td>Segurança</td><td>P2</td><td>M</td><td>Anti-abuso</td></tr>
+      <tr><td class="num">70</td><td>Captcha/anti-bot em cadastro/login</td><td>Segurança</td><td>P2</td><td>M</td><td>Anti-fraude</td></tr>
+      <tr><td class="num">71</td><td>MFA para admin</td><td>Segurança</td><td>P2</td><td>M</td><td>Protege back-office</td></tr>
+      <tr><td class="num">72</td><td>Verificar RLS de site_settings</td><td>Segurança</td><td>P2</td><td>B</td><td>Fecha lacuna não auditada</td></tr>
+      <tr><td class="num">73</td><td>Monitoramento/alertas (Sentry/uptime)</td><td>Operacional</td><td>P2</td><td>M</td><td>Detecção de incidentes</td></tr>
+      <tr><td class="num">74</td><td>Backups verificados + restore testado</td><td>Operacional</td><td>P2</td><td>M</td><td>Continuidade</td></tr>
+      <tr><td class="num">75</td><td>Fluxo de direitos do titular (LGPD)</td><td>Compliance</td><td>P2</td><td>M</td><td>Acesso/exclusão de dados</td></tr>
+      <tr><td class="num">76</td><td>Política de retenção de dados</td><td>Compliance</td><td>P3</td><td>B</td><td>Minimização</td></tr>
+      <tr><td class="num">77</td><td>Nomear encarregado (DPO)</td><td>Compliance</td><td>P3</td><td>B</td><td>Governança</td></tr>
+      <tr><td class="num">78</td><td>Definir KPIs (conversão, AOV, CAC, LTV)</td><td>Analytics</td><td>P1</td><td>B</td><td>Gestão data-driven</td></tr>
+      <tr><td class="num">79</td><td>Eventos de e-commerce (view/add/checkout/purchase)</td><td>Analytics</td><td>P1</td><td>M</td><td>Funil mensurável</td></tr>
+      <tr><td class="num">80</td><td>Dashboard de KPIs</td><td>Analytics</td><td>P2</td><td>M</td><td>Visibilidade executiva</td></tr>
+      <tr><td class="num">81</td><td>Captura de e-mail / newsletter real</td><td>Marketing</td><td>P1</td><td>M</td><td>Constrói audiência own</td></tr>
+      <tr><td class="num">82</td><td>Automação de carrinho abandonado</td><td>Marketing</td><td>P2</td><td>M</td><td>Recupera vendas</td></tr>
+      <tr><td class="num">83</td><td>CRM + segmentação</td><td>Marketing</td><td>P2</td><td>A</td><td>LTV/retenção</td></tr>
+      <tr><td class="num">84</td><td>WhatsApp Business + suporte</td><td>Marketing</td><td>P2</td><td>M</td><td>Canal esperado no BR</td></tr>
+      <tr><td class="num">85</td><td>Web push notifications</td><td>Marketing</td><td>P3</td><td>M</td><td>Reengajamento</td></tr>
+      <tr><td class="num">86</td><td>Programa de fidelidade/recompra</td><td>Retenção</td><td>P3</td><td>A</td><td>Recorrência</td></tr>
+      <tr><td class="num">87</td><td>Cashback/gamificação comercial</td><td>Retenção</td><td>P3</td><td>M</td><td>Frequência de compra</td></tr>
+      <tr><td class="num">88</td><td>Busca dedicada (Typesense/Algolia)</td><td>Busca</td><td>P2</td><td>M</td><td>+conversão de busca</td></tr>
+      <tr><td class="num">89</td><td>Autocomplete + tolerância a erro</td><td>Busca</td><td>P2</td><td>M</td><td>−buscas sem resultado</td></tr>
+      <tr><td class="num">90</td><td>Sinônimos botânicos (nome científico/popular)</td><td>Busca</td><td>P2</td><td>M</td><td>Recall correto</td></tr>
+      <tr><td class="num">91</td><td>Busca semântica (pgvector)</td><td>IA</td><td>P3</td><td>A</td><td>“erva para dormir”→SKU</td></tr>
+      <tr><td class="num">92</td><td>Recomendação por IA</td><td>IA</td><td>P3</td><td>A</td><td>+AOV/personalização</td></tr>
+      <tr><td class="num">93</td><td>Chatbot botânico (RAG sobre fichas)</td><td>IA</td><td>P3</td><td>A</td><td>Suporte 24/7</td></tr>
+      <tr><td class="num">94</td><td>Blend-com-IA vendável</td><td>IA</td><td>P3</td><td>M</td><td>Loop conteúdo→compra</td></tr>
+      <tr><td class="num">95</td><td>IA p/ acelerar 100 fichas + tradução</td><td>IA</td><td>P3</td><td>M</td><td>−75h de conteúdo</td></tr>
+      <tr><td class="num">96</td><td>Adotar bundler (Vite/esbuild) + hashing</td><td>Tecnologia</td><td>P2</td><td>A</td><td>Code-split/cache</td></tr>
+      <tr><td class="num">97</td><td>Deploy em CDN de borda (Vercel/CF Pages)</td><td>Tecnologia</td><td>P2</td><td>M</td><td>Rewrites+headers+perf</td></tr>
+      <tr><td class="num">98</td><td>Testes automatizados (checkout/pagamento)</td><td>Tecnologia</td><td>P3</td><td>A</td><td>Confiabilidade</td></tr>
+      <tr><td class="num">99</td><td>Formalizar Design System (tokens/componentes)</td><td>Design</td><td>P3</td><td>M</td><td>Escala de time</td></tr>
+      <tr><td class="num">100</td><td>Decisão estratégica: marketplace multi-seller vs. loja curada</td><td>Estratégia</td><td>P2</td><td>A</td><td>Define arquitetura futura</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Auditoria Enterprise · Ervatório Marketplace</b> — 16/07/2026</p>
+    <p>Análise baseada em evidência do código-fonte de produção (o domínio responde 403 a requisições automatizadas, impedindo a coleta do site renderizado; todas as conclusões técnicas foram verificadas contra os arquivos-fonte, com referências <span class="mono">arquivo:linha</span>). Estimativas de impacto (%, ROI) usam benchmarks públicos de mercado e devem ser validadas contra dados reais assim que a instrumentação de analytics for ligada.</p>
+    <p style="margin-top:10px;color:#8fa593">Prioridade zero: fechar C-1 e C-2 antes de qualquer exposição pública ampliada.</p>
+  </div>
+</footer>
+
