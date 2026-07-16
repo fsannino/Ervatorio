@@ -3133,7 +3133,7 @@ function renderSobre(){
   el.innerHTML=`
     <div class="sobre-wrap">
       <div class="sobre-hero-wrap">
-        <img src="images/hero/hero-maos.png" alt="Ritual do chá" class="sobre-hero-photo"
+        <img data-responsive="images/hero/hero-maos.png" alt="Ritual do chá" class="sobre-hero-photo"
           loading="lazy" onerror="this.style.display='none'">
       </div>
 
