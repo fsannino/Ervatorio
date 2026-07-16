@@ -31,3 +31,6 @@ verify_jwt = true
 
 [functions.create-payment-preference]
 verify_jwt = true
+
+[functions.user-data-rights]
+verify_jwt = true
