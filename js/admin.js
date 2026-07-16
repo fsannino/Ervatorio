@@ -28,10 +28,105 @@ async function admInit(){
     document.getElementById('loginMsg').style.color='#e08080';
     return;
   }
+  // MFA (Onda 1.6): admin só entra no shell com aal2 (TOTP).
+  if(!(await admRequireMfa()))return;
   document.getElementById('admLogin').style.display='none';
   document.getElementById('admShell').style.display='flex';
   document.getElementById('admUserName').textContent=profile.display_name||admUser.email;
   showSection('dashboard');
+}
+
+// ── MFA (TOTP) — exige segundo fator para o painel ──
+// Flag de rollback: ADMIN_MFA_REQUIRED=false em js/config.js.
+async function admRequireMfa(){
+  if(window.ERVATORIO_CONFIG.ADMIN_MFA_REQUIRED===false)return true;
+  try{
+    const {data:aal,error:aalErr}=await sb.auth.mfa.getAuthenticatorAssuranceLevel();
+    if(aalErr)throw aalErr;
+    if(aal?.currentLevel==='aal2')return true;
+    const {data:factors,error:fErr}=await sb.auth.mfa.listFactors();
+    if(fErr)throw fErr;
+    const verified=(factors?.totp||[]).find(f=>f.status==='verified');
+    if(verified){admMfaChallengeUI(verified.id);}else{await admMfaEnrollUI(factors?.totp||[]);}
+    return false;
+  }catch(e){
+    // MFA indisponível no projeto (ex.: TOTP desligado no Auth):
+    // não trancar o painel por erro de config — logar e seguir.
+    console.warn('[admin-mfa] indisponível, prosseguindo sem MFA:',e.message||e);
+    return true;
+  }
+}
+
+function admMfaOverlay(innerHtml){
+  let ov=document.getElementById('admMfa');
+  if(!ov){
+    ov=document.createElement('div');
+    ov.id='admMfa';
+    ov.setAttribute('role','dialog');
+    ov.setAttribute('aria-modal','true');
+    ov.setAttribute('aria-label','Verificação em duas etapas');
+    ov.style.cssText='position:fixed;inset:0;z-index:999;display:flex;align-items:center;justify-content:center;background:rgba(10,16,13,.92);padding:20px';
+    document.body.appendChild(ov);
+  }
+  ov.innerHTML=innerHtml;
+  document.getElementById('admLogin').style.display='none';
+  document.getElementById('admShell').style.display='none';
+  ov.style.display='flex';
+  const code=document.getElementById('mfaCode');
+  if(code)code.focus();
+}
+
+async function admMfaEnrollUI(existingFactors){
+  // Remove tentativas de enrollment anteriores não verificadas.
+  for(const f of existingFactors.filter(f=>f.status!=='verified')){
+    try{await sb.auth.mfa.unenroll({factorId:f.id});}catch(_){/* ok */}
+  }
+  const {data,error}=await sb.auth.mfa.enroll({factorType:'totp',friendlyName:'Ervatório Admin'});
+  if(error){admMfaOverlay(`<div style="max-width:420px;text-align:center;color:#e08080">Erro ao iniciar MFA: ${esc(error.message)}<br><button class="adm-btn" style="margin-top:14px" onclick="admLogout()">Sair</button></div>`);return;}
+  window.__admMfaFactorId=data.id;
+  admMfaOverlay(`
+    <div style="max-width:420px;background:var(--adm-panel,#131a16);border:1px solid var(--adm-line,#26302a);border-radius:14px;padding:26px;text-align:center">
+      <h2 style="margin:0 0 6px;font-size:1.15rem">Ativar verificação em duas etapas</h2>
+      <p style="font-size:.82rem;opacity:.8;margin:0 0 14px">O painel admin agora exige um segundo fator. Escaneie o QR no seu app autenticador (1Password, Google Authenticator, Authy…) e digite o código de 6 dígitos.</p>
+      <div style="background:#fff;border-radius:10px;padding:10px;display:inline-block;margin-bottom:10px">${data.totp.qr_code}</div>
+      <p style="font-size:.7rem;opacity:.6;word-break:break-all;margin:0 0 14px">Chave manual: ${esc(data.totp.secret)}</p>
+      <input id="mfaCode" class="adm-form-input" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="000000" style="text-align:center;letter-spacing:6px;font-size:1.2rem" onkeydown="if(event.key==='Enter')admMfaVerify()">
+      <button class="adm-btn primary" style="width:100%;justify-content:center;margin-top:12px" onclick="admMfaVerify()">Confirmar</button>
+      <div id="mfaMsg" style="min-height:20px;font-size:.78rem;margin-top:10px"></div>
+      <button class="adm-btn" style="margin-top:6px" onclick="admLogout()">Sair</button>
+    </div>`);
+}
+
+function admMfaChallengeUI(factorId){
+  window.__admMfaFactorId=factorId;
+  admMfaOverlay(`
+    <div style="max-width:380px;background:var(--adm-panel,#131a16);border:1px solid var(--adm-line,#26302a);border-radius:14px;padding:26px;text-align:center">
+      <h2 style="margin:0 0 6px;font-size:1.15rem">Verificação em duas etapas</h2>
+      <p style="font-size:.82rem;opacity:.8;margin:0 0 14px">Digite o código do seu app autenticador.</p>
+      <input id="mfaCode" class="adm-form-input" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="000000" style="text-align:center;letter-spacing:6px;font-size:1.2rem" onkeydown="if(event.key==='Enter')admMfaVerify()">
+      <button class="adm-btn primary" style="width:100%;justify-content:center;margin-top:12px" onclick="admMfaVerify()">Entrar</button>
+      <div id="mfaMsg" style="min-height:20px;font-size:.78rem;margin-top:10px"></div>
+      <button class="adm-btn" style="margin-top:6px" onclick="admLogout()">Sair</button>
+    </div>`);
+}
+
+async function admMfaVerify(){
+  const code=(document.getElementById('mfaCode')?.value||'').trim();
+  const msg=document.getElementById('mfaMsg');
+  if(code.length!==6){msg.textContent='Digite o código de 6 dígitos';msg.style.color='#e08080';return;}
+  msg.textContent='Verificando...';msg.style.color='var(--adm-gold,#d4af7a)';
+  try{
+    const factorId=window.__admMfaFactorId;
+    const {data:ch,error:chErr}=await sb.auth.mfa.challenge({factorId});
+    if(chErr)throw chErr;
+    const {error:vErr}=await sb.auth.mfa.verify({factorId,challengeId:ch.id,code});
+    if(vErr)throw vErr;
+    document.getElementById('admMfa').style.display='none';
+    await admInit();
+  }catch(e){
+    msg.textContent=e.message&&e.message.includes('Invalid')?'Código inválido — tente de novo':(e.message||'Erro ao verificar');
+    msg.style.color='#e08080';
+  }
 }
 
 async function admLogin(){

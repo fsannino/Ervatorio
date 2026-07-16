@@ -21,4 +21,8 @@ window.ERVATORIO_CONFIG = Object.freeze({
   // a conta de producao (chamado aberto em XX/XX/2026).
   PAYMENTS_ENABLED: false,
   PAYMENTS_DISABLED_MSG: 'Pagamentos em manutenção — voltaremos em breve',
+  // Feature flag (Onda 1.6): exige segundo fator TOTP para acessar o
+  // painel admin. Requer MFA/TOTP habilitado em Supabase Auth.
+  // false = rollback de emergência (só login+senha, como antes).
+  ADMIN_MFA_REQUIRED: true,
 });
