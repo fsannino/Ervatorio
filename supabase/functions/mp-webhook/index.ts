@@ -34,6 +34,7 @@ import {
   verifyWebhookSignature,
 } from '../_shared/mercadopago.ts';
 import { sendOrderPaidEmail } from '../_shared/email.ts';
+import { clientIp, rateLimitAllow, tooManyRequests } from '../_shared/ratelimit.ts';
 
 Deno.serve(async (req) => {
   const cors = handleCors(req);
@@ -42,6 +43,12 @@ Deno.serve(async (req) => {
   // MP às vezes faz GET de health check; responder 200 evita retries.
   if (req.method === 'GET') return jsonResponse({ ok: true });
   if (req.method !== 'POST') return jsonResponse({ error: 'Method not allowed' }, 405);
+
+  // Anti-abuso volumétrico: endpoint é público (verify_jwt=false).
+  // Limite folgado para não derrubar rajadas legítimas de retry do MP.
+  if (!(await rateLimitAllow(`mp-webhook:${clientIp(req)}`, { windowSeconds: 60, max: 120 }))) {
+    return tooManyRequests();
+  }
 
   const url = new URL(req.url);
   const queryType = url.searchParams.get('type') || url.searchParams.get('topic');

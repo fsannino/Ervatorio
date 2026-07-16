@@ -5,6 +5,7 @@
 // em um segundo passo (ex.: função separada que chama Mercado Pago).
 import { handleCors, jsonResponse } from '../_shared/cors.ts';
 import { getUserFromRequest, adminClient } from '../_shared/auth.ts';
+import { rateLimitAllow, tooManyRequests } from '../_shared/ratelimit.ts';
 
 interface CartItem { product_id: string; qty: number; }
 interface OrderPayload {
@@ -32,6 +33,11 @@ Deno.serve(async (req) => {
 
   const caller = await getUserFromRequest(req);
   if (!caller) return jsonResponse({ error: 'Unauthorized' }, 401);
+
+  // Anti-abuso: 10 criações de pedido por minuto por usuário.
+  if (!(await rateLimitAllow(`create-order:${caller.id}`, { windowSeconds: 60, max: 10 }))) {
+    return tooManyRequests();
+  }
 
   let body: OrderPayload;
   try { body = await req.json(); }
