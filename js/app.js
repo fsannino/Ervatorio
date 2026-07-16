@@ -2798,6 +2798,7 @@ function cycleCardImg(mediaEl, pid){
 function openMktDetail(pid){
   const p=MKT_PRODUCTS.find(x=>x.id===pid);
   if(!p)return;
+  window.ervTrack&&ervTrack('view_item',{currency:'BRL',value:p.price,items:[{item_id:String(p.dbId||p.id),item_name:p.name,price:p.price,quantity:1}]});
   const typeColor=p.cat==='Infusões'?'#4a8a5a':p.cat==='Equipamentos'?'#4a6a9a':p.cat==='Vivências'?'#9a6a3a':p.cat==='Ervas & Acessórios'?'#5a8a3a':'#6a4a9a';
   const imgs=p.images&&p.images.length?p.images:[];
   const inCart=cart.some(c=>c.id===p.id);
@@ -2862,6 +2863,7 @@ function addMktCart(id){
   const p=MKT_PRODUCTS.find(x=>x.id===id); if(!p)return;
   const ex=cart.find(c=>c.id===id);
   if(ex)ex.qty++; else cart.push({...p,qty:1});
+  window.ervTrack&&ervTrack('add_to_cart',{currency:'BRL',value:p.price,items:[{item_id:String(p.dbId||p.id),item_name:p.name,price:p.price,quantity:1}]});
   localStorage.setItem('erb_cart',JSON.stringify(cart));
   updateCartCount(); renderMkt(); initMkt();
   toast(`${p.name} adicionado ao carrinho`);

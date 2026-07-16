@@ -26,7 +26,7 @@
         },
         {
           "key": "Content-Security-Policy-Report-Only",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://lwzrzztzpklzbmxbqcrx.supabase.co; connect-src 'self' https://lwzrzztzpklzbmxbqcrx.supabase.co https://viacep.com.br https://cdn.jsdelivr.net; frame-src https://www.mercadopago.com.br https://www.mercadopago.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://www.mercadopago.com.br"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.clarity.ms https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://lwzrzztzpklzbmxbqcrx.supabase.co https://www.googletagmanager.com https://www.google-analytics.com https://www.facebook.com; connect-src 'self' https://lwzrzztzpklzbmxbqcrx.supabase.co https://viacep.com.br https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com https://*.analytics.google.com https://*.clarity.ms https://connect.facebook.net; frame-src https://www.mercadopago.com.br https://www.mercadopago.com https://www.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://www.mercadopago.com.br"
         }
       ]
     }

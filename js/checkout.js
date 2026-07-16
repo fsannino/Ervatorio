@@ -146,6 +146,11 @@ const Checkout = {
     // Cacheia na instância ervaria para evitar outras rotas falharem por dessincronia.
     if (window.ervaria && !window.ervaria.user) window.ervaria.user = session.user;
 
+    window.ervTrack && ervTrack('begin_checkout', {
+      currency: 'BRL',
+      value: cart.reduce((s, c) => s + (c.price || 0) * (c.qty || 1), 0),
+      items: cart.map((c) => ({ item_id: String(c.dbId || c.id), item_name: c.name, price: c.price, quantity: c.qty || 1 })),
+    });
     this.ensureInjected();
     this.prefill();
     this.renderSummary();
@@ -330,6 +335,17 @@ const Checkout = {
     // Limpa carrinho se sucesso (MP confirmou pelo back_url, mas a verdade
     // definitiva vem do webhook). Atualiza UI se as funções existirem.
     if (status === 'success') {
+      // purchase: valor definitivo vem do webhook/servidor; aqui usamos o
+      // snapshot do carrinho pré-redirect como melhor aproximação client-side.
+      try {
+        const snap = readCart();
+        window.ervTrack && ervTrack('purchase', {
+          currency: 'BRL',
+          transaction_id: pending?.order_id || orderNum || undefined,
+          value: snap.reduce((s, c) => s + (c.price || 0) * (c.qty || 1), 0),
+          items: snap.map((c) => ({ item_id: String(c.dbId || c.id), item_name: c.name, price: c.price, quantity: c.qty || 1 })),
+        });
+      } catch (_) { /* tracking nunca bloqueia o fluxo */ }
       try { typeof clearCart === 'function' ? clearCart() : writeCart([]); } catch (_) { writeCart([]); }
     }
 

@@ -25,4 +25,13 @@ window.ERVATORIO_CONFIG = Object.freeze({
   // painel admin. Requer MFA/TOTP habilitado em Supabase Auth.
   // false = rollback de emergência (só login+senha, como antes).
   ADMIN_MFA_REQUIRED: true,
+  // Onda 3: IDs de medição. VAZIO = tracking desligado (no-op).
+  // Preencher ao criar as contas; js/analytics.js só carrega os
+  // scripts após consentimento (js/consent.js / Consent Mode v2).
+  ANALYTICS: {
+    GTM_ID: '',        // ex.: 'GTM-XXXXXXX' (preferido — gerencia GA4/Pixel por dentro)
+    GA4_ID: '',        // ex.: 'G-XXXXXXXXXX' (usado só se GTM_ID vazio)
+    CLARITY_ID: '',    // ex.: 'abcdefghij'
+    META_PIXEL_ID: '', // ex.: '1234567890' (requer consentimento de marketing)
+  },
 });
