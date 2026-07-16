@@ -148,6 +148,13 @@ export function mapPaymentStatus(mpStatus: MPPayment['status']): string {
 // Documentação: https://www.mercadopago.com.br/developers/pt/docs/your-integrations/notifications/webhooks
 // Manifest assinado: id:<data.id>;request-id:<x-request-id>;ts:<ts>;
 // HMAC SHA256 com MP_WEBHOOK_SECRET, comparado com o valor "v1=..."
+//
+// Histórico (WEBHOOK_SIGNATURE_DEBT.md): o hash nunca bateu com as
+// variantes clássicas. Hipótese principal: normalização do body —
+// por isso agora recebemos o BODY BRUTO (byte-a-byte, capturado
+// antes de qualquer JSON.parse) e testamos também variantes que o
+// incluem. Quando uma variante bater, o log `[mp-signature] ok`
+// registra qual — fixe-a e remova as demais.
 // ============================================================
 export interface SignatureVerifyResult {
   valid: boolean;
@@ -160,14 +167,24 @@ export interface SignatureVerifyResult {
   v1: string | null;
   data_id_used: string;
   manifests_tested: string[];
-  hashes_computed: Array<{ manifest: string; variant: string; hash: string }>;
   matched_variant?: string;
   matched_manifest?: string;
+}
+
+// Modo estrito: assinatura inválida → 401 sempre.
+// Padrão: estrito em produção, relaxado em test (comportamento
+// histórico). Override explícito via MP_WEBHOOK_STRICT=true|false.
+export function isStrictSignatureMode(): boolean {
+  const flag = (Deno.env.get('MP_WEBHOOK_STRICT') || '').toLowerCase();
+  if (flag === 'true') return true;
+  if (flag === 'false') return false;
+  return getMode() === 'production';
 }
 
 export async function verifyWebhookSignature(
   req: Request,
   dataId: string,
+  rawBody?: string,
 ): Promise<SignatureVerifyResult> {
   const secret = Deno.env.get('MP_WEBHOOK_SECRET');
   const signatureHeader = req.headers.get('x-signature');
@@ -184,25 +201,26 @@ export async function verifyWebhookSignature(
     v1: null,
     data_id_used: String(dataId),
     manifests_tested: [],
-    hashes_computed: [],
   };
 
   if (!secret) {
-    console.warn('MP_WEBHOOK_SECRET não configurado — assinatura NÃO validada');
-    base.valid = true; // retorna valid=true mas marca secret_configured=false pro log
+    // Sem secret NÃO há como validar: valid=false. Quem decide se
+    // prossegue mesmo assim é o handler (modo relaxado) — antes este
+    // caminho retornava valid=true, o que anulava o strict mode.
+    console.warn('[mp-signature] MP_WEBHOOK_SECRET não configurado — impossível validar');
     return base;
   }
 
-  if (!signatureHeader || !requestId) {
-    console.warn('[mp-signature] headers ausentes', { signatureHeader, requestId });
+  if (!signatureHeader) {
+    console.warn('[mp-signature] header x-signature ausente');
     return base;
   }
 
   // x-signature: "ts=1234567890,v1=hexhash"
   const parts = Object.fromEntries(
     signatureHeader.split(',').map((p) => {
-      const [k, v] = p.trim().split('=');
-      return [k, v];
+      const idx = p.indexOf('=');
+      return [p.slice(0, idx).trim(), p.slice(idx + 1).trim()];
     }),
   );
   base.ts = parts.ts || null;
@@ -213,15 +231,28 @@ export async function verifyWebhookSignature(
     return base;
   }
 
-  // Testa várias combinações de manifest (formato) × secret (encoding).
+  // Variantes de manifest (formato) × secret (encoding).
   const dataIdLower = String(dataId).toLowerCase();
   const dataIdOriginal = String(dataId);
-  const manifests = [
+  const manifests: string[] = [
+    // Formato documentado pelo MP (com e sem request-id / ; final)
     `id:${dataIdLower};request-id:${requestId};ts:${base.ts};`,
     `id:${dataIdOriginal};request-id:${requestId};ts:${base.ts};`,
-    `id:${dataIdLower};request-id:${requestId};ts:${base.ts}`,      // sem ; final
+    `id:${dataIdLower};request-id:${requestId};ts:${base.ts}`,
     `id:${dataIdOriginal};request-id:${requestId};ts:${base.ts}`,
+    // MP omite seções cujo valor está ausente:
+    `id:${dataIdLower};ts:${base.ts};`,
+    `id:${dataIdOriginal};ts:${base.ts};`,
   ];
+  // Hipótese body_raw (dívida técnica): assinatura sobre o corpo bruto.
+  if (rawBody !== undefined && rawBody !== '') {
+    manifests.push(
+      rawBody,
+      rawBody.trimEnd(),
+      `${rawBody}\n`,
+      `id:${dataIdLower};request-id:${requestId};ts:${base.ts};${rawBody}`,
+    );
+  }
   base.manifests_tested = manifests;
 
   const enc = new TextEncoder();
@@ -236,21 +267,26 @@ export async function verifyWebhookSignature(
     secretVariants.push({ name: 'hex-decoded', bytes: hexBytes });
   }
 
+  let tested = 0;
   for (const sv of secretVariants) {
     const key = await crypto.subtle.importKey(
-      'raw', sv.bytes, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign'],
+      'raw', sv.bytes as BufferSource, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign'],
     );
     for (const manifest of manifests) {
       const sig = await crypto.subtle.sign('HMAC', key, enc.encode(manifest));
       const hash = Array.from(new Uint8Array(sig))
         .map((b) => b.toString(16).padStart(2, '0'))
         .join('');
-      base.hashes_computed.push({ manifest, variant: sv.name, hash });
+      tested++;
       if (hash === base.v1) {
         base.valid = true;
         base.matched_variant = sv.name;
-        base.matched_manifest = manifest;
-        console.log('[mp-signature] ok', { variant: sv.name });
+        // Não logar rawBody inteiro como manifest — identifica pela posição.
+        base.matched_manifest = manifest.length > 120 ? `(raw body, ${manifest.length} bytes)` : manifest;
+        console.log('[mp-signature] ok — FIXAR esta variante e remover as demais', {
+          secret_encoding: sv.name,
+          manifest: base.matched_manifest,
+        });
         return base;
       }
     }
@@ -263,7 +299,8 @@ export async function verifyWebhookSignature(
     request_id: base.request_id,
     ts: base.ts,
     v1_prefix: base.v1?.slice(0, 12) + '...',
-    testedN: base.hashes_computed.length,
+    raw_body_len: rawBody?.length ?? null,
+    testedN: tested,
   });
   return base;
 }

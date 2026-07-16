@@ -1,6 +1,20 @@
 # Dívida técnica — Assinatura HMAC do webhook MP
 
-**Status**: não resolvida. Modo relaxado em `MP_MODE=test` aceita assinatura inválida; em produção idem (consideração abaixo).
+**Status (16/07/2026 — Onda 1.4)**: instrumentação da hipótese principal implementada; aguardando validação em sandbox. Mudanças aplicadas:
+
+1. `mp-webhook/index.ts` agora captura o **body bruto** (`await req.text()`) ANTES de qualquer parse e o repassa à verificação.
+2. `verifyWebhookSignature(req, dataId, rawBody)` testa, além das variantes clássicas de manifest, variantes sobre o body bruto (exato, sem trailing whitespace, com `\n`, manifest+body) × secret UTF-8/hex. Quando uma bater, o log `[mp-signature] ok — FIXAR esta variante` diz qual — aí fixe-a e remova as demais.
+3. **Modo estrito** (`isStrictSignatureMode()`): assinatura inválida → 401. Padrão: estrito em `MP_MODE=production`, relaxado em `test`. Override: `MP_WEBHOOK_STRICT=true|false`.
+4. Secret ausente agora resulta em `valid=false` (antes retornava `valid=true`, anulando o modo estrito). Em produção sem secret, webhooks passam a receber 401 — configure `MP_WEBHOOK_SECRET` antes de virar produção, ou use `MP_WEBHOOK_STRICT=false` como decisão de risco documentada.
+5. A tabela de debug `mp_webhook_log` foi **removida** (migration `20260716120300`) — gravava headers/body de requisições não autenticadas. O diagnóstico agora é por logs estruturados da função.
+
+**Próximo passo**: disparar "Simular notificação" no painel MP (sandbox) e observar os logs da função. Se `[mp-signature] ok` aparecer, fixar a variante e ligar `MP_WEBHOOK_STRICT=true` também em test.
+
+---
+
+Histórico original abaixo.
+
+**Status anterior**: não resolvida. Modo relaxado em `MP_MODE=test` aceita assinatura inválida; em produção idem (consideração abaixo).
 
 ## O problema
 
