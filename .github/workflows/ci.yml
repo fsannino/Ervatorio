@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  # Bloqueante: nenhum segredo pode entrar no histórico.
+  secret-scan:
+    name: secret-scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Bloqueante: arquivos essenciais existem, JSON válido, sem segredos no cliente.
+  build-check:
+    name: build-check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/ci-check.mjs
+
+  # Informativo por ora (report-only): lint de HTML e JS.
+  # Promover a bloqueante quando a base estiver limpa.
+  lint:
+    name: lint (report-only)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: html-validate
+        run: npx --yes html-validate index.html admin.html || true
+      - name: eslint
+        run: |
+          npx --yes eslint@8 js --no-eslintrc --env browser,es2022 \
+            --parser-options ecmaVersion:2022 --rule '{"no-undef":"off"}' || true
+
+  # Bloqueante: as Edge Functions precisam compilar (type-check Deno).
+  edge-functions:
+    name: edge-functions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: deno check
+        working-directory: supabase/functions
+        run: |
+          set -e
+          for f in */index.ts; do
+            echo "== deno check $f"
+            deno check "$f"
+          done
