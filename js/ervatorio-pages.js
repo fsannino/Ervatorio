@@ -21,7 +21,7 @@
   function normNome(s) {
     return String(s || '')
       .toLowerCase()
-      .normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
       .replace(/\s+/g, ' ')
       .trim();
   }
@@ -698,6 +698,25 @@
     var cu = f.cultura || {};
     var rg = f.regulacao || {};
     var mk = f.marketplace || {};
+
+    // Onda 6.2: localiza o produto vendável do marketplace que
+    // corresponde a esta ficha (nome normalizado, sem acentos).
+    // Produtos is_test respeitam a visibilidade da Onda 6.1.
+    function fichaMktProduct(ficha) {
+      if (typeof MKT_PRODUCTS === 'undefined' || !Array.isArray(MKT_PRODUCTS)) return null;
+      var norm = function(s) {
+        return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+      };
+      var alvo = norm(ficha.nome_popular);
+      if (!alvo) return null;
+      for (var i = 0; i < MKT_PRODUCTS.length; i++) {
+        var p = MKT_PRODUCTS[i];
+        if (typeof mktIsVisible === 'function' && !mktIsVisible(p)) continue;
+        var pn = norm(p.name);
+        if (pn === alvo || pn.indexOf(alvo + ' ') === 0 || alvo.indexOf(pn + ' ') === 0) return p;
+      }
+      return null;
+    }
     var gustativo = Array.isArray(ps.gustativo) ? ps.gustativo : [];
     var trig = Array.isArray(ps.trigeminal) ? ps.trigeminal : [];
     var evid = Array.isArray(ac.evidencia) ? ac.evidencia : [];
@@ -739,7 +758,21 @@
         var favs = (typeof favorites !== 'undefined' && Array.isArray(favorites)) ? favorites : [];
         var inTray = tray.includes(herbId);
         var inFav = favs.includes(herbId);
+        // Onda 6.2 (backlog #40): CTA de compra quando existe produto
+        // vendável correspondente no marketplace — a ficha é a página
+        // de maior intenção e terminava sem botão de compra.
+        var mktP = (typeof fichaMktProduct === 'function') ? fichaMktProduct(f) : null;
+        var buyBtn = '';
+        if (mktP) {
+          var inCartNow = (typeof cart !== 'undefined' && Array.isArray(cart)) && cart.some(function(c) { return c.id === mktP.id; });
+          var priceTxt = (mktP.price != null && !isNaN(Number(mktP.price))) ? ' · R$ ' + Number(mktP.price).toFixed(2).replace('.', ',') : '';
+          buyBtn = '<button class="ficha-buy-btn" style="flex:1;background:var(--gold,#c8a84b);color:#1c1608;border:none;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer" ' +
+            'onclick="addMktCart(' + mktP.id + ');this.textContent=\'✓ No carrinho\';this.disabled=true">' +
+            (inCartNow ? '✓ No carrinho' : '🛒 Comprar esta erva' + priceTxt) +
+            '</button>';
+        }
         return '<div class="ficha-action-row">' +
+          buyBtn +
           '<button data-fav-herb="' + herbId + '" class="ficha-fav-btn' + (inFav ? ' on' : '') + '" onclick="toggleFichaFav(' + herbId + ')">' +
           (inFav ? '♥ Favorito' : '♡ Favoritar') +
           '</button>' +

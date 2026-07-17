@@ -13,7 +13,7 @@
 import { handleCors, jsonResponse } from '../_shared/cors.ts';
 import { getUserFromRequest, adminClient } from '../_shared/auth.ts';
 import { createPreference, getMode } from '../_shared/mercadopago.ts';
-import { rateLimitAllow, tooManyRequests } from '../_shared/ratelimit.ts';
+import { clientIp, rateLimitAllow, tooManyRequests } from '../_shared/ratelimit.ts';
 
 Deno.serve(async (req) => {
   const cors = handleCors(req);
@@ -21,17 +21,18 @@ Deno.serve(async (req) => {
 
   if (req.method !== 'POST') return jsonResponse({ error: 'Method not allowed' }, 405);
 
+  // Onda 6.3: usuário logado OU convidado (dono do pedido guest).
   const caller = await getUserFromRequest(req);
-  if (!caller) return jsonResponse({ error: 'Unauthorized' }, 401);
 
-  // Anti-abuso: 10 preferências de pagamento por minuto por usuário.
-  if (!(await rateLimitAllow(`create-pref:${caller.id}`, { windowSeconds: 60, max: 10 }))) {
-    return tooManyRequests();
-  }
-
-  let body: { order_id?: string };
+  let body: { order_id?: string; guest_email?: string };
   try { body = await req.json(); }
   catch { return jsonResponse({ error: 'Invalid JSON body' }, 400); }
+
+  // Anti-abuso: 10 preferências/min por usuário; convidado por IP.
+  const rlKey = caller ? `create-pref:${caller.id}` : `create-pref:ip:${clientIp(req)}`;
+  if (!(await rateLimitAllow(rlKey, { windowSeconds: 60, max: 10 }))) {
+    return tooManyRequests();
+  }
 
   const orderId = body.order_id;
   if (!orderId) return jsonResponse({ error: 'order_id obrigatório' }, 400);
@@ -41,12 +42,22 @@ Deno.serve(async (req) => {
   // Carrega o pedido + itens. Confirma propriedade.
   const { data: order, error: oErr } = await db
     .from('orders')
-    .select('id, user_id, status, total_cents, currency, shipping_address, order_number')
+    .select('id, user_id, guest_email, status, total_cents, currency, shipping_address, order_number')
     .eq('id', orderId)
     .maybeSingle();
   if (oErr) return jsonResponse({ error: oErr.message }, 500);
   if (!order) return jsonResponse({ error: 'Pedido não encontrado' }, 404);
-  if (order.user_id !== caller.id) return jsonResponse({ error: 'Forbidden' }, 403);
+  if (order.user_id) {
+    // Pedido de conta: só o dono autenticado inicia o pagamento.
+    if (!caller || order.user_id !== caller.id) return jsonResponse({ error: 'Forbidden' }, 403);
+  } else {
+    // Pedido guest: exige o mesmo e-mail informado na criação
+    // (o order_id UUID aleatório + e-mail funcionam como portador).
+    const ge = String(body.guest_email || '').trim().toLowerCase();
+    if (!ge || ge !== (order.guest_email || '').toLowerCase()) {
+      return jsonResponse({ error: 'Forbidden' }, 403);
+    }
+  }
   if (order.status !== 'pending') {
     return jsonResponse({ error: `Pedido já está em status "${order.status}"` }, 400);
   }

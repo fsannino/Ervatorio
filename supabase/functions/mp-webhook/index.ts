@@ -178,7 +178,7 @@ async function sendPaidEmailFor(
 ): Promise<void> {
   const { data: full, error } = await db
     .from('orders')
-    .select('id, order_number, user_id, total_cents, currency, payment_method, paid_at, shipping_address')
+    .select('id, order_number, user_id, guest_email, total_cents, currency, payment_method, paid_at, shipping_address')
     .eq('id', orderId)
     .maybeSingle();
   if (error || !full) {
@@ -191,25 +191,35 @@ async function sendPaidEmailFor(
     .select('product_name, product_unit, qty, unit_price_cents, line_total_cents')
     .eq('order_id', orderId);
 
-  // Email do cliente: pega de auth.users via admin API (RLS não permite
-  // SELECT em auth.users direto, usamos o admin SDK).
-  const { data: userRes, error: userErr } = await db.auth.admin.getUserById(full.user_id);
-  if (userErr || !userRes?.user?.email) {
-    console.warn('[mp-webhook email] user sem email', { userId: full.user_id, userErr });
+  const addr = full.shipping_address as Record<string, string> | null;
+  let toEmail: string | null = null;
+  let customerName: string | null = addr?.name || null;
+
+  if (full.user_id) {
+    // Pedido de conta: email vem de auth.users via admin SDK.
+    const { data: userRes, error: userErr } = await db.auth.admin.getUserById(full.user_id);
+    if (userErr || !userRes?.user?.email) {
+      console.warn('[mp-webhook email] user sem email', { userId: full.user_id, userErr });
+      return;
+    }
+    toEmail = userRes.user.email;
+    const { data: profile } = await db
+      .from('user_profiles')
+      .select('display_name')
+      .eq('id', full.user_id)
+      .maybeSingle();
+    customerName = profile?.display_name || customerName;
+  } else {
+    // Pedido guest (Onda 6.3): email informado no checkout.
+    toEmail = full.guest_email || null;
+  }
+  if (!toEmail) {
+    console.warn('[mp-webhook email] pedido sem destinatario', { orderId });
     return;
   }
 
-  // Nome do cliente do user_profiles (fallback: shipping_address.name)
-  const { data: profile } = await db
-    .from('user_profiles')
-    .select('display_name')
-    .eq('id', full.user_id)
-    .maybeSingle();
-  const addr = full.shipping_address as Record<string, string> | null;
-  const customerName = profile?.display_name || addr?.name || null;
-
   await sendOrderPaidEmail({
-    to: userRes.user.email,
+    to: toEmail,
     order_number: full.order_number || full.id,
     customer_name: customerName,
     total_cents: full.total_cents,

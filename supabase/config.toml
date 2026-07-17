@@ -26,11 +26,15 @@ verify_jwt = true
 [functions.admin-metrics]
 verify_jwt = true
 
+# Onda 6.3 (guest checkout): o gateway não exige mais JWT — a
+# autenticação/validação é feita DENTRO da função (usuário logado
+# via getUserFromRequest OU convidado com guest_email validado +
+# rate limit por IP). Kill-switch: secret GUEST_CHECKOUT=false.
 [functions.create-order]
-verify_jwt = true
+verify_jwt = false
 
 [functions.create-payment-preference]
-verify_jwt = true
+verify_jwt = false
 
 [functions.user-data-rights]
 verify_jwt = true

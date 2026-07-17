@@ -25,6 +25,13 @@ window.ERVATORIO_CONFIG = Object.freeze({
   // painel admin. Requer MFA/TOTP habilitado em Supabase Auth.
   // false = rollback de emergência (só login+senha, como antes).
   ADMIN_MFA_REQUIRED: true,
+  // Onda 6.1: produtos is_test na vitrine pública. false em produção;
+  // true apenas em staging/QA para conferir dados de teste.
+  SHOW_TEST_PRODUCTS: false,
+  // Onda 6.3: checkout como convidado (sem conta). false = volta a
+  // exigir login (kill-switch; espelhado no secret GUEST_CHECKOUT
+  // das Edge Functions).
+  GUEST_CHECKOUT: true,
   // Onda 3: IDs de medição. VAZIO = tracking desligado (no-op).
   // Preencher ao criar as contas; js/analytics.js só carrega os
   // scripts após consentimento (js/consent.js / Consent Mode v2).
