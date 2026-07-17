@@ -9,7 +9,7 @@ Formalização dos tokens que já existem em `css/main.css` (`:root` = tema escu
 | `--bg` / `--bg2` / `--bg3` | `#1a3a2a` / `#1f4a32` / `#152f22` | Fundos (verde-profundo da marca) |
 | `--gold` / `--gold2` / `--goldf` | `#c8a84b` / `#e6c96e` / `#f0d98a` | Acentos, CTAs, preços |
 | `--cream` / `--cream2` | `#f5ede0` / `#d4cbb8` | Texto primário / secundário |
-| `--muted` | `#8a9a8e` | Texto terciário — ⚠ auditar contraste AA em tamanhos <12px (pendência 9.2) |
+| `--muted` | `#a5b5a8` | Texto terciário — ajustado na Onda 9.2 para AA (5.8:1 sobre `--bg`, 4.7:1 sobre `--bg2`; antes 4.2:1) |
 | `--faint` | `#2d5440` | Bordas sutis |
 | `--green`/`--green2`, `--red`/`--red2`, `--blue`/`--blue2` | ver main.css | Semânticos por categoria |
 | `--safe-*` / `--warn-*` / `--avoid-*` | ver main.css | Selos de segurança das ervas (seguro/cautela/evitar) |
@@ -42,7 +42,7 @@ Padrão de rótulo de seção: `Jost`, `.7–.78rem`, `letter-spacing:.08em+`, u
 
 1. Componente novo usa tokens — nada de hex solto.
 2. Interativos são `<button>`/`<a>` reais (a delegação da Onda 9 é rede de segurança, não desculpa).
-3. Contraste AA mínimo; `--muted` sobre `--bg` só em ≥14px até a auditoria 9.2.
+3. Contraste AA mínimo (validado na Onda 9.2 para `--muted`/`--gold` em ambos os temas; ao criar token de texto novo, calcule o ratio ≥4.5:1 no pior fundo em que será usado).
 4. Dark e light sempre juntos: se definir token novo, defina nos dois temas.
 
 ## Evolução
