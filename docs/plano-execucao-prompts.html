@@ -1,0 +1,886 @@
+<title>Plano de Execução — Playbook de Prompts · Ervatório</title>
+<style>
+:root{
+  --ground:#f3ecdd;--panel:#fbf6ea;--panel-2:#f6efe0;--ink:#1c1b16;--ink-soft:#4a463b;
+  --line:#e0d5bd;--line-strong:#cdbf9f;--forest:#183527;--forest-2:#2d5440;--moss:#3d6b4f;
+  --gold:#9a7a2e;--gold-bright:#b8965a;--gold-soft:#e7d9b6;--terra:#5c3d2e;
+  --crit:#a3241c;--crit-bg:#f7e2df;--high:#b5661a;--high-bg:#f8e8d6;--med:#8a6d1f;--med-bg:#f4eccf;
+  --low:#3f7a55;--low-bg:#e2eede;--pos:#256d46;--pos-bg:#dcebe0;
+  --code-bg:#12211a;--code-ink:#e7dcc4;--code-line:#2b3a30;
+  --shadow:0 1px 2px rgba(24,53,39,.06),0 6px 24px rgba(24,53,39,.07);--maxw:1080px;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --ground:#0f1512;--panel:#161d18;--panel-2:#131a16;--ink:#ece4d2;--ink-soft:#a9a693;
+  --line:#26302a;--line-strong:#354036;--forest:#0c1712;--forest-2:#1c3327;--moss:#c8b89a;
+  --gold:#d4af7a;--gold-bright:#e8c9a0;--gold-soft:#3a3320;--terra:#c8a070;
+  --crit:#f08a80;--crit-bg:#2c1917;--high:#e6a765;--high-bg:#2a2013;--med:#d8c06a;--med-bg:#25220f;
+  --low:#7fc79a;--low-bg:#132018;--pos:#84cfa2;--pos-bg:#122018;
+  --code-bg:#0a100d;--code-ink:#d6e0d3;--code-line:#26302a;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 30px rgba(0,0,0,.35);
+}}
+:root[data-theme="dark"]{
+  --ground:#0f1512;--panel:#161d18;--panel-2:#131a16;--ink:#ece4d2;--ink-soft:#a9a693;
+  --line:#26302a;--line-strong:#354036;--forest:#0c1712;--forest-2:#1c3327;--moss:#c8b89a;
+  --gold:#d4af7a;--gold-bright:#e8c9a0;--gold-soft:#3a3320;--terra:#c8a070;
+  --crit:#f08a80;--crit-bg:#2c1917;--high:#e6a765;--high-bg:#2a2013;--med:#d8c06a;--med-bg:#25220f;
+  --low:#7fc79a;--low-bg:#132018;--pos:#84cfa2;--pos-bg:#122018;
+  --code-bg:#0a100d;--code-ink:#d6e0d3;--code-line:#26302a;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 30px rgba(0,0,0,.35);
+}
+:root[data-theme="light"]{
+  --ground:#f3ecdd;--panel:#fbf6ea;--panel-2:#f6efe0;--ink:#1c1b16;--ink-soft:#4a463b;--line:#e0d5bd;
+  --line-strong:#cdbf9f;--forest:#183527;--forest-2:#2d5440;--moss:#3d6b4f;--gold:#9a7a2e;
+  --gold-bright:#b8965a;--gold-soft:#e7d9b6;--crit:#a3241c;--crit-bg:#f7e2df;--high:#b5661a;
+  --high-bg:#f8e8d6;--med:#8a6d1f;--med-bg:#f4eccf;--low:#3f7a55;--low-bg:#e2eede;--pos:#256d46;
+  --pos-bg:#dcebe0;--code-bg:#12211a;--code-ink:#e7dcc4;--code-line:#2b3a30;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.15;text-wrap:balance;margin:0}
+p{margin:0 0 .7em}
+a{color:var(--gold)}
+code{font-family:var(--mono);font-size:.86em;background:var(--panel-2);padding:.08em .35em;border-radius:4px;border:1px solid var(--line)}
+.small{font-size:.82rem;color:var(--ink-soft)}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.7rem;font-weight:700;color:var(--gold)}
+.hero{background:linear-gradient(160deg,var(--forest),var(--forest-2));color:#ece4d2;padding:58px 0 46px;border-bottom:3px solid var(--gold-bright)}
+.hero .eyebrow{color:var(--gold-bright)}
+.hero h1{font-size:clamp(2rem,4.6vw,3.1rem);color:#f6efe0;margin:.3em 0 .3em}
+.hero .lede{font-size:clamp(1rem,2vw,1.15rem);max-width:66ch;color:#d9cfba}
+.hero .meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:22px;font-size:.84rem;color:#c3b89e}
+.hero .meta b{color:#ece4d2}
+nav.toc{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:9px 0}
+nav.toc .row{display:flex;gap:5px;overflow-x:auto;scrollbar-width:thin}
+nav.toc a{white-space:nowrap;font-size:.76rem;color:var(--ink-soft);padding:5px 10px;border-radius:7px;font-weight:600;text-decoration:none}
+nav.toc a:hover{background:var(--panel-2);color:var(--ink)}
+section{padding:42px 0 8px;border-top:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:6px}
+.wave-num{font-family:var(--serif);font-size:1rem;color:var(--gold);font-weight:700;border:1.5px solid var(--gold-soft);border-radius:8px;padding:2px 10px;flex:none;white-space:nowrap}
+h2.sec-title{font-size:clamp(1.4rem,3vw,1.9rem)}
+.sec-sub{color:var(--ink-soft);max-width:76ch;margin:6px 0 14px}
+.rationale{background:var(--panel-2);border-left:4px solid var(--moss);border-radius:0 10px 10px 0;padding:11px 15px;margin:10px 0 18px;font-size:.9rem}
+.rationale b{color:var(--moss)}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 8px;border-radius:999px;border:1px solid}
+.chip.crit{color:var(--crit);background:var(--crit-bg);border-color:color-mix(in srgb,var(--crit) 40%,transparent)}
+.chip.high{color:var(--high);background:var(--high-bg);border-color:color-mix(in srgb,var(--high) 40%,transparent)}
+.chip.med{color:var(--med);background:var(--med-bg);border-color:color-mix(in srgb,var(--med) 40%,transparent)}
+.chip.low{color:var(--low);background:var(--low-bg);border-color:color-mix(in srgb,var(--low) 40%,transparent)}
+.chip.pos{color:var(--pos);background:var(--pos-bg);border-color:color-mix(in srgb,var(--pos) 40%,transparent)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0;box-shadow:var(--shadow)}
+.card>.ch{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:4px}
+.card h3{font-size:1.12rem;flex:1 1 auto;min-width:60%}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 4px}
+.card .goal{font-size:.92rem;color:var(--ink-soft);margin:4px 0 8px}
+pre.prompt{background:var(--code-bg);color:var(--code-ink);border:1px solid var(--code-line);border-radius:10px;padding:14px 15px;overflow-x:auto;font-family:var(--mono);font-size:.82rem;line-height:1.5;white-space:pre-wrap;position:relative;margin:0}
+pre.prompt b{color:var(--gold-bright);font-weight:600}
+.copy{position:absolute;top:8px;right:8px;background:rgba(184,150,90,.18);color:var(--gold-bright);border:1px solid var(--gold-bright);border-radius:6px;font-size:.68rem;padding:3px 9px;cursor:pointer;font-family:var(--sans);font-weight:600}
+.copy:hover{background:rgba(184,150,90,.32)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:.85rem;background:var(--panel)}
+th,td{padding:8px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:var(--forest);color:#ece4d2;font-weight:600;font-size:.73rem;text-transform:uppercase;letter-spacing:.05em}
+tbody tr:nth-child(even){background:var(--panel-2)}
+.callout{border-radius:12px;padding:15px 18px;margin:16px 0;border:1px solid;display:flex;gap:13px}
+.callout .ic{font-size:1.3rem;flex:none}
+.callout.danger{background:var(--crit-bg);border-color:color-mix(in srgb,var(--crit) 35%,transparent)}
+.callout.win{background:var(--pos-bg);border-color:color-mix(in srgb,var(--pos) 35%,transparent)}
+.callout h4{margin-bottom:4px}
+.theme-btn{position:fixed;right:16px;bottom:16px;z-index:50;background:var(--forest);color:#ece4d2;border:1px solid var(--gold-bright);border-radius:99px;padding:9px 14px;cursor:pointer;font-size:.8rem;box-shadow:var(--shadow)}
+ul,ol{margin:.2em 0 .8em;padding-left:20px}
+li{margin:3px 0}
+footer{background:var(--forest);color:#c3b89e;padding:28px 0;margin-top:36px;font-size:.82rem;border-top:3px solid var(--gold-bright)}
+footer b{color:#ece4d2}
+@media(max-width:640px){.card h3{min-width:100%}}
+</style>
+
+<button class="theme-btn" onclick="(function(){var r=document.documentElement;var d=(r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'))==='dark';r.setAttribute('data-theme',d?'light':'dark');})()">☀ / ☾ Tema</button>
+
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">Playbook de Execução · Prompts prontos para Claude Code</div>
+  <h1>Ervatório — Plano de Desenvolvimento Seguro</h1>
+  <p class="lede">Cada melhoria da auditoria convertida em um <b>prompt pronto para colar no Claude Code</b>, sequenciada em ondas na ordem em que o desenvolvimento é mais seguro e estável: primeiro a rede de segurança, depois fechar brechas, compliance, medição, performance, SEO, e só então ligar o dinheiro e a conversão.</p>
+  <div class="meta">
+    <span>Base: <b>auditoria de 16/07/2026</b> + backlog de 100 melhorias</span>
+    <span>Infra: <b>Vercel + Supabase + Mercado Pago</b></span>
+    <span>Formato: <b>14 ondas · regras globais + prompts</b></span>
+  </div>
+</div></header>
+
+<nav class="toc"><div class="wrap"><div class="row">
+  <a href="#como-usar">Como usar</a>
+  <a href="#regras">Regras Globais</a>
+  <a href="#infra">Infraestrutura</a>
+  <a href="#w0">0·Fundação</a><a href="#w1">1·Segurança</a><a href="#w2">2·LGPD</a>
+  <a href="#w3">3·Medição</a><a href="#w4">4·Performance</a><a href="#w5">5·SEO</a>
+  <a href="#w6">6·Comercial</a><a href="#w7">7·PDP/CRO</a><a href="#w8">8·Pós-venda</a>
+  <a href="#w9">9·Acessibilidade</a><a href="#w10">10·Marketing</a><a href="#w11">11·Busca/IA</a>
+  <a href="#w12">12·Tech</a><a href="#w13">13·Estratégia</a>
+</div></div></nav>
+
+<main class="wrap">
+
+<section id="como-usar" style="border-top:none">
+  <div class="sec-head"><h2 class="sec-title">Como usar este playbook</h2></div>
+  <ol>
+    <li><b>Cole primeiro as “Regras Globais”</b> (abaixo) no início de cada sessão do Claude Code, ou salve-as em <code>CLAUDE.md</code> na raiz do repositório para que valham automaticamente em toda sessão.</li>
+    <li><b>Execute a Onda 0 antes de qualquer outra coisa.</b> Ela cria a rede de segurança (staging, backups, CI, proteção de branch). Sem ela, corrigir segurança em produção é arriscado.</li>
+    <li><b>Siga as ondas em ordem.</b> A sequência foi desenhada por dependência e risco: cada onda pressupõe a anterior concluída e verificada. Não pule para “ligar pagamentos” antes de fechar segurança e resolver o webhook.</li>
+    <li><b>Um prompt = um PR.</b> Cada prompt produz uma branch e um Pull Request pequeno e revisável. Só faça merge com CI verde e preview validado.</li>
+    <li><b>Cada prompt já pede verificação e plano de rollback.</b> Não considere “pronto” sem os critérios de aceite atendidos.</li>
+  </ol>
+  <div class="callout win"><div class="ic">✅</div><div><h4>Cobertura</h4><p style="margin:4px 0 0">As 14 ondas cobrem os 100 itens do backlog da auditoria. Itens tecnicamente acoplados foram agrupados em um único prompt (indicado por “cobre backlog #x–#y”) para reduzir risco de merge; nenhum item foi descartado.</p></div></div>
+</section>
+
+<!-- ============ REGRAS GLOBAIS ============ -->
+<section id="regras">
+  <div class="sec-head"><h2 class="sec-title">Regras Globais de Segurança &amp; Infraestrutura</h2></div>
+  <p class="sec-sub">Cole este bloco em <code>CLAUDE.md</code> na raiz do repositório. Ele é o contrato de qualidade que toda tarefa deve respeitar — o Claude Code o lerá em toda sessão.</p>
+  <div class="card"><div class="ch"><h3>📜 Bloco para CLAUDE.md</h3></div>
+  <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button># Regras de Engenharia — Ervatório
+
+## Fluxo de trabalho (obrigatório)
+- <b>Nunca</b> commite direto na `main`. Sempre crie branch `feat|fix|chore/<slug>` e abra PR (draft).
+- Um PR = uma mudança pequena e revisável. Não misture temas.
+- Só faça merge com: CI verde, preview Vercel validado e critérios de aceite atendidos.
+- Toda mudança de risco vai atrás de <b>feature flag</b> (padrão: desligada em prod).
+- Todo PR descreve: objetivo, o que muda, como testar, e <b>plano de rollback</b>.
+
+## Segurança de dados (Supabase / Postgres)
+- <b>Toda</b> tabela nova nasce com RLS habilitado. Sem exceção.
+- Toda policy de `UPDATE`/`INSERT` tem `WITH CHECK` explícito. Nunca deixe colunas de privilégio (`is_admin`, `role`) editáveis pelo próprio usuário.
+- Views que expõem dados de usuário usam `WITH (security_invoker = true)` ou não são concedidas a `authenticated`/`anon`.
+- Operações que exigem `service_role`, recálculo de preço, ou integração externa vão para Edge Function — nunca para o cliente.
+- Autorização (admin vs. usuário) é validada <b>no servidor</b> (Edge Function/RLS), nunca só no JavaScript do cliente.
+
+## Segredos
+- <b>Nunca</b> coloque `service_role`, tokens de API ou secrets em arquivos servidos ao navegador, no HTML, ou no repositório.
+- Segredos vivem em Supabase Secrets / Vercel Environment Variables. A única chave pública aceitável é a `sb_publishable_...`.
+- Antes de commitar, rode varredura de segredos (gitleaks/trufflehog).
+
+## Migrations
+- Toda mudança de schema é uma migration versionada e <b>idempotente</b> (`IF NOT EXISTS`, `CREATE OR REPLACE`).
+- Teste a migration em um <b>Supabase branch (staging)</b> antes de aplicar em produção.
+- Migrations nunca destroem dados sem backup verificado e passo de rollback documentado.
+
+## Pagamentos (Mercado Pago)
+- O total do pedido é <b>sempre</b> recalculado no servidor a partir do preço autoritativo do banco. Nunca confie em valor vindo do cliente.
+- Toda mudança no fluxo de pagamento é testada em <b>sandbox</b> ponta-a-ponta antes de ir a produção.
+- Não ligue pagamentos em produção enquanto a validação de assinatura do webhook não estiver funcionando ou uma decisão de risco documentada for tomada.
+
+## Compliance
+- Nenhum script de tracking (analytics, pixel) dispara antes do <b>consentimento</b> do usuário (LGPD / Consent Mode v2).
+- Dados pessoais têm base legal, política de retenção e caminho de exclusão.
+
+## Qualidade (Definition of Done)
+- Acessibilidade: elementos interativos são `<button>`/`<a>` reais, operáveis por teclado; modais com foco/ESC/`aria-modal`; contraste AA.
+- Performance: nenhuma mudança piora LCP/TBT/CLS; imagens otimizadas; scripts com `defer`.
+- Observabilidade: erros logados; mudanças críticas emitem evento/metrificação.
+- Nunca quebre o checkout, o login ou o webhook de pagamento sem teste que prove o contrário.
+
+## Ordem de prioridade em conflito
+Segurança de dados > Compliance legal > Integridade de pagamento > Estabilidade > Performance > Nova feature.</pre></div>
+</section>
+
+<!-- ============ INFRAESTRUTURA ============ -->
+<section id="infra">
+  <div class="sec-head"><h2 class="sec-title">Infraestrutura para operação estável</h2></div>
+  <p class="sec-sub">O alvo de arquitetura operacional. A Onda 0 implementa isto; as demais dependem dele.</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Camada</th><th>Padrão-alvo</th><th>Ferramenta</th></tr></thead>
+    <tbody>
+      <tr><td>Ambientes</td><td>dev → staging → produção isolados</td><td>Vercel (preview/prod) + Supabase Branching</td></tr>
+      <tr><td>Config como código</td><td>Rewrites, headers, migrations e secrets versionados</td><td><code>vercel.json</code>, <code>supabase/config.toml</code>, <code>supabase/migrations</code></td></tr>
+      <tr><td>CI/CD</td><td>Lint + testes + build + varredura de segredos a cada PR; deploy só com verde</td><td>GitHub Actions + Vercel</td></tr>
+      <tr><td>Proteção de branch</td><td>`main` protegida: PR obrigatório, 1 review, checks verdes</td><td>GitHub Branch Protection</td></tr>
+      <tr><td>Backups / DR</td><td>Backup diário + PITR; restore testado trimestralmente</td><td>Supabase PITR</td></tr>
+      <tr><td>Observabilidade</td><td>Erros, uptime, logs de function, alertas</td><td>Sentry + Better Uptime + Supabase Logs</td></tr>
+      <tr><td>Segurança de borda</td><td>Headers (CSP/HSTS), rate limit, WAF básico, bot protection</td><td>Vercel headers + Edge Middleware / Cloudflare</td></tr>
+      <tr><td>Segredos</td><td>Cofre gerenciado; rotação documentada</td><td>Vercel/Supabase env + rotação</td></tr>
+      <tr><td>Runbooks</td><td>Incidente, rollback, rotação de chave, restore</td><td><code>docs/runbooks/</code></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ============ ONDA 0 ============ -->
+<section id="w0">
+  <div class="sec-head"><span class="wave-num">Onda 0</span><h2 class="sec-title">Fundação: rede de segurança antes de tocar em produção</h2></div>
+  <div class="rationale"><b>Por que primeiro:</b> você está prestes a alterar segurança de dados e pagamentos. Sem staging, backups, CI e proteção de branch, um erro vai direto para produção sem rollback. Esta onda não muda o produto — ela torna todas as próximas ondas reversíveis e testáveis. (Cobre backlog #73, #74, #96–#98 parcial.)</div>
+
+  <div class="card"><div class="ch"><h3>0.1 — Ambientes, proteção de branch e backups</h3></div>
+    <div class="tags"><span class="chip crit">P0</span><span class="chip low">Risco baixo</span><span class="chip med">Depende: nada</span></div>
+    <div class="goal">Objetivo: garantir staging isolado, main protegida e backup/restore antes de qualquer mudança de risco.</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: repositório estático (HTML/CSS/JS) em <b>Vercel</b>, backend <b>Supabase</b> (projeto lwzrzztzpklzbmxbqcrx), pagamentos Mercado Pago. Siga as Regras Globais em CLAUDE.md.
+
+Tarefa — preparar a rede de segurança operacional (documentação + config, sem mudar o produto):
+1. Crie <b>docs/runbooks/</b> com runbooks em Markdown para: (a) rollback de deploy Vercel, (b) restore de backup Supabase (PITR), (c) rotação da chave publishable, (d) resposta a incidente de vazamento de dados (LGPD/ANPD).
+2. Crie <b>docs/INFRA.md</b> descrevendo os 3 ambientes (dev/staging/prod), como usar Supabase Branching para testar migrations, e a política de deploy.
+3. Crie <b>.github/pull_request_template.md</b> com seções: Objetivo, O que muda, Como testar, Impacto em segurança/dados, Plano de rollback.
+4. Adicione um checklist em docs/INFRA.md das configurações a habilitar manualmente no painel (não automatizáveis via código): Branch Protection em `main` (PR + 1 review + checks obrigatórios), Supabase PITR/backup diário, e criação de um Supabase branch de staging.
+
+Critérios de aceite: arquivos criados; runbooks executáveis passo-a-passo; nenhum código de produção alterado.
+Verificação: liste os arquivos criados e resuma o checklist manual.
+Rollback: reverter o PR (somente documentação).</pre></div>
+
+  <div class="card"><div class="ch"><h3>0.2 — Pipeline de CI com testes, build e varredura de segredos</h3></div>
+    <div class="tags"><span class="chip crit">P0</span><span class="chip low">Risco baixo</span><span class="chip med">Depende: 0.1</span></div>
+    <div class="goal">Objetivo: nenhum PR chega à main sem lint, teste, build e verificação de segredos.</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: repo estático + Supabase Edge Functions (Deno/TS). Siga CLAUDE.md.
+
+Tarefa: crie um workflow GitHub Actions em <b>.github/workflows/ci.yml</b> que, em cada PR e push:
+1. Faça checkout e setup de Node.
+2. Rode varredura de segredos (gitleaks) e <b>falhe</b> se encontrar qualquer secret.
+3. Rode um linter de HTML/JS (ex.: eslint para /js e html-validate para os HTML) em modo não-bloqueante inicialmente (report), e um passo de "build check" que valida que os arquivos essenciais existem e o JSON (manifest.json, config) é válido.
+4. Adicione um job separado que valida as Edge Functions com `deno check` em supabase/functions/**.
+5. Configure para que estes checks sejam os exigidos pela Branch Protection.
+
+Critérios de aceite: workflow roda verde num PR de teste; gitleaks configurado; deno check passa.
+Verificação: abra um PR de teste e mostre o resultado dos checks.
+Rollback: remover o workflow.</pre></div>
+</section>
+
+<!-- ============ ONDA 1 — SEGURANÇA ============ -->
+<section id="w1">
+  <div class="sec-head"><span class="wave-num">Onda 1</span><h2 class="sec-title">Correções críticas de segurança de dados</h2></div>
+  <div class="rationale"><b>Por que agora:</b> antes de aumentar tráfego, ligar pagamentos ou expor mais o site, é preciso fechar os vetores que permitem comprometer o painel e vazar dados de clientes. Toda mudança aqui é testada primeiro no Supabase branch de staging (criado na Onda 0). (Cobre backlog #1, #2, #17, #18, #67–#72.)</div>
+
+  <div class="callout danger"><div class="ic">🔒</div><div><h4>Regra da onda</h4><p style="margin:4px 0 0">Cada migration é aplicada primeiro no branch de staging, validada com uma conta de teste tentando o abuso, e só então promovida. Nada de <code>service_role</code> no cliente.</p></div></div>
+
+  <div class="card"><div class="ch"><h3>1.1 — C-1 · Fechar escalonamento de privilégio (is_admin)</h3></div>
+    <div class="tags"><span class="chip crit">P0 · Crítico</span><span class="chip med">Depende: 0.1</span></div>
+    <div class="goal">Objetivo: impedir que um usuário altere o próprio <code>is_admin</code>/<code>role</code> via PostgREST.</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: a policy de UPDATE de `public.user_profiles` (ervaria-supabase-migration.sql:98) usa apenas `USING (auth.uid()=id)`, <b>sem WITH CHECK</b>. Como `is_admin` (ervaria-admin-migration.sql:10) e `role` vivem nessa tabela, qualquer usuário logado pode executar via a chave publishable: `update user_profiles set is_admin=true where id=auth.uid()`. Isso é escalonamento a admin. Siga CLAUDE.md.
+
+Tarefa: crie a migration <b>supabase/migrations/&lt;timestamp&gt;_fix_user_profiles_privilege.sql</b> que:
+1. Faça DROP da policy de UPDATE atual e recrie com `WITH CHECK` garantindo que `is_admin` e `role` <b>não podem ser alterados</b> pelo próprio usuário (compare com o valor atual via subquery, ou melhor: revogue UPDATE nessas colunas e conceda UPDATE apenas nas colunas seguras — display_name, avatar_url, preferências).
+2. Documente que a promoção a admin passa a ser feita apenas via SQL com service_role / Edge Function.
+3. Seja idempotente.
+
+Critérios de aceite: com uma conta comum autenticada, um UPDATE tentando setar `is_admin=true` é <b>rejeitado</b> pelo RLS; um UPDATE em display_name continua funcionando.
+Verificação: escreva um teste (script SQL ou snippet supabase-js) que prove os dois casos no branch de staging. Mostre a saída.
+Rollback: migration reversa que restaura a policy anterior (documentar, mas NÃO aplicar salvo emergência).</pre></div>
+
+  <div class="card"><div class="ch"><h3>1.2 — C-2 · Fechar vazamento de PII na view de pedidos</h3></div>
+    <div class="tags"><span class="chip crit">P0 · Crítico</span><span class="chip med">Depende: 1.1</span></div>
+    <div class="goal">Objetivo: impedir que qualquer usuário autenticado leia pedidos/e-mails/endereços de todos os clientes.</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: a view `public.orders_with_items` (ervaria-orders-migration.sql:258) NÃO é `security_invoker`, então roda com privilégio do dono e ignora o RLS das tabelas subjacentes. Ela é consumida pelo cliente autenticado em js/admin-orders.js:17, o que prova exposição via PostgREST. Qualquer usuário logado lê todos os pedidos, totais, endereços, nomes e e-mails. Siga CLAUDE.md.
+
+Tarefa: crie a migration <b>&lt;timestamp&gt;_secure_orders_view.sql</b> que:
+1. Recrie a view com `WITH (security_invoker = true)` (assim o RLS de orders/user_profiles é aplicado ao chamador); OU, se a listagem admin precisa cruzar dados de vários usuários, `REVOKE SELECT ON public.orders_with_items FROM anon, authenticated` e crie/uso uma Edge Function `admin-orders` (service_role) que valida `caller.isAdmin` e retorna a listagem — atualizando js/admin-orders.js para chamar a function em vez da view.
+2. Garanta que o portão admin é feito no <b>servidor</b>, não só no cliente.
+
+Critérios de aceite: uma conta comum autenticada recebe 0 linhas (ou 403) ao consultar dados de outros usuários; o admin continua vendo a listagem.
+Verificação: teste com conta comum e conta admin no staging; mostre as duas saídas.
+Rollback: documentar a view anterior; reverter o PR se quebrar o painel admin.</pre></div>
+
+  <div class="card"><div class="ch"><h3>1.3 — Auditoria completa de RLS + tabela site_settings</h3></div>
+    <div class="tags"><span class="chip crit">P0</span><span class="chip med">Depende: 1.1</span></div>
+    <div class="goal">Objetivo: garantir que nenhuma tabela com dado de usuário está sem RLS e nenhuma policy carece de WITH CHECK. (Backlog #72.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: SECURITY.md sugere auditar RLS periodicamente. A tabela `site_settings` (usada em js/admin.js:87) não tem migration no conjunto revisado — RLS não verificado. Siga CLAUDE.md.
+
+Tarefa:
+1. Rode no staging: `SELECT schemaname,tablename,rowsecurity FROM pg_tables WHERE schemaname='public' AND rowsecurity=false;` e liste toda tabela sem RLS.
+2. Para cada tabela com dado de usuário/PII/config sensível sem RLS, crie migration habilitando RLS + policies mínimas corretas (com WITH CHECK).
+3. Verifique `site_settings`: se contém config sensível, restrinja leitura/escrita a admin (via service_role ou policy admin).
+4. Revise todas as policies de UPDATE/INSERT existentes e adicione WITH CHECK onde faltar.
+5. Documente o resultado em docs/security/rls-audit.md.
+
+Critérios de aceite: query de auditoria retorna zero tabelas sensíveis sem RLS; relatório commitado.
+Verificação: cole a saída da query antes/depois.
+Rollback: por migration.</pre></div>
+
+  <div class="card"><div class="ch"><h3>1.4 — Resolver assinatura HMAC do webhook + remover tabela de debug</h3></div>
+    <div class="tags"><span class="chip crit">P0</span><span class="chip high">Bloqueia pagamentos</span><span class="chip med">Depende: 0.2</span></div>
+    <div class="goal">Objetivo: validar a assinatura do webhook Mercado Pago de verdade (pré-requisito para ligar pagamentos com segurança) e remover o scaffolding de debug. (Backlog #17, #18.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: leia WEBHOOK_SIGNATURE_DEBT.md. O HMAC computado em supabase/functions/_shared/mercadopago.ts nunca bate com o `v1` do header `x-signature`; hoje roda em "modo relaxado". Hipótese principal não testada: o MP assina o <b>body bruto</b> byte-a-byte, mas o código reconstrói a partir do JSON parseado. A tabela `mp_webhook_log` grava headers/body de requisições NÃO autenticadas (write-amplification). Siga CLAUDE.md.
+
+Tarefa:
+1. Em mp-webhook/index.ts, clone a request e capture `await clone.text()` (body_raw) ANTES de parsear.
+2. Reproduza o HMAC-SHA256 conforme o formato documentado do MP (`id:<data.id>;request-id:<x-request-id>;ts:<ts>;`), testando também: body_raw exato, com/sem trailing newline, secret como string UTF-8 e como bytes hex-decodados. Registre qual variante bate.
+3. Quando encontrar, remova o modo relaxado e faça a função retornar 401 em assinatura inválida (test e prod).
+4. Remova a tabela de debug `mp_webhook_log` e todo o logging de dados não autenticados (ou restrinja a um log mínimo sem PII, com retenção).
+5. Mantenha as defesas existentes (re-fetch do pagamento na API MP, checagem de external_reference e de valor, idempotência).
+
+Critérios de aceite: webhook com assinatura válida → 200; assinatura inválida → 401; simulação do painel MP valida; nenhum insert de body bruto de request não autenticada.
+Verificação: teste com a ferramenta "Simular notificação" do MP em sandbox; mostre logs.
+Rollback: feature-flag para reativar modo relaxado em emergência, documentado.</pre></div>
+
+  <div class="card"><div class="ch"><h3>1.5 — Headers de segurança, CORS restrito e rate limiting</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip med">Depende: 0.1</span></div>
+    <div class="goal">Objetivo: endurecer a borda. (Backlog #67, #68, #69, #70.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: não há headers de segurança (sem vercel.json). CORS das Edge Functions é wildcard `*` (_shared/cors.ts:5). Não há rate limit. Siga CLAUDE.md.
+
+Tarefa:
+1. Crie <b>vercel.json</b> com headers de segurança: Content-Security-Policy (permitindo Supabase, Google Fonts se ainda usadas, e o que o app precisa — comece em Report-Only para não quebrar), Strict-Transport-Security, X-Frame-Options: DENY, X-Content-Type-Options: nosniff, Referrer-Policy, Permissions-Policy.
+2. Restrinja o CORS das Edge Functions à(s) origem(ns) do app (produção + preview), lendo de env, em vez de `*`.
+3. Adicione rate limiting básico às Edge Functions públicas/sensíveis (por IP/user), ex.: contador em tabela/KV com janela de tempo, ou Upstash Ratelimit.
+4. Ajuste a CSP de Report-Only para enforce após validar que nada quebra no preview.
+
+Critérios de aceite: headers presentes na resposta (verificar via curl/securityheaders.com); CORS rejeita origem desconhecida; chamadas acima do limite recebem 429.
+Verificação: mostre os headers e um teste de rate limit.
+Rollback: remover vercel.json / reverter cors.</pre></div>
+
+  <div class="card"><div class="ch"><h3>1.6 — MFA para administradores</h3></div>
+    <div class="tags"><span class="chip med">P2</span><span class="chip med">Depende: 1.1</span></div>
+    <div class="goal">Objetivo: proteger o back-office com segundo fator. (Backlog #71.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: acesso admin é binário (is_admin) sem segundo fator. Supabase Auth suporta MFA (TOTP). Siga CLAUDE.md.
+
+Tarefa: habilite MFA TOTP no Supabase Auth e exija-o para contas admin: no fluxo do painel (js/admin.js), verifique `aal` (Authenticator Assurance Level) e force enrollment/challenge de MFA antes de liberar ações administrativas. Adicione UI de cadastro de MFA na área admin.
+
+Critérios de aceite: admin sem MFA é bloqueado das ações sensíveis até completar o segundo fator.
+Verificação: demonstre login admin exigindo TOTP no staging.
+Rollback: feature flag `ADMIN_MFA_REQUIRED`.</pre></div>
+</section>
+
+<!-- ============ ONDA 2 — LGPD ============ -->
+<section id="w2">
+  <div class="sec-head"><span class="wave-num">Onda 2</span><h2 class="sec-title">Compliance &amp; LGPD</h2></div>
+  <div class="rationale"><b>Por que antes de medir e ligar o site:</b> o consentimento de cookies é pré-requisito <b>legal</b> para instalar analytics/pixel (Onda 3), e políticas de privacidade/termos são pré-requisito para operar uma loja. Fazer LGPD agora evita ter que retrabalhar o tracking depois. (Cobre backlog #4, #5, #6, #75, #76, #77.)</div>
+
+  <div class="card"><div class="ch"><h3>2.1 — Política de Privacidade + Termos de Uso</h3></div>
+    <div class="tags"><span class="chip crit">P0</span><span class="chip med">Depende: 1.x</span></div>
+    <div class="goal">Objetivo: publicar as páginas legais obrigatórias, acessíveis no rodapé. (Backlog #4, #5.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: não existem páginas de Política de Privacidade nem Termos de Uso; LGPD é só um checkbox no cadastro (ervaria.js:815). Siga CLAUDE.md.
+
+Tarefa:
+1. Crie páginas reais e indexáveis para <b>Política de Privacidade</b> e <b>Termos de Uso</b> (rotas próprias, ex.: /privacidade e /termos — se o routing ainda é hash, crie por ora páginas HTML estáticas dedicadas linkáveis; alinhar com a Onda 5).
+2. Conteúdo LGPD: dados coletados, finalidade, base legal, compartilhamento (Supabase, Mercado Pago, Vercel, provedor de e-mail), retenção, direitos do titular e canal de contato do encarregado (DPO).
+3. Linkar ambas no rodapé de todas as páginas e no fluxo de cadastro/checkout.
+4. Marcar como conteúdo jurídico a ser revisado por advogado (placeholder claro onde exigir revisão).
+
+Critérios de aceite: páginas acessíveis, linkadas no rodapé, com todas as seções da LGPD.
+Verificação: navegue até as páginas no preview.
+Rollback: remover páginas/links.</pre></div>
+
+  <div class="card"><div class="ch"><h3>2.2 — Banner de consentimento de cookies (Consent Mode v2)</h3></div>
+    <div class="tags"><span class="chip crit">P0</span><span class="chip med">Bloqueia: Onda 3</span></div>
+    <div class="goal">Objetivo: coletar consentimento antes de qualquer tracking, integrado ao Google Consent Mode v2. (Backlog #6.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: não há banner de cookies. Nenhum tracking pode disparar sem consentimento (LGPD). Siga CLAUDE.md.
+
+Tarefa:
+1. Implemente um banner de consentimento (aceitar/recusar/preferências por categoria: necessários, analytics, marketing) com persistência da escolha.
+2. Integre ao <b>Google Consent Mode v2</b>: estado `denied` por padrão para analytics_storage/ad_storage; atualizar para `granted` só após aceite.
+3. Exponha um gancho global (ex.: `window.__consent`) que a Onda 3 usará para condicionar o carregamento de GA4/Pixel.
+4. Permita revogar/alterar consentimento a qualquer momento (link no rodapé).
+5. Acessível: operável por teclado, foco visível, sem bloquear leitores de tela.
+
+Critérios de aceite: sem aceite, nenhum cookie de analytics/marketing é setado; após aceite, o estado do Consent Mode muda para granted; escolha persiste; revogável.
+Verificação: inspecione cookies/consent antes e depois do aceite.
+Rollback: remover banner (e garantir que Onda 3 não dispare sem ele).</pre></div>
+
+  <div class="card"><div class="ch"><h3>2.3 — Direitos do titular, retenção e DPO</h3></div>
+    <div class="tags"><span class="chip med">P2</span><span class="chip med">Depende: 2.1</span></div>
+    <div class="goal">Objetivo: operacionalizar acesso/exclusão de dados e política de retenção. (Backlog #75, #76, #77.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: não há fluxo de direitos do titular nem retenção. A Edge Function admin-delete-user já é base para exclusão. Siga CLAUDE.md.
+
+Tarefa:
+1. Na área do cliente, adicione "Baixar meus dados" (exporta dados pessoais do usuário) e "Excluir minha conta" (aciona exclusão respeitando dependências — reutilize/estenda admin-delete-user com confirmação e anonimização de pedidos por obrigação fiscal).
+2. Defina e documente política de retenção (docs/compliance/retencao.md): por quanto tempo cada dado é mantido e quando é anonimizado/apagado.
+3. Adicione seção de "Encarregado (DPO)" com canal de contato nas páginas legais.
+
+Critérios de aceite: usuário consegue exportar e solicitar exclusão; política documentada.
+Verificação: teste export e exclusão de uma conta de teste no staging.
+Rollback: por feature flag.</pre></div>
+</section>
+
+<!-- ============ ONDA 3 — MEDIÇÃO ============ -->
+<section id="w3">
+  <div class="sec-head"><span class="wave-num">Onda 3</span><h2 class="sec-title">Medição: instrumentar antes de otimizar ou anunciar</h2></div>
+  <div class="rationale"><b>Por que antes de performance/SEO/comercial:</b> sem baseline de métricas você não sabe se as próximas ondas melhoram ou pioram os números. Instale a telemetria agora (respeitando o consentimento da Onda 2) para medir o efeito de tudo que vier depois. (Cobre backlog #7, #8, #9, #78, #79, #80.)</div>
+
+  <div class="card"><div class="ch"><h3>3.1 — GTM + GA4 + Clarity (condicionados a consentimento)</h3></div>
+    <div class="tags"><span class="chip crit">P0</span><span class="chip med">Depende: 2.2</span></div>
+    <div class="goal">Objetivo: analytics e heatmap básicos, sem violar LGPD. (Backlog #7, #9.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: zero analytics no site (confirmado). Banner de consentimento e `window.__consent` existem (Onda 2). Siga CLAUDE.md.
+
+Tarefa:
+1. Instale Google Tag Manager e configure GA4 via GTM.
+2. Carregue GTM/GA4 e Microsoft Clarity <b>apenas após consentimento</b> de analytics (use o gancho da Onda 2 e o Consent Mode v2).
+3. Não hardcode IDs — leia de config/env (GTM_ID, GA4_ID, CLARITY_ID).
+4. Verifique que nenhum cookie de analytics aparece antes do aceite.
+
+Critérios de aceite: com consentimento, eventos de pageview chegam ao GA4 (DebugView) e sessões ao Clarity; sem consentimento, nada dispara.
+Verificação: GA4 DebugView + inspeção de cookies.
+Rollback: remover container GTM.</pre></div>
+
+  <div class="card"><div class="ch"><h3>3.2 — Eventos de e-commerce + Meta Pixel/CAPI</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip med">Depende: 3.1</span></div>
+    <div class="goal">Objetivo: funil mensurável e remarketing com atribuição confiável. (Backlog #8, #79.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: precisamos do funil de e-commerce e de remarketing. Pagamentos ainda podem estar desligados — instrumente os eventos que já existem. Siga CLAUDE.md.
+
+Tarefa:
+1. Implemente os eventos GA4 de e-commerce disparados nos pontos reais do código: view_item (abrir produto/ficha), add_to_cart (js: renderMkt/openMktDetail/carrinho), begin_checkout (checkout.js), e purchase (no retorno de sucesso / confirmação do pedido).
+2. Instale o Meta Pixel via GTM (condicionado a consentimento de marketing) com os eventos equivalentes (ViewContent, AddToCart, InitiateCheckout, Purchase).
+3. Adicione a <b>Conversions API (CAPI) server-side</b> via Edge Function para o evento Purchase, com deduplicação por event_id (mais resiliente a bloqueio de cookies).
+
+Critérios de aceite: os 4 eventos aparecem no GA4 e no Pixel Helper; Purchase server-side deduplica com o client.
+Verificação: percorra o funil no staging e mostre os eventos.
+Rollback: desabilitar tags no GTM.</pre></div>
+
+  <div class="card"><div class="ch"><h3>3.3 — KPIs e dashboard executivo</h3></div>
+    <div class="tags"><span class="chip med">P2</span><span class="chip med">Depende: 3.2</span></div>
+    <div class="goal">Objetivo: painel de conversão, AOV, CAC, LTV e funil. (Backlog #78, #80.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: sem definição de KPI nem dashboard. Siga CLAUDE.md.
+
+Tarefa:
+1. Documente em docs/analytics/kpis.md a definição de cada KPI (conversão, ticket médio/AOV, CAC, LTV, taxa de abandono, receita) e a "estrela-norte".
+2. Configure um dashboard no GA4 (ou Looker Studio) com o funil de e-commerce e os KPIs.
+3. Opcional: uma Edge Function admin-metrics estendida agregando dados de `orders` para um painel interno (respeitando que agrega via service_role).
+
+Critérios de aceite: dashboard acessível com funil e KPIs; definições documentadas.
+Verificação: link do dashboard + screenshot.
+Rollback: n/a (config externa).</pre></div>
+</section>
+
+<!-- ============ ONDA 4 — PERFORMANCE ============ -->
+<section id="w4">
+  <div class="sec-head"><span class="wave-num">Onda 4</span><h2 class="sec-title">Performance: ganhos de baixo risco</h2></div>
+  <div class="rationale"><b>Por que aqui:</b> são mudanças de alto impacto e baixo risco que melhoram Core Web Vitals (e, com a telemetria já instalada, você mede o efeito). Vêm antes da grande mudança de SEO/routing para reduzir variáveis. (Cobre backlog #10–#15.)</div>
+
+  <div class="card"><div class="ch"><h3>4.1 — Ligar o pipeline de imagens WebP</h3></div>
+    <div class="tags"><span class="chip crit">P0</span><span class="chip low">Risco baixo</span></div>
+    <div class="goal">Objetivo: reduzir heróis de 2–4 MB para 150–300 KB reativando o pipeline já existente. (Backlog #10, #11, #13.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: o pipeline de imagem existe mas está morto: (1) js/responsive-img.js nunca é carregado no HTML; (2) ele busca /images/manifest.json que não existe; (3) images/optimized/ não existe (o otimizador nunca rodou). Heróis são PNG de 2–4 MB. A ferramenta está em scripts/optimize-images.mjs (gera 320/640/1024/1600w WebP q80). Siga CLAUDE.md.
+
+Tarefa:
+1. Rode `npm run images:optimize`; commite images/optimized/ e images/manifest.json.
+2. Adicione `<script defer src="/js/responsive-img.js">` ao index.html.
+3. Aplique data-responsive / uso de &lt;picture&gt; nos heróis e imagens de produto; adicione `fetchpriority="high"` e `<link rel="preload">` na imagem LCP; `loading="lazy"` + width/height nas demais.
+4. Enxugue o precache do sw.js: remova PNGs pesados, precacheie os WebP; remova a entrada morta de responsive-img.js ou mantenha coerente.
+
+Critérios de aceite: heróis servidos em WebP; peso da home cai drasticamente; LCP melhora no PageSpeed.
+Verificação: compare PageSpeed Insights (mobile) antes/depois e mostre os números.
+Rollback: reverter o PR (imagens originais permanecem).</pre></div>
+
+  <div class="card"><div class="ch"><h3>4.2 — defer nos scripts + fontes não-bloqueantes</h3></div>
+    <div class="tags"><span class="chip crit">P0</span><span class="chip low">Risco baixo</span></div>
+    <div class="goal">Objetivo: reduzir TBT e FCP. (Backlog #12, #14, #15.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: 19 &lt;script src&gt; síncronos (index.html:2444+), nenhum com defer/async; ~1,1 MB de JS bloqueia interatividade. 4 famílias Google Fonts render-blocking. Siga CLAUDE.md, sem quebrar a ordem de dependências entre scripts.
+
+Tarefa:
+1. Adicione `defer` a todos os scripts locais, preservando a ordem de execução (defer mantém ordem). Teste que o app inicializa igual.
+2. Auto-hospede as fontes essenciais em WOFF2 subsetado com `font-display:swap` e `preload` apenas dos pesos above-the-fold; reduza de 4 para 2 famílias onde possível. Remova o CSS render-blocking do Google Fonts.
+3. Considere carregar sob demanda (dynamic import) os módulos não críticos (quiz.js, jogo.js) — se o esforço for baixo; caso contrário, deixe para a Onda 12.
+
+Critérios de aceite: app funciona idêntico; TBT e FCP melhoram; nenhuma regressão funcional.
+Verificação: PageSpeed antes/depois; smoke test das principais telas.
+Rollback: reverter o PR.</pre></div>
+</section>
+
+<!-- ============ ONDA 5 — SEO ============ -->
+<section id="w5">
+  <div class="sec-head"><span class="wave-num">Onda 5</span><h2 class="sec-title">Fundação de SEO: URLs reais, render e schema</h2></div>
+  <div class="rationale"><b>Por que só agora:</b> é a maior mudança arquitetural de front do plano (routing). Ela vem depois da rede de segurança, da telemetria (para medir tráfego) e da performance (base saudável), e antes da monetização — porque destrava o canal de aquisição mais barato. Faça em passos pequenos e verificáveis. (Cobre backlog #25–#38.)</div>
+
+  <div class="card"><div class="ch"><h3>5.1 — Roteamento por URLs reais (History API + rewrites)</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip high">Arquitetural</span><span class="chip med">Depende: 4.x</span></div>
+    <div class="goal">Objetivo: cada erva/produto/idioma com URL própria e crawlável. (Backlog #25.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: o routing usa hash (#ficha/&lt;slug&gt;, ?page=…) em js/app.js:2168-2194; o History API só serve ao botão voltar. O Google descarta fragmentos → nenhuma entidade é indexável. Hospedagem: Vercel. Siga CLAUDE.md; faça incremental e sem quebrar navegação existente.
+
+Tarefa:
+1. Migre o roteamento para <b>caminhos reais</b> via History API: /erva/&lt;slug&gt;, /produto/&lt;slug&gt;, /receitas/&lt;slug&gt;, etc., mantendo compatibilidade (redirect 301 de URLs hash antigas quando possível).
+2. Configure `vercel.json` com rewrites de todas as rotas de app para /index.html (SPA fallback), preservando arquivos estáticos.
+3. Garanta deep-link: acessar a URL direta renderiza a entidade correta.
+4. Atualize os links internos e o manifest (shortcuts).
+
+Critérios de aceite: cada erva/produto tem URL única que abre direto; voltar/avançar funcionam; hash antigo redireciona.
+Verificação: abra 5 URLs diretas de ervas/produtos no preview.
+Rollback: reverter rewrites + routing (feature flag de rota nova).</pre></div>
+
+  <div class="card"><div class="ch"><h3>5.2 — Pré-render / SSG do conteúdo (HTML servível ao crawler)</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip high">Depende: 5.1</span></div>
+    <div class="goal">Objetivo: entregar HTML com conteúdo real (não injetado por JS) para cada entidade. (Backlog #26, #38.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: o conteúdo (fichas, produtos) é injetado por JS a partir de fichas-data.js; o HTML servido é raso. Crawlers/scrapers sociais/LLMs veem pouco. Siga CLAUDE.md.
+
+Tarefa:
+1. Crie um passo de build (script Node) que <b>pré-renderiza</b> uma página HTML estática por erva/produto/receita, com o conteúdo real no HTML (título, descrição, imagem, ficha), a partir das fontes de dados. Publicar em rotas correspondentes à Onda 5.1.
+2. Adicione `<noscript>` com conteúdo/links essenciais como fallback.
+3. Integre o passo ao CI/deploy Vercel (build command).
+
+Critérios de aceite: `curl` de uma URL de erva retorna HTML com o conteúdo (não só o shell); noscript presente.
+Verificação: cole o HTML retornado por curl de 2 URLs.
+Rollback: remover o passo de pré-render.</pre></div>
+
+  <div class="card"><div class="ch"><h3>5.3 — Dados estruturados (schema.org) por entidade</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip med">Depende: 5.2</span></div>
+    <div class="goal">Objetivo: elegibilidade a rich results de produto, receita, FAQ e breadcrumb. (Backlog #31–#35.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: só existe um JSON-LD WebApplication no head (index.html:25); seo.js não emite schema. Siga CLAUDE.md.
+
+Tarefa: emita JSON-LD por página durante o render/pré-render:
+- <b>Product</b> + <b>Offer</b> (preço, moeda BRL, disponibilidade) nas páginas de produto; AggregateRating/Review quando a Onda 7 entregar avaliações.
+- <b>Recipe</b> nas receitas; <b>FAQPage</b>/<b>HowTo</b> no preparo/dúvidas das ervas.
+- <b>BreadcrumbList</b> na hierarquia catálogo→família→ficha.
+- <b>Organization</b> completa no head (logo, sameAs, contato).
+Valide no Rich Results Test do Google.
+
+Critérios de aceite: Rich Results Test passa para Product, Recipe, FAQ e Breadcrumb sem erros.
+Verificação: cole os resultados do teste para 1 produto e 1 receita.
+Rollback: remover blocos JSON-LD.</pre></div>
+
+  <div class="card"><div class="ch"><h3>5.4 — Canonical, hreflang, sitemap, robots e meta</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip med">Depende: 5.1</span></div>
+    <div class="goal">Objetivo: sinais de indexação completos. (Backlog #27, #28, #29, #30, #36, #37.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: sem canonical, sem hreflang (apesar de 6 idiomas), sem robots.txt/sitemap.xml; dois &lt;h1&gt; no DOM; Twitter card = summary. Siga CLAUDE.md.
+
+Tarefa:
+1. Emita `<link rel="canonical">` por página (URL real).
+2. Dê URL por idioma (ex.: /en/…) e emita `hreflang` recíproco + `x-default`.
+3. Gere `sitemap.xml` (enumerando todas as URLs reais por entidade e idioma) e `robots.txt` referenciando-o.
+4. Corrija a hierarquia de headings (um &lt;h1&gt; por view; rebaixe "Meus pedidos").
+5. Suba Twitter card para `summary_large_image`.
+
+Critérios de aceite: canonical/hreflang presentes; sitemap válido; robots aponta o sitemap; um H1 por página.
+Verificação: valide o sitemap e mostre o head de 1 página PT e 1 EN.
+Rollback: reverter por arquivo.</pre></div>
+</section>
+
+<!-- ============ ONDA 6 — COMERCIAL ============ -->
+<section id="w6">
+  <div class="sec-head"><span class="wave-num">Onda 6</span><h2 class="sec-title">Ativação comercial: ligar o dinheiro com segurança</h2></div>
+  <div class="rationale"><b>Por que só agora:</b> só se liga pagamento depois de: segurança de dados fechada (Onda 1), webhook validado (1.4), staging/testes (Onda 0) e telemetria (Onda 3). Aqui unificamos catálogo, habilitamos compra a partir da ficha, guest checkout e frete real — e então viramos a chave. (Cobre backlog #3, #16, #19, #20, #21, #39, #40, #44, #45.)</div>
+
+  <div class="card"><div class="ch"><h3>6.1 — Remover produtos de teste da vitrine</h3></div>
+    <div class="tags"><span class="chip crit">P0</span><span class="chip low">Risco baixo</span></div>
+    <div class="goal">Objetivo: parar de exibir itens com badge "TESTE" ao comprador. (Backlog #3.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: ~30 produtos premium entram com is_test=true e renderizam badge "TESTE" na vitrine (app.js:2762). Siga CLAUDE.md.
+
+Tarefa: filtre `is_test` da vitrine pública (mostrar apenas em admin/staging via flag). Garanta que a lógica de compra ignore itens de teste. Não apague os dados — apenas oculte.
+
+Critérios de aceite: nenhum badge "TESTE" aparece na loja pública; admin ainda enxerga.
+Verificação: abra a loja no preview e confirme ausência de itens de teste.
+Rollback: reverter o filtro.</pre></div>
+
+  <div class="card"><div class="ch"><h3>6.2 — Unificar ficha ↔ SKU vendável + CTA de compra na ficha</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip high">Arquitetural</span><span class="chip med">Depende: 5.1</span></div>
+    <div class="goal">Objetivo: transformar as 96 fichas em páginas comercializáveis. (Backlog #39, #40, #44, #45.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: dois catálogos desconectados — fichas ricas (não vendáveis, 96/97 sem preço) e MKT_PRODUCTS (array fixo ~44 itens), ligados por nome (ervaria.js:458). A ficha (maior intenção) não tem "adicionar ao carrinho". Siga CLAUDE.md.
+
+Tarefa:
+1. Defina um modelo único de produto no Supabase: SKU, slug, preço, estoque numérico, variações (tamanho/formato), mídia — com a ficha como conteúdo anexo à mesma entidade (chave por UUID/slug, <b>nunca por nome</b>).
+2. Migre MKT_PRODUCTS e vincule às fichas correspondentes.
+3. Adicione CTA de compra ("Comprar esta erva" / seletor de variação) na página de ficha.
+4. Exiba estoque/escassez ("últimas unidades", "esgotado") a partir do estoque numérico.
+
+Critérios de aceite: uma ficha exibe preço, variação, estoque e botão comprar que adiciona ao carrinho.
+Verificação: adicione ao carrinho a partir de 2 fichas no staging.
+Rollback: feature flag do novo modelo/CTA.</pre></div>
+
+  <div class="card"><div class="ch"><h3>6.3 — Guest checkout</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip med">Depende: 6.2</span></div>
+    <div class="goal">Objetivo: reduzir abandono removendo login obrigatório. (Backlog #19, #21.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: checkout.js:141 aborta para login se não há sessão; itens sem dbId são removidos silenciosamente no submit (checkout.js:255). Siga CLAUDE.md.
+
+Tarefa:
+1. Permita checkout como convidado (e-mail + endereço), criando a ordem sem exigir conta; ofereça criar conta <b>após</b> a compra.
+2. Ajuste create-order/RLS para suportar pedidos guest com segurança (associar por e-mail/token, manter recálculo de preço no servidor).
+3. Corrija a falha tardia: valide disponibilidade do item <b>na adição ao carrinho</b>, mostrando estado "indisponível" no card, não no submit.
+
+Critérios de aceite: é possível comprar sem conta; itens indisponíveis são sinalizados cedo; preço recalculado no servidor.
+Verificação: fluxo guest ponta-a-ponta em sandbox.
+Rollback: feature flag GUEST_CHECKOUT.</pre></div>
+
+  <div class="card"><div class="ch"><h3>6.4 — Frete real por CEP</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip med">Depende: 6.2</span></div>
+    <div class="goal">Objetivo: cálculo de frete real, não placeholder. (Backlog #20.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: CEP só autopreenche endereço (viacep); frete é fixo/placeholder ("grátis no piloto"), shipping_cents=0 no servidor. Siga CLAUDE.md.
+
+Tarefa: crie a Edge Function <b>calculate-shipping</b> integrando Melhor Envio (ou Correios) para cotar frete por CEP + peso/dimensões dos itens. Exiba opções (transportadora, prazo, valor) no carrinho e na PDP; grave shipping_cents real no pedido; some ao total (recalculado no servidor).
+
+Critérios de aceite: informar um CEP retorna opções reais de frete e prazo; total reflete o frete.
+Verificação: teste 3 CEPs (capital, interior, outra região) no staging.
+Rollback: flag para voltar ao frete fixo.</pre></div>
+
+  <div class="card"><div class="ch"><h3>6.5 — Ligar pagamentos (a virada de chave)</h3></div>
+    <div class="tags"><span class="chip crit">P0</span><span class="chip crit">Só com pré-reqs</span><span class="chip med">Depende: 1.4, 6.2–6.4</span></div>
+    <div class="goal">Objetivo: habilitar transações em produção com segurança. (Backlog #16, #22, #23, #24.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: PAYMENTS_ENABLED=false em js/config.js esconde o checkout. Só ligar após: webhook com assinatura validada (Onda 1.4), guest checkout, frete real e testes sandbox verdes. Siga CLAUDE.md.
+
+Tarefa:
+1. Teste o fluxo completo em <b>sandbox</b> (cartão aprovado/recusado, Pix, boleto) e valide que orders.status vira `paid` via webhook.
+2. Exiba parcelamento e Pix <b>antes</b> do redirect ao Mercado Pago.
+3. Adicione sistema de cupons e um order-bump/cross-sell no carrinho.
+4. Vire MP_MODE=production e PAYMENTS_ENABLED=true de forma controlada (feature flag / rollout), fazendo um pedido real de baixo valor como validação final.
+
+Critérios de aceite: pedido real de teste conclui e cai como `paid`; cupom e parcelamento funcionam; rollback imediato via flag.
+Verificação: 1 pedido sandbox completo + 1 pedido real de R$1 documentado.
+Rollback: PAYMENTS_ENABLED=false (kill switch imediato).</pre></div>
+</section>
+
+<!-- ============ ONDA 7 — PDP/CRO ============ -->
+<section id="w7">
+  <div class="sec-head"><span class="wave-num">Onda 7</span><h2 class="sec-title">PDP &amp; CRO: aumentar conversão e ticket</h2></div>
+  <div class="rationale"><b>Por que aqui:</b> com a loja vendendo e medindo, agora vale investir nas alavancas de conversão. Cada item deve ser medido (Onda 3) para provar o ganho. (Cobre backlog #41–#54.)</div>
+
+  <div class="card"><div class="ch"><h3>7.1 — PDP dedicada com galeria, zoom e informações de compra</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip med">Depende: 6.2</span></div>
+    <div class="goal">Objetivo: página de produto completa (não modal). (Backlog #41, #42, #43, #46, #50.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: o produto abre em bottom-sheet (app.js:2798) com 1 imagem pequena, sem zoom/galeria/vídeo, sem frete/estoque/prazo/avaliações/FAQ. Siga CLAUDE.md.
+
+Tarefa: crie uma PDP dedicada por SKU (URL real da Onda 5) contendo: galeria com zoom (e vídeo quando houver), preço + parcelamento/Pix, estoque/escassez, cálculo de frete/prazo por CEP (Onda 6.4), seletor de variações, selos de garantia/segurança, e o conteúdo E-E-A-T da ficha embutido (componentes ativos, contraindicações, fontes). CTA de compra proeminente.
+
+Critérios de aceite: PDP com galeria+zoom, frete por CEP, estoque, variações e conteúdo da ficha; adiciona ao carrinho.
+Verificação: abra 2 PDPs e percorra os elementos.
+Rollback: manter o modal como fallback via flag.</pre></div>
+
+  <div class="card"><div class="ch"><h3>7.2 — Avaliações, prova social e FAQ por produto</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip med">Depende: 7.1</span></div>
+    <div class="goal">Objetivo: a alavanca de confiança nº1 para consumíveis. (Backlog #47, #48, #49, #50.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: não há avaliações/ratings/prova social em lugar nenhum. Siga CLAUDE.md.
+
+Tarefa:
+1. Modele reviews no Supabase (com RLS: só quem comprou avalia; moderação admin) e exiba estrelas + contagem + comentários na PDP.
+2. Emita `AggregateRating`/`Review` no schema (integra com Onda 5.3).
+3. Adicione Q&A/FAQ por produto e prova social (best-sellers, "X pessoas compraram").
+
+Critérios de aceite: cliente que comprou consegue avaliar; média e reviews aparecem na PDP; rich result de rating válido.
+Verificação: crie uma review de teste e veja na PDP + Rich Results Test.
+Rollback: ocultar seção de reviews via flag.</pre></div>
+
+  <div class="card"><div class="ch"><h3>7.3 — Cross-sell, upsell e relacionados</h3></div>
+    <div class="tags"><span class="chip med">P2</span><span class="chip med">Depende: 6.2</span></div>
+    <div class="goal">Objetivo: elevar AOV. (Backlog #51, #52, #24.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: nenhum "compre junto"/relacionados/order-bump. Siga CLAUDE.md.
+
+Tarefa: adicione, na PDP e no carrinho, "produtos relacionados" e "compre junto" por afinidade (erva + acessório + blend; mesma família/uso), começando com regras manuais/curadas. Meça impacto no AOV via eventos (Onda 3).
+
+Critérios de aceite: PDP e carrinho mostram sugestões relevantes; adicionar sugestão funciona.
+Verificação: valide sugestões em 3 produtos.
+Rollback: ocultar blocos.</pre></div>
+
+  <div class="card"><div class="ch"><h3>7.4 — Wishlist de produtos e comparador</h3></div>
+    <div class="tags"><span class="chip low">P3</span><span class="chip med">Depende: 6.2</span></div>
+    <div class="goal">Objetivo: retenção e apoio à decisão. (Backlog #53, #54.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: favoritos existem só para fichas (localStorage); não há wishlist de SKU nem comparador. Siga CLAUDE.md.
+
+Tarefa: estenda a wishlist para produtos vendáveis (persistida no Supabase para usuários logados, RLS por dono) e adicione um comparador lado-a-lado de produtos (atributos, preço, sensorial).
+
+Critérios de aceite: salvar produto na wishlist persiste entre sessões; comparador mostra ≥2 produtos.
+Verificação: teste wishlist logado e comparador.
+Rollback: flags.</pre></div>
+</section>
+
+<!-- ============ ONDA 8 — PÓS-VENDA ============ -->
+<section id="w8">
+  <div class="sec-head"><span class="wave-num">Onda 8</span><h2 class="sec-title">Pós-venda &amp; fiscal (obrigações legais)</h2></div>
+  <div class="rationale"><b>Por que logo após vender:</b> assim que houver pedidos reais, NF-e e o direito de troca/devolução (CDC) passam a ser obrigatórios. Não deixe a operação rodar sem eles. (Cobre backlog #55–#60.)</div>
+
+  <div class="card"><div class="ch"><h3>8.1 — Emissão de NF-e</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip med">Depende: 6.5</span></div>
+    <div class="goal">Objetivo: nota fiscal automática por pedido pago. (Backlog #55.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: não há emissão de NF-e. Siga CLAUDE.md.
+
+Tarefa: integre um emissor (Bling/Tiny/eNotas) via Edge Function acionada quando orders.status → paid; armazene a NF-e e disponibilize download na área do cliente e por e-mail. Trate erros de emissão com retry e alerta ao admin.
+
+Critérios de aceite: pedido pago gera NF-e baixável; falha de emissão alerta o admin sem travar o pedido.
+Verificação: emita uma NF-e de teste (homologação) no staging.
+Rollback: flag; emissão manual como fallback.</pre></div>
+
+  <div class="card"><div class="ch"><h3>8.2 — Troca/devolução, rastreamento e recompra</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip med">Depende: 6.5</span></div>
+    <div class="goal">Objetivo: pós-venda conforme CDC + retenção. (Backlog #56, #57, #58, #59, #60.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: pedidos.js tem histórico com status, mas rastreamento é texto estático; não há troca/devolução, cancelamento, recompra nem gestão de endereços. CDC exige canal de troca/devolução (7 dias). Siga CLAUDE.md.
+
+Tarefa:
+1. Fluxo de solicitação de <b>troca/devolução</b> dentro do prazo legal, com estados e ação admin; estorno via API MP quando aplicável.
+2. Rastreamento <b>linkado/ao vivo</b> (link da transportadora / integração de tracking).
+3. Botão "comprar de novo" (recompra) e cancelamento pelo cliente (dentro de regras).
+4. Gestão de endereços salvos.
+
+Critérios de aceite: cliente solicita devolução e acompanha; rastreio abre a transportadora; recompra recria o carrinho.
+Verificação: percorra cada fluxo com um pedido de teste.
+Rollback: flags por funcionalidade.</pre></div>
+</section>
+
+<!-- ============ ONDA 9 — ACESSIBILIDADE ============ -->
+<section id="w9">
+  <div class="sec-head"><span class="wave-num">Onda 9</span><h2 class="sec-title">Acessibilidade (WCAG 2.1 AA)</h2></div>
+  <div class="rationale"><b>Por que uma onda própria:</b> acessibilidade é requisito legal (LBI) e melhora SEO e conversão. Como toca muitos componentes, é feita em bloco depois que a PDP/checkout estabilizaram, evitando refazer. (Cobre backlog #61–#66.)</div>
+
+  <div class="card"><div class="ch"><h3>9.1 — Semântica, teclado e modais acessíveis</h3></div>
+    <div class="tags"><span class="chip high">P1</span></div>
+    <div class="goal">Objetivo: operabilidade por teclado e leitor de tela. (Backlog #61, #62, #63, #66.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: cards/itens são &lt;div onclick&gt; sem role/tabindex/teclado; modais (produto, checkout, pedidos) sem focus-trap/ESC/aria-modal; botões só com emoji; viewport trava zoom (maximum-scale=1.0). Siga CLAUDE.md.
+
+Tarefa:
+1. Converta elementos interativos em &lt;button&gt;/&lt;a&gt; reais, operáveis por teclado, com foco visível.
+2. Nos overlays: focus-trap, ESC para fechar, restauração de foco, `aria-modal`/`role="dialog"`.
+3. Rótulos `aria-label` em botões de ícone/emoji.
+4. Remova `maximum-scale=1.0` do viewport.
+
+Critérios de aceite: navegação completa por teclado; modais com foco correto; axe-core sem violações críticas.
+Verificação: rode axe/Lighthouse a11y e mostre o score.
+Rollback: por PR.</pre></div>
+
+  <div class="card"><div class="ch"><h3>9.2 — Contraste e alt text</h3></div>
+    <div class="tags"><span class="chip med">P2</span><span class="chip med">Depende: 9.1</span></div>
+    <div class="goal">Objetivo: legibilidade AA e imagens descritas. (Backlog #64, #65.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: textos muted (ouro sobre escuro, ~0.68rem) provavelmente abaixo de AA; imagens injetadas por JS podem faltar alt descritivo/localizado. Siga CLAUDE.md.
+
+Tarefa: audite e corrija contraste para WCAG AA (ajustar tokens de cor onde necessário sem quebrar a identidade); garanta `alt` descritivo e localizado (i18n) em todas as imagens injetadas por app.js/ervatorio-pages.js.
+
+Critérios de aceite: Lighthouse a11y ≥ 95; nenhum texto abaixo de AA nos fluxos principais.
+Verificação: relatório de contraste antes/depois.
+Rollback: reverter tokens.</pre></div>
+</section>
+
+<!-- ============ ONDA 10 — MARKETING/RETENÇÃO ============ -->
+<section id="w10">
+  <div class="sec-head"><span class="wave-num">Onda 10</span><h2 class="sec-title">Retenção &amp; marketing de ciclo de vida</h2></div>
+  <div class="rationale"><b>Por que depois de vender e medir:</b> retenção só faz sentido com base de clientes e telemetria. Chá é consumível → recorrência é o maior alavancador de LTV. (Cobre backlog #81–#87.)</div>
+
+  <div class="card"><div class="ch"><h3>10.1 — Captura de e-mail + automação de carrinho abandonado</h3></div>
+    <div class="tags"><span class="chip high">P1</span><span class="chip med">Depende: 3.x, 6.x</span></div>
+    <div class="goal">Objetivo: construir audiência própria e recuperar vendas. (Backlog #81, #82.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: há referência a "newsletter" sem provedor/coleta; e-mail transacional usa Resend. Siga CLAUDE.md.
+
+Tarefa:
+1. Implemente captura de e-mail (newsletter) com opt-in (double opt-in) e consentimento LGPD, integrada a um provedor (Resend/Brevo/Mailchimp).
+2. Detecte carrinho abandonado (evento begin_checkout sem purchase) e dispare e-mail de recuperação por Edge Function agendada.
+
+Critérios de aceite: inscrição funciona com double opt-in; carrinho abandonado gera e-mail após janela X.
+Verificação: teste inscrição e um ciclo de abandono no staging.
+Rollback: flags.</pre></div>
+
+  <div class="card"><div class="ch"><h3>10.2 — CRM, WhatsApp, push, fidelidade e cashback</h3></div>
+    <div class="tags"><span class="chip med">P2/P3</span><span class="chip med">Depende: 10.1</span></div>
+    <div class="goal">Objetivo: canais de relacionamento e recorrência. (Backlog #83, #84, #85, #86, #87.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: sem CRM, WhatsApp, push, fidelidade ou cashback. Siga CLAUDE.md. Priorize por ROI e faça um item por PR.
+
+Tarefa (itens independentes — implemente na ordem de ROI):
+1. <b>WhatsApp Business</b>: botão/atendimento e notificações de status de pedido.
+2. <b>CRM + segmentação</b>: sincronize clientes/eventos para segmentar campanhas por comportamento.
+3. <b>Web push</b> (com consentimento) para reengajamento.
+4. <b>Programa de fidelidade/recompra</b> (assinatura de chá recorrente é forte candidato) e/ou <b>cashback</b>.
+
+Critérios de aceite (por item): funcionalidade operante, com consentimento onde aplicável, e evento medido.
+Verificação: por item, no staging.
+Rollback: flag por item.</pre></div>
+</section>
+
+<!-- ============ ONDA 11 — BUSCA/IA ============ -->
+<section id="w11">
+  <div class="sec-head"><span class="wave-num">Onda 11</span><h2 class="sec-title">Busca inteligente &amp; IA</h2></div>
+  <div class="rationale"><b>Por que perto do fim:</b> IA/busca semântica dão o maior diferencial competitivo, mas dependem de catálogo unificado (Onda 6) e telemetria (Onda 3) para treinar/medir. O corpus de fichas é um ativo raro — aproveite-o aqui. (Cobre backlog #88–#95.)</div>
+
+  <div class="card"><div class="ch"><h3>11.1 — Busca dedicada com autocomplete, tolerância a erro e sinônimos</h3></div>
+    <div class="tags"><span class="chip med">P2</span><span class="chip med">Depende: 6.2</span></div>
+    <div class="goal">Objetivo: busca de e-commerce de verdade. (Backlog #88, #89, #90.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: busca é `includes()` textual (app.js:2737), sem autocomplete/correção/sinônimos. Nomenclatura botânica tem nomes científicos e sinônimos regionais. Siga CLAUDE.md.
+
+Tarefa: indexe produtos e fichas em uma busca dedicada (Typesense/Meilisearch/Algolia) com autocomplete, tolerância a erro (typo), sinônimos botânicos (nome científico ↔ popular ↔ regional) e ranking de relevância. Substitua a busca atual.
+
+Critérios de aceite: "camomilla" acha "camomila"; autocomplete sugere ao digitar; sinônimos funcionam.
+Verificação: 5 buscas com erro/sinônimo retornando o esperado.
+Rollback: manter a busca antiga atrás de flag.</pre></div>
+
+  <div class="card"><div class="ch"><h3>11.2 — Busca semântica + recomendação por IA (pgvector)</h3></div>
+    <div class="tags"><span class="chip low">P3</span><span class="chip med">Depende: 11.1</span></div>
+    <div class="goal">Objetivo: "erva para dormir" → SKUs certos; recomendação personalizada. (Backlog #91, #92.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: as fichas têm efeitos/componentes/uso estruturados — corpus ideal para embeddings. Supabase suporta pgvector. Siga CLAUDE.md e adicione guard-rails/disclaimers (risco regulatório em ervas medicinais).
+
+Tarefa:
+1. Gere embeddings das fichas/produtos e armazene em pgvector.
+2. Busca semântica: consultas em linguagem natural ("algo para ansiedade") retornam SKUs relevantes com a base científica da ficha.
+3. Recomendação por afinidade sensorial/terapêutica + histórico de compra, exibida na PDP/home.
+4. Disclaimers claros de que não é orientação médica.
+
+Critérios de aceite: consultas semânticas retornam resultados coerentes; recomendações relevantes; disclaimers presentes.
+Verificação: 5 consultas semânticas avaliadas.
+Rollback: flags.</pre></div>
+
+  <div class="card"><div class="ch"><h3>11.3 — Chatbot botânico (RAG) e blend-com-IA vendável</h3></div>
+    <div class="tags"><span class="chip low">P3</span><span class="chip med">Depende: 11.2</span></div>
+    <div class="goal">Objetivo: suporte 24/7 e fechar o loop conteúdo→compra. (Backlog #93, #94, #95.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: existe um "Blend com IA" base; o conteúdo permite RAG. Siga CLAUDE.md; use os modelos Claude mais recentes; disclaimers de saúde obrigatórios.
+
+Tarefa:
+1. Chatbot com <b>RAG</b> sobre as fichas (Edge Function chamando o modelo, com o corpus como contexto) para dúvidas de preparo/uso, sempre com disclaimers e sem alegações médicas.
+2. Evolua o blend-com-IA para <b>sugerir e vender</b> o blend montado (adicionar ao carrinho os SKUs).
+3. Use IA para acelerar a produção/tradução das fichas restantes (6 idiomas), com revisão humana.
+
+Critérios de aceite: chatbot responde com base nas fichas e disclaimers; blend gera carrinho comprável.
+Verificação: 5 perguntas ao chatbot + 1 blend adicionado ao carrinho.
+Rollback: flags.</pre></div>
+</section>
+
+<!-- ============ ONDA 12 — TECH ============ -->
+<section id="w12">
+  <div class="sec-head"><span class="wave-num">Onda 12</span><h2 class="sec-title">Modernização técnica &amp; sustentabilidade</h2></div>
+  <div class="rationale"><b>Por que pode vir mais tarde:</b> são melhorias de manutenibilidade/escala, não de receita imediata. Idealmente parte (bundler) entra mais cedo como enabler se o time crescer; caso contrário, consolide aqui, sem pressa e com testes. (Cobre backlog #96–#99.)</div>
+
+  <div class="card"><div class="ch"><h3>12.1 — Bundler (Vite/esbuild) + code-splitting + hashing</h3></div>
+    <div class="tags"><span class="chip med">P2</span><span class="chip high">Disruptivo</span></div>
+    <div class="goal">Objetivo: build moderno com cache confiável e carga sob demanda. (Backlog #96.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: não há build; JS não-minificado, não-versionado (só CSS tem ?v=). index.html 1,5 MB e ervaria-app.html 1,7 MB indicam monólito/duplicação. Siga CLAUDE.md; migre incrementalmente sem quebrar o app.
+
+Tarefa: introduza Vite (ou esbuild) com: minificação, tree-shaking, <b>code-splitting</b> (lazy-load de fichas-data.js, quiz.js, jogo.js, checkout.js sob demanda), e <b>hashing</b> de nomes de arquivo para cache-busting automático. Ajuste sw.js/precache e config do Vercel. Elimine duplicação entre os HTML grandes.
+
+Critérios de aceite: build gera assets hasheados; app funciona idêntico; peso inicial cai; SW coerente.
+Verificação: PageSpeed + smoke test completo antes/depois.
+Rollback: manter os arquivos legados até validar; reverter o PR.</pre></div>
+
+  <div class="card"><div class="ch"><h3>12.2 — Testes automatizados + observabilidade + Design System</h3></div>
+    <div class="tags"><span class="chip med">P2/P3</span><span class="chip med">Depende: 12.1</span></div>
+    <div class="goal">Objetivo: confiabilidade e escala de time. (Backlog #98, #99, #73.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: sem testes automatizados; observabilidade básica; design forte mas não formalizado. Siga CLAUDE.md.
+
+Tarefa:
+1. Testes: unitários para funções críticas (recálculo de preço, carrinho) e E2E (Playwright) para checkout/pagamento sandbox e login; ligue no CI (Onda 0.2).
+2. Observabilidade: Sentry (front + Edge Functions), uptime (Better Uptime) e alertas.
+3. Formalize um Design System (tokens de cor/tipografia/espaçamento + componentes documentados) a partir do CSS atual.
+
+Critérios de aceite: E2E de checkout roda no CI; Sentry captura erros; DS documentado.
+Verificação: pipeline verde com E2E; evento de teste no Sentry.
+Rollback: por PR.</pre></div>
+</section>
+
+<!-- ============ ONDA 13 — ESTRATÉGIA ============ -->
+<section id="w13">
+  <div class="sec-head"><span class="wave-num">Onda 13</span><h2 class="sec-title">Decisão estratégica: marketplace vs. loja curada</h2></div>
+  <div class="rationale"><b>Por que por último:</b> é uma decisão de negócio de alto custo que muda a arquitetura (identidade de seller, split de pagamento, comissão). Só faz sentido decidir com dados reais de operação (Ondas 3–8) em mãos. (Cobre backlog #100.)</div>
+
+  <div class="card"><div class="ch"><h3>13.1 — Estudo técnico de multi-seller (se a tese for marketplace)</h3></div>
+    <div class="tags"><span class="chip low">P2 (decisão)</span><span class="chip high">Depende: dados de operação</span></div>
+    <div class="goal">Objetivo: embasar a decisão e desenhar a migração, se aplicável. (Backlog #100.)</div>
+    <pre class="prompt"><button class="copy" onclick="cp(this)">copiar</button>Contexto: hoje é loja única com diretório de fornecedores (o campo `seller` é rótulo, não lojista); não há dashboard de vendedor, comissão nem split. Tornar-se marketplace real exige identidade de seller, catálogo/estoque por lojista, split de liquidação e comissão. Siga CLAUDE.md.
+
+Tarefa (documento de decisão, não implementação):
+1. Escreva docs/estrategia/marketplace-vs-loja.md comparando as duas teses com base nos dados reais de operação (GMV, nº de fornecedores interessados, margem, complexidade).
+2. Se marketplace: desenhe a arquitetura de migração para <b>Mercado Pago Marketplace</b> (split), modelo de dados de seller, onboarding, comissão e o impacto em RLS/segurança.
+3. Se loja curada: recomende remover "marketplace" do posicionamento para não criar expectativa falsa e focar em curadoria premium.
+4. Apresente esforço, riscos e um roadmap de migração faseado para a opção escolhida.
+
+Critérios de aceite: documento com recomendação fundamentada e roadmap.
+Verificação: revisão do documento pelo dono do negócio.
+Rollback: n/a (documento).</pre></div>
+</section>
+
+<!-- ============ RESUMO DA ORDEM ============ -->
+<section id="resumo-ordem">
+  <div class="sec-head"><h2 class="sec-title">Por que esta ordem é a mais segura</h2></div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>#</th><th>Onda</th><th>Habilita a próxima porque…</th></tr></thead>
+    <tbody>
+      <tr><td>0</td><td>Fundação (staging, CI, backups)</td><td>Torna todo o resto reversível e testável.</td></tr>
+      <tr><td>1</td><td>Segurança de dados</td><td>Fecha vazamentos antes de aumentar exposição/tráfego.</td></tr>
+      <tr><td>2</td><td>LGPD</td><td>Consentimento é pré-requisito legal para medir (Onda 3).</td></tr>
+      <tr><td>3</td><td>Medição</td><td>Baseline para provar o efeito de tudo que vem depois.</td></tr>
+      <tr><td>4</td><td>Performance</td><td>Base saudável e de baixo risco antes da mudança grande de SEO.</td></tr>
+      <tr><td>5</td><td>SEO / routing</td><td>Maior mudança de front; destrava aquisição antes de monetizar.</td></tr>
+      <tr><td>6</td><td>Comercial</td><td>Só liga o dinheiro após segurança + webhook + testes + medição.</td></tr>
+      <tr><td>7</td><td>PDP / CRO</td><td>Otimiza conversão com a loja já vendendo e medindo.</td></tr>
+      <tr><td>8</td><td>Pós-venda / fiscal</td><td>Obrigatório assim que há pedidos reais.</td></tr>
+      <tr><td>9</td><td>Acessibilidade</td><td>Feita em bloco após PDP/checkout estáveis, evitando retrabalho.</td></tr>
+      <tr><td>10</td><td>Retenção</td><td>Precisa de base de clientes e telemetria.</td></tr>
+      <tr><td>11</td><td>Busca / IA</td><td>Depende de catálogo unificado e dados.</td></tr>
+      <tr><td>12</td><td>Tech</td><td>Manutenibilidade; sem pressa, com testes.</td></tr>
+      <tr><td>13</td><td>Estratégia</td><td>Decisão cara, tomada com dados reais de operação.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+</main>
+<script>
+function cp(btn){var pre=btn.parentElement;var t=pre.innerText.replace(/^copiar\s*/,'');navigator.clipboard&&navigator.clipboard.writeText(t);var o=btn.textContent;btn.textContent='copiado ✓';setTimeout(function(){btn.textContent=o;},1400);}
+</script>
