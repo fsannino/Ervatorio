@@ -5,11 +5,14 @@
 // em um segundo passo (ex.: função separada que chama Mercado Pago).
 import { handleCors, jsonResponse } from '../_shared/cors.ts';
 import { getUserFromRequest, adminClient } from '../_shared/auth.ts';
-import { rateLimitAllow, tooManyRequests } from '../_shared/ratelimit.ts';
+import { clientIp, rateLimitAllow, tooManyRequests } from '../_shared/ratelimit.ts';
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
 interface CartItem { product_id: string; qty: number; }
 interface OrderPayload {
   items: CartItem[];
+  guest_email?: string;
   shipping_address: {
     name: string;
     phone?: string;
@@ -31,17 +34,30 @@ Deno.serve(async (req) => {
 
   if (req.method !== 'POST') return jsonResponse({ error: 'Method not allowed' }, 405);
 
+  // Onda 6.3 (guest checkout): usuário logado OU convidado com
+  // e-mail válido. Kill-switch do modo convidado: GUEST_CHECKOUT=false.
   const caller = await getUserFromRequest(req);
-  if (!caller) return jsonResponse({ error: 'Unauthorized' }, 401);
-
-  // Anti-abuso: 10 criações de pedido por minuto por usuário.
-  if (!(await rateLimitAllow(`create-order:${caller.id}`, { windowSeconds: 60, max: 10 }))) {
-    return tooManyRequests();
-  }
 
   let body: OrderPayload;
   try { body = await req.json(); }
   catch { return jsonResponse({ error: 'Invalid JSON body' }, 400); }
+
+  let guestEmail: string | null = null;
+  if (!caller) {
+    if ((Deno.env.get('GUEST_CHECKOUT') || 'true').toLowerCase() === 'false') {
+      return jsonResponse({ error: 'Unauthorized' }, 401);
+    }
+    guestEmail = String(body.guest_email || '').trim().toLowerCase();
+    if (!EMAIL_RE.test(guestEmail)) {
+      return jsonResponse({ error: 'Informe um e-mail válido para comprar sem conta' }, 400);
+    }
+  }
+
+  // Anti-abuso: 10 criações de pedido/min por usuário; convidado por IP.
+  const rlKey = caller ? `create-order:${caller.id}` : `create-order:ip:${clientIp(req)}`;
+  if (!(await rateLimitAllow(rlKey, { windowSeconds: 60, max: 10 }))) {
+    return tooManyRequests();
+  }
 
   if (!Array.isArray(body.items) || body.items.length === 0) {
     return jsonResponse({ error: 'Carrinho vazio' }, 400);
@@ -107,7 +123,8 @@ Deno.serve(async (req) => {
   const { data: order, error: oErr } = await db
     .from('orders')
     .insert({
-      user_id: caller.id,
+      user_id: caller ? caller.id : null,
+      guest_email: guestEmail,
       status: 'pending',
       subtotal_cents: subtotalCents,
       shipping_cents: shippingCents,

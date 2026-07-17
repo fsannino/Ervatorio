@@ -2734,10 +2734,18 @@ function initMkt(){
   if(mktC){const total=cart.reduce((s,c)=>s+c.qty,0); mktC.textContent=total?`(${total})`:'';};
 }
 
+// Onda 6.1 (backlog #3): produtos is_test ficam fora da vitrine
+// pública e do fluxo de compra. Para enxergá-los em staging/QA,
+// ligue SHOW_TEST_PRODUCTS:true em js/config.js.
+function mktIsVisible(p){
+  return !p.is_test || window.ERVATORIO_CONFIG?.SHOW_TEST_PRODUCTS === true;
+}
+
 function renderMkt(){
   const q=(document.getElementById('mktSearch')?.value||'').toLowerCase();
   const grid=document.getElementById('mktGrid'); if(!grid)return;
   let list=MKT_PRODUCTS.filter(p=>{
+    if(!mktIsVisible(p))return false;
     if(mktCatActive!=='Todos'&&p.cat!==mktCatActive)return false;
     if(q&&!(p.name+p.desc+p.seller+p.type).toLowerCase().includes(q))return false;
     return true;
@@ -2797,7 +2805,7 @@ function cycleCardImg(mediaEl, pid){
 
 function openMktDetail(pid){
   const p=MKT_PRODUCTS.find(x=>x.id===pid);
-  if(!p)return;
+  if(!p||!mktIsVisible(p))return;
   window.ervTrack&&ervTrack('view_item',{currency:'BRL',value:p.price,items:[{item_id:String(p.dbId||p.id),item_name:p.name,price:p.price,quantity:1}]});
   const typeColor=p.cat==='Infusões'?'#4a8a5a':p.cat==='Equipamentos'?'#4a6a9a':p.cat==='Vivências'?'#9a6a3a':p.cat==='Ervas & Acessórios'?'#5a8a3a':'#6a4a9a';
   const imgs=p.images&&p.images.length?p.images:[];
@@ -2860,7 +2868,7 @@ function addMktCartFromDetail(pid, checkout=false){
 }
 
 function addMktCart(id){
-  const p=MKT_PRODUCTS.find(x=>x.id===id); if(!p)return;
+  const p=MKT_PRODUCTS.find(x=>x.id===id); if(!p||!mktIsVisible(p))return;
   const ex=cart.find(c=>c.id===id);
   if(ex)ex.qty++; else cart.push({...p,qty:1});
   window.ervTrack&&ervTrack('add_to_cart',{currency:'BRL',value:p.price,items:[{item_id:String(p.dbId||p.id),item_name:p.name,price:p.price,quantity:1}]});

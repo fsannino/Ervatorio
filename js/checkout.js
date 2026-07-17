@@ -45,6 +45,11 @@ const Checkout = {
               <label class="ck-label">Nome completo *</label>
               <input class="ck-input" id="ckName" required>
             </div>
+            <div>
+              <label class="ck-label">E-mail *</label>
+              <input class="ck-input" id="ckEmail" type="email" required placeholder="voce@email.com" autocomplete="email">
+              <div id="ckGuestHint" style="display:none;font-size:.68rem;color:var(--muted);margin-top:3px">Comprando como convidado — você receberá a confirmação do pedido neste e-mail. Criar conta é opcional.</div>
+            </div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
               <div>
                 <label class="ck-label">CEP *</label>
@@ -138,13 +143,27 @@ const Checkout = {
       session = res?.data?.session;
     } catch (_) { /* offline/falha → trata como sem sessão */ }
 
-    if (!session?.user) {
+    // Onda 6.3 (guest checkout): sem sessão, segue como convidado
+    // (e-mail obrigatório no formulário). Kill-switch: GUEST_CHECKOUT=false.
+    this.guestMode = !session?.user;
+    if (this.guestMode && cfg && cfg.GUEST_CHECKOUT === false) {
       if (typeof toast === 'function') toast('Faça login para finalizar a compra');
       window.ervaria?.showAuthModal?.();
       return;
     }
     // Cacheia na instância ervaria para evitar outras rotas falharem por dessincronia.
-    if (window.ervaria && !window.ervaria.user) window.ervaria.user = session.user;
+    if (window.ervaria && !window.ervaria.user && session?.user) window.ervaria.user = session.user;
+
+    // Validação cedo (backlog #21): avisa AGORA sobre itens que não
+    // podem ser comprados, não depois do endereço preenchido.
+    const unsellable = cart.filter((c) => !(typeof c.dbId === 'string' && c.dbId.length === 36));
+    if (unsellable.length > 0 && typeof toast === 'function') {
+      const names = unsellable.slice(0, 3).map((c) => c.name).join(', ');
+      toast(unsellable.length === cart.length
+        ? 'Os itens do carrinho não estão disponíveis para compra no momento.'
+        : `Indisponíveis no momento (ficarão fora do pedido): ${names}`);
+      if (unsellable.length === cart.length) return;
+    }
 
     window.ervTrack && ervTrack('begin_checkout', {
       currency: 'BRL',
@@ -165,7 +184,12 @@ const Checkout = {
 
   // Pré-preenche o que conseguir do perfil já carregado.
   async prefill() {
+    const hint = document.getElementById('ckGuestHint');
+    if (hint) hint.style.display = this.guestMode ? 'block' : 'none';
+    if (this.guestMode) return; // convidado preenche tudo à mão
     try {
+      const emailEl = document.getElementById('ckEmail');
+      if (emailEl && ervaria.user?.email) emailEl.value = ervaria.user.email;
       const { data: profile } = await ervaria.client
         .from('user_profiles')
         .select('display_name, phone, city, state')
@@ -250,7 +274,15 @@ const Checkout = {
     try {
       const cfg = window.ERVATORIO_CONFIG;
       const { data: { session } } = await ervaria.client.auth.getSession();
-      if (!session) throw new Error('Sessão expirada — faça login novamente');
+      // Onda 6.3: sem sessão = compra como convidado (e-mail obrigatório).
+      const guestEmail = (document.getElementById('ckEmail')?.value || '').trim().toLowerCase();
+      if (!session) {
+        if (cfg && cfg.GUEST_CHECKOUT === false) throw new Error('Sessão expirada — faça login novamente');
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(guestEmail)) {
+          throw new Error('Informe um e-mail válido para receber a confirmação do pedido');
+        }
+      }
+      const authHeaders = session ? { 'Authorization': `Bearer ${session.access_token}` } : {};
 
       // Passo 1: criar pedido (servidor recalcula preços)
       const cart = readCart();
@@ -269,7 +301,7 @@ const Checkout = {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${session.access_token}`,
+          ...authHeaders,
         },
         body: JSON.stringify({
           items: sellable.map((c) => ({
@@ -278,6 +310,7 @@ const Checkout = {
           })),
           shipping_address: addr,
           notes: document.getElementById('ckNotes').value.trim() || null,
+          guest_email: session ? undefined : guestEmail,
         }),
       });
       const orderData = await orderRes.json();
@@ -290,9 +323,12 @@ const Checkout = {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${session.access_token}`,
+          ...authHeaders,
         },
-        body: JSON.stringify({ order_id: orderData.order_id }),
+        body: JSON.stringify({
+          order_id: orderData.order_id,
+          guest_email: session ? undefined : guestEmail,
+        }),
       });
       const prefData = await prefRes.json();
       if (!prefRes.ok) throw new Error(prefData.error || 'Falha ao iniciar pagamento');
