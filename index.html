@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Ervatório — Ervas do Brasil e do Mundo</title>
+<link rel="preload" as="image" type="image/webp"
+      imagesrcset="/images/optimized/hero/hero-bule-320w.webp 320w, /images/optimized/hero/hero-bule-640w.webp 640w, /images/optimized/hero/hero-bule-1024w.webp 1024w"
+      imagesizes="100vw" fetchpriority="high">
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#9a7a2e">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -40,7 +43,10 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍵</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap">
+<!-- Fontes sem bloquear o primeiro paint (Onda 4.2): carrega como
+     "print" e promove a "all" no onload; display=swap evita FOIT. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap" media="print" onload="this.media='all';this.onload=null">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap"></noscript>
 <link rel="stylesheet" href="/css/main.css?v=14">
 <style>
   :root {
@@ -1906,6 +1912,7 @@
 
     <div class="footer-bottom">
       <p>© 2026 Ervatório · <a href="https://ervatorio.com.br">ervatorio.com.br</a></p>
+      <p><a href="/privacidade.html">Política de Privacidade</a> · <a href="/termos.html">Termos de Uso</a> · <a href="#" onclick="window.__consent&&window.__consent.open();return false">Preferências de cookies</a></p>
       <p>Curadoria botânica global — Com orgulho das ervas do Brasil</p>
     </div>
 
@@ -2034,7 +2041,7 @@
 
   <!-- HERO BANNER dentro do app -->
   <div class="app-hero" id="appHero">
-    <img src="images/hero/hero-bule.png" data-responsive="images/hero/hero-bule.png" alt="Ritual do chá Ervatório" loading="eager" decoding="async"
+    <img src="images/hero/hero-bule.png" data-responsive="images/hero/hero-bule.png" sizes="100vw" alt="Ritual do chá Ervatório" loading="eager" fetchpriority="high" decoding="async"
          onerror="this.parentElement.style.display='none'">
     <div class="app-hero-overlay">
       <div class="app-hero-title" data-i18n="landing.hero_title">Transformamos ervas em rituais.</div>
@@ -2441,11 +2448,13 @@
 
 <div class="toast" id="toast"></div>
 
-<script src="/js/i18n.js"></script>
-<script src="/js/seo.js"></script>
-<script src="/js/fichas-data.js"></script>
-<script src="/js/app.js"></script>
-<script src="/js/flavor-wheel.js"></script>
+<script defer src="/js/consent.js"></script>
+<script defer src="/js/responsive-img.js"></script>
+<script defer src="/js/i18n.js"></script>
+<script defer src="/js/seo.js"></script>
+<script defer src="/js/fichas-data.js"></script>
+<script defer src="/js/app.js"></script>
+<script defer src="/js/flavor-wheel.js"></script>
 
 <!-- CAMINHO DO CHAZEIRO PAGE -->
 <div class="page" id="page-caminho">
@@ -2617,7 +2626,7 @@
       <div class="pc-field" style="margin-top:.5rem">
         <label style="display:flex;align-items:flex-start;gap:8px;cursor:pointer;font-size:.78rem;color:var(--cream2);line-height:1.5">
           <input type="checkbox" id="pcLgpd" style="margin-top:3px;accent-color:var(--gold)">
-          <span>Concordo com o tratamento dos meus dados pessoais conforme a <strong style="color:var(--gold2)">LGPD</strong> (Lei Geral de Proteção de Dados). Seus dados são usados exclusivamente para personalização do app e nunca compartilhados com terceiros. *</span>
+          <span>Li e concordo com a <a href="/privacidade.html" target="_blank" rel="noopener" style="color:var(--gold2);text-decoration:underline">Política de Privacidade</a> e com os <a href="/termos.html" target="_blank" rel="noopener" style="color:var(--gold2);text-decoration:underline">Termos de Uso</a>, conforme a <strong style="color:var(--gold2)">LGPD</strong>. *</span>
         </label>
       </div>
 
@@ -2630,20 +2639,21 @@
 </div>
 
 <!-- Supabase JS SDK -->
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
-<script src="/js/config.js"></script>
-<script src="/js/geo-data.js"></script>
-<script src="/js/ervaria.js"></script>
-<script src="/js/checkout.js"></script>
-<script src="/js/pedidos.js"></script>
-<script src="/js/ervatorio-data.js"></script>
-<script src="/js/ervatorio-pages.js"></script>
-<script src="/js/chazerias.js"></script>
-<script src="/js/ferramentas.js"></script>
-<script src="/js/quiz.js"></script>
-<script src="/js/receitas.js"></script>
-<script src="/js/jogo.js"></script>
-<script src="/js/caminho.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script defer src="/js/config.js"></script>
+<script defer src="/js/analytics.js"></script>
+<script defer src="/js/geo-data.js"></script>
+<script defer src="/js/ervaria.js"></script>
+<script defer src="/js/checkout.js"></script>
+<script defer src="/js/pedidos.js"></script>
+<script defer src="/js/ervatorio-data.js"></script>
+<script defer src="/js/ervatorio-pages.js"></script>
+<script defer src="/js/chazerias.js"></script>
+<script defer src="/js/ferramentas.js"></script>
+<script defer src="/js/quiz.js"></script>
+<script defer src="/js/receitas.js"></script>
+<script defer src="/js/jogo.js"></script>
+<script defer src="/js/caminho.js"></script>
 <script>
 /* TEMP — REMOVER apos validacao da Fase 1 */
 (async function() {

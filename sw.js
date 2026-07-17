@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ervatorio-v35';
+const CACHE_NAME = 'ervatorio-v36';
 const OFFLINE_URL = '/';
 
 const PRECACHE_ASSETS = [
@@ -19,51 +19,12 @@ const PRECACHE_ASSETS = [
   '/icon-192.png',
   '/icon-512.png',
   '/icon-maskable-512.png',
-  '/images/hero/hero-bule.png',
-  '/images/hero/hero-maos.png',
-  '/images/hero/ervas-colecao.png',
-  // Imagens primárias das ervas (mapeadas em HERBS)
-  '/images/produtos/camomila.jpg',
-  '/images/produtos/valeriana.png',
-  '/images/produtos/maracuja.png',
-  '/images/produtos/melissa.png',
-  '/images/produtos/gengibre.jpg',
-  '/images/produtos/matcha.png',
-  '/images/produtos/hibisco.jpg',
-  '/images/produtos/alecrim.png',
-  '/images/produtos/hortela.jpg',
-  '/images/produtos/erva-doce.jpg',
-  '/images/produtos/canela.png',
-  '/images/produtos/curcuma.png',
-  '/images/produtos/lavanda.jpg',
-  '/images/produtos/boldo-espinheira-santa.png',
-  '/images/produtos/capim-limao.png',
-  '/images/produtos/hibisco-azul-e-amora.png',
-  '/images/produtos/calendula.png',
-  '/images/produtos/rooibos.png',
-  '/images/produtos/guarana.png',
-  '/images/produtos/tomilho.jpg',
-  '/images/produtos/alcachofra.png',
-  '/images/produtos/guaco.png',
-  '/images/produtos/erva-cidreira.png',
-  '/images/produtos/carqueja.png',
-  '/images/produtos/ginkgo-biloba.png',
-  '/images/produtos/ashwagandha.png',
-  // 14 ervas brasileiras novas (Fase 42)
-  '/images/produtos/aroeira-da-praia.jpg',
-  '/images/produtos/assa-peixe.jpg',
-  '/images/produtos/barbatimao.jpg',
-  '/images/produtos/boldo-baiano.jpg',
-  '/images/produtos/boldo-brasileiro.jpg',
-  '/images/produtos/chamba.jpg',
-  '/images/produtos/chapeu-de-couro.jpg',
-  '/images/produtos/copaiba.jpg',
-  '/images/produtos/erva-baleeira.jpg',
-  '/images/produtos/erva-de-bicho.jpg',
-  '/images/produtos/erva-mate.jpg',
-  '/images/produtos/guacatonga.jpg',
-  '/images/produtos/macela.jpg',
-  '/images/produtos/quebra-pedra.jpg'
+  // Heróis em WebP (Onda 4.1) — originais PNG saem do precache;
+  // demais imagens são cacheadas em runtime (network-first abaixo).
+  '/images/manifest.json',
+  '/images/optimized/hero/hero-bule-640w.webp',
+  '/images/optimized/hero/hero-maos-640w.webp',
+  '/images/optimized/hero/ervas-colecao-640w.webp'
 ];
 
 // Google Fonts to cache with stale-while-revalidate

@@ -119,6 +119,52 @@ const ervaria = {
     await this.client.auth.signOut();
     this.removeProfileMenu();
   },
+  // ── Direitos do titular (LGPD art. 18 — Onda 2.3) ──
+  async _dataRights(payload) {
+    const { data: { session } } = await this.client.auth.getSession();
+    if (!session) throw new Error('Sessão expirada — entre de novo');
+    const res = await fetch(`${window.ERVATORIO_CONFIG.FUNCTIONS_URL}/user-data-rights`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${session.access_token}`,
+      },
+      body: JSON.stringify(payload),
+    });
+    const body = await res.json();
+    if (!res.ok) throw new Error(body.error || `Erro ${res.status}`);
+    return body;
+  },
+  async exportMyData() {
+    try {
+      toast('Preparando seus dados...');
+      const { data } = await this._dataRights({ action: 'export' });
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `ervatorio-meus-dados-${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+      toast('Dados exportados ✓');
+    } catch (e) { toast('Erro ao exportar: ' + e.message); }
+  },
+  async deleteMyAccount() {
+    const typed = prompt(
+      'Isto excluirá sua conta e dados pessoais de forma DEFINITIVA.\n' +
+      'Pedidos já realizados são mantidos anonimizados por obrigação fiscal.\n\n' +
+      'Para confirmar, digite: EXCLUIR'
+    );
+    if (typed === null) return;
+    if (typed.trim() !== 'EXCLUIR') { toast('Confirmação incorreta — conta mantida.'); return; }
+    try {
+      toast('Excluindo sua conta...');
+      await this._dataRights({ action: 'delete', confirm: 'EXCLUIR' });
+      await this.client.auth.signOut();
+      localStorage.clear();
+      alert('Sua conta foi excluída. Sentiremos sua falta. 🌿');
+      location.reload();
+    } catch (e) { toast('Erro ao excluir: ' + e.message); }
+  },
   async resetPassword(email) {
     const { error } = await this.client.auth.resetPasswordForEmail(email, {
       redirectTo: window.location.origin + window.location.pathname
@@ -723,6 +769,8 @@ const ervaria = {
       </div>
       <button onclick="goPage('pedidos');ervaria.removeProfileMenu()">📦 Meus pedidos</button>
       <button onclick="ervaria.syncFromCloud();ervaria.removeProfileMenu()">↻ Sincronizar agora</button>
+      <button onclick="ervaria.exportMyData();ervaria.removeProfileMenu()">⬇ Baixar meus dados</button>
+      <button onclick="ervaria.deleteMyAccount()" style="color:#e08080">🗑 Excluir minha conta</button>
       ${this.isAdmin?'<button onclick="window.location=\'/admin.html\'" style="color:var(--gold2)">⚙ Painel Admin</button>':''}
       <button onclick="ervaria.logout()" class="logout">Sair da conta</button>
     `;

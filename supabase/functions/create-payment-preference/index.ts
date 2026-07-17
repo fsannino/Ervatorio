@@ -13,6 +13,7 @@
 import { handleCors, jsonResponse } from '../_shared/cors.ts';
 import { getUserFromRequest, adminClient } from '../_shared/auth.ts';
 import { createPreference, getMode } from '../_shared/mercadopago.ts';
+import { rateLimitAllow, tooManyRequests } from '../_shared/ratelimit.ts';
 
 Deno.serve(async (req) => {
   const cors = handleCors(req);
@@ -22,6 +23,11 @@ Deno.serve(async (req) => {
 
   const caller = await getUserFromRequest(req);
   if (!caller) return jsonResponse({ error: 'Unauthorized' }, 401);
+
+  // Anti-abuso: 10 preferências de pagamento por minuto por usuário.
+  if (!(await rateLimitAllow(`create-pref:${caller.id}`, { windowSeconds: 60, max: 10 }))) {
+    return tooManyRequests();
+  }
 
   let body: { order_id?: string };
   try { body = await req.json(); }
