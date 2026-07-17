@@ -2808,7 +2808,7 @@ function mktCard(p){
   const testBadge=p.is_test?'<span class="mkt-badge" style="background:rgba(100,100,200,.15);color:#a0a8e0;border:1px solid rgba(100,100,200,.3)">TESTE</span>':'';
   const imgs=p.images&&p.images.length?p.images:[];
   const mediaHtml=imgs[0]
-    ?`<img src="${imgs[0]}" data-img-idx="0" data-pid="${p.id}" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="font-size:2.8rem;display:none;align-items:center;justify-content:center;width:100%;height:100%">${p.icon}</span>`
+    ?`<img src="${imgs[0]}" data-img-idx="0" data-pid="${p.id}" alt="${esc(p.name)}" loading="lazy" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="font-size:2.8rem;display:none;align-items:center;justify-content:center;width:100%;height:100%" aria-hidden="true">${p.icon}</span>`
     :`<span style="font-size:2.8rem">${p.icon}</span>`;
   const dots=imgs.length>1?`<div class="mkt-img-dots">${imgs.map((_,i)=>`<span class="mkt-img-dot${i===0?' on':''}" data-i="${i}"></span>`).join('')}</div>`:'';
   return `<div class="mkt-card">
@@ -2852,7 +2852,7 @@ function openMktDetail(pid){
   const photoHtml=imgs[0]
     ?`<div style="position:relative;width:100%;border-radius:var(--r-lg);overflow:hidden;margin-bottom:.75rem">
         <div id="mktDetailPhoto" style="width:100%;aspect-ratio:4/3;background:#111">
-          <img id="mktDetailImg" src="${imgs[0]}" data-idx="0" style="width:100%;height:100%;object-fit:cover">
+          <img id="mktDetailImg" src="${imgs[0]}" data-idx="0" alt="${esc(p.name)}" style="width:100%;height:100%;object-fit:cover">
         </div>
         ${imgs.length>1?`<div class="mkt-img-dots">${imgs.map((_,i)=>`<span class="mkt-img-dot${i===0?' on':''}" onclick="switchDetailImg(${i})" style="cursor:pointer"></span>`).join('')}</div>`:''}
       </div>`
@@ -2866,7 +2866,7 @@ function openMktDetail(pid){
     <div style="background:var(--bg2);border-radius:var(--r-lg) var(--r-lg) 0 0;width:100%;max-width:540px;max-height:90vh;overflow-y:auto;padding:1.5rem 1.25rem 2rem">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
         <span style="font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:${typeColor}">${p.cat}</span>
-        <button onclick="document.getElementById('mktDetailOverlay').remove()" style="background:none;border:none;color:var(--muted);font-size:1.2rem;cursor:pointer;padding:0 4px">✕</button>
+        <button onclick="document.getElementById('mktDetailOverlay').remove()" aria-label="Fechar detalhes do produto" style="background:none;border:none;color:var(--muted);font-size:1.2rem;cursor:pointer;padding:0 4px">✕</button>
       </div>
       ${photoHtml}
       <h2 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;color:var(--cream);margin:0 0 .3rem">${p.name}${testBadge}${mktStockBadge(p)}</h2>
