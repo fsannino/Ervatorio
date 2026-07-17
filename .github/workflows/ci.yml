@@ -4,6 +4,9 @@ on:
   pull_request:
   push:
     branches: [main]
+  # Disparo manual pela aba Actions (Run workflow) — útil para a
+  # primeira execução após habilitar o Actions e para re-rodar sem push.
+  workflow_dispatch:
 
 permissions:
   contents: read
