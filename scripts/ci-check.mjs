@@ -20,6 +20,10 @@ const essentialFiles = [
   'js/checkout.js',
   'js/fichas-data.js',
   'css/main.css',
+  // SEO (Onda 5) — gerados por npm run prerender e commitados
+  'robots.txt',
+  'sitemap.xml',
+  'erva/index.html',
 ];
 
 for (const f of essentialFiles) {
