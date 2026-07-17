@@ -8,9 +8,12 @@
     "images:optimize": "node scripts/optimize-images.mjs",
     "images:dry-run": "node scripts/optimize-images.mjs --dry-run",
     "images:manifest": "node scripts/optimize-images.mjs --manifest-only",
-    "prerender": "node scripts/prerender.mjs"
+    "prerender": "node scripts/prerender.mjs",
+    "serve": "node scripts/serve.mjs",
+    "test:e2e": "playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "^1.61.1",
     "sharp": "^0.33.5"
   }
 }

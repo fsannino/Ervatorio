@@ -25,6 +25,10 @@ supabase/.branches/
 # evitar build step em produção.
 # images/optimized/
 
+# Playwright (Onda 12)
+test-results/
+playwright-report/
+
 # Pasta local de inputs/seeds (nao versionar)
 _ervatorio-inputs/
 supabase/fichas-ancora-import.json.bak-*

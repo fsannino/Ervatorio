@@ -2741,6 +2741,44 @@ function mktIsVisible(p){
   return !p.is_test || window.ERVATORIO_CONFIG?.SHOW_TEST_PRODUCTS === true;
 }
 
+// ── Onda 7 (backlog #45, #48, #52): escassez, ficha e relacionados ──
+function mktStockBadge(p){
+  if(p.stock==='out')return '<span class="mkt-badge" style="background:rgba(220,90,90,.15);color:#e08080;border:1px solid rgba(220,90,90,.35);margin-left:6px">Esgotado</span>';
+  if(p.stock==='low')return '<span class="mkt-badge" style="background:rgba(212,168,90,.15);color:#d4a85a;border:1px solid rgba(212,168,90,.35);margin-left:6px">⚡ Últimas unidades</span>';
+  return '';
+}
+
+// Link produto → ficha E-E-A-T correspondente (reverso da Onda 6.2).
+function mktFichaSlug(p){
+  if(typeof FICHAS_ANCORA==='undefined')return null;
+  const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();
+  const alvo=norm(p.name);
+  for(const [slug,f] of Object.entries(FICHAS_ANCORA)){
+    const fn=norm(f.nome_popular);
+    if(fn===alvo||alvo.indexOf(fn+' ')===0||fn.indexOf(alvo+' ')===0)return slug;
+  }
+  return null;
+}
+function mktFichaLink(p){
+  const slug=mktFichaSlug(p);
+  if(!slug)return '';
+  return `<a href="#ficha/${slug}" onclick="document.getElementById('mktDetailOverlay')?.remove()" style="display:inline-block;font-size:.75rem;color:var(--gold2);text-decoration:underline;margin-bottom:1rem">📖 Ver ficha completa — ciência, preparo e contraindicações</a>`;
+}
+
+// "Você também pode gostar": mesma categoria, curadoria simples.
+function mktRelatedHtml(p){
+  if(typeof MKT_PRODUCTS==='undefined')return '';
+  const rel=MKT_PRODUCTS.filter(x=>x.id!==p.id&&mktIsVisible(x)&&x.cat===p.cat).slice(0,4);
+  if(!rel.length)return '';
+  return `<div style="border-top:0.5px solid var(--faint);margin-top:1.25rem;padding-top:1rem">
+    <div style="font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem">Você também pode gostar</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">${rel.map(x=>
+      `<button onclick="openMktDetail(${x.id})" style="background:rgba(255,255,255,.04);border:0.5px solid var(--faint);border-radius:10px;padding:8px 12px;color:var(--cream2);font-size:.75rem;font-family:'Jost',sans-serif;cursor:pointer;text-align:left">
+        ${x.icon} ${esc(x.name)}<br><span style="color:var(--gold2)">R$ ${Number(x.price).toLocaleString('pt-BR',{minimumFractionDigits:2})}</span>
+      </button>`).join('')}</div>
+  </div>`;
+}
+
 function renderMkt(){
   const q=(document.getElementById('mktSearch')?.value||'').toLowerCase();
   const grid=document.getElementById('mktGrid'); if(!grid)return;
@@ -2770,7 +2808,7 @@ function mktCard(p){
   const testBadge=p.is_test?'<span class="mkt-badge" style="background:rgba(100,100,200,.15);color:#a0a8e0;border:1px solid rgba(100,100,200,.3)">TESTE</span>':'';
   const imgs=p.images&&p.images.length?p.images:[];
   const mediaHtml=imgs[0]
-    ?`<img src="${imgs[0]}" data-img-idx="0" data-pid="${p.id}" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="font-size:2.8rem;display:none;align-items:center;justify-content:center;width:100%;height:100%">${p.icon}</span>`
+    ?`<img src="${imgs[0]}" data-img-idx="0" data-pid="${p.id}" alt="${esc(p.name)}" loading="lazy" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="font-size:2.8rem;display:none;align-items:center;justify-content:center;width:100%;height:100%" aria-hidden="true">${p.icon}</span>`
     :`<span style="font-size:2.8rem">${p.icon}</span>`;
   const dots=imgs.length>1?`<div class="mkt-img-dots">${imgs.map((_,i)=>`<span class="mkt-img-dot${i===0?' on':''}" data-i="${i}"></span>`).join('')}</div>`:'';
   return `<div class="mkt-card">
@@ -2814,7 +2852,7 @@ function openMktDetail(pid){
   const photoHtml=imgs[0]
     ?`<div style="position:relative;width:100%;border-radius:var(--r-lg);overflow:hidden;margin-bottom:.75rem">
         <div id="mktDetailPhoto" style="width:100%;aspect-ratio:4/3;background:#111">
-          <img id="mktDetailImg" src="${imgs[0]}" data-idx="0" style="width:100%;height:100%;object-fit:cover">
+          <img id="mktDetailImg" src="${imgs[0]}" data-idx="0" alt="${esc(p.name)}" style="width:100%;height:100%;object-fit:cover">
         </div>
         ${imgs.length>1?`<div class="mkt-img-dots">${imgs.map((_,i)=>`<span class="mkt-img-dot${i===0?' on':''}" onclick="switchDetailImg(${i})" style="cursor:pointer"></span>`).join('')}</div>`:''}
       </div>`
@@ -2828,26 +2866,31 @@ function openMktDetail(pid){
     <div style="background:var(--bg2);border-radius:var(--r-lg) var(--r-lg) 0 0;width:100%;max-width:540px;max-height:90vh;overflow-y:auto;padding:1.5rem 1.25rem 2rem">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
         <span style="font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:${typeColor}">${p.cat}</span>
-        <button onclick="document.getElementById('mktDetailOverlay').remove()" style="background:none;border:none;color:var(--muted);font-size:1.2rem;cursor:pointer;padding:0 4px">✕</button>
+        <button onclick="document.getElementById('mktDetailOverlay').remove()" aria-label="Fechar detalhes do produto" style="background:none;border:none;color:var(--muted);font-size:1.2rem;cursor:pointer;padding:0 4px">✕</button>
       </div>
       ${photoHtml}
-      <h2 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;color:var(--cream);margin:0 0 .3rem">${p.name}${testBadge}</h2>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;color:var(--cream);margin:0 0 .3rem">${p.name}${testBadge}${mktStockBadge(p)}</h2>
       <div style="font-size:.72rem;color:var(--muted);margin-bottom:.75rem">${p.seller} · ${p.unit}</div>
       <p style="font-size:.82rem;color:var(--cream2);line-height:1.65;margin-bottom:1.25rem">${p.desc}</p>
+      ${mktFichaLink(p)}
       <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:1rem;border-top:0.5px solid var(--faint)">
         <div>
           <div style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--gold2)">R$ ${p.price.toLocaleString('pt-BR',{minimumFractionDigits:2})}</div>
-          <span style="font-size:.65rem;color:var(--muted)">${p.unit}</span>
+          <span style="font-size:.65rem;color:var(--muted)">${p.unit} · Pix ou cartão via Mercado Pago</span>
         </div>
         <div style="display:flex;gap:8px">
-          <button class="mkt-add-btn ${inCart?'added':''}" id="mktDetailCartBtn" onclick="addMktCartFromDetail(${p.id})" style="padding:10px 20px;font-size:.8rem">${inCart?'✓ Adicionado':'+ Carrinho'}</button>
-          <button onclick="addMktCartFromDetail(${p.id},true)" style="padding:10px 20px;background:rgba(200,168,75,.2);border:0.5px solid rgba(200,168,75,.4);border-radius:var(--r-sm);color:var(--gold2);font-size:.8rem;font-family:'Jost',sans-serif;cursor:pointer">Comprar agora</button>
+          <button class="mkt-add-btn ${inCart?'added':''}" id="mktDetailCartBtn" onclick="addMktCartFromDetail(${p.id})" ${p.stock==='out'?'disabled':''} style="padding:10px 20px;font-size:.8rem${p.stock==='out'?';opacity:.45;cursor:not-allowed':''}">${p.stock==='out'?'Esgotado':inCart?'✓ Adicionado':'+ Carrinho'}</button>
+          <button onclick="addMktCartFromDetail(${p.id},true)" ${p.stock==='out'?'disabled':''} style="padding:10px 20px;background:rgba(200,168,75,.2);border:0.5px solid rgba(200,168,75,.4);border-radius:var(--r-sm);color:var(--gold2);font-size:.8rem;font-family:'Jost',sans-serif;cursor:pointer${p.stock==='out'?';opacity:.45;cursor:not-allowed':''}">Comprar agora</button>
         </div>
       </div>
+      <div id="mktReviews"></div>
+      ${mktRelatedHtml(p)}
     </div>`;
   overlay.addEventListener('click',e=>{if(e.target===overlay)overlay.remove();});
   document.body.appendChild(overlay);
   window._mktDetailPid=pid;
+  // Onda 7.2: avaliações (assíncrono; some sozinho se não há dbId)
+  if(window.Reviews)Reviews.renderInto('mktReviews',p);
 }
 
 function switchDetailImg(idx){
