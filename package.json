@@ -5,6 +5,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "prerender": "node scripts/prerender.mjs",
     "images:optimize": "node scripts/optimize-images.mjs",
     "images:dry-run": "node scripts/optimize-images.mjs --dry-run",
     "images:manifest": "node scripts/optimize-images.mjs --manifest-only",

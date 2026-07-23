@@ -24,6 +24,7 @@ const essentialFiles = [
   'robots.txt',
   'sitemap.xml',
   'erva/index.html',
+  'lexico/index.html',
 ];
 
 for (const f of essentialFiles) {
