@@ -961,8 +961,8 @@ var FICHAS_ANCORA = {
     regulacao:{eixo_botanico_tpc:"Funcional global",status_anvisa:"Uso alimentar. Piperina: pesquisada como potenciador farmacológico.",status_ema:"",status_fda:"GRAS",certificacao_organica:"",sazonalidade:"Colheita principal: abril–agosto (Espírito Santo — maior produtor nacional)"},
     marketplace:{disponivel_a_venda:"",fornecedores:"",faixa_de_preco:"",formatos:""}
   },
-  "no-moscada": {
-    slug:"no-moscada",nome_popular:"Nó-Moscada",nome_cientifico:"Myristica fragrans Houtt.",tagline:"O alucinógeno da cozinha — a especiaria mais dual do catálogo, que em doses culinárias é nutritiva e aromática e em doses \"medicinais\" populares é tóxica e psicoativa, com farmacologia que explica ambos.",schema_version:"1.1",
+  "noz-moscada": {
+    slug:"noz-moscada",nome_popular:"Noz-moscada",nome_cientifico:"Myristica fragrans Houtt.",tagline:"O alucinógeno da cozinha — a especiaria mais dual do catálogo, que em doses culinárias é nutritiva e aromática e em doses \"medicinais\" populares é tóxica e psicoativa, com farmacologia que explica ambos.",schema_version:"1.1",
     identificacao:{nome_cientifico:"Myristica fragrans Houtt.",familia_botanica:"Myristicaceae",tipo_botanico:"Especiaria aromática / digestivo / neurotóxica em doses altas",parte_usada:"Semente seca ralada (nó-moscada); arilo vermelho da semente (macis — especiaria mais cara e suave).",sinonimos:["Noz-moscada · nó-moscada", "Nutmeg (inglês) · Noix de muscade (francês) · Muskatnuss (alemão)", "Jaiphal (hindi) · Jouza tib (árabe)"]},
     caracterizacao:{sabor_dominante:"Quente-apimentado-amadeirado, leve doce-baunilha, complexo e profundo. Reconhecível imediatamente em qualquer preparação.",aroma:"Quente-especiado-amadeirado com nota de baunilha-cânfora. Profundo e sofisticado.",cor_da_infusao:"Âmbar-marrom quente. #C08838",intensidade:"3–4/5 — especiaria de presença marcante.",notas:"",bioma_de_origem:"",distribuicao_geografica:[]},
     preparo:{temperatura_ideal:"",tempo_de_infusao:"",quantidade:"",metodo:"",reinfusoes:"",melhor_momento:"",combina_com:""},
