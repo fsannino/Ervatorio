@@ -6,6 +6,7 @@
 import { handleCors, jsonResponse } from '../_shared/cors.ts';
 import { getUserFromRequest, adminClient } from '../_shared/auth.ts';
 import { clientIp, rateLimitAllow, tooManyRequests } from '../_shared/ratelimit.ts';
+import { resolveChosenOption, type ShipmentItem } from '../_shared/shipping.ts';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -26,6 +27,33 @@ interface OrderPayload {
     country?: string;
   };
   notes?: string;
+  // Onda 6.4: chave da opção de frete que o cliente escolheu na
+  // cotação. O servidor revalida e recalcula o preço — nunca confia
+  // no valor do cliente. Ausente quando SHIPPING_ENABLED != true.
+  shipping_service?: string;
+}
+
+// Resolve o frete no servidor. Fonte da verdade do preço.
+// - SHIPPING_ENABLED != true → frete 0 (comportamento legado).
+// - Ligado sem opção escolhida ou com chave inválida → erro 400.
+async function resolveShipping(
+  zip: string,
+  items: ShipmentItem[],
+  chosenKey: string | undefined,
+): Promise<{ cents: number; carrier: string | null; error?: string }> {
+  if ((Deno.env.get('SHIPPING_ENABLED') || 'false').toLowerCase() !== 'true') {
+    return { cents: 0, carrier: null };
+  }
+  if (!chosenKey) return { cents: 0, carrier: null, error: 'Selecione uma opção de frete.' };
+  const option = await resolveChosenOption(
+    zip, items, chosenKey,
+    (k) => Deno.env.get(k),
+    (e) => console.warn('[create-order] shipping provider fallback:', String(e)),
+  );
+  if (!option) {
+    return { cents: 0, carrier: null, error: 'Opção de frete inválida — recalcule o frete e tente novamente.' };
+  }
+  return { cents: option.priceCents, carrier: `${option.carrier} · ${option.service}` };
 }
 
 Deno.serve(async (req) => {
@@ -86,12 +114,13 @@ Deno.serve(async (req) => {
   const productIds = [...new Set(body.items.map((i) => i.product_id))];
   const { data: products, error: pErr } = await db
     .from('admin_products')
-    .select('id, name, price, unit, stock, active')
+    .select('id, name, price, unit, stock, active, weight_grams')
     .in('id', productIds);
   if (pErr) return jsonResponse({ error: pErr.message }, 500);
 
   const byId = new Map((products || []).map((p) => [p.id, p]));
   const lines: Array<Record<string, unknown>> = [];
+  const shipItems: ShipmentItem[] = [];
   let subtotalCents = 0;
 
   for (const item of body.items) {
@@ -114,10 +143,14 @@ Deno.serve(async (req) => {
       unit_price_cents: unitCents,
       line_total_cents: lineTotal,
     });
+    shipItems.push({ weightGrams: Number(p.weight_grams) || 100, qty, priceCents: unitCents });
   }
 
-  // Frete ainda será calculado em uma função separada (Correios / Melhor Envio).
-  const shippingCents = 0;
+  // Frete: o servidor revalida a opção escolhida e recalcula o preço.
+  // Com SHIPPING_ENABLED != true mantemos o comportamento anterior (0).
+  const { cents: shippingCents, carrier: shippingCarrier, error: shipErr } =
+    await resolveShipping(addr.zip, shipItems, body.shipping_service);
+  if (shipErr) return jsonResponse({ error: shipErr }, 400);
   const totalCents = subtotalCents + shippingCents;
 
   const { data: order, error: oErr } = await db
@@ -131,6 +164,7 @@ Deno.serve(async (req) => {
       total_cents: totalCents,
       currency: 'BRL',
       shipping_address: addr,
+      shipping_carrier: shippingCarrier,
       notes: body.notes || null,
     })
     .select('id')
