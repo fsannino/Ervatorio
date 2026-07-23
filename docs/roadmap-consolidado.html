@@ -1,0 +1,230 @@
+<title>Roadmap Consolidado & Status — Ervatório</title>
+<style>
+:root{
+  --ground:#f3ecdd;--panel:#fbf6ea;--panel-2:#f6efe0;--ink:#1c1b16;--ink-soft:#4a463b;--line:#e0d5bd;
+  --line-strong:#cdbf9f;--forest:#183527;--forest-2:#2d5440;--moss:#3d6b4f;--gold:#9a7a2e;--gold-bright:#b8965a;
+  --gold-soft:#e7d9b6;--terra:#5c3d2e;--done:#256d46;--done-bg:#dcebe0;--prog:#b5661a;--prog-bg:#f8e8d6;
+  --open:#8a6d1f;--open-bg:#f4eccf;--crit:#a3241c;--crit-bg:#f7e2df;
+  --shadow:0 1px 2px rgba(24,53,39,.06),0 6px 24px rgba(24,53,39,.07);--maxw:1080px;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --ground:#0f1512;--panel:#161d18;--panel-2:#131a16;--ink:#ece4d2;--ink-soft:#a9a693;--line:#26302a;
+  --line-strong:#354036;--forest:#0c1712;--forest-2:#1c3327;--moss:#c8b89a;--gold:#d4af7a;--gold-bright:#e8c9a0;
+  --gold-soft:#3a3320;--terra:#c8a070;--done:#84cfa2;--done-bg:#122018;--prog:#e6a765;--prog-bg:#2a2013;
+  --open:#d8c06a;--open-bg:#25220f;--crit:#f08a80;--crit-bg:#2c1917;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 30px rgba(0,0,0,.35);
+}}
+:root[data-theme="dark"]{
+  --ground:#0f1512;--panel:#161d18;--panel-2:#131a16;--ink:#ece4d2;--ink-soft:#a9a693;--line:#26302a;
+  --line-strong:#354036;--forest:#0c1712;--forest-2:#1c3327;--moss:#c8b89a;--gold:#d4af7a;--gold-bright:#e8c9a0;
+  --gold-soft:#3a3320;--terra:#c8a070;--done:#84cfa2;--done-bg:#122018;--prog:#e6a765;--prog-bg:#2a2013;
+  --open:#d8c06a;--open-bg:#25220f;--crit:#f08a80;--crit-bg:#2c1917;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 30px rgba(0,0,0,.35);
+}
+:root[data-theme="light"]{
+  --ground:#f3ecdd;--panel:#fbf6ea;--panel-2:#f6efe0;--ink:#1c1b16;--ink-soft:#4a463b;--line:#e0d5bd;
+  --line-strong:#cdbf9f;--forest:#183527;--forest-2:#2d5440;--moss:#3d6b4f;--gold:#9a7a2e;--gold-bright:#b8965a;
+  --gold-soft:#e7d9b6;--terra:#5c3d2e;--done:#256d46;--done-bg:#dcebe0;--prog:#b5661a;--prog-bg:#f8e8d6;
+  --open:#8a6d1f;--open-bg:#f4eccf;--crit:#a3241c;--crit-bg:#f7e2df;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;text-wrap:balance;margin:0}
+p{margin:0 0 .7em}
+code{font-family:var(--mono);font-size:.85em;background:var(--panel-2);padding:.06em .34em;border-radius:4px;border:1px solid var(--line)}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.7rem;font-weight:700;color:var(--gold)}
+.hero{background:linear-gradient(160deg,var(--forest),var(--forest-2));color:#ece4d2;padding:56px 0 44px;border-bottom:3px solid var(--gold-bright)}
+.hero .eyebrow{color:var(--gold-bright)}
+.hero h1{font-size:clamp(2rem,4.5vw,3rem);color:#f6efe0;margin:.3em 0 .3em}
+.hero .lede{font-size:clamp(1rem,2vw,1.15rem);max-width:66ch;color:#d9cfba}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:26px}
+.kpi{background:rgba(255,255,255,.05);border:1px solid rgba(232,201,160,.25);border-radius:12px;padding:14px 16px}
+.kpi .n{font-family:var(--serif);font-size:2rem;font-weight:700;color:#f6efe0;line-height:1}
+.kpi .l{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#c3b89e;margin-top:6px}
+nav.toc{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:9px 0}
+nav.toc .row{display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin}
+nav.toc a{white-space:nowrap;font-size:.78rem;color:var(--ink-soft);padding:5px 11px;border-radius:7px;font-weight:600;text-decoration:none}
+nav.toc a:hover{background:var(--panel-2);color:var(--ink)}
+section{padding:40px 0 8px;border-top:1px solid var(--line)}
+h2.sec-title{font-size:clamp(1.4rem,3vw,1.9rem);margin-bottom:6px}
+.sec-sub{color:var(--ink-soft);max-width:76ch;margin:6px 0 16px}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 9px;border-radius:999px;border:1px solid;white-space:nowrap}
+.chip.done{color:var(--done);background:var(--done-bg);border-color:color-mix(in srgb,var(--done) 40%,transparent)}
+.chip.prog{color:var(--prog);background:var(--prog-bg);border-color:color-mix(in srgb,var(--prog) 40%,transparent)}
+.chip.open{color:var(--open);background:var(--open-bg);border-color:color-mix(in srgb,var(--open) 45%,transparent)}
+.chip.crit{color:var(--crit);background:var(--crit-bg);border-color:color-mix(in srgb,var(--crit) 40%,transparent)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:14px 0;box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:.86rem;background:var(--panel)}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:var(--forest);color:#ece4d2;font-weight:600;font-size:.73rem;text-transform:uppercase;letter-spacing:.05em}
+tbody tr:nth-child(even){background:var(--panel-2)}
+.callout{border-radius:12px;padding:16px 19px;margin:16px 0;border:1px solid;display:flex;gap:13px}
+.callout .ic{font-size:1.3rem;flex:none}
+.callout.win{background:var(--done-bg);border-color:color-mix(in srgb,var(--done) 35%,transparent)}
+.callout.path{background:var(--prog-bg);border-color:color-mix(in srgb,var(--prog) 38%,transparent)}
+.callout.danger{background:var(--crit-bg);border-color:color-mix(in srgb,var(--crit) 35%,transparent)}
+.callout h3{font-size:1.1rem;margin-bottom:5px}
+.steps{counter-reset:s;list-style:none;padding:0;margin:8px 0 0}
+.steps li{counter-increment:s;position:relative;padding:8px 0 8px 40px;border-top:1px dashed var(--line);font-size:.92rem}
+.steps li:first-child{border-top:none}
+.steps li::before{content:counter(s);position:absolute;left:0;top:7px;width:26px;height:26px;border-radius:50%;background:var(--forest);color:#ece4d2;font-family:var(--serif);font-weight:700;display:grid;place-items:center;font-size:.85rem}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.bar{height:12px;border-radius:99px;background:var(--panel-2);border:1px solid var(--line);overflow:hidden;display:flex;margin:4px 0 2px}
+.bar .seg{height:100%}
+.theme-btn{position:fixed;right:16px;bottom:16px;z-index:50;background:var(--forest);color:#ece4d2;border:1px solid var(--gold-bright);border-radius:99px;padding:9px 14px;cursor:pointer;font-size:.8rem;box-shadow:var(--shadow)}
+footer{background:var(--forest);color:#c3b89e;padding:26px 0;margin-top:34px;font-size:.82rem;border-top:3px solid var(--gold-bright)}
+footer b{color:#ece4d2}
+small.ev{font-family:var(--mono);font-size:.72rem;color:var(--ink-soft)}
+</style>
+
+<button class="theme-btn" onclick="(function(){var r=document.documentElement;var d=(r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'))==='dark';r.setAttribute('data-theme',d?'light':'dark');})()">☀ / ☾ Tema</button>
+
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">Roadmap Consolidado · Status vs. dois planos</div>
+  <h1>Ervatório — Onde estamos, o que falta</h1>
+  <p class="lede">Reconciliação entre <b>o material anexo</b> (roadmap de conteúdo em 3 ondas) e <b>a auditoria + playbook</b> (14 ondas operacionais), medida contra o estado real do código em <code>main</code>. Boa notícia: grande parte já foi executada.</p>
+  <div class="kpis">
+    <div class="kpi"><div class="n">~70%</div><div class="l">Do playbook operacional já executado</div></div>
+    <div class="kpi"><div class="n">2 / 3</div><div class="l">Ondas de conteúdo do anexo já entregues</div></div>
+    <div class="kpi"><div class="n">1</div><div class="l">Caminho crítico p/ 1ª receita: webhook → frete → ligar pagamentos</div></div>
+    <div class="kpi"><div class="n">0 abertas</div><div class="l">Falhas críticas de segurança (C-1/C-2 corrigidas)</div></div>
+  </div>
+</div></header>
+
+<nav class="toc"><div class="wrap"><div class="row">
+  <a href="#resumo">Resumo</a><a href="#progresso">Progresso</a><a href="#playbook">Playbook (14 ondas)</a>
+  <a href="#anexo">Anexo (3 ondas)</a><a href="#conflitos">Conflitos resolvidos</a>
+  <a href="#restante">O que falta</a><a href="#critico">Caminho crítico</a>
+</div></div></nav>
+
+<main class="wrap">
+
+<section id="resumo" style="border-top:none">
+  <h2 class="sec-title">Resumo</h2>
+  <p class="sec-sub">Os dois planos são complementares e ambos avançaram muito. Desde o merge do playbook, uma sequência de PRs (#116–#121) executou a maior parte das ondas operacionais; e as ferramentas/gamificação do anexo já estavam no ar. O que resta é focado: <b>ativar receita com segurança</b>, completar o <b>pós-venda fiscal</b>, e as camadas de <b>retenção, busca/IA e conteúdo editorial</b>.</p>
+  <div class="callout win"><div class="ic">✅</div><div>
+    <h3>Já entregue (verificado no código)</h3>
+    <p style="margin:5px 0 0">Fundação (runbooks, CI, <code>CLAUDE.md</code>) · correções críticas de segurança (C-1, C-2, RLS hardening, rate-limit, remoção do log de debug) · headers de segurança (<code>vercel.json</code>) · LGPD (consentimento, direitos do titular, retenção) · analytics + eventos de e-commerce · performance (WebP, <code>defer</code>) · <b>SEO: 97 páginas estáticas de erva + Ervopédia + schema.org + sitemap/robots</b> · comercial (sem produtos "TESTE", CTA de compra na ficha, guest checkout) · avaliações de produto + relacionados · acessibilidade (zoom, foco/teclado, AA) · E2E Playwright no CI + Design System v0 · documento estratégico. E, do anexo: Ferramentas (calculadora/timer/cafeína/famílias) e Gamificação (quiz/jogo/Caminho do Chazeiro/taxonomia).</p>
+  </div></div>
+  <div class="callout danger"><div class="ic">💳</div><div>
+    <h3>O bloqueador que ainda importa</h3>
+    <p style="margin:5px 0 0"><code>PAYMENTS_ENABLED</code> continua <b>false</b> — corretamente, porque faltam dois pré-requisitos: a <b>validação da assinatura do webhook</b> (instrumentada, aguardando teste em sandbox) e o <b>frete real por CEP</b> (ainda placeholder "grátis durante o piloto"). Esse é o caminho crítico para a primeira venda.</p>
+  </div></div>
+</section>
+
+<section id="progresso">
+  <h2 class="sec-title">Progresso por camada</h2>
+  <div class="legend"><span class="chip done">Feito</span><span class="chip prog">Em andamento</span><span class="chip open">Aberto</span></div>
+  <div class="bar" title="Feito 70% · Em andamento 6% · Aberto 24%">
+    <div class="seg" style="width:70%;background:var(--done)"></div>
+    <div class="seg" style="width:6%;background:var(--prog)"></div>
+    <div class="seg" style="width:24%;background:var(--open)"></div>
+  </div>
+  <p class="small" style="color:var(--ink-soft)">Estimativa ponderada sobre o playbook de 14 ondas + a trilha de conteúdo do anexo.</p>
+</section>
+
+<!-- PLAYBOOK 14 ONDAS -->
+<section id="playbook">
+  <h2 class="sec-title">Playbook operacional — 14 ondas</h2>
+  <p class="sec-sub">Status verificado contra <code>main</code> (commits/arquivos como evidência).</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Onda</th><th>Status</th><th>Evidência / observação</th></tr></thead>
+    <tbody>
+      <tr><td>0 · Fundação</td><td><span class="chip done">Feito</span></td><td><small class="ev">docs/runbooks/*, INFRA.md, .github CI, CLAUDE.md</small></td></tr>
+      <tr><td>1 · Segurança de dados</td><td><span class="chip done">Feito</span></td><td>C-1 e C-2 corrigidos <small class="ev">(migrations fix_user_profiles_privilege, secure_orders_view, rls_audit_hardening, drop_mp_webhook_log, rate_limit)</small> + headers <small class="ev">(vercel.json)</small></td></tr>
+      <tr><td>1.4 · Webhook HMAC</td><td><span class="chip prog">Em andamento</span></td><td>Instrumentado + modo estrito por env; <b>aguardando validação em sandbox</b> <small class="ev">(WEBHOOK_SIGNATURE_DEBT.md)</small></td></tr>
+      <tr><td>1.6 · MFA admin</td><td><span class="chip open">Aberto</span></td><td>Não confirmado no código — pendente</td></tr>
+      <tr><td>2 · LGPD</td><td><span class="chip done">Feito</span></td><td>Consentimento <small class="ev">(consent.js)</small>, direitos do titular <small class="ev">(user_data_rights)</small>, retenção <small class="ev">(compliance/retencao.md)</small>. Falta: páginas jurídicas revisadas por advogado.</td></tr>
+      <tr><td>3 · Medição</td><td><span class="chip done">Feito</span></td><td>Analytics condicionado a consentimento + eventos de e-commerce + KPIs <small class="ev">(analytics.js, analytics/kpis.md)</small></td></tr>
+      <tr><td>4 · Performance</td><td><span class="chip done">Feito</span></td><td>Pipeline WebP ligado, <code>defer</code>, fontes não-bloqueantes</td></tr>
+      <tr><td>5 · SEO</td><td><span class="chip done">Feito</span></td><td><b>97 páginas estáticas + Ervopédia + schema.org + sitemap + robots</b></td></tr>
+      <tr><td>6 · Comercial</td><td><span class="chip prog">Parcial</span></td><td>Feito: sem produtos "TESTE", CTA na ficha, guest checkout. <b>Aberto: frete real por CEP; ligar pagamentos.</b></td></tr>
+      <tr><td>7 · PDP / CRO</td><td><span class="chip done">Feito</span></td><td>Avaliações de produto, relacionados, detalhe enriquecido</td></tr>
+      <tr><td>8 · Pós-venda / fiscal</td><td><span class="chip open">Aberto</span></td><td>NF-e, troca/devolução, rastreio ao vivo, recompra — não iniciados</td></tr>
+      <tr><td>9 · Acessibilidade</td><td><span class="chip done">Feito</span></td><td>Zoom liberado, modais teclado/foco, aria/alt, contraste AA</td></tr>
+      <tr><td>10 · Retenção / marketing</td><td><span class="chip open">Aberto</span></td><td>Captura de e-mail real, carrinho abandonado, CRM, WhatsApp, fidelidade</td></tr>
+      <tr><td>11 · Busca / IA</td><td><span class="chip open">Aberto</span></td><td>Busca dedicada, semântica (pgvector), chatbot RAG — não iniciados</td></tr>
+      <tr><td>12 · Tech</td><td><span class="chip prog">Parcial</span></td><td>Feito: E2E Playwright + CI + Design System v0. Aberto: bundler/code-splitting.</td></tr>
+      <tr><td>13 · Estratégia</td><td><span class="chip done">Documentado</span></td><td><b>Recomendação: Opção A — loja curada premium</b> <small class="ev">(estrategia/marketplace-vs-loja.md)</small>; reavaliar com 3 meses de dados</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ANEXO 3 ONDAS -->
+<section id="anexo">
+  <h2 class="sec-title">Roadmap anexo — 3 ondas de conteúdo</h2>
+  <p class="sec-sub">Snapshot antigo (falava em 30 fichas / SW <code>v12</code>; hoje são 97 fichas / <code>v35</code>). Reconciliado com o estado atual:</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Onda do anexo</th><th>Status</th><th>Observação</th></tr></thead>
+    <tbody>
+      <tr><td>1 · Ferramentas (calc. infusão, timer, cafeína, famílias)</td><td><span class="chip done">Feito</span></td><td>Já no ar <small class="ev">(js/ferramentas.js)</small></td></tr>
+      <tr><td>3 · Gamificação (quiz, jogo, Caminho do Chazeiro, taxonomia)</td><td><span class="chip done">Feito</span></td><td>Já no ar <small class="ev">(quiz.js, jogo.js, caminho.js + filtros facetados)</small></td></tr>
+      <tr><td>2 · Editorial (Léxico ~80 termos, "Como se faz" 7 artigos, Voz editorial, PDFs)</td><td><span class="chip open">Aberto</span></td><td><b>Único workstream de conteúdo genuinamente pendente do anexo</b> — nenhum módulo de léxico/processos/biblioteca no repo</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small" style="color:var(--ink-soft)">Recomendação: absorver a Onda 2 editorial como uma <b>trilha de conteúdo</b> paralela, executada <b>depois</b> do SEO (Onda 5, já pronta) para que as páginas novas nasçam indexáveis.</p>
+</section>
+
+<!-- CONFLITOS -->
+<section id="conflitos">
+  <h2 class="sec-title">As 4 divergências — como foram resolvidas</h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Divergência do anexo</th><th>Direção adotada no código</th></tr></thead>
+    <tbody>
+      <tr><td>"Hash routing = SEO autônomo"</td><td>❌ Reprovada. Adotadas <b>URLs reais + 97 páginas estáticas + schema</b> (Onda 5). O anexo estava tecnicamente incorreto (Google ignora fragmentos).</td></tr>
+      <tr><td>"❌ Sem referências ANVISA"</td><td>❌ Não adotada. O produto <b>manteve o regulatório (ANVISA/EMA/FDA)</b> como E-E-A-T premium.</td></tr>
+      <tr><td>"❌ Sem Brazil-only / sem frete"</td><td>Resolvida pelo documento estratégico: <b>loja curada premium com base transacional brasileira</b> (Pix/boleto, frete, NF-e). "Marca global de conteúdo" não foi a tese escolhida.</td></tr>
+      <tr><td>Nomenclatura "Onda 1/2/3"</td><td>Convivência: as do anexo são <b>trilhas de conteúdo</b>; as operacionais são <b>Ondas 0–13</b>.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small" style="color:var(--ink-soft)">Ação pública pendente (independente da tese): ajustar a palavra "marketplace" na comunicação para não criar expectativa falsa — recomendado pela auditoria (Etapa 11) e pelo doc estratégico.</p>
+</section>
+
+<!-- RESTANTE -->
+<section id="restante">
+  <h2 class="sec-title">O que falta — backlog remanescente priorizado</h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>#</th><th>Item</th><th>Origem</th><th>Prioridade</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Validar assinatura do webhook MP em sandbox (fechar 1.4)</td><td>Playbook O1</td><td><span class="chip crit">P0 · caminho crítico</span></td></tr>
+      <tr><td>2</td><td>Frete real por CEP (Edge Function <code>calculate-shipping</code>)</td><td>Playbook O6.4</td><td><span class="chip crit">P0 · caminho crítico</span></td></tr>
+      <tr><td>3</td><td>Ligar pagamentos (rollout controlado + pedido real de R$1)</td><td>Playbook O6.5</td><td><span class="chip crit">P0 · caminho crítico</span></td></tr>
+      <tr><td>4</td><td>NF-e automática por pedido pago</td><td>Playbook O8.1</td><td><span class="chip open">P1 · legal ao vender</span></td></tr>
+      <tr><td>5</td><td>Troca/devolução (CDC), rastreio ao vivo, recompra</td><td>Playbook O8.2</td><td><span class="chip open">P1 · legal ao vender</span></td></tr>
+      <tr><td>6</td><td>Páginas jurídicas (Privacidade/Termos) revisadas por advogado</td><td>Playbook O2.1</td><td><span class="chip open">P1</span></td></tr>
+      <tr><td>7</td><td>Captura de e-mail real + carrinho abandonado</td><td>Playbook O10.1</td><td><span class="chip open">P1</span></td></tr>
+      <tr><td>8</td><td>MFA para administradores</td><td>Playbook O1.6</td><td><span class="chip open">P2</span></td></tr>
+      <tr><td>9</td><td>Trilha editorial: Léxico + "Como se faz" + PDFs</td><td>Anexo O2</td><td><span class="chip open">P2 · SEO/conteúdo</span></td></tr>
+      <tr><td>10</td><td>Busca dedicada + autocomplete + semântica (pgvector)</td><td>Playbook O11</td><td><span class="chip open">P2</span></td></tr>
+      <tr><td>11</td><td>CRM, WhatsApp, push, fidelidade/recompra</td><td>Playbook O10.2</td><td><span class="chip open">P2/P3</span></td></tr>
+      <tr><td>12</td><td>Chatbot botânico (RAG) + blend-com-IA vendável</td><td>Playbook O11.3</td><td><span class="chip open">P3</span></td></tr>
+      <tr><td>13</td><td>Bundler (Vite/esbuild) + code-splitting</td><td>Playbook O12.1</td><td><span class="chip open">P2</span></td></tr>
+      <tr><td>14</td><td>Reavaliar tese marketplace com 3 meses de dados</td><td>Playbook O13</td><td><span class="chip open">Gatilho por dados</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- CAMINHO CRÍTICO -->
+<section id="critico">
+  <h2 class="sec-title">Caminho crítico para a primeira receita</h2>
+  <div class="callout path"><div class="ic">🎯</div><div>
+    <h3>Três passos entre "não vende" e "vende com segurança"</h3>
+    <ol class="steps">
+      <li><b>Fechar o webhook (1.4)</b> — rodar a simulação de notificação do Mercado Pago em sandbox, confirmar que a assinatura valida e que <code>orders.status → paid</code>. Sem isso, virar produção trava pedidos em <code>pending</code>.</li>
+      <li><b>Frete real por CEP (6.4)</b> — <code>calculate-shipping</code> (Melhor Envio/Correios) exibindo opção e prazo no carrinho e na PDP, gravando <code>shipping_cents</code> real. Sem isso, ou a margem some ou o cliente é surpreendido.</li>
+      <li><b>Ligar pagamentos (6.5)</b> — <code>MP_MODE=production</code> + <code>PAYMENTS_ENABLED=true</code> em rollout controlado, com um pedido real de R$1 como validação e o <code>kill switch</code> pronto.</li>
+    </ol>
+    <p style="margin:10px 0 0">Depois disso, imediatamente: <b>NF-e e troca/devolução (Onda 8)</b>, que passam a ser obrigatórios assim que houver pedidos reais.</p>
+  </div></div>
+  <p>Tudo o mais (retenção, busca/IA, editorial, bundler) é evolução com a loja já vendendo e medindo — exatamente a ordem de segurança que o playbook estabeleceu.</p>
+</section>
+
+</main>
+
+<footer><div class="wrap">
+  <p><b>Roadmap Consolidado · Ervatório</b> — status vs. anexo (3 ondas de conteúdo) e auditoria/playbook (14 ondas operacionais).</p>
+  <p>Verificado contra <code>main</code> em 23/07/2026. Percentuais são estimativas ponderadas; o status por item cita a evidência no código. Decisão estratégica global-vs-brasileiro: resolvida em <code>docs/estrategia/marketplace-vs-loja.md</code> (Opção A — loja curada premium).</p>
+</div></footer>
