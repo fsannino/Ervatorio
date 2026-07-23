@@ -94,6 +94,8 @@ const Checkout = {
             </div>
           </div>
 
+          <div id="ckShipping" style="margin-top:1rem"></div>
+
           <div id="ckSummary" style="margin-top:1.25rem;padding:1rem;background:rgba(200,168,75,.06);border:1px solid rgba(200,168,75,.2);border-radius:8px;font-size:.85rem"></div>
 
           <div id="ckMsg" style="min-height:20px;margin-top:.75rem;font-size:.78rem;text-align:center"></div>
@@ -117,6 +119,10 @@ const Checkout = {
         .ck-input{width:100%;padding:8px 10px;background:var(--bg);border:0.5px solid var(--faint);border-radius:6px;color:var(--cream);font-size:.85rem;font-family:'Jost',sans-serif}
         .ck-input:focus{outline:none;border-color:rgba(200,168,75,.5)}
         #ckSubmitBtn:disabled{opacity:.55;cursor:wait}
+        .ck-ship-opt{display:flex;align-items:center;gap:8px;padding:8px 10px;border:0.5px solid var(--faint);border-radius:6px;margin-top:6px;cursor:pointer;font-size:.8rem;color:var(--cream)}
+        .ck-ship-opt input{accent-color:var(--gold2)}
+        .ck-ship-opt.sel{border-color:rgba(200,168,75,.6);background:rgba(200,168,75,.08)}
+        .ck-ship-opt .price{margin-left:auto;color:var(--gold2);font-weight:500}
       `;
       document.head.appendChild(s);
     }
@@ -171,6 +177,9 @@ const Checkout = {
       items: cart.map((c) => ({ item_id: String(c.dbId || c.id), item_name: c.name, price: c.price, quantity: c.qty || 1 })),
     });
     this.ensureInjected();
+    this.shipping = { enabled: false, options: [], selectedKey: null };
+    const shipBox = document.getElementById('ckShipping');
+    if (shipBox) shipBox.innerHTML = '';
     this.prefill();
     this.renderSummary();
     document.getElementById('checkoutOverlay').classList.add('on');
@@ -211,13 +220,24 @@ const Checkout = {
         <span>R$ ${(c.price * c.qty).toFixed(2)}</span>
       </div>`)
       .join('');
+    const hasQuote = this.shipping && this.shipping.enabled && this.shipping.selectedKey;
+    const shipCents = hasQuote ? this.selectedShippingCents() : 0;
+    const freteLinha = hasQuote
+      ? `<div style="display:flex;justify-content:space-between;color:var(--cream);font-size:.78rem;margin:2px 0">
+           <span>Frete</span><span>${shipCents === 0 ? 'Grátis' : 'R$ ' + (shipCents / 100).toFixed(2)}</span>
+         </div>`
+      : '';
+    const rodape = hasQuote
+      ? ''
+      : `<div style="font-size:.7rem;color:var(--muted);margin-top:4px">Frete calculado depois (atualmente grátis durante o piloto)</div>`;
     document.getElementById('ckSummary').innerHTML = `
       ${lines}
+      ${freteLinha}
       <div style="border-top:1px solid rgba(200,168,75,.2);margin-top:8px;padding-top:8px;display:flex;justify-content:space-between;color:var(--gold2);font-weight:500">
         <span>Total</span>
-        <span>R$ ${subtotal.toFixed(2)}</span>
+        <span>R$ ${(subtotal + shipCents / 100).toFixed(2)}</span>
       </div>
-      <div style="font-size:.7rem;color:var(--muted);margin-top:4px">Frete calculado depois (atualmente grátis durante o piloto)</div>
+      ${rodape}
     `;
   },
 
@@ -239,6 +259,68 @@ const Checkout = {
       if (d.localidade && !document.getElementById('ckCity').value) document.getElementById('ckCity').value = d.localidade;
       if (d.uf && !document.getElementById('ckState').value) document.getElementById('ckState').value = d.uf;
     } catch (_) { /* offline */ }
+    this.quoteShipping();
+  },
+
+  // Estado do frete nesta sessão de checkout.
+  shipping: { enabled: false, options: [], selectedKey: null },
+
+  // Onda 6.4: cota o frete no servidor a partir do carrinho + CEP.
+  // Desligado (SHIPPING_ENABLED != true) ou em falha → mantém o
+  // comportamento de piloto (frete grátis), sem bloquear o checkout.
+  async quoteShipping() {
+    const cfg = window.ERVATORIO_CONFIG;
+    if (!cfg || cfg.SHIPPING_ENABLED !== true) return;
+    const zip = document.getElementById('ckZip').value.replace(/\D/g, '');
+    if (zip.length !== 8) return;
+    const sellable = readCart().filter((c) => typeof c.dbId === 'string' && c.dbId.length === 36);
+    if (sellable.length === 0) return;
+
+    const box = document.getElementById('ckShipping');
+    if (box) box.innerHTML = '<div style="font-size:.75rem;color:var(--muted)">Calculando frete…</div>';
+    try {
+      const r = await fetch(`${cfg.FUNCTIONS_URL}/calculate-shipping`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ zip, items: sellable.map((c) => ({ product_id: c.dbId, qty: c.qty })) }),
+      });
+      const data = await r.json();
+      const options = (r.ok && Array.isArray(data.options)) ? data.options : [];
+      this.shipping = {
+        enabled: options.length > 0,
+        options,
+        selectedKey: options.length ? options.reduce((a, b) => (a.priceCents <= b.priceCents ? a : b)).key : null,
+      };
+    } catch (_) {
+      this.shipping = { enabled: false, options: [], selectedKey: null };
+    }
+    this.renderShippingOptions();
+    this.renderSummary();
+  },
+
+  renderShippingOptions() {
+    const box = document.getElementById('ckShipping');
+    if (!box) return;
+    const { options, selectedKey } = this.shipping;
+    if (!options.length) { box.innerHTML = ''; return; }
+    box.innerHTML = '<label class="ck-label">Frete *</label>' + options.map((o) => `
+      <label class="ck-ship-opt${o.key === selectedKey ? ' sel' : ''}">
+        <input type="radio" name="ckShip" value="${esc(o.key)}" ${o.key === selectedKey ? 'checked' : ''}
+          onchange="Checkout.selectShipping(this.value)">
+        <span>${esc(o.carrier)} · ${esc(o.service)}<br><span style="color:var(--muted);font-size:.7rem">até ${o.etaDays} dias úteis</span></span>
+        <span class="price">${o.priceCents === 0 ? 'Grátis' : 'R$ ' + (o.priceCents / 100).toFixed(2)}</span>
+      </label>`).join('');
+  },
+
+  selectShipping(key) {
+    this.shipping.selectedKey = key;
+    this.renderShippingOptions();
+    this.renderSummary();
+  },
+
+  selectedShippingCents() {
+    const o = this.shipping.options.find((x) => x.key === this.shipping.selectedKey);
+    return o ? o.priceCents : 0;
   },
 
   collectAddress() {
@@ -297,6 +379,18 @@ const Checkout = {
         const dropped = cart.length - sellable.length;
         console.warn(`[checkout] ${dropped} item(ns) do carrinho sem dbId — ignorados.`);
       }
+
+      // Onda 6.4: com frete ligado, exige uma cotação válida antes de
+      // criar o pedido (o servidor rejeita opção ausente/inválida).
+      let shippingService;
+      if (cfg && cfg.SHIPPING_ENABLED === true) {
+        if (!this.shipping.selectedKey) await this.quoteShipping();
+        if (!this.shipping.selectedKey) {
+          throw new Error('Não foi possível calcular o frete. Confira o CEP e tente novamente.');
+        }
+        shippingService = this.shipping.selectedKey;
+      }
+
       const orderRes = await fetch(`${cfg.FUNCTIONS_URL}/create-order`, {
         method: 'POST',
         headers: {
@@ -309,6 +403,7 @@ const Checkout = {
             qty: c.qty,
           })),
           shipping_address: addr,
+          shipping_service: shippingService,
           notes: document.getElementById('ckNotes').value.trim() || null,
           guest_email: session ? undefined : guestEmail,
         }),

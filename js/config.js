@@ -32,6 +32,13 @@ window.ERVATORIO_CONFIG = Object.freeze({
   // exigir login (kill-switch; espelhado no secret GUEST_CHECKOUT
   // das Edge Functions).
   GUEST_CHECKOUT: true,
+  // Onda 6.4: cálculo de frete no checkout. Default false = mantém o
+  // comportamento de piloto ("frete grátis"). Virar true DEPOIS de
+  // configurar os secrets da Edge Function (SHIPPING_ENABLED=true e,
+  // se for usar cotação real, SHIPPING_PROVIDER/ORIGIN_CEP/token).
+  // O servidor tem o seu próprio SHIPPING_ENABLED — ambos precisam
+  // estar ligados para o frete valer. Ver docs/runbooks/frete.md.
+  SHIPPING_ENABLED: false,
   // Onda 3: IDs de medição. VAZIO = tracking desligado (no-op).
   // Preencher ao criar as contas; js/analytics.js só carrega os
   // scripts após consentimento (js/consent.js / Consent Mode v2).

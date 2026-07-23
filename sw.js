@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ervatorio-v36';
+const CACHE_NAME = 'ervatorio-v37';
 const OFFLINE_URL = '/';
 
 const PRECACHE_ASSETS = [

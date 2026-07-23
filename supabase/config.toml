@@ -36,5 +36,11 @@ verify_jwt = false
 [functions.create-payment-preference]
 verify_jwt = false
 
+# Onda 6.4 (frete): cotação pública — só devolve preço de frete a
+# partir de admin_products. Sem dado sensível; protegida por rate
+# limit por IP. Kill-switch: secret SHIPPING_ENABLED=false.
+[functions.calculate-shipping]
+verify_jwt = false
+
 [functions.user-data-rights]
 verify_jwt = true
