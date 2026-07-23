@@ -565,18 +565,6 @@ var FICHAS_ANCORA = {
     regulacao:{eixo_botanico_tpc:"Funcional global",status_anvisa:"Monografia oficial. Indicações: carminativo, antiespasmódico digestivo.",status_ema:"Monografia HMPC — well-established use para flatulência.",status_fda:"",certificacao_organica:"",sazonalidade:"Sementes maduras: verão-outono"},
     marketplace:{disponivel_a_venda:"",fornecedores:"",faixa_de_preco:"",formatos:""}
   },
-  "erva-cidreira-europeia": {
-    slug:"erva-cidreira-europeia",nome_popular:"Erva-Cidreira Europeia (Melissa)",nome_cientifico:"",tagline:"",schema_version:"1.1",
-    identificacao:{nome_cientifico:"",familia_botanica:"",tipo_botanico:"",parte_usada:"",sinonimos:[]},
-    caracterizacao:{sabor_dominante:"",aroma:"",cor_da_infusao:"",intensidade:"",notas:"",bioma_de_origem:"",distribuicao_geografica:[]},
-    preparo:{temperatura_ideal:"",tempo_de_infusao:"",quantidade:"",metodo:"",reinfusoes:"",melhor_momento:"",combina_com:""},
-    usos_topicos:{evidencia:"",aplicacoes:[],contraindicacoes:""},
-    acoes_e_seguranca:{acoes_principais:[],componentes_ativos:[],evidencia:[],contraindicacoes:[],interacoes:[],efeitos_adversos:"",dose_maxima:"",fontes:[]},
-    perfil_sensorial:{gustativo:[],olfativo_familia:"",olfativo_descritores:[],trigeminal:[],tatil:"",descricao_integrada:""},
-    cultura:{historia:"",cerimonial:"",brasil:"",curiosidade:""},
-    regulacao:{eixo_botanico_tpc:"",status_anvisa:"",status_ema:"",status_fda:"",certificacao_organica:"",sazonalidade:""},
-    marketplace:{disponivel_a_venda:"",fornecedores:"",faixa_de_preco:"",formatos:""}
-  },
   "calendula": {
     slug:"calendula",nome_popular:"Calêndula",nome_cientifico:"Calendula officinalis L.",tagline:"A flor que cura feridas — cicatrizante e anti-inflamatória tópica com a melhor evidência do catálogo para uso dermatológico, reconhecida por todas as farmacopeias do mundo.",schema_version:"1.1",
     identificacao:{nome_cientifico:"Calendula officinalis L.",familia_botanica:"Asteraceae",tipo_botanico:"Fitoterápico cicatrizante tópico / anti-inflamatório",parte_usada:"Flores liguladas (pétalas) e flores tubulosas, secas.",sinonimos:["Calêndula · maravilha · bem-me-quer · marigold-de-pote", "Calendula / Marigold (inglês) · Souci (francês) · Ringelblume (alemão)", "ATENÇÃO: não confundir com Tagetes spp. (cravo-de-defunto) — frequentemente chamados de \"marigold\" em inglês."]},
