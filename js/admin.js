@@ -163,6 +163,7 @@ function showSection(id){
   if(id==='fichas')loadFichasAdmin();
   if(id==='chazerias')loadChazerias();
   if(id==='orders'&&typeof loadOrders==='function')loadOrders();
+  if(id==='returns'&&typeof loadReturns==='function')loadReturns();
 }
 
 // ── TOAST ──

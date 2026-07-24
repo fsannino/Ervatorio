@@ -39,6 +39,7 @@
     <div class="adm-nav-item" data-sec="fichas" onclick="showSection('fichas')"><span class="icon">📖</span> Fichas editoriais</div>
     <div class="adm-nav-item" data-sec="chazerias" onclick="showSection('chazerias')"><span class="icon">🗺</span> Chazerias</div>
     <div class="adm-nav-item" data-sec="orders" onclick="showSection('orders')"><span class="icon">🧾</span> Pedidos</div>
+    <div class="adm-nav-item" data-sec="returns" onclick="showSection('returns')"><span class="icon">↩</span> Devoluções</div>
     <div class="adm-nav-sep"></div>
     <div class="adm-nav-item" onclick="window.location='/'"><span class="icon">🍵</span> Ir ao App</div>
     <div class="adm-nav-item" onclick="admLogout()" style="color:var(--adm-red)"><span class="icon">⏻</span> Sair</div>
@@ -187,6 +188,31 @@
             <th>Pedido</th><th>Cliente</th><th>Data</th><th>Status</th><th>Total</th><th>Pagamento</th><th>Rastreio</th><th>Ações</th>
           </tr></thead>
           <tbody id="ordersBody"><tr><td colspan="8" style="text-align:center;padding:2rem;color:var(--adm-muted)">Carregando...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ════════ DEVOLUÇÕES ════════ -->
+    <div class="adm-section" id="sec-returns" style="display:none">
+      <div class="adm-header">
+        <div>
+          <div class="adm-title">Devoluções</div>
+          <div class="adm-subtitle">Solicitações de troca e devolução (CDC)</div>
+        </div>
+        <select id="retStatusFilter" class="adm-form-input" style="width:auto" onchange="loadReturns()">
+          <option value="">Todos os status</option>
+          <option value="solicitada">Solicitadas</option>
+          <option value="em_analise">Em análise</option>
+          <option value="aprovada">Aprovadas</option>
+          <option value="recusada">Recusadas</option>
+          <option value="concluida">Concluídas</option>
+          <option value="cancelada">Canceladas</option>
+        </select>
+      </div>
+      <div class="adm-table-wrap">
+        <table class="adm-table">
+          <thead><tr><th>Pedido</th><th>Cliente</th><th>Tipo</th><th>Status</th><th>Data</th><th>Motivo</th><th>Ações</th></tr></thead>
+          <tbody id="returnsBody"><tr><td colspan="7" style="text-align:center;padding:2rem;color:var(--adm-muted)">Carregando...</td></tr></tbody>
         </table>
       </div>
     </div>
@@ -511,5 +537,6 @@
 <script src="/js/config.js"></script>
 <script src="/js/admin.js"></script>
 <script src="/js/admin-orders.js"></script>
+<script src="/js/admin-returns.js"></script>
 </body>
 </html>

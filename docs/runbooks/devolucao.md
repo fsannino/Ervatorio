@@ -35,21 +35,16 @@ order_returns (status 'solicitada')  ──►  admin processa
 - Uma solicitação ativa por pedido (solicitada/em_analise/aprovada) bloqueia
   abrir outra.
 
-## Como o admin processa (enquanto não há UI de admin)
+## Como o admin processa
 
-Até a UI de admin de devoluções (próximo PR), processe via Supabase Studio →
-SQL Editor (ou Table Editor), como admin:
+No **painel admin → Devoluções** (`admin.html`): lista as solicitações com
+filtro por status; "Gerenciar" abre o detalhe (motivo, cliente, pedido) com
+seletor de **status** (solicitada → em análise → aprovada → concluída, ou
+recusada) e **notas internas**. Salvar aplica a mudança (RLS `returns_admin_all`).
+
+Alternativa (via SQL, se preciso):
 
 ```sql
--- Ver pendentes
-SELECT r.*, o.order_number, up.email
-FROM order_returns r
-JOIN orders o ON o.id = r.order_id
-JOIN user_profiles up ON up.id = r.user_id
-WHERE r.status IN ('solicitada','em_analise')
-ORDER BY r.created_at;
-
--- Aprovar / recusar / concluir (RLS admin permite o UPDATE)
 UPDATE order_returns
 SET status = 'aprovada', admin_notes = 'Autorizado. Enviar etiqueta.'
 WHERE id = '<return_id>';
@@ -81,5 +76,5 @@ WHERE id = '<return_id>';
 
 ## Próximo passo
 
-UI de admin de devoluções (lista + aprovar/recusar/concluir) e estorno via
-API do Mercado Pago quando os pagamentos estiverem ativos.
+Estorno automático via API do Mercado Pago (hoje manual pelo painel MP)
+quando os pagamentos estiverem ativos e o webhook validado.
