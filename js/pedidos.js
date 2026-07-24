@@ -55,7 +55,21 @@ const Pedidos = {
       itemsByOrder.get(it.order_id).push(it);
     });
 
-    return orders.map((o) => ({ ...o, items: itemsByOrder.get(o.id) || [] }));
+    // Solicitações de troca/devolução do usuário (RLS: só as próprias).
+    // Guarda a mais recente por pedido para mostrar o status.
+    const { data: returns } = await ervaria.client
+      .from('order_returns')
+      .select('id, order_id, tipo, status, created_at')
+      .in('order_id', ids)
+      .order('created_at', { ascending: false });
+    const returnByOrder = new Map();
+    (returns || []).forEach((r) => { if (!returnByOrder.has(r.order_id)) returnByOrder.set(r.order_id, r); });
+
+    return orders.map((o) => ({
+      ...o,
+      items: itemsByOrder.get(o.id) || [],
+      _return: returnByOrder.get(o.id) || null,
+    }));
   },
 
   toggleExpand(orderId) {
@@ -79,6 +93,93 @@ const Pedidos = {
       toast(`${r.added.length} item(ns) no carrinho. Fora de catálogo: ${r.missing.slice(0, 2).join(', ')}${r.missing.length > 2 ? '…' : ''}`);
     } else {
       toast('Itens adicionados ao carrinho.');
+    }
+  },
+
+  // Elegível para troca/devolução? Espelha a regra do servidor (que é a
+  // autoridade): pago/enviado/entregue, dentro de 7 dias da entrega, e
+  // sem solicitação ativa.
+  _eligibleForReturn(o) {
+    if (!['paid', 'processing', 'shipped', 'delivered'].includes(o.status)) return false;
+    if (o.delivered_at && Date.now() > new Date(o.delivered_at).getTime() + 7 * 86400000) return false;
+    if (o._return && ['solicitada', 'em_analise', 'aprovada'].includes(o._return.status)) return false;
+    return true;
+  },
+
+  _templateReturn(o) {
+    const r = o._return;
+    if (r && ['solicitada', 'em_analise', 'aprovada', 'concluida'].includes(r.status)) {
+      const tipo = r.tipo === 'troca' ? 'Troca' : 'Devolução';
+      const cancelBtn = ['solicitada', 'em_analise'].includes(r.status)
+        ? `<button class="cart-btn" style="width:100%;margin-top:8px;background:none;border:0.5px solid var(--faint);color:var(--muted)" onclick="event.stopPropagation();Pedidos.cancelReturn('${escHtml(r.id)}')">Cancelar solicitação</button>`
+        : '';
+      return `<div style="margin-top:14px;padding:10px 12px;background:rgba(200,168,75,.06);border:0.5px solid rgba(200,168,75,.2);border-radius:8px">
+          <div style="font-size:.8rem;color:var(--cream)">${tipo}: <strong style="color:var(--gold2)">${escHtml(returnStatusLabel(r.status))}</strong></div>
+          ${cancelBtn}
+        </div>`;
+    }
+    if (!this._eligibleForReturn(o)) return '';
+    const id = escHtml(o.id);
+    return `
+      <button class="cart-btn" style="width:100%;margin-top:8px;background:none;border:0.5px solid var(--faint);color:var(--muted)" onclick="event.stopPropagation();Pedidos.toggleReturnForm('${id}')">↩ Solicitar troca / devolução</button>
+      <div id="ret-form-${id}" style="display:none;margin-top:8px;padding:10px 12px;background:var(--bg);border:0.5px solid var(--faint);border-radius:8px">
+        <select id="ret-tipo-${id}" onclick="event.stopPropagation()" style="width:100%;margin-bottom:6px;padding:8px;background:var(--bg2);border:0.5px solid var(--faint);border-radius:6px;color:var(--cream);font-size:.82rem">
+          <option value="devolucao">Devolução (reembolso)</option>
+          <option value="troca">Troca</option>
+        </select>
+        <textarea id="ret-motivo-${id}" onclick="event.stopPropagation()" rows="2" placeholder="Motivo (mín. 5 caracteres)" style="width:100%;padding:8px;background:var(--bg2);border:0.5px solid var(--faint);border-radius:6px;color:var(--cream);font-size:.82rem;font-family:inherit"></textarea>
+        <div id="ret-msg-${id}" style="font-size:.72rem;min-height:14px;margin:4px 0;color:var(--muted)"></div>
+        <button class="cart-btn" style="width:100%" onclick="event.stopPropagation();Pedidos.submitReturn('${id}')">Enviar solicitação</button>
+        <div style="font-size:.66rem;color:var(--muted);margin-top:6px">Prazo de 7 dias após a entrega (CDC). Analisaremos e retornaremos.</div>
+      </div>`;
+  },
+
+  toggleReturnForm(orderId) {
+    const el = document.getElementById('ret-form-' + orderId);
+    if (el) el.style.display = el.style.display === 'none' ? 'block' : 'none';
+  },
+
+  async submitReturn(orderId) {
+    const msg = document.getElementById('ret-msg-' + orderId);
+    const tipo = document.getElementById('ret-tipo-' + orderId)?.value;
+    const motivo = (document.getElementById('ret-motivo-' + orderId)?.value || '').trim();
+    if (motivo.length < 5) { if (msg) { msg.style.color = '#e08080'; msg.textContent = 'Descreva o motivo (mín. 5 caracteres).'; } return; }
+    if (msg) { msg.style.color = 'var(--muted)'; msg.textContent = 'Enviando...'; }
+    try {
+      const cfg = window.ERVATORIO_CONFIG;
+      const { data: { session } } = await ervaria.client.auth.getSession();
+      if (!session) throw new Error('Sessão expirada — faça login novamente.');
+      const res = await fetch(`${cfg.FUNCTIONS_URL}/create-return`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${session.access_token}` },
+        body: JSON.stringify({ action: 'create', order_id: orderId, tipo, motivo }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Falha ao enviar solicitação.');
+      if (typeof toast === 'function') toast('Solicitação enviada. Vamos analisar e retornar.');
+      this.render();
+    } catch (e) {
+      if (msg) { msg.style.color = '#e08080'; msg.textContent = e.message; }
+    }
+  },
+
+  async cancelReturn(returnId) {
+    if (!confirm('Cancelar esta solicitação de troca/devolução?')) return;
+    try {
+      const cfg = window.ERVATORIO_CONFIG;
+      const { data: { session } } = await ervaria.client.auth.getSession();
+      if (!session) throw new Error('Sessão expirada.');
+      const res = await fetch(`${cfg.FUNCTIONS_URL}/create-return`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${session.access_token}` },
+        body: JSON.stringify({ action: 'cancel', return_id: returnId }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Falha ao cancelar.');
+      if (typeof toast === 'function') toast('Solicitação cancelada.');
+      this.render();
+    } catch (e) {
+      if (typeof toast === 'function') toast(e.message);
     }
   },
 
@@ -159,6 +260,7 @@ const Pedidos = {
           ${this._templatePayment(o)}
           ${o.notes ? `<div style="margin-top:12px;font-size:.78rem;color:var(--muted)">Observações: ${escHtml(o.notes)}</div>` : ''}
           ${o.items.length ? `<button class="cart-btn" style="width:100%;margin-top:14px" onclick="event.stopPropagation();Pedidos.recomprar('${escHtml(o.id)}')">🛒 Comprar de novo</button>` : ''}
+          ${this._templateReturn(o)}
         </div>
       </div>
     `;
@@ -234,6 +336,13 @@ const Pedidos = {
 // então resolvemos o código por uma busca — clicável e sem link quebrado.
 function trackingUrl(code) {
   return `https://www.google.com/search?q=${encodeURIComponent('rastreamento ' + (code || ''))}`;
+}
+
+function returnStatusLabel(status) {
+  return {
+    solicitada: 'Solicitada', em_analise: 'Em análise', aprovada: 'Aprovada',
+    recusada: 'Recusada', concluida: 'Concluída', cancelada: 'Cancelada',
+  }[status] || status;
 }
 
 function formatBRL(cents) {

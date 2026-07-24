@@ -44,3 +44,8 @@ verify_jwt = false
 
 [functions.user-data-rights]
 verify_jwt = true
+
+# Onda 8.2 (troca/devolução): exige usuário logado (dono do pedido). A
+# função valida posse, status retornável e o prazo de 7 dias do CDC.
+[functions.create-return]
+verify_jwt = true
