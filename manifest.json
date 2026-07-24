@@ -2,7 +2,7 @@
   "id": "br.com.ervatorio",
   "name": "Ervatório — App de Chás",
   "short_name": "Ervatório",
-  "description": "Catálogo inteligente de chás, infusões e ervas medicinais. Roda dos Chás, blends com IA e marketplace.",
+  "description": "Catálogo inteligente de chás, infusões e ervas medicinais. Roda dos Chás, blends com IA e loja curada.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
