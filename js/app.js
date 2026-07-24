@@ -2920,6 +2920,30 @@ function addMktCart(id){
   toast(`${p.name} adicionado ao carrinho`);
 }
 
+// Recompra ("comprar de novo"): re-adiciona ao carrinho os itens de um
+// pedido que AINDA existem no catálogo atual (casados por dbId, usando o
+// produto/preço vigentes). Itens fora de catálogo voltam em `missing`.
+// Toda a lógica de carrinho mora aqui — app.js é o dono de `cart`.
+window.recomprarPedido = function(items){
+  const added=[], missing=[];
+  (items||[]).forEach(function(it){
+    const p = MKT_PRODUCTS.find(x=>x.dbId && x.dbId===it.product_id);
+    if(!p){ missing.push(it.product_name); return; }
+    const qty = Math.max(1, Math.min(999, parseInt(it.qty,10)||1));
+    const ex = cart.find(c=>c.id===p.id);
+    if(ex) ex.qty+=qty; else cart.push({...p,qty});
+    added.push(p.name);
+    window.ervTrack&&ervTrack('add_to_cart',{currency:'BRL',value:p.price,items:[{item_id:String(p.dbId||p.id),item_name:p.name,price:p.price,quantity:qty}]});
+  });
+  if(added.length){
+    localStorage.setItem('erb_cart',JSON.stringify(cart));
+    updateCartCount();
+    if(typeof renderMkt==='function' && document.getElementById('mktGrid')) renderMkt();
+    openCart();
+  }
+  return { added, missing };
+};
+
 // ════════════════════════════════════════
 // ── CHÁS DO MUNDO ──
 // ════════════════════════════════════════

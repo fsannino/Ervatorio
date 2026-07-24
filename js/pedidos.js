@@ -46,7 +46,7 @@ const Pedidos = {
     const ids = orders.map((o) => o.id);
     const { data: items } = await ervaria.client
       .from('order_items')
-      .select('order_id, product_name, product_unit, qty, unit_price_cents, line_total_cents')
+      .select('order_id, product_id, product_name, product_unit, qty, unit_price_cents, line_total_cents')
       .in('order_id', ids);
 
     const itemsByOrder = new Map();
@@ -62,6 +62,24 @@ const Pedidos = {
     const el = document.getElementById('ped-' + orderId);
     if (!el) return;
     el.classList.toggle('expanded');
+  },
+
+  // Recompra: delega a lógica de carrinho ao app.js (dono de `cart`) e
+  // dá feedback. Só re-adiciona itens ainda vendáveis (casados por dbId).
+  recomprar(orderId) {
+    const o = (this.cache || []).find((x) => x.id === orderId);
+    if (!o || !o.items?.length) return;
+    const r = typeof window.recomprarPedido === 'function'
+      ? window.recomprarPedido(o.items)
+      : { added: [], missing: [] };
+    if (typeof toast !== 'function') return;
+    if (!r.added.length) {
+      toast('Estes produtos não estão mais disponíveis para compra.');
+    } else if (r.missing.length) {
+      toast(`${r.added.length} item(ns) no carrinho. Fora de catálogo: ${r.missing.slice(0, 2).join(', ')}${r.missing.length > 2 ? '…' : ''}`);
+    } else {
+      toast('Itens adicionados ao carrinho.');
+    }
   },
 
   // ── Templates ─────────────────────────────────────────────
@@ -115,7 +133,7 @@ const Pedidos = {
       : `${o.items.length} produtos`;
     const date = formatDate(o.created_at);
     const tracking = o.shipping_tracking_code
-      ? `<div style="font-size:.72rem;color:var(--muted);margin-top:4px">Rastreio: <code style="color:var(--gold2)">${escHtml(o.shipping_tracking_code)}</code>${o.shipping_carrier ? ' · ' + escHtml(o.shipping_carrier) : ''}</div>`
+      ? `<div style="font-size:.72rem;color:var(--muted);margin-top:4px">Rastreio: <a href="${trackingUrl(o.shipping_tracking_code)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color:var(--gold2)">${escHtml(o.shipping_tracking_code)} ↗</a>${o.shipping_carrier ? ' · ' + escHtml(o.shipping_carrier) : ''}</div>`
       : '';
 
     return `
@@ -140,6 +158,7 @@ const Pedidos = {
           ${this._templateAddress(o.shipping_address)}
           ${this._templatePayment(o)}
           ${o.notes ? `<div style="margin-top:12px;font-size:.78rem;color:var(--muted)">Observações: ${escHtml(o.notes)}</div>` : ''}
+          ${o.items.length ? `<button class="cart-btn" style="width:100%;margin-top:14px" onclick="event.stopPropagation();Pedidos.recomprar('${escHtml(o.id)}')">🛒 Comprar de novo</button>` : ''}
         </div>
       </div>
     `;
@@ -209,6 +228,13 @@ const Pedidos = {
 };
 
 // ── Helpers ────────────────────────────────────────────────
+
+// Link de rastreio. Os Correios são um SPA sem deep-link estável por
+// código, e a transportadora varia (Correios, Jadlog, Melhor Envio...),
+// então resolvemos o código por uma busca — clicável e sem link quebrado.
+function trackingUrl(code) {
+  return `https://www.google.com/search?q=${encodeURIComponent('rastreamento ' + (code || ''))}`;
+}
 
 function formatBRL(cents) {
   const n = Number(cents || 0) / 100;
