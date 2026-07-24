@@ -38,6 +38,11 @@ const { LEXICO_TERMOS, LEXICO_CATEGORIAS } =
 const processosSrc = readFileSync('js/processos-data.js', 'utf8');
 const { PROCESSOS } = new Function(`${processosSrc}; return { PROCESSOS };`)();
 
+// ── Biblioteca (Onda 2.4) — guias imprimíveis (salvar como PDF)
+const bibliotecaSrc = readFileSync('js/biblioteca-data.js', 'utf8');
+const { BIBLIOTECA_GUIAS, PREPARO_TABELA } =
+  new Function(`${bibliotecaSrc}; return { BIBLIOTECA_GUIAS, PREPARO_TABELA };`)();
+
 // Manifest de imagens (Onda 4) para OG image por erva quando existir.
 let IMG_MANIFEST = {};
 try { IMG_MANIFEST = JSON.parse(readFileSync('images/manifest.json', 'utf8')); } catch { /* ok */ }
@@ -270,7 +275,7 @@ ul.hub a{color:var(--verde);font-weight:700;text-decoration:none}
   <p class="tagline">${slugs.length} ervas do Brasil e do mundo — ciência, preparo, segurança e cultura em cada ficha.</p>
 </div></header>
 <main class="wrap">
-  <p><a class="cta gold" href="/">🌿 Abrir o Ervatório</a> <a class="cta" href="/lexico/">Léxico da Chazeria →</a> <a class="cta" href="/como-se-faz/">Como se faz →</a></p>
+  <p><a class="cta gold" href="/">🌿 Abrir o Ervatório</a> <a class="cta" href="/lexico/">Léxico da Chazeria →</a> <a class="cta" href="/como-se-faz/">Como se faz →</a> <a class="cta" href="/biblioteca/">Biblioteca →</a></p>
   <ul class="hub">
 ${links}
   </ul>
@@ -407,7 +412,7 @@ function lexicoHubPage() {
   <p class="tagline">A linguagem do chá em ${LEXICO_TERMOS.length} termos — métodos, utensílios, botânica e a cultura do Brasil e do mundo.</p>
 </div></header>
 <main class="wrap">
-  <p><a class="cta gold" href="/">🍵 Abrir o Ervatório</a> <a class="cta" href="/erva/">Ervopédia →</a> <a class="cta" href="/como-se-faz/">Como se faz →</a></p>
+  <p><a class="cta gold" href="/">🍵 Abrir o Ervatório</a> <a class="cta" href="/erva/">Ervopédia →</a> <a class="cta" href="/como-se-faz/">Como se faz →</a> <a class="cta" href="/biblioteca/">Biblioteca →</a></p>
   <ul class="lex">
 ${links}
   </ul>
@@ -561,8 +566,164 @@ ul.serie .sub{display:block;color:#7a6f57;font-size:.88rem}</style>
   <p class="tagline">Da folha no galho à xícara: ${TOTAL_PROC} etapas que decidem se um chá vira verde, oolong ou preto — e o saber brasileiro que os guias globais ignoram.</p>
 </div></header>
 <main class="wrap">
-  <p><a class="cta gold" href="/">🍵 Abrir o Ervatório</a> <a class="cta" href="/lexico/">Léxico da Chazeria →</a></p>
+  <p><a class="cta gold" href="/">🍵 Abrir o Ervatório</a> <a class="cta" href="/lexico/">Léxico da Chazeria →</a> <a class="cta" href="/biblioteca/">Biblioteca →</a></p>
   <ul class="serie">
+${cards}
+  </ul>
+</main>
+<footer>
+  <p>© 2026 Ervatório · <a href="/">ervatorio.com.br</a> · <a href="/privacidade.html">Privacidade</a> · <a href="/termos.html">Termos</a></p>
+</footer>
+</body>
+</html>`;
+}
+
+// ── Biblioteca: CSS (com print) + páginas ───────────────────
+const BIBLIOTECA_CSS = `
+.print-btn{display:inline-block;background:var(--ouro);color:#1c1608;border:1px solid var(--ouro);border-radius:10px;padding:12px 22px;font-size:.95rem;font-weight:700;cursor:pointer;font-family:inherit;margin:8px 0 4px}
+.guia-table{width:100%;border-collapse:collapse;font-size:.9rem;margin:6px 0}
+.guia-table th,.guia-table td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+.guia-table th{background:var(--panel);color:var(--verde);font-size:.82rem}
+.lex-item{border-bottom:1px dashed var(--line);padding:8px 0}
+.lex-item strong{color:var(--verde)}
+.lex-item .cat{color:#7a6f57;font-size:.78rem}
+.step{border-bottom:1px dashed var(--line);padding:10px 0}
+.step .nn{color:var(--ouro);font-weight:700;font-family:Georgia,serif;margin-right:6px}
+.step .sub{color:#7a6f57;font-size:.88rem}
+@media print{
+  header.hero{background:#fff !important;color:#000 !important;border-bottom:2px solid #000;padding:0 0 10px}
+  header.hero h1,.latin{color:#000 !important}
+  .back,.print-btn,.lex-cta,.cta,footer,.health{display:none !important}
+  body{background:#fff;color:#000}
+  h2{color:#000;border-color:#999}
+  .guia-table th{background:#eee;color:#000}
+  main{padding:10px 0}
+  a{color:#000;text-decoration:none}
+}`;
+
+function guiaCorpo(guia) {
+  if (guia.tipo === 'preparo') {
+    const rows = PREPARO_TABELA.map((r) =>
+      `<tr><td><strong>${esc(r.tipo)}</strong></td><td>${esc(r.temp)}</td><td>${esc(r.tempo)}</td><td>${esc(r.proporcao)}</td><td>${esc(r.reinfusoes)}</td></tr>`).join('');
+    return `<table class="guia-table">
+      <thead><tr><th>Tipo</th><th>Água</th><th>Tempo</th><th>Proporção</th><th>Reinfusões</th></tr></thead>
+      <tbody>${rows}</tbody></table>
+      <p style="font-size:.82rem;color:#6b5a2e;margin-top:10px">Orientações gerais — ajuste ao seu gosto e ao tipo de folha. Mate: nunca ferver a água.</p>`;
+  }
+  if (guia.tipo === 'lexico') {
+    const items = (guia.termos || []).filter((s) => lexBySlug[s]).map((s) => {
+      const t = lexBySlug[s];
+      return `<div class="lex-item"><strong>${esc(t.termo)}</strong> <span class="cat">${esc(LEXICO_CATEGORIAS[t.categoria] || '')}</span><br>${esc(t.def)}</div>`;
+    }).join('');
+    return `<div>${items}</div><p style="margin-top:12px"><a href="/lexico/">Ver o Léxico completo (${LEXICO_TERMOS.length} termos) →</a></p>`;
+  }
+  if (guia.tipo === 'processos') {
+    const steps = procByOrdem.map((p) =>
+      `<div class="step"><span class="nn">${esc(String(p.ordem).padStart(2, '0'))}</span><strong>${esc(p.titulo)}</strong> <span class="sub">— ${esc(p.subtitulo)}</span><br>${esc(p.tldr)}</div>`).join('');
+    return `<div>${steps}</div><p style="margin-top:12px"><a href="/como-se-faz/">Ler a série completa →</a></p>`;
+  }
+  return '';
+}
+
+function bibliotecaGuiaPage(guia) {
+  const url = `${SITE}/biblioteca/${guia.slug}/`;
+  const desc = String(guia.desc || '').slice(0, 158);
+  const jsonld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Article', headline: `${guia.titulo}`.slice(0, 110), description: desc,
+        inLanguage: 'pt-BR', mainEntityOfPage: url, articleSection: 'Biblioteca',
+        author: { '@type': 'Organization', name: 'Ervatório', url: SITE },
+        publisher: { '@type': 'Organization', name: 'Ervatório', url: SITE, logo: { '@type': 'ImageObject', url: `${SITE}/icon-512.png` } },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Ervatório', item: `${SITE}/` },
+          { '@type': 'ListItem', position: 2, name: 'Biblioteca', item: `${SITE}/biblioteca/` },
+          { '@type': 'ListItem', position: 3, name: guia.titulo, item: url },
+        ],
+      },
+    ],
+  };
+  return `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${esc(guia.titulo)} — guia para imprimir | Ervatório</title>
+<meta name="description" content="${esc(desc)}">
+<link rel="canonical" href="${url}">
+<link rel="icon" href="/icon-192.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="${esc(guia.titulo)} | Ervatório">
+<meta property="og:description" content="${esc(desc)}">
+<meta property="og:url" content="${url}">
+<meta property="og:image" content="${SITE}/images/optimized/hero/ervas-colecao-1024w.webp">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">${JSON.stringify(jsonld)}</script>
+<style>${CSS}${BIBLIOTECA_CSS}</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <a class="back" href="/biblioteca/">← Biblioteca</a>
+  <h1>${esc(guia.titulo)}</h1>
+  <div class="latin">${esc(guia.subtitulo)}</div>
+</div></header>
+<main class="wrap">
+  <button class="print-btn" onclick="window.print()">🖨 Salvar como PDF / Imprimir</button>
+  ${guiaCorpo(guia)}
+  <div class="health">🌿 <strong>Aviso:</strong> guia educacional sobre preparo e cultura do chá — não constitui aconselhamento de saúde.</div>
+</main>
+<footer>
+  <p>© 2026 Ervatório · <a href="/">ervatorio.com.br</a> · <a href="/privacidade.html">Privacidade</a> · <a href="/termos.html">Termos</a></p>
+</footer>
+</body>
+</html>`;
+}
+
+function bibliotecaHub() {
+  const url = `${SITE}/biblioteca/`;
+  const cards = BIBLIOTECA_GUIAS.map((g) =>
+    `<li><a href="/biblioteca/${g.slug}/">${esc(g.titulo)}</a> <span class="sub">${esc(g.subtitulo)}</span><br><span class="d">${esc(g.desc)}</span></li>`).join('\n');
+  const jsonld = {
+    '@context': 'https://schema.org', '@type': 'CollectionPage',
+    name: 'Biblioteca do Ervatório — guias do chá para imprimir', url, inLanguage: 'pt-BR',
+    hasPart: BIBLIOTECA_GUIAS.map((g) => ({ '@type': 'Article', name: g.titulo, url: `${SITE}/biblioteca/${g.slug}/` })),
+  };
+  return `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biblioteca — guias do chá para imprimir e salvar em PDF | Ervatório</title>
+<meta name="description" content="Guias práticos do chá para imprimir ou salvar em PDF: preparo por tipo, mini-léxico e o resumo de como o chá é feito.">
+<link rel="canonical" href="${url}">
+<link rel="icon" href="/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Biblioteca | Ervatório">
+<meta property="og:description" content="Guias do chá para imprimir e salvar em PDF.">
+<meta property="og:url" content="${url}">
+<meta property="og:image" content="${SITE}/images/optimized/hero/ervas-colecao-1024w.webp">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">${JSON.stringify(jsonld)}</script>
+<style>${CSS}
+ul.biblio{list-style:none;padding:0}
+ul.biblio li{border-bottom:1px dashed var(--line);padding:14px 0}
+ul.biblio a{color:var(--verde);font-weight:700;text-decoration:none;font-size:1.1rem}
+ul.biblio .sub{color:#7a6f57;font-size:.9rem}
+ul.biblio .d{color:var(--ink);font-size:.9rem}</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <a class="back" href="/">← Ervatório</a>
+  <h1>Biblioteca</h1>
+  <p class="tagline">Guias do chá para imprimir ou salvar em PDF — preparo, léxico e processo, num clique.</p>
+</div></header>
+<main class="wrap">
+  <p><a class="cta gold" href="/">🍵 Abrir o Ervatório</a> <a class="cta" href="/lexico/">Léxico →</a> <a class="cta" href="/como-se-faz/">Como se faz →</a></p>
+  <ul class="biblio">
 ${cards}
   </ul>
 </main>
@@ -603,19 +764,31 @@ for (const proc of PROCESSOS) {
 }
 writeFileSync(join('como-se-faz', 'index.html'), comoSeFazHub());
 
+// Biblioteca (guias imprimíveis)
+let bibCount = 0;
+for (const guia of BIBLIOTECA_GUIAS) {
+  const dir = join('biblioteca', guia.slug);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, 'index.html'), bibliotecaGuiaPage(guia));
+  bibCount++;
+}
+writeFileSync(join('biblioteca', 'index.html'), bibliotecaHub());
+
 // sitemap.xml
 const staticUrls = [
   { loc: `${SITE}/`, priority: '1.0' },
   { loc: `${SITE}/erva/`, priority: '0.9' },
   { loc: `${SITE}/lexico/`, priority: '0.7' },
   { loc: `${SITE}/como-se-faz/`, priority: '0.7' },
+  { loc: `${SITE}/biblioteca/`, priority: '0.6' },
   { loc: `${SITE}/privacidade.html`, priority: '0.3' },
   { loc: `${SITE}/termos.html`, priority: '0.3' },
 ];
 const urls = staticUrls
   .concat(slugs.map((s) => ({ loc: `${SITE}/erva/${s}/`, priority: '0.8' })))
   .concat(LEXICO_TERMOS.map((t) => ({ loc: `${SITE}/lexico/${t.slug}/`, priority: '0.6' })))
-  .concat(PROCESSOS.map((p) => ({ loc: `${SITE}/como-se-faz/${p.slug}/`, priority: '0.7' })));
+  .concat(PROCESSOS.map((p) => ({ loc: `${SITE}/como-se-faz/${p.slug}/`, priority: '0.7' })))
+  .concat(BIBLIOTECA_GUIAS.map((g) => ({ loc: `${SITE}/biblioteca/${g.slug}/`, priority: '0.5' })));
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `  <url><loc>${u.loc}</loc><lastmod>${TODAY}</lastmod><priority>${u.priority}</priority></url>`).join('\n')}
@@ -634,5 +807,6 @@ Sitemap: ${SITE}/sitemap.xml
 console.log(`✓ ${count} páginas de erva + hub geradas em /erva/`);
 console.log(`✓ ${lexCount} termos do léxico + hub gerados em /lexico/`);
 console.log(`✓ ${procCount} artigos "como se faz" + hub gerados em /como-se-faz/`);
+console.log(`✓ ${bibCount} guias da biblioteca + hub gerados em /biblioteca/`);
 console.log(`✓ sitemap.xml (${urls.length} URLs) e robots.txt escritos`);
 if (!existsSync('images/manifest.json')) console.warn('! images/manifest.json ausente — OG images caíram no fallback');
