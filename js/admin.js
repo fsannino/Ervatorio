@@ -387,6 +387,7 @@ function openProductForm(p){
   document.getElementById('pfCategory').value=p?.category||'Infusões';
   document.getElementById('pfPrice').value=p?.price||'';
   document.getElementById('pfUnit').value=p?.unit||'50g';
+  document.getElementById('pfWeight').value=p?.weight_grams||100;
   document.getElementById('pfStock').value=p?.stock||'in';
   document.getElementById('pfActive').checked=p?.active!==false;
   document.getElementById('pfIsTest').checked=p?.is_test||false;
@@ -434,6 +435,7 @@ async function saveProduct(){
     category:document.getElementById('pfCategory').value,
     price:parseFloat(document.getElementById('pfPrice').value)||0,
     unit:document.getElementById('pfUnit').value.trim()||'50g',
+    weight_grams:Math.max(1,parseInt(document.getElementById('pfWeight').value,10)||100),
     supplier:supplierName,
     supplier_id:suppId,
     stock:document.getElementById('pfStock').value,

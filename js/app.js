@@ -1256,7 +1256,7 @@ function filterShopBySup(supId){
   const searchInput=document.getElementById('mktSearch');
   if(searchInput) searchInput.value=sup?sup.name:'';
   goPage('marketplace');
-  document.querySelectorAll('.nav-tab').forEach(t=>{ t.classList.toggle('on', t.textContent.trim()==='Marketplace'); });
+  document.querySelectorAll('.nav-tab').forEach(t=>{ t.classList.toggle('on', (t.getAttribute('onclick')||'').includes("goPage('marketplace'")); });
 }
 
 function updateCartCount(){
