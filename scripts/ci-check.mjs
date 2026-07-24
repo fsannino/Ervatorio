@@ -26,6 +26,7 @@ const essentialFiles = [
   'erva/index.html',
   'lexico/index.html',
   'como-se-faz/index.html',
+  'biblioteca/index.html',
 ];
 
 for (const f of essentialFiles) {
