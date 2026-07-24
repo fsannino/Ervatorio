@@ -34,6 +34,10 @@ const lexicoSrc = readFileSync('js/lexico-data.js', 'utf8');
 const { LEXICO_TERMOS, LEXICO_CATEGORIAS } =
   new Function(`${lexicoSrc}; return { LEXICO_TERMOS, LEXICO_CATEGORIAS };`)();
 
+// ── Série "Como se faz" (Onda 2.3) — artigos de processo
+const processosSrc = readFileSync('js/processos-data.js', 'utf8');
+const { PROCESSOS } = new Function(`${processosSrc}; return { PROCESSOS };`)();
+
 // Manifest de imagens (Onda 4) para OG image por erva quando existir.
 let IMG_MANIFEST = {};
 try { IMG_MANIFEST = JSON.parse(readFileSync('images/manifest.json', 'utf8')); } catch { /* ok */ }
@@ -266,7 +270,7 @@ ul.hub a{color:var(--verde);font-weight:700;text-decoration:none}
   <p class="tagline">${slugs.length} ervas do Brasil e do mundo — ciência, preparo, segurança e cultura em cada ficha.</p>
 </div></header>
 <main class="wrap">
-  <p><a class="cta gold" href="/">🌿 Abrir o Ervatório</a> <a class="cta" href="/lexico/">Léxico da Chazeria →</a></p>
+  <p><a class="cta gold" href="/">🌿 Abrir o Ervatório</a> <a class="cta" href="/lexico/">Léxico da Chazeria →</a> <a class="cta" href="/como-se-faz/">Como se faz →</a></p>
   <ul class="hub">
 ${links}
   </ul>
@@ -403,9 +407,163 @@ function lexicoHubPage() {
   <p class="tagline">A linguagem do chá em ${LEXICO_TERMOS.length} termos — métodos, utensílios, botânica e a cultura do Brasil e do mundo.</p>
 </div></header>
 <main class="wrap">
-  <p><a class="cta gold" href="/">🍵 Abrir o Ervatório</a> <a class="cta" href="/erva/">Ervopédia →</a></p>
+  <p><a class="cta gold" href="/">🍵 Abrir o Ervatório</a> <a class="cta" href="/erva/">Ervopédia →</a> <a class="cta" href="/como-se-faz/">Como se faz →</a></p>
   <ul class="lex">
 ${links}
+  </ul>
+</main>
+<footer>
+  <p>© 2026 Ervatório · <a href="/">ervatorio.com.br</a> · <a href="/privacidade.html">Privacidade</a> · <a href="/termos.html">Termos</a></p>
+</footer>
+</body>
+</html>`;
+}
+
+// ── "Como se faz": CSS extra + páginas ──────────────────────
+const PROCESSO_CSS = `
+.serie-tag{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ouro2);font-weight:700}
+.tldr{background:#eef3ec;border:1px solid #cfe0cc;border-left:4px solid var(--verde2);border-radius:0 10px 10px 0;padding:14px 18px;margin:22px 0;font-size:1rem}
+.tldr strong{color:var(--verde)}
+article section p{margin:10px 0}
+.serie-nav{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;margin-top:8px}
+.serie-nav a{color:var(--verde);text-decoration:none;font-weight:700;font-size:.9rem}
+.refs{font-size:.82rem;color:#6b5a2e}.refs li{margin:4px 0}`;
+
+const procByOrdem = [...PROCESSOS].sort((a, b) => a.ordem - b.ordem);
+const TOTAL_PROC = procByOrdem.length;
+
+function comoSeFazPage(proc) {
+  const url = `${SITE}/como-se-faz/${proc.slug}/`;
+  const nn = String(proc.ordem).padStart(2, '0');
+  const desc = String(proc.tldr || '').slice(0, 158);
+
+  const corpo = (proc.secoes || [])
+    .map((s) => `<section><h2>${esc(s.h)}</h2>${(s.p || []).map((p) => `<p>${esc(p)}</p>`).join('')}</section>`).join('\n');
+
+  const relLex = (proc.rel_lexico || []).filter((s) => lexBySlug[s])
+    .map((s) => `<a href="/lexico/${s}/">${esc(lexBySlug[s].termo)}</a>`).join('');
+  const relErvas = (proc.rel_ervas || []).filter((s) => FICHAS[s])
+    .map((s) => `<a href="/erva/${s}/">${esc(FICHAS[s].nome_popular || s)}</a>`).join('');
+  const refs = (proc.referencias || [])
+    .map((r) => `<li>${esc(r.titulo)}${has(r.autor) ? ` — ${esc(r.autor)}` : ''}${has(r.ano) ? ` (${esc(r.ano)})` : ''}</li>`).join('');
+
+  const prev = procByOrdem.find((x) => x.ordem === proc.ordem - 1);
+  const next = procByOrdem.find((x) => x.ordem === proc.ordem + 1);
+  const nav = `<div class="serie-nav">
+    <span>${prev ? `<a href="/como-se-faz/${prev.slug}/">← ${esc(String(prev.ordem).padStart(2, '0'))} ${esc(prev.titulo)}</a>` : '<span></span>'}</span>
+    <span><a href="/como-se-faz/">Ver a série (${TOTAL_PROC}) →</a></span>
+    <span>${next ? `<a href="/como-se-faz/${next.slug}/">${esc(String(next.ordem).padStart(2, '0'))} ${esc(next.titulo)} →</a>` : ''}</span>
+  </div>`;
+
+  const jsonld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Article', headline: `${proc.titulo}: ${proc.subtitulo}`.slice(0, 110),
+        description: desc, inLanguage: 'pt-BR', mainEntityOfPage: url,
+        image: `${SITE}/images/optimized/hero/ervas-colecao-1024w.webp`,
+        author: { '@type': 'Organization', name: 'Ervatório', url: SITE },
+        publisher: { '@type': 'Organization', name: 'Ervatório', url: SITE, logo: { '@type': 'ImageObject', url: `${SITE}/icon-512.png` } },
+        articleSection: 'Como se faz',
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Ervatório', item: `${SITE}/` },
+          { '@type': 'ListItem', position: 2, name: 'Como se faz', item: `${SITE}/como-se-faz/` },
+          { '@type': 'ListItem', position: 3, name: proc.titulo, item: url },
+        ],
+      },
+    ],
+  };
+
+  return `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${esc(proc.titulo)}: ${esc(proc.subtitulo)} — Como se faz o chá | Ervatório</title>
+<meta name="description" content="${esc(desc)}">
+<link rel="canonical" href="${url}">
+<link rel="icon" href="/icon-192.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="${esc(proc.titulo)} — Como se faz o chá | Ervatório">
+<meta property="og:description" content="${esc(desc)}">
+<meta property="og:url" content="${url}">
+<meta property="og:image" content="${SITE}/images/optimized/hero/ervas-colecao-1024w.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(proc.titulo)} — Como se faz | Ervatório">
+<meta name="twitter:description" content="${esc(desc)}">
+<script type="application/ld+json">${JSON.stringify(jsonld)}</script>
+<style>${CSS}${PROCESSO_CSS}</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <a class="back" href="/como-se-faz/">← Como se faz</a>
+  <div class="serie-tag" style="margin-top:10px">Como se faz · ${nn} / ${String(TOTAL_PROC).padStart(2, '0')}</div>
+  <h1>${esc(proc.titulo)}</h1>
+  <div class="latin">${esc(proc.subtitulo)}</div>
+</div></header>
+<main class="wrap">
+  <article>
+    <div class="tldr"><strong>Em resumo:</strong> ${esc(proc.tldr)}</div>
+    ${corpo}
+  </article>
+  ${relLex ? section('Termos relacionados', `<div class="related">${relLex}</div>`) : ''}
+  ${relErvas ? section('Ervas relacionadas', `<div class="related">${relErvas}</div>`) : ''}
+  ${refs ? `<section><h2>Referências</h2><ul class="refs">${refs}</ul></section>` : ''}
+  <section><h2>Nesta série</h2>${nav}</section>
+  <div class="health">🌿 <strong>Aviso:</strong> conteúdo cultural e educacional sobre o processamento de chás e ervas — não constitui aconselhamento de saúde.</div>
+</main>
+<footer>
+  <p>© 2026 Ervatório · <a href="/">ervatorio.com.br</a> · <a href="/privacidade.html">Privacidade</a> · <a href="/termos.html">Termos</a></p>
+</footer>
+</body>
+</html>`;
+}
+
+function comoSeFazHub() {
+  const url = `${SITE}/como-se-faz/`;
+  const cards = procByOrdem.map((p) =>
+    `<li><a href="/como-se-faz/${p.slug}/"><span class="nn">${esc(String(p.ordem).padStart(2, '0'))}</span> ${esc(p.titulo)}</a> <span class="sub">${esc(p.subtitulo)}</span></li>`).join('\n');
+  const jsonld = {
+    '@context': 'https://schema.org', '@type': 'CollectionPage',
+    name: 'Como se faz o chá — série editorial do Ervatório', url, inLanguage: 'pt-BR',
+    hasPart: procByOrdem.map((p) => ({ '@type': 'Article', name: `${p.titulo}: ${p.subtitulo}`, url: `${SITE}/como-se-faz/${p.slug}/` })),
+  };
+  return `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como se faz o chá — da colheita à defumação (${TOTAL_PROC} etapas) | Ervatório</title>
+<meta name="description" content="A jornada da folha à xícara em ${TOTAL_PROC} etapas: colheita, murchamento, enrolamento, oxidação, fixação, secagem e a defumação amazônica. Como o processamento define cada tipo de chá.">
+<link rel="canonical" href="${url}">
+<link rel="icon" href="/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Como se faz o chá | Ervatório">
+<meta property="og:description" content="Da colheita à defumação — ${TOTAL_PROC} etapas que definem cada chá.">
+<meta property="og:url" content="${url}">
+<meta property="og:image" content="${SITE}/images/optimized/hero/ervas-colecao-1024w.webp">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">${JSON.stringify(jsonld)}</script>
+<style>${CSS}${PROCESSO_CSS}
+ul.serie{list-style:none;padding:0}
+ul.serie li{border-bottom:1px dashed var(--line);padding:12px 0}
+ul.serie a{color:var(--verde);font-weight:700;text-decoration:none;font-size:1.05rem}
+ul.serie .nn{color:var(--ouro);font-family:Georgia,serif}
+ul.serie .sub{display:block;color:#7a6f57;font-size:.88rem}</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <a class="back" href="/">← Ervatório</a>
+  <h1>Como se faz o chá</h1>
+  <p class="tagline">Da folha no galho à xícara: ${TOTAL_PROC} etapas que decidem se um chá vira verde, oolong ou preto — e o saber brasileiro que os guias globais ignoram.</p>
+</div></header>
+<main class="wrap">
+  <p><a class="cta gold" href="/">🍵 Abrir o Ervatório</a> <a class="cta" href="/lexico/">Léxico da Chazeria →</a></p>
+  <ul class="serie">
+${cards}
   </ul>
 </main>
 <footer>
@@ -435,17 +593,29 @@ for (const term of LEXICO_TERMOS) {
 }
 writeFileSync(join('lexico', 'index.html'), lexicoHubPage());
 
+// Série "Como se faz"
+let procCount = 0;
+for (const proc of PROCESSOS) {
+  const dir = join('como-se-faz', proc.slug);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, 'index.html'), comoSeFazPage(proc));
+  procCount++;
+}
+writeFileSync(join('como-se-faz', 'index.html'), comoSeFazHub());
+
 // sitemap.xml
 const staticUrls = [
   { loc: `${SITE}/`, priority: '1.0' },
   { loc: `${SITE}/erva/`, priority: '0.9' },
   { loc: `${SITE}/lexico/`, priority: '0.7' },
+  { loc: `${SITE}/como-se-faz/`, priority: '0.7' },
   { loc: `${SITE}/privacidade.html`, priority: '0.3' },
   { loc: `${SITE}/termos.html`, priority: '0.3' },
 ];
 const urls = staticUrls
   .concat(slugs.map((s) => ({ loc: `${SITE}/erva/${s}/`, priority: '0.8' })))
-  .concat(LEXICO_TERMOS.map((t) => ({ loc: `${SITE}/lexico/${t.slug}/`, priority: '0.6' })));
+  .concat(LEXICO_TERMOS.map((t) => ({ loc: `${SITE}/lexico/${t.slug}/`, priority: '0.6' })))
+  .concat(PROCESSOS.map((p) => ({ loc: `${SITE}/como-se-faz/${p.slug}/`, priority: '0.7' })));
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `  <url><loc>${u.loc}</loc><lastmod>${TODAY}</lastmod><priority>${u.priority}</priority></url>`).join('\n')}
@@ -463,5 +633,6 @@ Sitemap: ${SITE}/sitemap.xml
 
 console.log(`✓ ${count} páginas de erva + hub geradas em /erva/`);
 console.log(`✓ ${lexCount} termos do léxico + hub gerados em /lexico/`);
+console.log(`✓ ${procCount} artigos "como se faz" + hub gerados em /como-se-faz/`);
 console.log(`✓ sitemap.xml (${urls.length} URLs) e robots.txt escritos`);
 if (!existsSync('images/manifest.json')) console.warn('! images/manifest.json ausente — OG images caíram no fallback');

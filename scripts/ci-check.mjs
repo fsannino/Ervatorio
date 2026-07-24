@@ -25,6 +25,7 @@ const essentialFiles = [
   'sitemap.xml',
   'erva/index.html',
   'lexico/index.html',
+  'como-se-faz/index.html',
 ];
 
 for (const f of essentialFiles) {
