@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Cultura da Pausa — O Momento Ervatório</title>
+<meta name="description" content="Uma pausa pode mudar o ritmo do seu dia. O Momento Ervatório é um convite para preparar uma infusão, respirar, perceber e voltar ao mundo com mais presença.">
+<link rel="canonical" href="https://ervatorio.com.br/pausa.html">
+<link rel="icon" href="/icon-192.png">
+<meta name="theme-color" content="#1a3a2a">
+<!-- OpenGraph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cultura da Pausa — O Momento Ervatório">
+<meta property="og:description" content="Uma pausa pode mudar o ritmo do seu dia. Um convite para preparar uma infusão, respirar, perceber e voltar ao mundo com mais presença.">
+<meta property="og:image" content="/images/pausa/pausa-hero.png">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --verde:#1a3a2a;--verde-2:#2d5440;--verde-soft:#3a6a50;
+    --ouro:#b8965a;--ouro-deep:#9c7a3f;
+    --creme:#f5ede0;--creme-2:#fbf6ea;
+    --ameixa:#5a2740;--ameixa-soft:#7a3a58;
+    --ink:#22201a;--muted:#6b6455;--line:#e0d5bd;
+    --bg:#f3ecdd;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{background:var(--verde);scroll-behavior:smooth}
+  body{font-family:'Jost',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .serif{font-family:'Cormorant Garamond',Georgia,serif}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+
+  /* Top bar */
+  .topbar{position:sticky;top:0;z-index:20;background:rgba(26,58,42,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(184,150,90,.35)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+  .brand{color:var(--creme);font-family:'Cormorant Garamond',serif;font-size:1.25rem;letter-spacing:.02em;text-decoration:none}
+  .back{color:var(--ouro);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;min-height:44px;display:flex;align-items:center}
+  .back:hover{color:var(--creme)}
+
+  /* Hero */
+  .hero{position:relative;min-height:82vh;display:flex;align-items:flex-end;color:var(--creme);overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:url('/images/pausa/pausa-hero.png') center/cover no-repeat;transform:scale(1.02)}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,40,30,.15) 0%,rgba(20,40,30,.35) 45%,rgba(20,40,30,.88) 100%)}
+  .hero-inner{position:relative;z-index:2;padding:0 0 64px}
+  .eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--ouro);margin-bottom:20px;font-weight:400}
+  .hero h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(2.4rem,7vw,4.2rem);line-height:1.05;letter-spacing:-.01em;text-wrap:balance;max-width:14ch}
+  .hero p{margin-top:22px;max-width:46ch;font-size:1.05rem;font-weight:300;color:#efe6d6;line-height:1.7}
+  .cta-row{margin-top:34px;display:flex;flex-wrap:wrap;gap:14px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:100px;font-size:.9rem;letter-spacing:.06em;text-decoration:none;font-weight:500;transition:transform .2s ease,background .2s ease,color .2s ease;cursor:pointer;border:0}
+  .btn-primary{background:var(--ouro);color:var(--verde)}
+  .btn-primary:hover{background:var(--creme);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--creme);border:1px solid rgba(245,237,224,.5)}
+  .btn-ghost:hover{border-color:var(--ouro);color:var(--ouro)}
+
+  /* Intro / manifesto */
+  .manifesto{background:var(--creme-2);padding:88px 0}
+  .manifesto .wrap{max-width:720px;text-align:center}
+  .manifesto .tag{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ameixa);font-weight:500}
+  .manifesto p{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3.6vw,2.15rem);line-height:1.45;color:var(--verde);margin-top:22px;font-weight:400;text-wrap:pretty}
+  .manifesto .em{color:var(--ameixa);font-style:italic}
+
+  /* Ritual */
+  .ritual{padding:88px 0;background:var(--verde);color:var(--creme)}
+  .section-head{text-align:center;margin-bottom:54px}
+  .section-head .tag{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ouro);font-weight:500}
+  .section-head h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(1.9rem,4.5vw,3rem);margin-top:14px;line-height:1.1;text-wrap:balance}
+  .steps{display:grid;grid-template-columns:1fr;gap:18px}
+  .step{display:flex;gap:20px;align-items:flex-start;padding:22px 24px;background:rgba(245,237,224,.05);border:1px solid rgba(184,150,90,.22);border-radius:16px}
+  .step-num{flex:0 0 auto;width:44px;height:44px;border-radius:50%;border:1px solid var(--ouro);color:var(--ouro);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.3rem}
+  .step h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:500;color:var(--creme);margin-bottom:4px}
+  .step p{font-size:.95rem;font-weight:300;color:#d8cdb8;line-height:1.6}
+
+  /* Split image blocks */
+  .split{display:grid;grid-template-columns:1fr;align-items:stretch}
+  .split .media{min-height:340px;background-size:cover;background-position:center}
+  .split .copy{padding:64px 24px;background:var(--creme-2);display:flex;flex-direction:column;justify-content:center}
+  .split .copy .tag{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ameixa);font-weight:500;margin-bottom:14px}
+  .split .copy h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(1.7rem,4vw,2.6rem);color:var(--verde);line-height:1.12;margin-bottom:16px;text-wrap:balance}
+  .split .copy p{color:var(--muted);font-weight:300;font-size:1.02rem;line-height:1.7;max-width:44ch}
+  .m-preparo{background-image:url('/images/pausa/pausa-preparo.png')}
+  .m-momento{background-image:url('/images/pausa/pausa-momento.png')}
+
+  /* Newsletter */
+  .news{padding:96px 0;background:linear-gradient(165deg,var(--ameixa),var(--ameixa-soft));color:var(--creme)}
+  .news .wrap{max-width:620px;text-align:center}
+  .news .tag{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:#e8c8a0;font-weight:500}
+  .news h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(2rem,5vw,3rem);margin:16px 0 10px;line-height:1.08}
+  .news p{font-weight:300;color:#f0e2d6;max-width:40ch;margin:0 auto 30px;font-size:1.02rem}
+  .news-form{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  .news-form input{flex:1 1 260px;min-height:52px;padding:0 20px;border-radius:100px;border:1px solid rgba(245,237,224,.4);background:rgba(245,237,224,.1);color:var(--creme);font-family:inherit;font-size:16px}
+  .news-form input::placeholder{color:#e0d0c4}
+  .news-form input:focus{outline:none;border-color:var(--ouro);background:rgba(245,237,224,.18)}
+  .news-form .btn-primary{flex:0 0 auto}
+  .news-note{margin-top:18px;font-size:.78rem;color:#e6d4c8;opacity:.85}
+  .news-ok{display:none;margin-top:24px;font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:#fff}
+
+  /* Footer */
+  footer{background:var(--verde);color:#a9b8ad;padding:40px 20px;text-align:center;font-size:.84rem;border-top:1px solid rgba(184,150,90,.3)}
+  footer a{color:var(--ouro);text-decoration:none}
+  footer .flinks{margin-top:10px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+
+  @media(min-width:760px){
+    .steps{grid-template-columns:repeat(2,1fr)}
+    .steps .step:last-child{grid-column:1 / -1}
+    .split{grid-template-columns:1fr 1fr}
+    .split.reverse .media{order:2}
+    .split .media{min-height:520px}
+    .split .copy{padding:80px 56px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/">Ervatório</a>
+    <a class="back" href="/">← Voltar ao início</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Cultura da Pausa</p>
+    <h1 class="serif">Uma pausa pode mudar o ritmo do seu dia.</h1>
+    <p>O Momento Ervatório é um convite para preparar uma infusão, respirar, perceber e voltar ao mundo com mais presença.</p>
+    <div class="cta-row">
+      <a href="#ritual" class="btn btn-primary">Descobrir minha pausa</a>
+      <a href="#newsletter" class="btn btn-ghost">Receber uma pausa por semana</a>
+    </div>
+  </div>
+</header>
+
+<!-- MANIFESTO -->
+<section class="manifesto">
+  <div class="wrap">
+    <span class="tag">O Momento Ervatório</span>
+    <p>Entre um compromisso e outro, existe um espaço.<br>
+    Ali cabe uma xícara, uma respiração <span class="em">e você inteiro,</span> presente.</p>
+  </div>
+</section>
+
+<!-- RITUAL -->
+<section class="ritual" id="ritual">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">O ritual em cinco tempos</span>
+      <h2 class="serif">Como se faz uma pausa</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num serif">1</div>
+        <div>
+          <h3 class="serif">Escolha</h3>
+          <p>Deixe a Roda dos Chás indicar o caminho de sabor que combina com o seu momento de hoje.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num serif">2</div>
+        <div>
+          <h3 class="serif">Prepare</h3>
+          <p>Aqueça a água, meça as ervas e observe a cor se abrir na infusão. O preparo já é parte da pausa.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num serif">3</div>
+        <div>
+          <h3 class="serif">Espere</h3>
+          <p>Alguns minutos de infusão. Nenhuma pressa. Deixe o tempo trabalhar por você.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num serif">4</div>
+        <div>
+          <h3 class="serif">Perceba</h3>
+          <p>O primeiro gole, o aroma, o calor entre as mãos. Volte ao corpo e ao instante.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num serif">5</div>
+        <div>
+          <h3 class="serif">Registre ou compartilhe</h3>
+          <p>Anote no Diário de Infusões o que sentiu — ou leve a descoberta para uma conversa no Clube.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPLIT: preparo -->
+<section class="split">
+  <div class="media m-preparo" role="img" aria-label="Ervas soltas sendo colocadas em um bule de vidro com água quente"></div>
+  <div class="copy">
+    <span class="tag">O preparo</span>
+    <h2 class="serif">O gesto de preparar já desacelera.</h2>
+    <p>Medir as ervas, ver a água encontrar a folha, sentir o aroma subir com o vapor. Antes mesmo do primeiro gole, o corpo entende que é hora de baixar o ritmo.</p>
+  </div>
+</section>
+
+<!-- SPLIT: momento -->
+<section class="split reverse">
+  <div class="media m-momento" role="img" aria-label="Pessoa serena junto à janela segurando uma xícara de chá, em um momento de presença"></div>
+  <div class="copy">
+    <span class="tag">A presença</span>
+    <h2 class="serif">Alguns minutos podem devolver o dia.</h2>
+    <p>Não é sobre parar de fazer. É sobre estar inteiro no que se faz. Uma pausa curta, feita com atenção, muda o ritmo de tudo o que vem depois.</p>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="news" id="newsletter">
+  <div class="wrap">
+    <span class="tag">Newsletter semanal</span>
+    <h2 class="serif">Receba uma pausa por semana.</h2>
+    <p>Uma erva, um preparo e um convite à presença. Toda semana, direto no seu e-mail.</p>
+    <form class="news-form" id="pausaForm" novalidate>
+      <label for="pausaEmail" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Seu e-mail</label>
+      <input type="email" id="pausaEmail" name="email" placeholder="seu@email.com" autocomplete="email" required>
+      <button type="submit" class="btn btn-primary">Quero minha pausa</button>
+    </form>
+    <p class="news-note">Sem spam. Você pode cancelar quando quiser.</p>
+    <p class="news-ok serif" id="pausaOk">Pronto — sua primeira pausa chega em breve.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Ervatório · Cultura botânica para o seu cotidiano</p>
+  <div class="flinks">
+    <a href="/">Início</a>
+    <a href="/privacidade.html">Privacidade</a>
+    <a href="/termos.html">Termos</a>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var form = document.getElementById('pausaForm');
+    var ok = document.getElementById('pausaOk');
+    var email = document.getElementById('pausaEmail');
+    if(!form) return;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var v = (email.value || '').trim();
+      var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+      if(!valid){ email.focus(); email.style.borderColor = '#f3c9b0'; return; }
+      try { localStorage.setItem('erv_pausa_optin', v); } catch(err){}
+      form.style.display = 'none';
+      ok.style.display = 'block';
+    });
+  })();
+</script>
+</body>
+</html>
