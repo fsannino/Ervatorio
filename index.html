@@ -668,6 +668,65 @@
     .pausa-invite-copy { padding: 64px 56px; }
   }
 
+  /* ── CONECTOR DE JORNADA ──────────────────────────── */
+  .jornada-step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    font-family: 'Jost', sans-serif;
+  }
+  .jornada-step .js-num {
+    flex: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--ouro);
+    color: var(--ouro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .82rem;
+    letter-spacing: .02em;
+  }
+  .jornada-step .js-label {
+    font-size: .72rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--ouro);
+    opacity: .9;
+  }
+  .jornada-step .js-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--ouro), transparent);
+    opacity: .35;
+    max-width: 90px;
+  }
+  /* Variação para fundos escuros (Pilares / Clube) usa creme */
+  .pilares .jornada-step .js-num,
+  .clube-section .jornada-step .js-num { border-color: var(--ouro-claro); color: var(--ouro-claro); }
+  .pilares .jornada-step .js-label,
+  .clube-section .jornada-step .js-label { color: var(--ouro-claro); }
+
+  .jornada-next {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    padding-top: 22px;
+    border-top: 1px solid var(--cinza-suave);
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 1.02rem;
+    color: var(--terra);
+    text-decoration: none;
+    transition: color .2s ease, gap .2s ease;
+  }
+  .jornada-next span[aria-hidden] { color: var(--ouro); transition: transform .2s ease; }
+  .jornada-next:hover { color: var(--verde-profundo); gap: 14px; }
+  .jornada-next:hover span[aria-hidden] { transform: translateX(3px); }
+
   /* ── CINCO PILARES ────────────────────────────────── */
   .pilares {
     background: var(--verde-profundo);
@@ -1393,6 +1452,11 @@
 <section class="roda-hero" id="roda">
   <div class="roda-hero-inner">
     <div class="roda-text fade-up">
+      <div class="jornada-step">
+        <span class="js-num">01</span>
+        <span class="js-label">O começo da jornada</span>
+        <span class="js-line"></span>
+      </div>
       <p class="section-eyebrow">Roda dos Chás</p>
       <h2 class="section-headline">
         Como você gostaria<br>
@@ -1421,6 +1485,7 @@
           Consultar a Roda
         </button>
       </div>
+      <a href="#mapa" class="jornada-next">A seguir: descubra de onde vem <span aria-hidden="true">→</span></a>
     </div>
 
     <div class="roda-visual">
@@ -1620,17 +1685,23 @@
   <div class="mapa-inner">
     <div class="mapa-header fade-up">
       <div>
+        <div class="jornada-step">
+          <span class="js-num">02</span>
+          <span class="js-label">Depois da escolha, a origem</span>
+          <span class="js-line"></span>
+        </div>
         <p class="section-eyebrow">Mapa Mundi dos Chás</p>
         <h2 class="section-headline">
           Cada país tem<br>
           seu <em>ritual</em>
         </h2>
         <p class="section-body">
-          Cada chá carrega a geografia, o clima e a alma de sua origem. 
-          Explore as regiões produtoras globais e descubra o que torna 
-          cada terroir único — com destaque especial para os biomas brasileiros.
+          Você já sabe como quer se sentir. Agora descubra de onde vem a 
+          erva que combina com o seu momento — a geografia, o clima e a 
+          alma de cada origem, com destaque especial para os biomas brasileiros.
         </p>
         <a href="#" onclick="enterApp();goPage('mundo');return false" class="btn-primary" style="background:var(--verde-profundo); color:var(--creme);">Explorar o Mapa</a>
+        <a href="#sabores" class="jornada-next">A seguir: entenda o seu paladar <span aria-hidden="true">→</span></a>
       </div>
 
       <div class="mapa-stats">
@@ -1851,6 +1922,11 @@
     </div>
 
     <div class="sabores-text fade-up">
+      <div class="jornada-step">
+        <span class="js-num">03</span>
+        <span class="js-label">Da origem, ao seu paladar</span>
+        <span class="js-line"></span>
+      </div>
       <p class="section-eyebrow">Roda dos Sabores</p>
       <h2 class="section-headline">
         Seu perfil<br>sensorial de<br>
@@ -1866,6 +1942,7 @@
         base no seu perfil sensorial construído ao longo do tempo.
       </p>
       <a href="#" onclick="enterApp();goPage('sabores');return false" class="btn-primary" style="background:var(--terra); color:var(--creme);">Descobrir meu perfil</a>
+      <a href="#diario" class="jornada-next">A seguir: registre o que descobrir <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
@@ -1874,6 +1951,11 @@
 <section class="diario-section" id="diario">
   <div class="diario-inner">
     <div class="diario-text fade-up">
+      <div class="jornada-step">
+        <span class="js-num">04</span>
+        <span class="js-label">Do paladar, à sua memória</span>
+        <span class="js-line"></span>
+      </div>
       <p class="section-eyebrow">Diário de Infusões</p>
       <h2 class="section-headline">
         Crie e guarde<br>suas<br>
@@ -1889,6 +1971,7 @@
         compartilhadas com o Clube das Chazerias.
       </p>
       <a href="#" onclick="enterApp();goPage('favs');return false" class="btn-primary" style="background:var(--verde-profundo); color:var(--creme);">Abrir meu Diário</a>
+      <a href="#clube" class="jornada-next">A seguir: encontre a sua gente <span aria-hidden="true">→</span></a>
     </div>
 
     <div class="diario-visual fade-up">
@@ -1918,6 +2001,10 @@
 <section class="clube-section" id="clube">
   <div class="clube-bg-pattern"></div>
   <div class="clube-inner fade-up">
+    <div class="jornada-step" style="justify-content:center;">
+      <span class="js-num">05</span>
+      <span class="js-label">O destino da jornada</span>
+    </div>
     <p class="section-eyebrow" style="justify-content:center; color:var(--ouro-claro);">
       <span style="display:block; width:24px; height:1px; background:var(--ouro); margin-right:12px;"></span>
       Clube das Chazerias
