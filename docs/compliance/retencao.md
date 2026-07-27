@@ -15,6 +15,7 @@ Referência operacional interna. A versão pública resumida está em `privacida
 | Consentimento LGPD do cadastro | `user_profiles.lgpd_accepted_at` | Enquanto a conta existir | CASCADE; o registro de consentimento de pedidos antigos permanece implícito no pedido anonimizado |
 | Escolha de cookies | `localStorage` do navegador (`erv_consent_v1`) | Até o usuário limpar/alterar | Controlado pelo próprio titular (banner) |
 | Newsletter (opt-in) | `user_profiles.newsletter_optin` (provedor externo na Onda 10) | Até revogação | Remoção imediata no descadastro |
+| Newsletter anônima (e-mail da landing) | `newsletter_subscribers` | **24 meses** sem interação, ou até revogação | `active = false` no descadastro; purga da linha após 24 meses inativos |
 | Logs de Edge Functions | Supabase Logs | Retenção da plataforma (curta) | Automática |
 | Contadores de rate limit | `edge_rate_limits` | ~1 dia (higiene automática) | Automática |
 | Backups do banco | Supabase Backups/PITR | Janela do plano (dias) | Expiram automaticamente; dados excluídos desaparecem dos backups ao fim da janela |
@@ -24,6 +25,13 @@ Referência operacional interna. A versão pública resumida está em `privacida
 1. **Autoatendimento**: menu do perfil → "Excluir minha conta" → Edge Function `user-data-rights` (anonimiza pedidos → deleta Auth user → CASCADE).
 2. **Via encarregado (DPO)**: solicitação pelo canal da Política de Privacidade → admin executa a mesma function (ou `admin-delete-user` após anonimização) em até 15 dias.
 3. **Backups**: a exclusão não remove o dado de backups já existentes; ele expira com a janela de retenção do backup. Em caso de solicitação expressa, documentar essa janela na resposta ao titular.
+4. **Newsletter anônima** (`newsletter_subscribers`): **hoje é processo manual**. O inscrito não tem conta, e nenhuma policy permite que ele mesmo se descadastre — só admin. Ao receber o pedido pelo canal da Política de Privacidade, executar como `service_role`:
+
+   ```sql
+   delete from public.newsletter_subscribers where email = '<e-mail do titular>';
+   ```
+
+   Prazo: 15 dias, igual aos demais. **Isto é uma lacuna conhecida** — o link de descadastro com token, que torna a exclusão autoatendida, está na etapa 2 (Edge Function `newsletter-subscribe`). Enquanto não existir, todo e-mail de campanha precisa trazer o endereço do encarregado em vez de um link de unsubscribe.
 
 ## Princípios
 
