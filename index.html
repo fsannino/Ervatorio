@@ -55,9 +55,11 @@
     --verde-folha:    #3d6b4f;
     --creme:          #f5ede0;
     --creme-escuro:   #ede0cc;
-    --ouro:           #b8965a;
+    --ouro:           #a07f45;
     --ouro-claro:     #d4af7a;
     --terra:          #5c3d2e;
+    --ameixa:         #4a2740;
+    --ameixa-clara:   #7a4364;
     --off-white:      #faf6f0;
     --cinza-suave:    #e8e0d5;
     --texto-escuro:   #1a1a16;
@@ -74,6 +76,8 @@
     --ouro:           #d4af7a;
     --ouro-claro:     #e8c9a0;
     --terra:          #c8a070;
+    --ameixa:         #c98bb0;
+    --ameixa-clara:   #dba8c6;
     --off-white:      #0e0a08;
     --cinza-suave:    #2a2218;
     --texto-escuro:   #e8dcc8;
@@ -430,8 +434,9 @@
   }
   .section-eyebrow {
     font-family: 'Jost', sans-serif;
-    font-size: 10px;
-    letter-spacing: 4px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 500;
     text-transform: uppercase;
     color: var(--ouro);
     margin-bottom: 20px;
@@ -454,7 +459,7 @@
     color: var(--verde-profundo);
     margin-bottom: 20px;
   }
-  .section-headline em { font-style: italic; color: var(--terra); }
+  .section-headline em { font-style: italic; color: var(--ameixa); }
   .section-body {
     font-size: 17px;
     line-height: 1.75;
@@ -588,6 +593,144 @@
   }
   .roda-submit:hover { background: var(--verde-musgo); }
   .roda-submit svg { width: 14px; height: 14px; fill: white; }
+
+  /* ── CONVITE: CULTURA DA PAUSA ────────────────────── */
+  .pausa-invite {
+    background: var(--off-white);
+    padding: 80px 24px;
+  }
+  .pausa-invite-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1080px;
+    margin: 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background: var(--creme);
+    box-shadow: 0 24px 60px -30px rgba(26,58,42,.5);
+    border: 1px solid var(--cinza-suave);
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .pausa-invite-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 32px 70px -28px rgba(26,58,42,.6);
+  }
+  .pausa-invite-media {
+    min-height: 260px;
+    background: url('/images/pausa/pausa-hero.png') center/cover no-repeat;
+  }
+  .pausa-invite-copy {
+    padding: 44px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pausa-invite-tag {
+    font-size: .75rem;
+    letter-spacing: .24em;
+    text-transform: uppercase;
+    color: var(--ameixa);
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .pausa-invite-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    line-height: 1.08;
+    color: var(--verde-profundo);
+    margin-bottom: 16px;
+    text-wrap: balance;
+  }
+  .pausa-invite-body {
+    color: var(--terra);
+    font-size: 1.02rem;
+    line-height: 1.7;
+    max-width: 46ch;
+    margin-bottom: 26px;
+  }
+  .pausa-invite-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    align-self: flex-start;
+    min-height: 44px;
+    padding: 0 26px;
+    border-radius: 100px;
+    background: var(--verde-profundo);
+    color: var(--creme);
+    font-size: .9rem;
+    letter-spacing: .05em;
+    font-weight: 500;
+    transition: background .2s ease;
+  }
+  .pausa-invite-card:hover .pausa-invite-cta { background: var(--verde-musgo); }
+  @media (min-width: 760px) {
+    .pausa-invite-card { grid-template-columns: 1.05fr 1fr; }
+    .pausa-invite-media { min-height: 420px; }
+    .pausa-invite-copy { padding: 64px 56px; }
+  }
+
+  /* ── CONECTOR DE JORNADA ──────────────────────────── */
+  .jornada-step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    font-family: 'Jost', sans-serif;
+  }
+  .jornada-step .js-num {
+    flex: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--ouro);
+    color: var(--ouro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .82rem;
+    letter-spacing: .02em;
+  }
+  .jornada-step .js-label {
+    font-size: .72rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--ouro);
+    opacity: .9;
+  }
+  .jornada-step .js-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--ouro), transparent);
+    opacity: .35;
+    max-width: 90px;
+  }
+  /* Variação para fundos escuros (Pilares / Clube) usa creme */
+  .pilares .jornada-step .js-num,
+  .clube-section .jornada-step .js-num { border-color: var(--ouro-claro); color: var(--ouro-claro); }
+  .pilares .jornada-step .js-label,
+  .clube-section .jornada-step .js-label { color: var(--ouro-claro); }
+
+  .jornada-next {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    padding-top: 22px;
+    border-top: 1px solid var(--cinza-suave);
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 1.02rem;
+    color: var(--terra);
+    text-decoration: none;
+    transition: color .2s ease, gap .2s ease;
+  }
+  .jornada-next span[aria-hidden] { color: var(--ouro); transition: transform .2s ease; }
+  .jornada-next:hover { color: var(--verde-profundo); gap: 14px; }
+  .jornada-next:hover span[aria-hidden] { transform: translateX(3px); }
 
   /* ── CINCO PILARES ────────────────────────────────── */
   .pilares {
@@ -1314,6 +1457,11 @@
 <section class="roda-hero" id="roda">
   <div class="roda-hero-inner">
     <div class="roda-text fade-up">
+      <div class="jornada-step">
+        <span class="js-num">01</span>
+        <span class="js-label">O começo da jornada</span>
+        <span class="js-line"></span>
+      </div>
       <p class="section-eyebrow">Roda dos Chás</p>
       <h2 class="section-headline">
         Como você gostaria<br>
@@ -1342,6 +1490,7 @@
           Consultar a Roda
         </button>
       </div>
+      <a href="#mapa" class="jornada-next">A seguir: descubra de onde vem <span aria-hidden="true">→</span></a>
     </div>
 
     <div class="roda-visual">
@@ -1419,6 +1568,19 @@
       </div>
     </div>
   </div>
+</section>
+
+<!-- CONVITE: CULTURA DA PAUSA -->
+<section class="pausa-invite" aria-labelledby="pausaInviteTitle">
+  <a class="pausa-invite-card" href="/pausa.html">
+    <div class="pausa-invite-media" role="img" aria-label="Mãos segurando uma xícara de chá quente junto à janela, à luz da tarde"></div>
+    <div class="pausa-invite-copy">
+      <span class="pausa-invite-tag">A Cultura da Pausa</span>
+      <h2 id="pausaInviteTitle" class="pausa-invite-title">Uma pausa pode mudar<br>o ritmo do seu dia.</h2>
+      <p class="pausa-invite-body">Escolha, prepare, espere, perceba. O Momento Ervatório é um convite para transformar alguns minutos em presença.</p>
+      <span class="pausa-invite-cta">Descobrir minha pausa <span aria-hidden="true">→</span></span>
+    </div>
+  </a>
 </section>
 
 <!-- CINCO PILARES -->
@@ -1528,17 +1690,23 @@
   <div class="mapa-inner">
     <div class="mapa-header fade-up">
       <div>
+        <div class="jornada-step">
+          <span class="js-num">02</span>
+          <span class="js-label">Depois da escolha, a origem</span>
+          <span class="js-line"></span>
+        </div>
         <p class="section-eyebrow">Mapa Mundi dos Chás</p>
         <h2 class="section-headline">
           Cada país tem<br>
           seu <em>ritual</em>
         </h2>
         <p class="section-body">
-          Cada chá carrega a geografia, o clima e a alma de sua origem. 
-          Explore as regiões produtoras globais e descubra o que torna 
-          cada terroir único — com destaque especial para os biomas brasileiros.
+          Você já sabe como quer se sentir. Agora descubra de onde vem a 
+          erva que combina com o seu momento — a geografia, o clima e a 
+          alma de cada origem, com destaque especial para os biomas brasileiros.
         </p>
         <a href="#" onclick="enterApp();goPage('mundo');return false" class="btn-primary" style="background:var(--verde-profundo); color:var(--creme);">Explorar o Mapa</a>
+        <a href="#sabores" class="jornada-next">A seguir: entenda o seu paladar <span aria-hidden="true">→</span></a>
       </div>
 
       <div class="mapa-stats">
@@ -1759,6 +1927,11 @@
     </div>
 
     <div class="sabores-text fade-up">
+      <div class="jornada-step">
+        <span class="js-num">03</span>
+        <span class="js-label">Da origem, ao seu paladar</span>
+        <span class="js-line"></span>
+      </div>
       <p class="section-eyebrow">Roda dos Sabores</p>
       <h2 class="section-headline">
         Seu perfil<br>sensorial de<br>
@@ -1774,6 +1947,7 @@
         base no seu perfil sensorial construído ao longo do tempo.
       </p>
       <a href="#" onclick="enterApp();goPage('sabores');return false" class="btn-primary" style="background:var(--terra); color:var(--creme);">Descobrir meu perfil</a>
+      <a href="#diario" class="jornada-next">A seguir: registre o que descobrir <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
@@ -1782,6 +1956,11 @@
 <section class="diario-section" id="diario">
   <div class="diario-inner">
     <div class="diario-text fade-up">
+      <div class="jornada-step">
+        <span class="js-num">04</span>
+        <span class="js-label">Do paladar, à sua memória</span>
+        <span class="js-line"></span>
+      </div>
       <p class="section-eyebrow">Diário de Infusões</p>
       <h2 class="section-headline">
         Crie e guarde<br>suas<br>
@@ -1797,6 +1976,7 @@
         compartilhadas com o Clube das Chazerias.
       </p>
       <a href="#" onclick="enterApp();goPage('favs');return false" class="btn-primary" style="background:var(--verde-profundo); color:var(--creme);">Abrir meu Diário</a>
+      <a href="#clube" class="jornada-next">A seguir: encontre a sua gente <span aria-hidden="true">→</span></a>
     </div>
 
     <div class="diario-visual fade-up">
@@ -1826,6 +2006,10 @@
 <section class="clube-section" id="clube">
   <div class="clube-bg-pattern"></div>
   <div class="clube-inner fade-up">
+    <div class="jornada-step" style="justify-content:center;">
+      <span class="js-num">05</span>
+      <span class="js-label">O destino da jornada</span>
+    </div>
     <p class="section-eyebrow" style="justify-content:center; color:var(--ouro-claro);">
       <span style="display:block; width:24px; height:1px; background:var(--ouro); margin-right:12px;"></span>
       Clube das Chazerias
