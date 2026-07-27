@@ -1,4 +1,7 @@
-const CACHE_NAME = 'ervatorio-v40';
+// v41: js/config.js mudou de projeto Supabase. A estratégia same-origin
+// é network-first, então o cache não serve config antiga com rede boa —
+// mas o precache ficaria preso no host morto em modo offline.
+const CACHE_NAME = 'ervatorio-v41';
 const OFFLINE_URL = '/';
 
 const PRECACHE_ASSETS = [
