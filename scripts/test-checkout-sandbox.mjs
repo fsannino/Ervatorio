@@ -54,15 +54,23 @@ const H = { 'Content-Type': 'application/json', apikey: key, Authorization: `Bea
 // E-mail de convidado dedicado ao teste, para dar pra achar e apagar depois.
 const GUEST = 'teste-checkout@exemplo.invalid';
 
+// Os nomes dos campos são os que o servidor exige em
+// create-order/index.ts:94 — name, zip, street, city, state — e os
+// mesmos que Checkout.collectAddress() monta em js/checkout.js:326.
+// Usar equivalentes em português aqui faz o servidor responder
+// "Endereço de entrega incompleto", que foi como este script errou
+// na primeira versão.
 const ENDERECO = {
-  nome: 'Teste Sandbox',
-  cep: '01310-100',
-  logradouro: 'Av. Paulista',
-  numero: '1000',
-  complemento: '',
-  bairro: 'Bela Vista',
-  cidade: 'São Paulo',
-  uf: 'SP',
+  name: 'Teste Sandbox',
+  phone: '11999999999',
+  zip: '01310-100',
+  street: 'Av. Paulista',
+  number: '1000',
+  complement: '',
+  neighborhood: 'Bela Vista',
+  city: 'São Paulo',
+  state: 'SP',
+  country: 'Brasil',
 };
 
 const brl = (c) => `R$ ${(c / 100).toFixed(2).replace('.', ',')}`;
@@ -75,6 +83,16 @@ function check(nome, condicao, detalhe) {
 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// Quando a chamada não volta 200, o motivo do servidor vale mais do
+// que o valor calculado. Sem isso, um payload malformado aparecia
+// como "servidor cobrou R$ 0,00" — que lê como falha de preço e
+// manda investigar o lugar errado.
+function porque(res) {
+  if (res.limitado) return 'INCONCLUSIVO — rate limit, não é falha do servidor';
+  if (res.status !== 200) return `INCONCLUSIVO — HTTP ${res.status}: ${res.json?.error || 'sem detalhe'}`;
+  return null;
+}
 
 // create-order limita a 10 chamadas/minuto por IP para convidado
 // (create-order/index.ts:86), e a checagem roda ANTES da validação —
@@ -160,9 +178,8 @@ const esperado = precoDoBanco * 2;
 check(
   'preço vem do banco, não do cliente',
   tentaFraude.status === 200 && tentaFraude.json.subtotal_cents === esperado,
-  tentaFraude.limitado
-    ? 'INCONCLUSIVO — rate limit, não é falha do servidor'
-    : `enviei R$ 0,01 · servidor cobrou ${brl(tentaFraude.json.subtotal_cents ?? 0)} (esperado ${brl(esperado)})`,
+  porque(tentaFraude)
+    ?? `enviei R$ 0,01 · servidor cobrou ${brl(tentaFraude.json.subtotal_cents ?? 0)} (esperado ${brl(esperado)})`,
 );
 
 const qtdAbsurda = await post('create-order', {
@@ -173,9 +190,8 @@ const qtdAbsurda = await post('create-order', {
 check(
   'quantidade é limitada a 999',
   qtdAbsurda.status === 200 && qtdAbsurda.json.subtotal_cents === precoDoBanco * 999,
-  qtdAbsurda.limitado
-    ? 'INCONCLUSIVO — rate limit, não é falha do servidor'
-    : `pedi 99999 · servidor cobrou ${qtdAbsurda.json.subtotal_cents ? qtdAbsurda.json.subtotal_cents / precoDoBanco : '?'} unidades`,
+  porque(qtdAbsurda)
+    ?? `pedi 99999 · servidor cobrou ${qtdAbsurda.json.subtotal_cents / precoDoBanco} unidades`,
 );
 
 const qtdNegativa = await post('create-order', {
@@ -186,9 +202,8 @@ const qtdNegativa = await post('create-order', {
 check(
   'quantidade negativa vira 1',
   qtdNegativa.status === 200 && qtdNegativa.json.subtotal_cents === precoDoBanco,
-  qtdNegativa.limitado
-    ? 'INCONCLUSIVO — rate limit, não é falha do servidor'
-    : `pedi -5 · servidor cobrou ${brl(qtdNegativa.json.subtotal_cents ?? 0)}`,
+  porque(qtdNegativa)
+    ?? `pedi -5 · servidor cobrou ${brl(qtdNegativa.json.subtotal_cents ?? 0)}`,
 );
 
 // ── 2. Pedido de verdade ────────────────────────────────────
