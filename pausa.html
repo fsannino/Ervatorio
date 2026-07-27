@@ -236,20 +236,66 @@
   </div>
 </footer>
 
+<!-- Supabase JS SDK + config (mesmo projeto do site) -->
+<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script defer src="/js/config.js"></script>
 <script>
   (function(){
     var form = document.getElementById('pausaForm');
     var ok = document.getElementById('pausaOk');
     var email = document.getElementById('pausaEmail');
+    var btn = form ? form.querySelector('button[type="submit"]') : null;
     if(!form) return;
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      var v = (email.value || '').trim();
-      var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
-      if(!valid){ email.focus(); email.style.borderColor = '#f3c9b0'; return; }
+
+    var _client = null;
+    function getClient(){
+      if(_client) return _client;
+      if(window.supabase && window.ERVATORIO_CONFIG){
+        _client = window.supabase.createClient(
+          window.ERVATORIO_CONFIG.SUPABASE_URL,
+          window.ERVATORIO_CONFIG.SUPABASE_PUBLISHABLE_KEY
+        );
+      }
+      return _client;
+    }
+
+    function currentLocale(){
+      try { return localStorage.getItem('erv_lang') || 'pt'; } catch(e){ return 'pt'; }
+    }
+
+    function showSuccess(v){
       try { localStorage.setItem('erv_pausa_optin', v); } catch(err){}
       form.style.display = 'none';
       ok.style.display = 'block';
+    }
+
+    form.addEventListener('submit', async function(e){
+      e.preventDefault();
+      var v = (email.value || '').trim().toLowerCase();
+      var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+      if(!valid){ email.focus(); email.style.borderColor = '#f3c9b0'; return; }
+
+      var sb = getClient();
+      // Sem SDK/config: degrada para o comportamento local, sem quebrar a UX.
+      if(!sb){ showSuccess(v); return; }
+
+      if(btn){ btn.disabled = true; btn.textContent = 'Enviando…'; }
+      try {
+        var res = await sb.from('newsletter_subscribers').insert({
+          email: v, source: 'pausa', locale: currentLocale(), consent: true
+        });
+        // 23505 = e-mail já inscrito → tratamos como sucesso silencioso.
+        if(res.error && res.error.code !== '23505'){
+          throw res.error;
+        }
+        showSuccess(v);
+      } catch(err){
+        console.error('[Pausa/newsletter]', err);
+        if(btn){ btn.disabled = false; btn.textContent = 'Quero minha pausa'; }
+        email.style.borderColor = '#f3c9b0';
+        ok.textContent = 'Não consegui salvar agora. Tente novamente em instantes.';
+        ok.style.display = 'block';
+      }
     });
   })();
 </script>
