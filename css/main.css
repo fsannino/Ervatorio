@@ -1312,7 +1312,7 @@ body.light .leaflet-popup-content-wrapper{background:#f5f0e8;color:#2a1e0a}
   .lang-switcher{gap:1px}
   .lang-btn{font-size:.75rem;padding:2px 3px}
 }
-/* ═════════════�����════════════════════════════════
+/* ═════════════�������════════════════════════════════
    JOGO BOTÂNICO
 ══════════════════════════════════════════════ */
 .jogo-intro{text-align:center;padding:1rem 0 2rem;max-width:520px;margin:0 auto}
@@ -1489,7 +1489,7 @@ body.light .leaflet-popup-content-wrapper{background:#f5f0e8;color:#2a1e0a}
   .quiz-result-visual{width:200px;height:200px}
 }
 
-/* ═══════���═���══════════════════════════════════════════════════════
+/* ═════���═���═���══════════════════════════════════════════════════════
    CAMINHO DO CHAZEIRO — Badges & Progress
    ══════════════════════════════════════════════════���═════════════ */
 
@@ -1637,3 +1637,11 @@ img,video,canvas,svg{max-width:100%;height:auto}
   .auth-overlay,.profile-complete-overlay{padding:.65rem}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+
+/* ── PADRÃO EDITORIAL DE SEÇÃO (piloto: Blends + Chás) ── */
+#page-blends,#page-chas{padding-top:clamp(1.5rem,4vw,2.75rem)}
+#page-blends>.sec-title:first-child,#page-chas>.sec-title:first-child{position:relative;padding-top:26px;font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,2.7rem)!important;line-height:1.05!important;font-weight:400!important;letter-spacing:-.015em;color:var(--cream)!important;margin-bottom:.5rem!important}
+#page-blends>.sec-title:first-child::before,#page-chas>.sec-title:first-child::before{content:'';position:absolute;top:0;left:0;width:44px;height:2px;background:var(--gold)}
+#page-blends>.sec-title:first-child::after,#page-chas>.sec-title:first-child::after{content:'ERVATÓRIO';position:absolute;top:-2px;left:58px;font-family:'Jost',sans-serif;font-size:.62rem;font-weight:500;letter-spacing:.24em;color:var(--gold2);opacity:.75}
+#page-blends>.sec-sub:nth-child(2),#page-chas>.sec-sub:nth-child(2){font-size:.95rem!important;line-height:1.6!important;color:var(--muted)!important;max-width:64ch;margin-bottom:0!important;padding-bottom:1.4rem;border-bottom:0.5px solid var(--faint);margin-bottom:1.75rem!important}
+body.light #page-blends>.sec-title:first-child,body.light #page-chas>.sec-title:first-child{color:var(--cream)!important}
