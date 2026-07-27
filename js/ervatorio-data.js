@@ -197,28 +197,6 @@ const ErvatorioData = (function() {
       return scored.slice(0, limite);
     },
 
-    // === VIEWS ===
-    async getCatalogoCompleto() {
-      return cached('catalogo:completo', async () => {
-        const { data, error } = await getClient()
-          .from('v_catalogo_completo')
-          .select('*');
-        if (error) throw error;
-        return data;
-      });
-    },
-
-    async getFichasComProdutos() {
-      return cached('catalogo:com_produtos', async () => {
-        const { data, error } = await getClient()
-          .from('v_fichas_com_produtos')
-          .select('*')
-          .gt('total_produtos', 0);
-        if (error) throw error;
-        return data;
-      });
-    },
-
     // === VETORES (para Roda Funcional) ===
     // Deriva vetores unicos de admin_herb_fichas.ficha.acoes_e_seguranca.acoes_principais
     // porque a tabela admin_recommendation_vectors nao foi criada no schema.
