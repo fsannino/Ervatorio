@@ -1312,7 +1312,7 @@ body.light .leaflet-popup-content-wrapper{background:#f5f0e8;color:#2a1e0a}
   .lang-switcher{gap:1px}
   .lang-btn{font-size:.75rem;padding:2px 3px}
 }
-/* ═════════════���════════════════════════════════
+/* ═════════════�����════════════════════════════════
    JOGO BOTÂNICO
 ══════════════════════════════════════════════ */
 .jogo-intro{text-align:center;padding:1rem 0 2rem;max-width:520px;margin:0 auto}
@@ -1489,7 +1489,7 @@ body.light .leaflet-popup-content-wrapper{background:#f5f0e8;color:#2a1e0a}
   .quiz-result-visual{width:200px;height:200px}
 }
 
-/* ═════════���══════════════════════════════════════════════════════
+/* ═══════���═���══════════════════════════════════════════════════════
    CAMINHO DO CHAZEIRO — Badges & Progress
    ══════════════════════════════════════════════════���═════════════ */
 
@@ -1620,4 +1620,20 @@ nav{padding:.75rem clamp(1rem,3vw,2rem);gap:8px;border-bottom:1px solid var(--na
   .badges-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:380px){.badges-grid,.prep-grid,.sobre-pilares,.sobre-linhas{grid-template-columns:1fr}.nav-top{gap:6px}.auth-btn{padding-inline:10px}}
+/* Contenção responsiva para todos os painéis públicos */
+html,body{max-width:100%;overflow-x:hidden}
+nav,.nav-top,.nav-tabs,.page,.landing,.landing-sections,main,section{min-width:0;max-width:100%}
+img,video,canvas,svg{max-width:100%;height:auto}
+.nav-top>*{min-width:0}.logo{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav-actions{min-width:0;flex-shrink:1}
+.page>*{max-width:100%}
+@media(max-width:700px){
+  nav{width:100%;overflow:hidden}
+  .nav-tabs{width:100%;max-width:100%;margin-inline:0;padding-inline:0;overscroll-behavior-inline:contain}
+  .nav-tab{flex:0 0 auto}
+  .landing-sections{padding-inline:1rem}
+  .landing-features{gap:8px}.landing-feat{padding:8px 12px}
+  .profile-menu{left:12px;right:12px;min-width:0}
+  .auth-overlay,.profile-complete-overlay{padding:.65rem}
+}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}

@@ -32,3 +32,51 @@ dt{font-size:.74rem!important}
 a:hover{text-decoration-thickness:2px}
 @media(max-width:700px){section>p,section>ul,p,li,dd{font-size:1rem!important;line-height:1.72!important}h1{margin-top:30px!important}}
 @media print{.hero,body>header{background:#fff!important;color:#111!important;padding:0!important}.hero::before,.hero::after,body>header::before,body>header::after{display:none}h1{color:#111!important}.back,.cta{display:none!important}body{background:#fff;color:#111}main.wrap{padding:0!important}section{break-inside:avoid}}
+
+/* Refinamento público — leitura editorial, navegação e consistência */
+html{overflow-x:hidden}
+body{min-height:100dvh;display:flex;flex-direction:column;overflow-x:hidden}
+main{flex:1}
+.hero::before,body>header::before{background:linear-gradient(90deg,rgba(13,38,26,.9),rgba(13,38,26,.5)),url('/images/editorial/mapa-origens.png') center/cover no-repeat}
+.hero .wrap::after,body>header .wrap::after{content:'ERVATÓRIO · BOTÂNICA & CULTURA';position:absolute;right:0;top:2px;color:rgba(245,237,224,.52);font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.18em}
+main.wrap{position:relative}
+main.wrap::before{content:'';display:block;width:42px;height:2px;background:var(--ed-brass);margin-bottom:42px}
+main>p:first-child+section{padding-top:0!important}
+h2{position:relative;padding-left:18px}
+h2::before{content:'';position:absolute;left:0;top:.18em;width:3px;height:.72em;background:var(--ed-brass)}
+section>p,article p{max-width:72ch;text-wrap:pretty}
+section>ul{max-width:76ch}
+section>ul li::marker{color:var(--ed-brass)}
+.cta{gap:8px;transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease}
+.cta:hover{transform:translateY(-1px)}
+.related a,.rel-terms a{transition:border-color .18s ease,background-color .18s ease,transform .18s ease}
+.related a:hover,.rel-terms a:hover{border-color:var(--ed-brass)!important;transform:translateY(-1px);text-decoration:none}
+.serie li,.biblio li{transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+.serie li:hover,.biblio li:hover{border-color:rgba(184,150,90,.52)!important;transform:translateY(-2px);box-shadow:0 14px 30px rgba(23,59,42,.08)}
+.tldr{font-family:Georgia,'Times New Roman',serif!important;background:rgba(49,95,69,.08)!important;border:1px solid rgba(49,95,69,.2)!important;border-left:4px solid var(--ed-leaf)!important;border-radius:0 18px 0 0!important;padding:20px 24px!important;line-height:1.7!important}
+.pron,.latin{line-height:1.65!important;max-width:82ch}
+.eyebrow,.serie-tag{color:#dbc28f!important;font-size:.76rem!important;letter-spacing:.14em!important}
+.refs{max-width:82ch!important;color:inherit!important}.refs li{font-size:.9rem!important;line-height:1.6!important}
+.serie-nav{gap:12px!important}.serie-nav a{display:inline-flex;align-items:center;min-height:42px;padding:8px 12px;border:1px solid var(--ed-line);border-radius:2px;text-decoration:none!important}
+.health strong,.review strong{color:var(--ed-plum)}
+footer p{max-width:none!important;font-family:'Jost',sans-serif!important;font-size:.8rem!important;line-height:1.6!important}
+@media(prefers-color-scheme:dark){
+  .hero::before,body>header::before{background:linear-gradient(90deg,rgba(7,27,18,.93),rgba(7,27,18,.55)),url('/images/editorial/mapa-origens.png') center/cover no-repeat}
+  .tldr{background:rgba(245,237,224,.055)!important;border-color:rgba(245,237,224,.16)!important}
+  .health strong,.review strong{color:#e0a8bc}
+  .serie li:hover,.biblio li:hover{box-shadow:0 14px 30px rgba(0,0,0,.18)}
+}
+@media(max-width:700px){
+  .hero .wrap::after,body>header .wrap::after{display:none}
+  .hero .wrap,body>header .wrap{min-height:250px}
+  main.wrap::before{margin-bottom:30px}
+  h1{font-size:clamp(2.55rem,14vw,4rem)!important;line-height:1!important}
+  h2{font-size:clamp(1.65rem,8vw,2rem)!important;padding-left:14px;margin-bottom:20px!important}
+  main>p:first-child{display:grid!important;grid-template-columns:1fr;gap:9px!important}
+  .cta{width:100%;padding-inline:16px!important}
+  .health,.review{padding:18px!important;border-radius:0 16px 0 0!important}
+  .related a,.rel-terms a{min-height:42px;padding:9px 13px!important}
+  .serie-nav{display:grid!important;grid-template-columns:1fr}.serie-nav a{width:100%;justify-content:center;text-align:center}
+  ul.lex{columns:1!important}.biblio .sub,.serie .sub{display:block;margin-top:5px}
+}
+@media(max-width:380px){.wrap{width:min(100% - 22px,1100px)!important}.hero,body>header{padding-inline:0!important}.serie li,.biblio li{padding:17px!important}}
