@@ -74,11 +74,35 @@ function check(nome, condicao, detalhe) {
   if (!condicao) falhas++;
 }
 
-async function post(fn, body) {
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// create-order limita a 10 chamadas/minuto por IP para convidado
+// (create-order/index.ts:86), e a checagem roda ANTES da validação —
+// então até chamada recusada com 400 consome cota. Este script faz 7
+// chamadas, o que cabe no minuto, desde que espaçadas. Sem a pausa,
+// as 7 saem no mesmo segundo e as últimas voltam 429 — que na
+// primeira versão eu lia como "preço errado", um falso negativo feio.
+const INTERVALO_MS = 7000;
+let ultimaChamada = 0;
+
+async function post(fn, body, { tentarDeNovo = true } = {}) {
+  const desde = Date.now() - ultimaChamada;
+  if (ultimaChamada && desde < INTERVALO_MS) await sleep(INTERVALO_MS - desde);
+  ultimaChamada = Date.now();
+
   const res = await fetch(`${fns}/${fn}`, { method: 'POST', headers: H, body: JSON.stringify(body) });
   let json;
   try { json = await res.json(); } catch { json = { error: await res.text() }; }
-  return { status: res.status, json };
+
+  // Cota estourada por execução anterior: espera a janela virar e
+  // repete uma vez, em vez de reportar falha que não é do servidor.
+  if (res.status === 429 && tentarDeNovo) {
+    console.log('        (cota de 10/min atingida — aguardando 60s para a janela virar)');
+    await sleep(60_000);
+    ultimaChamada = 0;
+    return post(fn, body, { tentarDeNovo: false });
+  }
+  return { status: res.status, json, limitado: res.status === 429 };
 }
 
 // ── 0. Escolhe um produto real e ativo ──────────────────────
@@ -97,7 +121,9 @@ console.log('TESTE DE CHECKOUT EM SANDBOX');
 console.log('='.repeat(64));
 console.log(`Projeto:  ${url}`);
 console.log(`Produto:  ${produto.name} — R$ ${produto.price} / ${produto.unit}`);
-console.log(`Convidado: ${GUEST}\n`);
+console.log(`Convidado: ${GUEST}`);
+console.log(`\nAs chamadas saem a cada ${INTERVALO_MS / 1000}s para respeitar o limite de`);
+console.log('10 pedidos/minuto por IP. A execução leva cerca de 1 minuto.\n');
 
 // ── 1. Testes negativos: o servidor tem que recusar abuso ────
 console.log('1. VALIDAÇÃO DO SERVIDOR\n');
@@ -134,7 +160,9 @@ const esperado = precoDoBanco * 2;
 check(
   'preço vem do banco, não do cliente',
   tentaFraude.status === 200 && tentaFraude.json.subtotal_cents === esperado,
-  `enviei R$ 0,01 · servidor cobrou ${brl(tentaFraude.json.subtotal_cents ?? 0)} (esperado ${brl(esperado)})`,
+  tentaFraude.limitado
+    ? 'INCONCLUSIVO — rate limit, não é falha do servidor'
+    : `enviei R$ 0,01 · servidor cobrou ${brl(tentaFraude.json.subtotal_cents ?? 0)} (esperado ${brl(esperado)})`,
 );
 
 const qtdAbsurda = await post('create-order', {
@@ -145,7 +173,9 @@ const qtdAbsurda = await post('create-order', {
 check(
   'quantidade é limitada a 999',
   qtdAbsurda.status === 200 && qtdAbsurda.json.subtotal_cents === precoDoBanco * 999,
-  `pedi 99999 · servidor cobrou ${qtdAbsurda.json.subtotal_cents ? qtdAbsurda.json.subtotal_cents / precoDoBanco : '?'} unidades`,
+  qtdAbsurda.limitado
+    ? 'INCONCLUSIVO — rate limit, não é falha do servidor'
+    : `pedi 99999 · servidor cobrou ${qtdAbsurda.json.subtotal_cents ? qtdAbsurda.json.subtotal_cents / precoDoBanco : '?'} unidades`,
 );
 
 const qtdNegativa = await post('create-order', {
@@ -156,7 +186,9 @@ const qtdNegativa = await post('create-order', {
 check(
   'quantidade negativa vira 1',
   qtdNegativa.status === 200 && qtdNegativa.json.subtotal_cents === precoDoBanco,
-  `pedi -5 · servidor cobrou ${brl(qtdNegativa.json.subtotal_cents ?? 0)}`,
+  qtdNegativa.limitado
+    ? 'INCONCLUSIVO — rate limit, não é falha do servidor'
+    : `pedi -5 · servidor cobrou ${brl(qtdNegativa.json.subtotal_cents ?? 0)}`,
 );
 
 // ── 2. Pedido de verdade ────────────────────────────────────
