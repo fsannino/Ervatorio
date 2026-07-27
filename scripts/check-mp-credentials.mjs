@@ -80,15 +80,29 @@ if (meRes.ok) {
       .map(([k]) => k);
     console.log(`   restrições: ${restricoes.length ? restricoes.join(', ') : 'nenhuma reportada'}`);
   }
+  await preferenciaMinima();
 } else {
   console.log(`   HTTP ${meRes.status}  — ${JSON.stringify(me)}`);
   console.log('\n   O token não foi aceito nem para identificar a conta.');
-  console.log('   Copie de novo do painel: Suas integrações > sua aplicação >');
-  console.log(`   Credenciais de ${modo === 'production' ? 'produção' : 'teste'} > Access token.`);
-  process.exit(1);
+  if (!prefixoOk) {
+    console.log(`\n   O formato já explica: em modo ${modo} o Access token`);
+    console.log(`   começa com "${esperado}". Um valor como TESTUSER... é o`);
+    console.log('   NOME de um usuário de teste (Contas de teste), não uma');
+    console.log('   credencial de API — por isso o PolicyAgent recusa.');
+  }
+  console.log('\n   Onde pegar o certo:');
+  console.log('     mercadopago.com.br/developers/panel');
+  console.log('     > Suas integrações > sua aplicação');
+  console.log(`     > Credenciais de ${modo === 'production' ? 'produção' : 'teste'} > Access token`);
+  console.log('='.repeat(60));
+  // Sem process.exit(): com fetch pendente, o Node no Windows aborta
+  // com "Assertion failed: !(handle->flags & UV_HANDLE_CLOSING)".
+  // exitCode deixa o processo encerrar sozinho, limpo.
+  process.exitCode = 1;
 }
 
 // ── 2. A preferência mínima possível ────────────────────────
+async function preferenciaMinima() {
 console.log('\n2. CRIAR PREFERÊNCIA (payload mínimo)\n');
 const prefRes = await fetch('https://api.mercadopago.com/checkout/preferences', {
   method: 'POST',
@@ -120,3 +134,4 @@ if (prefRes.ok) {
   console.log('  • Em modo test, o token começa com TEST-?');
 }
 console.log('='.repeat(60));
+}
