@@ -1,5 +1,5 @@
 -- Cultura da Pausa — captação de newsletter (anônima) · Ervatório
--- Rodar no Supabase SQL Editor (projeto lwzrzztzpklzbmxbqcrx)
+-- Rodar no Supabase SQL Editor (projeto ejarqinmjlgbqzurctsf)
 --
 -- Diferente de user_profiles.newsletter_optin (opt-in de usuário logado),
 -- esta tabela guarda inscrições ANÔNIMAS feitas na landing /pausa.html.
