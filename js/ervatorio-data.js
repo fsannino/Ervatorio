@@ -198,26 +198,13 @@ const ErvatorioData = (function() {
     },
 
     // === VIEWS ===
-    async getCatalogoCompleto() {
-      return cached('catalogo:completo', async () => {
-        const { data, error } = await getClient()
-          .from('v_catalogo_completo')
-          .select('*');
-        if (error) throw error;
-        return data;
-      });
-    },
-
-    async getFichasComProdutos() {
-      return cached('catalogo:com_produtos', async () => {
-        const { data, error } = await getClient()
-          .from('v_fichas_com_produtos')
-          .select('*')
-          .gt('total_produtos', 0);
-        if (error) throw error;
-        return data;
-      });
-    },
+    // getCatalogoCompleto() e getFichasComProdutos() foram removidas.
+    // Liam v_catalogo_completo e v_fichas_com_produtos, duas views que
+    // nunca existiram em nenhuma migration deste repositorio — foram
+    // criadas a mao no SQL Editor do projeto Supabase antigo. Nenhum
+    // arquivo do projeto (js ou html) chamava as duas funcoes.
+    // A vitrine le admin_herbs, admin_suppliers e admin_products
+    // direto, em js/ervaria.js.
 
     // === VETORES (para Roda Funcional) ===
     // Deriva vetores unicos de admin_herb_fichas.ficha.acoes_e_seguranca.acoes_principais
