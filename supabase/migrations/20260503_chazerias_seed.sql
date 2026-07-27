@@ -1,6 +1,17 @@
 -- Seed inicial de Chazerias — Ervatório
 -- Curadoria de 16 locais entre Brasil e Mundo
 -- Rodar no Supabase SQL Editor (após o migration 20260503_chazerias.sql)
+--
+-- Idempotente: o bloco só insere se a tabela estiver vazia, então
+-- reaplicar não duplica linhas nem sobrescreve curadoria editada
+-- depois pelo admin. Para forçar o reseed, esvazie a tabela antes.
+
+DO $seed$
+BEGIN
+IF (SELECT count(*) FROM public.chazerias) > 0 THEN
+  RAISE NOTICE 'chazerias já populada — seed ignorado';
+  RETURN;
+END IF;
 
 INSERT INTO public.chazerias (name, address, city, country, continent, lat, lng, type, description, quote, quote_author, opening_hours, payment, style, website, active) VALUES
 
@@ -236,3 +247,4 @@ INSERT INTO public.chazerias (name, address, city, country, continent, lat, lng,
   'Chá de menta · vista da medina',
   NULL, true
 );
+END $seed$;
