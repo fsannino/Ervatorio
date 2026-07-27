@@ -5,7 +5,7 @@ Arquitetura operacional alvo (Onda 0 do plano de execução). Referência: `docs
 ## Stack
 
 - **Front**: HTML/CSS/JS estático (sem build, por ora) servido pelo **Vercel**.
-- **Backend**: **Supabase** (Postgres + Auth + Edge Functions Deno/TS + Storage). Projeto: `lwzrzztzpklzbmxbqcrx`.
+- **Backend**: **Supabase** (Postgres + Auth + Edge Functions Deno/TS + Storage). Projeto: `ejarqinmjlgbqzurctsf`.
 - **Pagamentos**: Mercado Pago Checkout Pro (redirect) + webhook `mp-webhook`.
 - **E-mail transacional**: Resend (via Edge Function).
 
@@ -27,7 +27,7 @@ Arquitetura operacional alvo (Onda 0 do plano de execução). Referência: `docs
 
 ```bash
 supabase login
-supabase link --project-ref lwzrzztzpklzbmxbqcrx
+supabase link --project-ref ejarqinmjlgbqzurctsf
 supabase branches create staging          # cria branch gerenciado
 supabase branches list                    # obter ref/connection string do branch
 supabase db push --db-url <staging-url>  # aplica migrations pendentes no staging
