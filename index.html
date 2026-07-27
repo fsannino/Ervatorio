@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ervatório — Ervas do Brasil e do Mundo</title>
 <link rel="preload" as="image" type="image/webp"
-      imagesrcset="/images/optimized/hero/hero-bule-320w.webp 320w, /images/optimized/hero/hero-bule-640w.webp 640w, /images/optimized/hero/hero-bule-1024w.webp 1024w"
+      href="/images/optimized/editorial/home-hero.webp"
+      imagesrcset="/images/optimized/editorial/home-hero-320w.webp 320w, /images/optimized/editorial/home-hero-640w.webp 640w, /images/optimized/editorial/home-hero-1024w.webp 1024w"
       imagesizes="100vw" fetchpriority="high">
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#9a7a2e">
@@ -619,7 +620,7 @@
   }
   .pausa-invite-media {
     min-height: 260px;
-    background: url('/images/pausa/pausa-hero.png') center/cover no-repeat;
+    background: url('/images/optimized/pausa/pausa-hero.webp') center/cover no-repeat;
   }
   .pausa-invite-copy {
     padding: 44px 32px;
@@ -1319,8 +1320,11 @@
     .clube-tiers { grid-template-columns: 1fr; }
   }
   @media (max-width: 768px) {
-    .header-inner { grid-template-columns: 1fr auto; }
+    .header-inner { grid-template-columns: minmax(0, 1fr) auto; gap: 12px; padding-inline: 20px; }
     nav.main-nav { display: none; }
+    .header-actions { gap: 8px; min-width: 0; }
+    .header-actions > a { display: none; }
+    .landing .landing-lang .lang-btn { padding: 3px 6px; }
     .hero-headline { font-size: 40px; }
     .pilares-grid { grid-template-columns: 1fr 1fr; }
     .footer-top { grid-template-columns: 1fr; }
@@ -1332,7 +1336,7 @@
   .hero-bg {
     background-image:
       linear-gradient(90deg, rgba(11,31,22,.94) 0%, rgba(11,31,22,.74) 44%, rgba(11,31,22,.18) 78%),
-      url('/images/editorial/home-hero.png');
+      url('/images/optimized/editorial/home-hero.webp');
     background-size: cover;
     background-position: center;
   }
@@ -1359,7 +1363,7 @@
     grid-row: 1;
     min-height: 430px;
     border-radius: 4px 72px 4px 4px;
-    background: url('/images/editorial/mapa-origens.png') center / cover no-repeat;
+    background: url('/images/optimized/editorial/mapa-origens.webp') center / cover no-repeat;
     box-shadow: 0 22px 54px rgba(26,58,42,.13);
   }
   .mapa-header > div:first-child { grid-column: 1; grid-row: 1; align-self: center; }
@@ -1385,9 +1389,9 @@
     background-size: cover !important;
     background-position: center !important;
   }
-  .editorial-item:nth-child(1) .editorial-bg { background-image: url('/images/editorial/rio-negro.png'); }
-  .editorial-item:nth-child(2) .editorial-bg { background-image: url('/images/editorial/linha-phyto.png'); }
-  .editorial-item:nth-child(3) .editorial-bg { background-image: url('/images/editorial/cerrado-mate.png'); }
+  .editorial-item:nth-child(1) .editorial-bg { background-image: url('/images/optimized/editorial/rio-negro.webp'); }
+  .editorial-item:nth-child(2) .editorial-bg { background-image: url('/images/optimized/editorial/linha-phyto.webp'); }
+  .editorial-item:nth-child(3) .editorial-bg { background-image: url('/images/optimized/editorial/cerrado-mate.webp'); }
   .editorial-item::after {
     content: '';
     position: absolute;
@@ -1404,7 +1408,7 @@
     border-radius: 64px 4px 4px 4px;
     background:
       linear-gradient(180deg, transparent 20%, rgba(13,36,25,.28) 62%, rgba(13,36,25,.82) 100%),
-      url('/images/editorial/diario-infusoes.png') center / cover no-repeat;
+      url('/images/optimized/editorial/diario-infusoes.webp') center / cover no-repeat;
     box-shadow: 0 24px 58px rgba(26,58,42,.14);
   }
   .diario-card {
@@ -1427,7 +1431,7 @@
     .hero-bg {
       background-image:
         linear-gradient(180deg, rgba(11,31,22,.22) 0%, rgba(11,31,22,.92) 76%),
-        url('/images/editorial/home-hero.png');
+        url('/images/optimized/editorial/home-hero.webp');
       background-position: 62% center;
     }
     .hero-content { padding: 0 22px 38px; }
