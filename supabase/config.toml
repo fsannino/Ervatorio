@@ -4,7 +4,7 @@
 # overrides antes de subir cada função.
 # ============================================================
 
-project_id = "lwzrzztzpklzbmxbqcrx"
+project_id = "ejarqinmjlgbqzurctsf"
 
 # ------------------------------------------------------------
 # Funções que NÃO devem ter JWT verificado pelo gateway.

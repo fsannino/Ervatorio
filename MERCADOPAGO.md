@@ -62,7 +62,7 @@ supabase secrets set MP_ACCESS_TOKEN_PROD=APP_USR-1234567890-...
 supabase secrets set MP_WEBHOOK_SECRET=sua_chave_secreta_de_assinatura
 supabase secrets set MP_MODE=test
 supabase secrets set MP_RETURN_URL_BASE=https://ervatorio.com.br
-supabase secrets set MP_NOTIFICATION_URL=https://lwzrzztzpklzbmxbqcrx.supabase.co/functions/v1/mp-webhook
+supabase secrets set MP_NOTIFICATION_URL=https://ejarqinmjlgbqzurctsf.supabase.co/functions/v1/mp-webhook
 
 # Confira
 supabase secrets list
@@ -87,7 +87,7 @@ supabase secrets set MP_MODE=production
 ## 2. Configurar webhook no painel Mercado Pago
 
 1. Painel MP → sua aplicação → **Webhooks** → **Configurar notificações**
-2. **URL**: `https://lwzrzztzpklzbmxbqcrx.supabase.co/functions/v1/mp-webhook`
+2. **URL**: `https://ejarqinmjlgbqzurctsf.supabase.co/functions/v1/mp-webhook`
 3. **Eventos**: marque **"Pagamentos"** (`payment`). Os outros são opcionais.
 4. **Modo**: marque **Modo produtivo** E **Modo de teste** (a função lida com os dois).
 5. Salvar e copiar a **Chave secreta** que aparece — essa é o `MP_WEBHOOK_SECRET`.
@@ -184,7 +184,7 @@ A função `mp-webhook` faz uma sanity check de valor: se o `transaction_amount`
 Use o botão "Simular notificação" no painel MP, ou via curl:
 
 ```bash
-curl -X POST https://lwzrzztzpklzbmxbqcrx.supabase.co/functions/v1/mp-webhook \
+curl -X POST https://ejarqinmjlgbqzurctsf.supabase.co/functions/v1/mp-webhook \
   -H "Content-Type: application/json" \
   -d '{"type":"payment","data":{"id":"123456789"}}'
 ```
