@@ -1327,7 +1327,122 @@
     .strip { gap: 20px; }
     .strip-divider { display: none; }
   }
-</style>
+
+  /* ── CAMADA EDITORIAL FOTOGRÁFICA ──────────────────── */
+  .hero-bg {
+    background-image:
+      linear-gradient(90deg, rgba(11,31,22,.94) 0%, rgba(11,31,22,.74) 44%, rgba(11,31,22,.18) 78%),
+      url('/images/editorial/home-hero.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-botanical { opacity: .04; }
+  .hero-illustration { display: none; }
+  .hero-content { max-width: 1240px; }
+  .hero-text {
+    max-width: 650px;
+    padding: 40px;
+    border-left: 1px solid rgba(214,183,116,.56);
+    background: rgba(12,34,24,.18);
+    backdrop-filter: blur(2px);
+  }
+  .hero-stat-panel { align-self: end; }
+
+  .mapa-header {
+    grid-template-columns: minmax(0, .92fr) minmax(360px, 1.08fr);
+    align-items: stretch;
+    gap: 48px;
+  }
+  .mapa-header::after {
+    content: '';
+    grid-column: 2;
+    grid-row: 1;
+    min-height: 430px;
+    border-radius: 4px 72px 4px 4px;
+    background: url('/images/editorial/mapa-origens.png') center / cover no-repeat;
+    box-shadow: 0 22px 54px rgba(26,58,42,.13);
+  }
+  .mapa-header > div:first-child { grid-column: 1; grid-row: 1; align-self: center; }
+  .mapa-header .mapa-stats {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 0;
+  }
+
+  .editorial-strip {
+    padding: 24px;
+    gap: 16px;
+    background: var(--off-white);
+  }
+  .editorial-item {
+    height: min(560px, 46vw);
+    min-height: 400px;
+    border-radius: 4px 52px 4px 4px;
+    box-shadow: 0 18px 42px rgba(18,39,28,.14);
+  }
+  .editorial-bg {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  .editorial-item:nth-child(1) .editorial-bg { background-image: url('/images/editorial/rio-negro.png'); }
+  .editorial-item:nth-child(2) .editorial-bg { background-image: url('/images/editorial/linha-phyto.png'); }
+  .editorial-item:nth-child(3) .editorial-bg { background-image: url('/images/editorial/cerrado-mate.png'); }
+  .editorial-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 30%, rgba(10,25,18,.9) 100%);
+    pointer-events: none;
+  }
+  .editorial-content { z-index: 1; padding: 48px 38px; }
+  .editorial-title { font-size: clamp(25px, 2.3vw, 34px); text-wrap: balance; }
+
+  .diario-visual {
+    min-height: 620px;
+    padding: 250px 30px 30px;
+    border-radius: 64px 4px 4px 4px;
+    background:
+      linear-gradient(180deg, transparent 20%, rgba(13,36,25,.28) 62%, rgba(13,36,25,.82) 100%),
+      url('/images/editorial/diario-infusoes.png') center / cover no-repeat;
+    box-shadow: 0 24px 58px rgba(26,58,42,.14);
+  }
+  .diario-card {
+    background: rgba(250,247,241,.94);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 30px rgba(16,39,27,.16);
+  }
+  .diario-card + .diario-card { background: rgba(245,237,224,.94); }
+
+  @media (max-width: 1024px) {
+    .hero-content { grid-template-columns: 1fr; }
+    .mapa-header { grid-template-columns: 1fr; }
+    .mapa-header::after { grid-column: 1; grid-row: 2; min-height: 360px; }
+    .mapa-header .mapa-stats { grid-column: 1; grid-row: 3; }
+    .editorial-strip { grid-template-columns: 1fr; }
+    .editorial-item { height: 480px; min-height: 0; }
+  }
+  @media (max-width: 768px) {
+    .hero { min-height: 720px; }
+    .hero-bg {
+      background-image:
+        linear-gradient(180deg, rgba(11,31,22,.22) 0%, rgba(11,31,22,.92) 76%),
+        url('/images/editorial/home-hero.png');
+      background-position: 62% center;
+    }
+    .hero-content { padding: 0 22px 38px; }
+    .hero-text { padding: 26px 22px; border-left: 0; border-top: 1px solid rgba(214,183,116,.5); }
+    .mapa-section, .diario-section { padding: 72px 22px; }
+    .mapa-header::after { min-height: 310px; border-radius: 4px 42px 4px 4px; }
+    .editorial-strip { padding: 12px; gap: 12px; }
+    .editorial-item { height: 430px; border-radius: 4px 36px 4px 4px; }
+    .editorial-content { padding: 34px 26px; }
+    .diario-visual { min-height: 560px; padding: 220px 16px 18px; border-radius: 44px 4px 4px 4px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .editorial-bg, .editorial-item, .pais-card { transition: none !important; }
+  }
+  </style>
 </head>
 <body>
 
