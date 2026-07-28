@@ -50,7 +50,10 @@ const ervaria = {
       if (session?.user) {
         this.user = session.user;
         this.isOnline = true;
-        this.onLogin();
+        // Restauração de sessão no carregamento: apenas atualiza UI e sincroniza,
+        // SEM entrar no app automaticamente. A landing continua visível até o
+        // usuário clicar num CTA (enterApp reconhece a sessão e não pede login).
+        this.onLogin({ initial: true });
       } else {
         // Sessão não existe de verdade — se populamos no fast path, limpa.
         this.user = null;
@@ -173,7 +176,11 @@ const ervaria = {
   },
 
   // ── LOGIN/LOGOUT CALLBACKS ──────────────────────────────
-  async onLogin() {
+  async onLogin(opts = {}) {
+    // `initial: true` indica restauração de sessão no boot — nesse caso não
+    // entramos no app nem abrimos o overlay de perfil; só atualizamos a UI e
+    // sincronizamos, mantendo a landing visível até o usuário clicar num CTA.
+    const isBoot = opts.initial === true;
     this.updateAuthUI(true);
     this.hideAuthModal();
     // Check if profile is completed
@@ -186,6 +193,9 @@ const ervaria = {
     this.isAdmin = profile?.is_admin || false;
 
     if (!profile || !profile.profile_completed) {
+      // No boot, não interrompe com o overlay de perfil — apenas mantém a
+      // sessão pronta. O usuário completa o perfil ao entrar de fato no app.
+      if (isBoot) { this.syncFromCloud(); return; }
       // Pre-fill from Google data
       const meta = this.user.user_metadata || {};
       document.getElementById('pcName').value = meta.full_name || meta.name || profile?.display_name || '';
@@ -236,9 +246,15 @@ const ervaria = {
       document.body.style.overflow = 'hidden';
     } else {
       this.syncFromCloud();
-      enterAppAfterAuth();
+      // Marca sessão como conhecida para que enterApp() não peça login de novo.
       localStorage.setItem('erb_entered', '1');
-      toast('Bem-vindo, ' + (profile.display_name || this.user.email.split('@')[0]) + '!');
+      localStorage.setItem('erb_auth', '1');
+      // No boot, NÃO entra no app automaticamente: mantém a landing e espera o
+      // usuário clicar num CTA. Só entramos direto após login interativo.
+      if (!isBoot) {
+        enterAppAfterAuth();
+        toast('Bem-vindo, ' + (profile.display_name || this.user.email.split('@')[0]) + '!');
+      }
     }
   },
   onLogout() {
