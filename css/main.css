@@ -204,6 +204,11 @@ body.light .pc-role.on{background:var(--chip-bg);color:var(--gold2);border-color
 .sec-title{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--gold2);margin-bottom:.25rem;font-weight:300}
 .sec-sub{font-size:.78rem;color:var(--muted);letter-spacing:.05em;margin-bottom:1.5rem}
 
+/* PAGE HERO IMAGE — faixa editorial de apoio (estilo pausa.html) */
+.page-hero-img{width:100%;height:200px;overflow:hidden;border-radius:var(--r-lg);border:0.5px solid var(--faint);margin-bottom:1.5rem}
+.page-hero-img img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:600px){.page-hero-img{height:150px}}
+
 /* SEARCH PAGE */
 .search-box{position:relative;margin-bottom:1rem}
 .search-box input{width:100%;padding:12px 16px 12px 44px;background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);color:var(--cream);font-family:'Jost',sans-serif;font-size:.95rem;font-weight:300;transition:border-color .2s}
@@ -599,7 +604,9 @@ body.light .blend-tab.on{background:var(--chip-bg);color:var(--gold2)}
 .cha-tab:hover{border-color:rgba(200,168,75,.3);color:var(--cream2)}
 .cha-tab.on{color:var(--cream);border-color:currentColor}
 .cha-detail{animation:fadeUp .3s ease}
-.cha-header{border-radius:var(--r-lg);padding:1.25rem;margin-bottom:1.25rem;position:relative;overflow:hidden}
+  .cha-header{border-radius:var(--r-lg);padding:1.25rem;margin-bottom:1.25rem;position:relative;overflow:hidden}
+  .cha-header-img{margin:-1.25rem -1.25rem 1rem;height:180px;overflow:hidden;border-bottom:1px solid var(--faint)}
+  .cha-header-img img{width:100%;height:100%;object-fit:cover;display:block}
 .cha-header-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;margin-bottom:.25rem}
 .cha-header-latin{font-size:.75rem;font-style:italic;opacity:.7;margin-bottom:.5rem}
 .cha-header-tagline{font-size:.82rem;opacity:.85;line-height:1.5}
@@ -1312,7 +1319,7 @@ body.light .leaflet-popup-content-wrapper{background:#f5f0e8;color:#2a1e0a}
   .lang-switcher{gap:1px}
   .lang-btn{font-size:.75rem;padding:2px 3px}
 }
-/* ═════════════���������════════════════════════════════
+/* ═════════════�����������════════════════════════════════
    JOGO BOTÂNICO
 ══════════════════════════════════════════════ */
 .jogo-intro{text-align:center;padding:1rem 0 2rem;max-width:520px;margin:0 auto}
@@ -1489,7 +1496,7 @@ body.light .leaflet-popup-content-wrapper{background:#f5f0e8;color:#2a1e0a}
   .quiz-result-visual{width:200px;height:200px}
 }
 
-/* ═══���═���═���═���══════════════════════════════════════════════════════
+/* ═���═���═���═���═���══════════════════════════════════════════════════════
    CAMINHO DO CHAZEIRO — Badges & Progress
    ══════════════════════════════════════════════════���═════════════ */
 

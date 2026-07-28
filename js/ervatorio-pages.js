@@ -940,7 +940,14 @@
         var nome = b.nome || slug;
         var proposito = b.proposito || '';
         var ervas = Array.isArray(b.ervas_referenciadas) ? b.ervas_referenciadas : [];
+        // Imagem-herói: primeira erva com foto na biblioteca; fallback para arranjo genérico
+        var blendImg = null;
+        for (var i = 0; i < ervas.length && !blendImg; i++) { blendImg = resolveErvaImg(ervas[i], ''); }
+        var imgSrc = safeEsc(blendImg || 'images/produtos/arranjo-de-chas.png');
+        var ph = 'images/produtos/placeholder.svg';
+        var visual = '<div class="ev-card-img-wrap"><img class="ev-card-img" src="' + imgSrc + '" alt="' + safeEsc(nome) + '" loading="lazy" onerror="this.src=\'' + ph + '\';this.onerror=null"></div>';
         return '<div class="herb-card ev-blend-card" onclick="goPage(\'blend\',null,\'' + safeEsc(slug) + '\')">' +
+          visual +
           '<div class="ev-card-nome">' + safeEsc(nome) + '</div>' +
           (proposito ? '<div class="ev-card-tagline">' + safeEsc(proposito) + '</div>' : '') +
           (ervas.length ? '<div class="ev-card-ervas">' + ervas.map(function(e) { return '<span class="ev-erva-tag">' + safeEsc(e) + '</span>'; }).join(' ') + '</div>' : '') +

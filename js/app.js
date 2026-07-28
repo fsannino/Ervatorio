@@ -1675,7 +1675,7 @@ function renderPerfilRecomendacoes(){
     ${momentos.length?`<div style="margin-top:.75rem;font-size:.75rem;color:var(--muted)">Momentos favoritos: ${momentos.join(', ')}</div>`:''}`;
 }
 
-// ════════════════════════════════════════
+// ══��═════════════════════════════════════
 // ── TIMER DE PREPARO ──
 // ════════════════════════════════════════
 let timerState={steps:[],current:0,remaining:0,total:0,running:false,interval:null,herbName:''};
@@ -2260,10 +2260,10 @@ function switchBlendTab(tab){
 
 // ════════════════════════════════════════
 // ── CHÁS TRADICIONAIS ──
-// ════════════════════════════════════════
+// ═════════════════════════════════════��══
 const CHAS_DATA = [
   {
-    id:'branco', name:'Chá Branco', emoji:'🤍', tagline:'O mais sutil — antioxidante puro', oxidation:5,
+    id:'branco', name:'Chá Branco', emoji:'🤍', img:'images/chas/branco.png', tagline:'O mais sutil — antioxidante puro', oxidation:5,
     color:'#e8dcc8', textColor:'#3a2a1a', textColorLight:'#3a2a1a', bgColor:'rgba(232,220,200,.12)',
     tagline:'O mais puro e delicado — colhido antes do despertar',
     latin:'Camellia sinensis — brotos jovens, pré-floração',
@@ -2289,7 +2289,7 @@ const CHAS_DATA = [
     momento:'Tarde — silêncio e contemplação depois do almoço',
   },
   {
-    id:'verde', name:'Chá Verde', emoji:'🍃', tagline:'Energia limpa e foco natural', oxidation:10,
+    id:'verde', name:'Chá Verde', emoji:'🍃', img:'images/chas/verde.png', tagline:'Energia limpa e foco natural', oxidation:10,
     color:'#4a7a3a', textColor:'#e8f5e0', textColorLight:'#1a4a1a', bgColor:'rgba(74,122,58,.15)',
     tagline:'O guardião da saúde — dois mil anos de sabedoria',
     latin:'Camellia sinensis — folhas fixadas rapidamente ao calor',
@@ -2317,7 +2317,7 @@ const CHAS_DATA = [
     momento:'Manhã — foco sem ansiedade; ou antes de meditação',
   },
   {
-    id:'amarelo', name:'Chá Amarelo', emoji:'💛', tagline:'O raro tesouro imperial da China', oxidation:15,
+    id:'amarelo', name:'Chá Amarelo', emoji:'💛', img:'images/chas/amarelo.png', tagline:'O raro tesouro imperial da China', oxidation:15,
     color:'#a87a2a', textColor:'#fff8e0', textColorLight:'#5a3a0a', bgColor:'rgba(168,122,42,.12)',
     tagline:'O raro tesouro — o segredo mais guardado da China',
     latin:'Camellia sinensis — smothering lento, oxidação controlada',
@@ -2342,7 +2342,7 @@ const CHAS_DATA = [
     momento:'Meio-dia — apreciação lenta, contemplativa',
   },
   {
-    id:'oolong', name:'Chá Oolong', emoji:'🔵', tagline:'Complexidade entre o verde e o preto', oxidation:50,
+    id:'oolong', name:'Chá Oolong', emoji:'🔵', img:'images/chas/oolong.png', tagline:'Complexidade entre o verde e o preto', oxidation:50,
     color:'#2d5a7a', textColor:'#e0f0ff', textColorLight:'#1a3a5a', bgColor:'rgba(45,90,122,.15)',
     tagline:'O chá azul — entre dois mundos, com a melhor de cada',
     latin:'Camellia sinensis — oxidação parcial 15-85%',
@@ -2369,7 +2369,7 @@ const CHAS_DATA = [
     momento:'Tarde — ritual contemplativo, múltiplas infusões',
   },
   {
-    id:'preto', name:'Chá Preto', emoji:'🖤', tagline:'Corpo, presença e energia duradoura', oxidation:100,
+    id:'preto', name:'Chá Preto', emoji:'🖤', img:'images/chas/preto.png', tagline:'Corpo, presença e energia duradoura', oxidation:100,
     color:'#3a1a0a', textColor:'#f5d8c0', textColorLight:'#3a1a0a', bgColor:'rgba(58,26,10,.2)',
     tagline:'O favorito do mundo — força, profundidade, história',
     latin:'Camellia sinensis — oxidação total, sabor robusto',
@@ -2396,7 +2396,7 @@ const CHAS_DATA = [
     momento:'Manhã — despertar e energia; com leite é o breakfast perfeito',
   },
   {
-    id:'puerh', name:'Chá Escuro (Pu-erh)', emoji:'🟤', tagline:'O vinho dos chás — fermentado único', oxidation:100,
+    id:'puerh', name:'Chá Escuro (Pu-erh)', emoji:'🟤', img:'images/chas/puerh.png', tagline:'O vinho dos chás — fermentado único', oxidation:100,
     color:'#2a1a0a', textColor:'#e8d0b0', textColorLight:'#2a1a0a', bgColor:'rgba(42,26,10,.2)',
     tagline:'O chá que envelhece como vinho — fermentado, profundo, raro',
     latin:'Camellia sinensis — fermentação microbiana pós-colheita',
@@ -2454,6 +2454,7 @@ function renderChaDetail(id){
   const txtColor=isLight?(c.textColorLight||c.color):c.textColor;
   el.innerHTML=`
     <div class="cha-header" style="background:${c.bgColor};border:0.5px solid ${c.color}44;color:${txtColor}">
+      ${c.img?`<div class="cha-header-img"><img src="${c.img}" alt="${c.name}" loading="lazy" onerror="this.parentNode.style.display='none'"></div>`:''}
       <div style="font-size:2.5rem;margin-bottom:.5rem">${c.emoji}</div>
       <div class="cha-header-name" style="color:${c.color}">${c.name}</div>
       <div class="cha-header-latin">${c.latin}</div>
@@ -2950,7 +2951,7 @@ window.recomprarPedido = function(items){
 // Coordinates calibrated to the real map image (1330x840)
 // cx/cy are fractions 0..1 of image width/height
 const MUNDO_REGIONS=[
-  {id:'china',   name:'China',        flag:'🇨🇳',cx:.755,cy:.315,color:'#c8382a',subtitle:'Berço do chá — 5000 anos de história',producao:'3.200.000 ton/ano',exportacao:'500.000 ton/ano',area:'3.200.000 ha',tipos:['Verde','Branco','Amarelo','Oolong','Preto','Pu-erh'],desc:'A China produz todos os seis tipos de chá verdadeiro. Única com essa distinção. Cada província tem identidade própria: Fujian para brancos e oolongs, Yunnan para Pu-erh, Zhejiang para Longjing.',chas:[{n:'Longjing (Dragon Well)',reg:'Zhejiang',tipo:'Verde',badge:'#4a7a3a',d:'O chá verde mais famoso. Folhas planas, sabor de castanha tostada.'},{n:'Tie Guan Yin',reg:'Anxi, Fujian',tipo:'Oolong',badge:'#2d5a7a',d:'Deusa da Misericórdia. Floral, cremoso. Ícone dos oolongs.'},{n:'Da Hong Pao',reg:'Wuyi, Fujian',tipo:'Oolong',badge:'#2d5a7a',d:'Manto Vermelho. Entre os mais caros do mundo.'},{n:'Keemun',reg:'Anhui',tipo:'Preto',badge:'#3a1a0a',d:'Notas de vinho e chocolate. Base do English Breakfast original.'},{n:'Pu-erh Sheng',reg:'Yunnan',tipo:'Escuro',badge:'#2a1a0a',d:'Envelhece como vinho. Mercado de investimento.'},{n:'Junshan Yinzhen',reg:'Hunan',tipo:'Amarelo',badge:'#a87a2a',d:'O chá amarelo mais raro. Produção < 500kg/ano.'}],ervas:[{n:'Chrysanthemum (Ju Hua)',d:'Flor seca usada em infusões. Refrescante, anti-inflamatória. Parte da MTC há séculos.'},{n:'Goji Berry (Gou Qi Zi)',d:'Baya adaptogênica. Longevidade, visão, imunidade. Usada em tônicos e blends.'},{n:'Ginseng (Ren Shen)',d:'O adaptógeno por excelência. Energia, foco, vitalidade. Símbolo da medicina tradicional.'},{n:'Osmanthus (Gui Hua)',d:'Flor perfumada para aromatizar tés. Notas de pêssego e damasco.'}],culinaria:'Chá é parte da vida cotidiana. Dim Sum sempre acompanhado de chá. Gongfu Cha é arte e filosofia.',brasil:'Comunidade chinesa em SP traz chás premium. Liberdade concentra lojas especializadas.'},
+  {id:'china',   name:'China',        flag:'����🇳',cx:.755,cy:.315,color:'#c8382a',subtitle:'Berço do chá — 5000 anos de história',producao:'3.200.000 ton/ano',exportacao:'500.000 ton/ano',area:'3.200.000 ha',tipos:['Verde','Branco','Amarelo','Oolong','Preto','Pu-erh'],desc:'A China produz todos os seis tipos de chá verdadeiro. Única com essa distinção. Cada província tem identidade própria: Fujian para brancos e oolongs, Yunnan para Pu-erh, Zhejiang para Longjing.',chas:[{n:'Longjing (Dragon Well)',reg:'Zhejiang',tipo:'Verde',badge:'#4a7a3a',d:'O chá verde mais famoso. Folhas planas, sabor de castanha tostada.'},{n:'Tie Guan Yin',reg:'Anxi, Fujian',tipo:'Oolong',badge:'#2d5a7a',d:'Deusa da Misericórdia. Floral, cremoso. Ícone dos oolongs.'},{n:'Da Hong Pao',reg:'Wuyi, Fujian',tipo:'Oolong',badge:'#2d5a7a',d:'Manto Vermelho. Entre os mais caros do mundo.'},{n:'Keemun',reg:'Anhui',tipo:'Preto',badge:'#3a1a0a',d:'Notas de vinho e chocolate. Base do English Breakfast original.'},{n:'Pu-erh Sheng',reg:'Yunnan',tipo:'Escuro',badge:'#2a1a0a',d:'Envelhece como vinho. Mercado de investimento.'},{n:'Junshan Yinzhen',reg:'Hunan',tipo:'Amarelo',badge:'#a87a2a',d:'O chá amarelo mais raro. Produção < 500kg/ano.'}],ervas:[{n:'Chrysanthemum (Ju Hua)',d:'Flor seca usada em infusões. Refrescante, anti-inflamatória. Parte da MTC há séculos.'},{n:'Goji Berry (Gou Qi Zi)',d:'Baya adaptogênica. Longevidade, visão, imunidade. Usada em tônicos e blends.'},{n:'Ginseng (Ren Shen)',d:'O adaptógeno por excelência. Energia, foco, vitalidade. Símbolo da medicina tradicional.'},{n:'Osmanthus (Gui Hua)',d:'Flor perfumada para aromatizar tés. Notas de pêssego e damasco.'}],culinaria:'Chá é parte da vida cotidiana. Dim Sum sempre acompanhado de chá. Gongfu Cha é arte e filosofia.',brasil:'Comunidade chinesa em SP traz chás premium. Liberdade concentra lojas especializadas.'},
   {id:'japao',   name:'Japão',        flag:'🇯🇵',cx:.840,cy:.295,color:'#c8304a',subtitle:'A perfeição do chá verde — a Via do Chá',producao:'86.000 ton/ano',exportacao:'6.200 ton/ano',area:'44.000 ha',tipos:['Verde (80+ estilos)','Matcha'],desc:'O Japão transformou o chá verde em arte e filosofia. Mais de 80 estilos. Matcha virou fenômeno global. A cerimônia Chanoyu é patrimônio cultural imaterial.',chas:[{n:'Matcha',reg:'Uji, Kyoto',tipo:'Verde em pó',badge:'#2d5a2a',d:'Pó de tencha cultivada à sombra. 2.5mg de L-teanina por xícara.'},{n:'Gyokuro',reg:'Uji, Kyoto',tipo:'Verde premium',badge:'#2d5a2a',d:'Cultivado à sombra 20 dias. Sabor umami profundo.'},{n:'Sencha',reg:'Shizuoka',tipo:'Verde',badge:'#4a7a3a',d:'80% da produção japonesa. O chá cotidiano.'},{n:'Hojicha',reg:'Kyoto',tipo:'Verde torrado',badge:'#5a3a1a',d:'Sencha torrado. Baixa cafeína. Ideal à noite.'}],ervas:[{n:'Kuzu (Kudzu)',d:'Raiz medicinal. Usada em pós e infusões para digestão e ressaca.'},{n:'Beni Shoga',d:'Gengibre em conserva. Digestivo, anti-inflamatório.'},{n:'Sakura (Flor de Cerejeira)',d:'Petalas salgadas usadas em chás e sakura-yu. Ritual sazonal.'}],culinaria:'Matcha em sorvetes, confeitaria, cosméticos. Matcha latte virou fenômeno global.',brasil:'Maior comunidade japonesa fora do Japão em SP.'},
   {id:'india',   name:'Índia',        flag:'🇮🇳',cx:.640,cy:.385,color:'#e07820',subtitle:'Do Assam ao Darjeeling — a outra grande potência',producao:'1.390.000 ton/ano',exportacao:'250.000 ton/ano',area:'637.000 ha',tipos:['Preto','Verde','Oolong','Branco'],desc:'Segunda maior produtora mundial. Assam e Darjeeling definem o chá preto global. Darjeeling tem GI protegida — o Champagne dos chás.',chas:[{n:'Darjeeling First Flush',reg:'Darjeeling',tipo:'Preto/Oolong',badge:'#3a1a0a',d:'Floral, muscatel, leve. O mais imitado do mundo.'},{n:'Assam CTC',reg:'Vale do Assam',tipo:'Preto CTC',badge:'#5a2a0a',d:'Base do chá de saquinho global. Forte, maltado.'},{n:'Masala Chai',reg:'Todo país',tipo:'Blend cultural',badge:'#6a3a1a',d:'Ritual de 1.4 bilhões de pessoas diariamente.'}],ervas:[{n:'Tulsi (Manjericão Sagrado)',d:'Adaptógeno revered no Ayurveda. Anti-estresse, imunidade, clareza mental.'},{n:'Ashwagandha',d:'O ginseng indiano. Adaptógeno poderoso para estresse e vitalidade.'},{n:'Neem',d:'Antibacteriano tradicional. Amargo e potente — detox profundo.'},{n:'Cardamomo',d:'Elaichi — especiaria-erva ubíqua em chai. Digestiva, refrescante, aromática.'}],culinaria:'Chai é identidade nacional. Dhabas em cada esquina.',brasil:'Assam e Darjeeling chegam via importadoras. Masala Chai muito popular.'},
   {id:'srilanka',name:'Sri Lanka',    flag:'🇱🇰',cx:.660,cy:.430,color:'#c8a030',subtitle:'Ceylon Tea — o mais puro do mundo',producao:'300.000 ton/ano',exportacao:'290.000 ton/ano',area:'222.000 ha',tipos:['Preto','Verde','Branco'],desc:'Exporta 97% do que produz. Ceylon é sinônimo de qualidade global.',chas:[{n:'Ceylon UVA',reg:'Uva Province',tipo:'Preto',badge:'#3a1a0a',d:'Aromático, mentolado, adstringente.'},{n:'Nuwara Eliya',reg:'1800m',tipo:'Preto delicado',badge:'#4a1a1a',d:'Floral, quase cor-de-rosa. Champagne of Ceylon.'}],culinaria:'Chá gelado consumo nacional. Exporta para 80+ países.',brasil:'Base histórica do saquinho brasileiro.'},
