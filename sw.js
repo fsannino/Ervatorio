@@ -1,6 +1,6 @@
-// v44: menu da landing ganhou o link "Pausa" (-> /pausa.html) com i18n nos 6
-// idiomas. Bump força os clientes a pegarem o HTML/JS novo.
-const CACHE_NAME = 'ervatorio-v44';
+// v45: ajuste do menu da landing — os 5 itens (incl. Pausa) agora cabem numa
+// única linha (nowrap, gap/tracking menores), sem quebrar o header.
+const CACHE_NAME = 'ervatorio-v45';
 const OFFLINE_URL = '/';
 
 const PRECACHE_ASSETS = [
