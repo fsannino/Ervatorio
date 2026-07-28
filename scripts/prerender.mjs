@@ -231,10 +231,14 @@ function fichaPage(slug, f, idx) {
 }
 
 function hubPage() {
-  const links = slugs
+  const cards = slugs
     .map((s) => ({ s, n: FICHAS[s].nome_popular || s, l: FICHAS[s].nome_cientifico || '' }))
     .sort((x, y) => x.n.localeCompare(y.n, 'pt'))
-    .map(({ s, n, l }) => `<li><a href="/erva/${s}/">${esc(n)}</a> <span class="lat">${esc(l)}</span></li>`)
+    .map(({ s, n, l }) => {
+      const mono = esc((n[0] || '?').toUpperCase());
+      const dataN = esc(`${n} ${l}`.toLowerCase());
+      return `<li data-n="${dataN}"><a href="/erva/${s}/"><span class="ervo-mono" aria-hidden="true">${mono}</span><span class="ervo-txt"><span class="ervo-nome">${esc(n)}</span>${l ? `<span class="ervo-lat">${esc(l)}</span>` : ''}</span></a></li>`;
+    })
     .join('\n');
   const url = `${SITE}/erva/`;
   const jsonld = {
@@ -261,12 +265,8 @@ function hubPage() {
 <meta property="og:image" content="${SITE}/images/optimized/hero/ervas-colecao-1024w.webp">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">${JSON.stringify(jsonld)}</script>
-<style>${CSS}
-ul.hub{list-style:none;padding:0;columns:2;column-gap:30px}
-ul.hub li{break-inside:avoid;border-bottom:1px dashed var(--line);padding:7px 0}
-ul.hub a{color:var(--verde);font-weight:700;text-decoration:none}
-.lat{font-style:italic;color:#7a6f57;font-size:.82rem;display:block}
-@media(max-width:640px){ul.hub{columns:1}}</style>
+<style>${CSS}</style>
+  <link rel="stylesheet" href="/css/editorial-pages.css">
 </head>
 <body>
 <header class="hero"><div class="wrap">
@@ -276,13 +276,36 @@ ul.hub a{color:var(--verde);font-weight:700;text-decoration:none}
 </div></header>
 <main class="wrap">
   <p><a class="cta gold" href="/">🌿 Abrir o Ervatório</a> <a class="cta" href="/lexico/">Léxico da Chazeria →</a> <a class="cta" href="/como-se-faz/">Como se faz →</a> <a class="cta" href="/biblioteca/">Biblioteca →</a></p>
-  <ul class="hub">
-${links}
+  <div class="ervo-tools">
+    <input type="search" id="ervoSearch" class="ervo-search" placeholder="Buscar por nome ou nome científico…" aria-label="Buscar erva" autocomplete="off">
+    <div class="ervo-count" id="ervoCount">${slugs.length} ervas</div>
+  </div>
+  <ul class="ervo-grid" id="ervoGrid">
+${cards}
   </ul>
+  <p class="ervo-empty" id="ervoEmpty">Nenhuma erva encontrada.</p>
 </main>
 <footer>
   <p>© 2026 Ervatório · <a href="/">ervatorio.com.br</a> · <a href="/privacidade.html">Privacidade</a> · <a href="/termos.html">Termos</a></p>
 </footer>
+<script>
+(function(){
+  var input=document.getElementById('ervoSearch'),grid=document.getElementById('ervoGrid'),
+      count=document.getElementById('ervoCount'),empty=document.getElementById('ervoEmpty');
+  if(!input||!grid)return;
+  var items=[].slice.call(grid.children),total=items.length;
+  function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');}
+  input.addEventListener('input',function(){
+    var q=norm(input.value.trim()),n=0;
+    items.forEach(function(li){
+      var hit=!q||norm(li.getAttribute('data-n')).indexOf(q)>-1;
+      li.style.display=hit?'':'none';if(hit)n++;
+    });
+    count.textContent=(q?n+' de '+total:total)+' ervas';
+    empty.style.display=n?'none':'block';
+  });
+})();
+</script>
 </body>
 </html>`;
 }
@@ -619,7 +642,7 @@ function guiaCorpo(guia) {
   }
   if (guia.tipo === 'processos') {
     const steps = procByOrdem.map((p) =>
-      `<div class="step"><span class="nn">${esc(String(p.ordem).padStart(2, '0'))}</span><strong>${esc(p.titulo)}</strong> <span class="sub">— ${esc(p.subtitulo)}</span><br>${esc(p.tldr)}</div>`).join('');
+      `<div class="step"><span class="nn">${esc(String(p.ordem).padStart(2, '0'))}</span><strong>${esc(p.titulo)}</strong> <span class="sub">��� ${esc(p.subtitulo)}</span><br>${esc(p.tldr)}</div>`).join('');
     return `<div>${steps}</div><p style="margin-top:12px"><a href="/como-se-faz/">Ler a série completa →</a></p>`;
   }
   return '';

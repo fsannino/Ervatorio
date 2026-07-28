@@ -349,7 +349,7 @@ function initReceitas() {
   renderReceitasHub();
 }
 
-// ─── Hub com filtros e grid ───
+// ──�� Hub com filtros e grid ───
 function renderReceitasHub() {
   const el = document.getElementById('receitasContainer');
   if (!el) return;
@@ -388,15 +388,28 @@ function renderReceitasHub() {
     </div>`;
 }
 
+// Extensão real de cada imagem de produto (evita 404/flash ao acertar de primeira)
+const REC_IMG_EXT = {
+  'camomila':'png','capim-limao':'png','cha-artesanal':'png','curcuma':'png',
+  'erva-mate':'jpg','gengibre':'jpg','gengibre-e-curcuma':'png','hibisco':'png',
+  'hibisco-2':'jpg','hibisco-seco':'png','hortela':'jpg','hortela-fresca':'png','maracuja':'png'
+};
+function recImgSrc(slug){
+  const ext = REC_IMG_EXT[slug] || 'png';
+  return `images/produtos/${slug}.${ext}`;
+}
+
 function buildReceitaCard(r) {
   const catColors = {quente:'#c86a30',gelado:'#2d7a8a',mocktail:'#7a2d8a',medicinal:'#2d7a3a',culinario:'#8a7a2d',ritual:'#3a2d8a'};
   const catLabel  = {quente:'Quente',gelado:'Gelada',mocktail:'Mocktail',medicinal:'Medicinal',culinario:'Culinária',ritual:'Ritual'};
   const color = catColors[r.categoria] || 'var(--gold)';
-  const imgs = [`images/produtos/${r.img}.jpg`,`images/produtos/${r.img}.png`];
+  const primarySrc = recImgSrc(r.img);
+  const altExt = primarySrc.endsWith('.png') ? 'jpg' : 'png';
+  const altSrc = `images/produtos/${r.img}.${altExt}`;
   return `
     <div class="rec-card" onclick="openReceita('${r.id}')">
       <div class="rec-card-img" style="background:linear-gradient(135deg,${color}18,${color}35)">
-        <img src="${imgs[0]}" onerror="this.src='${imgs[1]}';this.onerror=null"
+        <img src="${primarySrc}" onerror="if(this.src.indexOf('${altSrc}')<0){this.src='${altSrc}'}else{this.src='images/produtos/placeholder.svg';this.onerror=null}"
              alt="${r.nome}" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;opacity:.85">
         <span class="rec-cat-badge" style="background:${color}">${catLabel[r.categoria]}</span>
       </div>
