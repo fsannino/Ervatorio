@@ -13,7 +13,7 @@
 
 window.ERVATORIO_CONFIG = Object.freeze({
   SUPABASE_URL: 'https://ejarqinmjlgbqzurctsf.supabase.co',
-  SUPABASE_PUBLISHABLE_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVqYXJxaW5tamxnYnF6dXJjdHNmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgxMzI4MTQsImV4cCI6MjA5MzcwODgxNH0.4PFHdoCtFZnPSvZfoMWVyB_Nr-8sH6pPUcj1VvL1bLw',
+  SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_8Qq-srtpqZgEYwaXsthHfQ_MhIJKYcj',
   // Base das Edge Functions. Em produção aponta para o mesmo projeto.
   FUNCTIONS_URL: 'https://ejarqinmjlgbqzurctsf.supabase.co/functions/v1',
   // Feature flag: false esconde o botao de checkout e mostra aviso de

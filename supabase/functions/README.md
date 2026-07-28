@@ -16,7 +16,7 @@ Pré-requisito: [Supabase CLI](https://supabase.com/docs/guides/cli) instalado e
 
 ```bash
 # Link do projeto (uma única vez)
-supabase link --project-ref lwzrzztzpklzbmxbqcrx
+supabase link --project-ref ejarqinmjlgbqzurctsf
 
 # Deploy individual
 supabase functions deploy admin-delete-user
