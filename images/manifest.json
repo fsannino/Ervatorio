@@ -1,4 +1,61 @@
 {
+  "images/produtos/acafrao-verdadeiro.png": {
+    "full": "images/optimized/produtos/acafrao-verdadeiro.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/acafrao-verdadeiro-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/acafrao-verdadeiro-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/acafrao-verdadeiro-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/acafroa.png": {
+    "full": "images/optimized/produtos/acafroa.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/acafroa-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/acafroa-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/acafroa-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/acai.png": {
+    "full": "images/optimized/produtos/acai.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/acai-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/acai-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/acai-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/alcachofra.png": {
     "full": "images/optimized/produtos/alcachofra.webp",
     "variants": [
@@ -10,6 +67,25 @@
     "width": 363,
     "height": 360
   },
+  "images/produtos/alcacuz.png": {
+    "full": "images/optimized/produtos/alcacuz.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/alcacuz-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/alcacuz-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/alcacuz-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/alecrim-2.jpg": {
     "full": "images/optimized/produtos/alecrim-2.webp",
     "variants": [
@@ -20,6 +96,25 @@
     ],
     "width": 506,
     "height": 467
+  },
+  "images/produtos/alecrim-de-campanha.png": {
+    "full": "images/optimized/produtos/alecrim-de-campanha.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/alecrim-de-campanha-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/alecrim-de-campanha-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/alecrim-de-campanha-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/alecrim.png": {
     "full": "images/optimized/produtos/alecrim.webp",
@@ -51,6 +146,25 @@
     "width": 1024,
     "height": 576
   },
+  "images/produtos/angico.png": {
+    "full": "images/optimized/produtos/angico.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/angico-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/angico-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/angico-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/aroeira-da-praia.jpg": {
     "full": "images/optimized/produtos/aroeira-da-praia.webp",
     "variants": [
@@ -69,6 +183,25 @@
     ],
     "width": 1254,
     "height": 1254
+  },
+  "images/produtos/aroeira-mansa.png": {
+    "full": "images/optimized/produtos/aroeira-mansa.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/aroeira-mansa-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/aroeira-mansa-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/aroeira-mansa-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/arranjo-de-chas.png": {
     "full": "images/optimized/produtos/arranjo-de-chas.webp",
@@ -138,6 +271,44 @@
     "width": 1254,
     "height": 1254
   },
+  "images/produtos/baunilha.png": {
+    "full": "images/optimized/produtos/baunilha.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/baunilha-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/baunilha-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/baunilha-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/bocaiuva.png": {
+    "full": "images/optimized/produtos/bocaiuva.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/bocaiuva-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/bocaiuva-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/bocaiuva-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/boldo-baiano.jpg": {
     "full": "images/optimized/produtos/boldo-baiano.webp",
     "variants": [
@@ -176,6 +347,25 @@
     "width": 1254,
     "height": 1254
   },
+  "images/produtos/boldo-do-chile.png": {
+    "full": "images/optimized/produtos/boldo-do-chile.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/boldo-do-chile-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/boldo-do-chile-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/boldo-do-chile-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/boldo-espinheira-santa.png": {
     "full": "images/optimized/produtos/boldo-espinheira-santa.webp",
     "variants": [
@@ -197,6 +387,25 @@
     ],
     "width": 267,
     "height": 180
+  },
+  "images/produtos/cambara.png": {
+    "full": "images/optimized/produtos/cambara.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/cambara-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/cambara-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/cambara-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/camellia-sinensis-flor.jpg": {
     "full": "images/optimized/produtos/camellia-sinensis-flor.webp",
@@ -274,6 +483,25 @@
     "width": 700,
     "height": 464
   },
+  "images/produtos/camomila-romana.png": {
+    "full": "images/optimized/produtos/camomila-romana.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/camomila-romana-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/camomila-romana-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/camomila-romana-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/camomila.jpg": {
     "full": "images/optimized/produtos/camomila.webp",
     "variants": [
@@ -316,6 +544,63 @@
     "width": 1024,
     "height": 1024
   },
+  "images/produtos/camu-camu.png": {
+    "full": "images/optimized/produtos/camu-camu.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/camu-camu-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/camu-camu-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/camu-camu-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/canela-de-ema.png": {
+    "full": "images/optimized/produtos/canela-de-ema.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/canela-de-ema-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/canela-de-ema-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/canela-de-ema-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/canela-do-ceilao.png": {
+    "full": "images/optimized/produtos/canela-do-ceilao.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/canela-do-ceilao-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/canela-do-ceilao-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/canela-do-ceilao-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/canela.png": {
     "full": "images/optimized/produtos/canela.webp",
     "variants": [
@@ -337,6 +622,44 @@
     ],
     "width": 514,
     "height": 343
+  },
+  "images/produtos/capim-santo.png": {
+    "full": "images/optimized/produtos/capim-santo.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/capim-santo-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/capim-santo-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/capim-santo-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/cardamomo.png": {
+    "full": "images/optimized/produtos/cardamomo.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/cardamomo-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/cardamomo-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/cardamomo-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/carqueja.png": {
     "full": "images/optimized/produtos/carqueja.webp",
@@ -386,6 +709,25 @@
     ],
     "width": 774,
     "height": 435
+  },
+  "images/produtos/cavalinha.png": {
+    "full": "images/optimized/produtos/cavalinha.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/cavalinha-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/cavalinha-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/cavalinha-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/cha-artesanal.png": {
     "full": "images/optimized/produtos/cha-artesanal.webp",
@@ -551,6 +893,25 @@
     "width": 1254,
     "height": 1254
   },
+  "images/produtos/cravo-da-india.png": {
+    "full": "images/optimized/produtos/cravo-da-india.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/cravo-da-india-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/cravo-da-india-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/cravo-da-india-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/crisantemo.jpg": {
     "full": "images/optimized/produtos/crisantemo.webp",
     "variants": [
@@ -565,6 +926,25 @@
     ],
     "width": 700,
     "height": 458
+  },
+  "images/produtos/cumaru.png": {
+    "full": "images/optimized/produtos/cumaru.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/cumaru-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/cumaru-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/cumaru-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/curcuma.png": {
     "full": "images/optimized/produtos/curcuma.webp",
@@ -592,6 +972,25 @@
     "width": 698,
     "height": 467
   },
+  "images/produtos/equinacea.png": {
+    "full": "images/optimized/produtos/equinacea.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/equinacea-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/equinacea-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/equinacea-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/erva-baleeira.jpg": {
     "full": "images/optimized/produtos/erva-baleeira.webp",
     "variants": [
@@ -610,6 +1009,25 @@
     ],
     "width": 1254,
     "height": 1254
+  },
+  "images/produtos/erva-cidreira-europeia.png": {
+    "full": "images/optimized/produtos/erva-cidreira-europeia.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/erva-cidreira-europeia-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/erva-cidreira-europeia-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/erva-cidreira-europeia-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/erva-cidreira.png": {
     "full": "images/optimized/produtos/erva-cidreira.webp",
@@ -640,6 +1058,63 @@
     ],
     "width": 1254,
     "height": 1254
+  },
+  "images/produtos/erva-de-lagarto.png": {
+    "full": "images/optimized/produtos/erva-de-lagarto.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/erva-de-lagarto-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/erva-de-lagarto-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/erva-de-lagarto-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/erva-de-santa-barbara.png": {
+    "full": "images/optimized/produtos/erva-de-santa-barbara.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/erva-de-santa-barbara-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/erva-de-santa-barbara-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/erva-de-santa-barbara-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/erva-de-sao-joao.png": {
+    "full": "images/optimized/produtos/erva-de-sao-joao.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/erva-de-sao-joao-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/erva-de-sao-joao-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/erva-de-sao-joao-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/erva-doce.jpg": {
     "full": "images/optimized/produtos/erva-doce.webp",
@@ -685,6 +1160,25 @@
     ],
     "width": 1254,
     "height": 1254
+  },
+  "images/produtos/erva-principe.png": {
+    "full": "images/optimized/produtos/erva-principe.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/erva-principe-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/erva-principe-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/erva-principe-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/ervas-medicinais.jpg": {
     "full": "images/optimized/produtos/ervas-medicinais.webp",
@@ -766,6 +1260,44 @@
     "width": 2121,
     "height": 1414
   },
+  "images/produtos/espinheira-gaucha.png": {
+    "full": "images/optimized/produtos/espinheira-gaucha.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/espinheira-gaucha-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/espinheira-gaucha-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/espinheira-gaucha-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/espinheira-santa.png": {
+    "full": "images/optimized/produtos/espinheira-santa.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/espinheira-santa-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/espinheira-santa-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/espinheira-santa-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/extratos-de-ervas.jpg": {
     "full": "images/optimized/produtos/extratos-de-ervas.webp",
     "variants": [
@@ -789,6 +1321,25 @@
     "width": 2121,
     "height": 1414
   },
+  "images/produtos/fava-de-anta.png": {
+    "full": "images/optimized/produtos/fava-de-anta.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/fava-de-anta-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/fava-de-anta-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/fava-de-anta-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/feno-grego.jpg": {
     "full": "images/optimized/produtos/feno-grego.webp",
     "variants": [
@@ -803,6 +1354,25 @@
     ],
     "width": 700,
     "height": 446
+  },
+  "images/produtos/flor-de-laranjeira.png": {
+    "full": "images/optimized/produtos/flor-de-laranjeira.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/flor-de-laranjeira-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/flor-de-laranjeira-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/flor-de-laranjeira-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/flor-desabrochando.jpg": {
     "full": "images/optimized/produtos/flor-desabrochando.webp",
@@ -894,6 +1464,25 @@
     "width": 267,
     "height": 180
   },
+  "images/produtos/gengibre-japones.png": {
+    "full": "images/optimized/produtos/gengibre-japones.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/gengibre-japones-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/gengibre-japones-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/gengibre-japones-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/gengibre.jpg": {
     "full": "images/optimized/produtos/gengibre.webp",
     "variants": [
@@ -919,6 +1508,25 @@
     ],
     "width": 349,
     "height": 348
+  },
+  "images/produtos/ginseng-asiatico.png": {
+    "full": "images/optimized/produtos/ginseng-asiatico.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/ginseng-asiatico-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/ginseng-asiatico-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/ginseng-asiatico-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/ginseng.jpg": {
     "full": "images/optimized/produtos/ginseng.webp",
@@ -1028,6 +1636,25 @@
     ],
     "width": 267,
     "height": 180
+  },
+  "images/produtos/hibisco-rosa.png": {
+    "full": "images/optimized/produtos/hibisco-rosa.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/hibisco-rosa-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/hibisco-rosa-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/hibisco-rosa-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/hibisco-seco.png": {
     "full": "images/optimized/produtos/hibisco-seco.webp",
@@ -1249,6 +1876,25 @@
     "width": 1366,
     "height": 2048
   },
+  "images/produtos/imburana-de-cheiro.png": {
+    "full": "images/optimized/produtos/imburana-de-cheiro.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/imburana-de-cheiro-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/imburana-de-cheiro-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/imburana-de-cheiro-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/infusoes-variadas.jpg": {
     "full": "images/optimized/produtos/infusoes-variadas.webp",
     "variants": [
@@ -1263,6 +1909,25 @@
     ],
     "width": 700,
     "height": 467
+  },
+  "images/produtos/jabuticaba.png": {
+    "full": "images/optimized/produtos/jabuticaba.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/jabuticaba-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/jabuticaba-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/jabuticaba-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/jambu.jpg": {
     "full": "images/optimized/produtos/jambu.webp",
@@ -1305,6 +1970,63 @@
     ],
     "width": 1280,
     "height": 1280
+  },
+  "images/produtos/jatoba.png": {
+    "full": "images/optimized/produtos/jatoba.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/jatoba-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/jatoba-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/jatoba-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/jurema-preta.png": {
+    "full": "images/optimized/produtos/jurema-preta.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/jurema-preta-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/jurema-preta-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/jurema-preta-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/jurubeba.png": {
+    "full": "images/optimized/produtos/jurubeba.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/jurubeba-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/jurubeba-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/jurubeba-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/lavanda-2.jpg": {
     "full": "images/optimized/produtos/lavanda-2.webp",
@@ -1355,6 +2077,63 @@
     "width": 506,
     "height": 345
   },
+  "images/produtos/losna.png": {
+    "full": "images/optimized/produtos/losna.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/losna-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/losna-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/losna-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/lupulo.png": {
+    "full": "images/optimized/produtos/lupulo.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/lupulo-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/lupulo-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/lupulo-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/macela-gaucha.png": {
+    "full": "images/optimized/produtos/macela-gaucha.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/macela-gaucha-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/macela-gaucha-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/macela-gaucha-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/macela.jpg": {
     "full": "images/optimized/produtos/macela.webp",
     "variants": [
@@ -1373,6 +2152,63 @@
     ],
     "width": 1254,
     "height": 1254
+  },
+  "images/produtos/malva.png": {
+    "full": "images/optimized/produtos/malva.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/malva-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/malva-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/malva-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/mangaba.png": {
+    "full": "images/optimized/produtos/mangaba.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/mangaba-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/mangaba-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/mangaba-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/mangava-brava.png": {
+    "full": "images/optimized/produtos/mangava-brava.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/mangava-brava-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/mangava-brava-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/mangava-brava-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/manjericao-sagrado.jpg": {
     "full": "images/optimized/produtos/manjericao-sagrado.webp",
@@ -1438,6 +2274,25 @@
     "width": 267,
     "height": 180
   },
+  "images/produtos/mastruz.png": {
+    "full": "images/optimized/produtos/mastruz.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/mastruz-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/mastruz-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/mastruz-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/matcha.png": {
     "full": "images/optimized/produtos/matcha.webp",
     "variants": [
@@ -1491,6 +2346,82 @@
     "width": 700,
     "height": 466
   },
+  "images/produtos/muirapuama.png": {
+    "full": "images/optimized/produtos/muirapuama.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/muirapuama-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/muirapuama-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/muirapuama-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/murici-de-tabuleiro.png": {
+    "full": "images/optimized/produtos/murici-de-tabuleiro.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/murici-de-tabuleiro-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/murici-de-tabuleiro-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/murici-de-tabuleiro-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/no-moscada.png": {
+    "full": "images/optimized/produtos/no-moscada.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/no-moscada-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/no-moscada-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/no-moscada-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/noz-moscada.png": {
+    "full": "images/optimized/produtos/noz-moscada.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/noz-moscada-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/noz-moscada-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/noz-moscada-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/oleo-de-andiroba.jpg": {
     "full": "images/optimized/produtos/oleo-de-andiroba.webp",
     "variants": [
@@ -1525,6 +2456,82 @@
     "width": 2048,
     "height": 1365
   },
+  "images/produtos/pata-de-vaca.png": {
+    "full": "images/optimized/produtos/pata-de-vaca.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/pata-de-vaca-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/pata-de-vaca-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/pata-de-vaca-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/pequi.png": {
+    "full": "images/optimized/produtos/pequi.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/pequi-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/pequi-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/pequi-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/pimenta-preta.png": {
+    "full": "images/optimized/produtos/pimenta-preta.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/pimenta-preta-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/pimenta-preta-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/pimenta-preta-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/pitanga.png": {
+    "full": "images/optimized/produtos/pitanga.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/pitanga-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/pitanga-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/pitanga-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/plantacao-de-cha.jpg": {
     "full": "images/optimized/produtos/plantacao-de-cha.webp",
     "variants": [
@@ -1548,6 +2555,25 @@
     "width": 2048,
     "height": 1360
   },
+  "images/produtos/poejo.png": {
+    "full": "images/optimized/produtos/poejo.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/poejo-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/poejo-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/poejo-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/quebra-pedra.jpg": {
     "full": "images/optimized/produtos/quebra-pedra.webp",
     "variants": [
@@ -1566,6 +2592,44 @@
     ],
     "width": 1254,
     "height": 1254
+  },
+  "images/produtos/raiz-de-bugre.png": {
+    "full": "images/optimized/produtos/raiz-de-bugre.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/raiz-de-bugre-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/raiz-de-bugre-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/raiz-de-bugre-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/rompe-pedra.png": {
+    "full": "images/optimized/produtos/rompe-pedra.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/rompe-pedra-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/rompe-pedra-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/rompe-pedra-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/rooibos-2.jpg": {
     "full": "images/optimized/produtos/rooibos-2.webp",
@@ -1623,6 +2687,25 @@
     "width": 698,
     "height": 467
   },
+  "images/produtos/sabugueiro.png": {
+    "full": "images/optimized/produtos/sabugueiro.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/sabugueiro-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/sabugueiro-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/sabugueiro-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/salvia.jpg": {
     "full": "images/optimized/produtos/salvia.webp",
     "variants": [
@@ -1638,6 +2721,120 @@
     "width": 698,
     "height": 467
   },
+  "images/produtos/schisandra.png": {
+    "full": "images/optimized/produtos/schisandra.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/schisandra-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/schisandra-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/schisandra-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/sete-sangrias.png": {
+    "full": "images/optimized/produtos/sete-sangrias.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/sete-sangrias-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/sete-sangrias-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/sete-sangrias-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/solidago.png": {
+    "full": "images/optimized/produtos/solidago.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/solidago-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/solidago-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/solidago-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/sucupira.png": {
+    "full": "images/optimized/produtos/sucupira.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/sucupira-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/sucupira-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/sucupira-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/tansagem.png": {
+    "full": "images/optimized/produtos/tansagem.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/tansagem-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/tansagem-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/tansagem-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/tilia.png": {
+    "full": "images/optimized/produtos/tilia.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/tilia-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/tilia-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/tilia-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/tomilho.jpg": {
     "full": "images/optimized/produtos/tomilho.webp",
     "variants": [
@@ -1652,6 +2849,63 @@
     ],
     "width": 685,
     "height": 467
+  },
+  "images/produtos/tulsi.png": {
+    "full": "images/optimized/produtos/tulsi.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/tulsi-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/tulsi-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/tulsi-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/umbu.png": {
+    "full": "images/optimized/produtos/umbu.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/umbu-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/umbu-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/umbu-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/unha-de-gato.png": {
+    "full": "images/optimized/produtos/unha-de-gato.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/unha-de-gato-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/unha-de-gato-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/unha-de-gato-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   },
   "images/produtos/valeriana-2.png": {
     "full": "images/optimized/produtos/valeriana-2.webp",
@@ -1678,6 +2932,25 @@
       {
         "width": 1024,
         "path": "images/optimized/produtos/valeriana-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/produtos/velame-pantaneiro.png": {
+    "full": "images/optimized/produtos/velame-pantaneiro.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/velame-pantaneiro-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/velame-pantaneiro-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/velame-pantaneiro-1024w.webp"
       }
     ],
     "width": 1024,
