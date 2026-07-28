@@ -1,7 +1,7 @@
-// v41: js/config.js mudou de projeto Supabase. A estratégia same-origin
-// é network-first, então o cache não serve config antiga com rede boa —
-// mas o precache ficaria preso no host morto em modo offline.
-const CACHE_NAME = 'ervatorio-v41';
+// v42: js/ervaria.js — produtos-semente do catálogo (Infusões, Equipamentos,
+// Vivências, Viagens) agora são sempre itens reais da vitrine, ignorando o
+// is_test vindo de admin_products. Bump força os clientes a pegarem o JS novo.
+const CACHE_NAME = 'ervatorio-v42';
 const OFFLINE_URL = '/';
 
 const PRECACHE_ASSETS = [
