@@ -2260,7 +2260,7 @@ function switchBlendTab(tab){
 
 // ════════════════════════════════════════
 // ── CHÁS TRADICIONAIS ──
-// ═════════════════════════════════════��══
+// ════════════════════════════════════����══
 const CHAS_DATA = [
   {
     id:'branco', name:'Chá Branco', emoji:'🤍', img:'images/chas/branco.png', tagline:'O mais sutil — antioxidante puro', oxidation:5,
@@ -2808,9 +2808,20 @@ function mktCard(p){
   const badgeHtml=p.badge==='new'?'<span class="mkt-badge mkt-badge-new">Novo</span>':p.badge==='exp'?'<span class="mkt-badge mkt-badge-exp">Experiência</span>':p.badge==='eco'?'<span class="mkt-badge mkt-badge-eco">Orgânico</span>':'';
   const testBadge=p.is_test?'<span class="mkt-badge" style="background:rgba(100,100,200,.15);color:#a0a8e0;border:1px solid rgba(100,100,200,.3)">TESTE</span>':'';
   const imgs=p.images&&p.images.length?p.images:[];
-  const mediaHtml=imgs[0]
-    ?`<img src="${imgs[0]}" data-img-idx="0" data-pid="${p.id}" alt="${esc(p.name)}" loading="lazy" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="font-size:2.8rem;display:none;align-items:center;justify-content:center;width:100%;height:100%" aria-hidden="true">${p.icon}</span>`
-    :`<span style="font-size:2.8rem">${p.icon}</span>`;
+  // onerror robusto: o responsive-img embrulha o <img> em <picture>, então
+  // localizamos o emoji de fallback pelo container .mkt-card-media.
+  const onErr="var m=this.closest('.mkt-card-media');this.style.display='none';var e=m&&m.querySelector('[data-emoji]');if(e)e.style.display='flex'";
+  const emojiSpan=`<span data-emoji style="font-size:2.8rem;display:none;align-items:center;justify-content:center;width:100%;height:100%" aria-hidden="true">${p.icon}</span>`;
+  let mediaHtml;
+  if(imgs[0]){
+    // Imagens explícitas (produtos cadastrados via admin/Supabase).
+    mediaHtml=`<img src="${imgs[0]}" data-img-idx="0" data-pid="${p.id}" alt="${esc(p.name)}" loading="lazy" style="width:100%;height:100%;object-fit:cover" onerror="${onErr}">${emojiSpan}`;
+  } else {
+    // Produtos-semente: imagem editorial por convenção (images/marketplace/<id>.png),
+    // upgradada para WebP responsivo pelo responsive-img.js; emoji como fallback.
+    const key='images/marketplace/'+p.id+'.png';
+    mediaHtml=`<img data-responsive="${key}" data-pid="${p.id}" alt="${esc(p.name)}" loading="lazy" style="width:100%;height:100%;object-fit:cover" onerror="${onErr}">${emojiSpan}`;
+  }
   const dots=imgs.length>1?`<div class="mkt-img-dots">${imgs.map((_,i)=>`<span class="mkt-img-dot${i===0?' on':''}" data-i="${i}"></span>`).join('')}</div>`:'';
   return `<div class="mkt-card">
     <div class="mkt-card-media" style="background:${typeColor}18;position:relative;cursor:${imgs.length>1?'pointer':'default'}" onclick="cycleCardImg(this,${p.id})">${mediaHtml}${dots}</div>
@@ -2946,7 +2957,7 @@ window.recomprarPedido = function(items){
 };
 
 // ════════════════════════════════════════
-// ── CHÁS DO MUNDO ──
+// ��─ CHÁS DO MUNDO ──
 // ════════════════════════════════════════
 // Coordinates calibrated to the real map image (1330x840)
 // cx/cy are fractions 0..1 of image width/height
