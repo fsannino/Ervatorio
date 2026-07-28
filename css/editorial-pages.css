@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap');
+
+:root{--ed-green:#173b2a;--ed-leaf:#315f45;--ed-cream:#f5ede0;--ed-paper:#fbf8f2;--ed-brass:#b8965a;--ed-plum:#6b334b;--ed-ink:#22352b;--ed-line:rgba(23,59,42,.16)}
+html{scroll-behavior:smooth;background:var(--ed-paper)}
+body{margin:0;background:var(--ed-paper);color:var(--ed-ink);font-family:'Jost',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{width:min(100% - 40px,1100px)!important;margin-inline:auto!important}
+a{color:var(--ed-leaf);text-underline-offset:4px}
+a:focus-visible{outline:3px solid var(--ed-brass);outline-offset:4px;border-radius:2px}
+.hero,body>header{position:relative;isolation:isolate;overflow:hidden;background:var(--ed-green)!important;color:var(--ed-cream)!important;padding:28px 0 72px!important;border:0!important}
+.hero::before,body>header::before{content:'';position:absolute;z-index:-2;inset:0;background:linear-gradient(90deg,rgba(13,38,26,.94),rgba(13,38,26,.62)),url('/images/editorial/mapa-origens.png') center/cover no-repeat}
+.hero::after,body>header::after{content:'';position:absolute;z-index:-1;inset:0;background:linear-gradient(180deg,transparent 48%,rgba(12,34,24,.72))}
+.hero .wrap,body>header .wrap{position:relative;min-height:260px;display:flex;flex-direction:column;justify-content:flex-end}
+.back{align-self:flex-start;color:var(--ed-cream)!important;text-decoration:none!important;font-size:.75rem!important;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid rgba(245,237,224,.4);margin-bottom:auto;padding-bottom:5px}
+h1,h2,h3{font-family:'Cormorant Garamond',serif!important;text-wrap:balance}h1{font-size:clamp(2.8rem,7vw,5.4rem)!important;line-height:.98!important;font-weight:400!important;letter-spacing:-.025em!important;color:var(--ed-cream)!important;margin:52px 0 14px!important}h2{font-size:clamp(1.8rem,4vw,2.45rem)!important;line-height:1.15!important;color:var(--ed-green)!important;margin:0 0 24px!important}.latin,.pron,.eyebrow{font-family:'Jost',sans-serif!important;color:#dbc28f!important;letter-spacing:.12em!important}.tagline{max-width:760px!important;color:rgba(245,237,224,.82)!important;font-family:'Cormorant Garamond',serif!important;font-size:clamp(1.15rem,2.2vw,1.45rem)!important;line-height:1.5!important}
+main.wrap{padding-block:56px 90px!important}main>p:first-child{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 48px!important}.cta{display:inline-flex!important;align-items:center;justify-content:center;padding:11px 18px!important;border:1px solid var(--ed-green)!important;border-radius:2px!important;color:var(--ed-green)!important;text-decoration:none!important;font-family:'Jost',sans-serif!important;font-size:.72rem!important;font-weight:500!important;letter-spacing:.08em!important;text-transform:uppercase;background:transparent!important}.cta.gold{background:var(--ed-brass)!important;border-color:var(--ed-brass)!important;color:#173425!important}.cta:hover{background:var(--ed-green)!important;color:var(--ed-cream)!important}
+main section{margin:0!important;padding:48px 0!important;border-top:1px solid var(--ed-line)!important;background:transparent!important;box-shadow:none!important;border-radius:0!important}main section:first-of-type{border-top:0!important;padding-top:0!important}p,li,dd{max-width:76ch}section>p,section>ul{font-family:Georgia,'Times New Roman',serif;font-size:1.03rem;line-height:1.75}ul{padding-left:1.25rem}li+li{margin-top:.55rem}dl{display:grid!important;gap:0!important}.row{display:grid!important;grid-template-columns:minmax(150px,.32fr) 1fr!important;gap:28px!important;padding:17px 0!important;border-top:1px solid var(--ed-line)!important}dt{font-family:'Jost',sans-serif!important;font-size:.72rem!important;letter-spacing:.08em!important;text-transform:uppercase;color:var(--ed-leaf)!important;font-weight:500!important}dd{margin:0!important;font-family:Georgia,'Times New Roman',serif!important}
+.health,.review{margin:36px 0!important;padding:22px 26px!important;border:1px solid rgba(107,51,75,.28)!important;border-left:4px solid var(--ed-plum)!important;border-radius:0 22px 0 0!important;background:rgba(107,51,75,.06)!important;color:var(--ed-ink)!important}.related,.rel-terms{display:flex!important;gap:10px!important;flex-wrap:wrap!important}.related a,.rel-terms a{padding:8px 14px!important;border:1px solid var(--ed-line)!important;border-radius:999px!important;background:var(--ed-cream)!important;color:var(--ed-green)!important;text-decoration:none!important}
+.serie,.biblio{list-style:none!important;padding:0!important;display:grid!important;gap:14px!important}.serie li,.biblio li{margin:0!important;padding:24px!important;border:1px solid var(--ed-line)!important;background:var(--ed-cream)!important;border-radius:0 24px 0 0!important}.serie a,.biblio a{font-family:'Cormorant Garamond',serif!important;font-size:1.35rem!important;color:var(--ed-green)!important;text-decoration:none!important}.nn{color:var(--ed-brass)!important;margin-right:14px}.sub{color:var(--ed-plum)!important;font-size:.8rem!important}.d{display:inline-block;margin-top:8px;color:#53645a}
+table{width:100%!important;max-width:100%!important;border-collapse:collapse!important}th,td{padding:12px!important;border:1px solid var(--ed-line)!important;text-align:left!important;vertical-align:top!important;overflow-wrap:anywhere}
+footer{background:var(--ed-green)!important;color:rgba(245,237,224,.72)!important;padding:36px 20px!important;text-align:center!important;border:0!important}footer a{color:#dbc28f!important}
+@media (prefers-color-scheme:dark){:root{--ed-paper:#12271d;--ed-ink:#eee6d9;--ed-line:rgba(245,237,224,.14)}body{background:var(--ed-paper)}h2{color:#f0e6d5!important}.cta{color:#f0e6d5!important;border-color:rgba(245,237,224,.4)!important}.serie li,.biblio li,.related a,.rel-terms a{background:rgba(245,237,224,.06)!important;color:#f0e6d5!important}.serie a,.biblio a{color:#f0e6d5!important}.health,.review{color:#eee6d9!important}.d,.serie .d,.biblio .d{color:#d8d0c4!important}.sub,.serie .sub,.biblio .sub{color:#e0a8bc!important}}
+@media(max-width:700px){.wrap{width:min(100% - 28px,1100px)!important}.hero,body>header{padding:20px 0 50px!important}.hero .wrap,body>header .wrap{min-height:230px}h1{margin-top:38px!important}.row{grid-template-columns:1fr!important;gap:6px!important}main.wrap{padding-block:38px 68px!important}main section{padding:36px 0!important}.serie li,.biblio li{padding:20px!important}table{display:block!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch}th,td{min-width:120px!important;padding:9px!important;font-size:.82rem!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta{transition:none!important}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+/* Refinamento de legibilidade e alvos de toque */
+section>p,section>ul,p,li,dd{font-size:1.06rem!important;line-height:1.78!important}
+.tagline{line-height:1.55!important}
+.cta{min-height:44px!important;font-size:.75rem!important}
+.related a,.rel-terms a{min-height:38px;display:inline-flex;align-items:center;font-size:.9rem!important}
+.serie a,.biblio a{line-height:1.25}
+dt{font-size:.74rem!important}
+.back{font-size:.76rem!important;min-height:34px;display:inline-flex;align-items:center}
+a:hover{text-decoration-thickness:2px}
+@media(max-width:700px){section>p,section>ul,p,li,dd{font-size:1rem!important;line-height:1.72!important}h1{margin-top:30px!important}}
+@media print{.hero,body>header{background:#fff!important;color:#111!important;padding:0!important}.hero::before,.hero::after,body>header::before,body>header::after{display:none}h1{color:#111!important}.back,.cta{display:none!important}body{background:#fff;color:#111}main.wrap{padding:0!important}section{break-inside:avoid}}
+
+/* Refinamento público — leitura editorial, navegação e consistência */
+html{overflow-x:hidden}
+body{min-height:100dvh;display:flex;flex-direction:column;overflow-x:hidden}
+main{flex:1}
+.hero::before,body>header::before{background:linear-gradient(90deg,rgba(13,38,26,.9),rgba(13,38,26,.5)),url('/images/editorial/mapa-origens.png') center/cover no-repeat}
+.hero .wrap::after,body>header .wrap::after{content:'ERVATÓRIO · BOTÂNICA & CULTURA';position:absolute;right:0;top:2px;color:rgba(245,237,224,.52);font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.18em}
+main.wrap{position:relative}
+main.wrap::before{content:'';display:block;width:42px;height:2px;background:var(--ed-brass);margin-bottom:42px}
+main>p:first-child+section{padding-top:0!important}
+h2{position:relative;padding-left:18px}
+h2::before{content:'';position:absolute;left:0;top:.18em;width:3px;height:.72em;background:var(--ed-brass)}
+section>p,article p{max-width:72ch;text-wrap:pretty}
+section>ul{max-width:76ch}
+section>ul li::marker{color:var(--ed-brass)}
+.cta{gap:8px;transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease}
+.cta:hover{transform:translateY(-1px)}
+.related a,.rel-terms a{transition:border-color .18s ease,background-color .18s ease,transform .18s ease}
+.related a:hover,.rel-terms a:hover{border-color:var(--ed-brass)!important;transform:translateY(-1px);text-decoration:none}
+.serie li,.biblio li{transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+.serie li:hover,.biblio li:hover{border-color:rgba(184,150,90,.52)!important;transform:translateY(-2px);box-shadow:0 14px 30px rgba(23,59,42,.08)}
+.tldr{font-family:Georgia,'Times New Roman',serif!important;background:rgba(49,95,69,.08)!important;border:1px solid rgba(49,95,69,.2)!important;border-left:4px solid var(--ed-leaf)!important;border-radius:0 18px 0 0!important;padding:20px 24px!important;line-height:1.7!important}
+.pron,.latin{line-height:1.65!important;max-width:82ch}
+.eyebrow,.serie-tag{color:#dbc28f!important;font-size:.76rem!important;letter-spacing:.14em!important}
+.refs{max-width:82ch!important;color:inherit!important}.refs li{font-size:.9rem!important;line-height:1.6!important}
+.serie-nav{gap:12px!important}.serie-nav a{display:inline-flex;align-items:center;min-height:42px;padding:8px 12px;border:1px solid var(--ed-line);border-radius:2px;text-decoration:none!important}
+.health strong,.review strong{color:var(--ed-plum)}
+footer p{max-width:none!important;font-family:'Jost',sans-serif!important;font-size:.8rem!important;line-height:1.6!important}
+@media(prefers-color-scheme:dark){
+  .hero::before,body>header::before{background:linear-gradient(90deg,rgba(7,27,18,.93),rgba(7,27,18,.55)),url('/images/editorial/mapa-origens.png') center/cover no-repeat}
+  .tldr{background:rgba(245,237,224,.055)!important;border-color:rgba(245,237,224,.16)!important}
+  .health strong,.review strong{color:#e0a8bc}
+  .serie li:hover,.biblio li:hover{box-shadow:0 14px 30px rgba(0,0,0,.18)}
+}
+@media(max-width:700px){
+  .hero .wrap::after,body>header .wrap::after{display:none}
+  .hero .wrap,body>header .wrap{min-height:250px}
+  main.wrap::before{margin-bottom:30px}
+  h1{font-size:clamp(2.55rem,14vw,4rem)!important;line-height:1!important}
+  h2{font-size:clamp(1.65rem,8vw,2rem)!important;padding-left:14px;margin-bottom:20px!important}
+  main>p:first-child{display:grid!important;grid-template-columns:1fr;gap:9px!important}
+  .cta{width:100%;padding-inline:16px!important}
+  .health,.review{padding:18px!important;border-radius:0 16px 0 0!important}
+  .related a,.rel-terms a{min-height:42px;padding:9px 13px!important}
+  .serie-nav{display:grid!important;grid-template-columns:1fr}.serie-nav a{width:100%;justify-content:center;text-align:center}
+  ul.lex{columns:1!important}.biblio .sub,.serie .sub{display:block;margin-top:5px}
+}
+@media(max-width:380px){.wrap{width:min(100% - 22px,1100px)!important}.hero,body>header{padding-inline:0!important}.serie li,.biblio li{padding:17px!important}}

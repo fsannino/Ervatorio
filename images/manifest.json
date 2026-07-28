@@ -1754,5 +1754,176 @@
     ],
     "width": 1536,
     "height": 1024
+  },
+  "images/editorial/cerrado-mate.png": {
+    "full": "images/optimized/editorial/cerrado-mate.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/editorial/cerrado-mate-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/editorial/cerrado-mate-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/editorial/cerrado-mate-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/editorial/diario-infusoes.png": {
+    "full": "images/optimized/editorial/diario-infusoes.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/editorial/diario-infusoes-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/editorial/diario-infusoes-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/editorial/diario-infusoes-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/editorial/home-hero.png": {
+    "full": "images/optimized/editorial/home-hero.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/editorial/home-hero-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/editorial/home-hero-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/editorial/home-hero-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/editorial/linha-phyto.png": {
+    "full": "images/optimized/editorial/linha-phyto.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/editorial/linha-phyto-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/editorial/linha-phyto-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/editorial/linha-phyto-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/editorial/mapa-origens.png": {
+    "full": "images/optimized/editorial/mapa-origens.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/editorial/mapa-origens-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/editorial/mapa-origens-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/editorial/mapa-origens-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/editorial/rio-negro.png": {
+    "full": "images/optimized/editorial/rio-negro.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/editorial/rio-negro-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/editorial/rio-negro-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/editorial/rio-negro-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/pausa/pausa-hero.png": {
+    "full": "images/optimized/pausa/pausa-hero.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/pausa/pausa-hero-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/pausa/pausa-hero-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/pausa/pausa-hero-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/pausa/pausa-momento.png": {
+    "full": "images/optimized/pausa/pausa-momento.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/pausa/pausa-momento-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/pausa/pausa-momento-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/pausa/pausa-momento-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
+  "images/pausa/pausa-preparo.png": {
+    "full": "images/optimized/pausa/pausa-preparo.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/pausa/pausa-preparo-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/pausa/pausa-preparo-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/pausa/pausa-preparo-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
   }
 }

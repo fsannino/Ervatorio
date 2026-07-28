@@ -3,7 +3,7 @@
 // ERVATÓRIO — Otimizador de imagens em lote
 // ============================================================
 // Gera WebP responsivo (320w, 640w, 1024w, 1600w) para todas as
-// imagens em images/produtos/ e images/hero/. Mantém originais
+// imagens em images/produtos/, images/hero/, images/editorial/ e images/pausa/. Mantém originais
 // intactas (fallback) e escreve em images/optimized/ com a mesma
 // estrutura de diretórios.
 //
@@ -22,7 +22,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
-const SOURCE_DIRS = ['images/produtos', 'images/hero'];
+const SOURCE_DIRS = ['images/produtos', 'images/hero', 'images/editorial', 'images/pausa'];
 const OUT_ROOT = join(ROOT, 'images/optimized');
 const MANIFEST_PATH = join(ROOT, 'images/manifest.json');
 const WIDTHS = [320, 640, 1024, 1600];
