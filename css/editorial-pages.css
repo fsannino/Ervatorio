@@ -92,6 +92,8 @@ footer p{max-width:none!important;font-family:'Jost',sans-serif!important;font-s
 .ervo-grid a{display:flex;align-items:center;gap:15px;padding:18px 20px;height:100%;border:1px solid var(--ed-line);background:var(--ed-cream);border-radius:0 20px 0 0;text-decoration:none!important;transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease}
 .ervo-grid a:hover{border-color:rgba(184,150,90,.55);transform:translateY(-2px);box-shadow:0 14px 30px rgba(23,59,42,.08)}
 .ervo-mono{flex:0 0 auto;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--ed-green);color:var(--ed-cream);font-family:'Cormorant Garamond',serif;font-size:1.5rem;line-height:1}
+.ervo-thumb{flex:0 0 auto;width:56px;height:56px;border-radius:50%;overflow:hidden;background:var(--ed-green);border:1px solid var(--ed-line)}
+.ervo-thumb img{width:100%;height:100%;object-fit:cover;display:block}
 .ervo-txt{min-width:0}
 .ervo-nome{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ed-green);line-height:1.08;display:block}
 .ervo-lat{font-style:italic;color:#7a6f57;font-size:.8rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:4px;line-height:1.35}
