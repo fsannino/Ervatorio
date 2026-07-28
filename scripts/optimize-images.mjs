@@ -22,7 +22,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
-const SOURCE_DIRS = ['images/produtos', 'images/hero', 'images/editorial', 'images/pausa'];
+const SOURCE_DIRS = ['images/produtos', 'images/hero', 'images/editorial', 'images/pausa', 'images/marketplace'];
 const OUT_ROOT = join(ROOT, 'images/optimized');
 const MANIFEST_PATH = join(ROOT, 'images/manifest.json');
 const WIDTHS = [320, 640, 1024, 1600];
