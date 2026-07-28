@@ -64,6 +64,17 @@ function ogImageFor(slug) {
   return `${SITE}/images/optimized/hero/ervas-colecao-1024w.webp`;
 }
 
+// Miniatura (thumb) de produto por slug — retorna caminho relativo ou null.
+function thumbFor(slug) {
+  for (const [key, entry] of Object.entries(IMG_MANIFEST)) {
+    if (key.includes(`/produtos/${slug}.`) || key.includes(`/produtos/${slug}-`)) {
+      const v = entry.variants?.find((x) => x.width >= 280 && x.width <= 520) || entry.variants?.[0];
+      if (v) return `/${v.path}`;
+    }
+  }
+  return null;
+}
+
 function section(title, inner) {
   return inner ? `<section><h2>${esc(title)}</h2>${inner}</section>` : '';
 }
@@ -237,7 +248,11 @@ function hubPage() {
     .map(({ s, n, l }) => {
       const mono = esc((n[0] || '?').toUpperCase());
       const dataN = esc(`${n} ${l}`.toLowerCase());
-      return `<li data-n="${dataN}"><a href="/erva/${s}/"><span class="ervo-mono" aria-hidden="true">${mono}</span><span class="ervo-txt"><span class="ervo-nome">${esc(n)}</span>${l ? `<span class="ervo-lat">${esc(l)}</span>` : ''}</span></a></li>`;
+      const thumb = thumbFor(s);
+      const visual = thumb
+        ? `<span class="ervo-thumb"><img src="${esc(thumb)}" alt="" loading="lazy" onerror="this.closest('.ervo-thumb').outerHTML='<span class=\\'ervo-mono\\' aria-hidden=\\'true\\'>${mono}</span>'"></span>`
+        : `<span class="ervo-mono" aria-hidden="true">${mono}</span>`;
+      return `<li data-n="${dataN}"><a href="/erva/${s}/">${visual}<span class="ervo-txt"><span class="ervo-nome">${esc(n)}</span>${l ? `<span class="ervo-lat">${esc(l)}</span>` : ''}</span></a></li>`;
     })
     .join('\n');
   const url = `${SITE}/erva/`;
