@@ -580,11 +580,19 @@
     var cientifico = f.nome_cientifico || row.herb_latin_name || '';
     var tagline = f.tagline || '';
     var eixo = (f.regulacao && f.regulacao.eixo_botanico_tpc) || '';
+    // Prioriza a imagem de slug exato (images/produtos/<slug>.png) para evitar
+    // que uma ficha genérica (ex.: "Aroeira", "Ginkgo") pegue a foto de uma
+    // espécie vizinha via match aproximado no array HERBS. Cadeia de fallback:
+    // slug exato → match aproximado (herbImg) → slug .jpg → placeholder.
     var herbImg = resolveErvaImg(nome, cientifico);
-    var imgSrc = safeEsc(herbImg || ('images/produtos/' + slug + '.jpg'));
-    var pngFb  = safeEsc('images/produtos/' + slug + '.png');
-    var ph     = 'images/produtos/placeholder.svg';
-    var visual = '<div class="ev-card-img-wrap"><img class="ev-card-img" src="' + imgSrc + '" alt="' + safeEsc(nome) + '" loading="lazy" onerror="if(!this._fb){this._fb=1;this.src=\'' + pngFb + '\';}else{this.src=\'' + ph + '\';this.onerror=null;}"></div>';
+    var exactPng = 'images/produtos/' + slug + '.png';
+    var fallbacks = [];
+    if (herbImg && herbImg !== exactPng) fallbacks.push(herbImg);
+    fallbacks.push('images/produtos/' + slug + '.jpg');
+    fallbacks.push('images/produtos/placeholder.svg');
+    var fbAttr = safeEsc(JSON.stringify(fallbacks));
+    var onerr = "var q=JSON.parse(this.getAttribute('data-fb')||'[]');if(q.length){this.src=q.shift();this.setAttribute('data-fb',JSON.stringify(q));}else{this.onerror=null;}";
+    var visual = '<div class="ev-card-img-wrap"><img class="ev-card-img" src="' + safeEsc(exactPng) + '" data-responsive="' + safeEsc(exactPng) + '" data-fb="' + fbAttr + '" alt="' + safeEsc(nome) + '" loading="lazy" onerror="' + onerr + '"></div>';
     return '<div class="herb-card ev-ficha-card" onclick="goPage(\'ficha\',null,\'' + safeEsc(slug) + '\')">' +
       visual +
       '<div class="ev-card-nome">' + safeEsc(nome) + '</div>' +
