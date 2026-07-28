@@ -521,7 +521,11 @@ const ervaria = {
         else if (row.price) existing.price = parseFloat(row.price) || existing.price;
         if (row.stock) existing.stock = row.stock;
         if (row.images && row.images.length) existing.images = row.images;
-        if (row.is_test != null) existing.is_test = row.is_test;
+        // Produtos-semente do catálogo curado (definidos em app.js) são sempre
+        // itens reais da vitrine, independentemente do is_test vindo do
+        // admin_products. Só sincronizamos is_test para produtos criados
+        // exclusivamente via admin (que não casam com o catálogo fixo).
+        existing.is_test = false;
         matched++;
         return;
       }
@@ -789,7 +793,7 @@ const ervaria = {
   }
 };
 
-// �����─ HOOK: Override toggleFav to sync ──
+// �������─ HOOK: Override toggleFav to sync ──
 const _origToggleFav = toggleFav;
 toggleFav = function(e, id) {
   _origToggleFav(e, id);
