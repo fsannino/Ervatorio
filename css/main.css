@@ -773,7 +773,8 @@ select.pc-input option{background:var(--bg2);color:var(--cream)}
 .intencoes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin-bottom:1.25rem}
 .intencao-card{background:var(--bg3);border:0.5px solid var(--faint);border-radius:var(--r-lg);padding:12px 14px;cursor:pointer;display:flex;align-items:center;gap:10px;transition:all .2s;text-align:left;font-family:inherit;color:inherit}
 .intencao-card:hover{border-color:rgba(200,168,75,.35);background:rgba(200,168,75,.06);transform:translateY(-1px)}
-.intencao-icone{font-size:1.15rem;flex-shrink:0}
+.intencao-icone{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;color:var(--gold2)}
+.intencao-icone svg{width:21px;height:21px;display:block}
 .intencao-texto{font-size:.78rem;color:var(--cream2);line-height:1.4;font-weight:400}
 @media(max-width:600px){.intencoes-grid{grid-template-columns:1fr 1fr}}
 /* TAGLINE */

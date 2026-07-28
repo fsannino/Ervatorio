@@ -1,6 +1,7 @@
-// v45: ajuste do menu da landing — os 5 itens (incl. Pausa) agora cabem numa
-// única linha (nowrap, gap/tracking menores), sem quebrar o header.
-const CACHE_NAME = 'ervatorio-v45';
+// v46: revisão visual (app) — troca de emojis por ícones de linha editoriais
+// nos cartões de intenção da Roda e no estado vazio do Blend; abas de Blend
+// agora são texto limpo (sem emoji) nos 6 idiomas.
+const CACHE_NAME = 'ervatorio-v46';
 const OFFLINE_URL = '/';
 
 const PRECACHE_ASSETS = [
