@@ -1,7 +1,6 @@
-// v43: js/ervaria.js — restauração de sessão no boot não entra mais no app
-// automaticamente; a landing continua visível até o usuário clicar num CTA.
-// Bump força os clientes a pegarem o JS novo.
-const CACHE_NAME = 'ervatorio-v43';
+// v44: menu da landing ganhou o link "Pausa" (-> /pausa.html) com i18n nos 6
+// idiomas. Bump força os clientes a pegarem o HTML/JS novo.
+const CACHE_NAME = 'ervatorio-v44';
 const OFFLINE_URL = '/';
 
 const PRECACHE_ASSETS = [
