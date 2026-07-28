@@ -2225,6 +2225,25 @@
     "width": 700,
     "height": 458
   },
+  "images/produtos/manjericao.png": {
+    "full": "images/optimized/produtos/manjericao.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/manjericao-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/manjericao-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/manjericao-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/maos-com-cha.png": {
     "full": "images/optimized/produtos/maos-com-cha.webp",
     "variants": [

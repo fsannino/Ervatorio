@@ -66,10 +66,22 @@ function ogImageFor(slug) {
 
 // Miniatura (thumb) de produto por slug — retorna caminho relativo ou null.
 function thumbFor(slug) {
+  const pick = (entry) => {
+    const v = entry.variants?.find((x) => x.width >= 280 && x.width <= 520) || entry.variants?.[0];
+    return v ? `/${v.path}` : null;
+  };
+  // 1ª passada: arquivo com slug exato (ex.: manjericao.png), evita casar com manjericao-sagrado
   for (const [key, entry] of Object.entries(IMG_MANIFEST)) {
-    if (key.includes(`/produtos/${slug}.`) || key.includes(`/produtos/${slug}-`)) {
-      const v = entry.variants?.find((x) => x.width >= 280 && x.width <= 520) || entry.variants?.[0];
-      if (v) return `/${v.path}`;
+    if (key.includes(`/produtos/${slug}.`)) {
+      const p = pick(entry);
+      if (p) return p;
+    }
+  }
+  // 2ª passada: variações com sufixo (ex.: slug-1.png)
+  for (const [key, entry] of Object.entries(IMG_MANIFEST)) {
+    if (key.includes(`/produtos/${slug}-`)) {
+      const p = pick(entry);
+      if (p) return p;
     }
   }
   return null;
@@ -325,7 +337,7 @@ ${cards}
 </html>`;
 }
 
-// ── Léxico: CSS extra + páginas ─────────────────────────────
+// ── Léxico: CSS extra + páginas ──────────────────────���──────
 const LEXICO_CSS = `
 .eyebrow{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ouro2);font-weight:700;margin-bottom:6px}
 .pron{color:#e6dcc8;font-size:.95rem;margin-top:8px}
