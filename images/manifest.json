@@ -203,6 +203,25 @@
     "width": 1024,
     "height": 1024
   },
+  "images/produtos/aroeira.png": {
+    "full": "images/optimized/produtos/aroeira.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/aroeira-320w.webp"
+      },
+      {
+        "width": 640,
+        "path": "images/optimized/produtos/aroeira-640w.webp"
+      },
+      {
+        "width": 1024,
+        "path": "images/optimized/produtos/aroeira-1024w.webp"
+      }
+    ],
+    "width": 1024,
+    "height": 1024
+  },
   "images/produtos/arranjo-de-chas.png": {
     "full": "images/optimized/produtos/arranjo-de-chas.webp",
     "variants": [
@@ -1509,6 +1528,17 @@
     "width": 349,
     "height": 348
   },
+  "images/produtos/ginkgo.png": {
+    "full": "images/optimized/produtos/ginkgo.webp",
+    "variants": [
+      {
+        "width": 320,
+        "path": "images/optimized/produtos/ginkgo-320w.webp"
+      }
+    ],
+    "width": 349,
+    "height": 348
+  },
   "images/produtos/ginseng-asiatico.png": {
     "full": "images/optimized/produtos/ginseng-asiatico.webp",
     "variants": [
@@ -2210,16 +2240,16 @@
     "width": 1024,
     "height": 1024
   },
-  "images/produtos/manjericao-sagrado.jpg": {
-    "full": "images/optimized/produtos/manjericao-sagrado.webp",
+  "images/produtos/manjericao.jpg": {
+    "full": "images/optimized/produtos/manjericao.webp",
     "variants": [
       {
         "width": 320,
-        "path": "images/optimized/produtos/manjericao-sagrado-320w.webp"
+        "path": "images/optimized/produtos/manjericao-320w.webp"
       },
       {
         "width": 640,
-        "path": "images/optimized/produtos/manjericao-sagrado-640w.webp"
+        "path": "images/optimized/produtos/manjericao-640w.webp"
       }
     ],
     "width": 700,
