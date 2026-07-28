@@ -789,7 +789,7 @@ const ervaria = {
   }
 };
 
-// ── HOOK: Override toggleFav to sync ──
+// ���─ HOOK: Override toggleFav to sync ──
 const _origToggleFav = toggleFav;
 toggleFav = function(e, id) {
   _origToggleFav(e, id);
@@ -924,14 +924,14 @@ function toggleTheme(){
   localStorage.setItem('erb_theme', isLight ? 'light' : 'dark');
   _setThemeIcon(isLight ? '☽' : '☀');
 }
-// Restore saved theme (default: light)
+// Restore saved theme (default: dark / verde-profundo editorial)
 (function(){
   const saved = localStorage.getItem('erb_theme');
-  if(saved === 'dark'){
-    _setThemeIcon('☀');
-  } else {
+  if(saved === 'light'){
     document.body.classList.add('light');
     _setThemeIcon('☽');
+  } else {
+    _setThemeIcon('☀');
   }
 })();
 
