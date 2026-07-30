@@ -1,7 +1,8 @@
-// v46: revisão visual (app) — troca de emojis por ícones de linha editoriais
-// nos cartões de intenção da Roda e no estado vazio do Blend; abas de Blend
-// agora são texto limpo (sem emoji) nos 6 idiomas.
-const CACHE_NAME = 'ervatorio-v46';
+// v47: revisão visual (app) — helper svgIcon() e troca de emojis por ícones de
+// linha editoriais nos pontos de UI: faixa do hero, card sensorial, carrinho,
+// banners "em breve", ficha (bioma/restrições/preparo/blend), roda (combo/
+// vazio), receitas (dica/remover/editar), timer e mapa mundi (região/ervas).
+const CACHE_NAME = 'ervatorio-v47';
 const OFFLINE_URL = '/';
 
 const PRECACHE_ASSETS = [

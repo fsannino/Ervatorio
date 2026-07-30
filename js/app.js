@@ -1799,7 +1799,7 @@ function toggleTimer(){
         clearInterval(timerState.interval); timerState.running=false;
         const lbl=document.getElementById('timerLabel'); if(lbl)lbl.textContent='pronto!';
         const btn=document.getElementById('timerPlayBtn'); if(btn)btn.textContent='✓ Concluído';
-        toast(`${timerState.herbName} — infusão concluída! ☕`);
+        toast(`${timerState.herbName} — infusão concluída!`);
         drawTimerRing(0);
       }
     },1000);
