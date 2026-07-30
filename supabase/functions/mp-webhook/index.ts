@@ -165,6 +165,32 @@ Deno.serve(async (req) => {
     });
   }
 
+  // O estoque foi reservado na criação do pedido (create-order chama
+  // reserve_stock). Pagamento recusado não é venda, então as unidades
+  // voltam para a vitrine.
+  //
+  // Só `failed`. mapPaymentStatus() devolve quatro valores — paid,
+  // pending, failed e refunded — e `refunded` fica DE FORA de propósito:
+  // um reembolso pode ser de pedido já enviado, e nesse caso a mercadoria
+  // não está de volta na prateleira. Reposição após devolução é decisão
+  // de quem recebe o produto, e passa pelo fluxo de create-return.
+  //
+  // A guarda `order.status === 'pending'` importa: só devolve estoque de
+  // pedido que ainda estava segurando reserva. O noop acima já barra
+  // notificação repetida do mesmo estado — comum no Mercado Pago — mas
+  // sem esta condição um pedido que fosse de failed para failed por outro
+  // caminho devolveria unidades duas vezes.
+  if (newStatus === 'failed' && order.status === 'pending') {
+    const { error: relErr } = await db.rpc('release_stock', { p_order_id: orderId });
+    if (relErr) {
+      // Não derruba o webhook: o status do pedido já está correto, e o
+      // estoque preso é problema de reconciliação, não de pagamento.
+      console.error('[mp-webhook] release_stock falhou', {
+        orderId, newStatus, error: relErr.message,
+      });
+    }
+  }
+
   return jsonResponse({ ok: true, order_id: orderId, new_status: newStatus, payment_id: payment.id });
 });
 
