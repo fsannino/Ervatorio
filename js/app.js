@@ -6,6 +6,32 @@ function esc(s){
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 }
 
+/**
+ * Ícones de linha editoriais (substituem emojis na UI, alinhados ao pausa.html).
+ * Uso: svgIcon('leaf') -> string SVG. Herda a cor via currentColor e o tamanho
+ * via font-size/width do contexto. Passe size para fixar (px).
+ */
+const _ICON_PATHS = {
+  leaf: '<path d="M5 19c0-8 6-14 14-14 0 8-6 14-14 14z"/><path d="M6 18C10 14 13.5 10.5 17 7.5"/>',
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.5 4 5.6 4 9s-1.4 6.5-4 9c-2.6-2.5-4-5.6-4-9s1.4-6.5 4-9z"/>',
+  map: '<path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6 9 4z"/><path d="M9 4v14"/><path d="M15 6v14"/>',
+  cart: '<circle cx="9" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/><path d="M2.5 4h2.2l2 12h11l2-8H6.7"/>',
+  tea: '<path d="M4 9h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/><path d="M17 10h1.8a2.2 2.2 0 0 1 0 4.4H17"/><path d="M8 3c-.6.8-.6 1.6 0 2.4M12 3c-.6.8-.6 1.6 0 2.4"/>',
+  trash: '<path d="M4 7h16"/><path d="M9 7V5h6v2"/><path d="M6 7l1 13h10l1-13"/>',
+  bulb: '<path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.3 1 2.5h6c0-1.2.3-1.8 1-2.5A6 6 0 0 0 12 3z"/>',
+  cone: '<path d="M6 3h12l-1.5 5.5a5 5 0 0 1-9 0L6 3z"/><path d="M8 21h8"/><path d="M12 14v7"/>',
+  thermometer: '<path d="M12 3a2 2 0 0 1 2 2v8a4 4 0 1 1-4 0V5a2 2 0 0 1 2-2z"/>',
+  spoon: '<path d="M12 12v9"/><ellipse cx="12" cy="7" rx="3.5" ry="4.5"/>',
+  calendar: '<rect x="4" y="5" width="16" height="16" rx="1.5"/><path d="M4 9h16M8 3v4M16 3v4"/>',
+  pin: '<path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/>'
+};
+function svgIcon(name, size){
+  const p = _ICON_PATHS[name];
+  if(!p) return '';
+  const dim = size ? `width="${size}" height="${size}"` : 'width="1em" height="1em"';
+  return `<svg class="ui-ico" viewBox="0 0 24 24" ${dim} fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-.15em">${p}</svg>`;
+}
+
 // ── DATA ──────────────────────────────────────────────────────────────────
 
 const HERBS = [
@@ -579,7 +605,7 @@ function openHerbModal(id){
         ${h.tagline ? `<div class="modal-tagline">${esc(h.tagline)}</div>` : ''}
         <div class="modal-latin">${esc(h.lat)}</div>
         ${h.linha?`<div class="modal-linha"><span class="htag htag-linha linha-${h.linha.toLowerCase()}">Linha ${esc(h.linha)}</span></div>`:''}
-        ${h.bioma?`<div class="modal-bioma-row"><span class="herb-bioma-badge">🌍 ${esc(h.bioma)}</span></div>`:''}
+        ${h.bioma?`<div class="modal-bioma-row"><span class="herb-bioma-badge">${svgIcon('globe')} ${esc(h.bioma)}</span></div>`:''}
       </div>
     </div>
     ${h.usos&&h.usos.length?`<div class="modal-usos-row">${h.usos.map(u=>`<span class="herb-uso-chip">${esc(u)}</span>`).join('')}</div>`:''}
@@ -601,11 +627,11 @@ function openHerbModal(id){
     </div>
     ${h.avoid&&h.avoid.length?`<div class="warn-box">⚠ Contraindicações: ${h.avoid.map(a=>esc(a)).join(', ')}</div>`:''}
     ${h.safe&&h.safe.length?`<div class="safe-box">✓ Seguro para: ${h.safe.map(s=>esc(s)).join(', ')}</div>`:''}
-    ${h.restricoes_pais&&h.restricoes_pais.length?`<div class="restricoes-box">🌐 Restrições regionais:<ul>${h.restricoes_pais.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></div>`:''}
+    ${h.restricoes_pais&&h.restricoes_pais.length?`<div class="restricoes-box">${svgIcon('globe')} Restrições regionais:<ul>${h.restricoes_pais.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></div>`:''}
     <div id="modalFichaSlot"></div>
     <div style="display:flex;gap:8px;margin-top:1rem">
-      <button class="add-blend-btn" style="flex:1;background:rgba(200,168,75,.15)" onclick="openTimer(${h.id})">⏱ Preparar agora</button>
-      <button class="add-blend-btn" style="flex:1" onclick="addToTray(${h.id})">🌿 Ver no Blend</button>
+                <button class="add-blend-btn" style="flex:1;background:rgba(200,168,75,.15)" onclick="openTimer(${h.id})">${_clockIcon()} Preparar agora</button>
+          <button class="add-blend-btn" style="flex:1" onclick="addToTray(${h.id})">${svgIcon('leaf')} Ver no Blend</button>
     </div>
   `;
   document.getElementById('herbModal').classList.add('on');
@@ -937,7 +963,7 @@ function renderFavs(){
         </div>
         <div class="recipe-body">
           ${r.ingredients.map(ing=>`<div class="ing-row"><div><div class="ing-name">${esc(ing.n)}</div></div><div class="ing-amount">${esc(ing.amount)}</div></div>`).join('')}
-          <button onclick="deleteSavedRecipe(${i})" style="margin-top:.75rem;background:none;border:none;color:var(--muted);font-size:.72rem;cursor:pointer">🗑 Remover</button>
+          <button onclick="deleteSavedRecipe(${i})" title="Excluir receita" style="margin-top:.75rem;background:none;border:none;color:var(--muted);font-size:.72rem;cursor:pointer;display:inline-flex;align-items:center;gap:5px">${svgIcon('trash')} Remover</button>
         </div>
       </div>`).join('');
   } else { sr.innerHTML=''; }
@@ -1006,7 +1032,7 @@ function renderTray(){
     <span class="tray-item">${h.icon} ${esc(h.n)}
       <button class="tray-remove" onclick="removeTray(${h.id})">✕</button>
     </span>`).join('')+
-    `<button class="tray-open-manual" onclick="importTrayToManual()">🌿 Abrir no construtor →</button>`;
+      `<button class="tray-open-manual" onclick="importTrayToManual()">${svgIcon('leaf')} Abrir no construtor →</button>`;
 }
 
 function importTrayToManual(){
@@ -1185,10 +1211,10 @@ function generateBlend(){
         <div class="effect-badges">
           ${rec.effects.map(e=>`<span class="eff-badge">${esc(e)}</span>`).join('')}
         </div>
-        ${rec.obs?`<div style="margin-top:.75rem;font-size:.78rem;color:var(--muted);font-style:italic;line-height:1.5">💡 ${esc(rec.obs)}</div>`:''}
+        ${rec.obs?`<div style="margin-top:.75rem;font-size:.78rem;color:var(--muted);font-style:italic;line-height:1.5">${svgIcon('bulb')} ${esc(rec.obs)}</div>`:''}
         <div style="display:flex;gap:8px;margin-top:1rem">
           <button class="save-recipe-btn" style="flex:1" onclick="saveRecipe('${esc(rec.name)}')">♥ Salvar</button>
-          <button class="save-recipe-btn" style="flex:1;background:rgba(255,255,255,.04)" onclick="sendWizardToManual(${JSON.stringify(rec.ings.map(i=>i.id))})">🌿 Editar no construtor</button>
+          <button class="save-recipe-btn" style="flex:1;background:rgba(255,255,255,.04)" onclick="sendWizardToManual(${JSON.stringify(rec.ings.map(i=>i.id))})">${svgIcon('leaf')} Editar no construtor</button>
         </div>
       </div>
     </div>`;
@@ -1473,9 +1499,10 @@ window.initRoda=function(){
 };
 
 function _rodaPrepSpans(prep){
-  const s='font-size:.72rem;padding:3px 10px;background:rgba(255,255,255,.04);border:0.5px solid var(--faint);border-radius:6px;color:var(--muted)';
-  return `<span style="${s}">🌡 ${prep.temp}</span><span style="${s}">⏱ ${prep.tempo}</span><span style="${s}">🥄 ${prep.dose}</span><span style="${s}">📅 ${prep.freq}</span>`;
+  const s='font-size:.72rem;padding:3px 10px;background:rgba(255,255,255,.04);border:0.5px solid var(--faint);border-radius:6px;color:var(--muted);display:inline-flex;align-items:center;gap:5px';
+  return `<span style="${s}">${svgIcon('thermometer')} ${esc(prep.temp)}</span><span style="${s}">${_clockIcon()} ${esc(prep.tempo)}</span><span style="${s}">${svgIcon('spoon')} ${esc(prep.dose)}</span><span style="${s}">${svgIcon('calendar')} ${esc(prep.freq)}</span>`;
 }
+function _clockIcon(){return '<svg class="ui-ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-.15em"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';}
 
 function calcRodaComboPrep(names){
   const herbs=names.map(n=>HERBS.find(h=>h.n===n)).filter(Boolean);
@@ -1509,7 +1536,7 @@ function toggleRodaHerb(name){
 
 function renderRodaPanel(slice){
   const p=document.getElementById('rodaPanel');
-  if(!slice){p.innerHTML='<div class="roda-empty"><div style="font-size:2rem;opacity:.3;margin-bottom:.75rem">☕</div><div>Selecione um setor da roda para ver as ervas recomendadas</div></div>';return;}
+  if(!slice){p.innerHTML='<div class="roda-empty"><div style="opacity:.3;margin-bottom:.75rem;color:var(--gold2)">'+svgIcon('tea',32)+'</div><div>Selecione um setor da roda para ver as ervas recomendadas</div></div>';return;}
   window._rodaCurrentSlice=slice;
   window._rodaHerbSelection=new Set();
   const colDot=RODA_COLORS_MAP[rodaActiveLayer][RODA_DATA[rodaActiveLayer].indexOf(slice)]||'#c8a84b';
@@ -1536,7 +1563,7 @@ function renderRodaPanel(slice){
     }).join('')}
     <div class="roda-combo">
       <div class="roda-combo-title">Combinações sugeridas</div>
-      ${slice.combo.map(c=>`<span class="roda-combo-chip">☕ ${c}</span>`).join('')}
+      ${slice.combo.map(c=>`<span class="roda-combo-chip">${svgIcon('tea')} ${esc(c)}</span>`).join('')}
     </div>
     <div class="roda-prep">
       <div id="rodaPrepLabel" class="roda-combo-title" style="margin-bottom:.4rem">Preparo</div>
@@ -1669,7 +1696,7 @@ function renderPerfilRecomendacoes(){
           <div style="width:8px;height:8px;border-radius:50%;background:${r.color}"></div>
           <div style="font-size:.88rem;font-weight:400;color:var(--cream)">${r.name}</div>
         </div>
-        <div style="font-size:.82rem;color:var(--gold2);margin-bottom:3px">☕ ${r.herbs}</div>
+        <div style="font-size:.82rem;color:var(--gold2);margin-bottom:3px;display:flex;align-items:center;gap:6px">${svgIcon('tea')} ${esc(r.herbs)}</div>
         <div style="font-size:.75rem;color:var(--muted)">${r.why}</div>
       </div>`).join('')}
     ${momentos.length?`<div style="margin-top:.75rem;font-size:.75rem;color:var(--muted)">Momentos favoritos: ${momentos.join(', ')}</div>`:''}`;
@@ -1795,7 +1822,7 @@ function timerNext(){
       <div class="modal-handle"></div>
       <button class="modal-close" onclick="closeTimerModal()">✕</button>
       <div class="timer-complete">
-        <div class="timer-complete-icon">☕</div>
+        <div class="timer-complete-icon" style="color:var(--gold2)">${svgIcon('tea',44)}</div>
         <div class="timer-complete-title">Chá pronto!</div>
         <div class="timer-complete-sub">Seu ${esc(timerState.herbName)} está preparado.<br>Beba com calma e aproveite os benefícios.</div>
         <button class="timer-next-btn" style="margin-top:1.5rem" onclick="closeTimerModal()">Fechar</button>
@@ -2260,7 +2287,7 @@ function switchBlendTab(tab){
 
 // ════════════════════════════════════════
 // ── CHÁS TRADICIONAIS ──
-// ════════════════════════════════════����══
+// ════════════════════════════════════�����══
 const CHAS_DATA = [
   {
     id:'branco', name:'Chá Branco', emoji:'🤍', img:'images/chas/branco.png', tagline:'O mais sutil — antioxidante puro', oxidation:5,
@@ -2362,7 +2389,7 @@ const CHAS_DATA = [
       {n:'Tie Guan Yin',emoji:'🙏',orig:'Anxi, Fujian',d:'Deusa da Misericórdia. Floral, orquídea, cremoso. O oolong mais icônico do mundo.'},
       {n:'Da Hong Pao',emoji:'🏔',orig:'Wuyi, Fujian',d:'Manto Vermelho. Das arbustos mais famosos do mundo. Rochoso, mineral, torrado.'},
       {n:'Ali Shan',emoji:'⛰',orig:'Ali Shan (1400m), Taiwan',d:'High Mountain. Cremoso, manteigoso, floral. Revela-se em 5-7 infusões.'},
-      {n:'Oriental Beauty',emoji:'🦋',orig:'Hsinchu, Taiwan',d:'Picadas de cigarrinhas criam terpenos únicos. Mel, pêssego, moscatel.'},
+      {n:'Oriental Beauty',emoji:'����',orig:'Hsinchu, Taiwan',d:'Picadas de cigarrinhas criam terpenos únicos. Mel, pêssego, moscatel.'},
       {n:'Dan Cong',emoji:'🎵',orig:'Fenghuang, Guangdong',d:'Oolong Fênix. Dezenas de cultivares nomeados por aromas (lichia, gengibre).'},
     ],
     harmonizacao:['Carnes grelhadas e dim sum','Queijo meia-cura','Frutas frescas e secas','Chocolate amargo 70%','Castanhas e nozes','Macarons florais'],
@@ -2496,7 +2523,7 @@ function renderChaDetail(id){
       ${c.variedades.map(v=>`<div class="cha-var-card" style="border-top:2px solid ${c.color||'var(--gold)'}">
         <div class="cha-var-emoji">${v.emoji}</div>
         <div class="cha-var-name">${v.n}</div>
-        <div class="cha-var-orig">📍 ${v.orig}</div>
+        <div class="cha-var-orig" style="display:inline-flex;align-items:center;gap:5px">${svgIcon('pin')} ${esc(v.orig)}</div>
         <div class="cha-var-desc">${v.d}</div>
       </div>`).join('')}
     </div>`:''}
@@ -3120,12 +3147,12 @@ function selectMapRegion(id){
         <div style="flex:1">
           <div class="mrd-cha-name">${esc(c.n)} <span class="mrd-cha-badge" style="background:${c.badge}22;border:0.5px solid ${c.badge}44;color:${c.badge}">${esc(c.tipo)}</span></div>
           <div class="mrd-cha-desc">${esc(c.d)}</div>
-          ${c.reg?`<div style="font-size:.65rem;color:var(--muted);margin-top:2px">📍 ${esc(c.reg)}</div>`:''}
+          ${c.reg?`<div style="font-size:.65rem;color:var(--muted);margin-top:2px;display:inline-flex;align-items:center;gap:4px">${svgIcon('pin')} ${esc(c.reg)}</div>`:''}
         </div>
       </div>`).join('')}
     </div>
     ${reg.ervas?`<div style="font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem">Ervas & Plantas Locais</div>
-    <div class="mrd-ervas-grid" style="margin-bottom:1rem">${reg.ervas.map(e=>`<div class="mrd-erva-item"><div class="mrd-erva-name">🌿 ${esc(e.n)}</div><div class="mrd-erva-desc">${esc(e.d)}</div></div>`).join('')}</div>`:''}
+    <div class="mrd-ervas-grid" style="margin-bottom:1rem">${reg.ervas.map(e=>`<div class="mrd-erva-item"><div class="mrd-erva-name" style="display:inline-flex;align-items:center;gap:5px">${svgIcon('leaf')} ${esc(e.n)}</div><div class="mrd-erva-desc">${esc(e.d)}</div></div>`).join('')}</div>`:''}
     <div class="mrd-grid">
       <div class="mrd-card"><div class="mrd-card-label">Cultura & culinária</div><div class="mrd-card-val">${esc(reg.culinaria)}</div></div>
       <div class="mrd-card" style="border-left:2px solid #2a8a2a"><div class="mrd-card-label" style="color:#4a8a4a">🇧🇷 Conexão com o Brasil</div><div class="mrd-card-val">${esc(reg.brasil)}</div></div>
@@ -3163,10 +3190,10 @@ function renderMundoList(){
         ${r.chas.map(c=>`<div class="mrd-cha-row"><div style="flex:1">
           <div class="mrd-cha-name">${esc(c.n)} <span class="mrd-cha-badge" style="background:${c.badge}22;border:0.5px solid ${c.badge}44;color:${c.badge}">${esc(c.tipo)}</span></div>
           <div class="mrd-cha-desc">${esc(c.d)}</div>
-          ${c.reg?`<div style="font-size:.65rem;color:var(--muted);margin-top:2px">📍 ${esc(c.reg)}</div>`:''}
+          ${c.reg?`<div style="font-size:.65rem;color:var(--muted);margin-top:2px;display:inline-flex;align-items:center;gap:4px">${svgIcon('pin')} ${esc(c.reg)}</div>`:''}
         </div></div>`).join('')}
         ${r.ervas?`<div style="font-size:.6rem;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);margin:.75rem 0 .4rem">Ervas & Plantas Locais</div>
-        <div class="mrd-ervas-grid">${r.ervas.map(e=>`<div class="mrd-erva-item"><div class="mrd-erva-name">🌿 ${esc(e.n)}</div><div class="mrd-erva-desc">${esc(e.d)}</div></div>`).join('')}</div>`:''}
+        <div class="mrd-ervas-grid">${r.ervas.map(e=>`<div class="mrd-erva-item"><div class="mrd-erva-name" style="display:inline-flex;align-items:center;gap:5px">${svgIcon('leaf')} ${esc(e.n)}</div><div class="mrd-erva-desc">${esc(e.d)}</div></div>`).join('')}</div>`:''}
         <div style="margin-top:.75rem;padding:.75rem;background:rgba(42,138,42,.06);border:0.5px solid rgba(42,138,42,.2);border-radius:var(--r-md);font-size:.75rem;color:var(--cream2)">
           <span style="color:#4a8a4a;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase">🇧🇷 Conexão com o Brasil</span><br>${esc(r.brasil)}
         </div>
