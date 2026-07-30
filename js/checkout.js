@@ -213,13 +213,28 @@ const Checkout = {
 
   renderSummary() {
     const cart = readCart();
-    const subtotal = cart.reduce((s, c) => s + c.price * c.qty, 0);
-    const lines = cart
+    // O resumo tem que mostrar o que vai ser COBRADO, não o que está no
+    // carrinho. Item sem dbId é descartado no submit (ver `sellable` em
+    // Checkout.submit), então somá-lo aqui produzia um total maior do
+    // que o pedido criado — o cliente via dois produtos e o servidor
+    // registrava um. O aviso agora é um bloco fixo na tela, e não só o
+    // toast que aparece por três segundos quando o overlay abre.
+    const isSellable = (c) => typeof c.dbId === 'string' && c.dbId.length === 36;
+    const sellable = cart.filter(isSellable);
+    const excluidos = cart.filter((c) => !isSellable(c));
+    const subtotal = sellable.reduce((s, c) => s + c.price * c.qty, 0);
+    const lines = sellable
       .map((c) => `<div style="display:flex;justify-content:space-between;color:var(--cream);font-size:.78rem;margin:2px 0">
         <span>${esc(c.name)} × ${c.qty}</span>
         <span>R$ ${(c.price * c.qty).toFixed(2)}</span>
       </div>`)
       .join('');
+    const aviso = excluidos.length === 0 ? '' : `
+      <div role="status" style="margin:8px 0;padding:8px;border:1px solid rgba(224,128,128,.4);border-radius:6px;background:rgba(224,128,128,.08);font-size:.72rem;color:var(--cream)">
+        <strong style="color:#e0a0a0">Fora deste pedido:</strong>
+        ${excluidos.map((c) => esc(c.name) + ' × ' + c.qty).join(', ')}
+        <div style="color:var(--muted);margin-top:4px">Indisponíveis para compra no momento. Não entram no total nem serão cobrados.</div>
+      </div>`;
     const hasQuote = this.shipping && this.shipping.enabled && this.shipping.selectedKey;
     const shipCents = hasQuote ? this.selectedShippingCents() : 0;
     const freteLinha = hasQuote
@@ -232,6 +247,7 @@ const Checkout = {
       : `<div style="font-size:.7rem;color:var(--muted);margin-top:4px">Frete calculado depois (atualmente grátis durante o piloto)</div>`;
     document.getElementById('ckSummary').innerHTML = `
       ${lines}
+      ${aviso}
       ${freteLinha}
       <div style="border-top:1px solid rgba(200,168,75,.2);margin-top:8px;padding-top:8px;display:flex;justify-content:space-between;color:var(--gold2);font-weight:500">
         <span>Total</span>
