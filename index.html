@@ -419,7 +419,8 @@
     text-transform: uppercase;
     color: var(--verde-profundo);
   }
-  .strip-icon { font-size: 16px; }
+  .strip-icon { font-size: 16px; display: inline-flex; align-items: center; }
+  .strip-icon svg { width: 17px; height: 17px; display: block; }
   .strip-divider { color: rgba(26,58,42,.3); font-size: 18px; }
 
   /* ── RODA DOS CHÁS — ENTRY POINT ───────────────────── */
@@ -1550,17 +1551,17 @@
 <!-- STRIP PROPOSTA -->
 <div class="strip">
   <div class="strip-item">
-    <span class="strip-icon">🌍</span>
+    <span class="strip-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.5 4 5.6 4 9s-1.4 6.5-4 9c-2.6-2.5-4-5.6-4-9s1.4-6.5 4-9z"/></svg></span>
     <span data-i18n="lp.strip.world">Ervas do mundo todo</span>
   </div>
   <span class="strip-divider">·</span>
   <div class="strip-item">
-    <span class="strip-icon">🌿</span>
+    <span class="strip-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 6-14 14-14 0 8-6 14-14 14z"/><path d="M6 18C10 14 13.5 10.5 17 7.5"/></svg></span>
     <span data-i18n="lp.strip.brazil">Linha Brasileira exclusiva</span>
   </div>
   <span class="strip-divider">·</span>
   <div class="strip-item">
-    <span class="strip-icon">🗺</span>
+    <span class="strip-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6 9 4z"/><path d="M9 4v14"/><path d="M15 6v14"/></svg></span>
     <span data-i18n="lp.strip.map">Mapa Mundi dos Chás</span>
   </div>
   <span class="strip-divider">·</span>
@@ -2549,7 +2550,7 @@
       <div class="sabores-card-desc" data-i18n="sabores.roda_desc">Navegue por sintoma, sistema, momento ou sabor e receba ervas recomendadas.</div>
     </div>
     <div class="sabores-card" onclick="goPage('guia-sensorial',this)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')goPage('guia-sensorial',this)">
-      <div class="sabores-card-icon">🍵</div>
+      <div class="sabores-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/><path d="M17 10h1.8a2.2 2.2 0 0 1 0 4.4H17"/><path d="M8 3c-.6.8-.6 1.6 0 2.4M12 3c-.6.8-.6 1.6 0 2.4"/></svg></div>
       <div class="sabores-card-title" data-i18n="sabores.guia_title">Guia Sensorial</div>
       <div class="sabores-card-desc" data-i18n="sabores.guia_desc">Roda de Sabores do Provador — descritores aromáticos e perfis por tipo de chá.</div>
     </div>
@@ -2564,7 +2565,7 @@
 <!-- MARKETPLACE PAGE -->
 <div class="page" id="page-marketplace">
   <div id="mkt-dev-banner" style="background:rgba(180,80,0,.15);border:1px solid rgba(220,120,0,.4);border-radius:var(--r-lg);padding:1rem 1.25rem;margin-bottom:1.25rem;display:flex;align-items:center;gap:10px">
-    <span style="font-size:1.2rem">🚧</span>
+    <span aria-hidden="true" style="color:var(--gold2);display:inline-flex"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1.5 5.5a5 5 0 0 1-9 0L6 3z"/><path d="M8 21h8"/><path d="M12 14v7"/></svg></span>
     <div><div style="font-size:.85rem;color:#e8a060;font-weight:500" id="mkt-dev-banner-title" data-i18n="ui.dev_section">Seção em desenvolvimento</div><div style="font-size:.75rem;color:var(--muted);margin-top:2px" id="mkt-dev-banner-msg" data-i18n="mkt.dev_msg">A Loja do Ervatório está em manutenção. Em breve você poderá comprar infusões, equipamentos e vivências diretamente de produtores e chazerias parceiras do Brasil e do mundo.</div></div>
   </div>
   <div class="mkt-hero">
@@ -2572,7 +2573,7 @@
       <div class="sec-title" style="margin-bottom:.2rem" data-i18n="page.marketplace.title">Loja Botânica</div>
       <div class="sec-sub" style="margin-bottom:0" data-i18n="mkt.subtitle">Infusões · Equipamentos · Vivências · Viagens</div>
     </div>
-    <button class="cart-btn" onclick="openCart()">🛒 <span id="mktCartCount"></span></button>
+    <button class="cart-btn" onclick="openCart()"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-.2em"><circle cx="9" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/><path d="M2.5 4h2.2l2 12h11l2-8H6.7"/></svg> <span id="mktCartCount"></span></button>
   </div>
 
   <div class="mkt-cats" id="mktCats"></div>
@@ -2594,7 +2595,7 @@
 <!-- SUPPLIERS PAGE -->
 <div class="page" id="page-suppliers">
   <div style="background:rgba(200,168,75,.08);border:0.5px solid rgba(200,168,75,.25);border-radius:var(--r-lg);padding:1rem 1.25rem;margin-bottom:1.25rem;display:flex;align-items:center;gap:10px">
-    <span style="font-size:1.2rem">🚧</span>
+    <span aria-hidden="true" style="color:var(--gold2);display:inline-flex"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1.5 5.5a5 5 0 0 1-9 0L6 3z"/><path d="M8 21h8"/><path d="M12 14v7"/></svg></span>
     <div><div style="font-size:.85rem;color:var(--gold2);font-weight:400" data-i18n="ui.dev_section">Seção em desenvolvimento</div><div style="font-size:.75rem;color:var(--muted);margin-top:2px" data-i18n="sup.dev_msg">Estamos preparando uma rede verificada de ervateiros, produtores e distribuidores. Em breve você poderá conectar-se diretamente com fornecedores de qualidade.</div></div>
   </div>
   <div class="sec-title" data-i18n="page.suppliers.title">Fornecedores</div>
@@ -2619,7 +2620,7 @@
     </div>
     <div class="roda-right" id="rodaPanel">
       <div class="roda-empty">
-        <div style="font-size:2rem;opacity:.3;margin-bottom:.75rem">☕</div>
+        <div aria-hidden="true" style="opacity:.3;margin-bottom:.75rem;color:var(--gold2)"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block"><path d="M4 9h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/><path d="M17 10h1.8a2.2 2.2 0 0 1 0 4.4H17"/><path d="M8 3c-.6.8-.6 1.6 0 2.4M12 3c-.6.8-.6 1.6 0 2.4"/></svg></div>
         <div data-i18n="roda.empty_hint">Selecione um setor da roda para ver as ervas recomendadas</div>
       </div>
     </div>
