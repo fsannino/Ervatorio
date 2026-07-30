@@ -153,6 +153,27 @@ Deno.serve(async (req) => {
   if (shipErr) return jsonResponse({ error: shipErr }, 400);
   const totalCents = subtotalCents + shippingCents;
 
+  // Reserva o estoque ANTES de criar o pedido. reserve_stock()
+  // decrementa todas as linhas ou nenhuma, com FOR UPDATE, então dois
+  // pedidos simultâneos pela última unidade não passam os dois.
+  // Produto com stock_qty NULL é ignorado (estoque não controlado) —
+  // ver a migration 20260730060000_stock_control.sql.
+  //
+  // Se falhar aqui, nenhum pedido foi criado e nada precisa desfazer.
+  // Se falhar DEPOIS daqui, o release abaixo devolve as unidades.
+  const { error: rErr } = await db.rpc('reserve_stock', {
+    p_items: body.items.map((i) => ({ product_id: i.product_id, qty: i.qty })),
+  });
+  if (rErr) {
+    // check_violation = estoque insuficiente: é erro do cliente (400),
+    // com a mensagem do banco, que já nomeia o produto e as quantidades.
+    const insuficiente = rErr.code === '23514' || /insuficiente/i.test(rErr.message || '');
+    return jsonResponse(
+      { error: insuficiente ? rErr.message : 'Não foi possível reservar o estoque.' },
+      insuficiente ? 400 : 500,
+    );
+  }
+
   const { data: order, error: oErr } = await db
     .from('orders')
     .insert({
@@ -169,11 +190,22 @@ Deno.serve(async (req) => {
     })
     .select('id')
     .single();
-  if (oErr) return jsonResponse({ error: oErr.message }, 500);
+  if (oErr) {
+    // Estoque já foi reservado e não há pedido para segurá-lo. Devolve
+    // item por item, porque release_stock() depende de order_items, que
+    // ainda não existe.
+    await devolveReserva(db, body.items);
+    return jsonResponse({ error: oErr.message }, 500);
+  }
 
   const itemsWithOrderId = lines.map((l) => ({ ...l, order_id: order.id }));
   const { error: iErr } = await db.from('order_items').insert(itemsWithOrderId);
-  if (iErr) return jsonResponse({ error: iErr.message }, 500);
+  if (iErr) {
+    // Pedido sem itens é inútil e ainda segura estoque: apaga os dois.
+    await devolveReserva(db, body.items);
+    await db.from('orders').delete().eq('id', order.id);
+    return jsonResponse({ error: iErr.message }, 500);
+  }
 
   return jsonResponse({
     ok: true,
@@ -184,3 +216,28 @@ Deno.serve(async (req) => {
     currency: 'BRL',
   });
 });
+
+// ------------------------------------------------------------
+// Devolve unidades reservadas quando o pedido não chegou a existir.
+// reserve_stock() com qty negativa faria o caminho inverso, mas a
+// função valida `qty >= 1`; então some 1 unidade de cada vez seria
+// errado. Aqui incrementa direto, só nos produtos controlados.
+// ------------------------------------------------------------
+async function devolveReserva(
+  db: ReturnType<typeof adminClient>,
+  items: CartItem[],
+): Promise<void> {
+  for (const it of items) {
+    const { data: p } = await db
+      .from('admin_products')
+      .select('stock_qty')
+      .eq('id', it.product_id)
+      .maybeSingle();
+    if (!p || p.stock_qty === null) continue;
+    const qty = Math.max(1, Math.min(999, Math.floor(Number(it.qty) || 0)));
+    await db
+      .from('admin_products')
+      .update({ stock_qty: p.stock_qty + qty })
+      .eq('id', it.product_id);
+  }
+}
