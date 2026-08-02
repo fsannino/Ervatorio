@@ -35,12 +35,20 @@
 -- `category` e `linha` que o banco real não tem.
 --
 -- COLUNAS DELIBERADAMENTE AUSENTES em admin_products:
---   supplier_id  → base_03 cria, com a FK para admin_suppliers
 --   is_test      → base_03
 --   weight_grams → sec_04
 --   stock_qty    → stock_control
 -- Criá-las aqui faria o `ADD COLUMN IF NOT EXISTS` daquelas migrations
 -- virar no-op e as CHECKs que vêm junto se perderiam no replay.
+--
+-- `supplier_id` é o caso oposto e por isso É criada aqui, sem a FK:
+-- `base_03` adiciona a constraint (ADD CONSTRAINT ... FOREIGN KEY
+-- (supplier_id)) mas nunca cria a coluna — ela também veio de um .sql
+-- solto aplicado à mão. Sem esta linha o replay morre em
+--   ERROR: column "supplier_id" referenced in foreign key constraint
+--          does not exist
+-- Criar a FK aqui, por outro lado, faria o ADD CONSTRAINT de base_03
+-- falhar com "already exists".
 --
 -- Rollback: no fim do arquivo.
 -- ============================================================
