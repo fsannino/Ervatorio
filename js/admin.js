@@ -358,7 +358,10 @@ function renderProductsAdmin(list){
     </td>
     <td><span class="adm-badge gold">${esc(p.category)}</span></td>
     <td style="color:var(--adm-gold2)">R$ ${Number(p.price).toFixed(2)}</td>
-    <td>${p.stock==='in'?'<span class="adm-badge green">Em estoque</span>':p.stock==='low'?'<span class="adm-badge gold">Últimas</span>':'<span class="adm-badge red">Esgotado</span>'}</td>
+    <td>
+      ${p.stock==='in'?'<span class="adm-badge green">Em estoque</span>':p.stock==='low'?'<span class="adm-badge gold">Últimas</span>':'<span class="adm-badge red">Esgotado</span>'}
+      <small style="display:block;margin-top:3px;font-size:.7rem;color:var(--adm-muted)">${p.stock_qty==null?'sem controle de unidades':`${p.stock_qty} un.`}</small>
+    </td>
     <td style="font-size:.72rem;color:var(--adm-muted)">${p.created_at?new Date(p.created_at).toLocaleDateString('pt-BR'):''}</td>
     <td style="white-space:nowrap">
       <button class="adm-btn" onclick="editProduct('${p.id}')">Editar</button>
@@ -390,6 +393,10 @@ function openProductForm(p){
   document.getElementById('pfUnit').value=p?.unit||'50g';
   document.getElementById('pfWeight').value=p?.weight_grams||100;
   document.getElementById('pfStock').value=p?.stock||'in';
+  // null/undefined vira campo vazio, que significa "não controlado".
+  // 0 é quantidade legítima (esgotado) e precisa aparecer como "0".
+  document.getElementById('pfStockQty').value=(p?.stock_qty??'')===''?'':String(p.stock_qty);
+  syncStockFields();
   document.getElementById('pfActive').checked=p?.active!==false;
   document.getElementById('pfIsTest').checked=p?.is_test||false;
   // Populate supplier dropdown
@@ -400,6 +407,23 @@ function openProductForm(p){
   document.querySelectorAll('.pf-img-url').forEach((inp,i)=>{inp.value=imgs[i]||'';});
   updateImagePreview();
   m.classList.add('on');
+}
+// Com quantidade preenchida, a flag da vitrine passa a ser derivada pelo
+// trigger sync_stock_flag (migration 20260730120000). Escrever nela na mão
+// seria sobrescrito no banco, então o seletor é desabilitado e mostra o
+// valor que o servidor vai calcular. Sem quantidade, tudo segue manual.
+function syncStockFields(){
+  const qtyEl=document.getElementById('pfStockQty');
+  const stockEl=document.getElementById('pfStock');
+  if(!qtyEl||!stockEl)return;
+  const bruto=qtyEl.value.trim();
+  const controlado=bruto!==''&&Number.isFinite(Number(bruto));
+  stockEl.disabled=controlado;
+  document.getElementById('pfStockDerived').hidden=!controlado;
+  if(controlado){
+    const q=Math.max(0,Math.floor(Number(bruto)));
+    stockEl.value=q===0?'out':q<=5?'low':'in';
+  }
 }
 function updateImagePreview(){
   const preview=document.getElementById('pfImagesPreview');
@@ -422,6 +446,16 @@ async function handleImageUpload(input,idx){
     admToast('Imagem enviada');
   }catch(e){admToast('Erro: '+e.message);}
 }
+// Vazio = NULL = estoque não controlado. Qualquer outra coisa vira inteiro
+// >= 0, porque a coluna tem CHECK (stock_qty IS NULL OR stock_qty >= 0) e um
+// negativo voltaria como erro cru do Postgres na cara do admin.
+function parseStockQty(v){
+  const s=String(v??'').trim();
+  if(s==='')return null;
+  const n=Number(s);
+  if(!Number.isFinite(n))return null;
+  return Math.max(0,Math.floor(n));
+}
 function editProduct(id){openProductForm(allProducts.find(p=>p.id===id));}
 function closeProductForm(){document.getElementById('productModal').classList.remove('on');}
 async function saveProduct(){
@@ -440,6 +474,7 @@ async function saveProduct(){
     supplier:supplierName,
     supplier_id:suppId,
     stock:document.getElementById('pfStock').value,
+    stock_qty:parseStockQty(document.getElementById('pfStockQty').value),
     active:document.getElementById('pfActive').checked,
     is_test:document.getElementById('pfIsTest').checked,
     images:images.length?images:null,

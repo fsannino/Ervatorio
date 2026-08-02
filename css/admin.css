@@ -66,7 +66,14 @@ body{background:var(--adm-bg);color:var(--adm-text);font-family:'Jost',sans-seri
 .adm-modal-title{font-size:1.1rem;color:var(--adm-gold2);margin-bottom:1.25rem;font-weight:400}
 .adm-form-group{margin-bottom:1rem}
 .adm-form-label{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--adm-gold);margin-bottom:4px}
+/* Texto de apoio sob um campo. --adm-muted sobre --adm-bg2 dá 5.7:1,
+   acima do 4.5:1 exigido para texto normal em AA. */
+.adm-form-hint{display:block;margin-top:5px;font-size:.72rem;line-height:1.45;color:var(--adm-muted);font-weight:300}
+.adm-form-hint[hidden]{display:none}
 .adm-form-input{width:100%;padding:10px 12px;background:var(--adm-bg3);border:1px solid var(--adm-faint);border-radius:var(--adm-r);color:var(--adm-text);font-family:'Jost',sans-serif;font-size:.85rem;font-weight:300;box-sizing:border-box}
+/* Campo derivado de outro: continua legível (não usamos opacity, que
+   derrubaria o contraste), mas sinaliza que não aceita edição. */
+.adm-form-input:disabled{background:var(--adm-bg);color:var(--adm-muted);cursor:not-allowed}
 .adm-form-input:focus{outline:none;border-color:var(--adm-gold)}
 textarea.adm-form-input{min-height:100px;resize:vertical}
 select.adm-form-input{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237a7060' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:32px;cursor:pointer}
