@@ -164,6 +164,7 @@ function showSection(id){
   if(id==='chazerias')loadChazerias();
   if(id==='orders'&&typeof loadOrders==='function')loadOrders();
   if(id==='returns'&&typeof loadReturns==='function')loadReturns();
+  if(id==='audit'&&typeof loadAudit==='function')loadAudit(true);
 }
 
 // ── TOAST ──
