@@ -40,6 +40,7 @@
     <div class="adm-nav-item" data-sec="chazerias" onclick="showSection('chazerias')"><span class="icon">🗺</span> Chazerias</div>
     <div class="adm-nav-item" data-sec="orders" onclick="showSection('orders')"><span class="icon">🧾</span> Pedidos</div>
     <div class="adm-nav-item" data-sec="returns" onclick="showSection('returns')"><span class="icon">↩</span> Devoluções</div>
+    <button type="button" class="adm-nav-item" data-sec="audit" onclick="showSection('audit')" style="background:none;border:0;border-left:3px solid transparent;width:100%;font:inherit;text-align:left"><span class="icon">🛡</span> Auditoria</button>
     <div class="adm-nav-sep"></div>
     <div class="adm-nav-item" onclick="window.location='/'"><span class="icon">🍵</span> Ir ao App</div>
     <div class="adm-nav-item" onclick="admLogout()" style="color:var(--adm-red)"><span class="icon">⏻</span> Sair</div>
@@ -193,6 +194,38 @@
     </div>
 
     <!-- ════════ DEVOLUÇÕES ════════ -->
+    <!-- ════════ AUDITORIA ════════ -->
+    <div class="adm-section" id="sec-audit" style="display:none">
+      <div class="adm-header">
+        <div>
+          <div class="adm-title">Auditoria</div>
+          <div class="adm-subtitle">Quem fez o quê no painel — registrado pelo banco, não pelo app</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1rem">
+        <button type="button" class="adm-btn primary" data-aud-filter="" onclick="audFilter('')">Tudo</button>
+        <button type="button" class="adm-btn" data-aud-filter="admin_products" onclick="audFilter('admin_products')">Produtos</button>
+        <button type="button" class="adm-btn" data-aud-filter="admin_herbs" onclick="audFilter('admin_herbs')">Chás</button>
+        <button type="button" class="adm-btn" data-aud-filter="orders" onclick="audFilter('orders')">Pedidos</button>
+        <button type="button" class="adm-btn" data-aud-filter="order_returns" onclick="audFilter('order_returns')">Devoluções</button>
+        <button type="button" class="adm-btn" data-aud-filter="site_settings" onclick="audFilter('site_settings')">Configurações</button>
+        <button type="button" class="adm-btn" data-aud-filter="user_profiles" onclick="audFilter('user_profiles')">Privilégio</button>
+      </div>
+      <div class="adm-table-wrap">
+        <table class="adm-table">
+          <thead><tr><th>Quando</th><th>Quem</th><th>O quê</th><th>Campos</th><th>Detalhe</th></tr></thead>
+          <tbody id="auditBody"><tr><td colspan="5" style="text-align:center;padding:2rem;color:var(--adm-muted)">Carregando...</td></tr></tbody>
+        </table>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:1rem;flex-wrap:wrap">
+        <span id="auditPageInfo" style="font-size:.75rem;color:var(--adm-muted)"></span>
+        <div style="display:flex;gap:6px">
+          <button type="button" class="adm-btn" id="auditPrev" onclick="audNav(-1)">Anterior</button>
+          <button type="button" class="adm-btn" id="auditNext" onclick="audNav(1)">Próxima</button>
+        </div>
+      </div>
+    </div>
+
     <div class="adm-section" id="sec-returns" style="display:none">
       <div class="adm-header">
         <div>
@@ -547,5 +580,6 @@
 <script src="/js/admin.js"></script>
 <script src="/js/admin-orders.js"></script>
 <script src="/js/admin-returns.js"></script>
+<script src="/js/admin-audit.js"></script>
 </body>
 </html>
