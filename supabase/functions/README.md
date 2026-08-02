@@ -9,6 +9,7 @@ Operações que **não devem** rodar no navegador (usam `service_role`, agregam 
 | `admin-delete-user` | POST | Deleta usuário de `auth.users` e cascatas. Corrige bug onde o painel antigo só removia o perfil. Requer admin. |
 | `admin-metrics` | GET | Retorna contadores + receita agregada em uma chamada. Requer admin. |
 | `create-order` | POST | Cria um pedido com preços recalculados no servidor (nunca confiar no cliente). Requer usuário autenticado. |
+| `newsletter-subscribe` | POST | Inscrição anônima da landing `/pausa.html`. Pública. Rate limit por IP e resposta idêntica para e-mail novo e já inscrito — substituiu o INSERT direto, que era oráculo de enumeração. |
 
 ## Deploy
 

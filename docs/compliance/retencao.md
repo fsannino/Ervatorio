@@ -31,7 +31,17 @@ Referência operacional interna. A versão pública resumida está em `privacida
    delete from public.newsletter_subscribers where email = '<e-mail do titular>';
    ```
 
-   Prazo: 15 dias, igual aos demais. **Isto é uma lacuna conhecida** — o link de descadastro com token, que torna a exclusão autoatendida, está na etapa 2 (Edge Function `newsletter-subscribe`). Enquanto não existir, todo e-mail de campanha precisa trazer o endereço do encarregado em vez de um link de unsubscribe.
+   Prazo: 15 dias, igual aos demais. **Isto continua sendo uma lacuna conhecida.** A Edge Function `newsletter-subscribe` já existe, mas ela cobriu a captação, não o descadastro — o link com token ficou para a etapa 3. Enquanto não existir, todo e-mail de campanha precisa trazer o endereço do encarregado em vez de um link de unsubscribe.
+
+### Prova de consentimento (`consent_at`)
+
+Até a Edge Function, `consent_at` era **escrivível pelo cliente**: a policy `newsletter_public_insert` tinha `WITH CHECK (true)`, então quem enviava o formulário podia mandar qualquer data. Evidência de consentimento que o próprio interessado pode forjar não sustenta a base legal.
+
+Agora quem grava é o servidor: a function aceita só `email`, `source` e `locale`, e `consent_at` vem do `DEFAULT NOW()` da tabela. A policy pública de INSERT foi removida (migration `20260802040000`).
+
+Vale ser exato sobre o que essa data prova: **o momento em que o formulário foi enviado, não a confirmação do titular.** Sem double opt-in, ninguém garante que o dono do endereço foi quem digitou. Para uma inscrição contestada, a defesa é fraca. O double opt-in fecha isso e está na etapa 3.
+
+Reinscrição não ressuscita quem saiu: a function usa `ignoreDuplicates`, então reenviar o formulário com um e-mail que está `active = false` **não** o reativa.
 
 ## Princípios
 

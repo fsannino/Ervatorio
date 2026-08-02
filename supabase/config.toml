@@ -49,3 +49,10 @@ verify_jwt = true
 # função valida posse, status retornável e o prazo de 7 dias do CDC.
 [functions.create-return]
 verify_jwt = true
+
+# Newsletter etapa 2: captação anônima da landing /pausa.html. Público
+# por natureza — quem se inscreve não tem conta. A proteção é rate
+# limit por IP + resposta indistinguível entre e-mail novo e já
+# inscrito (fecha o oráculo de enumeração que o INSERT direto abria).
+[functions.newsletter-subscribe]
+verify_jwt = false

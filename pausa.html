@@ -240,8 +240,10 @@
   </div>
 </footer>
 
-<!-- Supabase JS SDK + config (mesmo projeto do site) -->
-<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<!-- Config do projeto. O SDK do Supabase saiu daqui: a inscrição agora
+     é um fetch para a Edge Function newsletter-subscribe, e carregar
+     ~40 KB de CDN de terceiro numa landing só para montar um cliente
+     que fazia um INSERT não se paga. -->
 <script defer src="/js/config.js"></script>
 <script>
   (function(){
@@ -250,18 +252,6 @@
     var email = document.getElementById('pausaEmail');
     var btn = form ? form.querySelector('button[type="submit"]') : null;
     if(!form) return;
-
-    var _client = null;
-    function getClient(){
-      if(_client) return _client;
-      if(window.supabase && window.ERVATORIO_CONFIG){
-        _client = window.supabase.createClient(
-          window.ERVATORIO_CONFIG.SUPABASE_URL,
-          window.ERVATORIO_CONFIG.SUPABASE_PUBLISHABLE_KEY
-        );
-      }
-      return _client;
-    }
 
     function currentLocale(){
       try { return localStorage.getItem('erv_lang') || 'pt'; } catch(e){ return 'pt'; }
@@ -279,18 +269,30 @@
       var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
       if(!valid){ email.focus(); email.style.borderColor = '#f3c9b0'; return; }
 
-      var sb = getClient();
-      // Sem SDK/config: degrada para o comportamento local, sem quebrar a UX.
-      if(!sb){ showSuccess(v); return; }
+      var cfg = window.ERVATORIO_CONFIG;
+      // Sem config: degrada para o comportamento local, sem quebrar a UX.
+      if(!cfg || !cfg.FUNCTIONS_URL){ showSuccess(v); return; }
 
       if(btn){ btn.disabled = true; btn.textContent = 'Enviando…'; }
       try {
-        var res = await sb.from('newsletter_subscribers').insert({
-          email: v, source: 'pausa', locale: currentLocale(), consent: true
+        // Antes isto era um INSERT direto no PostgREST, e o cliente
+        // precisava tratar o 23505 de e-mail duplicado — o que fazia
+        // desta página um oráculo: dava para descobrir se um endereço
+        // estava na lista, um por tentativa, sem limite. Agora quem
+        // grava é a Edge Function, com rate limit, e a resposta é
+        // igual para e-mail novo e para já inscrito.
+        var res = await fetch(cfg.FUNCTIONS_URL + '/newsletter-subscribe', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            apikey: cfg.SUPABASE_PUBLISHABLE_KEY,
+            Authorization: 'Bearer ' + cfg.SUPABASE_PUBLISHABLE_KEY
+          },
+          body: JSON.stringify({ email: v, source: 'pausa', locale: currentLocale() })
         });
-        // 23505 = e-mail já inscrito → tratamos como sucesso silencioso.
-        if(res.error && res.error.code !== '23505'){
-          throw res.error;
+        if(!res.ok){
+          var det = await res.json().catch(function(){ return {}; });
+          throw new Error(det.error || ('HTTP ' + res.status));
         }
         showSuccess(v);
       } catch(err){
