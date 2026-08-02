@@ -430,10 +430,19 @@
     <div class="adm-form-row">
       <div class="adm-form-group"><label class="adm-form-label">Peso (g) — usado no cálculo de frete</label><input type="number" id="pfWeight" class="adm-form-input" placeholder="100" value="100" step="1" min="1"></div>
     </div>
-    <div class="adm-form-group"><label class="adm-form-label">Estoque</label>
-      <select id="pfStock" class="adm-form-input">
-        <option value="in">Em estoque</option><option value="low">Últimas unidades</option><option value="out">Esgotado</option>
-      </select>
+    <div class="adm-form-row">
+      <div class="adm-form-group">
+        <label class="adm-form-label" for="pfStockQty">Quantidade em estoque</label>
+        <input type="number" id="pfStockQty" class="adm-form-input" placeholder="deixe vazio = não controlado" step="1" min="0" oninput="syncStockFields()">
+        <small id="pfStockHint" class="adm-form-hint">Vazio: a loja não controla unidades deste produto e pode vendê-lo indefinidamente. Preencha para ativar a proteção contra venda a descoberto.</small>
+      </div>
+      <div class="adm-form-group">
+        <label class="adm-form-label" for="pfStock">Situação na vitrine</label>
+        <select id="pfStock" class="adm-form-input">
+          <option value="in">Em estoque</option><option value="low">Últimas unidades</option><option value="out">Esgotado</option>
+        </select>
+        <small id="pfStockDerived" class="adm-form-hint" hidden>Calculada a partir da quantidade. Para esgotar, coloque 0 em quantidade.</small>
+      </div>
     </div>
     <div class="adm-form-group">
       <label class="adm-form-label">Fotos do produto</label>
